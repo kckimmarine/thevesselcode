@@ -6,17 +6,28 @@ const TVC_Fleet = (function () {
 
     /** Pilot company / vessel — license & Export/Sync ZIP 공통 */
     const COMPANY_ID = 'TVC';
-    const PILOT_VESSEL_ID = 'TVC Voyager';
+    const PILOT_VESSEL_ID = 'ABC Voyager';
+    const LEGACY_PILOT_VESSEL_ID = 'TVC Voyager';
+    const DEMO_CONTRACT_COMPANY_ID = 'ABC_SHIPPING';
 
-    /** 초기 Fleet — SM 등록 선박 (company: TVC) */
+    /** 초기 Fleet — contract demo vessel (auth.js DEFAULT_USERS 와 동일) */
     const DEFAULT_FLEET = [
-        { id: 'TVC Voyager', name: 'TVC Voyager', code: '1', company_code: '1', imo_no: '9999999', delivery: '2003-09-18', company_id: COMPANY_ID },
+        {
+            id: PILOT_VESSEL_ID,
+            name: PILOT_VESSEL_ID,
+            code: '1',
+            company_code: '1',
+            imo_no: '9999999',
+            delivery: '2003-09-18',
+            company_id: DEMO_CONTRACT_COMPANY_ID,
+        },
     ];
 
     /** 예전 테스트 Fleet — SM 목록에서 제거 */
     const DEPRECATED_VESSEL_IDS = new Set([
         'TEST_V01', 'TEST_V02', 'TEST_V03', 'TEST_V04', 'TEST_V05', 'TEST_V06',
         'QUARTERBACK J', 'GOLDSTAR SHINE', 'VALIANT', 'INCHEON CHEMI', 'TVC No1',
+        LEGACY_PILOT_VESSEL_ID,
     ]);
 
     const FLEET_ORDER = DEFAULT_FLEET.map(v => v.id);
@@ -76,7 +87,7 @@ const TVC_Fleet = (function () {
     async function ensureFleet() {
         try {
             const meta = await TVC_DB.getMeta(TVC_META_KEYS.VESSEL_ID);
-            if (meta === 'TEST_V01') {
+            if (meta === 'TEST_V01' || meta === LEGACY_PILOT_VESSEL_ID) {
                 await TVC_DB.setMeta(TVC_META_KEYS.VESSEL_ID, PILOT_VESSEL_ID);
             }
         } catch (_) {}
@@ -95,7 +106,9 @@ const TVC_Fleet = (function () {
         }
         writeFleet(fleet);
         const sel = localStorage.getItem(SELECTED_KEY);
-        if (!sel || sel === LEGACY_VESSEL_ID || sel === 'TEST_V01') select(PILOT_VESSEL_ID);
+        if (!sel || sel === LEGACY_VESSEL_ID || sel === 'TEST_V01' || sel === LEGACY_PILOT_VESSEL_ID) {
+            select(PILOT_VESSEL_ID);
+        }
         return fleet;
     }
 

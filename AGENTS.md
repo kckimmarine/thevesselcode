@@ -48,10 +48,10 @@ npm run verify-all           # RBAC + sync checks
 | `engineer` | Engine | SHIP_ENGINEER | PMS + SPARE consumption |
 | `ce` | Engine | SHIP_CE | Engine confirm + SPARE admin |
 | `captain` | Captain | SHIP_CAPTAIN | **Captain Hub** — SM ↔ Deck/Engine relay (no Deck/Engine confirm) |
-| `tvc shipping` | — | SM (`TVC_SHIPPING`) | Contract company superintendent |
+| `abc shipping` | — | SM (`ABC_SHIPPING`) | Contract company superintendent |
 | `admin` | — | ADMIN | Admin Mode (registry / license) |
 
-Demo vessel: **TVC Voyager** · contract company: **TVC_SHIPPING**
+Demo vessel: **ABC Voyager** · contract company: **ABC_SHIPPING**
 
 ---
 
@@ -83,7 +83,7 @@ Demo vessel: **TVC Voyager** · contract company: **TVC_SHIPPING**
 ```
 Author (officer/engineer) → Save → REPORTED
 Chief (ce/co) → Confirm → CONFIRMED (+ schedule / stock rules apply)
-SM (tvc shipping) → Approve → APPROVED (locked)
+SM (abc shipping) → Approve → APPROVED (locked)
 Ship ↔ SM → ZIP export/import (sync_status)
 ```
 
