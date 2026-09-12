@@ -3,7 +3,7 @@
 
 /** @deprecated Legacy pilot constants — seat license is source of truth for universal SKUs */
 const COMPANY_ID = 'TVC';
-const PILOT_VESSEL_ID = 'TVC Voyager';
+const PILOT_VESSEL_ID = 'ABC Voyager';
 const HQ_ALLOWED_VESSEL_IDS = [
     'TVC No1',
 ];

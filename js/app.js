@@ -259,6 +259,7 @@ const TVC_App = (function () {
         try { await TVC_DataPurge.run(); } catch (e) { console.warn('[TVC_DataPurge]', e); }
         try { await TVC_DataPurge.migrateIncheonChemiMasterToTvcNo1Once(); } catch (e) { console.warn('[TVC_DataPurge] master migrate', e); }
         try { await TVC_DataPurge.migratePilotVesselIdToVoyagerOnce(); } catch (e) { console.warn('[TVC_DataPurge] voyager migrate', e); }
+        try { await TVC_DataPurge.migrateTvcVoyagerToAbcOnce(); } catch (e) { console.warn('[TVC_DataPurge] abc voyager migrate', e); }
         try {
             const reqPurge = await TVC_DataPurge.purgeAllRequisitionsOnce();
             if (reqPurge?.requisitions) {

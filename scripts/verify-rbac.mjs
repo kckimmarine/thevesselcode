@@ -50,7 +50,7 @@ const USERS = {
     captain: { username: 'captain', account_type: 'SHIP', role: 'SHIP_CAPTAIN', department: 'DECK', vessel_id: 'TEST_V01' },
     engineer: { username: 'engineer', account_type: 'SHIP', role: 'SHIP_OFFICER', department: 'ENGINE', vessel_id: 'TEST_V01' },
     chief: { username: 'ce', account_type: 'SHIP', role: 'SHIP_CHIEF', department: 'ENGINE', vessel_id: 'TEST_V01' },
-    sm: { username: 'tvc shipping', account_type: 'SM', role: 'SM_SUPERVISOR', department: null, vessel_id: null },
+    sm: { username: 'abc shipping', account_type: 'SM', role: 'SM_SUPERVISOR', department: null, vessel_id: null },
 };
 
 // ── loadData() 시뮬레이션 ─────────────────────────────────────────────

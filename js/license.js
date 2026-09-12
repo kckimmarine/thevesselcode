@@ -1,9 +1,9 @@
 /* THE VESSEL CODE — Renderer license bridge (Electron + browser dev) */
 const TVC_License = (function () {
     const COMPANY_ID = 'TVC';
-    const PILOT_VESSEL_ID = 'TVC Voyager';
+    const PILOT_VESSEL_ID = 'ABC Voyager';
     const SM_ALLOWED_VESSEL_IDS = [
-        'TVC Voyager',
+        'ABC Voyager',
     ];
 
     let _cache = null;
@@ -114,7 +114,7 @@ const TVC_License = (function () {
             if (!isSm && !isSupplier) {
                 return {
                     ok: false,
-                    error: `This installation (${st.skuLabel || st.sku}) is for company SM. Use Superintendent (tvc shipping) or TVC Admin (admin).`,
+                    error: `This installation (${st.skuLabel || st.sku}) is for company SM. Use Superintendent (abc shipping) or TVC Admin (admin).`,
                 };
             }
             return { ok: true };
