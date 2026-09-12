@@ -5,7 +5,7 @@ const TVC_StoreManager = (function () {
     const SEARCH_LIMIT = 50000;
     const BROWSE_PREVIEW = 500;
     const SEARCH_TARGET_MS = 50;
-    const CATALOG_SOURCE_VERSION = '20260910-spacemarine-5605';
+    const CATALOG_SOURCE_VERSION = '20260912-phase-a-15022';
 
     const CHAPTER_CATEGORY = {
         '33': 'Safety Equipment',
