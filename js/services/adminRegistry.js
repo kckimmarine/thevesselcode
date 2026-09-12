@@ -8,7 +8,7 @@ const TVC_AdminRegistry = (function () {
     const SM_SKU_OPTS = ['SM_OFFICE'];
     const VESSEL_SKUS = ['VESSEL_MASTER', 'VESSEL_ENGINE', 'VESSEL_DECK'];
     const PILOT_COMPANY_ID = 'TVC';
-    const PILOT_VESSEL_ID = 'TVC Voyager';
+    const PILOT_VESSEL_ID = 'ABC Voyager';
     /** Removed from admin UI — stripped on load (incl. stale localStorage cache). */
     const DEPRECATED_COMPANY_IDS = new Set(['DAEMYUNG', 'TVC_LAB']);
     /** Pilot registry — template for Add company / Add vessel forms. */
@@ -21,7 +21,7 @@ const TVC_AdminRegistry = (function () {
             hq_password: 'tvc1234',
         },
         vessel: {
-            vessel_id: 'TVC Voyager',
+            vessel_id: 'ABC Voyager',
             code: '1',
             imo_no: '9999999',
         },

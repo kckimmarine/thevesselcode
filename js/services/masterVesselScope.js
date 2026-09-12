@@ -21,7 +21,7 @@ const TVC_MasterVesselScope = (function () {
         if (typeof TVC_Fleet !== 'undefined' && TVC_Fleet.PILOT_VESSEL_ID) {
             return TVC_Fleet.PILOT_VESSEL_ID;
         }
-        return 'TVC Voyager';
+        return 'ABC Voyager';
     }
 
     /** HQ: Fleet 선택 · Ship: meta / user.vessel_id */
