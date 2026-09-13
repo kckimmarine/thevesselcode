@@ -24,12 +24,43 @@ Programmatic SEO용 `/store/:code` 페이지를 **한 번에 5만 URL로 올리�
 
 | 단계 | SEO 인덱스 코드 수 (약) | 비고 |
 |------|-------------------------|------|
-| **현재** | ~5,600 | 기준선 · GSC 사이트맵 성공 확인됨 |
-| **Phase A** | ~15,000 | 1차 확장 · 크롤/색인 추이 1~2주 관찰 |
-| **Phase B** | ~30,000 | GSC 색인 생성 페이지·오류율 안정 후 |
+| **기준선** | ~5,600 | Phase A 이전 · GSC 사이트맵 성공 확인됨 |
+| **Phase A** | **~15,022** | **완료** (2026-09-12) · `sitemap-store-1` + `store-2` |
+| **Phase B** | ~30,000 | GSC 색인·오류율 안정 후 · 아래 후보 챕터 |
 | **Phase C** | ~50,000 | 최종 목표 · `sitemap-store-1` ~ `5` 예상 |
 
 각 Phase마다 **한 번의 배포 = 한 번의 사이트맵 증가**로 진행합니다. Phase 사이 **최소 1~2주** 간격을 두고 GSC를 봅니다.
+
+### Phase B 후보 챕터 (~15k → ~30k)
+
+Space-Marine (`scripts/scrape_spacemarine.py`) 기준 **대형·미수집·부분 수집** 우선. Phase A에서 이미 반영된 대형 챕터(예: 63, 73, 75, 61)는 중복 스크랩을 피합니다.
+
+| 우선순위 | Chapter | 주제 (요약) | 비고 |
+|----------|---------|-------------|------|
+| **High** | **17** | Galley / Cabin | `impa-17.json` 없음 · SM ~689건 |
+| **High** | **55** | (SM 카테고리 55) | 인덱스 일부만 존재 · SM ~299건 |
+| **High** | **69** | — | SM ~147건 |
+| **High** | **19** | — | SM ~88건 |
+| **High** | **15** | — | SM ~209건 |
+| **High** | **21** | — | SM ~29건 |
+| **High** | **67** | — | Phase A에서 **220건만** 수집 · SM ~2,600건 **완료 스크랩** |
+
+**보강·검수 (이미 chapter 파일 있음):** Ch **79** (Paints/Chemicals, ~629), Ch **49** (Hose 등, ~59) — Phase B에서 **재스크랩·gate 검수** 후 인덱스 증분 확인.
+
+**Phase B 권장 워크플로 (챕터당 반복):**
+
+```bash
+python3 scripts/scrape_spacemarine.py --category 17
+node scripts/merge-impa-chapters.mjs
+npm run generate:impa-seo
+npm run inspect:impa-chapters -- 17 79 49
+npm run test:seo-sitemap
+npm run build
+```
+
+대량 배치: `node scripts/phase-a-scrape.mjs --target=30000 --chapters=17,55,69,19,15,21,67,...` (목표 count·챕터 목록 조정).
+
+**Toolkit:** Phase B 배포 시 `js/services/storeManager.js`의 `CATALOG_SOURCE_VERSION`와 `toolkit.html`의 `storeManager.js?v=`를 함께 bump (Phase A: `20260912-phase-a-15022`).
 
 ---
 
@@ -163,11 +194,23 @@ site:thevesselcode.com/store/812101
 - SEO index count: ______ (이전: ______)
 - Sitemap files: sitemap-store-1 … store-__
 - Deploy: commit ______ / PR #__
+- Toolkit catalog: CATALOG_SOURCE_VERSION ______
 - GSC discovered: ______
 - Sample indexed (manual): store/______, store/______
 - Issues: none / …
 - Next phase earliest date: ______
 ```
+
+### IMPA SEO Phase A (2026-09-12) — 완료 기록
+
+- SEO index count: **15,022** (이전: **~5,605**)
+- Sitemap files: `sitemap-core.xml`, `sitemap-store-1` (10,000), `sitemap-store-2` (5,022)
+- Deploy: commit **`73f42b4`** / PR **#113**
+- Toolkit catalog: **`20260912-phase-a-15022`** (`storeManager.js` + `toolkit.html` cache-bust; PR **#114**)
+- GSC discovered: _(운영 확인 — 목표 ~15,022 store URL)_
+- Sample indexed (manual): `store/211141`, `store/230157`, `store/610645`, `store/812101`
+- Issues: none (30-code audit + `test:seo-sitemap` / `test:store-seo` / `build` pass)
+- Next phase earliest date: **2026-09-26** (2주 관찰; 최소 1주면 **2026-09-19**)
 
 ---
 
@@ -178,4 +221,4 @@ site:thevesselcode.com/store/812101
 
 ---
 
-*마지막 정리: 2026-09-12 · THE VESSEL CODE programmatic SEO 운영*
+*마지막 정리: 2026-09-13 · THE VESSEL CODE programmatic SEO 운영*
