@@ -39,7 +39,9 @@ deploy/.env.deploy.local
 deploy/.env.local
 
 # Local indexing API push state (service account stays in env)
-.data/
+.data/*
+!.data/
+!.data/google-indexing-state.json
 
 # Playwright HTML/trace dumps (keep e2e/artifacts screenshots + TEST_REPORT.md)
 /test-results/
