@@ -33,6 +33,7 @@ function parseArgs(argv) {
         dryRun: false,
         force: false,
         resetState: false,
+        tolerateQuota: false,
         type: 'URL_UPDATED',
     };
     for (let i = 0; i < argv.length; i += 1) {
@@ -40,6 +41,7 @@ function parseArgs(argv) {
         if (arg === '--dry-run') args.dryRun = true;
         else if (arg === '--force') args.force = true;
         else if (arg === '--reset-state') args.resetState = true;
+        else if (arg === '--tolerate-quota') args.tolerateQuota = true;
         else if (arg === '--limit' && argv[i + 1]) {
             args.limit = Math.max(1, Number.parseInt(argv[++i], 10) || DEFAULT_LIMIT);
         } else if (arg === '--type' && argv[i + 1]) {
@@ -60,6 +62,7 @@ Options:
   --dry-run         Resolve queue only; do not call Google API
   --force           Re-push URLs even if already recorded in state
   --reset-state     Clear local push history before running
+  --tolerate-quota  Exit 0 when stopped by quota/rate/403 (CI daily job)
   --type <TYPE>     URL_UPDATED (default) or URL_DELETED
   --help            Show this help
 `);
@@ -174,6 +177,7 @@ async function main() {
     const client = await createIndexingClient(credentials);
     let ok = 0;
     let failed = 0;
+    let stoppedForQuota = false;
 
     for (const entry of queue) {
         try {
@@ -191,6 +195,7 @@ async function main() {
             console.error('FAIL', entry.url, '—', message);
             if (/quota|rate|429|403/i.test(message)) {
                 console.error('Stopping early due to quota/permission error.');
+                stoppedForQuota = true;
                 break;
             }
         }
@@ -198,6 +203,10 @@ async function main() {
 
     saveState(state);
     console.log(`\nIndexing push complete: ${ok} ok, ${failed} failed, ${Object.keys(state.pushed).length} recorded total.`);
+    if (failed > 0 && args.tolerateQuota && stoppedForQuota) {
+        console.warn('Exiting 0 (--tolerate-quota): partial run saved to state.');
+        return;
+    }
     if (failed > 0) process.exit(1);
 }
 
