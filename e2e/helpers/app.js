@@ -4,6 +4,8 @@ const ACCOUNTS = {
   deck: { username: 'officer', password: '0000', dept: 'DECK', label: 'Deck / officer' },
   engine: { username: 'engineer', password: '0000', dept: 'ENGINE', label: 'Engine / engineer' },
   ce: { username: 'ce', password: '0000', dept: 'ENGINE', label: 'Engine / ce' },
+  captain: { username: 'captain', password: '0000', dept: 'MASTER', label: 'Captain / captain' },
+  sm: { username: 'abc shipping', password: '0000', dept: '', label: 'SM / abc shipping' },
 };
 
 const HUNG_MS = 20_000;
@@ -68,7 +70,8 @@ async function login(page, role) {
   await waitForLoginReady(page, acc.label);
   await page.locator('#loginUser').fill(acc.username);
   await page.locator('#loginPass').fill(acc.password);
-  await page.locator('#loginDept').selectOption(acc.dept);
+  if (acc.dept) await page.locator('#loginDept').selectOption(acc.dept);
+  else await page.locator('#loginDept').selectOption({ label: '— Select Department —' }).catch(() => page.locator('#loginDept').selectOption(''));
 
   const t0 = Date.now();
   await page.locator('#loginScreen .login-submit').click();

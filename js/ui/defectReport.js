@@ -947,19 +947,36 @@ const TVC_DefectReport = (function () {
         return draft[key];
     }
 
-    function readDfAttachmentFile(file) {
+    async function readDfAttachmentFile(file) {
+        const prepared = (typeof TVC_Attachments !== 'undefined' && TVC_Attachments.prepareUploadFile)
+            ? await TVC_Attachments.prepareUploadFile(file)
+            : file;
+        const blob = prepared?.blob || prepared;
+        const name = prepared?.name || file.name;
+        const type = prepared?.type || file.type;
+        const size = prepared?.size ?? file.size;
+        if (prepared?.dataUrl) {
+            return {
+                id: `att-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+                name,
+                type,
+                size,
+                dataUrl: prepared.dataUrl,
+                uploaded_at: new Date().toISOString(),
+            };
+        }
         return new Promise((resolve, reject) => {
             const reader = new FileReader();
             reader.onload = () => resolve({
                 id: `att-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-                name: file.name,
-                type: file.type,
-                size: file.size,
+                name,
+                type,
+                size: blob?.size ?? size,
                 dataUrl: reader.result,
                 uploaded_at: new Date().toISOString(),
             });
             reader.onerror = reject;
-            reader.readAsDataURL(file);
+            reader.readAsDataURL(blob instanceof Blob ? blob : file);
         });
     }
 
