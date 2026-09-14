@@ -26,7 +26,7 @@ Programmatic SEO용 `/store/:code` 페이지를 **한 번에 5만 URL로 올리�
 |------|-------------------------|------|
 | **기준선** | ~5,600 | Phase A 이전 · GSC 사이트맵 성공 확인됨 |
 | **Phase A** | **~15,022** | **완료** (2026-09-12) · `sitemap-store-1` + `store-2` |
-| **Phase B** | ~30,000 | GSC 색인·오류율 안정 후 · 아래 후보 챕터 |
+| **Phase B** | **~24,247** (SM exhaust) / ~30,000 aspirational | GSC 색인·오류율 안정 후 · Space-Marine 전 챕터 스크랩 완료 (2026-09-14) |
 | **Phase C** | ~50,000 | 최종 목표 · `sitemap-store-1` ~ `5` 예상 |
 
 각 Phase마다 **한 번의 배포 = 한 번의 사이트맵 증가**로 진행합니다. Phase 사이 **최소 1~2주** 간격을 두고 GSC를 봅니다.
@@ -211,6 +211,17 @@ site:thevesselcode.com/store/812101
 - Sample indexed (manual): `store/211141`, `store/230157`, `store/610645`, `store/812101`
 - Issues: none (30-code audit + `test:seo-sitemap` / `test:store-seo` / `build` pass)
 - Next phase earliest date: **2026-09-26** (2주 관찰; 최소 1주면 **2026-09-19**)
+
+### IMPA SEO Phase B (2026-09-14) — 완료 기록
+
+- SEO index count: **24,247** (이전: **15,022**)
+- Sitemap files: `sitemap-core.xml`, `sitemap-store-1` (10,000), `sitemap-store-2` (10,000), `sitemap-store-3` (4,247)
+- Deploy: PR Phase B / `scripts/phase-b-scrape.mjs`
+- Toolkit catalog: **`20260914-phase-b-24247`**
+- Note: Space-Marine 공개 카탈로그 **전 챕터(33개) 스크랩·품질 게이트 후 ~24.2k** — 3만 목표는 **Berth/추가 소스(Phase C)** 필요
+- Sample indexed (manual): `store/170101`, `store/673303`, `store/991000`
+- Issues: none (`test:seo-sitemap`, `test:store-seo`, `build` pass)
+- Next phase earliest date: **2026-09-28**
 
 ---
 

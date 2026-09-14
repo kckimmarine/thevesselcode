@@ -2,14 +2,18 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://www.thevesselcode.com/sitemap-core.xml</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-14</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://www.thevesselcode.com/sitemap-store-1.xml</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-14</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://www.thevesselcode.com/sitemap-store-2.xml</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-14</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.thevesselcode.com/sitemap-store-3.xml</loc>
+    <lastmod>2026-09-14</lastmod>
   </sitemap>
 </sitemapindex>

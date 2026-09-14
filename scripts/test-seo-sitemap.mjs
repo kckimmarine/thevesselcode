@@ -160,8 +160,11 @@ const storeChunk = readFileSync(join(root, 'public', 'sitemap-store-1.xml'), 'ut
 assertValidXml('sitemap-store-1.xml', storeChunk);
 const storeChunk2Path = join(root, 'public', 'sitemap-store-2.xml');
 const storeChunk2 = existsSync(storeChunk2Path) ? readFileSync(storeChunk2Path, 'utf8') : '';
+const storeChunk3Path = join(root, 'public', 'sitemap-store-3.xml');
+const storeChunk3 = existsSync(storeChunk3Path) ? readFileSync(storeChunk3Path, 'utf8') : '';
 const testCodeInSitemap = storeChunk.includes(`/store/${TEST_CODE}`)
-    || storeChunk2.includes(`/store/${TEST_CODE}`);
+    || storeChunk2.includes(`/store/${TEST_CODE}`)
+    || storeChunk3.includes(`/store/${TEST_CODE}`);
 check('store sitemap includes test code', testCodeInSitemap);
 check('store chunk uses www origin', storeChunk.includes('<loc>https://www.thevesselcode.com/store/'));
 check('robots references www sitemap', readFileSync(join(root, 'public', 'robots.txt'), 'utf8').includes('Sitemap: https://www.thevesselcode.com/sitemap.xml'));
