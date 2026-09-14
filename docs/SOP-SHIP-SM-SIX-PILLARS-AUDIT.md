@@ -101,6 +101,19 @@ npm run verify-all                   # license 빌드 artifact 필요 시 dist/l
 
 ---
 
+## Universal machinery taxonomy (2026-09-14)
+
+| Layer | Path | Notes |
+| --- | --- | --- |
+| Reference dataset | `data/equipment-taxonomy.json` | DECK/ENGINE **common** + per-profile extensions (bulker, container, tanker_chemical, gas) |
+| Schema contract | `js/core/schema.js` → `TVC_EQUIPMENT_TAXONOMY`, `TVC_META_KEYS.VESSEL_MACHINERY_PROFILE` | No chemical-tanker-only hardcoding in schema stores |
+| Runtime loader | `js/services/machineryTaxonomy.js` | Profile resolve · optional empty-vessel `maintenance_groups` seed |
+| Work Plan UI | `js/ui/pms.js` (`TVC_PmsEquipmentTree`) + `js/ui/virtualList.js` | Taxonomy rail beside PMS GROUP Tree (`#actTaxonomyRail`) |
+| Admin preset | `admin/registry.json` → `machinery_profile_presets`, per-vessel `machinery_profile` | Demo: **ABC Voyager** (`bulker`), **TVC Pioneer** (`tanker_chemical`) |
+| Dept parity | `operational_parity` in JSON | C/O + C/E workflows unchanged; Captain hub / `verify-rbac` 31/31 |
+
+---
+
 ## 코드베이스 정화 (legacy pilot identifiers)
 
 | 항목 | 조치 |

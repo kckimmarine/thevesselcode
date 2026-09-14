@@ -986,6 +986,16 @@ body {
 .tree-actions .btn { flex: 1 1 auto; font-size: 11px; padding: 4px 6px; }
 .tree-actions .btn:disabled { opacity: .45; cursor: not-allowed; }
 .tree-node-empty { opacity: 0.85; font-style: italic; }
+
+/* Machinery taxonomy rail (Work Plan sidebar — compact; desktop layout unchanged) */
+.spare-taxonomy-rail { border-top: 1px solid #e2e8f0; padding: 6px 8px 8px; max-height: 220px; overflow: hidden; }
+.spare-tax-head { font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px; }
+.spare-tax-scroll { overflow-y: auto; }
+.spare-tax-row { display: flex; flex-direction: column; align-items: flex-start; width: 100%; text-align: left; border: none; background: transparent; padding: 4px 6px; border-radius: 4px; cursor: pointer; font-size: 11px; }
+.spare-tax-row:hover, .spare-tax-row-selected { background: #ebf8ff; }
+.spare-tax-label { font-weight: 600; line-height: 1.25; }
+.spare-tax-eq-wrap { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; }
+.spare-tax-eq { font-size: 10px; background: #edf2f7; padding: 1px 4px; border-radius: 3px; }
 .tree-empty-tag { font-size: 10px; color: #718096; background: #edf2f7; border-radius: 8px; padding: 0 5px; margin-left: 4px; }
 .group-editor-hint { font-size: 12px; margin: 0 0 10px; }
 .tree-badge-crit { background: #c53030; margin-left: 4px; }
@@ -11014,6 +11024,10 @@ body.mobile-nav-open .mobile-nav-backdrop { display: block; }
 
     #tab-actual .actual-layout .tree-panel .tree-node {
         touch-action: manipulation;
+    }
+
+    #tab-actual .spare-taxonomy-rail {
+        max-height: 160px;
     }
 }
 

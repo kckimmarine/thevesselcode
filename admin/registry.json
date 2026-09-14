@@ -1,6 +1,28 @@
 {
   "version": 2,
-  "updated_at": "2026-09-12",
+  "updated_at": "2026-09-14",
+  "machinery_profile_presets": [
+    {
+      "id": "bulker",
+      "label": "Bulker",
+      "demo_vessel_label": "ABC Voyager [Bulker]"
+    },
+    {
+      "id": "tanker_chemical",
+      "label": "Chemical Tanker",
+      "demo_vessel_label": "TVC Pioneer [Chemical Tanker]"
+    },
+    {
+      "id": "container",
+      "label": "Container",
+      "demo_vessel_label": "GLOBAL Maritime [Container]"
+    },
+    {
+      "id": "gas",
+      "label": "Gas Carrier",
+      "demo_vessel_label": "GLOBAL Maritime [Gas]"
+    }
+  ],
   "companies": [
     {
       "company_id": "TVC",
@@ -24,6 +46,8 @@
           "imo_no": "9876543",
           "delivery": "2003-09-18",
           "status": "active",
+          "machinery_profile": "bulker",
+          "profile_display": "ABC Voyager [Bulker]",
           "deploy": {
             "app_version": {
               "VESSEL_MASTER": "1.0.6",
@@ -37,6 +61,16 @@
             },
             "license_issued_at": "2026-08-26"
           }
+        },
+        {
+          "vessel_id": "TVC Pioneer",
+          "name": "TVC Pioneer",
+          "code": "2",
+          "imo_no": "9876543",
+          "delivery": "2010-04-01",
+          "status": "active",
+          "machinery_profile": "tanker_chemical",
+          "profile_display": "TVC Pioneer [Chemical Tanker]"
         }
       ],
       "deploy": {
@@ -59,7 +93,9 @@
           "code": "1",
           "imo_no": "9876543",
           "delivery": "2003-09-18",
-          "status": "active"
+          "status": "active",
+          "machinery_profile": "bulker",
+          "profile_display": "ABC Voyager [Bulker]"
         }
       ]
     }

@@ -203,7 +203,17 @@ const TVC_META_KEYS = {
     IMPA_PLATE_PIPELINE: 'impa_plate_pipeline_v1',
     IMPA_CATALOG_COUNT: 'impa_catalog_count_v1',
     IMPA_SEARCH_BACKFILL: 'impa_search_backfill_v1',
+    /** Vessel machinery profile id — see data/equipment-taxonomy.json + TVC_MachineryTaxonomy */
+    VESSEL_MACHINERY_PROFILE: 'vessel_machinery_profile',
 };
+
+/** Universal machinery taxonomy — profile ids align with data/equipment-taxonomy.json */
+const TVC_EQUIPMENT_TAXONOMY = Object.freeze({
+    DEFAULT_PROFILE: 'bulker',
+    DEPARTMENTS: Object.freeze(['DECK', 'ENGINE']),
+    DATA_URL: 'data/equipment-taxonomy.json',
+    PROFILE_META_KEY: TVC_META_KEYS.VESSEL_MACHINERY_PROFILE,
+});
 
 function pmsMasterCanonicalMetaKey(vesselId, department) {
     const v = String(vesselId || 'SHIP').replace(/[^\w.-]+/g, '_').slice(0, 40);

@@ -288,6 +288,13 @@ const TVC_App = (function () {
             }
         } catch (e) { console.warn('[TVC_DataPurge] list data', e); }
         try { await TVC_Fleet.ensureFleet(); } catch (e) { console.warn('[TVC_Fleet]', e); }
+        try {
+            if (typeof TVC_MachineryTaxonomy !== 'undefined') {
+                await TVC_MachineryTaxonomy.loadTaxonomy();
+                const cat = await TVC_MachineryTaxonomy.ensureCatalogGroupDefs();
+                if (cat?.added) console.info('[TVC_MachineryTaxonomy] catalog groups', cat);
+            }
+        } catch (e) { console.warn('[TVC_MachineryTaxonomy]', e); }
 
             const seed = await TVC_Seed.ensureSeed();
             if (seed.needFile) document.getElementById('seedBanner')?.classList.remove('hidden');
@@ -878,6 +885,13 @@ const TVC_App = (function () {
             allJobs = await TVC_DB.getAll('maintenance_jobs');
             allGroups = await TVC_DB.getAll('maintenance_groups').catch(() => []);
         }
+
+        try {
+            if (typeof TVC_MachineryTaxonomy !== 'undefined') {
+                await TVC_MachineryTaxonomy.loadTaxonomy();
+                state.machineryProfileId = await TVC_MachineryTaxonomy.resolveActiveProfile(masterVesselIdEarly);
+            }
+        } catch (_) { /* taxonomy optional offline */ }
 
         state._allJobs = allJobs;
         state._allGroups = allGroups;
@@ -11360,9 +11374,31 @@ const TVC_App = (function () {
     }
 
     // ── TAB: Work Plan ─────────────────────────────────────────────
+    let _actTaxonomyRail = null;
+
+    async function syncActTaxonomyRail() {
+        const host = document.getElementById('actTaxonomyRail');
+        if (!host || typeof TVC_PmsEquipmentTree === 'undefined') return;
+        host.classList.remove('hidden');
+        if (_actTaxonomyRail?.destroy) _actTaxonomyRail.destroy();
+        _actTaxonomyRail = await TVC_PmsEquipmentTree.mountTaxonomyRail(host, {
+            department: state.department,
+            vesselId: state.vesselId,
+            selectedKey: state.selectedGroupKey,
+            onSelect: (key) => {
+                if (key) {
+                    state.selectedGroupKey = key;
+                    renderGroupTree('actTree');
+                    mountJobSheet('actHead', 'actCount', 'actScroll', sheetIds('actual'), 'vlActual');
+                }
+            },
+        });
+    }
+
     function renderActualPlan() {
         clearActualFilterKeysCache();
         renderGroupTree('actTree');
+        syncActTaxonomyRail().catch(e => console.warn('[TVC_PmsEquipmentTree]', e));
         syncPlanGroupUi();
         syncPlanGroupTreeUi();
         updateActualFilterUI();
