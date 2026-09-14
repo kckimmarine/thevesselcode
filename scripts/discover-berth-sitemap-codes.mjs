@@ -9,6 +9,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'public/data/berth/sitemap-codes.json');
+const SITEMAP_CACHE_DIR = join(ROOT, 'public/data/berth/sitemaps');
 const UA = 'Mozilla/5.0 (compatible; TVC-Berth-Discover/1.0)';
 
 async function fetchText(url) {
@@ -19,11 +20,18 @@ async function fetchText(url) {
 
 async function main() {
   const codes = new Set();
-  for (let i = 1; i <= 10; i += 1) {
+  for (let i = 1; i <= 20; i += 1) {
     const url = `https://www.berthmarine.com/product-sitemap${i}.xml`;
     try {
       const xml = await fetchText(url);
+      mkdirSync(SITEMAP_CACHE_DIR, { recursive: true });
+      writeFileSync(join(SITEMAP_CACHE_DIR, `product-sitemap${i}.xml`), xml);
+      const before = codes.size;
       for (const m of xml.matchAll(/impa-code-(\d{6})/g)) codes.add(m[1]);
+      if (codes.size === before) {
+        console.log('SKIP empty', url);
+        break;
+      }
       console.log('OK', url, 'total', codes.size);
     } catch (err) {
       if (i === 1) throw err;
