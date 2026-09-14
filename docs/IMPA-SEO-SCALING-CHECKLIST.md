@@ -70,6 +70,16 @@ node scripts/phase-c-berth-ingest.mjs --merge-only
 
 - 스크래퍼: `scripts/scrape-berthmarine.mjs` (WebP 800px / q80 → `public/data/plates/berth-*.webp`)
 - 병합: `scripts/merge-impa-chapters.mjs` (SM baseline + Berth upsert/enrich)
+- **Plate backfill (sitemap bulk, ~9.8k missing):** polite batch + tmux
+
+```bash
+npm run phase-c:berth-plates              # full queue
+node scripts/batch-berth-plates.mjs --limit 20   # smoke test
+./scripts/run-plate-backfill-tmux.sh      # session tvc-plate-backfill
+tail -f .data/berth-plates-backfill.log
+```
+
+State under `.data/berth-plates-{progress,failed,backfill.log}` (git-ignored). Skips existing `public/data/plates/berth-*.webp`.
 
 **Toolkit:** Phase B 배포 시 `js/services/storeManager.js`의 `CATALOG_SOURCE_VERSION`와 `toolkit.html`의 `storeManager.js?v=`를 함께 bump (Phase A: `20260912-phase-a-15022`).
 
