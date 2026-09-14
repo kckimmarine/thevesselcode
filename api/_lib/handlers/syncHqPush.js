@@ -1,6 +1,6 @@
 'use strict';
 
-const { isReady, readRawBody, uploadPackage } = require('../../_lib/syncStorage');
+const { isReady, readRawBody, uploadPackage } = require('../syncStorage');
 
 async function handler(req, res) {
     if (req.method !== 'POST') {
@@ -50,4 +50,3 @@ async function handler(req, res) {
 }
 
 module.exports = handler;
-module.exports.config = { api: { bodyParser: false } };

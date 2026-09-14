@@ -25,11 +25,14 @@ const row = billingStore.upsertSubscription({
 assert.equal(row.planType, 'toolkit-pro');
 assert.equal(billingStore.getCustomerIdByEmail('officer@example.com'), 'cus_test_1');
 
-const checkoutHandler = require(path.join(root, 'api/billing/create-checkout-session.js'));
+const checkoutHandler = require(path.join(root, 'api/_lib/handlers/billingCreateCheckoutSession.js'));
 assert.equal(typeof checkoutHandler, 'function');
 
-const webhookHandler = require(path.join(root, 'api/billing/webhook.js'));
+const webhookHandler = require(path.join(root, 'api/_lib/handlers/billingWebhook.js'));
 assert.equal(typeof webhookHandler, 'function');
-assert.ok(webhookHandler.config?.api?.bodyParser === false);
+
+const billingRouter = require(path.join(root, 'api/billing/[...path].js'));
+assert.equal(typeof billingRouter, 'function');
+assert.ok(billingRouter.config?.api?.bodyParser === false);
 
 console.log('OK billing-checkout smoke');

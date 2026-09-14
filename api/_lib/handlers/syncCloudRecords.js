@@ -6,15 +6,15 @@ const {
     resolveQueryScope,
     fetchCloudRecords,
     fetchCloudMeta,
-} = require('../../_lib/syncCloudQuery');
-const { getAdminClient, readRawBody } = require('../../_lib/syncStorage');
+} = require('../syncCloudQuery');
+const { getAdminClient, readRawBody } = require('../syncStorage');
 const {
     SYNC_STORES,
     mergeRecordBatch,
     upsertMetaItems,
     recordUpdatedAt,
     recordKey,
-} = require('../../_lib/syncIngest');
+} = require('../syncIngest');
 
 const MAX_UPSERT = 400;
 

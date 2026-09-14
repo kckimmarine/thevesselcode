@@ -1,11 +1,11 @@
 'use strict';
 
-const { isReady, readRawBody } = require('../../_lib/syncStorage');
+const { isReady, readRawBody } = require('../syncStorage');
 const {
     assertRestoreAuth,
     publishCloudRestore,
     buildRestoreZipForDownload,
-} = require('../../_lib/syncCloudRestore');
+} = require('../syncCloudRestore');
 
 async function handler(req, res) {
     if (!isReady()) {
@@ -68,4 +68,3 @@ async function handler(req, res) {
 }
 
 module.exports = handler;
-module.exports.config = { api: { bodyParser: false } };
