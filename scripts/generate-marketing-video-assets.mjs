@@ -11,10 +11,10 @@
  *   node scripts/generate-marketing-video-assets.mjs
  *   BASE_URL=https://www.thevesselcode.com node scripts/generate-marketing-video-assets.mjs
  */
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, writeFile, unlink } from 'node:fs/promises';
 import { join } from 'node:path';
-import { spawn } from 'node:child_process';
 import { chromium } from '@playwright/test';
+import JSZip from 'jszip';
 
 const ROOT = process.cwd();
 const OUT = process.env.MARKETING_VIDEO_OUT || join(ROOT, 'artifacts', 'marketing-video');
@@ -64,6 +64,7 @@ async function waitForServer(url, ms = 60000) {
 async function recordPage(browser, { name, path, viewport, lang }) {
     const dir = join(OUT, 'clips');
     await mkdir(dir, { recursive: true });
+    const outFile = join(dir, `${name}.webm`);
     const context = await browser.newContext({
         viewport,
         recordVideo: { dir, size: viewport },
@@ -80,8 +81,59 @@ async function recordPage(browser, { name, path, viewport, lang }) {
     await page.waitForTimeout(2000);
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' }));
     await page.waitForTimeout(1500);
+    const video = page.video();
     await context.close();
-    return { name, viewport, url };
+    if (video) {
+        await video.saveAs(outFile);
+    }
+    return { name, file: outFile, viewport, url };
+}
+
+const NAMED_CLIPS = [
+    'home-desktop.webm',
+    'home-mobile.webm',
+    'sm-desktop.webm',
+    'sm-mobile.webm',
+    'toolkit-mobile.webm',
+];
+
+async function pruneStaleClipHashes(clipsDir) {
+    try {
+        const names = await readdir(clipsDir);
+        for (const name of names) {
+            if (name.startsWith('page@') && name.endsWith('.webm')) {
+                await unlink(join(clipsDir, name));
+            }
+        }
+    } catch (_) { /* no clips yet */ }
+}
+
+/** Single ZIP for CapCut — avoids Cursor/Edge “Save webpage complete” when opening artifact folders in browser. */
+async function writeMarketingVideoZip() {
+    const zip = new JSZip();
+    const root = zip.folder('marketing-video');
+    const clipsFolder = root.folder('clips');
+
+    const topFiles = ['narration-ko.txt', 'subtitles-ko.srt', 'scenes.json', 'record-log.json'];
+    for (const name of topFiles) {
+        try {
+            const buf = await readFile(join(OUT, name));
+            root.file(name, buf);
+        } catch (_) { /* optional */ }
+    }
+
+    const clipsDir = join(OUT, 'clips');
+    for (const name of NAMED_CLIPS) {
+        try {
+            const buf = await readFile(join(clipsDir, name));
+            clipsFolder.file(name, buf);
+        } catch (_) { /* SKIP_RECORD or partial run */ }
+    }
+
+    const zipPath = join(OUT, 'marketing-video-assets.zip');
+    const body = await zip.generateAsync({ type: 'nodebuffer', compression: 'DEFLATE' });
+    await writeFile(zipPath, body);
+    return zipPath;
 }
 
 async function main() {
@@ -114,8 +166,18 @@ async function main() {
         }
         await browser.close();
         await writeFile(join(OUT, 'record-log.json'), JSON.stringify(recorded, null, 2), 'utf8');
-        console.log('WebM clips in', join(OUT, 'clips'), '(rename latest per run in CapCut)');
+        await pruneStaleClipHashes(join(OUT, 'clips'));
+        console.log('WebM clips (CapCut-ready names) in', join(OUT, 'clips'));
     }
+
+    const zipPath = await writeMarketingVideoZip();
+    console.log('ZIP (download this file) →', zipPath);
+    const cursorArtifacts = process.env.CURSOR_ARTIFACTS_DIR || '/opt/cursor/artifacts';
+    try {
+        await mkdir(cursorArtifacts, { recursive: true });
+        await writeFile(join(cursorArtifacts, 'marketing-video-assets.zip'), await readFile(zipPath));
+        console.log('Also copied →', join(cursorArtifacts, 'marketing-video-assets.zip'));
+    } catch (_) { /* not on Cloud Agent VM */ }
 
     console.log('Done →', OUT);
 }

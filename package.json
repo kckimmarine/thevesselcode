@@ -24,6 +24,7 @@
     "verify:seo-gsc": "node scripts/verify-seo-gsc-ready.mjs",
     "test:home-landing": "node scripts/test-home-landing.mjs",
     "marketing:video-assets": "node scripts/generate-marketing-video-assets.mjs",
+    "marketing:video-assets:zip": "SKIP_RECORD=1 node scripts/generate-marketing-video-assets.mjs",
     "export:file-map": "node scripts/export-repo-file-map.mjs",
     "setup:vercel-domains": "node scripts/setup-vercel-domains.mjs",
     "setup:vercel-store-seo": "node scripts/setup-vercel-store-seo-env.mjs",
