@@ -160,6 +160,17 @@ if (seoCount > 30_000) {
         check('store chunk 4 url count', (storeChunk4.match(/<loc>/g) || []).length === chunk4Count);
     }
 }
+if (seoCount > 40_000) {
+    check('sitemap index references store chunk 5', sitemapIndex.includes('sitemap-store-5.xml'));
+    const storeChunk5Path = join(root, 'public', 'sitemap-store-5.xml');
+    check('sitemap-store-5.xml exists', existsSync(storeChunk5Path));
+    if (existsSync(storeChunk5Path)) {
+        const storeChunk5 = readFileSync(storeChunk5Path, 'utf8');
+        assertValidXml('sitemap-store-5.xml', storeChunk5);
+        const chunk5Count = Math.min(10_000, Math.max(0, seoCount - 40_000));
+        check('store chunk 5 url count', (storeChunk5.match(/<loc>/g) || []).length === chunk5Count);
+    }
+}
 
 const coreSitemap = readFileSync(join(root, 'public', 'sitemap-core.xml'), 'utf8');
 assertValidXml('sitemap-core.xml', coreSitemap);
@@ -175,10 +186,13 @@ const storeChunk3Path = join(root, 'public', 'sitemap-store-3.xml');
 const storeChunk3 = existsSync(storeChunk3Path) ? readFileSync(storeChunk3Path, 'utf8') : '';
 const storeChunk4Path = join(root, 'public', 'sitemap-store-4.xml');
 const storeChunk4 = existsSync(storeChunk4Path) ? readFileSync(storeChunk4Path, 'utf8') : '';
+const storeChunk5Path = join(root, 'public', 'sitemap-store-5.xml');
+const storeChunk5 = existsSync(storeChunk5Path) ? readFileSync(storeChunk5Path, 'utf8') : '';
 const testCodeInSitemap = storeChunk.includes(`/store/${TEST_CODE}`)
     || storeChunk2.includes(`/store/${TEST_CODE}`)
     || storeChunk3.includes(`/store/${TEST_CODE}`)
-    || storeChunk4.includes(`/store/${TEST_CODE}`);
+    || storeChunk4.includes(`/store/${TEST_CODE}`)
+    || storeChunk5.includes(`/store/${TEST_CODE}`);
 check('store sitemap includes test code', testCodeInSitemap);
 check('store chunk uses www origin', storeChunk.includes('<loc>https://www.thevesselcode.com/store/'));
 check('robots references www sitemap', readFileSync(join(root, 'public', 'robots.txt'), 'utf8').includes('Sitemap: https://www.thevesselcode.com/sitemap.xml'));

@@ -89,7 +89,7 @@ function decodeHtml(text) {
     .trim();
 }
 
-async function fetchText(url, { retries = 3 } = {}) {
+async function fetchText(url, { retries = 8 } = {}) {
   let lastErr;
   for (let i = 0; i <= retries; i++) {
     try {
@@ -102,16 +102,17 @@ async function fetchText(url, { retries = 3 } = {}) {
         redirect: 'follow',
       });
       if (res.status === 429) {
-        const wait = 2000 * (i + 1);
+        const wait = Math.min(45_000, 4000 * (2 ** i));
         console.warn(`RATE LIMIT ${url} — waiting ${wait}ms`);
         await sleep(wait);
-        throw new Error(`HTTP 429 for ${url}`);
+        lastErr = new Error(`HTTP 429 for ${url}`);
+        continue;
       }
       if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
       return await res.text();
     } catch (err) {
       lastErr = err;
-      if (i < retries) await sleep(800 * (i + 1));
+      if (i < retries) await sleep(1200 * (i + 1));
     }
   }
   throw lastErr;

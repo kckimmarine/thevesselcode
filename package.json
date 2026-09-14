@@ -20,6 +20,7 @@
     "phase-c:berth-sitemaps-fetch": "node scripts/fetch-berth-sitemaps.mjs",
     "phase-c:berth-sitemap-import": "node scripts/berth-sitemap-to-import.mjs",
     "phase-c:berth-ingest": "node scripts/phase-c-berth-ingest.mjs",
+    "phase-c:berth-gap-ingest": "node scripts/ingest-missing-berth-codes.mjs --scrape --batch=80 --delay=2200 --incremental-merge --merge",
     "phase-c:berth-plates": "node scripts/batch-berth-plates.mjs",
     "inspect:impa-chapters": "node scripts/inspect-impa-chapters.mjs",
     "push:indexing": "node scripts/push-indexing.mjs",
