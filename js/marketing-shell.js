@@ -9,6 +9,7 @@
         { id: 'home', href: '/', i18n: 'nav.home' },
         { id: 'services', href: '/services', i18n: 'nav.services' },
         { id: 'toolkit', href: '/toolkit', i18n: 'nav.toolkit' },
+        { id: 'forum', href: '/forum', i18n: 'nav.forum' },
         { id: 'sm', href: '/sm', i18n: 'nav.sm' },
         { id: 'contact', href: '/contact-us', i18n: 'nav.contact' },
     ];
@@ -17,6 +18,7 @@
         { href: '/', i18n: 'nav.home' },
         { href: '/services', i18n: 'nav.services' },
         { href: '/toolkit', i18n: 'nav.toolkit' },
+        { href: '/forum', i18n: 'nav.forum' },
         { href: '/sm', i18n: 'nav.sm' },
         { href: '/contact-us', i18n: 'nav.contact' },
     ];
