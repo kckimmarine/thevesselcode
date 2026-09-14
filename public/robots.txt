@@ -3,6 +3,8 @@ Allow: /sitemap.xml
 Allow: /sitemap-core.xml
 Allow: /sitemap-store-1.xml
 Allow: /sitemap-store-2.xml
+Allow: /sitemap-store-3.xml
+Allow: /sitemap-store-4.xml
 Allow: /data/plates/
 Allow: /store/
 Allow: /toolkit
@@ -14,3 +16,5 @@ Sitemap: https://www.thevesselcode.com/sitemap.xml
 Sitemap: https://www.thevesselcode.com/sitemap-core.xml
 Sitemap: https://www.thevesselcode.com/sitemap-store-1.xml
 Sitemap: https://www.thevesselcode.com/sitemap-store-2.xml
+Sitemap: https://www.thevesselcode.com/sitemap-store-3.xml
+Sitemap: https://www.thevesselcode.com/sitemap-store-4.xml

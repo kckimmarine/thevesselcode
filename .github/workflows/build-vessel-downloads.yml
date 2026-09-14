@@ -6,7 +6,7 @@ on:
     branches: [master]
     paths:
       - '.github/workflows/build-vessel-downloads.yml'
-      - 'package.json'
+      # Omit package.json — marketing/scripts-only edits must not trigger Windows installer CI.
       - 'package-lock.json'
       - 'electron/**'
       - 'scripts/build-one-sku.mjs'

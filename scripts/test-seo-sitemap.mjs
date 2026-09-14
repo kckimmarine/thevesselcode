@@ -134,7 +134,30 @@ if (seoCount > 10_000) {
     if (existsSync(storeChunk2Path)) {
         const storeChunk2 = readFileSync(storeChunk2Path, 'utf8');
         assertValidXml('sitemap-store-2.xml', storeChunk2);
-        check('store chunk 2 url count', (storeChunk2.match(/<loc>/g) || []).length === seoCount - 10_000);
+        const chunk2Count = Math.min(10_000, Math.max(0, seoCount - 10_000));
+        check('store chunk 2 url count', (storeChunk2.match(/<loc>/g) || []).length === chunk2Count);
+    }
+}
+if (seoCount > 20_000) {
+    check('sitemap index references store chunk 3', sitemapIndex.includes('sitemap-store-3.xml'));
+    const storeChunk3Path = join(root, 'public', 'sitemap-store-3.xml');
+    check('sitemap-store-3.xml exists', existsSync(storeChunk3Path));
+    if (existsSync(storeChunk3Path)) {
+        const storeChunk3 = readFileSync(storeChunk3Path, 'utf8');
+        assertValidXml('sitemap-store-3.xml', storeChunk3);
+        const chunk3Count = Math.min(10_000, Math.max(0, seoCount - 20_000));
+        check('store chunk 3 url count', (storeChunk3.match(/<loc>/g) || []).length === chunk3Count);
+    }
+}
+if (seoCount > 30_000) {
+    check('sitemap index references store chunk 4', sitemapIndex.includes('sitemap-store-4.xml'));
+    const storeChunk4Path = join(root, 'public', 'sitemap-store-4.xml');
+    check('sitemap-store-4.xml exists', existsSync(storeChunk4Path));
+    if (existsSync(storeChunk4Path)) {
+        const storeChunk4 = readFileSync(storeChunk4Path, 'utf8');
+        assertValidXml('sitemap-store-4.xml', storeChunk4);
+        const chunk4Count = Math.min(10_000, Math.max(0, seoCount - 30_000));
+        check('store chunk 4 url count', (storeChunk4.match(/<loc>/g) || []).length === chunk4Count);
     }
 }
 
@@ -148,8 +171,14 @@ const storeChunk = readFileSync(join(root, 'public', 'sitemap-store-1.xml'), 'ut
 assertValidXml('sitemap-store-1.xml', storeChunk);
 const storeChunk2Path = join(root, 'public', 'sitemap-store-2.xml');
 const storeChunk2 = existsSync(storeChunk2Path) ? readFileSync(storeChunk2Path, 'utf8') : '';
+const storeChunk3Path = join(root, 'public', 'sitemap-store-3.xml');
+const storeChunk3 = existsSync(storeChunk3Path) ? readFileSync(storeChunk3Path, 'utf8') : '';
+const storeChunk4Path = join(root, 'public', 'sitemap-store-4.xml');
+const storeChunk4 = existsSync(storeChunk4Path) ? readFileSync(storeChunk4Path, 'utf8') : '';
 const testCodeInSitemap = storeChunk.includes(`/store/${TEST_CODE}`)
-    || storeChunk2.includes(`/store/${TEST_CODE}`);
+    || storeChunk2.includes(`/store/${TEST_CODE}`)
+    || storeChunk3.includes(`/store/${TEST_CODE}`)
+    || storeChunk4.includes(`/store/${TEST_CODE}`);
 check('store sitemap includes test code', testCodeInSitemap);
 check('store chunk uses www origin', storeChunk.includes('<loc>https://www.thevesselcode.com/store/'));
 check('robots references www sitemap', readFileSync(join(root, 'public', 'robots.txt'), 'utf8').includes('Sitemap: https://www.thevesselcode.com/sitemap.xml'));
