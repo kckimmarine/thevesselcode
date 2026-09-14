@@ -11,7 +11,7 @@ import { fileURLToPath } from 'url';
 import JSZip from 'jszip';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
-const VESSEL = 'INCHEON CHEMI';
+const VESSEL = 'ABC Voyager';
 
 function loadModule(relPath, exportName) {
     const code = fs.readFileSync(path.join(ROOT, relPath), 'utf8')
@@ -81,7 +81,7 @@ function makeConfirmedReq(dept, suffix) {
     const id = `req-${dept.toLowerCase()}-${suffix}`;
     return {
         id,
-        req_no: `REQ-INCHEON-20260825-${suffix}`,
+        req_no: `REQ-ABC-VOYAGER-20260825-${suffix}`,
         vessel_id: VESSEL,
         department: dept,
         status: 'DRAFT',
@@ -380,7 +380,7 @@ async function runNegativeTests() {
 // ── Bootstrap ────────────────────────────────────────────────────────
 global.JSZip = JSZip;
 global.TVC_License = { assertExportImport: () => ({ ok: true }) };
-global.TVC_Sync = { licensedCompanyId: () => 'DAEMYUNG' };
+global.TVC_Sync = { licensedCompanyId: () => 'ABC_SHIPPING' };
 global.localStorage = (() => {
     const s = {};
     return {

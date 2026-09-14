@@ -10,7 +10,7 @@ const TVC_AdminRegistry = (function () {
     const PILOT_COMPANY_ID = 'TVC';
     const PILOT_VESSEL_ID = 'ABC Voyager';
     /** Removed from admin UI — stripped on load (incl. stale localStorage cache). */
-    const DEPRECATED_COMPANY_IDS = new Set(['DAEMYUNG', 'TVC_LAB']);
+    const DEPRECATED_COMPANY_IDS = new Set(['ABC_SHIPPING', 'TVC_LAB']);
     /** Pilot registry — template for Add company / Add vessel forms. */
     const REGISTRY_REFERENCE = Object.freeze({
         label: 'TVC pilot',

@@ -1,4 +1,4 @@
--- Migrate pilot identity: DAEMYUNG / INCHEON CHEMI → TVC / TVC No1
+-- Migrate pilot identity: ABC_SHIPPING / ABC Voyager → TVC / TVC No1
 -- Run once in Supabase SQL Editor after pilot rename deploy.
 
 INSERT INTO companies (id, name) VALUES ('TVC', 'The Vessel Code')
@@ -14,8 +14,8 @@ ON CONFLICT (id) DO UPDATE SET
 
 -- Repoint existing sync packages (if any were uploaded under old IDs)
 UPDATE sync_packages SET company_id = 'TVC', vessel_id = 'TVC No1'
-WHERE company_id = 'DAEMYUNG' AND vessel_id = 'INCHEON CHEMI';
+WHERE company_id = 'ABC_SHIPPING' AND vessel_id = 'ABC Voyager';
 
 -- Optional cleanup (only when no packages reference old vessel)
-DELETE FROM vessels WHERE id = 'INCHEON CHEMI';
-DELETE FROM companies WHERE id = 'DAEMYUNG';
+DELETE FROM vessels WHERE id = 'ABC Voyager';
+DELETE FROM companies WHERE id = 'ABC_SHIPPING';

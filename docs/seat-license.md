@@ -4,7 +4,7 @@ Packaged TVC-PMS setups do **not** include a runnable `license.json`. After inst
 
 **Exception:** **`ADMIN_TVC` (Admin Mode)** — no seat license. Install and run with login `tvc` / `0000` only.
 
-## Flow (INCHEON CHEMI / vessel PC)
+## Flow (ABC Voyager / vessel PC)
 
 1. Install the correct SKU Setup on the **designated ship PC only** (do not redistribute Setup).
 2. On first launch, activation screen shows **Machine ID**.

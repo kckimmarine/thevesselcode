@@ -1,5 +1,6 @@
 /** Pilot SOP — IndexedDB / sync helpers for Playwright */
 const JSZip = require('jszip');
+const { expect } = require('@playwright/test');
 const { dismissAllDialogs, closeTopModal } = require('./app');
 
 const DEMO_VESSEL_ID = 'ABC Voyager';
@@ -123,7 +124,7 @@ async function captainExportShipToSm(page, dept, reportId) {
   }, { d: dept, rid: reportId });
 }
 
-async function smImportZipBytes(page, dept, bytes, filename) {
+async function importSyncZipBytes(page, dept, bytes, filename) {
   return page.evaluate(async ({ d, arr, name }) => {
     const user = TVC_Auth.getCurrentUser();
     const u8 = new Uint8Array(arr);
@@ -135,6 +136,76 @@ async function smImportZipBytes(page, dept, bytes, filename) {
       reportCount: (payload?.daily_work_reports || []).length,
     };
   }, { d: dept, arr: bytes, name: filename });
+}
+
+async function smExportFeedbackToShip(page, dept, reportId) {
+  return page.evaluate(async ({ d, rid }) => {
+    const user = TVC_Auth.getCurrentUser();
+    const built = await TVC_Sync.buildExportZipBlob(user, 'SM_TO_SHIP', d, {
+      monthlyExport: true,
+      reportIds: [rid],
+    });
+    const ab = await built.blob.arrayBuffer();
+    return {
+      bytes: Array.from(new Uint8Array(ab)),
+      filename: built.filename,
+      direction: built.payload?.export_meta?.direction,
+      record_count: built.record_count,
+    };
+  }, { d: dept, rid: reportId });
+}
+
+async function openWorkReportHistoryView(page, reportId) {
+  await page.evaluate(async (rid) => {
+    const rep = await TVC_DB.get('daily_work_reports', rid);
+    if (!rep) throw new Error('report missing');
+    const jobId = rep.maintenance_job_id
+      || rep.job_items?.[0]?.maintenance_job_id
+      || null;
+    const jobCode = rep.job_code || rep.job_items?.[0]?.job_code;
+    let jid = jobId;
+    if (!jid && jobCode) {
+      const jobs = await TVC_DB.getAll('maintenance_jobs');
+      const job = jobs.find((j) => j.job_code === jobCode);
+      jid = job?.id;
+    }
+    if (!jid) throw new Error('job id missing for history open');
+    await TVC_App.openWorkReportFromHistory(rid, jid, { fromHistory: true, view: true });
+  }, reportId);
+}
+
+async function assertVesselWorkReportUiLocked(page) {
+  const modal = page.locator('#workReportModal:not(.hidden)');
+  await modal.waitFor({ state: 'visible', timeout: 15_000 });
+  const modify = modal.locator('button', { hasText: 'Modify' }).first();
+  if (await modify.count()) {
+    await modify.waitFor({ state: 'visible', timeout: 5_000 });
+    expect(await modify.isDisabled()).toBeTruthy();
+  }
+  const save = modal.locator('button.btn-green', { hasText: 'Save' });
+  if (await save.count()) expect(await save.isHidden().catch(() => true) || await save.isDisabled()).toBeTruthy();
+
+  const page2 = modal.locator('.wr-pagetab', { hasText: 'Page 2' });
+  if (await page2.isVisible().catch(() => false)) {
+    await page2.click();
+    await page.waitForTimeout(350);
+    const qtyInputs = modal.locator('.spare-consume-qty-input');
+    const n = await qtyInputs.count();
+    for (let i = 0; i < n; i++) {
+      const input = qtyInputs.nth(i);
+      if (await input.isVisible().catch(() => false)) {
+        expect(await input.isDisabled()).toBeTruthy();
+      }
+    }
+    const checks = modal.locator('#wrSpareListScroll .spare-row-chk');
+    const c = await checks.count();
+    for (let i = 0; i < Math.min(c, 5); i++) {
+      const chk = checks.nth(i);
+      if (await chk.isVisible().catch(() => false)) {
+        expect(await chk.isDisabled()).toBeTruthy();
+      }
+    }
+  }
 }
 
 async function parseZipPayload(bytes) {
@@ -276,7 +347,10 @@ module.exports = {
   approveReport,
   canEngineerEditReport,
   captainExportShipToSm,
-  smImportZipBytes,
+  importSyncZipBytes,
+  smExportFeedbackToShip,
+  openWorkReportHistoryView,
+  assertVesselWorkReportUiLocked,
   parseZipPayload,
   saveOpenWorkReportWithSpare,
   pickWrSpareQtyInput,

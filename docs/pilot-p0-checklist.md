@@ -1,6 +1,6 @@
 # Pilot P0 Checklist — Vessel 3식 + HQ Menu ZIP
 
-Target: **INCHEON CHEMI** (Master / Engine / Deck) + **Daemyung HQ**  
+Target: **ABC Voyager** (Master / Engine / Deck) + **ABC Shipping HQ**  
 Transfer: offline ZIP only  
 License: SKU + PC bind (`npm run dist` packages)
 
@@ -16,7 +16,7 @@ License: SKU + PC bind (`npm run dist` packages)
 
 - [ ] Login with allowed accounts only (Engine: engineer/ce · Deck: officer/co)
 - [ ] Menu → Export Monthly / Defect / Postpone (as applicable)
-- [ ] Export ZIP filename contains `INCHEON CHEMI`
+- [ ] Export ZIP filename contains `ABC Voyager`
 - [ ] Import HQ feedback ZIP of matching vessel succeeds
 - [ ] Import ZIP for another vesselId fails
 
@@ -28,7 +28,7 @@ License: SKU + PC bind (`npm run dist` packages)
 
 ## HQ Office
 
-- [ ] Select fleet vessel **INCHEON CHEMI**
+- [ ] Select fleet vessel **ABC Voyager**
 - [ ] Import ship Monthly / Defect / Postpone ZIPs
 - [ ] Approve / reply paths used in Pilot SOP
 - [ ] Export HQ feedback ZIPs back to ship

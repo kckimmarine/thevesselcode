@@ -52,16 +52,17 @@
 | A 선내 Engine 정비 + Spare **2** + `stock_applied_at` | 저장 즉시 재고 −2 | **`e2e/pilot-sop-scenarios.spec.js`** Step A |
 | B CE Confirm + Captain Engine Confirm 거부 | CONFIRMED + RBAC | 동일 스펙 Step B |
 | C Captain **SHIP_TO_SM** ZIP + JSON 무결성 | Export 검증 | 동일 스펙 Step C (`jszip` + report/spare diff) |
-| D SM Import → **APPROVED** + 선박 편집 락 | 최종 락 | 동일 스펙 Step D (`abc shipping`) |
+| D SM Import → **APPROVED** + SM **SM_TO_SHIP** feedback ZIP | 최종 락 + 역방향 패킷 | 동일 스펙 Step D |
+| E Captain **SM_TO_SHIP** Import → Engineer UI lock | 내륙 루프 완결 | 동일 스펙 Step E (Captain ingest, Engineer Modify/spare disabled) |
 
 ```bash
 npx playwright test e2e/pilot-sop-scenarios.spec.js
 npm run test:e2e
 ```
 
-**Node roundtrip:** `npm run test-xfer-status-roundtrip` — Monthly 체인은 `SM_SUPERINTENDENT` + `SHIP_TO_SM` / `SM_TO_SHIP` (legacy `HQ_SUPERVISOR` + `HQ_TO_SHIP`는 `EXPORT_SHIP_SYNC` 거부가 **정상**). Postpone HQ Reply ZIP 2건·소스 문자열 1건은 별도 추적.
+**Node roundtrip:** `npm run test-xfer-status-roundtrip` — **52 passed, 0 failed** (`POSTPONE_REPLY_SM_TO_SHIP`, Captain hub `Submitted` postpone export 소스 검증).
 
-**회귀:** `pilot-sop-scenarios` **1 passed** (~21s). 데모 호선 `alignDemoVesselScope` → **`ABC Voyager`** (SM fleet vs IDB meta 일치).
+**회귀:** `pilot-sop-scenarios` **1 passed** (~15s). Step A는 Page 2 **All Groups → scroll → checkbox → qty → Save** (UI only). 데모 호선 `alignDemoVesselScope` → **`ABC Voyager`**.
 
 ---
 
@@ -100,7 +101,21 @@ npm run verify-all                   # license 빌드 artifact 필요 시 dist/l
 
 ---
 
+## 코드베이스 정화 (legacy pilot identifiers)
+
+| 항목 | 조치 |
+| --- | --- |
+| 구 domestic prototype 명칭 | 전역 제거 — 데모는 **ABC Shipping** / `ABC_SHIPPING`, 호선 **ABC Voyager** (IMO **9876543**) |
+| IndexedDB 일회성 마이그레이션 | `js/services/legacyMigrationIds.js` + `TVC_DataPurge.migratePrototypePilotMasterOnce` (저장소에 남은 구 `vessel_id`만 char-code 키로 매칭) |
+| 배포 SQL | `deploy/supabase-migrate-legacy-pilot-to-tvc.sql`, `deploy/supabase-sync-pilot-abc-voyager.sql` |
+| 검증 | Legacy pilot label grep (removed domestic names) → **0건**; `npm run verify-rbac` · `npm run test-xfer-status-roundtrip` · `npx playwright test e2e/pilot-sop-scenarios.spec.js` |
+
+**Dead-code audit (2026-09-14):** `scripts/codemod-hq-to-sm*.mjs`, `demo-rbac.js`, one-off migrate scripts는 `package.json` / `index.html` 미참조 — **유지** (운영·SEO·IMPA 도구와 분리된 CLI). 핵심 런타임은 `js/core/`, `js/ui/`, `js/services/`, `e2e/`만 ship path.
+
+---
+
 ## 변경 이력
 
 - **2026-09-14:** Defect 첨부 이미지 압축 SOP 정합 (`TVC_Attachments.prepareUploadFile`). 본 문서 최초 작성.
-- **2026-09-14:** `e2e/pilot-sop-scenarios.spec.js` — SOP A–D 전 구간 E2E. `test-xfer-status-roundtrip` SM 역할/direction 수정.
+- **2026-09-14:** `e2e/pilot-sop-scenarios.spec.js` — SOP A–E 전 구간 E2E. `test-xfer-status-roundtrip` SM 역할/direction 수정.
+- **2026-09-14:** Legacy pilot 문자열 정화 · `legacyMigrationIds` · deploy SQL rename · IMO 9876543.

@@ -1,6 +1,6 @@
 # TVC-PMS Pilot — 1페이지 테스트 시나리오
 
-**선박:** INCHEON CHEMI · **회사:** DAEMYUNG · **비밀번호:** `0000` · **버전:** v1.0.0 (로그인 화면 footer)
+**선박:** ABC Voyager · **회사:** ABC_SHIPPING · **비밀번호:** `0000` · **버전:** v1.0.0 (로그인 화면 footer)
 
 ---
 
@@ -75,7 +75,7 @@
 
 | # | 작업 | 기대 결과 |
 |---|------|-----------|
-| D1 | HQ → Ship List **INCHEON CHEMI** 선택 | 선박 필터 적용 |
+| D1 | HQ → Ship List **ABC Voyager** 선택 | 선박 필터 적용 |
 | D2 | Requisition History / Quotation Export | Excel 다운로드 |
 | D3 | SPARE Master Import (Engine 수정본) | Import 완료 + relink 안내 |
 

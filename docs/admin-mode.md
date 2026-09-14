@@ -63,7 +63,7 @@ thevesselcode-pms\
   admin\
     README.md
     companies\
-      DAEMYUNG\
+      ABC_SHIPPING\
         company.json
         vessels\<VESSEL_ID>\vessel.json
     releases\<version>\     → Setup / App Update ZIP archive (optional)

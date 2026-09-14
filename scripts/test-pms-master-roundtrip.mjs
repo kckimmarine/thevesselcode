@@ -100,7 +100,7 @@ function createMockDb(seed) {
         job_bom: new Map(),
         audit_logs: new Map(),
         meta: new Map(Object.entries({
-            vessel_id: seed.meta?.vessel_id || 'INCHEON CHEMI',
+            vessel_id: seed.meta?.vessel_id || 'ABC Voyager',
         })),
     };
     let auditSeq = 1;
@@ -158,7 +158,7 @@ function loadPmsMasterExcel() {
     return globalThis.__TVC_PmsMasterExcel;
 }
 
-function loadTvcPms(scope = 'SHIP', vesselId = 'INCHEON CHEMI') {
+function loadTvcPms(scope = 'SHIP', vesselId = 'ABC Voyager') {
     const storage = {};
     global.localStorage = {
         getItem(k) { return storage[k] ?? null; },
@@ -226,7 +226,7 @@ async function exportEngineWorkbook(Pms, db) {
     return Pms.exportToWorkbook({
         jobs: Pms.renumberJobsForExport(jobs),
         groups,
-        vesselId: 'INCHEON CHEMI',
+        vesselId: 'ABC Voyager',
         department: 'ENGINE',
     });
 }
@@ -237,7 +237,7 @@ async function exportDeckWorkbook(Pms, db) {
     return Pms.exportToWorkbook({
         jobs: Pms.renumberJobsForExport(jobs),
         groups,
-        vesselId: 'INCHEON CHEMI',
+        vesselId: 'ABC Voyager',
         department: 'DECK',
     });
 }
@@ -369,7 +369,7 @@ async function main() {
             pic: '1/E',
         };
         const db = createMockDb({ maintenance_jobs: [localJob], maintenance_groups: [], ship_components: [] });
-        const wb = await Pms.exportToWorkbook({ jobs: [], groups: [], vesselId: 'INCHEON CHEMI', department: 'ENGINE' });
+        const wb = await Pms.exportToWorkbook({ jobs: [], groups: [], vesselId: 'ABC Voyager', department: 'ENGINE' });
         const wsJ = wb.getWorksheet('Jobs');
         const rowNo = 6;
         setJobCell(wsJ, rowNo, {
@@ -668,7 +668,7 @@ async function main() {
             await db.put('maintenance_jobs', {
                 id: `eng-29-00${i}`,
                 department: 'ENGINE',
-                vessel_id: 'INCHEON CHEMI',
+                vessel_id: 'ABC Voyager',
                 group: moorLabel,
                 job_code: `29-00${i}`,
                 job_detail: i === 1 ? 'INSPECTION' : `DETAIL-${i}`,
@@ -679,7 +679,7 @@ async function main() {
         await db.put('maintenance_groups', {
             id: 'grp-29-moor',
             department: 'ENGINE',
-            vessel_id: 'INCHEON CHEMI',
+            vessel_id: 'ABC Voyager',
             label: moorLabel,
             item_sort1: null,
         });
@@ -725,7 +725,7 @@ async function main() {
         await db.put('maintenance_groups', {
             id: 'deck-29-legacy',
             department: 'DECK',
-            vessel_id: 'INCHEON CHEMI',
+            vessel_id: 'ABC Voyager',
             label: '29. MOORING WINCH & WINDLASS and RELATED AUX. MACHINERY / SYSTEM',
         });
         const jobs = await db.getAll('maintenance_jobs');
@@ -752,7 +752,7 @@ async function main() {
         await db.put('maintenance_jobs', {
             id: jobId,
             department: 'ENGINE',
-            vessel_id: 'INCHEON CHEMI',
+            vessel_id: 'ABC Voyager',
             group: moorLabel,
             job_code: '__tvc_62649d7ef15c8',
             detached_from_code: '29-001',
@@ -798,7 +798,7 @@ async function main() {
         await db.put('maintenance_jobs', {
             id: jobId,
             department: 'ENGINE',
-            vessel_id: 'INCHEON CHEMI',
+            vessel_id: 'ABC Voyager',
             group: moorLabel,
             job_code: '29-001',
             job_detail: 'INSPECTION',
@@ -841,7 +841,7 @@ async function main() {
         await db.put('maintenance_jobs', {
             id: sharedJobId,
             department: 'ENGINE',
-            vessel_id: 'INCHEON CHEMI',
+            vessel_id: 'ABC Voyager',
             group: scrubLabel,
             job_code: '__tvc_62649d7ef95a',
             detached_from_code: '29-001',
@@ -885,7 +885,7 @@ async function main() {
         await db.put('maintenance_jobs', {
             id: 'moor-stub-29-001',
             department: 'ENGINE',
-            vessel_id: 'INCHEON CHEMI',
+            vessel_id: 'ABC Voyager',
             group: moorLabel,
             job_code: '29-001',
             job_detail: 'Old mooring',
@@ -895,7 +895,7 @@ async function main() {
         await db.put('maintenance_jobs', {
             id: detachedId,
             department: 'ENGINE',
-            vessel_id: 'INCHEON CHEMI',
+            vessel_id: 'ABC Voyager',
             group: moorLabel,
             job_code: '__tvc_62649d7ef15c8',
             detached_from_code: '29-001',
@@ -947,17 +947,17 @@ async function main() {
     await runScenario('20) Group 29 SCRUBBER → ECR LAPTOP (008 handoff) + UI group 30 kept', async () => {
         const db = createMockDb(seed);
         await db.put('maintenance_groups', {
-            id: 'grp-scrub', department: 'ENGINE', vessel_id: 'INCHEON CHEMI', label: '29. SCRUBBER',
+            id: 'grp-scrub', department: 'ENGINE', vessel_id: 'ABC Voyager', label: '29. SCRUBBER',
         });
         await db.put('maintenance_groups', {
-            id: 'grp-rpm-ui', department: 'ENGINE', vessel_id: 'INCHEON CHEMI', label: '30. RPM INDICATOR',
+            id: 'grp-rpm-ui', department: 'ENGINE', vessel_id: 'ABC Voyager', label: '30. RPM INDICATOR',
         });
         await db.put('maintenance_jobs', {
-            id: 'scrub-1', department: 'ENGINE', vessel_id: 'INCHEON CHEMI',
+            id: 'scrub-1', department: 'ENGINE', vessel_id: 'ABC Voyager',
             group: '29. SCRUBBER', job_code: '29-001', job_detail: 'Inspection', period: 1, unit: 'M',
         });
         await db.put('maintenance_jobs', {
-            id: 'scrub-2', department: 'ENGINE', vessel_id: 'INCHEON CHEMI',
+            id: 'scrub-2', department: 'ENGINE', vessel_id: 'ABC Voyager',
             group: '29. SCRUBBER', job_code: '29-002', job_detail: 'Inspection', period: 1, unit: 'M',
         });
         const { after } = await exportImportCycle(Pms, db, CE_USER, async (wb) => {
@@ -1039,7 +1039,7 @@ async function main() {
         await db.put('maintenance_jobs', {
             id: 'deck-29-001',
             department: 'DECK',
-            vessel_id: 'INCHEON CHEMI',
+            vessel_id: 'ABC Voyager',
             group: '29. MOORING WINCH & WINDLASS and RELATED AUX. MACHINERY / SYSTEM',
             job_code: '29-001',
             job_detail: 'DECK mooring',
@@ -1049,7 +1049,7 @@ async function main() {
         await db.put('maintenance_jobs', {
             id: 'eng-29-001',
             department: 'ENGINE',
-            vessel_id: 'INCHEON CHEMI',
+            vessel_id: 'ABC Voyager',
             group: '29. ECR LAPTOP',
             job_code: '29-001',
             job_detail: 'ECR',

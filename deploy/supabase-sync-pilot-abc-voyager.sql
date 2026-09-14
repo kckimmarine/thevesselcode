@@ -1,3 +1,3 @@
 -- DEPRECATED filename — use deploy/supabase-sync-pilot-tvc-no1.sql
 -- Pilot: company TVC, vessel TVC No1
--- Existing DB migration: deploy/supabase-migrate-daemyung-to-tvc.sql
+-- Existing DB migration: deploy/supabase-migrate-legacy-pilot-to-tvc.sql

@@ -1,5 +1,5 @@
 /**
- * INCHEON CHEMI — PMS Master Excel sample generator (CLI)
+ * ABC Voyager — PMS Master Excel sample generator (CLI)
  * Matches TVC-PMS V.1 format: Group NO/NAME · Jobs by DEPARTMENT + JOB CODE
  *
  * Usage: npm run export-pms-master-sample
@@ -12,7 +12,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
 const SEED_PATH = path.join(ROOT, 'data', 'pms-unified.json');
-const OUT_PATH = path.join(ROOT, 'data', 'INCHEON CHEMI_PMS_MASTER_SAMPLE.xlsx');
+const OUT_PATH = path.join(ROOT, 'data', 'ABC Voyager_PMS_MASTER_SAMPLE.xlsx');
 
 const NAVY = 'FF1A365D';
 const GREEN = 'FF217346';
@@ -170,7 +170,7 @@ const EQUIPMENT_SAMPLES = [
 async function main() {
     const data = JSON.parse(readFileSync(SEED_PATH, 'utf8'));
     const jobs = renumberJobsForExport(data.maintenance_jobs || []);
-    const vesselId = data.meta?.vessel_id || 'INCHEON CHEMI';
+    const vesselId = data.meta?.vessel_id || 'ABC Voyager';
 
     const groupCounts = new Map();
     jobs.forEach(j => {

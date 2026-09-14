@@ -2,7 +2,7 @@
 
 THE VESSEL CODE pilot: **real Setup install**, **seat license**, **offline Export/Import** between two homes, **bug report → App Update → re-test**.
 
-Pilot vessel: **INCHEON CHEMI** · Company: **DAEMYUNG** · Password: **`0000`**
+Pilot vessel: **ABC Voyager** · Company: **ABC_SHIPPING** · Password: **`0000`**
 
 ---
 
@@ -71,7 +71,7 @@ node scripts/issue-license.mjs --request "path\to\machine-request.json" --out "p
 
 모든 Sync는 **카톡 / 메일 / USB** 로 ZIP만 주고받음 (인터넷 API 없음).
 
-### 데이터 흐름 (INCHEON CHEMI 1척 가정)
+### 데이터 흐름 (ABC Voyager 1척 가정)
 
 ```text
 [동욱 Deck]  ──station ZIP──►  [동욱 Master]
@@ -84,7 +84,7 @@ node scripts/issue-license.mjs --request "path\to\machine-request.json" --out "p
 
 1. Actual Plan → Work Report 작성·승인 (officer → co/captain 역할은 Deck 내에서)
 2. Menu → **Data Export & Import** → Export → **Monthly** (또는 station merge용 Export)
-3. ZIP 파일명에 `INCHEON CHEMI` / `DECK` 포함 확인
+3. ZIP 파일명에 `ABC Voyager` / `DECK` 포함 확인
 
 ### 동욱 — Master
 
@@ -99,7 +99,7 @@ node scripts/issue-license.mjs --request "path\to\machine-request.json" --out "p
 
 ### 정호 — HQ
 
-1. Ship List에서 **INCHEON CHEMI** 선택
+1. Ship List에서 **ABC Voyager** 선택
 2. Import → 동욱 Master가 보낸 ZIP
 3. Work History·승인·Defect/Postpone 등 HQ 화면 확인
 4. Export → **HQ feedback** ZIP → **동욱 Master에게 전송**

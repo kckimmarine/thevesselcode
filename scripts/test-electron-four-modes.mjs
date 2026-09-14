@@ -30,7 +30,7 @@ const USERS = {
 const MODES = [
     {
         sku: 'HQ_OFFICE',
-        title: 'HQ Mode (Daemyung HQ Office)',
+        title: 'HQ Mode (ABC Shipping HQ Office)',
         userKey: 'hq',
         loginMode: null,
         windowSuffix: 'HQ',

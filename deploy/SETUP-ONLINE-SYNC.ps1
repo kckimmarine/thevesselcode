@@ -20,7 +20,7 @@ Write-Host '  SQL Editor -> paste and run:'
 Write-Host "  deploy\supabase-sync-pilot-tvc-no1.sql"
 Write-Host '  Ingest tables (HQ/Admin cloud DB): deploy\supabase-sync-ingest.sql'
 Write-Host '  Or: npm run setup-supabase-ingest'
-Write-Host '  Existing DB (was INCHEON CHEMI): deploy\supabase-migrate-daemyung-to-tvc.sql'
+Write-Host '  Existing DB (legacy pilot IDs): deploy\supabase-migrate-legacy-pilot-to-tvc.sql'
 Write-Host ''
 
 Write-Host 'Step 3 — Storage bucket' -ForegroundColor Green

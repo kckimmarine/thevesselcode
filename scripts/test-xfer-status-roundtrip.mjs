@@ -44,7 +44,7 @@ const stores = {
     work_permits: [],
     sync_history: [],
 };
-const meta = { vessel_id: 'INCHEON CHEMI' };
+const meta = { vessel_id: 'ABC Voyager' };
 
 global.TVC_META_KEYS = global.TVC_META_KEYS || { VESSEL_ID: 'vessel_id' };
 global.TVC_DB = {
@@ -94,8 +94,8 @@ global.TVC_FileExport = {
 };
 global.TVC_License = { statusSync: () => ({ enforced: false }), assertExportImport: () => ({ ok: true }) };
 global.TVC_Fleet = {
-    PILOT_VESSEL_ID: 'INCHEON CHEMI',
-    getSelectedId: () => 'INCHEON CHEMI',
+    PILOT_VESSEL_ID: 'ABC Voyager',
+    getSelectedId: () => 'ABC Voyager',
     resolveById: (id) => ({ name: id }),
 };
 global.TVC_App = { getAppDepartment: () => 'ENGINE' };
@@ -120,11 +120,11 @@ loadModule('js/services/hubRelay.js', 'TVC_HubRelay');
 const Sync = loadModule('js/services/sync.js', 'TVC_Sync');
 const Postpone = loadModule('js/services/postponeSync.js', 'TVC_PostponeSync');
 
-const CE = { username: 'ce', role: 'SHIP_CHIEF', department: 'ENGINE', station: 'ECR', account_type: 'SHIP', vessel_id: 'INCHEON CHEMI' };
-const CO = { username: 'co', role: 'SHIP_CAPTAIN', department: 'DECK', station: 'CCR', account_type: 'SHIP', vessel_id: 'INCHEON CHEMI' };
-const CAPTAIN = { username: 'captain', role: 'SHIP_CAPTAIN', department: null, station: 'CAPTAIN', account_type: 'SHIP', vessel_id: 'INCHEON CHEMI' };
-const HQ = { username: 'abc shipping', role: 'SM_SUPERINTENDENT', department: 'ENGINE', account_type: 'SM', vessel_id: 'INCHEON CHEMI', company_id: 'ABC_SHIPPING' };
-const HQ_DECK = { username: 'abc shipping', role: 'SM_SUPERINTENDENT', department: 'DECK', account_type: 'SM', vessel_id: 'INCHEON CHEMI', company_id: 'ABC_SHIPPING' };
+const CE = { username: 'ce', role: 'SHIP_CHIEF', department: 'ENGINE', station: 'ECR', account_type: 'SHIP', vessel_id: 'ABC Voyager' };
+const CO = { username: 'co', role: 'SHIP_CAPTAIN', department: 'DECK', station: 'CCR', account_type: 'SHIP', vessel_id: 'ABC Voyager' };
+const CAPTAIN = { username: 'captain', role: 'SHIP_CAPTAIN', department: null, station: 'CAPTAIN', account_type: 'SHIP', vessel_id: 'ABC Voyager' };
+const HQ = { username: 'abc shipping', role: 'SM_SUPERINTENDENT', department: 'ENGINE', account_type: 'SM', vessel_id: 'ABC Voyager', company_id: 'ABC_SHIPPING' };
+const HQ_DECK = { username: 'abc shipping', role: 'SM_SUPERINTENDENT', department: 'DECK', account_type: 'SM', vessel_id: 'ABC Voyager', company_id: 'ABC_SHIPPING' };
 
 let pass = 0;
 let fail = 0;
@@ -161,7 +161,7 @@ function resetDb(jobs, reports) {
     Object.keys(stores).forEach(k => { stores[k] = []; });
     stores.maintenance_jobs = (jobs || []).map(j => ({ ...j }));
     stores.daily_work_reports = (reports || []).map(r => ({ ...r }));
-    meta.vessel_id = 'INCHEON CHEMI';
+    meta.vessel_id = 'ABC Voyager';
 }
 
 function makeJob(dept, code) {

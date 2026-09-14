@@ -21,7 +21,7 @@
           "vessel_id": "ABC Voyager",
           "name": "ABC Voyager",
           "code": "1",
-          "imo_no": "9999999",
+          "imo_no": "9876543",
           "delivery": "2003-09-18",
           "status": "active",
           "deploy": {
@@ -57,7 +57,7 @@
           "vessel_id": "ABC Voyager",
           "name": "ABC Voyager",
           "code": "1",
-          "imo_no": "9999999",
+          "imo_no": "9876543",
           "delivery": "2003-09-18",
           "status": "active"
         }
