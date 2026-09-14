@@ -30,10 +30,17 @@
         <section id="hero" class="home-hero mkt-hero home-services-hero home-toolkit-hero" aria-labelledby="toolkitHeroTitle">
             <div class="home-section-head">
                 <p class="home-launch-eyebrow" data-i18n="tk.eyebrow">Free · For global seafarers</p>
-                <h1 id="toolkitHeroTitle">Maritime Toolkit</h1>
+                <h1 id="toolkitHeroTitle" data-i18n="tk.hero.title">Maritime Toolkit</h1>
                 <p class="home-section-lead" data-i18n="tk.lead" data-i18n-html>
-                    <strong>15,000+</strong> IMPA codes and calculators in the browser. Vessel ROB &amp; PMS via <a href="/sm">TVC-SM</a> subscription.
+                    <strong>50,000+</strong> marine store specs and calculators in your browser. Onboard ROB &amp; PMS via <a href="/sm">TVC-SM</a>.
                 </p>
+                <ul class="tk-feature-list" aria-label="Toolkit features">
+                    <li data-i18n="tk.feature.impa">50,000+ IMPA store specs &amp; catalog plates — fast search</li>
+                    <li data-i18n="tk.feature.bunker">Bunker volume &amp; weight converter (temperature and density)</li>
+                    <li data-i18n="tk.feature.flange">Pipe valve, flange dimensions and bolt tables</li>
+                    <li data-i18n="tk.feature.lube">Lubricant cross-reference by maker</li>
+                    <li data-i18n="tk.feature.paint">Marine paint cross-reference by maker</li>
+                </ul>
             </div>
         </section>
 
@@ -44,8 +51,8 @@
         </section>
 
         <section class="home-popular-impa toolkit-popular-impa" aria-labelledby="toolkitPopularImpaTitle">
-            <h2 id="toolkitPopularImpaTitle" class="home-popular-impa-title">Popular Marine Stores &amp; Critical Parts</h2>
-            <p class="home-popular-impa-lead">Open indexed spec pages (SEO catalog sheets) for frequently searched IMPA codes.</p>
+            <h2 id="toolkitPopularImpaTitle" class="home-popular-impa-title" data-i18n="tk.popular.title">Popular Marine Stores &amp; Critical Parts</h2>
+            <p class="home-popular-impa-lead" data-i18n="tk.popular.lead">Indexed IMPA spec pages for frequently searched codes.</p>
             <ul class="home-popular-impa-list">
                 <li><a href="/store/232436"><strong>IMPA 232436</strong> Hatch cover tape</a></li>
                 <li><a href="/store/330101"><strong>IMPA 330101</strong> Manila rope 32&nbsp;mm</a></li>
@@ -56,17 +63,17 @@
         </section>
 
         <nav class="store-public-toolkit" id="storePublicToolkit" role="tablist" aria-label="Maritime utility tabs">
-            <button type="button" class="store-tool-chip active" data-tool-tab="catalog" role="tab" aria-selected="true">📦 IMPA Catalog</button>
-            <button type="button" class="store-tool-chip" data-tool-tab="bunker" role="tab" aria-selected="false">⛽ Bunker &amp; Fuel Calc</button>
-            <button type="button" class="store-tool-chip" data-tool-tab="lube" role="tab" aria-selected="false">🛢️ Lub-Oil Cross-Ref</button>
-            <button type="button" class="store-tool-chip" data-tool-tab="paint" role="tab" aria-selected="false">🎨 Paint Cross-Ref</button>
-            <button type="button" class="store-tool-chip" data-tool-tab="engineering" role="tab" aria-selected="false">📐 Flange &amp; Engineering</button>
+            <button type="button" class="store-tool-chip active" data-tool-tab="catalog" role="tab" aria-selected="true" data-i18n="tk.tab.catalog">📦 IMPA Catalog</button>
+            <button type="button" class="store-tool-chip" data-tool-tab="bunker" role="tab" aria-selected="false" data-i18n="tk.tab.bunker">⛽ Bunker &amp; Fuel Calc</button>
+            <button type="button" class="store-tool-chip" data-tool-tab="lube" role="tab" aria-selected="false" data-i18n="tk.tab.lube">🛢️ Lub-Oil Cross-Ref</button>
+            <button type="button" class="store-tool-chip" data-tool-tab="paint" role="tab" aria-selected="false" data-i18n="tk.tab.paint">🎨 Paint Cross-Ref</button>
+            <button type="button" class="store-tool-chip" data-tool-tab="engineering" role="tab" aria-selected="false" data-i18n="tk.tab.engineering">📐 Flange &amp; Engineering</button>
         </nav>
 
         <div class="store-public-panels">
             <section class="store-public-panel store-panel-active" data-tool-panel="catalog" id="storeToolCatalog">
                 <main id="storeMenuBody" class="store-public-main" aria-live="polite">
-                    <p class="store-loading">Loading catalog…</p>
+                    <p class="store-loading" data-i18n="tk.loading">Loading catalog…</p>
                 </main>
             </section>
             <section class="store-public-panel hidden" data-tool-panel="bunker" id="storeToolBunker" aria-label="Bunker and fuel calculator"></section>
@@ -79,8 +86,8 @@
         </div>
     </div>
 
-    <script src="js/marketing-i18n.js?v=20260914-mkt-i18n"></script>
-    <script src="js/marketing-shell.js?v=20260914-mkt-i18n"></script>
+    <script src="js/marketing-i18n.js?v=20260914-i18n-integrity"></script>
+    <script src="js/marketing-shell.js?v=20260914-i18n-integrity"></script>
     <script src="js/core/schema.js?v=20260906-plate-pipeline"></script>
     <script src="js/core/db.js?v=20260906-plate-pipeline"></script>
     <script src="js/ui/virtualList.js?v=20260723-readability"></script>

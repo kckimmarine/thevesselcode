@@ -46,7 +46,7 @@
                 <img src="${LOGO}" alt="" width="44" height="44" draggable="false">
                 <span class="home-brand-text">
                     <span class="home-brand-name">THE VESSEL CODE</span>
-                    <span class="home-brand-tag">Engineering · Operations · Economics</span>
+                    <span class="home-brand-tag" data-i18n="nav.brand.tag">Engineering · Operations · Open maritime hub</span>
                 </span>
             </a>
             <div class="mkt-topbar-actions">

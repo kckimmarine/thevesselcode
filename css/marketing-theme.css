@@ -648,6 +648,32 @@ body.mkt-lang-en .sm-hero-en {
     font-weight: 600;
 }
 
+.sm-hero-tagline {
+    margin: 0 0 10px;
+    font-size: 1.05rem;
+    color: var(--home-text, #f8fafc);
+    line-height: 1.45;
+}
+
+.sm-hero-approval,
+.sm-philosophy {
+    margin: 10px 0 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+.tk-feature-list {
+    margin: 14px 0 0;
+    padding-left: 1.1rem;
+    color: var(--home-muted, #94a3b8);
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+.tk-feature-list li {
+    margin-bottom: 6px;
+}
+
 @media (min-width: 960px) {
     .home-community-grid {
         grid-template-columns: repeat(4, 1fr);
