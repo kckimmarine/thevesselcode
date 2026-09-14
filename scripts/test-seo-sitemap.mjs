@@ -134,7 +134,19 @@ if (seoCount > 10_000) {
     if (existsSync(storeChunk2Path)) {
         const storeChunk2 = readFileSync(storeChunk2Path, 'utf8');
         assertValidXml('sitemap-store-2.xml', storeChunk2);
-        check('store chunk 2 url count', (storeChunk2.match(/<loc>/g) || []).length === seoCount - 10_000);
+        const chunk2Count = Math.min(10_000, Math.max(0, seoCount - 10_000));
+        check('store chunk 2 url count', (storeChunk2.match(/<loc>/g) || []).length === chunk2Count);
+    }
+}
+if (seoCount > 20_000) {
+    check('sitemap index references store chunk 3', sitemapIndex.includes('sitemap-store-3.xml'));
+    const storeChunk3Path = join(root, 'public', 'sitemap-store-3.xml');
+    check('sitemap-store-3.xml exists', existsSync(storeChunk3Path));
+    if (existsSync(storeChunk3Path)) {
+        const storeChunk3 = readFileSync(storeChunk3Path, 'utf8');
+        assertValidXml('sitemap-store-3.xml', storeChunk3);
+        const chunk3Count = Math.min(10_000, Math.max(0, seoCount - 20_000));
+        check('store chunk 3 url count', (storeChunk3.match(/<loc>/g) || []).length === chunk3Count);
     }
 }
 
