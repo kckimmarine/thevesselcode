@@ -523,6 +523,84 @@
             en: 'Saved on this device (demo mode — API unavailable).',
             ko: '이 기기에 저장됨 (데모 — API 미연결).',
         },
+
+        'intel.ticker.label': { en: 'Bunker stem', ko: '벙커 시세' },
+        'intel.ticker.updated': { en: 'Indicative · UTC daily', ko: '참고가 · UTC 일일' },
+        'intel.hub.title': {
+            en: 'Market Intelligence & Daily Maritime Briefing',
+            ko: 'Market Intelligence & Daily Maritime Briefing',
+        },
+        'intel.hub.lead': {
+            en: 'Commercial benchmarks for brokers, owners, and bunker desks — paired with a curated energy & shipping news stream.',
+            ko: '브로커·선주·벙커 데스크를 위한 상업 벤치마크와 엄선된 해운·에너지 뉴스.',
+        },
+        'intel.market.title': { en: 'Shipping market benchmarks', ko: '해운 시장 벤치마크' },
+        'intel.news.title': { en: 'Maritime & energy news', ko: '해운·에너지 뉴스' },
+        'intel.table.benchmark': { en: 'Benchmark', ko: '지표' },
+        'intel.table.value': { en: 'Level', ko: '수준' },
+        'intel.table.delta': { en: '24h', ko: '24h' },
+        'intel.market.bdi': { en: 'Baltic Dry Index (BDI)', ko: 'Baltic Dry Index (BDI)' },
+        'intel.market.capesize': { en: 'Capesize avg T/C', ko: 'Capesize 평균 용선료' },
+        'intel.market.panamax': { en: 'Panamax avg T/C', ko: 'Panamax 평균 용선료' },
+        'intel.market.bdti': { en: 'Baltic Dirty Tanker Index', ko: 'BDTI (Dirty Tanker)' },
+        'intel.market.bcti': { en: 'Baltic Clean Tanker Index', ko: 'BCTI (Clean Tanker)' },
+        'intel.market.scfi': { en: 'SCFI composite (container macro)', ko: 'SCFI 종합 (컨테이너 거시)' },
+        'intel.market.container.note': {
+            en: 'Indices are indicative reference levels for desk conversation — not trading advice.',
+            ko: '지표는 데스크 참고용이며 투자·거래 조언이 아닙니다.',
+        },
+        'intel.hook.fleet': {
+            en: 'Managing fleet voyage costs & fuel ROB?',
+            ko: '선대 항차 비용·연료 ROB를 관리하시나요?',
+        },
+        'intel.hook.fleet.cta': { en: '🔒 Connect Real-Time Fleet to TVC-SM', ko: '🔒 TVC-SM 실시간 선대 연동' },
+        'intel.hook.bunker': { en: 'Need fast bunker quality verification?', ko: '벙커 품질 검증이 급하신가요?' },
+        'intel.hook.bunker.cta': { en: 'Launch Table 54B Estimator', ko: 'Table 54B 계산기 실행' },
+        'intel.news.1.headline': {
+            en: 'Singapore VLSFO stem tightens on delayed ARA cargo arrivals',
+            ko: '싱가포르 VLSFO 물량 — ARA 입항 지연으로 타이트',
+        },
+        'intel.news.1.source': { en: 'TVC Market Desk · Bunker', ko: 'TVC Market Desk · Bunker' },
+        'intel.news.1.summary': {
+            en: 'Prompt 0.50%S stems firm as traders cover short positions ahead of month-end stems.',
+            ko: '월말 스템 앞두고 숏 커버링으로 0.50%S 프롬프트 견조.',
+        },
+        'intel.news.2.headline': {
+            en: 'IMO MEPC highlights unified fuel sampling procedures for 2027 enforcement',
+            ko: 'IMO MEPC, 2027 시행 통합 연료 샘플링 절차 강조',
+        },
+        'intel.news.2.source': { en: 'Regulatory brief · IMO', ko: '규제 브리프 · IMO' },
+        'intel.news.2.summary': {
+            en: 'Owners advised to align BDN, seal logs, and onboard test kits with revised guidelines.',
+            ko: '선주는 BDN·봉인 기록·선내 키트를 개정 지침에 맞출 것.',
+        },
+        'intel.news.3.headline': {
+            en: 'Second-hand bulker prices hold as Panamax earnings recover',
+            ko: 'Panamax 수익 회복 — 중고 벌크선 가격 유지',
+        },
+        'intel.news.3.source': { en: 'S&P snapshot · Clarksons-style', ko: 'S&P 스냅샷' },
+        'intel.news.3.summary': {
+            en: 'Five-year eco Panamax candidates see bid interest from Greek and Chinese buyers.',
+            ko: '5년식 eco Panamax에 그리스·중국 매수 관심.',
+        },
+        'intel.news.4.headline': {
+            en: 'US Gulf grain liftings support Atlantic MR tanker repositioning',
+            ko: '미국 곡물 출하 — Atlantic MR 재배치 지원',
+        },
+        'intel.news.4.source': { en: 'Trade flow · Energy', ko: 'Trade flow · Energy' },
+        'intel.news.4.summary': {
+            en: 'Clean product arbitrage opens Houston–Rotterdam MR runs on improved freight.',
+            ko: '운임 개선으로 Houston–Rotterdam MR 클린 제품 차익.',
+        },
+        'intel.news.5.headline': {
+            en: 'Rotterdam HSFO inventory draws on Russian export routing changes',
+            ko: '로테르담 HSFO 재고 감소 — 수출 루트 변화',
+        },
+        'intel.news.5.source': { en: 'TVC Market Desk · Bunker', ko: 'TVC Market Desk · Bunker' },
+        'intel.news.5.summary': {
+            en: '380cSt availability narrows; owners lock stems early for US Gulf ballasters.',
+            ko: '380cSt 가용 축소; US Gulf ballast 선박 조기 스템.',
+        },
     };
 
     function detectDefaultLang() {

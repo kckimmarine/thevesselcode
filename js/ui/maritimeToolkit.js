@@ -3,6 +3,7 @@ const TVC_MaritimeToolkit = (function () {
     const FUEL_TYPES = {
         VLSFO: { label: 'VLSFO (0.50% S)', defaultDensity: 991, alpha: 0.00065 },
         LSMGO: { label: 'LSMGO / MGO', defaultDensity: 850, alpha: 0.00080 },
+        HSFO: { label: 'HSFO 380 (3.5% S)', defaultDensity: 991, alpha: 0.00065 },
     };
 
     const FLANGE_ROWS = [
@@ -153,7 +154,18 @@ const TVC_MaritimeToolkit = (function () {
     function renderBunkerPanel(host) {
         const fuelOptions = Object.entries(FUEL_TYPES).map(([k, v]) =>
             `<option value="${k}">${esc(v.label)}</option>`).join('');
+        const params = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
+        const portHint = params.get('port') || 'Singapore';
+        const benchmark = params.get('benchmark');
+        const intelStrip = typeof globalThis.TVC_MarketFeed !== 'undefined'
+            ? globalThis.TVC_MarketFeed.renderBunkerIntelStrip(portHint)
+            : '';
+        const benchNote = benchmark
+            ? `<p class="maritime-note" style="margin-top:0">Ticker benchmark: <strong>$${esc(benchmark)}/MT</strong> (${esc(portHint)}) — use observed lab density for settlement.</p>`
+            : '';
         host.innerHTML = `
+            ${intelStrip}
+            ${benchNote}
             <div class="maritime-panel-head">
                 <h2 class="maritime-panel-title">⛽ Bunker &amp; Fuel Calculator</h2>
                 <p class="maritime-panel-sub">Volume to metric tons using ASTM Table 54B-style temperature &amp; density correction (reference 15°C).</p>
@@ -205,6 +217,24 @@ const TVC_MaritimeToolkit = (function () {
         });
         form.addEventListener('input', paint);
         paint();
+    }
+
+    function applyBunkerPrefill(params) {
+        const p = params instanceof URLSearchParams ? params : new URLSearchParams(params || '');
+        const fuel = p.get('fuel');
+        const density = p.get('density');
+        const host = document.getElementById('storeToolBunker');
+        if (!host) return;
+        const fuelSelect = host.querySelector('#bunkerFuelType');
+        const denInput = host.querySelector('#bunkerDensity');
+        if (fuel && FUEL_TYPES[fuel] && fuelSelect) {
+            fuelSelect.value = fuel;
+        }
+        if (density && denInput) {
+            denInput.value = density;
+        }
+        fuelSelect?.dispatchEvent(new Event('change'));
+        host.querySelector('#bunkerCalcForm')?.dispatchEvent(new Event('input'));
     }
 
     function renderLubePanel(host) {
@@ -388,5 +418,6 @@ const TVC_MaritimeToolkit = (function () {
         calcVolumeToMt,
         calcBunkerMassAstM54B,
         filterFlanges,
+        applyBunkerPrefill,
     };
 })();
