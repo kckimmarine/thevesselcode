@@ -1,36 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#07111f">
-    <meta name="description" content="TVC-SM — Integrated Ship Management Platform. Offline-first fleet planned maintenance, spare parts control, and digital superintendent operations.">
-    <title>TVC-SM | THE VESSEL CODE</title>
+    <meta name="theme-color" content="#0a101e">
+    <meta name="description" content="TVC-SM — 중소형 선단을 위한 오프라인 완결형 선박 정비·SPARE 통합 관리. ECR·CCR·Captain Hub와 ZIP 패킷 기반 육상 HQ 연동. THE VESSEL CODE.">
+    <title>TVC-SM | Integrated Ship Management Platform | THE VESSEL CODE</title>
     <link rel="canonical" href="https://thevesselcode.com/sm">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="THE VESSEL CODE">
+    <meta property="og:title" content="TVC-SM — 오프라인 선박 정비·자재 통합 관리">
+    <meta property="og:description" content="Offline-first PMS + SPARE for 10–50 vessel fleets. ZIP sync between ship and shore — no always-on cloud required at sea.">
+    <meta property="og:url" content="https://thevesselcode.com/sm">
+    <meta property="og:image" content="https://thevesselcode.com/icons/company-logo.png">
     <link rel="icon" type="image/png" href="/icons/company-logo.png?v=20260804-logo-no-ring">
     <link rel="stylesheet" href="/css/home.css?v=20260909-mkt-dark">
     <link rel="stylesheet" href="/css/marketing-shell.css?v=20260909-mkt-footer">
-    <link rel="stylesheet" href="/css/marketing-theme.css?v=20260909-mkt-dark">
+    <link rel="stylesheet" href="/css/marketing-theme.css?v=20260914-sm-landing">
 </head>
-<body class="home-page mkt-page" data-mkt-active="sm">
+<body class="home-page mkt-page mkt-sm-page" data-mkt-active="sm">
     <div class="mkt-site-wrap">
         <div id="marketing-topbar"></div>
         <div class="home-shell">
-        <section id="hero" class="home-hero mkt-hero home-services-hero home-pms-hero" aria-labelledby="smHeroTitle">
-            <div class="home-section-head">
-                <h1 id="smHeroTitle">TVC-SM: Integrated Ship Management Platform</h1>
-                <p class="home-section-lead">
-                    Offline-first fleet planned maintenance, spare parts control, and digital superintendent operations.
-                </p>
-                <div class="home-hero-actions home-pms-hero-actions">
-                    <a class="home-btn home-btn-primary" href="https://app.thevesselcode.com" target="_blank" rel="noopener noreferrer">🚀 Launch TVC-SM App</a>
-                    <a class="home-btn home-btn-secondary" href="/contact-us">Request Fleet Demo</a>
+        <section id="hero" class="home-hero mkt-hero home-services-hero home-pms-hero sm-hero" aria-labelledby="smHeroTitle">
+            <div class="sm-hero-grid">
+                <div class="sm-hero-copy">
+                    <p class="home-eyebrow">더베슬코드 · 선박관리 SaaS</p>
+                    <h1 id="smHeroTitle">
+                        <span class="sm-hero-ko">중소 선단을 위한 오프라인 정비·자재 통합</span>
+                        <span class="sm-hero-en">TVC-SM: Integrated Ship Management Platform</span>
+                    </h1>
+                    <p class="home-section-lead sm-hero-lead">
+                        정비(PMS)와 예비 부품(SPARE)을 한 흐름으로 연결하고, 원양에서도 끊기지 않는
+                        <strong>오프라인 완결</strong>과 <strong>표준 ZIP</strong>으로 육상 HQ와 맞춥니다.
+                    </p>
+                    <div class="home-hero-actions home-pms-hero-actions">
+                        <a class="home-btn home-btn-primary" href="https://app.thevesselcode.com" target="_blank" rel="noopener noreferrer">🚀 Launch TVC-SM App</a>
+                        <a class="home-btn home-btn-secondary" href="/contact-us">Request Fleet Demo</a>
+                        <a class="home-btn home-btn-secondary sm-hero-tertiary" href="/toolkit">Free Maritime Toolkit</a>
+                    </div>
                 </div>
+                <aside class="sm-sync-diagram mkt-glass-card" aria-label="Ship to shore sync architecture">
+                    <h2 class="sm-diagram-title">선박 ↔ 육상 동기화</h2>
+                    <ol class="sm-diagram-flow">
+                        <li><span class="sm-node">ECR</span><span class="sm-node-label">기관</span></li>
+                        <li><span class="sm-node">CCR</span><span class="sm-node-label">갑판</span></li>
+                        <li class="sm-diagram-hub"><span class="sm-node sm-node-accent">Captain Hub</span><span class="sm-node-label">선장 취합</span></li>
+                    </ol>
+                    <div class="sm-diagram-offline" aria-hidden="true">
+                        <span class="sm-offline-badge">오프라인 완결 · IndexedDB</span>
+                    </div>
+                    <div class="sm-diagram-zip" aria-hidden="true">
+                        <span class="sm-zip-icon">ZIP</span>
+                        <span class="sm-zip-channels">이메일 · USB · 메신저</span>
+                    </div>
+                    <div class="sm-diagram-hq">
+                        <span class="sm-node sm-node-hq">육상 HQ</span>
+                        <span class="sm-node-label">TVC-SM 관제 · 승인</span>
+                    </div>
+                </aside>
             </div>
         </section>
 
+        <section class="sm-stat-band" aria-label="Product highlights">
+            <ul class="sm-stat-list">
+                <li><strong>100%</strong><span>통신 두절 시 선내 가동</span></li>
+                <li><strong>ZIP</strong><span>선박–육상 표준 패킷</span></li>
+                <li><strong>3-Way</strong><span>정비 · SPARE · 소모 연동</span></li>
+                <li><strong>15,000+</strong><span><a href="/toolkit">IMPA Toolkit</a> PLG</span></li>
+            </ul>
+        </section>
+
         <section class="home-section" aria-labelledby="smOpsTitle">
-            <h2 id="smOpsTitle">Core operational background</h2>
+            <h2 id="smOpsTitle">왜 엑셀에서 벗어나야 하나요?</h2>
             <p class="home-section-lead">
                 Ship management breaks down when maintenance, inventory, and superintendent oversight live in disconnected systems —
                 especially across satellite gaps and multi-vessel fleets.
@@ -38,26 +80,26 @@
             <div class="home-grid home-grid-2">
                 <article class="home-card home-edge-card mkt-glass-card">
                     <h3>Administrative drag at sea</h3>
-                    <p>Engineers and officers re-enter the same job data across PMS, SPICS, permits, and defect sheets instead of executing work.</p>
+                    <p>기관·갑판이 PMS, 재고, 작업허가, 결함 장부에 같은 내용을 반복 입력합니다.</p>
                 </article>
                 <article class="home-card home-edge-card mkt-glass-card">
                     <h3>Connectivity as a bottleneck</h3>
-                    <p>Cloud-only workflows stall when VSAT drops — delaying confirmations, stock truth, and HQ visibility.</p>
+                    <p>클라우드만 의존하면 VSAT 단절 시 확인·재고·HQ 가시성이 멈춥니다.</p>
                 </article>
                 <article class="home-card home-edge-card mkt-glass-card">
                     <h3>Fragmented fleet picture</h3>
-                    <p>Superintendents reconcile emailed Excel packs instead of a single exportable record from report → confirm → approve.</p>
+                    <p>슈퍼인텐던트가 이메일 엑셀을 취합하는 대신, Report → Confirm → Approve 한 줄기가 필요합니다.</p>
                 </article>
                 <article class="home-card home-edge-card mkt-glass-card">
                     <h3>Procurement friction</h3>
-                    <p>Requisitions and RFQs often restart from scratch because vessel ROB and consumption history are not tied to maintenance events.</p>
+                    <p>정비 이벤트와 ROB·소모 이력이 연결되지 않으면 청구와 RFQ가 매번 처음부터입니다.</p>
                 </article>
             </div>
         </section>
 
         <section class="home-section" aria-labelledby="smVesselCoreTitle">
             <h2 id="smVesselCoreTitle">Vessel Core (PMS + SPARE)</h2>
-            <p class="home-section-lead">One offline-first station architecture for deck and engine teams — planned maintenance and spare inventory in the same IndexedDB core.</p>
+            <p class="home-section-lead">갑판·기관이 같은 오프라인 코어에서 계획 정비와 예비품을 함께 다룹니다.</p>
             <div class="home-service-stack">
                 <article class="home-service-card mkt-glass-card">
                     <div class="home-service-head">
@@ -65,8 +107,7 @@
                         <h2>Unified work reports</h2>
                     </div>
                     <p class="home-service-intro">
-                        Run-hour and calendar jobs, department-scoped reporting, defect and permit workflows, and chief confirmation —
-                        with schedule updates applied at the right lifecycle step.
+                        Run-hour·calendar 작업, 부서별 보고, 결함·작업허가, 기관장 확인 — 일정 갱신은 올바른 단계에서만 적용됩니다.
                     </p>
                 </article>
                 <article class="home-service-card mkt-glass-card">
@@ -75,7 +116,7 @@
                         <h2>Integrated SPARE control</h2>
                     </div>
                     <p class="home-service-intro">
-                        IMPA-linked consumption from work reports with atomic stock rules — consumption sync on save and no double-deduction on confirm.
+                        작업보고와 연동된 IMPA 소모, 저장 시 동기화, 확인 단계 <strong>이중 차감 방지</strong>로 재고 정합성을 유지합니다.
                     </p>
                 </article>
                 <article class="home-service-card mkt-glass-card">
@@ -84,53 +125,106 @@
                         <h2>Offline-first marine core</h2>
                     </div>
                     <p class="home-service-intro">
-                        Full functionality during satellite outages. Ship ↔ HQ sync uses signed ZIP export/import — no live cloud dependency in normal ship operation.
+                        위성 두절 중에도 전 기능 가동. 선박 ↔ HQ는 서명·버전 관리된 <strong>ZIP Export/Import</strong> — 일반 운항에서 상시 클라우드 API에 의존하지 않습니다.
                     </p>
                 </article>
             </div>
         </section>
 
+        <section class="home-section sm-lifecycle-section" aria-labelledby="smLifecycleTitle">
+            <h2 id="smLifecycleTitle">보고 · 확인 · 승인</h2>
+            <p class="home-section-lead">선내 작성부터 육상 승인까지 상태가 명확해 감사·검사 대응이 수월합니다.</p>
+            <ol class="sm-lifecycle-steps">
+                <li class="mkt-glass-card"><span class="sm-lc-num">1</span><strong>Reported</strong><span>작성자 저장</span></li>
+                <li class="mkt-glass-card"><span class="sm-lc-num">2</span><strong>Confirmed</strong><span>기관장·CO 확인</span></li>
+                <li class="mkt-glass-card"><span class="sm-lc-num">3</span><strong>Submitted</strong><span>ZIP Export → HQ</span></li>
+                <li class="mkt-glass-card"><span class="sm-lc-num">4</span><strong>Approved</strong><span>슈퍼인텐던트 승인</span></li>
+            </ol>
+        </section>
+
         <section class="home-section" aria-labelledby="smShoreTitle">
             <h2 id="smShoreTitle">Shore Superintendent oversight</h2>
-            <p class="home-section-lead">HQ and superintendent stations share the same data model with role-based workflows from vessel report to fleet approval.</p>
+            <p class="home-section-lead">HQ와 슈퍼인텐던트 스테이션은 동일 데이터 모델·역할(RBAC)로 다선박을 봅니다.</p>
             <div class="home-grid home-grid-3">
                 <article class="home-card home-product-card mkt-glass-card">
                     <div class="home-card-icon" aria-hidden="true">🛳️</div>
                     <h3>Dual-view control</h3>
-                    <p>Tailored UI for officers and chiefs aboard, plus HQ fleet oversight ashore — one truth for vetting and docking prep.</p>
+                    <p>선내 Officer/Chief UI와 육상 Fleet UI — 도킹·vetting 준비에 하나의 기록.</p>
                 </article>
                 <article class="home-card home-product-card mkt-glass-card">
                     <div class="home-card-icon" aria-hidden="true">📦</div>
                     <h3>Exportable fleet packages</h3>
-                    <p>Structured ZIP handoffs between vessel and office preserve sync status without exposing shipboard data to always-on cloud APIs.</p>
+                    <p>구조화된 ZIP 핸드오프로 sync 상태를 유지하며, 선내 데이터를 상시 클라우드에 노출하지 않습니다.</p>
                 </article>
                 <article class="home-card home-product-card mkt-glass-card">
                     <div class="home-card-icon" aria-hidden="true">🛡️</div>
                     <h3>Lifecycle discipline</h3>
-                    <p>Reported → confirmed → approved states lock the right actions for stock, schedules, and superintendent sign-off.</p>
+                    <p>Reported → confirmed → approved 에서만 재고·일정·승인 잠금이 적용됩니다.</p>
                 </article>
             </div>
         </section>
 
         <section class="home-section" aria-labelledby="smRfqTitle">
             <h2 id="smRfqTitle">Automated RFQ workflows</h2>
-            <p class="home-section-lead">Connect maintenance and consumption to procurement — fewer manual requisitions and faster superintendent response.</p>
+            <p class="home-section-lead">정비·소모와 조달을 연결하는 확장 로드맵 — 오프라인 안전성은 유지합니다.</p>
             <div class="home-grid home-grid-2">
                 <article class="home-card home-edge-card mkt-glass-card">
                     <h3>Consumption-driven demand</h3>
-                    <p>Spare usage from confirmed work reports feeds requisition context so HQ sees what was used, where, and on which job.</p>
+                    <p>확인된 작업보고의 spare 사용이 청구·RFQ 맥락으로 전달되어 HQ가 무엇을, 어디서 썼는지 봅니다.</p>
                 </article>
                 <article class="home-card home-edge-card mkt-glass-card">
                     <h3>Structured RFQ workspace</h3>
-                    <p>Digital superintendent operations streamline quote comparison and fleet-level ordering without losing vessel-side offline safety.</p>
+                    <p>디지털 슈퍼인텐던트 운영으로 견적 비교·선단 발주를 단순화 (단계적 출시).</p>
                 </article>
+            </div>
+        </section>
+
+        <section class="home-section sm-compare-section" aria-labelledby="smCompareTitle">
+            <h2 id="smCompareTitle">중소 선단에 맞춘 포지션</h2>
+            <div class="sm-compare-table-wrap mkt-glass-card">
+                <table class="sm-compare-table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">엑셀·수기</th>
+                            <th scope="col">고가 외산 PMS</th>
+                            <th scope="col">TVC-SM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">도입 비용</th>
+                            <td>낮음</td>
+                            <td>수억 원대 SI</td>
+                            <td>월 구독 · 낮은 초기비</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">원양 오프라인</th>
+                            <td>가능</td>
+                            <td>클라우드 의존</td>
+                            <td>선내 100% 완결</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">정비–재고 연동</th>
+                            <td>수동</td>
+                            <td>구축 의존</td>
+                            <td>3-Way 내장</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">육상 연동</th>
+                            <td>이메일 파일</td>
+                            <td>전용망</td>
+                            <td>표준 ZIP</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
         <section class="home-cta-band mkt-glass-card" aria-labelledby="smCtaTitle">
             <div>
                 <h2 id="smCtaTitle">Launch TVC-SM across your fleet</h2>
-                <p>Open the web app for HQ, or request a guided demo with our Busan engineering team.</p>
+                <p>웹 앱으로 HQ를 열거나, 부산 엔지니어링팀과 파일럿·데모를 요청하세요. 실무 도구는 <a href="/toolkit">Maritime Toolkit</a>에서 무료로 시작할 수 있습니다.</p>
             </div>
             <div class="home-pms-cta-actions">
                 <a class="home-btn home-btn-primary" href="https://app.thevesselcode.com" target="_blank" rel="noopener noreferrer">🚀 Launch TVC-SM App</a>
