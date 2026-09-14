@@ -25,7 +25,7 @@ CapCut → **가져오기** → `thevesselcode\artifacts\marketing-video\clips\`
 | 방법 | 설명 |
 |------|------|
 | **1. 로컬 PC** | 위 §0 PowerShell 4줄 → `thevesselcode\artifacts\marketing-video\` 에 바로 생성 (**가장 확실**) |
-| **2. GitHub Actions** | `master`에 워크플로 병합 후: [Actions → **Marketing video assets** → **Run workflow**](https://github.com/kckimmarine/thevesselcode/actions/workflows/marketing-video-assets.yml) → 완료된 Run 하단 **Artifacts → marketing-video-assets** → **Download** (ZIP) |
+| **2. GitHub Actions** | [Actions → **Marketing video assets**](https://github.com/kckimmarine/thevesselcode/actions/workflows/marketing-video-assets.yml) (**Run workflow**, 수동) → 완료 Run → **Artifacts → marketing-video-assets** → **Download**. ⚠️ merge 직후 빨간 **Build vessel web downloads** 는 Windows 설치파일용이며 **자동 실행**됩니다 — 비디오 ZIP과 **다른 워크플로**입니다. |
 | **3. GitHub CLI** | `gh run download -n marketing-video-assets` (최근 성공 Run, [gh](https://cli.github.com/) 설치·로그인 필요) |
 
 Cursor Artifacts 패널은 브라우저·버전에 따라 **개별 파일 다운로드가 지원되지 않는 경우**가 있습니다. CapCut용 클립은 **로컬 생성** 또는 **Actions ZIP**을 쓰세요.
