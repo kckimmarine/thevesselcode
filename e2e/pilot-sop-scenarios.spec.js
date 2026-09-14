@@ -22,6 +22,7 @@ const {
   assertVesselWorkReportUiLocked,
   parseZipPayload,
   saveOpenWorkReportWithSpare,
+  getReportDimensionalMeasurements,
 } = require('./helpers/pilot');
 
 test.describe.configure({ mode: 'serial' });
@@ -49,6 +50,37 @@ test('Pilot SOP A–E: closed-loop work report, sync, SM approve, vessel inward'
   await page.locator('#actScroll .vl-cells[data-job-id]').first().click();
   await page.waitForTimeout(200);
   await page.locator('#planReportBtn').click();
+  await expect(page.locator('#workReportModal:not(.hidden)')).toBeVisible({ timeout: 15_000 });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.waitForTimeout(250);
+
+  const btnSave = page.locator('#btn-save');
+  await expect(btnSave).toBeVisible();
+  const saveBox = await btnSave.boundingBox();
+  expect(saveBox?.height ?? 0, '#btn-save touch target height').toBeGreaterThanOrEqual(44);
+  const primarySubmit = page.locator('#workReportModal button.btn-primary').first();
+  await expect(primarySubmit).toBeVisible();
+  const primaryBox = await primarySubmit.boundingBox();
+  expect(primaryBox?.height ?? 0, 'primary submit touch target height').toBeGreaterThanOrEqual(44);
+
+  const modal = page.locator('#workReportModal:not(.hidden)');
+  const measToggle = modal.locator('.wr-meas-toggle');
+  if (await measToggle.isVisible().catch(() => false)) {
+    await measToggle.click();
+    await expect(modal.locator('#wrMeasBody:not(.hidden)')).toBeVisible({ timeout: 5_000 });
+    const firstRow = modal.locator('#wrMeasTbody tr.wr-meas-row').first();
+    await firstRow.locator('[data-meas="item_name"]').fill('Liner Wear');
+    await firstRow.locator('[data-meas="design_val"]').fill('10');
+    await firstRow.locator('[data-meas="tolerance_limit"]').fill('1');
+    await firstRow.locator('[data-meas="measured_val"]').fill('1.5');
+    await firstRow.locator('[data-meas="unit"]').fill('mm');
+    await expect(firstRow.locator('.wr-meas-exceeded')).toHaveText('EXCEEDED');
+    const measuredInp = firstRow.locator('[data-meas="measured_val"]');
+    await expect(measuredInp).toHaveAttribute('inputmode', 'numeric');
+  } else {
+    throw new Error('ClassNK measurements section missing from Work Report modal');
+  }
+
   const saved = await saveOpenWorkReportWithSpare(page, { marker, qty: QTY });
   reportId = saved.reportId;
   spareId = saved.spareId;
@@ -56,6 +88,13 @@ test('Pilot SOP A–E: closed-loop work report, sync, SM approve, vessel inward'
   expect(saved.status).toBe('REPORTED');
   expect(saved.stock_applied_at, 'stock_applied_at after save').toBeTruthy();
   expect(saved.stockAfter).toBe(stockBefore - QTY);
+
+  const idbMeas = await getReportDimensionalMeasurements(page, saved.reportId);
+  const linerRow = idbMeas.find((m) => String(m.item_name || '').includes('Liner Wear'));
+  expect(linerRow, 'dimensional_measurements persisted on report_form').toBeTruthy();
+  expect(Number(linerRow.measured_val)).toBe(1.5);
+  expect(Number(linerRow.tolerance_limit)).toBe(1);
+  expect(Number(linerRow.measured_val)).toBeGreaterThan(Number(linerRow.tolerance_limit));
 
   await logout(page);
 
@@ -93,6 +132,10 @@ test('Pilot SOP A–E: closed-loop work report, sync, SM approve, vessel inward'
   const zipReport = (payload.daily_work_reports || []).find((r) => r.id === reportId);
   expect(zipReport, 'ZIP contains confirmed report').toBeTruthy();
   expect(String(zipReport.status || '').toUpperCase()).toBe('CONFIRMED');
+  const zipMeas = zipReport.report_form?.dimensional_measurements || [];
+  const zipLiner = zipMeas.find((m) => String(m.item_name || '').includes('Liner Wear'));
+  expect(zipLiner, 'ZIP carries ClassNK dimensional_measurements').toBeTruthy();
+  expect(Number(zipLiner.measured_val)).toBeGreaterThan(Number(zipLiner.tolerance_limit));
 
   const zipSpare = (payload.spare_parts || []).find((s) => s.id === spareId);
   if (zipSpare) {

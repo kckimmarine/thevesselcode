@@ -117,3 +117,140 @@ const TVC_PmsEquipmentTree = (function () {
         deptForUser,
     };
 })();
+
+/** ClassNK Annex 9.1.3 — Work Report dimensional measurements (An 1.3.2.1.f) */
+const TVC_PmsClassNk = (function () {
+    const MAX_ROWS = 12;
+
+    function escapeHtml(s) {
+        return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+    }
+
+    function getRows(form) {
+        const raw = form?.dimensional_measurements;
+        const list = TVC_WorkReport.normalizeMeasurements(Array.isArray(raw) ? raw : []);
+        while (list.length < 2) list.push(TVC_WorkReport.blankMeasurementRow());
+        return list.slice(0, MAX_ROWS);
+    }
+
+    function renderMeasurementsSection(form, opts = {}) {
+        const ro = !!opts.ro;
+        const forPrint = !!opts.forPrint;
+        const rows = getRows(form);
+        const open = forPrint || !!opts.open;
+        const toggleLabel = open ? '[−]' : '[+]';
+        const bodyCls = open ? '' : ' hidden';
+
+        const head = `<button type="button" class="wr-meas-toggle" onclick="TVC_PmsClassNk.toggleMeasurementsSection()" aria-expanded="${open}">${toggleLabel} Dimensional Measurements &amp; Clearances</button>`;
+        if (forPrint && !rows.some(r => r.item_name || r.measured_val != null)) return '';
+
+        const rowHtml = rows.map((row, idx) => {
+            const exceeded = TVC_WorkReport.isMeasurementExceeded(row);
+            const badge = exceeded ? '<span class="wr-meas-exceeded">EXCEEDED</span>' : '';
+            const dis = ro ? ' disabled' : '';
+            const roCls = ro ? ' wr-ro' : '';
+            if (forPrint) {
+                return `<tr class="${exceeded ? 'wr-meas-row-alert' : ''}">
+                  <td>${escapeHtml(row.item_name)}${badge}</td>
+                  <td>${row.design_val ?? '—'}</td>
+                  <td>${row.tolerance_limit ?? '—'}</td>
+                  <td>${row.measured_val ?? '—'}</td>
+                  <td>${escapeHtml(row.unit)}</td>
+                </tr>`;
+            }
+            return `<tr class="wr-meas-row${exceeded ? ' wr-meas-row-alert' : ''}" data-meas-idx="${idx}">
+              <td><input class="wr-meas-inp${roCls}" data-meas="item_name" value="${escapeHtml(row.item_name)}"${dis}></td>
+              <td><input type="number" inputmode="numeric" step="any" class="wr-meas-inp${roCls}" data-meas="design_val" value="${row.design_val ?? ''}"${dis}></td>
+              <td><input type="number" inputmode="numeric" step="any" class="wr-meas-inp${roCls}" data-meas="tolerance_limit" value="${row.tolerance_limit ?? ''}"${dis}></td>
+              <td><input type="number" inputmode="numeric" step="any" class="wr-meas-inp${roCls}" data-meas="measured_val" value="${row.measured_val ?? ''}"${dis} oninput="TVC_PmsClassNk.refreshMeasurementAlerts()">${badge}</td>
+              <td><input class="wr-meas-inp wr-meas-unit${roCls}" data-meas="unit" value="${escapeHtml(row.unit)}"${dis}></td>
+            </tr>`;
+        }).join('');
+
+        return `<section class="wr-meas-section wr-maint-span-all wr-maint-grid-gap" id="wrMeasSection">
+          ${head}
+          <div class="wr-meas-body${bodyCls}" id="wrMeasBody">
+            <table class="wr-meas-table">
+              <thead><tr>
+                <th>Parameter</th><th>Design</th><th>Max limit</th><th>Measured</th><th>Unit</th>
+              </tr></thead>
+              <tbody id="wrMeasTbody">${rowHtml}</tbody>
+            </table>
+            ${ro || forPrint ? '' : '<button type="button" class="btn btn-sm wr-meas-add" onclick="TVC_PmsClassNk.addMeasurementRow()">+ Add row</button>'}
+          </div>
+        </section>`;
+    }
+
+    function toggleMeasurementsSection() {
+        const body = document.getElementById('wrMeasBody');
+        const btn = document.querySelector('.wr-meas-toggle');
+        if (!body || !btn) return;
+        body.classList.toggle('hidden');
+        const open = !body.classList.contains('hidden');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.textContent = `${open ? '[−]' : '[+]'} Dimensional Measurements & Clearances`;
+    }
+
+    function refreshMeasurementAlerts() {
+        document.querySelectorAll('#wrMeasTbody .wr-meas-row').forEach(tr => {
+            const get = (k) => {
+                const el = tr.querySelector(`[data-meas="${k}"]`);
+                return el ? el.value : '';
+            };
+            const exceeded = TVC_WorkReport.isMeasurementExceeded({
+                measured_val: get('measured_val'),
+                tolerance_limit: get('tolerance_limit'),
+            });
+            tr.classList.toggle('wr-meas-row-alert', exceeded);
+            let badge = tr.querySelector('.wr-meas-exceeded');
+            const measCell = tr.querySelector('[data-meas="measured_val"]')?.parentElement;
+            if (exceeded) {
+                if (!badge && measCell) {
+                    badge = document.createElement('span');
+                    badge.className = 'wr-meas-exceeded';
+                    badge.textContent = 'EXCEEDED';
+                    measCell.appendChild(badge);
+                }
+            } else if (badge) badge.remove();
+        });
+    }
+
+    function captureMeasurements(host, form) {
+        if (!host || !form) return;
+        const tbody = host.querySelector('#wrMeasTbody');
+        if (!tbody) return;
+        const out = [];
+        tbody.querySelectorAll('tr.wr-meas-row').forEach(tr => {
+            const row = {};
+            tr.querySelectorAll('[data-meas]').forEach(el => {
+                row[el.dataset.meas] = el.value;
+            });
+            out.push(TVC_WorkReport.normalizeMeasurementRow(row));
+        });
+        form.dimensional_measurements = TVC_WorkReport.normalizeMeasurements(out);
+    }
+
+    function addMeasurementRow() {
+        const tbody = document.getElementById('wrMeasTbody');
+        if (!tbody || tbody.querySelectorAll('tr').length >= MAX_ROWS) return;
+        const idx = tbody.querySelectorAll('tr').length;
+        const tr = document.createElement('tr');
+        tr.className = 'wr-meas-row';
+        tr.dataset.measIdx = String(idx);
+        tr.innerHTML = `
+          <td><input class="wr-meas-inp" data-meas="item_name" value=""></td>
+          <td><input type="number" inputmode="numeric" step="any" class="wr-meas-inp" data-meas="design_val" value=""></td>
+          <td><input type="number" inputmode="numeric" step="any" class="wr-meas-inp" data-meas="tolerance_limit" value=""></td>
+          <td><input type="number" inputmode="numeric" step="any" class="wr-meas-inp" data-meas="measured_val" value="" oninput="TVC_PmsClassNk.refreshMeasurementAlerts()"></td>
+          <td><input class="wr-meas-inp wr-meas-unit" data-meas="unit" value="mm"></td>`;
+        tbody.appendChild(tr);
+    }
+
+    return {
+        renderMeasurementsSection,
+        captureMeasurements,
+        toggleMeasurementsSection,
+        refreshMeasurementAlerts,
+        addMeasurementRow,
+    };
+})();

@@ -215,6 +215,14 @@ const TVC_EQUIPMENT_TAXONOMY = Object.freeze({
     PROFILE_META_KEY: TVC_META_KEYS.VESSEL_MACHINERY_PROFILE,
 });
 
+/** Unified product identity — ClassNK Annex 9.1.3 software revision display (An 1.4.1) */
+const TVC_PRODUCT_INFO = Object.freeze({
+    NAME: 'TVC-SM',
+    VERSION: '2.5.0-SOP',
+    COMPLIANCE: 'ClassNK Annex 9.1.3 Compliant',
+    VERSION_BADGE: 'TVC-SM v2.5 (ClassNK Annex 9.1.3 Compliant)',
+});
+
 function pmsMasterCanonicalMetaKey(vesselId, department) {
     const v = String(vesselId || 'SHIP').replace(/[^\w.-]+/g, '_').slice(0, 40);
     return `pms_master_group_canonical_${v}_${String(department || '').toUpperCase()}`;
@@ -577,6 +585,7 @@ const TVC_EquipmentSchema = (function () {
  * @property {string} maintenance_job_id
  * @property {string} status — REPORTED | CONFIRMED | APPROVED | POSTPONED (legacy: PENDING/APPROVED/CONFIRMED)
  * @property {object} [form] — Job별 Work Report 입력
+ * @property {Array<object>} [form.dimensional_measurements] — ClassNK An 1.3.2.1.f (item_name, design_val, tolerance_limit, measured_val, unit)
  * @property {Array} [used_parts]
  * @property {string} [description]
  * @property {object} [prev_job_state] — 승인 직전 Job 스냅샷
@@ -860,9 +869,52 @@ const TVC_WorkReport = (function () {
         return `Postpone Date can be extended up to 3 months from Original Due Date (max ${check.maxDate}).`;
     }
 
+    /** ClassNK An 1.3.2.1.f — dimensional measurement row (stored on report_form / job item form) */
+    function blankMeasurementRow(overrides = {}) {
+        return {
+            item_name: '',
+            design_val: '',
+            tolerance_limit: '',
+            measured_val: '',
+            unit: 'mm',
+            ...overrides,
+        };
+    }
+
+    function numOrNull(v) {
+        if (v === '' || v == null) return null;
+        const n = Number(v);
+        return Number.isFinite(n) ? n : null;
+    }
+
+    function normalizeMeasurementRow(row) {
+        const r = row && typeof row === 'object' ? row : {};
+        const item_name = String(r.item_name || r.param_name || '').trim();
+        const unit = String(r.unit || 'mm').trim() || 'mm';
+        const design_val = numOrNull(r.design_val ?? r.design_value);
+        const tolerance_limit = numOrNull(r.tolerance_limit ?? r.allowable_tolerance);
+        const measured_val = numOrNull(r.measured_val ?? r.measured_value);
+        return { item_name, design_val, tolerance_limit, measured_val, unit };
+    }
+
+    function normalizeMeasurements(list) {
+        if (!Array.isArray(list)) return [];
+        return list.map(normalizeMeasurementRow).filter(m => m.item_name || m.measured_val != null);
+    }
+
+    function isMeasurementExceeded(row) {
+        const m = normalizeMeasurementRow(row);
+        if (m.measured_val == null || m.tolerance_limit == null) return false;
+        return m.measured_val > m.tolerance_limit;
+    }
+
     return {
         ITEM_STATUSES,
         blankJobItem,
+        blankMeasurementRow,
+        normalizeMeasurementRow,
+        normalizeMeasurements,
+        isMeasurementExceeded,
         fromLegacy,
         getJobItems,
         getJobCodes,
@@ -886,6 +938,7 @@ const TVC_WorkReport = (function () {
  * DefectCase — defect_cases 레코드 계약 (Defect Report 서식 매핑)
  * Phase 1: 선박 보고 (긴급) · Phase 2: 회사 초기 검토/작업허가 (긴급)
  * Phase 3·4: 완료 확인·종결 (후속)
+ * ClassNK An 1.3.2.1.g: damage_condition, repair_method (Permanent / Temporary corrective action)
  */
 const TVC_DefectCase = (function () {
     const SCHEMA_VERSION = 1;

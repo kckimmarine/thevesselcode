@@ -1,0 +1,48 @@
+/**
+ * TVC-SM — mobile ergonomics only (≤768px). Desktop (>768px) untouched.
+ * ClassNK / W3C touch targets · 300ms tap-delay elimination.
+ */
+@media screen and (max-width: 768px) {
+    body,
+    a,
+    button,
+    input,
+    select,
+    textarea,
+    label,
+    [role="button"],
+    .btn,
+    .btn-sm,
+    .tab-btn,
+    .dept-btn,
+    .mobile-nav-btn,
+    .mobile-refresh-btn,
+    .hist-tab,
+    .wp-tab,
+    .cmaxs-card-item,
+    .login-submit,
+    .fleet-view-btn {
+        touch-action: manipulation;
+    }
+
+    .btn-primary,
+    #btn-save,
+    .btn-action,
+    .dept-btn,
+    .mobile-nav-btn,
+    .mobile-refresh-btn {
+        min-height: 48px;
+        min-width: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #workReportModal #btn-save {
+        min-height: 48px;
+        min-width: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

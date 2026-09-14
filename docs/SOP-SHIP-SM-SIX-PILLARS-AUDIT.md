@@ -6,6 +6,24 @@
 
 ---
 
+## TVC-SM Global Fleet OS — 5 Core Pillars (paradigm shift)
+
+TVC-SM supersedes the early engine-centric prototype as a **unified Ship Management OS** (Vessel PWA/Electron + Shore SM HQ). Architecture aligns with **ClassNK 2023 Rules Annex 9.1.3** (PMS software approval) and common fleet-management patterns (decentralized vessel edge + HQ ingest of scoped ZIP deltas — comparable in role to global operators’ ship–office loops, without proprietary coupling).
+
+| Pillar | TVC-SM mechanism | Evidence in repo |
+| --- | --- | --- |
+| **Scalability** | Per-vessel IndexedDB edge; `company_id` + `vessel_id` isolation; ZIP delta sync; optional cloud mirror ingest | `js/core/schema.js`, `js/services/sync.js`, §5 below |
+| **Popularity** | Single product brand **TVC-SM**; familiar Deck/Engine/Captain/SM roles; demo tenant **ABC Shipping / ABC Voyager** | `index.html`, `js/auth.js`, `AGENTS.md` |
+| **Professionalism** | ClassNK measurements (An 1.3.2.1.f), damage/repair fields (An 1.3.2.1.g), revision badge (An 1.4.1) | `js/ui/pms.js` `TVC_PmsClassNk`, `js/ui/defectReport.js`, `TVC_PRODUCT_INFO` |
+| **Flexibility** | Universal 2-tier machinery taxonomy (DECK/ENGINE common + vessel-profile extensions) | `data/equipment-taxonomy.json`, `js/services/machineryTaxonomy.js` |
+| **Consistency** | One workflow lifecycle (Reported → Confirmed → Approved); RBAC parity; mobile ergonomics isolated to ≤768px | `verify-rbac` 31/31, `css/responsive.css`, pilot E2E A–E |
+
+**Software revision (An 1.4.1):** `TVC-SM v2.5 (ClassNK Annex 9.1.3 Compliant)` — `#appProductVersionBadge` in app shell.
+
+**Pilot E2E (ClassNK + mobile):** Step A expands dimensional measurements, asserts **EXCEEDED** when measured &gt; limit, persists `report_form.dimensional_measurements`, re-validates in SHIP_TO_SM ZIP (Step C).
+
+---
+
 ## 1. 모드 간 온/오프라인 통신 계층
 
 | SOP 계층 | 코드 반영 | 검증 |
@@ -101,6 +119,30 @@ npm run verify-all                   # license 빌드 artifact 필요 시 dist/l
 
 ---
 
+## Mobile ergonomics (≤768px, 2026-09-14)
+
+| Guard | Implementation |
+| --- | --- |
+| Tap delay | `touch-action: manipulation` on body + interactive controls — `css/responsive.css` only inside `@media (max-width: 768px)` |
+| Touch targets | `#btn-save`, `.btn-primary`, `.btn-action`, dept/mobile header toggles — `min-height/min-width: 48px`, flex-centered |
+| Numeric keypad | `inputmode="numeric"` on Work Report / measurement `type="number"` fields |
+| E2E geometry | `e2e/pilot-sop-scenarios.spec.js` @ 390×844 — `#btn-save` and `.btn-primary` `boundingBox.height >= 44` |
+| E2E ClassNK | Same spec Step A — fill measurement row, **EXCEEDED** badge, `inputmode="numeric"`, IDB + ZIP roundtrip |
+| Desktop | **No** changes above 768px (isolated stylesheet) |
+
+---
+
+## ClassNK Annex 9.1.3 compliance (2026-09-14)
+
+| Rule | Implementation |
+| --- | --- |
+| An 1.3.2.1.f Measurements | Work Report `dimensional_measurements[]` (`item_name`, `design_val`, `tolerance_limit`, `measured_val`, `unit`) — UI `TVC_PmsClassNk` in `js/ui/pms.js`; **EXCEEDED** when measured &gt; limit |
+| An 1.3.2.1.g Damage / repair | Defect Report fields `damage_condition`, `repair_method` in `js/ui/defectReport.js` |
+| An 1.4.1 Software revision | `TVC_PRODUCT_INFO.VERSION_BADGE` — header `#appProductVersionBadge` + Menu PMS card |
+| Product brand | **TVC-SM** (unified Vessel + SM HQ) — `index.html` shell, `document.title` |
+
+---
+
 ## Universal machinery taxonomy (2026-09-14)
 
 | Layer | Path | Notes |
@@ -132,3 +174,4 @@ npm run verify-all                   # license 빌드 artifact 필요 시 dist/l
 - **2026-09-14:** Defect 첨부 이미지 압축 SOP 정합 (`TVC_Attachments.prepareUploadFile`). 본 문서 최초 작성.
 - **2026-09-14:** `e2e/pilot-sop-scenarios.spec.js` — SOP A–E 전 구간 E2E. `test-xfer-status-roundtrip` SM 역할/direction 수정.
 - **2026-09-14:** Legacy pilot 문자열 정화 · `legacyMigrationIds` · deploy SQL rename · IMO 9876543.
+- **2026-09-14:** Paradigm shift doc — 5 Core Pillars table; pilot E2E ClassNK measurement + EXCEEDED assertions.

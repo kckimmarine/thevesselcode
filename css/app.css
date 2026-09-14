@@ -996,6 +996,22 @@ body {
 .spare-tax-label { font-weight: 600; line-height: 1.25; }
 .spare-tax-eq-wrap { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; }
 .spare-tax-eq { font-size: 10px; background: #edf2f7; padding: 1px 4px; border-radius: 3px; }
+
+.app-product-header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; margin-bottom: 2px; }
+.app-product-name { font-size: 13px; color: #1a365d; letter-spacing: 0.02em; }
+.app-product-version { font-size: 10px; font-weight: 600; color: #2c5282; background: #ebf8ff; padding: 2px 6px; border-radius: 4px; }
+.menu-product-badge { font-size: 11px; font-weight: 600; color: #2c5282; margin: 0 0 8px; }
+
+.wr-meas-section { margin-top: 8px; }
+.wr-meas-toggle { background: none; border: none; color: #2b6cb0; font-size: 12px; font-weight: 600; cursor: pointer; padding: 4px 0; text-align: left; }
+.wr-meas-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 6px; }
+.wr-meas-table th, .wr-meas-table td { border: 1px solid #e2e8f0; padding: 4px 5px; vertical-align: middle; }
+.wr-meas-table th { background: #f7fafc; font-weight: 600; }
+.wr-meas-inp { width: 100%; min-width: 0; font-size: 11px; box-sizing: border-box; }
+.wr-meas-unit { max-width: 52px; }
+.wr-meas-row-alert { background: #fff5f5; }
+.wr-meas-exceeded { display: inline-block; margin-left: 4px; font-size: 9px; font-weight: 700; color: #c53030; background: #fed7d7; padding: 1px 4px; border-radius: 3px; }
+.wr-meas-add { margin-top: 6px; }
 .tree-empty-tag { font-size: 10px; color: #718096; background: #edf2f7; border-radius: 8px; padding: 0 5px; margin-left: 4px; }
 .group-editor-hint { font-size: 12px; margin: 0 0 10px; }
 .tree-badge-crit { background: #c53030; margin-left: 4px; }
@@ -11029,6 +11045,10 @@ body.mobile-nav-open .mobile-nav-backdrop { display: block; }
     #tab-actual .spare-taxonomy-rail {
         max-height: 160px;
     }
+
+    .wr-meas-body { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .app-product-header { flex-direction: column; align-items: flex-start; gap: 2px; }
+    .app-product-version { font-size: 9px; }
 }
 
 /* Period row + Machinery info card (mobile ≤768px only; desktop >768px unchanged) */
