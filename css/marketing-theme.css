@@ -609,7 +609,7 @@ body.mkt-lang-en .sm-hero-en {
 
 .home-stakeholder-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 14px;
 }
 
@@ -618,9 +618,56 @@ body.mkt-lang-en .sm-hero-en {
     margin: 0 0 8px;
 }
 
+.home-community-grid .home-card-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.home-ethos-band {
+    margin: 20px 0 28px;
+    padding: 18px 20px;
+    border-radius: var(--home-radius, 18px);
+    border: 1px solid rgba(56, 189, 248, 0.22);
+    background: linear-gradient(135deg, rgba(14, 116, 144, 0.18), rgba(15, 23, 42, 0.65));
+}
+
+.home-ethos-band p {
+    margin: 0;
+    color: var(--home-text, #f8fafc);
+    font-size: 0.98rem;
+    line-height: 1.65;
+}
+
+.home-ethos-ko {
+    margin: 0 0 8px !important;
+    font-size: 0.82rem !important;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--home-accent, #38bdf8) !important;
+    font-weight: 600;
+}
+
+@media (min-width: 960px) {
+    .home-community-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .home-stakeholder-grid {
         grid-template-columns: 1fr;
+    }
+
+    .home-hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .home-hero-actions .home-btn {
+        width: 100%;
+        justify-content: center;
+        min-height: 48px;
     }
 }
 

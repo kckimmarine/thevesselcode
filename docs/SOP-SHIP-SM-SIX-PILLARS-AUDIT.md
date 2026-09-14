@@ -13,7 +13,7 @@ TVC-SM supersedes the early engine-centric prototype as a **unified Ship Managem
 | Pillar | TVC-SM mechanism | Evidence in repo |
 | --- | --- | --- |
 | **Scalability** | Per-vessel IndexedDB edge; `company_id` + `vessel_id` isolation; ZIP delta sync; optional cloud mirror ingest | `js/core/schema.js`, `js/services/sync.js`, §5 below |
-| **Popularity** | Single product brand **TVC-SM**; familiar Deck/Engine/Captain/SM roles; demo tenant **ABC Shipping / ABC Voyager** | `index.html`, `js/auth.js`, `AGENTS.md` |
+| **Popularity** | Single product brand **TVC-SM**; **open hub** positioning on `thevesselcode.com` (`home/index.html`) — free Toolkit for all maritime roles, optional fleet SaaS; demo tenant **ABC Shipping / ABC Voyager** | `home/index.html`, `js/marketing-i18n.js`, `js/auth.js`, `AGENTS.md` |
 | **Professionalism** | ClassNK measurements (An 1.3.2.1.f), damage/repair fields (An 1.3.2.1.g), revision badge (An 1.4.1) | `js/ui/pms.js` `TVC_PmsClassNk`, `js/ui/defectReport.js`, `TVC_PRODUCT_INFO` |
 | **Flexibility** | Universal 2-tier machinery taxonomy (DECK/ENGINE common + vessel-profile extensions) | `data/equipment-taxonomy.json`, `js/services/machineryTaxonomy.js` |
 | **Consistency** | One workflow lifecycle (Reported → Confirmed → Approved); RBAC parity; mobile ergonomics isolated to ≤768px | `verify-rbac` 31/31, `css/responsive.css`, pilot E2E A–E |
@@ -175,3 +175,4 @@ npm run verify-all                   # license 빌드 artifact 필요 시 dist/l
 - **2026-09-14:** `e2e/pilot-sop-scenarios.spec.js` — SOP A–E 전 구간 E2E. `test-xfer-status-roundtrip` SM 역할/direction 수정.
 - **2026-09-14:** Legacy pilot 문자열 정화 · `legacyMigrationIds` · deploy SQL rename · IMO 9876543.
 - **2026-09-14:** Paradigm shift doc — 5 Core Pillars table; pilot E2E ClassNK measurement + EXCEEDED assertions.
+- **2026-09-14:** Marketing home repositioned — Open Digital Commons hero, 4-pillar community grid, 상생 ethos banner (`home/index.html`).
