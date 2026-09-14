@@ -46,7 +46,7 @@
             </div>
         </section>
 
-        <section id="pricing" class="home-section mkt-pricing-band mkt-pricing-band-compact" aria-labelledby="tkPricingTitle">
+        <section id="pricing" class="home-section mkt-pricing-band mkt-pricing-band-compact" aria-labelledby="tkPricingTitle" data-billing-return-host>
             <h2 id="tkPricingTitle" data-i18n="pricing.title">Two tracks — individual tools or fleet OS</h2>
             <p class="home-section-lead mkt-lead" data-i18n="tk.pricing.hook">Free catalog &amp; calculators — upgrade to Toolkit Pro or fleet TVC-SM when you scale.</p>
             <div class="mkt-pricing-grid">
@@ -59,19 +59,23 @@
                         <li data-i18n="pricing.toolkitPro.f2">Offline PDF downloads for plates &amp; calculators</li>
                         <li data-i18n="pricing.toolkitPro.f3">Full-plate bookmarking across IMPA catalog</li>
                     </ul>
-                    <a class="home-btn home-btn-primary" href="/contact-us?inquiry=toolkit-pro" data-i18n="pricing.toolkitPro.cta">Upgrade to Toolkit Pro</a>
+                    <a class="home-btn home-btn-primary" href="/contact-us?inquiry=toolkit-pro" data-billing-plan="toolkit-pro" data-i18n="pricing.toolkitPro.cta">Upgrade to Toolkit Pro</a>
                 </article>
                 <article class="mkt-pricing-card tvc-card market-card mkt-glass-card mkt-pricing-card-featured">
                     <span class="mkt-pricing-track" data-i18n="pricing.trackB.label">Track B · Enterprise Fleet</span>
                     <h3 data-i18n="pricing.fleet.title">TVC-SM Fleet OS</h3>
                     <p class="mkt-pricing-price" data-i18n="pricing.fleet.price">$99 / vessel / month (Starter)</p>
                     <p class="mkt-pricing-trial-note" data-i18n="pricing.fleet.trial">30-Day Risk-Free Trial (Cancel Anytime)</p>
+                    <p class="mkt-billing-qty-row">
+                        <label for="tkFleetVesselCount" data-i18n="billing.fleet.vessels">Vessels on Starter plan</label>
+                        <input id="tkFleetVesselCount" class="mkt-billing-vessel-input" type="number" min="1" max="500" value="1" inputmode="numeric">
+                    </p>
                     <ul class="mkt-pricing-features">
                         <li data-i18n="pricing.fleet.f1">ClassNK Annex 9.1.3 compliant PMS &amp; SPARE</li>
                         <li data-i18n="pricing.fleet.f2">Local-first offline sync with ZIP ship ↔ shore packets</li>
                         <li data-i18n="pricing.fleet.f3">Superintendent approval queue &amp; multi-vessel oversight</li>
                     </ul>
-                    <a class="home-btn home-btn-primary" href="/contact-us?inquiry=fleet-trial" data-i18n="pricing.fleet.cta">🚀 Start 30-Day Free Fleet Trial</a>
+                    <a class="home-btn home-btn-primary" href="/contact-us?inquiry=fleet-trial" data-billing-plan="fleet-starter" data-billing-vessel-input="#tkFleetVesselCount" data-i18n="pricing.fleet.cta">🚀 Start 30-Day Free Fleet Trial</a>
                 </article>
             </div>
         </section>
@@ -124,9 +128,10 @@
         </div>
     </div>
 
-    <script src="js/marketing-i18n.js?v=20260914-soft-light-intel"></script>
+    <script src="js/marketing-i18n.js?v=20260914-stripe-billing"></script>
     <script src="js/intelligence/marketFeed.js?v=20260914-soft-light-intel"></script>
-    <script src="js/marketing-shell.js?v=20260914-soft-light-intel"></script>
+    <script src="js/marketing-shell.js?v=20260914-stripe-billing"></script>
+    <script src="js/billing/checkout.js?v=20260914-stripe-billing"></script>
     <script src="js/toolkit/bunkerCalc.js?v=20260914-astm54b"></script>
     <script src="js/toolkit/flangeData.js?v=20260914-flange-matrix"></script>
     <script src="js/core/schema.js?v=20260906-plate-pipeline"></script>

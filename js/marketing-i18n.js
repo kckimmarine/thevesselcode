@@ -422,6 +422,21 @@
             en: 'Free catalog & calculators — upgrade to Toolkit Pro or fleet TVC-SM when you scale.',
             ko: '무료 카탈로그·계산기 — 확장 시 Toolkit Pro 또는 TVC-SM 선대로.',
         },
+        'billing.fleet.vessels': { en: 'Vessels on Starter plan', ko: 'Starter 적용 선박 수' },
+        'billing.checkout.loading': { en: 'Redirecting to secure checkout…', ko: '안전 결제 페이지로 이동 중…' },
+        'billing.checkout.fallback': {
+            en: 'Payment gateway initializing. Connecting you to onboarding support…',
+            ko: '결제 게이트웨이 준비 중입니다. 온보딩 지원으로 연결합니다…',
+        },
+        'billing.return.success': {
+            en: 'Subscription received. Manage billing anytime from the customer portal.',
+            ko: '구독이 접수되었습니다. 고객 포털에서 결제·해지를 관리할 수 있습니다.',
+        },
+        'billing.return.cancelled': {
+            en: 'Checkout cancelled — no charge was made.',
+            ko: '결제가 취소되었습니다 — 청구되지 않았습니다.',
+        },
+        'billing.portal.cta': { en: 'Manage subscription & invoices', ko: '구독·청구서 관리' },
 
         'tk.meta.description': {
             en: 'Maritime Toolkit — IMPA catalog, bunker, flange, lube and paint cross-reference tools. Free for global seafarers.',

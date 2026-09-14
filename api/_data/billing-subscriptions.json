@@ -1,0 +1,29 @@
+{
+  "byCustomer": {
+    "cus_test_1": {
+      "planType": "toolkit-pro",
+      "status": "trialing",
+      "stripeCustomerId": "cus_test_1",
+      "stripeSubscriptionId": "sub_test_1",
+      "email": "officer@example.com",
+      "vesselCount": null,
+      "updatedAt": "2026-09-14T16:08:35.954Z",
+      "premiumAccess": true
+    }
+  },
+  "bySubscription": {
+    "sub_test_1": {
+      "planType": "toolkit-pro",
+      "status": "trialing",
+      "stripeCustomerId": "cus_test_1",
+      "stripeSubscriptionId": "sub_test_1",
+      "email": "officer@example.com",
+      "vesselCount": null,
+      "updatedAt": "2026-09-14T16:08:35.954Z",
+      "premiumAccess": true
+    }
+  },
+  "byEmail": {
+    "officer@example.com": "cus_test_1"
+  }
+}

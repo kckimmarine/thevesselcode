@@ -885,6 +885,46 @@ body.tvc-marketing-body .mkt-pricing-card .home-btn-secondary {
     border: 1px solid #0f172a !important;
 }
 
+.mkt-billing-qty-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 8px;
+    font-size: 0.88rem;
+    color: #334155;
+}
+
+.mkt-billing-vessel-input {
+    width: 5rem;
+    min-height: 40px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0f172a;
+    background: #fff;
+}
+
+.home-btn.is-billing-loading {
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+.mkt-billing-return {
+    margin: 0 0 16px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #065f46 !important;
+}
+
+.mkt-billing-portal-btn {
+    display: inline-flex;
+}
+
 .home-platform-badge {
     display: inline-block;
     margin-bottom: 8px;
