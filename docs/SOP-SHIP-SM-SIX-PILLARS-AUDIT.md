@@ -176,3 +176,4 @@ npm run verify-all                   # license 빌드 artifact 필요 시 dist/l
 - **2026-09-14:** Legacy pilot 문자열 정화 · `legacyMigrationIds` · deploy SQL rename · IMO 9876543.
 - **2026-09-14:** Paradigm shift doc — 5 Core Pillars table; pilot E2E ClassNK measurement + EXCEEDED assertions.
 - **2026-09-14:** Marketing home repositioned — Open Digital Commons hero, 4-pillar community grid, 상생 ethos banner (`home/index.html`).
+- **2026-09-14:** Marketing KO/EN integrity — `js/marketing-i18n.js` field terminology, `tvc-mkt-lang` persistence, `/sm` Korean leakage removed, contact form alerts localized.

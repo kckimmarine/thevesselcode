@@ -10,14 +10,24 @@
         return document.querySelector(sel);
     }
 
+    function t(key) {
+        const i18n = globalThis.TVC_MarketingI18n;
+        if (!i18n?.t) return null;
+        return i18n.t(key, i18n.getLang());
+    }
+
     function inquiryLabel(value) {
-        const map = {
-            demo: 'TVC-SM Fleet Demo & PoC',
-            partnership: 'Maritime Toolkit & Engineering Partnership',
-            support: 'Technical Support & Bug Report',
-            general: 'General Inquiries',
-        };
-        return map[value] || value || 'General Inquiries';
+        const key = {
+            demo: 'contact.inquiry.demo',
+            partnership: 'contact.inquiry.partnership',
+            support: 'contact.inquiry.support',
+            general: 'contact.inquiry.general',
+        }[value];
+        if (key) {
+            const label = t(key);
+            if (label) return label;
+        }
+        return t('contact.inquiry.general') || value || 'General';
     }
 
     function isValidEmail(value) {
@@ -58,7 +68,7 @@
 
     async function submitInquiry(form, data, status, submitBtn) {
         if (submitBtn) submitBtn.disabled = true;
-        setStatus(status, 'success', 'Sending your inquiry…');
+        setStatus(status, 'success', t('contact.status.sending') || 'Sending…');
 
         try {
             const res = await fetch('/api/contact', {
@@ -79,20 +89,20 @@
             }
 
             if (payload.delivery?.method === 'email') {
-                setStatus(status, 'success', 'Thank you. Your inquiry was emailed to our team.');
+                setStatus(status, 'success', t('contact.status.okEmail') || 'Thank you.');
             } else {
-                setStatus(status, 'success', 'Thank you. Your inquiry was received by our team.');
+                setStatus(status, 'success', t('contact.status.ok') || 'Thank you.');
             }
             form.reset();
         } catch (err) {
             console.warn('[about-contact] API send failed, falling back to mailto', err);
-            setStatus(status, 'success', 'Opening your email client with a pre-filled inquiry…');
+            setStatus(status, 'success', t('contact.status.mailto') || 'Opening email…');
             window.location.href = buildMailtoUrl(data);
             window.setTimeout(() => {
                 setStatus(
                     status,
                     'success',
-                    'If your email client did not open, use the email link in the contact card.'
+                    t('contact.status.mailtoFallback') || 'Use the email link if needed.'
                 );
             }, 1200);
         } finally {
@@ -108,7 +118,7 @@
         const message = qs('#acMessage');
         if (typeSelect) typeSelect.value = 'demo';
         if (message && !String(message.value || '').trim()) {
-            message.value = 'I would like to request a free 30-day TVC-SM fleet pilot / demo for our vessels.';
+            message.value = t('contact.campaign.demo') || '';
         }
     }
 
@@ -130,31 +140,36 @@
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             const fd = new FormData(form);
+            const rawType = String(fd.get('inquiryType') || '');
             const data = {
                 companyName: String(fd.get('companyName') || '').trim(),
                 yourName: String(fd.get('yourName') || '').trim(),
                 email: String(fd.get('email') || '').trim(),
                 emailConfirm: String(fd.get('emailConfirm') || '').trim(),
-                inquiryType: inquiryLabel(String(fd.get('inquiryType') || '')),
+                inquiryType: inquiryLabel(rawType),
                 message: String(fd.get('message') || '').trim(),
             };
 
-            if (!data.companyName || !data.yourName || !data.email || !data.emailConfirm || !data.message) {
-                setStatus(status, 'error', 'Please complete all required fields.');
+            if (!data.companyName || !data.yourName || !data.email || !data.emailConfirm || !data.message || !rawType) {
+                setStatus(status, 'error', t('contact.err.required') || 'Required fields missing.');
                 return;
             }
 
             if (!isValidEmail(data.email)) {
-                setStatus(status, 'error', 'Please enter a valid work email address.');
+                setStatus(status, 'error', t('contact.err.email') || 'Invalid email.');
                 return;
             }
 
             if (data.email.toLowerCase() !== data.emailConfirm.toLowerCase()) {
-                setStatus(status, 'error', 'Work Email and Confirm Work Email do not match.');
+                setStatus(status, 'error', t('contact.err.mismatch') || 'Emails do not match.');
                 return;
             }
 
             submitInquiry(form, data, status, submitBtn);
+        });
+
+        globalThis.addEventListener('tvc-mkt-lang', () => {
+            applyInboundCampaignParams();
         });
     }
 
