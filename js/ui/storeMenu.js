@@ -14,6 +14,8 @@ const TVC_StoreMenu = (function () {
     let _plateLoadToken = 0;
     let _publicMode = false;
     let _categoryFilter = '';
+    let _detailReturnUrl = '';
+    let _popstateBound = false;
     const STORE_ROW_H = 44;
     const SEARCH_DEBOUNCE_MS = 180;
     const PUBLIC_SEARCH_DEBOUNCE_MS = 100;
@@ -56,11 +58,12 @@ const TVC_StoreMenu = (function () {
                 </header>
                 <div class="modal-body impa-detail-scroll">
                     <div id="impaDetailShipservLayout" class="impa-shipserv-layout hidden" aria-label="IMPA product details">
-                        <div class="impa-shipserv-photo" id="impaDetailProductPhoto">
+                        <div class="impa-shipserv-photo impa-plate-preview" id="impaDetailProductPhoto">
                             <img id="impaDetailProductImg" class="impa-shipserv-photo-img" alt="" hidden>
                             <div id="impaDetailProductFallback" class="impa-shipserv-photo-fallback" hidden></div>
+                            <span class="impa-plate-zoom-hint" id="impaDetailPlateZoomHint" hidden>🔍 Click / Tap to view high-res full plate</span>
                         </div>
-                        <h2 class="impa-shipserv-title" id="impaDetailProductTitle">—</h2>
+                        <h2 class="impa-shipserv-title impa-shipserv-title-duplicate" id="impaDetailProductTitle">—</h2>
                         <p class="impa-shipserv-dims" id="impaDetailProductDims"></p>
                         <div class="impa-shipserv-spec-wrap">
                             <table class="impa-shipserv-spec-table">
@@ -71,6 +74,11 @@ const TVC_StoreMenu = (function () {
                             <h3 class="impa-shipserv-desc-title">Description / Use</h3>
                             <p class="impa-shipserv-desc-text" id="impaDetailProductDesc"></p>
                         </section>
+                        <div id="impaDetailPublicTvcSm" class="impa-detail-tvc-sm" aria-hidden="true"></div>
+                        <div class="impa-detail-actions">
+                            <button type="button" class="impa-detail-share-btn" id="impaDetailShareBtn">📋 Share Spec Link</button>
+                        </div>
+                        <div class="impa-detail-plg-lock" id="impaDetailPlgLock" aria-label="TVC-SM fleet features"></div>
                     </div>
                     <div id="impaDetailPmsLayout" class="impa-detail-pms-layout">
                     <section class="impa-detail-plate-section" aria-label="Catalog plate viewer">
@@ -128,7 +136,7 @@ const TVC_StoreMenu = (function () {
                     </div>
                 </div>
             </div>
-            <div id="impaPlateFullscreen" class="impa-plate-fullscreen hidden" aria-hidden="true">
+            <div id="impaPlateFullscreen" class="impa-plate-fullscreen impa-plate-lightbox-unified hidden" aria-hidden="true">
                 <div class="impa-plate-fullscreen-backdrop"></div>
                 <div class="impa-plate-fullscreen-panel" role="dialog" aria-label="Enlarged catalog plate">
                     <header class="impa-plate-fullscreen-head">
@@ -158,6 +166,24 @@ const TVC_StoreMenu = (function () {
         const fs = wrap.querySelector('#impaPlateFullscreen');
         fs?.querySelector('.impa-plate-fullscreen-backdrop')?.addEventListener('click', closePlateFullscreen);
         fs?.querySelector('.impa-plate-fullscreen-close')?.addEventListener('click', closePlateFullscreen);
+
+        wrap.querySelector('#impaDetailShareBtn')?.addEventListener('click', onShareSpecLink);
+        wrap.querySelector('#impaDetailProductImg')?.addEventListener('click', () => {
+            if (!_publicMode) return;
+            const img = document.getElementById('impaDetailProductImg');
+            if (img?.hidden || !img?.src) return;
+            openPlateFullscreen();
+        });
+
+        if (!_popstateBound) {
+            _popstateBound = true;
+            window.addEventListener('popstate', () => {
+                const modal = document.getElementById('impaDetailModal');
+                if (_publicMode && modal && !modal.classList.contains('hidden')) {
+                    closeImpaDetailModal({ skipHistory: true });
+                }
+            });
+        }
 
         document.addEventListener('keydown', e => {
             if (e.key === 'Escape') {
@@ -200,7 +226,7 @@ const TVC_StoreMenu = (function () {
             bottomClose?.classList.add('hidden');
             shipservLayout?.classList.remove('hidden');
             pmsLayout?.classList.add('hidden');
-            headerTitle?.classList.add('hidden');
+            headerTitle?.classList.remove('hidden');
             document.getElementById('impaDetailModal')?.classList.add('impa-detail-modal-public');
         } else {
             rob?.classList.remove('hidden');
@@ -473,6 +499,8 @@ const TVC_StoreMenu = (function () {
                 fsImg.src = result.objectUrl;
                 fsImg.alt = img.alt;
             }
+            const hint = document.getElementById('impaDetailPlateZoomHint');
+            if (hint && _publicMode) hint.hidden = false;
         };
 
         img.onload = onLoaded;
@@ -492,9 +520,9 @@ const TVC_StoreMenu = (function () {
             fallback: document.getElementById('impaDetailProductFallback'),
             viewport: document.getElementById('impaDetailProductPhoto'),
             zoomBtn: null,
-            fsImg: null,
+            fsImg: document.getElementById('impaPlateFullscreenImg'),
             caption: null,
-            fsTitle: null,
+            fsTitle: document.getElementById('impaPlateFullscreenTitle'),
         };
     }
 
@@ -549,19 +577,58 @@ const TVC_StoreMenu = (function () {
     }
 
     function shipservSpecRows(item) {
+        const plateId = resolvePlateId(item);
+        const plateRow = plateId
+            ? `<tr>
+                <th scope="row">Plate Reference</th>
+                <td>${esc(plateId)}</td>
+            </tr>`
+            : '';
         return `
             <tr>
                 <th scope="row">Category</th>
                 <td>${esc(item.category || '—')}</td>
             </tr>
             <tr>
-                <th scope="row">UOM / Packaging</th>
+                <th scope="row">Packaging / Unit</th>
                 <td>${esc(extractPackaging(item))}</td>
             </tr>
             <tr>
-                <th scope="row">Material / Spec</th>
+                <th scope="row">Specs</th>
                 <td>${esc(extractMaterialSpec(item))}</td>
-            </tr>`;
+            </tr>
+            ${plateRow}`;
+    }
+
+    function publicTvcSmBannerHtml() {
+        const base = window.location.origin || 'https://www.thevesselcode.com';
+        const demoUrl = `${base}/contact-us?inquiry=tvc-sm-demo`;
+        const smUrl = `${base}/sm`;
+        return `
+            <section class="tvc-sm-banner" aria-label="TVC-SM ship management platform">
+                <p class="tvc-sm-badge">⚓ TVC-SM NEXT-GEN MARITIME OS</p>
+                <h2 class="tvc-sm-title">Tired of managing vessel spares &amp; stores in disconnected Excels?</h2>
+                <p class="tvc-sm-desc">TVC-SM connects vessel ROB tracking, PMS maintenance cycles, and 1-Click superintendent requisitions in one lightweight platform.</p>
+                <ul class="tvc-sm-locks" aria-label="TVC-SM fleet features">
+                    <li><span class="lock-icon" aria-hidden="true">🔒</span> Live vessel ROB tracking &amp; automatic stock deduction</li>
+                    <li><span class="lock-icon" aria-hidden="true">🔒</span> 1-Click superintendent requisitions &amp; shore billing</li>
+                </ul>
+                <div class="tvc-sm-actions">
+                    <a class="btn btn-cta" href="${esc(demoUrl)}">🚀 Request Free 30-Day Fleet Pilot / Demo</a>
+                    <a class="btn btn-secondary" href="${esc(smUrl)}">Explore TVC-SM</a>
+                </div>
+            </section>`;
+    }
+
+    function onShareSpecLink() {
+        const code = _currentItem?.impa_code || _currentItem?.code;
+        if (!code) return;
+        if (typeof TVC_ImpaDetailShared !== 'undefined') {
+            TVC_ImpaDetailShared.copyShareLink(code);
+            return;
+        }
+        const url = `https://thevesselcode.com/store/${code}`;
+        navigator.clipboard?.writeText(url).catch(() => {});
     }
 
     function productFallbackSvg(item) {
@@ -587,8 +654,16 @@ const TVC_StoreMenu = (function () {
         const dimsEl = document.getElementById('impaDetailProductDims');
         const specBody = document.getElementById('impaDetailShipservSpec');
         const desc = document.getElementById('impaDetailProductDesc');
+        const cleanTitle = cleanProductTitle(item);
         if (badge) badge.textContent = code ? `IMPA ${code}` : 'IMPA';
-        if (title) title.textContent = cleanProductTitle(item);
+        if (title) title.textContent = cleanTitle;
+        const headerTitle = document.getElementById('impaDetailTitle');
+        if (headerTitle) headerTitle.textContent = cleanTitle;
+        const tvcHost = document.getElementById('impaDetailPublicTvcSm');
+        if (tvcHost) {
+            tvcHost.innerHTML = publicTvcSmBannerHtml();
+            tvcHost.removeAttribute('aria-hidden');
+        }
         const dims = extractDimensions(item);
         if (dimsEl) {
             dimsEl.textContent = dims;
@@ -596,6 +671,12 @@ const TVC_StoreMenu = (function () {
         }
         if (specBody) specBody.innerHTML = shipservSpecRows(item);
         if (desc) desc.textContent = buildProductDescription(item);
+        const plgHost = document.getElementById('impaDetailPlgLock');
+        if (plgHost) {
+            plgHost.innerHTML = `
+                <a class="mkt-plg-lock" href="/contact-us?inquiry=tvc-sm-demo">🔒 Check Vessel ROB — Available with TVC-SM Fleet Subscription</a>
+                <a class="mkt-plg-lock" href="/contact-us?inquiry=tvc-sm-demo">🔒 1-Click Fleet Requisition — Available with TVC-SM Fleet Subscription</a>`;
+        }
     }
 
     function specRows(item) {
@@ -703,18 +784,39 @@ const TVC_StoreMenu = (function () {
         modal?.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
         if (_publicMode) {
+            const code = item.impa_code || item.code;
+            _detailReturnUrl = `${window.location.pathname}${window.location.search}`;
+            if (code) {
+                try {
+                    window.history.pushState({ impaDetail: code }, '', `/store/${code}`);
+                } catch (err) {
+                    console.warn('[store-public] history pushState', err);
+                }
+            }
+            const hintEl = document.getElementById('impaDetailPlateZoomHint');
+            if (hintEl) hintEl.hidden = true;
             document.getElementById('modalCloseBtn')?.focus();
         } else {
             document.getElementById('impaDetailQty')?.focus();
         }
     }
 
-    function closeImpaDetailModal() {
+    function closeImpaDetailModal({ skipHistory } = {}) {
         closePlateFullscreen();
         _plateLoadToken += 1;
         revokePlateObjectUrl();
         document.getElementById('impaDetailModal')?.classList.add('hidden');
         document.body.style.overflow = '';
+        const hintEl = document.getElementById('impaDetailPlateZoomHint');
+        if (hintEl) hintEl.hidden = true;
+        if (_publicMode && _detailReturnUrl && !skipHistory) {
+            try {
+                window.history.replaceState(null, '', _detailReturnUrl);
+            } catch (err) {
+                console.warn('[store-public] history replaceState', err);
+            }
+        }
+        _detailReturnUrl = '';
         _currentItem = null;
         _plateZoom?.reset();
     }

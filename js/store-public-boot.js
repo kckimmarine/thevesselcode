@@ -11,7 +11,7 @@
         TVC_StoreMenu.setPublicMode(true);
 
         if (typeof TVC_MaritimeToolkit !== 'undefined') {
-            TVC_MaritimeToolkit.init();
+            await TVC_MaritimeToolkit.init();
         }
 
         const params = new URLSearchParams(window.location.search);

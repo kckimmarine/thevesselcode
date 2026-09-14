@@ -171,6 +171,13 @@ function buildPrimaryHeading(item) {
     return `IMPA CODE ${item.impa_code}: ${name}`;
 }
 
+function cleanProductTitle(item) {
+    let name = String(item?.name || 'Marine Store Item');
+    name = name.replace(/\s+\d+(?:\.\d+)?\s*(?:mm|cm|m|mtr|inch|in|")\s*(?:x\s*.+)?$/i, '');
+    name = name.replace(/\s+\d+\s*(?:rolls?|rols|pcs|pieces?|boxes?|sets?)(?:\s*per\s*box)?.*$/i, '');
+    return name.trim() || String(item?.name || 'Marine Store Item');
+}
+
 function buildOgDescription(item) {
     return `Technical specification, dimensions, unit, and maritime catalog plate illustration for IMPA ${item.impa_code}.`;
 }
@@ -378,6 +385,17 @@ function buildStoreItemHtml(item, { origin } = {}) {
     const related = getRelatedItemsByChapter(item.impa_code, 6);
     const relatedHtml = buildRelatedItemsSectionHtml(item, related, base);
     const tvcSmBannerHtml = buildTvcSmConversionBannerHtml(base);
+    const displayTitle = cleanProductTitle(item);
+    const plateSection = imageUrl
+        ? `<section class="impa-shipserv-photo impa-plate-preview" aria-label="Catalog plate">
+          <img class="impa-store-plate-img" src="${escapeHtml(plateUrl)}" data-plate-hires="${escapeHtml(plateUrl)}"
+            data-plate-title="${escapeHtml(`IMPA ${item.impa_code} — ${displayTitle}`)}"
+            alt="IMPA ${escapeHtml(item.impa_code)} catalog plate" width="${PLATE_IMG_WIDTH}" height="${PLATE_IMG_HEIGHT}" loading="lazy" decoding="async">
+          <span class="impa-plate-zoom-hint">🔍 Click / Tap to view high-res full plate</span>
+        </section>`
+        : `<section class="impa-shipserv-photo impa-plate-preview" aria-label="Catalog plate">
+          <div class="impa-shipserv-photo-fallback">Catalog plate reference: ${escapeHtml(item.plate_id || 'Not available')}</div>
+        </section>`;
 
     return `<!DOCTYPE html>
 <html lang="en">
@@ -400,72 +418,40 @@ function buildStoreItemHtml(item, { origin } = {}) {
   <meta name="twitter:description" content="${escapeHtml(ogDescription)}">
   ${imageUrl ? `<meta name="twitter:image" content="${escapeHtml(imageUrl)}">` : ''}
   <script type="application/ld+json">${jsonLd}</script>
-  <style>
-    :root { color-scheme: light; font-family: "Segoe UI", system-ui, sans-serif; }
-    body { margin: 0; background: #f4f7fb; color: #0f172a; }
-    .wrap { max-width: 920px; margin: 0 auto; padding: 24px 16px 48px; }
-    .card { background: #fff; border: 1px solid #dbe4f0; border-radius: 16px; padding: 24px; box-shadow: 0 10px 30px rgba(15,23,42,.06); }
-    .badge { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #0b3d91; background: #e8f1ff; border-radius: 999px; padding: 6px 10px; }
-    h1 { margin: 12px 0 8px; font-size: clamp(1.35rem, 2.8vw, 2rem); line-height: 1.2; }
-    .lead { color: #475569; line-height: 1.6; margin: 0 0 20px; }
-    .grid { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); }
-    @media (min-width: 768px) { .grid { grid-template-columns: 280px minmax(0, 1fr); align-items: start; } }
-    .plate { background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 12px; min-height: 220px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-    .plate img { width: 100%; height: auto; display: block; aspect-ratio: 4 / 3; object-fit: contain; }
-    .plate-fallback { padding: 24px; text-align: center; color: #64748b; font-size: 14px; }
-    table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    th, td { border-bottom: 1px solid #e2e8f0; padding: 10px 12px; text-align: left; vertical-align: top; }
-    th { width: 38%; color: #475569; font-weight: 600; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 10px; font-weight: 700; text-decoration: none; }
-    .btn-primary { background: #0b3d91; color: #fff; }
-    .btn-secondary { background: #fff; color: #0b3d91; border: 1px solid #bfd0ea; }
-    .footer { margin-top: 18px; color: #64748b; font-size: 13px; }
-    .tvc-sm-banner { margin-top: 24px; padding: 20px 18px; border-radius: 14px; background: linear-gradient(135deg, #0b3d91 0%, #0e7490 100%); color: #f8fafc; box-shadow: 0 12px 32px rgba(11, 61, 145, 0.25); }
-    .tvc-sm-badge { margin: 0 0 10px; font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #bae6fd; }
-    .tvc-sm-title { margin: 0 0 10px; font-size: clamp(1.1rem, 2.4vw, 1.45rem); line-height: 1.25; color: #fff; }
-    .tvc-sm-desc { margin: 0 0 14px; font-size: 14px; line-height: 1.55; color: #e2e8f0; }
-    .tvc-sm-locks { margin: 0 0 16px; padding-left: 1.1rem; font-size: 13px; line-height: 1.5; color: #cbd5e1; }
-    .tvc-sm-locks .lock-icon { margin-right: 6px; }
-    .tvc-sm-actions { display: flex; flex-wrap: wrap; gap: 10px; }
-    .btn-cta { background: #fbbf24; color: #0f172a; border: none; }
-    .btn-cta:hover { filter: brightness(1.05); }
-    .related-items { margin-top: 28px; padding-top: 22px; border-top: 1px solid #e2e8f0; }
-    .related-items h2 { margin: 0 0 12px; font-size: 1.05rem; color: #0f172a; }
-    .related-list { margin: 0 0 12px; padding-left: 1.2rem; font-size: 14px; line-height: 1.55; }
-    .related-list a { color: #0b3d91; font-weight: 600; text-decoration: none; }
-    .related-list a:hover { text-decoration: underline; }
-    .related-toolkit { margin: 0; font-size: 13px; }
-    .related-toolkit a { color: #475569; font-weight: 600; }
-  </style>
+  <link rel="stylesheet" href="/css/store.css">
+  <link rel="stylesheet" href="/css/store-public.css">
+  <link rel="stylesheet" href="/css/impa-detail-unified.css">
 </head>
-<body>
-  <main class="wrap">
-    <article class="card">
-      <span class="badge">IMPA ${escapeHtml(item.impa_code)}</span>
-      <h1>${escapeHtml(heading)}</h1>
-      <p class="lead">${escapeHtml(description)}</p>
-      <div class="grid">
-        <section class="plate" aria-label="Catalog plate">
-          ${imageUrl
-        ? `<img src="${escapeHtml(plateUrl)}" alt="IMPA ${escapeHtml(item.impa_code)} catalog plate" width="${PLATE_IMG_WIDTH}" height="${PLATE_IMG_HEIGHT}" loading="lazy" decoding="async">`
-        : `<div class="plate-fallback">Catalog plate reference: ${escapeHtml(item.plate_id || 'Not available')}</div>`}
-        </section>
+<body class="impa-store-standalone">
+  <main class="impa-store-detail wrap">
+    <article class="impa-store-detail-card">
+      <header class="impa-store-detail-head">
+        <div class="impa-store-detail-head-main">
+          <span class="impa-detail-unified-badge">IMPA ${escapeHtml(item.impa_code)}</span>
+          <h1 class="impa-detail-unified-title">${escapeHtml(displayTitle)}</h1>
+        </div>
+      </header>
+      <div class="impa-store-detail-body">
+        ${plateSection}
         <section aria-label="Specifications">
-          <table class="spec-table">
-            <tbody>${tableHtml}</tbody>
-          </table>
+          <div class="impa-shipserv-spec-wrap">
+            <table class="impa-shipserv-spec-table spec-table">
+              <tbody>${tableHtml}</tbody>
+            </table>
+          </div>
         </section>
+        <div class="impa-detail-tvc-sm">${tvcSmBannerHtml}</div>
+        <div class="impa-detail-actions">
+          <button type="button" class="btn-share-spec" data-impa-share-code="${escapeHtml(item.impa_code)}">📋 Share Spec Link</button>
+          <a class="btn-toolkit" href="${escapeHtml(toolkitUrl)}">Open Maritime Toolkit</a>
+        </div>
+        ${relatedHtml}
+        <p class="footer-note">THE VESSEL CODE — offline-first PMS + SPICS and maritime toolkit for shipboard operations.</p>
       </div>
-      ${tvcSmBannerHtml}
-      <div class="actions">
-        <a class="btn btn-primary" href="${escapeHtml(toolkitUrl)}">Open Interactive Maritime Toolkit</a>
-        <a class="btn btn-secondary" href="${escapeHtml(`${base}/toolkit`)}">Browse Full IMPA Catalog</a>
-      </div>
-      ${relatedHtml}
-      <p class="footer">THE VESSEL CODE — offline-first PMS + SPICS and maritime toolkit for shipboard operations.</p>
     </article>
   </main>
+  <script src="/js/ui/impaDetailShared.js"></script>
+  <script>TVC_ImpaDetailShared.initStandalonePage();</script>
 </body>
 </html>`;
 }

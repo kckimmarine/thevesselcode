@@ -1,61 +1,38 @@
 /* THE VESSEL CODE — Maritime Toolkit (public utilities) */
 const TVC_MaritimeToolkit = (function () {
-    const FUEL_TYPES = {
-        VLSFO: { label: 'VLSFO (0.50% S)', defaultDensity: 991, alpha: 0.00065 },
-        LSMGO: { label: 'LSMGO / MGO', defaultDensity: 850, alpha: 0.00080 },
-        HSFO: { label: 'HSFO 380 (3.5% S)', defaultDensity: 991, alpha: 0.00065 },
-    };
+    function mkt(key, fallback) {
+        const i18n = globalThis.TVC_MarketingI18n;
+        if (i18n?.t) {
+            const v = i18n.t(key, i18n.getLang());
+            if (v) return v;
+        }
+        return fallback ?? key;
+    }
 
-    const FLANGE_ROWS = [
-        { standard: 'JIS 5K', nb: '15A', od: 80, pcd: 55, bolts: 4, hole: 12, bolt: 'M12' },
-        { standard: 'JIS 5K', nb: '20A', od: 85, pcd: 60, bolts: 4, hole: 12, bolt: 'M12' },
-        { standard: 'JIS 5K', nb: '25A', od: 95, pcd: 70, bolts: 4, hole: 12, bolt: 'M12' },
-        { standard: 'JIS 5K', nb: '32A', od: 100, pcd: 75, bolts: 4, hole: 15, bolt: 'M12' },
-        { standard: 'JIS 5K', nb: '40A', od: 105, pcd: 80, bolts: 4, hole: 15, bolt: 'M12' },
-        { standard: 'JIS 5K', nb: '50A', od: 120, pcd: 95, bolts: 4, hole: 15, bolt: 'M12' },
-        { standard: 'JIS 5K', nb: '65A', od: 140, pcd: 115, bolts: 4, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 5K', nb: '80A', od: 150, pcd: 125, bolts: 8, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 5K', nb: '100A', od: 175, pcd: 145, bolts: 8, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 5K', nb: '125A', od: 200, pcd: 175, bolts: 8, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 5K', nb: '150A', od: 225, pcd: 200, bolts: 8, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 10K', nb: '15A', od: 95, pcd: 70, bolts: 4, hole: 15, bolt: 'M12' },
-        { standard: 'JIS 10K', nb: '20A', od: 100, pcd: 75, bolts: 4, hole: 15, bolt: 'M12' },
-        { standard: 'JIS 10K', nb: '25A', od: 125, pcd: 90, bolts: 4, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 10K', nb: '32A', od: 135, pcd: 100, bolts: 4, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 10K', nb: '40A', od: 140, pcd: 105, bolts: 4, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 10K', nb: '50A', od: 155, pcd: 120, bolts: 8, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 10K', nb: '65A', od: 175, pcd: 140, bolts: 8, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 10K', nb: '80A', od: 185, pcd: 150, bolts: 8, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 10K', nb: '100A', od: 210, pcd: 175, bolts: 8, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 10K', nb: '125A', od: 250, pcd: 210, bolts: 8, hole: 23, bolt: 'M20' },
-        { standard: 'JIS 10K', nb: '150A', od: 280, pcd: 240, bolts: 8, hole: 23, bolt: 'M20' },
-        { standard: 'JIS 16K', nb: '15A', od: 95, pcd: 70, bolts: 4, hole: 15, bolt: 'M12' },
-        { standard: 'JIS 16K', nb: '25A', od: 125, pcd: 90, bolts: 4, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 16K', nb: '50A', od: 155, pcd: 120, bolts: 8, hole: 19, bolt: 'M16' },
-        { standard: 'JIS 16K', nb: '80A', od: 200, pcd: 160, bolts: 8, hole: 23, bolt: 'M20' },
-        { standard: 'JIS 16K', nb: '100A', od: 225, pcd: 185, bolts: 8, hole: 23, bolt: 'M20' },
-        { standard: 'JIS 16K', nb: '150A', od: 305, pcd: 260, bolts: 12, hole: 25, bolt: 'M22' },
-        { standard: 'DIN PN16', nb: 'DN15', od: 95, pcd: 65, bolts: 4, hole: 14, bolt: 'M12' },
-        { standard: 'DIN PN16', nb: 'DN20', od: 105, pcd: 75, bolts: 4, hole: 14, bolt: 'M12' },
-        { standard: 'DIN PN16', nb: 'DN25', od: 115, pcd: 85, bolts: 4, hole: 14, bolt: 'M12' },
-        { standard: 'DIN PN16', nb: 'DN32', od: 140, pcd: 100, bolts: 4, hole: 18, bolt: 'M16' },
-        { standard: 'DIN PN16', nb: 'DN40', od: 150, pcd: 110, bolts: 4, hole: 18, bolt: 'M16' },
-        { standard: 'DIN PN16', nb: 'DN50', od: 165, pcd: 125, bolts: 4, hole: 18, bolt: 'M16' },
-        { standard: 'DIN PN16', nb: 'DN65', od: 185, pcd: 145, bolts: 8, hole: 18, bolt: 'M16' },
-        { standard: 'DIN PN16', nb: 'DN80', od: 200, pcd: 160, bolts: 8, hole: 18, bolt: 'M16' },
-        { standard: 'DIN PN16', nb: 'DN100', od: 220, pcd: 180, bolts: 8, hole: 18, bolt: 'M16' },
-        { standard: 'DIN PN16', nb: 'DN125', od: 250, pcd: 210, bolts: 8, hole: 18, bolt: 'M16' },
-        { standard: 'DIN PN16', nb: 'DN150', od: 285, pcd: 240, bolts: 8, hole: 22, bolt: 'M20' },
-        { standard: 'ANSI 150#', nb: '1/2"', od: 89, pcd: 60, bolts: 4, hole: 16, bolt: '1/2"' },
-        { standard: 'ANSI 150#', nb: '3/4"', od: 98, pcd: 70, bolts: 4, hole: 16, bolt: '1/2"' },
-        { standard: 'ANSI 150#', nb: '1"', od: 108, pcd: 79, bolts: 4, hole: 16, bolt: '1/2"' },
-        { standard: 'ANSI 150#', nb: '1-1/2"', od: 127, pcd: 98, bolts: 4, hole: 16, bolt: '5/8"' },
-        { standard: 'ANSI 150#', nb: '2"', od: 152, pcd: 121, bolts: 4, hole: 19, bolt: '5/8"' },
-        { standard: 'ANSI 150#', nb: '3"', od: 190, pcd: 152, bolts: 4, hole: 19, bolt: '5/8"' },
-        { standard: 'ANSI 150#', nb: '4"', od: 229, pcd: 190, bolts: 8, hole: 19, bolt: '5/8"' },
-        { standard: 'ANSI 150#', nb: '6"', od: 280, pcd: 241, bolts: 8, hole: 22, bolt: '3/4"' },
-        { standard: 'ANSI 150#', nb: '8"', od: 343, pcd: 298, bolts: 8, hole: 22, bolt: '3/4"' },
-    ];
+    function fuelTypes() {
+        const grades = globalThis.TVC_BunkerCalc?.FUEL_GRADES || {};
+        const lang = globalThis.TVC_MarketingI18n?.getLang?.() || 'en';
+        return Object.values(grades).map((g) => ({
+            key: g.key,
+            label: lang === 'ko' && g.labelKo ? g.labelKo : g.label,
+            defaultDensity: g.defaultDensity,
+        }));
+    }
+
+    function calcBunkerMassAstM54B(volume, density15, tempC, fuelKey) {
+        const calc = globalThis.TVC_BunkerCalc?.calcBunkerAstM54B;
+        if (!calc) return { mt: 0, v15: 0, vcf: 1, alpha: 0, co2Mt: 0 };
+        const r = calc({ volumeM3: volume, density15, tempC, fuelKey });
+        return {
+            mt: r.mt,
+            v15: r.v15,
+            vcf: r.vcf,
+            alpha: r.alpha,
+            densityInAir: r.densityInAir,
+            co2Mt: r.co2Mt,
+            rho15: r.density15,
+        };
+    }
 
     const LUB_OIL_ROWS = [
         { category: 'Cylinder Oil', grade: '70BN', shell: 'Alexia 50', mobil: 'Mobil Gard 570', castrol: 'Cleeton 70', total: 'Disola A 40' },
@@ -92,45 +69,15 @@ const TVC_MaritimeToolkit = (function () {
     }
 
     function standards() {
-        return [...new Set(FLANGE_ROWS.map(r => r.standard))];
+        if (globalThis.TVC_FlangeData?.standards) return globalThis.TVC_FlangeData.standards();
+        return [];
     }
 
     function filterFlanges(standard, query) {
-        const q = String(query || '').trim().toLowerCase();
-        return FLANGE_ROWS.filter(row => {
-            if (row.standard !== standard) return false;
-            if (!q) return true;
-            return String(row.nb).toLowerCase().includes(q)
-                || String(row.od).includes(q)
-                || String(row.pcd).includes(q);
-        });
-    }
-
-    /**
-     * ASTM Table 54B-inspired mass conversion (simplified for shipboard use).
-     * Corrects observed volume & density to 15°C reference, then MT in air.
-     */
-    function calcBunkerMassAstM54B(volume, density15, tempC, fuelKey) {
-        const vObs = Math.max(0, Number(volume) || 0);
-        const rho15 = Math.max(0, Number(density15) || 0);
-        const t = Number(tempC);
-        const fuel = FUEL_TYPES[fuelKey] || FUEL_TYPES.VLSFO;
-        const alpha = fuel.alpha;
-
-        if (!vObs || !rho15) return { mt: 0, v15: 0, rho15, vcf: 1 };
-
-        const deltaT = Number.isFinite(t) ? t - 15 : 0;
-        const vcf = 1 - alpha * deltaT;
-        const v15 = vObs * Math.max(0.95, Math.min(1.05, vcf));
-        const mt = (v15 * rho15) / 1000;
-
-        return {
-            mt,
-            v15,
-            rho15,
-            vcf: v15 / vObs,
-            alpha,
-        };
+        if (globalThis.TVC_FlangeData?.filterFlanges) {
+            return globalThis.TVC_FlangeData.filterFlanges(standard, query);
+        }
+        return [];
     }
 
     function calcVolumeToMt(volume, density15, tempC, fuelKey) {
@@ -152,8 +99,9 @@ const TVC_MaritimeToolkit = (function () {
     }
 
     function renderBunkerPanel(host) {
-        const fuelOptions = Object.entries(FUEL_TYPES).map(([k, v]) =>
-            `<option value="${k}">${esc(v.label)}</option>`).join('');
+        const fuels = fuelTypes();
+        const fuelOptions = fuels.map((f) =>
+            `<option value="${esc(f.key)}">${esc(f.label)}</option>`).join('');
         const params = new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '');
         const portHint = params.get('port') || 'Singapore';
         const benchmark = params.get('benchmark');
@@ -161,47 +109,49 @@ const TVC_MaritimeToolkit = (function () {
             ? globalThis.TVC_MarketFeed.renderBunkerIntelStrip(portHint)
             : '';
         const benchNote = benchmark
-            ? `<p class="maritime-note" style="margin-top:0">Ticker benchmark: <strong>$${esc(benchmark)}/MT</strong> (${esc(portHint)}) — use observed lab density for settlement.</p>`
+            ? `<p class="maritime-note" style="margin-top:0">${esc(mkt('tk.bunker.benchmark', 'Ticker benchmark'))}: <strong>$${esc(benchmark)}/MT</strong> (${esc(portHint)}) — ${esc(mkt('tk.bunker.benchmark.hint', 'use observed lab density for settlement.'))}</p>`
             : '';
         host.innerHTML = `
             ${intelStrip}
             ${benchNote}
             <div class="maritime-panel-head">
-                <h2 class="maritime-panel-title">⛽ Bunker &amp; Fuel Calculator</h2>
-                <p class="maritime-panel-sub">Volume to metric tons using ASTM Table 54B-style temperature &amp; density correction (reference 15°C).</p>
+                <h2 class="maritime-panel-title" data-i18n="tk.bunker.title">⛽ Bunker &amp; Fuel Calculator (ASTM Table 54B)</h2>
+                <p class="maritime-panel-sub" data-i18n="tk.bunker.sub">VCF, weight-in-air mass, and estimated CO₂ from observed volume, density @ 15°C, and temperature.</p>
             </div>
             <form class="maritime-bunker-form" id="bunkerCalcForm">
                 <label class="maritime-field">
-                    <span>Fuel type</span>
+                    <span data-i18n="tk.bunker.fuel">Fuel grade</span>
                     <select id="bunkerFuelType">${fuelOptions}</select>
                 </label>
                 <label class="maritime-field">
-                    <span>Volume (m³ @ observed temp)</span>
+                    <span data-i18n="tk.bunker.volume">Observed volume (m³)</span>
                     <input type="number" id="bunkerVolume" min="0" step="0.001" value="500" inputmode="decimal">
                 </label>
                 <label class="maritime-field">
-                    <span>Observed density (kg/m³ @ 15°C)</span>
-                    <input type="number" id="bunkerDensity" min="800" max="1100" step="0.1" value="991" inputmode="decimal">
+                    <span data-i18n="tk.bunker.density">Density @ 15°C (kg/m³)</span>
+                    <input type="number" id="bunkerDensity" min="770" max="1075" step="0.1" value="991" inputmode="decimal">
                 </label>
                 <label class="maritime-field">
-                    <span>Temperature (°C)</span>
+                    <span data-i18n="tk.bunker.temp">Observed temperature (°C)</span>
                     <input type="number" id="bunkerTemp" step="0.1" value="40" inputmode="decimal">
                 </label>
             </form>
             <div class="maritime-bunker-result" id="bunkerResult" aria-live="polite">
-                <div class="maritime-bunker-metrics">
-                    <div><span>Mass (MT)</span><strong id="bunkerMassValue">—</strong></div>
-                    <div><span>Vol @ 15°C (m³)</span><strong id="bunkerV15Value">—</strong></div>
-                    <div><span>VCF (approx.)</span><strong id="bunkerVcfValue">—</strong></div>
+                <div class="maritime-bunker-metrics maritime-bunker-metrics-extended">
+                    <div><span data-i18n="tk.bunker.vcf">VCF @ 15°C</span><strong id="bunkerVcfValue">—</strong></div>
+                    <div><span data-i18n="tk.bunker.alpha">Alpha @ 15°C</span><strong id="bunkerAlphaValue">—</strong></div>
+                    <div><span data-i18n="tk.bunker.mass">Mass in air (MT)</span><strong id="bunkerMassValue">—</strong></div>
+                    <div><span data-i18n="tk.bunker.co2">Est. CO₂ (MT)</span><strong id="bunkerCo2Value">—</strong></div>
+                    <div><span data-i18n="tk.bunker.v15">Volume @ 15°C (m³)</span><strong id="bunkerV15Value">—</strong></div>
                 </div>
             </div>
-            <p class="maritime-note">ASTM 54B simplified: V<sub>15</sub> = V<sub>obs</sub> × (1 − αΔT); MT = V<sub>15</sub> × ρ<sub>15</sub> ÷ 1000. Verify with shore lab before commercial settlement.</p>`;
+            <p class="maritime-note" data-i18n="tk.bunker.note">ASTM Table 54B VCF (API MPMS). Verify with shore lab before commercial settlement.</p>`;
 
         const form = host.querySelector('#bunkerCalcForm');
         const fuelSelect = host.querySelector('#bunkerFuelType');
         const paint = () => {
             const fuelKey = fuelSelect.value;
-            const fuel = FUEL_TYPES[fuelKey];
+            const fuel = fuels.find((f) => f.key === fuelKey) || fuels[0];
             const vol = host.querySelector('#bunkerVolume')?.value;
             const den = host.querySelector('#bunkerDensity')?.value;
             const temp = host.querySelector('#bunkerTemp')?.value;
@@ -209,14 +159,17 @@ const TVC_MaritimeToolkit = (function () {
             host.querySelector('#bunkerMassValue').textContent = `${result.mt.toFixed(3)} MT`;
             host.querySelector('#bunkerV15Value').textContent = result.v15.toFixed(3);
             host.querySelector('#bunkerVcfValue').textContent = result.vcf.toFixed(4);
+            host.querySelector('#bunkerAlphaValue').textContent = result.alpha.toExponential(4);
+            host.querySelector('#bunkerCo2Value').textContent = `${(result.co2Mt || 0).toFixed(3)} MT`;
         };
         fuelSelect.addEventListener('change', () => {
-            const fuel = FUEL_TYPES[fuelSelect.value];
-            host.querySelector('#bunkerDensity').value = String(fuel.defaultDensity);
+            const fuel = fuels.find((f) => f.key === fuelSelect.value);
+            if (fuel) host.querySelector('#bunkerDensity').value = String(fuel.defaultDensity);
             paint();
         });
         form.addEventListener('input', paint);
         paint();
+        globalThis.TVC_MarketingI18n?.applyLang?.(globalThis.TVC_MarketingI18n.getLang());
     }
 
     function applyBunkerPrefill(params) {
@@ -227,7 +180,8 @@ const TVC_MaritimeToolkit = (function () {
         if (!host) return;
         const fuelSelect = host.querySelector('#bunkerFuelType');
         const denInput = host.querySelector('#bunkerDensity');
-        if (fuel && FUEL_TYPES[fuel] && fuelSelect) {
+        const grades = globalThis.TVC_BunkerCalc?.FUEL_GRADES || {};
+        if (fuel && grades[fuel] && fuelSelect) {
             fuelSelect.value = fuel;
         }
         if (density && denInput) {
@@ -338,21 +292,21 @@ const TVC_MaritimeToolkit = (function () {
             `<option value="${esc(s)}">${esc(s)}</option>`).join('');
         host.innerHTML = `
             <div class="maritime-panel-head">
-                <h2 class="maritime-panel-title">📐 Flange &amp; Engineering Tables</h2>
-                <p class="maritime-panel-sub">JIS (5K / 10K / 16K), DIN PN16, and ANSI 150# pipe flange dimensions.</p>
+                <h2 class="maritime-panel-title" data-i18n="tk.flange.title">📐 Flange &amp; Engineering Tables</h2>
+                <p class="maritime-panel-sub" data-i18n="tk.flange.sub">JIS B2220 (5K / 10K / 16K), ANSI 150#, DIN PN10 / PN16 — dimensions in millimetres.</p>
             </div>
             <div class="maritime-flange-controls">
                 <label class="maritime-field">
-                    <span>Standard</span>
+                    <span data-i18n="tk.flange.standard">Standard</span>
                     <select id="flangeStandardSelect">${stdOptions}</select>
                 </label>
                 <label class="maritime-field maritime-field-grow">
-                    <span>Filter nominal bore</span>
+                    <span data-i18n="tk.flange.filter">Filter nominal size</span>
                     <input type="search" id="flangeSizeSearch" placeholder="e.g. 50A, DN80, 4&quot;" autocomplete="off">
                 </label>
             </div>
             <div id="flangeTableHost"></div>
-            <p class="maritime-note">Dimensions in millimetres. Verify against yard drawing / class certificate before procurement.</p>`;
+            <p class="maritime-note" data-i18n="tk.flange.note">Verify against yard drawing / class certificate before procurement.</p>`;
 
         const stdSelect = host.querySelector('#flangeStandardSelect');
         const search = host.querySelector('#flangeSizeSearch');
@@ -368,6 +322,26 @@ const TVC_MaritimeToolkit = (function () {
         stdSelect.addEventListener('change', paint);
         search.addEventListener('input', paint);
         paint();
+        globalThis.TVC_MarketingI18n?.applyLang?.(globalThis.TVC_MarketingI18n.getLang());
+    }
+
+    function renderConversionBanner() {
+        const existing = document.getElementById('toolkitFooterConversionBand');
+        if (existing) return existing;
+        const shell = document.querySelector('.store-public-shell') || document.querySelector('.home-shell');
+        if (!shell) return null;
+        const band = document.createElement('section');
+        band.id = 'toolkitFooterConversionBand';
+        band.className = 'toolkit-conversion-band mkt-glass-card';
+        band.setAttribute('aria-label', 'TVC-SM upgrade');
+        band.innerHTML = `
+            <p data-i18n="tk.conversion.banner">⚓ Looking to automate ROB tracking &amp; 1-Click Requisitions?</p>
+            <a class="home-btn home-btn-primary" href="/contact-us?inquiry=tvc-sm-demo" data-i18n="tk.conversion.cta">Request TVC-SM Demo</a>`;
+        const footer = document.getElementById('marketing-footer');
+        if (footer) shell.insertBefore(band, footer);
+        else shell.appendChild(band);
+        globalThis.TVC_MarketingI18n?.applyLang?.(globalThis.TVC_MarketingI18n.getLang());
+        return band;
     }
 
     function setActiveTool(tool) {
@@ -391,13 +365,21 @@ const TVC_MaritimeToolkit = (function () {
         }
     }
 
-    function init() {
+    async function init() {
         const nav = document.getElementById('storePublicToolkit');
         if (!nav) return;
 
         nav.querySelectorAll('[data-tool-tab]').forEach(btn => {
             btn.addEventListener('click', () => setActiveTool(btn.dataset.toolTab));
         });
+
+        if (globalThis.TVC_FlangeData?.loadFromJson) {
+            try {
+                await globalThis.TVC_FlangeData.loadFromJson('/data/flange-standards.json');
+            } catch (err) {
+                console.warn('[MaritimeToolkit] flange data load', err);
+            }
+        }
 
         const hosts = {
             bunker: document.getElementById('storeToolBunker'),
@@ -409,6 +391,11 @@ const TVC_MaritimeToolkit = (function () {
         if (hosts.lube) renderLubePanel(hosts.lube);
         if (hosts.paint) renderPaintPanel(hosts.paint);
         if (hosts.engineering) renderEngineeringPanel(hosts.engineering);
+        renderConversionBanner();
+        globalThis.addEventListener('tvc-mkt-lang', () => {
+            if (hosts.bunker) renderBunkerPanel(hosts.bunker);
+            renderConversionBanner();
+        });
         setActiveTool('catalog');
     }
 

@@ -1,39 +1,58 @@
-/* THE VESSEL CODE — Unified Dark Maritime Tech (no external photo URLs) */
+/* THE VESSEL CODE — Soft Light & Deep Navy (marketing portal) */
 :root {
-    --mkt-canvas: #0a101e;
-    --mkt-canvas-elevated: #0f172a;
-    --mkt-accent: #38bdf8;
-    --mkt-title: #f8fafc;
-    --mkt-muted: #94a3b8;
-    --mkt-card-bg: rgba(15, 23, 42, 0.75);
-    --mkt-card-border: rgba(56, 189, 248, 0.18);
-    --mkt-card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
-    --mkt-hero-scrim: radial-gradient(circle at 50% 20%, rgba(14, 116, 144, 0.18) 0%, rgba(10, 16, 30, 0.95) 75%);
+    --mkt-canvas: #f8fafc;
+    --mkt-canvas-elevated: #f1f5f9;
+    --mkt-accent: #0284c7;
+    --mkt-title: #0f172a;
+    --mkt-body: #334155;
+    --mkt-muted: #475569;
+    --mkt-card-bg: #ffffff;
+    --mkt-card-border: #e2e8f0;
+    --mkt-card-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
+    --mkt-card-shadow-hover: 0 12px 28px -4px rgba(15, 23, 42, 0.08);
+    --mkt-hero-scrim: none;
 }
 
-/* ── Shared page canvas ── */
-body.home-page {
-    background: var(--mkt-hero-scrim), linear-gradient(180deg, var(--mkt-canvas) 0%, var(--mkt-canvas-elevated) 100%);
-    background-attachment: fixed;
+/* ── Unified ambient background (all marketing routes) ── */
+body.tvc-marketing-body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc;
+    color: #1e293b;
+    font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Inter", "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body.tvc-marketing-body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at 15% 15%, rgba(2, 132, 199, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(15, 23, 42, 0.03) 0%, transparent 50%),
+        linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+body.tvc-marketing-body.mkt-page,
+body.tvc-marketing-body.home-page,
+body.tvc-marketing-body.ac-page,
+body.tvc-marketing-body.mkt-toolkit-page,
+body.tvc-marketing-body.mkt-toolkit-page .mkt-site-wrap {
+    background: transparent;
     color: var(--mkt-muted);
 }
 
-body.mkt-contact-page.ac-page {
-    background: var(--mkt-hero-scrim), linear-gradient(180deg, var(--mkt-canvas) 0%, var(--mkt-canvas-elevated) 100%);
-    background-attachment: fixed;
-    color: var(--mkt-muted);
-}
-
-body.mkt-toolkit-page,
-body.mkt-toolkit-page .mkt-site-wrap {
-    background: var(--mkt-hero-scrim), linear-gradient(180deg, var(--mkt-canvas) 0%, var(--mkt-canvas-elevated) 100%);
-    background-attachment: fixed;
-    color: var(--mkt-muted);
-}
-
-body.mkt-toolkit-page #marketing-topbar .home-topbar {
-    background: linear-gradient(180deg, rgba(10, 16, 30, 0.98), rgba(15, 23, 42, 0.9));
-    border-bottom: 1px solid var(--mkt-card-border);
+body.tvc-marketing-body .mkt-site-wrap > .home-shell,
+body.tvc-marketing-body .mkt-site-wrap > .ac-shell,
+body.tvc-marketing-body .mkt-site-wrap > .store-public-shell {
+    padding-top: 80px;
 }
 
 /* ── Hero cinematic canvas (#hero) ── */
@@ -49,11 +68,8 @@ body.mkt-toolkit-page #marketing-topbar .home-topbar {
     padding-left: max(20px, calc((100vw - 1180px) / 2 + 20px));
     padding-right: max(20px, calc((100vw - 1180px) / 2 + 20px));
     overflow: hidden;
-    background-color: var(--mkt-canvas);
-    background-image: var(--mkt-hero-scrim);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: none;
 }
 
 #hero > *,
@@ -75,14 +91,14 @@ body.mkt-toolkit-page #marketing-topbar .home-topbar {
     margin: 0 0 12px;
     font-size: clamp(32px, 4vw, 44px);
     font-weight: 700;
-    color: #ffffff;
+    color: var(--mkt-title);
     letter-spacing: -0.02em;
     line-height: 1.15;
 }
 
 .home-section-head .home-section-lead {
     font-size: 16px;
-    color: #94a3b8;
+    color: var(--mkt-body);
     line-height: 1.6;
     max-width: 680px;
 }
@@ -130,12 +146,26 @@ body.mkt-toolkit-page #marketing-topbar .home-topbar {
 #core-topics,
 #services .home-service-card,
 body.mkt-contact-page .ac-card,
-body.mkt-contact-page .ac-form-card {
+body.mkt-contact-page .ac-form-card,
+.toolkit-plg-band,
+.home-ethos-band,
+.home-launch-band {
     background: var(--mkt-card-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--mkt-card-border);
+    border-radius: 12px;
     box-shadow: var(--mkt-card-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.mkt-glass-card:hover,
+.home-card:hover,
+.home-service-card:hover,
+.home-topic-list li:hover,
+body.mkt-contact-page .ac-card:hover,
+body.mkt-contact-page .ac-form-card:hover {
+    transform: translateY(-2px);
+    border-color: #cbd5e1;
+    box-shadow: var(--mkt-card-shadow-hover);
 }
 
 .home-edge-card,
@@ -185,8 +215,8 @@ body.mkt-contact-page .ac-form-sub {
 .home-eyebrow,
 .home-launch-eyebrow {
     color: var(--mkt-accent);
-    border-color: rgba(56, 189, 248, 0.28);
-    background: rgba(56, 189, 248, 0.08);
+    border-color: rgba(2, 132, 199, 0.22);
+    background: rgba(2, 132, 199, 0.08);
 }
 
 .home-launch-eyebrow {
@@ -205,16 +235,17 @@ body.mkt-contact-page .ac-form-sub {
 }
 
 .home-btn-primary {
-    background: linear-gradient(135deg, #0e7490, #0369a1);
-    box-shadow: 0 10px 24px rgba(14, 116, 144, 0.35);
+    background: #0f172a;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
 }
 
 .home-cta-band {
-    background: linear-gradient(135deg, rgba(14, 116, 144, 0.22), rgba(15, 23, 42, 0.92));
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
 }
 
 .home-service-num {
-    background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(14, 116, 144, 0.35));
+    background: rgba(2, 132, 199, 0.1);
     color: var(--mkt-accent);
 }
 
@@ -229,7 +260,7 @@ body.mkt-contact-page .ac-form-sub {
 /* ── TVC-SM landing (/sm) ── */
 body.mkt-sm-page,
 body.mkt-sm-page .mkt-site-wrap {
-    background: var(--mkt-hero-scrim), linear-gradient(180deg, var(--mkt-canvas) 0%, var(--mkt-canvas-elevated) 100%);
+    background: transparent;
 }
 
 .sm-hero-grid {
@@ -271,7 +302,7 @@ body.mkt-lang-en .sm-hero-en {
 }
 
 .sm-hero-lead strong {
-    color: #e2e8f0;
+    color: var(--mkt-title);
 }
 
 .sm-hero-tertiary {
@@ -315,7 +346,7 @@ body.mkt-lang-en .sm-hero-en {
     display: inline-block;
     padding: 8px 14px;
     border-radius: 8px;
-    background: rgba(15, 23, 42, 0.9);
+    background: #f8fafc;
     border: 1px solid var(--mkt-card-border);
     color: var(--mkt-title);
     font-size: 0.8rem;
@@ -324,12 +355,12 @@ body.mkt-lang-en .sm-hero-en {
 }
 
 .sm-node-accent {
-    border-color: rgba(56, 189, 248, 0.55);
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+    border-color: rgba(2, 132, 199, 0.45);
+    box-shadow: 0 4px 16px rgba(2, 132, 199, 0.12);
 }
 
 .sm-node-hq {
-    background: linear-gradient(135deg, rgba(14, 116, 144, 0.45), rgba(15, 23, 42, 0.95));
+    background: linear-gradient(135deg, rgba(2, 132, 199, 0.12), #ffffff);
 }
 
 .sm-node-label {
@@ -627,14 +658,15 @@ body.mkt-lang-en .sm-hero-en {
 .home-ethos-band {
     margin: 20px 0 28px;
     padding: 18px 20px;
-    border-radius: var(--home-radius, 18px);
-    border: 1px solid rgba(56, 189, 248, 0.22);
-    background: linear-gradient(135deg, rgba(14, 116, 144, 0.18), rgba(15, 23, 42, 0.65));
+    border-radius: var(--home-radius, 12px);
+    border: 1px solid var(--mkt-card-border);
+    background: var(--mkt-card-bg);
+    box-shadow: var(--mkt-card-shadow);
 }
 
 .home-ethos-band p {
     margin: 0;
-    color: var(--home-text, #f8fafc);
+    color: var(--mkt-body);
     font-size: 0.98rem;
     line-height: 1.65;
 }
@@ -651,7 +683,7 @@ body.mkt-lang-en .sm-hero-en {
 .sm-hero-tagline {
     margin: 0 0 10px;
     font-size: 1.05rem;
-    color: var(--home-text, #f8fafc);
+    color: var(--mkt-body);
     line-height: 1.45;
 }
 

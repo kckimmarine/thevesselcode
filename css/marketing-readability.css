@@ -1,3 +1,208 @@
+/* Marketing portal — readability, typography, PLG, toolkit tables */
+
+body.tvc-marketing-body {
+    background-color: #f8fafc !important;
+    color: #1e293b !important;
+    line-height: 1.65;
+}
+
+body.tvc-marketing-body::before {
+    background:
+        radial-gradient(circle at 10% 10%, rgba(2, 132, 199, 0.04) 0%, transparent 45%),
+        radial-gradient(circle at 90% 85%, rgba(15, 23, 42, 0.03) 0%, transparent 50%),
+        linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%) !important;
+}
+
+body.tvc-marketing-body h1,
+body.tvc-marketing-body h2,
+body.tvc-marketing-body h3,
+body.tvc-marketing-body h4 {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.mkt-lead,
+.home-hero-tagline,
+.home-section-lead,
+.ac-hero-sub {
+    color: #334155 !important;
+    font-weight: 500;
+    font-size: 1.15rem;
+    line-height: 1.65;
+    max-width: 42rem;
+}
+
+.mkt-body-text,
+.home-card p,
+.home-service-card p,
+.home-topic-list span,
+.home-ethos-band p {
+    color: #475569;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.mkt-glass-card,
+.home-card,
+.home-hero-card,
+.home-service-card,
+.home-cta-band,
+.toolkit-plg-band,
+.home-ethos-band {
+    padding: 24px;
+}
+
+@media (max-width: 767px) {
+    .mkt-glass-card,
+    .home-card,
+    .home-hero-card,
+    .home-service-card,
+    .home-cta-band,
+    .toolkit-plg-band,
+    .home-ethos-band {
+        padding: 16px;
+    }
+}
+
+.mkt-scannable {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.7;
+    max-width: 52rem;
+}
+
+.home-service-takeaways {
+    margin: 12px 0 0;
+    padding-left: 1.1rem;
+    color: #475569;
+    line-height: 1.65;
+}
+
+.home-service-takeaways li {
+    margin-bottom: 8px;
+}
+
+.home-service-takeaways strong {
+    color: #0f172a;
+}
+
+.home-service-card .home-service-cols {
+    display: none;
+}
+
+/* PLG lock funnel */
+.mkt-plg-locks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 16px;
+}
+
+.mkt-plg-lock {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px dashed #cbd5e1;
+    background: #ffffff;
+    color: #475569;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1.4;
+    transition: border-color 0.15s, color 0.15s, box-shadow 0.15s;
+}
+
+.mkt-plg-lock:hover {
+    border-color: #0284c7;
+    color: #0284c7;
+    box-shadow: 0 2px 8px rgba(2, 132, 199, 0.12);
+}
+
+.impa-detail-plg-lock {
+    margin-top: 12px;
+}
+
+.impa-detail-plg-lock .mkt-plg-lock {
+    width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Toolkit catalog — white table card */
+body.tvc-marketing-body .store-public-main #catalog-table-wrapper.store-catalog-wrap {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
+    overflow: hidden;
+}
+
+body.tvc-marketing-body .store-public-mode .store-vl-row:nth-child(even) {
+    background: #f8fafc;
+}
+
+body.tvc-marketing-body .store-public-mode .store-vl-head {
+    background: #f1f5f9;
+    color: #0f172a;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+body.tvc-marketing-body .store-public-mode .store-vl-cell {
+    color: #334155;
+}
+
+/* Contact */
+.ac-hotline-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 12px 0 0;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #065f46;
+    font-size: 0.8125rem;
+    font-weight: 700;
+}
+
+.ac-field input:focus-visible,
+.ac-field select:focus-visible,
+.ac-field textarea:focus-visible {
+    outline: none;
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px rgba(14, 165, 233, 0.45);
+}
+
+.sm-pillars-band {
+    margin-bottom: 28px;
+}
+
+.sm-pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+@media (max-width: 900px) {
+    .sm-pillars-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sm-pillar-card h3 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+}
+
+.sm-pillar-card p {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: #475569;
+}
 /* Soft-Slate & Deep Navy — commercial intelligence readability layer */
 :root {
     --mkt-read-canvas: #f8fafc;
