@@ -2,6 +2,36 @@
 
 **목표:** 모두의 창업 Q5 + 지속 마케팅용 **친숙·전문** 90초 영상을 최소 수작업으로 제작.
 
+## 0. 창업자 PC (Windows PowerShell)
+
+```powershell
+cd C:\path\to\thevesselcode
+git pull origin master
+npx playwright install chromium
+$env:BASE_URL="https://www.thevesselcode.com"; npm run marketing:video-assets
+```
+
+CapCut → **가져오기** → `thevesselcode\artifacts\marketing-video\clips\` 폴더.
+
+### Cursor Artifacts에서 파일이 안 받아질 때
+
+**흔한 증상**
+
+- Artifacts 목록에서 **우클릭 → 다운로드**가 없거나 동작하지 않음
+- 링크를 Edge로 열면 **`…_Cursor.html` + `_files`** (`.js.download`만) — **WebM이 아님**
+
+**권장 순서 (확실한 방법)**
+
+| 방법 | 설명 |
+|------|------|
+| **1. 로컬 PC** | 위 §0 PowerShell 4줄 → `thevesselcode\artifacts\marketing-video\` 에 바로 생성 (**가장 확실**) |
+| **2. GitHub Actions** | `master`에 워크플로 병합 후: [Actions → **Marketing video assets** → **Run workflow**](https://github.com/kckimmarine/thevesselcode/actions/workflows/marketing-video-assets.yml) → 완료된 Run 하단 **Artifacts → marketing-video-assets** → **Download** (ZIP) |
+| **3. GitHub CLI** | `gh run download -n marketing-video-assets` (최근 성공 Run, [gh](https://cli.github.com/) 설치·로그인 필요) |
+
+Cursor Artifacts 패널은 브라우저·버전에 따라 **개별 파일 다운로드가 지원되지 않는 경우**가 있습니다. CapCut용 클립은 **로컬 생성** 또는 **Actions ZIP**을 쓰세요.
+
+이미 녹화만 했다면 ZIP만 다시 만들기: `npm run marketing:video-assets:zip`
+
 ## 1. 자동 생성 (Cursor / CI)
 
 ```bash
@@ -22,9 +52,10 @@ BASE_URL=https://www.thevesselcode.com node scripts/generate-marketing-video-ass
 | `narration-ko.txt` | CapCut AI 음성 / 성우 대본 |
 | `subtitles-ko.srt` | 자막 import |
 | `scenes.json` | 씬 타임라인 |
-| `clips/*.webm` | Playwright 녹화 (PC·모바일) |
+| `clips/home-desktop.webm` … `toolkit-mobile.webm` | Playwright 녹화 (PC·모바일, 고정 파일명) |
+| `marketing-video-assets.zip` | 위 파일 전체 (CapCut·다운로드용) |
 
-`SKIP_RECORD=1` — 대본·SRT만 생성.
+`SKIP_RECORD=1` — 대본·SRT·ZIP만 (클립은 기존 `clips/` 사용).
 
 ## 2. 편집 (CapCut 권장)
 
