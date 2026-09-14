@@ -1,24 +1,38 @@
 /**
- * THE VESSEL CODE — Commercial maritime intelligence (bunker ticker, indices, news).
- * Curated reference benchmarks with deterministic daily deltas (no live API dependency).
+ * THE VESSEL CODE — Commercial maritime intelligence (loads data/market-indices.json).
  */
 (function (global) {
     'use strict';
 
-    const PORTS = ['Singapore', 'Rotterdam', 'Busan', 'Houston'];
+    const DATA_URL = '/data/market-indices.json';
+    let marketData = null;
+    let loadPromise = null;
 
-    const GRADES = [
-        { key: 'VLSFO', label: 'VLSFO', fuel: 'VLSFO', defaultDensity: 991 },
-        { key: 'LSMGO', label: 'LSMGO', fuel: 'LSMGO', defaultDensity: 850 },
-        { key: 'HSFO380', label: 'HSFO 380', fuel: 'HSFO', defaultDensity: 991 },
-    ];
-
-    /** Base $/MT anchors (indicative, updated periodically in repo). */
-    const BASE_PRICES = {
-        Singapore: { VLSFO: 612, LSMGO: 748, HSFO380: 458 },
-        Rotterdam: { VLSFO: 598, LSMGO: 722, HSFO380: 441 },
-        Busan: { VLSFO: 625, LSMGO: 761, HSFO380: 472 },
-        Houston: { VLSFO: 589, LSMGO: 715, HSFO380: 435 },
+    const FALLBACK = {
+        meta: { source: 'TVC Market Desk', updatedLabelEn: 'Updated daily benchmark (UTC)' },
+        bunker: {
+            hubs: ['Singapore', 'Rotterdam', 'Busan', 'Houston'],
+            grades: [
+                { key: 'VLSFO', label: 'VLSFO', fuel: 'VLSFO', defaultDensity: 991 },
+                { key: 'LSMGO', label: 'LSMGO', fuel: 'LSMGO', defaultDensity: 850 },
+                { key: 'HSFO380', label: 'HSFO 380', fuel: 'HSFO', defaultDensity: 991 },
+            ],
+            basePricesUsdMt: {
+                Singapore: { VLSFO: 612, LSMGO: 748, HSFO380: 458 },
+                Rotterdam: { VLSFO: 598, LSMGO: 722, HSFO380: 441 },
+                Busan: { VLSFO: 625, LSMGO: 761, HSFO380: 472 },
+                Houston: { VLSFO: 589, LSMGO: 715, HSFO380: 435 },
+            },
+        },
+        indices: {
+            bdi: { base: 1842, salt: 99 },
+            capesizeTc: { base: 24850, jitter: 800, unit: '$/day', salt: 101 },
+            panamaxTc: { base: 14220, jitter: 400, unit: '$/day', salt: 103 },
+            bdti: { base: 1185, jitter: 60, salt: 107 },
+            bcti: { base: 892, jitter: 40, salt: 109 },
+            scfi: { base: 2140, jitter: 100, salt: 113 },
+        },
+        news: [],
     };
 
     function daySeed() {
@@ -43,21 +57,63 @@
         return `${sign}${pct.toFixed(2)}%`;
     }
 
+    function escapeHtml(raw) {
+        return String(raw ?? '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    function t(key, lang) {
+        const i18n = global.TVC_MarketingI18n;
+        if (i18n?.t) return i18n.t(key, lang) || key;
+        return key;
+    }
+
+    function data() {
+        return marketData || FALLBACK;
+    }
+
+    function loadMarketData() {
+        if (loadPromise) return loadPromise;
+        if (typeof fetch !== 'function') {
+            marketData = FALLBACK;
+            loadPromise = Promise.resolve(marketData);
+            return loadPromise;
+        }
+        loadPromise = fetch(DATA_URL, { credentials: 'same-origin' })
+            .then((res) => (res.ok ? res.json() : FALLBACK))
+            .then((json) => {
+                marketData = json && typeof json === 'object' ? json : FALLBACK;
+                return marketData;
+            })
+            .catch(() => {
+                marketData = FALLBACK;
+                return marketData;
+            });
+        return loadPromise;
+    }
+
     function getBunkerQuotes() {
+        const d = data();
         const seed = daySeed();
         const quotes = [];
-        PORTS.forEach((port, pi) => {
-            GRADES.forEach((grade, gi) => {
-                const base = BASE_PRICES[port][grade.key];
+        const hubs = d.bunker?.hubs || FALLBACK.bunker.hubs;
+        const grades = d.bunker?.grades || FALLBACK.bunker.grades;
+        const base = d.bunker?.basePricesUsdMt || FALLBACK.bunker.basePricesUsdMt;
+        hubs.forEach((port, pi) => {
+            grades.forEach((grade, gi) => {
+                const anchor = base[port]?.[grade.key] ?? 500;
                 const deltaPct = pseudoDelta(seed, pi * 17 + gi * 31 + grade.key.length);
-                const price = base * (1 + deltaPct / 100);
+                const priceUsdMt = anchor * (1 + deltaPct / 100);
                 quotes.push({
                     port,
                     gradeKey: grade.key,
                     gradeLabel: grade.label,
                     fuel: grade.fuel,
                     defaultDensity: grade.defaultDensity,
-                    priceUsdMt: price,
+                    priceUsdMt,
                     deltaPct,
                 });
             });
@@ -73,19 +129,58 @@
             port: quote.port,
             benchmark: formatPrice(quote.priceUsdMt),
         });
-        return `/toolkit?${params.toString()}`;
+        return `/toolkit?${params.toString()}#tab-bunker`;
+    }
+
+    function getShippingBenchmarks() {
+        const d = data();
+        const seed = daySeed();
+        const idx = d.indices || FALLBACK.indices;
+        const pick = (key) => idx[key] || FALLBACK.indices[key];
+        const bdi = pick('bdi');
+        const cap = pick('capesizeTc');
+        const pan = pick('panamaxTc');
+        const bdti = pick('bdti');
+        const bcti = pick('bcti');
+        const scfi = pick('scfi');
+        return {
+            asOf: new Date().toISOString().slice(0, 10),
+            source: d.meta?.source || FALLBACK.meta.source,
+            updatedLabelKey: 'intel.market.stamp',
+            dryBulk: {
+                bdi: { value: bdi.base + (seed % 120) - 40, deltaPct: pseudoDelta(seed, bdi.salt) },
+                capesize: {
+                    value: cap.base + (seed % (cap.jitter || 1)),
+                    unit: cap.unit || '$/day',
+                    deltaPct: pseudoDelta(seed, cap.salt),
+                },
+                panamax: {
+                    value: pan.base + (seed % (pan.jitter || 1)),
+                    unit: pan.unit || '$/day',
+                    deltaPct: pseudoDelta(seed, pan.salt),
+                },
+            },
+            tanker: {
+                bdti: { value: bdti.base + (seed % (bdti.jitter || 1)), deltaPct: pseudoDelta(seed, bdti.salt) },
+                bcti: { value: bcti.base + (seed % (bcti.jitter || 1)), deltaPct: pseudoDelta(seed, bcti.salt) },
+            },
+            container: {
+                scfiComposite: { value: scfi.base + (seed % (scfi.jitter || 1)), deltaPct: pseudoDelta(seed, scfi.salt) },
+            },
+        };
     }
 
     function renderTickerHtml(lang) {
-        const i18n = global.TVC_MarketingI18n;
-        const label = i18n?.t?.('intel.ticker.label', lang) || 'Bunker benchmarks';
-        const updated = i18n?.t?.('intel.ticker.updated', lang) || 'Indicative · UTC daily refresh';
+        const d = data();
+        const label = t('intel.ticker.label', lang);
+        const updated =
+            lang === 'ko' ? d.meta?.updatedLabelKo || t('intel.ticker.updated', lang) : d.meta?.updatedLabelEn || t('intel.ticker.updated', lang);
         const quotes = getBunkerQuotes();
         const chips = quotes
             .map((q) => {
                 const href = buildToolkitBunkerUrl(q);
                 const deltaClass = q.deltaPct > 0.05 ? 'is-up' : q.deltaPct < -0.05 ? 'is-down' : 'is-flat';
-                return `<a class="mkt-ticker-chip" href="${href}" title="Open ASTM 54B calculator">
+                return `<a class="mkt-ticker-chip" href="${href}" title="${escapeHtml(t('intel.ticker.openCalc', lang))}">
                     <span class="mkt-ticker-port">${escapeHtml(q.port)}</span>
                     <span class="mkt-ticker-grade">${escapeHtml(q.gradeLabel)}</span>
                     <span class="mkt-ticker-price">$${formatPrice(q.priceUsdMt)}/MT</span>
@@ -105,90 +200,6 @@
         </div>`;
     }
 
-    function getShippingBenchmarks() {
-        const seed = daySeed();
-        const bdi = 1842 + (seed % 120) - 40;
-        const bdiDelta = pseudoDelta(seed, 99);
-        return {
-            asOf: new Date().toISOString(),
-            dryBulk: {
-                bdi: { value: bdi, deltaPct: bdiDelta },
-                capesize: { value: 24850 + (seed % 800), unit: '$/day', deltaPct: pseudoDelta(seed, 101) },
-                panamax: { value: 14220 + (seed % 400), unit: '$/day', deltaPct: pseudoDelta(seed, 103) },
-            },
-            tanker: {
-                bdti: { value: 1185 + (seed % 60), deltaPct: pseudoDelta(seed, 107) },
-                bcti: { value: 892 + (seed % 40), deltaPct: pseudoDelta(seed, 109) },
-            },
-            container: {
-                scfiComposite: { value: 2140 + (seed % 100), deltaPct: pseudoDelta(seed, 113) },
-                noteKey: 'intel.market.container.note',
-            },
-        };
-    }
-
-    const NEWS_ITEMS = [
-        {
-            category: 'Bunker',
-            tagClass: '',
-            headlineKey: 'intel.news.1.headline',
-            sourceKey: 'intel.news.1.source',
-            summaryKey: 'intel.news.1.summary',
-            hoursAgo: 3,
-        },
-        {
-            category: 'Regulations',
-            tagClass: 'tag-regulations',
-            headlineKey: 'intel.news.2.headline',
-            sourceKey: 'intel.news.2.source',
-            summaryKey: 'intel.news.2.summary',
-            hoursAgo: 8,
-        },
-        {
-            category: 'S&P',
-            tagClass: 'tag-sp',
-            headlineKey: 'intel.news.3.headline',
-            sourceKey: 'intel.news.3.source',
-            summaryKey: 'intel.news.3.summary',
-            hoursAgo: 14,
-        },
-        {
-            category: 'Trade',
-            tagClass: 'tag-trade',
-            headlineKey: 'intel.news.4.headline',
-            sourceKey: 'intel.news.4.source',
-            summaryKey: 'intel.news.4.summary',
-            hoursAgo: 22,
-        },
-        {
-            category: 'Bunker',
-            tagClass: '',
-            headlineKey: 'intel.news.5.headline',
-            sourceKey: 'intel.news.5.source',
-            summaryKey: 'intel.news.5.summary',
-            hoursAgo: 28,
-        },
-    ];
-
-    function escapeHtml(raw) {
-        return String(raw ?? '')
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;');
-    }
-
-    function t(key, lang) {
-        const i18n = global.TVC_MarketingI18n;
-        if (i18n?.t) return i18n.t(key, lang) || key;
-        return key;
-    }
-
-    function formatHoursAgo(hours, lang) {
-        if (lang === 'ko') return `${hours}시간 전`;
-        return `${hours}h ago`;
-    }
-
     function renderMarketTable(bench, lang) {
         const row = (name, val, delta, unit) => {
             const deltaClass = delta > 0.05 ? 'is-up' : delta < -0.05 ? 'is-down' : 'is-flat';
@@ -198,7 +209,9 @@
                 <td><span class="mkt-ticker-delta ${deltaClass}">${formatDeltaPct(delta)}</span></td>
             </tr>`;
         };
+        const stamp = `${escapeHtml(bench.source)} · ${escapeHtml(t('intel.market.stamp', lang))} · ${escapeHtml(bench.asOf)}`;
         return `
+        <p class="mkt-intel-stamp">${stamp}</p>
         <div class="mkt-intel-table-wrap">
             <table class="mkt-intel-table">
                 <thead><tr>
@@ -212,23 +225,48 @@
                     ${row(t('intel.market.panamax', lang), bench.dryBulk.panamax.value, bench.dryBulk.panamax.deltaPct, bench.dryBulk.panamax.unit)}
                     ${row(t('intel.market.bdti', lang), bench.tanker.bdti.value, bench.tanker.bdti.deltaPct, '')}
                     ${row(t('intel.market.bcti', lang), bench.tanker.bcti.value, bench.tanker.bcti.deltaPct, '')}
-                    ${row(t('intel.market.scfi', lang), bench.container.scfiComposite.value, bench.container.scfiComposite.deltaPct, '')}
                 </tbody>
             </table>
         </div>
-        <p class="mkt-intel-lead" style="margin:12px 0 0;font-size:0.78rem;">${escapeHtml(t(bench.container.noteKey, lang))}</p>`;
+        <p class="mkt-intel-disclaimer">${escapeHtml(t('intel.market.disclaimer', lang))}</p>`;
+    }
+
+    function newsItems() {
+        const list = data().news;
+        return Array.isArray(list) && list.length ? list : [];
     }
 
     function renderNewsList(lang) {
-        return `<ul class="mkt-news-list">${NEWS_ITEMS.map((item) => {
-            const tag = item.category;
-            return `<li class="mkt-news-item">
-                <span class="mkt-news-tag ${item.tagClass}">${escapeHtml(tag)}</span>
-                <h4 class="mkt-news-headline">${escapeHtml(t(item.headlineKey, lang))}</h4>
-                <p class="mkt-news-meta">${escapeHtml(t(item.sourceKey, lang))} · ${escapeHtml(formatHoursAgo(item.hoursAgo, lang))}</p>
-                <p class="mkt-news-summary">${escapeHtml(t(item.summaryKey, lang))}</p>
+        const items = newsItems();
+        if (!items.length) {
+            return `<p class="mkt-intel-muted">${escapeHtml(t('intel.news.empty', lang))}</p>`;
+        }
+        return `<ul class="mkt-news-list">${items
+            .map((item) => {
+                const loc = lang === 'ko' && item.ko ? item.ko : item.en || item.ko || {};
+                return `<li class="mkt-news-item">
+                <span class="mkt-news-tag ${escapeHtml(item.tagClass || '')}">${escapeHtml(item.tag || '')}</span>
+                <h4 class="mkt-news-headline">${escapeHtml(loc.headline || '')}</h4>
+                <p class="mkt-news-meta">${escapeHtml(loc.source || '')} · ${escapeHtml(formatHoursAgo(item.hoursAgo, lang))}</p>
+                <p class="mkt-news-summary">${escapeHtml(loc.summary || '')}</p>
             </li>`;
-        }).join('')}</ul>`;
+            })
+            .join('')}</ul>`;
+    }
+
+    function formatHoursAgo(hours, lang) {
+        if (lang === 'ko') return `${hours}시간 전`;
+        return `${hours}h ago`;
+    }
+
+    function renderPlgColumn(lang) {
+        return `
+        <div class="mkt-intel-card mkt-intel-plg">
+            <h3 data-i18n="intel.plg.title">${escapeHtml(t('intel.plg.title', lang))}</h3>
+            <p class="mkt-intel-plg-body" data-i18n="intel.plg.body">${escapeHtml(t('intel.plg.body', lang))}</p>
+            <a class="mkt-intel-plg-cta" href="/sm" data-i18n="intel.plg.cta">${escapeHtml(t('intel.plg.cta', lang))}</a>
+            <a class="mkt-intel-plg-secondary" href="/toolkit?tool=bunker#tab-bunker" data-i18n="intel.hook.bunker.cta">${escapeHtml(t('intel.hook.bunker.cta', lang))}</a>
+        </div>`;
     }
 
     function renderHomeHub(root) {
@@ -239,25 +277,16 @@
         <section class="mkt-intel-band" aria-labelledby="mktIntelTitle">
             <h2 id="mktIntelTitle" data-i18n="intel.hub.title">${escapeHtml(t('intel.hub.title', lang))}</h2>
             <p class="mkt-intel-lead" data-i18n="intel.hub.lead">${escapeHtml(t('intel.hub.lead', lang))}</p>
-            <div class="mkt-intel-grid">
+            <div class="mkt-intel-grid mkt-intel-grid-3">
                 <div class="mkt-intel-card">
                     <h3 data-i18n="intel.market.title">${escapeHtml(t('intel.market.title', lang))}</h3>
                     ${renderMarketTable(bench, lang)}
-                    <div class="mkt-intel-hooks">
-                        <div class="mkt-intel-hook">
-                            <span data-i18n="intel.hook.fleet">${escapeHtml(t('intel.hook.fleet', lang))}</span>
-                            <a class="mkt-intel-cta-sm" href="/sm" data-i18n="intel.hook.fleet.cta">${escapeHtml(t('intel.hook.fleet.cta', lang))}</a>
-                        </div>
-                        <div class="mkt-intel-hook">
-                            <span data-i18n="intel.hook.bunker">${escapeHtml(t('intel.hook.bunker', lang))}</span>
-                            <a class="mkt-intel-cta-tool" href="/toolkit?tool=bunker" data-i18n="intel.hook.bunker.cta">${escapeHtml(t('intel.hook.bunker.cta', lang))}</a>
-                        </div>
-                    </div>
                 </div>
                 <div class="mkt-intel-card">
                     <h3 data-i18n="intel.news.title">${escapeHtml(t('intel.news.title', lang))}</h3>
                     ${renderNewsList(lang)}
                 </div>
+                ${renderPlgColumn(lang)}
             </div>
         </section>`;
         global.TVC_MarketingI18n?.applyLang?.(lang);
@@ -274,7 +303,7 @@
             .join('');
         return `
         <div class="maritime-bunker-intel">
-            <h3>${escapeHtml(port)} — indicative stem (${escapeHtml(new Date().toISOString().slice(0, 10))})</h3>
+            <h3>${escapeHtml(port)} — ${escapeHtml(data().meta?.updatedLabelEn || 'Indicative stem')}</h3>
             <div class="maritime-bunker-intel-grid">${cells}</div>
         </div>`;
     }
@@ -285,15 +314,20 @@
         container.innerHTML = renderTickerHtml(lang);
     }
 
-    function initHome() {
-        if (typeof document === 'undefined' || typeof document.getElementById !== 'function') return;
+    function refreshUi() {
+        const tickerHost = document.getElementById('mktBunkerTickerHost');
+        if (tickerHost) mountTicker(tickerHost);
         const hub = document.getElementById('mktIntelHub');
         if (hub) renderHomeHub(hub);
     }
 
+    function initHome() {
+        if (typeof document === 'undefined' || typeof document.getElementById !== 'function') return;
+        loadMarketData().then(refreshUi);
+    }
+
     global.TVC_MarketFeed = {
-        PORTS,
-        GRADES,
+        loadMarketData,
         getBunkerQuotes,
         getShippingBenchmarks,
         buildToolkitBunkerUrl,
@@ -302,13 +336,12 @@
         renderHomeHub,
         renderBunkerIntelStrip,
         initHome,
+        refreshUi,
     };
 
     if (typeof global.addEventListener === 'function') {
         global.addEventListener('tvc-mkt-lang', () => {
-            const tickerHost = document.getElementById('mktBunkerTickerHost');
-            if (tickerHost) mountTicker(tickerHost);
-            initHome();
+            loadMarketData().then(refreshUi);
         });
     }
 

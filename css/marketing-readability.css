@@ -360,6 +360,7 @@ body.tvc-marketing-body .store-public-mode .store-vl-cell {
     padding: 40px max(20px, calc((100vw - 1180px) / 2 + 20px));
     border-top: 1px solid var(--mkt-read-border);
     border-bottom: 1px solid var(--mkt-read-border);
+    overflow-x: hidden;
 }
 
 .mkt-intel-band h2 {
@@ -377,22 +378,30 @@ body.tvc-marketing-body .store-public-mode .store-vl-cell {
 .mkt-intel-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 16px;
+    max-width: 100%;
 }
 
 @media (min-width: 900px) {
-    .mkt-intel-grid {
-        grid-template-columns: 1fr 1fr;
-        align-items: start;
+    .mkt-intel-grid.mkt-intel-grid-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1100px) {
+    .mkt-intel-grid.mkt-intel-grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: stretch;
     }
 }
 
 .mkt-intel-card {
     background: var(--mkt-read-card);
     border: 1px solid var(--mkt-read-border);
-    border-radius: 14px;
+    border-radius: 12px;
     padding: 20px 22px;
     box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+    min-width: 0;
 }
 
 .mkt-intel-card h3 {
@@ -524,11 +533,17 @@ body.tvc-marketing-body .store-public-mode .store-vl-cell {
     color: #166534;
 }
 
+.mkt-news-tag.tag-carbon {
+    background: #ecfdf5;
+    color: #047857;
+}
+
 .mkt-news-headline {
     margin: 0 0 4px;
     font-size: 0.95rem;
     line-height: 1.35;
     color: var(--mkt-read-title);
+    font-weight: 600;
 }
 
 .mkt-news-meta {
@@ -542,6 +557,58 @@ body.tvc-marketing-body .store-public-mode .store-vl-cell {
     font-size: 0.82rem;
     line-height: 1.5;
     color: var(--mkt-read-body);
+}
+
+.mkt-intel-stamp {
+    font-size: 0.72rem;
+    color: var(--mkt-read-muted);
+    margin: 0 0 10px;
+}
+
+.mkt-intel-disclaimer {
+    font-size: 0.72rem;
+    color: var(--mkt-read-muted);
+    margin: 10px 0 0;
+    line-height: 1.45;
+}
+
+.mkt-intel-plg {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+}
+
+.mkt-intel-plg-body {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: var(--mkt-read-body);
+}
+
+.mkt-intel-plg-cta {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: var(--mkt-read-navy);
+    color: #f8fafc;
+}
+
+.mkt-intel-plg-secondary {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--mkt-read-border);
+    color: var(--mkt-read-accent);
+    background: #fff;
 }
 
 /* Toolkit bunker intelligence strip */

@@ -105,12 +105,21 @@
         };
     }
 
+    /** Total fuel spend when benchmark $/MT is provided (commercial voyage costing). */
+    function calcFuelExpenditureUsd(mt, pricePerMt) {
+        const mass = Number(mt);
+        const price = Number(pricePerMt);
+        if (!Number.isFinite(mass) || mass <= 0 || !Number.isFinite(price) || price <= 0) return null;
+        return mass * price;
+    }
+
     const api = {
         FUEL_GRADES,
         kCoefficients,
         alphaAt15,
         vcf54B,
         calcBunkerAstM54B,
+        calcFuelExpenditureUsd,
     };
 
     if (typeof module !== 'undefined' && module.exports) {

@@ -29,4 +29,5 @@ const quotes = feed.getBunkerQuotes();
 assert.equal(quotes.length, 12);
 const url = feed.buildToolkitBunkerUrl(quotes[0]);
 assert.match(url, /^\/toolkit\?tool=bunker&fuel=/);
+assert.match(url, /#tab-bunker$/);
 console.log('OK marketFeed smoke');
