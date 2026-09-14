@@ -70,6 +70,40 @@
         localStorage.setItem(LS_KEY, JSON.stringify(posts));
     }
 
+    function seedPostsLocal() {
+        const now = Date.now();
+        return [
+            {
+                id: 'seed-tech-1',
+                category: 'technical',
+                title: 'Main engine LO pressure fluctuation at slow ahead',
+                body: 'We see 0.4 bar swing on the gauge when switching from half to slow ahead. Filters changed last month. Any checklist before opening the LO cooler?',
+                displayName: 'J.K.',
+                role: 'Engineer',
+                createdAt: new Date(now - 86400000 * 2).toISOString(),
+                comments: [
+                    {
+                        id: 'seed-c1',
+                        displayName: 'Chief Eng',
+                        role: 'Engineer',
+                        body: 'Log actual temperature at cooler outlet and verify differential across filter — often air ingress at suction side.',
+                        createdAt: new Date(now - 86400000).toISOString(),
+                    },
+                ],
+            },
+            {
+                id: 'seed-reg-1',
+                category: 'regulations',
+                title: 'PSC focus on fire dampers documentation',
+                body: 'Recent inspection asked for photos of each fire damper ID tag matching PMS record. How are you tracking closure tests?',
+                displayName: 'Super',
+                role: 'Superintendent',
+                createdAt: new Date(now - 86400000 * 5).toISOString(),
+                comments: [],
+            },
+        ];
+    }
+
     async function fetchPosts(category) {
         const q = category ? `?category=${encodeURIComponent(category)}` : '';
         try {
@@ -81,6 +115,7 @@
             /* local fallback */
         }
         let posts = loadLocalPosts();
+        if (!posts.length) posts = seedPostsLocal();
         if (category) posts = posts.filter((p) => p.category === category);
         return posts.sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1));
     }
