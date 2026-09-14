@@ -39,14 +39,16 @@ const item = impaSeo.getItemByCode(sampleCode);
 check('lookup sample item', !!item?.name, sampleCode);
 
 const html = impaSeo.buildStoreItemHtml(item, { origin: 'https://app.thevesselcode.com' });
-check('html has title', html.includes('THE VESSEL CODE Maritime Catalog'));
+check('html has title', html.includes('Technical Specs &amp; Maritime Catalog | THE VESSEL CODE'));
 check('html has canonical', html.includes(`/store/${sampleCode}`));
 check('html has description meta', html.includes('maritime catalog plate illustration'));
 check('html has og:image', html.includes('property="og:image"'));
 check('html has spec table', html.includes('spec-table'));
 check('html has toolkit link', html.includes('toolkit?impa='));
 check('html has json-ld', html.includes('application/ld+json'));
-check('html has saas hook', html.includes('Vessel ROB Tracking'));
+check('html has tvc-sm banner', html.includes('TVC-SM NEXT-GEN MARITIME OS'));
+check('html has fleet pilot cta', html.includes('inquiry=tvc-sm-demo'));
+check('html has related items section', html.includes('class="related-items"'));
 
 const sitemap = readFileSync(join(root, 'public', 'sitemap.xml'), 'utf8');
 check('sitemap index exists', sitemap.includes('<sitemapindex'));
