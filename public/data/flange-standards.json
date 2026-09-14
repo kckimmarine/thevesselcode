@@ -1,0 +1,789 @@
+{
+  "version": 1,
+  "unit": "mm",
+  "rows": [
+    {
+      "standard": "JIS 5K",
+      "nb": "15A",
+      "od": 80,
+      "pcd": 55,
+      "bolts": 4,
+      "hole": 12,
+      "bolt": "M12"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "20A",
+      "od": 85,
+      "pcd": 60,
+      "bolts": 4,
+      "hole": 12,
+      "bolt": "M12"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "25A",
+      "od": 95,
+      "pcd": 70,
+      "bolts": 4,
+      "hole": 12,
+      "bolt": "M12"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "32A",
+      "od": 100,
+      "pcd": 75,
+      "bolts": 4,
+      "hole": 15,
+      "bolt": "M12"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "40A",
+      "od": 105,
+      "pcd": 80,
+      "bolts": 4,
+      "hole": 15,
+      "bolt": "M12"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "50A",
+      "od": 120,
+      "pcd": 95,
+      "bolts": 4,
+      "hole": 15,
+      "bolt": "M12"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "65A",
+      "od": 140,
+      "pcd": 115,
+      "bolts": 4,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "80A",
+      "od": 150,
+      "pcd": 125,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "90A",
+      "od": 165,
+      "pcd": 130,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "100A",
+      "od": 175,
+      "pcd": 145,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "125A",
+      "od": 200,
+      "pcd": 175,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "150A",
+      "od": 225,
+      "pcd": 200,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "200A",
+      "od": 275,
+      "pcd": 250,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "M20"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "250A",
+      "od": 330,
+      "pcd": 305,
+      "bolts": 12,
+      "hole": 19,
+      "bolt": "M20"
+    },
+    {
+      "standard": "JIS 5K",
+      "nb": "300A",
+      "od": 380,
+      "pcd": 350,
+      "bolts": 12,
+      "hole": 23,
+      "bolt": "M20"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "15A",
+      "od": 95,
+      "pcd": 70,
+      "bolts": 4,
+      "hole": 15,
+      "bolt": "M12"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "20A",
+      "od": 100,
+      "pcd": 75,
+      "bolts": 4,
+      "hole": 15,
+      "bolt": "M12"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "25A",
+      "od": 125,
+      "pcd": 90,
+      "bolts": 4,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "32A",
+      "od": 135,
+      "pcd": 100,
+      "bolts": 4,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "40A",
+      "od": 140,
+      "pcd": 105,
+      "bolts": 4,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "50A",
+      "od": 155,
+      "pcd": 120,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "65A",
+      "od": 175,
+      "pcd": 140,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "80A",
+      "od": 185,
+      "pcd": 150,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "90A",
+      "od": 200,
+      "pcd": 165,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "100A",
+      "od": 210,
+      "pcd": 175,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "125A",
+      "od": 250,
+      "pcd": 210,
+      "bolts": 8,
+      "hole": 23,
+      "bolt": "M20"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "150A",
+      "od": 280,
+      "pcd": 240,
+      "bolts": 8,
+      "hole": 23,
+      "bolt": "M20"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "200A",
+      "od": 330,
+      "pcd": 290,
+      "bolts": 12,
+      "hole": 23,
+      "bolt": "M20"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "250A",
+      "od": 405,
+      "pcd": 355,
+      "bolts": 12,
+      "hole": 25,
+      "bolt": "M22"
+    },
+    {
+      "standard": "JIS 10K",
+      "nb": "300A",
+      "od": 480,
+      "pcd": 410,
+      "bolts": 16,
+      "hole": 27,
+      "bolt": "M24"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "15A",
+      "od": 95,
+      "pcd": 70,
+      "bolts": 4,
+      "hole": 15,
+      "bolt": "M12"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "20A",
+      "od": 100,
+      "pcd": 75,
+      "bolts": 4,
+      "hole": 15,
+      "bolt": "M12"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "25A",
+      "od": 125,
+      "pcd": 90,
+      "bolts": 4,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "32A",
+      "od": 135,
+      "pcd": 100,
+      "bolts": 4,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "40A",
+      "od": 140,
+      "pcd": 105,
+      "bolts": 4,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "50A",
+      "od": 155,
+      "pcd": 120,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "65A",
+      "od": 175,
+      "pcd": 140,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "M16"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "80A",
+      "od": 200,
+      "pcd": 160,
+      "bolts": 8,
+      "hole": 23,
+      "bolt": "M20"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "90A",
+      "od": 220,
+      "pcd": 175,
+      "bolts": 8,
+      "hole": 23,
+      "bolt": "M20"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "100A",
+      "od": 225,
+      "pcd": 185,
+      "bolts": 8,
+      "hole": 23,
+      "bolt": "M20"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "125A",
+      "od": 270,
+      "pcd": 220,
+      "bolts": 8,
+      "hole": 25,
+      "bolt": "M22"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "150A",
+      "od": 305,
+      "pcd": 260,
+      "bolts": 12,
+      "hole": 25,
+      "bolt": "M22"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "200A",
+      "od": 370,
+      "pcd": 320,
+      "bolts": 12,
+      "hole": 27,
+      "bolt": "M24"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "250A",
+      "od": 450,
+      "pcd": 385,
+      "bolts": 12,
+      "hole": 30,
+      "bolt": "M27"
+    },
+    {
+      "standard": "JIS 16K",
+      "nb": "300A",
+      "od": 525,
+      "pcd": 430,
+      "bolts": 16,
+      "hole": 33,
+      "bolt": "M30"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN15",
+      "od": 95,
+      "pcd": 65,
+      "bolts": 4,
+      "hole": 14,
+      "bolt": "M12"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN20",
+      "od": 105,
+      "pcd": 75,
+      "bolts": 4,
+      "hole": 14,
+      "bolt": "M12"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN25",
+      "od": 115,
+      "pcd": 85,
+      "bolts": 4,
+      "hole": 14,
+      "bolt": "M12"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN32",
+      "od": 140,
+      "pcd": 100,
+      "bolts": 4,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN40",
+      "od": 150,
+      "pcd": 110,
+      "bolts": 4,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN50",
+      "od": 165,
+      "pcd": 125,
+      "bolts": 4,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN65",
+      "od": 185,
+      "pcd": 145,
+      "bolts": 8,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN80",
+      "od": 200,
+      "pcd": 160,
+      "bolts": 8,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN100",
+      "od": 220,
+      "pcd": 180,
+      "bolts": 8,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN125",
+      "od": 250,
+      "pcd": 210,
+      "bolts": 8,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN150",
+      "od": 285,
+      "pcd": 240,
+      "bolts": 8,
+      "hole": 22,
+      "bolt": "M20"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN200",
+      "od": 340,
+      "pcd": 295,
+      "bolts": 8,
+      "hole": 22,
+      "bolt": "M20"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN250",
+      "od": 400,
+      "pcd": 350,
+      "bolts": 12,
+      "hole": 26,
+      "bolt": "M24"
+    },
+    {
+      "standard": "DIN PN10",
+      "nb": "DN300",
+      "od": 455,
+      "pcd": 400,
+      "bolts": 12,
+      "hole": 26,
+      "bolt": "M24"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN15",
+      "od": 95,
+      "pcd": 65,
+      "bolts": 4,
+      "hole": 14,
+      "bolt": "M12"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN20",
+      "od": 105,
+      "pcd": 75,
+      "bolts": 4,
+      "hole": 14,
+      "bolt": "M12"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN25",
+      "od": 115,
+      "pcd": 85,
+      "bolts": 4,
+      "hole": 14,
+      "bolt": "M12"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN32",
+      "od": 140,
+      "pcd": 100,
+      "bolts": 4,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN40",
+      "od": 150,
+      "pcd": 110,
+      "bolts": 4,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN50",
+      "od": 165,
+      "pcd": 125,
+      "bolts": 4,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN65",
+      "od": 185,
+      "pcd": 145,
+      "bolts": 8,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN80",
+      "od": 200,
+      "pcd": 160,
+      "bolts": 8,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN100",
+      "od": 220,
+      "pcd": 180,
+      "bolts": 8,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN125",
+      "od": 250,
+      "pcd": 210,
+      "bolts": 8,
+      "hole": 18,
+      "bolt": "M16"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN150",
+      "od": 285,
+      "pcd": 240,
+      "bolts": 8,
+      "hole": 22,
+      "bolt": "M20"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN200",
+      "od": 340,
+      "pcd": 295,
+      "bolts": 12,
+      "hole": 22,
+      "bolt": "M20"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN250",
+      "od": 405,
+      "pcd": 355,
+      "bolts": 12,
+      "hole": 26,
+      "bolt": "M24"
+    },
+    {
+      "standard": "DIN PN16",
+      "nb": "DN300",
+      "od": 460,
+      "pcd": 410,
+      "bolts": 16,
+      "hole": 26,
+      "bolt": "M24"
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "1/2\"",
+      "od": 89,
+      "pcd": 60,
+      "bolts": 4,
+      "hole": 16,
+      "bolt": "1/2\""
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "3/4\"",
+      "od": 98,
+      "pcd": 70,
+      "bolts": 4,
+      "hole": 16,
+      "bolt": "1/2\""
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "1\"",
+      "od": 108,
+      "pcd": 79,
+      "bolts": 4,
+      "hole": 16,
+      "bolt": "1/2\""
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "1-1/4\"",
+      "od": 117,
+      "pcd": 89,
+      "bolts": 4,
+      "hole": 16,
+      "bolt": "1/2\""
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "1-1/2\"",
+      "od": 127,
+      "pcd": 98,
+      "bolts": 4,
+      "hole": 16,
+      "bolt": "5/8\""
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "2\"",
+      "od": 152,
+      "pcd": 121,
+      "bolts": 4,
+      "hole": 19,
+      "bolt": "5/8\""
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "2-1/2\"",
+      "od": 178,
+      "pcd": 140,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "5/8\""
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "3\"",
+      "od": 190,
+      "pcd": 152,
+      "bolts": 4,
+      "hole": 19,
+      "bolt": "5/8\""
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "4\"",
+      "od": 229,
+      "pcd": 190,
+      "bolts": 8,
+      "hole": 19,
+      "bolt": "5/8\""
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "5\"",
+      "od": 254,
+      "pcd": 216,
+      "bolts": 8,
+      "hole": 22,
+      "bolt": "3/4\""
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "6\"",
+      "od": 280,
+      "pcd": 241,
+      "bolts": 8,
+      "hole": 22,
+      "bolt": "3/4\""
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "8\"",
+      "od": 343,
+      "pcd": 298,
+      "bolts": 8,
+      "hole": 22,
+      "bolt": "3/4\""
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "10\"",
+      "od": 406,
+      "pcd": 362,
+      "bolts": 12,
+      "hole": 25,
+      "bolt": "7/8\""
+    },
+    {
+      "standard": "ANSI 150#",
+      "nb": "12\"",
+      "od": 483,
+      "pcd": 432,
+      "bolts": 12,
+      "hole": 28,
+      "bolt": "7/8\""
+    }
+  ]
+}

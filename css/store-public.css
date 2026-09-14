@@ -383,6 +383,27 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     outline-offset: 1px;
 }
 
+.toolkit-conversion-band {
+    margin: 28px 0 20px;
+    padding: 16px 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.toolkit-conversion-band p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #1a365d;
+    flex: 1 1 220px;
+}
+
+.maritime-bunker-metrics-extended {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
 .maritime-table-wrap {
     margin: 0 16px 12px;
     overflow: auto;
