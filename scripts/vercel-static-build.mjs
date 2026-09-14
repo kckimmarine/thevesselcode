@@ -29,6 +29,14 @@ const STATIC_PATHS = [
   'downloads',
 ];
 
+const marketFeed = spawnSync('node', ['scripts/fetch-market-feed.mjs', '--build'], {
+  cwd: root,
+  stdio: 'inherit',
+});
+if (marketFeed.status !== 0) {
+  console.warn('WARN market feed fetch exited non-zero (continuing with cached/baseline)');
+}
+
 const smoke = spawnSync('node', ['scripts/smoke-web-demo.mjs'], { cwd: root, stdio: 'inherit' });
 if (smoke.status !== 0) process.exit(smoke.status ?? 1);
 
