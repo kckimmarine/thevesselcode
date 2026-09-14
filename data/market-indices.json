@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "source": "TVC Market Desk · Indicative benchmarks",
+    "updatedLabelEn": "Updated daily benchmark (UTC)",
+    "updatedLabelKo": "UTC 일일 벤치마크 갱신"
+  },
+  "bunker": {
+    "hubs": ["Singapore", "Rotterdam", "Busan", "Houston"],
+    "grades": [
+      { "key": "VLSFO", "label": "VLSFO", "fuel": "VLSFO", "defaultDensity": 991 },
+      { "key": "LSMGO", "label": "LSMGO", "fuel": "LSMGO", "defaultDensity": 850 },
+      { "key": "HSFO380", "label": "HSFO 380", "fuel": "HSFO", "defaultDensity": 991 }
+    ],
+    "basePricesUsdMt": {
+      "Singapore": { "VLSFO": 612, "LSMGO": 748, "HSFO380": 458 },
+      "Rotterdam": { "VLSFO": 598, "LSMGO": 722, "HSFO380": 441 },
+      "Busan": { "VLSFO": 625, "LSMGO": 761, "HSFO380": 472 },
+      "Houston": { "VLSFO": 589, "LSMGO": 715, "HSFO380": 435 }
+    }
+  },
+  "indices": {
+    "bdi": { "base": 1842, "salt": 99 },
+    "capesizeTc": { "base": 24850, "jitter": 800, "unit": "$/day", "salt": 101 },
+    "panamaxTc": { "base": 14220, "jitter": 400, "unit": "$/day", "salt": 103 },
+    "bdti": { "base": 1185, "jitter": 60, "salt": 107 },
+    "bcti": { "base": 892, "jitter": 40, "salt": 109 },
+    "scfi": { "base": 2140, "jitter": 100, "salt": 113 }
+  },
+  "news": [
+    {
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 3,
+      "en": {
+        "headline": "Singapore VLSFO stems firm on delayed ARA cargo arrivals",
+        "summary": "Prompt 0.50%S coverage tight as desks cover short positions ahead of month-end stems.",
+        "source": "TVC Market Desk"
+      },
+      "ko": {
+        "headline": "싱가포르 VLSFO — ARA 입항 지연으로 프롬프트 견조",
+        "summary": "월말 스템 앞두고 0.50%S 숏 커버링으로 물량 타이트.",
+        "source": "TVC Market Desk"
+      }
+    },
+    {
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 6,
+      "en": {
+        "headline": "EU ETS voyage planners review 2026 allowance carry-forward assumptions",
+        "summary": "Owners stress-test CII and EUA exposure on Atlantic MR and bulk repositioning legs.",
+        "source": "Energy & Compliance brief"
+      },
+      "ko": {
+        "headline": "EU ETS — 2026 할당량 이월 가정 재검토",
+        "summary": "Atlantic MR·벌크 재배치 항차 CII·EUA 노출 시뮬레이션 강화.",
+        "source": "Energy & Compliance brief"
+      }
+    },
+    {
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 14,
+      "en": {
+        "headline": "Panamax earnings recovery supports second-hand bulker bids",
+        "summary": "Five-year eco Panamax candidates draw interest from Greek and North Asian buyers.",
+        "source": "S&P snapshot"
+      },
+      "ko": {
+        "headline": "Panamax 수익 회복 — 중고 벌크선 매수세",
+        "summary": "5년식 eco Panamax에 그리스·북아시아 매수 관심.",
+        "source": "S&P snapshot"
+      }
+    },
+    {
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 22,
+      "en": {
+        "headline": "US Gulf grain liftings support Atlantic MR repositioning",
+        "summary": "Clean product arbitrage opens Houston–Rotterdam MR runs on improved freight.",
+        "source": "Trade flow"
+      },
+      "ko": {
+        "headline": "미국 곡물 출하 — Atlantic MR 재배치 지원",
+        "summary": "운임 개선으로 Houston–Rotterdam MR 클린 제품 차익.",
+        "source": "Trade flow"
+      }
+    }
+  ]
+}

@@ -15,7 +15,11 @@
         }
 
         const params = new URLSearchParams(window.location.search);
-        const toolTab = params.get('tool');
+        const hashTab = (window.location.hash || '').replace(/^#/, '');
+        if (hashTab === 'tab-bunker' && !params.get('tool')) {
+            params.set('tool', 'bunker');
+        }
+        const toolTab = params.get('tool') || (hashTab === 'tab-bunker' ? 'bunker' : null);
         if (toolTab && typeof TVC_MaritimeToolkit !== 'undefined') {
             TVC_MaritimeToolkit.setActiveTool(toolTab);
             if (toolTab === 'bunker') {

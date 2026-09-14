@@ -39,6 +39,10 @@ check('spot VCF 4dp (ASTM exp.)', Math.abs(spot.vcf - 0.9905) < 0.0002, `vcf=${s
 check('spot alpha > 0', spot.alpha > 0.0003 && spot.alpha < 0.0005, `alpha=${spot.alpha.toFixed(7)}`);
 check('spot mass in air (user formula)', Math.abs(spot.mt - 490.251) < 0.02, `mt=${spot.mt.toFixed(3)}`);
 
+const spend = Bunker.calcFuelExpenditureUsd(spot.mt, 612.5);
+check('fuel expenditure USD', spend != null && Math.abs(spend - spot.mt * 612.5) < 0.01, `usd=${spend?.toFixed(2)}`);
+check('fuel expenditure null without price', Bunker.calcFuelExpenditureUsd(spot.mt, 0) === null);
+
 const vcfRef = 0.9829;
 const mtTableRef = (500 * vcfRef * 991) / 1000;
 check(

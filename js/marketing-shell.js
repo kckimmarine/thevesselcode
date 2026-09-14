@@ -25,8 +25,8 @@
     ];
 
     const LOGO = '/icons/company-logo.png?v=20260804-logo-no-ring';
-    const INTEL_CSS = '/css/marketing-readability.css?v=20260914-soft-light-intel';
-    const INTEL_JS = '/js/intelligence/marketFeed.js?v=20260914-soft-light-intel';
+    const INTEL_CSS = '/css/marketing-readability.css?v=20260914-market-dashboard';
+    const INTEL_JS = '/js/intelligence/marketFeed.js?v=20260914-market-dashboard';
 
     function navLabel(item) {
         const i18n = globalThis.TVC_MarketingI18n;

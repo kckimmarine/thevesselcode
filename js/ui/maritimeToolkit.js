@@ -135,12 +135,17 @@ const TVC_MaritimeToolkit = (function () {
                     <span data-i18n="tk.bunker.temp">Observed temperature (°C)</span>
                     <input type="number" id="bunkerTemp" step="0.1" value="40" inputmode="decimal">
                 </label>
+                <label class="maritime-field">
+                    <span data-i18n="tk.bunker.fuelPrice">Benchmark fuel price ($/MT)</span>
+                    <input type="number" id="bunkerFuelPrice" min="0" step="0.01" inputmode="decimal" placeholder="Optional" value="${benchmark ? esc(benchmark) : ''}">
+                </label>
             </form>
             <div class="maritime-bunker-result" id="bunkerResult" aria-live="polite">
                 <div class="maritime-bunker-metrics maritime-bunker-metrics-extended">
                     <div><span data-i18n="tk.bunker.vcf">VCF @ 15°C</span><strong id="bunkerVcfValue">—</strong></div>
                     <div><span data-i18n="tk.bunker.alpha">Alpha @ 15°C</span><strong id="bunkerAlphaValue">—</strong></div>
                     <div><span data-i18n="tk.bunker.mass">Mass in air (MT)</span><strong id="bunkerMassValue">—</strong></div>
+                    <div><span data-i18n="tk.bunker.fuelCost">Total fuel cost ($)</span><strong id="bunkerFuelCostValue">—</strong></div>
                     <div><span data-i18n="tk.bunker.co2">Est. CO₂ (MT)</span><strong id="bunkerCo2Value">—</strong></div>
                     <div><span data-i18n="tk.bunker.v15">Volume @ 15°C (m³)</span><strong id="bunkerV15Value">—</strong></div>
                 </div>
@@ -156,11 +161,15 @@ const TVC_MaritimeToolkit = (function () {
             const den = host.querySelector('#bunkerDensity')?.value;
             const temp = host.querySelector('#bunkerTemp')?.value;
             const result = calcBunkerMassAstM54B(vol, den, temp, fuelKey);
+            const priceMt = host.querySelector('#bunkerFuelPrice')?.value;
+            const spend = globalThis.TVC_BunkerCalc?.calcFuelExpenditureUsd?.(result.mt, priceMt);
             host.querySelector('#bunkerMassValue').textContent = `${result.mt.toFixed(3)} MT`;
             host.querySelector('#bunkerV15Value').textContent = result.v15.toFixed(3);
             host.querySelector('#bunkerVcfValue').textContent = result.vcf.toFixed(4);
             host.querySelector('#bunkerAlphaValue').textContent = result.alpha.toExponential(4);
             host.querySelector('#bunkerCo2Value').textContent = `${(result.co2Mt || 0).toFixed(3)} MT`;
+            host.querySelector('#bunkerFuelCostValue').textContent =
+                spend != null ? `$${spend.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}` : '—';
         };
         fuelSelect.addEventListener('change', () => {
             const fuel = fuels.find((f) => f.key === fuelSelect.value);
@@ -176,16 +185,21 @@ const TVC_MaritimeToolkit = (function () {
         const p = params instanceof URLSearchParams ? params : new URLSearchParams(params || '');
         const fuel = p.get('fuel');
         const density = p.get('density');
+        const benchmark = p.get('benchmark') || p.get('fuelPrice');
         const host = document.getElementById('storeToolBunker');
         if (!host) return;
         const fuelSelect = host.querySelector('#bunkerFuelType');
         const denInput = host.querySelector('#bunkerDensity');
+        const priceInput = host.querySelector('#bunkerFuelPrice');
         const grades = globalThis.TVC_BunkerCalc?.FUEL_GRADES || {};
         if (fuel && grades[fuel] && fuelSelect) {
             fuelSelect.value = fuel;
         }
         if (density && denInput) {
             denInput.value = density;
+        }
+        if (benchmark && priceInput) {
+            priceInput.value = benchmark;
         }
         fuelSelect?.dispatchEvent(new Event('change'));
         host.querySelector('#bunkerCalcForm')?.dispatchEvent(new Event('input'));
