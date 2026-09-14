@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "updated_at": "2026-09-14",
+  "profiles": {
+    "bulker": {
+      "id": "bulker",
+      "label": "Bulker",
+      "vessel_types": ["Bulk Carrier"],
+      "demo_label": "ABC Voyager [Bulker]"
+    },
+    "container": {
+      "id": "container",
+      "label": "Container",
+      "vessel_types": ["Container Ship"],
+      "demo_label": "GLOBAL Maritime [Container]"
+    },
+    "tanker_chemical": {
+      "id": "tanker_chemical",
+      "label": "Chemical Tanker",
+      "vessel_types": ["Chemical Tanker", "Product Tanker"],
+      "demo_label": "TVC Pioneer [Chemical Tanker]"
+    },
+    "gas": {
+      "id": "gas",
+      "label": "Gas Carrier",
+      "vessel_types": ["LNG", "LPG"],
+      "demo_label": "GLOBAL Maritime [Gas]"
+    }
+  },
+  "deck_common": [
+    { "no": "01", "name": "CARGO HANDLING", "equipment": ["Deck Cranes", "Cargo Winches", "Hose Handling"] },
+    { "no": "02", "name": "MOORING WINCH & WINDLASS", "equipment": ["Forward Mooring Winch", "Aft Mooring Winch", "Windlass"] },
+    { "no": "03", "name": "LIFE-SAVING APPLIANCES", "equipment": ["Lifeboat", "Davit", "Rescue Boat"] },
+    { "no": "04", "name": "FIRE FIGHTING SYSTEMS", "equipment": ["Fire Pumps", "CO2 System", "Foam System"] },
+    { "no": "05", "name": "HATCH COVERS & CLOSING APPLIANCES", "equipment": ["Hatch Cover", "Cleats", "Hydraulic Power Pack"] },
+    { "no": "06", "name": "NAVIGATION & GMDSS", "equipment": ["Radar", "ECDIS", "GMDSS Console"] }
+  ],
+  "engine_common": [
+    { "no": "01", "name": "MAIN PROPULSION", "equipment": ["Main Engine", "TC", "Governor"] },
+    { "no": "02", "name": "AUXILIARY ENGINES / GENERATORS", "equipment": ["No.1 G/E", "No.2 G/E", "No.3 G/E"] },
+    { "no": "03", "name": "BOILERS & EXHAUST GAS ECONOMIZER", "equipment": ["Aux Boiler", "EGC / EGE"] },
+    { "no": "04", "name": "PURIFIERS / OWS", "equipment": ["HFO Separator", "LO Separator", "OWS"] },
+    { "no": "05", "name": "AUXILIARY PUMPS", "equipment": ["Ballast Pump", "Fire Pump", "General Service Pump"] },
+    { "no": "06", "name": "STEERING GEAR", "equipment": ["Rudder Actuator", "Steering Gear Motor"] }
+  ],
+  "extensions": {
+    "bulker": {
+      "deck": [
+        { "no": "07", "name": "CARGO HOLDS", "equipment": ["Hold Ventilation", "Hold Ladders"] },
+        { "no": "08", "name": "HYDRAULIC HATCH COVERS", "equipment": ["HPU", "Hatch Rams"] },
+        { "no": "09", "name": "DECK CRANES & GRABS", "equipment": ["Deck Crane", "Grab"] }
+      ],
+      "engine": []
+    },
+    "container": {
+      "deck": [
+        { "no": "07", "name": "CELL GUIDES & LASHING", "equipment": ["Cell Guide", "Lashing Bridge", "Twistlock"] },
+        { "no": "08", "name": "REEFER POWER SOCKETS", "equipment": ["Reefer Panel", "Cable Rack"] }
+      ],
+      "engine": []
+    },
+    "tanker_chemical": {
+      "deck": [
+        { "no": "07", "name": "CARGO PUMPS (FRAMO / CENTRIFUGAL)", "equipment": ["Cargo Pump", "Stripping Pump"] },
+        { "no": "08", "name": "TANK COATING & CARGO TANK MONITORING", "equipment": ["Tank Radar", "Cargo Temperature"] },
+        { "no": "09", "name": "INERT GAS SYSTEM (IGS)", "equipment": ["IG Generator", "Deck Seal"] },
+        { "no": "10", "name": "VAPOUR RECOVERY", "equipment": ["Vapour Return", "Vapour Control Valve"] }
+      ],
+      "engine": []
+    },
+    "gas": {
+      "deck": [
+        { "no": "07", "name": "CARGO COMPRESSORS", "equipment": ["Booster Compressor", "LD Compressor"] },
+        { "no": "08", "name": "RELIQUEFACTION PLANT", "equipment": ["Reliq Unit", "Cargo Heat Exchanger"] }
+      ],
+      "engine": []
+    }
+  },
+  "operational_parity": {
+    "deck": {
+      "roles": ["SHIP_OFFICER", "SHIP_CO"],
+      "work_reports": true,
+      "consumables_stores": true,
+      "department_confirm": "SHIP_CO"
+    },
+    "engine": {
+      "roles": ["SHIP_ENGINEER", "SHIP_CE"],
+      "work_reports": true,
+      "consumables_stores": true,
+      "department_confirm": "SHIP_CE"
+    },
+    "master_oversight": {
+      "role": "SHIP_CAPTAIN",
+      "hub_export_import": true,
+      "cross_dept_confirm": false
+    }
+  }
+}

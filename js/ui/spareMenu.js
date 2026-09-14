@@ -1026,7 +1026,13 @@ const TVC_SpareMenu = (function () {
                 .filter(j => matchGroupLabel(st, lab, j.group, j.department))
                 .map(equipmentFromJob)
                 .filter(Boolean);
-            return [...new Set([...fromDefs, ...fromJobs])].sort((a, b) => a.localeCompare(b));
+            let fromTax = [];
+            if (!fromDefs.length && !fromJobs.length && typeof TVC_MachineryTaxonomy !== 'undefined') {
+                const dept = st.department || 'ENGINE';
+                const profile = st.machineryProfileId || 'bulker';
+                fromTax = TVC_MachineryTaxonomy.equipmentForGroup(profile, dept, lab) || [];
+            }
+            return [...new Set([...fromDefs, ...fromJobs, ...fromTax])].sort((a, b) => a.localeCompare(b));
         }
         const fromSpares = (st.spares || [])
             .map(canon)
