@@ -48,6 +48,16 @@ async function findReportByMarker(page, marker) {
   }, marker);
 }
 
+/** ClassNK An 1.3.2.1.f — dimensional_measurements from IndexedDB report_form */
+async function getReportDimensionalMeasurements(page, reportId) {
+  return page.evaluate(async (id) => {
+    const row = await TVC_DB.get('daily_work_reports', id);
+    const form = row?.report_form || {};
+    const list = form.dimensional_measurements || row?.dimensional_measurements || [];
+    return Array.isArray(list) ? list : [];
+  }, reportId);
+}
+
 async function spareStock(page, spareId) {
   return page.evaluate(async (id) => {
     const sp = await TVC_DB.get('spare_parts', id);
@@ -341,6 +351,7 @@ module.exports = {
   alignDemoVesselScope,
   waitForAppBoot,
   findReportByMarker,
+  getReportDimensionalMeasurements,
   spareStock,
   confirmReport,
   tryConfirmReport,
