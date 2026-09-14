@@ -14,6 +14,22 @@ body.tvc-marketing-body::before {
         linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%) !important;
 }
 
+body.tvc-marketing-body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 1;
+    background-image:
+        linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
 body.tvc-marketing-body h1,
 body.tvc-marketing-body h2,
 body.tvc-marketing-body h3,
@@ -172,6 +188,79 @@ body.tvc-marketing-body #marketing-topbar .home-topnav a {
 body.tvc-marketing-body #marketing-topbar .home-topnav a:hover,
 body.tvc-marketing-body #marketing-topbar .home-topnav a[aria-current="page"] {
     color: #0284c7 !important;
+}
+
+/* ── Maritime brand emblem (replaces generic logo mark in marketing nav) ── */
+.mkt-brand-emblem {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #0f172a;
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
+}
+
+.mkt-brand-emblem-svg {
+    display: block;
+}
+
+/* ── Home hero: realistic vessel scrim ── */
+body.home-page.home-bg-fixed #hero.hero-realistic-canvas,
+body.home-page.home-bg-fixed .home-hero.mkt-hero.hero-realistic-canvas {
+    background-color: #0a101e;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(10, 16, 30, 0.96) 0%,
+            rgba(10, 16, 30, 0.88) 45%,
+            rgba(10, 16, 30, 0.55) 75%,
+            rgba(10, 16, 30, 0.88) 100%
+        ),
+        linear-gradient(180deg, rgba(10, 16, 30, 0.65) 0%, rgba(10, 16, 30, 0.98) 100%),
+        url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-realistic-canvas .home-hero-copy h1,
+.hero-realistic-canvas #homeHeroTitle {
+    color: #f8fafc !important;
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+}
+
+.hero-realistic-canvas .home-hero-tagline,
+.hero-realistic-canvas .home-hero-copy .mkt-lead {
+    color: #e2e8f0 !important;
+}
+
+.hero-realistic-canvas .home-launch-eyebrow {
+    color: #7dd3fc !important;
+    background: rgba(2, 132, 199, 0.18) !important;
+    border-color: rgba(56, 189, 248, 0.35) !important;
+}
+
+.hero-realistic-canvas .home-btn-secondary {
+    background: rgba(255, 255, 255, 0.95) !important;
+    color: #0f172a !important;
+    border-color: #f8fafc !important;
+}
+
+@media (max-width: 767px) {
+    body.home-page.home-bg-fixed #hero.hero-realistic-canvas,
+    body.home-page.home-bg-fixed .home-hero.mkt-hero.hero-realistic-canvas {
+        background-position: 70% center;
+    }
+
+    .hero-realistic-canvas .home-hero-copy h1,
+    .hero-realistic-canvas #homeHeroTitle {
+        font-size: clamp(1.65rem, 7vw, 2rem);
+    }
 }
 
 @media (max-width: 767px) {
