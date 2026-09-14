@@ -1,0 +1,68 @@
+/* Landing home — mobile hero typography & spacing (desktop untouched) */
+
+@media screen and (max-width: 768px) {
+    body.home-page.tvc-marketing-body .mkt-site-wrap > .home-shell {
+        padding-top: 16px;
+    }
+
+    body.home-page #hero.home-hero.mkt-hero {
+        padding-top: 28px;
+        padding-bottom: 24px;
+        background:
+            linear-gradient(180deg, rgba(15, 23, 42, 0.72) 0%, rgba(15, 23, 42, 0.88) 100%),
+            radial-gradient(ellipse 120% 80% at 50% 0%, rgba(2, 132, 199, 0.22) 0%, transparent 55%),
+            #0f172a;
+        overflow: visible;
+    }
+
+    body.home-page .home-hero.mkt-hero {
+        padding-top: 0;
+        padding-bottom: 0;
+        gap: 12px;
+    }
+
+    body.home-page .home-hero-copy h1,
+    body.home-page #homeHeroTitle {
+        color: #ffffff !important;
+        font-size: 24px !important;
+        line-height: 1.35 !important;
+        letter-spacing: -0.02em !important;
+        text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45), 0 1px 3px rgba(0, 0, 0, 0.35);
+        margin-bottom: 8px;
+        overflow-wrap: anywhere;
+    }
+
+    body.home-page .home-hero-tagline.mkt-lead,
+    body.home-page .home-hero-copy .home-hero-tagline {
+        color: #e2e8f0 !important;
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 14px;
+        max-width: none;
+    }
+
+    body.home-page .home-launch-eyebrow {
+        background: rgba(255, 255, 255, 0.12) !important;
+        color: #7dd3fc !important;
+        border-color: rgba(125, 211, 252, 0.35) !important;
+        margin-bottom: 10px;
+    }
+
+    body.home-page .home-hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    body.home-page .home-hero-actions .home-btn {
+        width: 100%;
+        justify-content: center;
+        min-height: 48px;
+        box-sizing: border-box;
+    }
+
+    body.home-page .home-hero-card.mkt-glass-card {
+        margin-top: 0;
+    }
+}
