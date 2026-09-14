@@ -773,10 +773,9 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     display: none !important;
 }
 
-/* Maritime Toolkit public modal — never show legacy plate viewer */
+/* Maritime Toolkit public modal — never show legacy PMS plate viewer */
 .impa-detail-modal-public #impaDetailPmsLayout,
-.impa-detail-modal-public .impa-detail-plate-section,
-.impa-detail-modal-public .impa-plate-fullscreen {
+.impa-detail-modal-public .impa-detail-plate-section {
     display: none !important;
 }
 
@@ -799,7 +798,7 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     max-height: 85vh;
     max-height: 85dvh;
     background: #0f172a;
-    border: 1px solid #1e293b;
+    border: 1px solid rgba(56, 189, 248, 0.2);
     border-radius: 12px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
     overflow: hidden;
@@ -824,6 +823,15 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
 }
 
 .impa-detail-modal-public .impa-detail-title {
+    display: block;
+    margin: 8px 0 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #f8fafc;
+}
+
+.impa-detail-modal-public .impa-shipserv-title.impa-shipserv-title-duplicate {
     display: none;
 }
 
@@ -863,25 +871,12 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     background: #0f172a;
 }
 
-.impa-shipserv-photo {
+.impa-shipserv-photo:not(.impa-plate-preview) {
     max-height: 220px;
-    margin: 0 auto 16px;
-    border-radius: 8px;
-    background: #ffffff;
-    padding: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
 }
 
-.impa-shipserv-photo-img {
-    display: block;
-    max-width: 100%;
+.impa-shipserv-photo-img:not(.impa-plate-preview .impa-shipserv-photo-img) {
     max-height: 200px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
 }
 
 .impa-shipserv-photo-fallback,
