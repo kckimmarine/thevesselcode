@@ -31,6 +31,7 @@ function parseArgs(argv) {
   return {
     scrape: argv.includes('--scrape'),
     merge: argv.includes('--merge') || !argv.includes('--no-merge'),
+    incrementalMerge: argv.includes('--incremental-merge'),
     dryRun: argv.includes('--dry-run'),
     batch,
     delayMs,
@@ -83,6 +84,22 @@ function catalogCount() {
   return Number(full.count) || (full.items || []).length;
 }
 
+function alreadyScrapedCodeSet() {
+  const scraped = new Set();
+  const importsDir = join(ROOT, 'public/data/berth/imports');
+  if (!existsSync(importsDir)) return scraped;
+  for (const f of readdirSync(importsDir).filter((file) => /^codes-batch-\d+-\d+\.json$/.test(file))) {
+    const payload = JSON.parse(readFileSync(join(importsDir, f), 'utf8'));
+    for (const row of payload.items || []) {
+      if (row.skipped || row.error) continue;
+      const code = normalizeImpaCode(row.impa_code);
+      const name = String(row.item_name || '').trim();
+      if (code && name.length >= 3 && !/^Marine stores item \d{6}$/i.test(name)) scraped.add(code);
+    }
+  }
+  return scraped;
+}
+
 function loadScrapedItemsForCodes(missingSet) {
   const importsDir = join(ROOT, 'public/data/berth/imports');
   const rows = [];
@@ -99,11 +116,14 @@ function loadScrapedItemsForCodes(missingSet) {
   return rows;
 }
 
-function scrapeMissingInBatches(missing, batchSize, delayMs = 1100) {
-  writeBerthWorklist(ROOT, missing, 'gap-worklist');
+function scrapeMissingInBatches(missing, batchSize, delayMs = 1100, incrementalMerge = false) {
+  const scraped = alreadyScrapedCodeSet();
+  const pending = missing.filter((c) => !scraped.has(normalizeImpaCode(c)));
+  console.log(`Scrape pending: ${pending.length} (${scraped.size} already in batch imports)`);
+  writeBerthWorklist(ROOT, pending, 'gap-worklist');
   const relWorklist = 'public/data/berth/gap-worklist.json';
-  for (let offset = 0; offset < missing.length; offset += batchSize) {
-    const slice = missing.slice(offset, offset + batchSize);
+  for (let offset = 0; offset < pending.length; offset += batchSize) {
+    const slice = pending.slice(offset, offset + batchSize);
     console.log(`\n--- Scrape batch offset ${offset} (${slice.length} codes) ---`);
     runNode('scripts/scrape-berthmarine.mjs', [
       `--codes-file=${relWorklist}`,
@@ -112,6 +132,9 @@ function scrapeMissingInBatches(missing, batchSize, delayMs = 1100) {
       `--delay=${delayMs}`,
       '--skip-download',
     ]);
+    if (incrementalMerge) {
+      runNode('scripts/merge-impa-chapters.mjs');
+    }
   }
 }
 
@@ -149,7 +172,7 @@ function main() {
 
   if (opts.scrape) {
     if (missing.length > 24) {
-      scrapeMissingInBatches(missing, opts.batch, opts.delayMs);
+      scrapeMissingInBatches(missing, opts.batch, opts.delayMs, opts.incrementalMerge);
     } else {
       runNode('scripts/scrape-berthmarine.mjs', [`--codes=${missing.join(',')}`, '--skip-download']);
     }
