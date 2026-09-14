@@ -41,6 +41,8 @@ const shell = readFileSync(join(ROOT, 'js/marketing-shell.js'), 'utf8');
 const home = readFileSync(join(ROOT, 'home/index.html'), 'utf8');
 check('marketing topbar mount', home.includes('id="marketing-topbar"'));
 check('marketing shell script', home.includes('marketing-shell.js'));
+check('home uses relative marketing css', /href="\.\.\/css\/marketing-theme\.css/.test(home));
+check('home uses relative marketing js', /src="\.\.\/js\/marketing-shell\.js/.test(home));
 check('hero headline open commons', home.includes('The Open Digital Commons for Global Maritime'));
 check('hero headline i18n key', home.includes('data-i18n="home.headline"'));
 check('marketing i18n persistence key', readFileSync(join(ROOT, 'js/marketing-i18n.js'), 'utf8').includes("STORAGE_KEY = 'tvc-mkt-lang'"));
