@@ -1,7 +1,7 @@
 # TVC-PMS 업무 매뉴얼 v1.0
 
 > **목적:** 선박 ↔ HQ 간 업무 흐름·상태·Export/Import 규칙의 **단일 기준(Single Source of Truth)**  
-> **대상:** 시범 운영(incheonchemi), Engine/Deck 부서, HQ  
+> **대상:** 시범 운영(abcvoyager), Engine/Deck 부서, HQ  
 > **코드 기준일:** 2026-08-12  
 > **관련 규칙:** `.cursor/rules/role-naming.mdc`
 
@@ -56,7 +56,7 @@
 
 | 토큰 | 설명 | 예 |
 |------|------|-----|
-| `vessel` | 선박 ID 소문자·공백 제거 | `incheonchemi` |
+| `vessel` | 선박 ID 소문자·공백 제거 | `abcvoyager` |
 | `type` | 데이터 종류 | `defect`, `monthly`, `workpermit`, `postpone`, `requisition` … |
 | `scope` | `engine` \| `deck` \| `hub` \| `engine_hq` \| `deck_hq` | Engine 선박 export → `engine` |
 | `YYYYMMDD` | Export 일자 | `20260812` |
@@ -69,25 +69,25 @@
 
 | type | scope | 예시 파일명 |
 |------|-------|-------------|
-| `pms_backup` | engine | `incheonchemi_pms_backup_engine_20260812_001.zip` |
-| `spare_backup` | engine | `incheonchemi_spare_backup_engine_20260812_001.zip` |
-| `pms_master` | engine | `incheonchemi_pms_master_engine_20260812_001.xlsx` |
-| `spare_master` | engine | `incheonchemi_spare_master_engine_20260812_001.xlsx` |
-| `workpermit` | engine / hub | `incheonchemi_workpermit_engine_20260812_001.zip` |
-| **`defect`** | **engine** | **`incheonchemi_defect_engine_20260812_001.zip`** |
+| `pms_backup` | engine | `abcvoyager_pms_backup_engine_20260812_001.zip` |
+| `spare_backup` | engine | `abcvoyager_spare_backup_engine_20260812_001.zip` |
+| `pms_master` | engine | `abcvoyager_pms_master_engine_20260812_001.xlsx` |
+| `spare_master` | engine | `abcvoyager_spare_master_engine_20260812_001.xlsx` |
+| `workpermit` | engine / hub | `abcvoyager_workpermit_engine_20260812_001.zip` |
+| **`defect`** | **engine** | **`abcvoyager_defect_engine_20260812_001.zip`** |
 | `postpone` | engine | (별도 레거시 패턴 — §5.2 참고) |
-| `monthly` | engine | `incheonchemi_monthly_engine_20260812_001.zip` |
-| `requisition` | engine | `incheonchemi_requisition_engine_20260812_001.zip` |
-| `received` | engine | `incheonchemi_received_engine_20260812_001.zip` |
-| `inventory` | engine | `incheonchemi_inventory_engine_20260812_001.zip` |
+| `monthly` | engine | `abcvoyager_monthly_engine_20260812_001.zip` |
+| `requisition` | engine | `abcvoyager_requisition_engine_20260812_001.zip` |
+| `received` | engine | `abcvoyager_received_engine_20260812_001.zip` |
+| `inventory` | engine | `abcvoyager_inventory_engine_20260812_001.zip` |
 
 ### 2.3 HQ Mode — 회신 scope
 
 | type | scope | 예시 |
 |------|-------|------|
-| `monthly` | `engine_hq` | `incheonchemi_monthly_engine_hq_20260812_001.zip` |
-| `defect` | `engine_hq` | `incheonchemi_defect_engine_hq_20260812_001.zip` |
-| `workpermit` | `engine_hq` | `incheonchemi_workpermit_engine_hq_20260812_001.zip` |
+| `monthly` | `engine_hq` | `abcvoyager_monthly_engine_hq_20260812_001.zip` |
+| `defect` | `engine_hq` | `abcvoyager_defect_engine_hq_20260812_001.zip` |
+| `workpermit` | `engine_hq` | `abcvoyager_workpermit_engine_hq_20260812_001.zip` |
 
 ### 2.4 배치 Export 원칙
 
@@ -227,7 +227,7 @@ flowchart LR
 | 항목 | 규칙 |
 |------|------|
 | **전제** | 목록 Status = **Confirmed**, 미 Export |
-| **파일명** | `incheonchemi_defect_engine_YYYYMMDD_001.zip` |
+| **파일명** | `abcvoyager_defect_engine_YYYYMMDD_001.zip` |
 | **Direction** | `DEFECT_URGENT_TO_HQ` |
 | **ZIP 내용** | `defect_case.json` + 건별 `DEFECT_{case_no}.html` |
 | **배치** | 선택 N건 → **1 ZIP** |
@@ -259,7 +259,7 @@ Export 후 목록 Status → **Submitted** (`sync_status = SYNCED`).
 
 | 항목 | 규칙 |
 |------|------|
-| **파일명** | `incheonchemi_defect_engine_hq_YYYYMMDD_001.zip` |
+| **파일명** | `abcvoyager_defect_engine_hq_YYYYMMDD_001.zip` |
 | **Direction** | `DEFECT_REPLY_HQ_TO_SHIP` |
 | **배치** | 선택 N건 → **1 ZIP** |
 
@@ -268,7 +268,7 @@ Export 후 목록 Status → **Submitted** (`sync_status = SYNCED`).
 | 단계 | 전제 | Direction | 파일명 |
 |------|------|-----------|--------|
 | Phase 3 (Ship verify) | HQ Reply Import 후 | — | Modify (Approved 후) |
-| Completion Export | defect cleared + verified | `DEFECT_COMPLETION_TO_HQ` | `incheonchemi_defect_engine_…` |
+| Completion Export | defect cleared + verified | `DEFECT_COMPLETION_TO_HQ` | `abcvoyager_defect_engine_…` |
 
 ### 6.8 HQ — Phase 4 Close Export
 
@@ -329,11 +329,11 @@ flowchart LR
 
 | # | Actor | 작업 | Direction | 파일명 예 |
 |---|-------|------|-----------|-----------|
-| 1 | Engine `ce` | Monthly Export | `STATION_TO_HUB` | `incheonchemi_monthly_engine_…` |
+| 1 | Engine `ce` | Monthly Export | `STATION_TO_HUB` | `abcvoyager_monthly_engine_…` |
 | 2 | Captain | Station ZIP Import (Engine 토글) | — | — |
 | 3 | Captain | Company Export | `SHIP_TO_HQ` | (Master 집계) |
 | 4 | HQ | Import + Approve reports | — | — |
-| 5 | HQ | Monthly Reply Export | `HQ_TO_SHIP` | `incheonchemi_monthly_engine_hq_…` |
+| 5 | HQ | Monthly Reply Export | `HQ_TO_SHIP` | `abcvoyager_monthly_engine_hq_…` |
 | 6 | Ship | HQ Reply Import | — | Original Plan 잠금 해제 |
 
 ### 8.2 포함 데이터
@@ -368,8 +368,8 @@ flowchart LR
 
 | 작업 | Actor | 파일명 |
 |------|-------|--------|
-| PMS Master Export | Master Hub Captain | `incheonchemi_pms_master_YYYYMMDD_001.xlsx` |
-| SPARE Master Export | Master Hub Captain | `incheonchemi_spare_master_YYYYMMDD_001.xlsx` |
+| PMS Master Export | Master Hub Captain | `abcvoyager_pms_master_YYYYMMDD_001.xlsx` |
+| SPARE Master Export | Master Hub Captain | `abcvoyager_spare_master_YYYYMMDD_001.xlsx` |
 
 ---
 
@@ -383,11 +383,11 @@ flowchart LR
 |---|------|------|-------|------|------|
 | D-1 | Engine | engineer | Job 선택 | Defect Report 작성·Save to List | Status Reported |
 | D-2 | Engine | ce | Reported | Confirm | Status Confirmed |
-| D-3 | Engine | ce | Confirmed + 필수 Phase1 | Menu Export Defect | `incheonchemi_defect_engine_*_001.zip` 1개 |
+| D-3 | Engine | ce | Confirmed + 필수 Phase1 | Menu Export Defect | `abcvoyager_defect_engine_*_001.zip` 1개 |
 | D-4 | HQ | hq | Engine 토글 | Import Defect ZIP | Inbox/History 표시, Modify 가능 |
 | D-5 | HQ | hq | Import됨 | Modify → Initial Reply/Date/REPORT TO/Approved by → Save | 저장·재편집 가능 |
 | D-6 | HQ | hq | Save 완료 | Export (조건 미충족) | **차단** + missing 메시지 |
-| D-7 | HQ | hq | 조건 충족 | Export | `incheonchemi_defect_engine_hq_*_001.zip` 1개 |
+| D-7 | HQ | hq | 조건 충족 | Export | `abcvoyager_defect_engine_hq_*_001.zip` 1개 |
 | D-8 | HQ | hq | Export 후 | Modify | **불가** |
 | D-9 | Engine | ce | HQ Reply ZIP | Import | Approved, Phase3 편집 가능 |
 

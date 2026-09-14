@@ -1,5 +1,5 @@
 /**
- * INCHEON CHEMI — SPARE Master Excel sample generator (CLI)
+ * ABC Voyager — SPARE Master Excel sample generator (CLI)
  * Matches TVC-PMS SPARE Master format: Group · Equipment · Spare Parts
  *
  * Usage: npm run export-spare-master-sample
@@ -12,7 +12,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
 const SEED_PATH = path.join(ROOT, 'data', 'pms-unified.json');
-const OUT_PATH = path.join(ROOT, 'data', 'INCHEON CHEMI_SPARE_MASTER_SAMPLE.xlsx');
+const OUT_PATH = path.join(ROOT, 'data', 'ABC Voyager_SPARE_MASTER_SAMPLE.xlsx');
 
 const NAVY = 'FF1A365D';
 const GREEN = 'FF217346';
@@ -127,7 +127,7 @@ async function main() {
     const data = JSON.parse(readFileSync(SEED_PATH, 'utf8'));
     const spares = data.spare_parts || [];
     const groups = data.maintenance_groups || [];
-    const vesselId = data.meta?.vessel_id || 'INCHEON CHEMI';
+    const vesselId = data.meta?.vessel_id || 'ABC Voyager';
     const groupNodes = buildGroupNodes(groups);
 
     const groupCounts = new Map();

@@ -44,7 +44,7 @@ const stores = {
     defect_cases: [],
     sync_history: [],
 };
-const meta = { vessel_id: 'INCHEON CHEMI' };
+const meta = { vessel_id: 'ABC Voyager' };
 
 global.TVC_META_KEYS = global.TVC_META_KEYS || { VESSEL_ID: 'vessel_id' };
 global.TVC_DB = {
@@ -101,8 +101,8 @@ global.localStorage = (() => {
 global.TVC_FileExport = { async save() {} };
 global.TVC_License = { statusSync: () => ({ enforced: false }), assertExportImport: () => ({ ok: true }) };
 global.TVC_Fleet = {
-    PILOT_VESSEL_ID: 'INCHEON CHEMI',
-    getSelectedId: () => 'INCHEON CHEMI',
+    PILOT_VESSEL_ID: 'ABC Voyager',
+    getSelectedId: () => 'ABC Voyager',
     resolveById: (id) => ({ name: id }),
 };
 global.TVC_App = { getAppDepartment: () => 'ENGINE' };
@@ -124,11 +124,11 @@ loadModule('js/pms.js', 'TVC_PMS');
 loadModule('js/core/indexes.js', 'TVC_Indexes');
 const Sync = loadModule('js/services/sync.js', 'TVC_Sync');
 
-const CE = { username: 'ce', role: 'SHIP_CHIEF', department: 'ENGINE', station: 'ECR', account_type: 'SHIP', vessel_id: 'INCHEON CHEMI' };
-const CO = { username: 'co', role: 'SHIP_CAPTAIN', department: 'DECK', station: 'CCR', account_type: 'SHIP', vessel_id: 'INCHEON CHEMI' };
-const CAPTAIN = { username: 'captain', role: 'SHIP_CAPTAIN', department: null, station: 'CAPTAIN', account_type: 'SHIP', vessel_id: 'INCHEON CHEMI' };
-const HQ = { username: 'hq', role: 'HQ_SUPERVISOR', department: 'ENGINE', account_type: 'SM', vessel_id: 'INCHEON CHEMI' };
-const HQ_DECK = { username: 'hq', role: 'HQ_SUPERVISOR', department: 'DECK', account_type: 'SM', vessel_id: 'INCHEON CHEMI' };
+const CE = { username: 'ce', role: 'SHIP_CHIEF', department: 'ENGINE', station: 'ECR', account_type: 'SHIP', vessel_id: 'ABC Voyager' };
+const CO = { username: 'co', role: 'SHIP_CAPTAIN', department: 'DECK', station: 'CCR', account_type: 'SHIP', vessel_id: 'ABC Voyager' };
+const CAPTAIN = { username: 'captain', role: 'SHIP_CAPTAIN', department: null, station: 'CAPTAIN', account_type: 'SHIP', vessel_id: 'ABC Voyager' };
+const HQ = { username: 'hq', role: 'HQ_SUPERVISOR', department: 'ENGINE', account_type: 'SM', vessel_id: 'ABC Voyager' };
+const HQ_DECK = { username: 'hq', role: 'HQ_SUPERVISOR', department: 'DECK', account_type: 'SM', vessel_id: 'ABC Voyager' };
 
 let pass = 0;
 let fail = 0;
@@ -215,7 +215,7 @@ function resetDb(jobs, reports) {
     Object.keys(stores).forEach(k => { stores[k] = []; });
     stores.maintenance_jobs = jobs.map(j => ({ ...j }));
     stores.daily_work_reports = reports.map(r => ({ ...r }));
-    meta.vessel_id = 'INCHEON CHEMI';
+    meta.vessel_id = 'ABC Voyager';
     global.TVC_PMS.writeStore({
         'ENGINE|01.        MAIN ENGINE': { totalRunHours: 10500, prevMonth: 500, expectedNextMonth: 700, updated: '2026-08-11' },
         _lastUpdatedDate: '2026-08-11',
@@ -287,8 +287,8 @@ async function main() {
             monthlyExport: true,
             station_id: 'ECR',
         });
-        assert('filename incheonchemi_monthly_engine_YYYYMMDD_001.zip',
-            /^incheonchemi_monthly_engine_\d{8}_\d{3}\.zip$/.test(filename), filename);
+        assert('filename abcvoyager_monthly_engine_YYYYMMDD_001.zip',
+            /^abcvoyager_monthly_engine_\d{8}_\d{3}\.zip$/.test(filename), filename);
         assert('package_type MONTHLY', payload.export_meta.package_type === 'MONTHLY');
         assert('5 work reports in payload', payload.daily_work_reports.length === 5, `count=${payload.daily_work_reports.length}`);
         assert('run_hours included', Object.keys(payload.run_hours || {}).length >= 1);
@@ -308,7 +308,7 @@ async function main() {
         engineBuf = exp.buf;
 
         resetDb([], []);
-        await importBuf(CAPTAIN, engineBuf, 'incheonchemi_monthly_engine_20260811_001.zip', 'ENGINE', { allowHubMerge: true });
+        await importBuf(CAPTAIN, engineBuf, 'abcvoyager_monthly_engine_20260811_001.zip', 'ENGINE', { allowHubMerge: true });
         assert('Master has 5 imported reports', countEngineReports() === 5, `count=${countEngineReports()}`);
         assert('Master jobs imported', stores.maintenance_jobs.length === enginePayload.maintenance_jobs.length);
         assert('run_hours merged on Master',
@@ -320,7 +320,7 @@ async function main() {
     await scenario('5) Master — Monthly export to HQ (SHIP_TO_HQ)', async () => {
         const { payload, filename } = await payloadFromExport(CAPTAIN, 'SHIP_TO_HQ', 'ENGINE', { monthlyExport: true });
         assert('Master export filename matches monthly engine pattern',
-            /^incheonchemi_monthly_engine_\d{8}_\d{3}\.zip$/.test(filename), filename);
+            /^abcvoyager_monthly_engine_\d{8}_\d{3}\.zip$/.test(filename), filename);
         assert('Master export includes all 5 reports (monthly snapshot)',
             payload.daily_work_reports.length === 5, `count=${payload.daily_work_reports.length}`);
         const hist = stores.sync_history.at(-1);
@@ -332,10 +332,10 @@ async function main() {
     await scenario('6–7) HQ — import & data match Engine', async () => {
         const masterExp = await payloadFromExport(CAPTAIN, 'SHIP_TO_HQ', 'ENGINE', { monthlyExport: true });
         resetDb([], []);
-        hqPayload = await importBuf(HQ, masterExp.buf, 'incheonchemi_monthly_engine_20260811_001.zip', 'ENGINE');
+        hqPayload = await importBuf(HQ, masterExp.buf, 'abcvoyager_monthly_engine_20260811_001.zip', 'ENGINE');
         assert('HQ imported 5 reports', countEngineReports() === 5);
         assert('HQ run_hours scope',
-            PMS.readStore(PMS.scopeOf('SM', 'INCHEON CHEMI'))['ENGINE|01.        MAIN ENGINE']?.expectedNextMonth === 700);
+            PMS.readStore(PMS.scopeOf('SM', 'ABC Voyager'))['ENGINE|01.        MAIN ENGINE']?.expectedNextMonth === 700);
         assert('job count matches engine export',
             stores.maintenance_jobs.length === enginePayload.maintenance_jobs.length);
         assert('imported reports tagged ENGINE dept',
@@ -367,8 +367,8 @@ async function main() {
         assert('sync uses hqReplyScopeToken for HQ monthly export',
             SYNC_SRC.includes('TVC_Filename.hqReplyScopeToken(dept)'));
         const { payload, filename } = await payloadFromExport(HQ, 'HQ_TO_SHIP', 'ENGINE', { monthlyExport: true });
-        assert('filename incheonchemi_monthly_engine_hq_YYYYMMDD_001.zip',
-            /^incheonchemi_monthly_engine_hq_\d{8}_\d{3}\.zip$/.test(filename), filename);
+        assert('filename abcvoyager_monthly_engine_hq_YYYYMMDD_001.zip',
+            /^abcvoyager_monthly_engine_hq_\d{8}_\d{3}\.zip$/.test(filename), filename);
         assert('company_comments in HQ export payload',
             (payload.company_comments || []).length === 5, `count=${(payload.company_comments || []).length}`);
         assert('all comments WELL NOTED',
@@ -380,7 +380,7 @@ async function main() {
     await scenario('10) Master — import HQ reply zip', async () => {
         const hqExp = await payloadFromExport(HQ, 'HQ_TO_SHIP', 'ENGINE', { monthlyExport: true });
         resetDb(stores.maintenance_jobs.map(j => ({ ...j })), stores.daily_work_reports.map(r => ({ ...r, sync_status: 'SYNCED' })));
-        await importBuf(CAPTAIN, hqExp.buf, 'incheonchemi_monthly_engine_hq_20260811_001.zip', 'ENGINE');
+        await importBuf(CAPTAIN, hqExp.buf, 'abcvoyager_monthly_engine_hq_20260811_001.zip', 'ENGINE');
         assert('Master received company comments',
             stores.daily_work_reports.filter(r => r.company_comment === 'WELL NOTED').length === 5,
             `count=${stores.daily_work_reports.filter(r => r.company_comment === 'WELL NOTED').length}`);
@@ -391,7 +391,7 @@ async function main() {
     await scenario('11) Master — re-export HQ reply to Engine station', async () => {
         const { payload, filename } = await payloadFromExport(CAPTAIN, 'HQ_TO_SHIP', 'ENGINE', { monthlyExport: true });
         assert('Master relay filename is engine_hq (not Company SHIP_TO_HQ)',
-            /^incheonchemi_monthly_engine_hq_\d{8}_\d{3}\.zip$/.test(filename), filename);
+            /^abcvoyager_monthly_engine_hq_\d{8}_\d{3}\.zip$/.test(filename), filename);
         assert('relay direction HQ_TO_SHIP', payload.export_meta.direction === 'HQ_TO_SHIP');
         assert('relay still MONTHLY', payload.export_meta.package_type === 'MONTHLY');
         assert('relay carries WELL NOTED comments',
@@ -442,7 +442,7 @@ async function main() {
             updated_at: '2026-08-01T00:00:00.000Z',
         });
 
-        await importBuf(CAPTAIN, exp.buf, 'incheonchemi_monthly_engine_20260811_001.zip', 'ENGINE', { allowHubMerge: true });
+        await importBuf(CAPTAIN, exp.buf, 'abcvoyager_monthly_engine_20260811_001.zip', 'ENGINE', { allowHubMerge: true });
         assert('no duplicate part_no after hub merge',
             stores.spare_parts.filter(s => String(s.part_no || '').trim() === engineSpare.part_no).length === 1,
             `count=${stores.spare_parts.filter(s => String(s.part_no || '').trim() === engineSpare.part_no).length}`);
@@ -454,10 +454,10 @@ async function main() {
         const engineStationZip = {
             export_meta: { direction: 'STATION_TO_HUB', department: 'ENGINE', station_id: 'ECR' },
         };
-        const engineFile = { name: 'incheonchemi_monthly_engine_20260811_001.zip' };
+        const engineFile = { name: 'abcvoyager_monthly_engine_20260811_001.zip' };
         const hqReply = { export_meta: { direction: 'HQ_TO_SHIP', department: 'ENGINE' } };
-        const hqReplyFile = { name: 'incheonchemi_monthly_engine_hq_20260811_001.zip' };
-        const deckUser = { username: 'co', role: 'SHIP_CAPTAIN', department: 'DECK', station: 'CCR', account_type: 'SHIP', vessel_id: 'INCHEON CHEMI' };
+        const hqReplyFile = { name: 'abcvoyager_monthly_engine_hq_20260811_001.zip' };
+        const deckUser = { username: 'co', role: 'SHIP_CAPTAIN', department: 'DECK', station: 'CCR', account_type: 'SHIP', vessel_id: 'ABC Voyager' };
 
         assertThrows('Engine station cannot import its own STATION_TO_HUB on Engine PC', () => {
             Sync.validateImportPackageScope(CE, engineFile, engineStationZip);
@@ -505,7 +505,7 @@ async function main() {
             station_id: 'ECR',
         });
         assert('CE empty-pending filename is monthly engine zip',
-            /^incheonchemi_monthly_engine_\d{8}_\d{3}\.zip$/.test(filename), filename);
+            /^abcvoyager_monthly_engine_\d{8}_\d{3}\.zip$/.test(filename), filename);
         assert('package_type MONTHLY', payload.export_meta.package_type === 'MONTHLY');
         assert('jobs included even with 0 reports', payload.maintenance_jobs.length > 0);
         assert('0 work reports in empty-pending snapshot', payload.daily_work_reports.length === 0);
@@ -526,7 +526,7 @@ async function main() {
             station_id: 'CCR',
         });
         assert('CO filename monthly deck',
-            /^incheonchemi_monthly_deck_\d{8}_\d{3}\.zip$/.test(stationExp.filename), stationExp.filename);
+            /^abcvoyager_monthly_deck_\d{8}_\d{3}\.zip$/.test(stationExp.filename), stationExp.filename);
         assert('CO package MONTHLY', stationExp.payload.export_meta.package_type === 'MONTHLY');
         assert('CO export has 5 deck reports', stationExp.payload.daily_work_reports.length === 5);
 
@@ -536,7 +536,7 @@ async function main() {
 
         const masterExp = await payloadFromExport(CAPTAIN, 'SHIP_TO_HQ', 'DECK', { monthlyExport: true });
         assert('Master deck export filename',
-            /^incheonchemi_monthly_deck_\d{8}_\d{3}\.zip$/.test(masterExp.filename), masterExp.filename);
+            /^abcvoyager_monthly_deck_\d{8}_\d{3}\.zip$/.test(masterExp.filename), masterExp.filename);
         assert('Master deck snapshot keeps 5 reports',
             masterExp.payload.daily_work_reports.length === 5, `count=${masterExp.payload.daily_work_reports.length}`);
 
@@ -552,7 +552,7 @@ async function main() {
         }
         const hqExp = await payloadFromExport(HQ_DECK, 'HQ_TO_SHIP', 'DECK', { monthlyExport: true });
         assert('HQ deck reply filename',
-            /^incheonchemi_monthly_deck_hq_\d{8}_\d{3}\.zip$/.test(hqExp.filename), hqExp.filename);
+            /^abcvoyager_monthly_deck_hq_\d{8}_\d{3}\.zip$/.test(hqExp.filename), hqExp.filename);
 
         resetDb(deckJobs, deckReports.map(r => ({ ...r, sync_status: 'SYNCED' })));
         await importBuf(CAPTAIN, hqExp.buf, hqExp.filename, 'DECK');
@@ -561,7 +561,7 @@ async function main() {
 
         const masterRelay = await payloadFromExport(CAPTAIN, 'HQ_TO_SHIP', 'DECK', { monthlyExport: true });
         assert('Master deck relay filename is deck_hq',
-            /^incheonchemi_monthly_deck_hq_\d{8}_\d{3}\.zip$/.test(masterRelay.filename), masterRelay.filename);
+            /^abcvoyager_monthly_deck_hq_\d{8}_\d{3}\.zip$/.test(masterRelay.filename), masterRelay.filename);
         assert('Master deck relay direction HQ_TO_SHIP', masterRelay.payload.export_meta.direction === 'HQ_TO_SHIP');
 
         const coScope = Sync.validateImportPackageScope(CO, { name: masterRelay.filename }, masterRelay.payload);

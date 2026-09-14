@@ -393,13 +393,13 @@ async function main() {
 
         global.__syncHistory = [];
         const fn = await TVC_Filename.build({
-            vesselId: 'INCHEON CHEMI',
+            vesselId: 'ABC Voyager',
             type: 'monthly',
             department: 'ENGINE',
             ext: 'zip',
             dateTag: '20260811',
         });
-        assert('export filename matches incheonchemi_monthly_engine_YYYYMMDD_001.zip', fn === 'incheonchemi_monthly_engine_20260811_001.zip', fn);
+        assert('export filename matches abcvoyager_monthly_engine_YYYYMMDD_001.zip', fn === 'abcvoyager_monthly_engine_20260811_001.zip', fn);
 
         const parsed = TVC_Filename.parseScoped(fn);
         assert('filename parses as monthly/engine scope', parsed?.type === 'monthly' && parsed?.scope === 'engine', JSON.stringify(parsed));

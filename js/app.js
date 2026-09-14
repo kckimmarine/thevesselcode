@@ -257,7 +257,7 @@ const TVC_App = (function () {
             if (sync.migrated) console.info('[SPICS] syncOnBoot migrated', sync.migrated, '/', sync.total);
         } catch (e) { console.warn('[SPICS] syncOnBoot', e); }
         try { await TVC_DataPurge.run(); } catch (e) { console.warn('[TVC_DataPurge]', e); }
-        try { await TVC_DataPurge.migrateIncheonChemiMasterToTvcNo1Once(); } catch (e) { console.warn('[TVC_DataPurge] master migrate', e); }
+        try { await TVC_DataPurge.migratePrototypePilotMasterOnce(); } catch (e) { console.warn('[TVC_DataPurge] master migrate', e); }
         try { await TVC_DataPurge.migratePilotVesselIdToVoyagerOnce(); } catch (e) { console.warn('[TVC_DataPurge] voyager migrate', e); }
         try { await TVC_DataPurge.migrateTvcVoyagerToAbcOnce(); } catch (e) { console.warn('[TVC_DataPurge] abc voyager migrate', e); }
         try {

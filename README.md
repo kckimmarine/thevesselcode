@@ -32,7 +32,7 @@ Password **`0000`** (모든 데모 계정 공통)
 | `ce` | Engine | Chief Engineer | ✅ |
 | `hq` | — | HQ Supervisor | ✅ (선박·부서 선택 후) |
 
-데모 선박 ID: **`INCHEON CHEMI`** (표시 이름 · Sync ID 동일)
+데모 선박 ID: **`ABC Voyager`** (표시 이름 · Sync ID 동일)
 
 ## SPARE 재고 Import (ENGINE)
 
@@ -47,7 +47,7 @@ Chief engineer(`ce`)만 SPARE Append/Modify/Delete 및 재고 Import 가능.
 
 - **부서 분리**: DECK / ENGINE 각각 별도 ZIP
 - **파일명**: `<VESSEL_ID>_<DEPT>_PMS_EXPORT_YYYYMMDD.zip`  
-  예) `INCHEON CHEMI_ENGINE_PMS_EXPORT_20260703.zip`
+  예) `ABC Voyager_ENGINE_PMS_EXPORT_20260703.zip`
 - **선박 ID 검증 (Phase 0)**: Import 시 ZIP의 `export_meta.vessel_id` 가  
   - 선박 PC: IndexedDB `VESSEL_ID` 또는 로그인 계정의 `vessel_id`  
   - HQ: Fleet에서 선택한 선박  
@@ -72,7 +72,7 @@ npm run verify-all           # 위 두 스크립트 일괄 실행
 npm run import-xlsx          # Excel → data/pms-unified.json 재생성
 ```
 
-## Pilot (대명해운)
+## Pilot (ABC Shipping)
 
 시범 운영 체크리스트: [`docs/PILOT_CHECKLIST.md`](docs/PILOT_CHECKLIST.md)
 

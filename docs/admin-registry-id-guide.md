@@ -3,7 +3,7 @@
 **대상:** THE VESSEL CODE (TVC) · **현재:** Pilot / 테스트 / 데모  
 **목적:** 정식 출시 시 registry ID를 **운영 기준**으로 새로 잡기
 
-Pilot registry 예: `DAEMYUNG` · `INCHEON CHEMI` → **출시 때도 ID를 새로 정해 등록 가능** (기존 Pilot 항목은 inactive 또는 archive).
+Pilot registry 예: `ABC_SHIPPING` · `ABC Voyager` → **출시 때도 ID를 새로 정해 등록 가능** (기존 Pilot 항목은 inactive 또는 archive).
 
 ---
 
@@ -22,13 +22,13 @@ Pilot registry 예: `DAEMYUNG` · `INCHEON CHEMI` → **출시 때도 ID를 새�
 
 | 패턴 | 예 | 비고 |
 |------|-----|------|
-| 선사 약어 | `DAEMYUNG`, `SMKL`, `HMM` | 가장 흔함 |
+| 선사 약어 | `ABC_SHIPPING`, `SMKL`, `HMM` | 가장 흔함 |
 | 약어 + 구분 | `DM_2026`, `ACME_PMS` | 동명·재계약 구분 |
 | 그룹사 코드 | `KSS_LINE` | 내부 ERP 코드와 맞출 때 |
 
 ### 피할 것
 
-- 소문자만 (`daemyung`) — 헷갈림
+- 소문자만 (`abcshipping`) — 헷갈림
 - 너무 긴 문장형 ID
 - Pilot·운영 **같은 ID 재사용** (license·deploy 이력 혼선) — 출시는 **새 ID** 권장
 
@@ -36,9 +36,9 @@ Pilot registry 예: `DAEMYUNG` · `INCHEON CHEMI` → **출시 때도 ID를 새�
 
 | 필드 | 예 | 용도 |
 |------|-----|------|
-| **Company ID** | `DAEMYUNG` | 시스템·license·폴더 |
-| **Name (KR)** | 대명상선 | 계약서·화면 표시 |
-| **Name (EN)** | Daemyung | 계약서·영문 |
+| **Company ID** | `ABC_SHIPPING` | 시스템·license·폴더 |
+| **Name (KR)** | ABC Shipping | 계약서·화면 표시 |
+| **Name (EN)** | ABC Shipping | 계약서·영문 |
 
 ---
 
@@ -55,7 +55,7 @@ Pilot registry 예: `DAEMYUNG` · `INCHEON CHEMI` → **출시 때도 ID를 새�
 
 | 방식 | Vessel ID 예 | 장점 |
 |------|----------------|------|
-| **A. 선박명** (Pilot 방식) | `INCHEON CHEMI` | 현장과 동일 · 읽기 쉬움 |
+| **A. 선박명** (Pilot 방식) | `ABC Voyager` | 현장과 동일 · 읽기 쉬움 |
 | **B. IMO 번호** | `IMO9297711` | IMO 변경 없음 · 안정적 |
 | **C. 선사 코드 + 일련** | `DM01`, `DM02` | 짧음 · HQ 내부 코드와 연동 |
 
@@ -71,10 +71,10 @@ Pilot registry 예: `DAEMYUNG` · `INCHEON CHEMI` → **출시 때도 ID를 새�
 
 ## 3. Pilot → 정식 출시 전환
 
-현재 `DAEMYUNG` / 4척은 **파일럿·데모**입니다. 출시 시 **운영 registry를 새로 등록**합니다.
+현재 `ABC_SHIPPING` / 4척은 **파일럿·데모**입니다. 출시 시 **운영 registry를 새로 등록**합니다.
 
 ```text
-[Pilot]  DAEMYUNG, INCHEON CHEMI …  →  inactive 또는 admin/archive/ 보관
+[Pilot]  ABC_SHIPPING, ABC Voyager …  →  inactive 또는 admin/archive/ 보관
 [운영]   (새 Company ID) + (새 Vessel ID)  →  active · Setup · License · Master
 ```
 
@@ -90,19 +90,19 @@ Pilot registry 예: `DAEMYUNG` · `INCHEON CHEMI` → **출시 때도 ID를 새�
 | 6 | **PMS & SPARE MASTER.xlsx** 정식본 전달 |
 | 7 | Pilot PC license·AppData는 **운영과 분리** (재설치 + 새 license 또는 Pilot PC만 계속 테스트용) |
 
-### 대명상선 출시 예시 (2가지 선택)
+### ABC Shipping 출시 예시 (2가지 선택)
 
 **선택 1 — ID 유지 (단순)**  
-Pilot과 **같은** `DAEMYUNG` / 선박명을 쓰되, Pilot 데이터·license는 폐기하고 **registry·license·Master만 정식으로 다시 발행**.
+Pilot과 **같은** `ABC_SHIPPING` / 선박명을 쓰되, Pilot 데이터·license는 폐기하고 **registry·license·Master만 정식으로 다시 발행**.
 
 **선택 2 — ID 새로 (권장)**  
-Pilot `DAEMYUNG` → **inactive**  
-운영 `DAEMYUNG` 또는 `DM_PROD` 등 **새 등록** → deploy·license 이력 깨끗.
+Pilot `ABC_SHIPPING` → **inactive**  
+운영 `ABC_SHIPPING` 또는 `DM_PROD` 등 **새 등록** → deploy·license 이력 깨끗.
 
 | | Pilot (현재) | 운영 (예: 선택 2) |
 |--|--------------|-------------------|
-| Company ID | `DAEMYUNG` | `DAEMYUNG` (재등록) 또는 `DM_PROD` |
-| Vessel ID | `INCHEON CHEMI` | `IMO9297711` 또는 동일 선박명 |
+| Company ID | `ABC_SHIPPING` | `ABC_SHIPPING` (재등록) 또는 `DM_PROD` |
+| Vessel ID | `ABC Voyager` | `IMO9297711` 또는 동일 선박명 |
 | Seat license | Pilot 발급분 | **전 PC 재발급** |
 | Master Excel | 테스트용 | **계약 반영 정식본** |
 

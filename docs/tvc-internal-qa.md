@@ -7,7 +7,7 @@
 ## 권장 구조 (한 줄)
 
 ```text
-[고객 registry]  DAEMYUNG, …     →  inactive 제외 · deploy = “고객에게 보낸 버전”
+[고객 registry]  ABC_SHIPPING, …     →  inactive 제외 · deploy = “고객에게 보낸 버전”
 [TVC Lab registry] TVC_LAB        →  항상 active · deploy = “TVC가 검증한 버전”
 [TVC PC]           Lab Setup+License →  App Update ZIP 만들고 · Import · 재테스트
 ```
@@ -18,7 +18,7 @@
 
 ## 1. Registry — `TVC_LAB` (내부 전용 선사)
 
-출시 시 Pilot `DAEMYUNG`은 **inactive** (또는 archive).  
+출시 시 Pilot `ABC_SHIPPING`은 **inactive** (또는 archive).  
 대신 Admin에 **내부 QA 전용** company를 **항상 유지**합니다.
 
 | 필드 | 예 |
@@ -82,7 +82,7 @@ npm run electron:admin
 | 대상 | Update deploy in registry |
 |------|---------------------------|
 | Lab export (`TVC_LAB`) | ON — “TVC가 검증한 버전” 추적 |
-| 고객 export (`DAEMYUNG` …) | ON — “고객에게 보낸 버전” 추적 |
+| 고객 export (`ABC_SHIPPING` …) | ON — “고객에게 보낸 버전” 추적 |
 | 실험용 export (기록 남기기 싫을 때) | **OFF** |
 
 고객 Ship List의 **App (M/E/D)** 는 **고객 company** deploy만 보면 됩니다. Lab은 **Company = TVC_LAB** 로 필터.
@@ -93,9 +93,9 @@ npm run electron:admin
 
 | 구분 | Company ID | 출시 후 |
 |------|------------|---------|
-| **Pilot (대명 등)** | `DAEMYUNG` | **inactive** · archive 참고용 |
+| **Pilot (legacy contract demo)** | `ABC_SHIPPING` | **inactive** · archive 참고용 |
 | **TVC Lab** | `TVC_LAB` | **항상 active** |
-| **실제 계약 선사** | `DAEMYUNG` (재등록) 등 | active · deploy = 운영 |
+| **실제 계약 선사** | `ABC_SHIPPING` (재등록) 등 | active · deploy = 운영 |
 
 ---
 
@@ -126,7 +126,7 @@ admin/
 | 출시 후에도 테스트? | **`TVC_LAB` + Lab PC** 로 분리 |
 | Update ZIP은 어디서? | **`npm run dist`** → Admin **Package App Update** |
 | 고객과 같은 파일? | Lab **통과 후 동일 ZIP** 배포 |
-| Pilot `DAEMYUNG`? | inactive · 운영은 **새 registry** ([`admin-registry-id-guide.md`](admin-registry-id-guide.md)) |
+| Pilot `ABC_SHIPPING`? | inactive · 운영은 **새 registry** ([`admin-registry-id-guide.md`](admin-registry-id-guide.md)) |
 
 ---
 

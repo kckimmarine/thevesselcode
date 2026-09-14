@@ -23,12 +23,12 @@ Outputs in `dist/`:
 
 | File | Target |
 |---|---|
-| `TVC-PMS-VESSEL_MASTER-2.0.0-Setup.exe` | INCHEON CHEMI Master |
-| `TVC-PMS-VESSEL_ENGINE-2.0.0-Setup.exe` | INCHEON CHEMI Engine |
-| `TVC-PMS-VESSEL_DECK-2.0.0-Setup.exe` | INCHEON CHEMI Deck |
-| `TVC-PMS-HQ_OFFICE-2.0.0-Setup.exe` | Daemyung HQ |
+| `TVC-PMS-VESSEL_MASTER-2.0.0-Setup.exe` | ABC Voyager Master |
+| `TVC-PMS-VESSEL_ENGINE-2.0.0-Setup.exe` | ABC Voyager Engine |
+| `TVC-PMS-VESSEL_DECK-2.0.0-Setup.exe` | ABC Voyager Deck |
+| `TVC-PMS-HQ_OFFICE-2.0.0-Setup.exe` | ABC Shipping HQ |
 
-Each installer embeds a signed `license.json` (company `DAEMYUNG`, vessel `INCHEON CHEMI` where applicable). First launch binds the license to that PC.
+Each installer embeds a signed `license.json` (company `ABC_SHIPPING`, vessel `ABC Voyager` where applicable). First launch binds the license to that PC.
 
 ### One PC, all 4 SKUs
 

@@ -36,4 +36,4 @@
 ## License guards
 
 - [ ] SPARE Inventory export blocked when vessel not licensed
-- [ ] Packages carry / respect `company_id: DAEMYUNG` where applicable
+- [ ] Packages carry / respect `company_id: ABC_SHIPPING` where applicable

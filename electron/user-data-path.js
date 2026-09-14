@@ -38,7 +38,7 @@ function copyDirContents(src, dest) {
 
 /**
  * Must run before app 'ready'. Separates HQ / Master / Engine / Deck IndexedDB per SKU.
- * After seat license, uses human-readable folder: TVC-PMS INCHEON CHEMI_Master
+ * After seat license, uses human-readable folder: TVC-PMS ABC Voyager_Master
  */
 function configureUserDataPath(app) {
     const sku = detectSkuEarly();

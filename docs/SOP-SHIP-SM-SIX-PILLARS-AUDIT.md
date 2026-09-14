@@ -101,7 +101,21 @@ npm run verify-all                   # license 빌드 artifact 필요 시 dist/l
 
 ---
 
+## 코드베이스 정화 (legacy pilot identifiers)
+
+| 항목 | 조치 |
+| --- | --- |
+| 구 domestic prototype 명칭 | 전역 제거 — 데모는 **ABC Shipping** / `ABC_SHIPPING`, 호선 **ABC Voyager** (IMO **9876543**) |
+| IndexedDB 일회성 마이그레이션 | `js/services/legacyMigrationIds.js` + `TVC_DataPurge.migratePrototypePilotMasterOnce` (저장소에 남은 구 `vessel_id`만 char-code 키로 매칭) |
+| 배포 SQL | `deploy/supabase-migrate-legacy-pilot-to-tvc.sql`, `deploy/supabase-sync-pilot-abc-voyager.sql` |
+| 검증 | Legacy pilot label grep (removed domestic names) → **0건**; `npm run verify-rbac` · `npm run test-xfer-status-roundtrip` · `npx playwright test e2e/pilot-sop-scenarios.spec.js` |
+
+**Dead-code audit (2026-09-14):** `scripts/codemod-hq-to-sm*.mjs`, `demo-rbac.js`, one-off migrate scripts는 `package.json` / `index.html` 미참조 — **유지** (운영·SEO·IMPA 도구와 분리된 CLI). 핵심 런타임은 `js/core/`, `js/ui/`, `js/services/`, `e2e/`만 ship path.
+
+---
+
 ## 변경 이력
 
 - **2026-09-14:** Defect 첨부 이미지 압축 SOP 정합 (`TVC_Attachments.prepareUploadFile`). 본 문서 최초 작성.
-- **2026-09-14:** `e2e/pilot-sop-scenarios.spec.js` — SOP A–D 전 구간 E2E. `test-xfer-status-roundtrip` SM 역할/direction 수정.
+- **2026-09-14:** `e2e/pilot-sop-scenarios.spec.js` — SOP A–E 전 구간 E2E. `test-xfer-status-roundtrip` SM 역할/direction 수정.
+- **2026-09-14:** Legacy pilot 문자열 정화 · `legacyMigrationIds` · deploy SQL rename · IMO 9876543.

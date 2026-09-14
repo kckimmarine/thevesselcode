@@ -13,9 +13,9 @@
   ],
   "test_checklist": [
     "한 PC HQ+Master+Engine 설치 — AppData 폴더 3개 분리 · Work History Import 없이 섞이지 않음",
-    "Seat license 후 창 제목 TVC-PMS INCHEON CHEMI_Master v1.0.2 형식",
+    "Seat license 후 창 제목 TVC-PMS ABC Voyager_Master v1.0.2 형식",
     "Engine Defect Export → Master Import 성공 (HQ import only 오류 없음)",
-    "Master Re-Export → incheonchemi_defect_engine_* 파일명",
+    "Master Re-Export → abcvoyager_defect_engine_* 파일명",
     "Engine Critical Postpone CE Confirm → Export Postpone 목록 표시",
     "App Update: TVC-PMS App Update v1.0.2.zip → Import → Install update · 데이터 유지",
     "Setup handoff: TVC-PMS {Vessel}_{Role} v1.0.2 Setup.exe 파일명",

@@ -75,7 +75,7 @@ const TVC_SupplierRfqPipeline = (function () {
             try { await TVC_DB.setMeta(META_SM_DEMO, '1'); } catch (_) {}
             return;
         }
-        const vesselName = 'INCHEON CHEMI';
+        const vesselName = 'ABC Voyager';
         const deadline = new Date();
         deadline.setDate(deadline.getDate() + 7);
         const caseRow = {

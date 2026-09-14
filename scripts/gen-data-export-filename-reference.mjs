@@ -71,7 +71,7 @@ const masterExcelRows = [
 
 const overviewRows = [
     { item: '파일명 패턴', value: '{vessel}_{type}_{scope}_{YYYYMMDD}_{seq}.zip|.xlsx' },
-    { item: '{vessel}', value: '선박 ID 소문자·영숫자 (예: incheonshemi)' },
+    { item: '{vessel}', value: '선박 ID 소문자·영숫자 (예: abcvoyager)' },
     { item: '{scope}', value: 'engine | deck | engine_hq | deck_hq | engine_master | deck_master' },
     { item: '{seq}', value: '001, 002… (sync_history 기준 자동 증가)' },
     { item: 'PMS Menu C Export', value: 'Case Report, Monthly Report 2종만' },
@@ -84,16 +84,16 @@ const overviewRows = [
 ];
 
 const exampleRows = [
-    { line: 'PMS Engine', example: 'incheonshemi_casereport_engine_20260825_001.zip' },
-    { line: 'PMS Engine Monthly', example: 'incheonshemi_monthly_engine_20260825_001.zip' },
-    { line: 'PMS HQ Reply', example: 'incheonshemi_casereport_engine_hq_20260825_001.zip' },
-    { line: 'PMS Deck', example: 'incheonshemi_casereport_deck_20260825_001.zip' },
-    { line: 'SPARE Requisition', example: 'incheonshemi_requisition_engine_20260825_001.zip' },
-    { line: 'SPARE HQ Order', example: 'incheonshemi_order_engine_hq_20260825_001.zip' },
-    { line: 'SPARE Master Monthly relay', example: 'incheonshemi_spare_monthly_engine_20260825_001.zip' },
-    { line: 'SPARE HQ Monthly', example: 'incheonshemi_spare_monthly_engine_hq_20260825_001.zip' },
-    { line: 'PMS Master Excel', example: 'incheonshemi_pms_master_engine_20260825_001.xlsx' },
-    { line: 'SPARE Master Excel (HQ)', example: 'incheonshemi_spare_master_engine_hq_20260825_001.xlsx' },
+    { line: 'PMS Engine', example: 'abcvoyager_casereport_engine_20260825_001.zip' },
+    { line: 'PMS Engine Monthly', example: 'abcvoyager_monthly_engine_20260825_001.zip' },
+    { line: 'PMS HQ Reply', example: 'abcvoyager_casereport_engine_hq_20260825_001.zip' },
+    { line: 'PMS Deck', example: 'abcvoyager_casereport_deck_20260825_001.zip' },
+    { line: 'SPARE Requisition', example: 'abcvoyager_requisition_engine_20260825_001.zip' },
+    { line: 'SPARE HQ Order', example: 'abcvoyager_order_engine_hq_20260825_001.zip' },
+    { line: 'SPARE Master Monthly relay', example: 'abcvoyager_spare_monthly_engine_20260825_001.zip' },
+    { line: 'SPARE HQ Monthly', example: 'abcvoyager_spare_monthly_engine_hq_20260825_001.zip' },
+    { line: 'PMS Master Excel', example: 'abcvoyager_pms_master_engine_20260825_001.xlsx' },
+    { line: 'SPARE Master Excel (HQ)', example: 'abcvoyager_spare_master_engine_hq_20260825_001.xlsx' },
 ];
 
 const cols = [

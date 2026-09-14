@@ -17,7 +17,7 @@ const TVC_Fleet = (function () {
             name: PILOT_VESSEL_ID,
             code: '1',
             company_code: '1',
-            imo_no: '9999999',
+            imo_no: '9876543',
             delivery: '2003-09-18',
             company_id: DEMO_CONTRACT_COMPANY_ID,
         },
@@ -26,7 +26,9 @@ const TVC_Fleet = (function () {
     /** 예전 테스트 Fleet — SM 목록에서 제거 */
     const DEPRECATED_VESSEL_IDS = new Set([
         'TEST_V01', 'TEST_V02', 'TEST_V03', 'TEST_V04', 'TEST_V05', 'TEST_V06',
-        'QUARTERBACK J', 'GOLDSTAR SHINE', 'VALIANT', 'INCHEON CHEMI', 'TVC No1',
+        'QUARTERBACK J', 'GOLDSTAR SHINE', 'VALIANT',
+        ...(typeof TVC_LegacyMigrationIds !== 'undefined' ? [TVC_LegacyMigrationIds.VESSEL_PROTO_PILOT] : []),
+        'TVC No1',
         LEGACY_PILOT_VESSEL_ID,
     ]);
 

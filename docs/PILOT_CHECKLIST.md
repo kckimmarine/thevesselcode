@@ -1,4 +1,4 @@
-# TVC-PMS 시범 운영 체크리스트 (대명해운)
+# TVC-PMS 시범 운영 체크리스트 (ABC Shipping)
 
 선박 1척 + 본사(HQ) 환경에서 Export/Import 라운드트립과 일상 업무를 검증합니다.
 

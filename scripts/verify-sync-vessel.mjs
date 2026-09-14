@@ -33,7 +33,7 @@ function assert(name, cond, detail = '') {
     else { failed++; console.error(`  ❌ ${name}${detail ? ' — ' + detail : ''}`); }
 }
 
-const VESSEL = 'INCHEON CHEMI';
+const VESSEL = 'ABC Voyager';
 
 console.log('\n═══ Import vessel_id 검증 ═══\n');
 
@@ -46,7 +46,7 @@ assert('expected 미설정 → 허용(경고)', validateImportVesselId('', VESSE
 
 const today = new Date().toISOString();
 const fn = exportFilename(VESSEL, 'ENGINE', today);
-assert('Export 파일명 패턴', fn === `INCHEON CHEMI_ENGINE_PMS_EXPORT_${today.slice(0, 10).replace(/-/g, '')}.zip`, fn);
+assert('Export 파일명 패턴', fn === `ABC Voyager_ENGINE_PMS_EXPORT_${today.slice(0, 10).replace(/-/g, '')}.zip`, fn);
 
 console.log(`\n═══ 결과: ${passed} passed, ${failed} failed ═══\n`);
 process.exit(failed > 0 ? 1 : 0);
