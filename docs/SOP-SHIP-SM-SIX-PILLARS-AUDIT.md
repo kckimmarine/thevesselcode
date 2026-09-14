@@ -101,6 +101,18 @@ npm run verify-all                   # license 빌드 artifact 필요 시 dist/l
 
 ---
 
+## Mobile ergonomics (≤768px, 2026-09-14)
+
+| Guard | Implementation |
+| --- | --- |
+| Tap delay | `touch-action: manipulation` on body + interactive controls — `css/responsive.css` only inside `@media (max-width: 768px)` |
+| Touch targets | `#btn-save`, `.btn-primary`, `.btn-action`, dept/mobile header toggles — `min-height/min-width: 48px`, flex-centered |
+| Numeric keypad | `inputmode="numeric"` on Work Report / measurement `type="number"` fields |
+| E2E geometry | `e2e/pilot-sop-scenarios.spec.js` @ 390×844 — `#btn-save` and `.btn-primary` `boundingBox.height >= 44` |
+| Desktop | **No** changes above 768px (isolated stylesheet) |
+
+---
+
 ## ClassNK Annex 9.1.3 compliance (2026-09-14)
 
 | Rule | Implementation |

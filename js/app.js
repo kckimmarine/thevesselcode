@@ -16329,8 +16329,8 @@ const TVC_App = (function () {
 
         const laborRow = showLaborRow ? `
             <div class="wr-maint-grid wr-maint-grid-3 wr-maint-grid-gap">
-                ${fld('Working Hours', `<input type="number" class="${locked ? 'wr-ro' : ''}" data-wf="handHours" value="${esc(wf('handHours', '0'))}"${locked ? ' readonly tabindex="-1"' : dis}>`)}
-                ${fld('Working Member', `<input type="number" class="${locked ? 'wr-ro' : ''}" data-wf="handMembers" value="${esc(wf('handMembers', '0'))}"${locked ? ' readonly tabindex="-1"' : dis}>`)}
+                ${fld('Working Hours', `<input type="number" inputmode="numeric" class="${locked ? 'wr-ro' : ''}" data-wf="handHours" value="${esc(wf('handHours', '0'))}"${locked ? ' readonly tabindex="-1"' : dis}>`)}
+                ${fld('Working Member', `<input type="number" inputmode="numeric" class="${locked ? 'wr-ro' : ''}" data-wf="handMembers" value="${esc(wf('handMembers', '0'))}"${locked ? ' readonly tabindex="-1"' : dis}>`)}
                 <div class="wr-maint-field wr-maint-chk-field">${flagChk('shoreSupport', 'Conducted by Shore Support')}</div>
             </div>` : '';
 
@@ -16375,7 +16375,7 @@ const TVC_App = (function () {
                 return `<input class="wr-ro" data-wf="${key}" value="${v}" readonly tabindex="-1">`;
             }
             if (type === 'date') return wrEditableDateFieldInput(key, wf(key, val));
-            if (type === 'number') return `<input type="number" data-wf="${key}" value="${esc(wf(key, val))}">`;
+            if (type === 'number') return `<input type="number" inputmode="numeric" data-wf="${key}" value="${esc(wf(key, val))}">`;
             return `<input data-wf="${key}" value="${esc(wf(key, val))}">`;
         };
         const roWf = (key, val) => `<input class="wr-ro" data-wf="${key}" value="${esc(wf(key, val))}" readonly tabindex="-1">`;
@@ -16459,7 +16459,7 @@ const TVC_App = (function () {
                 return `<input class="wr-ro" data-wf="${key}" value="${v}" readonly tabindex="-1">`;
             }
             if (type === 'date') return wrEditableDateFieldInput(key, wf(key, val));
-            if (type === 'number') return `<input type="number" data-wf="${key}" value="${esc(wf(key, val))}">`;
+            if (type === 'number') return `<input type="number" inputmode="numeric" data-wf="${key}" value="${esc(wf(key, val))}">`;
             return `<input data-wf="${key}" value="${esc(wf(key, val))}">`;
         };
         const roWf = (key, val) => `<input class="wr-ro" data-wf="${key}" value="${esc(wf(key, val))}" readonly tabindex="-1">`;
@@ -16895,6 +16895,7 @@ const TVC_App = (function () {
             body = renderWrPostponeBody(job, paneBodyOpts);
         }
 
+        const wrSaveBtn = '<button type="button" id="btn-save" class="btn btn-green btn-primary btn-action" onclick="TVC_App.saveWorkReport()">Save</button>';
         const isHist = !!state._wrReportId;
         const histEntry = isHist ? getCurrentWrHistEntry() : null;
         const canModifyRow = histEntry && canModifyHistEntry(histEntry);
@@ -16929,7 +16930,7 @@ const TVC_App = (function () {
             if (ro) {
                 centerBtns = `<button type="button" class="btn" onclick="TVC_App.modifyWorkReport()"${canModifyRow ? '' : ' disabled'}${modifyTitle ? ` title="${modifyTitle}"` : ''}>Modify</button>`;
             } else if (canModifyRow) {
-                centerBtns = `<button type="button" class="btn btn-green" onclick="TVC_App.saveWorkReport()">Save</button>
+                centerBtns = `${wrSaveBtn}
                 <button type="button" class="btn" onclick="TVC_App.cancelWorkReportEdit()">Cancel</button>`;
             }
             actionsHtml = `<div class="wr-modal-actions-left">${navBtns}</div>
@@ -16942,14 +16943,10 @@ const TVC_App = (function () {
             const deleteBtn = canDeleteRow
                 ? `<button class="btn btn-red" onclick="TVC_App.deleteWorkReport()">Delete</button>`
                 : '';
-            const saveBtn = !ro && canModifyRow
-                ? `<button type="button" class="btn btn-green" onclick="TVC_App.saveWorkReport()">Save</button>`
-                : '';
+            const saveBtn = !ro && canModifyRow ? wrSaveBtn : '';
             actionsHtml = `${navBtns}${modifyBtn}${deleteBtn}${saveBtn}${printBtn}${closeBtn}`;
         } else {
-            const primaryBtn = !ro
-                ? `<button class="btn btn-green" onclick="TVC_App.saveWorkReport()">Save</button>`
-                : '';
+            const primaryBtn = !ro ? wrSaveBtn : '';
             const closeBtn = `<button class="btn" onclick="TVC_App.requestCloseWorkReport()">${ro ? 'Close' : 'Cancel'}</button>`;
             actionsHtml = `${navBtns}${primaryBtn}${closeBtn}`;
         }

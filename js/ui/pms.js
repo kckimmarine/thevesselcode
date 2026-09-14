@@ -160,9 +160,9 @@ const TVC_PmsClassNk = (function () {
             }
             return `<tr class="wr-meas-row${exceeded ? ' wr-meas-row-alert' : ''}" data-meas-idx="${idx}">
               <td><input class="wr-meas-inp${roCls}" data-meas="item_name" value="${escapeHtml(row.item_name)}"${dis}></td>
-              <td><input type="number" step="any" class="wr-meas-inp${roCls}" data-meas="design_val" value="${row.design_val ?? ''}"${dis}></td>
-              <td><input type="number" step="any" class="wr-meas-inp${roCls}" data-meas="tolerance_limit" value="${row.tolerance_limit ?? ''}"${dis}></td>
-              <td><input type="number" step="any" class="wr-meas-inp${roCls}" data-meas="measured_val" value="${row.measured_val ?? ''}"${dis} oninput="TVC_PmsClassNk.refreshMeasurementAlerts()">${badge}</td>
+              <td><input type="number" inputmode="numeric" step="any" class="wr-meas-inp${roCls}" data-meas="design_val" value="${row.design_val ?? ''}"${dis}></td>
+              <td><input type="number" inputmode="numeric" step="any" class="wr-meas-inp${roCls}" data-meas="tolerance_limit" value="${row.tolerance_limit ?? ''}"${dis}></td>
+              <td><input type="number" inputmode="numeric" step="any" class="wr-meas-inp${roCls}" data-meas="measured_val" value="${row.measured_val ?? ''}"${dis} oninput="TVC_PmsClassNk.refreshMeasurementAlerts()">${badge}</td>
               <td><input class="wr-meas-inp wr-meas-unit${roCls}" data-meas="unit" value="${escapeHtml(row.unit)}"${dis}></td>
             </tr>`;
         }).join('');
@@ -239,9 +239,9 @@ const TVC_PmsClassNk = (function () {
         tr.dataset.measIdx = String(idx);
         tr.innerHTML = `
           <td><input class="wr-meas-inp" data-meas="item_name" value=""></td>
-          <td><input type="number" step="any" class="wr-meas-inp" data-meas="design_val" value=""></td>
-          <td><input type="number" step="any" class="wr-meas-inp" data-meas="tolerance_limit" value=""></td>
-          <td><input type="number" step="any" class="wr-meas-inp" data-meas="measured_val" value="" oninput="TVC_PmsClassNk.refreshMeasurementAlerts()"></td>
+          <td><input type="number" inputmode="numeric" step="any" class="wr-meas-inp" data-meas="design_val" value=""></td>
+          <td><input type="number" inputmode="numeric" step="any" class="wr-meas-inp" data-meas="tolerance_limit" value=""></td>
+          <td><input type="number" inputmode="numeric" step="any" class="wr-meas-inp" data-meas="measured_val" value="" oninput="TVC_PmsClassNk.refreshMeasurementAlerts()"></td>
           <td><input class="wr-meas-inp wr-meas-unit" data-meas="unit" value="mm"></td>`;
         tbody.appendChild(tr);
     }

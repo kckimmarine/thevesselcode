@@ -49,6 +49,19 @@ test('Pilot SOP A–E: closed-loop work report, sync, SM approve, vessel inward'
   await page.locator('#actScroll .vl-cells[data-job-id]').first().click();
   await page.waitForTimeout(200);
   await page.locator('#planReportBtn').click();
+  await expect(page.locator('#workReportModal:not(.hidden)')).toBeVisible({ timeout: 15_000 });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.waitForTimeout(250);
+
+  const btnSave = page.locator('#btn-save');
+  await expect(btnSave).toBeVisible();
+  const saveBox = await btnSave.boundingBox();
+  expect(saveBox?.height ?? 0, '#btn-save touch target height').toBeGreaterThanOrEqual(44);
+  const primarySubmit = page.locator('#workReportModal button.btn-primary').first();
+  await expect(primarySubmit).toBeVisible();
+  const primaryBox = await primarySubmit.boundingBox();
+  expect(primaryBox?.height ?? 0, 'primary submit touch target height').toBeGreaterThanOrEqual(44);
+
   const saved = await saveOpenWorkReportWithSpare(page, { marker, qty: QTY });
   reportId = saved.reportId;
   spareId = saved.spareId;
