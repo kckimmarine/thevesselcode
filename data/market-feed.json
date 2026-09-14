@@ -1,0 +1,459 @@
+{
+  "meta": {
+    "generatedAt": "2026-09-14T15:29:03.879Z",
+    "benchmarkAsOf": "2026-09-14",
+    "fetchStatus": "partial",
+    "rssErrors": [
+      "Maritime Executive: HTTP 404"
+    ],
+    "source": "TVC Market Desk · RSS aggregation",
+    "updatedLabelEn": "Market benchmark as of 2026-09-14",
+    "updatedLabelKo": "2026-09-14 기준 시장 벤치마크"
+  },
+  "bunker": {
+    "hubs": [
+      "Singapore",
+      "Rotterdam",
+      "Busan",
+      "Houston"
+    ],
+    "grades": [
+      {
+        "key": "VLSFO",
+        "label": "VLSFO",
+        "fuel": "VLSFO",
+        "defaultDensity": 991
+      },
+      {
+        "key": "LSMGO",
+        "label": "LSMGO",
+        "fuel": "LSMGO",
+        "defaultDensity": 850
+      },
+      {
+        "key": "HSFO380",
+        "label": "HSFO 380",
+        "fuel": "HSFO",
+        "defaultDensity": 991
+      }
+    ],
+    "basePricesUsdMt": {
+      "Singapore": {
+        "VLSFO": 612,
+        "LSMGO": 748,
+        "HSFO380": 458
+      },
+      "Rotterdam": {
+        "VLSFO": 598,
+        "LSMGO": 722,
+        "HSFO380": 441
+      },
+      "Busan": {
+        "VLSFO": 625,
+        "LSMGO": 761,
+        "HSFO380": 472
+      },
+      "Houston": {
+        "VLSFO": 589,
+        "LSMGO": 715,
+        "HSFO380": 435
+      }
+    },
+    "quotes": [
+      {
+        "port": "Singapore",
+        "gradeKey": "VLSFO",
+        "gradeLabel": "VLSFO",
+        "fuel": "VLSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 616.77,
+        "deltaPct": 0.78
+      },
+      {
+        "port": "Singapore",
+        "gradeKey": "LSMGO",
+        "gradeLabel": "LSMGO",
+        "fuel": "LSMGO",
+        "defaultDensity": 850,
+        "priceUsdMt": 753.24,
+        "deltaPct": 0.7
+      },
+      {
+        "port": "Singapore",
+        "gradeKey": "HSFO380",
+        "gradeLabel": "HSFO 380",
+        "fuel": "HSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 462.26,
+        "deltaPct": 0.93
+      },
+      {
+        "port": "Rotterdam",
+        "gradeKey": "VLSFO",
+        "gradeLabel": "VLSFO",
+        "fuel": "VLSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 602.84,
+        "deltaPct": 0.81
+      },
+      {
+        "port": "Rotterdam",
+        "gradeKey": "LSMGO",
+        "gradeLabel": "LSMGO",
+        "fuel": "LSMGO",
+        "defaultDensity": 850,
+        "priceUsdMt": 727.34,
+        "deltaPct": 0.74
+      },
+      {
+        "port": "Rotterdam",
+        "gradeKey": "HSFO380",
+        "gradeLabel": "HSFO 380",
+        "fuel": "HSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 445.23,
+        "deltaPct": 0.96
+      },
+      {
+        "port": "Busan",
+        "gradeKey": "VLSFO",
+        "gradeLabel": "VLSFO",
+        "fuel": "VLSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 629.31,
+        "deltaPct": 0.69
+      },
+      {
+        "port": "Busan",
+        "gradeKey": "LSMGO",
+        "gradeLabel": "LSMGO",
+        "fuel": "LSMGO",
+        "defaultDensity": 850,
+        "priceUsdMt": 768,
+        "deltaPct": 0.92
+      },
+      {
+        "port": "Busan",
+        "gradeKey": "HSFO380",
+        "gradeLabel": "HSFO 380",
+        "fuel": "HSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 476.01,
+        "deltaPct": 0.85
+      },
+      {
+        "port": "Houston",
+        "gradeKey": "VLSFO",
+        "gradeLabel": "VLSFO",
+        "fuel": "VLSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 593.36,
+        "deltaPct": 0.74
+      },
+      {
+        "port": "Houston",
+        "gradeKey": "LSMGO",
+        "gradeLabel": "LSMGO",
+        "fuel": "LSMGO",
+        "defaultDensity": 850,
+        "priceUsdMt": 721.86,
+        "deltaPct": 0.96
+      },
+      {
+        "port": "Houston",
+        "gradeKey": "HSFO380",
+        "gradeLabel": "HSFO 380",
+        "fuel": "HSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 438.92,
+        "deltaPct": 0.9
+      }
+    ]
+  },
+  "indices": {
+    "bdi": {
+      "value": 1842,
+      "deltaPct": 0.65
+    },
+    "capesizeTc": {
+      "value": 24850,
+      "deltaPct": 1.1,
+      "unit": "$/day"
+    },
+    "panamaxTc": {
+      "value": 14220,
+      "deltaPct": 0.85,
+      "unit": "$/day"
+    },
+    "bdti": {
+      "value": 1185,
+      "deltaPct": -0.4
+    },
+    "bcti": {
+      "value": 892,
+      "deltaPct": 0.2
+    },
+    "scfi": {
+      "value": 2158,
+      "deltaPct": 0.88
+    }
+  },
+  "news": [
+    {
+      "title": "Shipping’s crystal ball cracks in the 2020s",
+      "link": "https://splash247.com/shippings-crystal-ball-cracks-in-the-2020s/",
+      "pubDate": "Mon, 14 Sep 2026 14:53:07 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "Shipping has long been treated as an early warning system for the world economy. In an era of wars, rerouting, services and AI, the relationship is becoming far harder to read. Splash investigates whether this old adage rings true still, or even if it ever did. For decades, shipp",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 1,
+      "en": {
+        "headline": "Shipping’s crystal ball cracks in the 2020s",
+        "summary": "Shipping has long been treated as an early warning system for the world economy. In an era of wars, rerouting, services and AI, the relationship is becoming far harder to read. Splash investigates whether this old adage rings true still, or even if it ever did. For decades, shipp",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Ports Giant DP World Redraws Hormuz Logistics With Truck Bet",
+      "link": "https://gcaptain.com/ports-giant-dp-world-redraws-hormuz-logistics-with-truck-bet/",
+      "pubDate": "Mon, 14 Sep 2026 13:27:35 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Ports giant DP World is expanding its overland logistics network in a bet that shipping through the Strait of Hormuz — vital for its flagship container and industrial hub in the United Arab Emirates — won’t return to the status quo from before the US-Iran war.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "en": {
+        "headline": "Ports Giant DP World Redraws Hormuz Logistics With Truck Bet",
+        "summary": "Ports giant DP World is expanding its overland logistics network in a bet that shipping through the Strait of Hormuz — vital for its flagship container and industrial hub in the United Arab Emirates — won’t return to the status quo from before the US-Iran war.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Tokyo adds $635m to shipyard revival push",
+      "link": "https://splash247.com/tokyo-adds-635m-to-shipyard-revival-push/",
+      "pubDate": "Mon, 14 Sep 2026 11:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Japan has approved a second wave of investment plans under its shipbuilding revival fund, allocating up to another ¥98bn ($635m) in state support across five yard groups. The transport ministry has cleared projects from Oshima Shipbuilding, Kawasaki Heavy Industries, the Shin Kur",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "en": {
+        "headline": "Tokyo adds $635m to shipyard revival push",
+        "summary": "Japan has approved a second wave of investment plans under its shipbuilding revival fund, allocating up to another ¥98bn ($635m) in state support across five yard groups. The transport ministry has cleared projects from Oshima Shipbuilding, Kawasaki Heavy Industries, the Shin Kur",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "SFL locks in $750m with Hapag-Lloyd extensions",
+      "link": "https://splash247.com/sfl-locks-in-750m-with-hapag-lloyd-extensions/",
+      "pubDate": "Mon, 14 Sep 2026 10:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "John Fredriksen-backed SFL Corporation has added another $750m to its contracted revenue after agreeing seven-year charter extensions with Hapag-Lloyd on six 15,400 teu containerships. The renewed fixtures will keep the six ships with the German liner through 2035-36 at fixed rat",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "en": {
+        "headline": "SFL locks in $750m with Hapag-Lloyd extensions",
+        "summary": "John Fredriksen-backed SFL Corporation has added another $750m to its contracted revenue after agreeing seven-year charter extensions with Hapag-Lloyd on six 15,400 teu containerships. The renewed fixtures will keep the six ships with the German liner through 2035-36 at fixed rat",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Aegean cashes in modern aframax for $83m",
+      "link": "https://splash247.com/aegean-cashes-in-modern-aframax-for-83m/",
+      "pubDate": "Mon, 14 Sep 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "George Melissanidis-led Aegean Shipping Management has agreed to sell its 2022-built aframax/LR2 tanker for around $83m, continuing to cash in on historically strong values for modern tanker tonnage. Greek S&#38;P sources reported the sale of the Green Adventure as one of the lat",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 5,
+      "en": {
+        "headline": "Aegean cashes in modern aframax for $83m",
+        "summary": "George Melissanidis-led Aegean Shipping Management has agreed to sell its 2022-built aframax/LR2 tanker for around $83m, continuing to cash in on historically strong values for modern tanker tonnage. Greek S&#38;P sources reported the sale of the Green Adventure as one of the lat",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "COSCO readies listing of its shipyard division",
+      "link": "https://splash247.com/cosco-readies-listing-of-its-shipyard-division/",
+      "pubDate": "Mon, 14 Sep 2026 09:35:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "COSCO Shipping Heavy Industry has taken its first formal step towards an A-share listing in Shanghai. China’s securities regulator disclosed that the shipbuilding and repair giant registered for listing guidance on September 12, with CICC and China Merchants Securities appointed ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "en": {
+        "headline": "COSCO readies listing of its shipyard division",
+        "summary": "COSCO Shipping Heavy Industry has taken its first formal step towards an A-share listing in Shanghai. China’s securities regulator disclosed that the shipbuilding and repair giant registered for listing guidance on September 12, with CICC and China Merchants Securities appointed ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Transworld keeps fleet reshuffle rolling with bulker sale",
+      "link": "https://splash247.com/transworld-keeps-fleet-reshuffle-rolling-with-bulker-sale/",
+      "pubDate": "Mon, 14 Sep 2026 09:30:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "India’s Transworld Shipping Lines has struck a deal to sell one of its two dry bulk carriers, agreeing a $9.25m sale of the 2011-built TBC Kailash. The Mumbai-listed owner is selling the 35,152 dwt unit to Mandarine Ocean, according to an exchange filing. The Chinese-built vessel",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 5,
+      "en": {
+        "headline": "Transworld keeps fleet reshuffle rolling with bulker sale",
+        "summary": "India’s Transworld Shipping Lines has struck a deal to sell one of its two dry bulk carriers, agreeing a $9.25m sale of the 2011-built TBC Kailash. The Mumbai-listed owner is selling the 35,152 dwt unit to Mandarine Ocean, according to an exchange filing. The Chinese-built vessel",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "ESL Shipping signs up for Stegra steel flows",
+      "link": "https://splash247.com/esl-shipping-signs-up-for-stegra-steel-flows/",
+      "pubDate": "Mon, 14 Sep 2026 09:20:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Finland’s ESL Shipping has secured a long-term transport agreement with Swedish green steel developer Stegra covering raw materials and finished steel products for its new industrial complex in Boden. The deal adds a maritime leg to the logistics network Stegra has been assemblin",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "en": {
+        "headline": "ESL Shipping signs up for Stegra steel flows",
+        "summary": "Finland’s ESL Shipping has secured a long-term transport agreement with Swedish green steel developer Stegra covering raw materials and finished steel products for its new industrial complex in Boden. The deal adds a maritime leg to the logistics network Stegra has been assemblin",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Middle East shipping squeezed as Hormuz and Bab el-Mandeb risks converge",
+      "link": "https://splash247.com/middle-east-shipping-squeezed-as-hormuz-and-bab-el-mandeb-risks-converge/",
+      "pubDate": "Mon, 14 Sep 2026 08:00:11 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Middle Eastern shipping patterns face another violent reshuffle after fresh vessel attacks around Hormuz, the shutdown of Saudi Arabia’s critical East-West oil pipeline and the Houthis’ advance into the heart of the Bab el-Mandeb Strait. Two more commercial vessels were attacked ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "en": {
+        "headline": "Middle East shipping squeezed as Hormuz and Bab el-Mandeb risks converge",
+        "summary": "Middle Eastern shipping patterns face another violent reshuffle after fresh vessel attacks around Hormuz, the shutdown of Saudi Arabia’s critical East-West oil pipeline and the Houthis’ advance into the heart of the Bab el-Mandeb Strait. Two more commercial vessels were attacked ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Russia turns to shipping containers to shield refineries from Ukrainian drones",
+      "link": "https://splash247.com/russia-turns-to-shipping-containers-to-shield-refineries-from-ukrainian-drones/",
+      "pubDate": "Mon, 14 Sep 2026 07:45:02 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "Russia is stacking shipping containers around oil refineries in the latest improvised attempt to protect an energy system that has been battered by increasingly effective Ukrainian drone attacks. Images carried by Dnipro Osint from the Novoshakhtinsk refinery show containers pile",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 7,
+      "en": {
+        "headline": "Russia turns to shipping containers to shield refineries from Ukrainian drones",
+        "summary": "Russia is stacking shipping containers around oil refineries in the latest improvised attempt to protect an energy system that has been battered by increasingly effective Ukrainian drone attacks. Images carried by Dnipro Osint from the Novoshakhtinsk refinery show containers pile",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Backcasting enters the shipping mainstream",
+      "link": "https://splash247.com/backcasting-enters-the-shipping-mainstream/",
+      "pubDate": "Mon, 14 Sep 2026 07:30:51 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Japanese liner Ocean Network Express (ONE) is looking 24 years into the future to help decide where to put its money today, adopting a planning technique that is spreading through shipping as well as governments and some of the world’s largest international organisations. Rather ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "en": {
+        "headline": "Backcasting enters the shipping mainstream",
+        "summary": "Japanese liner Ocean Network Express (ONE) is looking 24 years into the future to help decide where to put its money today, adopting a planning technique that is spreading through shipping as well as governments and some of the world’s largest international organisations. Rather ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Saudi Pipeline Outage Threatens Loss Of 4% Of Global Oil Supply",
+      "link": "https://gcaptain.com/saudi-pipeline-outage-threatens-loss-of-4-of-global-oil-supply/",
+      "pubDate": "Mon, 14 Sep 2026 01:48:18 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By Alex Lawler and Dmitry Zhdannikov LONDON, Sept 13 (Reuters)&#160;&#8211;&#160;Saudi Arabia will run out of oil stocks for exports if it doesn&#8217;t restart its major&#160;pipeline&#160;to the Red Sea within days,...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 13,
+      "en": {
+        "headline": "Saudi Pipeline Outage Threatens Loss Of 4% Of Global Oil Supply",
+        "summary": "By Alex Lawler and Dmitry Zhdannikov LONDON, Sept 13 (Reuters)&#160;&#8211;&#160;Saudi Arabia will run out of oil stocks for exports if it doesn&#8217;t restart its major&#160;pipeline&#160;to the Red Sea within days,...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Trump Demands Ukraine Halt Refinery Strikes As Diesel Surges",
+      "link": "https://gcaptain.com/trump-demands-ukraine-halt-refinery-strikes-as-diesel-surges/",
+      "pubDate": "Sun, 13 Sep 2026 22:11:16 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By&#160;Jennifer A. Dlouhy Sep 13, 2026, (Bloomberg) &#8211;President Donald Trump said he’d warned Ukrainian President Volodymyr Zelenskyy to stop targeting oil refineries in Russia amid strikes that have shut down...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 17,
+      "en": {
+        "headline": "Trump Demands Ukraine Halt Refinery Strikes As Diesel Surges",
+        "summary": "By&#160;Jennifer A. Dlouhy Sep 13, 2026, (Bloomberg) &#8211;President Donald Trump said he’d warned Ukrainian President Volodymyr Zelenskyy to stop targeting oil refineries in Russia amid strikes that have shut down...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "California Gas Station With $9.99 Diesel Exemplifies Fuel Crisis",
+      "link": "https://gcaptain.com/california-gas-station-with-9-99-diesel-exemplifies-fuel-crisis/",
+      "pubDate": "Sun, 13 Sep 2026 20:29:29 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By&#160;Will Kubzansky Sep 12, 2026 (Bloomberg) &#8211;At a fuel station in San Diego where diesel is retailing for $9.99 a gallon, Californians can take solace in at least this: in...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 18,
+      "en": {
+        "headline": "California Gas Station With $9.99 Diesel Exemplifies Fuel Crisis",
+        "summary": "By&#160;Will Kubzansky Sep 12, 2026 (Bloomberg) &#8211;At a fuel station in San Diego where diesel is retailing for $9.99 a gallon, Californians can take solace in at least this: in...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Carney Pushes Idea Of Making Canada &#8216;Associate Member&#8217; Of EU",
+      "link": "https://gcaptain.com/carney-pushes-idea-of-making-canada-associate-member-of-eu/",
+      "pubDate": "Sun, 13 Sep 2026 19:09:46 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "BRUSSELS, Sept 13 (Reuters)&#160;&#8211;&#160;Canada&#8217;s Prime Minister Mark Carney wants a closer relationship with the European Union and is exploring whether his country could become an &#8220;associate member&#8221; of the bloc,...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 20,
+      "en": {
+        "headline": "Carney Pushes Idea Of Making Canada &#8216;Associate Member&#8217; Of EU",
+        "summary": "BRUSSELS, Sept 13 (Reuters)&#160;&#8211;&#160;Canada&#8217;s Prime Minister Mark Carney wants a closer relationship with the European Union and is exploring whether his country could become an &#8220;associate member&#8221; of the bloc,...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Russia Hits Odesa Again As Black Sea Shipping Disrupted",
+      "link": "https://gcaptain.com/russia-hits-odesa-again-as-black-sea-shipping-disrupted/",
+      "pubDate": "Sun, 13 Sep 2026 17:03:05 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By&#160;Bloomberg News Sep 12, 2026 (Bloomberg) &#8211;Russia carried out a large airstrike on Ukraine’s port city of Odesa and the surrounding region as shipping in the Black Sea remains disrupted...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 22,
+      "en": {
+        "headline": "Russia Hits Odesa Again As Black Sea Shipping Disrupted",
+        "summary": "By&#160;Bloomberg News Sep 12, 2026 (Bloomberg) &#8211;Russia carried out a large airstrike on Ukraine’s port city of Odesa and the surrounding region as shipping in the Black Sea remains disrupted...",
+        "source": "gCaptain"
+      }
+    }
+  ]
+}

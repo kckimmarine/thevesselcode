@@ -1,0 +1,16 @@
+{
+  "_comment": "Manual git-commit overrides for commercial dashboard benchmarks. Omit keys to keep generated baseline.",
+  "benchmarkAsOf": "2026-09-14",
+  "bunker": {
+    "basePricesUsdMt": {
+      "Singapore": { "VLSFO": 612, "LSMGO": 748, "HSFO380": 458 }
+    }
+  },
+  "indices": {
+    "bdi": { "value": 1842, "deltaPct": 0.65 },
+    "bdti": { "value": 1185, "deltaPct": -0.4 },
+    "bcti": { "value": 892, "deltaPct": 0.2 },
+    "capesizeTc": { "value": 24850, "deltaPct": 1.1, "unit": "$/day" },
+    "panamaxTc": { "value": 14220, "deltaPct": 0.85, "unit": "$/day" }
+  }
+}
