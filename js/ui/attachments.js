@@ -271,6 +271,71 @@ const TVC_Attachments = (function () {
         return `<div class="wr-attach-list-wrap"><ul class="wr-attach-list">${items}</ul></div>`;
     }
 
+    /** Ship/SM sync packets — cap defect photos (~200KB) for sat-mail / API limits */
+    function compressImageFile(file, opts = {}) {
+        const maxDim = opts.maxDim || 1200;
+        const quality = opts.quality ?? 0.7;
+        return new Promise((resolve, reject) => {
+            const objectUrl = URL.createObjectURL(file);
+            const img = new Image();
+            img.onload = () => {
+                URL.revokeObjectURL(objectUrl);
+                let width = img.naturalWidth || img.width;
+                let height = img.naturalHeight || img.height;
+                const scale = Math.min(1, maxDim / Math.max(width, height, 1));
+                width = Math.max(1, Math.round(width * scale));
+                height = Math.max(1, Math.round(height * scale));
+                const canvas = document.createElement('canvas');
+                canvas.width = width;
+                canvas.height = height;
+                const ctx = canvas.getContext('2d');
+                if (!ctx) {
+                    reject(new Error('Canvas unavailable'));
+                    return;
+                }
+                ctx.drawImage(img, 0, 0, width, height);
+                canvas.toBlob((blob) => {
+                    if (!blob) {
+                        reject(new Error('Image compression failed'));
+                        return;
+                    }
+                    const reader = new FileReader();
+                    reader.onload = () => resolve({
+                        blob,
+                        dataUrl: String(reader.result || ''),
+                        name: `${String(file.name || 'photo').replace(/\.[^.]+$/, '')}.jpg`,
+                        type: 'image/jpeg',
+                        size: blob.size,
+                    });
+                    reader.onerror = () => reject(reader.error || new Error('read failed'));
+                    reader.readAsDataURL(blob);
+                }, 'image/jpeg', quality);
+            };
+            img.onerror = () => {
+                URL.revokeObjectURL(objectUrl);
+                reject(new Error('Image load failed'));
+            };
+            img.src = objectUrl;
+        });
+    }
+
+    function isImageUpload(file) {
+        const mime = String(file?.type || '').toLowerCase();
+        if (mime.startsWith('image/')) return true;
+        return /\.(jpe?g|png|gif|webp|bmp|heic|heif)$/i.test(String(file?.name || ''));
+    }
+
+    async function prepareUploadFile(file, opts = {}) {
+        if (!file || !isImageUpload(file)) return file;
+        try {
+            const compressed = await compressImageFile(file, opts);
+            return compressed;
+        } catch (e) {
+            console.warn('[TVC_Attachments] image compress fallback', e);
+            return file;
+        }
+    }
+
     return {
         register,
         resolve,
@@ -281,5 +346,8 @@ const TVC_Attachments = (function () {
         downloadCurrent,
         renderListItemHtml,
         renderListHtml,
+        compressImageFile,
+        isImageUpload,
+        prepareUploadFile,
     };
 })();
