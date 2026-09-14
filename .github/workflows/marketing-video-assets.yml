@@ -1,0 +1,47 @@
+# CapCut-ready WebM clips + narration/SRT from production marketing pages.
+# Download: Actions run → Artifacts → marketing-video-assets.zip
+name: Marketing video assets
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: 'Site to record (default production)'
+        required: false
+        default: 'https://www.thevesselcode.com'
+
+permissions:
+  contents: read
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium
+
+      - name: Record clips and build ZIP
+        run: npm run marketing:video-assets
+        env:
+          BASE_URL: ${{ inputs.base_url }}
+
+      - name: Upload ZIP artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: marketing-video-assets
+          path: artifacts/marketing-video/marketing-video-assets.zip
+          retention-days: 14
+          if-no-files-found: error

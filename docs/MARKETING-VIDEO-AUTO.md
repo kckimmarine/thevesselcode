@@ -13,15 +13,22 @@ $env:BASE_URL="https://www.thevesselcode.com"; npm run marketing:video-assets
 
 CapCut → **가져오기** → `thevesselcode\artifacts\marketing-video\clips\` 폴더.
 
-### Cursor Cloud Agent에서 받을 때 (Edge가 HTML+폴더로 저장되는 경우)
+### Cursor Artifacts에서 파일이 안 받아질 때
 
-에이전트 채팅/미리보기에서 `artifacts/marketing-video/` **폴더 링크를 클릭**하면 Microsoft Edge가 **「웹 페이지, 전체」** 로 저장해 `…_Cursor.html` + `_files` 안에 `.js.download` 만 생길 수 있습니다. **개별 `.webm` 이 아닙니다.**
+**흔한 증상**
 
-**해결:**
+- Artifacts 목록에서 **우클릭 → 다운로드**가 없거나 동작하지 않음
+- 링크를 Edge로 열면 **`…_Cursor.html` + `_files`** (`.js.download`만) — **WebM이 아님**
 
-1. 에이전트 실행 후 **`marketing-video-assets.zip` 한 파일만** 다운로드 (아티팩트 패널 또는 로그에 표시된 ZIP 경로).
-2. PC에서 ZIP 압축 해제 → `marketing-video/clips/*.webm` 을 CapCut에 가져오기.
-3. 또는 **로컬에서** 위 PowerShell 명령을 실행하면 `thevesselcode\artifacts\marketing-video\` 에 파일이 직접 생성됩니다 (가장 확실).
+**권장 순서 (확실한 방법)**
+
+| 방법 | 설명 |
+|------|------|
+| **1. 로컬 PC** | 위 §0 PowerShell 4줄 → `thevesselcode\artifacts\marketing-video\` 에 바로 생성 (**가장 확실**) |
+| **2. GitHub Actions** | `master`에 워크플로 병합 후: [Actions → **Marketing video assets** → **Run workflow**](https://github.com/kckimmarine/thevesselcode/actions/workflows/marketing-video-assets.yml) → 완료된 Run 하단 **Artifacts → marketing-video-assets** → **Download** (ZIP) |
+| **3. GitHub CLI** | `gh run download -n marketing-video-assets` (최근 성공 Run, [gh](https://cli.github.com/) 설치·로그인 필요) |
+
+Cursor Artifacts 패널은 브라우저·버전에 따라 **개별 파일 다운로드가 지원되지 않는 경우**가 있습니다. CapCut용 클립은 **로컬 생성** 또는 **Actions ZIP**을 쓰세요.
 
 이미 녹화만 했다면 ZIP만 다시 만들기: `npm run marketing:video-assets:zip`
 
