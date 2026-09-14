@@ -47,3 +47,4 @@ deploy/.env.local
 /test-results/
 /playwright-report/
 /blob-report/
+__pycache__/

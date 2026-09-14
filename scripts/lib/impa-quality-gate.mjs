@@ -50,6 +50,10 @@ export function plateAssetOk(plateRef, code, platesDir) {
   const webp = join(platesDir, `${safe}.webp`);
   const jpg = join(platesDir, `${safe}.jpg`);
   if (existsSync(webp) || existsSync(jpg)) return true;
+  if (/^berth-/i.test(safe)) {
+    const bare = safe.replace(/^berth-/i, '');
+    if (existsSync(join(platesDir, `berth-${bare}.webp`))) return true;
+  }
   if (/^PL-\d{2}-\d{2}$/i.test(safe)) return true;
   return !!safe;
 }

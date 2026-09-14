@@ -27,7 +27,7 @@ Programmatic SEO용 `/store/:code` 페이지를 **한 번에 5만 URL로 올리�
 | **기준선** | ~5,600 | Phase A 이전 · GSC 사이트맵 성공 확인됨 |
 | **Phase A** | **~15,022** | **완료** (2026-09-12) · `sitemap-store-1` + `store-2` |
 | **Phase B** | **~24,247** (SM exhaust) / ~30,000 aspirational | GSC 색인·오류율 안정 후 · Space-Marine 전 챕터 스크랩 완료 (2026-09-14) |
-| **Phase C** | ~50,000 | 최종 목표 · `sitemap-store-1` ~ `5` 예상 |
+| **Phase C** | **30,000+** (Berth) → ~50,000 | Berth Marine `phase-c:berth-ingest` · `sitemap-store-4+` |
 
 각 Phase마다 **한 번의 배포 = 한 번의 사이트맵 증가**로 진행합니다. Phase 사이 **최소 1~2주** 간격을 두고 GSC를 봅니다.
 
@@ -59,6 +59,17 @@ npm run build
 ```
 
 대량 배치: `node scripts/phase-a-scrape.mjs --target=30000 --chapters=17,55,69,19,15,21,67,...` (목표 count·챕터 목록 조정).
+
+**Phase C (Berth Marine) 워크플로:**
+
+```bash
+npm run phase-c:berth-discover
+npm run phase-c:berth-ingest          # sitemap codes → scrape batches → merge + SEO
+node scripts/phase-c-berth-ingest.mjs --merge-only
+```
+
+- 스크래퍼: `scripts/scrape-berthmarine.mjs` (WebP 800px / q80 → `public/data/plates/berth-*.webp`)
+- 병합: `scripts/merge-impa-chapters.mjs` (SM baseline + Berth upsert/enrich)
 
 **Toolkit:** Phase B 배포 시 `js/services/storeManager.js`의 `CATALOG_SOURCE_VERSION`와 `toolkit.html`의 `storeManager.js?v=`를 함께 bump (Phase A: `20260912-phase-a-15022`).
 
@@ -222,6 +233,14 @@ site:thevesselcode.com/store/812101
 - Sample indexed (manual): `store/170101`, `store/673303`, `store/991000`
 - Issues: none (`test:seo-sitemap`, `test:store-seo`, `build` pass)
 - Next phase earliest date: **2026-09-28**
+
+### IMPA SEO Phase C prep (2026-09-14) — Berth Marine ingest
+
+- SEO index count: **34,092** (SM baseline **24,247** + Berth **+9,845** new, **18** enriched)
+- Sitemap chunks: `sitemap-store-1` … `store-4` (10k + 10k + 10k + 4,092)
+- Pipeline: `fetch-berth-sitemaps` → `berth-sitemap-to-import` → `merge-impa-chapters` (upsert)
+- Toolkit: **`20260914-phase-c-34092`**
+- Follow-up: run `berth-sitemap-to-import` **without** `--skip-plates` to backfill WebP plates (rate-limit aware)
 
 ---
 
