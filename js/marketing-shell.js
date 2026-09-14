@@ -1,6 +1,7 @@
 /**
  * THE VESSEL CODE — shared marketing topbar + footer (Home, Services, Toolkit, Contact Us).
  * Requires marketing-i18n.js for KO/EN toggle.
+ * Commercial ticker: js/intelligence/marketFeed.js (lazy-loaded).
  */
 (function () {
     'use strict';
@@ -24,6 +25,8 @@
     ];
 
     const LOGO = '/icons/company-logo.png?v=20260804-logo-no-ring';
+    const INTEL_CSS = '/css/marketing-readability.css?v=20260914-soft-light-intel';
+    const INTEL_JS = '/js/intelligence/marketFeed.js?v=20260914-soft-light-intel';
 
     function navLabel(item) {
         const i18n = globalThis.TVC_MarketingI18n;
@@ -35,6 +38,33 @@
         return item.i18n;
     }
 
+    function ensureReadabilityCss() {
+        if (document.querySelector('link[data-mkt-readability]')) return;
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = INTEL_CSS;
+        link.setAttribute('data-mkt-readability', '1');
+        document.head.appendChild(link);
+    }
+
+    function ensureMarketFeed(done) {
+        if (globalThis.TVC_MarketFeed) {
+            done();
+            return;
+        }
+        const existing = document.querySelector('script[data-mkt-market-feed]');
+        if (existing) {
+            existing.addEventListener('load', () => done(), { once: true });
+            return;
+        }
+        const script = document.createElement('script');
+        script.src = INTEL_JS;
+        script.async = true;
+        script.setAttribute('data-mkt-market-feed', '1');
+        script.onload = () => done();
+        document.head.appendChild(script);
+    }
+
     function renderTopbar(active) {
         const nav = NAV.map((item) => {
             const current = item.id === active ? ' aria-current="page"' : '';
@@ -43,7 +73,9 @@
         }).join('\n                ');
 
         return `
-        <header class="home-topbar mkt-topbar" role="banner">
+        <div class="mkt-commercial-stack">
+            <div id="mktBunkerTickerHost" aria-live="polite"></div>
+            <header class="home-topbar mkt-topbar" role="banner">
             <a class="home-brand" href="/"${active === 'home' ? ' aria-current="page"' : ''}>
                 <img src="${LOGO}" alt="" width="44" height="44" draggable="false">
                 <span class="home-brand-text">
@@ -64,7 +96,8 @@
             <nav class="home-topnav" id="mktPrimaryNav" aria-label="Primary">
                 ${nav}
             </nav>
-        </header>`;
+        </header>
+        </div>`;
     }
 
     function renderFooter() {
@@ -109,13 +142,25 @@
         });
     }
 
+    function mountTicker() {
+        const host = document.getElementById('mktBunkerTickerHost');
+        if (host && globalThis.TVC_MarketFeed?.mountTicker) {
+            globalThis.TVC_MarketFeed.mountTicker(host);
+        }
+    }
+
     function mount() {
+        ensureReadabilityCss();
         const active = document.body.getAttribute('data-mkt-active') || '';
         const topbarEl = document.getElementById('marketing-topbar');
         if (topbarEl) topbarEl.innerHTML = renderTopbar(active);
         const footerEl = document.getElementById('marketing-footer');
         if (footerEl) footerEl.innerHTML = renderFooter();
         bindTopbar();
+        ensureMarketFeed(() => {
+            mountTicker();
+            globalThis.TVC_MarketFeed?.initHome?.();
+        });
         if (globalThis.TVC_MarketingI18n?.applyLang) {
             globalThis.TVC_MarketingI18n.applyLang(globalThis.TVC_MarketingI18n.getLang());
         }

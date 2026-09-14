@@ -14,6 +14,15 @@
             await TVC_MaritimeToolkit.init();
         }
 
+        const params = new URLSearchParams(window.location.search);
+        const toolTab = params.get('tool');
+        if (toolTab && typeof TVC_MaritimeToolkit !== 'undefined') {
+            TVC_MaritimeToolkit.setActiveTool(toolTab);
+            if (toolTab === 'bunker') {
+                TVC_MaritimeToolkit.applyBunkerPrefill(params);
+            }
+        }
+
         try {
             await TVC_StoreManager.loadCatalog();
             await TVC_StoreManager.buildMemoryIndex();
