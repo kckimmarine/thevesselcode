@@ -32,6 +32,44 @@ body.home-page {
     line-height: 1.6;
 }
 
+/* Fixed dimmed maritime canvas (desktop + mobile; avoids background-attachment: fixed jitter) */
+body.home-page.home-bg-fixed {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: transparent;
+    background-attachment: scroll;
+}
+
+body.home-page.home-bg-fixed::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image:
+        linear-gradient(
+            180deg,
+            rgba(10, 16, 30, 0.85) 0%,
+            rgba(10, 16, 30, 0.78) 50%,
+            rgba(10, 16, 30, 0.94) 100%
+        ),
+        url("/assets/images/digital-port-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    transform: translateZ(0);
+}
+
+body.home-page.home-bg-fixed #hero,
+body.home-page.home-bg-fixed .home-hero.mkt-hero {
+    background-color: transparent;
+    background-image: none;
+}
+
 .home-shell {
     width: min(100%, 1180px);
     margin: 0 auto;
