@@ -47,16 +47,21 @@
 
 ## 4. 파일럿 선박 테스트 (Playwright 4 시나리오)
 
-| 시나리오 | SOP | 현재 자동화 |
+| 시나리오 | SOP | 자동화 (2026-09-14) |
 | --- | --- | --- |
-| 1 선내 Engine 정비 + Spare 2개 차감 | Engine 로그인 → 저장 → 재고 | **`e2e/tour.spec.js`** — Work Report Page2 qty + `deductSpare` (qty 1). **재고 수치 assert는 미포함** → 시나리오 1은 *부분 충족* |
-| 2 사관 Pending → CE Confirm | Chief 승인 | **미포함** (Playwright). Node 시뮬: `scripts/test-vessel-engine-pms-workflow.mjs` |
-| 3 Captain Export ZIP 무결성 | JSON 누락 검증 | **부분** — `scripts/test-xfer-status-roundtrip.mjs` (다부분 Pass, HQ export 단계에서 `PERMISSION_DENIED` 1건 — RBAC 의도 가능) |
-| 4 SM Import → Approved → Comment 패킷 | HQ roundtrip | 동일 스크립트 + `verify-sync-ingest` (클라우드 env 필요) |
+| A 선내 Engine 정비 + Spare **2** + `stock_applied_at` | 저장 즉시 재고 −2 | **`e2e/pilot-sop-scenarios.spec.js`** Step A |
+| B CE Confirm + Captain Engine Confirm 거부 | CONFIRMED + RBAC | 동일 스펙 Step B |
+| C Captain **SHIP_TO_SM** ZIP + JSON 무결성 | Export 검증 | 동일 스펙 Step C (`jszip` + report/spare diff) |
+| D SM Import → **APPROVED** + 선박 편집 락 | 최종 락 | 동일 스펙 Step D (`abc shipping`) |
 
-**2026-09-14 E2E:** `npm run test:e2e` → **11 passed**, 1 skipped (`modal-audit` requisition). 상세: `TEST_REPORT.md`.
+```bash
+npx playwright test e2e/pilot-sop-scenarios.spec.js
+npm run test:e2e
+```
 
-**권장 다음 PR:** `e2e/pilot-sop-scenarios.spec.js` — (2) CE Confirm, (3) Captain `exportZip` + JSZip JSON 키 검사, (4) SM `abc shipping` Import stub.
+**Node roundtrip:** `npm run test-xfer-status-roundtrip` — Monthly 체인은 `SM_SUPERINTENDENT` + `SHIP_TO_SM` / `SM_TO_SHIP` (legacy `HQ_SUPERVISOR` + `HQ_TO_SHIP`는 `EXPORT_SHIP_SYNC` 거부가 **정상**). Postpone HQ Reply ZIP 2건·소스 문자열 1건은 별도 추적.
+
+**회귀:** `pilot-sop-scenarios` **1 passed** (~21s). 데모 호선 `alignDemoVesselScope` → **`ABC Voyager`** (SM fleet vs IDB meta 일치).
 
 ---
 
@@ -98,3 +103,4 @@ npm run verify-all                   # license 빌드 artifact 필요 시 dist/l
 ## 변경 이력
 
 - **2026-09-14:** Defect 첨부 이미지 압축 SOP 정합 (`TVC_Attachments.prepareUploadFile`). 본 문서 최초 작성.
+- **2026-09-14:** `e2e/pilot-sop-scenarios.spec.js` — SOP A–D 전 구간 E2E. `test-xfer-status-roundtrip` SM 역할/direction 수정.

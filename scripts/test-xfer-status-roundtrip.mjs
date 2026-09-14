@@ -123,8 +123,8 @@ const Postpone = loadModule('js/services/postponeSync.js', 'TVC_PostponeSync');
 const CE = { username: 'ce', role: 'SHIP_CHIEF', department: 'ENGINE', station: 'ECR', account_type: 'SHIP', vessel_id: 'INCHEON CHEMI' };
 const CO = { username: 'co', role: 'SHIP_CAPTAIN', department: 'DECK', station: 'CCR', account_type: 'SHIP', vessel_id: 'INCHEON CHEMI' };
 const CAPTAIN = { username: 'captain', role: 'SHIP_CAPTAIN', department: null, station: 'CAPTAIN', account_type: 'SHIP', vessel_id: 'INCHEON CHEMI' };
-const HQ = { username: 'hq', role: 'HQ_SUPERVISOR', department: 'ENGINE', account_type: 'SM', vessel_id: 'INCHEON CHEMI' };
-const HQ_DECK = { username: 'hq', role: 'HQ_SUPERVISOR', department: 'DECK', account_type: 'SM', vessel_id: 'INCHEON CHEMI' };
+const HQ = { username: 'abc shipping', role: 'SM_SUPERINTENDENT', department: 'ENGINE', account_type: 'SM', vessel_id: 'INCHEON CHEMI', company_id: 'ABC_SHIPPING' };
+const HQ_DECK = { username: 'abc shipping', role: 'SM_SUPERINTENDENT', department: 'DECK', account_type: 'SM', vessel_id: 'INCHEON CHEMI', company_id: 'ABC_SHIPPING' };
 
 let pass = 0;
 let fail = 0;
@@ -287,7 +287,7 @@ async function monthlyChain(label, stationUser, hqUser, dept, code, stationId) {
     assert(`${label} Master Monthly Import → Submitted`, workflowStatus(onMaster) === 'Submitted', workflowStatus(onMaster));
     assert(`${label} Master monthly Confirm disabled (Submitted)`, confirmEnabled(onMaster) === false);
 
-    const masterToHq = await payloadFromExport(CAPTAIN, 'SHIP_TO_HQ', dept, { monthlyExport: true });
+    const masterToHq = await payloadFromExport(CAPTAIN, 'SHIP_TO_SM', dept, { monthlyExport: true });
     resetDb([job], []);
     await importMonthly(hqUser, masterToHq.buf, masterToHq.filename, dept);
     const onHq = await TVC_DB.get('daily_work_reports', report.id);
@@ -300,13 +300,13 @@ async function monthlyChain(label, stationUser, hqUser, dept, code, stationId) {
     await TVC_DB.put('daily_work_reports', onHq);
     assert(`${label} HQ Approve → Approved`, workflowStatus(await TVC_DB.get('daily_work_reports', report.id)) === 'Approved');
 
-    const hqReply = await payloadFromExport(hqUser, 'HQ_TO_SHIP', dept, { monthlyExport: true });
+    const hqReply = await payloadFromExport(hqUser, 'SM_TO_SHIP', dept, { monthlyExport: true });
     resetDb([job], [{ ...onMaster, sync_status: 'SYNCED' }]);
     await importMonthly(CAPTAIN, hqReply.buf, hqReply.filename, dept);
     const masterAfterHq = await TVC_DB.get('daily_work_reports', report.id);
     assert(`${label} Master Import HQ monthly reply → Approved`, workflowStatus(masterAfterHq) === 'Approved', workflowStatus(masterAfterHq));
 
-    const masterRelay = await payloadFromExport(CAPTAIN, 'HQ_TO_SHIP', dept, { monthlyExport: true });
+    const masterRelay = await payloadFromExport(CAPTAIN, 'SM_TO_SHIP', dept, { monthlyExport: true });
     resetDb([job], [{ ...afterSt }]);
     await importMonthly(stationUser, masterRelay.buf, masterRelay.filename, dept);
     const onStation = await TVC_DB.get('daily_work_reports', report.id);
