@@ -356,7 +356,7 @@ async function postponeChain(label, stationUser, hqUser, dept, code) {
     assert(`${label} HQ Approve → Approved`, workflowStatus(await TVC_DB.get('daily_work_reports', report.id)) === 'Approved');
 
     const hqExp = await Postpone.exportHqReplyZip(hqUser, report.id);
-    assert(`${label} HQ Reply ZIP created`, !!hqExp.filename && hqExp.payload.export_meta.direction === 'POSTPONE_REPLY_HQ_TO_SHIP');
+    assert(`${label} HQ Reply ZIP created`, !!hqExp.filename && hqExp.payload.export_meta.direction === 'POSTPONE_REPLY_SM_TO_SHIP');
 
     resetDb([job], [{ ...afterMaster, sync_status: 'SYNCED' }]);
     await importPostpone(CAPTAIN, hqExp.payload, 'postpone_report_reply.json', hqExp.filename);
@@ -378,11 +378,10 @@ async function scenario(name, fn) {
 
 async function main() {
     await scenario('Source — Master postpone export no longer requires Confirmed', async () => {
-        assert('hub Submitted branch exists',
-            APP_SRC.includes('awaiting station export first (Submitted). Report Confirm is station-only.'));
-        assert('old Confirmed-only gate is hub-guarded',
-            APP_SRC.includes("if (st !== 'Confirmed')")
-            && APP_SRC.includes('hub || isMasterHubMode()'));
+        assert('hub Submitted export hint in menu xfer',
+            APP_SRC.includes('Awaiting station export first'));
+        assert('Captain hub exports Submitted postpone via HubRelay',
+            APP_SRC.includes('return st === \'Submitted\' && TVC_HubRelay.canHubLegExport(row)'));
     });
 
     await scenario('engine–master–hq — Critical Postpone 02-00-001 statuses', async () => {

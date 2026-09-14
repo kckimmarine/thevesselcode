@@ -1,5 +1,6 @@
 /** Pilot SOP — IndexedDB / sync helpers for Playwright */
 const JSZip = require('jszip');
+const { dismissAllDialogs, closeTopModal } = require('./app');
 
 const DEMO_VESSEL_ID = 'ABC Voyager';
 
@@ -31,7 +32,8 @@ async function findReportByMarker(page, marker) {
     const hit = (reports || []).find((r) => {
       const outline = String(r.outline || r.report_form?.outline || r.outline_of_maintenance || '').trim();
       const comments = String(r.ship_comments || r.report_form?.shipComments || '').trim();
-      return outline.includes(m) || comments.includes(m);
+      const desc = String(r.description || '').trim();
+      return outline.includes(m) || comments.includes(m) || desc.includes(m);
     });
     if (!hit) return null;
     return {
@@ -141,52 +143,126 @@ async function parseZipPayload(bytes) {
   return JSON.parse(raw);
 }
 
-/** UI-opened work report: set spare qty via TVC_SpareMenu API and save (bypasses virtualized Page 2 list). */
+async function ensureWrSparePartsVisible(page, modal) {
+  const countEl = modal.locator('#wrSpareCount');
+  const countText = ((await countEl.textContent().catch(() => '')) || '').trim();
+  const showAllBtn = modal.locator('#wrSpareSelectedBtn');
+  if (await showAllBtn.isVisible().catch(() => false)) {
+    const pressed = await showAllBtn.getAttribute('aria-pressed');
+    if (pressed === 'true') await showAllBtn.click();
+    await page.waitForTimeout(250);
+  }
+
+  const needsAllGroups = countText.startsWith('0 /') || countText === '0';
+  if (needsAllGroups) {
+    const treeToggle = modal.locator('button[onclick*="wrSpareToggleGroupTree"]');
+    if (await treeToggle.isVisible().catch(() => false)) {
+      await treeToggle.click();
+      await page.waitForTimeout(200);
+      const allGroups = modal.locator('.tree-node', { hasText: 'All Groups' });
+      if (await allGroups.first().isVisible().catch(() => false)) {
+        await allGroups.first().click();
+        await page.waitForTimeout(400);
+      }
+    }
+  }
+
+  await page.waitForFunction(() => {
+    const root = document.querySelector('#workReportModal #wrSpareListScroll');
+    if (!root || root.querySelector('.spare-empty-list')) return false;
+    const label = document.querySelector('#workReportModal #wrSpareCount')?.textContent || '';
+    if (/^\s*0\s*\/\s*/.test(label)) return false;
+    return root.querySelectorAll('.spare-row-chk').length > 0
+      || root.querySelectorAll('[data-spare-id]').length > 0;
+  }, null, { timeout: 60_000 });
+}
+
+/**
+ * Human flow: scroll virtual list → check spare row → qty input appears.
+ */
+async function pickWrSpareQtyInput(page, modal) {
+  const scroll = modal.locator('#wrSpareListScroll');
+  await scroll.waitFor({ state: 'attached', timeout: 20_000 });
+  await ensureWrSparePartsVisible(page, modal);
+
+  const hscroll = modal.locator('.spare-req-table-hscroll').filter({ has: scroll });
+
+  for (let pass = 0; pass < 100; pass++) {
+    const checks = modal.locator('#wrSpareListScroll .spare-row-chk:not([disabled])');
+    const n = await checks.count();
+    for (let i = 0; i < n; i++) {
+      const chk = checks.nth(i);
+      if (!(await chk.isVisible())) continue;
+      if (!(await chk.isChecked())) {
+        await chk.check({ force: true });
+        await page.waitForTimeout(180);
+      }
+      const row = chk.locator('xpath=ancestor::*[@data-spare-id][1]');
+      const input = row.locator('.spare-consume-qty-input:not([disabled])');
+      if (await input.count() && await input.first().isVisible()) return input.first();
+    }
+    await scroll.evaluate((el) => { el.scrollTop += Math.max(120, Math.floor(el.clientHeight * 0.85)); });
+    if (await hscroll.count()) {
+      await hscroll.first().evaluate((el) => { el.scrollLeft += 100; }).catch(() => {});
+    }
+    await page.waitForTimeout(120);
+  }
+  throw new Error('Work Report Page 2: no visible spare qty input after scrolling virtual list');
+}
+
+/** Human-like: Page 2 spare qty + Save (no TVC_SpareMenu.wrSpareSetQty bypass). */
 async function saveOpenWorkReportWithSpare(page, { marker, qty }) {
-  return page.evaluate(async ({ marker, qty }) => {
-    const spares = await TVC_DB.getAll('spare_parts');
-    const spare = spares.find((s) => {
-      const dept = String(s.department || 'ENGINE').toUpperCase();
-      if (dept && dept !== 'ENGINE') return false;
-      return TVC_Inventory.currentStock(s) >= qty;
-    });
-    if (!spare) throw new Error('No ENGINE spare with sufficient stock');
+  const modal = page.locator('#workReportModal:not(.hidden)');
+  await modal.waitFor({ state: 'visible', timeout: 15_000 });
 
-    const stockBefore = TVC_Inventory.currentStock(spare);
-    const outlineEl = document.querySelector('#workReportModal [data-wf="outline"]');
-    if (outlineEl) {
-      outlineEl.value = marker;
-      outlineEl.dispatchEvent(new Event('input', { bubbles: true }));
-    }
-    if (typeof TVC_App.captureWorkReportForm === 'function') TVC_App.captureWorkReportForm();
-    TVC_SpareMenu.wrSpareSetQty(spare.id, qty);
+  const outline = modal.locator('[data-wf="outline"]');
+  if (await outline.isVisible().catch(() => false)) {
+    await outline.fill(marker);
+  }
 
-    const prevConfirm = TVC_Dialog.confirm;
-    const prevAlert = TVC_Dialog.alert;
-    TVC_Dialog.confirm = async () => true;
-    TVC_Dialog.alert = async () => {};
-    try {
-      await TVC_App.saveWorkReport();
-    } finally {
-      TVC_Dialog.confirm = prevConfirm;
-      TVC_Dialog.alert = prevAlert;
-    }
-    if (typeof TVC_App.refreshAll === 'function') await TVC_App.refreshAll();
+  const page2 = modal.locator('.wr-pagetab', { hasText: 'Page 2' });
+  await page2.waitFor({ state: 'visible', timeout: 10_000 });
+  await page2.click();
+  await page.waitForTimeout(400);
 
-    const reports = await TVC_DB.getAll('daily_work_reports');
-    const hit = (reports || []).find((r) => String(r.outline || r.description || '').includes(marker)
-      || String(r.report_form?.outline || '').includes(marker));
-    if (!hit) throw new Error('Report not found after save');
+  const qtyInput = await pickWrSpareQtyInput(page, modal);
+  const spareRow = qtyInput.locator('xpath=ancestor::*[@data-spare-id][1]');
+  const spareId = await spareRow.getAttribute('data-spare-id');
+  if (!spareId) throw new Error('Could not resolve data-spare-id from selected row');
 
-    return {
-      reportId: hit.id,
-      spareId: spare.id,
-      stockBefore,
-      stockAfter: TVC_Inventory.currentStock(await TVC_DB.get('spare_parts', spare.id)),
-      status: String(hit.status || '').toUpperCase(),
-      stock_applied_at: hit.stock_applied_at || '',
-    };
-  }, { marker, qty });
+  const before = await spareStock(page, spareId);
+  if (!before || before.qty < qty) {
+    throw new Error(`Insufficient stock for spare ${spareId}: have ${before?.qty}, need ${qty}`);
+  }
+
+  await qtyInput.click();
+  await qtyInput.fill(String(qty));
+  await qtyInput.dispatchEvent('change');
+  await page.waitForTimeout(200);
+
+  const page1 = modal.locator('.wr-pagetab', { hasText: 'Page 1' });
+  if (await page1.isVisible().catch(() => false)) await page1.click();
+
+  const save = modal.locator('button.btn-green', { hasText: 'Save' }).first();
+  await save.click();
+  await page.waitForTimeout(500);
+  await dismissAllDialogs(page, true);
+  await page.waitForTimeout(300);
+  await dismissAllDialogs(page, true);
+  if (await modal.isVisible().catch(() => false)) await closeTopModal(page);
+
+  const saved = await findReportByMarker(page, marker);
+  if (!saved) throw new Error('Report not found after UI save');
+
+  const stockAfter = await spareStock(page, spareId);
+  return {
+    reportId: saved.id,
+    spareId,
+    stockBefore: before.qty,
+    stockAfter: stockAfter?.qty,
+    status: saved.status,
+    stock_applied_at: saved.stock_applied_at,
+  };
 }
 
 module.exports = {
@@ -203,4 +279,5 @@ module.exports = {
   smImportZipBytes,
   parseZipPayload,
   saveOpenWorkReportWithSpare,
+  pickWrSpareQtyInput,
 };

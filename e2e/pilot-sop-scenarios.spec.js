@@ -46,9 +46,6 @@ test('Pilot SOP A–D: work report, CE confirm, Captain ZIP, SM approve', async 
   await page.locator('#actScroll .vl-cells[data-job-id]').first().click();
   await page.waitForTimeout(200);
   await page.locator('#planReportBtn').click();
-  const modal = page.locator('#workReportModal:not(.hidden)');
-  await modal.waitFor({ state: 'visible', timeout: 15_000 });
-
   const saved = await saveOpenWorkReportWithSpare(page, { marker, qty: QTY });
   reportId = saved.reportId;
   spareId = saved.spareId;
