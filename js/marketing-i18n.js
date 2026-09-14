@@ -608,6 +608,10 @@
         'intel.market.title': { en: 'Freight & shipping indices', ko: '운임·해운 지표' },
         'intel.news.title': { en: 'Global maritime & energy stream', ko: '글로벌 해운·에너지 스트림' },
         'intel.market.stamp': { en: 'Updated daily benchmark', ko: '일일 벤치마크 갱신' },
+        'intel.market.benchmarkAsOf': {
+            en: 'Market benchmark as of',
+            ko: '시장 벤치마크 기준일',
+        },
         'intel.market.disclaimer': {
             en: 'Indicative levels for desk conversation — not trading or investment advice.',
             ko: '데스크 참고용이며 투자·거래 조언이 아닙니다.',

@@ -1,10 +1,11 @@
 /**
- * THE VESSEL CODE — Commercial maritime intelligence (loads data/market-indices.json).
+ * THE VESSEL CODE — Commercial maritime intelligence (loads /data/market-feed.json).
  */
 (function (global) {
     'use strict';
 
-    const DATA_URL = '/data/market-indices.json';
+    const DATA_URL = '/data/market-feed.json';
+    const LEGACY_URL = '/data/market-indices.json';
     let marketData = null;
     let loadPromise = null;
 
@@ -83,20 +84,29 @@
             return loadPromise;
         }
         loadPromise = fetch(DATA_URL, { credentials: 'same-origin' })
-            .then((res) => (res.ok ? res.json() : FALLBACK))
+            .then((res) => (res.ok ? res.json() : null))
+            .catch(() => null)
             .then((json) => {
-                marketData = json && typeof json === 'object' ? json : FALLBACK;
-                return marketData;
-            })
-            .catch(() => {
-                marketData = FALLBACK;
-                return marketData;
+                if (json && typeof json === 'object') {
+                    marketData = json;
+                    return marketData;
+                }
+                return fetch(LEGACY_URL, { credentials: 'same-origin' })
+                    .then((res) => (res.ok ? res.json() : FALLBACK))
+                    .catch(() => FALLBACK)
+                    .then((legacy) => {
+                        marketData = legacy && typeof legacy === 'object' ? legacy : FALLBACK;
+                        return marketData;
+                    });
             });
         return loadPromise;
     }
 
     function getBunkerQuotes() {
         const d = data();
+        if (Array.isArray(d.bunker?.quotes) && d.bunker.quotes.length) {
+            return d.bunker.quotes;
+        }
         const seed = daySeed();
         const quotes = [];
         const hubs = d.bunker?.hubs || FALLBACK.bunker.hubs;
@@ -132,40 +142,44 @@
         return `/toolkit?${params.toString()}#tab-bunker`;
     }
 
+    function resolveIndex(entry, seed, fallback) {
+        const fb = fallback || {};
+        if (entry && entry.value != null && Number.isFinite(Number(entry.value))) {
+            return {
+                value: Math.round(Number(entry.value)),
+                deltaPct: Number(entry.deltaPct) || 0,
+                unit: entry.unit || fb.unit,
+            };
+        }
+        const jitter = fb.jitter || 0;
+        return {
+            value: (fb.base || 0) + (jitter ? seed % jitter : 0),
+            deltaPct: pseudoDelta(seed, fb.salt || 0),
+            unit: fb.unit,
+        };
+    }
+
     function getShippingBenchmarks() {
         const d = data();
         const seed = daySeed();
-        const idx = d.indices || FALLBACK.indices;
-        const pick = (key) => idx[key] || FALLBACK.indices[key];
-        const bdi = pick('bdi');
-        const cap = pick('capesizeTc');
-        const pan = pick('panamaxTc');
-        const bdti = pick('bdti');
-        const bcti = pick('bcti');
-        const scfi = pick('scfi');
+        const idx = d.indices || {};
+        const legacy = FALLBACK.indices;
+        const asOf = d.meta?.benchmarkAsOf || new Date().toISOString().slice(0, 10);
         return {
-            asOf: new Date().toISOString().slice(0, 10),
+            asOf,
             source: d.meta?.source || FALLBACK.meta.source,
             updatedLabelKey: 'intel.market.stamp',
             dryBulk: {
-                bdi: { value: bdi.base + (seed % 120) - 40, deltaPct: pseudoDelta(seed, bdi.salt) },
-                capesize: {
-                    value: cap.base + (seed % (cap.jitter || 1)),
-                    unit: cap.unit || '$/day',
-                    deltaPct: pseudoDelta(seed, cap.salt),
-                },
-                panamax: {
-                    value: pan.base + (seed % (pan.jitter || 1)),
-                    unit: pan.unit || '$/day',
-                    deltaPct: pseudoDelta(seed, pan.salt),
-                },
+                bdi: resolveIndex(idx.bdi, seed, legacy.bdi),
+                capesize: resolveIndex(idx.capesizeTc, seed, legacy.capesizeTc),
+                panamax: resolveIndex(idx.panamaxTc, seed, legacy.panamaxTc),
             },
             tanker: {
-                bdti: { value: bdti.base + (seed % (bdti.jitter || 1)), deltaPct: pseudoDelta(seed, bdti.salt) },
-                bcti: { value: bcti.base + (seed % (bcti.jitter || 1)), deltaPct: pseudoDelta(seed, bcti.salt) },
+                bdti: resolveIndex(idx.bdti, seed, legacy.bdti),
+                bcti: resolveIndex(idx.bcti, seed, legacy.bcti),
             },
             container: {
-                scfiComposite: { value: scfi.base + (seed % (scfi.jitter || 1)), deltaPct: pseudoDelta(seed, scfi.salt) },
+                scfiComposite: resolveIndex(idx.scfi, seed, legacy.scfi),
             },
         };
     }
@@ -174,7 +188,9 @@
         const d = data();
         const label = t('intel.ticker.label', lang);
         const updated =
-            lang === 'ko' ? d.meta?.updatedLabelKo || t('intel.ticker.updated', lang) : d.meta?.updatedLabelEn || t('intel.ticker.updated', lang);
+            lang === 'ko'
+                ? d.meta?.updatedLabelKo || t('intel.ticker.updated', lang)
+                : d.meta?.updatedLabelEn || t('intel.ticker.updated', lang);
         const quotes = getBunkerQuotes();
         const chips = quotes
             .map((q) => {
@@ -209,7 +225,7 @@
                 <td><span class="mkt-ticker-delta ${deltaClass}">${formatDeltaPct(delta)}</span></td>
             </tr>`;
         };
-        const stamp = `${escapeHtml(bench.source)} · ${escapeHtml(t('intel.market.stamp', lang))} · ${escapeHtml(bench.asOf)}`;
+        const stamp = `${escapeHtml(bench.source)} · ${escapeHtml(updatedLabelForFeed(lang, bench.asOf))}`;
         return `
         <p class="mkt-intel-stamp">${stamp}</p>
         <div class="mkt-intel-table-wrap">
@@ -236,6 +252,13 @@
         return Array.isArray(list) && list.length ? list : [];
     }
 
+    function updatedLabelForFeed(lang, asOf) {
+        const d = data();
+        if (lang === 'ko' && d.meta?.updatedLabelKo) return d.meta.updatedLabelKo;
+        if (d.meta?.updatedLabelEn) return d.meta.updatedLabelEn;
+        return `${t('intel.market.benchmarkAsOf', lang)} ${asOf}`;
+    }
+
     function renderNewsList(lang) {
         const items = newsItems();
         if (!items.length) {
@@ -244,11 +267,24 @@
         return `<ul class="mkt-news-list">${items
             .map((item) => {
                 const loc = lang === 'ko' && item.ko ? item.ko : item.en || item.ko || {};
+                const headline = loc.headline || item.title || '';
+                const summary = loc.summary || item.summary || '';
+                const source = loc.source || item.source || '';
+                const timeLabel =
+                    item.hoursAgo != null
+                        ? formatHoursAgo(item.hoursAgo, lang)
+                        : item.pubDate
+                          ? item.pubDate.slice(0, 16)
+                          : '';
+                const tag = item.tag || item.category || 'Trade';
+                const linkOpen = item.link
+                    ? `<a href="${escapeHtml(item.link)}" rel="noopener noreferrer" target="_blank">${escapeHtml(headline)}</a>`
+                    : escapeHtml(headline);
                 return `<li class="mkt-news-item">
-                <span class="mkt-news-tag ${escapeHtml(item.tagClass || '')}">${escapeHtml(item.tag || '')}</span>
-                <h4 class="mkt-news-headline">${escapeHtml(loc.headline || '')}</h4>
-                <p class="mkt-news-meta">${escapeHtml(loc.source || '')} · ${escapeHtml(formatHoursAgo(item.hoursAgo, lang))}</p>
-                <p class="mkt-news-summary">${escapeHtml(loc.summary || '')}</p>
+                <span class="mkt-news-tag ${escapeHtml(item.tagClass || '')}">${escapeHtml(tag)}</span>
+                <h4 class="mkt-news-headline">${linkOpen}</h4>
+                <p class="mkt-news-meta">${escapeHtml(source)} · ${escapeHtml(timeLabel)}</p>
+                <p class="mkt-news-summary">${escapeHtml(summary)}</p>
             </li>`;
             })
             .join('')}</ul>`;
