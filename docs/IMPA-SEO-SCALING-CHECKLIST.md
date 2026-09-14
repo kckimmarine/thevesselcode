@@ -252,6 +252,15 @@ site:thevesselcode.com/store/812101
 - Toolkit: **`20260914-phase-c-34092`**
 - Follow-up: run `berth-sitemap-to-import` **without** `--skip-plates` to backfill WebP plates (rate-limit aware)
 
+### IMPA SEO Phase C gap (2026-09-14) — sitemap 16–20 + missing codes
+
+- Discover: `node scripts/discover-berth-sitemap-codes.mjs` (caches `public/data/berth/sitemaps/product-sitemap*.xml`, ~19.9k Berth URLs)
+- Gap vs `impa-full.json`: codes in sitemap discovery **not** yet in catalog (~2.9k; Yoast `image:title` often empty → **product scrape required**)
+- Ingest: `node scripts/ingest-missing-berth-codes.mjs --scrape --batch=100 --delay=1100 --merge`
+  - Quality: `scripts/lib/impa-quality-gate.mjs` + reject generic `Marine stores item {code}` on **new** gap rows
+  - Output: `public/data/berth/imports/berth-gap-ingest.json` + per-batch `codes-batch-*.json`
+- Sitemap chunk **5** auto when SEO index **> 40,000** (`generate-sitemap.mjs` + `test-seo-sitemap.mjs`)
+
 ---
 
 ## 9. 홈·브랜드 검색과의 관계

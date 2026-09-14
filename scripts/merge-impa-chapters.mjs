@@ -12,6 +12,7 @@ import {
   rowCode,
 } from './lib/impa-quality-gate.mjs';
 import { upsertBerthIntoCatalog } from './lib/berth-merge.mjs';
+import { loadBerthSitemapCodes, codesMissingFromCatalog } from './lib/berth-sitemap-codes.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -89,6 +90,19 @@ function main() {
     `Berth overlay: +${berthStats.added} new, ${berthStats.enriched} enriched `
     + `(SM baseline ${smCount}, berth rows ${berthStats.berthRows})`,
   );
+
+  try {
+    const berthCodes = loadBerthSitemapCodes(ROOT);
+    const gap = codesMissingFromCatalog(ROOT, berthCodes);
+    if (berthCodes.length) {
+      console.log(`Berth sitemap coverage: ${berthCodes.length - gap.length}/${berthCodes.length} in catalog; gap ${gap.length}`);
+      if (gap.length && gap.length <= 24) {
+        console.log(`Gap codes: ${gap.join(', ')}`);
+      }
+    }
+  } catch {
+    /* optional discover file */
+  }
 }
 
 main();
