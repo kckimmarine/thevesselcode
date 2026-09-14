@@ -15,6 +15,7 @@
         'nav.sm': { en: 'TVC-SM', ko: 'TVC-SM 선박관리' },
         'nav.contact': { en: 'Contact Us', ko: '문의하기' },
         'nav.menu': { en: 'Menu', ko: '메뉴' },
+        'nav.launchApp': { en: 'Launch App', ko: '앱 실행' },
         'nav.brand.tag': {
             en: 'Engineering · Operations · Open maritime hub',
             ko: '해운 기술 · 운항 · 열린 해양 플랫폼',

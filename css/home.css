@@ -1,18 +1,19 @@
 /* THE VESSEL CODE — Marketing landing (WordPress copy integration) */
 :root {
-    --home-bg-top: #0a101e;
-    --home-bg-bottom: #0f172a;
-    --home-card: rgba(15, 23, 42, 0.75);
-    --home-card-soft: rgba(15, 23, 42, 0.55);
-    --home-border: rgba(56, 189, 248, 0.18);
-    --home-text: #f8fafc;
-    --home-muted: #94a3b8;
-    --home-accent: #38bdf8;
-    --home-accent-2: #38bdf8;
-    --home-gold: #38bdf8;
-    --home-navy: #0e7490;
-    --home-radius: 18px;
-    --home-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    --home-bg-top: #f8fafc;
+    --home-bg-bottom: #f1f5f9;
+    --home-card: #ffffff;
+    --home-card-soft: #f8fafc;
+    --home-border: #e2e8f0;
+    --home-text: #0f172a;
+    --home-body: #334155;
+    --home-muted: #475569;
+    --home-accent: #0284c7;
+    --home-accent-2: #0284c7;
+    --home-gold: #0284c7;
+    --home-navy: #0f172a;
+    --home-radius: 12px;
+    --home-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
 }
 
 *,
@@ -32,38 +33,7 @@ body.home-page {
     line-height: 1.6;
 }
 
-/* Fixed dimmed maritime canvas (desktop + mobile; avoids background-attachment: fixed jitter) */
-body.home-page.home-bg-fixed {
-    position: relative;
-    min-height: 100vh;
-    overflow-x: hidden;
-    background: transparent;
-    background-attachment: scroll;
-}
-
-body.home-page.home-bg-fixed::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    background-image:
-        linear-gradient(
-            180deg,
-            rgba(10, 16, 30, 0.85) 0%,
-            rgba(10, 16, 30, 0.78) 50%,
-            rgba(10, 16, 30, 0.94) 100%
-        ),
-        url("/assets/images/digital-port-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    transform: translateZ(0);
-}
-
+/* Ambient canvas: see body.tvc-marketing-body in marketing-theme.css */
 body.home-page.home-bg-fixed #hero,
 body.home-page.home-bg-fixed .home-hero.mkt-hero {
     background-color: transparent;
@@ -82,16 +52,18 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
     justify-content: space-between;
     gap: 12px;
     flex-wrap: wrap;
-    padding: 18px 0 14px;
+    padding: 14px 0 12px;
     position: sticky;
     top: 0;
     z-index: 30;
-    backdrop-filter: blur(14px);
-    background: linear-gradient(180deg, rgba(5, 13, 24, 0.94), rgba(5, 13, 24, 0.72));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.85);
     margin: 0 -20px;
     padding-left: 20px;
     padding-right: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
 }
 
 .home-brand {
@@ -122,6 +94,18 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
     font-weight: 800;
     letter-spacing: 0.07em;
     text-transform: uppercase;
+    color: #0f172a;
+}
+
+.home-brand-name::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background: #0284c7;
+    vertical-align: super;
 }
 
 .home-brand-tag {
@@ -169,14 +153,14 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
 }
 
 .home-btn-primary {
-    background: linear-gradient(135deg, #1d8fe8, #0b3d91);
+    background: #0f172a;
     color: #fff;
-    box-shadow: 0 10px 24px rgba(11, 61, 145, 0.35);
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
 }
 
 .home-btn-secondary {
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--home-text);
+    background: #ffffff;
+    color: var(--home-navy);
     border-color: var(--home-border);
 }
 
@@ -221,13 +205,14 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
     line-height: 1.02;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    color: var(--home-text);
 }
 
 .home-hero-tagline {
     margin: 0 0 16px;
     font-size: clamp(1.1rem, 2.4vw, 1.45rem);
     line-height: 1.35;
-    color: #dbeafe;
+    color: var(--home-body, #334155);
     font-weight: 600;
 }
 
@@ -235,9 +220,9 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
     margin: 0 0 18px;
     padding: 14px 16px;
     border-left: 3px solid var(--home-gold);
-    background: rgba(201, 162, 39, 0.08);
+    background: rgba(2, 132, 199, 0.06);
     border-radius: 0 12px 12px 0;
-    color: #e2e8f0;
+    color: var(--home-body, #334155);
     font-size: 0.98rem;
     font-style: italic;
 }
@@ -284,7 +269,7 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
 .home-topic-list strong {
     display: block;
     margin-bottom: 6px;
-    color: #fff;
+    color: var(--home-text);
     font-size: 0.95rem;
 }
 
