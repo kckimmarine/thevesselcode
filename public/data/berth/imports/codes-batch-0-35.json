@@ -1,0 +1,573 @@
+{
+  "source": "berthmarine.com",
+  "category_slug": "codes-batch-0-35",
+  "impa_codes": [
+    "000159",
+    "000161",
+    "000165",
+    "000166",
+    "000169",
+    "000170",
+    "000181",
+    "000183",
+    "000184",
+    "000187",
+    "000189",
+    "000191",
+    "000201",
+    "000203",
+    "000206",
+    "000211",
+    "000215",
+    "000219",
+    "000223",
+    "000227",
+    "000231",
+    "000251",
+    "000261",
+    "000263",
+    "000265",
+    "000271",
+    "000273",
+    "000275",
+    "000277",
+    "000279",
+    "000301",
+    "000303",
+    "000306",
+    "000311",
+    "000315"
+  ],
+  "category_name": "IMPA code list",
+  "scraped_at": "2026-09-14T11:34:42.034Z",
+  "item_count": 35,
+  "unique_plates": 31,
+  "items": [
+    {
+      "impa_code": "000159",
+      "item_name": "BEANS STRING, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000159.jpg",
+      "plate_key": "000159",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000159/"
+    },
+    {
+      "impa_code": "000161",
+      "item_name": "PEAS GREEN , FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000161.jpg",
+      "plate_key": "000161",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000161/"
+    },
+    {
+      "impa_code": "000165",
+      "item_name": "PEPPER CHILLI GREEN , FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000165.jpg",
+      "plate_key": "000165",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000165/"
+    },
+    {
+      "impa_code": "000166",
+      "item_name": "IMPA 000166",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000166/",
+      "error": "HTTP 429 for https://www.berthmarine.com/product/impa-code-000166/",
+      "skipped": true
+    },
+    {
+      "impa_code": "000169",
+      "item_name": "PEPPER BELL GREEN , FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000169.jpg",
+      "plate_key": "000169",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000169/"
+    },
+    {
+      "impa_code": "000170",
+      "item_name": "PEPPER BELL RED , FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000170.jpg",
+      "plate_key": "000170",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000170/"
+    },
+    {
+      "impa_code": "000181",
+      "item_name": "CABBAGE, CHINESE CABBAGE, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000181.jpg",
+      "plate_key": "000181",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000181/"
+    },
+    {
+      "impa_code": "000183",
+      "item_name": "CABBAGE, WHITE HARD CABBAGE, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000183.jpg",
+      "plate_key": "000183",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000183/"
+    },
+    {
+      "impa_code": "000184",
+      "item_name": "CABBAGE RED, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000184.jpg",
+      "plate_key": "000184",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000184/"
+    },
+    {
+      "impa_code": "000187",
+      "item_name": "IMPA 000187",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000187/",
+      "error": "HTTP 429 for https://www.berthmarine.com/product/impa-code-000187/",
+      "skipped": true
+    },
+    {
+      "impa_code": "000189",
+      "item_name": "PAC CHOI , FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000189.jpg",
+      "plate_key": "000189",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000189/"
+    },
+    {
+      "impa_code": "000191",
+      "item_name": "BEETROOT TOPPED, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000191.jpg",
+      "plate_key": "000191",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000191/"
+    },
+    {
+      "impa_code": "000201",
+      "item_name": "SPINACH, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000201-1.jpg",
+      "plate_key": "000201-1",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000201/"
+    },
+    {
+      "impa_code": "000203",
+      "item_name": "BASIL, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000203-1.jpg",
+      "plate_key": "000203-1",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000203/"
+    },
+    {
+      "impa_code": "000206",
+      "item_name": "LETTUCE SALAD, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000206-1.jpg",
+      "plate_key": "000206-1",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000206/"
+    },
+    {
+      "impa_code": "000211",
+      "item_name": "GARLAND CHRYSANTHEMUM, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000211-1.jpg",
+      "plate_key": "000211-1",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000211/"
+    },
+    {
+      "impa_code": "000215",
+      "item_name": "CELERY JAPANESE (MITSUBA), FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000215-1.jpg",
+      "plate_key": "000215-1",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000215/"
+    },
+    {
+      "impa_code": "000219",
+      "item_name": "DILL, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000219-1.jpg",
+      "plate_key": "000219-1",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000219/"
+    },
+    {
+      "impa_code": "000223",
+      "item_name": "MINT LEAF, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000223-1.jpg",
+      "plate_key": "000223-1",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000223/"
+    },
+    {
+      "impa_code": "000227",
+      "item_name": "ROSEMARY, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000227-1.jpg",
+      "plate_key": "000227-1",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000227/"
+    },
+    {
+      "impa_code": "000231",
+      "item_name": "IMPA 000231",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000231/",
+      "error": "HTTP 429 for https://www.berthmarine.com/product/impa-code-000231/",
+      "skipped": true
+    },
+    {
+      "impa_code": "000251",
+      "item_name": "BAMBOO SHOOT, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000251.jpg",
+      "plate_key": "000251",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000251/"
+    },
+    {
+      "impa_code": "000261",
+      "item_name": "MUSHROOM, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000261.jpg",
+      "plate_key": "000261",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000261/"
+    },
+    {
+      "impa_code": "000263",
+      "item_name": "MUSHROOM, (ENOKI_TAKE), FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000263.jpg",
+      "plate_key": "000263",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000263/"
+    },
+    {
+      "impa_code": "000265",
+      "item_name": "MUSHROOM, DARK ( SHIITAKE ), FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000265.jpg",
+      "plate_key": "000265",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000265/"
+    },
+    {
+      "impa_code": "000271",
+      "item_name": "ASPARAGUS GREEN, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000271.jpg",
+      "plate_key": "000271",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000271/"
+    },
+    {
+      "impa_code": "000273",
+      "item_name": "BROCCOLI, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000273.jpg",
+      "plate_key": "000273",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000273/"
+    },
+    {
+      "impa_code": "000275",
+      "item_name": "CAULIFLOWER TRIMMED, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000275.jpg",
+      "plate_key": "000275",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000275/"
+    },
+    {
+      "impa_code": "000277",
+      "item_name": "CHIVES STEM, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000277.jpg",
+      "plate_key": "000277",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000277/"
+    },
+    {
+      "impa_code": "000279",
+      "item_name": "LEEK, FRESH - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000279.jpg",
+      "plate_key": "000279",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000279/"
+    },
+    {
+      "impa_code": "000301",
+      "item_name": "POTATO FRENCH FRY CRINKLE, , QUICK FROZEN - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000301-1.jpg",
+      "plate_key": "000301-1",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000301/"
+    },
+    {
+      "impa_code": "000303",
+      "item_name": "IMPA 000303",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000303/",
+      "error": "HTTP 429 for https://www.berthmarine.com/product/impa-code-000303/",
+      "skipped": true
+    },
+    {
+      "impa_code": "000306",
+      "item_name": "CARROT CHATEAU CUT , QUICK FROZEN - KG",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000306-1.jpg",
+      "plate_key": "000306-1",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000306/"
+    },
+    {
+      "impa_code": "000311",
+      "item_name": "CHINESE WATER CHESTNUT CAN, (567 GRM) - TIN",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000311-1.jpg",
+      "plate_key": "000311-1",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000311/"
+    },
+    {
+      "impa_code": "000315",
+      "item_name": "MIXED VEGETABLE CAN, (425 GRM) - TIN",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000315-1.jpg",
+      "plate_key": "000315-1",
+      "category": "00. Provisions",
+      "product_url": "https://www.berthmarine.com/product/impa-code-000315/"
+    }
+  ],
+  "plates": [
+    {
+      "plate_key": "000159",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000159.jpg",
+      "impa_codes": [
+        "000159"
+      ],
+      "local_webp": "public/data/plates/berth-000159.webp"
+    },
+    {
+      "plate_key": "000161",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000161.jpg",
+      "impa_codes": [
+        "000161"
+      ],
+      "local_webp": "public/data/plates/berth-000161.webp"
+    },
+    {
+      "plate_key": "000165",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000165.jpg",
+      "impa_codes": [
+        "000165"
+      ],
+      "local_webp": "public/data/plates/berth-000165.webp"
+    },
+    {
+      "plate_key": "000169",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000169.jpg",
+      "impa_codes": [
+        "000169"
+      ],
+      "local_webp": "public/data/plates/berth-000169.webp"
+    },
+    {
+      "plate_key": "000170",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000170.jpg",
+      "impa_codes": [
+        "000170"
+      ],
+      "local_webp": "public/data/plates/berth-000170.webp"
+    },
+    {
+      "plate_key": "000181",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000181.jpg",
+      "impa_codes": [
+        "000181"
+      ],
+      "local_webp": "public/data/plates/berth-000181.webp"
+    },
+    {
+      "plate_key": "000183",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000183.jpg",
+      "impa_codes": [
+        "000183"
+      ],
+      "local_webp": "public/data/plates/berth-000183.webp"
+    },
+    {
+      "plate_key": "000184",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000184.jpg",
+      "impa_codes": [
+        "000184"
+      ],
+      "local_webp": "public/data/plates/berth-000184.webp"
+    },
+    {
+      "plate_key": "000189",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000189.jpg",
+      "impa_codes": [
+        "000189"
+      ],
+      "local_webp": "public/data/plates/berth-000189.webp"
+    },
+    {
+      "plate_key": "000191",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000191.jpg",
+      "impa_codes": [
+        "000191"
+      ],
+      "local_webp": "public/data/plates/berth-000191.webp"
+    },
+    {
+      "plate_key": "000201-1",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000201-1.jpg",
+      "impa_codes": [
+        "000201"
+      ],
+      "local_webp": "public/data/plates/berth-000201-1.webp"
+    },
+    {
+      "plate_key": "000203-1",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000203-1.jpg",
+      "impa_codes": [
+        "000203"
+      ],
+      "local_webp": "public/data/plates/berth-000203-1.webp"
+    },
+    {
+      "plate_key": "000206-1",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000206-1.jpg",
+      "impa_codes": [
+        "000206"
+      ],
+      "local_webp": "public/data/plates/berth-000206-1.webp"
+    },
+    {
+      "plate_key": "000211-1",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000211-1.jpg",
+      "impa_codes": [
+        "000211"
+      ],
+      "local_webp": "public/data/plates/berth-000211-1.webp"
+    },
+    {
+      "plate_key": "000215-1",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000215-1.jpg",
+      "impa_codes": [
+        "000215"
+      ],
+      "local_webp": "public/data/plates/berth-000215-1.webp"
+    },
+    {
+      "plate_key": "000219-1",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000219-1.jpg",
+      "impa_codes": [
+        "000219"
+      ],
+      "local_webp": "public/data/plates/berth-000219-1.webp"
+    },
+    {
+      "plate_key": "000223-1",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000223-1.jpg",
+      "impa_codes": [
+        "000223"
+      ],
+      "local_webp": "public/data/plates/berth-000223-1.webp"
+    },
+    {
+      "plate_key": "000227-1",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000227-1.jpg",
+      "impa_codes": [
+        "000227"
+      ],
+      "local_webp": "public/data/plates/berth-000227-1.webp"
+    },
+    {
+      "plate_key": "000251",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000251.jpg",
+      "impa_codes": [
+        "000251"
+      ],
+      "local_webp": "public/data/plates/berth-000251.webp"
+    },
+    {
+      "plate_key": "000261",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000261.jpg",
+      "impa_codes": [
+        "000261"
+      ],
+      "local_webp": "public/data/plates/berth-000261.webp"
+    },
+    {
+      "plate_key": "000263",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000263.jpg",
+      "impa_codes": [
+        "000263"
+      ],
+      "local_webp": "public/data/plates/berth-000263.webp"
+    },
+    {
+      "plate_key": "000265",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000265.jpg",
+      "impa_codes": [
+        "000265"
+      ],
+      "local_webp": "public/data/plates/berth-000265.webp"
+    },
+    {
+      "plate_key": "000271",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000271.jpg",
+      "impa_codes": [
+        "000271"
+      ],
+      "local_webp": "public/data/plates/berth-000271.webp"
+    },
+    {
+      "plate_key": "000273",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000273.jpg",
+      "impa_codes": [
+        "000273"
+      ],
+      "local_webp": "public/data/plates/berth-000273.webp"
+    },
+    {
+      "plate_key": "000275",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000275.jpg",
+      "impa_codes": [
+        "000275"
+      ],
+      "local_webp": "public/data/plates/berth-000275.webp"
+    },
+    {
+      "plate_key": "000277",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000277.jpg",
+      "impa_codes": [
+        "000277"
+      ],
+      "local_webp": "public/data/plates/berth-000277.webp"
+    },
+    {
+      "plate_key": "000279",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000279.jpg",
+      "impa_codes": [
+        "000279"
+      ],
+      "local_webp": "public/data/plates/berth-000279.webp"
+    },
+    {
+      "plate_key": "000301-1",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000301-1.jpg",
+      "impa_codes": [
+        "000301"
+      ],
+      "local_webp": "public/data/plates/berth-000301-1.webp"
+    },
+    {
+      "plate_key": "000306-1",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000306-1.jpg",
+      "impa_codes": [
+        "000306"
+      ],
+      "local_webp": "public/data/plates/berth-000306-1.webp"
+    },
+    {
+      "plate_key": "000311-1",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000311-1.jpg",
+      "impa_codes": [
+        "000311"
+      ],
+      "local_webp": "public/data/plates/berth-000311-1.webp"
+    },
+    {
+      "plate_key": "000315-1",
+      "image_url": "https://www.berthmarine.com/wp-content/uploads/2022/05/000315-1.jpg",
+      "impa_codes": [
+        "000315"
+      ],
+      "local_webp": "public/data/plates/berth-000315-1.webp"
+    }
+  ]
+}

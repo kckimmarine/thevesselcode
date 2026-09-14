@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Merge public/data/chapters/*.json + data/impa-catalog.json → public/data/impa-full.json
- * Run before Vercel static build so /toolkit can load one bundled catalog.
+ * Overlay Berth Marine imports (enrich existing + insert new codes).
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -11,6 +11,7 @@ import {
   normalizeImpaCode,
   rowCode,
 } from './lib/impa-quality-gate.mjs';
+import { upsertBerthIntoCatalog } from './lib/berth-merge.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -52,6 +53,9 @@ function main() {
     byCode.set(code, row);
   }
 
+  const smCount = byCode.size;
+  const berthStats = upsertBerthIntoCatalog(byCode, ROOT);
+
   const merged = [...byCode.values()];
   const { kept, rejected } = filterQualityItems(merged);
   if (rejected.length) {
@@ -66,11 +70,25 @@ function main() {
       generated_at: new Date().toISOString(),
       chapters,
       count: items.length,
+      merge_stats: {
+        space_marine_baseline: smCount,
+        berth_rows_ingested: berthStats.berthRows,
+        berth_added: berthStats.added,
+        berth_enriched: berthStats.enriched,
+        berth_skipped_invalid: berthStats.skippedInvalid,
+        quality_rejected: rejected.length,
+      },
       items,
     }, null, 2) + '\n',
     'utf8',
   );
-  console.log(`Merged ${items.length} catalog items (${chapters.length} chapters) → public/data/impa-full.json`);
+  console.log(
+    `Merged ${items.length} catalog items (${chapters.length} SM chapters) → public/data/impa-full.json`,
+  );
+  console.log(
+    `Berth overlay: +${berthStats.added} new, ${berthStats.enriched} enriched `
+    + `(SM baseline ${smCount}, berth rows ${berthStats.berthRows})`,
+  );
 }
 
 main();
