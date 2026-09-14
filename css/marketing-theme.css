@@ -258,6 +258,18 @@ body.mkt-sm-page .mkt-site-wrap {
     line-height: 1.4;
 }
 
+body.mkt-lang-ko .sm-hero-en {
+    margin-top: 6px;
+}
+
+body.mkt-lang-en .sm-hero-ko {
+    font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+}
+
+body.mkt-lang-en .sm-hero-en {
+    display: none;
+}
+
 .sm-hero-lead strong {
     color: #e2e8f0;
 }

@@ -11,7 +11,8 @@
 | 모드 | 사용자 | 연결성 | 핵심 역할 |
 |------|--------|--------|-----------|
 | **SM Mode** | 선주·선박관리사·공무감독 (`abc shipping`, `hq`) | **온라인** (웹/클라우드 HQ) | 다선박 관제, 승인, RFQ→Supplier, fleet ZIP Import |
-| **Vessel · Captain Hub** | 선장 (`captain`) | **온라인 + 오프라인** | 기관·갑판 ZIP 취합, SM 송수신, VSAT 시 온라인 동기화 옵션 |
+| **Vessel · Captain Hub** | 선장 (`captain`) | **온라인 + 오프라인** | Hub 취합, SM 송수신, VSAT·클라우드 또는 ZIP |
+| **육상 HQ / SM** | `hq`, `abc shipping` | **온라인 + 오프라인** | 웹·클라우드 관제 + 선박 ZIP Import/Export 병행 |
 | **Vessel · Deck / Engine** | C/O, C/E (`officer`/`co`, `engineer`/`ce`) | **오프라인 완결** | PMS·SPARE·Defect·Permit, 선내 IndexedDB, ZIP Export |
 | **Supplier Mode** | 부품사·수리 협력사 | **온라인** | RFQ Inbox, 견적, Delivery/Repair, Invoice |
 
@@ -70,9 +71,10 @@
 
 | # | 항목 | 담당 | 상태 |
 |---|------|------|------|
-| 1 | `/sm` 마케팅 3모드 섹션 | Cursor | 진행 |
-| 2 | `/` 홈 출시 메시지·3이해관계자 | Cursor | 진행 |
-| 3 | `/toolkit` PLG·15k 메타 통일 | Cursor | 진행 |
+| 1 | `/sm` 마케팅 3모드 섹션 | Cursor | 완료 |
+| 2 | `/` 홈 KO/EN 토글 + 반응형 | Cursor | 완료 |
+| 3 | `/toolkit` PLG·15k + i18n hero | Cursor | 완료 |
+| 3b | 유튜브 자동화 `npm run marketing:video-assets` | Cursor | 완료 |
 | 4 | Q5 유튜브 업로드 | 창업자 | 대기 |
 | 5 | 지원서 최종 제출 | 창업자+Gemini | 대기 |
 | 6 | PR #118 등 마케팅 → `master` merge | 창업자 | 대기 |

@@ -89,11 +89,122 @@ body.mkt-toolkit-page #marketing-footer .home-footer {
     border-top-color: rgba(255, 255, 255, 0.08);
 }
 
+.mkt-topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.mkt-lang-switch {
+    display: inline-flex;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.mkt-lang-btn {
+    font: inherit;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 6px 10px;
+    border: none;
+    background: transparent;
+    color: #94a3b8;
+    cursor: pointer;
+}
+
+.mkt-lang-btn.is-active {
+    background: rgba(56, 189, 248, 0.2);
+    color: #38bdf8;
+}
+
+.mkt-nav-toggle {
+    display: none;
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: rgba(15, 23, 42, 0.8);
+    color: #e2e8f0;
+    cursor: pointer;
+}
+
+.home-topbar.mkt-topbar {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+@media (max-width: 900px) {
+    .mkt-nav-toggle {
+        display: inline-flex;
+    }
+
+    #marketing-topbar .home-topnav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        padding: 8px 0 12px;
+        order: 10;
+    }
+
+    #marketing-topbar .home-topnav.is-open {
+        display: flex;
+    }
+
+    #marketing-topbar .home-topnav a {
+        padding: 10px 12px;
+        border-radius: 8px;
+        background: rgba(15, 23, 42, 0.5);
+    }
+
+    .home-brand {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .home-brand-tag {
+        display: none;
+    }
+}
+
 @media (max-width: 767px) {
     #marketing-footer .home-footer {
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
+    }
+
+    .home-launch-band,
+    .toolkit-plg-band {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .home-launch-band .home-btn,
+    .toolkit-plg-band .home-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-hero.mkt-hero {
+        flex-direction: column;
+    }
+
+    .home-hero-actions {
+        flex-direction: column;
+    }
+
+    .home-hero-actions .home-btn {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
     }
 
     /* Toolkit: reserve space for shared marketing footer below catalog workspace */
