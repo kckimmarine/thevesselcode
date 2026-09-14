@@ -29,7 +29,8 @@ if tmux_cmd has-session -t "=$SESSION" 2>/dev/null; then
   exit 0
 fi
 
-CMD="node scripts/batch-berth-plates.mjs 2>&1 | tee -a $LOG_FILE"
+# Logging: batch-berth-plates.mjs appends to $LOG_FILE via logLine(); avoid tee (duplicate lines).
+CMD="node scripts/batch-berth-plates.mjs"
 tmux_cmd new-session -d -s "$SESSION" -c "$ROOT" -- "${SHELL:-bash}" -lc "$CMD"
 
 echo "Started plate backfill in tmux session '$SESSION'."
