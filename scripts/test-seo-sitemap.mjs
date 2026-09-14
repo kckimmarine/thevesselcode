@@ -45,8 +45,8 @@ check(`${TEST_CODE} exists in seo index`, !!item?.name, item?.name || 'missing')
 const html = impaSeo.buildStoreItemHtml(item);
 check('default seo origin is www', impaSeo.storeSeoOrigin() === CANONICAL_ORIGIN);
 const escName = item.name.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-check('html title format', html.includes(`<title>IMPA CODE ${TEST_CODE} - ${escName} | THE VESSEL CODE Maritime Catalog</title>`));
-check('html h1 format', html.includes(`<h1>IMPA CODE ${TEST_CODE} - ${escName}</h1>`));
+check('html title format', html.includes(`IMPA CODE ${TEST_CODE} - ${escName} | Technical Specs &amp; Maritime Catalog | THE VESSEL CODE</title>`));
+check('html h1 format', html.includes(`<h1>IMPA CODE ${TEST_CODE}: ${escName}</h1>`));
 check('html no duplicate microdata product', !html.includes('itemtype="https://schema.org/Product"'));
 check('html json-ld seller', html.includes('"seller"'));
 check('html json-ld validFrom', html.includes('"validFrom"'));
@@ -61,7 +61,7 @@ check('html json-ld offer price', html.includes('"price":"0.00"') || html.includ
 check('html json-ld offer currency', html.includes('"priceCurrency":"USD"') || html.includes('"priceCurrency": "USD"'));
 check('html json-ld offer availability', html.includes('schema.org/InStock'));
 check('html json-ld invoice price type', html.includes('schema.org/InvoicePrice'));
-check('html json-ld marine category', html.includes('Marine Stores / Ship Equipment'));
+check('html json-ld marine category', html.includes('"Marine Stores"'));
 check('html json-ld product', html.includes('"@type":"Product"') || html.includes('"@type": "Product"'));
 check('html json-ld techarticle', html.includes('"@type":"TechArticle"') || html.includes('"@type": "TechArticle"'));
 check('html canonical uses www', html.includes(`<link rel="canonical" href="${CANONICAL_ORIGIN}/store/${TEST_CODE}">`));
@@ -72,7 +72,11 @@ check('html rating row', html.includes('<th scope="row">Rating</th>'));
 check('html material row', html.includes('<th scope="row">Material</th>'));
 check('html standard unit row', html.includes('<th scope="row">Standard Unit</th>'));
 check('html toolkit cta', html.includes('Open Interactive Maritime Toolkit'));
-check('html saas hook', html.includes('Vessel ROB Tracking &amp; 1-Click Requisition available on'));
+check('html tvc-sm conversion banner', html.includes('TVC-SM NEXT-GEN MARITIME OS'));
+check('html fleet pilot cta', html.includes('/contact-us?inquiry=tvc-sm-demo'));
+check('html related items links', html.includes('class="related-items"') && html.includes(`href="https://www.thevesselcode.com/store/`));
+check('html plate img dimensions', html.includes('width="560"') && html.includes('height="420"'));
+check('html preconnect', html.includes('rel="preconnect"'));
 
 const handler = require('../api/store/[code].js');
 const mockRes = {

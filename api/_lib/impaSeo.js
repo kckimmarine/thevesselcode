@@ -79,7 +79,37 @@ function getItemByCode(code) {
     return expandCompactRow(raw, normalized);
 }
 
-const SEO_PRODUCT_CATEGORY = 'Marine Stores / Ship Equipment';
+/** Same-chapter siblings for internal linking (crawler equity, anti-orphan). */
+function getRelatedItemsByChapter(impaCode, limit = 6) {
+    const normalized = normalizeCode(impaCode);
+    const index = loadIndex();
+    const current = index.items?.[normalized];
+    if (!current) return [];
+    const chapter = String(current.g || normalized.slice(0, 2)).trim();
+    const codes = Object.keys(index.items)
+        .filter((c) => {
+            if (c === normalized) return false;
+            const row = index.items[c];
+            const ch = String(row?.g || c.slice(0, 2)).trim();
+            return ch === chapter;
+        })
+        .sort((a, b) => {
+            const da = Math.abs(Number(a) - Number(normalized));
+            const db = Math.abs(Number(b) - Number(normalized));
+            if (da !== db) return da - db;
+            return a.localeCompare(b);
+        });
+    return codes
+        .slice(0, limit)
+        .map((c) => expandCompactRow(index.items[c], c))
+        .filter(Boolean);
+}
+
+const SEO_PRODUCT_CATEGORY = 'Marine Stores';
+
+/** Default catalog plate dimensions (CLS guard when intrinsic size unknown). */
+const PLATE_IMG_WIDTH = 560;
+const PLATE_IMG_HEIGHT = 420;
 
 function derivePlateAssetUrl(item) {
     const plateId = String(item?.plate_id || '').trim();
@@ -133,11 +163,12 @@ function buildOgTitle(item) {
 
 function buildPageTitle(item) {
     const name = item.name || 'Marine Store Item';
-    return `IMPA CODE ${item.impa_code} - ${name} | THE VESSEL CODE Maritime Catalog`;
+    return `IMPA CODE ${item.impa_code} - ${name} | Technical Specs & Maritime Catalog | THE VESSEL CODE`;
 }
 
 function buildPrimaryHeading(item) {
-    return buildOgTitle(item);
+    const name = item.name || 'Marine Store Item';
+    return `IMPA CODE ${item.impa_code}: ${name}`;
 }
 
 function buildOgDescription(item) {
@@ -290,6 +321,44 @@ function buildJsonLd(item, pageUrl, imageUrl) {
     ];
 }
 
+function buildRelatedItemsSectionHtml(item, related, base) {
+    if (!related?.length) return '';
+    const chapter = String(item.chapter || item.impa_code.slice(0, 2)).trim();
+    const chapterLabel = item.category || CHAPTER_CATEGORY[chapter] || `Chapter ${chapter}`;
+    const list = related.map((rel) => {
+        const href = `${base}/store/${rel.impa_code}`;
+        const name = rel.name || 'View technical specs';
+        return `<li><a href="${escapeHtml(href)}">IMPA ${escapeHtml(rel.impa_code)}: ${escapeHtml(name)}</a></li>`;
+    }).join('\n          ');
+    return `
+      <section class="related-items" aria-labelledby="related-heading">
+        <h2 id="related-heading">Related Items in ${escapeHtml(chapterLabel)}</h2>
+        <ul class="related-list">
+          ${list}
+        </ul>
+        <p class="related-toolkit"><a href="${escapeHtml(`${base}/toolkit`)}">Maritime Toolkit — search all IMPA codes</a></p>
+      </section>`;
+}
+
+function buildTvcSmConversionBannerHtml(base) {
+    const demoUrl = `${base}/contact-us?inquiry=tvc-sm-demo`;
+    const smUrl = `${base}/sm`;
+    return `
+      <section class="tvc-sm-banner" aria-label="TVC-SM ship management platform">
+        <p class="tvc-sm-badge">&#9875; TVC-SM NEXT-GEN MARITIME OS</p>
+        <h2 class="tvc-sm-title">Tired of managing vessel spares &amp; stores in disconnected Excels?</h2>
+        <p class="tvc-sm-desc">TVC-SM connects vessel ROB tracking, PMS maintenance cycles, and 1-Click superintendent requisitions in one lightweight platform.</p>
+        <ul class="tvc-sm-locks" aria-label="TVC-SM fleet features">
+          <li><span class="lock-icon" aria-hidden="true">&#128274;</span> Live vessel ROB tracking &amp; automatic stock deduction</li>
+          <li><span class="lock-icon" aria-hidden="true">&#128274;</span> 1-Click superintendent requisitions &amp; shore billing</li>
+        </ul>
+        <div class="tvc-sm-actions">
+          <a class="btn btn-cta" href="${escapeHtml(demoUrl)}">&#128640; Request Free 30-Day Fleet Pilot / Demo</a>
+          <a class="btn btn-secondary" href="${escapeHtml(smUrl)}">Explore TVC-SM</a>
+        </div>
+      </section>`;
+}
+
 function buildStoreItemHtml(item, { origin } = {}) {
     const base = (origin || storeSeoOrigin()).replace(/\/$/, '');
     const pageUrl = `${base}/store/${item.impa_code}`;
@@ -306,12 +375,16 @@ function buildStoreItemHtml(item, { origin } = {}) {
         `<tr><th scope="row">${escapeHtml(label)}</th><td>${escapeHtml(value)}</td></tr>`
     )).join('');
     const jsonLd = JSON.stringify(buildJsonLd(item, pageUrl, imageUrl || undefined));
+    const related = getRelatedItemsByChapter(item.impa_code, 6);
+    const relatedHtml = buildRelatedItemsSectionHtml(item, related, base);
+    const tvcSmBannerHtml = buildTvcSmConversionBannerHtml(base);
 
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="${escapeHtml(base)}">
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${escapeHtml(pageUrl)}">
@@ -338,7 +411,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
     .grid { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); }
     @media (min-width: 768px) { .grid { grid-template-columns: 280px minmax(0, 1fr); align-items: start; } }
     .plate { background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 12px; min-height: 220px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-    .plate img { width: 100%; height: auto; display: block; }
+    .plate img { width: 100%; height: auto; display: block; aspect-ratio: 4 / 3; object-fit: contain; }
     .plate-fallback { padding: 24px; text-align: center; color: #64748b; font-size: 14px; }
     table { width: 100%; border-collapse: collapse; font-size: 14px; }
     th, td { border-bottom: 1px solid #e2e8f0; padding: 10px 12px; text-align: left; vertical-align: top; }
@@ -348,8 +421,22 @@ function buildStoreItemHtml(item, { origin } = {}) {
     .btn-primary { background: #0b3d91; color: #fff; }
     .btn-secondary { background: #fff; color: #0b3d91; border: 1px solid #bfd0ea; }
     .footer { margin-top: 18px; color: #64748b; font-size: 13px; }
-    .conversion-hook { margin-top: 20px; padding: 14px 16px; border-radius: 12px; background: #eef6ff; border: 1px solid #bfd0ea; color: #0b3d91; font-size: 14px; line-height: 1.5; }
-    .conversion-hook a { color: #0b3d91; font-weight: 700; }
+    .tvc-sm-banner { margin-top: 24px; padding: 20px 18px; border-radius: 14px; background: linear-gradient(135deg, #0b3d91 0%, #0e7490 100%); color: #f8fafc; box-shadow: 0 12px 32px rgba(11, 61, 145, 0.25); }
+    .tvc-sm-badge { margin: 0 0 10px; font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #bae6fd; }
+    .tvc-sm-title { margin: 0 0 10px; font-size: clamp(1.1rem, 2.4vw, 1.45rem); line-height: 1.25; color: #fff; }
+    .tvc-sm-desc { margin: 0 0 14px; font-size: 14px; line-height: 1.55; color: #e2e8f0; }
+    .tvc-sm-locks { margin: 0 0 16px; padding-left: 1.1rem; font-size: 13px; line-height: 1.5; color: #cbd5e1; }
+    .tvc-sm-locks .lock-icon { margin-right: 6px; }
+    .tvc-sm-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn-cta { background: #fbbf24; color: #0f172a; border: none; }
+    .btn-cta:hover { filter: brightness(1.05); }
+    .related-items { margin-top: 28px; padding-top: 22px; border-top: 1px solid #e2e8f0; }
+    .related-items h2 { margin: 0 0 12px; font-size: 1.05rem; color: #0f172a; }
+    .related-list { margin: 0 0 12px; padding-left: 1.2rem; font-size: 14px; line-height: 1.55; }
+    .related-list a { color: #0b3d91; font-weight: 600; text-decoration: none; }
+    .related-list a:hover { text-decoration: underline; }
+    .related-toolkit { margin: 0; font-size: 13px; }
+    .related-toolkit a { color: #475569; font-weight: 600; }
   </style>
 </head>
 <body>
@@ -361,7 +448,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
       <div class="grid">
         <section class="plate" aria-label="Catalog plate">
           ${imageUrl
-        ? `<img src="${escapeHtml(plateUrl)}" alt="IMPA ${escapeHtml(item.impa_code)} catalog plate" loading="lazy">`
+        ? `<img src="${escapeHtml(plateUrl)}" alt="IMPA ${escapeHtml(item.impa_code)} catalog plate" width="${PLATE_IMG_WIDTH}" height="${PLATE_IMG_HEIGHT}" loading="lazy" decoding="async">`
         : `<div class="plate-fallback">Catalog plate reference: ${escapeHtml(item.plate_id || 'Not available')}</div>`}
         </section>
         <section aria-label="Specifications">
@@ -370,11 +457,12 @@ function buildStoreItemHtml(item, { origin } = {}) {
           </table>
         </section>
       </div>
+      ${tvcSmBannerHtml}
       <div class="actions">
         <a class="btn btn-primary" href="${escapeHtml(toolkitUrl)}">Open Interactive Maritime Toolkit</a>
         <a class="btn btn-secondary" href="${escapeHtml(`${base}/toolkit`)}">Browse Full IMPA Catalog</a>
       </div>
-      <p class="conversion-hook">&#9875; Vessel ROB Tracking &amp; 1-Click Requisition available on <a href="${escapeHtml(`${base}/sm`)}">TVC-SM</a>.</p>
+      ${relatedHtml}
       <p class="footer">THE VESSEL CODE — offline-first PMS + SPICS and maritime toolkit for shipboard operations.</p>
     </article>
   </main>
@@ -415,6 +503,7 @@ module.exports = {
     expandCompactRow,
     loadIndex,
     getItemByCode,
+    getRelatedItemsByChapter,
     buildOgTitle,
     buildPageTitle,
     buildPrimaryHeading,
