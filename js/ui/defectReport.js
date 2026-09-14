@@ -2017,6 +2017,8 @@ const TVC_DefectReport = (function () {
                 </div>
                 ${fld('Outline of Defect', ta('outline_maintenance_request', ''), 'wr-maint-span-all wr-maint-grid-gap')}
                 ${fld('Estimated Cause of Defect', ta('estimated_cause', ''), 'wr-maint-span-all')}
+                ${fld('Damage Condition / Nature of Defect <span class="muted">(손상 상태)</span>', ta('damage_condition', ''), 'wr-maint-span-all')}
+                ${fld('Repair Method / Corrective Action <span class="muted">(수리 방법 — Permanent vs Temporary)</span>', ta('repair_method', ''), 'wr-maint-span-all')}
                 ${fld('Possible Effect to Other System', ta('possible_effect', ''), 'wr-maint-span-all')}
                 ${fld('Action Plan / Corrective Action', ta('action_taken', ''), 'wr-maint-span-all')}`;
 

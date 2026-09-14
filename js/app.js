@@ -1361,7 +1361,9 @@ const TVC_App = (function () {
     function rerenderCurrentTab() { (TAB_RENDERERS[state.currentTab] || renderMainMenu)(); }
 
     // ── Header / role UI ─────────────────────────────────────────────
-    const WINDOW_TITLE_BASE = 'TVC-SM — THE VESSEL CODE';
+    const WINDOW_TITLE_BASE = typeof TVC_PRODUCT_INFO !== 'undefined'
+        ? TVC_PRODUCT_INFO.VERSION_BADGE
+        : 'TVC-SM v2.5 (ClassNK Annex 9.1.3 Compliant)';
 
     function resolveWindowTitleSuffix(user) {
         if (!user) return '';
@@ -1496,6 +1498,14 @@ const TVC_App = (function () {
             setText('cmaxsShipCode', 'SM');
             setText('cmaxsShipDelivery', '—');
         }
+        syncProductVersionBadge();
+    }
+
+    function syncProductVersionBadge() {
+        const badge = typeof TVC_PRODUCT_INFO !== 'undefined' ? TVC_PRODUCT_INFO.VERSION_BADGE : 'TVC-SM v2.5 (ClassNK Annex 9.1.3 Compliant)';
+        setText('appProductVersionBadge', badge);
+        const nameEl = document.getElementById('appProductName');
+        if (nameEl && typeof TVC_PRODUCT_INFO !== 'undefined') nameEl.textContent = TVC_PRODUCT_INFO.NAME;
     }
 
     function setText(id, txt) { const el = document.getElementById(id); if (el) el.textContent = txt; }
@@ -1528,6 +1538,7 @@ const TVC_App = (function () {
         const activeTab = state.currentTab || 'menu';
         document.querySelectorAll('.tab-pane').forEach(p => p.classList.add('hidden'));
         document.getElementById('tab-' + activeTab)?.classList.remove('hidden');
+        syncProductVersionBadge();
     }
 
     function daysUntil(dateStr) {
@@ -7175,8 +7186,11 @@ const TVC_App = (function () {
             : [];
 
         let html = '';
+        const productBadge = typeof TVC_PRODUCT_INFO !== 'undefined'
+            ? `<p class="menu-product-badge" id="menuProductBadge">${esc(TVC_PRODUCT_INFO.VERSION_BADGE)}</p>`
+            : '';
         try {
-            html += renderSectionCard('PMS Work Flow', renderMenuFlowPanel(opsCols, f), {
+            html += renderSectionCard('PMS Work Flow', `${productBadge}${renderMenuFlowPanel(opsCols, f)}`, {
                 className: 'tvc-section-pms-flow',
             });
         } catch (e) {
@@ -11692,6 +11706,7 @@ const TVC_App = (function () {
             defectCleared: false,
             shipAttachments: [],
             companyAttachments: [],
+            dimensional_measurements: [],
             meStop: '0',
             meSpeedRed: '0',
             delayHours: '0',
@@ -12241,6 +12256,9 @@ const TVC_App = (function () {
         if (!wrStr(merged.pmsGroupNo)) {
             merged.pmsGroupNo = wrStr(hdr.pmsGroupNo) || wrStr(j?.group);
         }
+        merged.dimensional_measurements = TVC_WorkReport.normalizeMeasurements(
+            base.dimensional_measurements || rep.dimensional_measurements || []
+        );
         return merged;
     }
 
@@ -16398,6 +16416,7 @@ const TVC_App = (function () {
                     ${fld('Running Hrs after Last Maint.', fieldInp('rhAfterLastMaint', ''))}
                 </div>
                 ${fld('Outline of Maintenance', `<textarea class="wr-maint-textarea${forPrint || ro ? ' wr-ro' : ''}" data-wf="outline" rows="3"${forPrint || ro ? ' readonly' : ''}>${esc(wf('outline'))}</textarea>`, 'wr-maint-span-all wr-maint-grid-gap')}
+                ${typeof TVC_PmsClassNk !== 'undefined' ? TVC_PmsClassNk.renderMeasurementsSection(state._wrForm || {}, { ro, forPrint, open: !!state._wrMeasOpen }) : ''}
                 ${renderWrReportFooter({
                     rep,
                     ro,
@@ -16566,6 +16585,9 @@ const TVC_App = (function () {
         host.querySelectorAll('[data-wf]').forEach(el => {
             state._wrForm[el.dataset.wf] = el.type === 'checkbox' ? el.checked : el.value;
         });
+        if (typeof TVC_PmsClassNk !== 'undefined') {
+            TVC_PmsClassNk.captureMeasurements(host, state._wrForm);
+        }
     }
 
     async function onPostponeDateChange() {
@@ -17078,6 +17100,9 @@ const TVC_App = (function () {
         const user = await TVC_Auth.requirePermission(TVC_RBAC.Action.CREATE_DAILY_REPORT);
         if (!user) return;
         const form = { ...state._wrForm };
+        if (typeof TVC_WorkReport !== 'undefined' && TVC_WorkReport.normalizeMeasurements) {
+            form.dimensional_measurements = TVC_WorkReport.normalizeMeasurements(form.dimensional_measurements);
+        }
         const tab = state._wrTab;
         const existingRep = state._wrReportId ? state.reports.find(r => r.id === state._wrReportId) : null;
 

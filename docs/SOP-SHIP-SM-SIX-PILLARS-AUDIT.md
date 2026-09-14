@@ -101,6 +101,17 @@ npm run verify-all                   # license 빌드 artifact 필요 시 dist/l
 
 ---
 
+## ClassNK Annex 9.1.3 compliance (2026-09-14)
+
+| Rule | Implementation |
+| --- | --- |
+| An 1.3.2.1.f Measurements | Work Report `dimensional_measurements[]` (`item_name`, `design_val`, `tolerance_limit`, `measured_val`, `unit`) — UI `TVC_PmsClassNk` in `js/ui/pms.js`; **EXCEEDED** when measured &gt; limit |
+| An 1.3.2.1.g Damage / repair | Defect Report fields `damage_condition`, `repair_method` in `js/ui/defectReport.js` |
+| An 1.4.1 Software revision | `TVC_PRODUCT_INFO.VERSION_BADGE` — header `#appProductVersionBadge` + Menu PMS card |
+| Product brand | **TVC-SM** (unified Vessel + SM HQ) — `index.html` shell, `document.title` |
+
+---
+
 ## Universal machinery taxonomy (2026-09-14)
 
 | Layer | Path | Notes |
