@@ -5,7 +5,7 @@ const {
     assertCloudReadAuth,
     resolveQueryScope,
     fetchCloudStats,
-} = require('../../_lib/syncCloudQuery');
+} = require('../syncCloudQuery');
 
 async function handler(req, res) {
     if (req.method !== 'GET') {

@@ -1,17 +1,40 @@
 /* Marketing portal — readability, typography, PLG, toolkit tables */
 
 body.tvc-marketing-body {
-    background-color: #f1f5f9 !important;
-    color: #334155 !important;
+    background-color: #f8fafc !important;
+    color: #1e293b !important;
     line-height: 1.65;
     overflow-x: hidden;
 }
 
 body.tvc-marketing-body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
     background:
-        radial-gradient(circle at 12% 8%, rgba(2, 132, 199, 0.06) 0%, transparent 42%),
-        radial-gradient(circle at 88% 92%, rgba(15, 23, 42, 0.04) 0%, transparent 48%),
-        linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%) !important;
+        radial-gradient(circle at 80% 20%, rgba(2, 132, 199, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 10% 80%, rgba(15, 23, 42, 0.02) 0%, transparent 40%) !important;
+}
+
+body.tvc-marketing-body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.35;
+    background-image:
+        linear-gradient(rgba(15, 23, 42, 0.028) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 23, 42, 0.028) 1px, transparent 1px);
+    background-size: 24px 24px;
 }
 
 body.tvc-marketing-body h1,
@@ -20,7 +43,7 @@ body.tvc-marketing-body h3,
 body.tvc-marketing-body h4 {
     color: #0f172a;
     font-weight: 800;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
 }
 
 body.tvc-marketing-body p,
@@ -38,7 +61,7 @@ body.tvc-marketing-body .home-hero-copy h1,
 body.tvc-marketing-body #homeHeroTitle {
     color: #0f172a !important;
     font-weight: 800 !important;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.02em !important;
     line-height: 1.2 !important;
     text-transform: none;
 }
@@ -55,9 +78,16 @@ body.tvc-marketing-body #homeHeroTitle {
 }
 
 body.tvc-marketing-body .home-launch-eyebrow {
-    background: rgba(2, 132, 199, 0.1) !important;
+    background: rgba(2, 132, 199, 0.08) !important;
     color: #0284c7 !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
+    border: 1px solid rgba(2, 132, 199, 0.22) !important;
+}
+
+body.tvc-marketing-body .home-platform-badge {
+    color: #0284c7 !important;
+    font-weight: 600 !important;
+    background: rgba(2, 132, 199, 0.08) !important;
     border: 1px solid rgba(2, 132, 199, 0.22) !important;
 }
 
@@ -75,6 +105,7 @@ body.tvc-marketing-body .home-launch-eyebrow {
 body.tvc-marketing-body .tvc-card,
 body.tvc-marketing-body .platform-card,
 body.tvc-marketing-body .market-card,
+body.tvc-marketing-body .mkt-card,
 body.tvc-marketing-body .mkt-pricing-card,
 body.tvc-marketing-body .mkt-glass-card,
 body.tvc-marketing-body .home-card,
@@ -89,9 +120,38 @@ body.tvc-marketing-body .mkt-intel-card {
     border: 1px solid #cbd5e1 !important;
     border-radius: 12px;
     box-shadow:
-        0 4px 6px -1px rgba(15, 23, 42, 0.05),
-        0 2px 4px -2px rgba(15, 23, 42, 0.05);
+        0 4px 20px -2px rgba(15, 23, 42, 0.04),
+        0 2px 6px -1px rgba(15, 23, 42, 0.02);
     padding: 24px;
+}
+
+/* Precision SVG icon system (replaces raw emoji) */
+body.tvc-marketing-body .home-btn {
+    gap: 8px;
+    min-height: 44px;
+}
+
+body.tvc-marketing-body .mkt-btn-icon,
+body.tvc-marketing-body .mkt-feature-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    stroke: currentColor;
+    fill: none;
+}
+
+body.tvc-marketing-body .home-card-icon.mkt-icon-tile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    font-size: inherit;
+    margin-bottom: 10px;
+    padding: 6px;
+    border-radius: 8px;
+    background: rgba(2, 132, 199, 0.08);
+    color: #0284c7;
+    line-height: 0;
 }
 
 body.tvc-marketing-body .home-platform-mode {
@@ -174,10 +234,83 @@ body.tvc-marketing-body #marketing-topbar .home-topnav a[aria-current="page"] {
     color: #0284c7 !important;
 }
 
+/* ── Maritime brand emblem (replaces generic logo mark in marketing nav) ── */
+.mkt-brand-emblem {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #0f172a;
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
+}
+
+.mkt-brand-emblem-svg {
+    display: block;
+}
+
+/* ── Home hero: realistic vessel scrim ── */
+body.home-page.home-bg-fixed #hero.hero-realistic-canvas,
+body.home-page.home-bg-fixed .home-hero.mkt-hero.hero-realistic-canvas {
+    background-color: #0f172a;
+    background-image:
+        linear-gradient(
+            115deg,
+            rgba(15, 23, 42, 0.98) 0%,
+            rgba(15, 23, 42, 0.92) 42%,
+            rgba(2, 132, 199, 0.14) 100%
+        ),
+        radial-gradient(ellipse 90% 70% at 85% 35%, rgba(2, 132, 199, 0.22) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 50% at 12% 88%, rgba(148, 163, 184, 0.12) 0%, transparent 50%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-realistic-canvas .home-hero-copy h1,
+.hero-realistic-canvas #homeHeroTitle {
+    color: #f8fafc !important;
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+}
+
+.hero-realistic-canvas .home-hero-tagline,
+.hero-realistic-canvas .home-hero-copy .mkt-lead {
+    color: #e2e8f0 !important;
+}
+
+.hero-realistic-canvas .home-launch-eyebrow {
+    color: #7dd3fc !important;
+    background: rgba(2, 132, 199, 0.18) !important;
+    border-color: rgba(56, 189, 248, 0.35) !important;
+}
+
+.hero-realistic-canvas .home-btn-secondary {
+    background: rgba(255, 255, 255, 0.95) !important;
+    color: #0f172a !important;
+    border-color: #f8fafc !important;
+}
+
+@media (max-width: 767px) {
+    body.home-page.home-bg-fixed #hero.hero-realistic-canvas,
+    body.home-page.home-bg-fixed .home-hero.mkt-hero.hero-realistic-canvas {
+        background-position: 70% center;
+    }
+
+    .hero-realistic-canvas .home-hero-copy h1,
+    .hero-realistic-canvas #homeHeroTitle {
+        font-size: clamp(1.65rem, 7vw, 2rem);
+    }
+}
+
 @media (max-width: 767px) {
     body.tvc-marketing-body .tvc-card,
     body.tvc-marketing-body .platform-card,
     body.tvc-marketing-body .market-card,
+    body.tvc-marketing-body .mkt-card,
     body.tvc-marketing-body .mkt-glass-card,
     body.tvc-marketing-body .home-card,
     body.tvc-marketing-body .home-hero-card,
@@ -519,6 +652,299 @@ body.tvc-marketing-body .store-public-mode .store-vl-cell {
     .mkt-intel-grid.mkt-intel-grid-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         align-items: stretch;
+    }
+}
+
+.mkt-intel-grid.mkt-intel-grid-2 {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+    .mkt-intel-grid.mkt-intel-grid-2 {
+        grid-template-columns: 1.2fr 0.8fr;
+        align-items: stretch;
+    }
+}
+
+.mkt-intel-news-panel {
+    margin-top: 20px;
+    grid-column: 1 / -1;
+}
+
+.mkt-intel-news-panel > h3 {
+    margin-bottom: 18px;
+}
+
+/* ── Maritime news media dashboard ── */
+.mkt-news-dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    min-width: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .mkt-news-dashboard {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'lead lead'
+            'secondary stream';
+    }
+
+    .mkt-media-lead {
+        grid-area: lead;
+    }
+
+    .mkt-news-dashboard-secondary {
+        grid-area: secondary;
+    }
+
+    .mkt-news-dashboard-stream {
+        grid-area: stream;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mkt-news-dashboard {
+        grid-template-columns: 45fr 30fr 25fr;
+        align-items: start;
+        gap: 18px;
+    }
+}
+
+.mkt-media-card {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    padding: 14px;
+    min-width: 0;
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+.mkt-media-card:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    transform: translateY(-2px);
+}
+
+.mkt-media-img-wrap,
+.mkt-media-thumb-wrap {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.mkt-media-lead .mkt-media-img-wrap {
+    border-radius: 12px;
+    margin-bottom: 14px;
+}
+
+.mkt-media-hero-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.25s ease;
+}
+
+.mkt-media-thumb {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.25s ease;
+}
+
+.mkt-media-img-wrap:hover .mkt-media-hero-img,
+.mkt-media-thumb-wrap:hover .mkt-media-thumb {
+    transform: scale(1.03);
+}
+
+.mkt-media-lead-badge {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #0284c7;
+    background: rgba(2, 132, 199, 0.1);
+    border: 1px solid rgba(2, 132, 199, 0.25);
+}
+
+.mkt-media-lead-title,
+.mkt-media-lead-link {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.25;
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.mkt-media-lead-link:hover {
+    color: #0284c7;
+}
+
+.mkt-media-lead-summary {
+    margin: 0 0 8px;
+    color: #334155;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.mkt-media-lead-meta {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.mkt-news-dashboard-secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+
+.mkt-media-secondary {
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    gap: 12px;
+    align-items: start;
+    padding: 12px;
+}
+
+.mkt-media-thumb-wrap {
+    width: 88px;
+    height: 88px;
+    margin: 0;
+    aspect-ratio: 1 / 1;
+}
+
+.mkt-media-secondary-body {
+    min-width: 0;
+}
+
+.mkt-media-secondary-title {
+    margin: 6px 0 8px;
+    font-size: 0.92rem;
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.mkt-media-secondary-link {
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.mkt-media-secondary-link:hover {
+    color: #0284c7;
+}
+
+.mkt-media-time-badge {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #64748b;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 999px;
+    padding: 2px 8px;
+}
+
+.mkt-news-dashboard-stream {
+    min-width: 0;
+    padding: 12px 14px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+
+.mkt-stream-kicker {
+    margin: 0 0 12px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #0284c7;
+}
+
+.mkt-stream-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mkt-stream-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+    min-width: 0;
+}
+
+.mkt-stream-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.mkt-stream-cat {
+    display: block;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+
+.mkt-stream-headline {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 800;
+    line-height: 1.35;
+    color: #0f172a;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+.mkt-stream-headline:hover {
+    color: #0284c7;
+}
+
+.mkt-stream-source {
+    display: block;
+    font-size: 0.68rem;
+    color: #64748b;
+}
+
+@media (max-width: 767px) {
+    .mkt-media-secondary {
+        grid-template-columns: 72px 1fr;
+    }
+
+    .mkt-media-thumb-wrap {
+        width: 72px;
+        height: 72px;
+    }
+
+    .mkt-media-hero-img {
+        min-height: 180px;
+        max-height: 240px;
     }
 }
 

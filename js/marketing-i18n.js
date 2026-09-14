@@ -46,8 +46,8 @@
             en: 'THE VESSEL CODE | Open Digital Commons for Global Maritime',
             ko: 'THE VESSEL CODE | 열린 해운 지식 & 선박관리',
         },
-        'home.cta.sm': { en: '🛳️ TVC-SM Fleet Platform', ko: '🛳️ TVC-SM 선대 플랫폼' },
-        'home.cta.toolkit': { en: '📦 Free Maritime Toolkit', ko: '📦 무료 Maritime Toolkit' },
+        'home.cta.sm': { en: 'TVC-SM Fleet Platform', ko: 'TVC-SM 선대 플랫폼' },
+        'home.cta.toolkit': { en: 'Free Maritime Toolkit', ko: '무료 Maritime Toolkit' },
         'home.ethos.p': {
             en: 'Built by a 1st Class Engineer & Superintendent for the maritime community.',
             ko: '1급 기관사·슈퍼인텐던트가 해양 커뮤니티를 위해 만들었습니다.',
@@ -697,6 +697,14 @@
         },
         'intel.market.title': { en: 'Freight & shipping indices', ko: '운임·해운 지표' },
         'intel.news.title': { en: 'Global maritime & energy stream', ko: '글로벌 해운·에너지 스트림' },
+        'intel.news.leadBadge': { en: '🔴 LEAD STORY · BUNKER & ROUTE', ko: '🔴 주요 기사 · 벙커 & 항로' },
+        'intel.news.streamKicker': { en: 'Live ticker stream', ko: '실시간 헤드라인' },
+        'intel.news.streamLabel': { en: 'Breaking headlines', ko: '속보 헤드라인' },
+        'intel.news.streamMore': {
+            en: 'Additional headlines refresh with the daily market feed.',
+            ko: '추가 헤드라인은 일일 마켓 피드와 함께 갱신됩니다.',
+        },
+        'intel.news.live': { en: 'Just in', ko: '방금' },
         'intel.market.stamp': { en: 'Updated daily benchmark', ko: '일일 벤치마크 갱신' },
         'intel.market.benchmarkAsOf': {
             en: 'Market benchmark as of',

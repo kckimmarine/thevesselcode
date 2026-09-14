@@ -1,7 +1,7 @@
 'use strict';
 
-const { getStripe, isStripeConfigured, requestOrigin } = require('../_lib/stripeClient');
-const billingStore = require('../_lib/billingStore');
+const { getStripe, isStripeConfigured, requestOrigin } = require('../stripeClient');
+const billingStore = require('../billingStore');
 
 const MAX_BODY_BYTES = 8 * 1024;
 

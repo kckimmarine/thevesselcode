@@ -25,8 +25,42 @@
     ];
 
     const LOGO = '/icons/company-logo.png?v=20260804-logo-no-ring';
-    const INTEL_CSS = '/css/marketing-readability.css?v=20260914-contrast-pricing';
-    const INTEL_JS = '/js/intelligence/marketFeed.js?v=20260914-market-dashboard';
+    const INTEL_CSS = '/css/marketing-readability.css?v=20260914-enterprise-marine';
+    const INTEL_JS = '/js/intelligence/marketFeed.js?v=20260914-news-media-dashboard';
+
+    const SVG_STROKE =
+        'viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"';
+
+    /** @type {Record<string, string>} */
+    const MKT_ICONS = {
+        toolbox: `<svg class="mkt-btn-icon" width="18" height="18" ${SVG_STROKE} aria-hidden="true"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>`,
+        vessel: `<svg class="mkt-btn-icon" width="18" height="18" ${SVG_STROKE} aria-hidden="true"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.5 0 2.5 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.25"/><path d="M12 2v8"/></svg>`,
+        graduation: `<svg class="mkt-feature-icon" width="18" height="18" ${SVG_STROKE} aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>`,
+        wrench: `<svg class="mkt-feature-icon" width="18" height="18" ${SVG_STROKE} aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>`,
+        anchor: `<svg class="mkt-feature-icon" width="18" height="18" ${SVG_STROKE} aria-hidden="true"><path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><circle cx="12" cy="5" r="3"/></svg>`,
+    };
+
+    function featureIconSvg(key) {
+        const raw = MKT_ICONS[key];
+        if (!raw) return '';
+        return raw.replace(/mkt-btn-icon/g, 'mkt-feature-icon');
+    }
+
+    function applyMarketingIcons(root = document) {
+        root.querySelectorAll('[data-mkt-btn-icon]').forEach((el) => {
+            const key = el.getAttribute('data-mkt-btn-icon');
+            const svg = MKT_ICONS[key];
+            if (!svg) return;
+            el.querySelectorAll('.mkt-btn-icon').forEach((node) => node.remove());
+            el.insertAdjacentHTML('afterbegin', svg);
+        });
+
+        root.querySelectorAll('[data-mkt-icon]').forEach((el) => {
+            const key = el.getAttribute('data-mkt-icon');
+            const svg = featureIconSvg(key);
+            if (svg) el.innerHTML = svg;
+        });
+    }
 
     function navLabel(item) {
         const i18n = globalThis.TVC_MarketingI18n;
@@ -164,7 +198,10 @@
         if (globalThis.TVC_MarketingI18n?.applyLang) {
             globalThis.TVC_MarketingI18n.applyLang(globalThis.TVC_MarketingI18n.getLang());
         }
+        applyMarketingIcons();
     }
+
+    globalThis.TVC_MarketingShell = { applyMarketingIcons };
 
     globalThis.addEventListener('tvc-mkt-lang', () => mount());
 
