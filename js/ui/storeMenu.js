@@ -78,6 +78,7 @@ const TVC_StoreMenu = (function () {
                         <div class="impa-detail-actions">
                             <button type="button" class="impa-detail-share-btn" id="impaDetailShareBtn">📋 Share Spec Link</button>
                         </div>
+                        <div class="impa-detail-plg-lock" id="impaDetailPlgLock" aria-label="TVC-SM fleet features"></div>
                     </div>
                     <div id="impaDetailPmsLayout" class="impa-detail-pms-layout">
                     <section class="impa-detail-plate-section" aria-label="Catalog plate viewer">
@@ -670,6 +671,12 @@ const TVC_StoreMenu = (function () {
         }
         if (specBody) specBody.innerHTML = shipservSpecRows(item);
         if (desc) desc.textContent = buildProductDescription(item);
+        const plgHost = document.getElementById('impaDetailPlgLock');
+        if (plgHost) {
+            plgHost.innerHTML = `
+                <a class="mkt-plg-lock" href="/contact-us?inquiry=tvc-sm-demo">🔒 Check Vessel ROB — Available with TVC-SM Fleet Subscription</a>
+                <a class="mkt-plg-lock" href="/contact-us?inquiry=tvc-sm-demo">🔒 1-Click Fleet Requisition — Available with TVC-SM Fleet Subscription</a>`;
+        }
     }
 
     function specRows(item) {
