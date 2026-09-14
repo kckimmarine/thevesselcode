@@ -16,8 +16,8 @@ gemini-full-context.txt
 docs/exports/tvc-core-frontend.txt
 context-*.txt
 
-# Mirrored from public/assets for local npm start
-assets/
+# Mirrored from public/assets for local npm start (repo root only)
+/assets/
 
 # Electron / Pilot license secrets & build output
 electron/keys/private.pem
