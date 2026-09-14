@@ -16,7 +16,10 @@ const {
   approveReport,
   canEngineerEditReport,
   captainExportShipToSm,
-  smImportZipBytes,
+  importSyncZipBytes,
+  smExportFeedbackToShip,
+  openWorkReportHistoryView,
+  assertVesselWorkReportUiLocked,
   parseZipPayload,
   saveOpenWorkReportWithSpare,
 } = require('./helpers/pilot');
@@ -26,7 +29,7 @@ test.describe.configure({ mode: 'serial' });
 const QTY = 2;
 const DEPT = 'ENGINE';
 
-test('Pilot SOP A–D: work report, CE confirm, Captain ZIP, SM approve', async ({ page }) => {
+test('Pilot SOP A–E: closed-loop work report, sync, SM approve, vessel inward', async ({ page }) => {
   test.setTimeout(300_000);
   attachErrorHooks(page, 'pilot-sop');
 
@@ -106,15 +109,53 @@ test('Pilot SOP A–D: work report, CE confirm, Captain ZIP, SM approve', async 
   await waitForAppBoot(page);
   await alignDemoVesselScope(page);
 
-  await smImportZipBytes(page, DEPT, exported.bytes, exported.filename);
+  await importSyncZipBytes(page, DEPT, exported.bytes, exported.filename);
 
   const smApprove = await approveReport(page, reportId);
   expect(smApprove.ok, smApprove.message || smApprove.code).toBeTruthy();
   expect(smApprove.status).toBe('APPROVED');
   expect(smApprove.is_locked).toBeTruthy();
 
-  const locked = await canEngineerEditReport(page, reportId);
-  expect(locked.status).toBe('APPROVED');
-  expect(locked.is_locked).toBeTruthy();
-  expect(locked.can).toBeFalsy();
+  const lockedSm = await canEngineerEditReport(page, reportId);
+  expect(lockedSm.status).toBe('APPROVED');
+  expect(lockedSm.is_locked).toBeTruthy();
+  expect(lockedSm.can).toBeFalsy();
+
+  const smFeedback = await smExportFeedbackToShip(page, DEPT, reportId);
+  expect(smFeedback.record_count).toBeGreaterThan(0);
+  expect(smFeedback.direction).toBe('SM_TO_SHIP');
+  const feedbackPayload = await parseZipPayload(smFeedback.bytes);
+  expect(feedbackPayload.export_meta?.direction).toBe('SM_TO_SHIP');
+  const fbReport = (feedbackPayload.daily_work_reports || []).find((r) => r.id === reportId);
+  expect(fbReport, 'SM feedback ZIP contains approved report').toBeTruthy();
+  expect(String(fbReport.status || '').toUpperCase()).toBe('APPROVED');
+
+  await logout(page);
+
+  // —— Step E: Vessel inward sync (SM_TO_SHIP) — Captain ingest, Engineer UI lock ——
+  await login(page, 'captain');
+  await waitForAppBoot(page);
+  await alignDemoVesselScope(page);
+
+  await importSyncZipBytes(page, DEPT, smFeedback.bytes, smFeedback.filename);
+
+  const onShip = await findReportByMarker(page, marker);
+  expect(onShip.status).toBe('APPROVED');
+  expect(onShip.is_locked).toBeTruthy();
+  expect(onShip.stock_applied_at).toBeTruthy();
+
+  await logout(page);
+  await login(page, 'engine');
+  await waitForAppBoot(page);
+  await alignDemoVesselScope(page);
+
+  const lockedShip = await canEngineerEditReport(page, reportId);
+  expect(lockedShip.status).toBe('APPROVED');
+  expect(lockedShip.is_locked).toBeTruthy();
+  expect(lockedShip.can).toBeFalsy();
+
+  await switchTab(page, 'history', 'engine');
+  await page.waitForTimeout(400);
+  await openWorkReportHistoryView(page, reportId);
+  await assertVesselWorkReportUiLocked(page);
 });

@@ -59,9 +59,9 @@ npx playwright test e2e/pilot-sop-scenarios.spec.js
 npm run test:e2e
 ```
 
-**Node roundtrip:** `npm run test-xfer-status-roundtrip` — Monthly 체인은 `SM_SUPERINTENDENT` + `SHIP_TO_SM` / `SM_TO_SHIP` (legacy `HQ_SUPERVISOR` + `HQ_TO_SHIP`는 `EXPORT_SHIP_SYNC` 거부가 **정상**). Postpone HQ Reply ZIP 2건·소스 문자열 1건은 별도 추적.
+**Node roundtrip:** `npm run test-xfer-status-roundtrip` — **52 passed, 0 failed** (`POSTPONE_REPLY_SM_TO_SHIP`, Captain hub `Submitted` postpone export 소스 검증).
 
-**회귀:** `pilot-sop-scenarios` **1 passed** (~21s). 데모 호선 `alignDemoVesselScope` → **`ABC Voyager`** (SM fleet vs IDB meta 일치).
+**회귀:** `pilot-sop-scenarios` **1 passed** (~15s). Step A는 Page 2 **All Groups → scroll → checkbox → qty → Save** (UI only). 데모 호선 `alignDemoVesselScope` → **`ABC Voyager`**.
 
 ---
 
