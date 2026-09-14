@@ -46,8 +46,8 @@
             en: 'THE VESSEL CODE | Open Digital Commons for Global Maritime',
             ko: 'THE VESSEL CODE | 열린 해운 지식 & 선박관리',
         },
-        'home.cta.sm': { en: '🛳️ TVC-SM Fleet Platform', ko: '🛳️ TVC-SM 선대 플랫폼' },
-        'home.cta.toolkit': { en: '📦 Free Maritime Toolkit', ko: '📦 무료 Maritime Toolkit' },
+        'home.cta.sm': { en: 'TVC-SM Fleet Platform', ko: 'TVC-SM 선대 플랫폼' },
+        'home.cta.toolkit': { en: 'Free Maritime Toolkit', ko: '무료 Maritime Toolkit' },
         'home.ethos.p': {
             en: 'Built by a 1st Class Engineer & Superintendent for the maritime community.',
             ko: '1급 기관사·슈퍼인텐던트가 해양 커뮤니티를 위해 만들었습니다.',
