@@ -1,6 +1,6 @@
 'use strict';
 
-const { isReady, pullLatestPackage } = require('../../_lib/syncStorage');
+const { isReady, pullLatestPackage } = require('../syncStorage');
 
 async function handler(req, res) {
     if (req.method !== 'GET') {

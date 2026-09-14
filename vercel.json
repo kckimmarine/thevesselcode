@@ -52,7 +52,7 @@
     "api/store/[code].js": {
       "includeFiles": "api/_data/impa-seo-index.json"
     },
-    "api/billing/webhook.js": {
+    "api/billing/[...path].js": {
       "maxDuration": 30
     }
   },

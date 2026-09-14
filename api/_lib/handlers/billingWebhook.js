@@ -1,7 +1,7 @@
 'use strict';
 
-const { getStripe, isStripeConfigured } = require('../_lib/stripeClient');
-const billingStore = require('../_lib/billingStore');
+const { getStripe, isStripeConfigured } = require('../stripeClient');
+const billingStore = require('../billingStore');
 
 const MAX_BODY_BYTES = 512 * 1024;
 
@@ -136,8 +136,3 @@ async function handler(req, res) {
 }
 
 module.exports = handler;
-module.exports.config = {
-    api: {
-        bodyParser: false,
-    },
-};
