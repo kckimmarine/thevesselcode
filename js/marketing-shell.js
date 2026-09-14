@@ -24,8 +24,13 @@
         { href: '/contact-us', i18n: 'nav.contact' },
     ];
 
-    const LOGO = '/icons/company-logo.png?v=20260804-logo-no-ring';
-    const INTEL_CSS = '/css/marketing-readability.css?v=20260914-news-media-dashboard';
+ width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<polygon points="14,2 24,7.5 24,14.5 14,26 4,14.5 4,7.5" fill="#0f172a" stroke="#38bdf8" stroke-width="2.2" stroke-linejoin="round"/>
+<path d="M14 7.5 L14 19.5 M10.5 11.5 L14 7.5 L17.5 11.5" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 17.5 H19" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+<circle cx="14" cy="20.5" r="1.1" fill="#38bdf8"/>
+</svg>`;
+    const INTEL_CSS = '/css/marketing-readability.css?v=20260914-maritime-brand-hero';
     const INTEL_JS = '/js/intelligence/marketFeed.js?v=20260914-news-media-dashboard';
 
     function navLabel(item) {
@@ -77,7 +82,7 @@
             <div id="mktBunkerTickerHost" aria-live="polite"></div>
             <header class="home-topbar mkt-topbar mkt-marketing-header" role="banner">
             <a class="home-brand" href="/"${active === 'home' ? ' aria-current="page"' : ''}>
-                <img src="${LOGO}" alt="" width="44" height="44" draggable="false">
+                <span class="mkt-brand-emblem">${BRAND_EMBLEM_SVG}</span>
                 <span class="home-brand-text">
                     <span class="home-brand-name">THE VESSEL CODE</span>
                     <span class="home-brand-tag" data-i18n="nav.brand.tag">Engineering · Operations · Open maritime hub</span>
