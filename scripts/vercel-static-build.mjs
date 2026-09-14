@@ -15,6 +15,7 @@ const STATIC_PATHS = [
   'services',
   'sm',
   'contact-us',
+  'forum',
   'toolkit.html',
   'store-public.html',
   'manifest.json',

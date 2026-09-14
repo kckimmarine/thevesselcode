@@ -11,6 +11,7 @@
         'nav.home': { en: 'Home', ko: '홈' },
         'nav.services': { en: 'Services', ko: '서비스' },
         'nav.toolkit': { en: 'Maritime Toolkit', ko: '해운 실무 공구함' },
+        'nav.forum': { en: 'Exchange', ko: '해양 Q&A' },
         'nav.sm': { en: 'TVC-SM', ko: 'TVC-SM 선박관리' },
         'nav.contact': { en: 'Contact Us', ko: '문의하기' },
         'nav.menu': { en: 'Menu', ko: '메뉴' },
@@ -495,6 +496,67 @@
             en: 'I would like to request a free 30-day TVC-SM fleet pilot / demo for our vessels.',
             ko: 'TVC-SM 30일 파일럿·데모를 신청합니다.',
         },
+
+        'forum.meta.description': {
+            en: 'Maritime & Industrial Exchange — open technical Q&A for troubleshooting, spares, SOP ideas, and Class/PSC topics.',
+            ko: 'Maritime & Industrial Exchange — 기계·설비, 자재, 실무 개선, 선급·PSC 주제의 열린 Q&A.',
+        },
+        'forum.document.title': {
+            en: 'Maritime & Industrial Exchange | THE VESSEL CODE',
+            ko: '해양 Q&A Exchange | THE VESSEL CODE',
+        },
+        'forum.hero.eyebrow': { en: 'Maritime & Industrial Exchange', ko: 'Maritime & Industrial Exchange' },
+        'forum.hero.title': {
+            en: 'Open Q&A for sea and shore teams',
+            ko: '바다와 육상을 잇는 열린 기술 Q&A',
+        },
+        'forum.hero.lead': {
+            en: 'Ask troubleshooting questions, compare spare specs, share SOP improvements, and discuss Class/PSC readiness — without a heavy login wall.',
+            ko: '트러블슈팅, 자재·호환품, 실무 SOP, 선급·검사 대응을 가볍게 나눕니다 — 복잡한 가입 없이.',
+        },
+        'forum.trust.xss': { en: '🛡️ XSS-safe rendering', ko: '🛡️ XSS 방어 렌더링' },
+        'forum.trust.spam': { en: '🚫 Profanity & spam filters', ko: '🚫 욕설·스팸 필터' },
+        'forum.trust.rate': { en: '⏱️ 30s post cooldown', ko: '⏱️ 30초 게시 간격' },
+        'forum.cat.technical': {
+            en: 'Technical Q&A & Troubleshooting',
+            ko: '기계·설비 트러블슈팅',
+        },
+        'forum.cat.spare': { en: 'Spare Parts & Spec Exchange', ko: '자재·호환품 문의' },
+        'forum.cat.ops': { en: 'Operational Ideas & SOP', ko: '실무 아이디어 및 개선안' },
+        'forum.cat.regulations': { en: 'Regulations & Class/PSC', ko: '선급·검사 대응 질의' },
+        'forum.compose.title': { en: 'Start a discussion', ko: '질문·토론 시작' },
+        'forum.compose.note': {
+            en: 'No account required — display name and role only. Posts are moderated by automated safety filters.',
+            ko: '회원가입 없이 표시 이름과 직무 Role만 입력합니다. 자동 안전 필터가 적용됩니다.',
+        },
+        'forum.compose.submit': { en: 'Post to channel', ko: '채널에 게시' },
+        'forum.field.name': { en: 'Display name', ko: '표시 이름' },
+        'forum.field.role': { en: 'Role', ko: '직무 Role' },
+        'forum.field.title': { en: 'Title', ko: '제목' },
+        'forum.field.body': { en: 'Question or tip', ko: '질문 또는 팁' },
+        'forum.field.comment': { en: 'Reply', ko: '답글' },
+        'forum.list.empty': { en: 'No threads yet — be the first to ask.', ko: '아직 글이 없습니다 — 첫 질문을 남겨 보세요.' },
+        'forum.thread.open': { en: 'Open thread', ko: '스레드 보기' },
+        'forum.thread.back': { en: '← Back to channel', ko: '← 채널로 돌아가기' },
+        'forum.thread.replies': { en: 'Replies', ko: '답글' },
+        'forum.thread.none': { en: 'No replies yet — add a constructive tip.', ko: '답글이 없습니다 — 도움이 되는 팁을 남겨 주세요.' },
+        'forum.comment.title': { en: 'Add a reply', ko: '답글 작성' },
+        'forum.comment.submit': { en: 'Send reply', ko: '답글 등록' },
+        'forum.cta.title': { en: 'Need fleet-grade PMS & SPARE on board?', ko: '선박용 PMS·SPARE가 필요하신가요?' },
+        'forum.cta.body': {
+            en: 'TVC-SM connects superintendent oversight with offline-first Vessel Core — ZIP sync, RFQ, and structured maintenance workflows.',
+            ko: 'TVC-SM은 공무 감독과 오프라인 Vessel Core를 ZIP·RFQ·정형 PMS로 연결합니다.',
+        },
+        'forum.cta.sm': { en: 'Discover TVC-SM', ko: 'TVC-SM 알아보기' },
+        'forum.cta.demo': { en: 'Fleet demo', ko: '파일럿·데모 문의' },
+        'forum.err.rate': { en: 'Please wait 30 seconds between posts.', ko: '30초 후에 다시 게시할 수 있습니다.' },
+        'forum.err.generic': { en: 'Could not post. Check your input and try again.', ko: '게시하지 못했습니다. 입력을 확인해 주세요.' },
+        'forum.ok.posted': { en: 'Posted successfully.', ko: '게시되었습니다.' },
+        'forum.ok.comment': { en: 'Reply posted.', ko: '답글이 등록되었습니다.' },
+        'forum.ok.local': {
+            en: 'Saved on this device (demo mode — API unavailable).',
+            ko: '이 기기에 저장됨 (데모 — API 미연결).',
+        },
     };
 
     function detectDefaultLang() {
@@ -533,6 +595,7 @@
         toolkit: 'tk.meta.description',
         services: 'services.meta.description',
         contact: 'contact.meta.description',
+        forum: 'forum.meta.description',
     };
 
     const DOCUMENT_TITLE_KEYS = {
@@ -541,6 +604,7 @@
         toolkit: 'tk.document.title',
         services: 'services.document.title',
         contact: 'contact.document.title',
+        forum: 'forum.document.title',
     };
 
     function applyLang(lang) {
