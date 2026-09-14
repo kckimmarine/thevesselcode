@@ -113,12 +113,23 @@
     function applyInboundCampaignParams() {
         const params = new URLSearchParams(window.location.search);
         const inquiry = String(params.get('inquiry') || '').trim().toLowerCase();
-        if (inquiry !== 'tvc-sm-demo') return;
         const typeSelect = qs('#acInquiryType');
         const message = qs('#acMessage');
-        if (typeSelect) typeSelect.value = 'demo';
-        if (message && !String(message.value || '').trim()) {
-            message.value = t('contact.campaign.demo') || '';
+        if (inquiry === 'tvc-sm-demo' || inquiry === 'fleet-trial') {
+            if (typeSelect) typeSelect.value = 'demo';
+            if (message && !String(message.value || '').trim()) {
+                message.value =
+                    inquiry === 'fleet-trial'
+                        ? t('contact.campaign.fleetTrial') || t('contact.campaign.demo') || ''
+                        : t('contact.campaign.demo') || '';
+            }
+            return;
+        }
+        if (inquiry === 'toolkit-pro') {
+            if (typeSelect) typeSelect.value = 'partnership';
+            if (message && !String(message.value || '').trim()) {
+                message.value = t('contact.campaign.toolkitPro') || '';
+            }
         }
     }
 

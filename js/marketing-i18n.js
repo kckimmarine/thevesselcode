@@ -34,8 +34,8 @@
         },
         'home.eyebrow': { en: 'THE VESSEL CODE · Open Maritime Hub', ko: 'THE VESSEL CODE · 열린 해양 허브' },
         'home.headline': {
-            en: 'The Open Digital Commons for Global Maritime & Industry',
-            ko: '바다와 육상을 잇는 열린 해운·산업 디지털 커먼즈',
+            en: 'The Open Digital Commons<br>for Global Maritime<br>&amp; Industry',
+            ko: '바다와 육상을 잇는<br>열린 해운·산업<br>디지털 커먼즈',
         },
         'home.tagline': {
             en: 'Free tools for daily technical work at sea and ashore. TVC-SM when your fleet needs offline PMS, SPARE, and superintendent oversight.',
@@ -58,16 +58,19 @@
         },
         'home.platform.title': { en: 'TVC-SM Platform', ko: 'TVC-SM 플랫폼' },
         'home.platform.sm.t': { en: 'SM Mode', ko: 'SM Mode' },
+        'home.platform.sm.badge': { en: 'Online + Offline', ko: '온라인 + 오프라인' },
         'home.platform.sm.d': {
             en: 'Online + offline — fleet oversight, ZIP import, RFQ to suppliers.',
             ko: '온라인·오프라인 혼용 — 다선박 관제, ZIP Import, Supplier RFQ.',
         },
         'home.platform.vessel.t': { en: 'Vessel Mode', ko: 'Vessel Mode' },
+        'home.platform.vessel.badge': { en: 'Online + Offline', ko: '온라인 + 오프라인' },
         'home.platform.vessel.d': {
             en: 'Captain Hub & shore HQ: online + offline · Deck/Engine: offline-first + ZIP.',
             ko: 'Captain Hub·육상 HQ: 온라인·오프라인 혼용 · Deck/Engine: 오프라인 완결 + ZIP.',
         },
         'home.platform.supplier.t': { en: 'Supplier Mode', ko: 'Supplier Mode' },
+        'home.platform.supplier.badge': { en: 'Online', ko: '온라인' },
         'home.platform.supplier.d': {
             en: 'Online — RFQ inbox, quotes, delivery & invoices.',
             ko: '온라인 — RFQ 수신, 견적, 납품·인보이스.',
@@ -356,6 +359,70 @@
         'sm.mode.sup.h': { en: 'Supplier Mode', ko: 'Supplier Mode' },
         'sm.diagram.hub': { en: 'Captain Hub', ko: '선장 Hub' },
 
+        'pricing.title': {
+            en: 'Two tracks — individual tools or fleet OS',
+            ko: '두 가지 트랙 — 개인 실무 도구 또는 선대 OS',
+        },
+        'pricing.lead': {
+            en: 'Start free on the Toolkit. Upgrade to Pro for personal workflows, or adopt TVC-SM when you need Class-ready PMS across the fleet.',
+            ko: 'Toolkit 무료로 시작하세요. 개인 실무는 Pro, 선대 정비·재고는 TVC-SM으로 확장합니다.',
+        },
+        'pricing.trackA.label': { en: 'Track A · Individual', ko: 'Track A · 개인' },
+        'pricing.trackB.label': { en: 'Track B · Enterprise Fleet', ko: 'Track B · 선대' },
+        'pricing.toolkitPro.title': { en: 'Maritime Toolkit Pro', ko: 'Maritime Toolkit Pro' },
+        'pricing.toolkitPro.audience': {
+            en: 'Officers, engineers, and surveyors who need ASTM logs and offline PDFs daily.',
+            ko: '일상적으로 ASTM 로그·오프라인 PDF가 필요한 항해사·기관사·검사원.',
+        },
+        'pricing.toolkitPro.price': { en: '$9.99 / month', ko: '월 $9.99' },
+        'pricing.toolkitPro.f1': {
+            en: 'Unlimited ASTM Table 54B calculation logs',
+            ko: 'ASTM Table 54B 계산 로그 무제한',
+        },
+        'pricing.toolkitPro.f2': {
+            en: 'Offline PDF downloads for plates & calculators',
+            ko: '도판·계산기 오프라인 PDF 다운로드',
+        },
+        'pricing.toolkitPro.f3': {
+            en: 'Full-plate bookmarking across IMPA catalog',
+            ko: 'IMPA 도판 전체 북마크',
+        },
+        'pricing.toolkitPro.cta': {
+            en: 'Upgrade to Toolkit Pro',
+            ko: 'Toolkit Pro 업그레이드',
+        },
+        'pricing.fleet.title': { en: 'TVC-SM Fleet OS', ko: 'TVC-SM Fleet OS' },
+        'pricing.fleet.audience': {
+            en: 'Shipowners, managers, and superintendents running multi-vessel PMS & SPARE.',
+            ko: '다선대 PMS·SPARE를 운영하는 선주·관리사·공무감독.',
+        },
+        'pricing.fleet.price': { en: '$99 / vessel / month (Starter)', ko: '선박당 월 $99 (Starter)' },
+        'pricing.fleet.trial': {
+            en: '30-Day Risk-Free Trial (Cancel Anytime)',
+            ko: '30일 무위험 체험 (언제든 해지)',
+        },
+        'pricing.fleet.f1': {
+            en: 'ClassNK Annex 9.1.3 compliant PMS & SPARE',
+            ko: 'ClassNK Annex 9.1.3 대응 PMS & SPARE',
+        },
+        'pricing.fleet.f2': {
+            en: 'Local-first offline sync with ZIP ship ↔ shore packets',
+            ko: 'ZIP 선박↔육상 로컬 우선 동기화',
+        },
+        'pricing.fleet.f3': {
+            en: 'Superintendent approval queue & multi-vessel oversight',
+            ko: '공무 승인 큐 & 다선대 관제',
+        },
+        'pricing.fleet.cta': {
+            en: '🚀 Start 30-Day Free Fleet Trial',
+            ko: '🚀 30일 무료 선대 체험 시작',
+        },
+        'pricing.fleet.secondary': { en: 'Compare TVC-SM modes ↓', ko: 'TVC-SM 모드 비교 ↓' },
+        'tk.pricing.hook': {
+            en: 'Free catalog & calculators — upgrade to Toolkit Pro or fleet TVC-SM when you scale.',
+            ko: '무료 카탈로그·계산기 — 확장 시 Toolkit Pro 또는 TVC-SM 선대로.',
+        },
+
         'tk.meta.description': {
             en: 'Maritime Toolkit — IMPA catalog, bunker, flange, lube and paint cross-reference tools. Free for global seafarers.',
             ko: '해운 실무 공구함 — IMPA·벙커·플랜지·윤활·페인트 조견. 선원·공무 모두 무료.',
@@ -531,6 +598,14 @@
         'contact.campaign.demo': {
             en: 'I would like to request a free 30-day TVC-SM fleet pilot / demo for our vessels.',
             ko: 'TVC-SM 30일 파일럿·데모를 신청합니다.',
+        },
+        'contact.campaign.fleetTrial': {
+            en: 'I would like to start the 30-day risk-free TVC-SM fleet trial (Starter plan — $99/vessel/mo after trial).',
+            ko: 'TVC-SM 30일 무위험 선대 체험을 신청합니다 (체험 후 Starter — 선박당 월 $99).',
+        },
+        'contact.campaign.toolkitPro': {
+            en: 'I would like to subscribe to Maritime Toolkit Pro ($9.99/month) for ASTM 54B logs and offline PDF exports.',
+            ko: 'Maritime Toolkit Pro(월 $9.99) 구독을 신청합니다 — ASTM 54B 로그·오프라인 PDF.',
         },
 
         'forum.meta.description': {
