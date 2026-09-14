@@ -52,7 +52,8 @@
 | A 선내 Engine 정비 + Spare **2** + `stock_applied_at` | 저장 즉시 재고 −2 | **`e2e/pilot-sop-scenarios.spec.js`** Step A |
 | B CE Confirm + Captain Engine Confirm 거부 | CONFIRMED + RBAC | 동일 스펙 Step B |
 | C Captain **SHIP_TO_SM** ZIP + JSON 무결성 | Export 검증 | 동일 스펙 Step C (`jszip` + report/spare diff) |
-| D SM Import → **APPROVED** + 선박 편집 락 | 최종 락 | 동일 스펙 Step D (`abc shipping`) |
+| D SM Import → **APPROVED** + SM **SM_TO_SHIP** feedback ZIP | 최종 락 + 역방향 패킷 | 동일 스펙 Step D |
+| E Captain **SM_TO_SHIP** Import → Engineer UI lock | 내륙 루프 완결 | 동일 스펙 Step E (Captain ingest, Engineer Modify/spare disabled) |
 
 ```bash
 npx playwright test e2e/pilot-sop-scenarios.spec.js
