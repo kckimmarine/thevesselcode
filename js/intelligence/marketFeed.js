@@ -9,6 +9,12 @@
     let marketData = null;
     let loadPromise = null;
 
+    const MEDIA_IMAGES = {
+        lead: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&q=80',
+        secondaryA: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=400&q=80',
+        secondaryB: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=400&q=80',
+    };
+
     const FALLBACK = {
         meta: { source: 'TVC Market Desk', updatedLabelEn: 'Updated daily benchmark (UTC)' },
         bunker: {
@@ -259,40 +265,113 @@
         return `${t('intel.market.benchmarkAsOf', lang)} ${asOf}`;
     }
 
-    function renderNewsList(lang) {
+    function formatHoursAgo(hours, lang) {
+        if (lang === 'ko') return `${hours}시간 전`;
+        return `${hours}h ago`;
+    }
+
+    function resolveNewsFields(item, lang) {
+        const loc = lang === 'ko' && item.ko ? item.ko : item.en || item.ko || {};
+        const tag = item.tag || item.category || 'Trade';
+        return {
+            headline: loc.headline || item.title || '',
+            summary: loc.summary || item.summary || '',
+            source: loc.source || item.source || '',
+            link: item.link || '',
+            tag,
+            tagClass: item.tagClass || '',
+            timeLabel:
+                item.hoursAgo != null
+                    ? formatHoursAgo(item.hoursAgo, lang)
+                    : item.pubDate
+                      ? item.pubDate.slice(0, 16)
+                      : '',
+        };
+    }
+
+    function streamCategoryLabel(tag) {
+        const key = String(tag || '').toLowerCase();
+        if (key.includes('carbon') || key.includes('decarb')) return 'DECARB';
+        if (key.includes('bunker')) return 'BUNKER';
+        if (key.includes('s&p') || key === 's&p') return 'S&P';
+        if (key.includes('trade') || key.includes('dry')) return 'DRY BULK';
+        if (key.includes('reg') || key.includes('imo')) return 'IMO';
+        return String(tag || 'TRADE').toUpperCase().slice(0, 12);
+    }
+
+    function leadBadgeLabel(_tag, lang) {
+        return t('intel.news.leadBadge', lang);
+    }
+
+    function headlineLink(fields, className) {
+        const text = escapeHtml(fields.headline);
+        const cls = className ? ` class="${className}"` : '';
+        if (fields.link) {
+            return `<a href="${escapeHtml(fields.link)}" rel="noopener noreferrer" target="_blank"${cls}>${text}</a>`;
+        }
+        return `<span${cls}>${text}</span>`;
+    }
+
+    function renderNewsDashboard(lang) {
         const items = newsItems();
         if (!items.length) {
             return `<p class="mkt-intel-muted">${escapeHtml(t('intel.news.empty', lang))}</p>`;
         }
-        return `<ul class="mkt-news-list">${items
-            .map((item) => {
-                const loc = lang === 'ko' && item.ko ? item.ko : item.en || item.ko || {};
-                const headline = loc.headline || item.title || '';
-                const summary = loc.summary || item.summary || '';
-                const source = loc.source || item.source || '';
-                const timeLabel =
-                    item.hoursAgo != null
-                        ? formatHoursAgo(item.hoursAgo, lang)
-                        : item.pubDate
-                          ? item.pubDate.slice(0, 16)
-                          : '';
-                const tag = item.tag || item.category || 'Trade';
-                const linkOpen = item.link
-                    ? `<a href="${escapeHtml(item.link)}" rel="noopener noreferrer" target="_blank">${escapeHtml(headline)}</a>`
-                    : escapeHtml(headline);
-                return `<li class="mkt-news-item">
-                <span class="mkt-news-tag ${escapeHtml(item.tagClass || '')}">${escapeHtml(tag)}</span>
-                <h4 class="mkt-news-headline">${linkOpen}</h4>
-                <p class="mkt-news-meta">${escapeHtml(source)} · ${escapeHtml(timeLabel)}</p>
-                <p class="mkt-news-summary">${escapeHtml(summary)}</p>
-            </li>`;
-            })
-            .join('')}</ul>`;
+
+        const lead = resolveNewsFields(items[0], lang);
+        const secA = items[1] ? resolveNewsFields(items[1], lang) : lead;
+        const secB = items[2] ? resolveNewsFields(items[2], lang) : secA;
+        const streamItems = items.slice(items.length > 3 ? 3 : 1);
+
+        const secondaryCard = (fields, imageUrl, extraClass) => `
+        <article class="mkt-media-card mkt-media-secondary ${extraClass}">
+            <a class="mkt-media-thumb-wrap" href="${fields.link ? escapeHtml(fields.link) : '#'}" ${fields.link ? 'rel="noopener noreferrer" target="_blank"' : 'aria-hidden="true" tabindex="-1"'}>
+                <img class="mkt-media-thumb" src="${imageUrl}" alt="" loading="lazy" width="120" height="120" decoding="async">
+            </a>
+            <div class="mkt-media-secondary-body">
+                <span class="mkt-news-tag ${escapeHtml(fields.tagClass)}">${escapeHtml(fields.tag)}</span>
+                <h4 class="mkt-media-secondary-title">${headlineLink(fields, 'mkt-media-secondary-link')}</h4>
+                <span class="mkt-media-time-badge">${escapeHtml(fields.timeLabel || t('intel.news.live', lang))}</span>
+            </div>
+        </article>`;
+
+        const streamHtml = streamItems.length
+            ? `<ul class="mkt-stream-list">${streamItems
+                  .map((item) => {
+                      const f = resolveNewsFields(item, lang);
+                      return `<li class="mkt-stream-item">
+                    <span class="mkt-stream-cat">[${escapeHtml(streamCategoryLabel(f.tag))}]</span>
+                    ${headlineLink(f, 'mkt-stream-headline')}
+                    <span class="mkt-stream-source">${escapeHtml(f.source)}</span>
+                </li>`;
+                  })
+                  .join('')}</ul>`
+            : `<p class="mkt-intel-muted mkt-stream-empty">${escapeHtml(t('intel.news.streamMore', lang))}</p>`;
+
+        return `
+        <div class="mkt-news-dashboard">
+            <article class="mkt-media-card mkt-media-lead">
+                <a class="mkt-media-img-wrap" href="${lead.link ? escapeHtml(lead.link) : '#'}" ${lead.link ? 'rel="noopener noreferrer" target="_blank"' : ''}>
+                    <img class="mkt-media-hero-img" src="${MEDIA_IMAGES.lead}" alt="" loading="eager" width="800" height="450" decoding="async">
+                </a>
+                <span class="mkt-media-lead-badge">${escapeHtml(leadBadgeLabel(lead.tag, lang))}</span>
+                <h3 class="mkt-media-lead-title">${headlineLink(lead, 'mkt-media-lead-link')}</h3>
+                <p class="mkt-media-lead-summary">${escapeHtml(lead.summary)}</p>
+                <p class="mkt-media-lead-meta">${escapeHtml(lead.source)} · ${escapeHtml(lead.timeLabel)}</p>
+            </article>
+            <div class="mkt-news-dashboard-secondary">
+                ${secondaryCard(secA, MEDIA_IMAGES.secondaryA, '')}
+                ${secondaryCard(secB, MEDIA_IMAGES.secondaryB, 'mkt-media-secondary-b')}
+            </div>
+            <aside class="mkt-news-dashboard-stream" aria-label="${escapeHtml(t('intel.news.streamLabel', lang))}">
+                <p class="mkt-stream-kicker">${escapeHtml(t('intel.news.streamKicker', lang))}</p>
+                ${streamHtml}
+            </aside>
+        </div>`;
     }
 
-    function formatHoursAgo(hours, lang) {
-        if (lang === 'ko') return `${hours}시간 전`;
-        return `${hours}h ago`;
+    function renderNewsList(lang) {
+        return renderNewsDashboard(lang);
     }
 
     function renderPlgColumn(lang) {
@@ -313,16 +392,16 @@
         <section class="mkt-intel-band" aria-labelledby="mktIntelTitle">
             <h2 id="mktIntelTitle" data-i18n="intel.hub.title">${escapeHtml(t('intel.hub.title', lang))}</h2>
             <p class="mkt-intel-lead" data-i18n="intel.hub.lead">${escapeHtml(t('intel.hub.lead', lang))}</p>
-            <div class="mkt-intel-grid mkt-intel-grid-3">
+            <div class="mkt-intel-grid mkt-intel-grid-2">
                 <div class="mkt-intel-card">
                     <h3 data-i18n="intel.market.title">${escapeHtml(t('intel.market.title', lang))}</h3>
                     ${renderMarketTable(bench, lang)}
                 </div>
-                <div class="mkt-intel-card">
-                    <h3 data-i18n="intel.news.title">${escapeHtml(t('intel.news.title', lang))}</h3>
-                    ${renderNewsList(lang)}
-                </div>
                 ${renderPlgColumn(lang)}
+            </div>
+            <div class="mkt-intel-card mkt-intel-news-panel">
+                <h3 data-i18n="intel.news.title">${escapeHtml(t('intel.news.title', lang))}</h3>
+                ${renderNewsDashboard(lang)}
             </div>
         </section>`;
         global.TVC_MarketingI18n?.applyLang?.(lang);

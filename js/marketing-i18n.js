@@ -697,6 +697,14 @@
         },
         'intel.market.title': { en: 'Freight & shipping indices', ko: '운임·해운 지표' },
         'intel.news.title': { en: 'Global maritime & energy stream', ko: '글로벌 해운·에너지 스트림' },
+        'intel.news.leadBadge': { en: '🔴 LEAD STORY · BUNKER & ROUTE', ko: '🔴 주요 기사 · 벙커 & 항로' },
+        'intel.news.streamKicker': { en: 'Live ticker stream', ko: '실시간 헤드라인' },
+        'intel.news.streamLabel': { en: 'Breaking headlines', ko: '속보 헤드라인' },
+        'intel.news.streamMore': {
+            en: 'Additional headlines refresh with the daily market feed.',
+            ko: '추가 헤드라인은 일일 마켓 피드와 함께 갱신됩니다.',
+        },
+        'intel.news.live': { en: 'Just in', ko: '방금' },
         'intel.market.stamp': { en: 'Updated daily benchmark', ko: '일일 벤치마크 갱신' },
         'intel.market.benchmarkAsOf': {
             en: 'Market benchmark as of',
