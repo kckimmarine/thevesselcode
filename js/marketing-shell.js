@@ -25,7 +25,7 @@
     ];
 
     const LOGO = '/icons/company-logo.png?v=20260804-logo-no-ring';
-    const INTEL_CSS = '/css/marketing-readability.css?v=20260914-market-dashboard';
+    const INTEL_CSS = '/css/marketing-readability.css?v=20260914-contrast-enterprise';
     const INTEL_JS = '/js/intelligence/marketFeed.js?v=20260914-market-dashboard';
 
     function navLabel(item) {
@@ -75,7 +75,7 @@
         return `
         <div class="mkt-commercial-stack">
             <div id="mktBunkerTickerHost" aria-live="polite"></div>
-            <header class="home-topbar mkt-topbar" role="banner">
+            <header class="home-topbar mkt-topbar mkt-marketing-header" role="banner">
             <a class="home-brand" href="/"${active === 'home' ? ' aria-current="page"' : ''}>
                 <img src="${LOGO}" alt="" width="44" height="44" draggable="false">
                 <span class="home-brand-text">

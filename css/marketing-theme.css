@@ -1,15 +1,15 @@
 /* THE VESSEL CODE — Soft Light & Deep Navy (marketing portal) */
 :root {
-    --mkt-canvas: #f8fafc;
-    --mkt-canvas-elevated: #f1f5f9;
+    --mkt-canvas: #f1f5f9;
+    --mkt-canvas-elevated: #e2e8f0;
     --mkt-accent: #0284c7;
     --mkt-title: #0f172a;
     --mkt-body: #334155;
     --mkt-muted: #475569;
     --mkt-card-bg: #ffffff;
-    --mkt-card-border: #e2e8f0;
-    --mkt-card-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
-    --mkt-card-shadow-hover: 0 12px 28px -4px rgba(15, 23, 42, 0.08);
+    --mkt-card-border: #cbd5e1;
+    --mkt-card-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+    --mkt-card-shadow-hover: 0 8px 20px -4px rgba(15, 23, 42, 0.1);
     --mkt-hero-scrim: none;
 }
 
@@ -17,8 +17,8 @@
 body.tvc-marketing-body {
     margin: 0;
     padding: 0;
-    background-color: #f8fafc;
-    color: #1e293b;
+    background-color: #f1f5f9;
+    color: #334155;
     font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Inter", "Segoe UI", Roboto, sans-serif;
     min-height: 100vh;
     position: relative;
@@ -37,7 +37,7 @@ body.tvc-marketing-body::before {
     background:
         radial-gradient(circle at 15% 15%, rgba(2, 132, 199, 0.05) 0%, transparent 40%),
         radial-gradient(circle at 85% 80%, rgba(15, 23, 42, 0.03) 0%, transparent 50%),
-        linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+        linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
 }
 
 body.tvc-marketing-body.mkt-page,
