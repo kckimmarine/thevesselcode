@@ -12,6 +12,11 @@ html:has(.store-public-body) {
     font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
+body.tvc-marketing-body.store-public-body {
+    background: transparent;
+    color: #1e293b;
+}
+
 .store-public-shell {
     min-height: 100vh;
     min-height: 100dvh;
@@ -601,7 +606,7 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     html:has(.store-public-body),
     html {
         overscroll-behavior-y: contain;
-        background-color: #0f172a;
+        background-color: #f8fafc;
         min-height: 100dvh;
         overflow-x: hidden;
     }
@@ -609,7 +614,7 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     body.store-public-body,
     body.mkt-toolkit-page {
         overscroll-behavior-y: contain;
-        background-color: #0f172a;
+        background-color: #f8fafc;
         min-height: 100dvh;
         overflow-x: hidden;
         width: 100%;
