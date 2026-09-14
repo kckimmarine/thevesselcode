@@ -1,0 +1,6281 @@
+[
+  {
+    "c": "110101",
+    "n": "Stationary Bicycle Indoor Use",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Stationary Bicycle Indoor Use",
+      "Reference": "Stationary Bicycle Indoor Use"
+    }
+  },
+  {
+    "c": "110102",
+    "n": "Stationary Bicycle with Ergometer",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Stationary Bicycle with Ergometer",
+      "Reference": "Stationary Bicycle with Ergometer"
+    }
+  },
+  {
+    "c": "110103",
+    "n": "Treadmill (Running Machine), Foldable, AC 110V",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Treadmill (Running Machine), Foldable, AC 110V",
+      "Reference": "Treadmill (Running Machine), Foldable, AC 110V"
+    }
+  },
+  {
+    "c": "110104",
+    "n": "Treadmill (Running Machine), Foldable, AC 220V",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Treadmill (Running Machine), Foldable, AC 220V",
+      "Reference": "Treadmill (Running Machine), Foldable, AC 220V"
+    }
+  },
+  {
+    "c": "110105",
+    "n": "Old Model, Old, Monocycle",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Old, Monocycle",
+      "Reference": "Old Model, Old, Monocycle"
+    }
+  },
+  {
+    "c": "110106",
+    "n": "Treadmill (Running Machine), Non-Foldable, AC 110V",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Treadmill (Running Machine), Non-Foldable, AC 110V",
+      "Reference": "Treadmill (Running Machine), Non-Foldable, AC 110V"
+    }
+  },
+  {
+    "c": "110107",
+    "n": "Treadmill (Running Machine), Non-Foldable, AC 220V",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Treadmill (Running Machine), Non-Foldable, AC 220V",
+      "Reference": "Treadmill (Running Machine), Non-Foldable, AC 220V"
+    }
+  },
+  {
+    "c": "110108",
+    "n": "Cross Trainer",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Cross Trainer",
+      "Reference": "Cross Trainer"
+    }
+  },
+  {
+    "c": "110109",
+    "n": "Elliptical Trainer",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Elliptical Trainer",
+      "Reference": "Elliptical Trainer"
+    }
+  },
+  {
+    "c": "110110",
+    "n": "Exerciser Rowing Indoor Use",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Exerciser Rowing Indoor Use",
+      "Reference": "Exerciser Rowing Indoor Use"
+    }
+  },
+  {
+    "c": "110111",
+    "n": "Multi Gym Station, Indoor Use",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Multi Gym Station, Indoor Use",
+      "Reference": "Multi Gym Station, Indoor Use"
+    }
+  },
+  {
+    "c": "110112",
+    "n": "Incline / Decline Bench",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Incline / Decline Bench",
+      "Reference": "Incline / Decline Bench"
+    }
+  },
+  {
+    "c": "110113",
+    "n": "Abdominal Bench",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Abdominal Bench",
+      "Reference": "Abdominal Bench"
+    }
+  },
+  {
+    "c": "110114",
+    "n": "Exercise Mat",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Exercise Mat",
+      "Reference": "Exercise Mat"
+    }
+  },
+  {
+    "c": "110115",
+    "n": "Weight Lifting Belt ( Need Wanted Size )",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Weight Lifting Belt ( Need Wanted Size )",
+      "Reference": "Weight Lifting Belt ( Need Wanted Size )"
+    }
+  },
+  {
+    "c": "110116",
+    "n": "Exercise Bll (Gym Ball )",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Exercise Bll (Gym Ball )",
+      "Reference": "Exercise Bll (Gym Ball )"
+    }
+  },
+  {
+    "c": "110117",
+    "n": "Push-Up Bar",
+    "u": "PR",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Push-Up Bar",
+      "Reference": "Push-Up Bar"
+    }
+  },
+  {
+    "c": "110118",
+    "n": "Exercise Wheel",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Exercise Wheel",
+      "Reference": "Exercise Wheel"
+    }
+  },
+  {
+    "c": "110119",
+    "n": "Hand Grip",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hand Grip",
+      "Reference": "Hand Grip"
+    }
+  },
+  {
+    "c": "110120",
+    "n": "Old Model : Barbell Set",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model : Barbell Set",
+      "Reference": "Old Model : Barbell Set"
+    }
+  },
+  {
+    "c": "110121",
+    "n": "Barbell Bar",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Barbell Bar",
+      "Reference": "Barbell Bar"
+    }
+  },
+  {
+    "c": "110122",
+    "n": "Dumbbell Set",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Dumbbell Set",
+      "Reference": "Dumbbell Set"
+    }
+  },
+  {
+    "c": "110123",
+    "n": "Old Model : Barbell Disc, (Need Wanted Weight)",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model : Barbell Disc, (Need Wanted Weight)",
+      "Reference": "Old Model : Barbell Disc, (Need Wanted Weight)"
+    }
+  },
+  {
+    "c": "110124",
+    "n": "Spine Press Bench",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Spine Press Bench",
+      "Reference": "Spine Press Bench"
+    }
+  },
+  {
+    "c": "110125",
+    "n": "Barbell Disc, Cast Iron, 1.25 Kg (2's)",
+    "u": "PR",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Barbell Disc, Cast Iron, 1.25 Kg (2's)",
+      "Reference": "Barbell Disc, Cast Iron, 1.25 Kg (2's)"
+    }
+  },
+  {
+    "c": "110126",
+    "n": "Barbell Stand",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Barbell Stand",
+      "Reference": "Barbell Stand"
+    }
+  },
+  {
+    "c": "110127",
+    "n": "Skipping Rope",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Skipping Rope",
+      "Reference": "Skipping Rope"
+    }
+  },
+  {
+    "c": "110128",
+    "n": "Ankle Weight (Need Wanted Weight)",
+    "u": "PR",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Ankle Weight (Need Wanted Weight)",
+      "Reference": "Ankle Weight (Need Wanted Weight)"
+    }
+  },
+  {
+    "c": "110129",
+    "n": "Wrist Weight (Need Wanted Weight)",
+    "u": "PR",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Wrist Weight (Need Wanted Weight)",
+      "Reference": "Wrist Weight (Need Wanted Weight)"
+    }
+  },
+  {
+    "c": "110130",
+    "n": "Boxing Stand",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Boxing Stand",
+      "Reference": "Boxing Stand"
+    }
+  },
+  {
+    "c": "110131",
+    "n": "Punch Bag (Need Wanted Size)",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Punch Bag (Need Wanted Size)",
+      "Reference": "Punch Bag (Need Wanted Size)"
+    }
+  },
+  {
+    "c": "110132",
+    "n": "Boxing Glove (Need Wanted Weight , Once)",
+    "u": "PR",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Boxing Glove (Need Wanted Weight , Once)",
+      "Reference": "Boxing Glove (Need Wanted Weight , Once)"
+    }
+  },
+  {
+    "c": "110133",
+    "n": "Barbell Disc, Cast Iron, 2.5 Kg (2's)",
+    "u": "PR",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Barbell Disc, Cast Iron, 2.5 Kg (2's)",
+      "Reference": "Barbell Disc, Cast Iron, 2.5 Kg (2's)"
+    }
+  },
+  {
+    "c": "110134",
+    "n": "Rowing Exerciser, Inddor Use, Magnetic Rower",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Rowing Exerciser, Inddor Use, Magnetic Rower",
+      "Reference": "Rowing Exerciser, Inddor Use, Magnetic Rower"
+    }
+  },
+  {
+    "c": "110135",
+    "n": "Old Model, Old, Well Exerciser",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Old, Well Exerciser",
+      "Reference": "Old Model, Old, Well Exerciser"
+    }
+  },
+  {
+    "c": "110136",
+    "n": "Barbell Disc, Cast Iron, 5 Kg (2's)",
+    "u": "PR",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Barbell Disc, Cast Iron, 5 Kg (2's)",
+      "Reference": "Barbell Disc, Cast Iron, 5 Kg (2's)"
+    }
+  },
+  {
+    "c": "110137",
+    "n": "Barbell Disc, Cast Iron, 10 Kg (2's)",
+    "u": "PR",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Barbell Disc, Cast Iron, 10 Kg (2's)",
+      "Reference": "Barbell Disc, Cast Iron, 10 Kg (2's)"
+    }
+  },
+  {
+    "c": "110138",
+    "n": "Barbell Disc, Cast Iron, 15 Kg (2's)",
+    "u": "PR",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Barbell Disc, Cast Iron, 15 Kg (2's)",
+      "Reference": "Barbell Disc, Cast Iron, 15 Kg (2's)"
+    }
+  },
+  {
+    "c": "110139",
+    "n": "Barbell Disc, Cast Iron, 20 Kg (2's)",
+    "u": "PR",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Barbell Disc, Cast Iron, 20 Kg (2's)",
+      "Reference": "Barbell Disc, Cast Iron, 20 Kg (2's)"
+    }
+  },
+  {
+    "c": "110140",
+    "n": "Table for Table Tennis",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Table for Table Tennis",
+      "Reference": ". , Table for Table Tennis"
+    }
+  },
+  {
+    "c": "110141",
+    "n": "Table Tennis Net",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Table Tennis Net",
+      "Reference": "Table Tennis Net"
+    }
+  },
+  {
+    "c": "110142",
+    "n": "Table Tennis Net Supporter",
+    "u": "PR",
+    "g": "11",
+    "p": "11-110-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Table Tennis Net Supporter",
+      "Reference": "Table Tennis Net Supporter"
+    }
+  },
+  {
+    "c": "110143",
+    "n": "Table Tennis Bat, Rubber-Face Shake-Hand",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Table Tennis Bat, Rubber-Face Shake-Hand",
+      "Reference": "Table Tennis Bat, Rubber-Face Shake-Hand"
+    }
+  },
+  {
+    "c": "110144",
+    "n": "Table Tennis Bat, Rubber-Face Penholder",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Table Tennis Bat, Rubber-Face Penholder",
+      "Reference": "Table Tennis Bat, Rubber-Face Penholder"
+    }
+  },
+  {
+    "c": "110145",
+    "n": "Table Tennis Ball",
+    "u": "DOZ",
+    "g": "11",
+    "p": "11-110-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Table Tennis Ball",
+      "Reference": "Table Tennis Ball"
+    }
+  },
+  {
+    "c": "110146",
+    "n": "Smith Machine Set",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Smith Machine Set",
+      "Reference": "Smith Machine Set"
+    }
+  },
+  {
+    "c": "110147",
+    "n": "Chin & Dipping Multi Stand",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Chin & Dipping Multi Stand",
+      "Reference": "Chin & Dipping Multi Stand"
+    }
+  },
+  {
+    "c": "110148",
+    "n": "Mat Exercise Protection Puzzle, 60x60x1.2cm",
+    "u": "PCE",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Mat Exercise Protection Puzzle, 60x60x1.2cm",
+      "Reference": "Mat Exercise Protection Puzzle, 60x60x1.2cm"
+    }
+  },
+  {
+    "c": "110149",
+    "n": "Medicine Ball with Further, Details",
+    "u": "PCE",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Medicine Ball with Further, Details",
+      "Reference": "Medicine Ball with Further, Details"
+    }
+  },
+  {
+    "c": "110150",
+    "n": "Jogging Shoes 25 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Jogging Shoes 25 cm",
+      "Reference": "Jogging Shoes 25 cm"
+    }
+  },
+  {
+    "c": "110151",
+    "n": "Jogging Shoes 25.5 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Jogging Shoes 25.5 cm",
+      "Reference": "Jogging Shoes 25.5 cm"
+    }
+  },
+  {
+    "c": "110152",
+    "n": "Jogging Shoes 26 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Jogging Shoes 26 cm",
+      "Reference": "Jogging Shoes 26 cm"
+    }
+  },
+  {
+    "c": "110153",
+    "n": "Jogging Shoes 26.5 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Jogging Shoes 26.5 cm",
+      "Reference": "Jogging Shoes 26.5 cm"
+    }
+  },
+  {
+    "c": "110154",
+    "n": "Jogging Shoes 27 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Jogging Shoes 27 cm",
+      "Reference": "Jogging Shoes 27 cm"
+    }
+  },
+  {
+    "c": "110155",
+    "n": "Jogging Shoes 27.5 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Jogging Shoes 27.5 cm",
+      "Reference": "Jogging Shoes 27.5 cm"
+    }
+  },
+  {
+    "c": "110156",
+    "n": "Jogging Shoes 28 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Jogging Shoes 28 cm",
+      "Reference": "Jogging Shoes 28 cm"
+    }
+  },
+  {
+    "c": "110160",
+    "n": "Exercise Shoes 25 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Exercise Shoes 25 cm",
+      "Reference": "Exercise Shoes 25 cm"
+    }
+  },
+  {
+    "c": "110161",
+    "n": "Exercise Shoes 25.5 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Exercise Shoes 25.5 cm",
+      "Reference": "Exercise Shoes 25.5 cm"
+    }
+  },
+  {
+    "c": "110162",
+    "n": "Exercise Shoes 26 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Exercise Shoes 26 cm",
+      "Reference": "Exercise Shoes 26 cm"
+    }
+  },
+  {
+    "c": "110163",
+    "n": "Exercise Shoes 26.5 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Exercise Shoes 26.5 cm",
+      "Reference": "Exercise Shoes 26.5 cm"
+    }
+  },
+  {
+    "c": "110164",
+    "n": "Exercise Shoes 27 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Exercise Shoes 27 cm",
+      "Reference": "Exercise Shoes 27 cm"
+    }
+  },
+  {
+    "c": "110165",
+    "n": "Exercise Shoes 27.5 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Exercise Shoes 27.5 cm",
+      "Reference": "Exercise Shoes 27.5 cm"
+    }
+  },
+  {
+    "c": "110166",
+    "n": "Exercise Shoes 28 cm",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Exercise Shoes 28 cm",
+      "Reference": "Exercise Shoes 28 cm"
+    }
+  },
+  {
+    "c": "110170",
+    "n": "Foam Roller Wit Further, Details",
+    "u": "PCE",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Foam Roller Wit Further, Details",
+      "Reference": "Foam Roller Wit Further, Details"
+    }
+  },
+  {
+    "c": "110171",
+    "n": "Gym Glove, S",
+    "u": "PCE",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Gym Glove, S",
+      "Reference": "Gym Glove, S"
+    }
+  },
+  {
+    "c": "110172",
+    "n": "Gym Glove, M",
+    "u": "PCE",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Gym Glove, M",
+      "Reference": "Gym Glove, M"
+    }
+  },
+  {
+    "c": "110173",
+    "n": "Gym Glove, L",
+    "u": "PCE",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Gym Glove, L",
+      "Reference": "Gym Glove, L"
+    }
+  },
+  {
+    "c": "110174",
+    "n": "Gym Glove, XL",
+    "u": "PCE",
+    "g": "11",
+    "p": "11-110-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Gym Glove, XL",
+      "Reference": "Gym Glove, XL"
+    }
+  },
+  {
+    "c": "110180",
+    "n": "Volley Ball Rubber",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Volley Ball Rubber",
+      "Reference": "Volley Ball Rubber"
+    }
+  },
+  {
+    "c": "110181",
+    "n": "Volley Ball Leather",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Volley Ball Leather",
+      "Reference": "Volley Ball Leather"
+    }
+  },
+  {
+    "c": "110182",
+    "n": "Soccer Ball Rubber",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Soccer Ball Rubber",
+      "Reference": "Soccer Ball Rubber"
+    }
+  },
+  {
+    "c": "110183",
+    "n": "Soccer Ball Leather",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Soccer Ball Leather",
+      "Reference": "Soccer Ball Leather"
+    }
+  },
+  {
+    "c": "110184",
+    "n": "Basket Ball Rubber",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Basket Ball Rubber",
+      "Reference": "Basket Ball Rubber"
+    }
+  },
+  {
+    "c": "110185",
+    "n": "Basket Ball Leather",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-110-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Basket Ball Leather",
+      "Reference": "Basket Ball Leather"
+    }
+  },
+  {
+    "c": "110186",
+    "n": "Basket Ball Hoop, Portable Type",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Basket Ball Hoop, Portable Type",
+      "Reference": "Basket Ball Hoop, Portable Type"
+    }
+  },
+  {
+    "c": "110187",
+    "n": "Basket Ball Hoop, Wall Mount Type",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Basket Ball Hoop, Wall Mount Type",
+      "Reference": "Basket Ball Hoop, Wall Mount Type"
+    }
+  },
+  {
+    "c": "110188",
+    "n": "Fishing Rod with Further, Details",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-05.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fishing Rod with Further, Details",
+      "Reference": "Fishing Rod with Further, Details"
+    }
+  },
+  {
+    "c": "110189",
+    "n": "Fishing Reel with Further, Details",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-05.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fishing Reel with Further, Details",
+      "Reference": "Fishing Reel with Further, Details"
+    }
+  },
+  {
+    "c": "110190",
+    "n": "Fishing Line with Further, Details",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-05.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fishing Line with Further, Details",
+      "Reference": "Fishing Line with Further, Details"
+    }
+  },
+  {
+    "c": "110191",
+    "n": "Fishing Hook with Further, Details",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-05.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fishing Hook with Further, Details",
+      "Reference": "Fishing Hook with Further, Details"
+    }
+  },
+  {
+    "c": "110192",
+    "n": "Fishing Sinker with Further, Details",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-05.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fishing Sinker with Further, Details",
+      "Reference": "Fishing Sinker with Further, Details"
+    }
+  },
+  {
+    "c": "110193",
+    "n": "Fishing Float with Further, Details",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-05.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fishing Float with Further, Details",
+      "Reference": "Fishing Float with Further, Details"
+    }
+  },
+  {
+    "c": "110194",
+    "n": "Fishing Lure with Further, Details",
+    "u": "SET",
+    "g": "11",
+    "p": "11-110-05.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fishing Lure with Further, Details",
+      "Reference": "Fishing Lure with Further, Details"
+    }
+  },
+  {
+    "c": "110201",
+    "n": "Sweat Suit with Hood Cotton Gray Size-M",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Sweat Suit with Hood Cotton Gray Size-M",
+      "Reference": "Sweat Suit with Hood Cotton Gray Size-M"
+    }
+  },
+  {
+    "c": "110202",
+    "n": "Sweat Suit with Hood Cotton Gray Size-L",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Sweat Suit with Hood Cotton Gray Size-L",
+      "Reference": "Sweat Suit with Hood Cotton Gray Size-L"
+    }
+  },
+  {
+    "c": "110203",
+    "n": "Sweat Suit with Hood Cotton Gray Size-LL",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Sweat Suit with Hood Cotton Gray Size-LL",
+      "Reference": "Sweat Suit with Hood Cotton Gray Size-LL"
+    }
+  },
+  {
+    "c": "110206",
+    "n": "Sweat Suit without Hood Cotton Gray Size-M",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Sweat Suit without Hood Cotton Gray Size-M",
+      "Reference": "Sweat Suit without Hood Cotton Gray Size-M"
+    }
+  },
+  {
+    "c": "110207",
+    "n": "Sweat Suit without Hood Cotton Gray Size-L",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Sweat Suit without Hood Cotton Gray Size-L",
+      "Reference": "Sweat Suit without Hood Cotton Gray Size-L"
+    }
+  },
+  {
+    "c": "110208",
+    "n": "Sweat Suit without Hood Cotton Gray Size-LL",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Sweat Suit without Hood Cotton Gray Size-LL",
+      "Reference": "Sweat Suit without Hood Cotton Gray Size-LL"
+    }
+  },
+  {
+    "c": "110211",
+    "n": "Jogging Pants, Color, Size-M",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Jogging Pants, Color, Size-M",
+      "Reference": "Jogging Pants, Color, Size-M"
+    }
+  },
+  {
+    "c": "110212",
+    "n": "Jogging Pants, Color, Size-L",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Jogging Pants, Color, Size-L",
+      "Reference": "Jogging Pants, Color, Size-L"
+    }
+  },
+  {
+    "c": "110213",
+    "n": "Jogging Pants, Color, Size-LL",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Jogging Pants, Color, Size-LL",
+      "Reference": "Jogging Pants, Color, Size-LL"
+    }
+  },
+  {
+    "c": "110230",
+    "n": "Socks Sporting ,Cotton, White",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Socks Sporting ,Cotton, White",
+      "Reference": "Socks Sporting ,Cotton, White"
+    }
+  },
+  {
+    "c": "110231",
+    "n": "Socks Sporting ,Cotton, Colored",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Socks Sporting ,Cotton, Colored",
+      "Reference": "Socks Sporting ,Cotton, Colored"
+    }
+  },
+  {
+    "c": "110240",
+    "n": "Swimming Trunks, Size-M",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Swimming Trunks, Size-M",
+      "Reference": "Swimming Trunks, Size-M"
+    }
+  },
+  {
+    "c": "110241",
+    "n": "Swimming Trunks, Size-L",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Swimming Trunks, Size-L",
+      "Reference": "Swimming Trunks, Size-L"
+    }
+  },
+  {
+    "c": "110242",
+    "n": "Swimming Trunks, Size LL",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Swimming Trunks, Size LL",
+      "Reference": "Swimming Trunks, Size LL"
+    }
+  },
+  {
+    "c": "110401",
+    "n": "Cards, Plastic",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Cards, Plastic",
+      "Reference": "Cards, Plastic"
+    }
+  },
+  {
+    "c": "110402",
+    "n": "Cribbage and Cards",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Cribbage and Cards",
+      "Reference": "Cribbage and Cards"
+    }
+  },
+  {
+    "c": "110405",
+    "n": "Chess & Checker Game",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Chess & Checker Game",
+      "Reference": "Chess & Checker Game"
+    }
+  },
+  {
+    "c": "110406",
+    "n": "Chess Board",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Chess Board",
+      "Reference": "Chess Board"
+    }
+  },
+  {
+    "c": "110407",
+    "n": "Chessmen",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Chessmen",
+      "Reference": "Chessmen"
+    }
+  },
+  {
+    "c": "110410",
+    "n": "Dartboard with Arrow 6's",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Dartboard with Arrow 6's",
+      "Reference": "Dartboard with Arrow 6's"
+    }
+  },
+  {
+    "c": "110411",
+    "n": "Darts 3's",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Darts 3's",
+      "Reference": "Darts 3's"
+    }
+  },
+  {
+    "c": "110415",
+    "n": "Domino Game",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Domino Game",
+      "Reference": "Domino Game"
+    }
+  },
+  {
+    "c": "110416",
+    "n": "Backgammon",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Backgammon",
+      "Reference": "Backgammon"
+    }
+  },
+  {
+    "c": "110417",
+    "n": "Mahjong Set",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Mahjong Set",
+      "Reference": "( ) , Mahjong Set"
+    }
+  },
+  {
+    "c": "110420",
+    "n": "Monopoly Game",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Monopoly Game",
+      "Reference": "Monopoly Game"
+    }
+  },
+  {
+    "c": "110425",
+    "n": "Scramble Game",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Scramble Game",
+      "Reference": "Scramble Game"
+    }
+  },
+  {
+    "c": "110426",
+    "n": "Sho-Gi, Japaness Chess",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Sho-Gi, Japaness Chess",
+      "Reference": "Sho-Gi, Japaness Chess"
+    }
+  },
+  {
+    "c": "110427",
+    "n": "Go Game",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Go Game",
+      "Reference": "Go Game"
+    }
+  },
+  {
+    "c": "110428",
+    "n": "Othello Game (Reversi)",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Othello Game (Reversi)",
+      "Reference": "Othello Game (Reversi)"
+    }
+  },
+  {
+    "c": "110429",
+    "n": "Rubik's Cube",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Rubik's Cube",
+      "Reference": "Rubik's Cube"
+    }
+  },
+  {
+    "c": "110430",
+    "n": "Dice with Leather Cup",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Dice with Leather Cup",
+      "Reference": "Dice with Leather Cup"
+    }
+  },
+  {
+    "c": "110431",
+    "n": "Bingo Books Assorted",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Bingo Books Assorted",
+      "Reference": "Bingo Books Assorted"
+    }
+  },
+  {
+    "c": "110439",
+    "n": "Game, Computer Game, Hard Ware (Need Game Name)",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Game, Computer Game, Hard Ware (Need Game Name)",
+      "Reference": "Game, Computer Game, Hard Ware (Need Game Name)"
+    }
+  },
+  {
+    "c": "110440",
+    "n": "Game Computer Game, Soft (With Name of Game)",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Game Computer Game, Soft (With Name of Game)",
+      "Reference": "Game Computer Game, Soft (With Name of Game)"
+    }
+  },
+  {
+    "c": "110441",
+    "n": "Billiard Table Set",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Billiard Table Set",
+      "Reference": "Billiard Table Set"
+    }
+  },
+  {
+    "c": "110442",
+    "n": "Cues for Billiard",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Cues for Billiard",
+      "Reference": "Cues for Billiard"
+    }
+  },
+  {
+    "c": "110443",
+    "n": "Balls for Billiard",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Balls for Billiard",
+      "Reference": "Balls for Billiard"
+    }
+  },
+  {
+    "c": "110445",
+    "n": "Table Scooer Game",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Table Scooer Game",
+      "Reference": "Table Scooer Game"
+    }
+  },
+  {
+    "c": "110446",
+    "n": "Massage Chair Electric 110V",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Massage Chair Electric 110V",
+      "Reference": "Massage Chair Electric 110V"
+    }
+  },
+  {
+    "c": "110447",
+    "n": "Massage Chair Electric 220V",
+    "u": "SET",
+    "g": "11",
+    "p": "11-150-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Massage Chair Electric 220V",
+      "Reference": "Massage Chair Electric 220V"
+    }
+  },
+  {
+    "c": "110501",
+    "n": "Pipe Smoking Brier Straight",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-210-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pipe Smoking Brier Straight",
+      "Reference": "Pipe Smoking Brier Straight"
+    }
+  },
+  {
+    "c": "110502",
+    "n": "Pipe Smoking Brier Curved",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-210-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pipe Smoking Brier Curved",
+      "Reference": "Pipe Smoking Brier Curved"
+    }
+  },
+  {
+    "c": "110503",
+    "n": "Pipe Smoking Brier Two-Way",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-210-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pipe Smoking Brier Two-Way",
+      "Reference": "Pipe Smoking Brier Two-Way"
+    }
+  },
+  {
+    "c": "110504",
+    "n": "Pipe Smoking Corn",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-210-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pipe Smoking Corn",
+      "Reference": "Pipe Smoking Corn"
+    }
+  },
+  {
+    "c": "110506",
+    "n": "Smoking Pipe Cleaner 50's",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-210-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Smoking Pipe Cleaner 50's",
+      "Reference": "Smoking Pipe Cleaner 50's"
+    }
+  },
+  {
+    "c": "110510",
+    "n": "Lighter Cigarette Oneway Use",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-210-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Lighter Cigarette Oneway Use",
+      "Reference": "Lighter Cigarette Oneway Use"
+    }
+  },
+  {
+    "c": "110511",
+    "n": "Lighter Cigarette Windproof",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-210-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Lighter Cigarette Windproof",
+      "Reference": "Lighter Cigarette Windproof"
+    }
+  },
+  {
+    "c": "110515",
+    "n": "Butane Gas for Cigarette Lighter 78 grm",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-210-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Butane Gas for Cigarette Lighter 78 grm",
+      "Reference": "Butane Gas for Cigarette Lighter 78 grm"
+    }
+  },
+  {
+    "c": "110516",
+    "n": "Butane Gas Ronson's 30 grm",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-210-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Butane Gas Ronson's 30 grm",
+      "Reference": "Butane Gas Ronson's 30 grm"
+    }
+  },
+  {
+    "c": "110520",
+    "n": "Fuel for Cigarette Lighter 130 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-210-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fuel for Cigarette Lighter 130 ml",
+      "Reference": "Fuel for Cigarette Lighter 130 ml"
+    }
+  },
+  {
+    "c": "110522",
+    "n": "Flint for Cigarette Lighter 5's",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-210-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Flint for Cigarette Lighter 5's",
+      "Reference": "Flint for Cigarette Lighter 5's"
+    }
+  },
+  {
+    "c": "110550",
+    "n": "Sunglasses Plastic Frame",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Sunglasses Plastic Frame",
+      "Reference": "Sunglasses Plastic Frame"
+    }
+  },
+  {
+    "c": "110551",
+    "n": "Sunglasses Metal Frame",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Sunglasses Metal Frame",
+      "Reference": "Sunglasses Metal Frame"
+    }
+  },
+  {
+    "c": "110601",
+    "n": "Hair Shampoo 220 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hair Shampoo 220 ml",
+      "Reference": "Hair Shampoo 220 ml"
+    }
+  },
+  {
+    "c": "110602",
+    "n": "Hair Shampoo 350 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hair Shampoo 350 ml",
+      "Reference": "Hair Shampoo 350 ml"
+    }
+  },
+  {
+    "c": "110603",
+    "n": "Shampoo for Hair & Shoulder 200 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shampoo for Hair & Shoulder 200 ml",
+      "Reference": "Shampoo for Hair & Shoulder 200 ml"
+    }
+  },
+  {
+    "c": "110604",
+    "n": "Shampoo for Hair & Shoulder 300 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shampoo for Hair & Shoulder 300 ml",
+      "Reference": "Shampoo for Hair & Shoulder 300 ml"
+    }
+  },
+  {
+    "c": "110605",
+    "n": "Shampoo for Hair & Shoulder 400 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shampoo for Hair & Shoulder 400 ml",
+      "Reference": "Shampoo for Hair & Shoulder 400 ml"
+    }
+  },
+  {
+    "c": "110606",
+    "n": "Shower Gel, 250 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shower Gel, 250 ml",
+      "Reference": "Shower Gel, 250 ml"
+    }
+  },
+  {
+    "c": "110607",
+    "n": "Hair Conditioner 300 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hair Conditioner 300 ml",
+      "Reference": "Hair Conditioner 300 ml"
+    }
+  },
+  {
+    "c": "110608",
+    "n": "Hair Oil 200 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hair Oil 200 ml",
+      "Reference": "Hair Oil 200 ml"
+    }
+  },
+  {
+    "c": "110610",
+    "n": "Hair Tonic Old-Spice 150 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hair Tonic Old-Spice 150 ml",
+      "Reference": "Hair Tonic Old-Spice 150 ml"
+    }
+  },
+  {
+    "c": "110620",
+    "n": "Hair Cream Old-Spice 75 grm",
+    "u": "TUB",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hair Cream Old-Spice 75 grm",
+      "Reference": "Hair Cream Old-Spice 75 grm"
+    }
+  },
+  {
+    "c": "110630",
+    "n": "Hair Liquid Old-Spice 150 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hair Liquid Old-Spice 150 ml",
+      "Reference": "Hair Liquid Old-Spice 150 ml"
+    }
+  },
+  {
+    "c": "110635",
+    "n": "Pomade Brilliantine Bravas 85 grm",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pomade Brilliantine Bravas 85 grm",
+      "Reference": "Pomade Brilliantine Bravas 85 grm"
+    }
+  },
+  {
+    "c": "110640",
+    "n": "Hair Spray Bravas 150 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hair Spray Bravas 150 ml",
+      "Reference": "Hair Spray Bravas 150 ml"
+    }
+  },
+  {
+    "c": "110650",
+    "n": "Shaving Cream 4-3/4 Oz",
+    "u": "TUB",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shaving Cream 4-3/4 Oz",
+      "Reference": "Shaving Cream 4-3/4 Oz"
+    }
+  },
+  {
+    "c": "110651",
+    "n": "Shaving Cream 90 grm",
+    "u": "TUB",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shaving Cream 90 grm",
+      "Reference": "Shaving Cream 90 grm"
+    }
+  },
+  {
+    "c": "110660",
+    "n": "Shaving Foam 177 grm",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shaving Foam 177 grm",
+      "Reference": "Shaving Foam 177 grm"
+    }
+  },
+  {
+    "c": "110661",
+    "n": "Shaving Foam 300 ml",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shaving Foam 300 ml",
+      "Reference": "Shaving Foam 300 ml"
+    }
+  },
+  {
+    "c": "110662",
+    "n": "Shaving Gel 200 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shaving Gel 200 ml",
+      "Reference": "Shaving Gel 200 ml"
+    }
+  },
+  {
+    "c": "110670",
+    "n": "After Shave Lotion 125 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "After Shave Lotion 125 ml",
+      "Reference": "After Shave Lotion 125 ml"
+    }
+  },
+  {
+    "c": "110671",
+    "n": "After Shave Lotion 50 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "After Shave Lotion 50 ml",
+      "Reference": "After Shave Lotion 50 ml"
+    }
+  },
+  {
+    "c": "110672",
+    "n": "After Shave Lotion 100 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "After Shave Lotion 100 ml",
+      "Reference": "After Shave Lotion 100 ml"
+    }
+  },
+  {
+    "c": "110680",
+    "n": "Deodorant Roll-On 30 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Deodorant Roll-On 30 ml",
+      "Reference": "Deodorant Roll-On 30 ml"
+    }
+  },
+  {
+    "c": "110681",
+    "n": "Deodorant Spray 70 grm",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Deodorant Spray 70 grm",
+      "Reference": "Deodorant Spray 70 grm"
+    }
+  },
+  {
+    "c": "110682",
+    "n": "Deodorant Roll-On, 50 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Deodorant Roll-On, 50 ml",
+      "Reference": "Deodorant Roll-On, 50 ml"
+    }
+  },
+  {
+    "c": "110683",
+    "n": "Deodorant Spray, 150 ml",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Deodorant Spray, 150 ml",
+      "Reference": "Deodorant Spray, 150 ml"
+    }
+  },
+  {
+    "c": "110684",
+    "n": "Deodorant Spray, 200 ml",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Deodorant Spray, 200 ml",
+      "Reference": "Deodorant Spray, 200 ml"
+    }
+  },
+  {
+    "c": "110685",
+    "n": "Body Lotion, 250 ml",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Body Lotion, 250 ml",
+      "Reference": "Body Lotion, 250 ml"
+    }
+  },
+  {
+    "c": "110686",
+    "n": "Body Lotion, 400 ml",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Body Lotion, 400 ml",
+      "Reference": "Body Lotion, 400 ml"
+    }
+  },
+  {
+    "c": "110687",
+    "n": "Deodorant Roll-On 40 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Deodorant Roll-On 40 ml",
+      "Reference": "Deodorant Roll-On 40 ml"
+    }
+  },
+  {
+    "c": "110688",
+    "n": "Deodorant Spray 100 grm",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Deodorant Spray 100 grm",
+      "Reference": "Deodorant Spray 100 grm"
+    }
+  },
+  {
+    "c": "110689",
+    "n": "Lip Balm (Chap Stick)",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Lip Balm (Chap Stick)",
+      "Reference": "Lip Balm (Chap Stick)"
+    }
+  },
+  {
+    "c": "110690",
+    "n": "Perfume for Men 100 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Perfume for Men 100 ml",
+      "Reference": "Perfume for Men 100 ml"
+    }
+  },
+  {
+    "c": "110691",
+    "n": "Perfume for Ladies 100 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Perfume for Ladies 100 ml",
+      "Reference": "Perfume for Ladies 100 ml"
+    }
+  },
+  {
+    "c": "110692",
+    "n": "Facial Wash 100 ml",
+    "u": "TUB",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Facial Wash 100 ml",
+      "Reference": "Facial Wash 100 ml"
+    }
+  },
+  {
+    "c": "110693",
+    "n": "Facial Scrub 100 ml",
+    "u": "TUB",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Facial Scrub 100 ml",
+      "Reference": "Facial Scrub 100 ml"
+    }
+  },
+  {
+    "c": "110701",
+    "n": "Alka Seltzer Tablets 12 Tab",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Alka Seltzer Tablets 12 Tab",
+      "Reference": "Alka Seltzer Tablets 12 Tab"
+    }
+  },
+  {
+    "c": "110705",
+    "n": "Eno Fruit Salt 4 Oz",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Eno Fruit Salt 4 Oz",
+      "Reference": "Eno Fruit Salt 4 Oz"
+    }
+  },
+  {
+    "c": "110706",
+    "n": "Eno Fruit Salt 8 Oz",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Eno Fruit Salt 8 Oz",
+      "Reference": "Eno Fruit Salt 8 Oz"
+    }
+  },
+  {
+    "c": "110710",
+    "n": "Skin Cream Nivea 56 grm",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Skin Cream Nivea 56 grm",
+      "Reference": "Skin Cream Nivea 56 grm"
+    }
+  },
+  {
+    "c": "110711",
+    "n": "Skin Cream, 150 ml",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Skin Cream, 150 ml",
+      "Reference": "Skin Cream, 150 ml"
+    }
+  },
+  {
+    "c": "110712",
+    "n": "Skin Cream, 250 ml",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Skin Cream, 250 ml",
+      "Reference": "Skin Cream, 250 ml"
+    }
+  },
+  {
+    "c": "110713",
+    "n": "Skin Cream, 400 ml",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Skin Cream, 400 ml",
+      "Reference": "Skin Cream, 400 ml"
+    }
+  },
+  {
+    "c": "110720",
+    "n": "Sun Lotion Sunburn Type 100 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Sun Lotion Sunburn Type 100 ml",
+      "Reference": "Sun Lotion Sunburn Type 100 ml"
+    }
+  },
+  {
+    "c": "110721",
+    "n": "Sun Lotion Sunburn Less Type 100 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-310-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Sun Lotion Sunburn Less Type 100 ml",
+      "Reference": "Sun Lotion Sunburn Less Type 100 ml"
+    }
+  },
+  {
+    "c": "110901",
+    "n": "Barber Hair Clipper Set",
+    "u": "SET",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Barber Hair Clipper Set",
+      "Reference": "Barber Hair Clipper Set"
+    }
+  },
+  {
+    "c": "110902",
+    "n": "Barber Hair Scissors Set",
+    "u": "SET",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Barber Hair Scissors Set",
+      "Reference": "Barber Hair Scissors Set"
+    }
+  },
+  {
+    "c": "110903",
+    "n": "Electric Hair Clipper, 110V",
+    "u": "SET",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Electric Hair Clipper, 110V",
+      "Reference": "Electric Hair Clipper, 110V"
+    }
+  },
+  {
+    "c": "110904",
+    "n": "Electric Hair Clipper, 220V",
+    "u": "SET",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Electric Hair Clipper, 220V",
+      "Reference": "Electric Hair Clipper, 220V"
+    }
+  },
+  {
+    "c": "110905",
+    "n": "Hair Comb Pocketable with Sack",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hair Comb Pocketable with Sack",
+      "Reference": "Hair Comb Pocketable with Sack"
+    }
+  },
+  {
+    "c": "110910",
+    "n": "Hair Brush Plastic",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hair Brush Plastic",
+      "Reference": "Hair Brush Plastic"
+    }
+  },
+  {
+    "c": "110911",
+    "n": "Hair Brush Bristle",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hair Brush Bristle",
+      "Reference": "Hair Brush Bristle"
+    }
+  },
+  {
+    "c": "110912",
+    "n": "Hair Dryer, 110V 50/60 Hz",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-06.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hair Dryer, 110V 50/60 Hz",
+      "Reference": "Hair Dryer, 110V 50/60 Hz"
+    }
+  },
+  {
+    "c": "110913",
+    "n": "Hair Dryer, 220V 50/60 Hz",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-06.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hair Dryer, 220V 50/60 Hz",
+      "Reference": "Hair Dryer, 220V 50/60 Hz"
+    }
+  },
+  {
+    "c": "110917",
+    "n": "Tooth Paste Colgate 75 grm",
+    "u": "TUB",
+    "g": "11",
+    "p": "11-310-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Tooth Paste Colgate 75 grm",
+      "Reference": "Tooth Paste Colgate 75 grm"
+    }
+  },
+  {
+    "c": "110920",
+    "n": "Tooth Paste, Colgate 198 grm",
+    "u": "TUB",
+    "g": "11",
+    "p": "11-310-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Tooth Paste, Colgate 198 grm",
+      "Reference": "Tooth Paste, Colgate 198 grm"
+    }
+  },
+  {
+    "c": "110921",
+    "n": "Tooth Paste, 200 grm",
+    "u": "TUB",
+    "g": "11",
+    "p": "11-310-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Tooth Paste, 200 grm",
+      "Reference": "Tooth Paste, 200 grm"
+    }
+  },
+  {
+    "c": "110922",
+    "n": "Tooth Paste, 100 grm",
+    "u": "TUB",
+    "g": "11",
+    "p": "11-310-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Tooth Paste, 100 grm",
+      "Reference": "Tooth Paste, 100 grm"
+    }
+  },
+  {
+    "c": "110925",
+    "n": "Tooth Brush, Bristle",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Tooth Brush, Bristle",
+      "Reference": "Tooth Brush, Bristle"
+    }
+  },
+  {
+    "c": "110926",
+    "n": "Tooth Brush, Nylon",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Tooth Brush, Nylon",
+      "Reference": "Tooth Brush, Nylon"
+    }
+  },
+  {
+    "c": "110927",
+    "n": "Tooth Brush, Nylon Hard",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Tooth Brush, Nylon Hard",
+      "Reference": "Tooth Brush, Nylon Hard"
+    }
+  },
+  {
+    "c": "110928",
+    "n": "Electric Tooth Brush",
+    "u": "SET",
+    "g": "11",
+    "p": "11-310-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Electric Tooth Brush",
+      "Reference": "Electric Tooth Brush"
+    }
+  },
+  {
+    "c": "110929",
+    "n": "Dental Floss Holder Type",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Dental Floss Holder Type",
+      "Reference": "Dental Floss Holder Type"
+    }
+  },
+  {
+    "c": "110930",
+    "n": "Dental Floss Roll Type 50 Mtr",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Dental Floss Roll Type 50 Mtr",
+      "Reference": "Dental Floss Roll Type 50 Mtr"
+    }
+  },
+  {
+    "c": "110935",
+    "n": "Disposable Hand Shaver 5's",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Disposable Hand Shaver 5's",
+      "Reference": "Disposable Hand Shaver 5's"
+    }
+  },
+  {
+    "c": "110936",
+    "n": "Hand Shaver InjectOR Type Gillette G-Ii",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Hand Shaver InjectOR Type Gillette G-Ii",
+      "Reference": "Hand Shaver InjectOR Type Gillette G-Ii"
+    }
+  },
+  {
+    "c": "110937",
+    "n": "Electric Shaver, AC 110V",
+    "u": "SET",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Electric Shaver, AC 110V",
+      "Reference": "Electric Shaver, AC 110V"
+    }
+  },
+  {
+    "c": "110938",
+    "n": "Electric Shaver, AC 220V",
+    "u": "SET",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Electric Shaver, AC 220V",
+      "Reference": "Electric Shaver, AC 220V"
+    }
+  },
+  {
+    "c": "110939",
+    "n": "Moustache Beard Trimmer, 110V",
+    "u": "PCE",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Moustache Beard Trimmer, 110V",
+      "Reference": "Moustache Beard Trimmer, 110V"
+    }
+  },
+  {
+    "c": "110940",
+    "n": "Shaving Blade InjectOR Type",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shaving Blade InjectOR Type",
+      "Reference": "Shaving Blade InjectOR Type"
+    }
+  },
+  {
+    "c": "110941",
+    "n": "Moustache Beard Trimmer, 220V",
+    "u": "PCE",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Moustache Beard Trimmer, 220V",
+      "Reference": "Moustache Beard Trimmer, 220V"
+    }
+  },
+  {
+    "c": "110945",
+    "n": "Shaving Brush",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shaving Brush",
+      "Reference": "Shaving Brush"
+    }
+  },
+  {
+    "c": "110950",
+    "n": "Nail Clipper Regular",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Nail Clipper Regular",
+      "Reference": "Nail Clipper Regular"
+    }
+  },
+  {
+    "c": "110951",
+    "n": "Nail Clipper with Pared Nail Pocket",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Nail Clipper with Pared Nail Pocket",
+      "Reference": "Nail Clipper with Pared Nail Pocket"
+    }
+  },
+  {
+    "c": "110955",
+    "n": "Nail Brush Nylon",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-310-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Nail Brush Nylon",
+      "Reference": "Nail Brush Nylon"
+    }
+  },
+  {
+    "c": "110961",
+    "n": "Cotton Buds, 100 Sticks",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-310-05.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Cotton Buds, 100 Sticks",
+      "Reference": "Cotton Buds, 100 Sticks"
+    }
+  },
+  {
+    "c": "110970",
+    "n": "Shoe Polish Liquid 75 ml",
+    "u": "BTL",
+    "g": "11",
+    "p": "11-410-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shoe Polish Liquid 75 ml",
+      "Reference": "Shoe Polish Liquid 75 ml"
+    }
+  },
+  {
+    "c": "110971",
+    "n": "Shoe Polish Solid 45 grm",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-410-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shoe Polish Solid 45 grm",
+      "Reference": "Shoe Polish Solid 45 grm"
+    }
+  },
+  {
+    "c": "110975",
+    "n": "Shoe Laces",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shoe Laces",
+      "Reference": "Shoe Laces"
+    }
+  },
+  {
+    "c": "110977",
+    "n": "Shoe Polishing Brush",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-410-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shoe Polishing Brush",
+      "Reference": "Shoe Polishing Brush"
+    }
+  },
+  {
+    "c": "111109",
+    "n": "International Shortwave Broadcast Receivable Radio, Handy Ty Sw Radio",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "International Shortwave Broadcast Receivable Radio, Handy Ty Sw Radio",
+      "Reference": "International Shortwave Broadcast Receivable Radio, Handy Ty Sw Radio"
+    }
+  },
+  {
+    "c": "111110",
+    "n": "International Shortwave Broadcast Receivable Radio, Portable Ty Sw Radio",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "International Shortwave Broadcast Receivable Radio, Portable Ty Sw Radio",
+      "Reference": "International Shortwave Broadcast Receivable Radio, Portable Ty Sw Radio"
+    }
+  },
+  {
+    "c": "111111",
+    "n": "Old Model, Handy Ty Rodio Cassette Player",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Handy Ty Rodio Cassette Player",
+      "Reference": "Old Model, Handy Ty Rodio Cassette Player"
+    }
+  },
+  {
+    "c": "111112",
+    "n": "Old Model, Handy Ty Cassette Tape Player",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Handy Ty Cassette Tape Player",
+      "Reference": "Old Model, Handy Ty Cassette Tape Player"
+    }
+  },
+  {
+    "c": "111113",
+    "n": "Old Model, Handy Ty CD Player",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Handy Ty CD Player",
+      "Reference": "CD , Old Model, Handy Ty CD Player"
+    }
+  },
+  {
+    "c": "111114",
+    "n": "Old Model, Handy Ty Md Player",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Handy Ty Md Player",
+      "Reference": "MD , Old Model, Handy Ty Md Player"
+    }
+  },
+  {
+    "c": "111116",
+    "n": "Old Modle, Portable Radio Cassette Player",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Modle, Portable Radio Cassette Player",
+      "Reference": "Old Modle, Portable Radio Cassette Player"
+    }
+  },
+  {
+    "c": "111117",
+    "n": "Old Modle, Portable Radio with CD Player",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Modle, Portable Radio with CD Player",
+      "Reference": "CD , Old Modle, Portable Radio with CD Player"
+    }
+  },
+  {
+    "c": "111118",
+    "n": "Old Modle, Portable Radio with Cd/Md Player",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Modle, Portable Radio with Cd/Md Player",
+      "Reference": "CD,MD , Old Modle, Portable Radio with Cd/Md Player"
+    }
+  },
+  {
+    "c": "111119",
+    "n": "Digital Media Player",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Digital Media Player",
+      "Reference": "Digital Media Player"
+    }
+  },
+  {
+    "c": "111121",
+    "n": "Digital Photo Frame, AC 110V",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Digital Photo Frame, AC 110V",
+      "Reference": "Digital Photo Frame, AC 110V"
+    }
+  },
+  {
+    "c": "111122",
+    "n": "Digital Photo Frame, AC 220V",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Digital Photo Frame, AC 220V",
+      "Reference": "Digital Photo Frame, AC 220V"
+    }
+  },
+  {
+    "c": "111123",
+    "n": "Ic Recorder (Digital Voice, Recorder)",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Ic Recorder (Digital Voice, Recorder)",
+      "Reference": "Ic Recorder (Digital Voice, Recorder)"
+    }
+  },
+  {
+    "c": "111124",
+    "n": "Headphones with Further, Details",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-05.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Headphones with Further, Details",
+      "Reference": "Headphones with Further, Details"
+    }
+  },
+  {
+    "c": "111125",
+    "n": "Earphones with Further Details",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-05.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Earphones with Further Details",
+      "Reference": "Earphones with Further Details"
+    }
+  },
+  {
+    "c": "111126",
+    "n": "Interchangeable Lens Digital Camera, Dslr",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Interchangeable Lens Digital Camera, Dslr",
+      "Reference": "Interchangeable Lens Digital Camera, Dslr"
+    }
+  },
+  {
+    "c": "111127",
+    "n": "Interchangeable Lens Digital Camera, Mirroless",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Interchangeable Lens Digital Camera, Mirroless",
+      "Reference": "Interchangeable Lens Digital Camera, Mirroless"
+    }
+  },
+  {
+    "c": "111151",
+    "n": "Marine TV Antenna, for 40A Flange",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Marine TV Antenna, for 40A Flange",
+      "Reference": "TV, , Marine TV Antenna, for 40A Flange"
+    }
+  },
+  {
+    "c": "111152",
+    "n": "Marine TV Antenna, End Ship's Pole",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Marine TV Antenna, End Ship's Pole",
+      "Reference": "TV, , Marine TV Antenna, End Ship's Pole"
+    }
+  },
+  {
+    "c": "111153",
+    "n": "Marine TV Antenna, for 40A Pipe",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Marine TV Antenna, for 40A Pipe",
+      "Reference": "TV, , Marine TV Antenna, for 40A Pipe"
+    }
+  },
+  {
+    "c": "111154",
+    "n": "Marine TV Antenna, End Ship's Pole",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Marine TV Antenna, End Ship's Pole",
+      "Reference": "TV, , Marine TV Antenna, End Ship's Pole"
+    }
+  },
+  {
+    "c": "111155",
+    "n": "Master for TV Antenna Joint, St.Steel",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Master for TV Antenna Joint, St.Steel",
+      "Reference": "TV, , Master for TV Antenna Joint, St.Steel"
+    }
+  },
+  {
+    "c": "111156",
+    "n": "Am Radio Antenna , Whip Type, Frp, L:2.6 Mtr",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Am Radio Antenna , Whip Type, Frp, L:2.6 Mtr",
+      "Reference": "TV, , Am Radio Antenna , Whip Type, Frp, L:2.6 Mtr"
+    }
+  },
+  {
+    "c": "111171",
+    "n": "Antenna Amplifier Only, In: Fx2 Out:Fx1",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Antenna Amplifier Only, In: Fx2 Out:Fx1",
+      "Reference": "TV, , Antenna Amplifier Only, In: Fx2 Out:Fx1"
+    }
+  },
+  {
+    "c": "111172",
+    "n": "Antenna Amplifier Only, In: Fx1 Out:Fx1",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Antenna Amplifier Only, In: Fx1 Out:Fx1",
+      "Reference": "TV, , Antenna Amplifier Only, In: Fx1 Out:Fx1"
+    }
+  },
+  {
+    "c": "111173",
+    "n": "Antenna Amplifier with Built-In Distributor, In: Fx2 Out:Fx6",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Antenna Amplifier with Built-In Distributor, In: Fx2 Out:Fx6",
+      "Reference": "TV, , Antenna Amplifier with Built-In Distributor, In: Fx2 Out:Fx6"
+    }
+  },
+  {
+    "c": "111174",
+    "n": "Antenna Amplifier with Built-In Distributor, In: Fx1 Out:Fx6",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Antenna Amplifier with Built-In Distributor, In: Fx1 Out:Fx6",
+      "Reference": "TV, , Antenna Amplifier with Built-In Distributor, In: Fx1 Out:Fx6"
+    }
+  },
+  {
+    "c": "111176",
+    "n": "Antenna Distributor, In: 1 Out:2",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Antenna Distributor, In: 1 Out:2",
+      "Reference": "TV, , Antenna Distributor, In: 1 Out:2"
+    }
+  },
+  {
+    "c": "111177",
+    "n": "Antenna Distributor, In: 1 Out:4",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Antenna Distributor, In: 1 Out:4",
+      "Reference": "TV, , Antenna Distributor, In: 1 Out:4"
+    }
+  },
+  {
+    "c": "111178",
+    "n": "Antenna Distributor, In: 1 Out:6",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Antenna Distributor, In: 1 Out:6",
+      "Reference": "TV, , Antenna Distributor, In: 1 Out:6"
+    }
+  },
+  {
+    "c": "111201",
+    "n": "Old Model, Video Movie Vhs Jvc No:Gr-C1 Comp. with Accessories & Case",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Video Movie Vhs Jvc No:Gr-C1 Comp. with Accessories & Case",
+      "Reference": "Old Model, Video Movie Vhs Jvc No:Gr-C1 Comp. with Accessories & Case"
+    }
+  },
+  {
+    "c": "111205",
+    "n": "Marine TV Antenna AC110/ 220V with Assembly",
+    "u": "SET",
+    "g": "11",
+    "p": "11-550-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Marine TV Antenna AC110/ 220V with Assembly",
+      "Reference": "TV , Marine TV Antenna AC110/ 220V with Assembly"
+    }
+  },
+  {
+    "c": "111206",
+    "n": "Smart Digital Tuner TV Worldwide, Model Kst-2000-W",
+    "u": "SET",
+    "g": "11",
+    "p": "11-550-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Smart Digital Tuner TV Worldwide, Model Kst-2000-W",
+      "Reference": "TV, , Smart Digital Tuner TV Worldwide, Model Kst-2000-W"
+    }
+  },
+  {
+    "c": "111210",
+    "n": "Old Model, Music Instrument Electric Casio No:Pt-20",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Music Instrument Electric Casio No:Pt-20",
+      "Reference": "\" \" , Old Model, Music Instrument Electric Casio No:Pt-20"
+    }
+  },
+  {
+    "c": "111211",
+    "n": "Old Model, Music Instrument Electric Casio No:Pt-30",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Music Instrument Electric Casio No:Pt-30",
+      "Reference": "\" \" , Old Model, Music Instrument Electric Casio No:Pt-30"
+    }
+  },
+  {
+    "c": "111212",
+    "n": "Old Model, AC Adaptor No:Ad-4160 for Casio No:Pt-20",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, AC Adaptor No:Ad-4160 for Casio No:Pt-20",
+      "Reference": "\" \" , Old Model, AC Adaptor No:Ad-4160 for Casio No:Pt-20"
+    }
+  },
+  {
+    "c": "111213",
+    "n": "Old Model, AC Adaptor No:Ad-1, for Casio No:Pt-30",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, AC Adaptor No:Ad-1, for Casio No:Pt-30",
+      "Reference": "\" \" , Old Model, AC Adaptor No:Ad-1, for Casio No:Pt-30"
+    }
+  },
+  {
+    "c": "111232",
+    "n": "Old Model, Video, Cassette Recorder/ Player Multi-System",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Video, Cassette Recorder/ Player Multi-System",
+      "Reference": "& , Old Model, Video, Cassette Recorder/ Player Multi-System"
+    }
+  },
+  {
+    "c": "111233",
+    "n": "Digital Video Disc Player",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Digital Video Disc Player",
+      "Reference": "Digital Video Disc Player"
+    }
+  },
+  {
+    "c": "111234",
+    "n": "Old Model, Vtr & DVD Player",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Vtr & DVD Player",
+      "Reference": "VTR, DVD , Old Model, Vtr & DVD Player"
+    }
+  },
+  {
+    "c": "111236",
+    "n": "Old Model : 8mm Video Camera, PAL",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model : 8mm Video Camera, PAL",
+      "Reference": "Old Model : 8mm Video Camera, PAL"
+    }
+  },
+  {
+    "c": "111237",
+    "n": "Old Model : 8mm Video Camera, NTSC",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model : 8mm Video Camera, NTSC",
+      "Reference": "Old Model : 8mm Video Camera, NTSC"
+    }
+  },
+  {
+    "c": "111238",
+    "n": "Portable DVD Playor",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Portable DVD Playor",
+      "Reference": "DVD , Portable DVD Playor"
+    }
+  },
+  {
+    "c": "111239",
+    "n": "Home Theater System Sound Bar & Subwoofer",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-06.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Home Theater System Sound Bar & Subwoofer",
+      "Reference": "Home Theater System Sound Bar & Subwoofer"
+    }
+  },
+  {
+    "c": "111240",
+    "n": "Wireless Speaker (Need Spec)",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-06.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Wireless Speaker (Need Spec)",
+      "Reference": "Wireless Speaker (Need Spec)"
+    }
+  },
+  {
+    "c": "111241",
+    "n": "Digital Video Camera, PAL",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Digital Video Camera, PAL",
+      "Reference": "Digital Video Camera, PAL"
+    }
+  },
+  {
+    "c": "111242",
+    "n": "Digital Video Camera, NTSC",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Digital Video Camera, NTSC",
+      "Reference": "Digital Video Camera, NTSC"
+    }
+  },
+  {
+    "c": "111245",
+    "n": "Home Singing System (Karaoke), Karaoke Dvd",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-05.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Home Singing System (Karaoke), Karaoke Dvd",
+      "Reference": "( ) , Home Singing System (Karaoke), Karaoke Dvd"
+    }
+  },
+  {
+    "c": "111246",
+    "n": "Home Singing System (Karaoke), Karaoke Mic & System",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-05.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Home Singing System (Karaoke), Karaoke Mic & System",
+      "Reference": "( ) , Home Singing System (Karaoke), Karaoke Mic & System"
+    }
+  },
+  {
+    "c": "111247",
+    "n": "Home Singing System (Karaoke), Karaoke Song Chip",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-05.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Home Singing System (Karaoke), Karaoke Song Chip",
+      "Reference": "( ) , Home Singing System (Karaoke), Karaoke Song Chip"
+    }
+  },
+  {
+    "c": "111250",
+    "n": "Old Model, Audio Cassette Tape Normal 60 Minutes",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Audio Cassette Tape Normal 60 Minutes",
+      "Reference": "Old Model, Audio Cassette Tape Normal 60 Minutes"
+    }
+  },
+  {
+    "c": "111251",
+    "n": "Old Model, Audio Cassette Tape Normal 90 Minutes",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Audio Cassette Tape Normal 90 Minutes",
+      "Reference": "Old Model, Audio Cassette Tape Normal 90 Minutes"
+    }
+  },
+  {
+    "c": "111255",
+    "n": "Old Model, Audio Cassette Tape Chrome 60 Minutes",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Audio Cassette Tape Chrome 60 Minutes",
+      "Reference": "Old Model, Audio Cassette Tape Chrome 60 Minutes"
+    }
+  },
+  {
+    "c": "111256",
+    "n": "Old Model, Audio Cassette Tape Chrome 90 Minutes",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Audio Cassette Tape Chrome 90 Minutes",
+      "Reference": "Old Model, Audio Cassette Tape Chrome 90 Minutes"
+    }
+  },
+  {
+    "c": "111270",
+    "n": "Old Model, Old, Video Cassette Tape Betamax L-125",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Old, Video Cassette Tape Betamax L-125",
+      "Reference": "Old Model, Old, Video Cassette Tape Betamax L-125"
+    }
+  },
+  {
+    "c": "111271",
+    "n": "Old Model, Old, Video Cassette Tape Betamax L-165",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Old, Video Cassette Tape Betamax L-165",
+      "Reference": "Old Model, Old, Video Cassette Tape Betamax L-165"
+    }
+  },
+  {
+    "c": "111272",
+    "n": "Old Model, Old, Video Cassette Tape Betamax L-250 Mhg",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Old, Video Cassette Tape Betamax L-250 Mhg",
+      "Reference": "Old Model, Old, Video Cassette Tape Betamax L-250 Mhg"
+    }
+  },
+  {
+    "c": "111273",
+    "n": "Old Model, Old, Video Cassette Tape Betamax L-330 Mhg",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Old, Video Cassette Tape Betamax L-330 Mhg",
+      "Reference": "Old Model, Old, Video Cassette Tape Betamax L-330 Mhg"
+    }
+  },
+  {
+    "c": "111274",
+    "n": "Old Model, Old, Video Cassette Tape Betamax L-370 Mhg",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Old, Video Cassette Tape Betamax L-370 Mhg",
+      "Reference": "Old Model, Old, Video Cassette Tape Betamax L-370 Mhg"
+    }
+  },
+  {
+    "c": "111275",
+    "n": "Old Model, Old, Video Cassette Tape Betamax L-500 Mhg Maxwel",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Old, Video Cassette Tape Betamax L-500 Mhg Maxwel",
+      "Reference": "Old Model, Old, Video Cassette Tape Betamax L-500 Mhg Maxwel"
+    }
+  },
+  {
+    "c": "111276",
+    "n": "Old Model, Old, Video Cassette Tape Betamax L-750 Mhg Maxwel",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Old, Video Cassette Tape Betamax L-750 Mhg Maxwel",
+      "Reference": "Old Model, Old, Video Cassette Tape Betamax L-750 Mhg Maxwel"
+    }
+  },
+  {
+    "c": "111277",
+    "n": "Old Model, Old, Video Cassette Tape Betamax L-830",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Old, Video Cassette Tape Betamax L-830",
+      "Reference": "Old Model, Old, Video Cassette Tape Betamax L-830"
+    }
+  },
+  {
+    "c": "111282",
+    "n": "Old Model, Video Cassette Tape Vhs, E-120 Er",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Video Cassette Tape Vhs, E-120 Er",
+      "Reference": "Old Model, Video Cassette Tape Vhs, E-120 Er"
+    }
+  },
+  {
+    "c": "111283",
+    "n": "Old Model, Video Cassette Tape Vhs, E-180 Er",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Video Cassette Tape Vhs, E-180 Er",
+      "Reference": "Old Model, Video Cassette Tape Vhs, E-180 Er"
+    }
+  },
+  {
+    "c": "111284",
+    "n": "Old Model, Video Cassette Tape Vhs, E-240 Er",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Video Cassette Tape Vhs, E-240 Er",
+      "Reference": "Old Model, Video Cassette Tape Vhs, E-240 Er"
+    }
+  },
+  {
+    "c": "111291",
+    "n": "Old Model : Cassette Films for 8mm Video Camera, PAL, 60 Min",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model : Cassette Films for 8mm Video Camera, PAL, 60 Min",
+      "Reference": "PAL , Old Model : Cassette Films for 8mm Video Camera, PAL, 60 Min"
+    }
+  },
+  {
+    "c": "111292",
+    "n": "Old Model : Cassette Films for 8mm Video Camera, PAL, 90 Min",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model : Cassette Films for 8mm Video Camera, PAL, 90 Min",
+      "Reference": "PAL , Old Model : Cassette Films for 8mm Video Camera, PAL, 90 Min"
+    }
+  },
+  {
+    "c": "111293",
+    "n": "Old Model : Cassette Films for 8mm Video Camera, PAL, 120 Min",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model : Cassette Films for 8mm Video Camera, PAL, 120 Min",
+      "Reference": "PAL , Old Model : Cassette Films for 8mm Video Camera, PAL, 120 Min"
+    }
+  },
+  {
+    "c": "111295",
+    "n": "Old Model : Cassette Films for 8mm Video Camera, NTSC, 60 Min",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model : Cassette Films for 8mm Video Camera, NTSC, 60 Min",
+      "Reference": "NTSC , Old Model : Cassette Films for 8mm Video Camera, NTSC, 60 Min"
+    }
+  },
+  {
+    "c": "111296",
+    "n": "Old Model : Cassette Films for 8mm Video Camera, NTSC, 90 Min",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model : Cassette Films for 8mm Video Camera, NTSC, 90 Min",
+      "Reference": "NTSC , Old Model : Cassette Films for 8mm Video Camera, NTSC, 90 Min"
+    }
+  },
+  {
+    "c": "111297",
+    "n": "Old Model : Cassette Films for 8mm Video Camera, NTSC, 120 Min",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model : Cassette Films for 8mm Video Camera, NTSC, 120 Min",
+      "Reference": "NTSC , Old Model : Cassette Films for 8mm Video Camera, NTSC, 120 Min"
+    }
+  },
+  {
+    "c": "111301",
+    "n": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 1's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 1's/Pkt",
+      "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 1's/Pkt"
+    }
+  },
+  {
+    "c": "111302",
+    "n": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 3's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 3's/Pkt",
+      "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 3's/Pkt"
+    }
+  },
+  {
+    "c": "111303",
+    "n": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 5's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 5's/Pkt",
+      "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 5's/Pkt"
+    }
+  },
+  {
+    "c": "111304",
+    "n": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 10's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 10's/Pkt",
+      "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 10's/Pkt"
+    }
+  },
+  {
+    "c": "111306",
+    "n": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 1's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 1's/Pkt",
+      "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 1's/Pkt"
+    }
+  },
+  {
+    "c": "111307",
+    "n": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 3's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 3's/Pkt",
+      "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 3's/Pkt"
+    }
+  },
+  {
+    "c": "111308",
+    "n": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 5's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 5's/Pkt",
+      "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 5's/Pkt"
+    }
+  },
+  {
+    "c": "111309",
+    "n": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 10's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 10's/Pkt",
+      "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 10's/Pkt"
+    }
+  },
+  {
+    "c": "111311",
+    "n": "Old Model, Cassette Films for Digital Video Camera, PAL, 60 Min",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Cassette Films for Digital Video Camera, PAL, 60 Min",
+      "Reference": "PAL , Old Model, Cassette Films for Digital Video Camera, PAL, 60 Min"
+    }
+  },
+  {
+    "c": "111312",
+    "n": "Old Model, Cassette Films for Digital Video Camera, PAL, 80 Min",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Cassette Films for Digital Video Camera, PAL, 80 Min",
+      "Reference": "PAL , Old Model, Cassette Films for Digital Video Camera, PAL, 80 Min"
+    }
+  },
+  {
+    "c": "111315",
+    "n": "Old Model, Cassette Films for Digital Video Camera, NTSC, 60 Min",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Cassette Films for Digital Video Camera, NTSC, 60 Min",
+      "Reference": "NTSC , Old Model, Cassette Films for Digital Video Camera, NTSC, 60 Min"
+    }
+  },
+  {
+    "c": "111316",
+    "n": "Old Model, Cassette Films for Digital Video Camera, NTSC, 80 Min",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-03.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Cassette Films for Digital Video Camera, NTSC, 80 Min",
+      "Reference": "NTSC , Old Model, Cassette Films for Digital Video Camera, NTSC, 80 Min"
+    }
+  },
+  {
+    "c": "111401",
+    "n": "Old Model, Film Monochrome Iso-100 24E x 135-24",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Film Monochrome Iso-100 24E x 135-24",
+      "Reference": "Old Model, Film Monochrome Iso-100 24E x 135-24"
+    }
+  },
+  {
+    "c": "111402",
+    "n": "Old Model, Film Monochrome Iso-100 36E x 135-36",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Film Monochrome Iso-100 36E x 135-36",
+      "Reference": "Old Model, Film Monochrome Iso-100 36E x 135-36"
+    }
+  },
+  {
+    "c": "111405",
+    "n": "Old Model, Film Color Iso-100 24E x 135-24",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Film Color Iso-100 24E x 135-24",
+      "Reference": "Old Model, Film Color Iso-100 24E x 135-24"
+    }
+  },
+  {
+    "c": "111406",
+    "n": "Old Model, Film Color Iso-100 36E x 135-36",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Film Color Iso-100 36E x 135-36",
+      "Reference": "Old Model, Film Color Iso-100 36E x 135-36"
+    }
+  },
+  {
+    "c": "111411",
+    "n": "Old Model, Film Color Iso-100 24E x 135-24Kodak",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Film Color Iso-100 24E x 135-24Kodak",
+      "Reference": "Old Model, Film Color Iso-100 24E x 135-24Kodak"
+    }
+  },
+  {
+    "c": "111412",
+    "n": "Old Model, Film Color Iso-100 36E x 135-36Kodak",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Film Color Iso-100 36E x 135-36Kodak",
+      "Reference": "Old Model, Film Color Iso-100 36E x 135-36Kodak"
+    }
+  },
+  {
+    "c": "111414",
+    "n": "Old Model, Film Color Iso-200 24E x 110-24",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Film Color Iso-200 24E x 110-24",
+      "Reference": "Old Model, Film Color Iso-200 24E x 110-24"
+    }
+  },
+  {
+    "c": "111420",
+    "n": "Old Model, Film Color Iso-400 24E x 135-24",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Film Color Iso-400 24E x 135-24",
+      "Reference": "Old Model, Film Color Iso-400 24E x 135-24"
+    }
+  },
+  {
+    "c": "111421",
+    "n": "Old Model, Film Color Iso-400 36E x 135-36",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Film Color Iso-400 36E x 135-36",
+      "Reference": "Old Model, Film Color Iso-400 36E x 135-36"
+    }
+  },
+  {
+    "c": "111431",
+    "n": "Old Model, Film Polaroid Type-88 Color",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Film Polaroid Type-88 Color",
+      "Reference": "Old Model, Film Polaroid Type-88 Color"
+    }
+  },
+  {
+    "c": "111435",
+    "n": "Old Model, Film Polaroid Type-107 Monochrome",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Film Polaroid Type-107 Monochrome",
+      "Reference": "Old Model, Film Polaroid Type-107 Monochrome"
+    }
+  },
+  {
+    "c": "111437",
+    "n": "Old Model, Film Polaroid Type-108 Color",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Film Polaroid Type-108 Color",
+      "Reference": "Old Model, Film Polaroid Type-108 Color"
+    }
+  },
+  {
+    "c": "111451",
+    "n": "Old Model, Flash Mc-4 Magicube \"x\" 12's",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Flash Mc-4 Magicube \"x\" 12's",
+      "Reference": "Old Model, Flash Mc-4 Magicube \"x\" 12's"
+    }
+  },
+  {
+    "c": "111452",
+    "n": "Old Model, Flash Fc-4 Flashcube 12's",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Flash Fc-4 Flashcube 12's",
+      "Reference": "Old Model, Flash Fc-4 Flashcube 12's"
+    }
+  },
+  {
+    "c": "111453",
+    "n": "Old Model, Flash Hc-4 Hipower Cube 8's",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Flash Hc-4 Hipower Cube 8's",
+      "Reference": "Old Model, Flash Hc-4 Hipower Cube 8's"
+    }
+  },
+  {
+    "c": "111454",
+    "n": "Old Model, Flash Ff-10 Flip Flash Super 10's",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Flash Ff-10 Flip Flash Super 10's",
+      "Reference": "Old Model, Flash Ff-10 Flip Flash Super 10's"
+    }
+  },
+  {
+    "c": "111455",
+    "n": "Old Model, Flash Fb-10 Flashbar 10's",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Flash Fb-10 Flashbar 10's",
+      "Reference": "Old Model, Flash Fb-10 Flashbar 10's"
+    }
+  },
+  {
+    "c": "111456",
+    "n": "Old Model, Flash M-3 Bulb 12's",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Flash M-3 Bulb 12's",
+      "Reference": "Old Model, Flash M-3 Bulb 12's"
+    }
+  },
+  {
+    "c": "111651",
+    "n": "Old Model, Old, Barbecue Kamado Pot Small Grill Size 300 mm",
+    "u": "SET",
+    "g": "11",
+    "p": "11-250-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Old, Barbecue Kamado Pot Small Grill Size 300 mm",
+      "Reference": "Old Model, Old, Barbecue Kamado Pot Small Grill Size 300 mm"
+    }
+  },
+  {
+    "c": "111652",
+    "n": "Old Model, Old, Barbecue Kamado Pot Medium Grill Size 380 mm",
+    "u": "SET",
+    "g": "11",
+    "p": "11-250-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Old, Barbecue Kamado Pot Medium Grill Size 380 mm",
+      "Reference": "Old Model, Old, Barbecue Kamado Pot Medium Grill Size 380 mm"
+    }
+  },
+  {
+    "c": "111653",
+    "n": "Old Model, Old, Barbecue Kamado Pot Large Grill Size 450 mm",
+    "u": "SET",
+    "g": "11",
+    "p": "11-250-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Old, Barbecue Kamado Pot Large Grill Size 450 mm",
+      "Reference": "Old Model, Old, Barbecue Kamado Pot Large Grill Size 450 mm"
+    }
+  },
+  {
+    "c": "111801",
+    "n": "xmas Tree with Pot Plastic 1.2 Mtr Height",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "xmas Tree with Pot Plastic 1.2 Mtr Height",
+      "Reference": "xmas Tree with Pot Plastic 1.2 Mtr Height"
+    }
+  },
+  {
+    "c": "111802",
+    "n": "xmas Tree with Stand Plastic 1.5 Mtr Height",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "xmas Tree with Stand Plastic 1.5 Mtr Height",
+      "Reference": "xmas Tree with Stand Plastic 1.5 Mtr Height"
+    }
+  },
+  {
+    "c": "111805",
+    "n": "Decoration Set for xmas Tree Medium",
+    "u": "SET",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Decoration Set for xmas Tree Medium",
+      "Reference": "Decoration Set for xmas Tree Medium"
+    }
+  },
+  {
+    "c": "111806",
+    "n": "Decoration Set for xmas Tree Large",
+    "u": "SET",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Decoration Set for xmas Tree Large",
+      "Reference": "Decoration Set for xmas Tree Large"
+    }
+  },
+  {
+    "c": "111807",
+    "n": "Decoration Set for xmas Tree Deluxe",
+    "u": "SET",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Decoration Set for xmas Tree Deluxe",
+      "Reference": "Decoration Set for xmas Tree Deluxe"
+    }
+  },
+  {
+    "c": "111811",
+    "n": "Illumination for xmas Tree AC110V 50's",
+    "u": "SET",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Illumination for xmas Tree AC110V 50's",
+      "Reference": "Illumination for xmas Tree AC110V 50's"
+    }
+  },
+  {
+    "c": "111812",
+    "n": "Illumination for xmas Tree AC220V 40's",
+    "u": "SET",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Illumination for xmas Tree AC220V 40's",
+      "Reference": "Illumination for xmas Tree AC220V 40's"
+    }
+  },
+  {
+    "c": "111813",
+    "n": "Illumination for xmas Tree AC220V 30's",
+    "u": "SET",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Illumination for xmas Tree AC220V 30's",
+      "Reference": "Illumination for xmas Tree AC220V 30's"
+    }
+  },
+  {
+    "c": "111815",
+    "n": "Interior Decoration Set for xmas",
+    "u": "SET",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Interior Decoration Set for xmas",
+      "Reference": "Interior Decoration Set for xmas"
+    }
+  },
+  {
+    "c": "111820",
+    "n": "Poinsettia In Pot Fresh",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Poinsettia In Pot Fresh",
+      "Reference": "Poinsettia In Pot Fresh"
+    }
+  },
+  {
+    "c": "111825",
+    "n": "Artificial Snow Spray In Tin",
+    "u": "TIN",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Artificial Snow Spray In Tin",
+      "Reference": "Artificial Snow Spray In Tin"
+    }
+  },
+  {
+    "c": "111830",
+    "n": "Napkin Paper 20's for xmas",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Napkin Paper 20's for xmas",
+      "Reference": "Napkin Paper 20's for xmas"
+    }
+  },
+  {
+    "c": "111835",
+    "n": "Paper Table Cloth for xmas 120 x180 cm",
+    "u": "SHT",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Paper Table Cloth for xmas 120 x180 cm",
+      "Reference": "Paper Table Cloth for xmas 120 x180 cm"
+    }
+  },
+  {
+    "c": "111840",
+    "n": "Balloon Rubber Colored",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Balloon Rubber Colored",
+      "Reference": "Balloon Rubber Colored"
+    }
+  },
+  {
+    "c": "111843",
+    "n": "Cracker",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Cracker",
+      "Reference": "Cracker"
+    }
+  },
+  {
+    "c": "111845",
+    "n": "Candle Straight for xmas",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Candle Straight for xmas",
+      "Reference": "Candle Straight for xmas"
+    }
+  },
+  {
+    "c": "111846",
+    "n": "Candle Twisted for xmas",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-250-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Candle Twisted for xmas",
+      "Reference": "Candle Twisted for xmas"
+    }
+  },
+  {
+    "c": "112001",
+    "n": "Shirt Open Collared White Short Sleeves Size-M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shirt Open Collared White Short Sleeves Size-M",
+      "Reference": "Shirt Open Collared White Short Sleeves Size-M"
+    }
+  },
+  {
+    "c": "112002",
+    "n": "Shirt Open Collared White Short Sleeves Size-L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shirt Open Collared White Short Sleeves Size-L",
+      "Reference": "Shirt Open Collared White Short Sleeves Size-L"
+    }
+  },
+  {
+    "c": "112003",
+    "n": "Shirt Open Collared White Short Sleeves Size LL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shirt Open Collared White Short Sleeves Size LL",
+      "Reference": "Shirt Open Collared White Short Sleeves Size LL"
+    }
+  },
+  {
+    "c": "112006",
+    "n": "Shirt Open Collared Khaki Short Sleeves Size-M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shirt Open Collared Khaki Short Sleeves Size-M",
+      "Reference": "Shirt Open Collared Khaki Short Sleeves Size-M"
+    }
+  },
+  {
+    "c": "112007",
+    "n": "Shirt Open Collared Khaki Short Sleeves Size-L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shirt Open Collared Khaki Short Sleeves Size-L",
+      "Reference": "Shirt Open Collared Khaki Short Sleeves Size-L"
+    }
+  },
+  {
+    "c": "112008",
+    "n": "Shirt Open Collared Khaki Short Sleeves Size LL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shirt Open Collared Khaki Short Sleeves Size LL",
+      "Reference": "Shirt Open Collared Khaki Short Sleeves Size LL"
+    }
+  },
+  {
+    "c": "112021",
+    "n": "Shirt Sporting Colored Short Sleeves Size-M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shirt Sporting Colored Short Sleeves Size-M",
+      "Reference": "Shirt Sporting Colored Short Sleeves Size-M"
+    }
+  },
+  {
+    "c": "112022",
+    "n": "Shirt Sporting Colored Short Sleeves Size-L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shirt Sporting Colored Short Sleeves Size-L",
+      "Reference": "Shirt Sporting Colored Short Sleeves Size-L"
+    }
+  },
+  {
+    "c": "112023",
+    "n": "Shirt Sporting Colored Short Sleeves Size-LL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shirt Sporting Colored Short Sleeves Size-LL",
+      "Reference": "Shirt Sporting Colored Short Sleeves Size-LL"
+    }
+  },
+  {
+    "c": "112026",
+    "n": "Shirt Sporting Colored Long Sleeves Size-M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shirt Sporting Colored Long Sleeves Size-M",
+      "Reference": "Shirt Sporting Colored Long Sleeves Size-M"
+    }
+  },
+  {
+    "c": "112027",
+    "n": "Shirt Sporting Colored Long Sleeves Size-L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shirt Sporting Colored Long Sleeves Size-L",
+      "Reference": "Shirt Sporting Colored Long Sleeves Size-L"
+    }
+  },
+  {
+    "c": "112028",
+    "n": "Shirt Sporting Colored Long Sleeves Size-LL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Shirt Sporting Colored Long Sleeves Size-LL",
+      "Reference": "Shirt Sporting Colored Long Sleeves Size-LL"
+    }
+  },
+  {
+    "c": "112031",
+    "n": "T-Shirt Short Sleeve White Size-M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "T-Shirt Short Sleeve White Size-M",
+      "Reference": "T-Shirt Short Sleeve White Size-M"
+    }
+  },
+  {
+    "c": "112032",
+    "n": "T-Shirt Short Sleeve White Size-L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "T-Shirt Short Sleeve White Size-L",
+      "Reference": "T-Shirt Short Sleeve White Size-L"
+    }
+  },
+  {
+    "c": "112033",
+    "n": "T-Shirt Short Sleeve White Size-LL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "T-Shirt Short Sleeve White Size-LL",
+      "Reference": "T-Shirt Short Sleeve White Size-LL"
+    }
+  },
+  {
+    "c": "112036",
+    "n": "T-Shirt Short Sleeve Colored Size-M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "T-Shirt Short Sleeve Colored Size-M",
+      "Reference": "T-Shirt Short Sleeve Colored Size-M"
+    }
+  },
+  {
+    "c": "112037",
+    "n": "T-Shirt Short Sleeve Colored Size-L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "T-Shirt Short Sleeve Colored Size-L",
+      "Reference": "T-Shirt Short Sleeve Colored Size-L"
+    }
+  },
+  {
+    "c": "112038",
+    "n": "T-Shirt Short Sleeve Colored Size-LL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "T-Shirt Short Sleeve Colored Size-LL",
+      "Reference": "T-Shirt Short Sleeve Colored Size-LL"
+    }
+  },
+  {
+    "c": "112041",
+    "n": "Pants Short White Size-M",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pants Short White Size-M",
+      "Reference": "Pants Short White Size-M"
+    }
+  },
+  {
+    "c": "112042",
+    "n": "Pants Short White Size-L",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pants Short White Size-L",
+      "Reference": "Pants Short White Size-L"
+    }
+  },
+  {
+    "c": "112043",
+    "n": "Pants Short White Size-LL",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pants Short White Size-LL",
+      "Reference": "Pants Short White Size-LL"
+    }
+  },
+  {
+    "c": "112046",
+    "n": "Pants Short Khaki Size-M",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pants Short Khaki Size-M",
+      "Reference": "Pants Short Khaki Size-M"
+    }
+  },
+  {
+    "c": "112047",
+    "n": "Pants Short Khaki Size-L",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pants Short Khaki Size-L",
+      "Reference": "Pants Short Khaki Size-L"
+    }
+  },
+  {
+    "c": "112048",
+    "n": "Pants Short Khaki Size-LL",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pants Short Khaki Size-LL",
+      "Reference": "Pants Short Khaki Size-LL"
+    }
+  },
+  {
+    "c": "112051",
+    "n": "Fleece Jacket, Anti-Static, Black/Orange, S",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Black/Orange, S",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, S"
+    }
+  },
+  {
+    "c": "112052",
+    "n": "Fleece Jacket, Anti-Static, Black/Orange, M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Black/Orange, M",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, M"
+    }
+  },
+  {
+    "c": "112053",
+    "n": "Fleece Jacket, Anti-Static, Black/Orange, L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Black/Orange, L",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, L"
+    }
+  },
+  {
+    "c": "112054",
+    "n": "Fleece Jacket, Anti-Static, Black/Orange, XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Black/Orange, XL",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, XL"
+    }
+  },
+  {
+    "c": "112055",
+    "n": "Fleece Jacket, Anti-Static, Black/Orange, 2XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Black/Orange, 2XL",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, 2XL"
+    }
+  },
+  {
+    "c": "112056",
+    "n": "Fleece Jacket, Anti-Static, Black/Orange, 3XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Black/Orange, 3XL",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, 3XL"
+    }
+  },
+  {
+    "c": "112057",
+    "n": "Fleece Jacket, Anti-Static, Black/Orange, 4XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Black/Orange, 4XL",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, 4XL"
+    }
+  },
+  {
+    "c": "112058",
+    "n": "Fleece Jacket, Anti-Static, Navy/Yellow, S",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, S",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, S"
+    }
+  },
+  {
+    "c": "112059",
+    "n": "Fleece Jacket, Anti-Static, Navy/Yellow, M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, M",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, M"
+    }
+  },
+  {
+    "c": "112060",
+    "n": "Fleece Jacket, Anti-Static, Navy/Yellow, L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, L",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, L"
+    }
+  },
+  {
+    "c": "112061",
+    "n": "Fleece Jacket, Anti-Static, Navy/Yellow, XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, XL",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, XL"
+    }
+  },
+  {
+    "c": "112062",
+    "n": "Fleece Jacket, Anti-Static, Navy/Yellow, 2XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, 2XL",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, 2XL"
+    }
+  },
+  {
+    "c": "112063",
+    "n": "Fleece Jacket, Anti-Static, Navy/Yellow, 3XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, 3XL",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, 3XL"
+    }
+  },
+  {
+    "c": "112064",
+    "n": "Fleece Jacket, Anti-Static, Navy/Yellow, 4XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, 4XL",
+      "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, 4XL"
+    }
+  },
+  {
+    "c": "112065",
+    "n": "Fleece Trouser, Anti-Static, Black/Orange, S",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Black/Orange, S",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, S"
+    }
+  },
+  {
+    "c": "112066",
+    "n": "Fleece Trouser, Anti-Static, Black/Orange, M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Black/Orange, M",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, M"
+    }
+  },
+  {
+    "c": "112067",
+    "n": "Fleece Trouser, Anti-Static, Black/Orange, L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Black/Orange, L",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, L"
+    }
+  },
+  {
+    "c": "112068",
+    "n": "Fleece Trouser, Anti-Static, Black/Orange, XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Black/Orange, XL",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, XL"
+    }
+  },
+  {
+    "c": "112069",
+    "n": "Fleece Trouser, Anti-Static, Black/Orange, 2XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Black/Orange, 2XL",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, 2XL"
+    }
+  },
+  {
+    "c": "112070",
+    "n": "Fleece Trouser, Anti-Static, Black/Orange, 3XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Black/Orange, 3XL",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, 3XL"
+    }
+  },
+  {
+    "c": "112071",
+    "n": "Fleece Trouser, Anti-Static, Black/Orange, 4XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Black/Orange, 4XL",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, 4XL"
+    }
+  },
+  {
+    "c": "112072",
+    "n": "Fleece Trouser, Anti-Static, Navy/Yellow, S",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, S",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, S"
+    }
+  },
+  {
+    "c": "112073",
+    "n": "Fleece Trouser, Anti-Static, Navy/Yellow, M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, M",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, M"
+    }
+  },
+  {
+    "c": "112074",
+    "n": "Fleece Trouser, Anti-Static, Navy/Yellow, L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, L",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, L"
+    }
+  },
+  {
+    "c": "112075",
+    "n": "Fleece Trouser, Anti-Static, Navy/Yellow, XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, XL",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, XL"
+    }
+  },
+  {
+    "c": "112076",
+    "n": "Fleece Trouser, Anti-Static, Navy/Yellow, 2XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, 2XL",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, 2XL"
+    }
+  },
+  {
+    "c": "112077",
+    "n": "Fleece Trouser, Anti-Static, Navy/Yellow, 3XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, 3XL",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, 3XL"
+    }
+  },
+  {
+    "c": "112078",
+    "n": "Fleece Trouser, Anti-Static, Navy/Yellow, 4XL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, 4XL",
+      "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, 4XL"
+    }
+  },
+  {
+    "c": "112101",
+    "n": "Undershirt Short Sleeves Crew Neck Cotton White Size-M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Undershirt Short Sleeves Crew Neck Cotton White Size-M",
+      "Reference": "Undershirt Short Sleeves Crew Neck Cotton White Size-M"
+    }
+  },
+  {
+    "c": "112102",
+    "n": "Undershirt Short Sleeves Crew Neck Cotton White Size-L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Undershirt Short Sleeves Crew Neck Cotton White Size-L",
+      "Reference": "Undershirt Short Sleeves Crew Neck Cotton White Size-L"
+    }
+  },
+  {
+    "c": "112103",
+    "n": "Undershirt Short Sleeves Crew Neck Cotton White Size-LL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Undershirt Short Sleeves Crew Neck Cotton White Size-LL",
+      "Reference": "Undershirt Short Sleeves Crew Neck Cotton White Size-LL"
+    }
+  },
+  {
+    "c": "112106",
+    "n": "Undershirt Short Sleeves Crew Neck Cotton Color Size-M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Undershirt Short Sleeves Crew Neck Cotton Color Size-M",
+      "Reference": "Undershirt Short Sleeves Crew Neck Cotton Color Size-M"
+    }
+  },
+  {
+    "c": "112107",
+    "n": "Undershirt Short Sleeves Crew Neck Cotton Color Size-L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Undershirt Short Sleeves Crew Neck Cotton Color Size-L",
+      "Reference": "Undershirt Short Sleeves Crew Neck Cotton Color Size-L"
+    }
+  },
+  {
+    "c": "112108",
+    "n": "Undershirt Short Sleeves Crew Neck Cotton Color Size-LL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Undershirt Short Sleeves Crew Neck Cotton Color Size-LL",
+      "Reference": "Undershirt Short Sleeves Crew Neck Cotton Color Size-LL"
+    }
+  },
+  {
+    "c": "112111",
+    "n": "Undershirt Sleeveless Cotton White Size-M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Undershirt Sleeveless Cotton White Size-M",
+      "Reference": "Undershirt Sleeveless Cotton White Size-M"
+    }
+  },
+  {
+    "c": "112112",
+    "n": "Undershirt Sleeveless Cotton White Size-L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Undershirt Sleeveless Cotton White Size-L",
+      "Reference": "Undershirt Sleeveless Cotton White Size-L"
+    }
+  },
+  {
+    "c": "112113",
+    "n": "Undershirt Sleeveless Cotton White Size-LL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Undershirt Sleeveless Cotton White Size-LL",
+      "Reference": "Undershirt Sleeveless Cotton White Size-LL"
+    }
+  },
+  {
+    "c": "112116",
+    "n": "Undershirt Sleeveless Cotton Colored Size-M",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Undershirt Sleeveless Cotton Colored Size-M",
+      "Reference": "Undershirt Sleeveless Cotton Colored Size-M"
+    }
+  },
+  {
+    "c": "112117",
+    "n": "Undershirt Sleeveless Cotton Colored Size-L",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Undershirt Sleeveless Cotton Colored Size-L",
+      "Reference": "Undershirt Sleeveless Cotton Colored Size-L"
+    }
+  },
+  {
+    "c": "112118",
+    "n": "Undershirt Sleeveless Cotton Colored Size-LL",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Undershirt Sleeveless Cotton Colored Size-LL",
+      "Reference": "Undershirt Sleeveless Cotton Colored Size-LL"
+    }
+  },
+  {
+    "c": "112131",
+    "n": "Brief Cotton White Size-M",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Brief Cotton White Size-M",
+      "Reference": "Brief Cotton White Size-M"
+    }
+  },
+  {
+    "c": "112132",
+    "n": "Brief Cotton White Size-L",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Brief Cotton White Size-L",
+      "Reference": "Brief Cotton White Size-L"
+    }
+  },
+  {
+    "c": "112133",
+    "n": "Brief Cotton White Size-LL",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Brief Cotton White Size-LL",
+      "Reference": "Brief Cotton White Size-LL"
+    }
+  },
+  {
+    "c": "112136",
+    "n": "Brief Cotton Colored Size-M",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Brief Cotton Colored Size-M",
+      "Reference": "Brief Cotton Colored Size-M"
+    }
+  },
+  {
+    "c": "112137",
+    "n": "Brief Cotton Colored Size-L",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Brief Cotton Colored Size-L",
+      "Reference": "Brief Cotton Colored Size-L"
+    }
+  },
+  {
+    "c": "112138",
+    "n": "Brief Cotton Colored Size-LL",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Brief Cotton Colored Size-LL",
+      "Reference": "Brief Cotton Colored Size-LL"
+    }
+  },
+  {
+    "c": "112141",
+    "n": "Trunks Cotton Colored Size-M",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Trunks Cotton Colored Size-M",
+      "Reference": "Trunks Cotton Colored Size-M"
+    }
+  },
+  {
+    "c": "112142",
+    "n": "Trunks Cotton Colored Size-L",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Trunks Cotton Colored Size-L",
+      "Reference": "Trunks Cotton Colored Size-L"
+    }
+  },
+  {
+    "c": "112143",
+    "n": "Trunks Cotton Colored Size LL",
+    "u": "PR",
+    "g": "11",
+    "p": "11-450-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Trunks Cotton Colored Size LL",
+      "Reference": "Trunks Cotton Colored Size LL"
+    }
+  },
+  {
+    "c": "112151",
+    "n": "Socks Acryl/Cotton White",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Socks Acryl/Cotton White",
+      "Reference": "Socks Acryl/Cotton White"
+    }
+  },
+  {
+    "c": "112152",
+    "n": "Socks Acryl/Cotton Colored",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Socks Acryl/Cotton Colored",
+      "Reference": "Socks Acryl/Cotton Colored"
+    }
+  },
+  {
+    "c": "112201",
+    "n": "Beach Sandal, Size-M",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Beach Sandal, Size-M",
+      "Reference": "Beach Sandal, Size-M"
+    }
+  },
+  {
+    "c": "112202",
+    "n": "Beach Sandal, Size-L",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Beach Sandal, Size-L",
+      "Reference": "Beach Sandal, Size-L"
+    }
+  },
+  {
+    "c": "112203",
+    "n": "Beach Sandal, Size-LL",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Beach Sandal, Size-LL",
+      "Reference": "Beach Sandal, Size-LL"
+    }
+  },
+  {
+    "c": "112206",
+    "n": "Plastic Sandal, Size-M",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Plastic Sandal, Size-M",
+      "Reference": "Plastic Sandal, Size-M"
+    }
+  },
+  {
+    "c": "112207",
+    "n": "Plastic Sandal, Size-L",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Plastic Sandal, Size-L",
+      "Reference": "Plastic Sandal, Size-L"
+    }
+  },
+  {
+    "c": "112208",
+    "n": "Plastic Sandal, Size-LL",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Plastic Sandal, Size-LL",
+      "Reference": "Plastic Sandal, Size-LL"
+    }
+  },
+  {
+    "c": "112211",
+    "n": "Plastic Sandal, Slipper-Type Size-M",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Plastic Sandal, Slipper-Type Size-M",
+      "Reference": "Plastic Sandal, Slipper-Type Size-M"
+    }
+  },
+  {
+    "c": "112212",
+    "n": "Plastic Sandal, Slipper-Type Size-L",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Plastic Sandal, Slipper-Type Size-L",
+      "Reference": "Plastic Sandal, Slipper-Type Size-L"
+    }
+  },
+  {
+    "c": "112213",
+    "n": "Plastic Sandal, Slipper-Type Size-LL",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Plastic Sandal, Slipper-Type Size-LL",
+      "Reference": "Plastic Sandal, Slipper-Type Size-LL"
+    }
+  },
+  {
+    "c": "112215",
+    "n": "House Shoes (Slipper)",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "House Shoes (Slipper)",
+      "Reference": "House Shoes (Slipper)"
+    }
+  },
+  {
+    "c": "190381",
+    "n": "Socks, Cotton, Free Size",
+    "u": "DOZ",
+    "g": "11",
+    "p": "11-410-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Socks, Cotton, Free Size",
+      "Reference": "Socks, Cotton, Free Size"
+    }
+  },
+  {
+    "c": "190383",
+    "n": "Winter Working Socks, Acrylic Pile Fabric",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Winter Working Socks, Acrylic Pile Fabric",
+      "Reference": "Winter Working Socks, Acrylic Pile Fabric"
+    }
+  },
+  {
+    "c": "190388",
+    "n": "Thermal Socks, EU: 35/38",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Thermal Socks, EU: 35/38",
+      "Reference": "Thermal Socks, EU: 35/38"
+    }
+  },
+  {
+    "c": "190389",
+    "n": "Thermal Socks, EU: 39/42",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Thermal Socks, EU: 39/42",
+      "Reference": "Thermal Socks, EU: 39/42"
+    }
+  },
+  {
+    "c": "190390",
+    "n": "Thermal Socks, EU: 43/46",
+    "u": "PR",
+    "g": "11",
+    "p": "11-410-02.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Thermal Socks, EU: 43/46",
+      "Reference": "Thermal Socks, EU: 43/46"
+    }
+  },
+  {
+    "c": "190681",
+    "n": "Seaman's Sweater, Neck Size, 36",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Seaman's Sweater, Neck Size, 36",
+      "Reference": "Seaman's Sweater, Neck Size, 36"
+    }
+  },
+  {
+    "c": "190682",
+    "n": "Seaman's Sweater, Neck Size, 38",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Seaman's Sweater, Neck Size, 38",
+      "Reference": "Seaman's Sweater, Neck Size, 38"
+    }
+  },
+  {
+    "c": "190683",
+    "n": "Seaman's Sweater, Neck Size, 40",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Seaman's Sweater, Neck Size, 40",
+      "Reference": "Seaman's Sweater, Neck Size, 40"
+    }
+  },
+  {
+    "c": "190684",
+    "n": "Seaman's Sweater, Neck Size, 42",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Seaman's Sweater, Neck Size, 42",
+      "Reference": "Seaman's Sweater, Neck Size, 42"
+    }
+  },
+  {
+    "c": "190685",
+    "n": "Seaman's Sweater, Neck Size, 44",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Seaman's Sweater, Neck Size, 44",
+      "Reference": "Seaman's Sweater, Neck Size, 44"
+    }
+  },
+  {
+    "c": "190686",
+    "n": "Seaman's Sweater, Neck Size, 46",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-450-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Seaman's Sweater, Neck Size, 46",
+      "Reference": "Seaman's Sweater, Neck Size, 46"
+    }
+  },
+  {
+    "c": "232631",
+    "n": "Folding Pipe Frame Deck Chair",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Folding Pipe Frame Deck Chair",
+      "Reference": "Folding Pipe Frame Deck Chair"
+    }
+  },
+  {
+    "c": "232632",
+    "n": "Folding Wood Frame Deck Chair",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Folding Wood Frame Deck Chair",
+      "Reference": "Folding Wood Frame Deck Chair"
+    }
+  },
+  {
+    "c": "232633",
+    "n": "Folding Alum Pipe Frame Chair with Armrest",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Folding Alum Pipe Frame Chair with Armrest",
+      "Reference": "Folding Alum Pipe Frame Chair with Armrest"
+    }
+  },
+  {
+    "c": "232638",
+    "n": "Pilot Chair",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pilot Chair",
+      "Reference": "Pilot Chair"
+    }
+  },
+  {
+    "c": "471501",
+    "n": "Pipe Frame Folding Chair",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pipe Frame Folding Chair",
+      "Reference": "Pipe Frame Folding Chair"
+    }
+  },
+  {
+    "c": "471503",
+    "n": "Pipe Frame Swivel Chair",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Pipe Frame Swivel Chair",
+      "Reference": "Pipe Frame Swivel Chair"
+    }
+  },
+  {
+    "c": "471504",
+    "n": "Swivel Pipe Frame Armchair",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-150-04.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Swivel Pipe Frame Armchair",
+      "Reference": "Swivel Pipe Frame Armchair"
+    }
+  },
+  {
+    "c": "471856",
+    "n": "Flash Memory Card (Picture Card) for Digital Camera, 8 Gb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Flash Memory Card (Picture Card) for Digital Camera, 8 Gb",
+      "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 8 Gb"
+    }
+  },
+  {
+    "c": "471857",
+    "n": "Flash Memory Card (Picture Card) for Digital Camera, 16 Gb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Flash Memory Card (Picture Card) for Digital Camera, 16 Gb",
+      "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 16 Gb"
+    }
+  },
+  {
+    "c": "471858",
+    "n": "Flash Memory Card (Picture Card) for Digital Camera, 32 Gb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Flash Memory Card (Picture Card) for Digital Camera, 32 Gb",
+      "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 32 Gb"
+    }
+  },
+  {
+    "c": "471859",
+    "n": "Flash Memory Card (Picture Card) for Digital Camera, 64 Gb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Flash Memory Card (Picture Card) for Digital Camera, 64 Gb",
+      "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 64 Gb"
+    }
+  },
+  {
+    "c": "471860",
+    "n": "Flash Memory Card (Picture Card) for Digital Camera, 128 Gb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Flash Memory Card (Picture Card) for Digital Camera, 128 Gb",
+      "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 128 Gb"
+    }
+  },
+  {
+    "c": "471863",
+    "n": "Memory Card Reader, USB 2.0 (Type A)",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Memory Card Reader, USB 2.0 (Type A)",
+      "Reference": "Memory Card Reader, USB 2.0 (Type A)"
+    }
+  },
+  {
+    "c": "471864",
+    "n": "Memory Card Reader, USB 3.0 (Type A)",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Memory Card Reader, USB 3.0 (Type A)",
+      "Reference": "Memory Card Reader, USB 3.0 (Type A)"
+    }
+  },
+  {
+    "c": "471865",
+    "n": "Flash Memory Card (Picture Card) for Digital Camera, 256 Gb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Flash Memory Card (Picture Card) for Digital Camera, 256 Gb",
+      "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 256 Gb"
+    }
+  },
+  {
+    "c": "471868",
+    "n": "Flash Memory Card (Picture Card) for Digital Camera, 512 Gb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Flash Memory Card (Picture Card) for Digital Camera, 512 Gb",
+      "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 512 Gb"
+    }
+  },
+  {
+    "c": "471869",
+    "n": "Selfie Stick for Digital Camera",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Selfie Stick for Digital Camera",
+      "Reference": "Selfie Stick for Digital Camera"
+    }
+  },
+  {
+    "c": "471870",
+    "n": "Memory Card Reader, USB 3.1 (Type C)",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Memory Card Reader, USB 3.1 (Type C)",
+      "Reference": "Memory Card Reader, USB 3.1 (Type C)"
+    }
+  },
+  {
+    "c": "471871",
+    "n": "Old Model, Digital Camera, 1 Mb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Digital Camera, 1 Mb",
+      "Reference": "Old Model, Digital Camera, 1 Mb"
+    }
+  },
+  {
+    "c": "471872",
+    "n": "Old Model, Digital Camera, 3 Mb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Digital Camera, 3 Mb",
+      "Reference": "Old Model, Digital Camera, 3 Mb"
+    }
+  },
+  {
+    "c": "471873",
+    "n": "Old Model, Digital Camera, 6 Mb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Digital Camera, 6 Mb",
+      "Reference": "Old Model, Digital Camera, 6 Mb"
+    }
+  },
+  {
+    "c": "471874",
+    "n": "Digital Camera, Need Spec",
+    "u": "SET",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Digital Camera, Need Spec",
+      "Reference": "Digital Camera, Need Spec"
+    }
+  },
+  {
+    "c": "471875",
+    "n": "Films with Lens without Flash, 27's",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Films with Lens without Flash, 27's",
+      "Reference": "Films with Lens without Flash, 27's"
+    }
+  },
+  {
+    "c": "471876",
+    "n": "Films with Lens with Flash, 27's",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Films with Lens with Flash, 27's",
+      "Reference": "Films with Lens with Flash, 27's"
+    }
+  },
+  {
+    "c": "471877",
+    "n": "Films with Lens without Flash, 39's",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Films with Lens without Flash, 39's",
+      "Reference": "Films with Lens without Flash, 39's"
+    }
+  },
+  {
+    "c": "471878",
+    "n": "Films with Lens with Flash, 39's",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Films with Lens with Flash, 39's",
+      "Reference": "Films with Lens with Flash, 39's"
+    }
+  },
+  {
+    "c": "471879",
+    "n": "Flash Memory Card (Picture Card) for Digital Camera, 1 Tb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Flash Memory Card (Picture Card) for Digital Camera, 1 Tb",
+      "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 1 Tb"
+    }
+  },
+  {
+    "c": "471880",
+    "n": "Flash Memory Card (Picture Card) for Digital Camera, 2 Tb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Flash Memory Card (Picture Card) for Digital Camera, 2 Tb",
+      "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 2 Tb"
+    }
+  },
+  {
+    "c": "471881",
+    "n": "Old Model, Polaroid Camera, Model 636",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Polaroid Camera, Model 636",
+      "Reference": "Old Model, Polaroid Camera, Model 636"
+    }
+  },
+  {
+    "c": "471882",
+    "n": "Old Model, Polaroid Camera, 630Lmp",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Polaroid Camera, 630Lmp",
+      "Reference": "Old Model, Polaroid Camera, 630Lmp"
+    }
+  },
+  {
+    "c": "471883",
+    "n": "Old Model, Polaroid Camera, Impulse Af",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Polaroid Camera, Impulse Af",
+      "Reference": "Old Model, Polaroid Camera, Impulse Af"
+    }
+  },
+  {
+    "c": "471884",
+    "n": "Old Model, Polaroid Camera, Spectra",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Polaroid Camera, Spectra",
+      "Reference": "Old Model, Polaroid Camera, Spectra"
+    }
+  },
+  {
+    "c": "471885",
+    "n": "Old Model, Polaroid Camera, Sx-70 Auto",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Polaroid Camera, Sx-70 Auto",
+      "Reference": "Old Model, Polaroid Camera, Sx-70 Auto"
+    }
+  },
+  {
+    "c": "471886",
+    "n": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 128 Mb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 128 Mb",
+      "Reference": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 128 Mb"
+    }
+  },
+  {
+    "c": "471887",
+    "n": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 256 Mb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 256 Mb",
+      "Reference": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 256 Mb"
+    }
+  },
+  {
+    "c": "471888",
+    "n": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 512 Mb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 512 Mb",
+      "Reference": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 512 Mb"
+    }
+  },
+  {
+    "c": "471889",
+    "n": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 2 Gb",
+    "u": "PCS",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 2 Gb",
+      "Reference": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 2 Gb"
+    }
+  },
+  {
+    "c": "471891",
+    "n": "Old Model, Polaroid Film, Color 600 10's",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Polaroid Film, Color 600 10's",
+      "Reference": "Old Model, Polaroid Film, Color 600 10's"
+    }
+  },
+  {
+    "c": "471892",
+    "n": "Old Model, Polaroid Film, Sx-70 Supercolor",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Polaroid Film, Sx-70 Supercolor",
+      "Reference": "Old Model, Polaroid Film, Sx-70 Supercolor"
+    }
+  },
+  {
+    "c": "471893",
+    "n": "Old Model, Polaroid Film, Color Spectra 10's",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Polaroid Film, Color Spectra 10's",
+      "Reference": "Old Model, Polaroid Film, Color Spectra 10's"
+    }
+  },
+  {
+    "c": "471896",
+    "n": "Old Model, Polaroid Flash, 600 10's",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Polaroid Flash, 600 10's",
+      "Reference": "Old Model, Polaroid Flash, 600 10's"
+    }
+  },
+  {
+    "c": "471897",
+    "n": "Old Model, Polaroid Flash, Sx-70 10's",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Old Model, Polaroid Flash, Sx-70 10's",
+      "Reference": "Old Model, Polaroid Flash, Sx-70 10's"
+    }
+  },
+  {
+    "c": "472251",
+    "n": "Photograph Print Paper, Size:L (89x127 mm), 100's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Photograph Print Paper, Size:L (89x127 mm), 100's/Pkt",
+      "Reference": "Photograph Print Paper, Size:L (89x127 mm), 100's/Pkt"
+    }
+  },
+  {
+    "c": "472252",
+    "n": "Photograph Print Paper, Size:L (89x127 mm), 200's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Photograph Print Paper, Size:L (89x127 mm), 200's/Pkt",
+      "Reference": "Photograph Print Paper, Size:L (89x127 mm), 200's/Pkt"
+    }
+  },
+  {
+    "c": "472253",
+    "n": "Photograph Print Paper, Size:L (89x127 mm), 400's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Photograph Print Paper, Size:L (89x127 mm), 400's/Pkt",
+      "Reference": "Photograph Print Paper, Size:L (89x127 mm), 400's/Pkt"
+    }
+  },
+  {
+    "c": "472254",
+    "n": "Photograph Print Paper, Size:2L (127x178 mm), 50's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Photograph Print Paper, Size:2L (127x178 mm), 50's/Pkt",
+      "Reference": "Photograph Print Paper, Size:2L (127x178 mm), 50's/Pkt"
+    }
+  },
+  {
+    "c": "472255",
+    "n": "Photograph Print Paper, Size:2L (127x178 mm), 100's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Photograph Print Paper, Size:2L (127x178 mm), 100's/Pkt",
+      "Reference": "Photograph Print Paper, Size:2L (127x178 mm), 100's/Pkt"
+    }
+  },
+  {
+    "c": "472256",
+    "n": "Photograph Print Paper, Size:A-4 (210x297 mm), 20's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Photograph Print Paper, Size:A-4 (210x297 mm), 20's/Pkt",
+      "Reference": "Photograph Print Paper, Size:A-4 (210x297 mm), 20's/Pkt"
+    }
+  },
+  {
+    "c": "472257",
+    "n": "Photograph Print Paper, Size:A-4 (210x297 mm), 50's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Photograph Print Paper, Size:A-4 (210x297 mm), 50's/Pkt",
+      "Reference": "Photograph Print Paper, Size:A-4 (210x297 mm), 50's/Pkt"
+    }
+  },
+  {
+    "c": "472258",
+    "n": "Photograph Print Paper, Size:A-4 (210x297 mm), 100's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Photograph Print Paper, Size:A-4 (210x297 mm), 100's/Pkt",
+      "Reference": "Photograph Print Paper, Size:A-4 (210x297 mm), 100's/Pkt"
+    }
+  },
+  {
+    "c": "472259",
+    "n": "Photograph Print Paper, Size:Quarto (254x305 mm), 20's/Pkt",
+    "u": "PKT",
+    "g": "11",
+    "p": "11-510-01.jpg",
+    "category": "Chapter 11",
+    "specs": {
+      "Catalog Section": "Chapter 11",
+      "Description": "Photograph Print Paper, Size:Quarto (254x305 mm), 20's/Pkt",
+      "Reference": "Photograph Print Paper, Size:Quarto (254x305 mm), 20's/Pkt"
+    }
+  }
+]

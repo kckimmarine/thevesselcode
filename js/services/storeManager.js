@@ -5,7 +5,7 @@ const TVC_StoreManager = (function () {
     const SEARCH_LIMIT = 50000;
     const BROWSE_PREVIEW = 500;
     const SEARCH_TARGET_MS = 50;
-    const CATALOG_SOURCE_VERSION = '20260912-phase-a-15022';
+    const CATALOG_SOURCE_VERSION = '20260914-phase-b-24247';
 
     const CHAPTER_CATEGORY = {
         '33': 'Safety Equipment',

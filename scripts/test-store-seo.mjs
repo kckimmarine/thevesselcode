@@ -56,12 +56,10 @@ check('sitemap references core pages', sitemap.includes('sitemap-core.xml'));
 check('sitemap references store chunk', sitemap.includes('sitemap-store-1.xml'));
 
 let storeUrlCount = 0;
-const chunk1 = readFileSync(join(root, 'public', 'sitemap-store-1.xml'), 'utf8');
-storeUrlCount += (chunk1.match(/<loc>/g) || []).length;
-const chunk2Path = join(root, 'public', 'sitemap-store-2.xml');
-if (existsSync(chunk2Path)) {
-    const chunk2 = readFileSync(chunk2Path, 'utf8');
-    storeUrlCount += (chunk2.match(/<loc>/g) || []).length;
+for (let n = 1; n <= 20; n += 1) {
+    const chunkPath = join(root, 'public', `sitemap-store-${n}.xml`);
+    if (!existsSync(chunkPath)) break;
+    storeUrlCount += (readFileSync(chunkPath, 'utf8').match(/<loc>/g) || []).length;
 }
 check('store sitemap url count matches index', storeUrlCount === index.count, `${storeUrlCount} urls`);
 
