@@ -100,8 +100,21 @@
         }
     }
 
+    function applyInboundCampaignParams() {
+        const params = new URLSearchParams(window.location.search);
+        const inquiry = String(params.get('inquiry') || '').trim().toLowerCase();
+        if (inquiry !== 'tvc-sm-demo') return;
+        const typeSelect = qs('#acInquiryType');
+        const message = qs('#acMessage');
+        if (typeSelect) typeSelect.value = 'demo';
+        if (message && !String(message.value || '').trim()) {
+            message.value = 'I would like to request a free 30-day TVC-SM fleet pilot / demo for our vessels.';
+        }
+    }
+
     function init() {
         applyEmbedMode();
+        applyInboundCampaignParams();
 
         const emailLink = qs('#acContactEmail');
         if (emailLink) {
