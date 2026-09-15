@@ -1,5 +1,5 @@
 /**
- * THE VESSEL CODE — shared marketing topbar + footer (Home, Services, Toolkit, Contact Us).
+ * THE VESSEL CODE — shared marketing topbar + footer (Home, Toolkit, TVC-SM, Contact Us).
  * Requires marketing-i18n.js for KO/EN toggle.
  * Commercial ticker: js/intelligence/marketFeed.js (lazy-loaded).
  */
@@ -8,20 +8,17 @@
 
     const NAV = [
         { id: 'home', href: '/', i18n: 'nav.home' },
-        { id: 'services', href: '/services', i18n: 'nav.services' },
         { id: 'toolkit', href: '/toolkit', i18n: 'nav.toolkit' },
-        { id: 'forum', href: '/forum', i18n: 'nav.forum' },
         { id: 'sm', href: '/sm', i18n: 'nav.sm' },
         { id: 'contact', href: '/contact-us', i18n: 'nav.contact' },
     ];
 
     const FOOTER_LINKS = [
         { href: '/', i18n: 'nav.home' },
-        { href: '/services', i18n: 'nav.services' },
         { href: '/toolkit', i18n: 'nav.toolkit' },
-        { href: '/forum', i18n: 'nav.forum' },
         { href: '/sm', i18n: 'nav.sm' },
         { href: '/contact-us', i18n: 'nav.contact' },
+        { href: '/services', i18n: 'nav.services' },
     ];
 
     const LOGO = '/icons/company-logo.png?v=20260804-logo-no-ring';

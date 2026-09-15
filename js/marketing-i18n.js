@@ -15,7 +15,7 @@
         'nav.sm': { en: 'TVC-SM', ko: 'TVC-SM 선박관리' },
         'nav.contact': { en: 'Contact Us', ko: '문의하기' },
         'nav.menu': { en: 'Menu', ko: '메뉴' },
-        'nav.launchApp': { en: 'Launch App', ko: '앱 실행' },
+        'nav.launchApp': { en: 'Launch TVC-SM', ko: 'TVC-SM 실행' },
         'nav.brand.tag': {
             en: 'Engineering · Operations · Open maritime hub',
             ko: '해운 기술 · 운항 · 열린 해양 플랫폼',
@@ -140,15 +140,19 @@
             en: 'Cadets to class surveyors — the same IMPA catalog and calculators, no paywall for daily technical work.',
             ko: '사관생도부터 검사원까지 — 같은 IMPA·계산기, 일상 기술 업무에 무료.',
         },
-        'home.edge.2.t': { en: 'Professional Fleet Software', ko: '전문 선대 소프트웨어' },
-        'home.edge.2.d': {
-            en: 'TVC-SM brings offline-first PMS, SPARE, and shore ZIP sync at a price point small fleets can adopt.',
-            ko: 'TVC-SM — 오프라인 PMS·SPARE·육상 ZIP, 소규모 선대도 도입 가능한 가격.',
+        'home.values.lead': {
+            en: 'Search-first utilities for daily technical work. TVC-SM when the fleet needs an offline-ready operating system.',
+            ko: '일상 기술 업무는 검색·계산기부터. 선대 OS가 필요할 때 TVC-SM.',
         },
-        'home.edge.3.t': { en: 'Community-Driven Growth', ko: '커뮤니티가 이끄는 성장' },
+        'home.edge.2.t': { en: 'TVC-SM Fleet OS', ko: 'TVC-SM Fleet OS' },
+        'home.edge.2.d': {
+            en: 'TVC-SM (Vessel Core / Fleet OS) — offline maintenance, SPARE, and ZIP sync built for small fleets.',
+            ko: 'TVC-SM — 오프라인 정비·SPARE·ZIP, 소규모 선대용 Fleet OS.',
+        },
+        'home.edge.3.t': { en: 'Built by Practitioners', ko: '현장 전문가가 설계' },
         'home.edge.3.d': {
-            en: 'Engineers and superintendents building in the open — feedback from the waterfront shapes every release.',
-            ko: '엔지니어·슈퍼인텐던트가 열어 만듭니다 — 현장 피드백이 릴리스를 만듭니다.',
+            en: 'Engineered by a 1st Class Engineer and superintendent — credible workflows, not generic office IT.',
+            ko: '1급 기관사·슈퍼인텐던트가 만든 실무형 워크플로.',
         },
         'home.digital.title': { en: 'Digital Products', ko: '디지털 제품' },
         'home.digital.lead': {
@@ -169,8 +173,8 @@
         'home.digital.tk.link': { en: 'Open IMPA Catalog →', ko: 'IMPA 카탈로그 →' },
         'home.cta.title': { en: 'Explore free tools. Scale with TVC-SM.', ko: '무료 도구부터, TVC-SM으로 확장.' },
         'home.cta.p': {
-            en: 'Questions, partnerships, or a fleet pilot — we welcome every corner of the maritime community.',
-            ko: '문의·파트너십·파일럿 — 해양 커뮤니티 모두를 환영합니다.',
+            en: 'Launch the fleet app or request a superintendent-led demo.',
+            ko: 'Fleet 앱 실행 또는 슈퍼인텐던트 데모를 요청하세요.',
         },
         'home.cta.btn': { en: 'Contact Us', ko: '문의하기' },
         'home.impa.title': { en: 'Popular Marine Stores & Critical Parts', ko: '인기 선용품 · 핵심 부품' },
@@ -193,12 +197,12 @@
             ko: 'TVC-SM 선박관리',
         },
         'sm.hero.tagline': {
-            en: 'The resilient, local-first ship management operating system engineered by superintendents.',
-            ko: '공무감독이 직접 설계한, 끊김 없는 현장형 선박관리 운영체제',
+            en: 'TVC-SM (Vessel Core / Fleet OS) — local-first ship management engineered by superintendents.',
+            ko: 'TVC-SM (Vessel Core / Fleet OS) — 슈퍼인텐던트가 설계한 로컬 우선 선박관리',
         },
         'sm.hero.lead': {
-            en: 'Shipboard-first program that starts in milliseconds — full PMS and SPARE when the link is down. PC and mobile ready.',
-            ko: '인터넷이 끊겨도 0.1초 만에 구동되는 현장 중심 선박관리 프로그램 (PC 및 모바일 지원).',
+            en: 'Offline-complete maintenance and SPARE on board. Superintendent oversight via ZIP or online Fleet HQ.',
+            ko: '선상 오프라인 정비·SPARE 완결. ZIP 또는 온라인 Fleet HQ로 감독.',
         },
         'sm.hero.approval': {
             en: 'Structured workflow: Drafted (ship staff) → Verified (Chief Officer / Chief Engineer) → Final approval (Superintendent).',
@@ -209,13 +213,33 @@
             ko: '비싼 외산 프로그램의 거품을 빼고, 영세 선사도 부담 없이 도입할 수 있는 상생형 선박관리 시스템',
         },
         'sm.cta.launch': { en: '🚀 Launch TVC-SM App', ko: '🚀 TVC-SM 앱 실행' },
-        'sm.cta.demo': { en: 'Request Fleet Trial', ko: '파일럿 체험 문의' },
+        'sm.cta.demo': { en: 'Request Fleet Demo', ko: 'Fleet Demo 요청' },
+        'sm.essentials.title': { en: 'How TVC-SM works', ko: 'TVC-SM 작동 방식' },
+        'sm.essentials.lead': {
+            en: 'One offline core on the ship. One approval line for superintendents. ZIP when the link is down.',
+            ko: '선박 오프라인 코어, 감독 승인 라인, 링크 단절 시 ZIP.',
+        },
+        'sm.essentials.1.t': { en: 'Report · Confirm · Approve', ko: 'Report · Confirm · Approve' },
+        'sm.essentials.1.d': {
+            en: 'Structured statuses from deck and engine through chief officers to superintendent approval.',
+            ko: '갑판·기관에서 기관장·갑판장, 슈퍼인텐던트 승인까지 구조화된 상태.',
+        },
+        'sm.essentials.2.t': { en: 'Linked maintenance & SPARE', ko: '정비·SPARE 연동' },
+        'sm.essentials.2.d': {
+            en: 'Work reports and IMPA consumption stay aligned — no duplicate stock deductions on confirm.',
+            ko: '작업보고와 IMPA 소모가 연동 — 확인 시 이중 차감 없음.',
+        },
+        'sm.essentials.3.t': { en: 'ZIP ship ↔ shore', ko: 'ZIP 선박 ↔ 육상' },
+        'sm.essentials.3.d': {
+            en: 'Signed export/import packets over email, USB, or messenger — no always-on cloud at sea.',
+            ko: '이메일·USB·메신저로 서명된 ZIP — 해상 상시 클라우드 불필요.',
+        },
         'sm.pillars.title': { en: 'Three core TVC-SM pillars', ko: 'TVC-SM 핵심 3대 축' },
         'sm.pillars.lead': {
             en: 'Shipboard execution, shore oversight, and procurement — one offline-first platform.',
             ko: '선박 실행, 육상 감독, 조달 — 하나의 오프라인 우선 플랫폼.',
         },
-        'sm.pillar.1.t': { en: 'Vessel Core (PMS + SPARE)', ko: 'Vessel Core (PMS + SPARE)' },
+        'sm.pillar.1.t': { en: 'TVC-SM Vessel Core', ko: 'TVC-SM Vessel Core' },
         'sm.pillar.1.d': {
             en: 'Deck and engine workflows, atomic stock, defect & permit — fully usable without satellite.',
             ko: 'Deck·Engine 워크플로, 원자적 재고, 결함·작업허가 — 위성 없이 완결.',
@@ -450,7 +474,7 @@
             en: '🚀 Start 30-Day Free Fleet Trial',
             ko: '🚀 30일 무료 선대 체험 시작',
         },
-        'pricing.fleet.secondary': { en: 'Compare TVC-SM modes ↓', ko: 'TVC-SM 모드 비교 ↓' },
+        'pricing.fleet.secondary': { en: 'See how TVC-SM works ↓', ko: 'TVC-SM 작동 방식 ↓' },
         'tk.pricing.hook': {
             en: 'Free catalog & calculators — upgrade to Toolkit Pro or fleet TVC-SM when you scale.',
             ko: '무료 카탈로그·계산기 — 확장 시 Toolkit Pro 또는 TVC-SM 선대로.',
@@ -485,8 +509,21 @@
             ko: '해운 실무 공구함 (Maritime Toolkit)',
         },
         'tk.lead': {
-            en: '<strong>50,000+</strong> marine store specs and calculators in your browser. Onboard ROB &amp; PMS via <a href="/sm">TVC-SM</a>.',
-            ko: '브라우저에서 <strong>5만 개</strong> 선용품 규격·도판과 계산기. 본선 재고·정비는 <a href="/sm">TVC-SM</a>으로 연결합니다.',
+            en: 'Search 50,000+ IMPA specs and run ASTM bunker, flange, and lube utilities in your browser.',
+            ko: '브라우저에서 5만+ IMPA와 벙커·플랜지·윤활 유틸리티를 검색하세요.',
+        },
+        'tk.lead2': {
+            en: 'Fleet maintenance and ROB live in <a href="/sm">TVC-SM (Vessel Core / Fleet OS)</a>.',
+            ko: '선대 정비·ROB는 <a href="/sm">TVC-SM (Vessel Core / Fleet OS)</a>에서 운영합니다.',
+        },
+        'tk.trio.1.t': { en: 'IMPA catalog', ko: 'IMPA 카탈로그' },
+        'tk.trio.1.d': { en: 'Fast code search with catalog plates and spec sheets.', ko: '도판·규격 시트가 있는 빠른 코드 검색.' },
+        'tk.trio.2.t': { en: 'Engineering calculators', ko: '엔지니어링 계산기' },
+        'tk.trio.2.d': { en: 'Bunker ASTM 54B, JIS/ANSI flanges, and cross-reference tables.', ko: '벙커 ASTM 54B, 플랜지, 조견표.' },
+        'tk.trio.3.t': { en: 'Scale to TVC-SM', ko: 'TVC-SM으로 확장' },
+        'tk.trio.3.d': {
+            en: 'Adopt TVC-SM when the fleet needs offline maintenance and superintendent oversight.',
+            ko: '오프라인 정비·감독이 필요할 때 TVC-SM을 도입하세요.',
         },
         'tk.feature.impa': {
             en: '50,000+ IMPA store specs &amp; catalog plates — fast search',
@@ -568,19 +605,30 @@
         'tk.plg.app': { en: 'Launch App', ko: '앱 실행' },
 
         'services.meta.description': {
-            en: 'THE VESSEL CODE services — superintendent, retrofit, PSC & vetting, repair engineering, and strategic supply.',
-            ko: 'THE VESSEL CODE 서비스 — 공무감독, 개조, PSC·vetting, 수리 엔지니어링, 전략 조달.',
+            en: 'THE VESSEL CODE — Technical superintendent oversight and TVC-SM fleet integration.',
+            ko: 'THE VESSEL CODE — 공무감독 기술 지원 및 TVC-SM 선대 통합.',
         },
         'services.document.title': { en: 'Services | THE VESSEL CODE', ko: '서비스 | THE VESSEL CODE' },
-        'services.hero.title': { en: 'Services', ko: '서비스' },
+        'services.hero.title': { en: 'Professional Services', ko: '프로페셔널 서비스' },
         'services.hero.lead': {
-            en: 'Five integrated pillars — superintendent representation, retrofit, compliance, repair engineering, and supply.',
-            ko: '다섯 가지 실무 영역 — 공무감독, 개조, 컴플라이언스, 수리 엔지니어링, 조달.',
+            en: 'Superintendent-grade oversight on deck, plus TVC-SM onboarding when your fleet is ready to go digital.',
+            ko: '현장 공무감독 지원과 TVC-SM 도입 온보딩.',
         },
-        'services.cta.title': { en: 'Discuss your fleet requirements', ko: '선대 요구사항 상담' },
+        'services.card1.title': { en: 'Technical Superintendent Oversight', ko: '기술 공무감독' },
+        'services.card1.b1': { en: 'Class survey preparation and evidence packs.', ko: '선급 검사 준비 및 증빙 패키지.' },
+        'services.card1.b2': { en: 'Dry-docking scope verification and condition audits.', ko: '도크 스코프 검증 및 상태 감사.' },
+        'services.card1.b3': { en: 'Independent technical review for owners and managers.', ko: '선주·관리사를 위한 독립 기술 검토.' },
+        'services.card2.title': { en: 'TVC-SM Fleet Integration', ko: 'TVC-SM Fleet 통합' },
+        'services.card2.b1': {
+            en: 'TVC-SM (Vessel Core / Fleet OS) database setup and master data validation.',
+            ko: 'TVC-SM DB 구축 및 마스터 데이터 검증.',
+        },
+        'services.card2.b2': { en: 'Equipment hierarchy alignment for deck and engine teams.', ko: '갑판·기관 장비 계층 정렬.' },
+        'services.card2.b3': { en: 'Offline ship–shore ZIP onboarding and superintendent handover.', ko: '오프라인 ZIP 온보딩 및 감독 인수인계.' },
+        'services.cta.title': { en: 'Ready for superintendent support or a fleet pilot?', ko: '공무 지원 또는 파일럿이 필요하신가요?' },
         'services.cta.p': {
-            en: 'Superintendent support, retrofit management, or a TVC-SM pilot — Busan engineering team.',
-            ko: '공무감독, 개조 관리, TVC-SM 파일럿 — 부산 엔지니어링팀이 도와드립니다.',
+            en: 'Busan engineering team — practical oversight and TVC-SM rollout.',
+            ko: '부산 엔지니어링팀 — 실무 감독과 TVC-SM 롤아웃.',
         },
         'services.cta.btn': { en: 'Contact Us', ko: '문의하기' },
 
@@ -599,13 +647,13 @@
             en: 'Fleet demos, partnerships, and support for open maritime tools and TVC-SM.',
             ko: '열린 해운 도구와 TVC-SM — 파일럿·제휴·기술 문의를 환영합니다.',
         },
-        'contact.badge.sm': { en: '⚓ TVC-SM — Vessel Core (PMS + SPARE)', ko: '⚓ TVC-SM — 정비·예비품' },
+        'contact.badge.sm': { en: '⚓ TVC-SM (Vessel Core / Fleet OS)', ko: '⚓ TVC-SM (Vessel Core / Fleet OS)' },
         'contact.badge.tk': { en: '📐 Maritime Toolkit', ko: '📐 해운 실무 공구함' },
         'contact.badge.global': { en: '🌐 Global community support', ko: '🌐 글로벌 커뮤니티 지원' },
         'contact.about.title': { en: 'Maritime expertise meets practical software', ko: '해운 실무와 실용 소프트웨어' },
         'contact.about.p': {
-            en: 'THE VESSEL CODE builds shipboard-ready PMS, spare inventory, and superintendent workflows — for real fleets, not generic office IT.',
-            ko: 'THE VESSEL CODE는 사무용 IT가 아닌, 실제 선박·선대 운영을 위한 정비·재고·공무 워크플로를 만듭니다.',
+            en: 'THE VESSEL CODE delivers TVC-SM (Vessel Core / Fleet OS) and superintendent support — built for real fleets, not generic office IT.',
+            ko: 'THE VESSEL CODE는 TVC-SM과 공무감독 지원을 제공합니다 — 실제 선대를 위한 실무형 솔루션.',
         },
         'contact.touch.title': { en: 'Get in Touch', ko: '연락처' },
         'contact.touch.sub': { en: 'Speak with our maritime engineering team.', ko: '해운 엔지니어링팀과 직접 상담하세요.' },
