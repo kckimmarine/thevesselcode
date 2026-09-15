@@ -1553,3 +1553,148 @@ body.tvc-marketing-body .mkt-metric strong {
     font-weight: 800;
     letter-spacing: -0.02em;
 }
+
+/* Authoritative voice — subtitle, modules, blueprint tables */
+body.tvc-marketing-body .mkt-subtitle,
+body.tvc-marketing-body .home-hero-subtitle {
+    color: #334155;
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.45;
+    max-width: 42rem;
+    margin: 0.35rem 0 0.75rem;
+}
+
+body.tvc-marketing-body .mkt-section-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin: 0 0 12px;
+}
+
+body.tvc-marketing-body .mkt-module-grid {
+    margin-top: 8px;
+}
+
+body.tvc-marketing-body .mkt-module-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #e2e8f0;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+body.tvc-marketing-body .mkt-module-card:hover {
+    border-color: #94a3b8;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+body.tvc-marketing-body .mkt-module-index {
+    display: inline-block;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: #64748b;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-bottom: 10px;
+    font-variant-numeric: tabular-nums;
+}
+
+body.tvc-marketing-body .mkt-tool-tabs .store-tool-chip {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #334155;
+}
+
+body.tvc-marketing-body .mkt-tool-tabs .store-tool-chip.active {
+    background: #0f172a;
+    border-color: #0f172a;
+    color: #ffffff;
+}
+
+body.tvc-marketing-body .home-utility-badge {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+    color: #334155;
+    padding: 8px 12px;
+}
+
+body.tvc-marketing-body .mkt-plg-lock {
+    font-size: 0.875rem;
+    color: #475569;
+    border: 1px dashed #cbd5e1;
+    border-radius: 6px;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+body.tvc-marketing-body .mkt-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+body.tvc-marketing-body .mkt-footer-signature {
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    color: #64748b;
+    max-width: 52rem;
+    margin: 0;
+}
+
+body.tvc-marketing-body .mkt-footer-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+body.tvc-marketing-body .maritime-table-wrap {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    overflow: auto;
+    background: #ffffff;
+}
+
+body.tvc-marketing-body .maritime-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #334155;
+}
+
+body.tvc-marketing-body .maritime-table th,
+body.tvc-marketing-body .maritime-table td {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 10px 14px;
+    text-align: left;
+    vertical-align: top;
+}
+
+body.tvc-marketing-body .maritime-table th {
+    background: #f1f5f9;
+    color: #0f172a;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    letter-spacing: 0.02em;
+}
+
+body.tvc-marketing-body .maritime-subheading {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 24px 0 12px;
+}

@@ -22,7 +22,7 @@
     ];
 
     const LOGO = '/icons/company-logo.png?v=20260804-logo-no-ring';
-    const INTEL_CSS = '/css/marketing-readability.css?v=20260915-enterprise';
+    const INTEL_CSS = '/css/marketing-readability.css?v=20260915-engineering-voice';
     const INTEL_JS = '/js/intelligence/marketFeed.js?v=20260914-news-media-dashboard';
 
     const SVG_STROKE =
@@ -138,11 +138,14 @@
         }).join(' ·\n                ');
 
         return `
-        <footer class="home-footer">
-            <span data-i18n="footer.copy">© 2026 THE VESSEL CODE (K-TECH) · Busan, Republic of Korea</span>
-            <span class="home-footer-links">
-                ${links}
-            </span>
+        <footer class="home-footer mkt-footer">
+            <p class="mkt-footer-signature" data-i18n="footer.signature">The Vessel Code is an engineering commons and fleet operating architecture designed by Kim Kyeong-cheol (1st Class Marine Engineer / Technical Superintendent).</p>
+            <div class="mkt-footer-meta">
+                <span data-i18n="footer.copy">© 2026 THE VESSEL CODE (K-TECH) · Busan, Republic of Korea</span>
+                <span class="home-footer-links">
+                    ${links}
+                </span>
+            </div>
         </footer>`;
     }
 
