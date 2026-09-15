@@ -34,13 +34,46 @@
         },
         'home.eyebrow': { en: 'THE VESSEL CODE · Open Maritime Hub', ko: 'THE VESSEL CODE · 열린 해양 허브' },
         'home.headline': {
-            en: 'The Open Digital Commons<br>for Global Maritime<br>&amp; Industry',
-            ko: '바다와 육상을 잇는<br>열린 해운·산업<br>디지털 커먼즈',
+            en: 'The Open Digital Commons for Global Maritime',
+            ko: '글로벌 해운을 위한 열린 디지털 커먼즈',
         },
         'home.tagline': {
-            en: 'Free tools for daily technical work at sea and ashore. TVC-SM when your fleet needs offline PMS, SPARE, and superintendent oversight.',
-            ko: '해상·육상 실무용 무료 공구함. 오프라인 PMS·SPARE·감독 워크플로가 필요할 때 TVC-SM.',
+            en: 'Search 50,000+ IMPA parts, engineering standards, and free operational calculators instantly.',
+            ko: '50,000+ IMPA 부품, 엔지니어링 표준, 무료 운항 계산기를 즉시 검색하세요.',
         },
+        'home.search.label': {
+            en: 'Search IMPA and maritime utilities',
+            ko: 'IMPA 및 해양 유틸리티 검색',
+        },
+        'home.search.placeholder': {
+            en: 'Search IMPA Code, Valve, Flange, or Equipment (e.g. 812541, JIS 10K, Globe Valve)…',
+            ko: 'IMPA 코드, 밸브, 플랜지, 장비 검색 (예: 812541, JIS 10K, Globe Valve)…',
+        },
+        'home.search.button': { en: 'Search', ko: '검색' },
+        'home.utility.bunker': { en: '⛽ Bunker Calc (54B)', ko: '⛽ Bunker Calc (54B)' },
+        'home.utility.flange': { en: '📐 JIS/ANSI Flange', ko: '📐 JIS/ANSI Flange' },
+        'home.utility.lube': { en: '🛢️ Lub-Oil Cross-Ref', ko: '🛢️ Lub-Oil Cross-Ref' },
+        'home.utility.impa': { en: '📦 IMPA Catalog', ko: '📦 IMPA 카탈로그' },
+        'home.enterprise.title': {
+            en: 'From Daily Field Work to Complete Fleet Management',
+            ko: '일상 현장 업무에서 선대 관리까지',
+        },
+        'home.enterprise.subtitle': {
+            en: 'Experience offline-first vessel maintenance and superintendent oversight with TVC-SM.',
+            ko: 'TVC-SM으로 오프라인 우선 선박 유지보수와 슈퍼인텐던트 관제를 경험하세요.',
+        },
+        'home.enterprise.vessel.title': { en: 'TVC-SM Vessel Mode', ko: 'TVC-SM Vessel Mode' },
+        'home.enterprise.vessel.desc': {
+            en: 'Offline-first PMS & SPARE, 1-Click reports.',
+            ko: '오프라인 우선 PMS·SPARE, 1-Click 리포트.',
+        },
+        'home.enterprise.vessel.cta': { en: 'Explore Vessel Mode', ko: 'Vessel Mode 알아보기' },
+        'home.enterprise.fleet.title': { en: 'TVC-SM Fleet HQ', ko: 'TVC-SM Fleet HQ' },
+        'home.enterprise.fleet.desc': {
+            en: 'Real-time superintendent fleet oversight & audit prep.',
+            ko: '실시간 슈퍼인텐던트 선대 관제 및 감사 준비.',
+        },
+        'home.enterprise.fleet.cta': { en: 'Request 30-Day Fleet Trial', ko: '30일 Fleet Trial 신청' },
         'home.ethos.label': { en: 'Mutual growth platform', ko: '상생 플랫폼' },
         'home.document.title': {
             en: 'THE VESSEL CODE | Open Digital Commons for Global Maritime',
