@@ -1,0 +1,3989 @@
+{
+  "version": 1,
+  "updated_at": "2026-09-15",
+  "compliance_refs": [
+    "ClassNK",
+    "ISM Code",
+    "ISO 15550",
+    "JIS F7305",
+    "DIN 86251"
+  ],
+  "maker_roles": {
+    "MAIN_ENGINE": {
+      "default": "MAN B&W",
+      "options": [
+        "MAN B&W",
+        "WinGD",
+        "Yanmar",
+        "Daihatsu"
+      ]
+    },
+    "GEN_ENGINE": {
+      "default": "Yanmar",
+      "options": [
+        "MAN B&W",
+        "WinGD",
+        "Yanmar",
+        "Daihatsu"
+      ]
+    }
+  },
+  "archetypes": {
+    "BULK_CARRIER": {
+      "label": "Bulk Carrier",
+      "taxonomy_profile": "bulker",
+      "vessel_types": [
+        "Bulk Carrier"
+      ],
+      "components": [
+        {
+          "key": "me",
+          "name": "Main Engine",
+          "category": "ENGINE",
+          "group": "01. MAIN PROPULSION",
+          "maker_role": "MAIN_ENGINE",
+          "maker_default": "MAN B&W",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            },
+            {
+              "job_detail": "CYLINDER COVER OVERHAUL",
+              "period": 8000,
+              "unit": "H"
+            }
+          ]
+        },
+        {
+          "key": "ge1",
+          "name": "No.1 Generator Engine",
+          "category": "ENGINE",
+          "group": "02. AUXILIARY ENGINES",
+          "maker_role": "GEN_ENGINE",
+          "maker_default": "Yanmar",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ge2",
+          "name": "No.2 Generator Engine",
+          "category": "ENGINE",
+          "group": "02. AUXILIARY ENGINES",
+          "maker_role": "GEN_ENGINE",
+          "maker_default": "Yanmar",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ge3",
+          "name": "No.3 Generator Engine",
+          "category": "ENGINE",
+          "group": "02. AUXILIARY ENGINES",
+          "maker_role": "GEN_ENGINE",
+          "maker_default": "Yanmar",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "aux_boiler",
+          "name": "Auxiliary Boiler",
+          "category": "ENGINE",
+          "group": "03. BOILERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "egc",
+          "name": "Exhaust Gas Economizer",
+          "category": "ENGINE",
+          "group": "03. BOILERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hfo_sep",
+          "name": "HFO Purifier",
+          "category": "ENGINE",
+          "group": "04. PURIFIERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "lo_sep",
+          "name": "L.O. Purifier",
+          "category": "ENGINE",
+          "group": "04. PURIFIERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ows",
+          "name": "Oily Water Separator (15ppm)",
+          "category": "ENGINE",
+          "group": "04. PURIFIERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            },
+            {
+              "job_detail": "15PPM FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "1/E"
+            }
+          ]
+        },
+        {
+          "key": "bilge_sep",
+          "name": "Bilge Separator",
+          "category": "ENGINE",
+          "group": "04. PURIFIERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "fwg",
+          "name": "Fresh Water Generator",
+          "category": "ENGINE",
+          "group": "05. AUXILIARY PUMPS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "sw_cool",
+          "name": "Sea Water Cooling Pump",
+          "category": "ENGINE",
+          "group": "05. AUXILIARY PUMPS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "lo_pump",
+          "name": "L.O. Supply Pump",
+          "category": "ENGINE",
+          "group": "05. AUXILIARY PUMPS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "fo_pump",
+          "name": "F.O. Transfer Pump",
+          "category": "ENGINE",
+          "group": "05. AUXILIARY PUMPS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "steer",
+          "name": "Steering Gear",
+          "category": "ENGINE",
+          "group": "06. STEERING GEAR",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hatch1",
+          "name": "Hatch Cover No.1",
+          "category": "DECK",
+          "group": "05. HATCH COVERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hatch2",
+          "name": "Hatch Cover No.2",
+          "category": "DECK",
+          "group": "05. HATCH COVERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hatch_hpu",
+          "name": "Hatch Cover HPU",
+          "category": "DECK",
+          "group": "05. HATCH COVERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "crane1",
+          "name": "Deck Crane No.1",
+          "category": "DECK",
+          "group": "09. DECK CRANES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "crane2",
+          "name": "Deck Crane No.2",
+          "category": "DECK",
+          "group": "09. DECK CRANES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "windlass_fwd",
+          "name": "Forward Windlass",
+          "category": "DECK",
+          "group": "02. MOORING & WINDLASS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "windlass_aft",
+          "name": "Aft Mooring Winch",
+          "category": "DECK",
+          "group": "02. MOORING & WINDLASS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "radar",
+          "name": "Radar",
+          "category": "DECK",
+          "group": "06. NAVIGATION & GMDSS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ecdis",
+          "name": "ECDIS",
+          "category": "DECK",
+          "group": "06. NAVIGATION & GMDSS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "gmdss",
+          "name": "GMDSS Console",
+          "category": "DECK",
+          "group": "06. NAVIGATION & GMDSS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "fire_pump",
+          "name": "Fire Pump",
+          "category": "DECK",
+          "group": "04. FIRE FIGHTING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "co2",
+          "name": "CO2 Fixed System",
+          "category": "DECK",
+          "group": "04. FIRE FIGHTING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "lifeboat",
+          "name": "Lifeboat & Davit",
+          "category": "DECK",
+          "group": "03. LIFE-SAVING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ism_doc",
+          "name": "ISM DOC Audit Items",
+          "category": "DECK",
+          "group": "07. STATUTORY ISM",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            },
+            {
+              "job_detail": "ISM INTERNAL AUDIT",
+              "period": 12,
+              "unit": "M",
+              "pic": "Master"
+            }
+          ]
+        },
+        {
+          "key": "class_hull",
+          "name": "Class Hull Survey Prep",
+          "category": "DECK",
+          "group": "07. STATUTORY ISM",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_1",
+          "name": "Cargo Hold No.1 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_2",
+          "name": "Cargo Hold No.2 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_3",
+          "name": "Cargo Hold No.3 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_4",
+          "name": "Cargo Hold No.4 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_5",
+          "name": "Cargo Hold No.5 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_6",
+          "name": "Cargo Hold No.6 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_7",
+          "name": "Cargo Hold No.7 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_8",
+          "name": "Cargo Hold No.8 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_9",
+          "name": "Cargo Hold No.9 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_10",
+          "name": "Cargo Hold No.10 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_11",
+          "name": "Cargo Hold No.11 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_12",
+          "name": "Cargo Hold No.12 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_13",
+          "name": "Cargo Hold No.13 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hold_14",
+          "name": "Cargo Hold No.14 Ventilation",
+          "category": "DECK",
+          "group": "07. CARGO HOLDS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        }
+      ]
+    },
+    "OIL_TANKER": {
+      "label": "Oil Tanker",
+      "taxonomy_profile": "tanker_chemical",
+      "vessel_types": [
+        "Oil Tanker",
+        "Product Tanker"
+      ],
+      "components": [
+        {
+          "key": "me",
+          "name": "Main Engine",
+          "category": "ENGINE",
+          "group": "01. MAIN PROPULSION",
+          "maker_role": "MAIN_ENGINE",
+          "maker_default": "MAN B&W",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ge1",
+          "name": "No.1 Generator Engine",
+          "category": "ENGINE",
+          "group": "02. AUXILIARY ENGINES",
+          "maker_role": "GEN_ENGINE",
+          "maker_default": "Yanmar",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ge2",
+          "name": "No.2 Generator Engine",
+          "category": "ENGINE",
+          "group": "02. AUXILIARY ENGINES",
+          "maker_role": "GEN_ENGINE",
+          "maker_default": "Yanmar",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ge3",
+          "name": "No.3 Generator Engine",
+          "category": "ENGINE",
+          "group": "02. AUXILIARY ENGINES",
+          "maker_role": "GEN_ENGINE",
+          "maker_default": "Yanmar",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "boiler",
+          "name": "High-Capacity Auxiliary Boiler",
+          "category": "ENGINE",
+          "group": "03. BOILERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "igs",
+          "name": "Inert Gas System (IGS)",
+          "category": "ENGINE",
+          "group": "09. INERT GAS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            },
+            {
+              "job_detail": "IGS OXYGEN ANALYSER CALIBRATION",
+              "period": 1,
+              "unit": "M"
+            }
+          ]
+        },
+        {
+          "key": "igs_gen",
+          "name": "IG Generator",
+          "category": "ENGINE",
+          "group": "09. INERT GAS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "deck_seal",
+          "name": "IG Deck Seal",
+          "category": "DECK",
+          "group": "09. INERT GAS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "cop1",
+          "name": "Cargo Oil Pump No.1",
+          "category": "DECK",
+          "group": "07. CARGO PUMPS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "cop2",
+          "name": "Cargo Oil Pump No.2",
+          "category": "DECK",
+          "group": "07. CARGO PUMPS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "strip",
+          "name": "Stripping Pump",
+          "category": "DECK",
+          "group": "07. CARGO PUMPS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ballast1",
+          "name": "Ballast Pump No.1",
+          "category": "ENGINE",
+          "group": "05. AUXILIARY PUMPS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ballast2",
+          "name": "Ballast Pump No.2",
+          "category": "ENGINE",
+          "group": "05. AUXILIARY PUMPS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hfo_sep",
+          "name": "HFO Purifier",
+          "category": "ENGINE",
+          "group": "04. PURIFIERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "lo_sep",
+          "name": "L.O. Purifier",
+          "category": "ENGINE",
+          "group": "04. PURIFIERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ows",
+          "name": "Oily Water Separator (15ppm)",
+          "category": "ENGINE",
+          "group": "04. PURIFIERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "steer",
+          "name": "Steering Gear",
+          "category": "ENGINE",
+          "group": "06. STEERING GEAR",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "cargo_tank_mon",
+          "name": "Cargo Tank Monitoring",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "vapour",
+          "name": "Vapour Recovery Unit",
+          "category": "DECK",
+          "group": "10. VAPOUR RECOVERY",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "radar",
+          "name": "Radar",
+          "category": "DECK",
+          "group": "06. NAVIGATION & GMDSS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ecdis",
+          "name": "ECDIS",
+          "category": "DECK",
+          "group": "06. NAVIGATION & GMDSS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "fire_pump",
+          "name": "Fire Pump",
+          "category": "DECK",
+          "group": "04. FIRE FIGHTING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "lifeboat",
+          "name": "Lifeboat & Davit",
+          "category": "DECK",
+          "group": "03. LIFE-SAVING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ism_doc",
+          "name": "ISM DOC Audit Items",
+          "category": "DECK",
+          "group": "07. STATUTORY ISM",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "class_hull",
+          "name": "Class Annual Survey",
+          "category": "DECK",
+          "group": "07. STATUTORY ISM",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_1",
+          "name": "Cargo Tank No.1 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_2",
+          "name": "Cargo Tank No.2 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_3",
+          "name": "Cargo Tank No.3 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_4",
+          "name": "Cargo Tank No.4 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_5",
+          "name": "Cargo Tank No.5 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_6",
+          "name": "Cargo Tank No.6 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_7",
+          "name": "Cargo Tank No.7 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_8",
+          "name": "Cargo Tank No.8 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_9",
+          "name": "Cargo Tank No.9 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_10",
+          "name": "Cargo Tank No.10 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_11",
+          "name": "Cargo Tank No.11 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_12",
+          "name": "Cargo Tank No.12 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_13",
+          "name": "Cargo Tank No.13 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_14",
+          "name": "Cargo Tank No.14 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_15",
+          "name": "Cargo Tank No.15 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_16",
+          "name": "Cargo Tank No.16 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_17",
+          "name": "Cargo Tank No.17 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "tank_18",
+          "name": "Cargo Tank No.18 Level System",
+          "category": "DECK",
+          "group": "08. TANK MONITORING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        }
+      ]
+    },
+    "CONTAINER": {
+      "label": "Container Ship",
+      "taxonomy_profile": "container",
+      "vessel_types": [
+        "Container Ship"
+      ],
+      "components": [
+        {
+          "key": "me",
+          "name": "Main Engine",
+          "category": "ENGINE",
+          "group": "01. MAIN PROPULSION",
+          "maker_role": "MAIN_ENGINE",
+          "maker_default": "MAN B&W",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ge1",
+          "name": "No.1 Generator Engine",
+          "category": "ENGINE",
+          "group": "02. AUXILIARY ENGINES",
+          "maker_role": "GEN_ENGINE",
+          "maker_default": "Yanmar",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ge2",
+          "name": "No.2 Generator Engine",
+          "category": "ENGINE",
+          "group": "02. AUXILIARY ENGINES",
+          "maker_role": "GEN_ENGINE",
+          "maker_default": "Yanmar",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ge3",
+          "name": "No.3 Generator Engine",
+          "category": "ENGINE",
+          "group": "02. AUXILIARY ENGINES",
+          "maker_role": "GEN_ENGINE",
+          "maker_default": "Yanmar",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ge4",
+          "name": "No.4 Generator Engine",
+          "category": "ENGINE",
+          "group": "02. AUXILIARY ENGINES",
+          "maker_role": "GEN_ENGINE",
+          "maker_default": "Yanmar",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "aux_boiler",
+          "name": "Auxiliary Boiler",
+          "category": "ENGINE",
+          "group": "03. BOILERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "reefer_bus",
+          "name": "Reefers Power Bus",
+          "category": "DECK",
+          "group": "08. REEFER POWER",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "reefer_panel",
+          "name": "Reefer Panel",
+          "category": "DECK",
+          "group": "08. REEFER POWER",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "lashing",
+          "name": "Lashing Gear (Twistlocks)",
+          "category": "DECK",
+          "group": "07. LASHING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "lashing_bridge",
+          "name": "Lashing Bridge",
+          "category": "DECK",
+          "group": "07. LASHING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bow_thruster",
+          "name": "Bow Thruster",
+          "category": "ENGINE",
+          "group": "01. MAIN PROPULSION",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "steer",
+          "name": "Steering Gear",
+          "category": "ENGINE",
+          "group": "06. STEERING GEAR",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "hfo_sep",
+          "name": "HFO Purifier",
+          "category": "ENGINE",
+          "group": "04. PURIFIERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "lo_sep",
+          "name": "L.O. Purifier",
+          "category": "ENGINE",
+          "group": "04. PURIFIERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ows",
+          "name": "Oily Water Separator",
+          "category": "ENGINE",
+          "group": "04. PURIFIERS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "radar",
+          "name": "Radar",
+          "category": "DECK",
+          "group": "06. NAVIGATION & GMDSS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ecdis",
+          "name": "ECDIS",
+          "category": "DECK",
+          "group": "06. NAVIGATION & GMDSS",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "fire_pump",
+          "name": "Fire Pump",
+          "category": "DECK",
+          "group": "04. FIRE FIGHTING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "lifeboat",
+          "name": "Lifeboat & Davit",
+          "category": "DECK",
+          "group": "03. LIFE-SAVING",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "ism_doc",
+          "name": "ISM DOC Audit Items",
+          "category": "DECK",
+          "group": "07. STATUTORY ISM",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "class_hull",
+          "name": "Class Annual Survey",
+          "category": "DECK",
+          "group": "07. STATUTORY ISM",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_1",
+          "name": "Container Bay 1 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_2",
+          "name": "Container Bay 2 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_3",
+          "name": "Container Bay 3 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_4",
+          "name": "Container Bay 4 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_5",
+          "name": "Container Bay 5 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_6",
+          "name": "Container Bay 6 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_7",
+          "name": "Container Bay 7 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_8",
+          "name": "Container Bay 8 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_9",
+          "name": "Container Bay 9 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_10",
+          "name": "Container Bay 10 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_11",
+          "name": "Container Bay 11 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_12",
+          "name": "Container Bay 12 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_13",
+          "name": "Container Bay 13 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_14",
+          "name": "Container Bay 14 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_15",
+          "name": "Container Bay 15 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_16",
+          "name": "Container Bay 16 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_17",
+          "name": "Container Bay 17 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_18",
+          "name": "Container Bay 18 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_19",
+          "name": "Container Bay 19 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_20",
+          "name": "Container Bay 20 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_21",
+          "name": "Container Bay 21 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        },
+        {
+          "key": "bay_22",
+          "name": "Container Bay 22 Cell Guide",
+          "category": "DECK",
+          "group": "07. CELL GUIDES",
+          "maker_role": null,
+          "maker_default": "OEM",
+          "standard_spec": "ISO 15550 / JIS F7305",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "FUNCTION TEST",
+              "period": 500,
+              "unit": "H",
+              "pic": "1/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E",
+              "regulatory": "ClassNK"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

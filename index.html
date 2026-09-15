@@ -479,6 +479,20 @@
 </div><!-- /#tvcAppRoot -->
 
 <!-- Modals -->
+<div id="vesselRegistryModal" class="modal modal-over-consume hidden" role="dialog" aria-labelledby="vesselRegistryTitle" aria-modal="true">
+    <div class="modal-box vreg-modal-box wide" onclick="event.stopPropagation()">
+        <button type="button" id="vesselRegistryClose" class="modal-x" aria-label="Close">×</button>
+        <h3 id="vesselRegistryTitle">Register vessel — archetype template</h3>
+        <p class="muted">Zero-friction onboarding: machinery tree + Class/ISM intervals from ISO / ClassNK taxonomy.</p>
+        <div id="vesselRegistryBody"></div>
+        <div class="modal-actions vreg-actions">
+            <button type="button" id="vregCancelBtn" class="btn">Cancel</button>
+            <button type="button" id="vregBackBtn" class="btn hidden">Back</button>
+            <button type="button" id="vregNextBtn" class="btn btn-green">Next</button>
+            <button type="button" id="vregInitBtn" class="btn btn-green hidden">Initialize Fleet</button>
+        </div>
+    </div>
+</div>
 <div id="smRfqWorkspaceModal" class="modal hidden" role="dialog" aria-labelledby="smRfqWorkspaceTitle" aria-modal="true">
     <div class="modal-box sm-rfq-workspace-box" onclick="event.stopPropagation()">
         <button type="button" id="smRfqWorkspaceClose" class="modal-x" aria-label="Close">×</button>
@@ -1021,6 +1035,7 @@
 <script src="js/services/smLiveSync.js?v=20260912-sm-rename"></script>
 <script src="js/services/legacyMigrationIds.js?v=20260914-sanitize"></script>
 <script src="js/services/fleet.js?v=20260914-sanitize"></script>
+<script src="js/services/templateService.js?v=20260915-vessel-archetype"></script>
 <script src="js/services/adminRegistry.js?v=20260831-tvc-ref"></script>
 <script src="js/services/accountProvisioning.js?v=20260831-tvc-ref"></script>
 <script src="js/services/masterVesselScope.js?v=20260813-vessel-master"></script>
@@ -1032,10 +1047,11 @@
 <script src="js/ui/settings.js?v=20260804-settings"></script>
 <script src="js/ui/outstandingTasks.js?v=20260823-monthly-gate"></script>
 <script src="js/services/supplierRfqPipeline.js?v=20260912-rfq-pipeline"></script>
+<script src="js/ui/vesselRegistryModal.js?v=20260915-vessel-archetype"></script>
 <script src="js/ui/rfqWorkspace.js?v=20260915-domestic-rfq"></script>
 <script src="js/ui/supplierWorkspace.js?v=20260912-supplier-quote-print"></script>
 <script src="js/ui/supplierRegister.js?v=20260912-supplier-register-bind"></script>
-<script src="js/app.js?v=20260903-web-cloud"></script>
+<script src="js/app.js?v=20260915-vessel-archetype"></script>
 <script src="js/pwa.js?v=20260902-date-picker"></script>
 </body>
 </html>

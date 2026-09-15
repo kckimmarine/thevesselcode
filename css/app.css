@@ -6291,6 +6291,21 @@ label.spare-file-pick input[type=file] { display: none; }
 .equiv-part-detail { font-size: 0.82rem; margin: 0 0 12px; line-height: 1.45; }
 .equiv-spec { font-size: 0.78rem; }
 .sm-rfq-new-btn { width: 100%; margin-bottom: 0.5rem; }
+.fleet-register-toolbar { padding: 0.35rem 0.5rem 0.5rem; }
+.vreg-modal-box.wide { max-width: 640px; }
+.vreg-steps { display: flex; gap: 0.35rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.vreg-step { font-size: 0.78rem; padding: 0.2rem 0.5rem; border-radius: 999px; background: #edf2f7; color: #4a5568; }
+.vreg-step.active { background: #2b6cb0; color: #fff; font-weight: 600; }
+.vreg-step.done { background: #c6f6d5; color: #22543d; }
+.vreg-pane label { display: block; margin-bottom: 0.65rem; font-size: 0.88rem; }
+.vreg-pane input, .vreg-pane select { width: 100%; margin-top: 0.25rem; box-sizing: border-box; }
+.vreg-archetype-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+.vreg-archetype-card { text-align: left; padding: 0.65rem; border: 1px solid #e2e8f0; border-radius: 8px; background: #fff; cursor: pointer; }
+.vreg-archetype-card.active { border-color: #2b6cb0; background: #ebf8ff; }
+.vreg-archetype-title { display: block; font-weight: 600; font-size: 0.9rem; }
+.vreg-archetype-meta { display: block; font-size: 0.75rem; color: #718096; margin-top: 0.2rem; }
+.vreg-actions { justify-content: flex-end; }
+.vreg-hint { font-size: 0.8rem; margin-top: 0.25rem; }
 .sm-rfq-domestic-note { margin: 0.35rem 0 0.75rem; }
 .sm-rfq-create-box { max-width: 720px; width: min(96vw, 720px); }
 .sm-rfq-create-lines-host { max-height: 40vh; overflow: auto; margin: 0.75rem 0; }
@@ -12171,6 +12186,7 @@ body.mobile-nav-open .mobile-nav-backdrop { display: block; }
 .login-supplier-register-btn { background: none; border: none; color: #2b6cb0; cursor: pointer; text-decoration: underline; font-size: 0.9rem; }
 @media (max-width: 768px) {
     .sm-rfq-layout { grid-template-columns: 1fr; }
+    .vreg-archetype-grid { grid-template-columns: 1fr; }
     .supplier-nav { flex-wrap: wrap; }
     .supplier-quote-drawer-panel { width: 100vw; }
     .supplier-quote-line-fields { grid-template-columns: 1fr; }

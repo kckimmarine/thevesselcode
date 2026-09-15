@@ -1325,6 +1325,29 @@ const TVC_App = (function () {
         await TVC_RfqWorkspace.open(state.user);
     }
 
+    async function openVesselRegistryWizard() {
+        if (!state.user || !TVC_RBAC.isSmAccount?.(state.user)) {
+            await TVC_Dialog.alert('Vessel registration wizard is available in SM Mode.');
+            return;
+        }
+        if (typeof TVC_VesselRegistryModal === 'undefined' || typeof TVC_TemplateService === 'undefined') {
+            await TVC_Dialog.alert('Vessel template modules are not loaded.');
+            return;
+        }
+        await TVC_VesselRegistryModal.open({
+            onComplete: async ({ vessel_id }) => {
+                if (typeof TVC_Fleet !== 'undefined') {
+                    state.fleet = TVC_Fleet.getVisible(state.user);
+                    state.selectedVesselId = vessel_id || TVC_Fleet.getSelectedId();
+                    if (state.selectedVesselId) TVC_Fleet.select(state.selectedVesselId);
+                }
+                renderFleetList();
+                renderMainMenu();
+                if (state.tab === 'actual') renderActualPlan();
+            },
+        });
+    }
+
     const TAB_RENDERERS = {
         menu: renderMainMenu,
         actual: renderActualPlan,
@@ -7372,6 +7395,9 @@ const TVC_App = (function () {
                 <select class="admin-company-select" id="adminCompanySelect"></select>
             </div>
             <div class="fleet-list-head">🚢 Ship List</div>
+            <div class="fleet-register-toolbar">
+                <button type="button" class="btn btn-sm btn-green" onclick="TVC_App.openVesselRegistryWizard()">＋ Register vessel (template)</button>
+            </div>
             <div class="fleet-table-wrap">
                 <table class="fleet-table fleet-table--with-company">
                     <colgroup>
@@ -18926,7 +18952,7 @@ const TVC_App = (function () {
 
     return {
         boot, switchTab,
-        setDepartment, setCaptainView, setHistView, setHistTab, menuAction, openSmRfqWorkspace, resolveDeptPick,
+        setDepartment, setCaptainView, setHistView, setHistTab, menuAction, openSmRfqWorkspace, openVesselRegistryWizard, resolveDeptPick,
         setFleetView, setFleetSearch, setFleetCompanyFilter, selectVessel,
         openVesselDocsModal, uploadVesselDocsAttachment, removeVesselDocsAttachment,
         setAdminSearch, selectAdminCompany, selectAdminVessel,
