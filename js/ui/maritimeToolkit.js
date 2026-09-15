@@ -50,12 +50,6 @@ const TVC_MaritimeToolkit = (function () {
         { category: 'Hydraulic Oil', grade: 'ISO VG 100', shell: 'Tellus S2 M 100', mobil: 'Mobil DTE 10 Excel 100', castrol: 'Hyspin AWS 100', total: 'Azolla ZS 100' },
     ];
 
-    const PT100_ROWS = [
-        [-20, 92.16], [-10, 96.09], [0, 100.0], [10, 103.9], [20, 107.79], [30, 111.67], [40, 115.54],
-        [50, 119.4], [60, 123.24], [70, 127.08], [80, 130.9], [90, 134.71], [100, 138.51], [110, 142.29],
-        [120, 146.07], [130, 149.83], [140, 153.58], [150, 157.33],
-    ];
-
     const CIC_ROWS = [
         ['OWS 15 ppm', '15 ppm alarm, automatic stopping, and 15 ppm overboard interlock records (MARPOL Annex I).'],
         ['Emergency fire pump', 'Independent power, priming arrangement, and delivery pressure at remotest hydrant.'],
@@ -659,53 +653,111 @@ const TVC_MaritimeToolkit = (function () {
     }
 
     function renderElectricalPanel(host) {
+        const Elec = globalThis.TVC_ElectricalCalc;
         host.innerHTML = `
             <div class="maritime-panel-head">
-                <h2 class="maritime-panel-title" data-i18n="tk.electrical.title">Electrical &amp; control diagnostics</h2>
-                <p class="maritime-panel-sub" data-i18n="tk.electrical.sub">Three-phase motor full-load current (FLC) estimate and PT100 resistance–temperature (IEC 60751, α = 0.00385).</p>
+                <h2 class="maritime-panel-title" data-i18n="tk.electrical.title">Electrical &amp; controls (EE)</h2>
+                <p class="maritime-panel-sub" data-i18n="tk.electrical.sub">PT100 RTD inversion (IEC 60751) and 3-phase motor FLC with DOL inrush and EOCR relay guidance.</p>
             </div>
-            <form class="maritime-bunker-form" id="flcCalcForm">
-                <label class="maritime-field">
-                    <span data-i18n="tk.electrical.kw">Motor power (kW)</span>
-                    <input type="number" id="flcKw" min="0" step="0.1" value="75" inputmode="decimal">
-                </label>
-                <label class="maritime-field">
-                    <span data-i18n="tk.electrical.voltage">Line voltage (V)</span>
-                    <input type="number" id="flcVoltage" min="100" step="1" value="440" inputmode="numeric">
-                </label>
-                <label class="maritime-field">
-                    <span data-i18n="tk.electrical.eff">Efficiency η</span>
-                    <input type="number" id="flcEff" min="0.5" max="1" step="0.01" value="0.92" inputmode="decimal">
-                </label>
-                <label class="maritime-field">
-                    <span data-i18n="tk.electrical.pf">Power factor cos φ</span>
-                    <input type="number" id="flcPf" min="0.5" max="1" step="0.01" value="0.85" inputmode="decimal">
-                </label>
-            </form>
-            <div class="maritime-bunker-result" aria-live="polite">
-                <div class="maritime-bunker-metrics">
-                    <div><span data-i18n="tk.electrical.flc">Est. FLC (A)</span><strong id="flcValue">—</strong></div>
-                </div>
+            <div class="mkt-mechanical-grid">
+                <article class="mkt-glass-card mkt-mechanical-card">
+                    <h3 class="maritime-subheading" data-i18n="tk.electrical.pt100card">PT100 temperature lookup</h3>
+                    <p class="mkt-prose" data-i18n="tk.electrical.pt100sub">Measured resistance (Ω) → equivalent temperature (°C).</p>
+                    <form class="maritime-bunker-form" id="pt100InvertForm">
+                        <label class="maritime-field">
+                            <span data-i18n="tk.electrical.pt100ohms">Measured resistance (Ω)</span>
+                            <input type="number" id="pt100Ohms" min="0" step="0.01" value="119.4" inputmode="decimal">
+                        </label>
+                    </form>
+                    <div class="maritime-bunker-result" aria-live="polite">
+                        <div class="maritime-bunker-metrics">
+                            <div><span data-i18n="tk.electrical.pt100temp">Equivalent temperature</span><strong id="pt100TempOut">—</strong></div>
+                        </div>
+                    </div>
+                    <button type="button" class="home-btn home-btn-secondary" id="pt100TableToggle" data-i18n="tk.electrical.pt100toggle">Show IEC 60751 reference table</button>
+                    <div id="pt100TableHost" class="hidden" hidden></div>
+                </article>
+                <article class="mkt-glass-card mkt-mechanical-card">
+                    <h3 class="maritime-subheading" data-i18n="tk.electrical.motorcard">3-phase motor current &amp; protection</h3>
+                    <p class="mkt-prose" data-i18n="tk.electrical.motorsub">FLC, DOL starting current, and recommended EOCR setting.</p>
+                    <form class="maritime-bunker-form" id="motorCalcForm">
+                        <label class="maritime-field">
+                            <span data-i18n="tk.electrical.kw">Motor power (kW)</span>
+                            <input type="number" id="motorKw" min="0" step="0.1" value="15" inputmode="decimal">
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.electrical.voltage">Line voltage (V)</span>
+                            <select id="motorVoltage">
+                                <option value="220">220 V</option>
+                                <option value="440" selected>440 V</option>
+                                <option value="6600">6600 V</option>
+                            </select>
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.electrical.eff">Efficiency η</span>
+                            <input type="number" id="motorEff" min="0.5" max="1" step="0.01" value="0.90" inputmode="decimal">
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.electrical.pf">Power factor cos φ</span>
+                            <input type="number" id="motorPf" min="0.5" max="1" step="0.01" value="0.85" inputmode="decimal">
+                        </label>
+                    </form>
+                    <div class="maritime-bunker-result" aria-live="polite">
+                        <div class="maritime-bunker-metrics maritime-bunker-metrics-extended">
+                            <div><span data-i18n="tk.electrical.flc">FLC (A)</span><strong id="motorFlc">—</strong></div>
+                            <div><span data-i18n="tk.electrical.dol">DOL start (A)</span><strong id="motorDol">—</strong></div>
+                            <div><span data-i18n="tk.electrical.eocr">EOCR set (A)</span><strong id="motorEocr">—</strong></div>
+                        </div>
+                        <p id="motorAdvice" class="mkt-prose comb-advice">—</p>
+                    </div>
+                </article>
             </div>
-            <h3 class="maritime-subheading" data-i18n="tk.electrical.pt100">PT100 resistance vs temperature</h3>
-            <div id="pt100TableHost"></div>
-            <p class="maritime-note" data-i18n="tk.electrical.note">FLC is indicative — use nameplate, class rules, and cable sizing standards before alteration.</p>`;
+            <p class="maritime-note" data-i18n="tk.electrical.note">Confirm against nameplate, sequence control interlocks, and HV safety procedures before energizing.</p>`;
 
-        const paintFlc = () => {
-            const kw = Number(host.querySelector('#flcKw')?.value) || 0;
-            const v = Number(host.querySelector('#flcVoltage')?.value) || 440;
-            const eff = Number(host.querySelector('#flcEff')?.value) || 0.92;
-            const pf = Number(host.querySelector('#flcPf')?.value) || 0.85;
-            const denom = Math.sqrt(3) * v * eff * pf;
-            const flc = denom > 0 ? (kw * 1000) / denom : 0;
-            host.querySelector('#flcValue').textContent = flc > 0 ? `${flc.toFixed(1)} A` : '—';
+        const paintPt100 = () => {
+            const ohms = host.querySelector('#pt100Ohms')?.value;
+            const t = Elec?.pt100ToTemperature?.(ohms);
+            host.querySelector('#pt100TempOut').textContent =
+                t != null ? `${t.toFixed(1)} °C` : '—';
         };
-        host.querySelector('#flcCalcForm')?.addEventListener('input', paintFlc);
-        paintFlc();
-        host.querySelector('#pt100TableHost').innerHTML = tableHtml(
-            ['Temp (°C)', 'R (Ω)'],
-            PT100_ROWS.map(([t, r]) => [String(t), r.toFixed(2)]),
-        );
+
+        const tableHost = host.querySelector('#pt100TableHost');
+        const toggleBtn = host.querySelector('#pt100TableToggle');
+        toggleBtn?.addEventListener('click', () => {
+            const open = tableHost.classList.toggle('hidden');
+            tableHost.hidden = open;
+            if (!open && Elec?.getPt100ReferenceTable) {
+                const rows = Elec.getPt100ReferenceTable().map((r) => [
+                    String(r.tempC),
+                    r.ohms.toFixed(2),
+                ]);
+                tableHost.innerHTML = tableHtml(['Temp (°C)', 'R (Ω)'], rows);
+            }
+        });
+
+        const paintMotor = () => {
+            const r = Elec?.calculateMotorSpecs?.({
+                powerKw: host.querySelector('#motorKw')?.value,
+                voltage: host.querySelector('#motorVoltage')?.value,
+                powerFactor: host.querySelector('#motorPf')?.value,
+                efficiency: host.querySelector('#motorEff')?.value,
+            });
+            if (!r || r.error) {
+                host.querySelector('#motorFlc').textContent = '—';
+                host.querySelector('#motorDol').textContent = '—';
+                host.querySelector('#motorEocr').textContent = '—';
+                return;
+            }
+            host.querySelector('#motorFlc').textContent = `${r.flcAmps.toFixed(1)} A`;
+            host.querySelector('#motorDol').textContent = `${r.dolStartingAmps.toFixed(0)} A`;
+            host.querySelector('#motorEocr').textContent = `${r.eocrSettingAmps.toFixed(1)} A`;
+            host.querySelector('#motorAdvice').textContent = r.adviceText;
+        };
+
+        host.querySelector('#pt100InvertForm')?.addEventListener('input', paintPt100);
+        host.querySelector('#motorCalcForm')?.addEventListener('input', paintMotor);
+        paintPt100();
+        paintMotor();
         globalThis.TVC_MarketingI18n?.applyLang?.(globalThis.TVC_MarketingI18n.getLang());
     }
 
