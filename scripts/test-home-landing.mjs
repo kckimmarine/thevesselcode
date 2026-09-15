@@ -46,8 +46,10 @@ check('home uses relative marketing js', /src="\.\.\/js\/marketing-shell\.js/.te
 check('hero headline open commons', home.includes('Global Maritime'));
 check('hero headline i18n key', home.includes('data-i18n="home.headline"'));
 check('marketing i18n persistence key', readFileSync(join(ROOT, 'js/marketing-i18n.js'), 'utf8').includes("STORAGE_KEY = 'tvc-mkt-lang'"));
-check('hero toolkit CTA', home.includes('href="/toolkit"') && home.includes('Free Maritime Toolkit'));
-check('hero sm CTA', home.includes('href="/sm"') && home.includes('TVC-SM Fleet Platform'));
+check('hero search form', home.includes('id="homeHeroSearchForm"') && home.includes('homeHeroSearchInput'));
+check('hero utility badges', home.includes('home-utility-badge') && home.includes('/toolkit?tool=bunker'));
+check('enterprise fleet section', home.includes('home-enterprise-section') && home.includes('Request 30-Day Fleet Trial'));
+check('hero search-first layout', home.includes('hero-search-first') && !home.includes('hero-realistic-canvas'));
 check('marketing readability css', home.includes('marketing-readability.css'));
 check('toolkit plg locks', readFileSync(join(ROOT, 'toolkit.html'), 'utf8').includes('mkt-plg-lock'));
 check('community ethos banner', home.includes('home-ethos-band') && home.includes('data-i18n="home.ethos.label"'));

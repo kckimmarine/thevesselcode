@@ -36,6 +36,15 @@
 
         await TVC_StoreMenu.render();
 
+        const searchQ = params.get('q');
+        if (searchQ && String(searchQ).trim()) {
+            if (typeof TVC_MaritimeToolkit !== 'undefined') {
+                TVC_MaritimeToolkit.setActiveTool('catalog');
+            }
+            await TVC_StoreManager.searchCatalog(String(searchQ).trim());
+            await TVC_StoreMenu.render();
+        }
+
         const impaCode = new URLSearchParams(window.location.search).get('impa');
         if (impaCode) {
             try {

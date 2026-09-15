@@ -1,6 +1,6 @@
 /* THE VESSEL CODE — Marketing landing (WordPress copy integration) */
 :root {
-    --home-bg-top: #f1f5f9;
+    --home-bg-top: #f8fafc;
     --home-bg-bottom: #e2e8f0;
     --home-card: #ffffff;
     --home-card-soft: #f8fafc;
@@ -177,11 +177,185 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
     align-items: start;
 }
 
+.home-hero.hero-search-first {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+
+.home-hero-copy--search {
+    max-width: 52rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-hero-copy--search .home-launch-eyebrow {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-hero-copy--search h1 {
+    margin-bottom: 14px;
+}
+
+.home-hero-copy--search .home-hero-tagline {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 42rem;
+    font-size: 1.08rem;
+}
+
+.home-hero-search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+    margin: 28px auto 18px;
+    max-width: 44rem;
+    width: 100%;
+}
+
+.home-hero-search-input {
+    flex: 1 1 220px;
+    min-height: 52px;
+    padding: 0 16px;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #0f172a;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+}
+
+.home-hero-search-input::placeholder {
+    color: #64748b;
+}
+
+.home-hero-search-input:focus {
+    outline: 2px solid #0284c7;
+    outline-offset: 2px;
+    border-color: #0284c7;
+}
+
+.home-hero-search-btn {
+    flex: 0 0 auto;
+    min-width: 120px;
+    min-height: 52px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.home-hero-utilities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.home-utility-badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #0f172a;
+    font-size: 0.84rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.home-utility-badge:hover {
+    border-color: #0284c7;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.12);
+    transform: translateY(-1px);
+}
+
+.home-enterprise-section {
+    padding-top: 20px;
+}
+
+.home-enterprise-section .home-section-head {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.home-enterprise-section .home-section-head h2 {
+    margin-bottom: 10px;
+}
+
+.home-enterprise-section .home-section-lead {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-enterprise-grid {
+    align-items: stretch;
+}
+
+.home-enterprise-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.home-enterprise-card p {
+    flex: 1;
+    margin: 0;
+    color: var(--home-muted);
+}
+
+.home-enterprise-cta {
+    margin-top: 12px;
+    align-self: flex-start;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 @media (min-width: 960px) {
-    .home-hero {
+    .home-hero:not(.hero-search-first) {
         grid-template-columns: 1.15fr 0.85fr;
         padding-top: 56px;
         gap: 36px;
+    }
+
+    .home-hero.hero-search-first {
+        padding-top: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-hero-search {
+        flex-direction: column;
+    }
+
+    .home-hero-search-btn {
+        width: 100%;
+    }
+
+    .home-enterprise-cta {
+        width: 100%;
+    }
+
+    .home-enterprise-grid {
+        grid-template-columns: 1fr;
     }
 }
 
