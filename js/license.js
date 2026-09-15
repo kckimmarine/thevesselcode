@@ -67,6 +67,17 @@ const TVC_License = (function () {
         return _cache;
     }
 
+    function formatLoginModesList(modes) {
+        return (modes || []).map((m) => {
+            const key = String(m || '').toUpperCase();
+            if (typeof TVC_Space !== 'undefined' && TVC_Space.loginModeLabel) {
+                return TVC_Space.loginModeLabel(key) || m;
+            }
+            if (key === 'MASTER') return 'Captain';
+            return m;
+        }).join(', ');
+    }
+
     /** @returns {{ ok: boolean, error?: string }} */
     function assertLoginMode(loginMode, accountType) {
         const st = _cache;
@@ -130,7 +141,7 @@ const TVC_License = (function () {
         if (!mode || !allowed.includes(mode)) {
             return {
                 ok: false,
-                error: `This installation (${st.skuLabel || st.sku}) only allows: ${(st.loginModes || []).join(', ') || '—'}.`,
+                error: `This installation (${st.skuLabel || st.sku}) only allows: ${formatLoginModesList(st.loginModes) || '—'}.`,
             };
         }
         return { ok: true };

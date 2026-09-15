@@ -20,7 +20,7 @@ License: SKU + PC bind (`npm run dist` packages)
 - [ ] Import HQ feedback ZIP of matching vessel succeeds
 - [ ] Import ZIP for another vesselId fails
 
-## Vessel Master (Captain Hub)
+## Captain Mode (Captain Hub)
 
 - [ ] Import Engine + Deck station ZIPs
 - [ ] Export Company / Monthly report ZIP to HQ

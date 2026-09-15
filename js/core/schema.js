@@ -7,8 +7,8 @@
  *      "누락된 store/index만" 생성하도록 reconcile 한다 (파괴적 재생성 없음).
  *   4. 모든 레코드는 sync_status / updated_at / (선택) schema_version 을 갖는다.
  */
+const TVC_SCHEMA_DB_BASE = 'tvc_pms_v2';
 const TVC_SCHEMA = {
-    DB_NAME: 'tvc_pms_v2',
     DB_VERSION: 18, // v18: equivalent_parts (domestic MRO resilience lookup)
     STORES: {
         meta: { keyPath: 'key' },
@@ -173,6 +173,17 @@ const TVC_SCHEMA = {
         ],
     },
 };
+
+Object.defineProperty(TVC_SCHEMA, 'DB_NAME', {
+    configurable: true,
+    enumerable: true,
+    get() {
+        try {
+            if (typeof TVC_StationProfile !== 'undefined') return TVC_StationProfile.getDbName();
+        } catch (_) { /* early boot */ }
+        return TVC_SCHEMA_DB_BASE;
+    },
+});
 
 /** SPICS inventory_history 거래 유형 */
 const TVC_INVENTORY_TX = {

@@ -191,6 +191,35 @@ const TVC_App = (function () {
         return msg || 'An error occurred while signing in.';
     }
 
+    /** Browser station entry — separate IndexedDB per Captain / Engine / Deck PC (no seat license). */
+    function applyLoginDeptForStationProfile() {
+        if (typeof TVC_StationProfile === 'undefined' || !TVC_StationProfile.isStationLocked()) return false;
+        const mode = TVC_StationProfile.getLoginMode();
+        const label = TVC_StationProfile.getLabel() || 'Station PC';
+        const sel = document.getElementById('loginDept');
+        const field = sel?.closest('.login-field');
+        const allModes = [
+            { value: 'MASTER', label: 'Captain' },
+            { value: 'ENGINE', label: 'Engine' },
+            { value: 'DECK', label: 'Deck' },
+        ];
+        const hit = allModes.find(m => m.value === mode);
+        if (sel && hit) {
+            sel.innerHTML = `<option value="${hit.value}" selected>${hit.label}</option>`;
+            sel.value = hit.value;
+            if (field) field.classList.remove('hidden');
+        }
+        const badge = document.getElementById('loginStationBadge');
+        if (badge) {
+            badge.classList.remove('hidden');
+            const warn = TVC_StationProfile.getUrlLockWarning?.();
+            badge.textContent = warn
+                || `${label} · dedicated offline database (browser, no seat license)`;
+            if (warn) badge.classList.add('login-station-badge-warn');
+        }
+        return true;
+    }
+
     /** Limit Department dropdown to licensed login modes (Engine SKU → Engine only). */
     function applyLoginDeptForLicense(lic) {
         const sel = document.getElementById('loginDept');
@@ -386,6 +415,7 @@ const TVC_App = (function () {
         try {
             try { await syncLoginAppVersion(); } catch (e) { console.warn('[TVC] version', e); }
             try { TVC_Config?.applyLoginChrome?.(); } catch (e) { console.warn('[TVC] login chrome', e); }
+            try { TVC_Config?.showStationBrowserLinks?.(); } catch (e) { console.warn('[TVC] station links', e); }
             try { TVC_Config?.applyEmbedChrome?.(); } catch (e) { console.warn('[TVC] embed chrome', e); }
             try { TVC_SupplierRegister?.init(); } catch (e) { console.warn('[TVC] supplier register', e); }
             if (typeof TVC_License !== 'undefined') {
@@ -399,10 +429,16 @@ const TVC_App = (function () {
                                 + (lic.vesselId ? ` · ${lic.vesselId}` : '')
                                 + (lic.expiresAt ? ` · until ${String(lic.expiresAt).slice(0, 10)}` : '');
                         }
-                        applyLoginDeptForLicense(lic);
+                        if (!applyLoginDeptForStationProfile()) {
+                            applyLoginDeptForLicense(lic);
+                        }
                         clearStaleLoginSession(lic);
+                    } else if (applyLoginDeptForStationProfile()) {
+                        /* station profile chrome */
                     }
                 } catch (e) { console.warn('[TVC_License]', e); }
+            } else if (applyLoginDeptForStationProfile()) {
+                /* station profile chrome */
             }
             await TVC_DB.open();
             bootDbReady = true;
@@ -422,6 +458,11 @@ const TVC_App = (function () {
                     }
                 }
             } catch (e) { console.warn('[TVC] provisioned accounts sync', e); }
+            try {
+                if (typeof TVC_Auth.purgeDeprecatedUsers === 'function') {
+                    await TVC_Auth.purgeDeprecatedUsers();
+                }
+            } catch (e) { console.warn('[TVC] purge deprecated logins', e); }
 
             try { TVC_Auth.applySavedIdToLoginForm(); } catch (e) { console.warn('[TVC] saved login id', e); }
 
@@ -8585,7 +8626,7 @@ const TVC_App = (function () {
             <p class="spare-sync-hint">${isCompanyScope
                 ? 'After vessel add / Registry change · manifest includes active vessels → <strong>reissue SM seat license</strong> required'
                 : 'Existing pool vessels (already on TVC-SM): deliver one <strong>shared App Update ZIP</strong>.'}</p>
-            <p class="spare-sync-note muted">Customer PC: <strong>Data Export &amp; Import → App Update → Import → Install update</strong> · Master / History / IndexedDB preserved</p>
+            <p class="spare-sync-note muted">Customer PC: <strong>Data Export &amp; Import → App Update → Import → Install update</strong> · Captain hub data / History / IndexedDB preserved</p>
             ${isCompanyScope ? `
             <label class="spare-sync-note" style="display:block;margin:8px 0">Company
                 <select class="admin-company-select" style="margin-top:4px;width:100%"
@@ -8737,7 +8778,7 @@ const TVC_App = (function () {
                 }
             } else {
                 await TVC_Dialog.alert(
-                    `App Update exported.\n${filename}\n\nVersion: ${manifest.app_version}\nSKUs: ${(manifest.setups || []).map(s => s.sku).join(', ')}\n\nSend this shared ZIP to pool vessels → Import → Install update on each PC (SM / Master / Engine / Deck).`
+                    `App Update exported.\n${filename}\n\nVersion: ${manifest.app_version}\nSKUs: ${(manifest.setups || []).map(s => s.sku).join(', ')}\n\nSend this shared ZIP to pool vessels → Import → Install update on each PC (SM / Captain / Engine / Deck).`
                 );
                 closeAdminAppUpdateModal();
             }
@@ -17836,6 +17877,9 @@ const TVC_App = (function () {
             setLoginBusy(true, 'Signing in…');
             if (errEl) errEl.textContent = '';
             await TVC_DB.open();
+            if (typeof TVC_Auth.ensureDefaultUsers === 'function') {
+                await TVC_Auth.ensureDefaultUsers();
+            }
             const loginMode = document.getElementById('loginDept')?.value || '';
         const r = await TVC_Auth.login(
             document.getElementById('loginUser').value,

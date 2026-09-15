@@ -1,11 +1,17 @@
 /* THE VESSEL CODE — Auth (IndexedDB users + session) */
 const TVC_Auth = (function () {
-    const SESSION_KEY = 'tvc_session_v2';
-    const SAVED_ID_KEY = 'tvc_saved_id';
-    const AUTH_SESSION_KEY = 'tvc_auth_session';
+    function storageSuffix() {
+        try {
+            if (typeof TVC_StationProfile !== 'undefined') return TVC_StationProfile.getStorageSuffix() || '';
+        } catch (_) {}
+        return '';
+    }
+    function sessionKey() { return `tvc_session_v2${storageSuffix()}`; }
+    function savedIdKey() { return `tvc_saved_id${storageSuffix()}`; }
+    function authSessionKey() { return `tvc_auth_session${storageSuffix()}`; }
     const AUTH_SESSION_TTL_MS = 30 * 24 * 60 * 60 * 1000;
     const DEMO_PASSWORD = '0000';
-    const USERS_SEED_VERSION = 22;
+    const USERS_SEED_VERSION = 23;
 
     const DEFAULT_USERS = [
         // Contract vessel — ABC Voyager (demo ship accounts)
@@ -60,12 +66,45 @@ const TVC_Auth = (function () {
         return hash;
     }
 
+    function normalizeLoginUsername(username) {
+        return String(username || '')
+            .normalize('NFKC')
+            .replace(/\s+/g, ' ')
+            .trim();
+    }
+
+    function usernameMatches(a, b) {
+        return normalizeLoginUsername(a).toLowerCase() === normalizeLoginUsername(b).toLowerCase();
+    }
+
+    function findLoginUser(users, rawUsername) {
+        const uname = normalizeLoginUsername(rawUsername);
+        if (!uname) return null;
+        const template = DEFAULT_USERS.find(u => usernameMatches(u.username, uname));
+        if (template) {
+            return users.find(u => u.id === template.id && u.is_active)
+                || users.find(u => usernameMatches(u.username, template.username) && u.is_active)
+                || null;
+        }
+        return users.find(u => usernameMatches(u.username, uname) && u.is_active) || null;
+    }
+
+    /** Re-seed when bundled demo accounts are missing (common on fresh Cloud / mobile IndexedDB). */
+    async function ensureDefaultUsers() {
+        const existing = await TVC_DB.getAll('users').catch(() => []);
+        const missing = DEFAULT_USERS.some(tpl =>
+            !existing.some(u => u.id === tpl.id && u.is_active && usernameMatches(u.username, tpl.username))
+        );
+        if (missing) return initUsers();
+        return { skipped: true };
+    }
+
     async function initUsers() {
         const seedVer = await TVC_DB.getMeta('users_seed_version').catch(() => null);
         if (seedVer === USERS_SEED_VERSION) {
             const existing = await TVC_DB.getAll('users');
             const allPresent = DEFAULT_USERS.every(tpl =>
-                existing.some(u => u.id === tpl.id && u.is_active && u.username === tpl.username && u.role === tpl.role)
+                existing.some(u => u.id === tpl.id && u.is_active && usernameMatches(u.username, tpl.username) && u.role === tpl.role)
             );
             if (allPresent) return { skipped: true };
         }
@@ -98,6 +137,17 @@ const TVC_Auth = (function () {
             if (tpl && row.id !== tpl.id) await TVC_DB.del('users', row.id);
         }
         try { await TVC_DB.setMeta('users_seed_version', USERS_SEED_VERSION); } catch (_) {}
+        await purgeDeprecatedUsers();
+    }
+
+    /** Remove retired pilot logins (e.g. tvc) even when user seed was skipped. */
+    async function purgeDeprecatedUsers() {
+        const fresh = await TVC_DB.getAll('users').catch(() => []);
+        for (const row of fresh) {
+            if (DEPRECATED_USERNAMES.includes(row.username)) {
+                try { await TVC_DB.del('users', row.id); } catch (_) {}
+            }
+        }
     }
 
     async function upsertProvisionedUser(record) {
@@ -292,12 +342,12 @@ const TVC_Auth = (function () {
     }
 
     function persistSession(session) {
-        sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
+        sessionStorage.setItem(sessionKey(), JSON.stringify(session));
     }
 
     function getCurrentUser() {
         try {
-            const raw = sessionStorage.getItem(SESSION_KEY);
+            const raw = sessionStorage.getItem(sessionKey());
             if (!raw) return null;
             const parsed = JSON.parse(raw);
             const normalized = normalizeSessionUser(parsed);
@@ -307,14 +357,21 @@ const TVC_Auth = (function () {
     }
 
     async function login(username, password, loginMode) {
+        await ensureDefaultUsers();
         const users = await TVC_DB.getAll('users');
-        const uname = username.trim();
-        const template = DEFAULT_USERS.find(u => u.username === uname);
-        const user = template
-            ? (users.find(u => u.id === template.id && u.is_active)
-                || users.find(u => u.username === template.username && u.is_active))
-            : users.find(u => u.username === uname && u.is_active);
-        if (!user) return { ok: false, error: 'Account not found.' };
+        const uname = normalizeLoginUsername(username);
+        let user = findLoginUser(users, uname);
+        if (!user) {
+            await initUsers();
+            const retryUsers = await TVC_DB.getAll('users');
+            user = findLoginUser(retryUsers, uname);
+        }
+        if (!user) {
+            const hint = DEFAULT_USERS.some(u => usernameMatches(u.username, uname))
+                ? ' Demo accounts are stored locally — wait for “Preparing system…” to finish, then try again.'
+                : '';
+            return { ok: false, error: `Account not found.${hint}` };
+        }
         const hash = await hashPassword(password);
         if (hash !== user.password_hash) return { ok: false, error: 'Incorrect password.' };
 
@@ -376,27 +433,27 @@ const TVC_Auth = (function () {
     }
 
     function getSavedId() {
-        try { return localStorage.getItem(SAVED_ID_KEY) || ''; } catch { return ''; }
+        try { return localStorage.getItem(savedIdKey()) || ''; } catch { return ''; }
     }
 
     function setSavedId(userId) {
         const id = String(userId || '').trim();
         if (!id) return;
-        try { localStorage.setItem(SAVED_ID_KEY, id); } catch { /* ignore */ }
+        try { localStorage.setItem(savedIdKey(), id); } catch { /* ignore */ }
     }
 
     function clearSavedId() {
-        try { localStorage.removeItem(SAVED_ID_KEY); } catch { /* ignore */ }
+        try { localStorage.removeItem(savedIdKey()); } catch { /* ignore */ }
     }
 
     function hasPersistedAuthSession() {
-        try { return !!localStorage.getItem(AUTH_SESSION_KEY); } catch { return false; }
+        try { return !!localStorage.getItem(authSessionKey()); } catch { return false; }
     }
 
     function savePersistedAuthSession(session) {
         if (!session?.username) return;
         try {
-            localStorage.setItem(AUTH_SESSION_KEY, JSON.stringify({
+            localStorage.setItem(authSessionKey(), JSON.stringify({
                 userId: session.username,
                 role: session.role,
                 timestamp: Date.now(),
@@ -406,7 +463,7 @@ const TVC_Auth = (function () {
     }
 
     function clearPersistedAuthSession() {
-        try { localStorage.removeItem(AUTH_SESSION_KEY); } catch { /* ignore */ }
+        try { localStorage.removeItem(authSessionKey()); } catch { /* ignore */ }
     }
 
     function applySavedIdToLoginForm() {
@@ -425,7 +482,7 @@ const TVC_Auth = (function () {
         if (getCurrentUser()) return getCurrentUser();
         let data;
         try {
-            const raw = localStorage.getItem(AUTH_SESSION_KEY);
+            const raw = localStorage.getItem(authSessionKey());
             if (!raw) return null;
             data = JSON.parse(raw);
         } catch {
@@ -475,7 +532,7 @@ const TVC_Auth = (function () {
                 company_name: user.company_name || user.display_name || null,
                 station: null, login_mode: null,
             };
-            sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
+            sessionStorage.setItem(sessionKey(), JSON.stringify(session));
             return session;
         }
 
@@ -503,12 +560,12 @@ const TVC_Auth = (function () {
             company_name: user.company_name || null,
             station: station || null, login_mode: loginMode || null,
         };
-        sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
+        sessionStorage.setItem(sessionKey(), JSON.stringify(session));
         return session;
     }
 
     function logout() {
-        sessionStorage.removeItem(SESSION_KEY);
+        sessionStorage.removeItem(sessionKey());
         clearPersistedAuthSession();
     }
 
@@ -552,7 +609,7 @@ const TVC_Auth = (function () {
     }
 
     return {
-        initUsers, login, logout, getCurrentUser, refreshSessionFromDb, registerSupplier, requirePermission, changePassword,
+        initUsers, ensureDefaultUsers, purgeDeprecatedUsers, normalizeLoginUsername, login, logout, getCurrentUser, refreshSessionFromDb, registerSupplier, requirePermission, changePassword,
         upsertProvisionedUser, hashPasswordForProvision, DEMO_PASSWORD, DEFAULT_USERS,
         getSavedId, setSavedId, clearSavedId, savePersistedAuthSession, clearPersistedAuthSession,
         hasPersistedAuthSession, applySavedIdToLoginForm, restorePersistedAuthSession,

@@ -17,7 +17,7 @@ const SKUS = {
         universal: true,
         loginModes: ['MASTER'],
         allowHq: false,
-        productName: 'TVC-PMS Vessel Master',
+        productName: 'TVC-PMS Captain Hub',
         appId: 'com.thevesselcode.tvc-pms.vessel-master',
         executableName: 'TVC-PMS-Vessel-Master',
     },

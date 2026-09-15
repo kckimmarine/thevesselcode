@@ -58,6 +58,26 @@ const TVC_Config = (function () {
         return false;
     }
 
+    /**
+     * Browser PWA (service worker + install) for vessel offline use.
+     * Disabled in SM iframe/embed; enabled on direct app URL and localhost.
+     */
+    function isVesselOfflinePwaEligible() {
+        if (isElectron()) return false;
+        try {
+            const q = new URLSearchParams(location.search);
+            if (q.get('pwa') === '0') return false;
+            if (q.get('pwa') === '1') return true;
+        } catch (_) {}
+        if (!isWebDeploy()) return true;
+        if (isEmbedded()) return false;
+        try {
+            const q = new URLSearchParams(location.search);
+            if (q.get('embed') === '1' || q.get('web') === '1') return false;
+        } catch (_) {}
+        return true;
+    }
+
     function getPmsAppUrl(opts = {}) {
         const embed = opts.embed !== false;
         const base = PMS_APP_ORIGIN.replace(/\/+$/, '');
@@ -83,7 +103,14 @@ const TVC_Config = (function () {
         return !!(SUPABASE_URL && SUPABASE_ANON_KEY);
     }
 
+    function showStationBrowserLinks() {
+        if (isElectron() || isEmbedded()) return;
+        const el = document.getElementById('loginStationLinks');
+        if (el) el.classList.remove('hidden');
+    }
+
     function applyLoginChrome() {
+        showStationBrowserLinks();
         if (!isWebDeploy()) return;
         document.body?.classList.add('tvc-web-deploy');
 
@@ -100,6 +127,7 @@ const TVC_Config = (function () {
         if (dl) dl.classList.remove('hidden');
 
         try { TVC_VesselDownload?.initLogin?.(); } catch (e) { console.warn('[TVC] vessel download', e); }
+        try { TVC_PWA?.initLoginInstall?.(); } catch (e) { console.warn('[TVC] PWA install', e); }
 
         const userInput = document.getElementById('loginUser');
         if (userInput) {
@@ -142,11 +170,13 @@ const TVC_Config = (function () {
         isWebAdminPortal,
         filterAdminMenuSections,
         isEmbedded,
+        isVesselOfflinePwaEligible,
         getPmsAppUrl,
         isWebSuperHqUser,
         isSupabaseConfigured,
         applyLoginChrome,
         applyEmbedChrome,
+        showStationBrowserLinks,
     };
 })();
 if (typeof window !== 'undefined') window.TVC_Config = TVC_Config;

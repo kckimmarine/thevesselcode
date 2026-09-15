@@ -59,6 +59,7 @@
                 <p class="login-card-sub">Ship Management — Vessel Core (PMS + SPARE) &amp; Shore Superintendent</p>
                 <p id="loginBetaBadge" class="login-beta-badge hidden" aria-label="Beta version">Beta · Cloud SM Portal</p>
                 <p id="loginLicenseBadge" class="login-license-badge muted hidden" aria-live="polite"></p>
+                <p id="loginStationBadge" class="login-station-badge muted hidden" aria-live="polite"></p>
             </div>
            <form class="login-form" novalidate onsubmit="event.preventDefault();TVC_App.handleLogin();">
     <div class="login-field">
@@ -102,6 +103,20 @@
                     Download Vessel Mode (PC installer)
                 </button>
                 <p class="login-download-note">Install on ship PC · sync to SM via web portal</p>
+            </div>
+            <div id="loginStationLinks" class="login-station-links hidden">
+                <p class="login-download-note"><strong>Station PC (browser)</strong> — open the matching link once online, then install. Each PC keeps its own database (no seat license).</p>
+                <div class="login-station-btns">
+                    <a class="login-station-btn" href="station-captain.html">Captain PC</a>
+                    <a class="login-station-btn" href="station-engine.html">Engine PC</a>
+                    <a class="login-station-btn" href="station-deck.html">Deck PC</a>
+                </div>
+            </div>
+            <div id="loginPwaSection" class="login-download login-pwa hidden">
+                <button type="button" id="loginPwaInstallBtn" class="login-download-btn login-pwa-install-btn">
+                    Install for offline (browser)
+                </button>
+                <p class="login-download-note">Open once online on HTTPS · then use without Electron (IndexedDB + app shell)</p>
             </div>
             <div class="login-hint">
                 <span class="login-hint-label">Demo access</span>
@@ -963,6 +978,7 @@
 <script src="vendor/exceljs.min.js"></script>
 <script src="vendor/xlsx.full.min.js"></script>
 <script src="js/config.js?v=20260903-signin-cleanup"></script>
+<script src="js/stationProfile.js?v=20260915-station-db"></script>
 <script src="js/core/legacySm.js?v=20260912-sm-rename"></script>
 <script src="js/rbac.js?v=20260912-sm-demo-accounts"></script>
 <script src="js/core/schema.js?v=20260915-equiv-parts"></script>
@@ -993,7 +1009,7 @@
 <script src="js/space.js?v=20260902-mode-badge"></script>
 <script src="js/license.js?v=20260813-admin-mode"></script>
 <script src="js/services/fileExport.js?v=20260821-monthly-xfer"></script>
-<script src="js/auth.js?v=20260912-sm-demo-accounts"></script>
+<script src="js/auth.js?v=20260915-login-seed-fix"></script>
 <script src="js/services/transaction.js?v=20260824-no-sub-del"></script>
 <script src="js/services/maintenancePlan.js?v=20260823-append-hdr"></script>
 <script src="js/services/pmsMasterExcel.js?v=20260823-alert-en"></script>
