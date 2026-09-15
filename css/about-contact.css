@@ -166,10 +166,10 @@ body.ac-page.ac-embed .ac-hero {
     padding: 8px 14px;
     border: 1px solid var(--ac-border);
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.05);
+    background: #ffffff;
     font-size: 0.8125rem;
     font-weight: 600;
-    color: #dbeafe;
+    color: #334155;
 }
 
 .ac-about {
@@ -178,15 +178,16 @@ body.ac-page.ac-embed .ac-hero {
     padding: 22px 24px;
     border: 1px solid var(--ac-border);
     border-radius: var(--ac-radius);
-    background: rgba(255, 255, 255, 0.03);
+    background: #ffffff;
     text-align: center;
+    box-shadow: var(--ac-shadow);
 }
 
 .ac-about h2 {
     margin: 0 0 10px;
     font-size: clamp(1.125rem, 2.5vw, 1.375rem);
     font-weight: 700;
-    color: #f8fafc;
+    color: #0f172a;
 }
 
 .ac-about p {
@@ -197,9 +198,9 @@ body.ac-page.ac-embed .ac-hero {
 
 .ac-grid {
     display: grid;
-    grid-template-columns: minmax(280px, 0.95fr) minmax(320px, 1.25fr);
-    gap: 20px;
-    align-items: start;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 32px;
+    align-items: stretch;
 }
 
 .ac-card,
@@ -213,7 +214,8 @@ body.ac-page.ac-embed .ac-hero {
 }
 
 .ac-card {
-    padding: 24px;
+    padding: 28px;
+    height: 100%;
 }
 
 .ac-card h3 {
@@ -268,7 +270,7 @@ body.ac-page.ac-embed .ac-hero {
 
 .ac-info-value,
 .ac-info-value a {
-    color: #f1f5f9;
+    color: #334155;
     font-size: 0.9375rem;
     text-decoration: none;
 }
@@ -283,17 +285,18 @@ body.ac-page.ac-embed .ac-hero {
 .ac-sla {
     margin-top: 20px;
     padding: 12px 14px;
-    border: 1px solid rgba(94, 234, 212, 0.25);
+    border: 1px solid #a7f3d0;
     border-radius: 10px;
-    background: rgba(0, 77, 77, 0.28);
-    color: #ccfbf1;
+    background: #ecfdf5;
+    color: #065f46;
     font-size: 0.8125rem;
     font-weight: 600;
     text-align: center;
 }
 
 .ac-form-card {
-    padding: 24px;
+    padding: 28px;
+    height: 100%;
 }
 
 .ac-form-card h3 {
@@ -329,19 +332,20 @@ body.ac-page.ac-embed .ac-hero {
 .ac-field label {
     font-size: 0.8125rem;
     font-weight: 600;
-    color: #cbd5e1;
+    color: #334155;
 }
 
 .ac-field input,
 .ac-field select,
 .ac-field textarea {
     width: 100%;
-    padding: 11px 12px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 10px;
-    background: rgba(15, 23, 42, 0.65);
-    color: #f8fafc;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #0f172a;
     font: inherit;
+    font-size: 14px;
 }
 
 .ac-field input::placeholder,
@@ -365,9 +369,9 @@ body.ac-page.ac-embed .ac-hero {
 .ac-field input:focus,
 .ac-field select:focus,
 .ac-field textarea:focus {
-    outline: 2px solid rgba(94, 234, 212, 0.45);
-    outline-offset: 1px;
-    border-color: rgba(94, 234, 212, 0.35);
+    outline: none;
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
 }
 
 .ac-field textarea {

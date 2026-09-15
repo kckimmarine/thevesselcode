@@ -96,8 +96,8 @@ body.tvc-marketing-body .home-platform-badge {
 .home-service-card p,
 .home-topic-list span,
 .home-ethos-band p {
-    color: #475569;
-    line-height: 1.7;
+    color: #334155 !important;
+    line-height: 1.65;
     font-size: 1rem;
 }
 
@@ -309,16 +309,16 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero.hero-search-first {
 
 .mkt-scannable {
     margin: 0 0 12px;
-    color: #475569;
-    line-height: 1.7;
+    color: #334155 !important;
+    line-height: 1.65;
     max-width: 52rem;
 }
 
 .home-service-takeaways {
     margin: 12px 0 0;
     padding-left: 1.1rem;
-    color: #475569;
-    line-height: 1.65;
+    color: #334155 !important;
+    line-height: 1.6;
 }
 
 .home-service-takeaways li {
@@ -1358,5 +1358,157 @@ body.tvc-marketing-body .mkt-pricing-card .home-btn-secondary {
     .mkt-intel-band {
         padding-left: max(20px, calc((100vw - 1400px) / 2 + 20px));
         padding-right: max(20px, calc((100vw - 1400px) / 2 + 20px));
+    }
+}
+
+/* ── Subpages: typography, light forms, layout balance ── */
+body.tvc-marketing-body h1,
+body.tvc-marketing-body h2,
+body.tvc-marketing-body h3,
+body.forum-page.mkt-page h1,
+body.forum-page.mkt-page h2,
+body.forum-page.mkt-page h3 {
+    color: #0f172a !important;
+    font-weight: 700;
+}
+
+body.tvc-marketing-body h1,
+body.forum-page.mkt-page h1 {
+    font-weight: 800 !important;
+}
+
+body.tvc-marketing-body li,
+body.forum-page.mkt-page li,
+body.tvc-marketing-body ul,
+body.tvc-marketing-body ol {
+    color: #334155;
+}
+
+body.tvc-marketing-body small,
+body.tvc-marketing-body .mkt-caption,
+body.tvc-marketing-body .forum-post-meta,
+body.tvc-marketing-body .store-count,
+body.forum-page .forum-post-meta {
+    color: #64748b !important;
+    font-size: max(13px, 0.8125rem);
+}
+
+body.tvc-marketing-body input[type="text"],
+body.tvc-marketing-body input[type="email"],
+body.tvc-marketing-body input[type="number"],
+body.tvc-marketing-body input[type="search"],
+body.tvc-marketing-body input[type="tel"],
+body.tvc-marketing-body input[type="url"],
+body.tvc-marketing-body select,
+body.tvc-marketing-body textarea,
+body.forum-page.mkt-page input[type="text"],
+body.forum-page.mkt-page input[type="email"],
+body.forum-page.mkt-page input[type="search"],
+body.forum-page.mkt-page select,
+body.forum-page.mkt-page textarea,
+body.mkt-toolkit-page input[type="text"],
+body.mkt-toolkit-page input[type="email"],
+body.mkt-toolkit-page input[type="number"],
+body.mkt-toolkit-page input[type="search"],
+body.mkt-toolkit-page select,
+body.mkt-toolkit-page textarea {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 8px !important;
+    padding: 10px 14px !important;
+    font-size: 14px !important;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+body.tvc-marketing-body input::placeholder,
+body.tvc-marketing-body textarea::placeholder,
+body.forum-page.mkt-page input::placeholder,
+body.forum-page.mkt-page textarea::placeholder,
+body.mkt-toolkit-page input::placeholder,
+body.mkt-toolkit-page textarea::placeholder {
+    color: #94a3b8 !important;
+}
+
+body.tvc-marketing-body input:focus,
+body.tvc-marketing-body select:focus,
+body.tvc-marketing-body textarea:focus,
+body.forum-page.mkt-page input:focus,
+body.forum-page.mkt-page select:focus,
+body.forum-page.mkt-page textarea:focus,
+body.mkt-toolkit-page input:focus,
+body.mkt-toolkit-page select:focus,
+body.mkt-toolkit-page textarea:focus {
+    outline: none !important;
+    border-color: #0284c7 !important;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15) !important;
+}
+
+body.mkt-toolkit-page .store-search,
+body.mkt-toolkit-page .store-category-filter {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+}
+
+body.tvc-marketing-body .home-service-card.mkt-glass-card {
+    margin-bottom: 24px;
+    padding: 28px;
+}
+
+body.tvc-marketing-body .home-service-takeaways,
+body.tvc-marketing-body .home-service-takeaways li {
+    color: #334155 !important;
+    line-height: 1.6;
+}
+
+body.tvc-marketing-body .home-service-takeaways li::marker {
+    color: #334155;
+}
+
+body.tvc-marketing-body .ac-grid {
+    grid-template-columns: 1fr 1.6fr;
+    gap: 32px;
+    align-items: stretch;
+}
+
+body.tvc-marketing-body .ac-card,
+body.tvc-marketing-body .ac-form-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body.mkt-sm-page .sm-hero-grid {
+    align-items: center;
+    gap: 40px;
+}
+
+body.mkt-sm-page .sm-compare-table tbody th[scope="row"],
+body.mkt-sm-page .sm-compare-table td,
+body.mkt-sm-page .sm-compare-table th {
+    color: #334155 !important;
+}
+
+body.mkt-sm-page .sm-compare-table thead th {
+    color: #0f172a !important;
+}
+
+body.mkt-sm-page .sm-compare-table td:last-child,
+body.mkt-sm-page .sm-compare-table th:last-child {
+    color: #0f172a !important;
+    background: rgba(2, 132, 199, 0.06);
+}
+
+body.mkt-sm-page .sm-mode-list,
+body.mkt-sm-page .sm-mode-demo code,
+body.mkt-sm-page .sm-hero-approval,
+body.mkt-sm-page .sm-philosophy.muted {
+    color: #334155 !important;
+}
+
+@media (max-width: 900px) {
+    body.tvc-marketing-body .ac-grid {
+        grid-template-columns: 1fr;
     }
 }

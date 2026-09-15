@@ -25,7 +25,7 @@
     ];
 
     const LOGO = '/icons/company-logo.png?v=20260804-logo-no-ring';
-    const INTEL_CSS = '/css/marketing-readability.css?v=20260914-enterprise-marine';
+    const INTEL_CSS = '/css/marketing-readability.css?v=20260915-legibility';
     const INTEL_JS = '/js/intelligence/marketFeed.js?v=20260914-news-media-dashboard';
 
     const SVG_STROKE =
