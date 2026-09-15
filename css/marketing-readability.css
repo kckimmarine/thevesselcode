@@ -1739,3 +1739,52 @@ body.tvc-marketing-body .mkt-verdict--exceeded {
     background: #fef2f2;
     color: #7f1d1d;
 }
+
+body.tvc-marketing-body .comb-input {
+    width: 100%;
+    min-width: 4.5rem;
+}
+
+body.tvc-marketing-body .comb-panel-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+body.tvc-marketing-body .comb-means {
+    margin-top: 12px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+body.tvc-marketing-body .comb-hint {
+    margin-top: 8px;
+    font-size: 0.8125rem;
+    color: #475569;
+}
+
+body.tvc-marketing-body .comb-advice {
+    margin-top: 12px;
+}
+
+body.tvc-marketing-body .mkt-deviation-bar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48px;
+    height: 6px;
+    margin-left: 6px;
+    background: #e2e8f0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+body.tvc-marketing-body .mkt-deviation-bar > span {
+    display: block;
+    height: 100%;
+    background: #0f172a;
+    border-radius: 3px;
+}
