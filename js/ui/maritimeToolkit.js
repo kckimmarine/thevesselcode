@@ -917,6 +917,109 @@ const TVC_MaritimeToolkit = (function () {
         return band;
     }
 
+    let _engSearchHighlightId = null;
+
+    function renderEngineeringSearchTray(tray, hits) {
+        if (!tray) return;
+        if (!hits.length) {
+            tray.classList.add('hidden');
+            tray.innerHTML = '';
+            return;
+        }
+        tray.classList.remove('hidden');
+        tray.innerHTML = hits
+            .slice(0, 8)
+            .map(({ entry }) => {
+                const steps = Array.isArray(entry.actionSteps) ? entry.actionSteps[0] : entry.actionSteps;
+                return `<article class="mkt-eng-search-card" role="option" data-eng-id="${esc(entry.id)}" data-eng-tab="${esc(entry.calculatorTab)}">
+                    <h3 class="mkt-eng-search-card-title">${esc(entry.title)}</h3>
+                    <p class="mkt-eng-search-meta"><span class="mkt-eng-search-tag">${esc(entry.discipline)}</span></p>
+                    <dl class="mkt-eng-search-dl">
+                        <div><dt>Principle</dt><dd>${esc(entry.principle)}</dd></div>
+                        <div><dt>Standard</dt><dd>${esc(entry.standardValue)}</dd></div>
+                        <div><dt>Action</dt><dd>${esc(steps || '')}</dd></div>
+                    </dl>
+                    <button type="button" class="mkt-eng-search-open home-btn home-btn-secondary" data-eng-open="${esc(entry.id)}">Open Calculator</button>
+                </article>`;
+            })
+            .join('');
+    }
+
+    function highlightEngineeringCard(entryId) {
+        document.querySelectorAll('.mkt-eng-search-card').forEach((el) => {
+            el.classList.toggle('mkt-eng-search-card--active', el.dataset.engId === entryId);
+        });
+        const active = document.querySelector(`.mkt-eng-search-card[data-eng-id="${entryId}"]`);
+        active?.scrollIntoView?.({ block: 'nearest', behavior: 'smooth' });
+    }
+
+    function jumpToEngineeringCalculator(tab, entryId) {
+        _engSearchHighlightId = entryId || null;
+        setActiveTool(tab || 'catalog');
+        const panel = document.querySelector(`[data-tool-panel="${tab}"]`);
+        if (panel) {
+            panel.classList.add('mkt-tool-panel--search-focus');
+            globalThis.setTimeout(() => panel.classList.remove('mkt-tool-panel--search-focus'), 2400);
+        }
+        const tray = document.getElementById('mktEngSearchTray');
+        if (tray && entryId) {
+            tray.querySelectorAll('.mkt-eng-search-card').forEach((el) => {
+                el.classList.toggle('mkt-eng-search-card--active', el.dataset.engId === entryId);
+            });
+        }
+        document.getElementById('storePublicToolkit')?.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
+    }
+
+    function initEngineeringSearch() {
+        const input = document.getElementById('mktEngSearchInput');
+        const tray = document.getElementById('mktEngSearchTray');
+        const Search = globalThis.TVC_EngineeringSearch;
+        if (!input || !tray || !Search?.searchEngineeringKnowledge) return;
+
+        const runSearch = () => {
+            const q = input.value.trim();
+            if (!q) {
+                tray.classList.add('hidden');
+                tray.innerHTML = '';
+                return;
+            }
+            const hits = Search.searchEngineeringKnowledge(q);
+            renderEngineeringSearchTray(tray, hits);
+            if (_engSearchHighlightId) highlightEngineeringCard(_engSearchHighlightId);
+        };
+
+        input.addEventListener('input', runSearch);
+        input.addEventListener('focus', runSearch);
+
+        tray.addEventListener('click', (ev) => {
+            const btn = ev.target.closest('[data-eng-open]');
+            const card = ev.target.closest('[data-eng-tab]');
+            if (btn || card) {
+                const el = btn ? btn.closest('[data-eng-tab]') : card;
+                const tab = el?.dataset?.engTab;
+                const id = el?.dataset?.engId;
+                if (tab) jumpToEngineeringCalculator(tab, id);
+            }
+        });
+
+        document.addEventListener('click', (ev) => {
+            const wrap = document.getElementById('mktEngSearchWrap');
+            if (wrap && !wrap.contains(ev.target)) {
+                tray.classList.add('hidden');
+            }
+        });
+    }
+
+    async function loadEngineeringKnowledgeIndex() {
+        const Search = globalThis.TVC_EngineeringSearch;
+        if (!Search?.loadKnowledgeIndexFromJson) return;
+        try {
+            await Search.loadKnowledgeIndexFromJson('/data/engineering-knowledge-index.json');
+        } catch (err) {
+            console.warn('[MaritimeToolkit] engineering knowledge index load', err);
+        }
+    }
+
     function setActiveTool(tool) {
         _activeTool = tool || 'catalog';
         document.querySelectorAll('[data-tool-tab]').forEach(btn => {
@@ -961,6 +1064,9 @@ const TVC_MaritimeToolkit = (function () {
                 console.warn('[MaritimeToolkit] bolt torque standards load', err);
             }
         }
+
+        await loadEngineeringKnowledgeIndex();
+        initEngineeringSearch();
 
         const hosts = {
             bunker: document.getElementById('storeToolBunker'),
