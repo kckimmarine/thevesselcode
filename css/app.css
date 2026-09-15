@@ -12162,3 +12162,61 @@ body.mobile-nav-open .mobile-nav-backdrop { display: block; }
     .supplier-quote-drawer-actions { flex-direction: column; }
     .supplier-quote-drawer-actions .btn { width: 100%; }
 }
+
+/* Vessel archetype onboarding wizard (desktop + mobile) */
+.vessel-archetype-modal { max-width: 36rem; width: 96vw; }
+.vessel-wizard-steps {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.75rem 0 1rem;
+    flex-wrap: wrap;
+}
+.vessel-wizard-step {
+    font-size: 0.8rem;
+    color: #718096;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    background: #f7fafc;
+}
+.vessel-wizard-step.is-active { color: #1a365d; font-weight: 600; background: #ebf8ff; }
+.vessel-wizard-step.is-done { color: #276749; }
+.vessel-wizard-step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background: #e2e8f0;
+    font-size: 0.7rem;
+    margin-right: 0.25rem;
+}
+.vessel-wizard-step.is-active .vessel-wizard-step-num { background: #2b6cb0; color: #fff; }
+.vessel-archetype-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.65rem;
+    margin-top: 0.5rem;
+}
+.vessel-archetype-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0.65rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    min-height: 7rem;
+}
+.vessel-archetype-card:hover { border-color: #90cdf4; }
+.vessel-archetype-card--active { border-color: #2b6cb0; box-shadow: 0 0 0 1px #2b6cb0; }
+.vessel-archetype-card-icon { font-size: 1.5rem; line-height: 1; margin-bottom: 0.35rem; }
+.vessel-archetype-card-title { font-weight: 600; font-size: 0.9rem; color: #1a365d; }
+.vessel-archetype-card-desc { font-size: 0.72rem; color: #4a5568; margin-top: 0.25rem; flex: 1; }
+.vessel-archetype-card-meta { font-size: 0.68rem; margin-top: 0.35rem; }
+.vessel-wizard-actions { justify-content: flex-end; gap: 0.5rem; }
+@media (max-width: 768px) {
+    .vessel-archetype-grid { grid-template-columns: 1fr; }
+}

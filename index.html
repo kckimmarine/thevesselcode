@@ -599,6 +599,12 @@
 <div id="adminRegistryModal" class="modal hidden" onclick="if(event.target===this)TVC_App.closeAdminRegistryModal()">
     <div class="modal-box spare-sync-modal menu-xfer-wide" onclick="event.stopPropagation()"><div id="adminRegistryBody"></div></div>
 </div>
+<div id="vesselArchetypeModal" class="modal hidden" onclick="if(event.target===this)TVC_VesselRegistryModal.close()">
+    <div class="modal-box spare-sync-modal vessel-archetype-modal" onclick="event.stopPropagation()">
+        <div id="vesselArchetypeBody"></div>
+        <div id="vesselArchetypeErr" class="login-err" role="alert"></div>
+    </div>
+</div>
 <div id="adminSeatLicenseModal" class="modal hidden" onclick="if(event.target===this)TVC_App.closeAdminSeatLicenseModal()">
     <div class="modal-box spare-sync-modal menu-xfer-wide" onclick="event.stopPropagation()"><div id="adminSeatLicenseBody"></div></div>
 </div>
@@ -992,7 +998,9 @@
 <script src="js/services/smLiveSync.js?v=20260912-sm-rename"></script>
 <script src="js/services/legacyMigrationIds.js?v=20260914-sanitize"></script>
 <script src="js/services/fleet.js?v=20260914-sanitize"></script>
+<script src="js/services/templateService.js?v=20260915-archetype"></script>
 <script src="js/services/adminRegistry.js?v=20260831-tvc-ref"></script>
+<script src="js/ui/vesselRegistryModal.js?v=20260915-archetype"></script>
 <script src="js/services/accountProvisioning.js?v=20260831-tvc-ref"></script>
 <script src="js/services/masterVesselScope.js?v=20260813-vessel-master"></script>
 <script src="js/services/dataPurge.js?v=20260914-sanitize"></script>
