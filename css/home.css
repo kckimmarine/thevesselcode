@@ -648,6 +648,278 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
     font-size: 0.94rem;
 }
 
+/* ── Benefit grid (4 roles) ── */
+.home-benefits-section .home-section-head {
+    text-align: center;
+}
+
+.home-benefit-audience {
+    margin: 0 0 10px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--home-accent);
+}
+
+.home-benefit-card p.mkt-prose {
+    margin: 0;
+    font-size: 0.94rem;
+    line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+    .home-grid-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    .home-grid-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* ── Product workflow showcase ── */
+.home-showcase-layout {
+    display: grid;
+    gap: 28px;
+    align-items: center;
+}
+
+@media (min-width: 960px) {
+    .home-showcase-layout {
+        grid-template-columns: 1fr 1.05fr;
+        gap: 36px;
+    }
+}
+
+.home-showcase-tagline {
+    margin: 0 0 20px;
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    max-width: none;
+}
+
+.home-showcase-mockup {
+    padding: 22px 20px;
+    background: linear-gradient(165deg, #0f172a 0%, #1e293b 42%, #0f172a 100%) !important;
+    border-color: #334155 !important;
+    color: #e2e8f0;
+}
+
+.home-showcase-mockup-label {
+    margin: 0 0 16px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #94a3b8;
+}
+
+.home-workflow-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.home-workflow-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 14px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    background: rgba(15, 23, 42, 0.55);
+    opacity: 0.72;
+}
+
+.home-workflow-step.is-active {
+    opacity: 1;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.35), 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.home-workflow-step.is-done {
+    opacity: 0.9;
+    border-color: #059669;
+}
+
+.home-workflow-step-num {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #1e293b;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #f8fafc;
+}
+
+.home-workflow-step.is-active .home-workflow-step-num {
+    background: #0284c7;
+}
+
+.home-workflow-step.is-done .home-workflow-step-num {
+    background: #059669;
+}
+
+.home-workflow-step-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.home-workflow-step-body strong {
+    color: #f8fafc;
+    font-size: 0.95rem;
+}
+
+.home-workflow-step-body span {
+    font-size: 0.82rem;
+    color: #94a3b8;
+    line-height: 1.45;
+}
+
+.home-showcase-mockup-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid #334155;
+}
+
+.home-showcase-stat {
+    font-size: 0.78rem;
+    color: #cbd5e1;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid #475569;
+}
+
+.home-showcase-stat strong {
+    color: #38bdf8;
+}
+
+.home-btn-contrast {
+    box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35);
+}
+
+.home-btn-contrast-outline {
+    font-weight: 800;
+}
+
+@media (max-width: 767px) {
+    .home-showcase-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .home-showcase-actions .home-btn {
+        width: 100%;
+    }
+}
+
+/* ── IMPA quick strip (interactive cards) ── */
+.home-impa-strip-section .home-section-head {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.home-impa-strip-lead {
+    margin-top: 8px;
+    max-width: 40rem;
+}
+
+.home-impa-card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+@media (min-width: 640px) {
+    .home-impa-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1100px) {
+    .home-impa-card-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1400px) {
+    .home-impa-card-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+}
+
+.home-impa-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 16px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--home-border);
+    background: #ffffff;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+    min-height: 100%;
+}
+
+.home-impa-card:hover,
+.home-impa-card:focus-visible {
+    border-color: var(--home-accent);
+    box-shadow: 0 8px 22px rgba(2, 132, 199, 0.14);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+.home-impa-code {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+.home-impa-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--home-text);
+    line-height: 1.35;
+}
+
+.home-impa-chip {
+    display: inline-block;
+    margin-top: auto;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #0369a1;
+    background: rgba(2, 132, 199, 0.08);
+    border: 1px solid rgba(2, 132, 199, 0.2);
+    border-radius: 999px;
+    padding: 4px 10px;
+}
+
 .home-popular-impa {
     margin-top: 32px;
     padding: 20px 22px;
