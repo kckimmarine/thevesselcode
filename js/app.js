@@ -191,6 +191,35 @@ const TVC_App = (function () {
         return msg || 'An error occurred while signing in.';
     }
 
+    /** Browser station entry — separate IndexedDB per Captain / Engine / Deck PC (no seat license). */
+    function applyLoginDeptForStationProfile() {
+        if (typeof TVC_StationProfile === 'undefined' || !TVC_StationProfile.isStationLocked()) return false;
+        const mode = TVC_StationProfile.getLoginMode();
+        const label = TVC_StationProfile.getLabel() || 'Station PC';
+        const sel = document.getElementById('loginDept');
+        const field = sel?.closest('.login-field');
+        const allModes = [
+            { value: 'MASTER', label: 'Captain' },
+            { value: 'ENGINE', label: 'Engine' },
+            { value: 'DECK', label: 'Deck' },
+        ];
+        const hit = allModes.find(m => m.value === mode);
+        if (sel && hit) {
+            sel.innerHTML = `<option value="${hit.value}" selected>${hit.label}</option>`;
+            sel.value = hit.value;
+            if (field) field.classList.remove('hidden');
+        }
+        const badge = document.getElementById('loginStationBadge');
+        if (badge) {
+            badge.classList.remove('hidden');
+            const warn = TVC_StationProfile.getUrlLockWarning?.();
+            badge.textContent = warn
+                || `${label} · dedicated offline database (browser, no seat license)`;
+            if (warn) badge.classList.add('login-station-badge-warn');
+        }
+        return true;
+    }
+
     /** Limit Department dropdown to licensed login modes (Engine SKU → Engine only). */
     function applyLoginDeptForLicense(lic) {
         const sel = document.getElementById('loginDept');
@@ -386,6 +415,7 @@ const TVC_App = (function () {
         try {
             try { await syncLoginAppVersion(); } catch (e) { console.warn('[TVC] version', e); }
             try { TVC_Config?.applyLoginChrome?.(); } catch (e) { console.warn('[TVC] login chrome', e); }
+            try { TVC_Config?.showStationBrowserLinks?.(); } catch (e) { console.warn('[TVC] station links', e); }
             try { TVC_Config?.applyEmbedChrome?.(); } catch (e) { console.warn('[TVC] embed chrome', e); }
             try { TVC_SupplierRegister?.init(); } catch (e) { console.warn('[TVC] supplier register', e); }
             if (typeof TVC_License !== 'undefined') {
@@ -399,10 +429,16 @@ const TVC_App = (function () {
                                 + (lic.vesselId ? ` · ${lic.vesselId}` : '')
                                 + (lic.expiresAt ? ` · until ${String(lic.expiresAt).slice(0, 10)}` : '');
                         }
-                        applyLoginDeptForLicense(lic);
+                        if (!applyLoginDeptForStationProfile()) {
+                            applyLoginDeptForLicense(lic);
+                        }
                         clearStaleLoginSession(lic);
+                    } else if (applyLoginDeptForStationProfile()) {
+                        /* station profile chrome */
                     }
                 } catch (e) { console.warn('[TVC_License]', e); }
+            } else if (applyLoginDeptForStationProfile()) {
+                /* station profile chrome */
             }
             await TVC_DB.open();
             bootDbReady = true;

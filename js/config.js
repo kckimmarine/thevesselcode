@@ -103,7 +103,14 @@ const TVC_Config = (function () {
         return !!(SUPABASE_URL && SUPABASE_ANON_KEY);
     }
 
+    function showStationBrowserLinks() {
+        if (isElectron() || isEmbedded()) return;
+        const el = document.getElementById('loginStationLinks');
+        if (el) el.classList.remove('hidden');
+    }
+
     function applyLoginChrome() {
+        showStationBrowserLinks();
         if (!isWebDeploy()) return;
         document.body?.classList.add('tvc-web-deploy');
 
@@ -169,6 +176,7 @@ const TVC_Config = (function () {
         isSupabaseConfigured,
         applyLoginChrome,
         applyEmbedChrome,
+        showStationBrowserLinks,
     };
 })();
 if (typeof window !== 'undefined') window.TVC_Config = TVC_Config;

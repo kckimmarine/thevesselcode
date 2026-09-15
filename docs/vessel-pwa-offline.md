@@ -6,9 +6,26 @@ Yes — **one online visit over HTTPS**, then **install to the device** (Progres
 
 This is **not** a replacement for **seat-licensed Electron** on the bridge PC pool, but it is a practical option for tablets, backup browsers, or trials when installers are not available.
 
+## Station PC — separate database per mode (no seat license)
+
+Each physical station PC should use its **own entry URL** once (online), then install the PWA from that page:
+
+| PC | Open once (online) | IndexedDB name (conceptually) |
+|----|----------------------|-------------------------------|
+| Captain hub | `/station-captain.html` | `tvc_pms_v2_stn_captain` |
+| Engine room | `/station-engine.html` | `tvc_pms_v2_stn_engine` |
+| Deck | `/station-deck.html` | `tvc_pms_v2_stn_deck` |
+
+The link **locks** that browser profile to one station. Department on login is fixed (Captain / Engine / Deck). **Seat license is not used** in the browser path.
+
+Do not use the generic home URL on all three PCs — they would share one database. SM superintendent use stays on the normal URL (no station lock) or a separate browser profile.
+
+Implementation: `js/stationProfile.js` (runs before `schema.js` / `db.js`).
+
 ## How to use
 
-1. Open the app **directly** (not inside the SM iframe): e.g. `https://app.thevesselcode.com/`  
+1. On each station PC, open the matching **station link** above (or login screen buttons **Captain PC / Engine PC / Deck PC**).  
+   For generic SM browsing, open `https://app.thevesselcode.com/` **directly** (not inside the SM iframe).  
    - Embedded SM portal (`?embed=1`) intentionally **does not** register the service worker (avoids stale cache for shore users).
 2. Stay **online** until the page finishes loading (service worker installs and precaches the shell).
 3. **Install**:
@@ -22,8 +39,8 @@ This is **not** a replacement for **seat-licensed Electron** on the bridge PC po
 
 | Topic | PWA (browser) | Electron Vessel Mode |
 |--------|----------------|----------------------|
-| Seat license enforcement | No (browser dev / web rules) | Yes |
-| Separate IndexedDB per SKU (Master/Engine/Deck) | Single browser profile | Per-install userData |
+| Seat license enforcement | No (browser / station entry) | Yes |
+| Separate IndexedDB per Captain/Engine/Deck | Yes — via `station-*.html` entry per PC | Per-install userData (Electron SKU) |
 | ZIP sync | Yes (Export/Import) | Yes |
 | App Update ZIP installers | No | Yes |
 | `file://` | Not supported | N/A |

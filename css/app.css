@@ -327,6 +327,43 @@ body {
     color: #94a3b8;
 }
 
+.login-station-badge {
+    margin: 8px 0 0;
+    font-size: 12px;
+    color: #2c5282;
+}
+.login-station-badge-warn {
+    color: #c05621;
+}
+.login-station-links {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px dashed #e2e8f0;
+    text-align: center;
+}
+.login-station-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.login-station-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--navy);
+    background: #fff;
+    border: 1px solid #cbd5e0;
+    text-decoration: none;
+}
+.login-station-btn:hover {
+    border-color: var(--login-accent);
+    background: #f7fafc;
+}
+
 .vessel-download-box { max-width: 420px; }
 .vessel-download-box h3 { margin: 0 0 6px; color: var(--navy); }
 .vessel-download-list { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }

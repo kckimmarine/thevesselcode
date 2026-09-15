@@ -1,8 +1,14 @@
 /* THE VESSEL CODE — Auth (IndexedDB users + session) */
 const TVC_Auth = (function () {
-    const SESSION_KEY = 'tvc_session_v2';
-    const SAVED_ID_KEY = 'tvc_saved_id';
-    const AUTH_SESSION_KEY = 'tvc_auth_session';
+    function storageSuffix() {
+        try {
+            if (typeof TVC_StationProfile !== 'undefined') return TVC_StationProfile.getStorageSuffix() || '';
+        } catch (_) {}
+        return '';
+    }
+    function sessionKey() { return `tvc_session_v2${storageSuffix()}`; }
+    function savedIdKey() { return `tvc_saved_id${storageSuffix()}`; }
+    function authSessionKey() { return `tvc_auth_session${storageSuffix()}`; }
     const AUTH_SESSION_TTL_MS = 30 * 24 * 60 * 60 * 1000;
     const DEMO_PASSWORD = '0000';
     const USERS_SEED_VERSION = 23;
@@ -336,12 +342,12 @@ const TVC_Auth = (function () {
     }
 
     function persistSession(session) {
-        sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
+        sessionStorage.setItem(sessionKey(), JSON.stringify(session));
     }
 
     function getCurrentUser() {
         try {
-            const raw = sessionStorage.getItem(SESSION_KEY);
+            const raw = sessionStorage.getItem(sessionKey());
             if (!raw) return null;
             const parsed = JSON.parse(raw);
             const normalized = normalizeSessionUser(parsed);
@@ -427,27 +433,27 @@ const TVC_Auth = (function () {
     }
 
     function getSavedId() {
-        try { return localStorage.getItem(SAVED_ID_KEY) || ''; } catch { return ''; }
+        try { return localStorage.getItem(savedIdKey()) || ''; } catch { return ''; }
     }
 
     function setSavedId(userId) {
         const id = String(userId || '').trim();
         if (!id) return;
-        try { localStorage.setItem(SAVED_ID_KEY, id); } catch { /* ignore */ }
+        try { localStorage.setItem(savedIdKey(), id); } catch { /* ignore */ }
     }
 
     function clearSavedId() {
-        try { localStorage.removeItem(SAVED_ID_KEY); } catch { /* ignore */ }
+        try { localStorage.removeItem(savedIdKey()); } catch { /* ignore */ }
     }
 
     function hasPersistedAuthSession() {
-        try { return !!localStorage.getItem(AUTH_SESSION_KEY); } catch { return false; }
+        try { return !!localStorage.getItem(authSessionKey()); } catch { return false; }
     }
 
     function savePersistedAuthSession(session) {
         if (!session?.username) return;
         try {
-            localStorage.setItem(AUTH_SESSION_KEY, JSON.stringify({
+            localStorage.setItem(authSessionKey(), JSON.stringify({
                 userId: session.username,
                 role: session.role,
                 timestamp: Date.now(),
@@ -457,7 +463,7 @@ const TVC_Auth = (function () {
     }
 
     function clearPersistedAuthSession() {
-        try { localStorage.removeItem(AUTH_SESSION_KEY); } catch { /* ignore */ }
+        try { localStorage.removeItem(authSessionKey()); } catch { /* ignore */ }
     }
 
     function applySavedIdToLoginForm() {
@@ -476,7 +482,7 @@ const TVC_Auth = (function () {
         if (getCurrentUser()) return getCurrentUser();
         let data;
         try {
-            const raw = localStorage.getItem(AUTH_SESSION_KEY);
+            const raw = localStorage.getItem(authSessionKey());
             if (!raw) return null;
             data = JSON.parse(raw);
         } catch {
@@ -526,7 +532,7 @@ const TVC_Auth = (function () {
                 company_name: user.company_name || user.display_name || null,
                 station: null, login_mode: null,
             };
-            sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
+            sessionStorage.setItem(sessionKey(), JSON.stringify(session));
             return session;
         }
 
@@ -554,12 +560,12 @@ const TVC_Auth = (function () {
             company_name: user.company_name || null,
             station: station || null, login_mode: loginMode || null,
         };
-        sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
+        sessionStorage.setItem(sessionKey(), JSON.stringify(session));
         return session;
     }
 
     function logout() {
-        sessionStorage.removeItem(SESSION_KEY);
+        sessionStorage.removeItem(sessionKey());
         clearPersistedAuthSession();
     }
 

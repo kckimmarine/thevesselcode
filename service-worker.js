@@ -1,5 +1,5 @@
 /* THE VESSEL CODE — Service Worker (Offline-first) */
-const CACHE_VERSION = 'tvc-pms-20260909-app-shell';
+const CACHE_VERSION = 'tvc-pms-20260915-station-shell';
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
@@ -7,6 +7,10 @@ const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 const PRECACHE_ASSETS = [
     '/',
     '/app.html',
+    '/station-captain.html',
+    '/station-engine.html',
+    '/station-deck.html',
+    '/js/stationProfile.js',
     '/toolkit.html',
     '/store-public.html',
     '/manifest.json',
