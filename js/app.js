@@ -7379,6 +7379,17 @@ const TVC_App = (function () {
         </td>`;
     }
 
+    function ensureFleetRegisterToolbar() {
+        const panel = document.getElementById('fleetListPanel');
+        if (!panel || !state.user || !TVC_RBAC.isSmAccount?.(state.user)) return;
+        if (panel.querySelector('.fleet-register-toolbar')) return;
+        const head = panel.querySelector('.fleet-list-head');
+        if (!head) return;
+        head.insertAdjacentHTML('afterend', `<div class="fleet-register-toolbar">
+                <button type="button" class="btn btn-sm btn-green" onclick="TVC_App.openVesselRegistryWizard()">＋ Register vessel (template)</button>
+            </div>`);
+    }
+
     function ensureAdminFleetPanelLayout() {
         const panel = document.getElementById('fleetListPanel');
         if (!panel || panel.dataset.adminLayout === '1') return;
@@ -9439,6 +9450,7 @@ const TVC_App = (function () {
         if (!isHq) return;
 
         ensureAdminFleetPanelLayout();
+        ensureFleetRegisterToolbar();
         const search = document.getElementById('fleetSearch');
         if (search) {
             search.placeholder = 'Search vessel ID / IMO No…';
