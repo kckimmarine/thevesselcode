@@ -571,6 +571,24 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
     gap: 16px;
 }
 
+.mkt-trio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+    .mkt-trio-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.home-services-duo {
+    gap: 24px;
+    align-items: stretch;
+}
+
 @media (min-width: 768px) {
     .home-grid-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));

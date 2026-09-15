@@ -52,8 +52,8 @@ check('enterprise fleet section', home.includes('home-enterprise-section') && ho
 check('hero search-first layout', home.includes('hero-search-first') && !home.includes('hero-realistic-canvas'));
 check('marketing readability css', home.includes('marketing-readability.css'));
 check('toolkit plg locks', readFileSync(join(ROOT, 'toolkit.html'), 'utf8').includes('mkt-plg-lock'));
-check('community ethos banner', home.includes('home-ethos-band') && home.includes('data-i18n="home.ethos.label"'));
-check('four stakeholder pillars', home.includes('Students &amp; Seafarers') && home.includes('Stores &amp; Spares Suppliers'));
+check('home decluttered trio grid', home.includes('mkt-trio-grid') && !home.includes('home-ethos-band'));
+check('nav four core tabs only', shell.includes("id: 'toolkit'") && shell.includes("id: 'sm'") && !shell.includes("id: 'forum'"));
 check('home hero no photo background', !home.includes('mkt-hero-smart-vessel') && !home.includes('home-hero-variant-picker'));
 check('sync-public-assets script exists', existsSync(join(ROOT, 'scripts/sync-public-assets.mjs')));
 check('home hero eyebrow removed', !home.includes('Former C/E') && !home.includes('home-eyebrow'));
@@ -64,16 +64,16 @@ check('no inline services section on home', !home.includes('id="service-superint
 check('canonical root', home.includes('https://thevesselcode.com/'));
 
 const services = readFileSync(join(ROOT, 'services/index.html'), 'utf8');
-check('services page pillars', services.includes('Owner') && services.includes('Strategic Supply'));
+check('services page concise cards', services.includes('Technical Superintendent Oversight') && services.includes('TVC-SM Fleet Integration'));
 check('services active nav', services.includes('data-mkt-active="services"'));
 check('services no photo card classes', !services.includes('home-service-card--photo'));
 
 const sm = readFileSync(join(ROOT, 'sm/index.html'), 'utf8');
 check('sm page hero title', sm.includes('Integrated Ship Management Platform'));
 check('sm active nav', sm.includes('data-mkt-active="sm"'));
-check('sm launch app CTA', sm.includes('Launch TVC-SM App') && sm.includes('href="https://app.thevesselcode.com"'));
-check('sm fleet demo CTA', sm.includes('Request Fleet Demo') && sm.includes('href="/contact-us"'));
-check('sm sections', sm.includes('Vessel Core (PMS + SPARE)') && sm.includes('Shore Superintendent oversight') && sm.includes('Automated RFQ workflows'));
+check('sm launch app CTA', sm.includes('Launch TVC-SM') && sm.includes('href="https://app.thevesselcode.com"'));
+check('sm fleet demo CTA', sm.includes('Request Fleet Demo') && sm.includes('href="/contact-us'));
+check('sm essentials section', sm.includes('smEssentials') && sm.includes('mkt-trio-grid') && !sm.includes('Automated RFQ workflows'));
 check('home explore sm internal', home.includes('href="/sm"'));
 
 check('pms marketing page removed', !existsSync(join(ROOT, 'pms/index.html')));
