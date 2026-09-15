@@ -6158,6 +6158,15 @@ const TVC_SpareMenu = (function () {
         const low = TVC_Inventory.isLowStock(s);
         const recQty = TVC_Inventory.recommendedOrderQty(s);
         const maint = await maintenanceHistory(id, st);
+        let equivBadge = '';
+        let equivDetail = '';
+        if (typeof TVC_EquivalentParts !== 'undefined') {
+            const eq = await TVC_EquivalentParts.lookup(partNo(s), s.makerPartNo);
+            if (eq) {
+                equivBadge = TVC_EquivalentParts.badgeHtml();
+                equivDetail = TVC_EquivalentParts.detailHtml(eq);
+            }
+        }
 
         const supplyRows = (s.history || []).slice().reverse().map(h => `<tr>
             <td>${esc((h.at || '').slice(0, 10))}</td>
@@ -6182,7 +6191,9 @@ const TVC_SpareMenu = (function () {
                 ${s.isCritical ? '<span class="pill overdue">CRITICAL</span>' : ''}
                 ${low ? '<span class="pill overdue">LOW STOCK</span>' : '<span class="pill ok">OK</span>'}
                 ${s.partClass ? `<span class="pill">${esc(s.partClass)}</span>` : ''}
+                ${equivBadge}
             </div>
+            ${equivDetail}
             <div class="spare-panel-meta">
                 <div><b>Universal Code</b><br>${esc(s.universalItemCode || s.universalCode || '—')}</div>
                 <div><b>Stock</b><br>${s.currentStock ?? 0} <span class="muted">(prev ${s.previousStock ?? 0})</span></div>

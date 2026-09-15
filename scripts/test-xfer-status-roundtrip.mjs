@@ -117,6 +117,7 @@ loadModule('js/core/filename.js', 'TVC_Filename');
 loadModule('js/pms.js', 'TVC_PMS');
 loadModule('js/core/indexes.js', 'TVC_Indexes');
 loadModule('js/services/hubRelay.js', 'TVC_HubRelay');
+loadModule('js/services/dataExchangeService.js', 'TVC_DataExchangeService');
 const Sync = loadModule('js/services/sync.js', 'TVC_Sync');
 const Postpone = loadModule('js/services/postponeSync.js', 'TVC_PostponeSync');
 

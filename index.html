@@ -490,7 +490,7 @@
         </div>
     </div>
 </div>
-<div id="smRfqTossModal" class="modal hidden" role="dialog" aria-labelledby="smRfqTossTitle" aria-modal="true">
+<div id="smRfqTossModal" class="modal modal-over-consume hidden" role="dialog" aria-labelledby="smRfqTossTitle" aria-modal="true">
     <div class="modal-box" onclick="event.stopPropagation()">
         <h3 id="smRfqTossTitle">🚀 Toss to Supplier</h3>
         <div class="login-field">
@@ -501,9 +501,36 @@
             <label for="smRfqTossDeadline">Response deadline</label>
             <input id="smRfqTossDeadline" type="date" required>
         </div>
+        <div class="login-field sm-rfq-equiv-toggle">
+            <label>
+                <input type="checkbox" id="smRfqTossDomestic" checked>
+                Include Domestic Equivalent Providers (KR MRO Pool)
+            </label>
+        </div>
         <div class="modal-actions">
             <button type="button" id="smRfqTossCancel" class="btn">Cancel</button>
             <button type="button" id="smRfqTossConfirm" class="btn btn-green">Send RFQ</button>
+        </div>
+    </div>
+</div>
+<div id="smRfqCreateModal" class="modal modal-over-consume hidden" role="dialog" aria-labelledby="smRfqCreateTitle" aria-modal="true">
+    <div class="modal-box sm-rfq-create-box" onclick="event.stopPropagation()">
+        <h3 id="smRfqCreateTitle">Spare Requisition → RFQ</h3>
+        <p class="muted">Create RFQ line items from requisition parts. Enable KR MRO pool bidding per line.</p>
+        <div class="login-field sm-rfq-equiv-toggle">
+            <label>
+                <input type="checkbox" id="smRfqCreateDomesticGlobal" checked>
+                Include Domestic Equivalent Providers (KR MRO Pool) — default for new lines
+            </label>
+        </div>
+        <div class="login-field">
+            <label for="smRfqCreateDeadline">Response deadline</label>
+            <input id="smRfqCreateDeadline" type="date" required>
+        </div>
+        <div id="smRfqCreateLines" class="sm-rfq-create-lines-host"></div>
+        <div class="modal-actions">
+            <button type="button" id="smRfqCreateCancel" class="btn">Cancel</button>
+            <button type="button" id="smRfqCreateSave" class="btn btn-green">Create RFQ Case</button>
         </div>
     </div>
 </div>
@@ -932,8 +959,8 @@
 <script src="js/config.js?v=20260903-signin-cleanup"></script>
 <script src="js/core/legacySm.js?v=20260912-sm-rename"></script>
 <script src="js/rbac.js?v=20260912-sm-demo-accounts"></script>
-<script src="js/core/schema.js?v=20260912-rfq-version-fix"></script>
-<script src="js/core/db.js?v=20260912-rfq-version-fix"></script>
+<script src="js/core/schema.js?v=20260915-equiv-parts"></script>
+<script src="js/core/db.js?v=20260915-equiv-parts"></script>
 <script src="js/core/indexes.js?v=20260821-hide-detached"></script>
 <script src="js/core/spareIndexes.js?v=20260821-spare-group-src"></script>
 <script src="js/services/spareGroups.js?v=20260821-eq-pms-spare-split"></script>
@@ -973,7 +1000,9 @@
 <script src="js/services/workPermitSync.js?v=20260824-wp-attach"></script>
 <script src="js/services/defectSync.js?v=20260824-dc-mod"></script>
 <script src="js/services/postponeSync.js?v=20260824-hq-fwd"></script>
-<script src="js/services/sync.js?v=20260831-cloud-restore"></script>
+<script src="js/services/dataExchangeService.js?v=20260915-iacs-compliance"></script>
+<script src="js/services/equivalentParts.js?v=20260915-domestic-equiv"></script>
+<script src="js/services/sync.js?v=20260915-iacs-compliance"></script>
 <script src="js/services/cloudRestore.js?v=20260831-cloud-restore"></script>
 <script src="js/services/masterBackup.js?v=20260827-pms-backup-operational"></script>
 <script src="js/services/vesselProfileSync.js?v=20260825-dialog-en"></script>
@@ -1003,7 +1032,7 @@
 <script src="js/ui/settings.js?v=20260804-settings"></script>
 <script src="js/ui/outstandingTasks.js?v=20260823-monthly-gate"></script>
 <script src="js/services/supplierRfqPipeline.js?v=20260912-rfq-pipeline"></script>
-<script src="js/ui/rfqWorkspace.js?v=20260912-rfq-pipeline"></script>
+<script src="js/ui/rfqWorkspace.js?v=20260915-domestic-rfq"></script>
 <script src="js/ui/supplierWorkspace.js?v=20260912-supplier-quote-print"></script>
 <script src="js/ui/supplierRegister.js?v=20260912-supplier-register-bind"></script>
 <script src="js/app.js?v=20260903-web-cloud"></script>

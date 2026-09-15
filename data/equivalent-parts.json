@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "updated_at": "2026-09-15",
+  "mappings": [
+    {
+      "original_maker_pn": "51.06106-0066",
+      "maker_family": "MAN",
+      "standard_spec": "ISO 15550 / JIS F7305",
+      "domestic_equivalent": {
+        "maker": "Busan Marine Parts Co.",
+        "equivalent_pn": "BMP-V81",
+        "approval": "KR / ClassNK Approved",
+        "est_lead_time_days": 2
+      }
+    },
+    {
+      "original_maker_pn": "Wartsila 450012345",
+      "maker_family": "Wärtsilä",
+      "standard_spec": "DIN 86251",
+      "domestic_equivalent": {
+        "maker": "Gyeongnam Precision MRO",
+        "equivalent_pn": "GPM-W450-12",
+        "approval": "KR / ClassNK Approved",
+        "est_lead_time_days": 3
+      }
+    },
+    {
+      "original_maker_pn": "119770-35150",
+      "maker_family": "Yanmar",
+      "standard_spec": "JIS F7305",
+      "domestic_equivalent": {
+        "maker": "Busan Marine Parts Co.",
+        "equivalent_pn": "BMP-Y35150",
+        "approval": "KR / ClassNK Approved",
+        "est_lead_time_days": 2
+      }
+    },
+    {
+      "original_maker_pn": "FF-2201",
+      "maker_family": "OEM",
+      "standard_spec": "ISO 4406",
+      "domestic_equivalent": {
+        "maker": "Ulsan Filter Tech",
+        "equivalent_pn": "UFT-FF2201-KR",
+        "approval": "KR Approved",
+        "est_lead_time_days": 1
+      }
+    },
+    {
+      "original_maker_pn": "SEAL-LOP-09",
+      "maker_family": "OEM",
+      "standard_spec": "JIS B2401",
+      "domestic_equivalent": {
+        "maker": "Gyeongnam Precision MRO",
+        "equivalent_pn": "GPM-SEAL-LOP09",
+        "approval": "KR / ClassNK Approved",
+        "est_lead_time_days": 4
+      }
+    }
+  ]
+}

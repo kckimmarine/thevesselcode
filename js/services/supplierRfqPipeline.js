@@ -66,6 +66,43 @@ const TVC_SupplierRfqPipeline = (function () {
             .sort((a, b) => String(b.updated_at).localeCompare(String(a.updated_at)));
     }
 
+    async function createSmCase(user, opts = {}) {
+        if (!user || !(TVC_RBAC.isSmAccount?.(user) || TVC_RBAC.isHqAccount(user))) {
+            throw new Error('SM account required to create RFQ cases.');
+        }
+        const rawItems = Array.isArray(opts.items) ? opts.items : [];
+        if (!rawItems.length) throw new Error('Add at least one RFQ line item.');
+        const includeDomestic = !!opts.include_domestic_equivalents;
+        const deadline = String(opts.response_deadline || '').trim();
+        const items = rawItems.map((it, i) => ({
+            line_id: String(it.line_id || i + 1),
+            description: String(it.description || '').trim() || 'Spare part',
+            part_no: String(it.part_no || '').trim(),
+            qty: Math.max(1, Math.floor(Number(it.qty) || 1)),
+            unit: String(it.unit || 'PCS').trim() || 'PCS',
+            allow_equivalent: !!(it.allow_equivalent || includeDomestic),
+            ...(it.domestic_equivalent_hint ? { domestic_equivalent_hint: it.domestic_equivalent_hint } : {}),
+        }));
+        const caseRow = {
+            rfq_id: nextRfqId(),
+            vessel_id: opts.vessel_id || user.vessel_id || 'TVC No1',
+            vessel_name: opts.vessel_name || 'ABC Voyager',
+            category: opts.category || 'Spare Parts',
+            inquiry_type: opts.inquiry_type || 'Requisition supply',
+            items,
+            include_domestic_equivalents: includeDomestic,
+            status: SM_STATUS.DRAFT,
+            response_deadline: deadline || null,
+            tossed_suppliers: [],
+            company_id: user.company_id || 'TVC',
+            sync_status: 'local',
+            created_at: nowIso(),
+            updated_at: nowIso(),
+        };
+        await TVC_DB.put('sm_rfq_cases', caseRow);
+        return caseRow;
+    }
+
     async function ensureSmDemoCases(user) {
         if (!user || !(TVC_RBAC.isSmAccount?.(user) || TVC_RBAC.isHqAccount(user))) return;
         const seeded = await TVC_DB.getMeta(META_SM_DEMO).catch(() => null);
@@ -85,9 +122,10 @@ const TVC_SupplierRfqPipeline = (function () {
             category: 'Spare Parts',
             inquiry_type: 'Urgent supply',
             items: [
-                { line_id: '1', description: 'Fuel filter element', part_no: 'FF-2201', qty: 4, unit: 'PCS' },
-                { line_id: '2', description: 'Lube oil pump seal kit', part_no: 'SEAL-LOP-09', qty: 1, unit: 'SET' },
+                { line_id: '1', description: 'Fuel filter element', part_no: 'FF-2201', qty: 4, unit: 'PCS', allow_equivalent: true },
+                { line_id: '2', description: 'Lube oil pump seal kit', part_no: 'SEAL-LOP-09', qty: 1, unit: 'SET', allow_equivalent: true },
             ],
+            include_domestic_equivalents: true,
             status: SM_STATUS.DRAFT,
             response_deadline: deadline.toISOString().slice(0, 10),
             tossed_suppliers: [],
@@ -244,6 +282,7 @@ const TVC_SupplierRfqPipeline = (function () {
         listQuotesForSmCase,
         listSupplierRfqsForSupplier,
         listOrdersForSupplier,
+        createSmCase,
         ensureSmDemoCases,
         tossToSupplier,
         submitQuotation,
