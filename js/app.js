@@ -422,6 +422,11 @@ const TVC_App = (function () {
                     }
                 }
             } catch (e) { console.warn('[TVC] provisioned accounts sync', e); }
+            try {
+                if (typeof TVC_Auth.purgeDeprecatedUsers === 'function') {
+                    await TVC_Auth.purgeDeprecatedUsers();
+                }
+            } catch (e) { console.warn('[TVC] purge deprecated logins', e); }
 
             try { TVC_Auth.applySavedIdToLoginForm(); } catch (e) { console.warn('[TVC] saved login id', e); }
 

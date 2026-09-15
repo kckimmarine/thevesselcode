@@ -131,6 +131,17 @@ const TVC_Auth = (function () {
             if (tpl && row.id !== tpl.id) await TVC_DB.del('users', row.id);
         }
         try { await TVC_DB.setMeta('users_seed_version', USERS_SEED_VERSION); } catch (_) {}
+        await purgeDeprecatedUsers();
+    }
+
+    /** Remove retired pilot logins (e.g. tvc) even when user seed was skipped. */
+    async function purgeDeprecatedUsers() {
+        const fresh = await TVC_DB.getAll('users').catch(() => []);
+        for (const row of fresh) {
+            if (DEPRECATED_USERNAMES.includes(row.username)) {
+                try { await TVC_DB.del('users', row.id); } catch (_) {}
+            }
+        }
     }
 
     async function upsertProvisionedUser(record) {
@@ -592,7 +603,7 @@ const TVC_Auth = (function () {
     }
 
     return {
-        initUsers, ensureDefaultUsers, normalizeLoginUsername, login, logout, getCurrentUser, refreshSessionFromDb, registerSupplier, requirePermission, changePassword,
+        initUsers, ensureDefaultUsers, purgeDeprecatedUsers, normalizeLoginUsername, login, logout, getCurrentUser, refreshSessionFromDb, registerSupplier, requirePermission, changePassword,
         upsertProvisionedUser, hashPasswordForProvision, DEMO_PASSWORD, DEFAULT_USERS,
         getSavedId, setSavedId, clearSavedId, savePersistedAuthSession, clearPersistedAuthSession,
         hasPersistedAuthSession, applySavedIdToLoginForm, restorePersistedAuthSession,

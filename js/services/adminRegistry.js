@@ -17,8 +17,6 @@ const TVC_AdminRegistry = (function () {
         company: {
             company_id: 'TVC',
             company_code: '1',
-            hq_username: 'tvc',
-            hq_password: 'tvc1234',
         },
         vessel: {
             vessel_id: 'ABC Voyager',
@@ -32,8 +30,7 @@ const TVC_AdminRegistry = (function () {
         const parts = [];
         if (scope === 'all' || scope === 'company') {
             parts.push(`Company Code <code>${r.company.company_code}</code>`);
-            parts.push(`HQ ID <code>${r.company.hq_username}</code>`);
-            parts.push(`Password <code>${r.company.hq_password}</code>`);
+            parts.push(`SM demo <code>abc shipping</code> / <code>0000</code> (Dept blank)`);
         }
         if (scope === 'all' || scope === 'vessel') {
             parts.push(`Vessel Code <code>${r.vessel.code}</code>`);
