@@ -48,7 +48,9 @@ check('hero headline i18n key', home.includes('data-i18n="home.headline"'));
 check('marketing i18n persistence key', readFileSync(join(ROOT, 'js/marketing-i18n.js'), 'utf8').includes("STORAGE_KEY = 'tvc-mkt-lang'"));
 check('hero search form', home.includes('id="homeHeroSearchForm"') && home.includes('homeHeroSearchInput'));
 check('hero utility badges', home.includes('home-utility-badge') && home.includes('/toolkit?tool=bunker'));
-check('enterprise fleet section', home.includes('home-enterprise-section') && home.includes('Request 30-Day Fleet Trial'));
+check('enterprise fleet section', home.includes('home-enterprise-section') && home.includes('Request Fleet Demo'));
+check('home metric anchors', home.includes('mkt-metric-row') && home.includes('50,000+'));
+check('topbar launch pill i18n', shell.includes('nav.launchPill') && shell.includes('Launch App'));
 check('hero search-first layout', home.includes('hero-search-first') && !home.includes('hero-realistic-canvas'));
 check('marketing readability css', home.includes('marketing-readability.css'));
 check('toolkit plg locks', readFileSync(join(ROOT, 'toolkit.html'), 'utf8').includes('mkt-plg-lock'));
@@ -65,6 +67,7 @@ check('canonical root', home.includes('https://thevesselcode.com/'));
 
 const services = readFileSync(join(ROOT, 'services/index.html'), 'utf8');
 check('services page concise cards', services.includes('Technical Superintendent Oversight') && services.includes('TVC-SM Fleet Integration'));
+check('services metric cards not bullet walls', services.includes('mkt-metric-row') && !services.includes('home-service-takeaways'));
 check('services active nav', services.includes('data-mkt-active="services"'));
 check('services no photo card classes', !services.includes('home-service-card--photo'));
 

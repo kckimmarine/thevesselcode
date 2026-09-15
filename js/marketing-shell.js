@@ -22,7 +22,7 @@
     ];
 
     const LOGO = '/icons/company-logo.png?v=20260804-logo-no-ring';
-    const INTEL_CSS = '/css/marketing-readability.css?v=20260915-legibility';
+    const INTEL_CSS = '/css/marketing-readability.css?v=20260915-enterprise';
     const INTEL_JS = '/js/intelligence/marketFeed.js?v=20260914-news-media-dashboard';
 
     const SVG_STROKE =
@@ -119,7 +119,7 @@
                     <button type="button" class="mkt-lang-btn" data-lang="ko" aria-pressed="false">KO</button>
                     <button type="button" class="mkt-lang-btn" data-lang="en" aria-pressed="false">EN</button>
                 </div>
-                <a class="mkt-topbar-cta" href="https://app.thevesselcode.com" target="_blank" rel="noopener noreferrer" data-i18n="nav.launchApp">Launch App</a>
+                <a class="mkt-topbar-cta" href="https://app.thevesselcode.com" target="_blank" rel="noopener noreferrer" data-i18n="nav.launchPill">Launch App</a>
                 <button type="button" class="mkt-nav-toggle" id="mktNavToggle" aria-expanded="false" aria-controls="mktPrimaryNav">
                     <span data-i18n="nav.menu">Menu</span>
                 </button>
