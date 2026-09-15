@@ -33,6 +33,7 @@
     "test:maritime-toolkit-data": "node scripts/test-maritime-toolkit-data.mjs",
     "test:mechanical-calc": "node scripts/test-mechanical-engineering-calc.mjs",
     "test:combustion-calc": "node scripts/test-combustion-calc.mjs",
+    "test:electrical-calc": "node scripts/test-electrical-calc.mjs",
     "fetch-market-feed": "node scripts/fetch-market-feed.mjs",
     "fetch-market-feed:offline": "node scripts/fetch-market-feed.mjs --offline",
     "test:market-feed": "node scripts/test-market-feed.mjs && node scripts/test-market-feed-fetch.mjs",
