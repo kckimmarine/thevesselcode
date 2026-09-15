@@ -1,0 +1,3696 @@
+{
+  "version": 1,
+  "updated_at": "2026-09-15",
+  "taxonomy_note": "Baseline machinery trees aligned with JIS/DIN/ISO machinery groups and ClassNK PMS practice.",
+  "maker_options": {
+    "MAIN_ENGINE": [
+      "MAN",
+      "Yanmar",
+      "Daihatsu",
+      "WinGD"
+    ],
+    "GEN_ENGINE": [
+      "MAN",
+      "Yanmar",
+      "Daihatsu",
+      "WinGD"
+    ]
+  },
+  "archetypes": {
+    "BULK_CARRIER": {
+      "key": "BULK_CARRIER",
+      "label": "Bulk Carrier",
+      "description": "Dry bulk — hatch covers, deck cranes, windlass, standard engine room.",
+      "machinery_profile": "bulker",
+      "icon": "bulk",
+      "components": [
+        {
+          "name": "Main Engine",
+          "category": "ENGINE",
+          "maker_default": "MAN B&W",
+          "group_no": "01",
+          "group_name": "MAIN PROPULSION",
+          "item_sort1": "Main Engine",
+          "item_sort2": "Main Engine",
+          "maker_override_key": "MAIN_ENGINE",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Turbocharger",
+          "category": "ENGINE",
+          "maker_default": "ABB",
+          "group_no": "01",
+          "group_name": "MAIN PROPULSION",
+          "item_sort1": "Turbocharger",
+          "item_sort2": "Turbocharger",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Main Engine Governor",
+          "category": "ENGINE",
+          "maker_default": "Woodward",
+          "group_no": "01",
+          "group_name": "MAIN PROPULSION",
+          "item_sort1": "Main Engine Governor",
+          "item_sort2": "Main Engine Governor",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "No.1 Generator Engine",
+          "category": "ENGINE",
+          "maker_default": "Yanmar",
+          "group_no": "02",
+          "group_name": "AUXILIARY ENGINES / GENERATORS",
+          "item_sort1": "No.1 G/E",
+          "item_sort2": "GENERATOR SET",
+          "maker_override_key": "GEN_ENGINE",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "No.2 Generator Engine",
+          "category": "ENGINE",
+          "maker_default": "Yanmar",
+          "group_no": "02",
+          "group_name": "AUXILIARY ENGINES / GENERATORS",
+          "item_sort1": "No.2 G/E",
+          "item_sort2": "GENERATOR SET",
+          "maker_override_key": "GEN_ENGINE",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "No.3 Generator Engine",
+          "category": "ENGINE",
+          "maker_default": "Yanmar",
+          "group_no": "02",
+          "group_name": "AUXILIARY ENGINES / GENERATORS",
+          "item_sort1": "No.3 G/E",
+          "item_sort2": "GENERATOR SET",
+          "maker_override_key": "GEN_ENGINE",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Auxiliary Boiler",
+          "category": "ENGINE",
+          "maker_default": "Miura",
+          "group_no": "03",
+          "group_name": "BOILERS & EXHAUST GAS ECONOMIZER",
+          "item_sort1": "Auxiliary Boiler",
+          "item_sort2": "Auxiliary Boiler",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Exhaust Gas Economizer",
+          "category": "ENGINE",
+          "maker_default": "Alfa Laval",
+          "group_no": "03",
+          "group_name": "BOILERS & EXHAUST GAS ECONOMIZER",
+          "item_sort1": "Exhaust Gas Economizer",
+          "item_sort2": "Exhaust Gas Economizer",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "HFO Purifier",
+          "category": "ENGINE",
+          "maker_default": "Alfa Laval",
+          "group_no": "04",
+          "group_name": "PURIFIERS / OWS",
+          "item_sort1": "HFO Purifier",
+          "item_sort2": "HFO Purifier",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "LO Purifier",
+          "category": "ENGINE",
+          "maker_default": "Alfa Laval",
+          "group_no": "04",
+          "group_name": "PURIFIERS / OWS",
+          "item_sort1": "LO Purifier",
+          "item_sort2": "LO Purifier",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Oily Water Separator (15ppm)",
+          "category": "ENGINE",
+          "maker_default": "RWO",
+          "group_no": "04",
+          "group_name": "PURIFIERS / OWS",
+          "item_sort1": "Oily Water Separator (15ppm)",
+          "item_sort2": "Oily Water Separator (15ppm)",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Ballast Pump",
+          "category": "ENGINE",
+          "maker_default": "Shin Shin",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Ballast Pump",
+          "item_sort2": "Ballast Pump",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Fire Pump",
+          "category": "ENGINE",
+          "maker_default": "Shin Shin",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Fire Pump",
+          "item_sort2": "Fire Pump",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "General Service Pump",
+          "category": "ENGINE",
+          "maker_default": "Shin Shin",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "General Service Pump",
+          "item_sort2": "General Service Pump",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Steering Gear",
+          "category": "ENGINE",
+          "maker_default": "Nakashima",
+          "group_no": "06",
+          "group_name": "STEERING GEAR",
+          "item_sort1": "Steering Gear",
+          "item_sort2": "Steering Gear",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Rudder Actuator",
+          "category": "ENGINE",
+          "maker_default": "Nakashima",
+          "group_no": "06",
+          "group_name": "STEERING GEAR",
+          "item_sort1": "Rudder Actuator",
+          "item_sort2": "Rudder Actuator",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Hatch Covers",
+          "category": "DECK",
+          "maker_default": "MacGregor",
+          "group_no": "05",
+          "group_name": "HATCH COVERS & CLOSING APPLIANCES",
+          "item_sort1": "Hatch Covers",
+          "item_sort2": "Hatch Covers",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Hatch Cover HPU",
+          "category": "DECK",
+          "maker_default": "MacGregor",
+          "group_no": "05",
+          "group_name": "HATCH COVERS & CLOSING APPLIANCES",
+          "item_sort1": "Hatch Cover HPU",
+          "item_sort2": "Hatch Cover HPU",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Deck Crane No.1",
+          "category": "DECK",
+          "maker_default": "IHI",
+          "group_no": "01",
+          "group_name": "CARGO HANDLING",
+          "item_sort1": "Deck Crane No.1",
+          "item_sort2": "Deck Crane No.1",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Deck Crane No.2",
+          "category": "DECK",
+          "maker_default": "IHI",
+          "group_no": "01",
+          "group_name": "CARGO HANDLING",
+          "item_sort1": "Deck Crane No.2",
+          "item_sort2": "Deck Crane No.2",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Cargo Winch",
+          "category": "DECK",
+          "maker_default": "Brattvaag",
+          "group_no": "01",
+          "group_name": "CARGO HANDLING",
+          "item_sort1": "Cargo Winch",
+          "item_sort2": "Cargo Winch",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Windlass",
+          "category": "DECK",
+          "maker_default": "Brattvaag",
+          "group_no": "02",
+          "group_name": "MOORING WINCH & WINDLASS",
+          "item_sort1": "Windlass",
+          "item_sort2": "Windlass",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Forward Mooring Winch",
+          "category": "DECK",
+          "maker_default": "Brattvaag",
+          "group_no": "02",
+          "group_name": "MOORING WINCH & WINDLASS",
+          "item_sort1": "Forward Mooring Winch",
+          "item_sort2": "Forward Mooring Winch",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Aft Mooring Winch",
+          "category": "DECK",
+          "maker_default": "Brattvaag",
+          "group_no": "02",
+          "group_name": "MOORING WINCH & WINDLASS",
+          "item_sort1": "Aft Mooring Winch",
+          "item_sort2": "Aft Mooring Winch",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Lifeboat & Davit",
+          "category": "DECK",
+          "maker_default": "Schottel",
+          "group_no": "03",
+          "group_name": "LIFE-SAVING APPLIANCES",
+          "item_sort1": "Lifeboat & Davit",
+          "item_sort2": "Lifeboat & Davit",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Fire Pumps (Deck)",
+          "category": "DECK",
+          "maker_default": "FIFI",
+          "group_no": "04",
+          "group_name": "FIRE FIGHTING SYSTEMS",
+          "item_sort1": "Fire Pumps (Deck)",
+          "item_sort2": "Fire Pumps (Deck)",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "CO2 Fixed Fire System",
+          "category": "DECK",
+          "maker_default": "Kidde",
+          "group_no": "04",
+          "group_name": "FIRE FIGHTING SYSTEMS",
+          "item_sort1": "CO2 Fixed Fire System",
+          "item_sort2": "CO2 Fixed Fire System",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Radar",
+          "category": "DECK",
+          "maker_default": "Furuno",
+          "group_no": "06",
+          "group_name": "NAVIGATION & GMDSS",
+          "item_sort1": "Radar",
+          "item_sort2": "Radar",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "ECDIS",
+          "category": "DECK",
+          "maker_default": "Furuno",
+          "group_no": "06",
+          "group_name": "NAVIGATION & GMDSS",
+          "item_sort1": "ECDIS",
+          "item_sort2": "ECDIS",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "GMDSS Console",
+          "category": "DECK",
+          "maker_default": "Furuno",
+          "group_no": "06",
+          "group_name": "NAVIGATION & GMDSS",
+          "item_sort1": "GMDSS Console",
+          "item_sort2": "GMDSS Console",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Hold Ventilation Fan",
+          "category": "DECK",
+          "maker_default": "Howden",
+          "group_no": "07",
+          "group_name": "CARGO HOLDS",
+          "item_sort1": "Hold Ventilation Fan",
+          "item_sort2": "Hold Ventilation Fan",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Grab (if fitted)",
+          "category": "DECK",
+          "maker_default": "Nemag",
+          "group_no": "09",
+          "group_name": "DECK CRANES & GRABS",
+          "item_sort1": "Grab (if fitted)",
+          "item_sort2": "Grab (if fitted)",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Main Air Compressor",
+          "category": "ENGINE",
+          "maker_default": "Sperre",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Main Air Compressor",
+          "item_sort2": "Main Air Compressor",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Service Air Compressor",
+          "category": "ENGINE",
+          "maker_default": "Sperre",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Service Air Compressor",
+          "item_sort2": "Service Air Compressor",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            }
+          ]
+        },
+        {
+          "name": "Fresh Water Generator",
+          "category": "ENGINE",
+          "maker_default": "Sasakura",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Fresh Water Generator",
+          "item_sort2": "Fresh Water Generator",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Sewage Treatment Plant",
+          "category": "ENGINE",
+          "maker_default": "Hamworthy",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Sewage Treatment Plant",
+          "item_sort2": "Sewage Treatment Plant",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            }
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "category": "ENGINE",
+          "maker_default": "Detegasa",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Incinerator",
+          "item_sort2": "Incinerator",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            }
+          ]
+        },
+        {
+          "name": "Emergency Generator",
+          "category": "ENGINE",
+          "maker_default": "Yanmar",
+          "group_no": "02",
+          "group_name": "AUXILIARY ENGINES / GENERATORS",
+          "item_sort1": "Emergency Generator",
+          "item_sort2": "Emergency Generator",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Main Sea Water Pump",
+          "category": "ENGINE",
+          "maker_default": "Shin Shin",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Main Sea Water Pump",
+          "item_sort2": "Main Sea Water Pump",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            }
+          ]
+        },
+        {
+          "name": "LT Cooler",
+          "category": "ENGINE",
+          "maker_default": "Alfa Laval",
+          "group_no": "01",
+          "group_name": "MAIN PROPULSION",
+          "item_sort1": "LT Cooler",
+          "item_sort2": "LT Cooler",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            }
+          ]
+        }
+      ]
+    },
+    "OIL_TANKER": {
+      "key": "OIL_TANKER",
+      "label": "Oil Tanker",
+      "description": "Crude/product tanker — IGS, COP, ballast, high-capacity boiler.",
+      "machinery_profile": "tanker_chemical",
+      "icon": "tanker",
+      "components": [
+        {
+          "name": "Main Engine",
+          "category": "ENGINE",
+          "maker_default": "WinGD",
+          "group_no": "01",
+          "group_name": "MAIN PROPULSION",
+          "item_sort1": "Main Engine",
+          "item_sort2": "Main Engine",
+          "maker_override_key": "MAIN_ENGINE",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Main Engine TC",
+          "category": "ENGINE",
+          "maker_default": "MAN",
+          "group_no": "01",
+          "group_name": "MAIN PROPULSION",
+          "item_sort1": "Main Engine TC",
+          "item_sort2": "Main Engine TC",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "No.1 Generator Engine",
+          "category": "ENGINE",
+          "maker_default": "Daihatsu",
+          "group_no": "02",
+          "group_name": "AUXILIARY ENGINES / GENERATORS",
+          "item_sort1": "No.1 G/E",
+          "item_sort2": "GENERATOR SET",
+          "maker_override_key": "GEN_ENGINE",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "No.2 Generator Engine",
+          "category": "ENGINE",
+          "maker_default": "Daihatsu",
+          "group_no": "02",
+          "group_name": "AUXILIARY ENGINES / GENERATORS",
+          "item_sort1": "No.2 G/E",
+          "item_sort2": "GENERATOR SET",
+          "maker_override_key": "GEN_ENGINE",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "No.3 Generator Engine",
+          "category": "ENGINE",
+          "maker_default": "Daihatsu",
+          "group_no": "02",
+          "group_name": "AUXILIARY ENGINES / GENERATORS",
+          "item_sort1": "No.3 G/E",
+          "item_sort2": "GENERATOR SET",
+          "maker_override_key": "GEN_ENGINE",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "High-Capacity Auxiliary Boiler",
+          "category": "ENGINE",
+          "maker_default": "Aalborg",
+          "group_no": "03",
+          "group_name": "BOILERS & EXHAUST GAS ECONOMIZER",
+          "item_sort1": "High-Capacity Auxiliary Boiler",
+          "item_sort2": "High-Capacity Auxiliary Boiler",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Composite Boiler / EGE",
+          "category": "ENGINE",
+          "maker_default": "Aalborg",
+          "group_no": "03",
+          "group_name": "BOILERS & EXHAUST GAS ECONOMIZER",
+          "item_sort1": "Composite Boiler / EGE",
+          "item_sort2": "Composite Boiler / EGE",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Inert Gas Generator",
+          "category": "ENGINE",
+          "maker_default": "Kashiwa",
+          "group_no": "07",
+          "group_name": "INERT GAS SYSTEM (IGS)",
+          "item_sort1": "Inert Gas Generator",
+          "item_sort2": "Inert Gas Generator",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "IGS Deck Seal",
+          "category": "ENGINE",
+          "maker_default": "Kashiwa",
+          "group_no": "07",
+          "group_name": "INERT GAS SYSTEM (IGS)",
+          "item_sort1": "IGS Deck Seal",
+          "item_sort2": "IGS Deck Seal",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "IGS Scrubber Tower",
+          "category": "ENGINE",
+          "maker_default": "Kashiwa",
+          "group_no": "07",
+          "group_name": "INERT GAS SYSTEM (IGS)",
+          "item_sort1": "IGS Scrubber Tower",
+          "item_sort2": "IGS Scrubber Tower",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Cargo Oil Pump No.1 (COP)",
+          "category": "ENGINE",
+          "maker_default": "Framo",
+          "group_no": "08",
+          "group_name": "CARGO PUMPS",
+          "item_sort1": "Cargo Oil Pump No.1 (COP)",
+          "item_sort2": "Cargo Oil Pump No.1 (COP)",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Cargo Oil Pump No.2 (COP)",
+          "category": "ENGINE",
+          "maker_default": "Framo",
+          "group_no": "08",
+          "group_name": "CARGO PUMPS",
+          "item_sort1": "Cargo Oil Pump No.2 (COP)",
+          "item_sort2": "Cargo Oil Pump No.2 (COP)",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Stripping Pump",
+          "category": "ENGINE",
+          "maker_default": "Framo",
+          "group_no": "08",
+          "group_name": "CARGO PUMPS",
+          "item_sort1": "Stripping Pump",
+          "item_sort2": "Stripping Pump",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Ballast Pump",
+          "category": "ENGINE",
+          "maker_default": "Shin Shin",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Ballast Pump",
+          "item_sort2": "Ballast Pump",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Ballast Eductor",
+          "category": "ENGINE",
+          "maker_default": "Shin Shin",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Ballast Eductor",
+          "item_sort2": "Ballast Eductor",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            }
+          ]
+        },
+        {
+          "name": "HFO Purifier",
+          "category": "ENGINE",
+          "maker_default": "Alfa Laval",
+          "group_no": "04",
+          "group_name": "PURIFIERS / OWS",
+          "item_sort1": "HFO Purifier",
+          "item_sort2": "HFO Purifier",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "LO Purifier",
+          "category": "ENGINE",
+          "maker_default": "Alfa Laval",
+          "group_no": "04",
+          "group_name": "PURIFIERS / OWS",
+          "item_sort1": "LO Purifier",
+          "item_sort2": "LO Purifier",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Oily Water Separator",
+          "category": "ENGINE",
+          "maker_default": "RWO",
+          "group_no": "04",
+          "group_name": "PURIFIERS / OWS",
+          "item_sort1": "Oily Water Separator",
+          "item_sort2": "Oily Water Separator",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Steering Gear",
+          "category": "ENGINE",
+          "maker_default": "Nakashima",
+          "group_no": "06",
+          "group_name": "STEERING GEAR",
+          "item_sort1": "Steering Gear",
+          "item_sort2": "Steering Gear",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Cargo Heater",
+          "category": "ENGINE",
+          "maker_default": "Alfa Laval",
+          "group_no": "09",
+          "group_name": "CARGO SYSTEMS",
+          "item_sort1": "Cargo Heater",
+          "item_sort2": "Cargo Heater",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Tank Radar Level",
+          "category": "DECK",
+          "maker_default": "Saab",
+          "group_no": "08",
+          "group_name": "TANK MONITORING",
+          "item_sort1": "Tank Radar Level",
+          "item_sort2": "Tank Radar Level",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Cargo Temperature System",
+          "category": "DECK",
+          "maker_default": "Yokogawa",
+          "group_no": "08",
+          "group_name": "TANK MONITORING",
+          "item_sort1": "Cargo Temperature System",
+          "item_sort2": "Cargo Temperature System",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Deck Seal IGS (Deck)",
+          "category": "DECK",
+          "maker_default": "Kashiwa",
+          "group_no": "09",
+          "group_name": "INERT GAS SYSTEM (IGS)",
+          "item_sort1": "Deck Seal IGS (Deck)",
+          "item_sort2": "Deck Seal IGS (Deck)",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Vapour Return Manifold",
+          "category": "DECK",
+          "maker_default": "TGE",
+          "group_no": "10",
+          "group_name": "VAPOUR RECOVERY",
+          "item_sort1": "Vapour Return Manifold",
+          "item_sort2": "Vapour Return Manifold",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Mooring Winch Forward",
+          "category": "DECK",
+          "maker_default": "Brattvaag",
+          "group_no": "02",
+          "group_name": "MOORING WINCH & WINDLASS",
+          "item_sort1": "Mooring Winch Forward",
+          "item_sort2": "Mooring Winch Forward",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Mooring Winch Aft",
+          "category": "DECK",
+          "maker_default": "Brattvaag",
+          "group_no": "02",
+          "group_name": "MOORING WINCH & WINDLASS",
+          "item_sort1": "Mooring Winch Aft",
+          "item_sort2": "Mooring Winch Aft",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Fire Pumps",
+          "category": "DECK",
+          "maker_default": "FIFI",
+          "group_no": "04",
+          "group_name": "FIRE FIGHTING SYSTEMS",
+          "item_sort1": "Fire Pumps",
+          "item_sort2": "Fire Pumps",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Foam System",
+          "category": "DECK",
+          "maker_default": "Kidde",
+          "group_no": "04",
+          "group_name": "FIRE FIGHTING SYSTEMS",
+          "item_sort1": "Foam System",
+          "item_sort2": "Foam System",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Lifeboat",
+          "category": "DECK",
+          "maker_default": "Schottel",
+          "group_no": "03",
+          "group_name": "LIFE-SAVING APPLIANCES",
+          "item_sort1": "Lifeboat",
+          "item_sort2": "Lifeboat",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Radar",
+          "category": "DECK",
+          "maker_default": "Furuno",
+          "group_no": "06",
+          "group_name": "NAVIGATION & GMDSS",
+          "item_sort1": "Radar",
+          "item_sort2": "Radar",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "ECDIS",
+          "category": "DECK",
+          "maker_default": "Furuno",
+          "group_no": "06",
+          "group_name": "NAVIGATION & GMDSS",
+          "item_sort1": "ECDIS",
+          "item_sort2": "ECDIS",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Cargo Hose Crane",
+          "category": "DECK",
+          "maker_default": "IHI",
+          "group_no": "01",
+          "group_name": "CARGO HANDLING",
+          "item_sort1": "Cargo Hose Crane",
+          "item_sort2": "Cargo Hose Crane",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Manifold Valves",
+          "category": "DECK",
+          "maker_default": "Korean Valve",
+          "group_no": "01",
+          "group_name": "CARGO HANDLING",
+          "item_sort1": "Manifold Valves",
+          "item_sort2": "Manifold Valves",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Main Air Compressor",
+          "category": "ENGINE",
+          "maker_default": "Sperre",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Main Air Compressor",
+          "item_sort2": "Main Air Compressor",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "IGS Blower Fan",
+          "category": "ENGINE",
+          "maker_default": "Kashiwa",
+          "group_no": "07",
+          "group_name": "INERT GAS SYSTEM (IGS)",
+          "item_sort1": "IGS Blower Fan",
+          "item_sort2": "IGS Blower Fan",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            }
+          ]
+        },
+        {
+          "name": "Cargo Tank Cleaning Machine",
+          "category": "DECK",
+          "maker_default": "Butterworth",
+          "group_no": "08",
+          "group_name": "TANK MONITORING",
+          "item_sort1": "Cargo Tank Cleaning Machine",
+          "item_sort2": "Cargo Tank Cleaning Machine",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Emergency Generator",
+          "category": "ENGINE",
+          "maker_default": "Yanmar",
+          "group_no": "02",
+          "group_name": "AUXILIARY ENGINES / GENERATORS",
+          "item_sort1": "Emergency Generator",
+          "item_sort2": "Emergency Generator",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Fresh Water Generator",
+          "category": "ENGINE",
+          "maker_default": "Sasakura",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Fresh Water Generator",
+          "item_sort2": "Fresh Water Generator",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Sewage Plant",
+          "category": "ENGINE",
+          "maker_default": "Hamworthy",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Sewage Plant",
+          "item_sort2": "Sewage Plant",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            }
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "category": "ENGINE",
+          "maker_default": "Detegasa",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Incinerator",
+          "item_sort2": "Incinerator",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            }
+          ]
+        },
+        {
+          "name": "Main LT Cooler",
+          "category": "ENGINE",
+          "maker_default": "Alfa Laval",
+          "group_no": "01",
+          "group_name": "MAIN PROPULSION",
+          "item_sort1": "Main LT Cooler",
+          "item_sort2": "Main LT Cooler",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            }
+          ]
+        },
+        {
+          "name": "Windlass (Tanker)",
+          "category": "DECK",
+          "maker_default": "Brattvaag",
+          "group_no": "02",
+          "group_name": "MOORING WINCH & WINDLASS",
+          "item_sort1": "Windlass (Tanker)",
+          "item_sort2": "Windlass (Tanker)",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        }
+      ]
+    },
+    "CONTAINER": {
+      "key": "CONTAINER",
+      "label": "Container Ship",
+      "description": "Cell guides, reefer power, 4× G/E, bow thruster.",
+      "machinery_profile": "container",
+      "icon": "container",
+      "components": [
+        {
+          "name": "Main Engine",
+          "category": "ENGINE",
+          "maker_default": "MAN B&W",
+          "group_no": "01",
+          "group_name": "MAIN PROPULSION",
+          "item_sort1": "Main Engine",
+          "item_sort2": "Main Engine",
+          "maker_override_key": "MAIN_ENGINE",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Shaft Generator (if fitted)",
+          "category": "ENGINE",
+          "maker_default": "ABB",
+          "group_no": "01",
+          "group_name": "MAIN PROPULSION",
+          "item_sort1": "Shaft Generator (if fitted)",
+          "item_sort2": "Shaft Generator (if fitted)",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "No.1 Generator Engine",
+          "category": "ENGINE",
+          "maker_default": "Yanmar",
+          "group_no": "02",
+          "group_name": "AUXILIARY ENGINES / GENERATORS",
+          "item_sort1": "No.1 G/E",
+          "item_sort2": "GENERATOR SET",
+          "maker_override_key": "GEN_ENGINE",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "No.2 Generator Engine",
+          "category": "ENGINE",
+          "maker_default": "Yanmar",
+          "group_no": "02",
+          "group_name": "AUXILIARY ENGINES / GENERATORS",
+          "item_sort1": "No.2 G/E",
+          "item_sort2": "GENERATOR SET",
+          "maker_override_key": "GEN_ENGINE",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "No.3 Generator Engine",
+          "category": "ENGINE",
+          "maker_default": "Yanmar",
+          "group_no": "02",
+          "group_name": "AUXILIARY ENGINES / GENERATORS",
+          "item_sort1": "No.3 G/E",
+          "item_sort2": "GENERATOR SET",
+          "maker_override_key": "GEN_ENGINE",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "No.4 Generator Engine",
+          "category": "ENGINE",
+          "maker_default": "Yanmar",
+          "group_no": "02",
+          "group_name": "AUXILIARY ENGINES / GENERATORS",
+          "item_sort1": "No.4 G/E",
+          "item_sort2": "GENERATOR SET",
+          "maker_override_key": "GEN_ENGINE",
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Auxiliary Boiler",
+          "category": "ENGINE",
+          "maker_default": "Miura",
+          "group_no": "03",
+          "group_name": "BOILERS & EXHAUST GAS ECONOMIZER",
+          "item_sort1": "Auxiliary Boiler",
+          "item_sort2": "Auxiliary Boiler",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Exhaust Gas Boiler",
+          "category": "ENGINE",
+          "maker_default": "Alfa Laval",
+          "group_no": "03",
+          "group_name": "BOILERS & EXHAUST GAS ECONOMIZER",
+          "item_sort1": "Exhaust Gas Boiler",
+          "item_sort2": "Exhaust Gas Boiler",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Reefer Power Bus / Panel",
+          "category": "ENGINE",
+          "maker_default": "ABB",
+          "group_no": "07",
+          "group_name": "REEFER POWER",
+          "item_sort1": "Reefer Power Bus / Panel",
+          "item_sort2": "Reefer Power Bus / Panel",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Reefer Compressor Plant",
+          "category": "ENGINE",
+          "maker_default": "Carrier",
+          "group_no": "07",
+          "group_name": "REEFER POWER",
+          "item_sort1": "Reefer Compressor Plant",
+          "item_sort2": "Reefer Compressor Plant",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Bow Thruster Motor",
+          "category": "ENGINE",
+          "maker_default": "Schottel",
+          "group_no": "08",
+          "group_name": "BOW THRUSTER",
+          "item_sort1": "Bow Thruster Motor",
+          "item_sort2": "Bow Thruster Motor",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Bow Thruster CPP",
+          "category": "ENGINE",
+          "maker_default": "Schottel",
+          "group_no": "08",
+          "group_name": "BOW THRUSTER",
+          "item_sort1": "Bow Thruster CPP",
+          "item_sort2": "Bow Thruster CPP",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Steering Gear",
+          "category": "ENGINE",
+          "maker_default": "Nakashima",
+          "group_no": "06",
+          "group_name": "STEERING GEAR",
+          "item_sort1": "Steering Gear",
+          "item_sort2": "Steering Gear",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "HFO Purifier",
+          "category": "ENGINE",
+          "maker_default": "Alfa Laval",
+          "group_no": "04",
+          "group_name": "PURIFIERS / OWS",
+          "item_sort1": "HFO Purifier",
+          "item_sort2": "HFO Purifier",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "LO Purifier",
+          "category": "ENGINE",
+          "maker_default": "Alfa Laval",
+          "group_no": "04",
+          "group_name": "PURIFIERS / OWS",
+          "item_sort1": "LO Purifier",
+          "item_sort2": "LO Purifier",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            },
+            {
+              "job_detail": "ANNUAL OVERHAUL INSPECTION",
+              "period": 8000,
+              "unit": "H",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Ballast Pump",
+          "category": "ENGINE",
+          "maker_default": "Shin Shin",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Ballast Pump",
+          "item_sort2": "Ballast Pump",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Fire Pump",
+          "category": "ENGINE",
+          "maker_default": "Shin Shin",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Fire Pump",
+          "item_sort2": "Fire Pump",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Lashing Bridge Equipment",
+          "category": "DECK",
+          "maker_default": "MacGregor",
+          "group_no": "07",
+          "group_name": "CELL GUIDES & LASHING",
+          "item_sort1": "Lashing Bridge Equipment",
+          "item_sort2": "Lashing Bridge Equipment",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Twistlock System",
+          "category": "DECK",
+          "maker_default": "MacGregor",
+          "group_no": "07",
+          "group_name": "CELL GUIDES & LASHING",
+          "item_sort1": "Twistlock System",
+          "item_sort2": "Twistlock System",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Cell Guide Structure",
+          "category": "DECK",
+          "maker_default": "CSSC",
+          "group_no": "07",
+          "group_name": "CELL GUIDES & LASHING",
+          "item_sort1": "Cell Guide Structure",
+          "item_sort2": "Cell Guide Structure",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Reefer Socket Panel (Deck)",
+          "category": "DECK",
+          "maker_default": "ABB",
+          "group_no": "08",
+          "group_name": "REEFER POWER SOCKETS",
+          "item_sort1": "Reefer Socket Panel (Deck)",
+          "item_sort2": "Reefer Socket Panel (Deck)",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Reefer Cable Rack",
+          "category": "DECK",
+          "maker_default": "ABB",
+          "group_no": "08",
+          "group_name": "REEFER POWER SOCKETS",
+          "item_sort1": "Reefer Cable Rack",
+          "item_sort2": "Reefer Cable Rack",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Container Crane (Ship)",
+          "category": "DECK",
+          "maker_default": "IHI",
+          "group_no": "01",
+          "group_name": "CARGO HANDLING",
+          "item_sort1": "Container Crane (Ship)",
+          "item_sort2": "Container Crane (Ship)",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Hatch Cover (Container)",
+          "category": "DECK",
+          "maker_default": "MacGregor",
+          "group_no": "05",
+          "group_name": "HATCH COVERS & CLOSING APPLIANCES",
+          "item_sort1": "Hatch Cover (Container)",
+          "item_sort2": "Hatch Cover (Container)",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Windlass",
+          "category": "DECK",
+          "maker_default": "Brattvaag",
+          "group_no": "02",
+          "group_name": "MOORING WINCH & WINDLASS",
+          "item_sort1": "Windlass",
+          "item_sort2": "Windlass",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Mooring Winch",
+          "category": "DECK",
+          "maker_default": "Brattvaag",
+          "group_no": "02",
+          "group_name": "MOORING WINCH & WINDLASS",
+          "item_sort1": "Mooring Winch",
+          "item_sort2": "Mooring Winch",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Lifeboat",
+          "category": "DECK",
+          "maker_default": "Schottel",
+          "group_no": "03",
+          "group_name": "LIFE-SAVING APPLIANCES",
+          "item_sort1": "Lifeboat",
+          "item_sort2": "Lifeboat",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "Fire Pumps",
+          "category": "DECK",
+          "maker_default": "FIFI",
+          "group_no": "04",
+          "group_name": "FIRE FIGHTING SYSTEMS",
+          "item_sort1": "Fire Pumps",
+          "item_sort2": "Fire Pumps",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "ANNUAL CLASS SURVEY",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/O"
+            }
+          ]
+        },
+        {
+          "name": "CO2 System",
+          "category": "DECK",
+          "maker_default": "Kidde",
+          "group_no": "04",
+          "group_name": "FIRE FIGHTING SYSTEMS",
+          "item_sort1": "CO2 System",
+          "item_sort2": "CO2 System",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Radar",
+          "category": "DECK",
+          "maker_default": "Furuno",
+          "group_no": "06",
+          "group_name": "NAVIGATION & GMDSS",
+          "item_sort1": "Radar",
+          "item_sort2": "Radar",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "ECDIS",
+          "category": "DECK",
+          "maker_default": "Furuno",
+          "group_no": "06",
+          "group_name": "NAVIGATION & GMDSS",
+          "item_sort1": "ECDIS",
+          "item_sort2": "ECDIS",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "GMDSS",
+          "category": "DECK",
+          "maker_default": "Furuno",
+          "group_no": "06",
+          "group_name": "NAVIGATION & GMDSS",
+          "item_sort1": "GMDSS",
+          "item_sort2": "GMDSS",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Deck Crane (Stores)",
+          "category": "DECK",
+          "maker_default": "IHI",
+          "group_no": "01",
+          "group_name": "CARGO HANDLING",
+          "item_sort1": "Deck Crane (Stores)",
+          "item_sort2": "Deck Crane (Stores)",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Main Air Compressor",
+          "category": "ENGINE",
+          "maker_default": "Sperre",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Main Air Compressor",
+          "item_sort2": "Main Air Compressor",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Emergency Generator",
+          "category": "ENGINE",
+          "maker_default": "Yanmar",
+          "group_no": "02",
+          "group_name": "AUXILIARY ENGINES / GENERATORS",
+          "item_sort1": "Emergency Generator",
+          "item_sort2": "Emergency Generator",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Fresh Water Generator",
+          "category": "ENGINE",
+          "maker_default": "Sasakura",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Fresh Water Generator",
+          "item_sort2": "Fresh Water Generator",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Sewage Plant",
+          "category": "ENGINE",
+          "maker_default": "Hamworthy",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Sewage Plant",
+          "item_sort2": "Sewage Plant",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            }
+          ]
+        },
+        {
+          "name": "Incinerator",
+          "category": "ENGINE",
+          "maker_default": "Detegasa",
+          "group_no": "05",
+          "group_name": "AUXILIARY PUMPS",
+          "item_sort1": "Incinerator",
+          "item_sort2": "Incinerator",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            }
+          ]
+        },
+        {
+          "name": "Oily Water Separator",
+          "category": "ENGINE",
+          "maker_default": "RWO",
+          "group_no": "04",
+          "group_name": "PURIFIERS / OWS",
+          "item_sort1": "Oily Water Separator",
+          "item_sort2": "Oily Water Separator",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 500,
+              "unit": "H",
+              "pic": "3/E"
+            },
+            {
+              "job_detail": "PERIODIC MAINTENANCE",
+              "period": 2000,
+              "unit": "H",
+              "pic": "2/E"
+            },
+            {
+              "job_detail": "CLASS / STATUTORY SURVEY ITEM",
+              "period": 12,
+              "unit": "M",
+              "pic": "C/E"
+            }
+          ]
+        },
+        {
+          "name": "Hydraulic Power Pack (Deck)",
+          "category": "DECK",
+          "maker_default": "Rexroth",
+          "group_no": "01",
+          "group_name": "CARGO HANDLING",
+          "item_sort1": "Hydraulic Power Pack (Deck)",
+          "item_sort2": "Hydraulic Power Pack (Deck)",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        },
+        {
+          "name": "Anchor Windlass Motor",
+          "category": "DECK",
+          "maker_default": "Brattvaag",
+          "group_no": "02",
+          "group_name": "MOORING WINCH & WINDLASS",
+          "item_sort1": "Anchor Windlass Motor",
+          "item_sort2": "Anchor Windlass Motor",
+          "maker_override_key": null,
+          "jobs": [
+            {
+              "job_detail": "ROUTINE INSPECTION",
+              "period": 1,
+              "unit": "M",
+              "pic": "BOSUN"
+            },
+            {
+              "job_detail": "LUBRICATION & FUNCTION TEST",
+              "period": 3,
+              "unit": "M",
+              "pic": "BOSUN"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
