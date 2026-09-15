@@ -17836,6 +17836,9 @@ const TVC_App = (function () {
             setLoginBusy(true, 'Signing in…');
             if (errEl) errEl.textContent = '';
             await TVC_DB.open();
+            if (typeof TVC_Auth.ensureDefaultUsers === 'function') {
+                await TVC_Auth.ensureDefaultUsers();
+            }
             const loginMode = document.getElementById('loginDept')?.value || '';
         const r = await TVC_Auth.login(
             document.getElementById('loginUser').value,
