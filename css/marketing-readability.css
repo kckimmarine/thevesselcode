@@ -1698,3 +1698,44 @@ body.tvc-marketing-body .maritime-subheading {
     color: #0f172a;
     margin: 24px 0 12px;
 }
+
+body.tvc-marketing-body .mkt-mechanical-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin: 16px 0 8px;
+}
+
+body.tvc-marketing-body .mkt-mechanical-card {
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+}
+
+body.tvc-marketing-body .mkt-verdict {
+    margin-top: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    background: #f8fafc;
+}
+
+body.tvc-marketing-body .mkt-verdict--normal {
+    border-color: #86efac;
+    background: #f0fdf4;
+    color: #14532d;
+}
+
+body.tvc-marketing-body .mkt-verdict--attention {
+    border-color: #fde047;
+    background: #fefce8;
+    color: #713f12;
+}
+
+body.tvc-marketing-body .mkt-verdict--exceeded {
+    border-color: #fca5a5;
+    background: #fef2f2;
+    color: #7f1d1d;
+}

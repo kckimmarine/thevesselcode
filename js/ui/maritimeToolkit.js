@@ -319,6 +319,159 @@ const TVC_MaritimeToolkit = (function () {
         paint();
     }
 
+    function verdictClass(color) {
+        if (color === 'green') return 'mkt-verdict mkt-verdict--normal';
+        if (color === 'yellow') return 'mkt-verdict mkt-verdict--attention';
+        if (color === 'red') return 'mkt-verdict mkt-verdict--exceeded';
+        return 'mkt-verdict';
+    }
+
+    function renderMechanicalPanel(host) {
+        const Mech = globalThis.TVC_MechanicalCalc;
+        const sizes = Mech?.listBoltSizes?.() || [];
+        const classes = Mech?.listPropertyClasses?.() || ['8.8', '10.9', '12.9'];
+        const sizeOptions = sizes.map((s) => `<option value="${esc(s)}">${esc(s)}</option>`).join('');
+        const classOptions = classes.map((c) => `<option value="${esc(c)}">${esc(c)}</option>`).join('');
+
+        host.innerHTML = `
+            <div class="maritime-panel-head">
+                <h2 class="maritime-panel-title" data-i18n="tk.mech.title">Mechanical elements</h2>
+                <p class="maritime-panel-sub" data-i18n="tk.mech.sub">Bolt tightening torque (ISO property class) and crankshaft deflection vs stroke — machine design &amp; alignment checks.</p>
+            </div>
+            <div class="mkt-mechanical-grid">
+                <article class="mkt-glass-card mkt-mechanical-card">
+                    <h3 class="maritime-subheading" data-i18n="tk.mech.bolt.title">Bolt torque guide</h3>
+                    <p class="mkt-prose" data-i18n="tk.mech.bolt.sub">T = K × d × Fm — metric coarse threads, lightly oiled (K=0.14) or dry (K=0.18).</p>
+                    <form class="maritime-bunker-form" id="boltTorqueForm">
+                        <label class="maritime-field">
+                            <span data-i18n="tk.mech.bolt.size">Bolt size</span>
+                            <select id="boltSizeSelect">${sizeOptions}</select>
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.mech.bolt.class">Property class</span>
+                            <select id="boltClassSelect">${classOptions}</select>
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.mech.bolt.lube">Lubrication</span>
+                            <select id="boltLubeSelect">
+                                <option value="oiled" data-i18n="tk.mech.bolt.oiled">Lightly oiled (K=0.14)</option>
+                                <option value="dry" data-i18n="tk.mech.bolt.dry">Dry (K=0.18)</option>
+                            </select>
+                        </label>
+                    </form>
+                    <div class="maritime-bunker-result" aria-live="polite">
+                        <div class="maritime-bunker-metrics">
+                            <div><span data-i18n="tk.mech.bolt.nm">Target torque (N·m)</span><strong id="boltTorqueNm">—</strong></div>
+                            <div><span data-i18n="tk.mech.bolt.kgf">Target torque (kgf·m)</span><strong id="boltTorqueKgf">—</strong></div>
+                        </div>
+                    </div>
+                    <div id="boltTorqueTableHost"></div>
+                </article>
+                <article class="mkt-glass-card mkt-mechanical-card">
+                    <h3 class="maritime-subheading" data-i18n="tk.mech.defl.title">Crankshaft deflection check</h3>
+                    <p class="mkt-prose" data-i18n="tk.mech.defl.sub">Allowable |ΔV| = stroke × 0.00007 mm (0.07 mm per 1000 mm stroke).</p>
+                    <form class="maritime-bunker-form" id="deflectionForm">
+                        <label class="maritime-field">
+                            <span data-i18n="tk.mech.defl.stroke">Stroke (mm)</span>
+                            <input type="number" id="deflStroke" min="100" step="1" value="1200" inputmode="numeric">
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.mech.defl.top">Top (T)</span>
+                            <input type="number" id="deflTop" step="0.001" value="0.05" inputmode="decimal">
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.mech.defl.bottom">Bottom (B)</span>
+                            <input type="number" id="deflBottom" step="0.001" value="0" inputmode="decimal">
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.mech.defl.port">Port (P)</span>
+                            <input type="number" id="deflPort" step="0.001" value="0" inputmode="decimal">
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.mech.defl.starboard">Starboard (S)</span>
+                            <input type="number" id="deflStarboard" step="0.001" value="0" inputmode="decimal">
+                        </label>
+                    </form>
+                    <div class="maritime-bunker-result" aria-live="polite">
+                        <div class="maritime-bunker-metrics maritime-bunker-metrics-extended">
+                            <div><span data-i18n="tk.mech.defl.dv">ΔV (mm)</span><strong id="deflDeltaV">—</strong></div>
+                            <div><span data-i18n="tk.mech.defl.dh">ΔH (mm)</span><strong id="deflDeltaH">—</strong></div>
+                            <div><span data-i18n="tk.mech.defl.limit">Allowable |ΔV| (mm)</span><strong id="deflLimit">—</strong></div>
+                        </div>
+                        <p id="deflVerdict" class="mkt-verdict mkt-verdict--normal">—</p>
+                    </div>
+                </article>
+            </div>
+            <p class="maritime-note" data-i18n="tk.mech.note">Torque values are indicative — confirm with maker manual, joint standard, and class requirements.</p>`;
+
+        const paintBolt = () => {
+            if (!Mech?.calcBoltTorque) return;
+            const size = host.querySelector('#boltSizeSelect')?.value;
+            const propertyClass = host.querySelector('#boltClassSelect')?.value;
+            const lubrication = host.querySelector('#boltLubeSelect')?.value;
+            const r = Mech.calcBoltTorque({ size, propertyClass, lubrication });
+            if (r.error) {
+                host.querySelector('#boltTorqueNm').textContent = '—';
+                host.querySelector('#boltTorqueKgf').textContent = '—';
+                return;
+            }
+            host.querySelector('#boltTorqueNm').textContent = String(r.torqueNm);
+            host.querySelector('#boltTorqueKgf').textContent = String(r.torqueKgfM);
+        };
+
+        const paintBoltTable = () => {
+            const tableHost = host.querySelector('#boltTorqueTableHost');
+            if (!tableHost || !Mech?.buildTorqueLookupTable) return;
+            const lub = host.querySelector('#boltLubeSelect')?.value === 'dry' ? 'dry' : 'oiled';
+            const rows = Mech.buildTorqueLookupTable().map((row) => {
+                const nm = lub === 'dry' ? row.torqueNmDry : row.torqueNmOiled;
+                const kgf = lub === 'dry' ? row.torqueKgfMDry : row.torqueKgfMOiled;
+                return [row.size, row.propertyClass, String(nm), String(kgf)];
+            });
+            tableHost.innerHTML = tableHtml(
+                ['Size', 'Class', 'N·m', 'kgf·m'],
+                rows,
+            );
+        };
+
+        const paintDefl = () => {
+            if (!Mech?.diagnoseDeflection) return;
+            const r = Mech.diagnoseDeflection({
+                strokeMm: host.querySelector('#deflStroke')?.value,
+                top: host.querySelector('#deflTop')?.value,
+                bottom: host.querySelector('#deflBottom')?.value,
+                port: host.querySelector('#deflPort')?.value,
+                starboard: host.querySelector('#deflStarboard')?.value,
+                unit: 'mm',
+            });
+            host.querySelector('#deflDeltaV').textContent = Number.isFinite(r.deltaV) ? r.deltaV.toFixed(3) : '—';
+            host.querySelector('#deflDeltaH').textContent = Number.isFinite(r.deltaH) ? r.deltaH.toFixed(3) : '—';
+            host.querySelector('#deflLimit').textContent = Number.isFinite(r.allowableLimitMm)
+                ? r.allowableLimitMm.toFixed(3)
+                : '—';
+            const verdict = host.querySelector('#deflVerdict');
+            verdict.textContent = `${r.status} — ${r.advice}`;
+            verdict.className = verdictClass(r.color);
+        };
+
+        host.querySelector('#boltTorqueForm')?.addEventListener('input', () => {
+            paintBolt();
+            paintBoltTable();
+        });
+        host.querySelector('#boltLubeSelect')?.addEventListener('change', () => {
+            paintBolt();
+            paintBoltTable();
+        });
+        host.querySelector('#deflectionForm')?.addEventListener('input', paintDefl);
+
+        const m16 = sizes.includes('M16') ? 'M16' : sizes[0];
+        if (m16 && host.querySelector('#boltSizeSelect')) host.querySelector('#boltSizeSelect').value = m16;
+        paintBolt();
+        paintBoltTable();
+        paintDefl();
+        globalThis.TVC_MarketingI18n?.applyLang?.(globalThis.TVC_MarketingI18n.getLang());
+    }
+
     function renderEngineeringPanel(host) {
         const stdOptions = standards().map(s =>
             `<option value="${esc(s)}">${esc(s)}</option>`).join('');
@@ -479,6 +632,14 @@ const TVC_MaritimeToolkit = (function () {
             }
         }
 
+        if (globalThis.TVC_MechanicalCalc?.loadStandardsFromJson) {
+            try {
+                await globalThis.TVC_MechanicalCalc.loadStandardsFromJson('/data/bolt-torque-standards.json');
+            } catch (err) {
+                console.warn('[MaritimeToolkit] bolt torque standards load', err);
+            }
+        }
+
         const hosts = {
             bunker: document.getElementById('storeToolBunker'),
             lube: document.getElementById('storeToolLube'),
@@ -486,11 +647,13 @@ const TVC_MaritimeToolkit = (function () {
             engineering: document.getElementById('storeToolEngineering'),
             electrical: document.getElementById('storeToolElectrical'),
             compliance: document.getElementById('storeToolCompliance'),
+            mechanical: document.getElementById('storeToolMechanical'),
         };
         if (hosts.bunker) renderBunkerPanel(hosts.bunker);
         if (hosts.lube) renderLubePanel(hosts.lube);
         if (hosts.paint) renderPaintPanel(hosts.paint);
         if (hosts.engineering) renderEngineeringPanel(hosts.engineering);
+        if (hosts.mechanical) renderMechanicalPanel(hosts.mechanical);
         if (hosts.electrical) renderElectricalPanel(hosts.electrical);
         if (hosts.compliance) renderCompliancePanel(hosts.compliance);
         renderConversionBanner();
@@ -499,6 +662,7 @@ const TVC_MaritimeToolkit = (function () {
             if (hosts.lube) renderLubePanel(hosts.lube);
             if (hosts.paint) renderPaintPanel(hosts.paint);
             if (hosts.engineering) renderEngineeringPanel(hosts.engineering);
+            if (hosts.mechanical) renderMechanicalPanel(hosts.mechanical);
             if (hosts.electrical) renderElectricalPanel(hosts.electrical);
             if (hosts.compliance) renderCompliancePanel(hosts.compliance);
             renderConversionBanner();
