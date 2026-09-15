@@ -81,6 +81,11 @@
                     <h3 data-i18n="tk.mod.6.title">Statutory &amp; Survey</h3>
                     <p class="mkt-prose" data-i18n="tk.mod.6.d">Tokyo/Paris MoU CIC checkpoints: OWS 15 ppm, fire pump, quick-closing valves.</p>
                 </a>
+                <a class="home-card mkt-glass-card mkt-module-card" href="/toolkit?tool=auxiliary">
+                    <span class="mkt-module-index">AUX</span>
+                    <h3 data-i18n="tk.mod.aux.title">Auxiliary &amp; refrigeration (AUX)</h3>
+                    <p class="mkt-prose" data-i18n="tk.mod.aux.d">Refrigerant superheat/subcooling and boiler water blowdown quick check.</p>
+                </a>
                 <a class="home-card mkt-glass-card mkt-module-card mkt-module-card--catalog" href="/toolkit?tool=catalog">
                     <span class="mkt-module-index">IMPA</span>
                     <h3 data-i18n="tk.mod.catalog.title">IMPA stores index</h3>
@@ -157,6 +162,7 @@
             <button type="button" class="store-tool-chip" data-tool-tab="paint" role="tab" aria-selected="false" data-i18n="tk.tab.paint">Coatings</button>
             <button type="button" class="store-tool-chip" data-tool-tab="electrical" role="tab" aria-selected="false" data-i18n="tk.tab.electrical">Electrical</button>
             <button type="button" class="store-tool-chip" data-tool-tab="compliance" role="tab" aria-selected="false" data-i18n="tk.tab.compliance">Survey / PSC</button>
+            <button type="button" class="store-tool-chip" data-tool-tab="auxiliary" role="tab" aria-selected="false" data-i18n="tk.tab.auxiliary">AUX</button>
         </nav>
 
         <div class="store-public-panels">
@@ -173,6 +179,7 @@
             <section class="store-public-panel hidden" data-tool-panel="combustion" id="storeToolCombustion" aria-label="Combustion and cylinder lube utilities"></section>
             <section class="store-public-panel hidden" data-tool-panel="electrical" id="storeToolElectrical" aria-label="Electrical diagnostics"></section>
             <section class="store-public-panel hidden" data-tool-panel="compliance" id="storeToolCompliance" aria-label="Statutory and survey compliance"></section>
+            <section class="store-public-panel hidden" data-tool-panel="auxiliary" id="storeToolAuxiliary" aria-label="Auxiliary and refrigeration utilities"></section>
         </div>
 
         <div id="marketing-footer"></div>
@@ -187,6 +194,7 @@
     <script src="js/toolkit/mechanicalCalc.js?v=20260915-mechanical"></script>
     <script src="js/toolkit/combustionCalc.js?v=20260915-combustion"></script>
     <script src="js/toolkit/electricalCalc.js?v=20260915-electrical"></script>
+    <script src="js/toolkit/auxiliaryCalc.js?v=20260915-auxiliary"></script>
     <script src="js/toolkit/flangeData.js?v=20260914-flange-matrix"></script>
     <script src="js/core/schema.js?v=20260906-plate-pipeline"></script>
     <script src="js/core/db.js?v=20260906-plate-pipeline"></script>
@@ -195,7 +203,7 @@
     <script src="js/services/storeManager.js?v=20260914-phase-c-34092"></script>
     <script src="js/ui/impaDetailShared.js?v=20260914-impa-unified"></script>
     <script src="js/ui/storeMenu.js?v=20260914-impa-unified"></script>
-    <script src="js/ui/maritimeToolkit.js?v=20260915-electrical"></script>
+    <script src="js/ui/maritimeToolkit.js?v=20260915-auxiliary"></script>
     <script src="js/store-public-boot.js?v=20260909-mobile-ux"></script>
 </body>
 </html>
