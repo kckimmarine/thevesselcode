@@ -269,6 +269,10 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero.hero-search-first {
 .hero-search-first #homeHeroTitle {
     color: #0f172a !important;
     text-shadow: none;
+    font-size: clamp(1.55rem, 4.2vw, 2.65rem) !important;
+    max-width: 54rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-search-first .home-hero-tagline,
