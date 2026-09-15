@@ -9,7 +9,7 @@
  */
 const TVC_SCHEMA = {
     DB_NAME: 'tvc_pms_v2',
-    DB_VERSION: 17, // v17: supplier_profiles + SM RFQ ↔ Supplier pipeline (sm_rfq_cases)
+    DB_VERSION: 18, // v18: equivalent_parts (domestic MRO resilience lookup)
     STORES: {
         meta: { keyPath: 'key' },
         users: { keyPath: 'id' },
@@ -37,6 +37,8 @@ const TVC_SCHEMA = {
         supplier_quotes: { keyPath: 'id' },
         supplier_orders: { keyPath: 'id' },
         supplier_profiles: { keyPath: 'supplier_id' },
+        /** Domestic / KR MRO verified equivalents — offline lookup by OEM part number */
+        equivalent_parts: { keyPath: 'original_maker_pn' },
     },
     INDEXES: {
         users: [{ name: 'username', keyPath: 'username', unique: true }],
@@ -166,6 +168,9 @@ const TVC_SCHEMA = {
         supplier_profiles: [
             { name: 'by_username', keyPath: 'username', unique: true },
         ],
+        equivalent_parts: [
+            { name: 'by_pn_norm', keyPath: 'pn_norm', unique: true },
+        ],
     },
 };
 
@@ -203,6 +208,7 @@ const TVC_META_KEYS = {
     IMPA_PLATE_PIPELINE: 'impa_plate_pipeline_v1',
     IMPA_CATALOG_COUNT: 'impa_catalog_count_v1',
     IMPA_SEARCH_BACKFILL: 'impa_search_backfill_v1',
+    EQUIVALENT_PARTS_SEED: 'equivalent_parts_seed_v1',
     /** Vessel machinery profile id — see data/equipment-taxonomy.json + TVC_MachineryTaxonomy */
     VESSEL_MACHINERY_PROFILE: 'vessel_machinery_profile',
 };

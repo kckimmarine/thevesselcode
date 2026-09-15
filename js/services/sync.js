@@ -510,8 +510,14 @@ const TVC_Sync = (function () {
         };
 
         const zip = new JSZip();
-        zip.file('tvc_sync.json', JSON.stringify(payload, null, 2));
-        zip.file('tvc_station_export.json', JSON.stringify(payload, null, 2));
+        let exportPayload = payload;
+        if (typeof TVC_DataExchangeService !== 'undefined') {
+            const packed = await TVC_DataExchangeService.exportDataPackage(zip, payload, opts);
+            exportPayload = packed.payload;
+        } else {
+            zip.file('tvc_sync.json', JSON.stringify(payload, null, 2));
+        }
+        zip.file('tvc_station_export.json', JSON.stringify(exportPayload, null, 2));
         zip.file('README.txt', opts.caseReview
             ? `TVC-PMS Case Report\nVessel: ${vesselId}\nDept: ${dept}\nDate: ${payload.export_meta.export_date}\nDirection: ${direction}\nIncludes W/M/D/P/C for ${hubRelayHqReply ? 'Station (HQ approval reply)' : 'Company period review'}.`
             : `TVC-PMS Sync Package\nVessel: ${vesselId}\nDept: ${dept}\nDate: ${payload.export_meta.export_date}\nDirection: ${direction}`);
@@ -555,7 +561,7 @@ const TVC_Sync = (function () {
         return {
             blob,
             filename,
-            payload,
+            payload: exportPayload,
             delta,
             record_count: recordCount,
             vessel_id: vesselId,
@@ -1146,8 +1152,16 @@ const TVC_Sync = (function () {
         };
 
         const zip = new JSZip();
-        zip.file('tvc_sync.json', JSON.stringify(payload, null, 2));
-        zip.file('tvc_company_report.json', JSON.stringify(payload, null, 2));
+        let exportPayload = payload;
+        if (typeof TVC_DataExchangeService !== 'undefined') {
+            const packed = await TVC_DataExchangeService.exportDataPackage(zip, payload, {
+                packageType: 'COMPANY_REPORT',
+            });
+            exportPayload = packed.payload;
+        } else {
+            zip.file('tvc_sync.json', JSON.stringify(payload, null, 2));
+        }
+        zip.file('tvc_company_report.json', JSON.stringify(exportPayload, null, 2));
         zip.file('README.txt', `TVC-PMS Company Report Package\nVessel: ${vesselId}\nDate: ${payload.export_meta.export_date}\nDirection: SHIP_TO_SM`);
 
         const filename = `${vesselId}_COMPANY_REPORT_${exportDate}.zip`;
@@ -1164,7 +1178,7 @@ const TVC_Sync = (function () {
             });
         }
 
-        return { blob, filename, payload, vessel_id: vesselId, company_id: companyId, record_count: recordCount };
+        return { blob, filename, payload: exportPayload, vessel_id: vesselId, company_id: companyId, record_count: recordCount };
     }
 
     async function exportCompanyZip(user) {
