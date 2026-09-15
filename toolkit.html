@@ -56,6 +56,11 @@
                     <h3 data-i18n="tk.mod.mech.title">Mechanical elements</h3>
                     <p class="mkt-prose" data-i18n="tk.mod.mech.d">Bolt tightening torque tables and crankshaft deflection diagnostics.</p>
                 </a>
+                <a class="home-card mkt-glass-card mkt-module-card" href="/toolkit?tool=combustion">
+                    <span class="mkt-module-index">ICE</span>
+                    <h3 data-i18n="tk.mod.comb.title">Combustion &amp; engine</h3>
+                    <p class="mkt-prose" data-i18n="tk.mod.comb.d">Pmax / Texh balance diagnostics and cylinder oil feed rate optimizer.</p>
+                </a>
                 <a class="home-card mkt-glass-card mkt-module-card" href="/toolkit?tool=lube">
                     <span class="mkt-module-index">03</span>
                     <h3 data-i18n="tk.mod.3.title">Lubrication &amp; Tribology</h3>
@@ -147,6 +152,7 @@
             <button type="button" class="store-tool-chip" data-tool-tab="bunker" role="tab" aria-selected="false" data-i18n="tk.tab.bunker">Fuels &amp; 54B</button>
             <button type="button" class="store-tool-chip" data-tool-tab="engineering" role="tab" aria-selected="false" data-i18n="tk.tab.engineering">Piping / flanges</button>
             <button type="button" class="store-tool-chip" data-tool-tab="mechanical" role="tab" aria-selected="false" data-i18n="tk.tab.mechanical">Mechanical</button>
+            <button type="button" class="store-tool-chip" data-tool-tab="combustion" role="tab" aria-selected="false" data-i18n="tk.tab.combustion">Combustion</button>
             <button type="button" class="store-tool-chip" data-tool-tab="lube" role="tab" aria-selected="false" data-i18n="tk.tab.lube">Lubrication</button>
             <button type="button" class="store-tool-chip" data-tool-tab="paint" role="tab" aria-selected="false" data-i18n="tk.tab.paint">Coatings</button>
             <button type="button" class="store-tool-chip" data-tool-tab="electrical" role="tab" aria-selected="false" data-i18n="tk.tab.electrical">Electrical</button>
@@ -164,6 +170,7 @@
             <section class="store-public-panel hidden" data-tool-panel="paint" id="storeToolPaint" aria-label="Marine paint cross reference"></section>
             <section class="store-public-panel hidden" data-tool-panel="engineering" id="storeToolEngineering" aria-label="Flange and engineering tables"></section>
             <section class="store-public-panel hidden" data-tool-panel="mechanical" id="storeToolMechanical" aria-label="Mechanical engineering utilities"></section>
+            <section class="store-public-panel hidden" data-tool-panel="combustion" id="storeToolCombustion" aria-label="Combustion and cylinder lube utilities"></section>
             <section class="store-public-panel hidden" data-tool-panel="electrical" id="storeToolElectrical" aria-label="Electrical diagnostics"></section>
             <section class="store-public-panel hidden" data-tool-panel="compliance" id="storeToolCompliance" aria-label="Statutory and survey compliance"></section>
         </div>
@@ -178,6 +185,7 @@
     <script src="js/billing/checkout.js?v=20260914-stripe-billing"></script>
     <script src="js/toolkit/bunkerCalc.js?v=20260914-astm54b"></script>
     <script src="js/toolkit/mechanicalCalc.js?v=20260915-mechanical"></script>
+    <script src="js/toolkit/combustionCalc.js?v=20260915-combustion"></script>
     <script src="js/toolkit/flangeData.js?v=20260914-flange-matrix"></script>
     <script src="js/core/schema.js?v=20260906-plate-pipeline"></script>
     <script src="js/core/db.js?v=20260906-plate-pipeline"></script>
@@ -186,7 +194,7 @@
     <script src="js/services/storeManager.js?v=20260914-phase-c-34092"></script>
     <script src="js/ui/impaDetailShared.js?v=20260914-impa-unified"></script>
     <script src="js/ui/storeMenu.js?v=20260914-impa-unified"></script>
-    <script src="js/ui/maritimeToolkit.js?v=20260915-mechanical"></script>
+    <script src="js/ui/maritimeToolkit.js?v=20260915-combustion"></script>
     <script src="js/store-public-boot.js?v=20260909-mobile-ux"></script>
 </body>
 </html>

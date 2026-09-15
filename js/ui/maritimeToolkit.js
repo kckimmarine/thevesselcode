@@ -326,6 +326,154 @@ const TVC_MaritimeToolkit = (function () {
         return 'mkt-verdict';
     }
 
+    function renderCombustionPanel(host) {
+        const Comb = globalThis.TVC_CombustionCalc;
+        const sample = Comb?.sampleSixCylinderBalanced?.() || [];
+
+        const cylRows = sample.map((c) => `
+            <tr data-comb-cyl="${c.cylNo}">
+                <td>${c.cylNo}</td>
+                <td><input type="number" class="comb-input" data-pmax step="0.1" value="${c.pMax}" inputmode="decimal"></td>
+                <td><input type="number" class="comb-input" data-pcomp step="0.1" value="${c.pComp}" inputmode="decimal"></td>
+                <td><input type="number" class="comb-input" data-texh step="1" value="${c.tExh}" inputmode="numeric"></td>
+                <td class="comb-result-dpmax">—</td>
+                <td class="comb-result-dtexh">—</td>
+                <td class="comb-result-status">—</td>
+            </tr>`).join('');
+
+        host.innerHTML = `
+            <div class="maritime-panel-head">
+                <h2 class="maritime-panel-title" data-i18n="tk.comb.title">Combustion &amp; engine</h2>
+                <p class="maritime-panel-sub" data-i18n="tk.comb.sub">Pmax / Pcomp / Texh deviation analysis and cylinder oil feed rate vs fuel sulfur &amp; BN (MARPOL Annex VI context).</p>
+            </div>
+            <div class="mkt-mechanical-grid">
+                <article class="mkt-glass-card mkt-mechanical-card">
+                    <div class="comb-panel-head">
+                        <h3 class="maritime-subheading" data-i18n="tk.comb.balance.title">Combustion balance</h3>
+                        <button type="button" class="home-btn home-btn-secondary" id="combPreset6" data-i18n="tk.comb.preset6">Load 6-cyl sample</button>
+                    </div>
+                    <p class="mkt-prose" data-i18n="tk.comb.balance.sub">Tolerance: ±3 bar Pmax, ±30°C Texh vs cylinder mean.</p>
+                    <div class="maritime-table-wrap">
+                        <table class="maritime-table" id="combInputTable">
+                            <thead>
+                                <tr>
+                                    <th>Cyl</th>
+                                    <th>Pmax (bar)</th>
+                                    <th>Pcomp (bar)</th>
+                                    <th>Texh (°C)</th>
+                                    <th>ΔPmax</th>
+                                    <th>ΔTexh</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>${cylRows}</tbody>
+                        </table>
+                    </div>
+                    <div id="combMeansHost" class="comb-means" aria-live="polite"></div>
+                    <div id="combHintsHost"></div>
+                </article>
+                <article class="mkt-glass-card mkt-mechanical-card">
+                    <h3 class="maritime-subheading" data-i18n="tk.comb.lube.title">Cylinder oil feed rate</h3>
+                    <p class="mkt-prose" data-i18n="tk.comb.lube.sub">Target SCOC from engine kW, fuel sulfur %, and cylinder oil BN.</p>
+                    <form class="maritime-bunker-form" id="cylLubeForm">
+                        <label class="maritime-field">
+                            <span data-i18n="tk.comb.lube.kw">Engine power (kW)</span>
+                            <input type="number" id="cylLubeKw" min="100" step="100" value="10000" inputmode="numeric">
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.comb.lube.s">Fuel sulfur (%)</span>
+                            <input type="number" id="cylLubeSulfur" min="0" step="0.01" value="0.5" inputmode="decimal">
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.comb.lube.bn">Cylinder oil BN</span>
+                            <select id="cylLubeBn">
+                                <option value="40">40</option>
+                                <option value="70">70</option>
+                                <option value="100">100</option>
+                            </select>
+                        </label>
+                    </form>
+                    <div class="maritime-bunker-result" aria-live="polite">
+                        <div class="maritime-bunker-metrics">
+                            <div><span data-i18n="tk.comb.lube.gkwh">Target feed (g/kWh)</span><strong id="cylLubeGkwh">—</strong></div>
+                            <div><span data-i18n="tk.comb.lube.day">Daily volume (L/day)</span><strong id="cylLubeDay">—</strong></div>
+                        </div>
+                        <p id="cylLubeAdvice" class="mkt-prose comb-advice">—</p>
+                    </div>
+                </article>
+            </div>
+            <p class="maritime-note" data-i18n="tk.comb.note">Diagnostics are indicative — correlate with indicator cards, drain analysis, and maker limits.</p>`;
+
+        const readCylinders = () =>
+            [...host.querySelectorAll('#combInputTable tbody tr[data-comb-cyl]')].map((row) => ({
+                cylNo: Number(row.getAttribute('data-comb-cyl')),
+                pMax: Number(row.querySelector('[data-pmax]')?.value),
+                pComp: Number(row.querySelector('[data-pcomp]')?.value),
+                tExh: Number(row.querySelector('[data-texh]')?.value),
+            }));
+
+        const paintCombustion = () => {
+            if (!Comb?.diagnoseCombustion) return;
+            const result = Comb.diagnoseCombustion(readCylinders());
+            host.querySelector('#combMeansHost').textContent =
+                `Mean Pmax ${result.meanPmax} bar · Pcomp ${result.meanPcomp} bar · Texh ${result.meanTexh} °C`;
+
+            const hintsHost = host.querySelector('#combHintsHost');
+            hintsHost.innerHTML = '';
+
+            result.cylinders.forEach((c) => {
+                const row = host.querySelector(`tr[data-comb-cyl="${c.cylNo}"]`);
+                if (!row) return;
+                row.querySelector('.comb-result-dpmax').innerHTML =
+                    `${c.deltaPmax >= 0 ? '+' : ''}${c.deltaPmax} <span class="mkt-deviation-bar" aria-hidden="true"><span style="width:${Math.min(100, Math.abs(c.deltaPmax) * 10)}%"></span></span>`;
+                row.querySelector('.comb-result-dtexh').textContent =
+                    `${c.deltaTexh >= 0 ? '+' : ''}${c.deltaTexh}`;
+                const statusCell = row.querySelector('.comb-result-status');
+                statusCell.innerHTML = `<span class="${verdictClass(c.color)}">${c.status}</span>`;
+                if (c.hints?.length) {
+                    const box = document.createElement('p');
+                    box.className = 'comb-hint mkt-prose';
+                    box.textContent = `Cyl ${c.cylNo}: ${c.hints.join(' ')}`;
+                    hintsHost.appendChild(box);
+                }
+            });
+        };
+
+        const paintLube = () => {
+            if (!Comb?.calculateCylinderLube) return;
+            const r = Comb.calculateCylinderLube({
+                powerKw: host.querySelector('#cylLubeKw')?.value,
+                sulfurPercent: host.querySelector('#cylLubeSulfur')?.value,
+                bn: host.querySelector('#cylLubeBn')?.value,
+            });
+            if (r.error) {
+                host.querySelector('#cylLubeGkwh').textContent = '—';
+                host.querySelector('#cylLubeDay').textContent = '—';
+                return;
+            }
+            host.querySelector('#cylLubeGkwh').textContent = String(r.targetFeedRateGPerKwh);
+            host.querySelector('#cylLubeDay').textContent = String(r.dailyLiters);
+            host.querySelector('#cylLubeAdvice').textContent = r.statusAdvice;
+        };
+
+        host.querySelector('#combInputTable')?.addEventListener('input', paintCombustion);
+        host.querySelector('#combPreset6')?.addEventListener('click', () => {
+            Comb.sampleSixCylinderBalanced().forEach((c) => {
+                const row = host.querySelector(`tr[data-comb-cyl="${c.cylNo}"]`);
+                if (!row) return;
+                row.querySelector('[data-pmax]').value = String(c.pMax);
+                row.querySelector('[data-pcomp]').value = String(c.pComp);
+                row.querySelector('[data-texh]').value = String(c.tExh);
+            });
+            paintCombustion();
+        });
+        host.querySelector('#cylLubeForm')?.addEventListener('input', paintLube);
+
+        paintCombustion();
+        paintLube();
+        globalThis.TVC_MarketingI18n?.applyLang?.(globalThis.TVC_MarketingI18n.getLang());
+    }
+
     function renderMechanicalPanel(host) {
         const Mech = globalThis.TVC_MechanicalCalc;
         const sizes = Mech?.listBoltSizes?.() || [];
@@ -648,12 +796,14 @@ const TVC_MaritimeToolkit = (function () {
             electrical: document.getElementById('storeToolElectrical'),
             compliance: document.getElementById('storeToolCompliance'),
             mechanical: document.getElementById('storeToolMechanical'),
+            combustion: document.getElementById('storeToolCombustion'),
         };
         if (hosts.bunker) renderBunkerPanel(hosts.bunker);
         if (hosts.lube) renderLubePanel(hosts.lube);
         if (hosts.paint) renderPaintPanel(hosts.paint);
         if (hosts.engineering) renderEngineeringPanel(hosts.engineering);
         if (hosts.mechanical) renderMechanicalPanel(hosts.mechanical);
+        if (hosts.combustion) renderCombustionPanel(hosts.combustion);
         if (hosts.electrical) renderElectricalPanel(hosts.electrical);
         if (hosts.compliance) renderCompliancePanel(hosts.compliance);
         renderConversionBanner();
@@ -663,6 +813,7 @@ const TVC_MaritimeToolkit = (function () {
             if (hosts.paint) renderPaintPanel(hosts.paint);
             if (hosts.engineering) renderEngineeringPanel(hosts.engineering);
             if (hosts.mechanical) renderMechanicalPanel(hosts.mechanical);
+            if (hosts.combustion) renderCombustionPanel(hosts.combustion);
             if (hosts.electrical) renderElectricalPanel(hosts.electrical);
             if (hosts.compliance) renderCompliancePanel(hosts.compliance);
             renderConversionBanner();
