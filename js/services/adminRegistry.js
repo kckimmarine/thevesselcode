@@ -597,6 +597,7 @@ const TVC_AdminRegistry = (function () {
             status: normalizeStatus(input.status),
             company_id: cid,
             notes: String(input.notes || '').trim(),
+            machinery_profile: String(input.machinery_profile || '').trim(),
             deploy: normalizeDeploy({}, { isVessel: true }),
         };
         const vessels = company.vessels || [];
@@ -604,6 +605,7 @@ const TVC_AdminRegistry = (function () {
         if (isEdit) {
             if (idx < 0) throw new Error(`Vessel "${vesselId}" not found.`);
             if (!next.notes) next.notes = vessels[idx].notes || '';
+            if (!next.machinery_profile) next.machinery_profile = vessels[idx].machinery_profile || '';
             next.deploy = vessels[idx].deploy || next.deploy;
             next.master_login = vessels[idx].master_login || null;
             vessels[idx] = next;

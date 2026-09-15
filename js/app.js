@@ -7659,6 +7659,12 @@ const TVC_App = (function () {
                     </div>
                 </div>
             </label>
+            <p class="spare-sync-note admin-registry-field">
+                <button type="button" class="btn btn-green btn-sm" onclick="TVC_App.openVesselArchetypeWizard()" ${company ? '' : ' disabled'}>
+                    Initialize vessel with archetype…
+                </button>
+                <span class="muted"> 3-step wizard · offline machinery tree</span>
+            </p>
             ${company ? `<p class="spare-sync-note muted">Status: company <strong>${esc(company.status)}</strong>${vessel ? ` · vessel <strong>${esc(vessel.status)}</strong>` : ''}</p>` : ''}
             <div class="modal-actions admin-registry-form-actions">
                 <button type="button" class="btn" onclick="TVC_App.closeAdminRegistryModal()">Close</button>
@@ -17487,6 +17493,35 @@ const TVC_App = (function () {
         syncPlanUpdateUi();
     }
 
+    async function onVesselArchetypeInitialized(result) {
+        const vesselId = result?.vessel_id;
+        if (vesselId) {
+            state.selectedVesselId = vesselId;
+            if (typeof TVC_Fleet !== 'undefined') TVC_Fleet.select(vesselId);
+            if (typeof TVC_PMS !== 'undefined') TVC_PMS.setSpace(state.space?.mode || 'SM', vesselId);
+        }
+        await refreshAll();
+    }
+
+    function openVesselArchetypeWizard() {
+        if (!state.user || !TVC_RBAC.isAdminAccount?.(state.user)) return;
+        const companyId = state.selectedAdminCompanyId
+            || TVC_AdminRegistry?.listCompanies?.({ includeInactive: true })?.[0]?.company_id
+            || '';
+        if (typeof TVC_VesselRegistryModal === 'undefined') {
+            TVC_Dialog.alert('Vessel archetype wizard is not loaded.');
+            return;
+        }
+        const vessel = companyId && state.selectedAdminVesselId
+            ? TVC_AdminRegistry.getVessel(companyId, state.selectedAdminVesselId)
+            : null;
+        TVC_VesselRegistryModal.open({
+            companyId,
+            vesselName: vessel?.vessel_id || '',
+            imoNo: vessel?.imo_no && vessel.imo_no !== '—' ? vessel.imo_no : '',
+        });
+    }
+
     async function refreshAfterImport(payload) {
         const importVesselId = payload?.export_meta?.vessel_id;
         const user = state.user;
@@ -19012,6 +19047,7 @@ const TVC_App = (function () {
         doSubmit, doExecute, doApprove, doConfirm,
         handleLogin, handleLogout, showLoginToast, handleExport, handleImport, handleHubImport, handleDefectImport, handlePostponeImport, handleWorkPermitImport,
         urgentExportDefect, exportDefectCompletion, loadSeedFile,
+        openVesselArchetypeWizard, onVesselArchetypeInitialized,
         openMenuXferMenu, closeMenuXferMenu, menuXferPickChannel, menuXferPickMode, menuXferBack, menuXferTriggerImport,
         menuXferSelectImportType, menuXferPickExportType,
         menuXferConfirmCaseExport, menuXferConfirmCaseExportAll,
