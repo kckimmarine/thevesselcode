@@ -1512,3 +1512,44 @@ body.mkt-sm-page .sm-philosophy.muted {
         grid-template-columns: 1fr;
     }
 }
+
+/* Enterprise prose — max two sentences, crisp body copy */
+body.tvc-marketing-body .mkt-prose,
+body.tvc-marketing-body .home-card p,
+body.tvc-marketing-body .home-enterprise-card p,
+body.tvc-marketing-body .home-edge-card p,
+body.tvc-marketing-body .home-service-card p {
+    font-size: 15px;
+    color: #334155;
+    line-height: 1.6;
+    max-width: 40rem;
+}
+
+body.tvc-marketing-body .mkt-metric-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    margin: 16px 0 0;
+}
+
+body.tvc-marketing-body .mkt-metric-row--center {
+    justify-content: center;
+}
+
+body.tvc-marketing-body .mkt-metric {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    font-size: 14px;
+    color: #475569;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+}
+
+body.tvc-marketing-body .mkt-metric strong {
+    color: #0f172a;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
