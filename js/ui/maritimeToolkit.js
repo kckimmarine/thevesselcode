@@ -320,6 +320,128 @@ const TVC_MaritimeToolkit = (function () {
         return 'mkt-verdict';
     }
 
+    function boilerStatusClass(status) {
+        if (status === 'NORMAL') return 'mkt-verdict mkt-verdict--normal';
+        if (status === 'WARNING') return 'mkt-verdict mkt-verdict--attention';
+        return 'mkt-verdict mkt-verdict--exceeded';
+    }
+
+    function renderAuxiliaryPanel(host) {
+        const Aux = globalThis.TVC_AuxiliaryCalc;
+        host.innerHTML = `
+            <div class="maritime-panel-head">
+                <h2 class="maritime-panel-title" data-i18n="tk.aux.title">Auxiliary &amp; refrigeration</h2>
+                <p class="maritime-panel-sub" data-i18n="tk.aux.sub">Refrigerant P-T superheat/subcooling and auxiliary boiler water conditioning quick check.</p>
+            </div>
+            <div class="mkt-mechanical-grid">
+                <article class="mkt-glass-card mkt-mechanical-card">
+                    <h3 class="maritime-subheading" data-i18n="tk.aux.ref.title">Refrigerant P-T &amp; expansion valve check</h3>
+                    <p class="mkt-prose" data-i18n="tk.aux.ref.sub">Gauge pressures (bar) + line surface temperatures → saturation, superheat, subcooling.</p>
+                    <form class="maritime-bunker-form" id="refrigForm">
+                        <label class="maritime-field">
+                            <span data-i18n="tk.aux.ref.gas">Refrigerant</span>
+                            <select id="refrigGas">
+                                <option value="R134a">R134a</option>
+                                <option value="R404A">R404A</option>
+                                <option value="R407C">R407C</option>
+                            </select>
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.aux.ref.suctionP">Suction (bar gauge)</span>
+                            <input type="number" id="refrigSuctionP" step="0.01" value="1.0" inputmode="decimal">
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.aux.ref.suctionT">Suction line temp (°C)</span>
+                            <input type="number" id="refrigSuctionT" step="0.1" value="0" inputmode="decimal">
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.aux.ref.dischargeP">Discharge (bar gauge)</span>
+                            <input type="number" id="refrigDischargeP" step="0.01" value="8" inputmode="decimal">
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.aux.ref.liquidT">Liquid line temp (°C)</span>
+                            <input type="number" id="refrigLiquidT" step="0.1" value="25" inputmode="decimal">
+                        </label>
+                    </form>
+                    <div class="maritime-bunker-result" aria-live="polite">
+                        <div class="maritime-bunker-metrics maritime-bunker-metrics-extended">
+                            <div><span data-i18n="tk.aux.ref.tsate">T sat evap</span><strong id="refrigTsatE">—</strong></div>
+                            <div><span data-i18n="tk.aux.ref.tsatc">T sat cond</span><strong id="refrigTsatC">—</strong></div>
+                            <div><span data-i18n="tk.aux.ref.sh">Superheat</span><strong id="refrigShBadge">—</strong></div>
+                            <div><span data-i18n="tk.aux.ref.sc">Subcooling</span><strong id="refrigScBadge">—</strong></div>
+                        </div>
+                        <p id="refrigAdvice" class="mkt-prose comb-advice">—</p>
+                    </div>
+                </article>
+                <article class="mkt-glass-card mkt-mechanical-card">
+                    <h3 class="maritime-subheading" data-i18n="tk.aux.boiler.title">Boiler water treatment</h3>
+                    <p class="mkt-prose" data-i18n="tk.aux.boiler.sub">pH, chloride, and phosphate vs auxiliary boiler limits (typ. &lt;16–20 bar).</p>
+                    <form class="maritime-bunker-form" id="boilerWaterForm">
+                        <label class="maritime-field">
+                            <span data-i18n="tk.aux.boiler.ph">pH</span>
+                            <input type="number" id="boilerPh" step="0.1" value="10.2" inputmode="decimal">
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.aux.boiler.cl">Chloride (ppm)</span>
+                            <input type="number" id="boilerCl" step="1" value="120" inputmode="numeric">
+                        </label>
+                        <label class="maritime-field">
+                            <span data-i18n="tk.aux.boiler.po4">Phosphate (ppm PO4)</span>
+                            <input type="number" id="boilerPo4" step="1" value="35" inputmode="numeric">
+                        </label>
+                    </form>
+                    <div class="maritime-bunker-result" aria-live="polite">
+                        <p id="boilerStatus" class="mkt-verdict mkt-verdict--normal">—</p>
+                        <ul id="boilerActions" class="comb-hint-list"></ul>
+                    </div>
+                </article>
+            </div>
+            <p class="maritime-note" data-i18n="tk.aux.note">Use calibrated gauges and lab kits — align blowdown with chief engineer and chemical supplier program.</p>`;
+
+        const shInRange = (sh) => sh >= 4 && sh <= 8;
+        const scInRange = (sc) => sc >= 3 && sc <= 6;
+
+        const paintRefrig = () => {
+            const r = Aux?.diagnoseRefrigerant?.({
+                refrigerant: host.querySelector('#refrigGas')?.value,
+                suctionBarGauge: host.querySelector('#refrigSuctionP')?.value,
+                suctionLineTempC: host.querySelector('#refrigSuctionT')?.value,
+                dischargeBarGauge: host.querySelector('#refrigDischargeP')?.value,
+                liquidLineTempC: host.querySelector('#refrigLiquidT')?.value,
+            });
+            if (!r || r.error) return;
+            host.querySelector('#refrigTsatE').textContent = `${r.tSatEvap} °C`;
+            host.querySelector('#refrigTsatC').textContent = `${r.tSatCond} °C`;
+            const shEl = host.querySelector('#refrigShBadge');
+            shEl.textContent = `${r.superheat} °C`;
+            shEl.className = shInRange(r.superheat) ? 'mkt-metric mkt-metric--ok' : 'mkt-metric mkt-metric--warn';
+            const scEl = host.querySelector('#refrigScBadge');
+            scEl.textContent = `${r.subcooling} °C`;
+            scEl.className = scInRange(r.subcooling) ? 'mkt-metric mkt-metric--ok' : 'mkt-metric mkt-metric--warn';
+            host.querySelector('#refrigAdvice').textContent = r.diagnosisAdvice;
+        };
+
+        const paintBoiler = () => {
+            const r = Aux?.diagnoseBoilerWater?.({
+                ph: host.querySelector('#boilerPh')?.value,
+                chloridePpm: host.querySelector('#boilerCl')?.value,
+                phosphatePpm: host.querySelector('#boilerPo4')?.value,
+            });
+            if (!r) return;
+            const statusEl = host.querySelector('#boilerStatus');
+            statusEl.textContent = `${r.status}${r.blowdownRequired ? ' — Blowdown required' : ''}`;
+            statusEl.className = boilerStatusClass(r.status);
+            const list = host.querySelector('#boilerActions');
+            list.innerHTML = r.actions.map((a) => `<li class="mkt-prose">${esc(a)}</li>`).join('');
+        };
+
+        host.querySelector('#refrigForm')?.addEventListener('input', paintRefrig);
+        host.querySelector('#boilerWaterForm')?.addEventListener('input', paintBoiler);
+        paintRefrig();
+        paintBoiler();
+        globalThis.TVC_MarketingI18n?.applyLang?.(globalThis.TVC_MarketingI18n.getLang());
+    }
+
     function renderCombustionPanel(host) {
         const Comb = globalThis.TVC_CombustionCalc;
         const sample = Comb?.sampleSixCylinderBalanced?.() || [];
@@ -849,6 +971,7 @@ const TVC_MaritimeToolkit = (function () {
             compliance: document.getElementById('storeToolCompliance'),
             mechanical: document.getElementById('storeToolMechanical'),
             combustion: document.getElementById('storeToolCombustion'),
+            auxiliary: document.getElementById('storeToolAuxiliary'),
         };
         if (hosts.bunker) renderBunkerPanel(hosts.bunker);
         if (hosts.lube) renderLubePanel(hosts.lube);
@@ -858,6 +981,7 @@ const TVC_MaritimeToolkit = (function () {
         if (hosts.combustion) renderCombustionPanel(hosts.combustion);
         if (hosts.electrical) renderElectricalPanel(hosts.electrical);
         if (hosts.compliance) renderCompliancePanel(hosts.compliance);
+        if (hosts.auxiliary) renderAuxiliaryPanel(hosts.auxiliary);
         renderConversionBanner();
         globalThis.addEventListener('tvc-mkt-lang', () => {
             if (hosts.bunker) renderBunkerPanel(hosts.bunker);
@@ -868,6 +992,7 @@ const TVC_MaritimeToolkit = (function () {
             if (hosts.combustion) renderCombustionPanel(hosts.combustion);
             if (hosts.electrical) renderElectricalPanel(hosts.electrical);
             if (hosts.compliance) renderCompliancePanel(hosts.compliance);
+            if (hosts.auxiliary) renderAuxiliaryPanel(hosts.auxiliary);
             renderConversionBanner();
         });
         setActiveTool('catalog');

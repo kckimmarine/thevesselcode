@@ -1788,3 +1788,19 @@ body.tvc-marketing-body .mkt-deviation-bar > span {
     background: #0f172a;
     border-radius: 3px;
 }
+
+body.tvc-marketing-body .mkt-metric--ok {
+    color: #14532d;
+}
+
+body.tvc-marketing-body .mkt-metric--warn {
+    color: #7f1d1d;
+}
+
+body.tvc-marketing-body .comb-hint-list {
+    margin: 8px 0 0;
+    padding-left: 1.1rem;
+    color: #334155;
+    font-size: 0.875rem;
+    line-height: 1.55;
+}
