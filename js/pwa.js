@@ -441,8 +441,73 @@ const TVC_PWA = (function () {
         } catch (_) { return false; }
     }
 
+    function shouldUnregisterWebCaches() {
+        if (!isWebPortalHost()) return false;
+        try {
+            if (typeof TVC_Config !== 'undefined' && TVC_Config.isVesselOfflinePwaEligible) {
+                return !TVC_Config.isVesselOfflinePwaEligible();
+            }
+        } catch (_) {}
+        try {
+            const q = new URLSearchParams(location.search);
+            if (q.get('embed') === '1' || q.get('web') === '1') return true;
+        } catch (_) {}
+        return false;
+    }
+
+    let _deferredInstallPrompt = null;
+
+    function initLoginInstall() {
+        const section = document.getElementById('loginPwaSection');
+        const btn = document.getElementById('loginPwaInstallBtn');
+        if (!section || !btn || section.dataset.tvcPwaInit) return;
+        section.dataset.tvcPwaInit = '1';
+
+        if (isStandalone()) {
+            section.classList.remove('hidden');
+            btn.textContent = 'Installed — open from home screen';
+            btn.disabled = true;
+            return;
+        }
+
+        if (!canRegister()) {
+            return;
+        }
+        if (typeof TVC_Config !== 'undefined' && TVC_Config.isWebDeploy?.() && !TVC_Config.isVesselOfflinePwaEligible?.()) {
+            return;
+        }
+
+        section.classList.remove('hidden');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            _deferredInstallPrompt = e;
+            btn.disabled = false;
+        });
+
+        btn.addEventListener('click', async () => {
+            if (!_deferredInstallPrompt) {
+                const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent || '');
+                const msg = isIos
+                    ? 'Safari: Share → Add to Home Screen.\n\nChrome/Edge on desktop: use the install icon in the address bar after signing in once online.'
+                    : 'Use your browser menu: Install app / Add to Home Screen.\n\nIf no prompt appears, open this page directly (not inside an iframe) over HTTPS once while online.';
+                try { await TVC_Dialog?.alert?.({ message: msg }); } catch (_) { alert(msg); }
+                return;
+            }
+            _deferredInstallPrompt.prompt();
+            try { await _deferredInstallPrompt.userChoice; } catch (_) { /* dismissed */ }
+            _deferredInstallPrompt = null;
+            btn.disabled = true;
+        });
+
+        window.addEventListener('appinstalled', () => {
+            btn.textContent = 'Installed — open from home screen';
+            btn.disabled = true;
+        });
+    }
+
     async function clearStaleCachesOnWeb() {
-        if (!isWebPortalHost()) return;
+        if (!shouldUnregisterWebCaches()) return;
         try {
             if ('serviceWorker' in navigator) {
                 const regs = await navigator.serviceWorker.getRegistrations();
@@ -462,11 +527,15 @@ const TVC_PWA = (function () {
         initMobileNav();
         bindDateInputFormatObserver();
         if (isStandalone()) document.body.classList.add('pwa-standalone');
-        if (isWebPortalHost()) clearStaleCachesOnWeb();
+        if (shouldUnregisterWebCaches()) clearStaleCachesOnWeb();
         else registerServiceWorker();
+        initLoginInstall();
     }
 
-    return { boot, toggleMobileNav, closeMobileNav, registerServiceWorker, initDateInputFormat, normalizeDateText };
+    return {
+        boot, toggleMobileNav, closeMobileNav, registerServiceWorker, initDateInputFormat, normalizeDateText,
+        initLoginInstall, isStandalone, canRegister,
+    };
 })();
 
 document.addEventListener('DOMContentLoaded', () => TVC_PWA.boot());

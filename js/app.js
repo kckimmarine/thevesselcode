@@ -8590,7 +8590,7 @@ const TVC_App = (function () {
             <p class="spare-sync-hint">${isCompanyScope
                 ? 'After vessel add / Registry change · manifest includes active vessels → <strong>reissue SM seat license</strong> required'
                 : 'Existing pool vessels (already on TVC-SM): deliver one <strong>shared App Update ZIP</strong>.'}</p>
-            <p class="spare-sync-note muted">Customer PC: <strong>Data Export &amp; Import → App Update → Import → Install update</strong> · Master / History / IndexedDB preserved</p>
+            <p class="spare-sync-note muted">Customer PC: <strong>Data Export &amp; Import → App Update → Import → Install update</strong> · Captain hub data / History / IndexedDB preserved</p>
             ${isCompanyScope ? `
             <label class="spare-sync-note" style="display:block;margin:8px 0">Company
                 <select class="admin-company-select" style="margin-top:4px;width:100%"
@@ -8742,7 +8742,7 @@ const TVC_App = (function () {
                 }
             } else {
                 await TVC_Dialog.alert(
-                    `App Update exported.\n${filename}\n\nVersion: ${manifest.app_version}\nSKUs: ${(manifest.setups || []).map(s => s.sku).join(', ')}\n\nSend this shared ZIP to pool vessels → Import → Install update on each PC (SM / Master / Engine / Deck).`
+                    `App Update exported.\n${filename}\n\nVersion: ${manifest.app_version}\nSKUs: ${(manifest.setups || []).map(s => s.sku).join(', ')}\n\nSend this shared ZIP to pool vessels → Import → Install update on each PC (SM / Captain / Engine / Deck).`
                 );
                 closeAdminAppUpdateModal();
             }

@@ -62,7 +62,7 @@ const TVC_Sync = (function () {
         if (s === 'deck_hq') return 'Deck (SM reply)';
         if (s === 'engine_hq') return 'Engine (SM reply)';
         if (s === 'hq') return 'HQ (legacy)';
-        if (s === 'hub') return 'Hub (Master)';
+        if (s === 'hub') return 'Captain Hub';
         return s || '—';
     }
 
@@ -103,7 +103,7 @@ const TVC_Sync = (function () {
         return (
             `Import station export ZIP in Captain Mode or SM Mode${deptHint}.\n\n`
             + `${crossDept}\n\n`
-            + 'On Engine/Deck station PCs, use Export to send data to Master — do not import station export ZIP here.'
+            + 'On Engine/Deck station PCs, use Export to send data to Captain Hub — do not import station export ZIP here.'
         );
     }
 
@@ -164,7 +164,7 @@ const TVC_Sync = (function () {
 
         if (shipImportFromHq) {
             if (isHq) {
-                throw new Error('Import SM reply ZIP on the vessel (Master / Engine / Deck Mode).');
+                throw new Error('Import SM reply ZIP on the vessel (Captain / Engine / Deck Mode).');
             }
             if (fileDept === 'ENGINE' && isDeckStation) {
                 throw new Error('Engine SM reply is not applied in Deck Mode. Import in Engine Mode or Captain Mode (Engine toggle).');
