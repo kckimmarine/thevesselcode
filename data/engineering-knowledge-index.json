@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "mech-bolt-torque",
+      "title": "Bolt tightening torque (M10–M48, 8.8 / 10.9)",
+      "keywords": ["torque", "bolt", "볼트", "토크", "M16", "8.8", "10.9", "preload", "flange bolt"],
+      "discipline": "Mechanical elements & machine design",
+      "principle": "Torque T ≈ K × F × d with proof-stress preload (typically 0.9 × σp × As); K ≈ 0.14 oiled / 0.18 dry.",
+      "standardValue": "Use class 8.8 (580 MPa) or 10.9 (900 MPa) proof stress per ISO 898-1; shipyard tables for M10–M48.",
+      "actionSteps": [
+        "Confirm bolt size, property class, and lubrication (oiled vs dry).",
+        "Apply torque in star pattern; re-check after first thermal cycle on hot joints."
+      ],
+      "calculatorTab": "mechanical"
+    },
+    {
+      "id": "mech-crank-deflection",
+      "title": "Crankshaft deflection (ΔV / ΔH, class limits)",
+      "keywords": ["deflection", "crankshaft", "디플렉션", "크랭크", "ΔV", "ΔH", "alignment", "main bearing"],
+      "discipline": "Marine diesel machinery",
+      "principle": "Vertical and horizontal dial readings at each crank pin; misalignment shows as ΔV/ΔH pattern vs adjacent units.",
+      "standardValue": "Class rule limit often 0.05–0.15 mm (maker-specific); reject if trend worsens or exceeds manual limit.",
+      "actionSteps": [
+        "Record all units at same crank angle; compare to baseline after bearing work.",
+        "If limit exceeded, check bearing clearance, chock slack, and hull deflection."
+      ],
+      "calculatorTab": "mechanical"
+    },
+    {
+      "id": "ice-pmax-balance",
+      "title": "Pmax / Pcomp balance & after-burning",
+      "keywords": ["Pmax", "Pcomp", "compression", "after-burning", "평균압", "최고압", "combustion balance", "Texh"],
+      "discipline": "Internal combustion & fuels",
+      "principle": "Cylinder peak (Pmax) and compression (Pcomp) pressures indicate timing, injection, and ring sealing health.",
+      "standardValue": "Typical balance tolerance ±3.0 bar between units (maker-dependent); persistent high Texh suggests after-burning.",
+      "actionSteps": [
+        "Compare cards across units at same load; investigate outliers first.",
+        "Check fuel pump timing, injector condition, and scavenge air if after-burning suspected."
+      ],
+      "calculatorTab": "combustion"
+    },
+    {
+      "id": "ice-cylinder-oil-bn",
+      "title": "Cylinder oil feed rate & BN matching",
+      "keywords": ["cylinder oil", "BN", "feed rate", "실린더오일", "알칼리도", "sulphur", "SCOC"],
+      "discipline": "Lubrication & tribology (engine)",
+      "principle": "Base Number (BN) must match fuel sulphur; feed rate balances liner wear vs deposit control.",
+      "standardValue": "Match BN to fuel S% per maker chart; adjust feed if iron or soot trends rise.",
+      "actionSteps": [
+        "Enter fuel sulphur and engine parameters in the cylinder lube optimizer.",
+        "Cross-check with scrape-down analysis and port condition."
+      ],
+      "calculatorTab": "combustion"
+    },
+    {
+      "id": "ee-pt100-iec",
+      "title": "PT100 resistance to temperature (IEC 60751)",
+      "keywords": ["PT100", "RTD", "resistance", "IEC 60751", "온도센서", "100 ohm", "138.5"],
+      "discipline": "Electrical & control engineering",
+      "principle": "Callendar–Van Dusen: R(T) for industrial PT100 with R0 = 100 Ω at 0°C.",
+      "standardValue": "100.0 Ω at 0°C; ~138.5 Ω at 100°C (Class B tolerance per IEC 60751).",
+      "actionSteps": [
+        "Measure resistance at known ambient; invert to temperature for alarm setpoint checks.",
+        "Verify lead resistance compensation on 3-wire RTD circuits."
+      ],
+      "calculatorTab": "electrical"
+    },
+    {
+      "id": "ee-motor-flc-eocr",
+      "title": "3-phase motor FLC & EOCR trip range",
+      "keywords": ["FLC", "motor", "EOCR", "overload", "전동기", "과전류", "trip", "ampere"],
+      "discipline": "Electrical & control engineering",
+      "principle": "Full-load current from kW, voltage, efficiency, and power factor; EOCR set just above FLC.",
+      "standardValue": "Trip class 10–20 typical; instantaneous short-circuit via breaker; EOCR ≈ 105–115% FLC adjustable.",
+      "actionSteps": [
+        "Calculate FLC from nameplate or kW rating.",
+        "Set EOCR pickup and time delay per maker curve; prove with ammeter at rated load."
+      ],
+      "calculatorTab": "electrical"
+    },
+    {
+      "id": "aux-refrigerant-superheat",
+      "title": "Refrigerant saturation & superheat",
+      "keywords": ["superheat", "subcooling", "refrigerant", "R134a", "R404A", "과열도", "HVAC", "suction"],
+      "discipline": "Auxiliary machinery & HVAC",
+      "principle": "Superheat = suction line temp minus saturation temp at suction pressure; subcooling on liquid line.",
+      "standardValue": "Typical stable superheat 4–8°C at evaporator outlet (system-dependent).",
+      "actionSteps": [
+        "Log suction/discharge pressures and line temperatures.",
+        "Adjust expansion valve or charge if superheat out of band."
+      ],
+      "calculatorTab": "auxiliary"
+    },
+    {
+      "id": "aux-boiler-water",
+      "title": "Boiler water treatment (pH, chloride, blowdown)",
+      "keywords": ["boiler", "blowdown", "pH", "chloride", "Cl-", "보일러", "글리코올", "phosphate", "water treatment"],
+      "discipline": "Steam & thermal systems",
+      "principle": "Alkaline phosphate treatment controls scale; chloride indicates contamination or insufficient blowdown.",
+      "standardValue": "pH 9.5–11; chloride Cl⁻ < 300 ppm (low-pressure guidelines); blowdown when Cl⁻ or TDS high.",
+      "actionSteps": [
+        "Test pH, chloride, and phosphate; increase blowdown if Cl⁻ critical.",
+        "Dose treatment chemicals per analysis; record in engine log."
+      ],
+      "calculatorTab": "auxiliary"
+    },
+    {
+      "id": "psc-emergency-fire-pump",
+      "title": "Tokyo/Paris MoU — Emergency fire pump",
+      "keywords": ["fire pump", "emergency", "CIC", "PSC", "hydrant", "소방펌프", "MoU"],
+      "discipline": "Statutory & survey compliance",
+      "principle": "Emergency fire pump must start independently and deliver pressure at remotest hydrant.",
+      "standardValue": "SOLAS II-2 / FSS Code: independent power, priming, and pressure at remotest hydrant per class.",
+      "actionSteps": [
+        "Run emergency fire pump drill; log pressure and starting source.",
+        "Verify priming tank, relief, and remote start from muster stations."
+      ],
+      "calculatorTab": "compliance"
+    },
+    {
+      "id": "psc-ows-15ppm",
+      "title": "OWS 15 ppm alarm & fail-safe",
+      "keywords": ["OWS", "15 ppm", "bilge", "MARPOL", "oil water separator", "유수분리기", "overboard"],
+      "discipline": "Statutory & survey compliance",
+      "principle": "15 ppm monitor must alarm and stop overboard discharge automatically (fail-safe to tank).",
+      "standardValue": "MARPOL Annex I Reg. 14: 15 ppm alarm, automatic stopping device, and 15 ppm overboard interlock records.",
+      "actionSteps": [
+        "Demonstrate alarm at 15 ppm test; verify 3-way valve returns to sludge tank.",
+        "Keep calibration and zero-check records for PSC."
+      ],
+      "calculatorTab": "compliance"
+    },
+    {
+      "id": "psc-quick-closing-valve",
+      "title": "Quick-closing valve pneumatic release",
+      "keywords": ["quick-closing", "QC valve", "fuel", "pneumatic", "FSS", "급속폐쇄", "valve release"],
+      "discipline": "Statutory & survey compliance",
+      "principle": "Fuel and lube oil quick-closing valves close from safe remote position on pneumatic or wire release.",
+      "standardValue": "FSS Code Ch. 4: remote operation from safe position; marking and periodic function test.",
+      "actionSteps": [
+        "Test pneumatic release from fire control station or local safe point.",
+        "Confirm valve labels and crew familiarization for CIC."
+      ],
+      "calculatorTab": "compliance"
+    },
+    {
+      "id": "cargo-ibc-sus316l-epoxy",
+      "title": "IBC Code — SUS316L passivation vs phenolic epoxy tanks",
+      "keywords": ["IBC", "SUS316L", "passivation", "phenolic epoxy", "chemical cargo", "tank coating", "316L", "화학화물"],
+      "discipline": "Chemical cargo & coatings",
+      "principle": "Stainless passivation suits oxidizing cargoes; phenolic/epoxy linings required for aggressive or chlorinated solvents per IBC product list.",
+      "standardValue": "IBC Ch. 15 & product list: verify tank material/certificate vs cargo; no interchange without coating compatibility approval.",
+      "actionSteps": [
+        "Check IBC certificate and cargo compatibility table before loading.",
+        "Inspect coating holiday test records; use paint/tank coating cross-reference for repairs."
+      ],
+      "calculatorTab": "paint"
+    },
+    {
+      "id": "bunker-vcf-54b",
+      "title": "Bunker quantity — ASTM Table 54B VCF",
+      "keywords": ["54B", "VCF", "bunker", "metric ton", "density 15", "벙커", "유량"],
+      "discipline": "Fuels & thermodynamics",
+      "principle": "Volume correction to 15°C and mass in air using ASTM D1250 / Table 54B methodology.",
+      "standardValue": "Report MT in air with documented ρ15 and observed temperature.",
+      "actionSteps": [
+        "Enter volume, density @15°C, and temperature in bunker calculator.",
+        "Archive sounding and lab density for dispute resolution."
+      ],
+      "calculatorTab": "bunker"
+    },
+    {
+      "id": "eng-flange-jis-ansi",
+      "title": "Flange matrix — JIS / ANSI / DIN",
+      "keywords": ["flange", "JIS 10K", "ANSI 150", "PCD", "볼트원", "piping"],
+      "discipline": "Piping & fluid mechanics",
+      "principle": "Match OD, PCD, bolt circle, and bolt size when replacing gaskets or spools.",
+      "standardValue": "Use standard tables (JIS 5K/10K/16K, ANSI 150#, DIN PN10) — no mixing across ratings.",
+      "actionSteps": [
+        "Filter flange table by standard and nominal bore.",
+        "Verify pressure rating and gasket type before breakout."
+      ],
+      "calculatorTab": "engineering"
+    }
+  ]
+}
