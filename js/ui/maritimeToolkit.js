@@ -42,10 +42,27 @@ const TVC_MaritimeToolkit = (function () {
         { category: 'System Oil', grade: 'SAE 30', shell: 'Gadinia 30', mobil: 'Mobil Delvac 1300', castrol: 'Cyltech 30', total: 'Aurelia X 300' },
         { category: 'System Oil', grade: 'SAE 40', shell: 'Gadinia 40', mobil: 'Mobil Delvac 1640', castrol: 'Cyltech 40', total: 'Aurelia X 400' },
         { category: 'System Oil', grade: 'SAE 50', shell: 'Gadinia 50', mobil: 'Mobil Delvac 1 SHC', castrol: 'Cyltech 50', total: 'Aurelia X 500' },
+        { category: 'Trunk Piston Oil', grade: '40BN', shell: 'Gadinia 40', mobil: 'Mobil Delvac 1640', castrol: 'Cyltech 40', total: 'Aurelia X 400' },
+        { category: 'Trunk Piston Oil', grade: '50BN', shell: 'Gadinia 50', mobil: 'Mobil Delvac 1 SHC', castrol: 'Cyltech 50', total: 'Aurelia X 500' },
         { category: 'Hydraulic Oil', grade: 'ISO VG 32', shell: 'Tellus S2 M 32', mobil: 'Mobil DTE 10 Excel 32', castrol: 'Hyspin AWS 32', total: 'Azolla ZS 32' },
         { category: 'Hydraulic Oil', grade: 'ISO VG 46', shell: 'Tellus S2 M 46', mobil: 'Mobil DTE 10 Excel 46', castrol: 'Hyspin AWS 46', total: 'Azolla ZS 46' },
         { category: 'Hydraulic Oil', grade: 'ISO VG 68', shell: 'Tellus S2 M 68', mobil: 'Mobil DTE 10 Excel 68', castrol: 'Hyspin AWS 68', total: 'Azolla ZS 68' },
         { category: 'Hydraulic Oil', grade: 'ISO VG 100', shell: 'Tellus S2 M 100', mobil: 'Mobil DTE 10 Excel 100', castrol: 'Hyspin AWS 100', total: 'Azolla ZS 100' },
+    ];
+
+    const PT100_ROWS = [
+        [-20, 92.16], [-10, 96.09], [0, 100.0], [10, 103.9], [20, 107.79], [30, 111.67], [40, 115.54],
+        [50, 119.4], [60, 123.24], [70, 127.08], [80, 130.9], [90, 134.71], [100, 138.51], [110, 142.29],
+        [120, 146.07], [130, 149.83], [140, 153.58], [150, 157.33],
+    ];
+
+    const CIC_ROWS = [
+        ['OWS 15 ppm', '15 ppm alarm, automatic stopping, and 15 ppm overboard interlock records (MARPOL Annex I).'],
+        ['Emergency fire pump', 'Independent power, priming arrangement, and delivery pressure at remotest hydrant.'],
+        ['Quick-closing valves', 'Remote operation from safe position; marking and periodic function test per FSS Code.'],
+        ['Fire dampers', 'Fire integrity, closing devices, and indication at fire control station.'],
+        ['Lifesaving appliances', 'Launching appliances, on-load release hooks, and maintenance records.'],
+        ['ISM familiarization', 'Crew certificates, drill records, and SMS evidence for Tokyo/Paris MoU focus.'],
     ];
 
     const PAINT_ROWS = [
@@ -115,7 +132,7 @@ const TVC_MaritimeToolkit = (function () {
             ${intelStrip}
             ${benchNote}
             <div class="maritime-panel-head">
-                <h2 class="maritime-panel-title" data-i18n="tk.bunker.title">⛽ Bunker &amp; Fuel Calculator (ASTM Table 54B)</h2>
+                <h2 class="maritime-panel-title" data-i18n="tk.bunker.title">Bunker &amp; Fuel Calculator (ASTM Table 54B)</h2>
                 <p class="maritime-panel-sub" data-i18n="tk.bunker.sub">VCF, weight-in-air mass, and estimated CO₂ from observed volume, density @ 15°C, and temperature.</p>
             </div>
             <form class="maritime-bunker-form" id="bunkerCalcForm">
@@ -208,8 +225,8 @@ const TVC_MaritimeToolkit = (function () {
     function renderLubePanel(host) {
         host.innerHTML = `
             <div class="maritime-panel-head">
-                <h2 class="maritime-panel-title">🛢️ Lubricant Cross-Reference</h2>
-                <p class="maritime-panel-sub">Compare cylinder, system, and hydraulic oil grades across major makers.</p>
+                <h2 class="maritime-panel-title" data-i18n="tk.lube.title">Lubricant cross-reference</h2>
+                <p class="maritime-panel-sub" data-i18n="tk.lube.sub">Cylinder, system, trunk piston, and hydraulic grades across major makers.</p>
             </div>
             <div class="maritime-flange-controls">
                 <label class="maritime-field">
@@ -218,6 +235,7 @@ const TVC_MaritimeToolkit = (function () {
                         <option value="">All categories</option>
                         <option value="Cylinder Oil">Cylinder Oil</option>
                         <option value="System Oil">System Oil</option>
+                        <option value="Trunk Piston Oil">Trunk Piston Oil</option>
                         <option value="Hydraulic Oil">Hydraulic Oil</option>
                     </select>
                 </label>
@@ -255,8 +273,8 @@ const TVC_MaritimeToolkit = (function () {
     function renderPaintPanel(host) {
         host.innerHTML = `
             <div class="maritime-panel-head">
-                <h2 class="maritime-panel-title">🎨 Marine Paint Cross-Reference</h2>
-                <p class="maritime-panel-sub">Antifouling, anticorrosive, and epoxy primer equivalents across leading makers.</p>
+                <h2 class="maritime-panel-title" data-i18n="tk.paint.title">Marine paint cross-reference</h2>
+                <p class="maritime-panel-sub" data-i18n="tk.paint.sub">Antifouling (A/F), anticorrosive (A/C), and epoxy primer equivalents.</p>
             </div>
             <div class="maritime-flange-controls">
                 <label class="maritime-field">
@@ -306,7 +324,7 @@ const TVC_MaritimeToolkit = (function () {
             `<option value="${esc(s)}">${esc(s)}</option>`).join('');
         host.innerHTML = `
             <div class="maritime-panel-head">
-                <h2 class="maritime-panel-title" data-i18n="tk.flange.title">📐 Flange &amp; Engineering Tables</h2>
+                <h2 class="maritime-panel-title" data-i18n="tk.flange.title">Flange &amp; piping tables</h2>
                 <p class="maritime-panel-sub" data-i18n="tk.flange.sub">JIS B2220 (5K / 10K / 16K), ANSI 150#, DIN PN10 / PN16 — dimensions in millimetres.</p>
             </div>
             <div class="maritime-flange-controls">
@@ -339,6 +357,72 @@ const TVC_MaritimeToolkit = (function () {
         globalThis.TVC_MarketingI18n?.applyLang?.(globalThis.TVC_MarketingI18n.getLang());
     }
 
+    function renderElectricalPanel(host) {
+        host.innerHTML = `
+            <div class="maritime-panel-head">
+                <h2 class="maritime-panel-title" data-i18n="tk.electrical.title">Electrical &amp; control diagnostics</h2>
+                <p class="maritime-panel-sub" data-i18n="tk.electrical.sub">Three-phase motor full-load current (FLC) estimate and PT100 resistance–temperature (IEC 60751, α = 0.00385).</p>
+            </div>
+            <form class="maritime-bunker-form" id="flcCalcForm">
+                <label class="maritime-field">
+                    <span data-i18n="tk.electrical.kw">Motor power (kW)</span>
+                    <input type="number" id="flcKw" min="0" step="0.1" value="75" inputmode="decimal">
+                </label>
+                <label class="maritime-field">
+                    <span data-i18n="tk.electrical.voltage">Line voltage (V)</span>
+                    <input type="number" id="flcVoltage" min="100" step="1" value="440" inputmode="numeric">
+                </label>
+                <label class="maritime-field">
+                    <span data-i18n="tk.electrical.eff">Efficiency η</span>
+                    <input type="number" id="flcEff" min="0.5" max="1" step="0.01" value="0.92" inputmode="decimal">
+                </label>
+                <label class="maritime-field">
+                    <span data-i18n="tk.electrical.pf">Power factor cos φ</span>
+                    <input type="number" id="flcPf" min="0.5" max="1" step="0.01" value="0.85" inputmode="decimal">
+                </label>
+            </form>
+            <div class="maritime-bunker-result" aria-live="polite">
+                <div class="maritime-bunker-metrics">
+                    <div><span data-i18n="tk.electrical.flc">Est. FLC (A)</span><strong id="flcValue">—</strong></div>
+                </div>
+            </div>
+            <h3 class="maritime-subheading" data-i18n="tk.electrical.pt100">PT100 resistance vs temperature</h3>
+            <div id="pt100TableHost"></div>
+            <p class="maritime-note" data-i18n="tk.electrical.note">FLC is indicative — use nameplate, class rules, and cable sizing standards before alteration.</p>`;
+
+        const paintFlc = () => {
+            const kw = Number(host.querySelector('#flcKw')?.value) || 0;
+            const v = Number(host.querySelector('#flcVoltage')?.value) || 440;
+            const eff = Number(host.querySelector('#flcEff')?.value) || 0.92;
+            const pf = Number(host.querySelector('#flcPf')?.value) || 0.85;
+            const denom = Math.sqrt(3) * v * eff * pf;
+            const flc = denom > 0 ? (kw * 1000) / denom : 0;
+            host.querySelector('#flcValue').textContent = flc > 0 ? `${flc.toFixed(1)} A` : '—';
+        };
+        host.querySelector('#flcCalcForm')?.addEventListener('input', paintFlc);
+        paintFlc();
+        host.querySelector('#pt100TableHost').innerHTML = tableHtml(
+            ['Temp (°C)', 'R (Ω)'],
+            PT100_ROWS.map(([t, r]) => [String(t), r.toFixed(2)]),
+        );
+        globalThis.TVC_MarketingI18n?.applyLang?.(globalThis.TVC_MarketingI18n.getLang());
+    }
+
+    function renderCompliancePanel(host) {
+        host.innerHTML = `
+            <div class="maritime-panel-head">
+                <h2 class="maritime-panel-title" data-i18n="tk.compliance.title">Statutory &amp; survey compliance</h2>
+                <p class="maritime-panel-sub" data-i18n="tk.compliance.sub">Tokyo / Paris MoU concentrated inspection campaign (CIC) style checkpoints — verify against current PSC circular.</p>
+            </div>
+            <div id="cicTableHost"></div>
+            <p class="maritime-note" data-i18n="tk.compliance.note">Reference only. Always use the official MoU CIC questionnaire and class/statutory requirements in force.</p>`;
+        host.querySelector('#cicTableHost').innerHTML = tableHtml(
+            ['Focus area', 'Inspection checkpoint'],
+            CIC_ROWS,
+        );
+        globalThis.TVC_MarketingI18n?.applyLang?.(globalThis.TVC_MarketingI18n.getLang());
+    }
+
     function renderConversionBanner() {
         const existing = document.getElementById('toolkitFooterConversionBand');
         if (existing) return existing;
@@ -349,7 +433,7 @@ const TVC_MaritimeToolkit = (function () {
         band.className = 'toolkit-conversion-band mkt-glass-card';
         band.setAttribute('aria-label', 'TVC-SM upgrade');
         band.innerHTML = `
-            <p data-i18n="tk.conversion.banner">⚓ Looking to automate ROB tracking &amp; 1-Click Requisitions?</p>
+            <p data-i18n="tk.conversion.banner">ROB tracking and superintendent requisitions are operated in TVC-SM Fleet.</p>
             <a class="home-btn home-btn-primary" href="/contact-us?inquiry=tvc-sm-demo" data-i18n="tk.conversion.cta">Request TVC-SM Demo</a>`;
         const footer = document.getElementById('marketing-footer');
         if (footer) shell.insertBefore(band, footer);
@@ -400,14 +484,23 @@ const TVC_MaritimeToolkit = (function () {
             lube: document.getElementById('storeToolLube'),
             paint: document.getElementById('storeToolPaint'),
             engineering: document.getElementById('storeToolEngineering'),
+            electrical: document.getElementById('storeToolElectrical'),
+            compliance: document.getElementById('storeToolCompliance'),
         };
         if (hosts.bunker) renderBunkerPanel(hosts.bunker);
         if (hosts.lube) renderLubePanel(hosts.lube);
         if (hosts.paint) renderPaintPanel(hosts.paint);
         if (hosts.engineering) renderEngineeringPanel(hosts.engineering);
+        if (hosts.electrical) renderElectricalPanel(hosts.electrical);
+        if (hosts.compliance) renderCompliancePanel(hosts.compliance);
         renderConversionBanner();
         globalThis.addEventListener('tvc-mkt-lang', () => {
             if (hosts.bunker) renderBunkerPanel(hosts.bunker);
+            if (hosts.lube) renderLubePanel(hosts.lube);
+            if (hosts.paint) renderPaintPanel(hosts.paint);
+            if (hosts.engineering) renderEngineeringPanel(hosts.engineering);
+            if (hosts.electrical) renderElectricalPanel(hosts.electrical);
+            if (hosts.compliance) renderCompliancePanel(hosts.compliance);
             renderConversionBanner();
         });
         setActiveTool('catalog');
