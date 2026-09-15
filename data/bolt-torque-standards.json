@@ -1,0 +1,24 @@
+{
+  "schema": "tvc-bolt-torque-v1",
+  "formula": "T_Nm = K * d_mm * Fm_N / 1000",
+  "kFactors": { "oiled": 0.14, "dry": 0.18 },
+  "propertyClasses": {
+    "8.8": { "proofStressMpa": 580 },
+    "10.9": { "proofStressMpa": 900 },
+    "12.9": { "proofStressMpa": 1040 }
+  },
+  "preloadFactor": 0.9,
+  "bolts": [
+    { "size": "M10", "diameterMm": 10, "stressAreaMm2": 58, "thread": "coarse" },
+    { "size": "M12", "diameterMm": 12, "stressAreaMm2": 84.3, "thread": "coarse" },
+    { "size": "M14", "diameterMm": 14, "stressAreaMm2": 115, "thread": "coarse" },
+    { "size": "M16", "diameterMm": 16, "stressAreaMm2": 157, "thread": "coarse" },
+    { "size": "M20", "diameterMm": 20, "stressAreaMm2": 245, "thread": "coarse" },
+    { "size": "M24", "diameterMm": 24, "stressAreaMm2": 353, "thread": "coarse" },
+    { "size": "M27", "diameterMm": 27, "stressAreaMm2": 459, "thread": "coarse" },
+    { "size": "M30", "diameterMm": 30, "stressAreaMm2": 561, "thread": "coarse" },
+    { "size": "M36", "diameterMm": 36, "stressAreaMm2": 817, "thread": "coarse" },
+    { "size": "M42", "diameterMm": 42, "stressAreaMm2": 1120, "thread": "coarse" },
+    { "size": "M48", "diameterMm": 48, "stressAreaMm2": 1470, "thread": "coarse" }
+  ]
+}
