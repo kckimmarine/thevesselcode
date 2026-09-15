@@ -516,7 +516,7 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
 
 .home-service-intro {
     margin: 0 0 16px;
-    color: #cbd5e1;
+    color: #334155;
     font-size: 0.96rem;
     max-width: 78ch;
 }
@@ -559,7 +559,7 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
 }
 
 .home-service-card li strong {
-    color: #e2e8f0;
+    color: #0f172a;
 }
 
 .home-edge-section {
@@ -631,7 +631,7 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
 
 .home-cta-band p {
     margin: 0;
-    color: #cbd5e1;
+    color: #334155;
     font-size: 0.94rem;
 }
 
