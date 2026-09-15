@@ -41,11 +41,14 @@ const TVC_AccountProvisioning = (function () {
         }
         let synced = 0;
         const companies = TVC_AdminRegistry.listCompanies({ includeInactive: true });
+        const activeHqIds = new Set();
         for (const company of companies) {
             const hq = company.hq_login;
             if (hq?.username && hq?.password_hash) {
+                const provId = `prov-hq-${slugId(company.company_id)}`;
+                activeHqIds.add(provId);
                 await TVC_Auth.upsertProvisionedUser({
-                    id: `prov-hq-${slugId(company.company_id)}`,
+                    id: provId,
                     username: String(hq.username).trim(),
                     password_hash: hq.password_hash,
                     account_type: 'SM',
@@ -75,6 +78,18 @@ const TVC_AccountProvisioning = (function () {
                 });
                 synced++;
             }
+        }
+        if (typeof TVC_DB !== 'undefined') {
+            const users = await TVC_DB.getAll('users').catch(() => []);
+            for (const u of users) {
+                const id = String(u.id || '');
+                if (id.startsWith('prov-hq-') && !activeHqIds.has(id)) {
+                    try { await TVC_DB.del('users', id); } catch (_) {}
+                }
+            }
+        }
+        if (typeof TVC_Auth?.purgeDeprecatedUsers === 'function') {
+            await TVC_Auth.purgeDeprecatedUsers();
         }
         return { synced };
     }

@@ -5,7 +5,7 @@ const TVC_Auth = (function () {
     const AUTH_SESSION_KEY = 'tvc_auth_session';
     const AUTH_SESSION_TTL_MS = 30 * 24 * 60 * 60 * 1000;
     const DEMO_PASSWORD = '0000';
-    const USERS_SEED_VERSION = 22;
+    const USERS_SEED_VERSION = 23;
 
     const DEFAULT_USERS = [
         // Contract vessel — ABC Voyager (demo ship accounts)
@@ -60,12 +60,45 @@ const TVC_Auth = (function () {
         return hash;
     }
 
+    function normalizeLoginUsername(username) {
+        return String(username || '')
+            .normalize('NFKC')
+            .replace(/\s+/g, ' ')
+            .trim();
+    }
+
+    function usernameMatches(a, b) {
+        return normalizeLoginUsername(a).toLowerCase() === normalizeLoginUsername(b).toLowerCase();
+    }
+
+    function findLoginUser(users, rawUsername) {
+        const uname = normalizeLoginUsername(rawUsername);
+        if (!uname) return null;
+        const template = DEFAULT_USERS.find(u => usernameMatches(u.username, uname));
+        if (template) {
+            return users.find(u => u.id === template.id && u.is_active)
+                || users.find(u => usernameMatches(u.username, template.username) && u.is_active)
+                || null;
+        }
+        return users.find(u => usernameMatches(u.username, uname) && u.is_active) || null;
+    }
+
+    /** Re-seed when bundled demo accounts are missing (common on fresh Cloud / mobile IndexedDB). */
+    async function ensureDefaultUsers() {
+        const existing = await TVC_DB.getAll('users').catch(() => []);
+        const missing = DEFAULT_USERS.some(tpl =>
+            !existing.some(u => u.id === tpl.id && u.is_active && usernameMatches(u.username, tpl.username))
+        );
+        if (missing) return initUsers();
+        return { skipped: true };
+    }
+
     async function initUsers() {
         const seedVer = await TVC_DB.getMeta('users_seed_version').catch(() => null);
         if (seedVer === USERS_SEED_VERSION) {
             const existing = await TVC_DB.getAll('users');
             const allPresent = DEFAULT_USERS.every(tpl =>
-                existing.some(u => u.id === tpl.id && u.is_active && u.username === tpl.username && u.role === tpl.role)
+                existing.some(u => u.id === tpl.id && u.is_active && usernameMatches(u.username, tpl.username) && u.role === tpl.role)
             );
             if (allPresent) return { skipped: true };
         }
@@ -98,6 +131,17 @@ const TVC_Auth = (function () {
             if (tpl && row.id !== tpl.id) await TVC_DB.del('users', row.id);
         }
         try { await TVC_DB.setMeta('users_seed_version', USERS_SEED_VERSION); } catch (_) {}
+        await purgeDeprecatedUsers();
+    }
+
+    /** Remove retired pilot logins (e.g. tvc) even when user seed was skipped. */
+    async function purgeDeprecatedUsers() {
+        const fresh = await TVC_DB.getAll('users').catch(() => []);
+        for (const row of fresh) {
+            if (DEPRECATED_USERNAMES.includes(row.username)) {
+                try { await TVC_DB.del('users', row.id); } catch (_) {}
+            }
+        }
     }
 
     async function upsertProvisionedUser(record) {
@@ -307,14 +351,21 @@ const TVC_Auth = (function () {
     }
 
     async function login(username, password, loginMode) {
+        await ensureDefaultUsers();
         const users = await TVC_DB.getAll('users');
-        const uname = username.trim();
-        const template = DEFAULT_USERS.find(u => u.username === uname);
-        const user = template
-            ? (users.find(u => u.id === template.id && u.is_active)
-                || users.find(u => u.username === template.username && u.is_active))
-            : users.find(u => u.username === uname && u.is_active);
-        if (!user) return { ok: false, error: 'Account not found.' };
+        const uname = normalizeLoginUsername(username);
+        let user = findLoginUser(users, uname);
+        if (!user) {
+            await initUsers();
+            const retryUsers = await TVC_DB.getAll('users');
+            user = findLoginUser(retryUsers, uname);
+        }
+        if (!user) {
+            const hint = DEFAULT_USERS.some(u => usernameMatches(u.username, uname))
+                ? ' Demo accounts are stored locally — wait for “Preparing system…” to finish, then try again.'
+                : '';
+            return { ok: false, error: `Account not found.${hint}` };
+        }
         const hash = await hashPassword(password);
         if (hash !== user.password_hash) return { ok: false, error: 'Incorrect password.' };
 
@@ -552,7 +603,7 @@ const TVC_Auth = (function () {
     }
 
     return {
-        initUsers, login, logout, getCurrentUser, refreshSessionFromDb, registerSupplier, requirePermission, changePassword,
+        initUsers, ensureDefaultUsers, purgeDeprecatedUsers, normalizeLoginUsername, login, logout, getCurrentUser, refreshSessionFromDb, registerSupplier, requirePermission, changePassword,
         upsertProvisionedUser, hashPasswordForProvision, DEMO_PASSWORD, DEFAULT_USERS,
         getSavedId, setSavedId, clearSavedId, savePersistedAuthSession, clearPersistedAuthSession,
         hasPersistedAuthSession, applySavedIdToLoginForm, restorePersistedAuthSession,

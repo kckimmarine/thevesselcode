@@ -422,6 +422,11 @@ const TVC_App = (function () {
                     }
                 }
             } catch (e) { console.warn('[TVC] provisioned accounts sync', e); }
+            try {
+                if (typeof TVC_Auth.purgeDeprecatedUsers === 'function') {
+                    await TVC_Auth.purgeDeprecatedUsers();
+                }
+            } catch (e) { console.warn('[TVC] purge deprecated logins', e); }
 
             try { TVC_Auth.applySavedIdToLoginForm(); } catch (e) { console.warn('[TVC] saved login id', e); }
 
@@ -17836,6 +17841,9 @@ const TVC_App = (function () {
             setLoginBusy(true, 'Signing in…');
             if (errEl) errEl.textContent = '';
             await TVC_DB.open();
+            if (typeof TVC_Auth.ensureDefaultUsers === 'function') {
+                await TVC_Auth.ensureDefaultUsers();
+            }
             const loginMode = document.getElementById('loginDept')?.value || '';
         const r = await TVC_Auth.login(
             document.getElementById('loginUser').value,
