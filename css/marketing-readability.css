@@ -1,17 +1,24 @@
 /* Marketing portal — readability, typography, PLG, toolkit tables */
 
 body.tvc-marketing-body {
-    background-color: #f1f5f9 !important;
-    color: #334155 !important;
+    background-color: #f8fafc !important;
+    color: #1e293b !important;
     line-height: 1.65;
     overflow-x: hidden;
 }
 
 body.tvc-marketing-body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
     background:
-        radial-gradient(circle at 12% 8%, rgba(2, 132, 199, 0.06) 0%, transparent 42%),
-        radial-gradient(circle at 88% 92%, rgba(15, 23, 42, 0.04) 0%, transparent 48%),
-        linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%) !important;
+        radial-gradient(circle at 80% 20%, rgba(2, 132, 199, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 10% 80%, rgba(15, 23, 42, 0.02) 0%, transparent 40%) !important;
 }
 
 body.tvc-marketing-body::after {
@@ -23,10 +30,10 @@ body.tvc-marketing-body::after {
     height: 100vh;
     z-index: -1;
     pointer-events: none;
-    opacity: 1;
+    opacity: 0.35;
     background-image:
-        linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+        linear-gradient(rgba(15, 23, 42, 0.028) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 23, 42, 0.028) 1px, transparent 1px);
     background-size: 24px 24px;
 }
 
@@ -36,7 +43,7 @@ body.tvc-marketing-body h3,
 body.tvc-marketing-body h4 {
     color: #0f172a;
     font-weight: 800;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
 }
 
 body.tvc-marketing-body p,
@@ -54,7 +61,7 @@ body.tvc-marketing-body .home-hero-copy h1,
 body.tvc-marketing-body #homeHeroTitle {
     color: #0f172a !important;
     font-weight: 800 !important;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.02em !important;
     line-height: 1.2 !important;
     text-transform: none;
 }
@@ -71,9 +78,16 @@ body.tvc-marketing-body #homeHeroTitle {
 }
 
 body.tvc-marketing-body .home-launch-eyebrow {
-    background: rgba(2, 132, 199, 0.1) !important;
+    background: rgba(2, 132, 199, 0.08) !important;
     color: #0284c7 !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
+    border: 1px solid rgba(2, 132, 199, 0.22) !important;
+}
+
+body.tvc-marketing-body .home-platform-badge {
+    color: #0284c7 !important;
+    font-weight: 600 !important;
+    background: rgba(2, 132, 199, 0.08) !important;
     border: 1px solid rgba(2, 132, 199, 0.22) !important;
 }
 
@@ -91,6 +105,7 @@ body.tvc-marketing-body .home-launch-eyebrow {
 body.tvc-marketing-body .tvc-card,
 body.tvc-marketing-body .platform-card,
 body.tvc-marketing-body .market-card,
+body.tvc-marketing-body .mkt-card,
 body.tvc-marketing-body .mkt-pricing-card,
 body.tvc-marketing-body .mkt-glass-card,
 body.tvc-marketing-body .home-card,
@@ -105,9 +120,38 @@ body.tvc-marketing-body .mkt-intel-card {
     border: 1px solid #cbd5e1 !important;
     border-radius: 12px;
     box-shadow:
-        0 4px 6px -1px rgba(15, 23, 42, 0.05),
-        0 2px 4px -2px rgba(15, 23, 42, 0.05);
+        0 4px 20px -2px rgba(15, 23, 42, 0.04),
+        0 2px 6px -1px rgba(15, 23, 42, 0.02);
     padding: 24px;
+}
+
+/* Precision SVG icon system (replaces raw emoji) */
+body.tvc-marketing-body .home-btn {
+    gap: 8px;
+    min-height: 44px;
+}
+
+body.tvc-marketing-body .mkt-btn-icon,
+body.tvc-marketing-body .mkt-feature-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    stroke: currentColor;
+    fill: none;
+}
+
+body.tvc-marketing-body .home-card-icon.mkt-icon-tile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    font-size: inherit;
+    margin-bottom: 10px;
+    padding: 6px;
+    border-radius: 8px;
+    background: rgba(2, 132, 199, 0.08);
+    color: #0284c7;
+    line-height: 0;
 }
 
 body.tvc-marketing-body .home-platform-mode {
@@ -249,6 +293,7 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero.hero-search-first {
     body.tvc-marketing-body .tvc-card,
     body.tvc-marketing-body .platform-card,
     body.tvc-marketing-body .market-card,
+    body.tvc-marketing-body .mkt-card,
     body.tvc-marketing-body .mkt-glass-card,
     body.tvc-marketing-body .home-card,
     body.tvc-marketing-body .home-hero-card,
