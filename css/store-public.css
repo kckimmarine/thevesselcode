@@ -596,10 +596,15 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     min-width: 220px;
 }
 
+.store-public-mode #impaTableContainer,
 .store-public-mode #catalog-table-wrapper,
 .store-public-mode #storeVlWrap {
     flex: 1;
     min-height: 280px;
+    --impa-row-h: 44px;
+    --impa-head-h: 40px;
+    --impa-visible-rows: 25;
+    --impa-page-size: 25;
 }
 
 .store-public-mode .store-catalog-hscroll {
@@ -610,9 +615,41 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     overflow: hidden;
 }
 
+.store-public-mode #impaTableContainer .store-vl-scroll,
 .store-public-mode .store-vl-scroll {
     max-height: calc(100dvh - 280px);
     min-height: 240px;
+}
+
+@media (min-width: 769px) {
+    .store-public-mode #impaTableContainer.store-table-wrapper .store-vl-scroll {
+        min-height: calc(var(--impa-visible-rows, 25) * var(--impa-row-h, 44px));
+        max-height: min(
+            calc(100dvh - 280px),
+            calc(var(--impa-page-size, 25) * var(--impa-row-h, 44px) + var(--impa-head-h, 40px))
+        );
+        overflow-y: auto;
+    }
+
+    .store-public-mode #impaTableContainer.store-table-wrapper .store-catalog-hscroll {
+        min-height: calc(var(--impa-visible-rows, 25) * var(--impa-row-h, 44px) + var(--impa-head-h, 40px));
+    }
+}
+
+.store-public-mode .impa-page-size-select {
+    min-width: 6.5rem;
+    padding: 6px 10px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #334155;
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.store-public-mode .store-toolbar-public .impa-page-size-select {
+    flex-shrink: 0;
 }
 
 .store-tool-flange .store-public-main,
@@ -744,6 +781,7 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     }
 
     /* IMPA catalog — header fixed on vertical scroll; shared horizontal scroll */
+    #impaTableContainer.store-catalog-wrap,
     #catalog-table-wrapper.store-catalog-wrap {
         flex: 1;
         min-height: 0;
@@ -765,6 +803,7 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
         -webkit-overflow-scrolling: touch;
     }
 
+    #impaTableContainer.store-catalog-wrap .store-vl-head,
     #catalog-table-wrapper.store-catalog-wrap .store-vl-head {
         flex-shrink: 0;
         width: 500px;
@@ -772,16 +811,21 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
         grid-template-columns: 96px 220px 140px;
     }
 
+    #impaTableContainer.store-catalog-wrap .store-vl-unit,
+    #impaTableContainer.store-catalog-wrap .store-vl-unit-head,
     #catalog-table-wrapper.store-catalog-wrap .store-vl-unit,
     #catalog-table-wrapper.store-catalog-wrap .store-vl-unit-head {
         display: none;
     }
 
+    #impaTableContainer.store-catalog-wrap .store-vl-head span,
+    #impaTableContainer.store-catalog-wrap .store-vl-cell,
     #catalog-table-wrapper.store-catalog-wrap .store-vl-head span,
     #catalog-table-wrapper.store-catalog-wrap .store-vl-cell {
         white-space: nowrap;
     }
 
+    #impaTableContainer.store-catalog-wrap #storeVlScroll.store-vl-scroll,
     #catalog-table-wrapper.store-catalog-wrap #storeVlScroll.store-vl-scroll {
         flex: 1;
         min-height: 0 !important;
@@ -794,6 +838,8 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
         -webkit-overflow-scrolling: touch;
     }
 
+    #impaTableContainer.store-catalog-wrap #storeVlScroll .vl-inner,
+    #impaTableContainer.store-catalog-wrap #storeVlScroll .store-vl-row,
     #catalog-table-wrapper.store-catalog-wrap #storeVlScroll .vl-inner,
     #catalog-table-wrapper.store-catalog-wrap #storeVlScroll .store-vl-row {
         width: 500px;
@@ -1105,6 +1151,7 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     user-select: none;
 }
 
+.store-public-main #impaTableContainer #storeVlScroll .impa-page-inner .store-vl-row,
 .store-public-main #storeVlScroll .impa-page-inner .store-vl-row {
     position: relative;
     top: auto;

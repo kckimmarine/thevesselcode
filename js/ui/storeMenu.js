@@ -18,7 +18,9 @@ const TVC_StoreMenu = (function () {
     let _detailReturnUrl = '';
     let _popstateBound = false;
     const STORE_ROW_H = 44;
-    const PAGE_SIZE = 13;
+    const PAGE_SIZE_OPTIONS = [25, 50, 100];
+    const PAGE_SIZE_DEFAULT = PAGE_SIZE_OPTIONS[0];
+    let _pageSize = PAGE_SIZE_DEFAULT;
     const SEARCH_DEBOUNCE_MS = 180;
     const PUBLIC_SEARCH_DEBOUNCE_MS = 100;
 
@@ -288,6 +290,7 @@ const TVC_StoreMenu = (function () {
         if (_publicMode) {
             document.documentElement.classList.add('store-public-mode');
             TVC_StoreManager.enableMemorySearch(true);
+            loadSavedPageSize();
         }
         applyModalPublicMode();
     }
@@ -948,13 +951,48 @@ const TVC_StoreMenu = (function () {
         }
     }
 
+    function getPageSize() {
+        return _pageSize;
+    }
+
+    function setPageSize(size) {
+        const n = Number(size);
+        if (!PAGE_SIZE_OPTIONS.includes(n)) return;
+        _pageSize = n;
+        try {
+            sessionStorage.setItem('tvc_impa_page_size', String(n));
+        } catch { /* ignore */ }
+    }
+
+    function loadSavedPageSize() {
+        try {
+            const raw = sessionStorage.getItem('tvc_impa_page_size');
+            const n = Number(raw);
+            if (PAGE_SIZE_OPTIONS.includes(n)) _pageSize = n;
+        } catch { /* ignore */ }
+    }
+
     function publicPaginationCountLabel(totalFiltered, currentPage) {
+        const pageSize = getPageSize();
         const total = Math.max(0, Number(totalFiltered) || 0);
         if (!total) return 'Showing 0 of 0 items';
         const page = Math.max(1, currentPage);
-        const start = (page - 1) * PAGE_SIZE + 1;
-        const end = Math.min(page * PAGE_SIZE, total);
+        const start = (page - 1) * pageSize + 1;
+        const end = Math.min(page * pageSize, total);
         return `Showing ${start} - ${end} of ${total.toLocaleString()} items`;
+    }
+
+    function pageSizeOptionsHtml() {
+        return PAGE_SIZE_OPTIONS.map(n =>
+            `<option value="${n}"${n === _pageSize ? ' selected' : ''}>${n} / page</option>`).join('');
+    }
+
+    function syncImpaTableLayout(root, visibleRowCount) {
+        const table = root.querySelector('#impaTableContainer');
+        if (!table) return;
+        const rows = Math.max(1, Math.min(visibleRowCount || 1, getPageSize()));
+        table.style.setProperty('--impa-visible-rows', String(rows));
+        table.style.setProperty('--impa-page-size', String(getPageSize()));
     }
 
     function countLabel(search, paginationMeta) {
@@ -1019,6 +1057,7 @@ const TVC_StoreMenu = (function () {
 
     function scrollCatalogToTop(root) {
         const targets = [
+            root.querySelector('#impaTableContainer'),
             root.querySelector('#catalog-table-wrapper'),
             root.querySelector('#storeCatalogHScroll'),
             root.querySelector('#storeVlScroll'),
@@ -1074,6 +1113,7 @@ const TVC_StoreMenu = (function () {
         if (!scroll) return;
         destroyVirtualList();
         scroll.innerHTML = `<div class="vl-inner impa-page-inner">${pageItems.map(rowHtml).join('')}</div>`;
+        syncImpaTableLayout(root, pageItems.length);
     }
 
     function toolbarHtml(search, cartCount) {
@@ -1085,6 +1125,9 @@ const TVC_StoreMenu = (function () {
                     aria-label="Search catalog" value="${esc(query)}" autocomplete="off" spellcheck="false">
                 <select id="storeCategoryFilter" class="store-category-filter" aria-label="Filter by category">
                     ${categoryOptionsHtml()}
+                </select>
+                <select id="impaPageSizeSelect" class="impa-page-size-select" aria-label="Items per page">
+                    ${pageSizeOptionsHtml()}
                 </select>
                 <span class="store-count" id="storeCatalogCount">${countLabel(search)}</span>
             </div>`;
@@ -1132,7 +1175,7 @@ const TVC_StoreMenu = (function () {
         const wrapClass = `store-vl-wrap${_publicMode ? ' store-catalog-wrap' : ''}${hasItems ? '' : ' hidden'}`;
         if (_publicMode) {
             return `
-            <div id="catalog-table-wrapper" class="${wrapClass}" role="table" aria-label="IMPA catalog">
+            <div id="impaTableContainer" class="store-table-wrapper ${wrapClass}" role="table" aria-label="IMPA catalog">
                 <div id="storeCatalogHScroll" class="store-catalog-hscroll">
                     ${head}
                     ${scroll}
@@ -1200,12 +1243,13 @@ const TVC_StoreMenu = (function () {
         if (_publicMode) {
             items = resolvePublicCatalogItems(search);
             const totalFiltered = items.length;
-            const totalPages = Math.max(1, Math.ceil(totalFiltered / PAGE_SIZE));
+            const pageSize = getPageSize();
+            const totalPages = Math.max(1, Math.ceil(totalFiltered / pageSize));
             if (_currentPage > totalPages) _currentPage = totalPages;
             if (_currentPage < 1) _currentPage = 1;
             paginationMeta = { totalFiltered, currentPage: _currentPage, totalPages };
-            const start = (_currentPage - 1) * PAGE_SIZE;
-            items = items.slice(start, start + PAGE_SIZE);
+            const start = (_currentPage - 1) * pageSize;
+            items = items.slice(start, start + pageSize);
         }
 
         const countEl = root.querySelector('#storeCatalogCount');
@@ -1219,7 +1263,8 @@ const TVC_StoreMenu = (function () {
         }
 
         const empty = root.querySelector('#storeEmpty');
-        const wrap = root.querySelector('#catalog-table-wrapper');
+        const wrap = root.querySelector('#impaTableContainer')
+            || root.querySelector('#catalog-table-wrapper');
 
         if (!items.length) {
             wrap?.classList.add('hidden');
@@ -1340,12 +1385,19 @@ const TVC_StoreMenu = (function () {
             paintSearchResults(root, TVC_StoreManager.getLastSearch());
         });
 
+        root.querySelector('#impaPageSizeSelect')?.addEventListener('change', e => {
+            setPageSize(e.target.value);
+            _currentPage = 1;
+            scrollCatalogToTop(root);
+            paintSearchResults(root, TVC_StoreManager.getLastSearch());
+        });
+
         root.querySelector('#impaPagination')?.addEventListener('click', e => {
             const btn = e.target.closest('button');
             if (!btn || btn.disabled) return;
             const search = TVC_StoreManager.getLastSearch();
             const allItems = resolvePublicCatalogItems(search);
-            const totalPages = Math.max(1, Math.ceil(allItems.length / PAGE_SIZE));
+            const totalPages = Math.max(1, Math.ceil(allItems.length / getPageSize()));
             let nextPage = _currentPage;
             if (btn.dataset.pageAction === 'prev') nextPage = _currentPage - 1;
             else if (btn.dataset.pageAction === 'next') nextPage = _currentPage + 1;
