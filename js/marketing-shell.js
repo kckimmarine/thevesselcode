@@ -9,6 +9,7 @@
     const NAV = [
         { id: 'home', href: '/', i18n: 'nav.home' },
         { id: 'toolkit', href: '/toolkit', i18n: 'nav.toolkit' },
+        { id: 'insights', href: '/insights', i18n: 'nav.insights' },
         { id: 'sm', href: '/sm', i18n: 'nav.sm' },
         { id: 'contact', href: '/contact-us', i18n: 'nav.contact' },
     ];
@@ -16,6 +17,7 @@
     const FOOTER_LINKS = [
         { href: '/', i18n: 'nav.home' },
         { href: '/toolkit', i18n: 'nav.toolkit' },
+        { href: '/insights', i18n: 'nav.insights' },
         { href: '/sm', i18n: 'nav.sm' },
         { href: '/contact-us', i18n: 'nav.contact' },
         { href: '/services', i18n: 'nav.services' },

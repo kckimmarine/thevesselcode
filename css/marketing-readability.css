@@ -2441,6 +2441,91 @@ body.tvc-marketing-body .leaflet-tooltip.tvc-ais-map-tooltip {
     box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
 }
 
+body.tvc-marketing-body .tvc-vessel-capability-panel {
+    display: grid;
+    gap: 8px;
+    margin: 12px 0 14px;
+    min-height: 4.5rem;
+}
+
+body.tvc-marketing-body .tvc-vessel-capability-row {
+    display: grid;
+    grid-template-columns: minmax(7.5rem, 9.5rem) 1fr;
+    gap: 8px 12px;
+    align-items: start;
+    min-height: 2rem;
+}
+
+body.tvc-marketing-body .tvc-vessel-capability-row--placeholder {
+    display: none;
+}
+
+body.tvc-marketing-body .tvc-vessel-capability-label {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #64748b;
+    line-height: 1.35;
+    padding-top: 2px;
+}
+
+body.tvc-marketing-body .tvc-vessel-capability-badge {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.45;
+    color: #0f172a;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
+body.tvc-marketing-body .tvc-vessel-capability-badge--compliance {
+    background: #f0fdf4;
+    border-color: #bbf7d0;
+    color: #14532d;
+}
+
+body.tvc-marketing-body .tvc-vessel-lookup-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    align-items: center;
+    margin-top: 12px;
+}
+
+body.tvc-marketing-body .tvc-vessel-lookup-tool-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #0284c7;
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+body.tvc-marketing-body .tvc-vessel-lookup-tool-link:hover {
+    border-color: #0284c7;
+    background: #f0f9ff;
+}
+
+@media (max-width: 480px) {
+    body.tvc-marketing-body .tvc-vessel-capability-row {
+        grid-template-columns: 1fr;
+    }
+
+    body.tvc-marketing-body .tvc-vessel-lookup-tool-link {
+        white-space: normal;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+}
+
 body.tvc-marketing-body .tvc-ais-vessel-icon-wrap {
     background: transparent;
     border: 0;

@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Maritime Insights",
+    "description": "Strategic operations, fleet intelligence, and supply-chain efficiency from THE VESSEL CODE."
+  },
+  "posts": [
+    {
+      "id": "six-pillars-global-fleet-management",
+      "slug": "six-pillars-global-fleet-management",
+      "title": "Decoding the 6 Pillars of Global Fleet Management: Specs, Cargo, Routes, and SCM Efficiency",
+      "category": "Strategic Operations",
+      "published": "2026-09-16",
+      "excerpt": "Why traditional Excel management fails modern shipping and how unified data pipelines eliminate millions in off-hire losses.",
+      "author": "TVC Market Intelligence",
+      "sections": [
+        {
+          "heading": "Why spreadsheets are still sinking margin",
+          "body": "Most operators still reconcile vessel particulars, cargo compatibility matrices, and voyage P&L in disconnected Excel workbooks. When a charterer requests an IMO Type II parcel on a coated tanker, the answer depends on who answers the email — not on a single verified registry. That latency converts directly into off-hire, failed fixtures, and penalty clauses."
+        },
+        {
+          "heading": "Pillar 1 — Verified technical specifications",
+          "body": "Hull dimensions, engine model, and class notation must be authoritative at search time — not scraped from stale third-party pages. Priority fleets benefit from override registries that guarantee manager, DWT, and environmental class before a fixture call is returned."
+        },
+        {
+          "heading": "Pillar 2 — Cargo compatibility and coating discipline",
+          "body": "Chemical and clean petroleum trades require explicit IMO II/III capability, stainless grades, and epoxy barrier statements. Publishing cargo badges alongside vessel particulars prevents incompatible nominations and reduces tank cleaning disputes."
+        },
+        {
+          "heading": "Pillar 3 — Route intelligence &amp; coastal AIS",
+          "body": "Terrestrial AIS covers coastal legs; open-ocean gaps are normal. Operations teams should treat live coastal fixes and satellite or embed fallbacks as complementary — never as a single source of truth for ETA commitments."
+        },
+        {
+          "heading": "Pillar 4 — Environmental compliance (MARPOL and CII)",
+          "body": "Annex VI Tier II/III, CII rating bands, and EEXI records belong in the same view as commercial specs. Superintendents negotiating 2026 charters need instant proof of compliance posture without opening five PDF folders."
+        },
+        {
+          "heading": "Pillar 5 — Stores and IMPA requisition integrity",
+          "body": "Engineering stores catalogs exceed 15,000 IMPA codes. Linking verified vessel context to IMPA chapter filters cuts RFQ errors and aligns shore procurement with what the ship can legally carry and store."
+        },
+        {
+          "heading": "Pillar 6 — SCM efficiency &amp; unified TVC-SM pipelines",
+          "body": "Purchase orders, work reports, and ROB should not be re-keyed between superintendent laptops and shipboard PMS. A unified fleet OS synchronizes via controlled ZIP exchange, preserving offline safety while eliminating duplicate stock deductions on confirm."
+        }
+      ],
+      "cta": {
+        "title": "Run your fleet on verified data — not spreadsheets",
+        "body": "Start a TVC-SM trial: offline-first Vessel Core, superintendent dashboards, and IMPA-linked requisitions on one pipeline.",
+        "primaryHref": "/sm",
+        "primaryLabel": "Start TVC-SM trial",
+        "secondaryHref": "/toolkit",
+        "secondaryLabel": "Explore Maritime Toolkit"
+      }
+    }
+  ]
+}

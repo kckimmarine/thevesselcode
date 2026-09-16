@@ -53,9 +53,30 @@
             engine_model: vessel.engine_model || vessel.e,
             gt: vessel.gt ?? vessel.g,
             mmsi: vessel.mmsi || vessel.s,
+            cargo: vessel.cargo || vessel.c || '',
+            compliance: vessel.compliance || vessel.z || '',
             exNameMatch: vessel._exNameMatch || '',
             voyage: vessel.voyage || null,
         };
+    }
+
+    function renderCapabilityBadges(vessel) {
+        const cargo = vessel.cargo || vessel.c || '';
+        const compliance = vessel.compliance || vessel.z || '';
+        const cargoRow = hasValue(cargo)
+            ? `<div class="tvc-vessel-capability-row">
+                <span class="tvc-vessel-capability-label">Cargo Capabilities</span>
+                <span class="tvc-vessel-capability-badge">${esc(cargo)}</span>
+            </div>`
+            : '<div class="tvc-vessel-capability-row tvc-vessel-capability-row--placeholder" aria-hidden="true"></div>';
+        const complianceRow = hasValue(compliance)
+            ? `<div class="tvc-vessel-capability-row">
+                <span class="tvc-vessel-capability-label">Compliance / Efficiency</span>
+                <span class="tvc-vessel-capability-badge tvc-vessel-capability-badge--compliance">${esc(compliance)}</span>
+            </div>`
+            : '<div class="tvc-vessel-capability-row tvc-vessel-capability-row--placeholder" aria-hidden="true"></div>';
+        if (!hasValue(cargo) && !hasValue(compliance)) return '';
+        return `<div class="tvc-vessel-capability-panel" aria-label="Cargo and environmental compliance">${cargoRow}${complianceRow}</div>`;
     }
 
     async function loadAisSnapshot() {
@@ -304,9 +325,12 @@
                 </p>
             </header>
             ${specs ? `<div class="tvc-vessel-lookup-grid" aria-label="Technical particulars">${specs}</div>` : ''}
+            ${renderCapabilityBadges(vessel)}
             ${renderVoyageSection(voyage)}
-            <div class="tvc-vessel-lookup-actions tvc-vessel-lookup-actions--single">
+            <div class="tvc-vessel-lookup-actions">
                 <button type="button" class="tvc-vessel-lookup-ais home-btn home-btn-primary" data-ais-imo="${esc(v.imo)}" data-ais-name="${esc(v.name)}" data-ais-mmsi="${esc(v.mmsi || '')}">🗺️ View Live Position</button>
+                <a class="tvc-vessel-lookup-tool-link" href="/toolkit?tool=bunker#tab-bunker">⛽ Voyage Fuel &amp; CO2 Calc</a>
+                <a class="tvc-vessel-lookup-tool-link" href="/toolkit?tool=catalog#tab-impa">📦 Verified Stores (IMPA)</a>
             </div>
         </article>`;
     }
