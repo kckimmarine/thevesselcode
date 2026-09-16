@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "updated": "2026-09-16",
+  "vessels": [
+    {
+      "imo": "9876543",
+      "name": "TVC PHOENIX",
+      "type": "Bulk Carrier",
+      "dwt": "63,500 MT",
+      "built_year": 2018,
+      "flag": "Panama",
+      "technical_manager": "ABC Shipping Co., Ltd.",
+      "engine_model": "MAN B&W 6S50ME-C9.5",
+      "call_sign": "3EAA2"
+    },
+    {
+      "imo": "9123456",
+      "name": "ABC VOYAGER",
+      "type": "Container Ship",
+      "dwt": "52,800 MT",
+      "built_year": 2015,
+      "flag": "Marshall Islands",
+      "technical_manager": "ABC Shipping Co., Ltd.",
+      "engine_model": "Wärtsilä 7RT-flex82C",
+      "call_sign": "V7AB2"
+    },
+    {
+      "imo": "9234567",
+      "name": "PACIFIC HORIZON",
+      "type": "Oil/Chemical Tanker",
+      "dwt": "49,999 MT",
+      "built_year": 2012,
+      "flag": "Singapore",
+      "technical_manager": "Horizon Shipmanagement Pte. Ltd.",
+      "engine_model": "MAN B&W 6S50MC-C",
+      "call_sign": "9V2345"
+    },
+    {
+      "imo": "9345678",
+      "name": "NORDIC SPIRIT",
+      "type": "LNG Carrier",
+      "dwt": "84,200 MT",
+      "built_year": 2020,
+      "flag": "Norway",
+      "technical_manager": "Nordic Gas Management AS",
+      "engine_model": "Wärtsilä 50DF",
+      "call_sign": "LABC3"
+    },
+    {
+      "imo": "9456789",
+      "name": "EAST WIND",
+      "type": "General Cargo",
+      "dwt": "12,400 MT",
+      "built_year": 2008,
+      "flag": "Philippines",
+      "technical_manager": "East Wind Maritime Inc.",
+      "engine_model": "Yanmar 6EY22ALW",
+      "call_sign": "DUQW"
+    }
+  ]
+}

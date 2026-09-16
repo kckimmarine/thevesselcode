@@ -1116,6 +1116,15 @@ const TVC_MaritimeToolkit = (function () {
         await loadEngineeringKnowledgeIndex();
         initEngineeringSearch();
 
+        if (globalThis.TVC_VesselLookup?.loadFromJson) {
+            try {
+                await globalThis.TVC_VesselLookup.loadFromJson('/data/vessel-registry-sample.json');
+                globalThis.TVC_VesselLookup.init();
+            } catch (err) {
+                console.warn('[MaritimeToolkit] vessel registry load', err);
+            }
+        }
+
         const hosts = {
             bunker: document.getElementById('storeToolBunker'),
             lube: document.getElementById('storeToolLube'),
