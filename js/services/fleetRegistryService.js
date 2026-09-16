@@ -11,6 +11,7 @@
     const EXNAME_INDEX_URL = '/data/fleet/fleet-exname-index.json';
     const MIN_QUERY_LEN = 3;
     const DEBOUNCE_MS = 150;
+    const PUBLIC_SEARCH_DEBOUNCE_MS = 300;
     const MAX_RESULTS = 10;
     const SCORE_IMO_EXACT = 1000;
     const SCORE_NAME_EXACT = 1200;
@@ -149,15 +150,44 @@
                 else if (nameNorm.startsWith(queryNorm)) score = Math.max(score, SCORE_NAME_PREFIX + SCORE_OVERRIDE_BOOST);
                 else if (nameNorm.includes(queryNorm)) score = Math.max(score, SCORE_NAME_CONTAINS + SCORE_OVERRIDE_BOOST);
             }
+            const tokens = queryTokens(queryNorm);
+            if (tokens.length > 1 && nameMatchesAllTokens(nameNorm, tokens)) {
+                score = Math.max(score, SCORE_NAME_ALL_TOKENS + SCORE_OVERRIDE_BOOST);
+            }
             if (!isPureImoQuery(raw) && queryNorm) {
                 for (const ex of row.x || []) {
                     const exNorm = normalizeSearch(ex);
+                    if (!exNorm) continue;
                     if (exNorm === queryNorm) score = Math.max(score, SCORE_EX_NAME_EXACT + SCORE_OVERRIDE_BOOST);
+                    else if (exNorm.startsWith(queryNorm)) {
+                        score = Math.max(score, SCORE_NAME_PREFIX + SCORE_OVERRIDE_BOOST - 20);
+                    }
                 }
             }
             if (score > 0) hits.push({ imo: imo7, score });
         }
         return hits;
+    }
+
+    async function resolveOverrideSearch(raw, queryNorm, queryImo) {
+        await loadOverrides();
+        const hits = collectOverrideSearchHits(raw, queryNorm, queryImo);
+        if (!hits.length) return null;
+
+        const ranked = hits
+            .sort((a, b) => b.score - a.score || a.imo.localeCompare(b.imo))
+            .slice(0, MAX_RESULTS);
+
+        const vessels = [];
+        for (const { imo } of ranked) {
+            const row = _overrides?.[imo];
+            if (!row) continue;
+            let v = cacheVessel(vesselFromOverride(imo, row));
+            const exLabel = exNameMatchedByQuery(raw, v);
+            if (exLabel) v = { ...v, _exNameMatch: exLabel };
+            vessels.push(v);
+        }
+        return vessels.length ? vessels : null;
     }
 
     function profileForImo(imo) {
@@ -409,28 +439,18 @@
         return hits;
     }
 
-    async function searchFleet(query) {
+    async function searchPublicFleet(query) {
         const raw = String(query || '').trim();
         if (raw.length < MIN_QUERY_LEN) return [];
 
-        const cacheKey = normalizeSearch(raw);
+        const cacheKey = `public:${normalizeSearch(raw)}`;
         const cached = _searchResultCache.get(cacheKey);
         if (cached) return cached;
 
-        await loadOverrides();
         await loadProfiles();
         const idx = await loadIndex();
         const queryNorm = normalizeSearch(raw);
         const queryImo = digitsOnly(raw);
-
-        if (queryImo.length === 7 && _overrides?.[queryImo]) {
-            const vessel = cacheVessel(vesselFromOverride(queryImo, _overrides[queryImo]));
-            const results = [vessel];
-            _searchResultCache.set(cacheKey, results);
-            return results;
-        }
-
-        const overrideHits = collectOverrideSearchHits(raw, queryNorm, queryImo);
 
         const imoHits = [];
         if (queryImo.length >= MIN_QUERY_LEN && idx?.imo) {
@@ -534,9 +554,6 @@
         for (const h of profileNameHits) {
             combined.set(h.imo, Math.max(combined.get(h.imo) || 0, h.score));
         }
-        for (const h of overrideHits) {
-            combined.set(h.imo, Math.max(combined.get(h.imo) || 0, h.score));
-        }
 
         const ranked = [...combined.entries()]
             .map(([imo, score]) => ({ imo, score }))
@@ -574,6 +591,27 @@
         return results;
     }
 
+    async function searchFleet(query) {
+        const raw = String(query || '').trim();
+        if (raw.length < MIN_QUERY_LEN) return [];
+
+        const cacheKey = normalizeSearch(raw);
+        const cached = _searchResultCache.get(cacheKey);
+        if (cached) return cached;
+
+        const queryNorm = normalizeSearch(raw);
+        const queryImo = digitsOnly(raw);
+        const overrideResults = await resolveOverrideSearch(raw, queryNorm, queryImo);
+        if (overrideResults?.length) {
+            _searchResultCache.set(cacheKey, overrideResults);
+            return overrideResults;
+        }
+
+        const results = await searchPublicFleet(query);
+        _searchResultCache.set(cacheKey, results);
+        return results;
+    }
+
     async function loadNameBucket(letter) {
         const key = letter || '_';
         if (_nameBucketCache.has(key)) return _nameBucketCache.get(key);
@@ -606,24 +644,41 @@
     /** @type {Map<string, object[]>} */
     const _searchResultCache = new Map();
 
-    function createDebouncedSearch(fn) {
+    function createDebouncedSearch(publicFn, delayMs) {
         let timer = null;
         let lastGen = 0;
         return function debounced(query, onResult) {
             const gen = ++lastGen;
+            const raw = String(query || '').trim();
             clearTimeout(timer);
-            timer = setTimeout(async () => {
-                try {
-                    const results = await fn(query);
-                    if (gen === lastGen) onResult(results, null);
-                } catch (err) {
+            if (raw.length < MIN_QUERY_LEN) {
+                onResult([], null);
+                return;
+            }
+            const queryNorm = normalizeSearch(raw);
+            const queryImo = digitsOnly(raw);
+            resolveOverrideSearch(raw, queryNorm, queryImo)
+                .then((overrideResults) => {
+                    if (overrideResults?.length) {
+                        if (gen === lastGen) onResult(overrideResults, null);
+                        return;
+                    }
+                    timer = setTimeout(async () => {
+                        try {
+                            const results = await publicFn(query);
+                            if (gen === lastGen) onResult(results, null);
+                        } catch (err) {
+                            if (gen === lastGen) onResult([], err);
+                        }
+                    }, delayMs);
+                })
+                .catch((err) => {
                     if (gen === lastGen) onResult([], err);
-                }
-            }, DEBOUNCE_MS);
+                });
         };
     }
 
-    const debouncedSearch = createDebouncedSearch(searchFleet);
+    const debouncedSearch = createDebouncedSearch(searchPublicFleet, PUBLIC_SEARCH_DEBOUNCE_MS);
 
     function clearCaches() {
         _searchResultCache.clear();
@@ -633,6 +688,7 @@
         loadIndex,
         loadOverrides,
         searchFleet,
+        searchPublicFleet,
         searchVessels: searchFleet,
         debouncedSearch,
         getVesselByImo,
@@ -640,6 +696,7 @@
         clearCaches,
         MIN_QUERY_LEN,
         DEBOUNCE_MS,
+        PUBLIC_SEARCH_DEBOUNCE_MS,
         MAX_RESULTS,
     };
 
