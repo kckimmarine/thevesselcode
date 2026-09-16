@@ -26,7 +26,11 @@ function loadJson(path) {
 
 function loadEnrichmentRows() {
     const rows = [];
-    for (const rel of ['data/fleet-enrichment.json', 'data/fleet-registry-enrichment.json']) {
+    for (const rel of [
+        'data/fleet-cache/generated-fleet-enrichment.json',
+        'data/fleet-enrichment.json',
+        'data/fleet-registry-enrichment.json',
+    ]) {
         const data = loadJson(join(ROOT, rel));
         const list = Array.isArray(data) ? data : data?.vessels || [];
         for (const v of list) {
