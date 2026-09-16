@@ -38,6 +38,8 @@
     "test:auxiliary-calc": "node scripts/test-auxiliary-calc.mjs",
     "test:engineering-search": "node scripts/test-engineering-search.mjs",
     "verify:all-engineering": "node scripts/verify-all-engineering.mjs",
+    "ingest:fleet": "node scripts/ingest-global-fleet.mjs",
+    "test:global-fleet": "node scripts/test-global-fleet.mjs",
     "fetch-market-feed": "node scripts/fetch-market-feed.mjs",
     "fetch-market-feed:offline": "node scripts/fetch-market-feed.mjs --offline",
     "test:market-feed": "node scripts/test-market-feed.mjs && node scripts/test-market-feed-fetch.mjs",

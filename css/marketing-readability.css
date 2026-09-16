@@ -2171,6 +2171,20 @@ body.tvc-marketing-body .tvc-vessel-lookup-actions {
     border-top: 1px solid #e2e8f0;
 }
 
+body.tvc-marketing-body .tvc-vessel-lookup-actions--single {
+    justify-content: flex-end;
+}
+
+body.tvc-marketing-body .tvc-vessel-lookup-empty {
+    margin: 0;
+    padding: 10px 12px;
+    font-size: 0.875rem;
+    color: #64748b;
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 8px;
+}
+
 body.tvc-marketing-body .tvc-vessel-lookup-cross {
     display: flex;
     flex-wrap: wrap;

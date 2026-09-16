@@ -37,6 +37,16 @@ if (marketFeed.status !== 0) {
   console.warn('WARN market feed fetch exited non-zero (continuing with cached/baseline)');
 }
 
+const fleetIndexPath = join(root, 'public', 'data', 'fleet', 'fleet-index.json');
+const shouldIngestFleet =
+  process.env.FLEET_INGEST === '1' || !existsSync(fleetIndexPath);
+if (shouldIngestFleet) {
+  const fleet = spawnSync('node', ['scripts/ingest-global-fleet.mjs'], { cwd: root, stdio: 'inherit' });
+  if (fleet.status !== 0) process.exit(fleet.status ?? 1);
+} else {
+  console.log('OK public/data/fleet (cached fleet-index.json)');
+}
+
 const smoke = spawnSync('node', ['scripts/smoke-web-demo.mjs'], { cwd: root, stdio: 'inherit' });
 if (smoke.status !== 0) process.exit(smoke.status ?? 1);
 
