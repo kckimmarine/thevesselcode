@@ -123,7 +123,6 @@ const TVC_SmCertificates = (function () {
 
     function defaultTabForCompany(companyId) {
         const c = String(companyId || '').trim();
-        if (c === 'SWT') return 'SWT 증서';
         if (c === 'GFSM') return 'GFSM 증서';
         return 'ALL';
     }

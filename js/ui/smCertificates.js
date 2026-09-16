@@ -1,6 +1,53 @@
-/* SM Mode — Certificates dashboard (GFSM / SWT) — gfsm-certs parity */
+/* SM Mode — Certificates dashboard (GFSM) — gfsm-certs parity */
 const TVC_SmCertificatesUi = (function () {
     const HOST_ID = 'smCertsHost';
+    let currentLang = 'ko';
+    let isDarkMode = false;
+    const CERT_I18N = {
+        ko: {
+            mainTitle: '육/해상 증서 관리 대시보드',
+            dateUpdated: '📅 Date updated:',
+            btnAdd: '➕ 직접 추가', btnUpload: '📂 엑셀 파일 로드', btnClear: '초기화',
+            btnLang: '🌐 EN/KR', btnLight: '☀️ Light', btnDark: '🌙 Dark',
+            loadedData: '💾 저장된 데이터 로드됨',
+            statTotal: '전체 관리 증서 (필터 초기화)', statDanger: '🚨 초긴급 (15일 이내)',
+            statUrgent: '🟠 긴급 (30일 이내)', statWarning: '🟡 주의 (60일 이내)',
+            chartRatio: '📊 증서 갱신 현황 비율', chartVessel: '🚢 선박/조직별 리스크 현황',
+            chartMonth: '📅 향후 6개월 만료 예정 추이',
+            tabAll: '전체 보기', searchPlaceholder: '증서명, 번호 또는 기관 검색…',
+            displayPrefix: '표시 중: ', unit: '건',
+            btnShare: '💾 공유용 HTML 저장', btnMail: '📧 갱신알림 메일',
+            btnExcel: '📥 엑셀 다운로드', btnPdf: '📄 PDF 보고서',
+            statusDanger: '초긴급', statusUrgent: '긴급', statusWarning: '주의', statusSafe: '정상', statusExpired: '만료됨',
+            modalAdd: '➕ 새로운 증서 추가', modalEdit: '📝 증서 정보 수정',
+            btnCancel: '취소', btnSave: '저장하기',
+            msgSave: '데이터가 성공적으로 저장되었습니다.', msgReset: '데이터가 초기화되었습니다.',
+            emptySearch: '조건에 맞는 증서가 없습니다.',
+            chartMonthCount: '예정 건수',
+        },
+        en: {
+            mainTitle: 'Ship/Shore Major & Minor Certificate Dashboard',
+            dateUpdated: '📅 Date updated:',
+            btnAdd: '➕ Add Manual', btnUpload: '📂 Load Excel', btnClear: 'Clear',
+            btnLang: '🌐 KR/EN', btnLight: '☀️ Light', btnDark: '🌙 Dark',
+            loadedData: '💾 Local data loaded',
+            statTotal: 'Total Certificates (Reset filter)', statDanger: '🚨 Critical (≤ 15 days)',
+            statUrgent: '🟠 Urgent (≤ 30 days)', statWarning: '🟡 Warning (≤ 60 days)',
+            chartRatio: '📊 Renewal Status Ratio', chartVessel: '🚢 Risk Status by Vessel',
+            chartMonth: '📅 Next 6 Months Expiry Trend',
+            tabAll: 'View All', searchPlaceholder: 'Search cert name, no, issuer…',
+            displayPrefix: 'Showing: ', unit: '',
+            btnShare: '💾 Save Shared HTML', btnMail: '📧 Alert Draft E-mail',
+            btnExcel: '📥 Download Excel', btnPdf: '📄 PDF Report',
+            statusDanger: 'Critical', statusUrgent: 'Urgent', statusWarning: 'Warning', statusSafe: 'Safe', statusExpired: 'Expired',
+            modalAdd: '➕ Add Certificate', modalEdit: '📝 Edit Certificate',
+            btnCancel: 'Cancel', btnSave: 'Save',
+            msgSave: 'Data saved successfully.', msgReset: 'Data has been reset.',
+            emptySearch: 'No certificates found.',
+            chartMonthCount: 'Due count',
+        },
+    };
+
     let allCerts = [];
     let currentTab = 'ALL';
     let filterStatus = 'ALL';
@@ -63,6 +110,71 @@ const TVC_SmCertificatesUi = (function () {
         setTimeout(() => t.classList.remove('show'), 2800);
     }
 
+    function readLang() {
+        try {
+            const v = localStorage.getItem('tvc-mkt-lang');
+            return v === 'en' ? 'en' : 'ko';
+        } catch (_) {
+            return 'ko';
+        }
+    }
+
+    function t(key) {
+        return CERT_I18N[currentLang]?.[key] || CERT_I18N.ko[key] || key;
+    }
+
+    function statusText(days, rawStatus) {
+        if (days === 9999) return t('statusSafe');
+        if (days < 0) return `${t('statusExpired')} (D+${Math.abs(days)})`;
+        if (rawStatus === 'DANGER') return `${t('statusDanger')} (D-${days})`;
+        if (rawStatus === 'URGENT') return `${t('statusUrgent')} (D-${days})`;
+        if (rawStatus === 'WARNING') return `${t('statusWarning')} (D-${days})`;
+        return `${t('statusSafe')} (D-${days})`;
+    }
+
+    function applyLang() {
+        currentLang = readLang();
+        const root = el('smCertsRoot');
+        if (!root) return;
+        const titleSuffix = el('smCertsTitleSuffix');
+        if (titleSuffix) titleSuffix.textContent = t('mainTitle');
+        const map = {
+            smCertsDateLabel: 'dateUpdated',
+            smCertsAddBtn: 'btnAdd',
+            smCertsClearBtn: 'btnClear',
+            smCertsLangBtn: 'btnLang',
+            smCertsDarkBtn: 'btnLight',
+            smCertsHtmlBtn: 'btnShare',
+            smCertsMailBtn: 'btnMail',
+            smCertsExcelBtn: 'btnExcel',
+            smCertsPdfBtn: 'btnPdf',
+            smCertsModalCancel: 'btnCancel',
+            smCertsModalSave: 'btnSave',
+        };
+        Object.entries(map).forEach(([id, key]) => {
+            const node = el(id);
+            if (node) node.textContent = t(key);
+        });
+        const uploadLbl = root.querySelector('.sm-certs-btn-upload');
+        if (uploadLbl) uploadLbl.firstChild.textContent = t('btnUpload') + ' ';
+        root.querySelectorAll('[data-i18n-cert]').forEach(node => {
+            const key = node.getAttribute('data-i18n-cert');
+            if (key) node.textContent = t(key);
+        });
+        const search = el('smCertsSearch');
+        if (search) search.placeholder = t('searchPlaceholder');
+        const darkBtn = el('smCertsDarkBtn');
+        if (darkBtn) darkBtn.textContent = isDarkMode ? t('btnLight') : t('btnDark');
+        paintTable();
+    }
+
+    function toggleDark() {
+        isDarkMode = !isDarkMode;
+        el('smCertsRoot')?.classList.toggle('sm-certs-dark', isDarkMode);
+        try { localStorage.setItem('sm_certs_darkmode', isDarkMode ? 'true' : 'false'); } catch (_) {}
+        applyLang();
+    }
+
     function mountShell() {
         const host = el(HOST_ID);
         if (!host || host.dataset.mounted === '1') return;
@@ -71,32 +183,33 @@ const TVC_SmCertificatesUi = (function () {
 <div class="sm-certs-root" id="smCertsRoot">
   <div class="sm-certs-header">
     <div>
-      <h2 class="sm-certs-title"><span class="sm-certs-brand" id="smCertsBrand">GFSM</span> 육/해상 증서 관리 대시보드</h2>
+      <h2 class="sm-certs-title"><span class="sm-certs-brand" id="smCertsBrand">GFSM</span> <span id="smCertsTitleSuffix">육/해상 증서 관리 대시보드</span></h2>
       <div class="sm-certs-date-box">
-        <span>📅 Date updated:</span>
+        <span id="smCertsDateLabel">📅 Date updated:</span>
         <input type="date" id="smCertsDateInput" aria-label="Reference date">
       </div>
       <span class="sm-certs-file-status muted" id="smCertsFileStatus"></span>
     </div>
     <div class="sm-certs-actions no-print">
+      <button type="button" class="btn btn-sm btn-outline" id="smCertsDarkBtn">☀️ Light</button>
+      <button type="button" class="btn btn-sm btn-outline" id="smCertsLangBtn">🌐 EN/KR</button>
       <button type="button" class="btn btn-sm btn-primary" id="smCertsAddBtn">➕ 직접 추가</button>
-      <label class="btn btn-sm sm-certs-btn-upload">
-        📂 엑셀 파일 로드
+      <label class="btn btn-sm sm-certs-btn-upload">📂 엑셀 파일 로드
         <input type="file" id="smCertsExcelInput" accept=".xlsx,.xls" hidden>
       </label>
       <button type="button" class="btn btn-sm btn-outline hidden" id="smCertsClearBtn">초기화</button>
     </div>
   </div>
   <div class="sm-certs-stats">
-    <div class="sm-certs-stat total" data-status="ALL"><div class="sm-certs-stat-label">전체 관리 증서 (필터 초기화)</div><div class="sm-certs-stat-val" id="smCertsCntTotal">0건</div></div>
-    <div class="sm-certs-stat danger" data-status="DANGER"><div class="sm-certs-stat-label">🚨 초긴급 (15일 이내)</div><div class="sm-certs-stat-val" id="smCertsCntDanger">0건</div></div>
-    <div class="sm-certs-stat urgent" data-status="URGENT"><div class="sm-certs-stat-label">🟠 긴급 (30일 이내)</div><div class="sm-certs-stat-val" id="smCertsCntUrgent">0건</div></div>
-    <div class="sm-certs-stat warning" data-status="WARNING"><div class="sm-certs-stat-label">🟡 주의 (60일 이내)</div><div class="sm-certs-stat-val" id="smCertsCntWarning">0건</div></div>
+    <div class="sm-certs-stat total" data-status="ALL"><div class="sm-certs-stat-label" data-i18n-cert="statTotal">전체 관리 증서 (필터 초기화)</div><div class="sm-certs-stat-val" id="smCertsCntTotal">0건</div></div>
+    <div class="sm-certs-stat danger" data-status="DANGER"><div class="sm-certs-stat-label" data-i18n-cert="statDanger">🚨 초긴급 (15일 이내)</div><div class="sm-certs-stat-val" id="smCertsCntDanger">0건</div></div>
+    <div class="sm-certs-stat urgent" data-status="URGENT"><div class="sm-certs-stat-label" data-i18n-cert="statUrgent">🟠 긴급 (30일 이내)</div><div class="sm-certs-stat-val" id="smCertsCntUrgent">0건</div></div>
+    <div class="sm-certs-stat warning" data-status="WARNING"><div class="sm-certs-stat-label" data-i18n-cert="statWarning">🟡 주의 (60일 이내)</div><div class="sm-certs-stat-val" id="smCertsCntWarning">0건</div></div>
   </div>
   <div class="sm-certs-charts no-print">
-    <div class="sm-certs-chart-card"><div class="sm-certs-chart-title">📊 증서 갱신 현황 비율</div><div class="sm-certs-canvas-wrap"><canvas id="smCertsStatusChart"></canvas></div></div>
-    <div class="sm-certs-chart-card sm-certs-chart-wide"><div class="sm-certs-chart-title">🚢 선박/조직별 리스크 현황</div><div class="sm-certs-canvas-wrap"><canvas id="smCertsVesselChart"></canvas></div></div>
-    <div class="sm-certs-chart-card sm-certs-chart-wide"><div class="sm-certs-chart-title">📅 향후 6개월 만료 예정 추이</div><div class="sm-certs-canvas-wrap"><canvas id="smCertsMonthChart"></canvas></div></div>
+    <div class="sm-certs-chart-card"><div class="sm-certs-chart-title" data-i18n-cert="chartRatio">📊 증서 갱신 현황 비율</div><div class="sm-certs-canvas-wrap"><canvas id="smCertsStatusChart"></canvas></div></div>
+    <div class="sm-certs-chart-card sm-certs-chart-wide"><div class="sm-certs-chart-title" data-i18n-cert="chartVessel">🚢 선박/조직별 리스크 현황</div><div class="sm-certs-canvas-wrap"><canvas id="smCertsVesselChart"></canvas></div></div>
+    <div class="sm-certs-chart-card sm-certs-chart-wide"><div class="sm-certs-chart-title" data-i18n-cert="chartMonth">📅 향후 6개월 만료 예정 추이</div><div class="sm-certs-canvas-wrap"><canvas id="smCertsMonthChart"></canvas></div></div>
   </div>
   <div class="sm-certs-tabs no-print" id="smCertsTabs"></div>
   <div class="sm-certs-controls no-print">
@@ -186,6 +299,9 @@ const TVC_SmCertificatesUi = (function () {
         el('smCertsMailBtn')?.addEventListener('click', draftEmail);
         el('smCertsPdfBtn')?.addEventListener('click', () => void exportPdf());
         el('smCertsClearBtn')?.addEventListener('click', () => void clearAllData());
+        el('smCertsLangBtn')?.addEventListener('click', () => window.TVC_App?.toggleUiLang?.());
+        el('smCertsDarkBtn')?.addEventListener('click', toggleDark);
+        window.addEventListener('tvc-mkt-lang', () => applyLang());
         el('smCertsRoot')?.addEventListener('click', (ev) => {
             const card = ev.target.closest('.sm-certs-stat');
             if (!card) return;
@@ -229,7 +345,7 @@ const TVC_SmCertificatesUi = (function () {
             statusChartInstance = new Chart(el('smCertsStatusChart').getContext('2d'), {
                 type: 'doughnut',
                 data: {
-                    labels: ['초긴급', '긴급', '주의', '정상'],
+                    labels: [t('statusDanger'), t('statusUrgent'), t('statusWarning'), t('statusSafe')],
                     datasets: [{ data: [cDanger, cUrgent, cWarning, cSafe], backgroundColor: ['#DC2626', '#EA580C', '#D97706', '#16A34A'], borderWidth: 0 }],
                 },
                 options: {
@@ -252,9 +368,9 @@ const TVC_SmCertificatesUi = (function () {
                 data: {
                     labels: vLabels,
                     datasets: [
-                        { label: '초긴급', data: vLabels.map(v => vesselData[v].DANGER), backgroundColor: '#DC2626' },
-                        { label: '긴급', data: vLabels.map(v => vesselData[v].URGENT), backgroundColor: '#EA580C' },
-                        { label: '주의', data: vLabels.map(v => vesselData[v].WARNING), backgroundColor: '#D97706' },
+                        { label: t('statusDanger'), data: vLabels.map(v => vesselData[v].DANGER), backgroundColor: '#DC2626' },
+                        { label: t('statusUrgent'), data: vLabels.map(v => vesselData[v].URGENT), backgroundColor: '#EA580C' },
+                        { label: t('statusWarning'), data: vLabels.map(v => vesselData[v].WARNING), backgroundColor: '#D97706' },
                     ],
                 },
                 options: {
@@ -283,7 +399,7 @@ const TVC_SmCertificatesUi = (function () {
         if (el('smCertsMonthChart')) {
             monthChartInstance = new Chart(el('smCertsMonthChart').getContext('2d'), {
                 type: 'bar',
-                data: { labels: mLabels, datasets: [{ label: '예정 건수', data: mLabels.map(k => monthData[k]), backgroundColor: '#3B82F6', borderRadius: 4 }] },
+                data: { labels: mLabels, datasets: [{ label: t('chartMonthCount'), data: mLabels.map(k => monthData[k]), backgroundColor: '#3B82F6', borderRadius: 4 }] },
                 options: {
                     responsive: true, maintainAspectRatio: false,
                     scales: { x: { ticks: { color: textColor, font: fontOpts } }, y: { beginAtZero: true, ticks: { stepSize: 1, color: textColor } } },
@@ -298,7 +414,7 @@ const TVC_SmCertificatesUi = (function () {
         if (!tabsEl) return;
         const names = uniqueTabs(allCerts);
         tabsEl.innerHTML = names.map(name => {
-            const label = name === 'ALL' ? '전체 보기' : name;
+            const label = name === 'ALL' ? t('tabAll') : name;
             const active = name === currentTab ? ' active' : '';
             const tabKey = esc(name).replace(/"/g, '&quot;');
             return `<button type="button" class="sm-certs-tab${active}" data-tab="${tabKey}">${esc(label)}</button>`;
@@ -343,19 +459,20 @@ const TVC_SmCertificatesUi = (function () {
         const tabScoped = currentTab === 'ALL'
             ? allCerts
             : allCerts.filter(i => i.vessel === currentTab || i.vessel.includes(currentTab));
-        const setCnt = (id, n) => { const e = el(id); if (e) e.textContent = `${n}건`; };
+        const unit = currentLang === 'ko' ? '건' : '';
+        const setCnt = (id, n) => { const e = el(id); if (e) e.textContent = `${n}${unit}`; };
         setCnt('smCertsCntTotal', tabScoped.length);
         setCnt('smCertsCntDanger', tabScoped.filter(i => i.rawStatus === 'DANGER').length);
         setCnt('smCertsCntUrgent', tabScoped.filter(i => i.rawStatus === 'URGENT').length);
         setCnt('smCertsCntWarning', tabScoped.filter(i => i.rawStatus === 'WARNING').length);
         const dc = el('smCertsDisplayCount');
-        if (dc) dc.textContent = `표시 중: ${filtered.length}건`;
+        if (dc) dc.textContent = `${t('displayPrefix')}${filtered.length}${unit}`;
 
         toggleExportActions(allCerts.length > 0);
         updateCharts(tabScoped);
 
         if (!filtered.length) {
-            tbody.innerHTML = '<tr><td colspan="14" class="sm-certs-empty">조건에 맞는 증서가 없습니다.</td></tr>';
+            tbody.innerHTML = `<tr><td colspan="14" class="sm-certs-empty">${esc(t('emptySearch'))}</td></tr>`;
             return;
         }
 
@@ -376,7 +493,7 @@ const TVC_SmCertificatesUi = (function () {
               <td>${esc(item.lastInt)}</td>
               <td>${esc(item.expireDate)}</td>
               <td style="font-weight:700;color:${daysColor}">${dday}</td>
-              <td><span class="sm-certs-badge ${esc(item.badge)}">${esc(TVC_SmCertificates.statusLabel(item.days, item.rawStatus))}</span></td>
+              <td><span class="sm-certs-badge ${esc(item.badge)}">${esc(statusText(item.days, item.rawStatus))}</span></td>
               <td>${esc(item.dept)}</td>
               <td class="muted">${esc(item.remarks)}</td>
               <td class="sm-certs-manage no-print">
@@ -403,7 +520,7 @@ const TVC_SmCertificatesUi = (function () {
     }
 
     function openModal(row) {
-        el('smCertsModalTitle').textContent = row ? '📝 증서 정보 수정' : '➕ 새로운 증서 추가';
+        el('smCertsModalTitle').textContent = row ? t('modalEdit') : t('modalAdd');
         el('smCertsEditId').value = row?.id || '';
         el('smCertsEditVessel').value = row?.vessel || '';
         el('smCertsEditName').value = row?.name || '';
@@ -456,7 +573,7 @@ const TVC_SmCertificatesUi = (function () {
             remarks: el('smCertsEditRemarks').value,
         });
         closeModal();
-        toast('데이터가 성공적으로 저장되었습니다.');
+        toast(t('msgSave'));
         await refreshData();
     }
 
@@ -640,7 +757,13 @@ const TVC_SmCertificatesUi = (function () {
         const dateInput = el('smCertsDateInput');
         if (dateInput) dateInput.value = await TVC_SmCertificates.getReferenceDate();
         const fs = el('smCertsFileStatus');
-        if (fs && allCerts.length) fs.textContent = '💾 저장된 데이터 로드됨';
+        if (fs && allCerts.length) fs.textContent = t('loadedData');
+        try {
+            isDarkMode = localStorage.getItem('sm_certs_darkmode') === 'true';
+            el('smCertsRoot')?.classList.toggle('sm-certs-dark', isDarkMode);
+        } catch (_) {}
+        currentLang = readLang();
+        applyLang();
         allCerts = await TVC_SmCertificates.listForUser(user, companyOverride());
         if (currentTab === 'ALL' || !allCerts.some(r => r.vessel === currentTab)) {
             currentTab = defaultTab(user, allCerts);
@@ -652,5 +775,5 @@ const TVC_SmCertificatesUi = (function () {
         paintTable();
     }
 
-    return { render, refreshData };
+    return { render, refreshData, applyLang };
 })();

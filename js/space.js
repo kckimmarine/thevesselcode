@@ -273,7 +273,7 @@ const TVC_Space = (function () {
             base.showOnlineSync = true;
             base.showAppUpdateImport = true;
             const cid = String(user.company_id || '').trim();
-            base.showCertificatesTab = TVC_RBAC.isSuperSmAccount?.(user) || cid === 'GFSM' || cid === 'SWT';
+            base.showCertificatesTab = TVC_RBAC.isSuperSmAccount?.(user) || cid === 'GFSM';
             return base;
         }
 

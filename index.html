@@ -111,7 +111,7 @@
                     <li><b>Engine</b> · engineer / ce</li>
                     <li><b>Deck</b> · officer / co</li>
                     <li><b>SM</b> · abc shipping (company vessels · no Department)</li>
-                    <li><b>SM</b> · gfsm-sq / swt-sq (Certificates demo · password 0000)</li>
+                    <li><b>SM</b> · gfsm (GFSM 증서관리 · password 0000)</li>
                     <li><b>Supplier</b> · use <b>Register as Supplier / Partner</b> above</li>
                     <li><b>Admin</b> · admin (Admin Mode · no Department)</li>
                 </ul>
@@ -187,6 +187,7 @@
         <button class="tab-btn" data-tab="history" onclick="TVC_App.switchTab('history')">📜 Report History</button>
         <button class="tab-btn" data-tab="certificates" data-feature="showCertificatesTab" onclick="TVC_App.switchTab('certificates')"><span class="tab-label-full">📋 Certificates</span><span class="tab-label-mobile">📋 증서</span></button>
         <div class="tab-bar-end">
+            <button type="button" id="appLangToggleBtn" class="btn-feedback app-lang-toggle" onclick="TVC_App.toggleUiLang()" title="한국어 / English">🌐 EN/KR</button>
             <button type="button" id="btn-open-ai-help" class="btn-ai-help btn-feedback" onclick="TVC_App.openAiHelp()" title="AI Help">🤖 AI Help</button>
             <button type="button" id="settingsOpenBtn" class="tab-bar-settings" onclick="TVC_Settings.open()" title="Settings">⚙ Settings</button>
         </div>
@@ -432,7 +433,7 @@
             <div id="spareMenuBody"></div>
         </section>
 
-        <!-- TAB: SM Certificates (GFSM / SWT) -->
+        <!-- TAB: SM Certificates (GFSM — includes SWT owner certs) -->
         <section id="tab-certificates" class="tab-pane hidden">
             <div id="smCertsHost" class="sm-certs-host"></div>
         </section>
