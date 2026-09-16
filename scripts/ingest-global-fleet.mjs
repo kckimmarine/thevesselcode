@@ -34,14 +34,14 @@ const DEFAULT_SOURCES = [
         kind: 'warrant-csv',
     },
     {
-        id: 'seafarer-ships',
-        url: 'https://seafarerindex.com/api/data/ships',
-        kind: 'seafarer-ships',
-    },
-    {
         id: 'seafarer-companies',
         url: 'https://seafarerindex.com/api/data/companies',
         kind: 'seafarer-companies',
+    },
+    {
+        id: 'seafarer-ships',
+        url: 'https://seafarerindex.com/api/data/ships',
+        kind: 'seafarer-ships',
     },
 ];
 
@@ -92,7 +92,7 @@ function richnessScore(v) {
 }
 
 function toCompact(row) {
-    return {
+    const out = {
         i: row.i,
         n: row.n,
         t: row.t,
@@ -102,6 +102,8 @@ function toCompact(row) {
         m: row.m || '',
         e: row.e || '',
     };
+    if (row.s) out.s = String(row.s).replace(/\D/g, '');
+    return out;
 }
 
 function isMerchantCandidate(v) {
@@ -193,6 +195,7 @@ function mergeVessel(into, incoming) {
     base.e = pick(base.e, inc.e);
     if (!base.d && inc.d) base.d = inc.d;
     if (!base.y && inc.y) base.y = inc.y;
+    if (!base.s && inc.s) base.s = inc.s;
     return base;
 }
 
@@ -212,43 +215,10 @@ function applySeafarerShips(ships, companiesBySlug) {
             f: normalizeFlag(s.flag_iso3 || s.flag || ''),
             m: manager,
             e: engineBits,
+            s: s.mmsi ? String(s.mmsi).replace(/\D/g, '') : '',
         });
     }
     return out;
-}
-
-function loadLocalEnrichment() {
-    const path = join(ROOT, 'data', 'fleet-enrichment.json');
-    if (!existsSync(path)) return [];
-    const data = JSON.parse(readFileSync(path, 'utf8'));
-    const list = Array.isArray(data) ? data : data.vessels || [];
-    return list.map((v) => ({
-        i: digitsOnlyImo(v.imo || v.i),
-        n: normalizeName(v.name || v.n),
-        t: normalizeType(v.type || v.t),
-        d: Number(v.dwt ?? v.d) || 0,
-        y: Number(v.built_year ?? v.y) || 0,
-        f: normalizeFlag(v.flag || v.f),
-        m: String(v.technical_manager || v.m || '').trim(),
-        e: String(v.engine_model || v.e || '').trim(),
-    })).filter((v) => isValidImoNumber(v.i));
-}
-
-function loadSampleRegistry() {
-    const path = join(ROOT, 'data', 'vessel-registry-sample.json');
-    if (!existsSync(path)) return [];
-    const data = JSON.parse(readFileSync(path, 'utf8'));
-    const list = data.vessels || [];
-    return list.map((v) => ({
-        i: digitsOnlyImo(v.imo),
-        n: normalizeName(v.name),
-        t: normalizeType(v.type),
-        d: Number(String(v.dwt).replace(/[^\d]/g, '')) || 0,
-        y: Number(v.built_year) || 0,
-        f: normalizeFlag(v.flag),
-        m: String(v.technical_manager || '').trim(),
-        e: String(v.engine_model || '').trim(),
-    })).filter((v) => isValidImoNumber(v.i));
 }
 
 function dedupeBest(records) {
@@ -360,27 +330,7 @@ async function main() {
         }
     }
 
-    merged = merged.concat(loadLocalEnrichment(), loadSampleRegistry());
     let vessels = dedupeBest(merged);
-    const overlay = [...loadLocalEnrichment(), ...loadSampleRegistry()];
-    const byImo = new Map(vessels.map((v) => [v.i, v]));
-    for (const row of overlay) {
-        if (!isValidImoNumber(row.i)) continue;
-        const prev = byImo.get(row.i);
-        if (!prev) byImo.set(row.i, row);
-        else {
-            const merged = mergeVessel(prev, row);
-            if (row.n) merged.n = row.n;
-            if (row.m) merged.m = row.m;
-            if (row.e) merged.e = row.e;
-            if (row.d) merged.d = row.d;
-            if (row.y) merged.y = row.y;
-            if (row.t) merged.t = row.t;
-            if (row.f) merged.f = row.f;
-            byImo.set(row.i, merged);
-        }
-    }
-    vessels = [...byImo.values()];
     console.log('MERCHANT vessels after dedupe:', vessels.length);
 
     if (vessels.length < 1000) {

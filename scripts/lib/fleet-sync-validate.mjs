@@ -25,7 +25,7 @@ export function validateFleetStore(fleetDir) {
 
     const imoEntries = Object.keys(index.imo || {});
     let invalidImo = 0;
-    for (const imo of imoEntries.slice(0, 200)) {
+    for (const imo of imoEntries.slice(0, 500)) {
         if (!isValidImoNumber(imo)) invalidImo++;
     }
     if (invalidImo > 0) warnings.push(`sample invalid IMO checksums: ${invalidImo}`);

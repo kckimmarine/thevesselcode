@@ -13,6 +13,10 @@ Thumbs.db
 data/fleet-cache/
 data/fleet/
 
+# Legacy manual enrichment overrides (replaced by fleet:sync generated cache)
+data/fleet-enrichment.json
+data/fleet-registry-enrichment.json
+
 # Temp
 *.tmp
 gitstatus.tmp
