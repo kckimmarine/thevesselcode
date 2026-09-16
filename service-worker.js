@@ -21,6 +21,8 @@ const PRECACHE_ASSETS = [
     '/vendor/jszip.min.js',
     '/vendor/exceljs.min.js',
     '/vendor/xlsx.full.min.js',
+    '/vendor/chart.umd.min.js',
+    '/vendor/html2pdf.bundle.min.js',
     '/js/rbac.js',
     '/js/core/schema.js',
     '/js/core/db.js',

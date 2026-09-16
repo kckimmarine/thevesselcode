@@ -68,10 +68,31 @@ const TVC_SmCertificatesSeed = (function () {
         return { inserted: rows.length };
     }
 
+    async function reseedCompany(companyId) {
+        const cid = String(companyId || '').trim();
+        if (!cid) return { skipped: true };
+        const payload = await loadSeedPayload();
+        if (!payload?.records?.length) return { needFile: true };
+        await TVC_SmCertificates.deleteAllForCompany(cid);
+        const ts = nowIso();
+        const rows = payload.records
+            .filter(r => (r.company_id || companyForVessel(r.vessel)) === cid)
+            .map(r => ({
+                ...r,
+                company_id: r.company_id || companyForVessel(r.vessel),
+                sync_status: 'local',
+                updated_at: ts,
+            }));
+        if (rows.length) await TVC_DB.bulkPut('sm_certificates', rows);
+        upsertFleetForCompany(cid);
+        return { inserted: rows.length };
+    }
+
     return {
         META_SEED,
         companyForVessel,
         ensureSeed,
+        reseedCompany,
         upsertFleetForCompany,
     };
 })();

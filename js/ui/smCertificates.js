@@ -1,4 +1,4 @@
-/* SM Mode — Certificates dashboard (GFSM / SWT) */
+/* SM Mode — Certificates dashboard (GFSM / SWT) — gfsm-certs parity */
 const TVC_SmCertificatesUi = (function () {
     const HOST_ID = 'smCertsHost';
     let allCerts = [];
@@ -8,6 +8,9 @@ const TVC_SmCertificatesUi = (function () {
     let sortColumn = 'days';
     let sortDesc = false;
     let bound = false;
+    let statusChartInstance = null;
+    let vesselChartInstance = null;
+    let monthChartInstance = null;
 
     function el(id) { return document.getElementById(id); }
 
@@ -27,6 +30,11 @@ const TVC_SmCertificatesUi = (function () {
         }
     }
 
+    function companyBrand(user) {
+        const cid = TVC_SmCertificates.resolveCompanyId(user, companyOverride());
+        return cid || 'GFSM';
+    }
+
     function uniqueTabs(rows) {
         const tabs = new Set();
         rows.forEach(r => { if (r.vessel) tabs.add(r.vessel); });
@@ -40,6 +48,21 @@ const TVC_SmCertificatesUi = (function () {
         return 'ALL';
     }
 
+    function toggleExportActions(show) {
+        const row = el('smCertsActionButtons');
+        const clearBtn = el('smCertsClearBtn');
+        if (row) row.classList.toggle('hidden', !show);
+        if (clearBtn) clearBtn.classList.toggle('hidden', !show);
+    }
+
+    function toast(msg) {
+        const t = el('smCertsToast');
+        if (!t) return;
+        t.textContent = msg;
+        t.classList.add('show');
+        setTimeout(() => t.classList.remove('show'), 2800);
+    }
+
     function mountShell() {
         const host = el(HOST_ID);
         if (!host || host.dataset.mounted === '1') return;
@@ -48,88 +71,102 @@ const TVC_SmCertificatesUi = (function () {
 <div class="sm-certs-root" id="smCertsRoot">
   <div class="sm-certs-header">
     <div>
-      <h2 class="sm-certs-title">📋 증서관리 <span class="sm-certs-sub">육/해상 증서 통합</span></h2>
+      <h2 class="sm-certs-title"><span class="sm-certs-brand" id="smCertsBrand">GFSM</span> 육/해상 증서 관리 대시보드</h2>
       <div class="sm-certs-date-box">
         <span>📅 Date updated:</span>
         <input type="date" id="smCertsDateInput" aria-label="Reference date">
       </div>
+      <span class="sm-certs-file-status muted" id="smCertsFileStatus"></span>
     </div>
-    <div class="sm-certs-actions">
-      <button type="button" class="btn btn-sm" id="smCertsAddBtn">➕ 직접 추가</button>
-      <label class="btn btn-sm btn-primary sm-certs-upload-btn">
-        📂 엑셀 로드
+    <div class="sm-certs-actions no-print">
+      <button type="button" class="btn btn-sm btn-primary" id="smCertsAddBtn">➕ 직접 추가</button>
+      <label class="btn btn-sm sm-certs-btn-upload">
+        📂 엑셀 파일 로드
         <input type="file" id="smCertsExcelInput" accept=".xlsx,.xls" hidden>
       </label>
-      <button type="button" class="btn btn-sm btn-green" id="smCertsExcelBtn">📥 엑셀 다운로드</button>
+      <button type="button" class="btn btn-sm btn-outline hidden" id="smCertsClearBtn">초기화</button>
     </div>
   </div>
   <div class="sm-certs-stats">
-    <div class="sm-certs-stat total" data-status="ALL"><div class="sm-certs-stat-label">전체 관리 증서</div><div class="sm-certs-stat-val" id="smCertsCntTotal">0</div></div>
-    <div class="sm-certs-stat danger" data-status="DANGER"><div class="sm-certs-stat-label">🚨 초긴급 (15일)</div><div class="sm-certs-stat-val" id="smCertsCntDanger">0</div></div>
-    <div class="sm-certs-stat urgent" data-status="URGENT"><div class="sm-certs-stat-label">🟠 긴급 (30일)</div><div class="sm-certs-stat-val" id="smCertsCntUrgent">0</div></div>
-    <div class="sm-certs-stat warning" data-status="WARNING"><div class="sm-certs-stat-label">🟡 주의 (60일)</div><div class="sm-certs-stat-val" id="smCertsCntWarning">0</div></div>
+    <div class="sm-certs-stat total" data-status="ALL"><div class="sm-certs-stat-label">전체 관리 증서 (필터 초기화)</div><div class="sm-certs-stat-val" id="smCertsCntTotal">0건</div></div>
+    <div class="sm-certs-stat danger" data-status="DANGER"><div class="sm-certs-stat-label">🚨 초긴급 (15일 이내)</div><div class="sm-certs-stat-val" id="smCertsCntDanger">0건</div></div>
+    <div class="sm-certs-stat urgent" data-status="URGENT"><div class="sm-certs-stat-label">🟠 긴급 (30일 이내)</div><div class="sm-certs-stat-val" id="smCertsCntUrgent">0건</div></div>
+    <div class="sm-certs-stat warning" data-status="WARNING"><div class="sm-certs-stat-label">🟡 주의 (60일 이내)</div><div class="sm-certs-stat-val" id="smCertsCntWarning">0건</div></div>
   </div>
-  <div class="sm-certs-tabs" id="smCertsTabs"></div>
-  <div class="sm-certs-controls">
-    <input type="search" class="search-input sm-certs-search" id="smCertsSearch" placeholder="증서명, 번호, 기관 검색…">
-    <span class="muted" id="smCertsDisplayCount"></span>
+  <div class="sm-certs-charts no-print">
+    <div class="sm-certs-chart-card"><div class="sm-certs-chart-title">📊 증서 갱신 현황 비율</div><div class="sm-certs-canvas-wrap"><canvas id="smCertsStatusChart"></canvas></div></div>
+    <div class="sm-certs-chart-card sm-certs-chart-wide"><div class="sm-certs-chart-title">🚢 선박/조직별 리스크 현황</div><div class="sm-certs-canvas-wrap"><canvas id="smCertsVesselChart"></canvas></div></div>
+    <div class="sm-certs-chart-card sm-certs-chart-wide"><div class="sm-certs-chart-title">📅 향후 6개월 만료 예정 추이</div><div class="sm-certs-canvas-wrap"><canvas id="smCertsMonthChart"></canvas></div></div>
+  </div>
+  <div class="sm-certs-tabs no-print" id="smCertsTabs"></div>
+  <div class="sm-certs-controls no-print">
+    <div class="sm-certs-controls-left">
+      <input type="search" class="search-input sm-certs-search" id="smCertsSearch" placeholder="증서명, 번호 또는 기관 검색…">
+      <span class="muted" id="smCertsDisplayCount"></span>
+    </div>
+    <div class="sm-certs-controls-right hidden" id="smCertsActionButtons">
+      <button type="button" class="btn btn-sm sm-certs-btn-share" id="smCertsHtmlBtn">💾 공유용 HTML 저장</button>
+      <button type="button" class="btn btn-sm sm-certs-btn-mail" id="smCertsMailBtn">📧 갱신알림 메일</button>
+      <button type="button" class="btn btn-sm btn-green" id="smCertsExcelBtn">📥 엑셀 다운로드</button>
+      <button type="button" class="btn btn-sm sm-certs-btn-pdf" id="smCertsPdfBtn">📄 PDF 보고서</button>
+    </div>
   </div>
   <div class="sm-certs-table-wrap">
     <table class="sm-certs-table">
       <thead>
         <tr>
-          <th>No</th>
-          <th class="sortable" data-col="vessel">선박/조직</th>
+          <th>연번</th>
+          <th class="sortable" data-col="vessel">선박/조직명</th>
           <th class="sortable" data-col="name">증서명</th>
           <th class="sortable" data-col="certNo">증서번호</th>
           <th class="sortable" data-col="issuer">발급처</th>
           <th class="sortable" data-col="issueDate">발급일</th>
           <th class="sortable" data-col="lastAnn">Last Annual</th>
           <th class="sortable" data-col="lastInt">Last Inter.</th>
-          <th class="sortable" data-col="expireDate">유효·만료일</th>
-          <th class="sortable" data-col="days">D-Day</th>
+          <th class="sortable" data-col="expireDate">유효&만료일</th>
+          <th class="sortable" data-col="days">남은기간</th>
           <th class="sortable" data-col="rawStatus">상태</th>
           <th class="sortable" data-col="dept">담당부서</th>
           <th class="sortable" data-col="remarks">비고</th>
-          <th>관리</th>
+          <th class="no-print">관리</th>
         </tr>
       </thead>
       <tbody id="smCertsTableBody"></tbody>
     </table>
   </div>
 </div>
+<div id="smCertsToast" class="sm-certs-toast" role="status"></div>`;
+
+        const modalHtml = `
 <div class="modal-overlay sm-certs-modal hidden" id="smCertsEditModal" role="dialog" aria-modal="true">
   <div class="modal-content sm-certs-modal-content">
-    <h3 id="smCertsModalTitle">📝 증서 정보</h3>
+    <h3 id="smCertsModalTitle">📝 증서 정보 수정</h3>
     <input type="hidden" id="smCertsEditId">
-    <div class="form-row">
-      <div class="form-group"><label>선박 / 조직명 *</label><input type="text" id="smCertsEditVessel"></div>
+    <div class="form-row sm-certs-form-row">
+      <div class="form-group"><label>선박 / 조직명 <span class="sm-certs-req">*</span></label><input type="text" id="smCertsEditVessel"></div>
       <div class="form-group"><label>담당부서</label><input type="text" id="smCertsEditDept"></div>
     </div>
-    <div class="form-group"><label>증서명 *</label><input type="text" id="smCertsEditName"></div>
-    <div class="form-row">
+    <div class="form-group"><label>증서명 <span class="sm-certs-req">*</span></label><input type="text" id="smCertsEditName"></div>
+    <div class="form-row sm-certs-form-row">
       <div class="form-group"><label>증서번호</label><input type="text" id="smCertsEditCertNo"></div>
       <div class="form-group"><label>발급처</label><input type="text" id="smCertsEditIssuer"></div>
     </div>
-    <div class="form-row">
+    <div class="form-row sm-certs-form-row">
       <div class="form-group"><label>발급일</label><input type="text" id="smCertsEditIssueDate" placeholder="YYYY-MM-DD"></div>
-      <div class="form-group"><label>유효·만료일</label><input type="text" id="smCertsEditExpireDate" placeholder="YYYY-MM-DD or Permanent"></div>
+      <div class="form-group"><label>유효&만료일 <span class="sm-certs-req">*</span></label><input type="text" id="smCertsEditExpireDate" placeholder="YYYY-MM-DD 또는 Permanent"></div>
     </div>
-    <div class="form-row">
-      <div class="form-group"><label>Last Annual</label><input type="text" id="smCertsEditLastAnn"></div>
-      <div class="form-group"><label>Last Inter.</label><input type="text" id="smCertsEditLastInt"></div>
+    <div class="form-row sm-certs-form-row">
+      <div class="form-group"><label>Last Annual</label><input type="text" id="smCertsEditLastAnn" placeholder="YYYY-MM-DD"></div>
+      <div class="form-group"><label>Last Inter.</label><input type="text" id="smCertsEditLastInt" placeholder="YYYY-MM-DD"></div>
     </div>
-    <div class="form-group"><label>비고</label><input type="text" id="smCertsEditRemarks"></div>
+    <div class="form-group"><label>비고</label><textarea id="smCertsEditRemarks" rows="3"></textarea></div>
     <div class="modal-actions">
       <button type="button" class="btn" id="smCertsModalCancel">취소</button>
-      <button type="button" class="btn btn-green" id="smCertsModalSave">저장</button>
+      <button type="button" class="btn btn-primary" id="smCertsModalSave">저장하기</button>
     </div>
-    </div>
+  </div>
 </div>`;
-        const modal = el('smCertsEditModal');
-        if (modal && modal.parentElement !== document.body) {
-            document.body.appendChild(modal);
-        }
+        document.body.insertAdjacentHTML('beforeend', modalHtml);
     }
 
     function bindOnce() {
@@ -145,11 +182,15 @@ const TVC_SmCertificatesUi = (function () {
         el('smCertsSearch')?.addEventListener('input', () => paintTable());
         el('smCertsExcelBtn')?.addEventListener('click', exportExcel);
         el('smCertsExcelInput')?.addEventListener('change', (e) => void importExcel(e));
-        document.querySelectorAll('.sm-certs-stat').forEach(card => {
-            card.addEventListener('click', () => {
-                filterStatus = card.dataset.status || 'ALL';
-                paintTable();
-            });
+        el('smCertsHtmlBtn')?.addEventListener('click', () => void exportHtml());
+        el('smCertsMailBtn')?.addEventListener('click', draftEmail);
+        el('smCertsPdfBtn')?.addEventListener('click', () => void exportPdf());
+        el('smCertsClearBtn')?.addEventListener('click', () => void clearAllData());
+        el('smCertsRoot')?.addEventListener('click', (ev) => {
+            const card = ev.target.closest('.sm-certs-stat');
+            if (!card) return;
+            filterStatus = card.dataset.status || 'ALL';
+            paintTable();
         });
         el('smCertsRoot')?.querySelector('.sm-certs-table thead')?.addEventListener('click', (ev) => {
             const th = ev.target.closest('th.sortable');
@@ -172,6 +213,86 @@ const TVC_SmCertificatesUi = (function () {
         });
     }
 
+    function updateCharts(dataScoped) {
+        if (typeof Chart === 'undefined') return;
+        const textColor = '#64748B';
+        const fontOpts = { size: 10 };
+
+        let cDanger = dataScoped.filter(i => i.rawStatus === 'DANGER').length;
+        let cUrgent = dataScoped.filter(i => i.rawStatus === 'URGENT').length;
+        let cWarning = dataScoped.filter(i => i.rawStatus === 'WARNING').length;
+        let cSafe = dataScoped.filter(i => i.rawStatus === 'SAFE').length;
+        const total = cDanger + cUrgent + cWarning + cSafe;
+
+        if (statusChartInstance) statusChartInstance.destroy();
+        if (total > 0 && el('smCertsStatusChart')) {
+            statusChartInstance = new Chart(el('smCertsStatusChart').getContext('2d'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['초긴급', '긴급', '주의', '정상'],
+                    datasets: [{ data: [cDanger, cUrgent, cWarning, cSafe], backgroundColor: ['#DC2626', '#EA580C', '#D97706', '#16A34A'], borderWidth: 0 }],
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false, cutout: '65%',
+                    plugins: { legend: { position: 'right', labels: { boxWidth: 10, font: fontOpts, color: textColor } } },
+                },
+            });
+        }
+
+        const vesselData = {};
+        dataScoped.forEach(d => {
+            if (!vesselData[d.vessel]) vesselData[d.vessel] = { DANGER: 0, URGENT: 0, WARNING: 0 };
+            if (['DANGER', 'URGENT', 'WARNING'].includes(d.rawStatus)) vesselData[d.vessel][d.rawStatus]++;
+        });
+        const vLabels = Object.keys(vesselData);
+        if (vesselChartInstance) vesselChartInstance.destroy();
+        if (el('smCertsVesselChart')) {
+            vesselChartInstance = new Chart(el('smCertsVesselChart').getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: vLabels,
+                    datasets: [
+                        { label: '초긴급', data: vLabels.map(v => vesselData[v].DANGER), backgroundColor: '#DC2626' },
+                        { label: '긴급', data: vLabels.map(v => vesselData[v].URGENT), backgroundColor: '#EA580C' },
+                        { label: '주의', data: vLabels.map(v => vesselData[v].WARNING), backgroundColor: '#D97706' },
+                    ],
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    scales: { x: { stacked: true, ticks: { color: textColor, font: fontOpts } }, y: { stacked: true, beginAtZero: true, ticks: { stepSize: 1, color: textColor } } },
+                    plugins: { legend: { position: 'top', labels: { boxWidth: 8, font: fontOpts, color: textColor } } },
+                },
+            });
+        }
+
+        const monthData = {};
+        const now = new Date();
+        for (let i = 0; i < 6; i++) {
+            const d = new Date(now.getFullYear(), now.getMonth() + i, 1);
+            monthData[`${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`] = 0;
+        }
+        dataScoped.forEach(d => {
+            if (d.expireDate && d.expireDate !== '-' && d.days !== 9999 && d.days > 0) {
+                const exp = new Date(d.expireDate);
+                const key = `${exp.getFullYear()}-${String(exp.getMonth() + 1).padStart(2, '0')}`;
+                if (monthData[key] !== undefined) monthData[key]++;
+            }
+        });
+        const mLabels = Object.keys(monthData).sort();
+        if (monthChartInstance) monthChartInstance.destroy();
+        if (el('smCertsMonthChart')) {
+            monthChartInstance = new Chart(el('smCertsMonthChart').getContext('2d'), {
+                type: 'bar',
+                data: { labels: mLabels, datasets: [{ label: '예정 건수', data: mLabels.map(k => monthData[k]), backgroundColor: '#3B82F6', borderRadius: 4 }] },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    scales: { x: { ticks: { color: textColor, font: fontOpts } }, y: { beginAtZero: true, ticks: { stepSize: 1, color: textColor } } },
+                    plugins: { legend: { display: false } },
+                },
+            });
+        }
+    }
+
     function renderTabs() {
         const tabsEl = el('smCertsTabs');
         if (!tabsEl) return;
@@ -179,11 +300,12 @@ const TVC_SmCertificatesUi = (function () {
         tabsEl.innerHTML = names.map(name => {
             const label = name === 'ALL' ? '전체 보기' : name;
             const active = name === currentTab ? ' active' : '';
-            return `<button type="button" class="sm-certs-tab${active}" data-tab="${esc(name)}">${esc(label)}</button>`;
+            const tabKey = esc(name).replace(/"/g, '&quot;');
+            return `<button type="button" class="sm-certs-tab${active}" data-tab="${tabKey}">${esc(label)}</button>`;
         }).join('');
         tabsEl.querySelectorAll('.sm-certs-tab').forEach(btn => {
             btn.addEventListener('click', () => {
-                currentTab = btn.dataset.tab || 'ALL';
+                currentTab = btn.getAttribute('data-tab') || 'ALL';
                 filterStatus = 'ALL';
                 renderTabs();
                 paintTable();
@@ -229,6 +351,9 @@ const TVC_SmCertificatesUi = (function () {
         const dc = el('smCertsDisplayCount');
         if (dc) dc.textContent = `표시 중: ${filtered.length}건`;
 
+        toggleExportActions(allCerts.length > 0);
+        updateCharts(tabScoped);
+
         if (!filtered.length) {
             tbody.innerHTML = '<tr><td colspan="14" class="sm-certs-empty">조건에 맞는 증서가 없습니다.</td></tr>';
             return;
@@ -254,7 +379,7 @@ const TVC_SmCertificatesUi = (function () {
               <td><span class="sm-certs-badge ${esc(item.badge)}">${esc(TVC_SmCertificates.statusLabel(item.days, item.rawStatus))}</span></td>
               <td>${esc(item.dept)}</td>
               <td class="muted">${esc(item.remarks)}</td>
-              <td class="sm-certs-manage">
+              <td class="sm-certs-manage no-print">
                 <button type="button" class="btn-icon" data-edit="${esc(item.id)}" title="Edit">✏️</button>
                 <button type="button" class="btn-icon" data-del="${esc(item.id)}" title="Delete">🗑️</button>
               </td>
@@ -264,8 +389,7 @@ const TVC_SmCertificatesUi = (function () {
         tbody.querySelectorAll('[data-edit]').forEach(btn => {
             btn.addEventListener('click', () => {
                 const id = btn.getAttribute('data-edit');
-                const row = allCerts.find(c => c.id === id);
-                openModal(row);
+                openModal(allCerts.find(c => c.id === id));
             });
         });
         tbody.querySelectorAll('[data-del]').forEach(btn => {
@@ -279,20 +403,22 @@ const TVC_SmCertificatesUi = (function () {
     }
 
     function openModal(row) {
-        el('smCertsModalTitle').textContent = row ? '📝 증서 정보 수정' : '➕ 새 증서 추가';
+        el('smCertsModalTitle').textContent = row ? '📝 증서 정보 수정' : '➕ 새로운 증서 추가';
         el('smCertsEditId').value = row?.id || '';
         el('smCertsEditVessel').value = row?.vessel || '';
         el('smCertsEditName').value = row?.name || '';
         el('smCertsEditCertNo').value = row?.certNo || '';
         el('smCertsEditIssuer').value = row?.issuer || '';
-        el('smCertsEditIssueDate').value = row?.issueDate || '';
-        el('smCertsEditLastAnn').value = row?.lastAnn || '';
-        el('smCertsEditLastInt').value = row?.lastInt || '';
-        el('smCertsEditExpireDate').value = row?.expireDate || '';
-        el('smCertsEditDept').value = row?.dept || '';
-        el('smCertsEditRemarks').value = row?.remarks || '';
-        el('smCertsEditModal')?.classList.remove('hidden');
-        el('smCertsEditModal').style.display = 'flex';
+        el('smCertsEditIssueDate').value = row?.issueDate && row.issueDate !== '-' ? row.issueDate : '';
+        el('smCertsEditLastAnn').value = row?.lastAnn && row.lastAnn !== '-' ? row.lastAnn : '';
+        el('smCertsEditLastInt').value = row?.lastInt && row.lastInt !== '-' ? row.lastInt : '';
+        el('smCertsEditExpireDate').value = row?.expireDate && row.expireDate !== '-' ? row.expireDate : '';
+        el('smCertsEditDept').value = row?.dept && row.dept !== '-' ? row.dept : '';
+        el('smCertsEditRemarks').value = row?.remarks && row.remarks !== '-' ? row.remarks : '';
+        const m = el('smCertsEditModal');
+        m?.classList.remove('hidden');
+        if (m) m.style.display = 'flex';
+        el('smCertsEditVessel')?.focus();
     }
 
     function closeModal() {
@@ -306,8 +432,13 @@ const TVC_SmCertificatesUi = (function () {
         const user = TVC_Auth.getCurrentUser();
         const vessel = el('smCertsEditVessel').value.trim();
         const name = el('smCertsEditName').value.trim();
+        const expireDate = el('smCertsEditExpireDate').value.trim();
         if (!vessel || !name) {
             await TVC_Dialog.alert('선박명과 증서명은 필수입니다.');
+            return;
+        }
+        if (!expireDate) {
+            await TVC_Dialog.alert('유효·만료일은 필수입니다. (Permanent 또는 YYYY-MM-DD)');
             return;
         }
         await TVC_SmCertificates.saveRecord(user, {
@@ -320,11 +451,12 @@ const TVC_SmCertificatesUi = (function () {
             issueDate: el('smCertsEditIssueDate').value,
             lastAnn: el('smCertsEditLastAnn').value,
             lastInt: el('smCertsEditLastInt').value,
-            expireDate: el('smCertsEditExpireDate').value,
+            expireDate,
             dept: el('smCertsEditDept').value,
             remarks: el('smCertsEditRemarks').value,
         });
         closeModal();
+        toast('데이터가 성공적으로 저장되었습니다.');
         await refreshData();
     }
 
@@ -360,6 +492,93 @@ const TVC_SmCertificatesUi = (function () {
         XLSX.writeFile(wb, `[${tabName}]_주요증서_${updatedDate || 'export'}.xlsx`);
     }
 
+    async function exportHtml() {
+        if (!allCerts.length) return;
+        const stamp = Date.now().toString();
+        const payload = JSON.stringify(allCerts);
+        const dateVal = el('smCertsDateInput')?.value || '';
+        const html = `<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>GFSM Certificates Export</title></head><body>
+<script id="embedded_data" type="application/json" data-timestamp="${stamp}">${payload}<\/script>
+<p>공유용 증서 데이터 (${allCerts.length}건) · 기준일 ${esc(dateVal)}</p>
+</body></html>`;
+        const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `[공유용]_증서_${dateVal.replace(/-/g, '') || 'export'}.html`;
+        a.click();
+        URL.revokeObjectURL(url);
+        toast('공유용 HTML 파일이 저장되었습니다.');
+    }
+
+    function draftEmail() {
+        const certs15 = allCerts.filter(i => i.rawStatus === 'DANGER');
+        const certs30 = allCerts.filter(i => i.rawStatus === 'URGENT');
+        const certs60 = allCerts.filter(i => i.rawStatus === 'WARNING');
+        if (!certs15.length && !certs30.length && !certs60.length) {
+            void TVC_Dialog.alert('만료 60일 이내 증서가 없습니다.');
+            return;
+        }
+        const updatedDate = el('smCertsDateInput')?.value || '';
+        const brand = el('smCertsBrand')?.textContent || 'GFSM';
+        let subject = `[${brand}] 선박 및 사내 주요 증서 갱신 요망 알림 (기준일: ${updatedDate})`;
+        let body = `담당자님,\n\n아래 선박 및 사내 주요 증서의 갱신/심사 일정을 확인해 주시기 바랍니다.\n(기준일: ${updatedDate})\n\n`;
+        const appendBlock = (title, list) => {
+            if (!list.length) return;
+            body += `=========================================\n${title} (${list.length}건)\n=========================================\n`;
+            list.forEach((item, idx) => {
+                const dDayStr = item.days < 0 ? `만료 D+${Math.abs(item.days)}` : `D-${item.days}`;
+                body += `${idx + 1}. ${item.vessel} - ${item.name} (No. ${item.certNo})\n   👉 만료일자: ${item.expireDate} (${dDayStr}) / 담당: ${item.dept}\n\n`;
+            });
+        };
+        appendBlock('🔴 [초긴급] 만료 및 15일 이내', certs15.sort((a, b) => a.days - b.days));
+        appendBlock('🟠 [긴급] 16일 ~ 30일 이내', certs30.sort((a, b) => a.days - b.days));
+        appendBlock('🟡 [주의] 31일 ~ 60일 이내', certs60.sort((a, b) => a.days - b.days));
+        body += '=========================================\n';
+        window.location.href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+
+    async function exportPdf() {
+        if (typeof html2pdf === 'undefined') {
+            await TVC_Dialog.alert('PDF library is not loaded.');
+            return;
+        }
+        const root = el('smCertsRoot');
+        if (!root) return;
+        toast('PDF 문서를 생성하는 중입니다…');
+        document.querySelectorAll('.no-print').forEach(n => n.classList.add('sm-certs-pdf-hide'));
+        root.classList.add('sm-certs-pdf-mode');
+        const todayStr = (el('smCertsDateInput')?.value || '').replace(/-/g, '');
+        const tabName = currentTab === 'ALL' ? '전체' : currentTab;
+        try {
+            await html2pdf().set({
+                margin: 10,
+                filename: `[${tabName}]_증서_Report_${todayStr}.pdf`,
+                image: { type: 'jpeg', quality: 1 },
+                html2canvas: { scale: 2, useCORS: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' },
+            }).from(root).save();
+        } finally {
+            document.querySelectorAll('.sm-certs-pdf-hide').forEach(n => n.classList.remove('sm-certs-pdf-hide'));
+            root.classList.remove('sm-certs-pdf-mode');
+        }
+    }
+
+    async function clearAllData() {
+        if (!await TVC_Dialog.confirm('회사 증서 데이터를 초기화하고 시드 데이터를 다시 불러올까요?')) return;
+        const user = TVC_Auth.getCurrentUser();
+        const cid = TVC_SmCertificates.resolveCompanyId(user, companyOverride());
+        if (typeof TVC_SmCertificatesSeed.reseedCompany === 'function') {
+            await TVC_SmCertificatesSeed.reseedCompany(cid);
+        } else {
+            await TVC_SmCertificates.deleteAllForCompany(cid);
+        }
+        const fs = el('smCertsFileStatus');
+        if (fs) fs.textContent = '데이터가 초기화되었습니다.';
+        await refreshData();
+        toast('초기화되었습니다.');
+    }
+
     async function importExcel(ev) {
         const file = ev.target?.files?.[0];
         if (!file || typeof XLSX === 'undefined') return;
@@ -370,7 +589,6 @@ const TVC_SmCertificatesUi = (function () {
             try {
                 const data = new Uint8Array(evt.target.result);
                 const workbook = XLSX.read(data, { type: 'array', cellDates: true, dateNF: 'yyyy-mm-dd' });
-                const refDate = await TVC_SmCertificates.getReferenceDate();
                 for (const sheetName of workbook.SheetNames) {
                     const sheet = workbook.Sheets[sheetName];
                     const rows = XLSX.utils.sheet_to_json(sheet, { raw: false, range: 2 });
@@ -394,8 +612,10 @@ const TVC_SmCertificatesUi = (function () {
                         });
                     }
                 }
+                const fs = el('smCertsFileStatus');
+                if (fs) { fs.textContent = `✅ ${file.name}`; fs.style.color = '#16A34A'; }
                 await refreshData();
-                await TVC_Dialog.alert('엑셀 데이터를 불러왔습니다.');
+                toast('엑셀 데이터를 불러왔습니다.');
             } catch (e) {
                 await TVC_Dialog.alert('엑셀 로드 실패: ' + (e.message || e));
             }
@@ -415,10 +635,12 @@ const TVC_SmCertificatesUi = (function () {
         if (!user || !TVC_RBAC.isSmAccount(user)) return;
         mountShell();
         bindOnce();
+        const brand = el('smCertsBrand');
+        if (brand) brand.textContent = companyBrand(user);
         const dateInput = el('smCertsDateInput');
-        if (dateInput) {
-            dateInput.value = await TVC_SmCertificates.getReferenceDate();
-        }
+        if (dateInput) dateInput.value = await TVC_SmCertificates.getReferenceDate();
+        const fs = el('smCertsFileStatus');
+        if (fs && allCerts.length) fs.textContent = '💾 저장된 데이터 로드됨';
         allCerts = await TVC_SmCertificates.listForUser(user, companyOverride());
         if (currentTab === 'ALL' || !allCerts.some(r => r.vessel === currentTab)) {
             currentTab = defaultTab(user, allCerts);
