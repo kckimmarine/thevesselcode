@@ -3,7 +3,7 @@ const TVC_App = (function () {
     const ROW_H = 36;
     const PLAN_SHEET_MIN_WIDTH = 924;
     const DEPT_TREE_ORDER = ['DECK', 'ENGINE'];
-    const TABS = ['menu', 'actual', 'history', 'spare'];
+    const TABS = ['menu', 'actual', 'history', 'spare', 'certificates'];
     const CRITICAL_GROUP_KEY = '__CRITICAL_EQUIPMENT__';
     const NEW_ORIG_JOB_EDIT_ID = '__new_orig_job__';
     let _wrSpareSearchT = null;
@@ -414,6 +414,11 @@ const TVC_App = (function () {
                 }
             } catch (e) { console.warn('[TVC] license vessel pin', e); }
             await TVC_Auth.initUsers();
+            try {
+                if (typeof TVC_SmCertificatesSeed !== 'undefined') {
+                    await TVC_SmCertificatesSeed.ensureSeed();
+                }
+            } catch (e) { console.warn('[TVC_SmCertificatesSeed]', e); }
             try {
                 if (typeof TVC_AdminRegistry !== 'undefined') {
                     await TVC_AdminRegistry.load();
@@ -1330,6 +1335,7 @@ const TVC_App = (function () {
         actual: renderActualPlan,
         history: renderWorkHistory,
         spare: renderSpareMenu,
+        certificates: renderCertificatesTab,
     };
 
     /** 상단 탭 전환 — 부서 필터 상태는 그대로 유지된다. */
@@ -1337,6 +1343,10 @@ const TVC_App = (function () {
         if (!TABS.includes(tab)) tab = 'menu';
         if (tab === 'spare' && state.user && typeof TVC_Space !== 'undefined'
             && !TVC_Space.getUiFeatures(state.user).showSpareTab) {
+            tab = 'menu';
+        }
+        if (tab === 'certificates' && state.user && typeof TVC_Space !== 'undefined'
+            && !TVC_Space.getUiFeatures(state.user).showCertificatesTab) {
             tab = 'menu';
         }
         TVC_ListFilters?.closePopover();
@@ -1529,6 +1539,10 @@ const TVC_App = (function () {
         if (dash) dash.classList.toggle('hidden', !f.showCaptainDashboard);
         syncPlanGroupTreeUi();
         if (!f.showSpareTab && state.currentTab === 'spare') {
+            switchTab('menu');
+            return;
+        }
+        if (!f.showCertificatesTab && state.currentTab === 'certificates') {
             switchTab('menu');
             return;
         }
@@ -3386,6 +3400,9 @@ const TVC_App = (function () {
             const hqMonthlyItems = [
                 ...(runningHoursMenuVisible() ? [{ label: 'Check Running Hours', tag: 'C', action: "TVC_App.menuAction('runHour')" }] : []),
                 { label: 'RFQ Cases → Supplier', tag: 'S', action: 'TVC_App.openSmRfqWorkspace()' },
+                ...(typeof TVC_Space !== 'undefined' && TVC_Space.getUiFeatures(state.user).showCertificatesTab
+                    ? [{ label: 'Certificates (증서관리)', tag: 'C', action: "TVC_App.switchTab('certificates')" }]
+                    : []),
             ];
             const sections = [
                 { key: 'daily', tone: 'daily', title: 'Routine Tasks', items: smDailyItems },
@@ -13931,6 +13948,23 @@ const TVC_App = (function () {
         TVC_SpareMenu.deleteSpareItems(ids);
     }
 
+    function getSmCertificatesCompanyFilter() {
+        if (!state.user) return '';
+        if (TVC_RBAC.isSuperSmAccount?.(state.user)) {
+            const filter = state.fleetCompanyFilter;
+            if (filter && filter !== ADMIN_COMPANY_FILTER_ALL) return String(filter).trim();
+            return '';
+        }
+        return String(state.user.company_id || '').trim();
+    }
+
+    function renderCertificatesTab() {
+        if (!state.user || !TVC_RBAC.isSmAccount(state.user)) return;
+        if (typeof TVC_SmCertificatesUi !== 'undefined') {
+            void TVC_SmCertificatesUi.render(state.user);
+        }
+    }
+
     function renderSpareMenu() {
         if (!state.idx && (state.jobs || []).length) state.idx = TVC_Indexes.build(state);
         TVC_SpareMenu.render();
@@ -18967,7 +19001,7 @@ const TVC_App = (function () {
     function escAttr(s) { return esc(s).replace(/'/g, '&#39;'); }
 
     return {
-        boot, switchTab,
+        boot, switchTab, getSmCertificatesCompanyFilter,
         setDepartment, setCaptainView, setHistView, setHistTab, menuAction, openSmRfqWorkspace, resolveDeptPick,
         setFleetView, setFleetSearch, setFleetCompanyFilter, selectVessel,
         openVesselDocsModal, uploadVesselDocsAttachment, removeVesselDocsAttachment,
