@@ -9,10 +9,13 @@
     let marketData = null;
     let loadPromise = null;
 
+    const MARITIME_IMAGE_FALLBACK =
+        'https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80';
     const MEDIA_IMAGES = {
-        lead: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&q=80',
+        lead: MARITIME_IMAGE_FALLBACK,
         secondaryA: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=400&q=80',
-        secondaryB: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=400&q=80',
+        secondaryB: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=400&q=80',
+        secondaryC: 'https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=400&q=80',
     };
 
     const FALLBACK = {
@@ -270,6 +273,21 @@
         return `${hours}h ago`;
     }
 
+    function formatPubRelative(pubDate, lang) {
+        const t = Date.parse(pubDate);
+        if (!Number.isFinite(t)) return '';
+        const diffMs = Math.max(0, Date.now() - t);
+        const mins = Math.floor(diffMs / 60_000);
+        if (mins < 1) return lang === 'ko' ? '방금' : 'Just now';
+        if (mins < 60) return lang === 'ko' ? `${mins}분 전` : `${mins}m ago`;
+        const hours = Math.floor(mins / 60);
+        if (hours < 24) return formatHoursAgo(hours, lang);
+        if (hours < 48) return lang === 'ko' ? '어제' : 'Yesterday';
+        const d = new Date(t);
+        const pad = (n) => String(n).padStart(2, '0');
+        return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}`;
+    }
+
     function resolveNewsFields(item, lang) {
         const loc = lang === 'ko' && item.ko ? item.ko : item.en || item.ko || {};
         const tag = item.tag || item.category || 'Trade';
@@ -280,13 +298,33 @@
             link: item.link || '',
             tag,
             tagClass: item.tagClass || '',
-            timeLabel:
-                item.hoursAgo != null
-                    ? formatHoursAgo(item.hoursAgo, lang)
-                    : item.pubDate
-                      ? item.pubDate.slice(0, 16)
-                      : '',
+            timeLabel: item.pubDate
+                ? formatPubRelative(item.pubDate, lang)
+                : item.hoursAgo != null
+                  ? formatHoursAgo(item.hoursAgo, lang)
+                  : '',
         };
+    }
+
+    function newsImageUrl(item, slotKey) {
+        const fromFeed = String(item?.imageUrl || '').trim();
+        if (fromFeed) return fromFeed;
+        return MEDIA_IMAGES[slotKey] || MARITIME_IMAGE_FALLBACK;
+    }
+
+    function imgWithFallback(src, className, width, height, loading) {
+        const fb = escapeHtml(MARITIME_IMAGE_FALLBACK);
+        const attrs = [
+            `class="${className}"`,
+            `src="${escapeHtml(src)}"`,
+            'alt=""',
+            `loading="${loading || 'lazy'}"`,
+            'decoding="async"',
+        ];
+        if (width) attrs.push(`width="${width}"`);
+        if (height) attrs.push(`height="${height}"`);
+        attrs.push(`onerror="this.onerror=null;this.src='${fb}'"`);
+        return `<img ${attrs.join(' ')}>`;
     }
 
     function streamCategoryLabel(tag) {
@@ -318,15 +356,17 @@
             return `<p class="mkt-intel-muted">${escapeHtml(t('intel.news.empty', lang))}</p>`;
         }
 
-        const lead = resolveNewsFields(items[0], lang);
+        const leadItem = items[0];
+        const lead = resolveNewsFields(leadItem, lang);
         const secA = items[1] ? resolveNewsFields(items[1], lang) : lead;
         const secB = items[2] ? resolveNewsFields(items[2], lang) : secA;
-        const streamItems = items.slice(items.length > 3 ? 3 : 1);
+        const secC = items[3] ? resolveNewsFields(items[3], lang) : secB;
+        const streamItems = items.slice(4);
 
-        const secondaryCard = (fields, imageUrl, extraClass) => `
+        const secondaryCard = (fields, item, slotKey, extraClass) => `
         <article class="mkt-media-card mkt-media-secondary ${extraClass}">
             <a class="mkt-media-thumb-wrap" href="${fields.link ? escapeHtml(fields.link) : '#'}" ${fields.link ? 'rel="noopener noreferrer" target="_blank"' : 'aria-hidden="true" tabindex="-1"'}>
-                <img class="mkt-media-thumb" src="${imageUrl}" alt="" loading="lazy" width="120" height="120" decoding="async">
+                ${imgWithFallback(newsImageUrl(item, slotKey), 'mkt-media-thumb', 120, 120, 'lazy')}
             </a>
             <div class="mkt-media-secondary-body">
                 <span class="mkt-news-tag ${escapeHtml(fields.tagClass)}">${escapeHtml(fields.tag)}</span>
@@ -336,23 +376,25 @@
         </article>`;
 
         const streamHtml = streamItems.length
-            ? `<ul class="mkt-stream-list">${streamItems
+            ? `<div class="mkt-stream-scroll" role="region" aria-label="${escapeHtml(t('intel.news.streamLabel', lang))}">
+                <ul class="mkt-stream-list">${streamItems
                   .map((item) => {
                       const f = resolveNewsFields(item, lang);
+                      const time = f.timeLabel || t('intel.news.live', lang);
                       return `<li class="mkt-stream-item">
-                    <span class="mkt-stream-cat">[${escapeHtml(streamCategoryLabel(f.tag))}]</span>
+                    <span class="mkt-stream-cat">[${escapeHtml(streamCategoryLabel(f.tag))}] · ${escapeHtml(time)}</span>
                     ${headlineLink(f, 'mkt-stream-headline')}
                     <span class="mkt-stream-source">${escapeHtml(f.source)}</span>
                 </li>`;
                   })
-                  .join('')}</ul>`
+                  .join('')}</ul></div>`
             : `<p class="mkt-intel-muted mkt-stream-empty">${escapeHtml(t('intel.news.streamMore', lang))}</p>`;
 
         return `
         <div class="mkt-news-dashboard">
             <article class="mkt-media-card mkt-media-lead">
                 <a class="mkt-media-img-wrap" href="${lead.link ? escapeHtml(lead.link) : '#'}" ${lead.link ? 'rel="noopener noreferrer" target="_blank"' : ''}>
-                    <img class="mkt-media-hero-img" src="${MEDIA_IMAGES.lead}" alt="" loading="eager" width="800" height="450" decoding="async">
+                    ${imgWithFallback(newsImageUrl(leadItem, 'lead'), 'mkt-media-hero-img', 800, 450, 'eager')}
                 </a>
                 <span class="mkt-media-lead-badge">${escapeHtml(leadBadgeLabel(lead.tag, lang))}</span>
                 <h3 class="mkt-media-lead-title">${headlineLink(lead, 'mkt-media-lead-link')}</h3>
@@ -360,8 +402,9 @@
                 <p class="mkt-media-lead-meta">${escapeHtml(lead.source)} · ${escapeHtml(lead.timeLabel)}</p>
             </article>
             <div class="mkt-news-dashboard-secondary">
-                ${secondaryCard(secA, MEDIA_IMAGES.secondaryA, '')}
-                ${secondaryCard(secB, MEDIA_IMAGES.secondaryB, 'mkt-media-secondary-b')}
+                ${secondaryCard(secA, items[1] || leadItem, 'secondaryA', '')}
+                ${secondaryCard(secB, items[2] || items[1] || leadItem, 'secondaryB', 'mkt-media-secondary-b')}
+                ${secondaryCard(secC, items[3] || items[2] || leadItem, 'secondaryC', 'mkt-media-secondary-c')}
             </div>
             <aside class="mkt-news-dashboard-stream" aria-label="${escapeHtml(t('intel.news.streamLabel', lang))}">
                 <p class="mkt-stream-kicker">${escapeHtml(t('intel.news.streamKicker', lang))}</p>
@@ -447,6 +490,7 @@
         getShippingBenchmarks,
         buildToolkitBunkerUrl,
         renderTickerHtml,
+        renderNewsList,
         mountTicker,
         renderHomeHub,
         renderBunkerIntelStrip,

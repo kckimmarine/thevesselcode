@@ -822,6 +822,16 @@ body.tvc-marketing-body .store-public-mode .store-vl-cell {
     height: 88px;
     margin: 0;
     aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #e2e8f0;
+}
+
+.mkt-media-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .mkt-media-secondary-body {
@@ -871,6 +881,29 @@ body.tvc-marketing-body .store-public-mode .store-vl-cell {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #0284c7;
+}
+
+.mkt-stream-scroll {
+    max-height: 480px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #94a3b8 #f1f5f9;
+    padding-right: 4px;
+}
+
+.mkt-stream-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.mkt-stream-scroll::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 999px;
+}
+
+.mkt-stream-scroll::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 999px;
 }
 
 .mkt-stream-list {

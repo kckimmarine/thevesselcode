@@ -27,6 +27,15 @@ const RSS_FEEDS = [
 
 const FETCH_TIMEOUT_MS = 12_000;
 const MAX_NEWS = 16;
+const MAX_OG_IMAGE_FETCH = 10;
+
+/** Verified maritime photography — never generic office / tech stock. */
+const MARITIME_FALLBACK_IMAGES = [
+    'https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80',
+];
 
 function readJson(path, fallback = null) {
     try {
@@ -74,10 +83,65 @@ function stripTags(s) {
         .trim();
 }
 
-function pickTag(block, tag) {
+function pickTagRaw(block, tag) {
     const re = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, 'i');
     const m = block.match(re);
-    return m ? stripTags(m[1]) : '';
+    if (!m) return '';
+    return String(m[1]).replace(/<!\[CDATA\[([\s\S]*?)\]\]>/gi, '$1').trim();
+}
+
+function pickTag(block, tag) {
+    const raw = pickTagRaw(block, tag);
+    return raw ? stripTags(raw) : '';
+}
+
+function pickAttr(block, tag, attr) {
+    const re = new RegExp(`<${tag}[^>]*\\b${attr}\\s*=\\s*['"]([^'"]+)['"]`, 'i');
+    const m = block.match(re);
+    return m ? m[1].trim() : '';
+}
+
+function resolveAbsoluteUrl(url, base) {
+    const raw = String(url || '').trim();
+    if (!raw) return '';
+    try {
+        return new URL(raw, base || undefined).href;
+    } catch {
+        return '';
+    }
+}
+
+function isWeakNewsImage(url) {
+    const u = String(url || '').toLowerCase();
+    if (!u || !/^https?:\/\//i.test(u)) return true;
+    if (/favicon|emoji|1x1|pixel\.gif|data:image/i.test(u)) return true;
+    if (/\b(32x32|48x48|64x64|96x96)\b/.test(u)) return true;
+    if (/cropped-.*favicon|site-icon|placeholder/i.test(u)) return true;
+    if (/unsplash\.com\/photo-1559136555/i.test(u)) return true;
+    return false;
+}
+
+function pickBestImageUrlFromBlock(block, link, descriptionHtml) {
+    const candidates = [];
+    const mediaContent = pickAttr(block, 'media:content', 'url')
+        || pickAttr(block, 'media:thumbnail', 'url');
+    if (mediaContent) candidates.push(mediaContent);
+    const enclosure = pickAttr(block, 'enclosure', 'url');
+    const encType = pickAttr(block, 'enclosure', 'type');
+    if (enclosure && (!encType || encType.startsWith('image/'))) candidates.push(enclosure);
+    const desc = descriptionHtml || pickTag(block, 'description') || pickTag(block, 'content:encoded');
+    const imgInDesc = desc.match(/<img[^>]+src\s*=\s*['"]([^'"]+)['"]/i);
+    if (imgInDesc) candidates.push(imgInDesc[1]);
+    for (const c of candidates) {
+        const abs = resolveAbsoluteUrl(c, link);
+        if (!isWeakNewsImage(abs)) return abs;
+    }
+    return '';
+}
+
+function maritimeFallbackImage(seed = 0) {
+    const idx = Math.abs(Number(seed) || 0) % MARITIME_FALLBACK_IMAGES.length;
+    return MARITIME_FALLBACK_IMAGES[idx];
 }
 
 function parseRss(xml, sourceName) {
@@ -88,8 +152,10 @@ function parseRss(xml, sourceName) {
         if (!title) continue;
         const link = pickTag(block, 'link') || pickTag(block, 'guid');
         const pubDate = pickTag(block, 'pubDate') || pickTag(block, 'published');
-        const summary = pickTag(block, 'description') || pickTag(block, 'content:encoded');
+        const descriptionRaw = pickTagRaw(block, 'description') || pickTagRaw(block, 'content:encoded');
+        const summary = stripTags(descriptionRaw);
         const category = categorizeNews(title, summary);
+        const imageUrl = pickBestImageUrlFromBlock(block, link, descriptionRaw);
         items.push({
             title,
             link,
@@ -97,9 +163,58 @@ function parseRss(xml, sourceName) {
             source: sourceName,
             category,
             summary: summary.slice(0, 280),
+            imageUrl,
         });
     }
     return items;
+}
+
+async function fetchArticleOgImage(link) {
+    const pageUrl = String(link || '').trim();
+    if (!pageUrl) return '';
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT_MS);
+    try {
+        const res = await fetch(pageUrl, {
+            signal: ctrl.signal,
+            headers: {
+                'User-Agent': 'TVC-MarketFeed/1.0 (+https://thevesselcode.com)',
+                Accept: 'text/html,application/xhtml+xml',
+            },
+        });
+        if (!res.ok) return '';
+        const html = await res.text();
+        const m = html.match(
+            /<meta[^>]+property=["']og:image(?::secure_url)?["'][^>]+content=["']([^"']+)["']/i,
+        ) || html.match(
+            /<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image(?::secure_url)?["']/i,
+        ) || html.match(
+            /<meta[^>]+name=["']twitter:image["'][^>]+content=["']([^"']+)["']/i,
+        );
+        const abs = m ? resolveAbsoluteUrl(m[1], pageUrl) : '';
+        return isWeakNewsImage(abs) ? '' : abs;
+    } catch {
+        return '';
+    } finally {
+        clearTimeout(timer);
+    }
+}
+
+async function enrichNewsImages(items) {
+    let fetches = 0;
+    const out = [];
+    for (let i = 0; i < items.length; i += 1) {
+        const item = { ...items[i] };
+        if (!item.imageUrl && item.link && fetches < MAX_OG_IMAGE_FETCH) {
+            fetches += 1;
+            item.imageUrl = await fetchArticleOgImage(item.link);
+        }
+        if (!item.imageUrl) {
+            item.imageUrl = maritimeFallbackImage(i + item.title.length);
+        }
+        out.push(item);
+    }
+    return out;
 }
 
 function categorizeNews(title, summary) {
@@ -107,6 +222,7 @@ function categorizeNews(title, summary) {
     if (/bunker|vlsfo|lsmgo|hsfo|fuel oil|stem/.test(hay)) return 'Bunker';
     if (/ets|carbon|cii|co2|emission|decarbon/.test(hay)) return 'Carbon';
     if (/sale|purchase|second.?hand|s\s*&\s*p|demolition|newbuild/.test(hay)) return 'S&P';
+    if (/dry bulk|bulk carrier|capesize|panamax|bdi|tonne-?mile/.test(hay)) return 'Dry Bulk';
     if (/trade|sanction|tariff|grain|container|port/.test(hay)) return 'Trade';
     return 'Trade';
 }
@@ -114,6 +230,7 @@ function categorizeNews(title, summary) {
 function tagClass(category) {
     if (category === 'Carbon') return 'tag-carbon';
     if (category === 'S&P') return 'tag-sp';
+    if (category === 'Dry Bulk') return 'tag-trade';
     if (category === 'Trade') return 'tag-trade';
     return '';
 }
@@ -137,6 +254,7 @@ function normalizeNewsItem(raw) {
         tag: category,
         tagClass: tagClass(category),
         hoursAgo: hoursAgoFromPubDate(raw.pubDate),
+        imageUrl: raw.imageUrl || '',
         en: {
             headline: raw.title,
             summary: raw.summary || '',
@@ -175,7 +293,9 @@ async function fetchAllRss() {
         }
     }
     merged.sort((a, b) => (Date.parse(b.pubDate) || 0) - (Date.parse(a.pubDate) || 0));
-    return { items: merged.slice(0, MAX_NEWS).map(normalizeNewsItem), errors };
+    const sliced = merged.slice(0, MAX_NEWS);
+    const withImages = await enrichNewsImages(sliced);
+    return { items: withImages.map(normalizeNewsItem), errors };
 }
 
 function buildIndices(baseline, overrides, seed) {
