@@ -1697,6 +1697,8 @@ body.tvc-marketing-body .mkt-footer-signature {
     margin: 0;
 }
 
+/* Legacy alias — footer uses .footer-engineer-signature (see store-public.css) */
+
 body.tvc-marketing-body .mkt-footer-meta {
     display: flex;
     flex-wrap: wrap;

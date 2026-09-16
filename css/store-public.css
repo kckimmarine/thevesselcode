@@ -48,6 +48,38 @@ body.mkt-toolkit-page .mkt-engineering-modules {
     padding-top: 8px;
 }
 
+body.mkt-toolkit-page .store-public-toolkit.mkt-tool-tabs {
+    margin-top: 12px;
+}
+
+body.tvc-marketing-body .footer-engineer-signature {
+    font-size: 13px;
+    color: #64748b;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 16px 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    body.tvc-marketing-body .footer-engineer-signature {
+        white-space: normal;
+        line-height: 1.5;
+        overflow: visible;
+        text-overflow: clip;
+        padding: 16px 12px;
+    }
+}
+
+body.tvc-marketing-body .mkt-footer {
+    align-items: center;
+}
+
 .store-public-shell {
     min-height: 100vh;
     min-height: 100dvh;
