@@ -2964,6 +2964,7 @@ input.tvc-date-input::placeholder {
     content: ''; position: absolute; bottom: -1px; left: 8px; right: 8px;
     height: 2px; background: var(--bg); border-radius: 2px 2px 0 0;
 }
+.tab-label-mobile { display: none; }
 .tab-bar-settings {
     margin-left: auto;
     align-self: center;
@@ -9707,6 +9708,15 @@ body.mobile-nav-open .mobile-nav-backdrop { display: block; }
     }
     body.mobile-nav-open .tab-bar { transform: translateX(0); }
 
+    .tab-label-full { display: none; }
+    .tab-label-mobile { display: inline; }
+    .tab-btn[data-tab="certificates"] { order: 2; }
+    .tab-btn[data-tab="menu"] { order: 1; }
+    .tab-btn[data-tab="actual"] { order: 3; }
+    .tab-btn[data-tab="spare"] { order: 4; }
+    .tab-btn[data-tab="history"] { order: 5; }
+    .tab-bar-end { order: 10; }
+
     .tab-btn {
         width: 100%;
         text-align: left;
@@ -12467,16 +12477,29 @@ body.mobile-nav-open .mobile-nav-backdrop { display: block; }
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.55);
-    z-index: 1200;
+    z-index: 10200;
+    padding: max(12px, env(safe-area-inset-top)) 12px max(12px, env(safe-area-inset-bottom));
 }
 .sm-certs-modal-content {
     width: min(480px, 94vw);
-    max-height: 88vh;
+    max-height: min(88vh, 88dvh);
     overflow-y: auto;
 }
 @media (max-width: 768px) {
-    .sm-certs-host { padding: 12px 10px 20px; }
+    .sm-certs-host {
+        padding: 12px 10px max(20px, env(safe-area-inset-bottom));
+        -webkit-overflow-scrolling: touch;
+    }
     .sm-certs-stats { grid-template-columns: repeat(2, 1fr); }
     .sm-certs-title { font-size: 1.05rem; }
     .sm-certs-sub { display: block; margin-left: 0; margin-top: 4px; }
+    .sm-certs-header { flex-direction: column; }
+    .sm-certs-actions { width: 100%; }
+    .sm-certs-actions .btn { flex: 1; min-height: 44px; touch-action: manipulation; }
+    .sm-certs-stat { min-height: 72px; touch-action: manipulation; }
+    .sm-certs-tab { min-height: 40px; touch-action: manipulation; }
+    .sm-certs-table-wrap {
+        -webkit-overflow-scrolling: touch;
+        max-width: 100%;
+    }
 }

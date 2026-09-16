@@ -1,5 +1,5 @@
 /* THE VESSEL CODE — Service Worker (Offline-first) */
-const CACHE_VERSION = 'tvc-pms-20260909-app-shell';
+const CACHE_VERSION = 'tvc-pms-20260916-gfsm-certs';
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
@@ -76,7 +76,13 @@ const PRECACHE_ASSETS = [
     '/js/services/seed.js',
     '/js/ui/listFilters.js',
     '/js/ui/defectReport.js',
+    '/js/data/sm-certificates-gfsm-embedded.js',
+    '/js/services/smCertificatesSeed.js',
+    '/js/services/smCertificates.js',
+    '/js/ui/smCertificates.js',
+    '/data/sm-certificates-gfsm.json',
     '/js/app.js',
+    '/index.html',
 ];
 
 const OFFLINE_EXTENSIONS = ['.js', '.css', '.json', '.svg', '.webp', '.woff', '.woff2'];

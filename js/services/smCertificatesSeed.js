@@ -31,11 +31,12 @@ const TVC_SmCertificatesSeed = (function () {
     async function loadSeedPayload() {
         try {
             const res = await fetch(SEED_URL);
-            if (!res.ok) return null;
-            return res.json();
-        } catch (_) {
-            return null;
+            if (res.ok) return res.json();
+        } catch (_) { /* offline / PWA — use embedded bundle */ }
+        if (typeof TVC_GFSM_CERTS_SEED !== 'undefined' && TVC_GFSM_CERTS_SEED?.records?.length) {
+            return TVC_GFSM_CERTS_SEED;
         }
+        return null;
     }
 
     async function ensureSeed() {

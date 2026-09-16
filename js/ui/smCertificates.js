@@ -124,8 +124,12 @@ const TVC_SmCertificatesUi = (function () {
       <button type="button" class="btn" id="smCertsModalCancel">취소</button>
       <button type="button" class="btn btn-green" id="smCertsModalSave">저장</button>
     </div>
-  </div>
+    </div>
 </div>`;
+        const modal = el('smCertsEditModal');
+        if (modal && modal.parentElement !== document.body) {
+            document.body.appendChild(modal);
+        }
     }
 
     function bindOnce() {
