@@ -15,16 +15,11 @@
         }
 
         const params = new URLSearchParams(window.location.search);
-        const hashTab = (window.location.hash || '').replace(/^#/, '');
-        if (hashTab === 'tab-bunker' && !params.get('tool')) {
-            params.set('tool', 'bunker');
-        }
-        const toolTab = params.get('tool') || (hashTab === 'tab-bunker' ? 'bunker' : null);
+        const toolTab = typeof TVC_MaritimeToolkit?.resolveToolkitToolFromLocation === 'function'
+            ? TVC_MaritimeToolkit.resolveToolkitToolFromLocation()
+            : params.get('tool');
         if (toolTab && typeof TVC_MaritimeToolkit !== 'undefined') {
-            TVC_MaritimeToolkit.setActiveTool(toolTab);
-            if (toolTab === 'bunker') {
-                TVC_MaritimeToolkit.applyBunkerPrefill(params);
-            }
+            TVC_MaritimeToolkit.openToolkitModule(toolTab, { scroll: false, syncUrl: true });
         }
 
         try {

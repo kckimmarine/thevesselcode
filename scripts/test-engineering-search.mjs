@@ -32,6 +32,15 @@ function check(name, ok, detail = '') {
 
 check('engineeringSearch module', !!Search?.searchEngineeringKnowledge);
 
+const moduleTabs = [...toolkitHtml.matchAll(/class="[^"]*module-card[^"]*"[^>]*data-tool-tab="([^"]+)"/g)].map((m) => m[1]);
+const expectedModuleTabs = [
+    'bunker', 'engineering', 'mechanical', 'combustion', 'lube', 'paint', 'electrical', 'compliance', 'auxiliary', 'catalog',
+];
+check('toolkit module cards wired', moduleTabs.length === 10, `tabs=${moduleTabs.join(',')}`);
+for (const tab of expectedModuleTabs) {
+    check(`module card data-tool-tab="${tab}"`, moduleTabs.includes(tab));
+}
+
 const QUERY_EXPECT = [
     ['torque', 'mech-bolt-torque'],
     ['디플렉션', 'mech-crank-deflection'],

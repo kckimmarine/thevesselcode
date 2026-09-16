@@ -953,9 +953,72 @@ const TVC_MaritimeToolkit = (function () {
         active?.scrollIntoView?.({ block: 'nearest', behavior: 'smooth' });
     }
 
+    const TOOL_PANEL_HASH = {
+        bunker: 'tab-bunker',
+        engineering: 'tab-flange',
+        mechanical: 'tab-mechanical',
+        combustion: 'tab-combustion',
+        lube: 'tab-luboil',
+        paint: 'tab-paint',
+        electrical: 'tab-electrical',
+        compliance: 'tab-psc-guard',
+        auxiliary: 'tab-auxiliary',
+        catalog: 'tab-impa',
+    };
+    const HASH_TO_TOOL = Object.fromEntries(
+        Object.entries(TOOL_PANEL_HASH).map(([tool, hash]) => [hash, tool]),
+    );
+
+    function resolveToolkitToolFromLocation(loc = globalThis.location) {
+        if (!loc) return null;
+        const params = new URLSearchParams(loc.search || '');
+        const fromQuery = params.get('tool');
+        if (fromQuery && TOOL_PANEL_HASH[fromQuery]) return fromQuery;
+        const hash = (loc.hash || '').replace(/^#/, '');
+        return HASH_TO_TOOL[hash] || null;
+    }
+
+    function syncToolkitLocation(tool) {
+        const tab = tool || 'catalog';
+        if (!TOOL_PANEL_HASH[tab] || !globalThis.history?.replaceState) return;
+        const params = new URLSearchParams(globalThis.location?.search || '');
+        params.set('tool', tab);
+        const hash = TOOL_PANEL_HASH[tab];
+        const path = globalThis.location?.pathname || '/toolkit';
+        const qs = params.toString();
+        globalThis.history.replaceState(null, '', `${path}${qs ? `?${qs}` : ''}#${hash}`);
+    }
+
+    function openToolkitModule(tool, { scroll = true, syncUrl = true } = {}) {
+        const tab = TOOL_PANEL_HASH[tool] ? tool : 'catalog';
+        setActiveTool(tab);
+        if (syncUrl) syncToolkitLocation(tab);
+        if (tab === 'bunker') {
+            applyBunkerPrefill(new URLSearchParams(globalThis.location?.search || ''));
+        }
+        if (scroll) {
+            globalThis.document.getElementById('storePublicToolkit')?.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
+        }
+    }
+
+    function initEngineeringModuleCards() {
+        const grid = document.querySelector('.mkt-engineering-modules');
+        if (!grid) return;
+        grid.querySelectorAll('.module-card[data-tool-tab]').forEach((card) => {
+            const activate = (ev) => {
+                ev.preventDefault();
+                openToolkitModule(card.dataset.toolTab);
+            };
+            card.addEventListener('click', activate);
+            card.addEventListener('keydown', (ev) => {
+                if (ev.key === 'Enter' || ev.key === ' ') activate(ev);
+            });
+        });
+    }
+
     function jumpToEngineeringCalculator(tab, entryId) {
         _engSearchHighlightId = entryId || null;
-        setActiveTool(tab || 'catalog');
+        openToolkitModule(tab || 'catalog', { scroll: true, syncUrl: true });
         const panel = document.querySelector(`[data-tool-panel="${tab}"]`);
         if (panel) {
             panel.classList.add('mkt-tool-panel--search-focus');
@@ -967,7 +1030,6 @@ const TVC_MaritimeToolkit = (function () {
                 el.classList.toggle('mkt-eng-search-card--active', el.dataset.engId === entryId);
             });
         }
-        document.getElementById('storePublicToolkit')?.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
     }
 
     function initEngineeringSearch() {
@@ -1089,6 +1151,7 @@ const TVC_MaritimeToolkit = (function () {
         if (hosts.compliance) renderCompliancePanel(hosts.compliance);
         if (hosts.auxiliary) renderAuxiliaryPanel(hosts.auxiliary);
         renderConversionBanner();
+        initEngineeringModuleCards();
         globalThis.addEventListener('tvc-mkt-lang', () => {
             if (hosts.bunker) renderBunkerPanel(hosts.bunker);
             if (hosts.lube) renderLubePanel(hosts.lube);
@@ -1101,12 +1164,17 @@ const TVC_MaritimeToolkit = (function () {
             if (hosts.auxiliary) renderAuxiliaryPanel(hosts.auxiliary);
             renderConversionBanner();
         });
-        setActiveTool('catalog');
+        const deeplinkTool = resolveToolkitToolFromLocation();
+        setActiveTool(deeplinkTool || 'catalog');
+        if (deeplinkTool) syncToolkitLocation(deeplinkTool);
     }
 
     return {
         init,
         setActiveTool,
+        openToolkitModule,
+        resolveToolkitToolFromLocation,
+        syncToolkitLocation,
         calcVolumeToMt,
         calcBunkerMassAstM54B,
         filterFlanges,
