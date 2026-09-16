@@ -1,0 +1,28 @@
+{
+  "v": 1,
+  "updated": "2026-09-16T00:00:00Z",
+  "positions": {
+    "9381330": {
+      "imo": "9381330",
+      "mmsi": "440527000",
+      "name": "ROYAL CRYSTAL 7",
+      "lat": 33.29133,
+      "lon": 135.7368,
+      "sog": 8.6,
+      "cog": 248.7,
+      "ts": "2026-09-03T00:05:00Z",
+      "source": "coastal-ais-verified"
+    },
+    "9297711": {
+      "imo": "9297711",
+      "mmsi": "440306000",
+      "name": "INCHEON CHEMI",
+      "lat": 1.264,
+      "lon": 103.86,
+      "sog": 0.1,
+      "cog": 132,
+      "ts": "2026-09-01T12:00:00Z",
+      "source": "coastal-ais-verified"
+    }
+  }
+}

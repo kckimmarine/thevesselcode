@@ -2280,16 +2280,38 @@ body.tvc-marketing-body .tvc-vessel-ais-note {
     border-bottom: 1px solid #e2e8f0;
 }
 
-body.tvc-marketing-body .tvc-vessel-ais-frame-wrap {
-    flex: 1;
+body.tvc-marketing-body .tvc-vessel-ais-panel--map {
+    max-height: 92vh;
+}
+
+body.tvc-marketing-body .tvc-vessel-ais-status {
+    margin: 2px 0 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #94a3b8;
+}
+
+body.tvc-marketing-body .tvc-vessel-ais-map {
+    width: 100%;
+    height: min(62vh, 560px);
     min-height: 320px;
     background: #e2e8f0;
 }
 
-body.tvc-marketing-body .tvc-vessel-ais-frame {
-    width: 100%;
-    height: min(60vh, 520px);
+body.tvc-marketing-body .tvc-ais-vessel-icon-wrap {
+    background: transparent;
     border: 0;
+}
+
+body.tvc-marketing-body .tvc-ais-vessel-icon {
     display: block;
-    background: #fff;
+    font-size: 1.35rem;
+    line-height: 1;
+    color: #0f172a;
+    text-shadow: 0 0 4px #fff, 0 0 8px #fff;
+    transform-origin: center center;
+}
+
+body.tvc-marketing-body .leaflet-container {
+    font-family: inherit;
 }

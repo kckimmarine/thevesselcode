@@ -15,6 +15,9 @@ import {
     existsSync,
     rmSync,
     cpSync,
+    realpathSync,
+    lstatSync,
+    unlinkSync,
 } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -385,6 +388,17 @@ async function main() {
         process.exit(1);
     }
 
+    const devMirrorLink = join(ROOT, 'data', 'fleet');
+    if (existsSync(devMirrorLink)) {
+        try {
+            if (lstatSync(devMirrorLink).isSymbolicLink()) {
+                unlinkSync(devMirrorLink);
+            }
+        } catch {
+            /* ignore */
+        }
+    }
+
     rmSync(OUT_DIR, { recursive: true, force: true });
     mkdirSync(OUT_DIR, { recursive: true });
 
@@ -431,9 +445,20 @@ async function main() {
     console.log('OK chunks', Object.keys(chunks).length);
     console.log('OK name index buckets', Object.keys(letterBuckets).length);
     const devMirror = join(ROOT, 'data', 'fleet');
-    cpSync(OUT_DIR, devMirror, { recursive: true });
+    try {
+        const src = realpathSync(OUT_DIR);
+        const dest = existsSync(devMirror) ? realpathSync(devMirror) : devMirror;
+        if (src !== dest) {
+            cpSync(OUT_DIR, devMirror, { recursive: true });
+            console.log('OK mirrored →', devMirror, '(local npm start /data/fleet)');
+        }
+    } catch {
+        if (!existsSync(devMirror)) {
+            cpSync(OUT_DIR, devMirror, { recursive: true });
+            console.log('OK mirrored →', devMirror, '(local npm start /data/fleet)');
+        }
+    }
     console.log('OK fleet-index.json', vessels.length, 'vessels →', OUT_DIR);
-    console.log('OK mirrored →', devMirror, '(local npm start /data/fleet)');
 }
 
 main().catch((err) => {

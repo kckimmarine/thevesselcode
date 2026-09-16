@@ -13,9 +13,15 @@
             .replace(/"/g, '&quot;');
     }
 
+    function hasValue(value) {
+        if (value === null || value === undefined) return false;
+        if (typeof value === 'number') return value > 0;
+        return String(value).trim().length > 0;
+    }
+
     function formatDwt(vessel) {
         const n = Number(vessel.dwt ?? vessel.d);
-        if (!n) return '—';
+        if (!n) return '';
         return `${n.toLocaleString('en-US')} MT`;
     }
 
@@ -29,107 +35,57 @@
             flag: vessel.flag || vessel.f,
             technical_manager: vessel.technical_manager || vessel.m,
             engine_model: vessel.engine_model || vessel.e,
+            mmsi: vessel.mmsi || vessel.s,
         };
+    }
+
+    function specField(label, value, wide) {
+        if (!hasValue(value)) return '';
+        const cls = wide ? ' tvc-vessel-lookup-field--wide' : '';
+        return `<div class="tvc-vessel-lookup-field${cls}">
+            <span class="tvc-vessel-lookup-field-label">${esc(label)}</span>
+            <span class="tvc-vessel-lookup-value">${esc(value)}</span>
+        </div>`;
     }
 
     function renderVesselCard(vessel) {
         const v = vesselDisplay(vessel);
+        const dwtText = formatDwt(v);
+        const specs = [
+            specField('Technical manager', v.technical_manager),
+            specField('Ship type', v.type),
+            specField('DWT', dwtText),
+            specField('Built year', v.built_year),
+            specField('Main engine', v.engine_model, true),
+        ].filter(Boolean).join('');
+
         return `<article class="tvc-vessel-lookup-card" data-vessel-imo="${esc(v.imo)}">
             <header class="tvc-vessel-lookup-card-head">
                 <h3 class="tvc-vessel-lookup-card-name">${esc(v.name)}</h3>
                 <p class="tvc-vessel-lookup-card-meta">
-                    <span class="tvc-vessel-lookup-flag">${esc(v.flag)}</span>
+                    <span class="tvc-vessel-lookup-flag">${esc(v.flag || '—')}</span>
                     <span class="tvc-vessel-lookup-sep" aria-hidden="true">·</span>
                     <span>IMO ${esc(v.imo)}</span>
                 </p>
             </header>
-            <div class="tvc-vessel-lookup-grid">
-                <div class="tvc-vessel-lookup-field">
-                    <span class="tvc-vessel-lookup-field-label">Technical manager</span>
-                    <span class="tvc-vessel-lookup-value">${esc(v.technical_manager || '—')}</span>
-                </div>
-                <div class="tvc-vessel-lookup-field">
-                    <span class="tvc-vessel-lookup-field-label">Ship type</span>
-                    <span class="tvc-vessel-lookup-value">${esc(v.type || '—')}</span>
-                </div>
-                <div class="tvc-vessel-lookup-field">
-                    <span class="tvc-vessel-lookup-field-label">DWT</span>
-                    <span class="tvc-vessel-lookup-value">${esc(formatDwt(v))}</span>
-                </div>
-                <div class="tvc-vessel-lookup-field">
-                    <span class="tvc-vessel-lookup-field-label">Built year</span>
-                    <span class="tvc-vessel-lookup-value">${esc(v.built_year || '—')}</span>
-                </div>
-                <div class="tvc-vessel-lookup-field tvc-vessel-lookup-field--wide">
-                    <span class="tvc-vessel-lookup-field-label">Main engine</span>
-                    <span class="tvc-vessel-lookup-value">${esc(v.engine_model || '—')}</span>
-                </div>
-            </div>
+            ${specs ? `<div class="tvc-vessel-lookup-grid">${specs}</div>` : ''}
             <div class="tvc-vessel-lookup-actions tvc-vessel-lookup-actions--single">
-                <button type="button" class="tvc-vessel-lookup-ais home-btn home-btn-primary" data-ais-imo="${esc(v.imo)}" data-ais-name="${esc(v.name)}">🗺️ View Live Position</button>
+                <button type="button" class="tvc-vessel-lookup-ais home-btn home-btn-primary" data-ais-imo="${esc(v.imo)}" data-ais-name="${esc(v.name)}" data-ais-mmsi="${esc(v.mmsi || '')}">🗺️ View Live Position</button>
             </div>
         </article>`;
     }
 
-    function ensureAisModal() {
-        let modal = document.getElementById('tvcVesselAisModal');
-        if (modal) return modal;
-
-        modal = document.createElement('div');
-        modal.id = 'tvcVesselAisModal';
-        modal.className = 'tvc-vessel-ais-modal hidden';
-        modal.setAttribute('role', 'dialog');
-        modal.setAttribute('aria-modal', 'true');
-        modal.setAttribute('aria-labelledby', 'tvcVesselAisTitle');
-        modal.innerHTML = `
-            <div class="tvc-vessel-ais-backdrop" data-ais-close tabindex="-1"></div>
-            <div class="tvc-vessel-ais-panel">
-                <header class="tvc-vessel-ais-head">
-                    <h2 id="tvcVesselAisTitle" class="tvc-vessel-ais-title">Live position</h2>
-                    <button type="button" class="tvc-vessel-ais-close" data-ais-close aria-label="Close map">×</button>
-                </header>
-                <p class="tvc-vessel-ais-note">AIS map by IMO — TVC viewer shell only (no video ads).</p>
-                <div class="tvc-vessel-ais-frame-wrap">
-                    <iframe class="tvc-vessel-ais-frame" title="Vessel AIS map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
-                </div>
-            </div>`;
-        document.body.appendChild(modal);
-
-        modal.addEventListener('click', (ev) => {
-            if (ev.target.closest('[data-ais-close]')) closeAisModal();
-        });
-        document.addEventListener('keydown', (ev) => {
-            if (ev.key === 'Escape' && !modal.classList.contains('hidden')) closeAisModal();
-        });
-
-        return modal;
-    }
-
-    function digitsOnly(str) {
-        return String(str || '').replace(/\D/g, '');
-    }
-
-    function openAisModal(imo, name) {
-        const modal = ensureAisModal();
-        const imoClean = digitsOnly(imo);
-        const title = document.getElementById('tvcVesselAisTitle');
-        const frame = modal.querySelector('.tvc-vessel-ais-frame');
-        if (title) title.textContent = name ? `${name} — IMO ${imoClean}` : `IMO ${imoClean}`;
-        if (frame) {
-            frame.removeAttribute('src');
-            frame.src = `https://www.vesselfinder.com/?imo=${encodeURIComponent(imoClean)}`;
+    function openAisModal(imo, name, mmsi) {
+        const MapModal = global.TVC_VesselMapModal;
+        if (MapModal?.open) {
+            MapModal.open({ imo, name, mmsi });
+            return;
         }
-        modal.classList.remove('hidden');
-        document.body.classList.add('tvc-vessel-ais-open');
+        console.warn('[VesselLookup] TVC_VesselMapModal unavailable');
     }
 
     function closeAisModal() {
-        const modal = document.getElementById('tvcVesselAisModal');
-        if (!modal) return;
-        modal.classList.add('hidden');
-        document.body.classList.remove('tvc-vessel-ais-open');
-        const frame = modal.querySelector('.tvc-vessel-ais-frame');
-        if (frame) frame.removeAttribute('src');
+        global.TVC_VesselMapModal?.close?.();
     }
 
     function renderResults(container, vessels, message) {
@@ -152,7 +108,7 @@
         container.addEventListener('click', (ev) => {
             const btn = ev.target.closest('[data-ais-imo]');
             if (!btn) return;
-            openAisModal(btn.dataset.aisImo, btn.dataset.aisName);
+            openAisModal(btn.dataset.aisImo, btn.dataset.aisName, btn.dataset.aisMmsi);
         });
     }
 

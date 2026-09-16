@@ -3,7 +3,7 @@
  * Mirror public/assets → assets for local `npm start` (serve repo root).
  * Production build copies the same tree into dist/assets.
  */
-import { cpSync, existsSync, rmSync } from 'node:fs';
+import { cpSync, copyFileSync, existsSync, mkdirSync, rmSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -19,3 +19,11 @@ if (!existsSync(src)) {
 rmSync(dest, { recursive: true, force: true });
 cpSync(src, dest, { recursive: true });
 console.log('OK public/assets → assets/');
+
+const aisSrc = join(ROOT, 'public', 'data', 'fleet-ais-positions.json');
+const dataDir = join(ROOT, 'data');
+if (existsSync(aisSrc)) {
+    mkdirSync(dataDir, { recursive: true });
+    copyFileSync(aisSrc, join(dataDir, 'fleet-ais-positions.json'));
+    console.log('OK public/data/fleet-ais-positions.json → data/');
+}

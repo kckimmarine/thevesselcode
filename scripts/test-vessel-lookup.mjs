@@ -23,6 +23,8 @@ check('toolkit loads vesselLookup.js', toolkitHtml.includes('js/ui/vesselLookup.
 check('vesselLookup uses fleet service', lookupSrc.includes('TVC_FleetRegistry'));
 check('cross-links removed', !lookupSrc.includes('ASTM 54B Calc'));
 check('AIS button retained', lookupSrc.includes('View Live Position'));
+check('leaflet map modal wired', toolkitHtml.includes('vesselMapModal.js'));
+check('no vesselfinder iframe', !lookupSrc.includes('vesselfinder.com'));
 check('fleet index present', existsSync(join(ROOT, 'public/data/fleet/fleet-index.json')));
 
 const failed = results.filter((r) => !r.ok);
