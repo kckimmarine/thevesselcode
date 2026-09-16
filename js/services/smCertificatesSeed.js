@@ -31,11 +31,12 @@ const TVC_SmCertificatesSeed = (function () {
     async function loadSeedPayload() {
         try {
             const res = await fetch(SEED_URL);
-            if (!res.ok) return null;
-            return res.json();
-        } catch (_) {
-            return null;
+            if (res.ok) return res.json();
+        } catch (_) { /* offline / PWA — use embedded bundle */ }
+        if (typeof TVC_GFSM_CERTS_SEED !== 'undefined' && TVC_GFSM_CERTS_SEED?.records?.length) {
+            return TVC_GFSM_CERTS_SEED;
         }
+        return null;
     }
 
     async function ensureSeed() {
@@ -67,10 +68,31 @@ const TVC_SmCertificatesSeed = (function () {
         return { inserted: rows.length };
     }
 
+    async function reseedCompany(companyId) {
+        const cid = String(companyId || '').trim();
+        if (!cid) return { skipped: true };
+        const payload = await loadSeedPayload();
+        if (!payload?.records?.length) return { needFile: true };
+        await TVC_SmCertificates.deleteAllForCompany(cid);
+        const ts = nowIso();
+        const rows = payload.records
+            .filter(r => (r.company_id || companyForVessel(r.vessel)) === cid)
+            .map(r => ({
+                ...r,
+                company_id: r.company_id || companyForVessel(r.vessel),
+                sync_status: 'local',
+                updated_at: ts,
+            }));
+        if (rows.length) await TVC_DB.bulkPut('sm_certificates', rows);
+        upsertFleetForCompany(cid);
+        return { inserted: rows.length };
+    }
+
     return {
         META_SEED,
         companyForVessel,
         ensureSeed,
+        reseedCompany,
         upsertFleetForCompany,
     };
 })();

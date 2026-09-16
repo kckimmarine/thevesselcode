@@ -185,7 +185,7 @@
         <button class="tab-btn" data-tab="actual" onclick="TVC_App.switchTab('actual')">📝 PMS</button>
         <button class="tab-btn" data-tab="spare" data-feature="showSpareTab" onclick="TVC_App.switchTab('spare')">🔩 SPARE</button>
         <button class="tab-btn" data-tab="history" onclick="TVC_App.switchTab('history')">📜 Report History</button>
-        <button class="tab-btn" data-tab="certificates" data-feature="showCertificatesTab" onclick="TVC_App.switchTab('certificates')">📋 Certificates</button>
+        <button class="tab-btn" data-tab="certificates" data-feature="showCertificatesTab" onclick="TVC_App.switchTab('certificates')"><span class="tab-label-full">📋 Certificates</span><span class="tab-label-mobile">📋 증서</span></button>
         <div class="tab-bar-end">
             <button type="button" id="btn-open-ai-help" class="btn-ai-help btn-feedback" onclick="TVC_App.openAiHelp()" title="AI Help">🤖 AI Help</button>
             <button type="button" id="settingsOpenBtn" class="tab-bar-settings" onclick="TVC_Settings.open()" title="Settings">⚙ Settings</button>
@@ -1047,8 +1047,11 @@
 <script src="js/ui/settings.js?v=20260804-settings"></script>
 <script src="js/ui/outstandingTasks.js?v=20260823-monthly-gate"></script>
 <script src="js/services/supplierRfqPipeline.js?v=20260912-rfq-pipeline"></script>
-<script src="js/services/smCertificatesSeed.js?v=20260916-gfsm-certs"></script>
+<script src="vendor/chart.umd.min.js"></script>
+<script src="vendor/html2pdf.bundle.min.js"></script>
+<script src="js/data/sm-certificates-gfsm-embedded.js?v=20260916-gfsm-certs"></script>
 <script src="js/services/smCertificates.js?v=20260916-gfsm-certs"></script>
+<script src="js/services/smCertificatesSeed.js?v=20260916-gfsm-certs"></script>
 <script src="js/ui/smCertificates.js?v=20260916-gfsm-certs"></script>
 <script src="js/ui/rfqWorkspace.js?v=20260915-domestic-rfq"></script>
 <script src="js/ui/supplierWorkspace.js?v=20260912-supplier-quote-print"></script>

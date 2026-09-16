@@ -1209,6 +1209,9 @@ const TVC_App = (function () {
                 }
             }
             await TVC_Fleet.ensureFleet();
+            try {
+                if (typeof TVC_SmCertificatesSeed !== 'undefined') await TVC_SmCertificatesSeed.ensureSeed();
+            } catch (e) { console.warn('[TVC_SmCertificatesSeed]', e); }
             state.fleet = TVC_Fleet.getVisible(state.user);
             if (isSuperHq) {
                 state.fleetCompanyFilter = state.fleetCompanyFilter ?? ADMIN_COMPANY_FILTER_ALL;
@@ -3393,6 +3396,9 @@ const TVC_App = (function () {
         const smDailyItems = [
             { label: 'Check PMS', tag: 'D', action: "TVC_App.menuAction('checkPlan')", badge: c.overdue, badgeTone: 'red' },
             { label: 'Approve Report', tag: 'B', action: "TVC_App.menuAction('approveReport')", badge: c.smApprovePending, badgeTone: 'amber' },
+            ...(typeof TVC_Space !== 'undefined' && TVC_Space.getUiFeatures(state.user).showCertificatesTab
+                ? [{ label: 'Certificates (증서관리)', tag: 'C', action: "TVC_App.switchTab('certificates')" }]
+                : []),
         ];
         const necessaryItems = menuNecessaryItems();
 
@@ -13960,6 +13966,14 @@ const TVC_App = (function () {
 
     function renderCertificatesTab() {
         if (!state.user || !TVC_RBAC.isSmAccount(state.user)) return;
+        if (typeof TVC_SmCertificatesSeed !== 'undefined') {
+            void TVC_SmCertificatesSeed.ensureSeed().then(() => {
+                if (typeof TVC_SmCertificatesUi !== 'undefined') {
+                    void TVC_SmCertificatesUi.render(state.user);
+                }
+            });
+            return;
+        }
         if (typeof TVC_SmCertificatesUi !== 'undefined') {
             void TVC_SmCertificatesUi.render(state.user);
         }

@@ -111,6 +111,16 @@ const TVC_SmCertificates = (function () {
         await TVC_DB.del('sm_certificates', id);
     }
 
+    async function deleteAllForCompany(companyId) {
+        const cid = String(companyId || '').trim();
+        const all = await TVC_DB.getAll('sm_certificates').catch(() => []);
+        for (const r of all) {
+            if (!cid || String(r.company_id || '') === cid) {
+                await TVC_DB.del('sm_certificates', r.id);
+            }
+        }
+    }
+
     function defaultTabForCompany(companyId) {
         const c = String(companyId || '').trim();
         if (c === 'SWT') return 'SWT 증서';
@@ -136,6 +146,7 @@ const TVC_SmCertificates = (function () {
         listForUser,
         saveRecord,
         deleteRecord,
+        deleteAllForCompany,
         defaultTabForCompany,
         statusLabel,
         generateId,

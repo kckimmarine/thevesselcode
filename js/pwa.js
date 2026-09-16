@@ -54,6 +54,9 @@ const TVC_PWA = (function () {
         document.addEventListener('keydown', e => {
             if (e.key === 'Escape') closeMobileNav();
         });
+        document.querySelectorAll('#tabBar .tab-btn[data-tab]').forEach(tabBtn => {
+            tabBtn.addEventListener('click', () => closeMobileNav());
+        });
     }
 
     function toggleMobileNav(force) {

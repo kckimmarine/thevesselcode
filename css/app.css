@@ -2964,6 +2964,7 @@ input.tvc-date-input::placeholder {
     content: ''; position: absolute; bottom: -1px; left: 8px; right: 8px;
     height: 2px; background: var(--bg); border-radius: 2px 2px 0 0;
 }
+.tab-label-mobile { display: none; }
 .tab-bar-settings {
     margin-left: auto;
     align-self: center;
@@ -9707,6 +9708,15 @@ body.mobile-nav-open .mobile-nav-backdrop { display: block; }
     }
     body.mobile-nav-open .tab-bar { transform: translateX(0); }
 
+    .tab-label-full { display: none; }
+    .tab-label-mobile { display: inline; }
+    .tab-btn[data-tab="certificates"] { order: 2; }
+    .tab-btn[data-tab="menu"] { order: 1; }
+    .tab-btn[data-tab="actual"] { order: 3; }
+    .tab-btn[data-tab="spare"] { order: 4; }
+    .tab-btn[data-tab="history"] { order: 5; }
+    .tab-bar-end { order: 10; }
+
     .tab-btn {
         width: 100%;
         text-align: left;
@@ -12287,6 +12297,89 @@ body.mobile-nav-open .mobile-nav-backdrop { display: block; }
 }
 
 /* ── SM Mode: Certificates dashboard (GFSM / SWT) ───────────────── */
+.sm-certs-brand {
+    display: inline-block;
+    background: #0056a4;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.sm-certs-title {
+    font-size: 1.15rem;
+    line-height: 1.35;
+}
+.sm-certs-file-status { display: block; margin-top: 6px; font-size: 0.75rem; }
+.sm-certs-btn-upload { background: #0056a4; color: #fff; cursor: pointer; }
+.sm-certs-btn-share { background: #f59e0b; color: #fff; border: none; }
+.sm-certs-btn-mail { background: #8b5cf6; color: #fff; border: none; }
+.sm-certs-btn-pdf { background: #ef4444; color: #fff; border: none; }
+.sm-certs-charts {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+.sm-certs-chart-card {
+    flex: 1;
+    min-width: 200px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px;
+}
+.sm-certs-chart-wide { flex: 1.2; min-width: 240px; }
+.sm-certs-chart-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #64748b;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+.sm-certs-canvas-wrap { position: relative; height: 150px; }
+.sm-certs-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.sm-certs-controls-left { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; flex: 1; }
+.sm-certs-controls-right { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.sm-certs-modal-content h3 { color: #0056a4; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; }
+.sm-certs-req { color: #dc2626; }
+.sm-certs-form-row { display: flex; gap: 12px; }
+.sm-certs-form-row .form-group { flex: 1; min-width: 0; }
+.sm-certs-modal-content textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    resize: vertical;
+}
+.sm-certs-toast {
+    visibility: hidden;
+    position: fixed;
+    z-index: 10300;
+    left: 50%;
+    bottom: 28px;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.sm-certs-toast.show { visibility: visible; }
+.sm-certs-pdf-hide { display: none !important; }
+.sm-certs-pdf-mode { background: #fff !important; }
 .sm-certs-host {
     padding: 16px 20px 24px;
     max-width: 100%;
@@ -12467,16 +12560,35 @@ body.mobile-nav-open .mobile-nav-backdrop { display: block; }
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.55);
-    z-index: 1200;
+    z-index: 10200;
+    padding: max(12px, env(safe-area-inset-top)) 12px max(12px, env(safe-area-inset-bottom));
 }
 .sm-certs-modal-content {
     width: min(480px, 94vw);
-    max-height: 88vh;
+    max-height: min(88vh, 88dvh);
     overflow-y: auto;
 }
 @media (max-width: 768px) {
-    .sm-certs-host { padding: 12px 10px 20px; }
+    .sm-certs-host {
+        padding: 12px 10px max(20px, env(safe-area-inset-bottom));
+        -webkit-overflow-scrolling: touch;
+    }
     .sm-certs-stats { grid-template-columns: repeat(2, 1fr); }
-    .sm-certs-title { font-size: 1.05rem; }
-    .sm-certs-sub { display: block; margin-left: 0; margin-top: 4px; }
+    .sm-certs-title { font-size: 1rem; }
+    .sm-certs-brand { font-size: 0.85rem; }
+    .sm-certs-header { flex-direction: column; }
+    .sm-certs-actions { width: 100%; }
+    .sm-certs-actions .btn { flex: 1; min-height: 44px; touch-action: manipulation; }
+    .sm-certs-stat { min-height: 72px; touch-action: manipulation; }
+    .sm-certs-tab { min-height: 40px; touch-action: manipulation; }
+    .sm-certs-charts { flex-direction: column; }
+    .sm-certs-chart-card, .sm-certs-chart-wide { min-width: 0; width: 100%; }
+    .sm-certs-controls { flex-direction: column; align-items: stretch; }
+    .sm-certs-controls-right { justify-content: stretch; }
+    .sm-certs-controls-right .btn { flex: 1 1 45%; min-height: 40px; font-size: 0.72rem; padding: 8px 6px; }
+    .sm-certs-form-row { flex-direction: column; gap: 0; }
+    .sm-certs-table-wrap {
+        -webkit-overflow-scrolling: touch;
+        max-width: 100%;
+    }
 }
