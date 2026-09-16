@@ -3,8 +3,9 @@
  * Ingest Berth Marine IMPA codes present in sitemap discovery but missing from impa-full.json.
  * Writes public/data/berth/imports/berth-gap-ingest.json (does not overwrite master import).
  *
- *   node scripts/ingest-missing-berth-codes.mjs [--scrape] [--merge]
+ *   node scripts/ingest-missing-berth-codes.mjs [--merge]
  *   node scripts/ingest-missing-berth-codes.mjs --scrape --batch=80
+ *   node scripts/ingest-missing-berth-codes.mjs --no-wp-api --scrape
  */
 import { spawnSync } from 'node:child_process';
 import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
@@ -20,6 +21,8 @@ const SITEMAP_DIR = join(ROOT, 'public/data/berth/sitemaps');
 const GAP_IMPORT = join(ROOT, 'public/data/berth/imports/berth-gap-ingest.json');
 const GAP_WORKLIST = join(ROOT, 'public/data/berth/gap-worklist.json');
 const FULL_PATH = join(ROOT, 'public/data/impa-full.json');
+const WP_PRODUCT_API = 'https://www.berthmarine.com/wp-json/wp/v2/product';
+const WP_UA = 'Mozilla/5.0 (compatible; TVC-Berth-Gap/1.0)';
 
 function parseArgs(argv) {
   let batch = 80;
@@ -30,12 +33,77 @@ function parseArgs(argv) {
   }
   return {
     scrape: argv.includes('--scrape'),
+    wpApi: !argv.includes('--no-wp-api'),
     merge: argv.includes('--merge') || !argv.includes('--no-merge'),
     incrementalMerge: argv.includes('--incremental-merge'),
     dryRun: argv.includes('--dry-run'),
     batch,
     delayMs,
   };
+}
+
+function decodeHtmlEntities(text) {
+  return String(text || '')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)))
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#8211;/g, '–')
+    .replace(/&#8212;/g, '—')
+    .trim();
+}
+
+function nameFromWpProduct(row) {
+  const excerpt = decodeHtmlEntities(String(row?.excerpt?.rendered || '').replace(/<[^>]+>/g, ' '));
+  const fromExcerpt = excerpt.replace(/\s+/g, ' ').trim();
+  if (fromExcerpt.length >= 3 && !/^impa code:/i.test(fromExcerpt)) return fromExcerpt;
+  const title = decodeHtmlEntities(String(row?.title?.rendered || ''))
+    .replace(/^Impa Code:\s*/i, '')
+    .trim();
+  return title;
+}
+
+async function fetchWpProductBySlug(code) {
+  const slug = `impa-code-${code}`;
+  const url = `${WP_PRODUCT_API}?slug=${encodeURIComponent(slug)}`;
+  const res = await fetch(url, { headers: { 'User-Agent': WP_UA, Accept: 'application/json' } });
+  if (!res.ok) throw new Error(`WP API HTTP ${res.status} (${slug})`);
+  const rows = await res.json();
+  const row = Array.isArray(rows) ? rows[0] : null;
+  if (!row) return null;
+  const item_name = nameFromWpProduct(row);
+  return {
+    impa_code: code,
+    item_name,
+    product_url: row.link || `https://www.berthmarine.com/product/${slug}/`,
+    plate_key: code,
+    chapter: code.slice(0, 2),
+    category: `Chapter ${code.slice(0, 2)}`,
+    image_url: `https://www.berthmarine.com/wp-content/uploads/2022/05/${code}.jpg`,
+  };
+}
+
+async function fetchWpProductsForMissing(missingList) {
+  const found = new Map();
+  const codes = [...new Set(missingList.map((c) => normalizeImpaCode(c)).filter(Boolean))];
+  const concurrency = 8;
+  let done = 0;
+  for (let i = 0; i < codes.length; i += concurrency) {
+    const slice = codes.slice(i, i + concurrency);
+    const rows = await Promise.all(slice.map((code) => fetchWpProductBySlug(code).catch(() => null)));
+    for (const row of rows) {
+      if (row?.impa_code) found.set(row.impa_code, row);
+    }
+    done += slice.length;
+    if (done % 80 === 0 || done === codes.length) {
+      console.log(`WP API slug lookup ${done}/${codes.length} — resolved ${found.size}`);
+    }
+    await new Promise((r) => setTimeout(r, 80));
+  }
+  return found;
 }
 
 function decodeXml(text) {
@@ -149,7 +217,7 @@ function passesGapQuality(row) {
   return true;
 }
 
-function main() {
+async function main() {
   const opts = parseArgs(process.argv.slice(2));
   const before = catalogCount();
   const sitemapCodes = loadBerthSitemapCodes(ROOT);
@@ -159,6 +227,10 @@ function main() {
   console.log(`Missing from catalog: ${missing.length}`);
   if (!missing.length) {
     console.log('No gap codes to ingest.');
+    if (opts.merge) {
+      runNode('scripts/generate-impa-seo-index.mjs');
+      runNode('scripts/generate-sitemap.mjs');
+    }
     return;
   }
   if (missing.length <= 32) {
@@ -169,6 +241,21 @@ function main() {
 
   const missingSet = new Set(missing.map((c) => normalizeImpaCode(c)).filter(Boolean));
   const byCode = new Map(sitemapItemsForCodes(missingSet).map((i) => [i.impa_code, i]));
+
+  if (opts.wpApi) {
+    try {
+      const wpRows = await fetchWpProductsForMissing(missing);
+      for (const [code, row] of wpRows) {
+        byCode.set(code, { ...byCode.get(code), ...row });
+      }
+    } catch (err) {
+      console.warn('WP API gap fetch failed:', err.message);
+      if (!opts.scrape) {
+        console.error('Re-run with --scrape or fix network access to Berth Marine WP API');
+        process.exit(1);
+      }
+    }
+  }
 
   if (opts.scrape) {
     if (missing.length > 24) {
@@ -189,7 +276,7 @@ function main() {
 
   console.log(`Quality-pass gap items: ${items.length}`);
   if (!items.length) {
-    console.error('No ingestable items after quality filter — run with --scrape');
+    console.error('No ingestable items after quality filter — run with --scrape or check WP API');
     process.exit(1);
   }
 
@@ -223,4 +310,7 @@ function main() {
   }
 }
 
-main();
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
