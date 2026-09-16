@@ -9,6 +9,9 @@ const SNAPSHOT_PATHS = [
 ];
 
 const FRESH_MAX_AGE_MS = 24 * 60 * 60 * 1000;
+const AIS_BADGE_STALE =
+    '📡 Coastal Beacon Awaiting Signal / In Ocean Transit';
+const AIS_BADGE_OCEAN = '📡 In Ocean Transit';
 
 function loadSnapshots() {
     for (const p of SNAPSHOT_PATHS) {
@@ -63,11 +66,20 @@ function buildAisResponse(base, { live = false } = {}) {
     }
 
     if (stale) {
-        out.status = ageHours >= 100 ? 'Out of Coastal Coverage' : 'Coastal Beacon Awaiting Signal';
+        out.status = ageHours >= 100 ? AIS_BADGE_OCEAN : AIS_BADGE_STALE;
+        if (Number.isFinite(base.lat) && Number.isFinite(base.lon)) {
+            out.lastVerified = {
+                lat: base.lat,
+                lon: base.lon,
+                sog: base.sog,
+                cog: base.cog,
+                ts: base.ts || null,
+            };
+        }
         return out;
     }
 
-    out.status = 'Coastal Beacon Awaiting Signal';
+    out.status = AIS_BADGE_STALE;
     return out;
 }
 
@@ -179,7 +191,7 @@ module.exports = async function handler(req, res) {
             imo,
             mmsi,
             fresh: false,
-            status: 'Out of Coastal Coverage',
+            status: AIS_BADGE_OCEAN,
             error: 'NO_POSITION',
         })
     );

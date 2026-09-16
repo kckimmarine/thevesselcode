@@ -7,6 +7,8 @@
 
     const AIS_SNAPSHOT_URL = '/data/fleet-ais-positions.json';
     const FRESH_MAX_AGE_MS = 24 * 60 * 60 * 1000;
+    const AIS_BADGE_STALE = '📡 Coastal Beacon Awaiting Signal / In Ocean Transit';
+    const AIS_BADGE_OCEAN = '📡 In Ocean Transit';
     let _aisSnapshotPromise = null;
 
     function esc(text) {
@@ -61,7 +63,7 @@
 
     function normalizeAisPayload(entry, imo) {
         if (!entry) {
-            return { imo, fresh: false, status: 'Out of Coastal Coverage' };
+            return { imo, fresh: false, status: AIS_BADGE_OCEAN };
         }
         if (typeof entry.fresh === 'boolean' && entry.status) {
             return entry;
@@ -75,7 +77,9 @@
             fresh,
             live,
             ageHours,
-            status: entry.status || (fresh ? 'Snapshot position' : 'Coastal Beacon Awaiting Signal'),
+            status:
+                entry.status ||
+                (fresh ? 'Snapshot position' : ageHours >= 100 ? AIS_BADGE_OCEAN : AIS_BADGE_STALE),
             last_port: entry.last_port || '',
             next_port: entry.next_port || '',
             destination: entry.destination || entry.next_port || '',
@@ -91,8 +95,21 @@
                 cog: entry.cog,
             };
         }
+        if (entry.lastVerified) {
+            base.lastVerified = entry.lastVerified;
+        } else if (Number.isFinite(entry.lat) && Number.isFinite(entry.lon)) {
+            base.lastVerified = {
+                lat: entry.lat,
+                lon: entry.lon,
+                sog: entry.sog,
+                cog: entry.cog,
+                ts: entry.ts || null,
+            };
+        }
         if (ageHours !== null && ageHours >= 100) {
-            base.status = 'Out of Coastal Coverage';
+            base.status = AIS_BADGE_OCEAN;
+        } else if (!entry.status) {
+            base.status = AIS_BADGE_STALE;
         }
         return base;
     }
@@ -117,7 +134,7 @@
     function mergeAisVoyage(vessel, aisEntry) {
         const voyage = { ...(vessel.voyage || {}) };
         if (!aisEntry) {
-            return { ...voyage, _aisFresh: false, _aisStatus: 'Out of Coastal Coverage' };
+            return { ...voyage, _aisFresh: false, _aisStatus: AIS_BADGE_OCEAN };
         }
         if (aisEntry.last_port) voyage.last_port = aisEntry.last_port;
         if (aisEntry.next_port) voyage.next_port = aisEntry.next_port;
@@ -125,7 +142,10 @@
         if (aisEntry.eta) voyage.eta = aisEntry.eta;
 
         voyage._aisFresh = Boolean(aisEntry.fresh);
-        voyage._aisStatus = aisEntry.status || 'Coastal Beacon Awaiting Signal';
+        voyage._aisStatus = aisEntry.status || AIS_BADGE_STALE;
+        if (aisEntry.lastVerified) {
+            voyage._aisLastVerified = aisEntry.lastVerified;
+        }
 
         if (!aisEntry.fresh) {
             return voyage;
@@ -170,11 +190,15 @@
         return `Lat ${latDeg}°${latMin}' ${latHem}, Long ${lonDeg}°${lonMin}' ${lonHem}`;
     }
 
-    function formatAgeHours(ts) {
+    function formatLastSeen(ts) {
         if (!ts) return '';
         const ms = Date.now() - new Date(ts).getTime();
         if (!Number.isFinite(ms) || ms < 0) return '';
-        const hours = Math.max(1, Math.round(ms / 3600000));
+        const minutes = Math.round(ms / 60000);
+        if (minutes < 60) {
+            return minutes <= 1 ? '1 min ago' : `${minutes} mins ago`;
+        }
+        const hours = Math.round(ms / 3600000);
         return hours === 1 ? '1 hour ago' : `${hours} hours ago`;
     }
 
@@ -199,7 +223,7 @@
         if (!voyage) return '';
 
         if (!voyage._aisFresh) {
-            const badge = esc(voyage._aisStatus || 'Coastal Beacon Awaiting Signal');
+            const badge = esc(voyage._aisStatus || AIS_BADGE_STALE);
             return `<section class="tvc-vessel-voyage-panel" aria-label="Live voyage status">
             <h4 class="tvc-vessel-voyage-title">Live voyage status</h4>
             <p class="tvc-vessel-voyage-badge">${badge}</p>
@@ -211,7 +235,7 @@
             : '';
         const position = formatLatLon(voyage.lat, voyage.lon);
         const ageMs = signalAgeMs(voyage.ts);
-        const lastSeen = ageMs < FRESH_MAX_AGE_MS ? formatAgeHours(voyage.ts) : '';
+        const lastSeen = ageMs < FRESH_MAX_AGE_MS ? formatLastSeen(voyage.ts) : '';
         const rows = [
             voyageRow('Last port', voyage.last_port),
             voyageRow('Next port / destination', voyage.destination || voyage.next_port),

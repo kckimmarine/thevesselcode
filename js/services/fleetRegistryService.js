@@ -245,9 +245,6 @@
             const exNorm = normalizeSearch(ex);
             if (!exNorm) continue;
             if (exNorm === queryNorm) return normalizeExNameLabel(ex);
-            if (queryNorm.length >= MIN_QUERY_LEN && (exNorm.includes(queryNorm) || queryNorm.includes(exNorm))) {
-                return normalizeExNameLabel(ex);
-            }
         }
         return null;
     }
