@@ -17,6 +17,37 @@ body.tvc-marketing-body.store-public-body {
     color: #1e293b;
 }
 
+/* Toolkit hero — condensed intro (no top search bar) */
+body.mkt-toolkit-page .home-toolkit-hero.mkt-hero {
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+}
+
+body.mkt-toolkit-page .toolkit-hero-desc {
+    line-height: 1.6;
+    font-size: 15px;
+    color: #475569;
+    max-width: 720px;
+    margin: 12px 0 0;
+    text-wrap: pretty;
+}
+
+body.mkt-toolkit-page .toolkit-hero-desc .underline-link {
+    color: #0284c7;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+body.mkt-toolkit-page .toolkit-hero-desc .underline-link:hover {
+    color: #0369a1;
+}
+
+body.mkt-toolkit-page .mkt-engineering-modules {
+    margin-top: 0;
+    padding-top: 8px;
+}
+
 .store-public-shell {
     min-height: 100vh;
     min-height: 100dvh;

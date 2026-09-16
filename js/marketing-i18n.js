@@ -569,12 +569,8 @@
             ko: '해양 엔지니어링 지식 기반 & 현장 유틸리티.',
         },
         'tk.lead': {
-            en: 'Thermodynamics, piping, lubrication, coatings, electrical diagnostics, and PSC checkpoints — tabulated for shipboard use.',
-            ko: '열역학·배관·윤활·도장·전기·PSC 체크포인트를 선상에서 조회할 수 있도록 표로 정리했습니다.',
-        },
-        'tk.lead2': {
-            en: 'Fleet maintenance records and ROB are operated in <a href="/sm">TVC-SM (Vessel Core / Fleet OS)</a>.',
-            ko: '선대 정비 기록·ROB는 <a href="/sm">TVC-SM (Vessel Core / Fleet OS)</a>에서 운영합니다.',
+            en: 'Tabulated engineering standards, thermodynamics, piping, lubrication, and statutory checkpoints for shipboard use.<br>Fleet maintenance records and ROB are operated in <a href="/sm" class="underline-link">TVC-SM (Vessel Core / Fleet OS)</a>.',
+            ko: '선상용 표준·열역학·배관·윤활·법규 체크포인트를 표로 정리했습니다.<br>선대 정비 기록·ROB는 <a href="/sm" class="underline-link">TVC-SM (Vessel Core / Fleet OS)</a>에서 운영합니다.',
         },
         'tk.mod.1.title': { en: 'Fuels & Thermodynamics', ko: '연료·열역학' },
         'tk.mod.1.d': { en: 'ASTM Table 54B, VCF, metric tons in air, IMO CO₂ factors.', ko: 'ASTM 54B, VCF, 공기중 MT, IMO CO₂ 계수.' },
