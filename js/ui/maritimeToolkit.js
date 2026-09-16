@@ -1068,14 +1068,14 @@ const TVC_MaritimeToolkit = (function () {
         await loadEngineeringKnowledgeIndex();
         initEngineeringSearch();
 
-        if (globalThis.TVC_VesselLookup?.loadFromJson) {
+        if (globalThis.TVC_FleetRegistry?.loadIndex) {
             try {
-                await globalThis.TVC_VesselLookup.loadFromJson('/data/vessel-registry-sample.json');
-                globalThis.TVC_VesselLookup.init();
+                await globalThis.TVC_FleetRegistry.loadIndex();
             } catch (err) {
-                console.warn('[MaritimeToolkit] vessel registry load', err);
+                console.warn('[MaritimeToolkit] fleet index preload', err);
             }
         }
+        globalThis.TVC_VesselLookup?.init?.();
 
         const hosts = {
             bunker: document.getElementById('storeToolBunker'),

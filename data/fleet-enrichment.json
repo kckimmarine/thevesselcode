@@ -1,0 +1,54 @@
+{
+  "vessels": [
+    {
+      "imo": "9297711",
+      "name": "INCHEON CHEMI",
+      "type": "Chemical/Oil Products Tanker",
+      "dwt": 8747,
+      "built_year": 2003,
+      "flag": "Korea",
+      "technical_manager": "Korea Line Corporation",
+      "engine_model": "MAN B&W 6S35MC"
+    },
+    {
+      "imo": "9264879",
+      "name": "QUARTERBACK J",
+      "type": "Chemical/Oil Products Tanker",
+      "dwt": 11993,
+      "built_year": 2003,
+      "flag": "Korea",
+      "technical_manager": "Korea Line Corporation",
+      "engine_model": "MAN B&W 6S35MC"
+    },
+    {
+      "imo": "9438925",
+      "name": "ONSAN CHEMI",
+      "type": "Chemical/Oil Products Tanker",
+      "dwt": 11993,
+      "built_year": 2009,
+      "flag": "Korea",
+      "technical_manager": "Korea Line Corporation",
+      "engine_model": "MAN B&W 6S35MC"
+    },
+    {
+      "imo": "9330393",
+      "name": "THAI CHEMI",
+      "type": "Chemical/Oil Products Tanker",
+      "dwt": 14383,
+      "built_year": 2006,
+      "flag": "Marshall Islands",
+      "technical_manager": "Korea Line Corporation",
+      "engine_model": "MAN B&W 6S42MC"
+    },
+    {
+      "imo": "9330410",
+      "name": "BANGKOK CHEMI",
+      "type": "Chemical/Oil Products Tanker",
+      "dwt": 14383,
+      "built_year": 2006,
+      "flag": "Korea",
+      "technical_manager": "Korea Line Corporation",
+      "engine_model": "MAN B&W 6S42MC"
+    }
+  ]
+}
