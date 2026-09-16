@@ -57,8 +57,8 @@ check('hero search-first layout', home.includes('hero-search-first') && !home.in
 check('marketing readability css', home.includes('marketing-readability.css'));
 const toolkitHtml = readFileSync(join(ROOT, 'toolkit.html'), 'utf8');
 check('toolkit plg locks', toolkitHtml.includes('mkt-plg-lock'));
-check('toolkit engineering modules', toolkitHtml.includes('mkt-engineering-modules') && toolkitHtml.includes('tool=electrical'));
-check('toolkit engineering search', toolkitHtml.includes('mktEngSearchInput') && toolkitHtml.includes('engineeringSearch.js'));
+check('toolkit engineering modules', toolkitHtml.includes('mkt-engineering-modules') && toolkitHtml.includes('data-tool-tab="electrical"'));
+check('toolkit hero condensed (no top search)', toolkitHtml.includes('toolkit-hero-desc') && !toolkitHtml.includes('mktEngSearchInput'));
 check('footer engineering signature', shell.includes('mkt-footer-signature') && shell.includes('footer.signature'));
 check('home no abstract trio grid', !home.includes('mkt-trio-grid') && !home.includes('home-edge-section'));
 check('nav four core tabs only', shell.includes("id: 'toolkit'") && shell.includes("id: 'sm'") && !shell.includes("id: 'forum'"));
