@@ -1616,17 +1616,24 @@ body.tvc-marketing-body .mkt-module-grid {
     margin-top: 8px;
 }
 
-body.tvc-marketing-body .mkt-module-card {
+body.tvc-marketing-body .mkt-module-card,
+body.tvc-marketing-body .module-card {
     display: block;
     text-decoration: none;
     color: inherit;
     border: 1px solid #e2e8f0;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    cursor: pointer;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-body.tvc-marketing-body .mkt-module-card:hover {
-    border-color: #94a3b8;
-    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+body.tvc-marketing-body .mkt-module-card:hover,
+body.tvc-marketing-body .module-card:hover,
+body.tvc-marketing-body .mkt-module-card:focus-visible,
+body.tvc-marketing-body .module-card:focus-visible {
+    transform: translateY(-2px);
+    border-color: #0284c7;
+    box-shadow: 0 4px 16px rgba(2, 132, 199, 0.12);
+    outline: none;
 }
 
 body.tvc-marketing-body .mkt-module-index {
