@@ -8,6 +8,8 @@ const SNAPSHOT_PATHS = [
     join(process.cwd(), 'data', 'fleet-ais-positions.json'),
 ];
 
+const FRESH_MAX_AGE_MS = 24 * 60 * 60 * 1000;
+
 function loadSnapshots() {
     for (const p of SNAPSHOT_PATHS) {
         if (!existsSync(p)) continue;
@@ -23,6 +25,50 @@ function loadSnapshots() {
 
 function digitsOnly(value) {
     return String(value || '').replace(/\D/g, '');
+}
+
+function signalAgeMs(ts) {
+    if (!ts) return Infinity;
+    const ms = Date.now() - new Date(ts).getTime();
+    return Number.isFinite(ms) && ms >= 0 ? ms : Infinity;
+}
+
+function buildAisResponse(base, { live = false } = {}) {
+    const ageMs = signalAgeMs(base.ts);
+    const ageHours = Number.isFinite(ageMs) ? Math.round(ageMs / 3600000) : null;
+    const fresh = live || ageMs < FRESH_MAX_AGE_MS;
+    const stale = !fresh && Number.isFinite(ageMs) && ageMs !== Infinity;
+
+    const out = {
+        imo: base.imo,
+        mmsi: base.mmsi || '',
+        name: base.name || '',
+        ts: base.ts || null,
+        live: Boolean(live),
+        fresh,
+        ageHours,
+        destination: base.destination || base.next_port || '',
+        last_port: base.last_port || '',
+        next_port: base.next_port || '',
+        eta: base.eta || '',
+    };
+
+    if (fresh) {
+        out.lat = base.lat;
+        out.lon = base.lon;
+        out.sog = base.sog;
+        out.cog = base.cog;
+        out.status = live ? 'Coastal AIS Stream Connected' : 'Snapshot position';
+        return out;
+    }
+
+    if (stale) {
+        out.status = ageHours >= 100 ? 'Out of Coastal Coverage' : 'Coastal Beacon Awaiting Signal';
+        return out;
+    }
+
+    out.status = 'Coastal Beacon Awaiting Signal';
+    return out;
 }
 
 async function fetchAisStreamPosition({ mmsi, imo, apiKey, timeoutMs = 8000 }) {
@@ -75,7 +121,6 @@ async function fetchAisStreamPosition({ mmsi, imo, apiKey, timeoutMs = 8000 }) {
                     sog: pr.Sog,
                     cog: pr.Cog,
                     ts: meta.time_utc || new Date().toISOString(),
-                    live: true,
                 });
             } catch {
                 /* ignore parse errors */
@@ -109,35 +154,33 @@ module.exports = async function handler(req, res) {
     const apiKey = process.env.AISSTREAM_API_KEY || '';
 
     let position = null;
-    if (apiKey) {
+    if (apiKey && mmsi) {
         position = await fetchAisStreamPosition({ imo, mmsi, apiKey });
     }
 
     if (position) {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
-        res.end(
-            JSON.stringify({
-                ...position,
-                status: 'Coastal AIS Stream Connected',
-            })
-        );
+        res.end(JSON.stringify(buildAisResponse({ ...position, imo }, { live: true })));
         return;
     }
 
     if (snapshot) {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
-        res.end(
-            JSON.stringify({
-                ...snapshot,
-                status: apiKey ? 'Awaiting Transponder Beacon' : 'Awaiting Transponder Beacon',
-            })
-        );
+        res.end(JSON.stringify(buildAisResponse({ ...snapshot, imo }, { live: false })));
         return;
     }
 
     res.statusCode = 404;
     res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify({ error: 'NO_POSITION', status: 'Awaiting Transponder Beacon' }));
+    res.end(
+        JSON.stringify({
+            imo,
+            mmsi,
+            fresh: false,
+            status: 'Out of Coastal Coverage',
+            error: 'NO_POSITION',
+        })
+    );
 };

@@ -61,6 +61,11 @@ async function runSearchTests() {
 
     const imoHits = await Fleet.searchFleet('9297711');
     check('IMO 9297711 direct', imoHits[0]?.imo === '9297711', imoHits[0]?.name);
+    check(
+        'IMO 9297711 no ex-name false positive',
+        !imoHits[0]?._exNameMatch,
+        imoHits[0]?._exNameMatch || 'clean'
+    );
 
     await Fleet.searchFleet('9297711');
     const start = performance.now();

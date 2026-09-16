@@ -230,16 +230,26 @@
         return [...keys];
     }
 
-    function resolveExNameMatchLabel(queryNorm, queryRaw, imo) {
-        const profile = profileForImo(imo);
-        const names = profile?.ex_names || _vesselCache.get(imo)?.ex_names || [];
-        for (const name of names) {
-            const norm = normalizeSearch(name);
-            if (norm === queryNorm || norm.includes(queryNorm) || queryNorm.includes(norm)) {
-                return normalizeExNameLabel(name);
+    function isPureImoQuery(raw) {
+        return /^\d{7}$/.test(String(raw || '').trim());
+    }
+
+    /** Returns former name label only when query explicitly matches vessel.x — never for IMO-only search. */
+    function exNameMatchedByQuery(raw, vessel) {
+        if (isPureImoQuery(raw)) return null;
+        const queryNorm = normalizeSearch(raw);
+        if (!queryNorm || /^\d+$/.test(queryNorm)) return null;
+
+        const exNames = vessel?.ex_names || [];
+        for (const ex of exNames) {
+            const exNorm = normalizeSearch(ex);
+            if (!exNorm) continue;
+            if (exNorm === queryNorm) return normalizeExNameLabel(ex);
+            if (queryNorm.length >= MIN_QUERY_LEN && (exNorm.includes(queryNorm) || queryNorm.includes(exNorm))) {
+                return normalizeExNameLabel(ex);
             }
         }
-        return normalizeExNameLabel(queryRaw);
+        return null;
     }
 
     function scoreMatch(queryNorm, queryImo, item, vessel) {
@@ -260,12 +270,15 @@
                     if (name.includes(tok)) score = Math.max(score, 500);
                 }
             }
-            const exNames = vessel?.ex_names || [];
-            for (const ex of exNames) {
-                const exNorm = normalizeSearch(ex);
-                if (exNorm === queryNorm) score = Math.max(score, 820);
-                else if (exNorm.includes(queryNorm) || queryNorm.includes(exNorm)) {
-                    score = Math.max(score, 760);
+            const imoOnlyQuery = queryImo.length === 7 && queryNorm === queryImo;
+            if (!imoOnlyQuery) {
+                const exNames = vessel?.ex_names || [];
+                for (const ex of exNames) {
+                    const exNorm = normalizeSearch(ex);
+                    if (exNorm === queryNorm) score = Math.max(score, 820);
+                    else if (!/^\d+$/.test(queryNorm) && (exNorm.includes(queryNorm) || queryNorm.includes(exNorm))) {
+                        score = Math.max(score, 760);
+                    }
                 }
             }
         }
@@ -285,8 +298,6 @@
         const queryNorm = normalizeSearch(raw);
         const queryImo = digitsOnly(raw);
 
-        const matchMeta = new Map();
-
         const imoHits = [];
         if (queryImo.length >= MIN_QUERY_LEN && idx?.imo) {
             for (const [imo, partition] of Object.entries(idx.imo)) {
@@ -297,25 +308,19 @@
         }
 
         const exNameHits = [];
-        const exIndex = await loadExnameIndex();
-        const exactImo = exIndex.exact?.[queryNorm];
-        if (exactImo) {
-            exNameHits.push({
-                imo: exactImo,
-                score: 830,
-                exName: resolveExNameMatchLabel(queryNorm, raw, exactImo),
-            });
-        }
-        const exKeys = tokenCandidates(queryNorm);
-        for (const key of exKeys) {
-            const list = exIndex.tokens?.[key];
-            if (!Array.isArray(list)) continue;
-            for (const imo of list) {
-                exNameHits.push({
-                    imo,
-                    score: 780,
-                    exName: resolveExNameMatchLabel(queryNorm, raw, imo),
-                });
+        if (!isPureImoQuery(raw)) {
+            const exIndex = await loadExnameIndex();
+            const exactImo = exIndex.exact?.[queryNorm];
+            if (exactImo) {
+                exNameHits.push({ imo: exactImo, score: 830 });
+            }
+            const exKeys = tokenCandidates(queryNorm);
+            for (const key of exKeys) {
+                const list = exIndex.tokens?.[key];
+                if (!Array.isArray(list)) continue;
+                for (const imo of list) {
+                    exNameHits.push({ imo, score: 780 });
+                }
             }
         }
 
@@ -369,7 +374,6 @@
         }
         for (const h of exNameHits) {
             combined.set(h.imo, Math.max(combined.get(h.imo) || 0, h.score));
-            if (h.exName) matchMeta.set(h.imo, h.exName);
         }
 
         const ranked = [...combined.entries()]
@@ -390,15 +394,9 @@
             let v = _vesselCache.get(imo);
             if (!v) v = await getVesselByImo(imo);
             if (!v) continue;
-            if (!matchMeta.has(imo)) {
-                const exLabel = resolveExNameMatchLabel(queryNorm, raw, imo);
-                const exNorm = normalizeSearch(exLabel);
-                if (exNorm && exNorm !== normalizeSearch(v.name) && scoreMatch(queryNorm, queryImo, { i: imo, s: exNorm }, v) >= 760) {
-                    matchMeta.set(imo, exLabel);
-                }
-            }
-            if (matchMeta.has(imo)) {
-                v = { ...v, _exNameMatch: matchMeta.get(imo) };
+            const exLabel = exNameMatchedByQuery(raw, v);
+            if (exLabel) {
+                v = { ...v, _exNameMatch: exLabel };
             }
             vessels.push({ vessel: v, score });
         }
