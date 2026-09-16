@@ -191,11 +191,22 @@ async function main() {
         }
     }
 
+    const mmsiIndex = { v: 1, imo: {} };
+    for (const file of chunkFiles) {
+        const path = join(FLEET_DIR, file);
+        const payload = JSON.parse(readFileSync(path, 'utf8'));
+        for (const ship of payload.ships || []) {
+            if (ship.s) mmsiIndex.imo[ship.i] = String(ship.s);
+        }
+    }
+    writeFileSync(join(FLEET_DIR, 'fleet-mmsi-index.json'), JSON.stringify(mmsiIndex));
+
     const indexPath = join(FLEET_DIR, 'fleet-index.json');
     if (existsSync(indexPath)) {
         const index = JSON.parse(readFileSync(indexPath, 'utf8'));
         index.enrichedAt = new Date().toISOString();
         index.enrichmentSources = ['fleet-enrichment', 'fleet-registry-enrichment', 'seafarer-index', 'uscg-psix-optional'];
+        index.mmsiIndexFile = '/data/fleet/fleet-mmsi-index.json';
         writeFileSync(indexPath, JSON.stringify(index));
     }
 

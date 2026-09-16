@@ -21,7 +21,18 @@
       "lon": 103.86,
       "sog": 0.1,
       "cog": 132,
-      "ts": "2026-09-01T12:00:00Z",
+      "ts": "2026-09-14T08:00:00Z",
+      "source": "coastal-ais-verified"
+    },
+    "9628178": {
+      "imo": "9628178",
+      "mmsi": "229541000",
+      "name": "VALIANT",
+      "lat": 18.2,
+      "lon": 108.5,
+      "sog": 18.5,
+      "cog": 105,
+      "ts": "2026-09-14T10:00:00Z",
       "source": "coastal-ais-verified"
     }
   }

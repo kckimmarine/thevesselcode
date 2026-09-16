@@ -25,8 +25,23 @@ function digitsOnly(value) {
     return String(value || '').replace(/\D/g, '');
 }
 
-async function fetchAisStreamPosition({ mmsi, imo, apiKey, timeoutMs = 8000 }) {
-    if (!apiKey || !mmsi) return null;
+function positionAgeHours(ts) {
+    if (!ts) return null;
+    const t = Date.parse(ts);
+    if (!Number.isFinite(t)) return null;
+    return (Date.now() - t) / (1000 * 60 * 60);
+}
+
+function buildStatus(live, ageHours) {
+    if (live) return 'Coastal AIS Stream Connected';
+    if (ageHours !== null && ageHours <= 6) return 'Coastal AIS Stream Connected';
+    if (ageHours !== null && ageHours <= 48) return `Last AIS report · ${Math.round(ageHours)}h ago`;
+    if (ageHours !== null) return `Snapshot position · ${Math.round(ageHours / 24)}d old`;
+    return 'Awaiting Transponder Beacon';
+}
+
+async function fetchAisStreamPosition({ mmsi, imo, apiKey, timeoutMs = 14000 }) {
+    if (!apiKey) return null;
     const WebSocketImpl = globalThis.WebSocket;
     if (!WebSocketImpl) return null;
 
@@ -48,13 +63,13 @@ async function fetchAisStreamPosition({ mmsi, imo, apiKey, timeoutMs = 8000 }) {
         const timer = setTimeout(() => finish(null), timeoutMs);
 
         ws.addEventListener('open', () => {
-            ws.send(
-                JSON.stringify({
-                    APIKey: apiKey,
-                    FiltersShipMMSI: [Number(mmsi)],
-                    FilterMessageTypes: ['PositionReport'],
-                })
-            );
+            const sub = {
+                APIKey: apiKey,
+                BoundingBoxes: [[[-90, -180], [90, 180]]],
+                FilterMessageTypes: ['PositionReport'],
+            };
+            if (mmsi) sub.FiltersShipMMSI = [String(mmsi)];
+            ws.send(JSON.stringify(sub));
         });
 
         ws.addEventListener('message', (event) => {
@@ -65,7 +80,8 @@ async function fetchAisStreamPosition({ mmsi, imo, apiKey, timeoutMs = 8000 }) {
                 if (!pr) return;
                 const metaImo = digitsOnly(meta.ShipId || meta.IMO || '');
                 const metaMmsi = digitsOnly(meta.MMSI || meta.mmsi || mmsi);
-                if (metaImo && imo && metaImo !== imo && metaMmsi !== mmsi) return;
+                if (mmsi && metaMmsi && metaMmsi !== mmsi) return;
+                if (!mmsi && imo && metaImo && metaImo !== imo) return;
                 finish({
                     imo: imo || metaImo,
                     mmsi: metaMmsi || mmsi,
@@ -114,24 +130,30 @@ module.exports = async function handler(req, res) {
     }
 
     if (position) {
+        const ageHours = positionAgeHours(position.ts);
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
         res.end(
             JSON.stringify({
                 ...position,
-                status: 'Coastal AIS Stream Connected',
+                live: true,
+                ageHours,
+                status: buildStatus(true, ageHours),
             })
         );
         return;
     }
 
     if (snapshot) {
+        const ageHours = positionAgeHours(snapshot.ts);
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
         res.end(
             JSON.stringify({
                 ...snapshot,
-                status: apiKey ? 'Awaiting Transponder Beacon' : 'Awaiting Transponder Beacon',
+                live: false,
+                ageHours,
+                status: buildStatus(false, ageHours),
             })
         );
         return;

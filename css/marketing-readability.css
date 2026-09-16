@@ -2166,6 +2166,17 @@ body.tvc-marketing-body .tvc-vessel-lookup-actions--single {
     justify-content: flex-end;
 }
 
+body.tvc-marketing-body .tvc-vessel-lookup-partial {
+    margin: 0 0 10px;
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    color: #64748b;
+}
+
+body.tvc-marketing-body .tvc-vessel-ais-note.hidden {
+    display: none;
+}
+
 body.tvc-marketing-body .tvc-vessel-lookup-empty {
     margin: 0;
     padding: 10px 12px;

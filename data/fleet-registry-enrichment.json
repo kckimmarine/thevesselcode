@@ -2,6 +2,17 @@
   "sources": ["curated-open-register", "mou-public-snapshots"],
   "vessels": [
     {
+      "imo": "9628178",
+      "mmsi": "229541000",
+      "name": "VALIANT",
+      "type": "Container Ship",
+      "dwt": 117096,
+      "built_year": 2013,
+      "flag": "Malta",
+      "technical_manager": "COSTAMARE SHIPPING CO SA",
+      "engine_model": "MAN B&W 9S90ME-C"
+    },
+    {
       "imo": "9381330",
       "mmsi": "440527000",
       "name": "ROYAL CRYSTAL 7",

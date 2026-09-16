@@ -53,22 +53,28 @@
         const dwtText = formatDwt(v);
         const specs = [
             specField('Technical manager', v.technical_manager),
-            specField('Ship type', v.type),
+            specField('Ship type', v.type && v.type !== 'Merchant Vessel' ? v.type : ''),
             specField('DWT', dwtText),
             specField('Built year', v.built_year),
             specField('Main engine', v.engine_model, true),
         ].filter(Boolean).join('');
 
+        const partialNote = specs
+            ? ''
+            : '<p class="tvc-vessel-lookup-partial">Open register lists this IMO and name only. Run fleet enrichment or search by exact IMO for verified particulars.</p>';
+
+        const flagLabel = v.flag && v.flag !== '—' ? v.flag : 'Flag n/a';
+
         return `<article class="tvc-vessel-lookup-card" data-vessel-imo="${esc(v.imo)}">
             <header class="tvc-vessel-lookup-card-head">
                 <h3 class="tvc-vessel-lookup-card-name">${esc(v.name)}</h3>
                 <p class="tvc-vessel-lookup-card-meta">
-                    <span class="tvc-vessel-lookup-flag">${esc(v.flag || '—')}</span>
+                    <span class="tvc-vessel-lookup-flag">${esc(flagLabel)}</span>
                     <span class="tvc-vessel-lookup-sep" aria-hidden="true">·</span>
                     <span>IMO ${esc(v.imo)}</span>
                 </p>
             </header>
-            ${specs ? `<div class="tvc-vessel-lookup-grid">${specs}</div>` : ''}
+            ${specs ? `<div class="tvc-vessel-lookup-grid">${specs}</div>` : partialNote}
             <div class="tvc-vessel-lookup-actions tvc-vessel-lookup-actions--single">
                 <button type="button" class="tvc-vessel-lookup-ais home-btn home-btn-primary" data-ais-imo="${esc(v.imo)}" data-ais-name="${esc(v.name)}" data-ais-mmsi="${esc(v.mmsi || '')}">🗺️ View Live Position</button>
             </div>
