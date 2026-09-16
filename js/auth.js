@@ -5,7 +5,7 @@ const TVC_Auth = (function () {
     const AUTH_SESSION_KEY = 'tvc_auth_session';
     const AUTH_SESSION_TTL_MS = 30 * 24 * 60 * 60 * 1000;
     const DEMO_PASSWORD = '0000';
-    const USERS_SEED_VERSION = 22;
+    const USERS_SEED_VERSION = 23;
 
     const DEFAULT_USERS = [
         // Contract vessel — ABC Voyager (demo ship accounts)
@@ -17,7 +17,7 @@ const TVC_Auth = (function () {
         // Contract company SM — superintendent (company-scoped fleet)
         { id: 'user-abc-shipping', username: 'abc shipping', display_name: 'ABC Shipping', account_type: 'SM', role: 'SM_SUPERINTENDENT', department: null, vessel_id: null, company_id: 'ABC_SHIPPING', seed_password: '0000' },
         // TVC internal — Admin Mode (registry / license / app update)
-        { id: 'user-tvc-admin', username: 'admin', display_name: 'Admin', account_type: 'ADMIN', role: 'TVC_ADMIN', department: null, vessel_id: null, seed_password: 'admin' },
+        { id: 'user-tvc-admin', username: 'admin', display_name: 'Admin', account_type: 'ADMIN', role: 'TVC_ADMIN', department: null, vessel_id: null },
     ];
 
     const REMOVED_SEED_USER_IDS = ['user-supplier-demo'];
@@ -76,7 +76,7 @@ const TVC_Auth = (function () {
         for (const u of DEFAULT_USERS) {
             const { seed_password: seedPassword, ...fields } = u;
             const prev = existing.find(x => x.id === u.id)
-                || existing.find(x => x.username === u.username);
+                || existing.find(x => loginUsernameKey(x.username) === loginUsernameKey(u.username));
             const password_hash = seedPassword
                 ? await hashPassword(seedPassword)
                 : demoHash;
@@ -128,6 +128,33 @@ const TVC_Auth = (function () {
             ? TVC_RBAC.normalizeAccountType(accountType)
             : String(accountType || '').toUpperCase();
         return t === 'SM' || t === 'ADMIN' || t === 'SUPPLIER';
+    }
+
+    /** Trim and collapse internal whitespace (e.g. "  abc  shipping " → "abc shipping"). */
+    function normalizeLoginUsername(raw) {
+        return String(raw || '').trim().replace(/\s+/g, ' ');
+    }
+
+    function loginUsernameKey(raw) {
+        return normalizeLoginUsername(raw).toLowerCase();
+    }
+
+    function findDefaultUserTemplate(username) {
+        const key = loginUsernameKey(username);
+        if (!key) return null;
+        return DEFAULT_USERS.find(u => loginUsernameKey(u.username) === key) || null;
+    }
+
+    function findActiveUserRecord(users, username) {
+        const key = loginUsernameKey(username);
+        if (!key) return null;
+        const template = findDefaultUserTemplate(username);
+        if (template) {
+            return users.find(u => u.id === template.id && u.is_active)
+                || users.find(u => loginUsernameKey(u.username) === key && u.is_active)
+                || null;
+        }
+        return users.find(u => loginUsernameKey(u.username) === key && u.is_active) || null;
     }
 
     async function refreshSessionFromDb() {
@@ -308,38 +335,27 @@ const TVC_Auth = (function () {
 
     async function login(username, password, loginMode) {
         const users = await TVC_DB.getAll('users');
-        const uname = username.trim();
-        const template = DEFAULT_USERS.find(u => u.username === uname);
-        const user = template
-            ? (users.find(u => u.id === template.id && u.is_active)
-                || users.find(u => u.username === template.username && u.is_active))
-            : users.find(u => u.username === uname && u.is_active);
+        const uname = normalizeLoginUsername(username);
+        const user = findActiveUserRecord(users, uname);
         if (!user) return { ok: false, error: 'Account not found.' };
         const hash = await hashPassword(password);
         if (hash !== user.password_hash) return { ok: false, error: 'Incorrect password.' };
 
         const sessionRole = user.role || (window.TVC_RBAC?.resolveUserRole?.(user));
 
-        if (typeof TVC_License !== 'undefined') {
-            await TVC_License.refresh();
-            const licCheck = TVC_License.assertLoginMode(loginMode, user.account_type);
-            if (!licCheck.ok) return licCheck;
-        }
-
         const accountType = (typeof TVC_RBAC !== 'undefined' && TVC_RBAC.normalizeAccountType)
             ? TVC_RBAC.normalizeAccountType(user.account_type)
             : user.account_type;
-        if (isCompanyPortalAccountType(accountType)) {
-            if (loginMode) {
-                return {
-                    ok: false,
-                    error: accountType === 'ADMIN'
-                        ? 'Admin accounts must sign in without selecting a Department.'
-                        : (accountType === 'SUPPLIER'
-                            ? 'Supplier accounts must sign in without selecting a Department.'
-                            : 'Superintendent accounts must sign in without selecting a Department.'),
-                };
-            }
+        const portalAccount = isCompanyPortalAccountType(accountType);
+        const effectiveLoginMode = portalAccount ? '' : String(loginMode || '').trim();
+
+        if (typeof TVC_License !== 'undefined') {
+            await TVC_License.refresh();
+            const licCheck = TVC_License.assertLoginMode(effectiveLoginMode, user.account_type);
+            if (!licCheck.ok) return licCheck;
+        }
+
+        if (portalAccount) {
             const session = normalizeSessionUser({
                 id: user.id, username: user.username, display_name: user.display_name,
                 account_type: accountType, role: sessionRole,
@@ -358,10 +374,10 @@ const TVC_Auth = (function () {
 
         let station = null;
         if (typeof TVC_Space !== 'undefined') {
-            const spaceCheck = TVC_Space.validateLogin(user, loginMode);
+            const spaceCheck = TVC_Space.validateLogin(user, effectiveLoginMode);
             if (!spaceCheck.ok) return spaceCheck;
             station = spaceCheck.station;
-        } else if (!loginMode) {
+        } else if (!effectiveLoginMode) {
             return { ok: false, error: 'Select Department (Captain / Deck / Engine).' };
         }
 
@@ -369,7 +385,7 @@ const TVC_Auth = (function () {
             id: user.id, username: user.username, display_name: user.display_name,
             account_type: accountType, role: sessionRole,
             department: user.department, vessel_id: user.vessel_id,
-            station: station || null, login_mode: loginMode || null,
+            station: station || null, login_mode: effectiveLoginMode || null,
         });
         persistSession(session);
         return { ok: true, user: session };
@@ -443,11 +459,7 @@ const TVC_Auth = (function () {
         }
 
         const users = await TVC_DB.getAll('users');
-        const template = DEFAULT_USERS.find(u => u.username === userId);
-        const user = template
-            ? (users.find(u => u.id === template.id && u.is_active)
-                || users.find(u => u.username === template.username && u.is_active))
-            : users.find(u => u.username === userId && u.is_active);
+        const user = findActiveUserRecord(users, userId);
         if (!user) {
             clearPersistedAuthSession();
             return null;

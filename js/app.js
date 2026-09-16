@@ -17836,10 +17836,14 @@ const TVC_App = (function () {
             setLoginBusy(true, 'Signing in…');
             if (errEl) errEl.textContent = '';
             await TVC_DB.open();
+            const loginUserEl = document.getElementById('loginUser');
             const loginMode = document.getElementById('loginDept')?.value || '';
-        const r = await TVC_Auth.login(
-            document.getElementById('loginUser').value,
-            document.getElementById('loginPass').value,
+            const userIdRaw = loginUserEl?.value || '';
+            const userId = userIdRaw.trim().replace(/\s+/g, ' ');
+            if (loginUserEl && userId !== userIdRaw) loginUserEl.value = userId;
+            const r = await TVC_Auth.login(
+                userId,
+                document.getElementById('loginPass').value,
                 loginMode
             );
             if (errEl) errEl.textContent = r.ok ? '' : (r.error || 'Sign in failed');

@@ -36,8 +36,13 @@ for (const u of ['dm_user@thevesselcode.com', "username: 'admin'"]) {
   else { console.error('MISSING account', u); ok = false; }
 }
 
+const adminSeedBlock = auth.match(/\{ id: 'user-tvc-admin'[^}]+\}/);
+const adminUsesDemoPassword = !!adminSeedBlock
+  && !adminSeedBlock[0].includes('seed_password')
+  && auth.includes("const DEMO_PASSWORD = '0000'");
 const adminSeedOk = auth.includes("seed_password: 'admin'")
-  || auth.includes("seed_password: 'kimkc9363#@'");
+  || auth.includes("seed_password: 'kimkc9363#@'")
+  || adminUsesDemoPassword;
 if (adminSeedOk) console.log('OK admin seed password');
 else { console.error('MISSING admin seed password'); ok = false; }
 
