@@ -9,7 +9,7 @@
     const OSM_TILE = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     const FRESH_MAX_AGE_MS = 24 * 60 * 60 * 1000;
     const AIS_BADGE_STALE = '📡 Coastal Beacon Awaiting Signal / In Ocean Transit';
-    const AIS_BADGE_OCEAN = '📡 In Ocean Transit';
+    const AIS_BADGE_OCEAN = 'Ocean Transit • Awaiting Coastal Signal';
 
     let _leafletPromise = null;
     let _map = null;

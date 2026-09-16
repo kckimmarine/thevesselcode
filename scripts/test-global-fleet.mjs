@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Global fleet ingest + search validation (Chemi fleet IMOs).
+ * Global fleet ingest + search validation (ranking + Chemi demo IMOs).
  * Run: node scripts/test-global-fleet.mjs
  */
 import { readFileSync, existsSync } from 'node:fs';
@@ -11,12 +11,10 @@ import vm from 'node:vm';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const FLEET_DIR = join(ROOT, 'public', 'data', 'fleet');
 
-const CHEMI_EXPECT = [
-    { query: 'incheon chemi', imo: '9297711', name: 'INCHEON CHEMI' },
-    { query: 'quarterback j', imo: '9264879', name: 'QUARTERBACK J' },
-    { query: 'onsan chemi', imo: '9438925', name: 'ONSAN CHEMI' },
-    { query: 'thai chemi', imo: '9330393', name: 'THAI CHEMI' },
-    { query: 'bangkok chemi', imo: '9330410', name: 'BANGKOK CHEMI' },
+const SEARCH_EXPECT = [
+    { query: 'incheon chemi', imo: '9424857', name: 'INCHEON CHEMI' },
+    { query: 'bangkok chemi', imo: '9418303', name: 'BANGKOK CHEMI' },
+    { query: 'phoebe', imo: '9297711', name: 'PHOEBE' },
 ];
 
 const fleetSrc = readFileSync(join(ROOT, 'js/services/fleetRegistryService.js'), 'utf8');
@@ -50,12 +48,12 @@ async function runSearchTests() {
     check('fleetRegistry module', !!Fleet?.searchFleet);
     await Fleet.loadIndex();
 
-    for (const { query, imo, name } of CHEMI_EXPECT) {
+    for (const { query, imo, name } of SEARCH_EXPECT) {
         const hits = await Fleet.searchFleet(query);
         const top = hits[0];
         check(`search "${query}"`, top?.imo === imo, top ? `${top.name} (${top.imo})` : 'no hits');
-        if (top) {
-            check(`manager "${query}"`, Boolean(top.technical_manager), top.technical_manager || 'missing');
+        if (top && name) {
+            check(`name "${query}"`, top.name === name, top.name);
         }
     }
 

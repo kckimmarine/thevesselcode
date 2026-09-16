@@ -21,6 +21,7 @@ const chunk = JSON.parse(readFileSync(join(ROOT, `public/data/fleet/fleet-${part
 const ship = chunk.ships.find((s) => s.i === '9418303');
 
 check('profile 9418303', profiles.vessels?.['9418303']?.name === 'BANGKOK CHEMI');
+check('profile 9424857 incheon', profiles.vessels?.['9424857']?.name === 'INCHEON CHEMI');
 check('ex-name golden sea', exIdx.exact?.['golden sea 1'] === '9418303');
 check('ex-name chemi ocean', exIdx.exact?.['chemi ocean'] === '9418303');
 check('chunk name', ship?.n === 'BANGKOK CHEMI', ship?.n);
