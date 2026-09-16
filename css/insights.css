@@ -1,0 +1,181 @@
+/* Maritime Insights — list + article */
+.insights-shell {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 24px 20px 48px;
+}
+
+.insights-hero {
+    margin-bottom: 28px;
+}
+
+.insights-hero-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #0284c7;
+    margin: 0 0 8px;
+}
+
+.insights-hero-lead {
+    margin: 8px 0 0;
+    font-size: 1.05rem;
+    color: #475569;
+    line-height: 1.55;
+}
+
+.insights-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.insights-card {
+    padding: 20px 22px;
+}
+
+.insights-card-category {
+    margin: 0 0 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #0284c7;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.insights-card-title {
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+    line-height: 1.35;
+}
+
+.insights-card-title a {
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.insights-card-title a:hover {
+    color: #0284c7;
+}
+
+.insights-card-excerpt {
+    margin: 0 0 12px;
+    color: #475569;
+    line-height: 1.55;
+}
+
+.insights-card-meta {
+    margin: 0 0 12px;
+    font-size: 0.8125rem;
+    color: #94a3b8;
+}
+
+.insights-card-link {
+    font-weight: 600;
+    color: #0284c7;
+    text-decoration: none;
+}
+
+.insights-card-link:hover {
+    text-decoration: underline;
+}
+
+.insights-article-head {
+    margin-bottom: 24px;
+}
+
+.insights-article-title {
+    margin: 0 0 12px;
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+    line-height: 1.3;
+    color: #0f172a;
+}
+
+.insights-article-excerpt {
+    margin: 0 0 12px;
+    font-size: 1.05rem;
+    color: #475569;
+    line-height: 1.55;
+}
+
+.insights-article-meta {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #94a3b8;
+}
+
+.insights-article-section {
+    margin-bottom: 22px;
+}
+
+.insights-article-section h2 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+    color: #0f172a;
+}
+
+.insights-article-section p {
+    margin: 0;
+    line-height: 1.65;
+    color: #334155;
+}
+
+.insights-cta-band {
+    margin: 32px 0 24px;
+    padding: 22px 24px;
+    border: 1px solid #bae6fd;
+    background: linear-gradient(135deg, #f0f9ff 0%, #fff 100%);
+}
+
+.insights-cta-band h2 {
+    margin: 0 0 8px;
+    font-size: 1.15rem;
+}
+
+.insights-cta-band p {
+    margin: 0 0 16px;
+    color: #475569;
+    line-height: 1.55;
+}
+
+.insights-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.insights-cta-primary {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #0284c7;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.insights-cta-secondary {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    color: #0f172a;
+    font-weight: 600;
+    text-decoration: none;
+    background: #fff;
+}
+
+.insights-back {
+    margin-top: 24px;
+}
+
+.insights-back a {
+    color: #0284c7;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.insights-loading,
+.insights-empty {
+    color: #64748b;
+}

@@ -122,6 +122,10 @@
             e: row.e || row.engine_model || '',
             mmsi: row.s || row.mmsi || '',
             s: row.s || row.mmsi || '',
+            cargo: row.cargo || row.c || '',
+            c: row.cargo || row.c || '',
+            compliance: row.compliance || row.z || '',
+            z: row.compliance || row.z || '',
             ex_names: exNames,
             _priorityOverride: true,
         };

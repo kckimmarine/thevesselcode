@@ -11,6 +11,7 @@
         'nav.home': { en: 'Home', ko: '홈' },
         'nav.services': { en: 'Services', ko: '서비스' },
         'nav.toolkit': { en: 'Maritime Toolkit', ko: '해운 실무 공구함' },
+        'nav.insights': { en: 'Insights', ko: '인사이트' },
         'nav.forum': { en: 'Exchange', ko: '해양 Q&A' },
         'nav.sm': { en: 'TVC-SM', ko: 'TVC-SM 선박관리' },
         'nav.contact': { en: 'Contact Us', ko: '문의하기' },

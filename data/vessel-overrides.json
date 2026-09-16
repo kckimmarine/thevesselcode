@@ -8,7 +8,9 @@
     "g": "5,510 GT",
     "y": 2003,
     "f": "Korea",
-    "e": "MAN B&W 6S35MC"
+    "e": "MAN B&W 6S35MC",
+    "cargo": "IMO II/III Chemical & Clean Petroleum (SUS316L / Epoxy Coated)",
+    "compliance": "MARPOL Annex VI Tier II • IMO CII Rated • ClassNK Approved"
   },
   "9264879": {
     "n": "QUARTERBACK J",
@@ -19,7 +21,9 @@
     "g": "5,350 GT",
     "y": 2003,
     "f": "Korea",
-    "e": "MAN B&W 6S35MC"
+    "e": "MAN B&W 6S35MC",
+    "cargo": "IMO II/III Chemical & Clean Petroleum (SUS316L / Epoxy Coated)",
+    "compliance": "MARPOL Annex VI Tier II • IMO CII Rated • ClassNK Approved"
   },
   "9330410": {
     "n": "BANGKOK CHEMI",
@@ -30,7 +34,9 @@
     "g": "8,260 GT",
     "y": 2006,
     "f": "Korea",
-    "e": "MAN B&W"
+    "e": "MAN B&W",
+    "cargo": "IMO II/III Chemical & Clean Petroleum (SUS316L / Epoxy Coated)",
+    "compliance": "MARPOL Annex VI Tier II • IMO CII Rated • ClassNK Approved"
   },
   "9330393": {
     "n": "THAI CHEMI",
@@ -41,7 +47,9 @@
     "g": "8,260 GT",
     "y": 2006,
     "f": "Marshall Islands",
-    "e": "MAN B&W"
+    "e": "MAN B&W",
+    "cargo": "IMO II/III Chemical & Clean Petroleum (SUS316L / Epoxy Coated)",
+    "compliance": "MARPOL Annex VI Tier II • IMO CII Rated • ClassNK Approved"
   },
   "9438925": {
     "n": "ONSAN CHEMI",
@@ -52,7 +60,9 @@
     "g": "8,305 GT",
     "y": 2009,
     "f": "Korea",
-    "e": "MAN B&W"
+    "e": "MAN B&W",
+    "cargo": "IMO II/III Chemical & Clean Petroleum (SUS316L / Epoxy Coated)",
+    "compliance": "MARPOL Annex VI Tier II • IMO CII Rated • ClassNK Approved"
   },
   "9438913": {
     "n": "DAESAN CHEMI",
@@ -63,6 +73,8 @@
     "g": "8,300 GT",
     "y": 2008,
     "f": "Korea",
-    "e": "MAN B&W"
+    "e": "MAN B&W",
+    "cargo": "IMO II/III Chemical & Clean Petroleum (SUS316L / Epoxy Coated)",
+    "compliance": "MARPOL Annex VI Tier II • IMO CII Rated • ClassNK Approved"
   }
 }
