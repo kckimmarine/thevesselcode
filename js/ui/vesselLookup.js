@@ -95,7 +95,17 @@
 
     function normalizeAisPayload(entry, imo) {
         if (!entry) {
-            return { imo, fresh: false, status: AIS_BADGE_OCEAN };
+            return { imo, fresh: false, status: AIS_BADGE_OCEAN, fallback: 'vesselfinder' };
+        }
+        if (entry.fallback === 'vesselfinder') {
+            return {
+                imo: entry.imo || imo,
+                mmsi: entry.mmsi || '',
+                fresh: false,
+                live: false,
+                fallback: 'vesselfinder',
+                status: entry.status || AIS_BADGE_OCEAN,
+            };
         }
         if (typeof entry.fresh === 'boolean' && entry.status) {
             return entry;
@@ -148,12 +158,15 @@
 
     async function fetchVesselAis(imo, mmsi) {
         const params = new URLSearchParams({ imo });
-        if (mmsi) params.set('mmsi', mmsi);
+        const mmsiDigits = String(mmsi || '').replace(/\D/g, '');
+        if (mmsiDigits.length >= 9) params.set('mmsi', mmsiDigits);
         try {
             const res = await fetch(`/api/vessel-ais?${params}`);
             if (res.ok) {
                 const data = await res.json();
-                if (!data.error) return normalizeAisPayload(data, imo);
+                if (!data.error || data.fallback === 'vesselfinder') {
+                    return normalizeAisPayload(data, imo);
+                }
             }
         } catch {
             /* static fallback */

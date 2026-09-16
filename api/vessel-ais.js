@@ -8,10 +8,17 @@ const SNAPSHOT_PATHS = [
     join(process.cwd(), 'data', 'fleet-ais-positions.json'),
 ];
 
+const OVERRIDE_PATHS = [
+    join(process.cwd(), 'data', 'vessel-overrides.json'),
+    join(process.cwd(), 'public', 'data', 'vessel-overrides.json'),
+];
+
 const FRESH_MAX_AGE_MS = 24 * 60 * 60 * 1000;
 const AIS_BADGE_STALE =
     '📡 Coastal Beacon Awaiting Signal / In Ocean Transit';
 const AIS_BADGE_OCEAN = 'Ocean Transit • Awaiting Coastal Signal';
+
+let _overrideCache = null;
 
 function loadSnapshots() {
     for (const p of SNAPSHOT_PATHS) {
@@ -26,6 +33,37 @@ function loadSnapshots() {
     return {};
 }
 
+function loadVesselOverrides() {
+    if (_overrideCache) return _overrideCache;
+    for (const p of OVERRIDE_PATHS) {
+        if (!existsSync(p)) continue;
+        try {
+            _overrideCache = JSON.parse(readFileSync(p, 'utf8'));
+            return _overrideCache;
+        } catch {
+            /* try next */
+        }
+    }
+    _overrideCache = {};
+    return _overrideCache;
+}
+
+function overrideForImo(imo) {
+    const overrides = loadVesselOverrides();
+    return overrides[imo] || null;
+}
+
+function resolveMmsi(imo, queryMmsi, snapshot) {
+    const fromQuery = digitsOnly(queryMmsi);
+    if (fromQuery.length >= 9) return fromQuery.slice(0, 9);
+    const fromSnapshot = digitsOnly(snapshot?.mmsi);
+    if (fromSnapshot.length >= 9) return fromSnapshot.slice(0, 9);
+    const ov = overrideForImo(imo);
+    const fromOverride = digitsOnly(ov?.mmsi || ov?.s);
+    if (fromOverride.length >= 9) return fromOverride.slice(0, 9);
+    return fromOverride || fromQuery || '';
+}
+
 function digitsOnly(value) {
     return String(value || '').replace(/\D/g, '');
 }
@@ -36,17 +74,37 @@ function signalAgeMs(ts) {
     return Number.isFinite(ms) && ms >= 0 ? ms : Infinity;
 }
 
+function buildLiveAisResponse(position, imo) {
+    const ts = position.ts || position.timestamp || new Date().toISOString();
+    return {
+        imo: position.imo || imo,
+        mmsi: position.mmsi || '',
+        name: position.name || '',
+        lat: position.lat,
+        lon: position.lon,
+        sog: position.sog,
+        cog: position.cog,
+        ts,
+        timestamp: ts,
+        live: true,
+        fresh: true,
+        status: 'Coastal AIS Stream Connected',
+    };
+}
+
 function buildAisResponse(base, { live = false } = {}) {
-    const ageMs = signalAgeMs(base.ts);
+    const ageMs = signalAgeMs(base.ts || base.timestamp);
     const ageHours = Number.isFinite(ageMs) ? Math.round(ageMs / 3600000) : null;
     const fresh = live || ageMs < FRESH_MAX_AGE_MS;
     const stale = !fresh && Number.isFinite(ageMs) && ageMs !== Infinity;
+    const ts = base.ts || base.timestamp || null;
 
     const out = {
         imo: base.imo,
         mmsi: base.mmsi || '',
         name: base.name || '',
-        ts: base.ts || null,
+        ts,
+        timestamp: ts,
         live: Boolean(live),
         fresh,
         ageHours,
@@ -73,7 +131,7 @@ function buildAisResponse(base, { live = false } = {}) {
                 lon: base.lon,
                 sog: base.sog,
                 cog: base.cog,
-                ts: base.ts || null,
+                ts,
             };
         }
         return out;
@@ -83,10 +141,24 @@ function buildAisResponse(base, { live = false } = {}) {
     return out;
 }
 
+function buildVesselFinderFallback({ imo, mmsi, name }) {
+    return {
+        imo,
+        mmsi: mmsi || '',
+        name: name || '',
+        live: false,
+        fresh: false,
+        fallback: 'vesselfinder',
+        status: AIS_BADGE_OCEAN,
+    };
+}
+
 async function fetchAisStreamPosition({ mmsi, imo, apiKey, timeoutMs = 8000 }) {
     if (!apiKey || !mmsi) return null;
     const WebSocketImpl = globalThis.WebSocket;
     if (!WebSocketImpl) return null;
+
+    const targetMmsi = String(mmsi);
 
     return new Promise((resolve) => {
         let settled = false;
@@ -110,8 +182,8 @@ async function fetchAisStreamPosition({ mmsi, imo, apiKey, timeoutMs = 8000 }) {
                 JSON.stringify({
                     APIKey: apiKey,
                     BoundingBoxes: [[[-90, -180], [90, 180]]],
-                    FiltersShipMMSI: [String(mmsi)],
-                    FilterMessageTypes: ['PositionReport'],
+                    FiltersShipMMSI: [targetMmsi],
+                    FilterMessageTypes: ['PositionReport', 'ShipStaticData'],
                 })
             );
         });
@@ -123,17 +195,19 @@ async function fetchAisStreamPosition({ mmsi, imo, apiKey, timeoutMs = 8000 }) {
                 const pr = msg?.Message?.PositionReport;
                 if (!pr) return;
                 const metaImo = digitsOnly(meta.ShipId || meta.IMO || '');
-                const metaMmsi = digitsOnly(meta.MMSI || meta.mmsi || mmsi);
-                if (metaImo && imo && metaImo !== imo && metaMmsi !== mmsi) return;
+                const metaMmsi = digitsOnly(meta.MMSI || meta.mmsi || targetMmsi);
+                if (metaMmsi && metaMmsi !== targetMmsi && metaImo !== imo) return;
+                const ts = meta.time_utc || new Date().toISOString();
                 finish({
                     imo: imo || metaImo,
-                    mmsi: metaMmsi || mmsi,
+                    mmsi: metaMmsi || targetMmsi,
                     name: meta.ShipName || meta.shipName || '',
                     lat: pr.Latitude,
                     lon: pr.Longitude,
                     sog: pr.Sog,
                     cog: pr.Cog,
-                    ts: meta.time_utc || new Date().toISOString(),
+                    ts,
+                    timestamp: ts,
                 });
             } catch {
                 /* ignore parse errors */
@@ -161,39 +235,47 @@ module.exports = async function handler(req, res) {
         return;
     }
 
+    const override = overrideForImo(imo);
     const snapshots = loadSnapshots();
     const snapshot = snapshots[imo] || null;
-    const mmsi = digitsOnly(req.query?.mmsi || snapshot?.mmsi || '');
+    const queryMmsi = digitsOnly(req.query?.mmsi || '');
+    const mmsi = resolveMmsi(imo, queryMmsi, snapshot);
     const apiKey = process.env.AISSTREAM_API_KEY || '';
+    const vesselName = override?.n || snapshot?.name || '';
 
     let position = null;
-    if (apiKey && mmsi) {
+    if (apiKey && mmsi.length >= 9) {
         position = await fetchAisStreamPosition({ imo, mmsi, apiKey });
     }
 
-    if (position) {
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'application/json');
-        res.end(JSON.stringify(buildAisResponse({ ...position, imo }, { live: true })));
-        return;
+    if (position && Number.isFinite(Number(position.lat)) && Number.isFinite(Number(position.lon))) {
+        const ageMs = signalAgeMs(position.ts || position.timestamp);
+        if (ageMs < FRESH_MAX_AGE_MS) {
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            res.end(
+                JSON.stringify(
+                    buildLiveAisResponse(
+                        { ...position, imo, name: position.name || vesselName },
+                        imo
+                    )
+                )
+            );
+            return;
+        }
     }
 
     if (snapshot) {
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'application/json');
-        res.end(JSON.stringify(buildAisResponse({ ...snapshot, imo }, { live: false })));
-        return;
+        const built = buildAisResponse({ ...snapshot, imo, mmsi: mmsi || snapshot.mmsi }, { live: false });
+        if (built.fresh) {
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            res.end(JSON.stringify(built));
+            return;
+        }
     }
 
-    res.statusCode = 404;
+    res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
-    res.end(
-        JSON.stringify({
-            imo,
-            mmsi,
-            fresh: false,
-            status: AIS_BADGE_OCEAN,
-            error: 'NO_POSITION',
-        })
-    );
+    res.end(JSON.stringify(buildVesselFinderFallback({ imo, mmsi, name: vesselName })));
 };

@@ -55,6 +55,9 @@
     },
     "api/billing/[...path].js": {
       "maxDuration": 30
+    },
+    "api/vessel-ais.js": {
+      "includeFiles": "data/vessel-overrides.json"
     }
   },
   "headers": [

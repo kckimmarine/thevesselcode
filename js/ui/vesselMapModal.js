@@ -210,11 +210,21 @@
 
     function normalizeApiPayload(data, imo) {
         if (!data || data.error === 'NO_POSITION') {
-            return { fresh: false, status: AIS_BADGE_OCEAN, imo };
+            return { fresh: false, status: AIS_BADGE_OCEAN, imo, fallback: 'vesselfinder' };
+        }
+        if (data.fallback === 'vesselfinder') {
+            return {
+                imo: data.imo || imo,
+                mmsi: data.mmsi || '',
+                fresh: false,
+                live: false,
+                fallback: 'vesselfinder',
+                status: data.status || AIS_BADGE_OCEAN,
+            };
         }
         if (typeof data.fresh === 'boolean') return data;
-        const ageMs = signalAgeMs(data.ts);
-        const fresh = data.live === true || ageMs < FRESH_MAX_AGE_MS;
+        const ageMs = signalAgeMs(data.ts || data.timestamp);
+        const fresh = data.live === true || (data.fresh && ageMs < FRESH_MAX_AGE_MS);
         const ageHours = Number.isFinite(ageMs) ? Math.round(ageMs / 3600000) : null;
         if (fresh && Number.isFinite(Number(data.lat)) && Number.isFinite(Number(data.lon))) {
             return { ...data, imo: data.imo || imo, fresh: true };
