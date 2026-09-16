@@ -1,0 +1,48 @@
+{
+  "v": 1,
+  "startedAt": "2026-09-16T04:52:55.358Z",
+  "completedAt": "2026-09-16T04:52:56.768Z",
+  "offline": false,
+  "steps": {
+    "ingest": {
+      "ok": true,
+      "exitCode": 0,
+      "durationMs": 1213,
+      "error": null
+    },
+    "generateEnrichment": {
+      "ok": true,
+      "count": 831,
+      "reason": null,
+      "durationMs": 0
+    },
+    "enrich": {
+      "ok": true,
+      "exitCode": 0,
+      "durationMs": 136,
+      "error": null
+    },
+    "ais": {
+      "ok": true,
+      "durationMs": 0,
+      "targets": 200,
+      "fetched": 0,
+      "skippedNoMmsi": 0,
+      "apiKeySet": false,
+      "warnings": [
+        "AISSTREAM_API_KEY not set — preserving existing snapshots"
+      ]
+    }
+  },
+  "checksums": {
+    "fleetIndexSha256": "8d45f7d988bc0643dcaa857964cd447ec589277a332d239be592f77bbccfcec2",
+    "chunkCount": 66,
+    "vesselCount": 49634,
+    "fleetGenerated": "2026-09-16T04:52:56.530Z",
+    "fleetEnrichedAt": "2026-09-16T04:52:56.681Z"
+  },
+  "warnings": [
+    "AISSTREAM_API_KEY not set — preserving existing snapshots"
+  ],
+  "ok": true
+}

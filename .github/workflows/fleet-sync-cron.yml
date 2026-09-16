@@ -1,0 +1,52 @@
+name: Fleet Sync (daily)
+
+# Global fleet ingest + enrich + AIS snapshot refresh.
+# Manual: Actions → Fleet Sync (daily) → Run workflow
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fleet-sync-cron
+  cancel-in-progress: false
+
+jobs:
+  fleet-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --ignore-scripts
+
+      - name: Run fleet sync pipeline
+        env:
+          AISSTREAM_API_KEY: ${{ secrets.AISSTREAM_API_KEY }}
+        run: npm run fleet:sync
+        continue-on-error: true
+
+      - name: Commit fleet artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/fleet/ public/data/fleet-ais-positions.json data/fleet-ais-positions.json
+          if git diff --staged --quiet; then
+            echo "No fleet data changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(fleet): automated sync [skip ci]"
+          git push origin HEAD:master

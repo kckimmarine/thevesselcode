@@ -3,8 +3,7 @@
  * Merge technical particulars (m,d,y,e) into existing fleet chunks.
  *
  * Sources:
- *  - data/fleet-enrichment.json
- *  - data/fleet-registry-enrichment.json
+ *  - data/fleet-cache/generated-fleet-enrichment.json (sync output)
  *  - data/fleet-cache/seafarer-ships.dat (MoU/open mirror via Seafarer Index)
  *  - Optional USCG PSIX SOAP (IMO as VIN) when ENRICH_PSIX=1
  *
@@ -14,6 +13,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, cpSync, realpathS
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { digitsOnlyImo, isValidImoNumber } from './lib/imo-checksum.mjs';
+import { loadGeneratedEnrichmentCompactRows } from './lib/fleet-enrichment-store.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const FLEET_DIR = join(ROOT, 'public', 'data', 'fleet');
@@ -25,27 +25,7 @@ function loadJson(path) {
 }
 
 function loadEnrichmentRows() {
-    const rows = [];
-    for (const rel of ['data/fleet-enrichment.json', 'data/fleet-registry-enrichment.json']) {
-        const data = loadJson(join(ROOT, rel));
-        const list = Array.isArray(data) ? data : data?.vessels || [];
-        for (const v of list) {
-            const imo = digitsOnlyImo(v.imo || v.i);
-            if (!isValidImoNumber(imo)) continue;
-            rows.push({
-                i: imo,
-                n: v.name ? String(v.name).trim().toUpperCase() : undefined,
-                t: v.type || v.t,
-                d: Number(v.dwt ?? v.d) || 0,
-                y: Number(v.built_year ?? v.y) || 0,
-                f: v.flag || v.f,
-                m: String(v.technical_manager || v.m || '').trim(),
-                e: String(v.engine_model || v.e || '').trim(),
-                s: v.mmsi ? String(v.mmsi).replace(/\D/g, '') : '',
-            });
-        }
-    }
-    return rows;
+    return loadGeneratedEnrichmentCompactRows();
 }
 
 function loadSeafarerEnrichment() {
@@ -150,8 +130,9 @@ async function main() {
     ]);
 
     if (process.env.ENRICH_PSIX === '1') {
-        const psixImos = (loadJson(join(ROOT, 'data/fleet-registry-enrichment.json'))?.vessels || [])
-            .map((v) => digitsOnlyImo(v.imo))
+        const psixImos = (process.env.ENRICH_PSIX_IMOS || '')
+            .split(',')
+            .map((v) => digitsOnlyImo(v))
             .filter(isValidImoNumber);
         for (const imo of psixImos) {
             const psix = await fetchPsixByImo(imo);
@@ -195,7 +176,7 @@ async function main() {
     if (existsSync(indexPath)) {
         const index = JSON.parse(readFileSync(indexPath, 'utf8'));
         index.enrichedAt = new Date().toISOString();
-        index.enrichmentSources = ['fleet-enrichment', 'fleet-registry-enrichment', 'seafarer-index', 'uscg-psix-optional'];
+        index.enrichmentSources = ['generated-fleet-enrichment', 'seafarer-index', 'uscg-psix-optional'];
         writeFileSync(indexPath, JSON.stringify(index));
     }
 
