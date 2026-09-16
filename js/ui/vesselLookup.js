@@ -6,6 +6,7 @@
     'use strict';
 
     const AIS_SNAPSHOT_URL = '/data/fleet-ais-positions.json';
+    const FRESH_MAX_AGE_MS = 24 * 60 * 60 * 1000;
     let _aisSnapshotPromise = null;
 
     function esc(text) {
@@ -52,13 +53,84 @@
         return _aisSnapshotPromise;
     }
 
+    function signalAgeMs(ts) {
+        if (!ts) return Infinity;
+        const ms = Date.now() - new Date(ts).getTime();
+        return Number.isFinite(ms) && ms >= 0 ? ms : Infinity;
+    }
+
+    function normalizeAisPayload(entry, imo) {
+        if (!entry) {
+            return { imo, fresh: false, status: 'Out of Coastal Coverage' };
+        }
+        if (typeof entry.fresh === 'boolean' && entry.status) {
+            return entry;
+        }
+        const live = entry.live === true;
+        const ageMs = signalAgeMs(entry.ts);
+        const fresh = live || ageMs < FRESH_MAX_AGE_MS;
+        const ageHours = Number.isFinite(ageMs) ? Math.round(ageMs / 3600000) : null;
+        const base = {
+            imo: entry.imo || imo,
+            fresh,
+            live,
+            ageHours,
+            status: entry.status || (fresh ? 'Snapshot position' : 'Coastal Beacon Awaiting Signal'),
+            last_port: entry.last_port || '',
+            next_port: entry.next_port || '',
+            destination: entry.destination || entry.next_port || '',
+            eta: entry.eta || '',
+            ts: entry.ts || null,
+        };
+        if (fresh) {
+            return {
+                ...base,
+                lat: entry.lat,
+                lon: entry.lon,
+                sog: entry.sog,
+                cog: entry.cog,
+            };
+        }
+        if (ageHours !== null && ageHours >= 100) {
+            base.status = 'Out of Coastal Coverage';
+        }
+        return base;
+    }
+
+    async function fetchVesselAis(imo, mmsi) {
+        const params = new URLSearchParams({ imo });
+        if (mmsi) params.set('mmsi', mmsi);
+        try {
+            const res = await fetch(`/api/vessel-ais?${params}`);
+            if (res.ok) {
+                const data = await res.json();
+                if (!data.error) return normalizeAisPayload(data, imo);
+            }
+        } catch {
+            /* static fallback */
+        }
+        const snap = await loadAisSnapshot();
+        const positions = snap.positions || snap;
+        return normalizeAisPayload(positions[imo], imo);
+    }
+
     function mergeAisVoyage(vessel, aisEntry) {
-        if (!aisEntry) return vessel.voyage || null;
         const voyage = { ...(vessel.voyage || {}) };
+        if (!aisEntry) {
+            return { ...voyage, _aisFresh: false, _aisStatus: 'Out of Coastal Coverage' };
+        }
         if (aisEntry.last_port) voyage.last_port = aisEntry.last_port;
         if (aisEntry.next_port) voyage.next_port = aisEntry.next_port;
         if (aisEntry.destination) voyage.destination = aisEntry.destination;
         if (aisEntry.eta) voyage.eta = aisEntry.eta;
+
+        voyage._aisFresh = Boolean(aisEntry.fresh);
+        voyage._aisStatus = aisEntry.status || 'Coastal Beacon Awaiting Signal';
+
+        if (!aisEntry.fresh) {
+            return voyage;
+        }
+
         return {
             ...voyage,
             lat: aisEntry.lat,
@@ -125,11 +197,21 @@
 
     function renderVoyageSection(voyage) {
         if (!voyage) return '';
+
+        if (!voyage._aisFresh) {
+            const badge = esc(voyage._aisStatus || 'Coastal Beacon Awaiting Signal');
+            return `<section class="tvc-vessel-voyage-panel" aria-label="Live voyage status">
+            <h4 class="tvc-vessel-voyage-title">Live voyage status</h4>
+            <p class="tvc-vessel-voyage-badge">${badge}</p>
+        </section>`;
+        }
+
         const speedCourse = (Number.isFinite(Number(voyage.sog)) || Number.isFinite(Number(voyage.cog)))
             ? `${Number.isFinite(Number(voyage.sog)) ? Number(voyage.sog).toFixed(1) : '—'} kts / ${Number.isFinite(Number(voyage.cog)) ? Math.round(Number(voyage.cog)) : '—'}°`
             : '';
         const position = formatLatLon(voyage.lat, voyage.lon);
-        const lastSeen = formatAgeHours(voyage.ts);
+        const ageMs = signalAgeMs(voyage.ts);
+        const lastSeen = ageMs < FRESH_MAX_AGE_MS ? formatAgeHours(voyage.ts) : '';
         const rows = [
             voyageRow('Last port', voyage.last_port),
             voyageRow('Next port / destination', voyage.destination || voyage.next_port),
@@ -206,10 +288,17 @@
             if (!message) container.classList.add('hidden');
             return;
         }
-        const snap = await loadAisSnapshot();
-        const positions = snap.positions || snap;
+        const aisByImo = {};
+        await Promise.all(
+            vessels.map(async (vessel) => {
+                const imo = String(vessel.imo || vessel.i || '').replace(/\D/g, '');
+                if (imo.length !== 7) return;
+                const mmsi = String(vessel.mmsi || vessel.s || '').replace(/\D/g, '');
+                aisByImo[imo] = await fetchVesselAis(imo, mmsi);
+            })
+        );
         container.classList.remove('hidden');
-        container.innerHTML = vessels.map((v) => renderVesselCard(v, positions)).join('');
+        container.innerHTML = vessels.map((v) => renderVesselCard(v, aisByImo)).join('');
     }
 
     function bindResultsActions(container) {

@@ -2258,6 +2258,17 @@ body.tvc-marketing-body .tvc-vessel-voyage-seen {
     font-weight: 600;
 }
 
+body.tvc-marketing-body .tvc-vessel-voyage-badge {
+    margin: 0;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    background: rgba(15, 23, 42, 0.45);
+    border: 1px dashed #64748b;
+}
+
 /* AIS embed modal — no site chrome, minimal overlay */
 body.tvc-marketing-body .tvc-vessel-ais-modal {
     position: fixed;

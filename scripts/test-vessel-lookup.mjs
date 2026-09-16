@@ -24,6 +24,8 @@ check('vesselLookup uses fleet service', lookupSrc.includes('TVC_FleetRegistry')
 check('cross-links removed', !lookupSrc.includes('ASTM 54B Calc'));
 check('AIS button retained', lookupSrc.includes('View Live Position'));
 check('voyage panel', lookupSrc.includes('tvc-vessel-voyage-panel'));
+check('on-demand AIS fetch', lookupSrc.includes('/api/vessel-ais'));
+check('stale AIS badge not raw hours', lookupSrc.includes('_aisFresh') && lookupSrc.includes('tvc-vessel-voyage-badge'));
 check('ex-name badge', lookupSrc.includes('tvc-vessel-exname-badge'));
 check('leaflet map modal wired', toolkitHtml.includes('vesselMapModal.js'));
 check('no vesselfinder iframe', !lookupSrc.includes('vesselfinder.com'));

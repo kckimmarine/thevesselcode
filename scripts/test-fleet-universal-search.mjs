@@ -30,6 +30,7 @@ check('ais snapshot', existsSync(join(ROOT, 'public/data/fleet-ais-positions.jso
 const svc = readFileSync(join(ROOT, 'js/services/fleetRegistryService.js'), 'utf8');
 check('searchVessels alias', svc.includes('searchVessels: searchFleet'));
 check('exname index url', svc.includes('fleet-exname-index.json'));
+check('pure IMO skips ex-name match', svc.includes('isPureImoQuery') && svc.includes('exNameMatchedByQuery'));
 
 if (process.exitCode) {
     console.error('\nFleet universal search tests FAILED');
