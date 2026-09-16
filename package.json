@@ -39,6 +39,8 @@
     "test:engineering-search": "node scripts/test-engineering-search.mjs",
     "verify:all-engineering": "node scripts/verify-all-engineering.mjs",
     "ingest:fleet": "node scripts/ingest-global-fleet.mjs",
+    "enrich:fleet": "node scripts/enrich-fleet-registry.mjs",
+    "test:enrich-fleet": "node scripts/test-enrich-fleet-registry.mjs",
     "test:global-fleet": "node scripts/test-global-fleet.mjs",
     "fetch-market-feed": "node scripts/fetch-market-feed.mjs",
     "fetch-market-feed:offline": "node scripts/fetch-market-feed.mjs --offline",

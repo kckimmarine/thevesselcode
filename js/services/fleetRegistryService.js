@@ -42,7 +42,9 @@
 
     function expandVessel(compact) {
         if (!compact) return null;
-        if (compact.imo) return compact;
+        if (compact.imo) {
+            return { ...compact, mmsi: compact.mmsi || compact.s };
+        }
         return {
             imo: compact.i,
             name: compact.n,
@@ -52,6 +54,7 @@
             flag: compact.f,
             technical_manager: compact.m,
             engine_model: compact.e,
+            mmsi: compact.s || compact.mmsi,
         };
     }
 
