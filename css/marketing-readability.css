@@ -2269,6 +2269,27 @@ body.tvc-marketing-body .tvc-vessel-voyage-badge {
     border: 1px dashed #64748b;
 }
 
+body.tvc-marketing-body .tvc-vessel-voyage-badge--transit {
+    color: #fde68a;
+    border-color: #94a3b8;
+}
+
+body.tvc-marketing-body .tvc-vessel-voyage-transit-note {
+    margin: 10px 0 0;
+    font-size: 0.72rem;
+    color: #94a3b8;
+    line-height: 1.45;
+}
+
+body.tvc-marketing-body .tvc-ais-vessel-icon--stale {
+    color: #64748b;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 1px #fff);
+    border: 1px dashed #64748b;
+    border-radius: 50%;
+    padding: 2px;
+}
+
 /* AIS embed modal — no site chrome, minimal overlay */
 body.tvc-marketing-body .tvc-vessel-ais-modal {
     position: fixed;
@@ -2377,11 +2398,6 @@ body.tvc-marketing-body .tvc-ais-vessel-icon {
     color: #0f172a;
     text-shadow: 0 0 4px #fff, 0 0 8px #fff;
     transform-origin: center center;
-}
-
-body.tvc-marketing-body .tvc-ais-vessel-icon--stale {
-    color: #64748b;
-    opacity: 0.85;
 }
 
 body.tvc-marketing-body .leaflet-container {

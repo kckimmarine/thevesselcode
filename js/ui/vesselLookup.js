@@ -8,7 +8,7 @@
     const AIS_SNAPSHOT_URL = '/data/fleet-ais-positions.json';
     const FRESH_MAX_AGE_MS = 24 * 60 * 60 * 1000;
     const AIS_BADGE_STALE = '📡 Coastal Beacon Awaiting Signal / In Ocean Transit';
-    const AIS_BADGE_OCEAN = '📡 In Ocean Transit';
+    const AIS_BADGE_OCEAN = 'Ocean Transit • Awaiting Coastal Signal';
     let _aisSnapshotPromise = null;
 
     function esc(text) {
@@ -223,10 +223,19 @@
         if (!voyage) return '';
 
         if (!voyage._aisFresh) {
-            const badge = esc(voyage._aisStatus || AIS_BADGE_STALE);
-            return `<section class="tvc-vessel-voyage-panel" aria-label="Live voyage status">
+            const badge = esc(voyage._aisStatus || AIS_BADGE_OCEAN);
+            const last = voyage._aisLastVerified || {};
+            const position = formatLatLon(last.lat, last.lon);
+            const rows = [
+                voyageRow('Last port', voyage.last_port),
+                voyageRow('Reported destination', voyage.destination || voyage.next_port),
+                position ? voyageRow('Last verified position', position) : '',
+            ].filter(Boolean).join('');
+            return `<section class="tvc-vessel-voyage-panel tvc-vessel-voyage-panel--transit" aria-label="Live voyage status">
             <h4 class="tvc-vessel-voyage-title">Live voyage status</h4>
-            <p class="tvc-vessel-voyage-badge">${badge}</p>
+            <p class="tvc-vessel-voyage-badge tvc-vessel-voyage-badge--transit">${badge}</p>
+            ${rows}
+            <p class="tvc-vessel-voyage-transit-note">Position is the last coastal AIS fix — not a live open-ocean track.</p>
         </section>`;
         }
 

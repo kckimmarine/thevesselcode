@@ -11,6 +11,13 @@
     const MIN_QUERY_LEN = 3;
     const DEBOUNCE_MS = 150;
     const MAX_RESULTS = 10;
+    const SCORE_IMO_EXACT = 1000;
+    const SCORE_NAME_EXACT = 1200;
+    const SCORE_EX_NAME_EXACT = 1180;
+    const SCORE_NAME_PREFIX = 950;
+    const SCORE_NAME_CONTAINS = 880;
+    const SCORE_NAME_ALL_TOKENS = 900;
+    const SCORE_SINGLE_TOKEN = 520;
 
     /** @type {object | null} */
     let _index = null;
@@ -249,37 +256,62 @@
         return null;
     }
 
+    function queryTokens(queryNorm) {
+        return queryNorm.split(/\s+/).filter(Boolean);
+    }
+
+    function nameMatchesAllTokens(nameNorm, tokens) {
+        if (!tokens.length) return false;
+        return tokens.every((tok) => nameNorm.includes(tok));
+    }
+
     function scoreMatch(queryNorm, queryImo, item, vessel) {
         const name = item.s || normalizeSearch(item.n || vessel?.name);
         const imo = vessel?.imo || item.i;
+        const tokens = queryTokens(queryNorm);
         let score = 0;
         if (queryImo.length >= 3) {
-            if (imo === queryImo) score = 1000;
+            if (imo === queryImo) score = SCORE_IMO_EXACT;
             else if (imo.startsWith(queryImo)) score = 900 - (imo.length - queryImo.length);
         }
         if (queryNorm) {
-            if (name === queryNorm) score = Math.max(score, 850);
-            else if (name.startsWith(queryNorm)) score = Math.max(score, 800);
-            else if (name.includes(queryNorm)) score = Math.max(score, 700);
-            else {
-                const tokens = queryNorm.split(/\s+/).filter(Boolean);
-                for (const tok of tokens) {
-                    if (name.includes(tok)) score = Math.max(score, 500);
+            if (name === queryNorm) score = Math.max(score, SCORE_NAME_EXACT);
+            else if (name.startsWith(queryNorm)) score = Math.max(score, SCORE_NAME_PREFIX);
+            else if (name.includes(queryNorm)) score = Math.max(score, SCORE_NAME_CONTAINS);
+            else if (tokens.length > 1) {
+                if (nameMatchesAllTokens(name, tokens)) {
+                    const nameTokCount = name.split(/\s+/).filter(Boolean).length;
+                    const tightness = tokens.length / Math.max(nameTokCount, tokens.length);
+                    score = Math.max(score, SCORE_NAME_ALL_TOKENS + Math.round(tightness * 80));
                 }
+            } else if (tokens.length === 1 && name.includes(tokens[0])) {
+                score = Math.max(score, SCORE_SINGLE_TOKEN);
             }
             const imoOnlyQuery = queryImo.length === 7 && queryNorm === queryImo;
             if (!imoOnlyQuery) {
                 const exNames = vessel?.ex_names || [];
                 for (const ex of exNames) {
                     const exNorm = normalizeSearch(ex);
-                    if (exNorm === queryNorm) score = Math.max(score, 820);
-                    else if (!/^\d+$/.test(queryNorm) && (exNorm.includes(queryNorm) || queryNorm.includes(exNorm))) {
-                        score = Math.max(score, 760);
-                    }
+                    if (exNorm === queryNorm) score = Math.max(score, SCORE_EX_NAME_EXACT);
                 }
             }
         }
         return score;
+    }
+
+    function collectProfileNameHits(queryNorm) {
+        const hits = [];
+        const vessels = _profiles?.vessels || {};
+        for (const [imo, profile] of Object.entries(vessels)) {
+            const nameNorm = normalizeSearch(profile?.name || '');
+            if (!nameNorm) continue;
+            if (nameNorm === queryNorm) {
+                hits.push({ imo, score: SCORE_NAME_EXACT });
+            } else if (nameNorm.startsWith(queryNorm)) {
+                hits.push({ imo, score: SCORE_NAME_PREFIX });
+            }
+        }
+        return hits;
     }
 
     async function searchFleet(query) {
@@ -304,19 +336,23 @@
             }
         }
 
+        const profileNameHits = collectProfileNameHits(queryNorm);
+
         const exNameHits = [];
         if (!isPureImoQuery(raw)) {
             const exIndex = await loadExnameIndex();
             const exactImo = exIndex.exact?.[queryNorm];
             if (exactImo) {
-                exNameHits.push({ imo: exactImo, score: 830 });
+                exNameHits.push({ imo: exactImo, score: SCORE_EX_NAME_EXACT });
             }
+            const multiWord = queryTokens(queryNorm).length > 1;
             const exKeys = tokenCandidates(queryNorm);
             for (const key of exKeys) {
+                if (multiWord && key !== queryNorm) continue;
                 const list = exIndex.tokens?.[key];
                 if (!Array.isArray(list)) continue;
                 for (const imo of list) {
-                    exNameHits.push({ imo, score: 780 });
+                    exNameHits.push({ imo, score: SCORE_EX_NAME_EXACT - 40 });
                 }
             }
         }
@@ -324,7 +360,11 @@
         const nameHits = [];
         const tokenIndex = await loadTokenIndex();
         const keys = tokenCandidates(queryNorm);
-        const lists = keys.map((key) => tokenIndex[key]).filter((list) => Array.isArray(list) && list.length);
+        const wordTokens = queryTokens(queryNorm);
+        const tokenKeysOnly = wordTokens.filter((t) => t.length >= MIN_QUERY_LEN);
+        const lists = tokenKeysOnly
+            .map((key) => tokenIndex[key])
+            .filter((list) => Array.isArray(list) && list.length);
         const candidateImos = new Set();
         if (lists.length > 1) {
             let intersection = new Set(lists[0]);
@@ -332,10 +372,24 @@
                 const next = new Set(lists[i]);
                 intersection = new Set([...intersection].filter((imo) => next.has(imo)));
             }
-            intersection.forEach((imo) => candidateImos.add(imo));
+            if (intersection.size > 0) {
+                intersection.forEach((imo) => candidateImos.add(imo));
+            } else {
+                const union = new Set();
+                lists.forEach((list) => list.forEach((imo) => union.add(imo)));
+                for (const imo of union) {
+                    let cachedV = _vesselCache.get(imo);
+                    if (!cachedV) {
+                        // eslint-disable-next-line no-await-in-loop
+                        cachedV = await getVesselByImo(imo);
+                    }
+                    const nameNorm = normalizeSearch(cachedV?.name || '');
+                    if (nameMatchesAllTokens(nameNorm, wordTokens)) candidateImos.add(imo);
+                }
+            }
         } else if (lists.length === 1) {
             lists[0].forEach((imo) => candidateImos.add(imo));
-        } else {
+        } else if (wordTokens.length === 1) {
             for (const key of keys) {
                 const list = tokenIndex[key];
                 if (Array.isArray(list)) list.forEach((imo) => candidateImos.add(imo));
@@ -370,6 +424,9 @@
             combined.set(h.imo, Math.max(combined.get(h.imo) || 0, h.score));
         }
         for (const h of exNameHits) {
+            combined.set(h.imo, Math.max(combined.get(h.imo) || 0, h.score));
+        }
+        for (const h of profileNameHits) {
             combined.set(h.imo, Math.max(combined.get(h.imo) || 0, h.score));
         }
 
