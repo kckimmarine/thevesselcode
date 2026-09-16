@@ -14,11 +14,53 @@ const TVC_StoreMenu = (function () {
     let _plateLoadToken = 0;
     let _publicMode = false;
     let _categoryFilter = '';
+    let _currentPage = 1;
     let _detailReturnUrl = '';
     let _popstateBound = false;
     const STORE_ROW_H = 44;
+    const PAGE_SIZE = 13;
     const SEARCH_DEBOUNCE_MS = 180;
     const PUBLIC_SEARCH_DEBOUNCE_MS = 100;
+
+    const IMPA_CHAPTER_OPTIONS = [
+        { value: '', label: 'All Categories (전체)' },
+        { value: '00', label: '00. Provisions' },
+        { value: '10', label: '10. Whisky & Cigarettes' },
+        { value: '11', label: '11. Welfare Items' },
+        { value: '15', label: '15. Cloth & Linen Products' },
+        { value: '17', label: '17. Tableware & Galley Utensils' },
+        { value: '19', label: '19. Clothing' },
+        { value: '21', label: '21. Rope & Hawsers' },
+        { value: '23', label: '23. Rigging Equipment & General Deck Items' },
+        { value: '25', label: '25. Marine Paint' },
+        { value: '27', label: '27. Painting Equipment' },
+        { value: '31', label: '31. SAFETY PROTECTION GEAR' },
+        { value: '33', label: '33. Safety Equipment' },
+        { value: '35', label: '35. Hose & Couplings' },
+        { value: '37', label: '37. Nautical Equipment' },
+        { value: '39', label: '39. Medicine' },
+        { value: '45', label: '45. Petroleum Products' },
+        { value: '47', label: '47. Stationery' },
+        { value: '49', label: '49. Hardware' },
+        { value: '51', label: '51. Brushes & Mats' },
+        { value: '53', label: '53. Lavatory Equipment' },
+        { value: '55', label: '55. Cleaning Materials & Chemicals' },
+        { value: '59', label: '59. Pneumatic & Electrical Tools' },
+        { value: '61', label: '61. Hand Tools' },
+        { value: '63', label: '63. Cutting Tools' },
+        { value: '65', label: '65. Measuring Tools' },
+        { value: '67', label: '67. Metal Sheets, Bars, etc.' },
+        { value: '69', label: '69. Screws & Nuts' },
+        { value: '71', label: '71. Pipes & Tubes' },
+        { value: '73', label: '73. Pipe & Tube Fittings' },
+        { value: '75', label: '75. Valves & Cocks' },
+        { value: '77', label: '77. Bearings' },
+        { value: '79', label: '79. Electrical Equipment' },
+        { value: '81', label: '81. Packing & Jointing' },
+        { value: '85', label: '85. Welding Equipment' },
+        { value: '87', label: '87. Machinery Items' },
+        { value: '99', label: '99. Fishing Tools' },
+    ];
 
     function formatNum(n) {
         return Number(n || 0).toLocaleString();
@@ -906,7 +948,19 @@ const TVC_StoreMenu = (function () {
         }
     }
 
-    function countLabel(search) {
+    function publicPaginationCountLabel(totalFiltered, currentPage) {
+        const total = Math.max(0, Number(totalFiltered) || 0);
+        if (!total) return 'Showing 0 of 0 items';
+        const page = Math.max(1, currentPage);
+        const start = (page - 1) * PAGE_SIZE + 1;
+        const end = Math.min(page * PAGE_SIZE, total);
+        return `Showing ${start} - ${end} of ${total.toLocaleString()} items`;
+    }
+
+    function countLabel(search, paginationMeta) {
+        if (_publicMode && paginationMeta) {
+            return publicPaginationCountLabel(paginationMeta.totalFiltered, paginationMeta.currentPage);
+        }
         const { query = '', items = [], total = 0, ms = 0, capped, browseLimited } = search;
         if (query.trim()) {
             const match = formatNum(items.length);
@@ -921,6 +975,13 @@ const TVC_StoreMenu = (function () {
     }
 
     function capNoteText(search) {
+        if (_publicMode) {
+            const { capped, items = [] } = search;
+            if (capped) {
+                return `Showing first ${formatNum(items.length)} matches — refine search to narrow results.`;
+            }
+            return '';
+        }
         const { query = '', items = [], total = 0, capped, browseLimited } = search;
         if (capped) {
             return `Showing first ${formatNum(items.length)} matches — refine search to narrow results.`;
@@ -932,12 +993,87 @@ const TVC_StoreMenu = (function () {
     }
 
     function categoryOptionsHtml() {
+        if (_publicMode) {
+            return IMPA_CHAPTER_OPTIONS.map(opt =>
+                `<option value="${esc(opt.value)}"${opt.value === _categoryFilter ? ' selected' : ''}>${esc(opt.label)}</option>`).join('');
+        }
         const cats = typeof TVC_StoreManager.getMemoryCategories === 'function'
             ? TVC_StoreManager.getMemoryCategories()
             : [];
         const opts = cats.map(c =>
             `<option value="${esc(c)}"${c === _categoryFilter ? ' selected' : ''}>${esc(c)}</option>`).join('');
         return `<option value="">All categories</option>${opts}`;
+    }
+
+    function resolvePublicCatalogItems(search) {
+        if (typeof TVC_StoreManager.listMemoryCatalog === 'function'
+            && TVC_StoreManager.isMemorySearchReady()) {
+            return TVC_StoreManager.listMemoryCatalog({
+                query: search?.query || '',
+                categoryPrefix: _categoryFilter,
+            });
+        }
+        const filtered = applyCategoryFilter(search);
+        return filtered.items || [];
+    }
+
+    function scrollCatalogToTop(root) {
+        const targets = [
+            root.querySelector('#catalog-table-wrapper'),
+            root.querySelector('#storeCatalogHScroll'),
+            root.querySelector('#storeVlScroll'),
+        ].filter(Boolean);
+        for (const el of targets) {
+            el.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        }
+    }
+
+    function paginationWindow(currentPage, totalPages) {
+        if (totalPages <= 7) {
+            return Array.from({ length: totalPages }, (_, i) => i + 1);
+        }
+        const pages = new Set([1, totalPages, currentPage]);
+        for (let d = 1; d <= 2; d++) {
+            if (currentPage - d > 1) pages.add(currentPage - d);
+            if (currentPage + d < totalPages) pages.add(currentPage + d);
+        }
+        const sorted = [...pages].sort((a, b) => a - b);
+        const out = [];
+        for (let i = 0; i < sorted.length; i++) {
+            if (i > 0 && sorted[i] - sorted[i - 1] > 1) out.push('…');
+            out.push(sorted[i]);
+        }
+        return out;
+    }
+
+    function renderImpaPagination(root, currentPage, totalPages) {
+        const bar = root.querySelector('#impaPagination');
+        if (!bar) return;
+        if (totalPages <= 1) {
+            bar.innerHTML = '';
+            bar.classList.add('hidden');
+            return;
+        }
+        bar.classList.remove('hidden');
+        const prevDisabled = currentPage <= 1;
+        const nextDisabled = currentPage >= totalPages;
+        const window = paginationWindow(currentPage, totalPages);
+        const nums = window.map(token => {
+            if (token === '…') return '<span class="impa-pagination-ellipsis" aria-hidden="true">…</span>';
+            const active = token === currentPage ? ' impa-pagination-page--active' : '';
+            return `<button type="button" class="impa-pagination-page${active}" data-page="${token}" aria-label="Page ${token}"${token === currentPage ? ' aria-current="page"' : ''}>${token}</button>`;
+        }).join('');
+        bar.innerHTML = `
+            <button type="button" class="impa-pagination-btn" data-page-action="prev" ${prevDisabled ? 'disabled' : ''}>◀ Prev</button>
+            ${nums}
+            <button type="button" class="impa-pagination-btn" data-page-action="next" ${nextDisabled ? 'disabled' : ''}>Next ▶</button>`;
+    }
+
+    function renderPublicPageRows(root, pageItems) {
+        const scroll = root.querySelector('#storeVlScroll');
+        if (!scroll) return;
+        destroyVirtualList();
+        scroll.innerHTML = `<div class="vl-inner impa-page-inner">${pageItems.map(rowHtml).join('')}</div>`;
     }
 
     function toolbarHtml(search, cartCount) {
@@ -1001,7 +1137,8 @@ const TVC_StoreMenu = (function () {
                     ${head}
                     ${scroll}
                 </div>
-            </div>`;
+            </div>
+            <nav id="impaPagination" class="impa-pagination hidden" aria-label="IMPA catalog pages"></nav>`;
         }
         return `
             <div id="catalog-table-wrapper" class="${wrapClass}" role="table" aria-label="IMPA catalog">
@@ -1041,16 +1178,38 @@ const TVC_StoreMenu = (function () {
         });
     }
 
+    function itemMatchesCategoryPrefix(item, prefix) {
+        if (!prefix) return true;
+        const p2 = String(prefix).padStart(2, '0').slice(0, 2);
+        const code = String(item?.impa_code || item?.code || '');
+        const cp = String(item?.code_prefix || code.slice(0, 2));
+        return cp === p2 || code.startsWith(p2);
+    }
+
     function applyCategoryFilter(search) {
         if (!_categoryFilter) return search;
-        const items = (search.items || []).filter(i => i.category === _categoryFilter);
+        const items = (search.items || []).filter(i => itemMatchesCategoryPrefix(i, _categoryFilter));
         return { ...search, items, matched: items.length };
     }
 
     function paintSearchResults(root, search) {
-        const filtered = _publicMode ? applyCategoryFilter(search) : search;
+        const filtered = _publicMode ? search : applyCategoryFilter(search);
+        let items = filtered.items || [];
+        let paginationMeta = null;
+
+        if (_publicMode) {
+            items = resolvePublicCatalogItems(search);
+            const totalFiltered = items.length;
+            const totalPages = Math.max(1, Math.ceil(totalFiltered / PAGE_SIZE));
+            if (_currentPage > totalPages) _currentPage = totalPages;
+            if (_currentPage < 1) _currentPage = 1;
+            paginationMeta = { totalFiltered, currentPage: _currentPage, totalPages };
+            const start = (_currentPage - 1) * PAGE_SIZE;
+            items = items.slice(start, start + PAGE_SIZE);
+        }
+
         const countEl = root.querySelector('#storeCatalogCount');
-        if (countEl) countEl.textContent = countLabel(filtered);
+        if (countEl) countEl.textContent = countLabel(filtered, paginationMeta);
 
         const capNote = root.querySelector('#storeCapNote');
         const cap = capNoteText(filtered);
@@ -1059,7 +1218,6 @@ const TVC_StoreMenu = (function () {
             capNote.classList.toggle('hidden', !cap);
         }
 
-        const items = filtered.items || [];
         const empty = root.querySelector('#storeEmpty');
         const wrap = root.querySelector('#catalog-table-wrapper');
 
@@ -1069,13 +1227,17 @@ const TVC_StoreMenu = (function () {
             if (empty) empty.textContent = emptyCatalogMessage(filtered.query);
             _listState.items = [];
             destroyVirtualList();
+            if (_publicMode) renderImpaPagination(root, 1, 1);
             return;
         }
 
         empty?.classList.add('hidden');
         wrap?.classList.remove('hidden');
         _listState.items = items;
-        if (_virtualList) {
+        if (_publicMode) {
+            renderPublicPageRows(root, items);
+            renderImpaPagination(root, paginationMeta.currentPage, paginationMeta.totalPages);
+        } else if (_virtualList) {
             root.querySelector('#storeVlScroll')?.scrollTo(0, 0);
             root.querySelector('#storeCatalogHScroll')?.scrollTo(0, 0);
             _virtualList.refresh();
@@ -1086,6 +1248,7 @@ const TVC_StoreMenu = (function () {
 
     async function runSearch(root, query) {
         const seq = ++_searchSeq;
+        if (_publicMode) _currentPage = 1;
         const countEl = root.querySelector('#storeCatalogCount');
         if (countEl) countEl.textContent = 'Searching…';
         try {
@@ -1167,12 +1330,32 @@ const TVC_StoreMenu = (function () {
         const searchInput = root.querySelector('.store-search');
         searchInput?.addEventListener('input', e => {
             const q = e.target.value;
+            if (_publicMode) _currentPage = 1;
             scheduleSearch(root, q);
         });
 
         root.querySelector('#storeCategoryFilter')?.addEventListener('change', e => {
             _categoryFilter = e.target.value || '';
+            if (_publicMode) _currentPage = 1;
             paintSearchResults(root, TVC_StoreManager.getLastSearch());
+        });
+
+        root.querySelector('#impaPagination')?.addEventListener('click', e => {
+            const btn = e.target.closest('button');
+            if (!btn || btn.disabled) return;
+            const search = TVC_StoreManager.getLastSearch();
+            const allItems = resolvePublicCatalogItems(search);
+            const totalPages = Math.max(1, Math.ceil(allItems.length / PAGE_SIZE));
+            let nextPage = _currentPage;
+            if (btn.dataset.pageAction === 'prev') nextPage = _currentPage - 1;
+            else if (btn.dataset.pageAction === 'next') nextPage = _currentPage + 1;
+            else if (btn.dataset.page) nextPage = Number(btn.dataset.page);
+            if (!Number.isFinite(nextPage)) return;
+            nextPage = Math.min(totalPages, Math.max(1, nextPage));
+            if (nextPage === _currentPage) return;
+            _currentPage = nextPage;
+            scrollCatalogToTop(root);
+            paintSearchResults(root, search);
         });
 
         if (!_publicMode) {
@@ -1192,7 +1375,11 @@ const TVC_StoreMenu = (function () {
         destroyVirtualList();
         root.innerHTML = catalogShellHtml(state, cartCount);
         bindCatalogEvents(root);
-        if (_listState.items.length) mountVirtualList(root);
+        if (_publicMode) {
+            paintSearchResults(root, state);
+        } else if (_listState.items.length) {
+            mountVirtualList(root);
+        }
         if (!_publicMode) updateCartBadge();
     }
 

@@ -131,6 +131,48 @@ const TVC_StoreManager = (function () {
         return finalizeSearchResult(q, items, limit, started);
     }
 
+    /**
+     * Full in-memory catalog slice for public toolkit (no BROWSE_PREVIEW cap).
+     * Optional categoryPrefix filters IMPA codes by 2-digit chapter prefix.
+     */
+    function listMemoryCatalog({ query = '', categoryPrefix = '' } = {}) {
+        const idx = _memoryIndex || [];
+        const q = String(query || '').trim();
+        const qLower = q.toLowerCase();
+        let items = [];
+
+        if (!q) {
+            items = idx.slice();
+        } else if (/^\d{1,6}$/.test(q)) {
+            for (let i = 0; i < idx.length; i++) {
+                const code = String(idx[i].impa_code || idx[i].code || '');
+                if (code.startsWith(q)) items.push(idx[i]);
+            }
+        } else {
+            for (let i = 0; i < idx.length; i++) {
+                const row = idx[i];
+                const code = String(row.impa_code || row.code || '');
+                const name = String(row.name || '').toLowerCase();
+                const cat = String(row.category || '').toLowerCase();
+                if (code.includes(q) || name.includes(qLower) || cat.includes(qLower)) {
+                    items.push(row);
+                }
+            }
+        }
+
+        const prefix = String(categoryPrefix || '').trim();
+        if (prefix) {
+            const p2 = prefix.padStart(2, '0').slice(0, 2);
+            items = items.filter(row => {
+                const code = String(row.impa_code || row.code || '');
+                const cp = String(row.code_prefix || code.slice(0, 2));
+                return cp === p2 || code.startsWith(p2);
+            });
+        }
+
+        return items;
+    }
+
     function toLightRow(row) {
         if (!row?.impa_code) return null;
         const ui = TVC_ImpaSchema.toUi(row);
@@ -631,6 +673,7 @@ const TVC_StoreManager = (function () {
         buildMemoryIndex,
         isMemorySearchReady,
         getMemoryCategories,
+        listMemoryCatalog,
         getCatalog,
         getTotalCount,
         getLastSearch,

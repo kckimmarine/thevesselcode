@@ -1051,3 +1051,61 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
         max-height: 85dvh;
     }
 }
+
+/* IMPA catalog — 13-item pagination (Maritime Toolkit) */
+.store-public-main .impa-pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin: 16px 16px 24px;
+}
+
+.store-public-main .impa-pagination.hidden {
+    display: none;
+}
+
+.impa-pagination-btn,
+.impa-pagination-page {
+    min-width: 36px;
+    padding: 6px 10px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #334155;
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 1.2;
+}
+
+.impa-pagination-btn:hover:not(:disabled),
+.impa-pagination-page:hover:not(.impa-pagination-page--active) {
+    border-color: #0284c7;
+    color: #0284c7;
+}
+
+.impa-pagination-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.impa-pagination-page--active {
+    background: #0284c7;
+    border-color: #0284c7;
+    color: #fff;
+    cursor: default;
+}
+
+.impa-pagination-ellipsis {
+    padding: 0 4px;
+    color: #64748b;
+    font-size: 0.875rem;
+    user-select: none;
+}
+
+.store-public-main #storeVlScroll .impa-page-inner .store-vl-row {
+    position: relative;
+    top: auto;
+}
