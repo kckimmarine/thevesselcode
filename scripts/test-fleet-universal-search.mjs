@@ -31,6 +31,7 @@ const svc = readFileSync(join(ROOT, 'js/services/fleetRegistryService.js'), 'utf
 check('searchVessels alias', svc.includes('searchVessels: searchFleet'));
 check('exname index url', svc.includes('fleet-exname-index.json'));
 check('pure IMO skips ex-name match', svc.includes('isPureImoQuery') && svc.includes('exNameMatchedByQuery'));
+check('ex-name badge strict match', svc.includes('exNorm === queryNorm'));
 
 if (process.exitCode) {
     console.error('\nFleet universal search tests FAILED');

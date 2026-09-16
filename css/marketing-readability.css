@@ -2379,6 +2379,11 @@ body.tvc-marketing-body .tvc-ais-vessel-icon {
     transform-origin: center center;
 }
 
+body.tvc-marketing-body .tvc-ais-vessel-icon--stale {
+    color: #64748b;
+    opacity: 0.85;
+}
+
 body.tvc-marketing-body .leaflet-container {
     font-family: inherit;
 }

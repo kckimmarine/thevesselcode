@@ -7,12 +7,16 @@
     const LEAFLET_CSS = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
     const LEAFLET_JS = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
     const OSM_TILE = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    const FRESH_MAX_AGE_MS = 24 * 60 * 60 * 1000;
+    const AIS_BADGE_STALE = '📡 Coastal Beacon Awaiting Signal / In Ocean Transit';
+    const AIS_BADGE_OCEAN = '📡 In Ocean Transit';
 
     let _leafletPromise = null;
     let _map = null;
     let _marker = null;
     let _pollTimer = null;
     let _socket = null;
+    let _noteEl = null;
 
     function loadLeaflet() {
         if (global.L) return Promise.resolve(global.L);
@@ -58,10 +62,11 @@
                 <header class="tvc-vessel-ais-head">
                     <div>
                         <h2 id="tvcVesselAisTitle" class="tvc-vessel-ais-title">Live position</h2>
-                        <p id="tvcVesselAisStatus" class="tvc-vessel-ais-status">Awaiting Transponder Beacon</p>
+                        <p id="tvcVesselAisStatus" class="tvc-vessel-ais-status">${AIS_BADGE_STALE}</p>
                     </div>
                     <button type="button" class="tvc-vessel-ais-close" data-ais-close aria-label="Close map">×</button>
                 </header>
+                <p id="tvcVesselAisNote" class="tvc-vessel-ais-note hidden" role="note"></p>
                 <div id="live-ais-map" class="tvc-vessel-ais-map" role="application" aria-label="Vessel AIS map"></div>
             </div>`;
         document.body.appendChild(modal);
@@ -76,11 +81,12 @@
         return modal;
     }
 
-    function vesselIcon(L, cog) {
+    function vesselIcon(L, cog, stale) {
         const rotation = Number.isFinite(cog) ? cog : 0;
+        const cls = stale ? 'tvc-ais-vessel-icon tvc-ais-vessel-icon--stale' : 'tvc-ais-vessel-icon';
         return L.divIcon({
             className: 'tvc-ais-vessel-icon-wrap',
-            html: `<span class="tvc-ais-vessel-icon" style="transform:rotate(${rotation}deg)">▲</span>`,
+            html: `<span class="${cls}" style="transform:rotate(${rotation}deg)">▲</span>`,
             iconSize: [28, 28],
             iconAnchor: [14, 14],
         });
@@ -95,12 +101,30 @@
         }
     }
 
+    function signalAgeMs(ts) {
+        if (!ts) return Infinity;
+        const ms = Date.now() - new Date(ts).getTime();
+        return Number.isFinite(ms) && ms >= 0 ? ms : Infinity;
+    }
+
     function setStatus(text) {
         const el = document.getElementById('tvcVesselAisStatus');
         if (el) el.textContent = text;
     }
 
-    function updateMarker(L, payload, name) {
+    function setNote(text) {
+        _noteEl = _noteEl || document.getElementById('tvcVesselAisNote');
+        if (!_noteEl) return;
+        if (!text) {
+            _noteEl.textContent = '';
+            _noteEl.classList.add('hidden');
+            return;
+        }
+        _noteEl.textContent = text;
+        _noteEl.classList.remove('hidden');
+    }
+
+    function updateMarker(L, payload, name, { stale = false } = {}) {
         const lat = Number(payload.lat);
         const lon = Number(payload.lon);
         if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
@@ -120,41 +144,66 @@
         const sog = Number(payload.sog);
         const label = name || payload.name || `IMO ${payload.imo || ''}`;
         const dest = payload.destination || payload.next_port || '';
-        const popup = `<strong>${label}</strong><br>Speed: ${Number.isFinite(sog) ? sog.toFixed(1) : '—'} kn<br>Course: ${Number.isFinite(cog) ? cog.toFixed(0) : '—'}°${dest ? `<br>Destination: ${dest}` : ''}<br>Last received: ${formatTs(payload.ts)}`;
+        const liveLine = stale
+            ? 'Last verified coastal/harbor fix (not live AIS)'
+            : 'Live coastal AIS position';
+        const popup = `<strong>${label}</strong><br>${liveLine}<br>Speed: ${Number.isFinite(sog) ? sog.toFixed(1) : '—'} kn<br>Course: ${Number.isFinite(cog) ? cog.toFixed(0) : '—'}°${dest ? `<br>Destination: ${dest}` : ''}<br>Signal time: ${formatTs(payload.ts)}`;
 
         if (_marker) {
             _marker.setLatLng([lat, lon]);
-            _marker.setIcon(vesselIcon(L, cog));
+            _marker.setIcon(vesselIcon(L, cog, stale));
             _marker.setPopupContent(popup);
         } else {
-            _marker = L.marker([lat, lon], { icon: vesselIcon(L, cog) }).addTo(_map).bindPopup(popup);
+            _marker = L.marker([lat, lon], { icon: vesselIcon(L, cog, stale) }).addTo(_map).bindPopup(popup);
         }
 
         global.requestAnimationFrame(() => _map?.invalidateSize?.());
     }
 
+    function normalizeApiPayload(data, imo) {
+        if (!data || data.error === 'NO_POSITION') {
+            return { fresh: false, status: AIS_BADGE_OCEAN, imo };
+        }
+        if (typeof data.fresh === 'boolean') return data;
+        const ageMs = signalAgeMs(data.ts);
+        const fresh = data.live === true || ageMs < FRESH_MAX_AGE_MS;
+        const ageHours = Number.isFinite(ageMs) ? Math.round(ageMs / 3600000) : null;
+        if (fresh) {
+            return { ...data, imo: data.imo || imo, fresh: true };
+        }
+        const status =
+            data.status ||
+            (ageHours !== null && ageHours >= 100 ? AIS_BADGE_OCEAN : AIS_BADGE_STALE);
+        const lastVerified =
+            data.lastVerified ||
+            (Number.isFinite(data.lat) && Number.isFinite(data.lon)
+                ? { lat: data.lat, lon: data.lon, sog: data.sog, cog: data.cog, ts: data.ts }
+                : null);
+        return { imo: data.imo || imo, fresh: false, status, lastVerified };
+    }
+
     async function fetchPosition(imo, mmsi) {
         const params = new URLSearchParams({ imo });
         if (mmsi) params.set('mmsi', mmsi);
-        const urls = [`/api/vessel-ais?${params}`, `/data/fleet-ais-positions.json`];
-        for (const url of urls) {
-            try {
-                const res = await fetch(url);
-                if (!res.ok) continue;
+        try {
+            const res = await fetch(`/api/vessel-ais?${params}`);
+            if (res.ok) {
                 const data = await res.json();
-                if (url.endsWith('fleet-ais-positions.json')) {
-                    const snap = data.positions?.[imo] || data[imo];
-                    if (snap) {
-                        return { ...snap, status: 'Awaiting Transponder Beacon' };
-                    }
-                    continue;
-                }
-                return data;
-            } catch {
-                /* try fallback */
+                return normalizeApiPayload(data, imo);
             }
+        } catch {
+            /* static fallback */
         }
-        return null;
+        try {
+            const res = await fetch('/data/fleet-ais-positions.json');
+            if (!res.ok) return null;
+            const data = await res.json();
+            const snap = data.positions?.[imo] || data[imo];
+            if (!snap) return normalizeApiPayload({ error: 'NO_POSITION' }, imo);
+            return normalizeApiPayload(snap, imo);
+        } catch {
+            return null;
+        }
     }
 
     function stopPolling() {
@@ -193,6 +242,7 @@
         const title = document.getElementById('tvcVesselAisTitle');
         if (title) title.textContent = name ? `${name} — IMO ${imo}` : `IMO ${imo}`;
         setStatus('Connecting to coastal AIS stream…');
+        setNote('');
         modal.classList.remove('hidden');
         document.body.classList.add('tvc-vessel-ais-open');
 
@@ -209,19 +259,44 @@
         }
 
         const applyPayload = (payload) => {
-            if (!payload || !Number.isFinite(Number(payload.lat)) || !Number.isFinite(Number(payload.lon))) {
-                setStatus('Awaiting Transponder Beacon');
+            if (!payload) {
+                setStatus(AIS_BADGE_OCEAN);
+                setNote('No coastal AIS fix on file. Position will appear when the vessel enters AIS coverage.');
                 global.requestAnimationFrame(() => _map?.invalidateSize?.());
                 return;
             }
-            const ageMs = payload.ts ? Date.now() - new Date(payload.ts).getTime() : 0;
-            const ageHours = ageMs > 0 ? Math.round(ageMs / 3600000) : null;
-            let status = payload.status || (payload.live ? 'Coastal AIS Stream Connected' : 'Snapshot position');
-            if (ageHours !== null && !payload.live) {
-                status = `Snapshot position · ${ageHours}h old`;
+
+            if (payload.fresh) {
+                setNote('');
+                setStatus(payload.live ? 'Coastal AIS stream connected' : 'Live coastal snapshot');
+                updateMarker(
+                    L,
+                    {
+                        lat: payload.lat,
+                        lon: payload.lon,
+                        sog: payload.sog,
+                        cog: payload.cog,
+                        ts: payload.ts,
+                        destination: payload.destination,
+                        next_port: payload.next_port,
+                        imo: payload.imo,
+                    },
+                    name,
+                    { stale: false }
+                );
+                return;
             }
-            setStatus(status);
-            updateMarker(L, payload, name);
+
+            setStatus(payload.status || AIS_BADGE_STALE);
+            const last = payload.lastVerified;
+            if (last && Number.isFinite(Number(last.lat)) && Number.isFinite(Number(last.lon))) {
+                setNote(
+                    'Map shows the last verified coastal/harbor AIS fix. It is not a live open-ocean position.'
+                );
+                updateMarker(L, { ...last, imo: payload.imo }, name, { stale: true });
+            } else {
+                setNote('Awaiting the next coastal transponder signal. No verified harbor fix to plot.');
+            }
         };
 
         const payload = await fetchPosition(imo, mmsi);
@@ -237,6 +312,7 @@
         const modal = document.getElementById('tvcVesselAisModal');
         if (modal) modal.classList.add('hidden');
         document.body.classList.remove('tvc-vessel-ais-open');
+        setNote('');
         destroyMap();
     }
 
