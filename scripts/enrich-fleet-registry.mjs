@@ -10,6 +10,7 @@
  * Usage: node scripts/enrich-fleet-registry.mjs
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync, cpSync, realpathSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { digitsOnlyImo, isValidImoNumber } from './lib/imo-checksum.mjs';
@@ -25,7 +26,33 @@ function loadJson(path) {
 }
 
 function loadEnrichmentRows() {
-    return loadGeneratedEnrichmentCompactRows();
+    return [...loadGeneratedEnrichmentCompactRows(), ...loadProfileOverlayRows()];
+}
+
+function loadProfileOverlayRows() {
+    const path = join(ROOT, 'public', 'data', 'fleet', 'fleet-profiles.json');
+    const data = loadJson(path);
+    const rows = [];
+    for (const [imoKey, profile] of Object.entries(data?.vessels || {})) {
+        const imo = digitsOnlyImo(imoKey);
+        if (!isValidImoNumber(imo)) continue;
+        const exNames = (profile.ex_names || [])
+            .map((n) => String(n).trim().toUpperCase())
+            .filter(Boolean);
+        rows.push({
+            i: imo,
+            n: profile.name ? String(profile.name).trim().toUpperCase() : undefined,
+            t: profile.type,
+            d: Number(profile.dwt) || 0,
+            y: Number(profile.built_year) || 0,
+            f: profile.flag,
+            m: String(profile.technical_manager || '').trim(),
+            e: String(profile.engine_model || '').trim(),
+            s: profile.mmsi ? String(profile.mmsi).replace(/\D/g, '') : '',
+            x: exNames.length ? exNames : undefined,
+        });
+    }
+    return rows;
 }
 
 function loadSeafarerEnrichment() {
@@ -106,6 +133,10 @@ function mergeShip(base, patch) {
     if (patch.d && Number(patch.d) > 0) out.d = Number(patch.d);
     if (patch.y && Number(patch.y) > 0) out.y = Number(patch.y);
     if (patch.s && String(patch.s).trim()) out.s = String(patch.s).replace(/\D/g, '');
+    if (patch.x && Array.isArray(patch.x)) {
+        const prev = Array.isArray(out.x) ? out.x : [];
+        out.x = [...new Set([...prev, ...patch.x.map((n) => String(n).trim().toUpperCase()).filter(Boolean)])];
+    }
     return out;
 }
 
@@ -190,6 +221,8 @@ async function main() {
     } catch {
         cpSync(FLEET_DIR, devMirror, { recursive: true });
     }
+
+    spawnSync('node', ['scripts/build-fleet-exname-index.mjs'], { cwd: ROOT, stdio: 'inherit' });
 
     console.log('OK enriched chunks:', touched, 'files');
     console.log('OK new spec fields filled:', enrichedFields);

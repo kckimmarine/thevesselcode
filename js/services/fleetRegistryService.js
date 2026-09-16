@@ -1,10 +1,13 @@
 /**
  * Chunked global fleet registry — lazy index + async chunk loads.
+ * Search: IMO, current name, former names (ex-names).
  */
 (function (global) {
     'use strict';
 
     const INDEX_URL = '/data/fleet/fleet-index.json';
+    const PROFILES_URL = '/data/fleet/fleet-profiles.json';
+    const EXNAME_INDEX_URL = '/data/fleet/fleet-exname-index.json';
     const MIN_QUERY_LEN = 3;
     const DEBOUNCE_MS = 150;
     const MAX_RESULTS = 10;
@@ -20,6 +23,12 @@
     /** @type {object | null} */
     let _tokenIndex = null;
     let _tokenLoadPromise = null;
+    /** @type {object | null} */
+    let _exnameIndex = null;
+    let _exnameLoadPromise = null;
+    /** @type {object | null} */
+    let _profiles = null;
+    let _profilesLoadPromise = null;
     /** @type {Map<string, Promise<object[]>>} */
     const _chunkInflight = new Map();
     /** @type {Map<string, Promise<object>>} */
@@ -40,26 +49,84 @@
             .toLowerCase();
     }
 
+    function normalizeExNameLabel(str) {
+        return String(str || '').trim().replace(/\s+/g, ' ');
+    }
+
+    async function loadProfiles() {
+        if (_profiles) return _profiles;
+        if (_profilesLoadPromise) return _profilesLoadPromise;
+        _profilesLoadPromise = fetch(PROFILES_URL)
+            .then((res) => (res.ok ? res.json() : { vessels: {} }))
+            .catch(() => ({ vessels: {} }))
+            .then((data) => {
+                _profiles = data;
+                return data;
+            });
+        return _profilesLoadPromise;
+    }
+
+    function profileForImo(imo) {
+        return _profiles?.vessels?.[imo] || null;
+    }
+
     function expandVessel(compact) {
         if (!compact) return null;
+        const imo = compact.imo || compact.i;
+        const profile = imo ? profileForImo(imo) : null;
+        const exFromChunk = Array.isArray(compact.x) ? compact.x : [];
+        const exFromProfile = profile?.ex_names || [];
+        const exNames = [...new Set([...exFromChunk, ...exFromProfile]
+            .map((n) => String(n).trim().toUpperCase())
+            .filter(Boolean))];
+
         if (compact.imo) {
-            return { ...compact, mmsi: compact.mmsi || compact.s };
+            return {
+                ...compact,
+                mmsi: compact.mmsi || compact.s,
+                ex_names: exNames,
+                voyage: profile?.voyage || compact.voyage || null,
+            };
         }
         return {
-            imo: compact.i,
-            name: compact.n,
-            type: compact.t,
-            dwt: compact.d,
-            built_year: compact.y,
-            flag: compact.f,
-            technical_manager: compact.m,
-            engine_model: compact.e,
-            mmsi: compact.s || compact.mmsi,
+            imo,
+            name: profile?.name || compact.n,
+            type: profile?.type || compact.t,
+            dwt: profile?.dwt ?? compact.d,
+            built_year: profile?.built_year ?? compact.y,
+            flag: profile?.flag || compact.f,
+            technical_manager: profile?.technical_manager || compact.m,
+            engine_model: profile?.engine_model || compact.e,
+            mmsi: profile?.mmsi || compact.s || compact.mmsi,
+            ex_names: exNames,
+            voyage: profile?.voyage || null,
+        };
+    }
+
+    function applyProfileOverrides(vessel) {
+        if (!vessel?.imo) return vessel;
+        const profile = profileForImo(vessel.imo);
+        if (!profile) return vessel;
+        const exNames = [...new Set([...(vessel.ex_names || []), ...(profile.ex_names || [])]
+            .map((n) => String(n).trim().toUpperCase())
+            .filter(Boolean))];
+        return {
+            ...vessel,
+            name: profile.name || vessel.name,
+            type: profile.type || vessel.type,
+            dwt: profile.dwt ?? vessel.dwt,
+            built_year: profile.built_year ?? vessel.built_year,
+            flag: profile.flag || vessel.flag,
+            technical_manager: profile.technical_manager || vessel.technical_manager,
+            engine_model: profile.engine_model || vessel.engine_model,
+            mmsi: profile.mmsi || vessel.mmsi,
+            ex_names: exNames,
+            voyage: profile.voyage || vessel.voyage,
         };
     }
 
     function cacheVessel(v) {
-        const full = expandVessel(v);
+        const full = applyProfileOverrides(expandVessel(v));
         if (full?.imo) _vesselCache.set(full.imo, full);
         return full;
     }
@@ -72,8 +139,9 @@
                 if (!res.ok) throw new Error(`fleet index fetch failed: ${res.status}`);
                 return res.json();
             })
-            .then((data) => {
+            .then(async (data) => {
                 _index = data;
+                await loadProfiles();
                 return data;
             });
         return _loadIndexPromise;
@@ -110,6 +178,7 @@
     async function getVesselByImo(imo) {
         const imo7 = digitsOnly(imo);
         if (imo7.length !== 7) return null;
+        await loadProfiles();
         if (_vesselCache.has(imo7)) return _vesselCache.get(imo7);
 
         const idx = await loadIndex();
@@ -138,6 +207,19 @@
         return _tokenLoadPromise;
     }
 
+    async function loadExnameIndex() {
+        if (_exnameIndex) return _exnameIndex;
+        if (_exnameLoadPromise) return _exnameLoadPromise;
+        _exnameLoadPromise = fetch(EXNAME_INDEX_URL)
+            .then((res) => (res.ok ? res.json() : { exact: {}, tokens: {} }))
+            .catch(() => ({ exact: {}, tokens: {} }))
+            .then((data) => {
+                _exnameIndex = data;
+                return data;
+            });
+        return _exnameLoadPromise;
+    }
+
     function tokenCandidates(queryNorm) {
         const tokens = queryNorm.split(/\s+/).filter(Boolean);
         const keys = new Set();
@@ -148,33 +230,16 @@
         return [...keys];
     }
 
-    async function loadNameBucket(letter) {
-        const key = letter || '_';
-        if (_nameBucketCache.has(key)) return _nameBucketCache.get(key);
-        if (_nameInflight.has(key)) return _nameInflight.get(key);
-
-        const idx = await loadIndex();
-        const meta = idx?.nameIndex?.[key];
-        if (!meta?.file) {
-            _nameBucketCache.set(key, { items: [] });
-            return _nameBucketCache.get(key);
+    function resolveExNameMatchLabel(queryNorm, queryRaw, imo) {
+        const profile = profileForImo(imo);
+        const names = profile?.ex_names || _vesselCache.get(imo)?.ex_names || [];
+        for (const name of names) {
+            const norm = normalizeSearch(name);
+            if (norm === queryNorm || norm.includes(queryNorm) || queryNorm.includes(norm)) {
+                return normalizeExNameLabel(name);
+            }
         }
-
-        const promise = fetch(meta.file)
-            .then((res) => {
-                if (!res.ok) throw new Error(`name index ${key}: ${res.status}`);
-                return res.json();
-            })
-            .then((payload) => {
-                const bucket = { items: payload.items || [] };
-                _nameBucketCache.set(key, bucket);
-                return bucket;
-            })
-            .finally(() => {
-                _nameInflight.delete(key);
-            });
-        _nameInflight.set(key, promise);
-        return promise;
+        return normalizeExNameLabel(queryRaw);
     }
 
     function scoreMatch(queryNorm, queryImo, item, vessel) {
@@ -195,6 +260,14 @@
                     if (name.includes(tok)) score = Math.max(score, 500);
                 }
             }
+            const exNames = vessel?.ex_names || [];
+            for (const ex of exNames) {
+                const exNorm = normalizeSearch(ex);
+                if (exNorm === queryNorm) score = Math.max(score, 820);
+                else if (exNorm.includes(queryNorm) || queryNorm.includes(exNorm)) {
+                    score = Math.max(score, 760);
+                }
+            }
         }
         return score;
     }
@@ -207,9 +280,12 @@
         const cached = _searchResultCache.get(cacheKey);
         if (cached) return cached;
 
+        await loadProfiles();
         const idx = await loadIndex();
         const queryNorm = normalizeSearch(raw);
         const queryImo = digitsOnly(raw);
+
+        const matchMeta = new Map();
 
         const imoHits = [];
         if (queryImo.length >= MIN_QUERY_LEN && idx?.imo) {
@@ -217,6 +293,29 @@
                 if (!imo.startsWith(queryImo)) continue;
                 imoHits.push({ imo, partition, score: imo === queryImo ? 1000 : 900 });
                 if (imoHits.length > 40) break;
+            }
+        }
+
+        const exNameHits = [];
+        const exIndex = await loadExnameIndex();
+        const exactImo = exIndex.exact?.[queryNorm];
+        if (exactImo) {
+            exNameHits.push({
+                imo: exactImo,
+                score: 830,
+                exName: resolveExNameMatchLabel(queryNorm, raw, exactImo),
+            });
+        }
+        const exKeys = tokenCandidates(queryNorm);
+        for (const key of exKeys) {
+            const list = exIndex.tokens?.[key];
+            if (!Array.isArray(list)) continue;
+            for (const imo of list) {
+                exNameHits.push({
+                    imo,
+                    score: 780,
+                    exName: resolveExNameMatchLabel(queryNorm, raw, imo),
+                });
             }
         }
 
@@ -249,14 +348,14 @@
             }
         } else {
             for (const imo of candidateImos) {
-                let cached = _vesselCache.get(imo);
-                if (!cached) {
+                let cachedV = _vesselCache.get(imo);
+                if (!cachedV) {
                     // eslint-disable-next-line no-await-in-loop
-                    cached = await getVesselByImo(imo);
+                    cachedV = await getVesselByImo(imo);
                 }
-                const name = cached?.name || '';
+                const name = cachedV?.name || '';
                 const item = { i: imo, n: name, s: normalizeSearch(name) };
-                const score = scoreMatch(queryNorm, queryImo, item, cached);
+                const score = scoreMatch(queryNorm, queryImo, item, cachedV);
                 if (score > 0) nameHits.push({ imo, score, name });
             }
         }
@@ -267,6 +366,10 @@
         }
         for (const h of nameHits) {
             combined.set(h.imo, Math.max(combined.get(h.imo) || 0, h.score));
+        }
+        for (const h of exNameHits) {
+            combined.set(h.imo, Math.max(combined.get(h.imo) || 0, h.score));
+            if (h.exName) matchMeta.set(h.imo, h.exName);
         }
 
         const ranked = [...combined.entries()]
@@ -286,7 +389,18 @@
         for (const { imo, score } of ranked) {
             let v = _vesselCache.get(imo);
             if (!v) v = await getVesselByImo(imo);
-            if (v) vessels.push({ vessel: v, score });
+            if (!v) continue;
+            if (!matchMeta.has(imo)) {
+                const exLabel = resolveExNameMatchLabel(queryNorm, raw, imo);
+                const exNorm = normalizeSearch(exLabel);
+                if (exNorm && exNorm !== normalizeSearch(v.name) && scoreMatch(queryNorm, queryImo, { i: imo, s: exNorm }, v) >= 760) {
+                    matchMeta.set(imo, exLabel);
+                }
+            }
+            if (matchMeta.has(imo)) {
+                v = { ...v, _exNameMatch: matchMeta.get(imo) };
+            }
+            vessels.push({ vessel: v, score });
         }
 
         const results = vessels
@@ -295,6 +409,35 @@
 
         _searchResultCache.set(cacheKey, results);
         return results;
+    }
+
+    async function loadNameBucket(letter) {
+        const key = letter || '_';
+        if (_nameBucketCache.has(key)) return _nameBucketCache.get(key);
+        if (_nameInflight.has(key)) return _nameInflight.get(key);
+
+        const idx = await loadIndex();
+        const meta = idx?.nameIndex?.[key];
+        if (!meta?.file) {
+            _nameBucketCache.set(key, { items: [] });
+            return _nameBucketCache.get(key);
+        }
+
+        const promise = fetch(meta.file)
+            .then((res) => {
+                if (!res.ok) throw new Error(`name index ${key}: ${res.status}`);
+                return res.json();
+            })
+            .then((payload) => {
+                const bucket = { items: payload.items || [] };
+                _nameBucketCache.set(key, bucket);
+                return bucket;
+            })
+            .finally(() => {
+                _nameInflight.delete(key);
+            });
+        _nameInflight.set(key, promise);
+        return promise;
     }
 
     /** @type {Map<string, object[]>} */
@@ -326,6 +469,7 @@
     const api = {
         loadIndex,
         searchFleet,
+        searchVessels: searchFleet,
         debouncedSearch,
         getVesselByImo,
         expandVessel,

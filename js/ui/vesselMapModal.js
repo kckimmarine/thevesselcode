@@ -119,7 +119,8 @@
         const cog = Number(payload.cog);
         const sog = Number(payload.sog);
         const label = name || payload.name || `IMO ${payload.imo || ''}`;
-        const popup = `<strong>${label}</strong><br>Speed: ${Number.isFinite(sog) ? sog.toFixed(1) : '—'} kn<br>Course: ${Number.isFinite(cog) ? cog.toFixed(0) : '—'}°<br>Last received: ${formatTs(payload.ts)}`;
+        const dest = payload.destination || payload.next_port || '';
+        const popup = `<strong>${label}</strong><br>Speed: ${Number.isFinite(sog) ? sog.toFixed(1) : '—'} kn<br>Course: ${Number.isFinite(cog) ? cog.toFixed(0) : '—'}°${dest ? `<br>Destination: ${dest}` : ''}<br>Last received: ${formatTs(payload.ts)}`;
 
         if (_marker) {
             _marker.setLatLng([lat, lon]);
@@ -197,13 +198,29 @@
 
         const L = await loadLeaflet();
         destroyMap();
+        const mapEl = document.getElementById('live-ais-map');
+        if (mapEl) {
+            _map = L.map(mapEl, { zoomControl: true, attributionControl: true }).setView([20, 0], 2);
+            L.tileLayer(OSM_TILE, {
+                maxZoom: 18,
+                attribution: '&copy; OpenStreetMap contributors',
+            }).addTo(_map);
+            global.requestAnimationFrame(() => _map?.invalidateSize?.());
+        }
 
         const applyPayload = (payload) => {
-            if (!payload) {
+            if (!payload || !Number.isFinite(Number(payload.lat)) || !Number.isFinite(Number(payload.lon))) {
                 setStatus('Awaiting Transponder Beacon');
+                global.requestAnimationFrame(() => _map?.invalidateSize?.());
                 return;
             }
-            setStatus(payload.status || (payload.live ? 'Coastal AIS Stream Connected' : 'Awaiting Transponder Beacon'));
+            const ageMs = payload.ts ? Date.now() - new Date(payload.ts).getTime() : 0;
+            const ageHours = ageMs > 0 ? Math.round(ageMs / 3600000) : null;
+            let status = payload.status || (payload.live ? 'Coastal AIS Stream Connected' : 'Snapshot position');
+            if (ageHours !== null && !payload.live) {
+                status = `Snapshot position · ${ageHours}h old`;
+            }
+            setStatus(status);
             updateMarker(L, payload, name);
         };
 

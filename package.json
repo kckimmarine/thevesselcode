@@ -45,6 +45,7 @@
     "fleet:sync:offline": "node scripts/run-fleet-sync.mjs --offline",
     "test:enrich-fleet": "node scripts/test-enrich-fleet-registry.mjs",
     "test:global-fleet": "node scripts/test-global-fleet.mjs",
+    "test:fleet-universal-search": "node scripts/test-fleet-universal-search.mjs",
     "fetch-market-feed": "node scripts/fetch-market-feed.mjs",
     "fetch-market-feed:offline": "node scripts/fetch-market-feed.mjs --offline",
     "pipeline:all": "node scripts/pipelines/index.mjs --all",
