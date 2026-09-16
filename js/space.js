@@ -262,6 +262,7 @@ const TVC_Space = (function () {
             base.showOnlineSync = true;
             base.showAppUpdateAdmin = !!TVC_RBAC.isAdminAccount?.(user);
             base.showAppUpdateImport = true;
+            base.showCertificatesTab = true;
             return base;
         }
         if (TVC_RBAC.isSmAccount(user)) {
@@ -271,6 +272,8 @@ const TVC_Space = (function () {
             base.showDataXfer = true;
             base.showOnlineSync = true;
             base.showAppUpdateImport = true;
+            const cid = String(user.company_id || '').trim();
+            base.showCertificatesTab = TVC_RBAC.isSuperSmAccount?.(user) || cid === 'GFSM' || cid === 'SWT';
             return base;
         }
 

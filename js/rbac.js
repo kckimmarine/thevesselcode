@@ -223,6 +223,7 @@ const TVC_RBAC = (function () {
             showImportShip: false,
             showExportSm: true,
             showImportSm: true,
+            showCertificatesTab: false,
             showDefectReport: true,
             showDefectInbox: true,
             showDefectUrgentExport: false,

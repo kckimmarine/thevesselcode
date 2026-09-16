@@ -9,7 +9,7 @@
  */
 const TVC_SCHEMA = {
     DB_NAME: 'tvc_pms_v2',
-    DB_VERSION: 18, // v18: equivalent_parts (domestic MRO resilience lookup)
+    DB_VERSION: 19, // v19: sm_certificates (SM certificate dashboard seed)
     STORES: {
         meta: { keyPath: 'key' },
         users: { keyPath: 'id' },
@@ -39,6 +39,8 @@ const TVC_SCHEMA = {
         supplier_profiles: { keyPath: 'supplier_id' },
         /** Domestic / KR MRO verified equivalents — offline lookup by OEM part number */
         equivalent_parts: { keyPath: 'original_maker_pn' },
+        /** SM Mode — company / vessel certificate registry (GFSM, SWT, …) */
+        sm_certificates: { keyPath: 'id' },
     },
     INDEXES: {
         users: [{ name: 'username', keyPath: 'username', unique: true }],
@@ -170,6 +172,10 @@ const TVC_SCHEMA = {
         ],
         equivalent_parts: [
             { name: 'by_pn_norm', keyPath: 'pn_norm', unique: true },
+        ],
+        sm_certificates: [
+            { name: 'by_company', keyPath: 'company_id' },
+            { name: 'by_vessel', keyPath: 'vessel' },
         ],
     },
 };
