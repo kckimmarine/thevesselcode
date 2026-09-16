@@ -12592,3 +12592,31 @@ body.mobile-nav-open .mobile-nav-backdrop { display: block; }
         max-width: 100%;
     }
 }
+
+.sm-certs-root.sm-certs-dark {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+}
+.sm-certs-root.sm-certs-dark .sm-certs-title,
+.sm-certs-root.sm-certs-dark .sm-certs-chart-title { color: #f1f5f9; }
+.sm-certs-root.sm-certs-dark .sm-certs-stat,
+.sm-certs-root.sm-certs-dark .sm-certs-chart-card,
+.sm-certs-root.sm-certs-dark .sm-certs-date-box {
+    background: #1e293b;
+    border-color: #334155;
+}
+.sm-certs-root.sm-certs-dark .sm-certs-table th { background: #1e293b; color: #94a3b8; }
+.sm-certs-root.sm-certs-dark .sm-certs-table td { border-color: #334155; }
+.sm-certs-root.sm-certs-dark .search-input,
+.sm-certs-root.sm-certs-dark .sm-certs-date-box input {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-color: #475569;
+}
+.tab-bar-end .app-lang-toggle {
+    font-size: 0.72rem;
+    padding: 6px 10px;
+    white-space: nowrap;
+}

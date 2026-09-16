@@ -1,6 +1,6 @@
 /* GFSM / SWT certificate dashboard — IndexedDB seed + fleet rows */
 const TVC_SmCertificatesSeed = (function () {
-    const META_SEED = 'sm_certificates_seed_v1';
+    const META_SEED = 'sm_certificates_seed_v2';
     const SEED_URL = 'data/sm-certificates-gfsm.json';
 
     const FLEET_BY_COMPANY = {
@@ -12,9 +12,7 @@ const TVC_SmCertificatesSeed = (function () {
         SWT: [],
     };
 
-    function companyForVessel(vessel) {
-        const v = String(vessel || '');
-        if (v.includes('SWT')) return 'SWT';
+    function companyForVessel() {
         return 'GFSM';
     }
 
@@ -39,9 +37,22 @@ const TVC_SmCertificatesSeed = (function () {
         return null;
     }
 
+    async function migrateSwtCompanyIds() {
+        const all = await TVC_DB.getAll('sm_certificates').catch(() => []);
+        const ts = nowIso();
+        for (const r of all) {
+            if (String(r.company_id || '') === 'SWT') {
+                await TVC_DB.put('sm_certificates', { ...r, company_id: 'GFSM', updated_at: ts });
+            }
+        }
+    }
+
     async function ensureSeed() {
         const done = await TVC_DB.getMeta(META_SEED).catch(() => null);
-        if (done) return { skipped: true };
+        if (done) {
+            await migrateSwtCompanyIds();
+            return { skipped: true };
+        }
 
         const existing = await TVC_DB.getAll('sm_certificates').catch(() => []);
         if (existing.length) {
@@ -62,8 +73,8 @@ const TVC_SmCertificatesSeed = (function () {
             updated_at: ts,
         }));
         await TVC_DB.bulkPut('sm_certificates', rows);
-        const companies = new Set(rows.map(r => r.company_id));
-        for (const cid of companies) upsertFleetForCompany(cid);
+        upsertFleetForCompany('GFSM');
+        await migrateSwtCompanyIds();
         try { await TVC_DB.setMeta(META_SEED, ts); } catch (_) {}
         return { inserted: rows.length };
     }

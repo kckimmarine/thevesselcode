@@ -1319,6 +1319,7 @@ const TVC_App = (function () {
         document.getElementById('loginScreen')?.classList.add('hidden');
         document.getElementById('tvc-supplier-workspace')?.classList.add('hidden');
         document.getElementById('appShell')?.classList.remove('hidden');
+        syncUiLangButton();
     }
 
     async function openSmRfqWorkspace() {
@@ -13954,6 +13955,35 @@ const TVC_App = (function () {
         TVC_SpareMenu.deleteSpareItems(ids);
     }
 
+    function getUiLang() {
+        try {
+            const v = localStorage.getItem('tvc-mkt-lang');
+            return v === 'en' ? 'en' : 'ko';
+        } catch (_) {
+            return 'ko';
+        }
+    }
+
+    function syncUiLangButton() {
+        const btn = document.getElementById('appLangToggleBtn');
+        if (!btn) return;
+        const lang = getUiLang();
+        btn.textContent = lang === 'ko' ? '🌐 EN/KR' : '🌐 KR/EN';
+        btn.setAttribute('aria-label', lang === 'ko' ? 'Switch to English' : '한국어로 전환');
+    }
+
+    function toggleUiLang() {
+        const next = getUiLang() === 'ko' ? 'en' : 'ko';
+        try { localStorage.setItem('tvc-mkt-lang', next); } catch (_) {}
+        syncUiLangButton();
+        try {
+            window.dispatchEvent(new CustomEvent('tvc-mkt-lang', { detail: { lang: next } }));
+        } catch (_) {}
+        if (typeof TVC_SmCertificatesUi !== 'undefined' && TVC_SmCertificatesUi.applyLang) {
+            TVC_SmCertificatesUi.applyLang();
+        }
+    }
+
     function getSmCertificatesCompanyFilter() {
         if (!state.user) return '';
         if (TVC_RBAC.isSuperSmAccount?.(state.user)) {
@@ -19015,7 +19045,7 @@ const TVC_App = (function () {
     function escAttr(s) { return esc(s).replace(/'/g, '&#39;'); }
 
     return {
-        boot, switchTab, getSmCertificatesCompanyFilter,
+        boot, switchTab, toggleUiLang, syncUiLangButton, getSmCertificatesCompanyFilter,
         setDepartment, setCaptainView, setHistView, setHistTab, menuAction, openSmRfqWorkspace, resolveDeptPick,
         setFleetView, setFleetSearch, setFleetCompanyFilter, selectVessel,
         openVesselDocsModal, uploadVesselDocsAttachment, removeVesselDocsAttachment,

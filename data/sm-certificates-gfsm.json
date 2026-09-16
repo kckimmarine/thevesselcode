@@ -1,8 +1,7 @@
 {
   "version": 1,
   "companies": [
-    "GFSM",
-    "SWT"
+    "GFSM"
   ],
   "records": [
     {
@@ -343,7 +342,7 @@
       "badge": "bg-success",
       "dept": "공무팀/해사팀",
       "remarks": "-",
-      "company_id": "SWT"
+      "company_id": "GFSM"
     },
     {
       "id": "cert_jaxs7hq0n",
@@ -360,7 +359,7 @@
       "badge": "bg-success",
       "dept": "공무팀/해사팀",
       "remarks": "-",
-      "company_id": "SWT"
+      "company_id": "GFSM"
     },
     {
       "id": "cert_eh4jvl4rk",
