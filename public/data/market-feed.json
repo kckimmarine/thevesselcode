@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-16T06:06:24.794Z",
+    "generatedAt": "2026-09-16T12:05:59.700Z",
     "benchmarkAsOf": "2026-09-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -200,19 +200,172 @@
   },
   "news": [
     {
-      "title": "Maritime’s next digital leap is organisational",
-      "link": "https://splash247.com/maritimes-next-digital-leap-is-organisational/",
-      "pubDate": "Wed, 16 Sep 2026 03:00:00 +0000",
+      "title": "Accident risk concentrated across limited share of fleet, study finds",
+      "link": "https://splash247.com/accident-risk-concentrated-across-limited-share-of-fleet-study-finds/",
+      "pubDate": "Wed, 16 Sep 2026 11:00:00 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "A new study by ShipIn Systems and marine insurer NorthStandard has found that maritime accident risk is heavily concentrated within a relatively small part of the fleet. Its analysis indicates that a small group of vessels accounts for a disproportionate share of reported casualt",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/Dali10.jpeg",
+      "en": {
+        "headline": "Accident risk concentrated across limited share of fleet, study finds",
+        "summary": "A new study by ShipIn Systems and marine insurer NorthStandard has found that maritime accident risk is heavily concentrated within a relatively small part of the fleet. Its analysis indicates that a small group of vessels accounts for a disproportionate share of reported casualt",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "CMA CGM tipped for $3bn Yangzijiang megamax order",
+      "link": "https://splash247.com/cma-cgm-tipped-for-3bn-yangzijiang-megamax-order/",
+      "pubDate": "Wed, 16 Sep 2026 10:06:00 +0000",
       "source": "Splash247",
       "category": "Trade",
-      "summary": "Shipping’s resistance to digital change is often blamed on age, regulation and risk aversion. It’s more nuanced than that as this latest from our new SplashTech magazine explains. The most revealing answer to a technology question is sometimes not about technology at all. Asked w",
+      "summary": "CMA CGM has emerged as the likely liner behind plans for another dozen 24,000 teu megamax containerships at China’s Yangzijiang Shipbuilding in a programme potentially worth around $3bn, as rival Maersk is also reported to be sounding out yards for a major new round of ultra-larg",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/CMA-CGM-Notre-Dame-24000-teu.jpg",
+      "en": {
+        "headline": "CMA CGM tipped for $3bn Yangzijiang megamax order",
+        "summary": "CMA CGM has emerged as the likely liner behind plans for another dozen 24,000 teu megamax containerships at China’s Yangzijiang Shipbuilding in a programme potentially worth around $3bn, as rival Maersk is also reported to be sounding out yards for a major new round of ultra-larg",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Eni adds Halliburton to Cronos contractor lineup",
+      "link": "https://splash247.com/eni-adds-halliburton-to-cronos-contractor-lineup/",
+      "pubDate": "Wed, 16 Sep 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Houston-headquartered energy services giant Halliburton has won a bundled well construction and completions contract from Eni for the Cronos ultra-deepwater development off Cyprus. Under the contract, Halliburton will deliver integrated drilling, well construction, automation, an",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/Halliburton.jpg",
+      "en": {
+        "headline": "Eni adds Halliburton to Cronos contractor lineup",
+        "summary": "Houston-headquartered energy services giant Halliburton has won a bundled well construction and completions contract from Eni for the Cronos ultra-deepwater development off Cyprus. Under the contract, Halliburton will deliver integrated drilling, well construction, automation, an",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Wooyang lines up $430m Vale-backed newcastlemax quartet",
+      "link": "https://splash247.com/wooyang-lines-up-430m-vale-backed-newcastlemax-quartet/",
+      "pubDate": "Wed, 16 Sep 2026 09:45:00 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "South Korea’s Wooyang Shipping has ordered four newcastlemax bulk carriers at China’s New Times Shipbuilding for long-term employment with Brazilian mining giant Vale. The 210,000 dwt ships are scheduled for delivery in 2029 and 2030 and will be capable of running on ethanol, met",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2019/07/new-times-e1623911663443.jpg",
+      "en": {
+        "headline": "Wooyang lines up $430m Vale-backed newcastlemax quartet",
+        "summary": "South Korea’s Wooyang Shipping has ordered four newcastlemax bulk carriers at China’s New Times Shipbuilding for long-term employment with Brazilian mining giant Vale. The 210,000 dwt ships are scheduled for delivery in 2029 and 2030 and will be capable of running on ethanol, met",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "SGMF completes three-fuel lifecycle picture",
+      "link": "https://splash247.com/sgmf-completes-three-fuel-lifecycle-picture/",
+      "pubDate": "Wed, 16 Sep 2026 09:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Shipping’s alternative fuel debate has acquired a useful new reference point with an important fuel body completing lifecycle assessments of LNG, ammonia and now methanol — and the clearest conclusion is that the production pathway can matter as much as the molecule itself. The S",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/12/XPressMethanol.jpg",
+      "en": {
+        "headline": "SGMF completes three-fuel lifecycle picture",
+        "summary": "Shipping’s alternative fuel debate has acquired a useful new reference point with an important fuel body completing lifecycle assessments of LNG, ammonia and now methanol — and the clearest conclusion is that the production pathway can matter as much as the molecule itself. The S",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Germany opens bridge to non-EU captains",
+      "link": "https://splash247.com/germany-opens-bridge-to-non-eu-captains/",
+      "pubDate": "Wed, 16 Sep 2026 09:15:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Germany has relaxed one of the more restrictive crewing requirements among major European maritime nations, allowing non-EU nationals to serve as masters and senior officers aboard German-flagged ships. An amendment to the country’s Safe Manning Ordinance now gives owners the opt",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Containership-boxship-sun-Hamburg-Port.jpg",
+      "en": {
+        "headline": "Germany opens bridge to non-EU captains",
+        "summary": "Germany has relaxed one of the more restrictive crewing requirements among major European maritime nations, allowing non-EU nationals to serve as masters and senior officers aboard German-flagged ships. An amendment to the country’s Safe Manning Ordinance now gives owners the opt",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Hot capesize market masks cracks in Chinese steel demand",
+      "link": "https://splash247.com/hot-capesize-market-masks-cracks-in-chinese-steel-demand/",
+      "pubDate": "Wed, 16 Sep 2026 08:45:09 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "The capesize market is enjoying one of its strongest runs in years, but a growing number of shipping analysts are starting to question the health of the commodity complex underpinning it. The concern centres on China and its steel industry. Capesize earnings remain close to $50,0",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2020/07/Iron-and-Steel-Works.jpg",
+      "en": {
+        "headline": "Hot capesize market masks cracks in Chinese steel demand",
+        "summary": "The capesize market is enjoying one of its strongest runs in years, but a growing number of shipping analysts are starting to question the health of the commodity complex underpinning it. The concern centres on China and its steel industry. Capesize earnings remain close to $50,0",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Maersk overtakes COSCO to become largest intra-Asia carrier",
+      "link": "https://splash247.com/maersk-overtakes-cosco-to-become-largest-intra-asia-carrier/",
+      "pubDate": "Wed, 16 Sep 2026 08:30:04 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Maersk has overtaken COSCO to become the largest operator in the fiercely competitive intra-Asia container market, the world’s largest container trade, according to the latest fleet survey from Alphaliner. The Danish carrier had more than 340,000 teu deployed across intra-Asian s",
       "tag": "Trade",
       "tagClass": "tag-trade",
       "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2019/02/Boardroom-e1648726227850.jpg",
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/07/Maersk-Line.jpg",
       "en": {
-        "headline": "Maritime’s next digital leap is organisational",
-        "summary": "Shipping’s resistance to digital change is often blamed on age, regulation and risk aversion. It’s more nuanced than that as this latest from our new SplashTech magazine explains. The most revealing answer to a technology question is sometimes not about technology at all. Asked w",
+        "headline": "Maersk overtakes COSCO to become largest intra-Asia carrier",
+        "summary": "Maersk has overtaken COSCO to become the largest operator in the fiercely competitive intra-Asia container market, the world’s largest container trade, according to the latest fleet survey from Alphaliner. The Danish carrier had more than 340,000 teu deployed across intra-Asian s",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Hafnia cements position as Torm’s top shareholder",
+      "link": "https://splash247.com/hafnia-cements-position-as-torms-top-shareholder/",
+      "pubDate": "Wed, 16 Sep 2026 08:15:01 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Hafnia has doubled down on its investment in Torm, agreeing to spend $145.1m on another 4.5m shares in the Danish product tanker giant and lifting its holding to 18.22%. The BW Group-backed owner is paying $32.25 per Torm A share, the same price at which Oaktree-linked OCM Njord ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/09/TORM-Solution.jpeg",
+      "en": {
+        "headline": "Hafnia cements position as Torm’s top shareholder",
+        "summary": "Hafnia has doubled down on its investment in Torm, agreeing to spend $145.1m on another 4.5m shares in the Danish product tanker giant and lifting its holding to 18.22%. The BW Group-backed owner is paying $32.25 per Torm A share, the same price at which Oaktree-linked OCM Njord ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "KeelX: Make saying yes to maritime technology less risky",
+      "link": "https://splash247.com/keelx-make-saying-yes-to-maritime-technology-less-risky/",
+      "pubDate": "Wed, 16 Sep 2026 08:00:53 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "KeelX, the focus of this week’s Maritime CEO, grew out of shipowner Lemissoler’s attempt to solve its own operational frustrations: plenty of vessel data and software, but still too much manual work between identifying a problem and doing something about it. The answer was not an",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Aristos-Philis-KeelX.jpg",
+      "en": {
+        "headline": "KeelX: Make saying yes to maritime technology less risky",
+        "summary": "KeelX, the focus of this week’s Maritime CEO, grew out of shipowner Lemissoler’s attempt to solve its own operational frustrations: plenty of vessel data and software, but still too much manual work between identifying a problem and doing something about it. The answer was not an",
         "source": "Splash247"
       }
     },
@@ -225,7 +378,7 @@
       "summary": "Master Boat Builders has secured its first U.S. Navy defense shipbuilding contract as a prime shipyard, winning an agreement to build three new Landing Craft Utility vessels at its yard...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/lcu-rendering-1.jpg",
       "en": {
         "headline": "Master Boat Builders Wins First Navy Prime Contract for Landing Craft",
@@ -242,7 +395,7 @@
       "summary": "For more than a century, commercial shipping steadily moved away from sails. Now they are coming back. Across the global fleet, shipowners are installing towering rotor sails, rigid wings and...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Maersk-Container-Anemoi-Rotor-Sail-6-scaled.png.jpeg",
       "en": {
         "headline": "The Return of Sail Power: Cargo Ships Are Turning Back to the Wind",
@@ -259,7 +412,7 @@
       "summary": "Korean Register, HD Hyundai Heavy Industries, BAR Technologies and the Liberian Registry are teaming up to study the use of large wing sails on a new generation of LNG carriers.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/07/shutterstock_33324856.jpg",
       "en": {
         "headline": "WindWings Eyed for Next-Generation HD Hyundai LNG Carrier",
@@ -276,7 +429,7 @@
       "summary": "Oil prices rose by over $3 on Tuesday after shipping industry sources said oil loadings at Saudi Arabia's Red Sea port of Yanbu had been suspended, and Libya halted operations at three oil fields, heightening concerns that disruptions to key oil supply routes could persist for we",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
       "en": {
         "headline": "Oil Prices Surge as Saudi Red Sea Loadings Halt, Libya Shuts Fields",
@@ -293,7 +446,7 @@
       "summary": "The U.S. Coast Guard has awarded a $173.7 million contract to continue a major modernization of Base Seattle, including new berthing infrastructure intended to support the service’s future Polar Security...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/09/Coast-Guard-Seattle-Base-800x600.jpg",
       "en": {
         "headline": "Coast Guard Awards $173.7 Million for New Polar Cutter Berths in Seattle",
@@ -310,165 +463,12 @@
       "summary": "Russia hit petrol stations in Kyiv on Tuesday and Ukraine struck a Russian oil refinery, as the warring sides carried on with strikes on each other's energy targets despite an announcement by U.S. President Donald Trump that they had agreed to stop.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 13,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-06-03T095437Z_2144405252_RC27MLATVH4Z_RTRMADP_3_UKRAINE-CRISIS-ST-PETERSBURG-ATTACK-800x555.jpg",
       "en": {
         "headline": "Russia and Ukraine Press on With Energy Strikes Despite Trump",
         "summary": "Russia hit petrol stations in Kyiv on Tuesday and Ukraine struck a Russian oil refinery, as the warring sides carried on with strikes on each other's energy targets despite an announcement by U.S. President Donald Trump that they had agreed to stop.",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Port of Los Angeles Cargo Operations Disrupted After Containers Go Overboard",
-      "link": "https://gcaptain.com/port-of-los-angeles-cargo-operations-disrupted-after-containers-go-overboard/",
-      "pubDate": "Tue, 15 Sep 2026 15:57:42 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Three shipping containers fell from a vessel into the water at the Port of Los Angeles on Tuesday, forcing authorities to establish a safety zone while crews worked to secure...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/APL-Dublin.jpg",
-      "en": {
-        "headline": "Port of Los Angeles Cargo Operations Disrupted After Containers Go Overboard",
-        "summary": "Three shipping containers fell from a vessel into the water at the Port of Los Angeles on Tuesday, forcing authorities to establish a safety zone while crews worked to secure...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Oman Says &#8216;El Gaia&#8217; Being Towed to Port; Two Crew Missing",
-      "link": "https://gcaptain.com/oman-says-el-gaia-being-towed-to-port-two-crew-missing/",
-      "pubDate": "Tue, 15 Sep 2026 14:51:52 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Omani authorities said Tuesday that the Panama-flagged tanker&#160;El Gaia&#160;is being towed to port after a fire aboard the vessel was brought under control, while two crew members remain missing. Oman’s...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/el_gaia_bottom_extracted.jpg",
-      "en": {
-        "headline": "Oman Says &#8216;El Gaia&#8217; Being Towed to Port; Two Crew Missing",
-        "summary": "Omani authorities said Tuesday that the Panama-flagged tanker&#160;El Gaia&#160;is being towed to port after a fire aboard the vessel was brought under control, while two crew members remain missing. Oman’s...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Japan’s big three back standard 42,000 cu m CO2 carrier",
-      "link": "https://splash247.com/japans-big-three-back-standard-42000-cu-m-co2-carrier/",
-      "pubDate": "Tue, 15 Sep 2026 13:05:07 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Japan’s three largest shipowners have joined the country’s leading shipbuilders in developing a standardised 42,000 cu m liquefied CO2 carrier as Tokyo prepares for a sharp increase in carbon capture and storage shipping. NYK, MOL and K Line are working with Mitsubishi Shipbuildi",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/08/Mitsubishi.jpg",
-      "en": {
-        "headline": "Japan’s big three back standard 42,000 cu m CO2 carrier",
-        "summary": "Japan’s three largest shipowners have joined the country’s leading shipbuilders in developing a standardised 42,000 cu m liquefied CO2 carrier as Tokyo prepares for a sharp increase in carbon capture and storage shipping. NYK, MOL and K Line are working with Mitsubishi Shipbuildi",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Seoul revives long-haul crude freight subsidy",
-      "link": "https://splash247.com/seoul-revives-long-haul-crude-freight-subsidy/",
-      "pubDate": "Tue, 15 Sep 2026 13:03:09 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "South Korea is reviving subsidies for long-haul crude imports from outside the Middle East, a move that could provide another boost to tanker tonne-mile demand as Seoul seeks to lock in the diversification achieved since the Iran war began. The Ministry of Trade, Industry and Ene",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2019/05/HMM-new-logo-tanker-e1614672298449.jpg",
-      "en": {
-        "headline": "Seoul revives long-haul crude freight subsidy",
-        "summary": "South Korea is reviving subsidies for long-haul crude imports from outside the Middle East, a move that could provide another boost to tanker tonne-mile demand as Seoul seeks to lock in the diversification achieved since the Iran war began. The Ministry of Trade, Industry and Ene",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Maersk Keeps Defying Bearish Expectations as Shares Soar",
-      "link": "https://gcaptain.com/maersk-keeps-defying-bearish-expectations-as-shares-soar/",
-      "pubDate": "Tue, 15 Sep 2026 12:38:59 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A.P. Moller-Maersk A/S keeps giving analysts reasons to reconsider their bearish views on its shares. The stock has surged nearly 60% this year as a boost to freight rates from stronger demand and supply line disruptions has spurred the Danish shipping giant to upgrade its guidan",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/08/Berlin-Maersk-800x533.jpeg",
-      "en": {
-        "headline": "Maersk Keeps Defying Bearish Expectations as Shares Soar",
-        "summary": "A.P. Moller-Maersk A/S keeps giving analysts reasons to reconsider their bearish views on its shares. The stock has surged nearly 60% this year as a boost to freight rates from stronger demand and supply line disruptions has spurred the Danish shipping giant to upgrade its guidan",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Russia Accuses Danish Military Helicopters of making Dangerous Maneuvers Near Its Warships",
-      "link": "https://gcaptain.com/russia-accuses-danish-military-helicopters-of-making-dangerous-maneuvers-near-its-warships/",
-      "pubDate": "Tue, 15 Sep 2026 12:35:27 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Russia has accused Danish military helicopters of making dangerous maneuvers near its warships in the Baltic Sea and handed an official note to Copenhagen complaining about such incidents, Russia's ambassador to Denmark said on Tuesday, according to Russia's RIA state news agency",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/02/denmark-navy-RDN_F357_Thetis.jpeg",
-      "en": {
-        "headline": "Russia Accuses Danish Military Helicopters of making Dangerous Maneuvers Near Its Warships",
-        "summary": "Russia has accused Danish military helicopters of making dangerous maneuvers near its warships in the Baltic Sea and handed an official note to Copenhagen complaining about such incidents, Russia's ambassador to Denmark said on Tuesday, according to Russia's RIA state news agency",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "ADES wraps up purchase of Saipem’s Saudi drilling business",
-      "link": "https://splash247.com/ades-wraps-up-purchase-of-saipems-saudi-drilling-business/",
-      "pubDate": "Tue, 15 Sep 2026 11:08:31 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Saudi oil and gas driller ADES has completed its acquisition of Saipem’s Saudi shallow-water drilling business. The two entered into the transaction in late June. Under the deal, ADES’s indirectly owned subsidiary, ADES Saudi Limited, acquired Saudi Arabian Saipem Limited for a t",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 18,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/01/Perro-Negro-7-Saipem.jpg",
-      "en": {
-        "headline": "ADES wraps up purchase of Saipem’s Saudi drilling business",
-        "summary": "Saudi oil and gas driller ADES has completed its acquisition of Saipem’s Saudi shallow-water drilling business. The two entered into the transaction in late June. Under the deal, ADES’s indirectly owned subsidiary, ADES Saudi Limited, acquired Saudi Arabian Saipem Limited for a t",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "EU Leaders Back Finnish Push for Arctic Icebreaker Fleet",
-      "link": "https://gcaptain.com/eu-leaders-back-finnish-push-for-arctic-icebreaker-fleet/",
-      "pubDate": "Tue, 15 Sep 2026 10:55:59 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "European leaders have backed a stronger role for the European Union in the Arctic, with Finland pushing for a joint icebreaking capability as the region becomes increasingly important for commercial shipping, military mobility and competition with Russia and China.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "EU Leaders Back Finnish Push for Arctic Icebreaker Fleet",
-        "summary": "European leaders have backed a stronger role for the European Union in the Arctic, with Finland pushing for a joint icebreaking capability as the region becomes increasingly important for commercial shipping, military mobility and competition with Russia and China.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "LNG carriers to get the hybrid electric propulsion treatment",
-      "link": "https://splash247.com/lng-carriers-to-get-the-hybrid-electric-propulsion-treatment/",
-      "pubDate": "Tue, 15 Sep 2026 09:57:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Lloyd’s Register (LR), HD Korea Shipbuilding &#38; Offshore Engineering (KSOE) and HD Hyundai Heavy Industries (HHI) have teamed up to develop a new generation of LNG carriers using hybrid electric propulsion. The companies signed an approval in principle (AiP) at Gastech 2026 in",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/BW-LNG-Hyundai.jpg",
-      "en": {
-        "headline": "LNG carriers to get the hybrid electric propulsion treatment",
-        "summary": "Lloyd’s Register (LR), HD Korea Shipbuilding &#38; Offshore Engineering (KSOE) and HD Hyundai Heavy Industries (HHI) have teamed up to develop a new generation of LNG carriers using hybrid electric propulsion. The companies signed an approval in principle (AiP) at Gastech 2026 in",
-        "source": "Splash247"
       }
     }
   ]
