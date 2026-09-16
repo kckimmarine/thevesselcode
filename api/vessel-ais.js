@@ -109,7 +109,8 @@ async function fetchAisStreamPosition({ mmsi, imo, apiKey, timeoutMs = 8000 }) {
             ws.send(
                 JSON.stringify({
                     APIKey: apiKey,
-                    FiltersShipMMSI: [Number(mmsi)],
+                    BoundingBoxes: [[[-90, -180], [90, 180]]],
+                    FiltersShipMMSI: [String(mmsi)],
                     FilterMessageTypes: ['PositionReport'],
                 })
             );

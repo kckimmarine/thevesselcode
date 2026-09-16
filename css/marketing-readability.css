@@ -2386,6 +2386,61 @@ body.tvc-marketing-body .tvc-vessel-ais-map {
     background: #e2e8f0;
 }
 
+body.tvc-marketing-body .tvc-vessel-ais-map.hidden {
+    display: none;
+}
+
+body.tvc-marketing-body .tvc-vessel-ais-embed-wrap {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+body.tvc-marketing-body .tvc-vessel-ais-embed-wrap.hidden {
+    display: none;
+}
+
+body.tvc-marketing-body .tvc-vessel-ais-embed {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: min(62vh, 560px);
+    min-height: 320px;
+    border: 0;
+    background: #e2e8f0;
+}
+
+body.tvc-marketing-body .tvc-vessel-ais-embed-foot {
+    margin: 0;
+    padding: 10px 16px 14px;
+    text-align: center;
+    font-size: 0.8125rem;
+    border-top: 1px solid #e2e8f0;
+    background: #fff;
+}
+
+body.tvc-marketing-body .tvc-vessel-ais-embed-link {
+    color: #0284c7;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+body.tvc-marketing-body .tvc-vessel-ais-embed-link:hover {
+    text-decoration: underline;
+}
+
+body.tvc-marketing-body .tvc-vessel-ais-panel--map {
+    overflow-x: hidden;
+}
+
+body.tvc-marketing-body .leaflet-tooltip.tvc-ais-map-tooltip {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
+}
+
 body.tvc-marketing-body .tvc-ais-vessel-icon-wrap {
     background: transparent;
     border: 0;

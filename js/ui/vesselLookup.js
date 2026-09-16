@@ -26,9 +26,19 @@
     }
 
     function formatDwt(vessel) {
-        const n = Number(vessel.dwt ?? vessel.d);
+        const raw = vessel.dwt ?? vessel.d;
+        if (typeof raw === 'string' && raw.trim()) return raw.trim();
+        const n = Number(raw);
         if (!n) return '';
         return `${n.toLocaleString('en-US')} MT`;
+    }
+
+    function formatGt(vessel) {
+        const raw = vessel.gt ?? vessel.g;
+        if (typeof raw === 'string' && raw.trim()) return raw.trim();
+        const n = Number(raw);
+        if (!n) return '';
+        return `${n.toLocaleString('en-US')} GT`;
     }
 
     function vesselDisplay(vessel) {
@@ -41,6 +51,7 @@
             flag: vessel.flag || vessel.f,
             technical_manager: vessel.technical_manager || vessel.m,
             engine_model: vessel.engine_model || vessel.e,
+            gt: vessel.gt ?? vessel.g,
             mmsi: vessel.mmsi || vessel.s,
             exNameMatch: vessel._exNameMatch || '',
             voyage: vessel.voyage || null,
@@ -271,9 +282,11 @@
             ? `<span class="tvc-vessel-exname-badge">(Ex: ${esc(v.exNameMatch)})</span>`
             : '';
 
+        const gtText = formatGt(vessel);
         const specs = [
             specField('Technical manager', v.technical_manager),
             specField('DWT', dwtText),
+            specField('Gross tonnage', gtText),
             specField('Built year', v.built_year),
             specField('Main engine', v.engine_model, true),
         ].filter(Boolean).join('');
@@ -395,6 +408,7 @@
             }
         });
 
+        Fleet?.loadOverrides?.().catch((err) => console.warn('[VesselLookup] overrides preload', err));
         Fleet?.loadIndex?.().catch((err) => console.warn('[VesselLookup] index preload', err));
 
         const params = new URLSearchParams(global.location?.search || '');
