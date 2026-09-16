@@ -1,0 +1,98 @@
+name: Maritime ingestion cron
+
+# Market/news: every 6h. Fleet particulars: weekly Sunday 03:00 UTC.
+# Manual: Actions → Maritime ingestion cron → Run workflow (target: market | fleet | all)
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+    - cron: '0 3 * * 0'
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Pipeline target
+        required: true
+        default: all
+        type: choice
+        options:
+          - market
+          - fleet
+          - all
+
+permissions:
+  contents: write
+
+concurrency:
+  group: maritime-ingestion-cron
+  cancel-in-progress: false
+
+jobs:
+  market-feed:
+    if: >-
+      github.event_name == 'workflow_dispatch' && (inputs.target == 'market' || inputs.target == 'all') ||
+      github.event.schedule == '0 */6 * * *'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --ignore-scripts
+
+      - name: Market pipeline
+        run: npm run pipeline:market
+        continue-on-error: true
+
+      - name: Commit market artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/market-feed.json data/market-feed.json public/data/pipeline-status.json
+          if git diff --staged --quiet; then
+            echo "No market changes."
+            exit 0
+          fi
+          git commit -m "chore(ingestion): market feed sync [skip ci]"
+          git push origin HEAD:master
+
+  fleet-sync:
+    if: >-
+      github.event_name == 'workflow_dispatch' && (inputs.target == 'fleet' || inputs.target == 'all') ||
+      github.event.schedule == '0 3 * * 0'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --ignore-scripts
+
+      - name: Fleet pipeline
+        env:
+          AISSTREAM_API_KEY: ${{ secrets.AISSTREAM_API_KEY }}
+        run: npm run pipeline:fleet
+        continue-on-error: true
+
+      - name: Commit fleet artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/fleet/ public/data/pipeline-status.json
+          if git diff --staged --quiet; then
+            echo "No fleet changes."
+            exit 0
+          fi
+          git commit -m "chore(ingestion): fleet particulars sync [skip ci]"
+          git push origin HEAD:master

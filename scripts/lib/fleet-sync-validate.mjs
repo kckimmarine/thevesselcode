@@ -19,30 +19,24 @@ export function validateFleetStore(fleetDir) {
 
     const index = JSON.parse(readFileSync(indexPath, 'utf8'));
     const vesselCount = Number(index.count) || 0;
-    const chunkFiles = readdirSync(fleetDir).filter((f) => /^fleet-\d{2}\.json$/.test(f));
-    const chunkCount = chunkFiles.length;
+    const chunkCount = readdirSync(fleetDir).filter((f) => /^fleet-\d{2}\.json$/.test(f)).length;
 
-    if (vesselCount < 1000) {
-        warnings.push(`low vessel count: ${vesselCount}`);
-    }
+    if (vesselCount < 1000) warnings.push(`low vessel count: ${vesselCount}`);
 
     const imoEntries = Object.keys(index.imo || {});
     let invalidImo = 0;
     for (const imo of imoEntries.slice(0, 500)) {
         if (!isValidImoNumber(imo)) invalidImo++;
     }
-    if (invalidImo > 0) {
-        warnings.push(`sample invalid IMO checksums: ${invalidImo}`);
-    }
+    if (invalidImo > 0) warnings.push(`sample invalid IMO checksums: ${invalidImo}`);
 
-    const indexSha256 = sha256File(indexPath);
     return {
         ok: errors.length === 0,
         warnings,
         errors,
         vesselCount,
         chunkCount,
-        indexSha256,
+        indexSha256: sha256File(indexPath),
         generated: index.generated || null,
         enrichedAt: index.enrichedAt || null,
     };
