@@ -7,6 +7,7 @@
 
     const INDEX_URL = '/data/fleet/fleet-index.json';
     const PROFILES_URL = '/data/fleet/fleet-profiles.json';
+    const OVERRIDES_URL = '/data/vessel-overrides.json';
     const EXNAME_INDEX_URL = '/data/fleet/fleet-exname-index.json';
     const MIN_QUERY_LEN = 3;
     const DEBOUNCE_MS = 150;
@@ -18,9 +19,13 @@
     const SCORE_NAME_CONTAINS = 880;
     const SCORE_NAME_ALL_TOKENS = 900;
     const SCORE_SINGLE_TOKEN = 520;
+    const SCORE_OVERRIDE_BOOST = 200;
 
     /** @type {object | null} */
     let _index = null;
+    /** @type {Record<string, object> | null} */
+    let _overrides = null;
+    let _overridesLoadPromise = null;
     /** @type {Map<string, object[]>} */
     const _chunkCache = new Map();
     /** @type {Map<string, object>} */
@@ -73,6 +78,84 @@
         return _profilesLoadPromise;
     }
 
+    async function loadOverrides() {
+        if (_overrides) return _overrides;
+        if (_overridesLoadPromise) return _overridesLoadPromise;
+        _overridesLoadPromise = fetch(OVERRIDES_URL)
+            .then((res) => (res.ok ? res.json() : {}))
+            .catch(() => ({}))
+            .then((data) => {
+                _overrides = data && typeof data === 'object' ? data : {};
+                for (const [imo, row] of Object.entries(_overrides)) {
+                    const v = vesselFromOverride(imo, row);
+                    if (v?.imo) _vesselCache.set(v.imo, v);
+                }
+                return _overrides;
+            });
+        return _overridesLoadPromise;
+    }
+
+    function vesselFromOverride(imo, row) {
+        const imo7 = digitsOnly(imo);
+        if (imo7.length !== 7 || !row) return null;
+        const exNames = [...new Set((Array.isArray(row.x) ? row.x : [])
+            .map((n) => String(n).trim().toUpperCase())
+            .filter(Boolean))];
+        return {
+            imo: imo7,
+            i: imo7,
+            name: row.n || '',
+            n: row.n || '',
+            type: row.t || '',
+            t: row.t || '',
+            dwt: row.d ?? row.dwt,
+            d: row.d ?? row.dwt,
+            gt: row.g ?? row.gt,
+            g: row.g ?? row.gt,
+            built_year: row.y ?? row.built_year,
+            y: row.y ?? row.built_year,
+            flag: row.f || row.flag || '',
+            f: row.f || row.flag || '',
+            technical_manager: row.m || row.technical_manager || '',
+            m: row.m || row.technical_manager || '',
+            engine_model: row.e || row.engine_model || '',
+            e: row.e || row.engine_model || '',
+            mmsi: row.s || row.mmsi || '',
+            s: row.s || row.mmsi || '',
+            ex_names: exNames,
+            _priorityOverride: true,
+        };
+    }
+
+    function collectOverrideSearchHits(raw, queryNorm, queryImo) {
+        const hits = [];
+        const vessels = _overrides || {};
+        for (const [imo, row] of Object.entries(vessels)) {
+            const imo7 = digitsOnly(imo);
+            if (imo7.length !== 7) continue;
+            let score = 0;
+            if (queryImo.length === 7 && imo7 === queryImo) {
+                score = SCORE_IMO_EXACT + SCORE_OVERRIDE_BOOST;
+            } else if (queryImo.length >= MIN_QUERY_LEN && imo7.startsWith(queryImo)) {
+                score = 900 - (imo7.length - queryImo.length) + SCORE_OVERRIDE_BOOST;
+            }
+            const nameNorm = normalizeSearch(row.n || '');
+            if (queryNorm && nameNorm) {
+                if (nameNorm === queryNorm) score = Math.max(score, SCORE_NAME_EXACT + SCORE_OVERRIDE_BOOST);
+                else if (nameNorm.startsWith(queryNorm)) score = Math.max(score, SCORE_NAME_PREFIX + SCORE_OVERRIDE_BOOST);
+                else if (nameNorm.includes(queryNorm)) score = Math.max(score, SCORE_NAME_CONTAINS + SCORE_OVERRIDE_BOOST);
+            }
+            if (!isPureImoQuery(raw) && queryNorm) {
+                for (const ex of row.x || []) {
+                    const exNorm = normalizeSearch(ex);
+                    if (exNorm === queryNorm) score = Math.max(score, SCORE_EX_NAME_EXACT + SCORE_OVERRIDE_BOOST);
+                }
+            }
+            if (score > 0) hits.push({ imo: imo7, score });
+        }
+        return hits;
+    }
+
     function profileForImo(imo) {
         return _profiles?.vessels?.[imo] || null;
     }
@@ -112,6 +195,12 @@
 
     function applyProfileOverrides(vessel) {
         if (!vessel?.imo) return vessel;
+        const imo7 = digitsOnly(vessel.imo);
+        const ov = _overrides?.[imo7];
+        if (ov) {
+            const merged = vesselFromOverride(imo7, ov);
+            return { ...vessel, ...merged, ex_names: merged.ex_names };
+        }
         const profile = profileForImo(vessel.imo);
         if (!profile) return vessel;
         const exNames = [...new Set([...(vessel.ex_names || []), ...(profile.ex_names || [])]
@@ -185,7 +274,9 @@
     async function getVesselByImo(imo) {
         const imo7 = digitsOnly(imo);
         if (imo7.length !== 7) return null;
+        await loadOverrides();
         await loadProfiles();
+        if (_overrides?.[imo7]) return cacheVessel(vesselFromOverride(imo7, _overrides[imo7]));
         if (_vesselCache.has(imo7)) return _vesselCache.get(imo7);
 
         const idx = await loadIndex();
@@ -322,10 +413,20 @@
         const cached = _searchResultCache.get(cacheKey);
         if (cached) return cached;
 
+        await loadOverrides();
         await loadProfiles();
         const idx = await loadIndex();
         const queryNorm = normalizeSearch(raw);
         const queryImo = digitsOnly(raw);
+
+        if (queryImo.length === 7 && _overrides?.[queryImo]) {
+            const vessel = cacheVessel(vesselFromOverride(queryImo, _overrides[queryImo]));
+            const results = [vessel];
+            _searchResultCache.set(cacheKey, results);
+            return results;
+        }
+
+        const overrideHits = collectOverrideSearchHits(raw, queryNorm, queryImo);
 
         const imoHits = [];
         if (queryImo.length >= MIN_QUERY_LEN && idx?.imo) {
@@ -429,6 +530,9 @@
         for (const h of profileNameHits) {
             combined.set(h.imo, Math.max(combined.get(h.imo) || 0, h.score));
         }
+        for (const h of overrideHits) {
+            combined.set(h.imo, Math.max(combined.get(h.imo) || 0, h.score));
+        }
 
         const ranked = [...combined.entries()]
             .map(([imo, score]) => ({ imo, score }))
@@ -446,6 +550,9 @@
         const vessels = [];
         for (const { imo, score } of ranked) {
             let v = _vesselCache.get(imo);
+            if (!v && _overrides?.[imo]) {
+                v = cacheVessel(vesselFromOverride(imo, _overrides[imo]));
+            }
             if (!v) v = await getVesselByImo(imo);
             if (!v) continue;
             const exLabel = exNameMatchedByQuery(raw, v);
@@ -520,6 +627,7 @@
 
     const api = {
         loadIndex,
+        loadOverrides,
         searchFleet,
         searchVessels: searchFleet,
         debouncedSearch,

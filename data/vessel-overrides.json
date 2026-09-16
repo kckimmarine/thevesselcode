@@ -1,0 +1,68 @@
+{
+  "9297711": {
+    "n": "INCHEON CHEMI",
+    "x": ["PHOEBE"],
+    "m": "DM Maritime (대명상선)",
+    "t": "Chemical/Oil Products Tanker",
+    "d": "8,747 MT",
+    "g": "5,510 GT",
+    "y": 2003,
+    "f": "Korea",
+    "e": "MAN B&W 6S35MC"
+  },
+  "9264879": {
+    "n": "QUARTERBACK J",
+    "x": [],
+    "m": "DM Maritime (대명상선)",
+    "t": "Chemical/Oil Products Tanker",
+    "d": "8,850 MT",
+    "g": "5,350 GT",
+    "y": 2003,
+    "f": "Korea",
+    "e": "MAN B&W 6S35MC"
+  },
+  "9330410": {
+    "n": "BANGKOK CHEMI",
+    "x": [],
+    "m": "GFSM CO., LTD. (선우탱커)",
+    "t": "Chemical/Oil Products Tanker",
+    "d": "14,383 MT",
+    "g": "8,260 GT",
+    "y": 2006,
+    "f": "Korea",
+    "e": "MAN B&W"
+  },
+  "9330393": {
+    "n": "THAI CHEMI",
+    "x": [],
+    "m": "GFSM CO., LTD. (선우탱커)",
+    "t": "Chemical/Oil Products Tanker",
+    "d": "14,351 MT",
+    "g": "8,260 GT",
+    "y": 2006,
+    "f": "Marshall Islands",
+    "e": "MAN B&W"
+  },
+  "9438925": {
+    "n": "ONSAN CHEMI",
+    "x": [],
+    "m": "GFSM CO., LTD. (선우탱커)",
+    "t": "Chemical/Oil Products Tanker",
+    "d": "12,395 MT",
+    "g": "8,305 GT",
+    "y": 2009,
+    "f": "Korea",
+    "e": "MAN B&W"
+  },
+  "9438913": {
+    "n": "DAESAN CHEMI",
+    "x": [],
+    "m": "GFSM CO., LTD. (선우탱커)",
+    "t": "Chemical/Oil Products Tanker",
+    "d": "12,400 MT",
+    "g": "8,300 GT",
+    "y": 2008,
+    "f": "Korea",
+    "e": "MAN B&W"
+  }
+}

@@ -1,5 +1,5 @@
 /**
- * In-house Leaflet AIS position viewer (no third-party ad embeds).
+ * Live vessel map — Leaflet for fresh coastal AIS; VesselFinder embed fallback offshore.
  */
 (function (global) {
     'use strict';
@@ -10,13 +10,19 @@
     const FRESH_MAX_AGE_MS = 24 * 60 * 60 * 1000;
     const AIS_BADGE_STALE = '📡 Coastal Beacon Awaiting Signal / In Ocean Transit';
     const AIS_BADGE_OCEAN = 'Ocean Transit • Awaiting Coastal Signal';
+    const VESSELFINDER_EMBED = (imo) =>
+        `https://www.vesselfinder.com/embed?imo=${encodeURIComponent(imo)}&show_track=true`;
 
     let _leafletPromise = null;
     let _map = null;
     let _marker = null;
     let _pollTimer = null;
-    let _socket = null;
     let _noteEl = null;
+    let _mapEl = null;
+    let _embedWrap = null;
+    let _embedFrame = null;
+    let _embedLink = null;
+    let _activeImo = '';
 
     function loadLeaflet() {
         if (global.L) return Promise.resolve(global.L);
@@ -68,6 +74,12 @@
                 </header>
                 <p id="tvcVesselAisNote" class="tvc-vessel-ais-note hidden" role="note"></p>
                 <div id="live-ais-map" class="tvc-vessel-ais-map" role="application" aria-label="Vessel AIS map"></div>
+                <div id="tvcVesselAisEmbedWrap" class="tvc-vessel-ais-embed-wrap hidden">
+                    <iframe id="tvcVesselAisEmbed" class="tvc-vessel-ais-embed" title="Vessel track embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p class="tvc-vessel-ais-embed-foot">
+                        <a id="tvcVesselAisEmbedLink" class="tvc-vessel-ais-embed-link" href="#" target="_blank" rel="noopener noreferrer">Open full screen tracker in new tab ↗</a>
+                    </p>
+                </div>
             </div>`;
         document.body.appendChild(modal);
 
@@ -81,12 +93,19 @@
         return modal;
     }
 
-    function vesselIcon(L, cog, stale) {
+    function cacheDomRefs() {
+        _mapEl = document.getElementById('live-ais-map');
+        _embedWrap = document.getElementById('tvcVesselAisEmbedWrap');
+        _embedFrame = document.getElementById('tvcVesselAisEmbed');
+        _embedLink = document.getElementById('tvcVesselAisEmbedLink');
+        _noteEl = document.getElementById('tvcVesselAisNote');
+    }
+
+    function vesselIcon(L, cog) {
         const rotation = Number.isFinite(cog) ? cog : 0;
-        const cls = stale ? 'tvc-ais-vessel-icon tvc-ais-vessel-icon--stale' : 'tvc-ais-vessel-icon';
         return L.divIcon({
             className: 'tvc-ais-vessel-icon-wrap',
-            html: `<span class="${cls}" style="transform:rotate(${rotation}deg)">▲</span>`,
+            html: `<span class="tvc-ais-vessel-icon" style="transform:rotate(${rotation}deg)">▲</span>`,
             iconSize: [28, 28],
             iconAnchor: [14, 14],
         });
@@ -113,7 +132,7 @@
     }
 
     function setNote(text) {
-        _noteEl = _noteEl || document.getElementById('tvcVesselAisNote');
+        if (!_noteEl) cacheDomRefs();
         if (!_noteEl) return;
         if (!text) {
             _noteEl.textContent = '';
@@ -124,37 +143,66 @@
         _noteEl.classList.remove('hidden');
     }
 
-    function updateMarker(L, payload, name, { stale = false } = {}) {
+    function tooltipLabel(name, sog, cog) {
+        const sogText = Number.isFinite(sog) ? `${sog.toFixed(1)} kts` : '— kts';
+        const cogText = Number.isFinite(cog) ? `${Math.round(cog)}°` : '—°';
+        return `${name} | SOG: ${sogText} | COG: ${cogText}`;
+    }
+
+    function showLeafletView() {
+        cacheDomRefs();
+        _mapEl?.classList.remove('hidden');
+        _embedWrap?.classList.add('hidden');
+        if (_embedFrame) _embedFrame.removeAttribute('src');
+    }
+
+    function showEmbedView(imo) {
+        cacheDomRefs();
+        const url = VESSELFINDER_EMBED(imo);
+        const fullUrl = `https://www.vesselfinder.com/vessels/details/${encodeURIComponent(imo)}`;
+        _mapEl?.classList.add('hidden');
+        _embedWrap?.classList.remove('hidden');
+        if (_embedFrame) _embedFrame.src = url;
+        if (_embedLink) {
+            _embedLink.href = fullUrl;
+        }
+        global.requestAnimationFrame(() => _map?.invalidateSize?.());
+    }
+
+    function updateMarker(L, payload, name) {
         const lat = Number(payload.lat);
         const lon = Number(payload.lon);
         if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
 
-        const mapEl = document.getElementById('live-ais-map');
-        if (!_map && mapEl) {
-            _map = L.map(mapEl, { zoomControl: true, attributionControl: true }).setView([lat, lon], 8);
+        showLeafletView();
+        if (!_mapEl) return;
+
+        if (!_map) {
+            _map = L.map(_mapEl, { zoomControl: true, attributionControl: true }).setView([lat, lon], 8);
             L.tileLayer(OSM_TILE, {
                 maxZoom: 18,
                 attribution: '&copy; OpenStreetMap contributors',
             }).addTo(_map);
-        } else if (_map) {
+        } else {
             _map.setView([lat, lon], Math.max(_map.getZoom(), 7));
         }
 
         const cog = Number(payload.cog);
         const sog = Number(payload.sog);
         const label = name || payload.name || `IMO ${payload.imo || ''}`;
-        const dest = payload.destination || payload.next_port || '';
-        const liveLine = stale
-            ? 'Last verified coastal/harbor fix (not live AIS)'
-            : 'Live coastal AIS position';
-        const popup = `<strong>${label}</strong><br>${liveLine}<br>Speed: ${Number.isFinite(sog) ? sog.toFixed(1) : '—'} kn<br>Course: ${Number.isFinite(cog) ? cog.toFixed(0) : '—'}°${dest ? `<br>Destination: ${dest}` : ''}<br>Signal time: ${formatTs(payload.ts)}`;
+        const tip = tooltipLabel(label, sog, cog);
+        const popup = `<strong>${label}</strong><br>Live coastal AIS<br>Updated: ${formatTs(payload.ts)}`;
 
         if (_marker) {
             _marker.setLatLng([lat, lon]);
-            _marker.setIcon(vesselIcon(L, cog, stale));
+            _marker.setIcon(vesselIcon(L, cog));
             _marker.setPopupContent(popup);
+            _marker.setTooltipContent(tip);
         } else {
-            _marker = L.marker([lat, lon], { icon: vesselIcon(L, cog, stale) }).addTo(_map).bindPopup(popup);
+            _marker = L.marker([lat, lon], { icon: vesselIcon(L, cog) })
+                .addTo(_map)
+                .bindPopup(popup)
+                .bindTooltip(tip, { permanent: true, direction: 'top', offset: [0, -12], className: 'tvc-ais-map-tooltip' });
         }
 
         global.requestAnimationFrame(() => _map?.invalidateSize?.());
@@ -168,18 +216,13 @@
         const ageMs = signalAgeMs(data.ts);
         const fresh = data.live === true || ageMs < FRESH_MAX_AGE_MS;
         const ageHours = Number.isFinite(ageMs) ? Math.round(ageMs / 3600000) : null;
-        if (fresh) {
+        if (fresh && Number.isFinite(Number(data.lat)) && Number.isFinite(Number(data.lon))) {
             return { ...data, imo: data.imo || imo, fresh: true };
         }
         const status =
             data.status ||
             (ageHours !== null && ageHours >= 100 ? AIS_BADGE_OCEAN : AIS_BADGE_STALE);
-        const lastVerified =
-            data.lastVerified ||
-            (Number.isFinite(data.lat) && Number.isFinite(data.lon)
-                ? { lat: data.lat, lon: data.lon, sog: data.sog, cog: data.cog, ts: data.ts }
-                : null);
-        return { imo: data.imo || imo, fresh: false, status, lastVerified };
+        return { imo: data.imo || imo, fresh: false, status, lastVerified: data.lastVerified };
     }
 
     async function fetchPosition(imo, mmsi) {
@@ -211,14 +254,6 @@
             clearInterval(_pollTimer);
             _pollTimer = null;
         }
-        if (_socket) {
-            try {
-                _socket.close();
-            } catch {
-                /* ignore */
-            }
-            _socket = null;
-        }
     }
 
     function destroyMap() {
@@ -228,8 +263,34 @@
             _map = null;
         }
         _marker = null;
-        const mapEl = document.getElementById('live-ais-map');
-        if (mapEl) mapEl.innerHTML = '';
+        if (_mapEl) _mapEl.innerHTML = '';
+    }
+
+    function applyPayload(L, payload, name, imo) {
+        if (payload?.fresh && Number.isFinite(Number(payload.lat)) && Number.isFinite(Number(payload.lon))) {
+            setNote('');
+            setStatus(payload.live ? 'Coastal AIS stream connected' : 'Live coastal snapshot (< 24 h)');
+            updateMarker(
+                L,
+                {
+                    lat: payload.lat,
+                    lon: payload.lon,
+                    sog: payload.sog,
+                    cog: payload.cog,
+                    ts: payload.ts,
+                    imo: payload.imo || imo,
+                },
+                name
+            );
+            return;
+        }
+
+        setStatus(payload?.status || AIS_BADGE_OCEAN);
+        setNote(
+            'No coastal AIS fix within the last 24 hours. Showing third-party track embed (may include provider branding).'
+        );
+        destroyMap();
+        showEmbedView(imo);
     }
 
     async function open(options) {
@@ -238,19 +299,21 @@
         const mmsi = String(options?.mmsi || '').replace(/\D/g, '');
         if (imo.length !== 7) return;
 
+        _activeImo = imo;
         const modal = ensureModal();
+        cacheDomRefs();
         const title = document.getElementById('tvcVesselAisTitle');
         if (title) title.textContent = name ? `${name} — IMO ${imo}` : `IMO ${imo}`;
         setStatus('Connecting to coastal AIS stream…');
         setNote('');
+        showLeafletView();
         modal.classList.remove('hidden');
         document.body.classList.add('tvc-vessel-ais-open');
 
         const L = await loadLeaflet();
         destroyMap();
-        const mapEl = document.getElementById('live-ais-map');
-        if (mapEl) {
-            _map = L.map(mapEl, { zoomControl: true, attributionControl: true }).setView([20, 0], 2);
+        if (_mapEl) {
+            _map = L.map(_mapEl, { zoomControl: true, attributionControl: true }).setView([20, 0], 2);
             L.tileLayer(OSM_TILE, {
                 maxZoom: 18,
                 attribution: '&copy; OpenStreetMap contributors',
@@ -258,62 +321,28 @@
             global.requestAnimationFrame(() => _map?.invalidateSize?.());
         }
 
-        const applyPayload = (payload) => {
-            if (!payload) {
-                setStatus(AIS_BADGE_OCEAN);
-                setNote('No coastal AIS fix on file. Position will appear when the vessel enters AIS coverage.');
-                global.requestAnimationFrame(() => _map?.invalidateSize?.());
-                return;
-            }
-
-            if (payload.fresh) {
-                setNote('');
-                setStatus(payload.live ? 'Coastal AIS stream connected' : 'Live coastal snapshot');
-                updateMarker(
-                    L,
-                    {
-                        lat: payload.lat,
-                        lon: payload.lon,
-                        sog: payload.sog,
-                        cog: payload.cog,
-                        ts: payload.ts,
-                        destination: payload.destination,
-                        next_port: payload.next_port,
-                        imo: payload.imo,
-                    },
-                    name,
-                    { stale: false }
-                );
-                return;
-            }
-
-            setStatus(payload.status || AIS_BADGE_STALE);
-            const last = payload.lastVerified;
-            if (last && Number.isFinite(Number(last.lat)) && Number.isFinite(Number(last.lon))) {
-                setNote(
-                    'Map shows the last verified coastal/harbor AIS fix. It is not a live open-ocean position.'
-                );
-                updateMarker(L, { ...last, imo: payload.imo }, name, { stale: true });
-            } else {
-                setNote('Awaiting the next coastal transponder signal. No verified harbor fix to plot.');
-            }
-        };
-
         const payload = await fetchPosition(imo, mmsi);
-        applyPayload(payload);
+        applyPayload(L, payload, name, imo);
 
+        stopPolling();
         _pollTimer = setInterval(async () => {
+            if (_activeImo !== imo) return;
             const next = await fetchPosition(imo, mmsi);
-            applyPayload(next);
+            applyPayload(L, next, name, imo);
         }, 30000);
     }
 
     function close() {
+        _activeImo = '';
         const modal = document.getElementById('tvcVesselAisModal');
         if (modal) modal.classList.add('hidden');
         document.body.classList.remove('tvc-vessel-ais-open');
         setNote('');
         destroyMap();
+        cacheDomRefs();
+        if (_embedFrame) _embedFrame.removeAttribute('src');
+        _embedWrap?.classList.add('hidden');
+        _mapEl?.classList.remove('hidden');
     }
 
     global.TVC_VesselMapModal = { open, close, loadLeaflet };
