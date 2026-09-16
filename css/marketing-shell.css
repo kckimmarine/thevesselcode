@@ -231,14 +231,16 @@ body.mkt-toolkit-page #marketing-footer .home-footer {
         box-sizing: border-box;
     }
 
+    /* Natural document scroll — hero/modules sit above tab panels */
     body.mkt-toolkit-page .mkt-site-wrap {
-        height: 100dvh;
-        max-height: 100dvh;
-        overflow: hidden;
+        min-height: 100dvh;
+        height: auto;
+        max-height: none;
+        overflow: visible;
     }
 
     body.mkt-toolkit-page .store-public-shell {
-        flex: 1;
+        flex: 1 1 auto;
         min-height: 0;
         height: auto;
         max-height: none;
