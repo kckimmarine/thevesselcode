@@ -599,8 +599,8 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
 .store-public-mode #impaTableContainer,
 .store-public-mode #catalog-table-wrapper,
 .store-public-mode #storeVlWrap {
-    flex: 1;
-    min-height: 280px;
+    flex: 0 0 auto;
+    min-height: 0;
     --impa-row-h: 44px;
     --impa-head-h: 40px;
     --impa-visible-rows: 25;
@@ -618,21 +618,24 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
 .store-public-mode #impaTableContainer .store-vl-scroll,
 .store-public-mode .store-vl-scroll {
     max-height: calc(100dvh - 280px);
-    min-height: 240px;
 }
 
 @media (min-width: 769px) {
     .store-public-mode #impaTableContainer.store-table-wrapper .store-vl-scroll {
-        min-height: calc(var(--impa-visible-rows, 25) * var(--impa-row-h, 44px));
+        height: calc(var(--impa-visible-rows, 25) * var(--impa-row-h, 44px));
+        min-height: 0;
         max-height: min(
             calc(100dvh - 280px),
-            calc(var(--impa-page-size, 25) * var(--impa-row-h, 44px) + var(--impa-head-h, 40px))
+            calc(var(--impa-visible-rows, 25) * var(--impa-row-h, 44px))
         );
         overflow-y: auto;
+        flex: 0 0 auto;
     }
 
     .store-public-mode #impaTableContainer.store-table-wrapper .store-catalog-hscroll {
-        min-height: calc(var(--impa-visible-rows, 25) * var(--impa-row-h, 44px) + var(--impa-head-h, 40px));
+        flex: 0 0 auto;
+        min-height: 0;
+        height: auto;
     }
 }
 
@@ -1098,14 +1101,15 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     }
 }
 
-/* IMPA catalog — 13-item pagination (Maritime Toolkit) */
+/* IMPA catalog — paginated rows (25 default, Maritime Toolkit) */
 .store-public-main .impa-pagination {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 6px;
-    margin: 16px 16px 24px;
+    margin: 10px 16px 12px;
+    flex-shrink: 0;
 }
 
 .store-public-main .impa-pagination.hidden {
