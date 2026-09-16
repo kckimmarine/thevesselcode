@@ -899,22 +899,8 @@ const TVC_MaritimeToolkit = (function () {
     }
 
     function renderConversionBanner() {
-        const existing = document.getElementById('toolkitFooterConversionBand');
-        if (existing) return existing;
-        const shell = document.querySelector('.store-public-shell') || document.querySelector('.home-shell');
-        if (!shell) return null;
-        const band = document.createElement('section');
-        band.id = 'toolkitFooterConversionBand';
-        band.className = 'toolkit-conversion-band mkt-glass-card';
-        band.setAttribute('aria-label', 'TVC-SM upgrade');
-        band.innerHTML = `
-            <p data-i18n="tk.conversion.banner">ROB tracking and superintendent requisitions are operated in TVC-SM Fleet.</p>
-            <a class="home-btn home-btn-primary" href="/contact-us?inquiry=tvc-sm-demo" data-i18n="tk.conversion.cta">Request TVC-SM Demo</a>`;
-        const footer = document.getElementById('marketing-footer');
-        if (footer) shell.insertBefore(band, footer);
-        else shell.appendChild(band);
-        globalThis.TVC_MarketingI18n?.applyLang?.(globalThis.TVC_MarketingI18n.getLang());
-        return band;
+        document.getElementById('toolkitFooterConversionBand')?.remove();
+        return null;
     }
 
     let _engSearchHighlightId = null;
