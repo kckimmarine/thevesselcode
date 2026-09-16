@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "updated": "2026-09-16T04:52:56.753Z",
+  "updated": "2026-09-16T05:03:53.844Z",
   "positions": {
     "9297711": {
       "imo": "9297711",
@@ -22,6 +22,21 @@
       "sog": 8.6,
       "cog": 248.7,
       "ts": "2026-09-03T00:05:00Z",
+      "source": "coastal-ais-verified"
+    },
+    "9418303": {
+      "imo": "9418303",
+      "mmsi": "440701000",
+      "name": "BANGKOK CHEMI",
+      "lat": 18.7533,
+      "lon": 72.5233,
+      "sog": 12.3,
+      "cog": 185,
+      "ts": "2026-09-16T02:30:00Z",
+      "destination": "IN BPT / SINGAPORE",
+      "last_port": "SG SIN",
+      "next_port": "IN BPT",
+      "eta": "2026-09-21T04:00:00Z",
       "source": "coastal-ais-verified"
     }
   }
