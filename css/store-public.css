@@ -667,9 +667,11 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
 @media screen and (max-width: 768px) {
     html.store-public-mode,
     html:has(.store-public-body),
+    html:has(body.mkt-toolkit-page),
     html {
         overscroll-behavior-y: contain;
         background-color: #f8fafc;
+        height: auto;
         min-height: 100dvh;
         overflow-x: hidden;
     }
