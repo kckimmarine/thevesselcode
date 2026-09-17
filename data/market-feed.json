@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-16T18:05:59.932Z",
+    "generatedAt": "2026-09-17T00:06:23.016Z",
     "benchmarkAsOf": "2026-09-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -200,6 +200,125 @@
   },
   "news": [
     {
+      "title": "Exclusive: China Sends Key Arctic LNG 2 Modules to Russia to Complete Train 2",
+      "link": "https://gcaptain.com/exclusive-china-sends-key-arctic-lng-2-modules-to-russia-to-complete-train-2/",
+      "pubDate": "Wed, 16 Sep 2026 23:17:44 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Two U.S.-sanctioned heavy-lift vessels are carrying critical power-generation modules from China toward Russia’s Arctic LNG 2 project, according to satellite imagery and vessel-tracking data. The shipment is the latest sign that supply chains supporting the sanctioned liquefied n",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Glory-carrying-PGM-001-in-2024-800x446.jpg",
+      "en": {
+        "headline": "Exclusive: China Sends Key Arctic LNG 2 Modules to Russia to Complete Train 2",
+        "summary": "Two U.S.-sanctioned heavy-lift vessels are carrying critical power-generation modules from China toward Russia’s Arctic LNG 2 project, according to satellite imagery and vessel-tracking data. The shipment is the latest sign that supply chains supporting the sanctioned liquefied n",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "From Dali to Titan, NTSB Finds the Same Safety Problems Repeating",
+      "link": "https://gcaptain.com/from-dali-to-titan-ntsb-finds-the-same-safety-problems-repeating/",
+      "pubDate": "Wed, 16 Sep 2026 23:02:34 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Dali bridge collapse, the implosion of the Titan submersible and the deadly fire aboard the Grande Costa D’Avorio are among 49 marine casualties highlighted in the National Transportation Safety Board’s latest review of accidents...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/05/Dali-Baltimore.jpeg",
+      "en": {
+        "headline": "From Dali to Titan, NTSB Finds the Same Safety Problems Repeating",
+        "summary": "The Dali bridge collapse, the implosion of the Titan submersible and the deadly fire aboard the Grande Costa D’Avorio are among 49 marine casualties highlighted in the National Transportation Safety Board’s latest review of accidents...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "U.S. Tracks Cyber Threats Against Nearly 20 Ships Worldwide",
+      "link": "https://gcaptain.com/u-s-tracks-cyber-threats-against-nearly-20-ships-worldwide/",
+      "pubDate": "Wed, 16 Sep 2026 22:49:32 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "US government agencies are tracking cyber threats against nearly 20 shipping vessels around the world, according to US officials familiar with the situation.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/02/port_state_control_inspection.jpg",
+      "en": {
+        "headline": "U.S. Tracks Cyber Threats Against Nearly 20 Ships Worldwide",
+        "summary": "US government agencies are tracking cyber threats against nearly 20 shipping vessels around the world, according to US officials familiar with the situation.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Container Shipping Returns to Suez Despite Rising Red Sea Risks",
+      "link": "https://gcaptain.com/container-shipping-returns-to-suez-despite-rising-red-sea-risks/",
+      "pubDate": "Wed, 16 Sep 2026 21:51:10 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Container carriers are accelerating their return to the Suez Canal, with COSCO’s OOCL Portugal making a milestone transit even as Houthi advances around Bab el-Mandeb raise fresh security concerns.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/OOCL-Portugal-Suez-Canal-800x545.jpg",
+      "en": {
+        "headline": "Container Shipping Returns to Suez Despite Rising Red Sea Risks",
+        "summary": "Container carriers are accelerating their return to the Suez Canal, with COSCO’s OOCL Portugal making a milestone transit even as Houthi advances around Bab el-Mandeb raise fresh security concerns.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Maersk Said to Be Lining Up Massive Containership Order",
+      "link": "https://gcaptain.com/maersk-said-to-be-lining-up-massive-containership-order/",
+      "pubDate": "Wed, 16 Sep 2026 20:17:14 +0000",
+      "source": "gCaptain",
+      "category": "S&P",
+      "summary": "Rumours are gaining ground in shipbroking circles that Maersk is on the verge of making a series of huge new orders for vessels, potentially doubling its newbuilding pipeline.",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/12/shutterstock_1085874656.jpg",
+      "en": {
+        "headline": "Maersk Said to Be Lining Up Massive Containership Order",
+        "summary": "Rumours are gaining ground in shipbroking circles that Maersk is on the verge of making a series of huge new orders for vessels, potentially doubling its newbuilding pipeline.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Study Finds 29% of Ships Account for Nearly 70% of Maritime Accidents",
+      "link": "https://gcaptain.com/study-finds-29-of-ships-account-for-nearly-70-of-maritime-accidents/",
+      "pubDate": "Wed, 16 Sep 2026 19:56:50 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A relatively small share of ships accounts for most reported maritime accidents, according to new research that suggests operational warning signs can often be detected before an incident occurs. The...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/06/250603-G-G0217-5148.jpg",
+      "en": {
+        "headline": "Study Finds 29% of Ships Account for Nearly 70% of Maritime Accidents",
+        "summary": "A relatively small share of ships accounts for most reported maritime accidents, according to new research that suggests operational warning signs can often be detected before an incident occurs. The...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "USCG Icebreaker ‘Healy’ Will Not Complete Summer Arctic Mission, Coast Guard Says",
+      "link": "https://gcaptain.com/uscg-icebreaker-healy-will-not-complete-summer-arctic-mission-coast-guard-says/",
+      "pubDate": "Wed, 16 Sep 2026 19:02:40 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The U.S. Coast Guard’s icebreaker Healy will not carry out its planned high-latitude Arctic mission this summer following a serious engineering casualty in July, a spokesperson said. The statement provides the clearest indication yet of the impact of the incident on the Coast Gua",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/Vigor-Healy-Leaving-Vigor-July-6.png",
+      "en": {
+        "headline": "USCG Icebreaker ‘Healy’ Will Not Complete Summer Arctic Mission, Coast Guard Says",
+        "summary": "The U.S. Coast Guard’s icebreaker Healy will not carry out its planned high-latitude Arctic mission this summer following a serious engineering casualty in July, a spokesperson said. The statement provides the clearest indication yet of the impact of the incident on the Coast Gua",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "One in Ten Inspected Cargo Units Found With Safety Deficiencies",
       "link": "https://gcaptain.com/one-in-ten-inspected-cargo-units-found-with-safety-deficiencies/",
       "pubDate": "Wed, 16 Sep 2026 17:16:00 +0000",
@@ -208,7 +327,7 @@
       "summary": "More than one in ten cargo units inspected by government authorities last year were found with safety deficiencies, highlighting a persistent problem with how containers are declared, packed and secured...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/10/2021-10-25T215410Z_1496490882_RC25HQ9WC65L_RTRMADP_3_CANADA-SHIP-2-800x600.jpg",
       "en": {
         "headline": "One in Ten Inspected Cargo Units Found With Safety Deficiencies",
@@ -225,7 +344,7 @@
       "summary": "South Korea’s PanStar Group plans to expand Arctic container voyages from next year after completing a trial run to Europe in about 20 days, betting that a seasonal service focused on high-value cargo can compete with larger Chinese operators.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/panstar-high-resolution.png",
       "en": {
         "headline": "South Korean Carrier Bets on 20-Day Arctic Route to Europe",
@@ -242,7 +361,7 @@
       "summary": "Saudi Arabia is ramping up prompt sales of crude from outside the Strait of Hormuz following the shutdown of the kingdom’s East-West pipeline, which halted cross-country flows to its Red Sea coast.",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-17T090005Z_1613291998_RC2O7T9GRYMB_RTRMADP_3_SYRIA-IRAQ-PIPELINE-800x533.jpg",
       "en": {
         "headline": "Saudis Pivot to Send More Oil Via Hormuz After Pipeline Shut",
@@ -259,8 +378,8 @@
       "summary": "U.S. officials met representatives of Yemen's Houthis in Oman over the weekend, five sources familiar with the matter said, days after the Iran-backed militia seized a strategic stretch of the Red Sea coast in a sweeping offensive that routed Saudi-backed forces.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/03/2024-03-22T145637Z_1234727169_RC20R6AWEMRV_RTRMADP_3_ISRAEL-PALESTINIANS-PROTESTS-YEMEN-800x533.jpg",
+      "hoursAgo": 7,
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "U.S. Held Secret Talks With Houthis After Red Sea Offensive, Reuters Reports",
         "summary": "U.S. officials met representatives of Yemen's Houthis in Oman over the weekend, five sources familiar with the matter said, days after the Iran-backed militia seized a strategic stretch of the Red Sea coast in a sweeping offensive that routed Saudi-backed forces.",
@@ -276,45 +395,11 @@
       "summary": "A U.S.-contracted vessel carrying American personnel was struck in an Iranian drone and missile attack near the Strait of Hormuz earlier this week, Fox News reported Wednesday, citing two sources...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T134318Z_693026131_RC2N1MAQSWKP_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x524.jpg",
+      "hoursAgo": 8,
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Fox News: Iran Attack Hits U.S.-Contracted Ship Carrying American Personnel",
         "summary": "A U.S.-contracted vessel carrying American personnel was struck in an Iranian drone and missile attack near the Strait of Hormuz earlier this week, Fox News reported Wednesday, citing two sources...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Strait of Hormuz Ship Crossings Remain in Single Digits, Data Shows",
-      "link": "https://gcaptain.com/strait-of-hormuz-ship-crossings-remain-in-single-digits-data-shows/",
-      "pubDate": "Wed, 16 Sep 2026 13:08:53 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Vessel transits through the Strait of Hormuz remained in the single digits at four on Tuesday, down from seven a day earlier, preliminary shipping data showed on Wednesday, falling well short of the 10-day average of 18.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-22T162551Z_463917612_RC2M3LATB1OL_RTRMADP_3_IRAN-CRISIS-EMIRATES-DP-WORLD-800x533.jpg",
-      "en": {
-        "headline": "Strait of Hormuz Ship Crossings Remain in Single Digits, Data Shows",
-        "summary": "Vessel transits through the Strait of Hormuz remained in the single digits at four on Tuesday, down from seven a day earlier, preliminary shipping data showed on Wednesday, falling well short of the 10-day average of 18.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "US Coast Guard and FBI Conduct Cyberattack Probes on Tankers",
-      "link": "https://gcaptain.com/us-coast-guard-and-fbi-conduct-cyberattack-probes-on-tankers/",
-      "pubDate": "Wed, 16 Sep 2026 13:04:42 +0000",
-      "source": "gCaptain",
-      "category": "Bunker",
-      "summary": "The US is investigating potential cyberattacks on oil and gas tankers, as concerns grow around the threat to maritime safety posed by hackers interfering with vessels’ electronic systems.",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 5,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/G-EH9LGXUAA3k85-800x533.png",
-      "en": {
-        "headline": "US Coast Guard and FBI Conduct Cyberattack Probes on Tankers",
-        "summary": "The US is investigating potential cyberattacks on oil and gas tankers, as concerns grow around the threat to maritime safety posed by hackers interfering with vessels’ electronic systems.",
         "source": "gCaptain"
       }
     },
@@ -327,7 +412,7 @@
       "summary": "A new study by ShipIn Systems and marine insurer NorthStandard has found that maritime accident risk is heavily concentrated within a relatively small part of the fleet. Its analysis indicates that a small group of vessels accounts for a disproportionate share of reported casualt",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 7,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/Dali10.jpeg",
       "en": {
         "headline": "Accident risk concentrated across limited share of fleet, study finds",
@@ -344,7 +429,7 @@
       "summary": "CMA CGM has emerged as the likely liner behind plans for another dozen 24,000 teu megamax containerships at China’s Yangzijiang Shipbuilding in a programme potentially worth around $3bn, as rival Maersk is also reported to be sounding out yards for a major new round of ultra-larg",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/CMA-CGM-Notre-Dame-24000-teu.jpg",
       "en": {
         "headline": "CMA CGM tipped for $3bn Yangzijiang megamax order",
@@ -361,7 +446,7 @@
       "summary": "Houston-headquartered energy services giant Halliburton has won a bundled well construction and completions contract from Eni for the Cronos ultra-deepwater development off Cyprus. Under the contract, Halliburton will deliver integrated drilling, well construction, automation, an",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/Halliburton.jpg",
       "en": {
         "headline": "Eni adds Halliburton to Cronos contractor lineup",
@@ -378,96 +463,11 @@
       "summary": "South Korea’s Wooyang Shipping has ordered four newcastlemax bulk carriers at China’s New Times Shipbuilding for long-term employment with Brazilian mining giant Vale. The 210,000 dwt ships are scheduled for delivery in 2029 and 2030 and will be capable of running on ethanol, met",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2019/07/new-times-e1623911663443.jpg",
       "en": {
         "headline": "Wooyang lines up $430m Vale-backed newcastlemax quartet",
         "summary": "South Korea’s Wooyang Shipping has ordered four newcastlemax bulk carriers at China’s New Times Shipbuilding for long-term employment with Brazilian mining giant Vale. The 210,000 dwt ships are scheduled for delivery in 2029 and 2030 and will be capable of running on ethanol, met",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "SGMF completes three-fuel lifecycle picture",
-      "link": "https://splash247.com/sgmf-completes-three-fuel-lifecycle-picture/",
-      "pubDate": "Wed, 16 Sep 2026 09:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Shipping’s alternative fuel debate has acquired a useful new reference point with an important fuel body completing lifecycle assessments of LNG, ammonia and now methanol — and the clearest conclusion is that the production pathway can matter as much as the molecule itself. The S",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/12/XPressMethanol.jpg",
-      "en": {
-        "headline": "SGMF completes three-fuel lifecycle picture",
-        "summary": "Shipping’s alternative fuel debate has acquired a useful new reference point with an important fuel body completing lifecycle assessments of LNG, ammonia and now methanol — and the clearest conclusion is that the production pathway can matter as much as the molecule itself. The S",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Germany opens bridge to non-EU captains",
-      "link": "https://splash247.com/germany-opens-bridge-to-non-eu-captains/",
-      "pubDate": "Wed, 16 Sep 2026 09:15:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Germany has relaxed one of the more restrictive crewing requirements among major European maritime nations, allowing non-EU nationals to serve as masters and senior officers aboard German-flagged ships. An amendment to the country’s Safe Manning Ordinance now gives owners the opt",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Containership-boxship-sun-Hamburg-Port.jpg",
-      "en": {
-        "headline": "Germany opens bridge to non-EU captains",
-        "summary": "Germany has relaxed one of the more restrictive crewing requirements among major European maritime nations, allowing non-EU nationals to serve as masters and senior officers aboard German-flagged ships. An amendment to the country’s Safe Manning Ordinance now gives owners the opt",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Hot capesize market masks cracks in Chinese steel demand",
-      "link": "https://splash247.com/hot-capesize-market-masks-cracks-in-chinese-steel-demand/",
-      "pubDate": "Wed, 16 Sep 2026 08:45:09 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "The capesize market is enjoying one of its strongest runs in years, but a growing number of shipping analysts are starting to question the health of the commodity complex underpinning it. The concern centres on China and its steel industry. Capesize earnings remain close to $50,0",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2020/07/Iron-and-Steel-Works.jpg",
-      "en": {
-        "headline": "Hot capesize market masks cracks in Chinese steel demand",
-        "summary": "The capesize market is enjoying one of its strongest runs in years, but a growing number of shipping analysts are starting to question the health of the commodity complex underpinning it. The concern centres on China and its steel industry. Capesize earnings remain close to $50,0",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Maersk overtakes COSCO to become largest intra-Asia carrier",
-      "link": "https://splash247.com/maersk-overtakes-cosco-to-become-largest-intra-asia-carrier/",
-      "pubDate": "Wed, 16 Sep 2026 08:30:04 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Maersk has overtaken COSCO to become the largest operator in the fiercely competitive intra-Asia container market, the world’s largest container trade, according to the latest fleet survey from Alphaliner. The Danish carrier had more than 340,000 teu deployed across intra-Asian s",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/07/Maersk-Line.jpg",
-      "en": {
-        "headline": "Maersk overtakes COSCO to become largest intra-Asia carrier",
-        "summary": "Maersk has overtaken COSCO to become the largest operator in the fiercely competitive intra-Asia container market, the world’s largest container trade, according to the latest fleet survey from Alphaliner. The Danish carrier had more than 340,000 teu deployed across intra-Asian s",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Hafnia cements position as Torm’s top shareholder",
-      "link": "https://splash247.com/hafnia-cements-position-as-torms-top-shareholder/",
-      "pubDate": "Wed, 16 Sep 2026 08:15:01 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Hafnia has doubled down on its investment in Torm, agreeing to spend $145.1m on another 4.5m shares in the Danish product tanker giant and lifting its holding to 18.22%. The BW Group-backed owner is paying $32.25 per Torm A share, the same price at which Oaktree-linked OCM Njord ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/09/TORM-Solution.jpeg",
-      "en": {
-        "headline": "Hafnia cements position as Torm’s top shareholder",
-        "summary": "Hafnia has doubled down on its investment in Torm, agreeing to spend $145.1m on another 4.5m shares in the Danish product tanker giant and lifting its holding to 18.22%. The BW Group-backed owner is paying $32.25 per Torm A share, the same price at which Oaktree-linked OCM Njord ",
         "source": "Splash247"
       }
     }
