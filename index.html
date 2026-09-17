@@ -216,8 +216,13 @@
                     </div>
                 </div>
                 <div class="menu-main-col" id="menuMainCol">
-                    <div class="cmaxs-cards" id="cmaxsCards"></div>
-                    <div id="outstandingTasksPanel" class="outstanding-tasks-host"></div>
+                    <div class="menu-dashboard-grid menu-dashboard-container">
+                        <div class="cmaxs-cards menu-col-cards" id="cmaxsCards"></div>
+                        <div id="outstandingTasksAuxPanel" class="outstanding-tasks-aux-host menu-col-center" aria-live="polite"></div>
+                        <div id="pmsOutstandingCard" class="menu-col-right dashboard-card">
+                            <div id="outstandingTasksPanel" class="outstanding-tasks-host"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
