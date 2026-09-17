@@ -117,9 +117,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 16px;
     width: 100%;
     max-width: 440px;
     padding: 24px 0;
+    box-sizing: border-box;
 }
 
 .login-card {
@@ -425,8 +427,12 @@ body {
     text-align: center;
 }
 .login-site-link-wrap.login-site-link-below {
-    margin-top: 16px;
-    margin-bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-self: stretch;
 }
 .login-site-link.text-xs { font-size: 12px; }
 .login-site-link.text-slate-400 { color: rgba(148, 163, 184, 0.95); }
@@ -557,15 +563,16 @@ body {
 .cmaxs-body.menu-dashboard-grid,
 .cmaxs-body.menu-dashboard-container {
     display: grid;
-    grid-template-columns: 1.1fr 1.35fr 1.15fr;
-    gap: 20px;
+    grid-template-columns: 340px 1fr 340px;
+    gap: 24px;
     align-items: start;
     width: 100%;
     min-width: 0;
     box-sizing: border-box;
+    padding: 20px;
 }
 .cmaxs-body.menu-dashboard-grid:not(.sm-mode):not(.hq-mode) {
-    grid-template-columns: 1.35fr 1.15fr;
+    grid-template-columns: 1fr 340px;
 }
 .cmaxs-body.menu-dashboard-grid .col-ship-list,
 .cmaxs-body.menu-dashboard-grid .col-workflows,
@@ -766,7 +773,7 @@ body {
 @media (min-width: 1281px) {
     .cmaxs-body.menu-dashboard-grid.sm-mode:has(#fleetListPanel[data-admin-layout="1"]),
     .cmaxs-body.menu-dashboard-grid.hq-mode:has(#fleetListPanel[data-admin-layout="1"]) {
-        grid-template-columns: minmax(300px, 1.1fr) minmax(0, 1.35fr) minmax(0, 1.15fr);
+        grid-template-columns: 340px 1fr 340px;
     }
 }
 .fleet-list-panel[data-admin-layout="1"] .fleet-table-wrap {
@@ -3067,7 +3074,7 @@ input.tvc-date-input::placeholder {
 }
 
 /* ═══════════ CMAXS Tab Navigation ═══════════ */
-#appShell { max-width: 1280px; margin: 0 auto; }
+#appShell { width: 100%; max-width: none; margin: 0; }
 .tab-bar {
     display: flex; gap: 2px; background: var(--navy); padding: 0 12px;
     position: sticky; top: 0; z-index: 50; overflow-x: auto; overflow-y: hidden;
