@@ -668,6 +668,46 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
     line-height: 1.6;
 }
 
+/* ── Core Tech & AX (home patch) ── */
+.home-coretech-section .home-section-head {
+    text-align: center;
+}
+
+.home-coretech-lead {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-coretech-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 100%;
+}
+
+.home-coretech-index {
+    margin: 0;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: var(--home-accent);
+}
+
+.home-coretech-card-title {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    color: var(--home-text, #0f172a);
+}
+
+.home-coretech-card p.mkt-prose {
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--home-muted);
+}
+
 @media (min-width: 1024px) {
     .home-grid-4 {
         grid-template-columns: repeat(4, minmax(0, 1fr));
