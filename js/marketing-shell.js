@@ -143,7 +143,7 @@
         <footer class="home-footer mkt-footer">
             <div class="footer-engineer-signature" data-i18n="footer.signature">The Vessel Code is an engineering commons and fleet operating architecture designed by Mr. Kyoung-Chul, Kim (1st Class Marine Engineer License / Chief Engineer / Superintendent).</div>
             <div class="mkt-footer-meta">
-                <span data-i18n="footer.copy">© 2026 THE VESSEL CODE (K-TECH) · Busan, Republic of Korea</span>
+                <span data-i18n="footer.copy">TVC-SM · © 2026 K-TECH. All rights reserved.</span>
                 <span class="home-footer-links">
                     ${links}
                 </span>

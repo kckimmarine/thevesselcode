@@ -242,6 +242,28 @@ const TVC_Auth = (function () {
         return t === 'SM' || t === 'ADMIN' || t === 'SUPPLIER';
     }
 
+    function portalSessionDepartment(accountType) {
+        return isCompanyPortalAccountType(accountType) ? 'ALL' : null;
+    }
+
+    /** Web-first sign-in: infer Captain / Deck / Engine from account when UI selector is removed. */
+    function inferLoginModeFromUser(user) {
+        if (!user) return '';
+        const uname = loginUsernameKey(user.username);
+        if (uname === 'captain') return 'MASTER';
+        if (uname === 'officer' || uname === 'co') return 'DECK';
+        if (uname === 'engineer' || uname === 'ce') return 'ENGINE';
+        const dept = String(user.department || '').toUpperCase();
+        if (dept === 'CAPTAIN') return 'MASTER';
+        if (dept === 'DECK') return 'DECK';
+        if (dept === 'ENGINE') return 'ENGINE';
+        const role = String(user.role || '').toUpperCase();
+        if (role.includes('CAPTAIN')) return 'MASTER';
+        if (role.includes('OFFICER') || role.includes('_CO')) return 'DECK';
+        if (role.includes('ENGINEER') || role.includes('_CE')) return 'ENGINE';
+        return '';
+    }
+
     /** Trim and collapse internal whitespace (e.g. "  abc  shipping " → "abc shipping"). */
     function normalizeLoginUsername(raw) {
         return String(raw || '').trim().replace(/\s+/g, ' ');
@@ -340,7 +362,7 @@ const TVC_Auth = (function () {
                 : role,
             account_type,
             department: isCompanyPortalAccountType(account_type)
-                ? null : user.department,
+                ? portalSessionDepartment(account_type) : user.department,
             display_name: user.display_name,
             vessel_id: user.vessel_id,
             company_id: user.company_id || null,
@@ -516,7 +538,10 @@ const TVC_Auth = (function () {
             ? TVC_RBAC.normalizeAccountType(user.account_type)
             : user.account_type;
         const portalAccount = isCompanyPortalAccountType(accountType);
-        const effectiveLoginMode = portalAccount ? '' : String(loginMode || '').trim();
+        let effectiveLoginMode = portalAccount ? '' : String(loginMode || '').trim();
+        if (!portalAccount && !effectiveLoginMode) {
+            effectiveLoginMode = inferLoginModeFromUser(user);
+        }
 
         if (typeof TVC_License !== 'undefined') {
             await TVC_License.refresh();
@@ -528,7 +553,7 @@ const TVC_Auth = (function () {
             const session = normalizeSessionUser({
                 id: user.id, username: user.username, display_name: user.display_name,
                 account_type: accountType, role: sessionRole,
-                department: null, vessel_id: user.vessel_id, company_id: user.company_id || null,
+                department: portalSessionDepartment(accountType), vessel_id: user.vessel_id, company_id: user.company_id || null,
                 supplier_id: user.supplier_id || null,
                 company_name: user.company_name || user.display_name || null,
                 contact_person: user.contact_person || null,
@@ -648,10 +673,13 @@ const TVC_Auth = (function () {
 
         if (user.account_type === 'SM' || user.account_type === 'HQ'
             || user.account_type === 'ADMIN' || user.account_type === 'SUPPLIER') {
+            const acct = (typeof TVC_RBAC !== 'undefined' && TVC_RBAC.normalizeAccountType)
+                ? TVC_RBAC.normalizeAccountType(user.account_type)
+                : user.account_type;
             const session = {
                 id: user.id, username: user.username, display_name: user.display_name,
                 account_type: user.account_type, role: sessionRole,
-                department: null, vessel_id: user.vessel_id, company_id: user.company_id || null,
+                department: portalSessionDepartment(acct), vessel_id: user.vessel_id, company_id: user.company_id || null,
                 supplier_id: user.supplier_id || null,
                 company_name: user.company_name || user.display_name || null,
                 station: null, login_mode: null,

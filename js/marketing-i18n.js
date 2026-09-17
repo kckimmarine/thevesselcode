@@ -26,8 +26,8 @@
         'lang.ko': { en: 'KO', ko: 'KO' },
         'lang.en': { en: 'EN', ko: 'EN' },
         'footer.copy': {
-            en: '© 2026 THE VESSEL CODE (K-TECH) · Busan, Republic of Korea',
-            ko: '© 2026 THE VESSEL CODE (K-TECH) · 부산',
+            en: 'TVC-SM · © 2026 K-TECH. All rights reserved.',
+            ko: 'TVC-SM · © 2026 K-TECH. All rights reserved.',
         },
         'footer.signature': {
             en: 'The Vessel Code is an engineering commons and fleet operating architecture designed by Mr. Kyoung-Chul, Kim (1st Class Marine Engineer License / Chief Engineer / Superintendent).',
@@ -178,8 +178,8 @@
         },
         'home.stake.survey.t': { en: 'Superintendents & Surveyors', ko: '공무 · 검사원' },
         'home.stake.survey.d': {
-            en: 'Standardized maintenance, ClassNK Annex 9.1.3 compliance, tolerance checks.',
-            ko: '표준화된 유지보수, ClassNK Annex 9.1.3 준수, 허용 공차 점검.',
+            en: 'Standardized maintenance, IACS UR Z20 & IMO ISM Code Section 10 alignment, tolerance checks.',
+            ko: '표준화된 유지보수, IACS UR Z20 및 IMO ISM Code Section 10 정렬, 허용 공차 점검.',
         },
         'home.stake.supplier.t': { en: 'Stores & Spares Suppliers', ko: '선용품 · 부품 공급사' },
         'home.stake.supplier.d': {
@@ -519,8 +519,8 @@
             ko: '30일 무위험 체험 (언제든 해지)',
         },
         'pricing.fleet.f1': {
-            en: 'ClassNK Annex 9.1.3 compliant PMS & SPARE',
-            ko: 'ClassNK Annex 9.1.3 대응 PMS & SPARE',
+            en: 'IACS UR Z20 & IMO ISM Code Section 10 aligned PMS & SPARE',
+            ko: 'IACS UR Z20 및 IMO ISM Code Section 10 정렬 PMS & SPARE',
         },
         'pricing.fleet.f2': {
             en: 'Local-first offline sync with ZIP ship ↔ shore packets',

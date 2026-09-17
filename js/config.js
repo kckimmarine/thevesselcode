@@ -96,11 +96,6 @@ const TVC_Config = (function () {
         const userLabel = document.querySelector('label[for="loginUser"]');
         if (userLabel) userLabel.textContent = 'User ID';
 
-        const dl = document.getElementById('loginDownloadSection');
-        if (dl) dl.classList.remove('hidden');
-
-        try { TVC_VesselDownload?.initLogin?.(); } catch (e) { console.warn('[TVC] vessel download', e); }
-
         const userInput = document.getElementById('loginUser');
         if (userInput) {
             userInput.type = 'text';
