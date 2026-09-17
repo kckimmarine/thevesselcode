@@ -5,7 +5,7 @@ const TVC_Auth = (function () {
     const AUTH_SESSION_KEY = 'tvc_auth_session';
     const AUTH_SESSION_TTL_MS = 30 * 24 * 60 * 60 * 1000;
     const DEMO_PASSWORD = '0000';
-    const USERS_SEED_VERSION = 25;
+    const USERS_SEED_VERSION = 26;
 
     const DEFAULT_USERS = [
         // Contract vessel — ABC Voyager (demo ship accounts)
@@ -17,15 +17,17 @@ const TVC_Auth = (function () {
         // Contract company SM — superintendent (company-scoped fleet)
         { id: 'user-abc-shipping', username: 'abc shipping', display_name: 'ABC Shipping', account_type: 'SM', role: 'SM_SUPERINTENDENT', department: null, vessel_id: null, company_id: 'ABC_SHIPPING', seed_password: '0000' },
         { id: 'user-gfsm', username: 'gfsm', display_name: 'GFSM', account_type: 'SM', role: 'SM_SUPERINTENDENT', department: null, vessel_id: null, company_id: 'GFSM', seed_password: '0000' },
+        { id: 'user-gfsm-sq', username: 'gfsm-sq', display_name: 'GFSM SQ', account_type: 'SM', role: 'SM_SUPERINTENDENT', department: null, vessel_id: null, company_id: 'GFSM', seed_password: '0000' },
         // TVC internal — Admin Mode (registry / license / app update)
         { id: 'user-tvc-admin', username: 'admin', display_name: 'Admin', account_type: 'ADMIN', role: 'TVC_ADMIN', department: null, vessel_id: null, seed_password: 'admin' },
     ];
 
-    const REMOVED_SEED_USER_IDS = ['user-supplier-demo', 'user-gfsm-sq', 'user-swt-sq'];
+    const REMOVED_SEED_USER_IDS = ['user-supplier-demo', 'user-swt-sq'];
 
+    /** Retired logins only — do not include registry HQ ids (e.g. tvc). */
     const DEPRECATED_USERNAMES = [
         'admin@thevesselcode.com',
-        'hq', 'tvc', 'dm_user@thevesselcode.com', 'pms-21',
+        'hq', 'dm_user@thevesselcode.com', 'pms-21',
     ];
 
     const PBKDF2_SALT = 'tvc-pms-salt-v2';
@@ -61,45 +63,153 @@ const TVC_Auth = (function () {
         return hash;
     }
 
-    async function initUsers() {
-        const seedVer = await TVC_DB.getMeta('users_seed_version').catch(() => null);
-        if (seedVer === USERS_SEED_VERSION) {
-            const existing = await TVC_DB.getAll('users');
-            const allPresent = DEFAULT_USERS.every(tpl =>
-                existing.some(u => u.id === tpl.id && u.is_active && u.username === tpl.username && u.role === tpl.role)
-            );
-            if (allPresent) return { skipped: true };
-        }
+    function isUserStoreConstraintError(err) {
+        const name = String(err?.name || '');
+        const msg = String(err?.message || err || '');
+        return name === 'ConstraintError'
+            || /does not satisfy the uniqueness requirements/i.test(msg)
+            || /Index key is not unique/i.test(msg)
+            || /Unable to add key to index 'username'/i.test(msg);
+    }
 
-        const existing = await TVC_DB.getAll('users');
-        const demoHash = await hashPassword(DEMO_PASSWORD);
-        // 데모 계정은 항상 최신 role/username 으로 동기화 (IndexedDB 캐시 불일치 방지)
-        for (const u of DEFAULT_USERS) {
-            const { seed_password: seedPassword, ...fields } = u;
-            const prev = existing.find(x => x.id === u.id)
-                || existing.find(x => loginUsernameKey(x.username) === loginUsernameKey(u.username));
-            const password_hash = seedPassword
-                ? await hashPassword(seedPassword)
-                : demoHash;
-            await TVC_DB.put('users', {
-                ...(prev || {}),
-                ...fields,
-                password_hash,
-                is_active: true,
-            });
-        }
-        // 동일 username 중복 레코드 제거 (예: chief@dm01 → ce 마이그레이션 잔여)
-        const fresh = await TVC_DB.getAll('users');
-        for (const row of fresh) {
-            if (DEPRECATED_USERNAMES.includes(row.username) || REMOVED_SEED_USER_IDS.includes(row.id)) {
-                await TVC_DB.del('users', row.id);
+    async function deleteUserRecord(id) {
+        if (!id) return;
+        try { await TVC_DB.del('users', id); } catch (_) { /* ignore */ }
+    }
+
+    function preferredUserIdForUsername(username, rows) {
+        const key = loginUsernameKey(username);
+        if (!key) return null;
+        const tpl = DEFAULT_USERS.find(u => loginUsernameKey(u.username) === key);
+        if (tpl?.id) return tpl.id;
+        const match = (rows || []).find(u => loginUsernameKey(u.username) === key);
+        return match?.id || null;
+    }
+
+    /** Drop duplicate / invalid username rows before put (unique index on users.username). */
+    async function clearUsernameConflicts(username, keepId) {
+        const key = loginUsernameKey(username);
+        if (!key || !keepId) return;
+        const rows = await TVC_DB.getAll('users').catch(() => []);
+        for (const row of rows) {
+            const uname = String(row?.username ?? '').trim();
+            if (!uname) {
+                await deleteUserRecord(row?.id);
                 continue;
             }
-            const tpl = DEFAULT_USERS.find(d => d.username === row.username);
-            if (tpl && row.id !== tpl.id) await TVC_DB.del('users', row.id);
+            if (loginUsernameKey(uname) === key && row.id !== keepId) {
+                await deleteUserRecord(row.id);
+            }
         }
-        try { await TVC_DB.setMeta('users_seed_version', USERS_SEED_VERSION); } catch (_) {}
-        await purgeDeprecatedUsers();
+    }
+
+    /** Dedupe users store after legacy migrations or partial writes. */
+    async function recoverUsersStoreFromConstraint() {
+        const rows = await TVC_DB.getAll('users').catch(() => []);
+        const groups = new Map();
+        for (const row of rows) {
+            const uname = String(row?.username ?? '').trim();
+            if (!uname) {
+                await deleteUserRecord(row?.id);
+                continue;
+            }
+            const key = loginUsernameKey(uname);
+            if (!groups.has(key)) groups.set(key, []);
+            groups.get(key).push(row);
+        }
+        let removed = 0;
+        for (const [, group] of groups) {
+            if (group.length <= 1) continue;
+            const keepId = preferredUserIdForUsername(group[0].username, rows) || group[0].id;
+            for (const row of group) {
+                if (row.id !== keepId) {
+                    await deleteUserRecord(row.id);
+                    removed++;
+                }
+            }
+        }
+        return { removed };
+    }
+
+    async function safePutUser(record) {
+        const username = String(record?.username ?? '').trim();
+        if (!username) {
+            console.warn('[TVC_Auth] skip user write — missing username');
+            return false;
+        }
+        const id = record.id || `user-${loginUsernameKey(username).replace(/[^a-z0-9._-]+/g, '-')}`;
+        const payload = { ...record, id, username };
+        await clearUsernameConflicts(username, id);
+        try {
+            await TVC_DB.put('users', payload);
+            return true;
+        } catch (err) {
+            if (!isUserStoreConstraintError(err)) {
+                console.warn('[TVC_Auth] user write failed', err);
+                return false;
+            }
+            try { await recoverUsersStoreFromConstraint(); } catch (e) {
+                console.warn('[TVC_Auth] user store recovery failed', e);
+            }
+            await clearUsernameConflicts(username, id);
+            try {
+                await TVC_DB.put('users', payload);
+                return true;
+            } catch (err2) {
+                console.warn('[TVC_Auth] user write failed after recovery', err2);
+                return false;
+            }
+        }
+    }
+
+    async function initUsers() {
+        try {
+            const seedVer = await TVC_DB.getMeta('users_seed_version').catch(() => null);
+            if (seedVer === USERS_SEED_VERSION) {
+                const existing = await TVC_DB.getAll('users');
+                const allPresent = DEFAULT_USERS.every(tpl =>
+                    existing.some(u => u.id === tpl.id && u.is_active && u.username === tpl.username && u.role === tpl.role)
+                );
+                if (allPresent) {
+                    await purgeDeprecatedUsers();
+                    return { skipped: true };
+                }
+            }
+
+            try { await recoverUsersStoreFromConstraint(); } catch (_) { /* non-fatal */ }
+
+            const existing = await TVC_DB.getAll('users');
+            const demoHash = await hashPassword(DEMO_PASSWORD);
+            for (const u of DEFAULT_USERS) {
+                const { seed_password: seedPassword, ...fields } = u;
+                const prev = existing.find(x => x.id === u.id)
+                    || existing.find(x => loginUsernameKey(x.username) === loginUsernameKey(u.username));
+                const password_hash = seedPassword
+                    ? await hashPassword(seedPassword)
+                    : demoHash;
+                await safePutUser({
+                    ...(prev || {}),
+                    ...fields,
+                    password_hash,
+                    is_active: true,
+                });
+            }
+            const fresh = await TVC_DB.getAll('users');
+            for (const row of fresh) {
+                if (DEPRECATED_USERNAMES.includes(row.username) || REMOVED_SEED_USER_IDS.includes(row.id)) {
+                    await deleteUserRecord(row.id);
+                    continue;
+                }
+                const tpl = DEFAULT_USERS.find(d => loginUsernameKey(d.username) === loginUsernameKey(row.username));
+                if (tpl && row.id !== tpl.id) await deleteUserRecord(row.id);
+            }
+            try { await TVC_DB.setMeta('users_seed_version', USERS_SEED_VERSION); } catch (_) {}
+            await purgeDeprecatedUsers();
+        } catch (err) {
+            console.warn('[TVC_Auth] initUsers', err);
+            try { await recoverUsersStoreFromConstraint(); } catch (_) { /* ignore */ }
+            return { recovered: true, error: err?.message || String(err) };
+        }
     }
 
     async function upsertProvisionedUser(record) {
@@ -109,9 +219,9 @@ const TVC_Auth = (function () {
         }
         const existing = await TVC_DB.getAll('users');
         const prev = existing.find(u => u.id === record.id)
-            || existing.find(u => u.username === username);
-        const id = prev?.id || record.id || `prov-${username.replace(/[^a-zA-Z0-9._-]+/g, '_')}`;
-        await TVC_DB.put('users', {
+            || existing.find(u => loginUsernameKey(u.username) === loginUsernameKey(username));
+        const id = record.id || prev?.id || `prov-${username.replace(/[^a-zA-Z0-9._-]+/g, '_')}`;
+        await safePutUser({
             ...(prev || {}),
             ...record,
             id,
@@ -161,14 +271,35 @@ const TVC_Auth = (function () {
 
     /** Re-seed when bundled demo accounts are missing (fresh Cloud / mobile IndexedDB). */
     async function ensureDefaultUsers() {
-        const existing = await TVC_DB.getAll('users').catch(() => []);
-        const missing = DEFAULT_USERS.some(tpl =>
-            !existing.some(u => u.id === tpl.id && u.is_active
-                && loginUsernameKey(u.username) === loginUsernameKey(tpl.username))
-        );
-        if (missing) return initUsers();
-        await purgeDeprecatedUsers();
-        return { skipped: true };
+        try {
+            const existing = await TVC_DB.getAll('users').catch(() => []);
+            const missing = DEFAULT_USERS.some(tpl =>
+                !existing.some(u => u.id === tpl.id && u.is_active
+                    && loginUsernameKey(u.username) === loginUsernameKey(tpl.username))
+            );
+            if (missing) return initUsers();
+            await purgeDeprecatedUsers();
+            return { skipped: true };
+        } catch (err) {
+            console.warn('[TVC_Auth] ensureDefaultUsers', err);
+            try { await recoverUsersStoreFromConstraint(); } catch (_) { /* ignore */ }
+            try { return await initUsers(); } catch (_) { return { recovered: true }; }
+        }
+    }
+
+    async function userFromDefaultTemplate(username, password) {
+        const template = findDefaultUserTemplate(username);
+        if (!template) return null;
+        const hash = await hashPassword(password);
+        const expectedHash = await hashPassword(template.seed_password || DEMO_PASSWORD);
+        if (hash !== expectedHash) return null;
+        const demoHash = expectedHash;
+        const { seed_password: _sp, ...fields } = template;
+        return {
+            ...fields,
+            password_hash: demoHash,
+            is_active: true,
+        };
     }
 
     /** Remove retired pilot logins (e.g. tvc) even when user seed was skipped. */
@@ -305,7 +436,7 @@ const TVC_Auth = (function () {
         };
 
         await TVC_DB.put('supplier_profiles', profile);
-        await TVC_DB.put('users', {
+        await safePutUser({
             id: userId,
             username,
             display_name: companyName,
@@ -358,14 +489,22 @@ const TVC_Auth = (function () {
     }
 
     async function login(username, password, loginMode) {
-        await ensureDefaultUsers();
-        const users = await TVC_DB.getAll('users');
+        try { await ensureDefaultUsers(); } catch (e) {
+            console.warn('[TVC_Auth] ensureDefaultUsers during login', e);
+        }
+        const users = await TVC_DB.getAll('users').catch(() => []);
         const uname = normalizeLoginUsername(username);
         let user = findActiveUserRecord(users, uname);
         if (!user) {
-            await initUsers();
-            const retryUsers = await TVC_DB.getAll('users');
+            try { await initUsers(); } catch (e) {
+                console.warn('[TVC_Auth] initUsers during login', e);
+            }
+            const retryUsers = await TVC_DB.getAll('users').catch(() => []);
             user = findActiveUserRecord(retryUsers, uname);
+        }
+        if (!user) {
+            user = await userFromDefaultTemplate(uname, password);
+            if (user) void safePutUser(user);
         }
         if (!user) return { ok: false, error: 'Account not found.' };
         const hash = await hashPassword(password);
@@ -570,7 +709,7 @@ const TVC_Auth = (function () {
         }
 
         const nextHash = await hashPassword(next);
-        await TVC_DB.put('users', { ...user, password_hash: nextHash });
+        await safePutUser({ ...user, password_hash: nextHash });
         _hashCache.delete(current);
         _hashCache.delete(next);
         return { ok: true };
@@ -594,7 +733,7 @@ const TVC_Auth = (function () {
     }
 
     return {
-        initUsers, ensureDefaultUsers, login, logout, getCurrentUser, refreshSessionFromDb, registerSupplier, requirePermission, changePassword,
+        initUsers, ensureDefaultUsers, recoverUsersStoreFromConstraint, login, logout, getCurrentUser, refreshSessionFromDb, registerSupplier, requirePermission, changePassword,
         upsertProvisionedUser, hashPasswordForProvision, DEMO_PASSWORD, DEFAULT_USERS,
         getSavedId, setSavedId, clearSavedId, savePersistedAuthSession, clearPersistedAuthSession,
         hasPersistedAuthSession, applySavedIdToLoginForm, restorePersistedAuthSession,
