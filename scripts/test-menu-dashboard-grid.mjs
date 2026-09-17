@@ -88,8 +88,16 @@ async function main() {
     if (!layout.hasMatrix) errors.push('PMS matrix not rendered');
     if (layout.workflowsStacked === false) errors.push('PMS/SPARE workflow cards not vertically stacked');
     if (layout.outstandingRightOfWorkflows === false) errors.push('outstanding column not right of workflows');
-    if (layout.workflowMinWidth > 0 && layout.workflowMinWidth < 320) {
+    if (layout.workflowMinWidth > 0 && layout.workflowMinWidth < 400) {
         errors.push(`workflow column too narrow: ${layout.workflowMinWidth}px`);
+    }
+    const shellWidth = await page.evaluate(() => {
+        const shell = document.getElementById('appShell');
+        const rect = shell?.getBoundingClientRect();
+        return { shellW: rect?.width ?? 0, innerW: window.innerWidth };
+    });
+    if (shellWidth.shellW < shellWidth.innerW * 0.85) {
+        errors.push(`appShell not full width: ${shellWidth.shellW}px vs viewport ${shellWidth.innerW}px`);
     }
     if (layout.flowSubCols !== 3) errors.push(`workflow sub-grid not 3 columns: ${layout.flowSubCols}`);
     const colCount = layout.gridCols.trim().split(/\s+/).filter(Boolean).length;
