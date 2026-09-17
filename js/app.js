@@ -188,6 +188,9 @@ const TVC_App = (function () {
         if (/^internal error\.?$/i.test(msg)) {
             return 'Local database error (Internal error). Close all TVC windows, restart the app, or sign in with the correct Department. If it persists, contact TVC support.';
         }
+        if (/ConstraintError|uniqueness requirements|Index key is not unique|Unable to add key to index 'username'/i.test(msg)) {
+            return 'Local login cache was repaired automatically. Please try signing in again.';
+        }
         return msg || 'An error occurred while signing in.';
     }
 
@@ -413,7 +416,16 @@ const TVC_App = (function () {
                     await TVC_DB.setMeta(TVC_META_KEYS.VESSEL_ID, lic.vesselId);
                 }
             } catch (e) { console.warn('[TVC] license vessel pin', e); }
-            await TVC_Auth.initUsers();
+            try {
+                await TVC_Auth.initUsers();
+            } catch (e) {
+                console.warn('[TVC] initUsers', e);
+            }
+            try {
+                if (typeof TVC_Auth.recoverUsersStoreFromConstraint === 'function') {
+                    await TVC_Auth.recoverUsersStoreFromConstraint();
+                }
+            } catch (e) { console.warn('[TVC] users store recovery', e); }
             try {
                 if (typeof TVC_SmCertificatesSeed !== 'undefined') {
                     await TVC_SmCertificatesSeed.ensureSeed();

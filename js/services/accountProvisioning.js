@@ -44,36 +44,44 @@ const TVC_AccountProvisioning = (function () {
         for (const company of companies) {
             const hq = company.hq_login;
             if (hq?.username && hq?.password_hash) {
-                await TVC_Auth.upsertProvisionedUser({
-                    id: `prov-hq-${slugId(company.company_id)}`,
-                    username: String(hq.username).trim(),
-                    password_hash: hq.password_hash,
-                    account_type: 'SM',
-                    role: 'SM_SUPERVISOR',
-                    department: null,
-                    vessel_id: null,
-                    company_id: company.company_id,
-                    display_name: hq.display_name || `${company.name} HQ`,
-                    is_active: company.status !== 'inactive',
-                });
-                synced++;
+                try {
+                    await TVC_Auth.upsertProvisionedUser({
+                        id: `prov-hq-${slugId(company.company_id)}`,
+                        username: String(hq.username).trim(),
+                        password_hash: hq.password_hash,
+                        account_type: 'SM',
+                        role: 'SM_SUPERVISOR',
+                        department: null,
+                        vessel_id: null,
+                        company_id: company.company_id,
+                        display_name: hq.display_name || `${company.name} HQ`,
+                        is_active: company.status !== 'inactive',
+                    });
+                    synced++;
+                } catch (e) {
+                    console.warn('[TVC_AccountProvisioning] HQ login sync', company.company_id, e);
+                }
             }
             for (const vessel of company.vessels || []) {
                 const ml = vessel.master_login;
                 if (!ml?.username || !ml?.password_hash) continue;
-                await TVC_Auth.upsertProvisionedUser({
-                    id: `prov-master-${slugId(company.company_id)}-${slugId(vessel.vessel_id)}`,
-                    username: String(ml.username).trim(),
-                    password_hash: ml.password_hash,
-                    account_type: 'SHIP',
-                    role: 'SHIP_CAPTAIN',
-                    department: 'DECK',
-                    vessel_id: vessel.vessel_id,
-                    company_id: company.company_id,
-                    display_name: ml.display_name || `${vessel.name} Master`,
-                    is_active: company.status !== 'inactive' && vessel.status !== 'inactive',
-                });
-                synced++;
+                try {
+                    await TVC_Auth.upsertProvisionedUser({
+                        id: `prov-master-${slugId(company.company_id)}-${slugId(vessel.vessel_id)}`,
+                        username: String(ml.username).trim(),
+                        password_hash: ml.password_hash,
+                        account_type: 'SHIP',
+                        role: 'SHIP_CAPTAIN',
+                        department: 'DECK',
+                        vessel_id: vessel.vessel_id,
+                        company_id: company.company_id,
+                        display_name: ml.display_name || `${vessel.name} Master`,
+                        is_active: company.status !== 'inactive' && vessel.status !== 'inactive',
+                    });
+                    synced++;
+                } catch (e) {
+                    console.warn('[TVC_AccountProvisioning] master login sync', company.company_id, vessel.vessel_id, e);
+                }
             }
         }
         return { synced };
