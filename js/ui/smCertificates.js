@@ -26,7 +26,7 @@ const TVC_SmCertificatesUi = (function () {
             chartMonthCount: '예정 건수',
         },
         en: {
-            mainTitle: 'Ship/Shore Major & Minor Certificate Dashboard',
+            mainTitle: 'Fleet Certificate Dashboard',
             dateUpdated: '📅 Date updated:',
             btnAdd: '➕ Add Manual', btnUpload: '📂 Load Excel', btnClear: 'Clear',
             btnLang: '🌐 KR/EN', btnLight: '☀️ Light', btnDark: '🌙 Dark',
@@ -111,8 +111,9 @@ const TVC_SmCertificatesUi = (function () {
     }
 
     function readLang() {
+        if (typeof TVC_I18n !== 'undefined') return TVC_I18n.getLang();
         try {
-            const v = localStorage.getItem('tvc-mkt-lang');
+            const v = localStorage.getItem('tvc_lang') || localStorage.getItem('tvc-mkt-lang');
             return v === 'en' ? 'en' : 'ko';
         } catch (_) {
             return 'ko';
@@ -302,6 +303,7 @@ const TVC_SmCertificatesUi = (function () {
         el('smCertsLangBtn')?.addEventListener('click', () => window.TVC_App?.toggleUiLang?.());
         el('smCertsDarkBtn')?.addEventListener('click', toggleDark);
         window.addEventListener('tvc-mkt-lang', () => applyLang());
+        window.addEventListener('tvc-lang-change', () => applyLang());
         el('smCertsRoot')?.addEventListener('click', (ev) => {
             const card = ev.target.closest('.sm-certs-stat');
             if (!card) return;
