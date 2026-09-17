@@ -129,13 +129,13 @@
                     <span id="appProductVersionBadge" class="app-product-version">IACS UR Z20 &amp; IMO ISM Code Section 10 Compliant</span>
                 </div>
                 <div class="ship-name-row">
-                    <span class="fld-label">Ship's Name</span>
+                    <span class="fld-label" data-i18n="header.shipName">Ship's Name</span>
                     <strong id="cmaxsShipName" class="fld-value ship-name">—</strong>
                 </div>
                 <div class="ship-meta">
-                    <span><span class="fld-label">IMO No</span> <span id="cmaxsShipCode" class="fld-value">—</span></span>
-                    <span><span class="fld-label">Delivery</span> <span id="cmaxsShipDelivery" class="fld-value">—</span></span>
-                    <span><span class="fld-label">User</span> <span class="userNameEl fld-value title-badge">—</span></span>
+                    <span id="cmaxsShipImoWrap"><span class="fld-label" data-i18n="header.imo">IMO No</span> <span id="cmaxsShipCode" class="fld-value">—</span></span>
+                    <span><span class="fld-label" data-i18n="header.delivery">Delivery</span> <span id="cmaxsShipDelivery" class="fld-value">—</span></span>
+                    <span><span class="fld-label" data-i18n="header.user">User</span> <span class="userNameEl fld-value title-badge">—</span></span>
                     <span class="userBadgeEl pill ok">—</span>
                 </div>
             </div>
@@ -145,10 +145,10 @@
                 <a href="https://thevesselcode.com" target="_top" rel="noopener">← Home</a>
             </p>
             <div class="dept-toggle" role="group" aria-label="Department">
-                <span class="dept-label">Department</span>
+                <span class="dept-label" data-i18n="header.department">Department</span>
             </div>
             <button type="button" id="mobileRefreshBtn" class="mobile-refresh-btn" aria-label="Refresh page" title="Refresh" onclick="window.location.reload(true)">🔄</button>
-            <button class="btn btn-red" onclick="TVC_App.handleLogout()">End</button>
+            <button class="btn btn-red" data-i18n="header.end" onclick="TVC_App.handleLogout()">End</button>
         </div>
     </header>
 
@@ -160,15 +160,15 @@
 
     <!-- Persistent Tab Bar -->
     <nav id="tabBar" class="tab-bar" role="tablist">
-        <button class="tab-btn active" data-tab="menu" onclick="TVC_App.switchTab('menu')">📑 Menu</button>
-        <button class="tab-btn" data-tab="actual" onclick="TVC_App.switchTab('actual')">📝 PMS</button>
-        <button class="tab-btn" data-tab="spare" data-feature="showSpareTab" onclick="TVC_App.switchTab('spare')">🔩 SPARE</button>
-        <button class="tab-btn" data-tab="history" onclick="TVC_App.switchTab('history')">📜 Report History</button>
-        <button class="tab-btn" data-tab="certificates" data-feature="showCertificatesTab" onclick="TVC_App.switchTab('certificates')"><span class="tab-label-full">📋 Certificates</span><span class="tab-label-mobile">📋 증서</span></button>
+        <button class="tab-btn active" data-tab="menu" data-i18n="nav.menu" onclick="TVC_App.switchTab('menu')">📑 Menu</button>
+        <button class="tab-btn" data-tab="certificates" data-feature="showCertificatesTab" data-i18n="nav.certificate" onclick="TVC_App.switchTab('certificates')">📋 Certificate</button>
+        <button class="tab-btn" data-tab="actual" data-i18n="nav.pms" onclick="TVC_App.switchTab('actual')">🛠 PMS</button>
+        <button class="tab-btn" data-tab="spare" data-feature="showSpareTab" data-i18n="nav.spare" onclick="TVC_App.switchTab('spare')">🔩 SPARE</button>
+        <button class="tab-btn" data-tab="history" data-i18n="nav.history" onclick="TVC_App.switchTab('history')">📜 Report History</button>
         <div class="tab-bar-end">
             <button type="button" id="appLangToggleBtn" class="btn-feedback app-lang-toggle" onclick="TVC_App.toggleUiLang()" title="한국어 / English">🌐 EN/KR</button>
-            <button type="button" id="btn-open-ai-help" class="btn-ai-help btn-feedback" onclick="TVC_App.openAiHelp()" title="AI Help">🤖 AI Help</button>
-            <button type="button" id="settingsOpenBtn" class="tab-bar-settings" onclick="TVC_Settings.open()" title="Settings">⚙ Settings</button>
+            <button type="button" id="btn-open-ai-help" class="btn-ai-help btn-feedback" data-i18n="nav.aiHelp" onclick="TVC_App.openAiHelp()" title="AI Help">🤖 AI Help</button>
+            <button type="button" id="settingsOpenBtn" class="tab-bar-settings" data-i18n="nav.settings" data-i18n-title="nav.settings" onclick="TVC_Settings.open()" title="Settings">⚙ Settings</button>
         </div>
     </nav>
 
@@ -1041,6 +1041,7 @@
 <script src="js/ui/rfqWorkspace.js?v=20260915-domestic-rfq"></script>
 <script src="js/ui/supplierWorkspace.js?v=20260912-supplier-quote-print"></script>
 <script src="js/ui/supplierRegister.js?v=20260912-supplier-register-bind"></script>
+<script src="js/i18n.js?v=20260917-sm-i18n"></script>
 <script src="js/app.js?v=20260903-web-cloud"></script>
 <script src="js/pwa.js?v=20260902-date-picker"></script>
 </body>

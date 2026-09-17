@@ -349,6 +349,7 @@ const TVC_App = (function () {
             try { await syncLoginAppVersion(); } catch (e) { console.warn('[TVC] version', e); }
             try { TVC_Config?.applyLoginChrome?.(); } catch (e) { console.warn('[TVC] login chrome', e); }
             try { TVC_Config?.applyEmbedChrome?.(); } catch (e) { console.warn('[TVC] embed chrome', e); }
+            try { TVC_I18n?.init?.(); } catch (e) { console.warn('[TVC] i18n', e); }
             try { TVC_SupplierRegister?.init(); } catch (e) { console.warn('[TVC] supplier register', e); }
             if (typeof TVC_License !== 'undefined') {
                 try {
@@ -1153,6 +1154,7 @@ const TVC_App = (function () {
         state.spareSelectedGroupKey = null;
         state.search = '';
         updateUserBar(state.user);
+        applyAppShellI18n();
         if (isHq) {
             if (isSuperHq) {
                 state.adminSearch = state.adminSearch || '';
@@ -1476,12 +1478,15 @@ const TVC_App = (function () {
         }
         if (vessel) {
             setText('cmaxsShipName', vessel.id);
-            setText('cmaxsShipCode', vessel.imo_no || vessel.code || '—');
+            const imo = vessel.imo_no || vessel.code || '—';
+            setText('cmaxsShipCode', imo);
             setText('cmaxsShipDelivery', vessel.delivery || '—');
+            document.getElementById('cmaxsShipImoWrap')?.classList.toggle('hidden', imo === '—');
         } else {
-            setText('cmaxsShipName', 'HEAD OFFICE (Fleet View — SM)');
-            setText('cmaxsShipCode', 'SM');
+            setText('cmaxsShipName', 'HEAD OFFICE');
+            setText('cmaxsShipCode', '—');
             setText('cmaxsShipDelivery', '—');
+            document.getElementById('cmaxsShipImoWrap')?.classList.add('hidden');
         }
         syncProductVersionBadge();
     }
@@ -1601,13 +1606,19 @@ const TVC_App = (function () {
             : TVC_RBAC.isSmAccount(user);
         document.querySelectorAll('.dept-toggle').forEach(group => {
             if (canSwitch) {
-                const opts = [{ v: 'ALL', l: 'All' }, { v: 'DECK', l: 'Deck' }, { v: 'ENGINE', l: 'Engine' }];
+                const i18n = typeof TVC_I18n !== 'undefined' ? TVC_I18n : null;
+                const opts = [
+                    { v: 'ALL', l: i18n?.t('dept.all') || 'All' },
+                    { v: 'DECK', l: i18n?.t('dept.deck') || 'Deck' },
+                    { v: 'ENGINE', l: i18n?.t('dept.engine') || 'Engine' },
+                ];
             const btns = opts.map(o => {
                 const cur = String(state.department || '').toUpperCase();
                 const active = (o.v === 'ALL' && !cur) || (cur && cur === o.v) ? ' active' : '';
                     return `<button class="dept-btn${active}" data-dept="${o.v}" onclick="TVC_App.setDepartment('${o.v}')">${o.l}</button>`;
             }).join('');
-                group.innerHTML = '<span class="dept-label">Department</span>' + btns;
+                const deptLbl = i18n?.t('header.department') || 'Department';
+                group.innerHTML = `<span class="dept-label">${deptLbl}</span>` + btns;
             } else {
                 const modeLbl = user.login_mode && typeof TVC_Space !== 'undefined'
                     ? TVC_Space.loginModeLabel(user.login_mode)
@@ -13936,8 +13947,9 @@ const TVC_App = (function () {
     }
 
     function getUiLang() {
+        if (typeof TVC_I18n !== 'undefined') return TVC_I18n.getLang();
         try {
-            const v = localStorage.getItem('tvc-mkt-lang');
+            const v = localStorage.getItem('tvc_lang') || localStorage.getItem('tvc-mkt-lang');
             return v === 'en' ? 'en' : 'ko';
         } catch (_) {
             return 'ko';
@@ -13945,23 +13957,23 @@ const TVC_App = (function () {
     }
 
     function syncUiLangButton() {
-        const btn = document.getElementById('appLangToggleBtn');
-        if (!btn) return;
-        const lang = getUiLang();
-        btn.textContent = lang === 'ko' ? '🌐 EN/KR' : '🌐 KR/EN';
-        btn.setAttribute('aria-label', lang === 'ko' ? 'Switch to English' : '한국어로 전환');
+        if (typeof TVC_I18n !== 'undefined') TVC_I18n.syncLangToggleButton();
+    }
+
+    function applyAppShellI18n() {
+        if (typeof TVC_I18n !== 'undefined') TVC_I18n.apply(document);
+        if (state.user) renderDeptToggles(state.user);
     }
 
     function toggleUiLang() {
-        const next = getUiLang() === 'ko' ? 'en' : 'ko';
-        try { localStorage.setItem('tvc-mkt-lang', next); } catch (_) {}
-        syncUiLangButton();
-        try {
-            window.dispatchEvent(new CustomEvent('tvc-mkt-lang', { detail: { lang: next } }));
-        } catch (_) {}
+        const next = typeof TVC_I18n !== 'undefined'
+            ? TVC_I18n.toggle()
+            : (getUiLang() === 'ko' ? 'en' : 'ko');
+        applyAppShellI18n();
         if (typeof TVC_SmCertificatesUi !== 'undefined' && TVC_SmCertificatesUi.applyLang) {
             TVC_SmCertificatesUi.applyLang();
         }
+        return next;
     }
 
     function getSmCertificatesCompanyFilter() {
