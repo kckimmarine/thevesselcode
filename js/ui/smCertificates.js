@@ -7,7 +7,7 @@ const TVC_SmCertificatesUi = (function () {
         ko: {
             mainTitle: '육/해상 증서 관리 대시보드',
             dateUpdated: '📅 Date updated:',
-            btnAdd: '➕ 직접 추가', btnUpload: '📂 엑셀 파일 로드', btnClear: '초기화',
+            btnAdd: '➕ Add Certificate', btnUpload: '📂 엑셀 파일 로드', btnClear: '초기화',
             btnLang: '🌐 EN/KR', btnLight: '☀️ Light', btnDark: '🌙 Dark',
             loadedData: '💾 저장된 데이터 로드됨',
             statTotal: '전체 관리 증서 (필터 초기화)', statDanger: '🚨 초긴급 (15일 이내)',
@@ -19,8 +19,12 @@ const TVC_SmCertificatesUi = (function () {
             btnShare: '💾 공유용 HTML 저장', btnMail: '📧 갱신알림 메일',
             btnExcel: '📥 엑셀 다운로드', btnPdf: '📄 PDF 보고서',
             statusDanger: '초긴급', statusUrgent: '긴급', statusWarning: '주의', statusSafe: '정상', statusExpired: '만료됨',
-            modalAdd: '➕ 새로운 증서 추가', modalEdit: '📝 증서 정보 수정',
-            btnCancel: '취소', btnSave: '저장하기',
+            modalAdd: '➕ Add Certificate', modalEdit: '📝 Edit Certificate',
+            lblVessel: 'Vessel / Org *', lblDept: 'Department', lblName: 'Cert Name *',
+            lblCertNo: 'Cert No.', lblIssuer: 'Issuer', lblIssueDate: 'Issue Date',
+            lblExpireDate: 'Expiry Date *', lblLastAnn: 'Last Annual', lblLastInt: 'Last Inter.',
+            lblFileLink: 'File URL (NAS Link)', lblRemarks: 'Remarks',
+            btnCancel: 'Cancel', btnSave: 'Save',
             msgSave: '데이터가 성공적으로 저장되었습니다.', msgReset: '데이터가 초기화되었습니다.',
             emptySearch: '조건에 맞는 증서가 없습니다.',
             chartMonthCount: '예정 건수',
@@ -28,7 +32,7 @@ const TVC_SmCertificatesUi = (function () {
         en: {
             mainTitle: 'Fleet Certificate Dashboard',
             dateUpdated: '📅 Date updated:',
-            btnAdd: '➕ Add Manual', btnUpload: '📂 Load Excel', btnClear: 'Clear',
+            btnAdd: '➕ Add Certificate', btnUpload: '📂 Load Excel', btnClear: 'Clear',
             btnLang: '🌐 KR/EN', btnLight: '☀️ Light', btnDark: '🌙 Dark',
             loadedData: '💾 Local data loaded',
             statTotal: 'Total Certificates (Reset filter)', statDanger: '🚨 Critical (≤ 15 days)',
@@ -41,6 +45,10 @@ const TVC_SmCertificatesUi = (function () {
             btnExcel: '📥 Download Excel', btnPdf: '📄 PDF Report',
             statusDanger: 'Critical', statusUrgent: 'Urgent', statusWarning: 'Warning', statusSafe: 'Safe', statusExpired: 'Expired',
             modalAdd: '➕ Add Certificate', modalEdit: '📝 Edit Certificate',
+            lblVessel: 'Vessel / Org *', lblDept: 'Department', lblName: 'Cert Name *',
+            lblCertNo: 'Cert No.', lblIssuer: 'Issuer', lblIssueDate: 'Issue Date',
+            lblExpireDate: 'Expiry Date *', lblLastAnn: 'Last Annual', lblLastInt: 'Last Inter.',
+            lblFileLink: 'File URL (NAS Link)', lblRemarks: 'Remarks',
             btnCancel: 'Cancel', btnSave: 'Save',
             msgSave: 'Data saved successfully.', msgReset: 'Data has been reset.',
             emptySearch: 'No certificates found.',
@@ -160,6 +168,15 @@ const TVC_SmCertificatesUi = (function () {
             const key = node.getAttribute('data-i18n-cert');
             if (key) node.textContent = t(key);
         });
+        el('smCertsEditModal')?.querySelectorAll('[data-i18n-cert]').forEach(node => {
+            const key = node.getAttribute('data-i18n-cert');
+            if (key) node.textContent = t(key);
+        });
+        const modalTitle = el('smCertsModalTitle');
+        const modalOpen = el('smCertsEditModal') && !el('smCertsEditModal').classList.contains('hidden');
+        if (modalTitle && modalOpen) {
+            modalTitle.textContent = el('smCertsEditId')?.value ? t('modalEdit') : t('modalAdd');
+        }
         const search = el('smCertsSearch');
         if (search) search.placeholder = t('searchPlaceholder');
         paintTable();
@@ -194,7 +211,7 @@ const TVC_SmCertificatesUi = (function () {
       <span class="sm-certs-file-status muted" id="smCertsFileStatus"></span>
     </div>
     <div class="sm-certs-actions no-print">
-      <button type="button" class="btn btn-sm btn-primary" id="smCertsAddBtn">➕ 직접 추가</button>
+      <button type="button" class="btn btn-sm btn-primary" id="smCertsAddBtn">➕ Add Certificate</button>
       <label class="btn btn-sm sm-certs-btn-upload">📂 엑셀 파일 로드
         <input type="file" id="smCertsExcelInput" accept=".xlsx,.xls" hidden>
       </label>
@@ -254,29 +271,30 @@ const TVC_SmCertificatesUi = (function () {
         const modalHtml = `
 <div class="modal-overlay sm-certs-modal hidden" id="smCertsEditModal" role="dialog" aria-modal="true">
   <div class="modal-content sm-certs-modal-content">
-    <h3 id="smCertsModalTitle">📝 증서 정보 수정</h3>
+    <h3 id="smCertsModalTitle">➕ Add Certificate</h3>
     <input type="hidden" id="smCertsEditId">
     <div class="form-row sm-certs-form-row">
-      <div class="form-group"><label>선박 / 조직명 <span class="sm-certs-req">*</span></label><input type="text" id="smCertsEditVessel"></div>
-      <div class="form-group"><label>담당부서</label><input type="text" id="smCertsEditDept"></div>
+      <div class="form-group"><label data-i18n-cert="lblVessel">Vessel / Org *</label><input type="text" id="smCertsEditVessel"></div>
+      <div class="form-group"><label data-i18n-cert="lblDept">Department</label><input type="text" id="smCertsEditDept"></div>
     </div>
-    <div class="form-group"><label>증서명 <span class="sm-certs-req">*</span></label><input type="text" id="smCertsEditName"></div>
+    <div class="form-group"><label data-i18n-cert="lblName">Cert Name *</label><input type="text" id="smCertsEditName"></div>
     <div class="form-row sm-certs-form-row">
-      <div class="form-group"><label>증서번호</label><input type="text" id="smCertsEditCertNo"></div>
-      <div class="form-group"><label>발급처</label><input type="text" id="smCertsEditIssuer"></div>
-    </div>
-    <div class="form-row sm-certs-form-row">
-      <div class="form-group"><label>발급일</label><input type="text" id="smCertsEditIssueDate" placeholder="YYYY-MM-DD"></div>
-      <div class="form-group"><label>유효&만료일 <span class="sm-certs-req">*</span></label><input type="text" id="smCertsEditExpireDate" placeholder="YYYY-MM-DD 또는 Permanent"></div>
+      <div class="form-group"><label data-i18n-cert="lblCertNo">Cert No.</label><input type="text" id="smCertsEditCertNo"></div>
+      <div class="form-group"><label data-i18n-cert="lblIssuer">Issuer</label><input type="text" id="smCertsEditIssuer"></div>
     </div>
     <div class="form-row sm-certs-form-row">
-      <div class="form-group"><label>Last Annual</label><input type="text" id="smCertsEditLastAnn" placeholder="YYYY-MM-DD"></div>
-      <div class="form-group"><label>Last Inter.</label><input type="text" id="smCertsEditLastInt" placeholder="YYYY-MM-DD"></div>
+      <div class="form-group"><label data-i18n-cert="lblIssueDate">Issue Date</label><input type="text" id="smCertsEditIssueDate" placeholder="YYYY-MM-DD"></div>
+      <div class="form-group"><label data-i18n-cert="lblExpireDate">Expiry Date *</label><input type="text" id="smCertsEditExpireDate" placeholder="YYYY-MM-DD"></div>
     </div>
-    <div class="form-group"><label>비고</label><textarea id="smCertsEditRemarks" rows="3"></textarea></div>
+    <div class="form-row sm-certs-form-row">
+      <div class="form-group"><label data-i18n-cert="lblLastAnn">Last Annual</label><input type="text" id="smCertsEditLastAnn" placeholder="YYYY-MM-DD"></div>
+      <div class="form-group"><label data-i18n-cert="lblLastInt">Last Inter.</label><input type="text" id="smCertsEditLastInt" placeholder="YYYY-MM-DD"></div>
+    </div>
+    <div class="form-group"><label data-i18n-cert="lblFileLink">File URL (NAS Link)</label><input type="text" id="smCertsEditFileLink" placeholder="https://nas.domain.com/..."></div>
+    <div class="form-group"><label data-i18n-cert="lblRemarks">Remarks</label><input type="text" id="smCertsEditRemarks"></div>
     <div class="modal-actions">
-      <button type="button" class="btn" id="smCertsModalCancel">취소</button>
-      <button type="button" class="btn btn-primary" id="smCertsModalSave">저장하기</button>
+      <button type="button" class="btn btn-outline" id="smCertsModalCancel">Cancel</button>
+      <button type="button" class="btn btn-primary" id="smCertsModalSave">Save</button>
     </div>
   </div>
 </div>`;
@@ -532,6 +550,7 @@ const TVC_SmCertificatesUi = (function () {
         el('smCertsEditExpireDate').value = row?.expireDate && row.expireDate !== '-' ? row.expireDate : '';
         el('smCertsEditDept').value = row?.dept && row.dept !== '-' ? row.dept : '';
         el('smCertsEditRemarks').value = row?.remarks && row.remarks !== '-' ? row.remarks : '';
+        el('smCertsEditFileLink').value = row?.fileLink && row.fileLink !== '-' ? row.fileLink : '';
         const m = el('smCertsEditModal');
         m?.classList.remove('hidden');
         if (m) m.style.display = 'flex';
@@ -570,6 +589,7 @@ const TVC_SmCertificatesUi = (function () {
             lastInt: el('smCertsEditLastInt').value,
             expireDate,
             dept: el('smCertsEditDept').value,
+            fileLink: el('smCertsEditFileLink').value,
             remarks: el('smCertsEditRemarks').value,
         });
         closeModal();
