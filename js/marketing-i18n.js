@@ -991,6 +991,9 @@
         'contact.field.message': { en: 'Message *', ko: '내용 *' },
         'contact.inquiry.placeholder': { en: '— Select inquiry type —', ko: '— 문의 유형 선택 —' },
         'contact.inquiry.demo': { en: 'TVC-SM Fleet Demo & PoC', ko: 'TVC-SM 파일럿·데모' },
+        'contact.inquiry.poc': { en: '1-Ship 14-Day Free PoC (Standard)', ko: '1척 14일 무료 PoC (Standard)' },
+        'contact.inquiry.sales': { en: 'Enterprise Plan — Contact Sales', ko: 'Enterprise Plan — 영업 문의' },
+        'contact.inquiry.enterprise': { en: 'Global Fleet Custom', ko: 'Global Fleet Custom' },
         'contact.inquiry.partnership': { en: 'Maritime Toolkit & Partnership', ko: '실무 공구함·제휴' },
         'contact.inquiry.support': { en: 'Technical Support & Bug Report', ko: '기술 지원·오류 신고' },
         'contact.inquiry.general': { en: 'General Inquiries', ko: '일반 문의' },
@@ -1022,6 +1025,18 @@
         'contact.campaign.toolkitPro': {
             en: 'I would like to subscribe to Maritime Toolkit Pro ($9.99/month) for ASTM 54B logs and offline PDF exports.',
             ko: 'Maritime Toolkit Pro(월 $9.99) 구독을 신청합니다 — ASTM 54B 로그·오프라인 PDF.',
+        },
+        'contact.campaign.poc': {
+            en: 'I would like to start the 1-ship / 14-day free TVC-SM PoC (Standard plan — $300/ship/month after trial).',
+            ko: 'TVC-SM 1척 14일 무료 PoC(Standard, 체험 후 선박당 월 $300)를 신청합니다.',
+        },
+        'contact.campaign.sales': {
+            en: 'We are interested in the Enterprise plan ($600–$800/ship/month) including predictive maintenance and onboard edge AI.',
+            ko: 'Enterprise 요금제($600~$800/선박/월, 예지보전·온보드 Edge AI) 영업 상담을 요청합니다.',
+        },
+        'contact.campaign.enterprise': {
+            en: 'We operate a large global fleet and need a custom enterprise integration (legacy PMS/ERP API, hybrid/on-prem pipeline).',
+            ko: '대형 글로벌 선단 맞춤 연동(레거시 PMS/ERP API, 하이브리드/온프레미스) Enterprise 문의입니다.',
         },
 
         'forum.meta.description': {

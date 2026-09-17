@@ -19,6 +19,9 @@
     function inquiryLabel(value) {
         const key = {
             demo: 'contact.inquiry.demo',
+            poc: 'contact.inquiry.poc',
+            sales: 'contact.inquiry.sales',
+            enterprise: 'contact.inquiry.enterprise',
             partnership: 'contact.inquiry.partnership',
             support: 'contact.inquiry.support',
             general: 'contact.inquiry.general',
@@ -110,27 +113,42 @@
         }
     }
 
-    function applyInboundCampaignParams() {
-        const params = new URLSearchParams(window.location.search);
-        const inquiry = String(params.get('inquiry') || '').trim().toLowerCase();
+    function setInquiryTypeFromQuery(inquiryRaw) {
+        const inquiry = String(inquiryRaw || '').trim().toLowerCase();
+        if (!inquiry) return;
         const typeSelect = qs('#acInquiryType');
         const message = qs('#acMessage');
-        if (inquiry === 'tvc-sm-demo' || inquiry === 'fleet-trial') {
-            if (typeSelect) typeSelect.value = 'demo';
+        if (!typeSelect) return;
+
+        const prefilledMessage = (i18nKey) => {
             if (message && !String(message.value || '').trim()) {
-                message.value =
-                    inquiry === 'fleet-trial'
-                        ? t('contact.campaign.fleetTrial') || t('contact.campaign.demo') || ''
-                        : t('contact.campaign.demo') || '';
+                message.value = t(i18nKey) || '';
             }
+        };
+
+        const saasKeys = ['poc', 'sales', 'enterprise'];
+        if (saasKeys.includes(inquiry) && typeSelect.querySelector(`option[value="${inquiry}"]`)) {
+            typeSelect.value = inquiry;
+            prefilledMessage(`contact.campaign.${inquiry}`);
+            return;
+        }
+
+        if (inquiry === 'tvc-sm-demo' || inquiry === 'fleet-trial') {
+            typeSelect.value = 'demo';
+            prefilledMessage(inquiry === 'fleet-trial' ? 'contact.campaign.fleetTrial' : 'contact.campaign.demo');
             return;
         }
         if (inquiry === 'toolkit-pro') {
-            if (typeSelect) typeSelect.value = 'partnership';
-            if (message && !String(message.value || '').trim()) {
-                message.value = t('contact.campaign.toolkitPro') || '';
-            }
+            typeSelect.value = 'partnership';
+            prefilledMessage('contact.campaign.toolkitPro');
         }
+    }
+
+    function applyInboundCampaignParams() {
+        try {
+            const params = new URLSearchParams(window.location.search);
+            setInquiryTypeFromQuery(params.get('inquiry'));
+        } catch { /* ignore */ }
     }
 
     function init() {
