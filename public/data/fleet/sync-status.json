@@ -1,25 +1,13 @@
 {
   "v": 1,
-  "startedAt": "2026-09-16T04:52:55.358Z",
-  "completedAt": "2026-09-16T04:52:56.768Z",
+  "startedAt": "2026-09-17T02:03:22.696Z",
+  "completedAt": "2026-09-17T02:03:23.865Z",
   "offline": false,
   "steps": {
     "ingest": {
-      "ok": true,
-      "exitCode": 0,
-      "durationMs": 1213,
-      "error": null
-    },
-    "generateEnrichment": {
-      "ok": true,
-      "count": 831,
-      "reason": null,
-      "durationMs": 0
-    },
-    "enrich": {
-      "ok": true,
-      "exitCode": 0,
-      "durationMs": 136,
+      "ok": false,
+      "exitCode": 1,
+      "durationMs": 1109,
       "error": null
     },
     "ais": {
@@ -35,14 +23,15 @@
     }
   },
   "checksums": {
-    "fleetIndexSha256": "8d45f7d988bc0643dcaa857964cd447ec589277a332d239be592f77bbccfcec2",
+    "fleetIndexSha256": "4d28cf62f1600531a2d53ce09232265b4a27098b9d65c92641e4e7197f3268d3",
     "chunkCount": 66,
     "vesselCount": 49634,
-    "fleetGenerated": "2026-09-16T04:52:56.530Z",
-    "fleetEnrichedAt": "2026-09-16T04:52:56.681Z"
+    "fleetGenerated": "2026-09-16T05:03:53.594Z",
+    "fleetEnrichedAt": "2026-09-16T05:20:23.845Z"
   },
   "warnings": [
+    "ingest failed — keeping existing fleet chunks",
     "AISSTREAM_API_KEY not set — preserving existing snapshots"
   ],
-  "ok": true
+  "ok": false
 }
