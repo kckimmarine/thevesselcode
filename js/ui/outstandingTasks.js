@@ -484,26 +484,54 @@ const TVC_OutstandingTasks = (function () {
         </div>`;
     }
 
-    function renderPanel(buckets, loadingReq, state) {
-        const openBucket = openKey ? buckets[openKey] : null;
-        return `<section class="outstanding-tasks-panel tvc-section-card" aria-label="Outstanding tasks summary">
+    function renderPmsPanel(state, loadingReq) {
+        return `<section class="outstanding-tasks-panel tvc-section-card" aria-label="PMS Outstanding Code">
             ${loadingReq ? '<header class="ot-head ot-head-loading"><span class="ot-loading muted">Updating…</span></header>' : ''}
             ${renderPmsMatrix(state)}
-            ${renderSpareSection(buckets)}
-            ${renderDetail(openBucket, openScope, state)}
         </section>`;
     }
 
+    function renderAuxPanel(buckets, loadingReq, state) {
+        const openBucket = openKey ? buckets[openKey] : null;
+        const spareHtml = renderSpareSection(buckets);
+        const detailHtml = renderDetail(openBucket, openScope, state);
+        if (!spareHtml && !detailHtml && !loadingReq) {
+            return '';
+        }
+        return `<section class="outstanding-tasks-aux-panel tvc-section-card" aria-label="SPARE outstanding and detail">
+            ${loadingReq ? '<header class="ot-head ot-head-loading"><span class="ot-loading muted">Updating…</span></header>' : ''}
+            ${spareHtml}
+            ${detailHtml}
+        </section>`;
+    }
+
+    function paintPanels(buckets, loadingReq, state) {
+        const pmsHost = document.getElementById('outstandingTasksPanel');
+        const auxHost = document.getElementById('outstandingTasksAuxPanel');
+        if (!pmsHost || !ctx) return;
+        pmsHost.innerHTML = renderPmsPanel(state, loadingReq);
+        if (auxHost) {
+            const auxHtml = renderAuxPanel(buckets, loadingReq, state);
+            auxHost.innerHTML = auxHtml;
+            auxHost.classList.toggle('hidden', !auxHtml);
+        }
+    }
+
     async function render() {
-        const host = document.getElementById('outstandingTasksPanel');
-        if (!host || !ctx) return;
+        const pmsHost = document.getElementById('outstandingTasksPanel');
+        const auxHost = document.getElementById('outstandingTasksAuxPanel');
+        if (!pmsHost || !ctx) return;
         const state = ctx.getState();
         if (!state.user) {
-            host.innerHTML = '';
-            host.classList.add('hidden');
+            pmsHost.innerHTML = '';
+            pmsHost.classList.add('hidden');
+            if (auxHost) {
+                auxHost.innerHTML = '';
+                auxHost.classList.add('hidden');
+            }
             return;
         }
-        host.classList.remove('hidden');
+        pmsHost.classList.remove('hidden');
 
         const keys = activeKeys();
         if (openKey && !keys.includes(openKey)) {
@@ -513,12 +541,12 @@ const TVC_OutstandingTasks = (function () {
 
         const isHq = TVC_RBAC.isSmAccount(state.user);
         if (isHq && !state.selectedVesselId) {
-            host.innerHTML = renderPanel(bucketDefs(state, []), false, state);
+            paintPanels(bucketDefs(state, []), false, state);
             return;
         }
 
         const syncBuckets = bucketDefs(state, state._outstandingReqCache || []);
-        host.innerHTML = renderPanel(syncBuckets, !state._outstandingReqLoaded, state);
+        paintPanels(syncBuckets, !state._outstandingReqLoaded, state);
 
         try {
             const reqRows = await requisitionRows(state);
@@ -529,7 +557,7 @@ const TVC_OutstandingTasks = (function () {
                 openKey = null;
                 openScope = 'total';
             }
-            host.innerHTML = renderPanel(buckets, false, state);
+            paintPanels(buckets, false, state);
         } catch (e) {
             console.warn('[TVC_OutstandingTasks] requisitions', e);
             state._outstandingReqLoaded = true;

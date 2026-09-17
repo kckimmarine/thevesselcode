@@ -544,6 +544,62 @@ body {
 .cmaxs-body.sm-mode, .cmaxs-body.hq-mode { grid-template-columns: minmax(280px, 360px) minmax(0, 1fr); }
 .menu-main-col { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
 .menu-main-col.hidden { display: none !important; }
+
+.menu-dashboard-grid,
+.menu-dashboard-container {
+    display: grid;
+    grid-template-columns: 1.1fr 1.4fr 1.2fr;
+    gap: 20px;
+    align-items: start;
+    width: 100%;
+    min-width: 0;
+}
+.menu-dashboard-grid #cmaxsCards.cmaxs-cards.menu-col-cards {
+    display: contents;
+}
+.menu-dashboard-grid .tvc-section-pms-flow {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+}
+.menu-dashboard-grid .tvc-section-spare-flow {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+}
+.menu-dashboard-grid .outstanding-tasks-aux-host.menu-col-center {
+    grid-column: 2;
+    grid-row: 2;
+    min-width: 0;
+}
+.menu-dashboard-grid .menu-col-right#pmsOutstandingCard,
+.menu-dashboard-grid #pmsOutstandingCard.menu-col-right {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    min-width: 0;
+    align-self: start;
+}
+#pmsOutstandingCard.dashboard-card {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+@media (max-width: 1280px) {
+    .menu-dashboard-grid,
+    .menu-dashboard-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .menu-dashboard-grid .tvc-section-pms-flow,
+    .menu-dashboard-grid .tvc-section-spare-flow,
+    .menu-dashboard-grid .outstanding-tasks-aux-host.menu-col-center,
+    .menu-dashboard-grid .menu-col-right#pmsOutstandingCard {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+
 .menu-right-col {
     display: flex;
     flex-direction: column;
@@ -4307,14 +4363,17 @@ input.tvc-date-input::placeholder {
 #rhRevertBtn:disabled { opacity: .45; cursor: not-allowed; }
 
 /* Menu — Outstanding Tasks dashboard */
-.menu-main-col .outstanding-tasks-host {
+.menu-main-col .outstanding-tasks-host,
+.menu-main-col .outstanding-tasks-aux-host {
     padding: 0;
     min-width: 0;
 }
-.menu-main-col .outstanding-tasks-panel {
+.menu-main-col .outstanding-tasks-panel,
+.menu-main-col .outstanding-tasks-aux-panel {
     margin-bottom: 0;
 }
-.outstanding-tasks-panel {
+.outstanding-tasks-panel,
+.outstanding-tasks-aux-panel {
     background: #fff;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
