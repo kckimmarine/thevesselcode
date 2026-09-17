@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="TVC-SM">
     <meta name="application-name" content="TVC-SM">
-    <meta name="description" content="THE VESSEL CODE — Offline-first Planned Maintenance System">
+    <meta name="description" content="TVC-SM — Ship Management for vessel and shore operations">
     <title>TVC-SM — Vessel &amp; Shore Operations</title>
     <script>
         (function () {
@@ -48,11 +48,14 @@
         </div>
         <div class="login-brand-text">
             <span class="login-brand-name">TVC-SM</span>
-            <span class="login-brand-tag">Unified Vessel &amp; Shore Operations · ClassNK Annex 9.1.3</span>
+            <span class="login-brand-tag">IACS UR Z20 &amp; IMO ISM Code Section 10 Compliant</span>
         </div>
     </header>
 
     <main class="login-main">
+        <p class="login-site-link-wrap">
+            <a href="https://thevesselcode.com" class="login-site-link text-xs text-slate-400 hover:text-cyan-400 transition-colors" target="_top" rel="noopener">← thevesselcode.com</a>
+        </p>
         <div class="login-card">
             <div class="login-card-head">
                 <h2 class="login-card-title">Sign in to TVC-SM</h2>
@@ -76,33 +79,12 @@
         </label>
         <label class="login-check" for="loginAutoLogin">
             <input id="loginAutoLogin" type="checkbox">
-            <span>Auto-Login (Keep Me Signed In)</span>
+            <span>Auto-Login</span>
         </label>
     </div>
-                <div class="login-field">
-                    <label for="loginDept">Department</label>
-                    <select id="loginDept">
-                        <option value="">— Select Department —</option>
-                        <option value="MASTER">Captain</option>
-                        <option value="ENGINE">Engine</option>
-                        <option value="DECK">Deck</option>
-                    </select>
-                </div>
                 <button type="submit" class="login-submit">Sign In</button>
                 <div id="loginErr" class="login-err" role="alert"></div>
             </form>
-            <p class="login-supplier-register-wrap">
-                <button type="button" id="supplierRegisterOpenBtn" class="login-supplier-register-btn"
-                    onclick="window.TVC_SupplierRegister?.openModal?.()">
-                    🤝 Register as Supplier / Partner
-                </button>
-            </p>
-            <div id="loginDownloadSection" class="login-download hidden">
-                <button type="button" id="loginDownloadBtn" class="login-download-btn">
-                    Download Vessel Mode (PC installer)
-                </button>
-                <p class="login-download-note">Install on ship PC · sync to SM via web portal</p>
-            </div>
             <div class="login-hint">
                 <span class="login-hint-label">Demo access</span>
                 Password <strong>0000</strong>
@@ -112,18 +94,15 @@
                     <li><b>Deck</b> · officer / co</li>
                     <li><b>SM</b> · abc shipping (company vessels · no Department)</li>
                     <li><b>SM</b> · gfsm (GFSM 증서관리 · password 0000)</li>
-                    <li><b>Supplier</b> · use <b>Register as Supplier / Partner</b> above</li>
-                    <li><b>Admin</b> · admin (Admin Mode · no Department)</li>
+                    <li><b>Admin</b> · admin (Admin Mode)</li>
+                    <li><b>SM</b> · tvc (registry HQ · password tvc1234)</li>
                 </ul>
             </div>
         </div>
     </main>
 
     <footer class="login-footer">
-        <p id="loginMainSiteLink" class="login-main-site-link hidden">
-            <a href="https://thevesselcode.com" target="_top" rel="noopener">← thevesselcode.com</a>
-        </p>
-        <span id="loginAppVersion">v1.0.6</span> &nbsp;|&nbsp; © 2026 THE VESSEL CODE
+        <span class="login-copyright">TVC-SM · © 2026 K-TECH. All rights reserved.</span>
     </footer>
 </div>
 
@@ -147,7 +126,7 @@
             <div class="ship-fields">
                 <div class="app-product-header">
                     <strong id="appProductName" class="app-product-name">TVC-SM</strong>
-                    <span id="appProductVersionBadge" class="app-product-version">TVC-SM v2.5 (ClassNK Annex 9.1.3 Compliant)</span>
+                    <span id="appProductVersionBadge" class="app-product-version">IACS UR Z20 &amp; IMO ISM Code Section 10 Compliant</span>
                 </div>
                 <div class="ship-name-row">
                     <span class="fld-label">Ship's Name</span>
@@ -230,6 +209,10 @@
                             </table>
                         </div>
                     </aside>
+                    <div id="vesselModeInquiryCard" class="vessel-mode-inquiry-card hidden" aria-label="Vessel Mode setup">
+                        <p class="vessel-mode-inquiry-text">⚓ Integrate Shipboard Offline Station?</p>
+                        <a class="vessel-mode-inquiry-btn" href="/contact-us" target="_top" rel="noopener">Request Vessel Mode Setup</a>
+                    </div>
                 </div>
                 <div class="menu-main-col" id="menuMainCol">
                     <div class="cmaxs-cards" id="cmaxsCards"></div>
@@ -446,6 +429,7 @@
     <input type="file" id="menuXferAppUpdateSetupFile" accept=".exe,application/vnd.microsoft.portable-executable" hidden
         onchange="TVC_App.menuXferAppUpdateOnSetupFile(this.files &amp;&amp; this.files[0]); this.value='';">
     <input type="file" id="importDefectUrgent" accept=".zip" hidden onchange="TVC_App.handleDefectImport(this.files[0]);this.value=''">
+    <footer class="app-shell-footer">TVC-SM · © 2026 K-TECH. All rights reserved.</footer>
 </div>
 
 <div id="tvc-supplier-workspace" class="tvc-supplier-workspace hidden" aria-label="Supplier Portal">

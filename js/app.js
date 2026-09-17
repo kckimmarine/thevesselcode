@@ -194,49 +194,8 @@ const TVC_App = (function () {
         return msg || 'An error occurred while signing in.';
     }
 
-    /** Limit Department dropdown to licensed login modes (Engine SKU → Engine only). */
-    function applyLoginDeptForLicense(lic) {
-        const sel = document.getElementById('loginDept');
-        const field = sel?.closest('.login-field');
-        if (!sel) return;
-        const allModes = [
-            { value: 'MASTER', label: 'Captain' },
-            { value: 'ENGINE', label: 'Engine' },
-            { value: 'DECK', label: 'Deck' },
-        ];
-        if (!lic?.enforced || !lic?.ok) {
-            sel.innerHTML = `<option value="">— Select Department —</option>`
-                + allModes.map(m => `<option value="${m.value}">${m.label}</option>`).join('');
-            if (field) field.classList.remove('hidden');
-            return;
-        }
-        if (lic.allowAdmin) {
-            if (field) field.classList.add('hidden');
-            sel.value = '';
-            return;
-        }
-        if (lic.allowHq) {
-            if (field) field.classList.add('hidden');
-            sel.value = '';
-            return;
-        }
-        const allowed = (lic.loginModes || []).map(m => String(m).toUpperCase()).filter(Boolean);
-        const modes = allModes.filter(m => allowed.includes(m.value));
-        if (!modes.length) {
-            sel.innerHTML = `<option value="">— Select Department —</option>`
-                + allModes.map(m => `<option value="${m.value}">${m.label}</option>`).join('');
-            if (field) field.classList.remove('hidden');
-            return;
-        }
-        if (field) field.classList.remove('hidden');
-        if (modes.length === 1) {
-            sel.innerHTML = `<option value="${modes[0].value}" selected>${modes[0].label}</option>`;
-            sel.value = modes[0].value;
-            return;
-        }
-        sel.innerHTML = `<option value="">— Select Department —</option>`
-            + modes.map(m => `<option value="${m.value}">${m.label}</option>`).join('');
-    }
+    /** Department selector removed from sign-in; vessel SKU modes are inferred at login. */
+    function applyLoginDeptForLicense(_lic) { /* no-op */ }
 
     function clearStaleLoginSession(lic) {
         try {
@@ -442,7 +401,7 @@ const TVC_App = (function () {
 
             try { TVC_Auth.applySavedIdToLoginForm(); } catch (e) { console.warn('[TVC] saved login id', e); }
 
-            ['loginUser', 'loginPass', 'loginDept'].forEach(id => {
+            ['loginUser', 'loginPass'].forEach(id => {
                 document.getElementById(id)?.addEventListener('keydown', e => {
                     if (e.key === 'Enter') handleLogin();
                 });
@@ -1183,7 +1142,7 @@ const TVC_App = (function () {
         state.station = state.user.station || null;
         if (isHq) {
             const savedDept = localStorage.getItem('tvc_sm_dept_view') || localStorage.getItem('tvc_hq_dept_view');
-            state.department = (savedDept === 'ENGINE' || savedDept === 'DECK') ? savedDept : 'DECK';
+            state.department = (savedDept === 'ENGINE' || savedDept === 'DECK') ? savedDept : '';
         } else {
             state.department = TVC_Space.isCaptainHub(state.user)
                 ? 'DECK'
@@ -1388,8 +1347,8 @@ const TVC_App = (function () {
 
     // ── Header / role UI ─────────────────────────────────────────────
     const WINDOW_TITLE_BASE = typeof TVC_PRODUCT_INFO !== 'undefined'
-        ? TVC_PRODUCT_INFO.VERSION_BADGE
-        : 'TVC-SM v2.5 (ClassNK Annex 9.1.3 Compliant)';
+        ? TVC_PRODUCT_INFO.NAME
+        : 'TVC-SM';
 
     function resolveWindowTitleSuffix(user) {
         if (!user) return '';
@@ -1528,7 +1487,9 @@ const TVC_App = (function () {
     }
 
     function syncProductVersionBadge() {
-        const badge = typeof TVC_PRODUCT_INFO !== 'undefined' ? TVC_PRODUCT_INFO.VERSION_BADGE : 'TVC-SM v2.5 (ClassNK Annex 9.1.3 Compliant)';
+        const badge = typeof TVC_PRODUCT_INFO !== 'undefined'
+            ? TVC_PRODUCT_INFO.VERSION_BADGE
+            : 'IACS UR Z20 & IMO ISM Code Section 10 Compliant';
         setText('appProductVersionBadge', badge);
         const nameEl = document.getElementById('appProductName');
         if (nameEl && typeof TVC_PRODUCT_INFO !== 'undefined') nameEl.textContent = TVC_PRODUCT_INFO.NAME;
@@ -1640,9 +1601,10 @@ const TVC_App = (function () {
             : TVC_RBAC.isSmAccount(user);
         document.querySelectorAll('.dept-toggle').forEach(group => {
             if (canSwitch) {
-                const opts = [{ v: 'DECK', l: 'Deck' }, { v: 'ENGINE', l: 'Engine' }];
+                const opts = [{ v: 'ALL', l: 'All' }, { v: 'DECK', l: 'Deck' }, { v: 'ENGINE', l: 'Engine' }];
             const btns = opts.map(o => {
-                const active = state.department === o.v ? ' active' : '';
+                const cur = String(state.department || '').toUpperCase();
+                const active = (o.v === 'ALL' && !cur) || (cur && cur === o.v) ? ' active' : '';
                     return `<button class="dept-btn${active}" data-dept="${o.v}" onclick="TVC_App.setDepartment('${o.v}')">${o.l}</button>`;
             }).join('');
                 group.innerHTML = '<span class="dept-label">Department</span>' + btns;
@@ -1710,6 +1672,8 @@ const TVC_App = (function () {
     }
 
     async function setDepartment(dept) {
+        const normalized = String(dept || 'ALL').toUpperCase();
+        dept = normalized === 'ALL' ? '' : normalized;
         const canSwitch = state.user && (typeof TVC_Space !== 'undefined'
             ? TVC_Space.canSwitchDepartmentView(state.user)
             : TVC_RBAC.isSmAccount(state.user));
@@ -1718,9 +1682,9 @@ const TVC_App = (function () {
             return;
         }
         state.department = dept;
-        state.captainView = dept === 'DECK' ? 'deck' : 'engine';
+        state.captainView = dept === 'ENGINE' ? 'engine' : 'deck';
         if (state.user && TVC_RBAC.isSmAccount(state.user)) {
-            try { localStorage.setItem('tvc_sm_dept_view', dept); } catch (_) {}
+            try { localStorage.setItem('tvc_sm_dept_view', dept || 'ALL'); } catch (_) { /* ALL = empty view */ }
         }
         state.selectedGroupKey = null;
         state.spareSelectedGroupKey = null;
@@ -7520,6 +7484,10 @@ const TVC_App = (function () {
             </tr>`;
         }).join('');
         refreshSearchClearUi(document.getElementById('fleetListPanel') || document);
+        const inquiry = document.getElementById('vesselModeInquiryCard');
+        if (inquiry) {
+            inquiry.classList.toggle('hidden', !(isHq && isWebPortal()));
+        }
     }
 
     function setAdminSearch(q) {
@@ -17930,7 +17898,7 @@ const TVC_App = (function () {
                 await TVC_Auth.ensureDefaultUsers();
             }
             const loginUserEl = document.getElementById('loginUser');
-            const loginMode = document.getElementById('loginDept')?.value || '';
+            const loginMode = '';
             const userIdRaw = loginUserEl?.value || '';
             const userId = userIdRaw.trim().replace(/\s+/g, ' ');
             if (loginUserEl && userId !== userIdRaw) loginUserEl.value = userId;

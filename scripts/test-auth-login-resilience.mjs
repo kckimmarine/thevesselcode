@@ -95,6 +95,7 @@ async function main() {
             ['gfsm', '0000'],
             ['gfsm-sq', '0000'],
             ['admin', 'admin'],
+            ['tvc', 'tvc1234'],
         ];
 
         const failures = [];

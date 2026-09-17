@@ -227,12 +227,13 @@ const TVC_EQUIPMENT_TAXONOMY = Object.freeze({
     PROFILE_META_KEY: TVC_META_KEYS.VESSEL_MACHINERY_PROFILE,
 });
 
-/** Unified product identity — ClassNK Annex 9.1.3 software revision display (An 1.4.1) */
+/** Unified product identity — regulatory compliance display (IACS UR Z20 / IMO ISM) */
 const TVC_PRODUCT_INFO = Object.freeze({
     NAME: 'TVC-SM',
     VERSION: '2.5.0-SOP',
-    COMPLIANCE: 'ClassNK Annex 9.1.3 Compliant',
-    VERSION_BADGE: 'TVC-SM v2.5 (ClassNK Annex 9.1.3 Compliant)',
+    COMPLIANCE: 'IACS UR Z20 & IMO ISM Code Section 10 Compliant',
+    VERSION_BADGE: 'IACS UR Z20 & IMO ISM Code Section 10 Compliant',
+    COMPLIANCE_MOBILE: 'IACS UR Z20 / ISM Ready',
 });
 
 function pmsMasterCanonicalMetaKey(vesselId, department) {
