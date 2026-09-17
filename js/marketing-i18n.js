@@ -40,45 +40,112 @@
         },
         'home.eyebrow': { en: 'THE VESSEL CODE', ko: 'THE VESSEL CODE' },
         'home.headline': {
-            en: 'Ship Management AX — Maritime AI & Ocean Big Data',
-            ko: '선박관리 AI Transformation(AX) · 해양 빅데이터 분석',
+            en: 'THE VESSEL CODE (TVC-SM)',
+            ko: 'THE VESSEL CODE (TVC-SM)',
+        },
+        'home.subheadline': {
+            en: 'Pioneering Maritime AX with Domain-Specific AI & Big Data',
+            ko: 'Pioneering Maritime AX with Domain-Specific AI & Big Data',
+        },
+        'home.description': {
+            en: 'A smart ship management platform combining field engineering know-how with maritime big data — from unstructured maintenance manual AI to autonomous class & PSC readiness. Start maritime digital transformation with per-vessel monthly SaaS.',
+            ko: '현장 엔지니어링 노하우와 해양 빅데이터를 결합한 지능형 선박관리(Smart Ship Management) 플랫폼. 비정형 정비 매뉴얼 AI 분석부터 자율형 선급·PSC 검사 대비까지, 선박 척당 월 구독(SaaS)으로 시작하는 해양 디지털 전환.',
+        },
+        'home.hero.cta.poc': {
+            en: '1-Ship 14-Day Free PoC',
+            ko: '1척 14일 무료 PoC 신청',
+        },
+        'home.hero.cta.arch': { en: 'Explore Architecture', ko: 'Explore Architecture' },
+        'home.search.divider': {
+            en: 'Quick toolkit search (IMPA & calculators)',
+            ko: '빠른 Toolkit 검색 (IMPA·계산기)',
         },
         'home.subtitle': {
-            en: 'Turn unstructured manuals, maintenance logs, and fleet telemetry into actionable insight — plus instant IMPA lookup, engineering tools, and offline-first TVC-SM.',
-            ko: '비정형 정비 문서와 선대 데이터를 해양 빅데이터 분석으로 연결합니다. IMPA·엔지니어링 도구와 오프라인 TVC-SM까지 한 플랫폼에서.',
+            en: 'Instant IMPA lookup and engineering utilities — alongside TVC-SM fleet operations.',
+            ko: 'TVC-SM 선대 운영과 함께 IMPA·엔지니어링 유틸리티를 즉시 검색.',
         },
-        'home.coretech.title': {
-            en: 'Core Tech & AX Solution',
-            ko: 'Core Tech & AX Solution',
+        'home.capabilities.title': {
+            en: 'Core Capabilities (TVC-SM)',
+            ko: 'Core Capabilities (TVC-SM 3대 핵심 축)',
         },
-        'home.coretech.lead': {
-            en: 'Domain-specific maritime intelligence layered on the same field-proven toolkit and fleet OS you use today.',
-            ko: '현장에서 검증된 Toolkit·Fleet OS 위에 올린 해양 도메인 AX 역량입니다.',
+        'home.capabilities.lead': {
+            en: 'Three pillars of domain-specific maritime AX — built on the same offline-first Vessel Core you can trial today.',
+            ko: '오프라인 Vessel Core 위에 구축된 해양 도메인 AX 3대 핵심 축입니다.',
         },
-        'home.coretech.item1.title': {
-            en: 'Maritime & vessel unstructured data analytics',
-            ko: '해양·선박 비정형 데이터 분석',
+        'home.capabilities.c1.title': { en: 'Domain-Specific RAG Engine', ko: 'Domain-Specific RAG Engine' },
+        'home.capabilities.c1.desc': {
+            en: 'Real-time analysis of unstructured maintenance docs (manuals, PDF job history). ~80% faster parts & decision search with source citations to reduce hallucination.',
+            ko: '비정형 정비 문서(수만 페이지 매뉴얼·PDF 정비 이력) 실시간 분석. 정비·부품 탐색 시간 약 80% 단축, 원본 페이지 인용(Source Citation)으로 환각 방지.',
         },
-        'home.coretech.item1.desc': {
-            en: 'Manuals, PDF reports, inspection notes, and maintenance history — indexed for search and decision support.',
-            ko: '매뉴얼·PDF·검사 기록·정비 이력 등 비정형 데이터를 검색·의사결정에 활용.',
+        'home.capabilities.c2.title': { en: 'Autonomous PSC & Class Audit', ko: 'Autonomous PSC & Class Audit' },
+        'home.capabilities.c2.desc': {
+            en: 'Auto cross-check against PSC and class society (KR, DNV, etc.) checklists. Pre-detect detention risks and generate corrective-action guides.',
+            ko: 'PSC·선급(KR/DNV 등) 검사 체크리스트 자동 대조. 출항 정지(Detention) 결함 사전 감지 및 시정 조치 가이드 자동 생성.',
         },
-        'home.coretech.item2.title': {
-            en: 'Engineering & diagnostic predictive maintenance',
-            ko: '엔지니어링 및 진단 데이터 기반 예지보전',
+        'home.capabilities.c3.title': { en: 'Hybrid Edge AI & Telemetry', ko: 'Hybrid Edge AI & Telemetry' },
+        'home.capabilities.c3.desc': {
+            en: 'Onboard edge AI tuned for VSAT/Starlink constraints. Time-series sensor big data with vibration & temperature anomaly prediction.',
+            ko: 'VSAT/Starlink 제약에 최적화된 선박 온보드 Edge AI. 시계열 센서 빅데이터 및 진동·온도 이상 징후 예지보전.',
         },
-        'home.coretech.item2.desc': {
-            en: 'Combine sensor trends, work reports, and failure patterns to flag machinery risk before unplanned downtime.',
-            ko: '센서·작업보고·고장 패턴을 결합해 비계획 정지 전에 설비 리스크를 식별.',
+        'home.pricing.title': { en: 'Pricing Plans', ko: 'Pricing Plans (구독 요금제)' },
+        'home.pricing.lead': {
+            en: 'Production SaaS pricing — from single-vessel PoC to global fleet integration.',
+            ko: '1척 PoC부터 글로벌 선단 연동까지, 실제 구독 기반 SaaS 요금제입니다.',
         },
-        'home.coretech.item3.title': {
-            en: 'Class & maritime regulatory AI assistance',
-            ko: '선급 및 해사 규정 대응 AI',
+        'home.pricing.standard.name': { en: 'Standard Plan', ko: 'Standard Plan' },
+        'home.pricing.standard.price': { en: '$300 / Ship / Month', ko: '$300 / Ship / Month' },
+        'home.pricing.standard.tag': {
+            en: 'Optimized for small owners & ship managers',
+            ko: '중소 선사 및 선박관리사(SM) 최적화',
         },
-        'home.coretech.item3.desc': {
-            en: 'Align fleet records with IMO, class, and PSC expectations — faster prep for audits and superintendent review.',
-            ko: 'IMO·선급·PSC 요구와 fleet 기록을 정렬 — 감사·감독 대비 시간 단축.',
+        'home.pricing.standard.features': {
+            en: 'Domain RAG manual search · Basic PSC/class checklists · Cloud dashboard',
+            ko: '도메인 RAG 매뉴얼 검색 · 기본 PSC/선급 체크리스트 · 클라우드 대시보드',
         },
+        'home.pricing.standard.cta': { en: 'Start Free PoC', ko: 'Start Free PoC' },
+        'home.pricing.enterprise.badge': { en: 'Most Popular', ko: 'Most Popular' },
+        'home.pricing.enterprise.name': { en: 'Enterprise Plan', ko: 'Enterprise Plan' },
+        'home.pricing.enterprise.price': { en: '$600 – $800 / Ship / Month', ko: '$600 ~ $800 / Ship / Month' },
+        'home.pricing.enterprise.tag': {
+            en: 'Mid/large fleets & predictive maintenance',
+            ko: '중대형 선단 및 정밀 예지보전 도입 선박',
+        },
+        'home.pricing.enterprise.features': {
+            en: 'All Standard · Machinery anomaly prediction · Onboard edge AI · Remote engineer diagnostic reports',
+            ko: 'Standard 전체 + 센서 이상징후 예지보전 + 온보드 Edge AI + 원격 정밀 진단 리포트',
+        },
+        'home.pricing.enterprise.cta': { en: 'Contact Sales', ko: 'Contact Sales' },
+        'home.pricing.custom.name': { en: 'Global Fleet Custom', ko: 'Global Fleet Custom' },
+        'home.pricing.custom.price': { en: 'Custom Enterprise', ko: 'Custom Enterprise' },
+        'home.pricing.custom.tag': {
+            en: '100+ vessel fleets — Synergy, Fleet, Wallem benchmarks',
+            ko: 'Synergy Marine, Fleet Management, Wallem 등 대형 선단 벤치마킹',
+        },
+        'home.pricing.custom.features': {
+            en: 'Legacy PMS/ERP API plugins · Dedicated on-prem / hybrid pipelines',
+            ko: '레거시 PMS/ERP API 플러그인 · 전용 온프레미스/하이브리드 파이프라인',
+        },
+        'home.pricing.custom.cta': { en: 'Inquire Enterprise', ko: 'Inquire Enterprise' },
+        'home.authority.title': { en: 'Domain Authority & Ecosystem', ko: 'Domain Authority & Ecosystem' },
+        'home.authority.headline': { en: 'Built by Maritime Field Engineers', ko: 'Built by Maritime Field Engineers' },
+        'home.authority.p1': {
+            en: 'Four years of industrial machinery repair, engineering services, and precision test & inspection know-how — encoded into defect rulesets, not generic IT templates.',
+            ko: '4년간 축적된 산업 기계 수리·엔지니어링 서비스·정밀 시험·검사 실무 노하우를 결함 판정 룰셋으로 결합했습니다.',
+        },
+        'home.authority.p2': {
+            en: 'Patent pipeline in progress for maritime diagnostic algorithms and RAG agent workflows.',
+            ko: '해양 진단 알고리즘 및 RAG 워크플로우 관련 특허 출원 파이프라인을 구축 중입니다.',
+        },
+        'home.authority.marquee.title': {
+            en: 'Target Ecosystem & Global Standards',
+            ko: 'Target Ecosystem & Global Standards',
+        },
+        'home.authority.logo.kr': { en: 'KR (Korean Register)', ko: 'KR (한국선급)' },
+        'home.authority.logo.synergy': { en: 'Synergy Marine', ko: 'Synergy Marine' },
+        'home.authority.logo.fleet': { en: 'Fleet Management', ko: 'Fleet Management' },
+        'home.authority.logo.wallem': { en: 'Wallem', ko: 'Wallem' },
+        'home.authority.logo.dnv': { en: 'DNV (Partner)', ko: 'DNV (Partner)' },
+        'home.authority.logo.imo': { en: 'IMO Standards', ko: 'IMO Standards' },
         'home.tagline': {
             en: 'Built by a former Chief Engineer and Technical Superintendent. An open reference for seafarers, superintendents, and engineers who demand exact standards.',
             ko: '전직 기관장·기술공무감독이 만든 열린 참조 자료. 정확한 기준을 요구하는 선원·감독·엔지니어를 위해.',
