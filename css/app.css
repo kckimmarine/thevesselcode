@@ -3026,13 +3026,20 @@ input.tvc-date-input::placeholder {
     border-radius: 8px;
     transition: background .12s, color .12s, border-color .12s;
 }
-.tab-bar-end {
+.tab-bar-end,
+.global-header-actions {
     margin-left: auto;
     display: flex;
     align-items: center;
     gap: 8px;
     flex-shrink: 0;
     align-self: center;
+}
+.theme-toggle-btn,
+.lang-toggle-btn,
+.ai-help-btn,
+.settings-btn {
+    touch-action: manipulation;
 }
 .tab-bar-end .tab-bar-settings {
     margin-left: 0;

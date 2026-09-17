@@ -165,10 +165,11 @@
         <button class="tab-btn" data-tab="actual" data-i18n="nav.pms" onclick="TVC_App.switchTab('actual')">🛠 PMS</button>
         <button class="tab-btn" data-tab="spare" data-feature="showSpareTab" data-i18n="nav.spare" onclick="TVC_App.switchTab('spare')">🔩 SPARE</button>
         <button class="tab-btn" data-tab="history" data-i18n="nav.history" onclick="TVC_App.switchTab('history')">📜 Report History</button>
-        <div class="tab-bar-end">
-            <button type="button" id="appLangToggleBtn" class="btn-feedback app-lang-toggle" onclick="TVC_App.toggleUiLang()" title="한국어 / English">🌐 EN/KR</button>
-            <button type="button" id="btn-open-ai-help" class="btn-ai-help btn-feedback" data-i18n="nav.aiHelp" onclick="TVC_App.openAiHelp()" title="AI Help">🤖 AI Help</button>
-            <button type="button" id="settingsOpenBtn" class="tab-bar-settings" data-i18n="nav.settings" data-i18n-title="nav.settings" onclick="TVC_Settings.open()" title="Settings">⚙ Settings</button>
+        <div class="tab-bar-end global-header-actions" role="group" aria-label="App utilities">
+            <button type="button" id="appThemeToggleBtn" class="btn-feedback theme-toggle-btn" onclick="TVC_App.toggleAppTheme()" title="Dark / Light mode">🌙 Dark</button>
+            <button type="button" id="appLangToggleBtn" class="btn-feedback lang-toggle-btn app-lang-toggle" onclick="TVC_App.toggleUiLang()" title="한국어 / English">🌐 EN/KR</button>
+            <button type="button" id="btn-open-ai-help" class="btn-ai-help btn-feedback ai-help-btn" data-i18n="nav.aiHelp" onclick="TVC_App.openAiHelp()" title="AI Help">🤖 AI Help</button>
+            <button type="button" id="settingsOpenBtn" class="tab-bar-settings settings-btn" data-i18n="nav.settings" data-i18n-title="nav.settings" onclick="TVC_Settings.open()" title="Settings">⚙ Settings</button>
         </div>
     </nav>
 

@@ -349,7 +349,10 @@ const TVC_App = (function () {
             try { await syncLoginAppVersion(); } catch (e) { console.warn('[TVC] version', e); }
             try { TVC_Config?.applyLoginChrome?.(); } catch (e) { console.warn('[TVC] login chrome', e); }
             try { TVC_Config?.applyEmbedChrome?.(); } catch (e) { console.warn('[TVC] embed chrome', e); }
-            try { TVC_I18n?.init?.(); } catch (e) { console.warn('[TVC] i18n', e); }
+            try {
+                TVC_I18n?.init?.();
+                syncUiLangButton();
+            } catch (e) { console.warn('[TVC] i18n', e); }
             try { TVC_SupplierRegister?.init(); } catch (e) { console.warn('[TVC] supplier register', e); }
             if (typeof TVC_License !== 'undefined') {
                 try {
@@ -13957,7 +13960,26 @@ const TVC_App = (function () {
     }
 
     function syncUiLangButton() {
-        if (typeof TVC_I18n !== 'undefined') TVC_I18n.syncLangToggleButton();
+        if (typeof TVC_I18n !== 'undefined') {
+            TVC_I18n.syncLangToggleButton();
+            TVC_I18n.syncThemeToggleButton();
+        }
+    }
+
+    function isAppDarkTheme() {
+        try { return localStorage.getItem('sm_certs_darkmode') === 'true'; } catch (_) { return false; }
+    }
+
+    function toggleAppTheme() {
+        const next = !isAppDarkTheme();
+        try { localStorage.setItem('sm_certs_darkmode', next ? 'true' : 'false'); } catch (_) { /* ignore */ }
+        if (typeof TVC_SmCertificatesUi !== 'undefined' && TVC_SmCertificatesUi.setDarkMode) {
+            TVC_SmCertificatesUi.setDarkMode(next);
+        } else {
+            document.getElementById('smCertsRoot')?.classList.toggle('sm-certs-dark', next);
+        }
+        syncUiLangButton();
+        return next;
     }
 
     function applyAppShellI18n() {
@@ -19037,7 +19059,7 @@ const TVC_App = (function () {
     function escAttr(s) { return esc(s).replace(/'/g, '&#39;'); }
 
     return {
-        boot, switchTab, toggleUiLang, syncUiLangButton, getSmCertificatesCompanyFilter,
+        boot, switchTab, toggleUiLang, toggleAppTheme, syncUiLangButton, getSmCertificatesCompanyFilter,
         setDepartment, setCaptainView, setHistView, setHistTab, menuAction, openSmRfqWorkspace, resolveDeptPick,
         setFleetView, setFleetSearch, setFleetCompanyFilter, selectVessel,
         openVesselDocsModal, uploadVesselDocsAttachment, removeVesselDocsAttachment,
