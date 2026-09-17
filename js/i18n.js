@@ -12,7 +12,9 @@ const TVC_I18n = (function () {
             'nav.history': '📜 Report History',
             'nav.settings': '⚙ Settings',
             'nav.aiHelp': '🤖 AI Help',
-            'nav.langToggle': '🌐 EN/KR',
+            'nav.langToggle': '🌐 KR/EN',
+            'nav.themeDark': '🌙 Dark',
+            'nav.themeLight': '☀️ Light',
             'header.shipName': "Ship's Name",
             'header.imo': 'IMO No',
             'header.delivery': 'Delivery',
@@ -35,6 +37,8 @@ const TVC_I18n = (function () {
             'nav.settings': '⚙ 설정',
             'nav.aiHelp': '🤖 AI 도움말',
             'nav.langToggle': '🌐 EN/KR',
+            'nav.themeDark': '🌙 Dark',
+            'nav.themeLight': '☀️ Light',
             'header.shipName': '선명',
             'header.imo': 'IMO 번호',
             'header.delivery': '인도일',
@@ -98,14 +102,24 @@ const TVC_I18n = (function () {
             rootEl.style.setProperty('--tvc-mobile-imo-prefix', `"${t('header.imoPrefix')}"`);
         }
         syncLangToggleButton();
+        syncThemeToggleButton();
     }
 
     function syncLangToggleButton() {
         const btn = document.getElementById('appLangToggleBtn');
         if (!btn) return;
+        btn.textContent = t('nav.langToggle');
         const lang = getLang();
-        btn.textContent = lang === 'ko' ? '🌐 EN/KR' : '🌐 KR/EN';
         btn.setAttribute('aria-label', lang === 'ko' ? 'Switch to English' : '한국어로 전환');
+    }
+
+    function syncThemeToggleButton() {
+        const btn = document.getElementById('appThemeToggleBtn');
+        if (!btn) return;
+        let dark = false;
+        try { dark = localStorage.getItem('sm_certs_darkmode') === 'true'; } catch (_) { /* ignore */ }
+        btn.textContent = dark ? t('nav.themeLight') : t('nav.themeDark');
+        btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
     }
 
     function toggle() {
@@ -124,5 +138,8 @@ const TVC_I18n = (function () {
         apply(document);
     }
 
-    return { getLang, setLang, toggle, apply, t, init, syncLangToggleButton, MESSAGES };
+    return {
+        getLang, setLang, toggle, apply, t, init,
+        syncLangToggleButton, syncThemeToggleButton, MESSAGES,
+    };
 })();

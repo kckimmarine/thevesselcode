@@ -143,8 +143,6 @@ const TVC_SmCertificatesUi = (function () {
             smCertsDateLabel: 'dateUpdated',
             smCertsAddBtn: 'btnAdd',
             smCertsClearBtn: 'btnClear',
-            smCertsLangBtn: 'btnLang',
-            smCertsDarkBtn: 'btnLight',
             smCertsHtmlBtn: 'btnShare',
             smCertsMailBtn: 'btnMail',
             smCertsExcelBtn: 'btnExcel',
@@ -164,15 +162,19 @@ const TVC_SmCertificatesUi = (function () {
         });
         const search = el('smCertsSearch');
         if (search) search.placeholder = t('searchPlaceholder');
-        const darkBtn = el('smCertsDarkBtn');
-        if (darkBtn) darkBtn.textContent = isDarkMode ? t('btnLight') : t('btnDark');
         paintTable();
+        if (typeof TVC_I18n !== 'undefined') TVC_I18n.syncThemeToggleButton();
+    }
+
+    function setDarkMode(on) {
+        isDarkMode = !!on;
+        el('smCertsRoot')?.classList.toggle('sm-certs-dark', isDarkMode);
+        try { localStorage.setItem('sm_certs_darkmode', isDarkMode ? 'true' : 'false'); } catch (_) {}
+        if (typeof TVC_I18n !== 'undefined') TVC_I18n.syncThemeToggleButton();
     }
 
     function toggleDark() {
-        isDarkMode = !isDarkMode;
-        el('smCertsRoot')?.classList.toggle('sm-certs-dark', isDarkMode);
-        try { localStorage.setItem('sm_certs_darkmode', isDarkMode ? 'true' : 'false'); } catch (_) {}
+        setDarkMode(!isDarkMode);
         applyLang();
     }
 
@@ -192,8 +194,6 @@ const TVC_SmCertificatesUi = (function () {
       <span class="sm-certs-file-status muted" id="smCertsFileStatus"></span>
     </div>
     <div class="sm-certs-actions no-print">
-      <button type="button" class="btn btn-sm btn-outline" id="smCertsDarkBtn">☀️ Light</button>
-      <button type="button" class="btn btn-sm btn-outline" id="smCertsLangBtn">🌐 EN/KR</button>
       <button type="button" class="btn btn-sm btn-primary" id="smCertsAddBtn">➕ 직접 추가</button>
       <label class="btn btn-sm sm-certs-btn-upload">📂 엑셀 파일 로드
         <input type="file" id="smCertsExcelInput" accept=".xlsx,.xls" hidden>
@@ -300,8 +300,6 @@ const TVC_SmCertificatesUi = (function () {
         el('smCertsMailBtn')?.addEventListener('click', draftEmail);
         el('smCertsPdfBtn')?.addEventListener('click', () => void exportPdf());
         el('smCertsClearBtn')?.addEventListener('click', () => void clearAllData());
-        el('smCertsLangBtn')?.addEventListener('click', () => window.TVC_App?.toggleUiLang?.());
-        el('smCertsDarkBtn')?.addEventListener('click', toggleDark);
         window.addEventListener('tvc-mkt-lang', () => applyLang());
         window.addEventListener('tvc-lang-change', () => applyLang());
         el('smCertsRoot')?.addEventListener('click', (ev) => {
@@ -777,5 +775,5 @@ const TVC_SmCertificatesUi = (function () {
         paintTable();
     }
 
-    return { render, refreshData, applyLang };
+    return { render, refreshData, applyLang, setDarkMode, toggleDark, getDarkMode: () => isDarkMode };
 })();
