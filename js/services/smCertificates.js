@@ -96,6 +96,7 @@ const TVC_SmCertificates = (function () {
             lastInt: data.lastInt || '-',
             expireDate: data.expireDate || '-',
             dept: data.dept || '-',
+            fileLink: String(data.fileLink || '').trim() || '-',
             remarks: data.remarks || '-',
             days: s.diffDays,
             rawStatus: s.rawStatus,
