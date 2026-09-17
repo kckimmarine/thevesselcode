@@ -40,12 +40,44 @@
         },
         'home.eyebrow': { en: 'THE VESSEL CODE', ko: 'THE VESSEL CODE' },
         'home.headline': {
-            en: 'Stop Searching Thick Manuals. Get Maritime Answers in 0.05s.',
-            ko: '두꺼운 매뉴얼 대신 0.05초 해양 답변.',
+            en: 'Ship Management AX — Maritime AI & Ocean Big Data',
+            ko: '선박관리 AI Transformation(AX) · 해양 빅데이터 분석',
         },
         'home.subtitle': {
-            en: 'Instant search for 50,000+ IMPA standards, engineering calculators, and an offline-first fleet management OS.',
-            ko: '50,000+ IMPA 규격, 엔지니어링 계산기, 오프라인 우선 선대 관리 OS를 즉시 검색.',
+            en: 'Turn unstructured manuals, maintenance logs, and fleet telemetry into actionable insight — plus instant IMPA lookup, engineering tools, and offline-first TVC-SM.',
+            ko: '비정형 정비 문서와 선대 데이터를 해양 빅데이터 분석으로 연결합니다. IMPA·엔지니어링 도구와 오프라인 TVC-SM까지 한 플랫폼에서.',
+        },
+        'home.coretech.title': {
+            en: 'Core Tech & AX Solution',
+            ko: 'Core Tech & AX Solution',
+        },
+        'home.coretech.lead': {
+            en: 'Domain-specific maritime intelligence layered on the same field-proven toolkit and fleet OS you use today.',
+            ko: '현장에서 검증된 Toolkit·Fleet OS 위에 올린 해양 도메인 AX 역량입니다.',
+        },
+        'home.coretech.item1.title': {
+            en: 'Maritime & vessel unstructured data analytics',
+            ko: '해양·선박 비정형 데이터 분석',
+        },
+        'home.coretech.item1.desc': {
+            en: 'Manuals, PDF reports, inspection notes, and maintenance history — indexed for search and decision support.',
+            ko: '매뉴얼·PDF·검사 기록·정비 이력 등 비정형 데이터를 검색·의사결정에 활용.',
+        },
+        'home.coretech.item2.title': {
+            en: 'Engineering & diagnostic predictive maintenance',
+            ko: '엔지니어링 및 진단 데이터 기반 예지보전',
+        },
+        'home.coretech.item2.desc': {
+            en: 'Combine sensor trends, work reports, and failure patterns to flag machinery risk before unplanned downtime.',
+            ko: '센서·작업보고·고장 패턴을 결합해 비계획 정지 전에 설비 리스크를 식별.',
+        },
+        'home.coretech.item3.title': {
+            en: 'Class & maritime regulatory AI assistance',
+            ko: '선급 및 해사 규정 대응 AI',
+        },
+        'home.coretech.item3.desc': {
+            en: 'Align fleet records with IMO, class, and PSC expectations — faster prep for audits and superintendent review.',
+            ko: 'IMO·선급·PSC 요구와 fleet 기록을 정렬 — 감사·감독 대비 시간 단축.',
         },
         'home.tagline': {
             en: 'Built by a former Chief Engineer and Technical Superintendent. An open reference for seafarers, superintendents, and engineers who demand exact standards.',
