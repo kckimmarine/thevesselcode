@@ -491,47 +491,66 @@ const TVC_OutstandingTasks = (function () {
         </section>`;
     }
 
-    function renderAuxPanel(buckets, loadingReq, state) {
-        const openBucket = openKey ? buckets[openKey] : null;
+    function renderSparePanel(buckets, loadingReq) {
         const spareHtml = renderSpareSection(buckets);
-        const detailHtml = renderDetail(openBucket, openScope, state);
-        if (!spareHtml && !detailHtml && !loadingReq) {
-            return '';
-        }
-        return `<section class="outstanding-tasks-aux-panel tvc-section-card" aria-label="SPARE outstanding and detail">
+        if (!spareHtml && !loadingReq) return '';
+        return `<section class="outstanding-tasks-spare-panel tvc-section-card" aria-label="SPARE Outstanding Code">
             ${loadingReq ? '<header class="ot-head ot-head-loading"><span class="ot-loading muted">Updating…</span></header>' : ''}
             ${spareHtml}
+        </section>`;
+    }
+
+    function renderDetailPanel(buckets, loadingReq, state) {
+        const openBucket = openKey ? buckets[openKey] : null;
+        const detailHtml = renderDetail(openBucket, openScope, state);
+        if (!detailHtml && !loadingReq) return '';
+        return `<section class="outstanding-tasks-detail-panel tvc-section-card" aria-label="Outstanding detail">
+            ${loadingReq ? '<header class="ot-head ot-head-loading"><span class="ot-loading muted">Updating…</span></header>' : ''}
             ${detailHtml}
         </section>`;
     }
 
     function paintPanels(buckets, loadingReq, state) {
         const pmsHost = document.getElementById('outstandingTasksPanel');
-        const auxHost = document.getElementById('outstandingTasksAuxPanel');
+        const spareHost = document.getElementById('spareOutstandingPanel');
+        const detailHost = document.getElementById('outstandingTasksDetailPanel');
+        const spareCard = document.getElementById('spareOutstandingCard');
         if (!pmsHost || !ctx) return;
         pmsHost.innerHTML = renderPmsPanel(state, loadingReq);
-        if (auxHost) {
-            const auxHtml = renderAuxPanel(buckets, loadingReq, state);
-            auxHost.innerHTML = auxHtml;
-            auxHost.classList.toggle('hidden', !auxHtml);
+        if (spareHost) {
+            const spareHtml = renderSparePanel(buckets, loadingReq);
+            spareHost.innerHTML = spareHtml;
+            if (spareCard) spareCard.classList.toggle('hidden', !spareHtml && !loadingReq);
+        }
+        if (detailHost) {
+            const detailHtml = renderDetailPanel(buckets, loadingReq, state);
+            detailHost.innerHTML = detailHtml;
+            detailHost.classList.toggle('hidden', !detailHtml);
         }
     }
 
     async function render() {
         const pmsHost = document.getElementById('outstandingTasksPanel');
-        const auxHost = document.getElementById('outstandingTasksAuxPanel');
+        const spareHost = document.getElementById('spareOutstandingPanel');
+        const detailHost = document.getElementById('outstandingTasksDetailPanel');
+        const spareCard = document.getElementById('spareOutstandingCard');
         if (!pmsHost || !ctx) return;
         const state = ctx.getState();
         if (!state.user) {
             pmsHost.innerHTML = '';
             pmsHost.classList.add('hidden');
-            if (auxHost) {
-                auxHost.innerHTML = '';
-                auxHost.classList.add('hidden');
+            if (spareHost) {
+                spareHost.innerHTML = '';
+                spareCard?.classList.add('hidden');
+            }
+            if (detailHost) {
+                detailHost.innerHTML = '';
+                detailHost.classList.add('hidden');
             }
             return;
         }
         pmsHost.classList.remove('hidden');
+        spareCard?.classList.remove('hidden');
 
         const keys = activeKeys();
         if (openKey && !keys.includes(openKey)) {

@@ -53,9 +53,6 @@
     </header>
 
     <main class="login-main">
-        <p class="login-site-link-wrap">
-            <a href="https://thevesselcode.com" class="login-site-link text-xs text-slate-400 hover:text-cyan-400 transition-colors" target="_top" rel="noopener">← thevesselcode.com</a>
-        </p>
         <div class="login-card">
             <div class="login-card-head">
                 <h2 class="login-card-title">Sign in to TVC-SM</h2>
@@ -99,6 +96,9 @@
                 </ul>
             </div>
         </div>
+        <p class="login-site-link-wrap login-site-link-below">
+            <a href="https://thevesselcode.com" class="login-site-link text-xs text-slate-400 hover:text-cyan-400 transition-colors" target="_top" rel="noopener">← thevesselcode.com</a>
+        </p>
     </main>
 
     <footer class="login-footer">
@@ -177,8 +177,8 @@
         <!-- TAB: Menu (CMAXS main menu home) -->
         <section id="tab-menu" class="tab-pane">
             <div id="captainViewDashboard" class="captain-view-dashboard hidden"></div>
-            <div class="cmaxs-body" id="cmaxsMenuBody">
-                <div class="sm-left-col hidden" id="smLeftCol">
+            <div class="cmaxs-body menu-dashboard-grid menu-dashboard-container" id="cmaxsMenuBody">
+                <div class="col-ship-list sm-left-col hidden" id="smLeftCol">
                     <div class="hq-administration-host" id="cmaxsCardsSidebar"></div>
                     <aside id="fleetListPanel" class="fleet-list-panel" data-admin-layout="1">
                         <div class="fleet-search-bar">
@@ -215,13 +215,16 @@
                         <a class="vessel-mode-inquiry-btn" href="/contact-us" target="_top" rel="noopener">Request Vessel Mode Setup</a>
                     </div>
                 </div>
-                <div class="menu-main-col" id="menuMainCol">
-                    <div class="menu-dashboard-grid menu-dashboard-container">
-                        <div class="cmaxs-cards menu-col-cards" id="cmaxsCards"></div>
-                        <div id="outstandingTasksAuxPanel" class="outstanding-tasks-aux-host menu-col-center" aria-live="polite"></div>
-                        <div id="pmsOutstandingCard" class="menu-col-right dashboard-card">
-                            <div id="outstandingTasksPanel" class="outstanding-tasks-host"></div>
-                        </div>
+                <div class="col-workflows menu-main-col" id="menuMainCol">
+                    <div class="cmaxs-cards" id="cmaxsCards"></div>
+                </div>
+                <div class="col-outstanding" id="menuOutstandingCol" aria-live="polite">
+                    <div id="pmsOutstandingCard" class="dashboard-card">
+                        <div id="outstandingTasksPanel" class="outstanding-tasks-host"></div>
+                    </div>
+                    <div id="spareOutstandingCard" class="dashboard-card">
+                        <div id="spareOutstandingPanel" class="outstanding-tasks-spare-host"></div>
+                        <div id="outstandingTasksDetailPanel" class="outstanding-tasks-detail-host"></div>
                     </div>
                 </div>
             </div>

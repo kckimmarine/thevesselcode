@@ -114,6 +114,7 @@ body {
 .login-main {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -423,6 +424,10 @@ body {
     margin: 0 auto 10px;
     text-align: center;
 }
+.login-site-link-wrap.login-site-link-below {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
 .login-site-link.text-xs { font-size: 12px; }
 .login-site-link.text-slate-400 { color: rgba(148, 163, 184, 0.95); }
 .login-site-link.hover\:text-cyan-400:hover { color: #22d3ee; }
@@ -541,62 +546,72 @@ body {
 
 /* 메뉴(CMAXS 스타일): 선박=4열 workflow, HQ=Ship List + 메뉴 */
 .cmaxs-body { padding: 20px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; align-items: start; }
-.cmaxs-body.sm-mode, .cmaxs-body.hq-mode { grid-template-columns: minmax(280px, 360px) minmax(0, 1fr); }
+.cmaxs-body.sm-mode:not(.menu-dashboard-grid),
+.cmaxs-body.hq-mode:not(.menu-dashboard-grid) {
+    grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+}
 .menu-main-col { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
 .menu-main-col.hidden { display: none !important; }
 
-.menu-dashboard-grid,
-.menu-dashboard-container {
+/* Menu tab — full-width 3-column dashboard (ship list | workflows | outstanding) */
+.cmaxs-body.menu-dashboard-grid,
+.cmaxs-body.menu-dashboard-container {
     display: grid;
-    grid-template-columns: 1.1fr 1.4fr 1.2fr;
+    grid-template-columns: 1.1fr 1.35fr 1.15fr;
     gap: 20px;
     align-items: start;
     width: 100%;
     min-width: 0;
+    box-sizing: border-box;
 }
-.menu-dashboard-grid #cmaxsCards.cmaxs-cards.menu-col-cards {
-    display: contents;
+.cmaxs-body.menu-dashboard-grid:not(.sm-mode):not(.hq-mode) {
+    grid-template-columns: 1.35fr 1.15fr;
 }
-.menu-dashboard-grid .tvc-section-pms-flow {
-    grid-column: 1;
-    grid-row: 1;
+.cmaxs-body.menu-dashboard-grid .col-ship-list,
+.cmaxs-body.menu-dashboard-grid .col-workflows,
+.cmaxs-body.menu-dashboard-grid .col-outstanding {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.cmaxs-body.menu-dashboard-grid .col-workflows,
+.cmaxs-body.menu-dashboard-grid .col-outstanding {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cmaxs-body.menu-dashboard-grid #cmaxsCards.cmaxs-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
     min-width: 0;
 }
-.menu-dashboard-grid .tvc-section-spare-flow {
-    grid-column: 2;
-    grid-row: 1;
+.cmaxs-body.menu-dashboard-grid .col-workflows .tvc-section-card,
+.cmaxs-body.menu-dashboard-grid .col-workflows .menu-flow-panel.spare-flow-panel {
+    width: 100%;
     min-width: 0;
+    max-width: 100%;
 }
-.menu-dashboard-grid .outstanding-tasks-aux-host.menu-col-center {
-    grid-column: 2;
-    grid-row: 2;
-    min-width: 0;
+.cmaxs-body.menu-dashboard-grid .menu-flow-panel.spare-flow-panel {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
 }
-.menu-dashboard-grid .menu-col-right#pmsOutstandingCard,
-.menu-dashboard-grid #pmsOutstandingCard.menu-col-right {
-    grid-column: 3;
-    grid-row: 1 / span 2;
-    min-width: 0;
-    align-self: start;
-}
-#pmsOutstandingCard.dashboard-card {
+.col-outstanding .dashboard-card {
     background: transparent;
     border: none;
     box-shadow: none;
     padding: 0;
+    min-width: 0;
 }
 @media (max-width: 1280px) {
-    .menu-dashboard-grid,
-    .menu-dashboard-container {
-        grid-template-columns: 1fr;
+    .cmaxs-body.menu-dashboard-grid,
+    .cmaxs-body.menu-dashboard-container,
+    .cmaxs-body.menu-dashboard-grid.sm-mode:has(#fleetListPanel[data-admin-layout="1"]),
+    .cmaxs-body.menu-dashboard-grid.hq-mode:has(#fleetListPanel[data-admin-layout="1"]) {
+        grid-template-columns: 1fr !important;
         gap: 16px;
-    }
-    .menu-dashboard-grid .tvc-section-pms-flow,
-    .menu-dashboard-grid .tvc-section-spare-flow,
-    .menu-dashboard-grid .outstanding-tasks-aux-host.menu-col-center,
-    .menu-dashboard-grid .menu-col-right#pmsOutstandingCard {
-        grid-column: 1;
-        grid-row: auto;
     }
 }
 
@@ -744,8 +759,15 @@ body {
     cursor: default;
 }
 .fleet-list-panel[data-admin-layout="1"] .fleet-list-toolbar { display: none; }
-.cmaxs-body.sm-mode, .cmaxs-body.hq-mode:has(#fleetListPanel[data-admin-layout="1"]) {
+.cmaxs-body.sm-mode:not(.menu-dashboard-grid),
+.cmaxs-body.hq-mode:not(.menu-dashboard-grid):has(#fleetListPanel[data-admin-layout="1"]) {
     grid-template-columns: minmax(320px, min(520px, 42%)) minmax(0, 1fr);
+}
+@media (min-width: 1281px) {
+    .cmaxs-body.menu-dashboard-grid.sm-mode:has(#fleetListPanel[data-admin-layout="1"]),
+    .cmaxs-body.menu-dashboard-grid.hq-mode:has(#fleetListPanel[data-admin-layout="1"]) {
+        grid-template-columns: minmax(300px, 1.1fr) minmax(0, 1.35fr) minmax(0, 1.15fr);
+    }
 }
 .fleet-list-panel[data-admin-layout="1"] .fleet-table-wrap {
     overflow: auto;
@@ -4363,16 +4385,20 @@ input.tvc-date-input::placeholder {
 #rhRevertBtn:disabled { opacity: .45; cursor: not-allowed; }
 
 /* Menu — Outstanding Tasks dashboard */
-.menu-main-col .outstanding-tasks-host,
-.menu-main-col .outstanding-tasks-aux-host {
+.col-outstanding .outstanding-tasks-host,
+.col-outstanding .outstanding-tasks-spare-host,
+.col-outstanding .outstanding-tasks-detail-host {
     padding: 0;
     min-width: 0;
 }
-.menu-main-col .outstanding-tasks-panel,
-.menu-main-col .outstanding-tasks-aux-panel {
+.col-outstanding .outstanding-tasks-panel,
+.col-outstanding .outstanding-tasks-spare-panel,
+.col-outstanding .outstanding-tasks-aux-panel {
     margin-bottom: 0;
 }
 .outstanding-tasks-panel,
+.outstanding-tasks-spare-panel,
+.outstanding-tasks-detail-panel,
 .outstanding-tasks-aux-panel {
     background: #fff;
     border: 1px solid #e2e8f0;
@@ -4635,8 +4661,10 @@ input.tvc-date-input::placeholder {
 @media (max-width: 1100px) {
     .cmaxs-body,
     .cmaxs-body.sm-mode, .cmaxs-body.hq-mode,
-    .cmaxs-body.sm-mode, .cmaxs-body.hq-mode:has(#fleetListPanel[data-admin-layout="1"]) {
-        grid-template-columns: 1fr;
+    .cmaxs-body.sm-mode, .cmaxs-body.hq-mode:has(#fleetListPanel[data-admin-layout="1"]),
+    .cmaxs-body.menu-dashboard-grid,
+    .cmaxs-body.menu-dashboard-container {
+        grid-template-columns: 1fr !important;
     }
 }
 @media (max-width: 960px) {
