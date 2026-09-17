@@ -668,24 +668,59 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
     line-height: 1.6;
 }
 
-/* ── Core Tech & AX (home patch) ── */
-.home-coretech-section .home-section-head {
+/* ── IR / SaaS hero patch ── */
+.home-hero-subhead {
+    margin: 10px 0 0;
+    font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+    font-weight: 600;
+    color: var(--home-text);
+}
+
+.home-hero-description {
+    margin: 14px 0 0;
+    max-width: 72ch;
+    font-size: 0.98rem;
+    line-height: 1.65;
+    color: var(--home-muted);
+}
+
+.home-hero-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.home-hero-search-label {
+    margin: 22px 0 8px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* ── Core Capabilities ── */
+.home-capabilities-section .home-section-head,
+.home-pricing-section .home-section-head,
+.home-authority-section .home-section-head {
     text-align: center;
 }
 
-.home-coretech-lead {
+.home-capabilities-section .home-section-lead,
+.home-pricing-section .home-section-lead {
     margin-left: auto;
     margin-right: auto;
 }
 
-.home-coretech-card {
+.home-capability-card,
+.home-pricing-card {
     display: flex;
     flex-direction: column;
     gap: 10px;
     min-height: 100%;
 }
 
-.home-coretech-index {
+.home-capability-index {
     margin: 0;
     font-size: 0.72rem;
     font-weight: 800;
@@ -693,19 +728,128 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
     color: var(--home-accent);
 }
 
-.home-coretech-card-title {
+.home-capability-title,
+.home-pricing-name {
     margin: 0;
     font-size: 1.05rem;
     line-height: 1.35;
-    letter-spacing: -0.01em;
-    color: var(--home-text, #0f172a);
+    color: var(--home-text);
 }
 
-.home-coretech-card p.mkt-prose {
+.home-capability-card p.mkt-prose {
     margin: 0;
     font-size: 0.92rem;
     line-height: 1.6;
+}
+
+/* ── Pricing ── */
+.home-pricing-card {
+    position: relative;
+    padding-top: 26px;
+}
+
+.home-pricing-card--featured {
+    border: 1px solid rgba(2, 132, 199, 0.45);
+    box-shadow: 0 8px 28px rgba(2, 132, 199, 0.12);
+}
+
+.home-pricing-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #0284c7, #0ea5e9);
+    color: #fff;
+}
+
+.home-pricing-price {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--home-accent);
+    letter-spacing: -0.02em;
+}
+
+.home-pricing-tag {
+    margin: 0;
+    font-size: 0.82rem;
+}
+
+.home-pricing-features {
+    flex: 1;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.home-pricing-cta {
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ── Domain authority & logo marquee ── */
+.home-authority-card {
+    max-width: 820px;
+    margin: 0 auto 20px;
+}
+
+.home-authority-headline {
+    margin: 0 0 12px;
+    font-size: 1.15rem;
+    color: var(--home-text);
+}
+
+.home-authority-marquee-label {
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: var(--home-muted);
+    margin: 0 0 12px;
+}
+
+.home-logo-marquee {
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.home-logo-marquee-track {
+    display: flex;
+    gap: 14px;
+    width: max-content;
+    animation: home-logo-marquee 32s linear infinite;
+}
+
+.home-logo-pill {
+    flex-shrink: 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 1px solid var(--home-border);
+    background: rgba(255, 255, 255, 0.72);
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--home-text);
+}
+
+@keyframes home-logo-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-logo-marquee-track {
+        animation: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
 }
 
 @media (min-width: 1024px) {
