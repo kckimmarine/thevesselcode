@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-17T06:06:07.526Z",
+    "generatedAt": "2026-09-17T12:05:50.532Z",
     "benchmarkAsOf": "2026-09-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -200,36 +200,172 @@
   },
   "news": [
     {
+      "title": "Advantage Tankers doubles up at Samsung with $200m suezmax pair",
+      "link": "https://splash247.com/advantage-doubles-up-at-samsung-with-200m-suezmax-pair/",
+      "pubDate": "Thu, 17 Sep 2026 10:30:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Geneva-based Advantage Tankers has been linked to another pair of suezmax newbuildings at Samsung Heavy Industries, doubling up at the South Korean yard as its tanker ordering spree continues. Shipbroking sources have placed the Tugrul Tokgoz-led owner behind two crude tankers Sa",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Advantage-Smooth-suezmax-Advantage-Tankers.jpg",
+      "en": {
+        "headline": "Advantage Tankers doubles up at Samsung with $200m suezmax pair",
+        "summary": "Geneva-based Advantage Tankers has been linked to another pair of suezmax newbuildings at Samsung Heavy Industries, doubling up at the South Korean yard as its tanker ordering spree continues. Shipbroking sources have placed the Tugrul Tokgoz-led owner behind two crude tankers Sa",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Huelva awards 50-year concession for new logistics zone",
+      "link": "https://splash247.com/huelva-awards-50-year-concession-for-new-logistics-zone/",
+      "pubDate": "Thu, 17 Sep 2026 10:12:10 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The Port of Huelva has awarded a 50-year concession to ZAL Huelva for the construction and operation of a new logistics zone at Punta del Sebo, advancing a project the Spanish gateway has been working on for several years. The concession covers more than 147,000 sq m inside the p",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Port-of-Huelva.jpg",
+      "en": {
+        "headline": "Huelva awards 50-year concession for new logistics zone",
+        "summary": "The Port of Huelva has awarded a 50-year concession to ZAL Huelva for the construction and operation of a new logistics zone at Punta del Sebo, advancing a project the Spanish gateway has been working on for several years. The concession covers more than 147,000 sq m inside the p",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Exmar lands 10-year Abidjan FSRU deal",
+      "link": "https://splash247.com/exmar-lands-10-year-abidjan-fsru-deal/",
+      "pubDate": "Thu, 17 Sep 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Belgium’s Exmar has secured a 10-year floating LNG infrastructure deal in Ivory Coast, reviving plans for an import terminal at Abidjan that have been on the drawing board for a decade. The Antwerp-based gas shipping and infrastructure group has entered into agreements with state",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Exmar-FSRU.jpg",
+      "en": {
+        "headline": "Exmar lands 10-year Abidjan FSRU deal",
+        "summary": "Belgium’s Exmar has secured a 10-year floating LNG infrastructure deal in Ivory Coast, reviving plans for an import terminal at Abidjan that have been on the drawing board for a decade. The Antwerp-based gas shipping and infrastructure group has entered into agreements with state",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Philippines moves to slash shipyard red tape",
+      "link": "https://splash247.com/philippines-moves-to-slash-shipyard-red-tape/",
+      "pubDate": "Thu, 17 Sep 2026 09:50:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The Philippines is moving to overhaul regulation of its shipbuilding and ship repair sector, targeting a one-stop shop and simplified approval process as Manila looks to make domestic yards more competitive. The Maritime Industry Authority (MARINA) and the Anti-Red Tape Authority",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Orion-Jade-HD-Hyundai-X.com_.jpg",
+      "en": {
+        "headline": "Philippines moves to slash shipyard red tape",
+        "summary": "The Philippines is moving to overhaul regulation of its shipbuilding and ship repair sector, targeting a one-stop shop and simplified approval process as Manila looks to make domestic yards more competitive. The Maritime Industry Authority (MARINA) and the Anti-Red Tape Authority",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "South Korea rolls out Arctic vessel finance programme",
+      "link": "https://splash247.com/south-korea-rolls-out-arctic-vessel-finance-programme/",
+      "pubDate": "Thu, 17 Sep 2026 09:40:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "South Korea is putting fresh financial muscle behind its Arctic shipping drive, with the Korea Ocean Business Corporation launching a KRW120bn ($87m) annual investment programme for icebreakers and ice-class commercial ships. The programme is open to Korean owners acquiring eithe",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/panstar-acro-PanStar.jpg",
+      "en": {
+        "headline": "South Korea rolls out Arctic vessel finance programme",
+        "summary": "South Korea is putting fresh financial muscle behind its Arctic shipping drive, with the Korea Ocean Business Corporation launching a KRW120bn ($87m) annual investment programme for icebreakers and ice-class commercial ships. The programme is open to Korean owners acquiring eithe",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Diana keeps rate momentum going with kamsarmax deal",
+      "link": "https://splash247.com/diana-keeps-rate-momentum-going-with-kamsarmax-deal/",
+      "pubDate": "Thu, 17 Sep 2026 09:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "New York-listed Diana Shipping has secured a sizeable rate increase for another of its kamsarmax bulkers, fixing the Astarte to Aquavita International at $17,000 per day. The 2013-built, 81,513 dwt vessel will move onto the new charter on September 20, replacing its current emplo",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/08/MarineTraffic-Bettina-Rohbrecht-Diana-Shipping-Astarte.jpg",
+      "en": {
+        "headline": "Diana keeps rate momentum going with kamsarmax deal",
+        "summary": "New York-listed Diana Shipping has secured a sizeable rate increase for another of its kamsarmax bulkers, fixing the Astarte to Aquavita International at $17,000 per day. The 2013-built, 81,513 dwt vessel will move onto the new charter on September 20, replacing its current emplo",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Bahri shifts funding model with $263m unsecured deal",
+      "link": "https://splash247.com/bahri-shifts-funding-model-with-263m-unsecured-deal/",
+      "pubDate": "Thu, 17 Sep 2026 09:20:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Saudi Arabia’s Bahri has completed a SAR986.3m ($263m) refinancing with BNP Paribas and the National Bank of Greece, marking the shipping group’s first unsecured international bank financing. The National Shipping Company of Saudi Arabia said the transaction is aimed at reducing ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Bahri-VLCC.jpg",
+      "en": {
+        "headline": "Bahri shifts funding model with $263m unsecured deal",
+        "summary": "Saudi Arabia’s Bahri has completed a SAR986.3m ($263m) refinancing with BNP Paribas and the National Bank of Greece, marking the shipping group’s first unsecured international bank financing. The National Shipping Company of Saudi Arabia said the transaction is aimed at reducing ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Fuel uncertainty collides with shipping’s newbuilding boom",
+      "link": "https://splash247.com/fuel-uncertainty-collides-with-shippings-newbuilding-boom/",
+      "pubDate": "Thu, 17 Sep 2026 08:27:36 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Shipping’s move away from fossil fuels will remain limited unless carbon pricing rises dramatically, according to a new study from the Global Centre for Maritime Decarbonisation and Boston Consulting Group. The report, Navigating the Maritime Fuel Transition, models 12 fuel pathw",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/12/XPressMethanol.jpg",
+      "en": {
+        "headline": "Fuel uncertainty collides with shipping’s newbuilding boom",
+        "summary": "Shipping’s move away from fossil fuels will remain limited unless carbon pricing rises dramatically, according to a new study from the Global Centre for Maritime Decarbonisation and Boston Consulting Group. The report, Navigating the Maritime Fuel Transition, models 12 fuel pathw",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "America’s copper paradox sets up new seaborne trade flows",
+      "link": "https://splash247.com/americas-copper-paradox-sets-up-new-seaborne-trade-flows/",
+      "pubDate": "Thu, 17 Sep 2026 08:11:22 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Washington wants to bring the copper supply chain home, but the result could be record refined imports in one direction and US-mined concentrate heading back out to sea in the other. US copper policy is beginning to produce exactly the kind of trade-flow distortion that creates n",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/07/Rio-Tinto-Copper.jpeg",
+      "en": {
+        "headline": "America’s copper paradox sets up new seaborne trade flows",
+        "summary": "Washington wants to bring the copper supply chain home, but the result could be record refined imports in one direction and US-mined concentrate heading back out to sea in the other. US copper policy is beginning to produce exactly the kind of trade-flow distortion that creates n",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "One week to go until shipping leaders gather at Splash Singapore",
       "link": "https://splash247.com/one-week-to-go-until-shipping-leaders-gather-at-splash-singapore/",
-      "pubDate": "Thu, 17 Sep 2026 04:15:34 +0000",
+      "pubDate": "Thu, 17 Sep 2026 07:55:34 +0000",
       "source": "Splash247",
       "category": "Trade",
       "summary": "With just seven days to go until the inaugural Splash Singapore, shipowners, managers, charterers, technology leaders and investors are preparing to gather at the Fairmont Singapore for a day built around one question: how should shipping operate when the assumptions underpinning",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 4,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/01/Singapore-Networking.jpg",
       "en": {
         "headline": "One week to go until shipping leaders gather at Splash Singapore",
         "summary": "With just seven days to go until the inaugural Splash Singapore, shipowners, managers, charterers, technology leaders and investors are preparing to gather at the Fairmont Singapore for a day built around one question: how should shipping operate when the assumptions underpinning",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "How to stay in command in the age of AI",
-      "link": "https://splash247.com/how-to-stay-in-command-in-the-age-of-ai/",
-      "pubDate": "Thu, 17 Sep 2026 03:00:49 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "AI will not make seamanship obsolete. It will make human judgement more valuable, as tomorrow’s crews learn to interrogate data, challenge automation and take control when increasingly intelligent systems get it wrong. The latest chapter from our new SplashTech magazine. The crew",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/AI-Containership-SplashTech.jpg",
-      "en": {
-        "headline": "How to stay in command in the age of AI",
-        "summary": "AI will not make seamanship obsolete. It will make human judgement more valuable, as tomorrow’s crews learn to interrogate data, challenge automation and take control when increasingly intelligent systems get it wrong. The latest chapter from our new SplashTech magazine. The crew",
         "source": "Splash247"
       }
     },
@@ -242,7 +378,7 @@
       "summary": "Two U.S.-sanctioned heavy-lift vessels are carrying critical power-generation modules from China toward Russia’s Arctic LNG 2 project, according to satellite imagery and vessel-tracking data. The shipment is the latest sign that supply chains supporting the sanctioned liquefied n",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Glory-carrying-PGM-001-in-2024-800x446.jpg",
       "en": {
         "headline": "Exclusive: China Sends Key Arctic LNG 2 Modules to Russia to Complete Train 2",
@@ -259,7 +395,7 @@
       "summary": "The Dali bridge collapse, the implosion of the Titan submersible and the deadly fire aboard the Grande Costa D’Avorio are among 49 marine casualties highlighted in the National Transportation Safety Board’s latest review of accidents...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/05/Dali-Baltimore.jpeg",
       "en": {
         "headline": "From Dali to Titan, NTSB Finds the Same Safety Problems Repeating",
@@ -276,7 +412,7 @@
       "summary": "US government agencies are tracking cyber threats against nearly 20 shipping vessels around the world, according to US officials familiar with the situation.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/02/port_state_control_inspection.jpg",
       "en": {
         "headline": "U.S. Tracks Cyber Threats Against Nearly 20 Ships Worldwide",
@@ -293,7 +429,7 @@
       "summary": "Container carriers are accelerating their return to the Suez Canal, with COSCO’s OOCL Portugal making a milestone transit even as Houthi advances around Bab el-Mandeb raise fresh security concerns.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/OOCL-Portugal-Suez-Canal-800x545.jpg",
       "en": {
         "headline": "Container Shipping Returns to Suez Despite Rising Red Sea Risks",
@@ -310,7 +446,7 @@
       "summary": "Rumours are gaining ground in shipbroking circles that Maersk is on the verge of making a series of huge new orders for vessels, potentially doubling its newbuilding pipeline.",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 9,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/12/shutterstock_1085874656.jpg",
       "en": {
         "headline": "Maersk Said to Be Lining Up Massive Containership Order",
@@ -327,148 +463,12 @@
       "summary": "A relatively small share of ships accounts for most reported maritime accidents, according to new research that suggests operational warning signs can often be detected before an incident occurs. The...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/06/250603-G-G0217-5148.jpg",
       "en": {
         "headline": "Study Finds 29% of Ships Account for Nearly 70% of Maritime Accidents",
         "summary": "A relatively small share of ships accounts for most reported maritime accidents, according to new research that suggests operational warning signs can often be detected before an incident occurs. The...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "USCG Icebreaker ‘Healy’ Will Not Complete Summer Arctic Mission, Coast Guard Says",
-      "link": "https://gcaptain.com/uscg-icebreaker-healy-will-not-complete-summer-arctic-mission-coast-guard-says/",
-      "pubDate": "Wed, 16 Sep 2026 19:02:40 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The U.S. Coast Guard’s icebreaker Healy will not carry out its planned high-latitude Arctic mission this summer following a serious engineering casualty in July, a spokesperson said. The statement provides the clearest indication yet of the impact of the incident on the Coast Gua",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/Vigor-Healy-Leaving-Vigor-July-6.png",
-      "en": {
-        "headline": "USCG Icebreaker ‘Healy’ Will Not Complete Summer Arctic Mission, Coast Guard Says",
-        "summary": "The U.S. Coast Guard’s icebreaker Healy will not carry out its planned high-latitude Arctic mission this summer following a serious engineering casualty in July, a spokesperson said. The statement provides the clearest indication yet of the impact of the incident on the Coast Gua",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "One in Ten Inspected Cargo Units Found With Safety Deficiencies",
-      "link": "https://gcaptain.com/one-in-ten-inspected-cargo-units-found-with-safety-deficiencies/",
-      "pubDate": "Wed, 16 Sep 2026 17:16:00 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "More than one in ten cargo units inspected by government authorities last year were found with safety deficiencies, highlighting a persistent problem with how containers are declared, packed and secured...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/10/2021-10-25T215410Z_1496490882_RC25HQ9WC65L_RTRMADP_3_CANADA-SHIP-2-800x600.jpg",
-      "en": {
-        "headline": "One in Ten Inspected Cargo Units Found With Safety Deficiencies",
-        "summary": "More than one in ten cargo units inspected by government authorities last year were found with safety deficiencies, highlighting a persistent problem with how containers are declared, packed and secured...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "South Korean Carrier Bets on 20-Day Arctic Route to Europe",
-      "link": "https://gcaptain.com/south-korean-carrier-bets-on-20-day-arctic-route-to-europe/",
-      "pubDate": "Wed, 16 Sep 2026 16:51:05 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "South Korea’s PanStar Group plans to expand Arctic container voyages from next year after completing a trial run to Europe in about 20 days, betting that a seasonal service focused on high-value cargo can compete with larger Chinese operators.",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/panstar-high-resolution.png",
-      "en": {
-        "headline": "South Korean Carrier Bets on 20-Day Arctic Route to Europe",
-        "summary": "South Korea’s PanStar Group plans to expand Arctic container voyages from next year after completing a trial run to Europe in about 20 days, betting that a seasonal service focused on high-value cargo can compete with larger Chinese operators.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Saudis Pivot to Send More Oil Via Hormuz After Pipeline Shut",
-      "link": "https://gcaptain.com/saudis-pivot-to-send-more-oil-via-hormuz-after-pipeline-shut/",
-      "pubDate": "Wed, 16 Sep 2026 16:48:55 +0000",
-      "source": "gCaptain",
-      "category": "S&P",
-      "summary": "Saudi Arabia is ramping up prompt sales of crude from outside the Strait of Hormuz following the shutdown of the kingdom’s East-West pipeline, which halted cross-country flows to its Red Sea coast.",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-17T090005Z_1613291998_RC2O7T9GRYMB_RTRMADP_3_SYRIA-IRAQ-PIPELINE-800x533.jpg",
-      "en": {
-        "headline": "Saudis Pivot to Send More Oil Via Hormuz After Pipeline Shut",
-        "summary": "Saudi Arabia is ramping up prompt sales of crude from outside the Strait of Hormuz following the shutdown of the kingdom’s East-West pipeline, which halted cross-country flows to its Red Sea coast.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "U.S. Held Secret Talks With Houthis After Red Sea Offensive, Reuters Reports",
-      "link": "https://gcaptain.com/u-s-held-secret-talks-with-houthis-after-red-sea-offensive-reuters-reports/",
-      "pubDate": "Wed, 16 Sep 2026 16:42:40 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "U.S. officials met representatives of Yemen's Houthis in Oman over the weekend, five sources familiar with the matter said, days after the Iran-backed militia seized a strategic stretch of the Red Sea coast in a sweeping offensive that routed Saudi-backed forces.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "U.S. Held Secret Talks With Houthis After Red Sea Offensive, Reuters Reports",
-        "summary": "U.S. officials met representatives of Yemen's Houthis in Oman over the weekend, five sources familiar with the matter said, days after the Iran-backed militia seized a strategic stretch of the Red Sea coast in a sweeping offensive that routed Saudi-backed forces.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Fox News: Iran Attack Hits U.S.-Contracted Ship Carrying American Personnel",
-      "link": "https://gcaptain.com/fox-news-iran-attack-hits-u-s-contracted-ship-carrying-american-personnel/",
-      "pubDate": "Wed, 16 Sep 2026 15:12:42 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A U.S.-contracted vessel carrying American personnel was struck in an Iranian drone and missile attack near the Strait of Hormuz earlier this week, Fox News reported Wednesday, citing two sources...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Fox News: Iran Attack Hits U.S.-Contracted Ship Carrying American Personnel",
-        "summary": "A U.S.-contracted vessel carrying American personnel was struck in an Iranian drone and missile attack near the Strait of Hormuz earlier this week, Fox News reported Wednesday, citing two sources...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Accident risk concentrated across limited share of fleet, study finds",
-      "link": "https://splash247.com/accident-risk-concentrated-across-limited-share-of-fleet-study-finds/",
-      "pubDate": "Wed, 16 Sep 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "A new study by ShipIn Systems and marine insurer NorthStandard has found that maritime accident risk is heavily concentrated within a relatively small part of the fleet. Its analysis indicates that a small group of vessels accounts for a disproportionate share of reported casualt",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 19,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/Dali10.jpeg",
-      "en": {
-        "headline": "Accident risk concentrated across limited share of fleet, study finds",
-        "summary": "A new study by ShipIn Systems and marine insurer NorthStandard has found that maritime accident risk is heavily concentrated within a relatively small part of the fleet. Its analysis indicates that a small group of vessels accounts for a disproportionate share of reported casualt",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "CMA CGM tipped for $3bn Yangzijiang megamax order",
-      "link": "https://splash247.com/cma-cgm-tipped-for-3bn-yangzijiang-megamax-order/",
-      "pubDate": "Wed, 16 Sep 2026 10:06:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "CMA CGM has emerged as the likely liner behind plans for another dozen 24,000 teu megamax containerships at China’s Yangzijiang Shipbuilding in a programme potentially worth around $3bn, as rival Maersk is also reported to be sounding out yards for a major new round of ultra-larg",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/CMA-CGM-Notre-Dame-24000-teu.jpg",
-      "en": {
-        "headline": "CMA CGM tipped for $3bn Yangzijiang megamax order",
-        "summary": "CMA CGM has emerged as the likely liner behind plans for another dozen 24,000 teu megamax containerships at China’s Yangzijiang Shipbuilding in a programme potentially worth around $3bn, as rival Maersk is also reported to be sounding out yards for a major new round of ultra-larg",
-        "source": "Splash247"
       }
     }
   ]
