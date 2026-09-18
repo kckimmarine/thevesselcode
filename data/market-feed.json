@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-18T12:05:43.982Z",
+    "generatedAt": "2026-09-18T18:05:09.056Z",
     "benchmarkAsOf": "2026-09-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -200,6 +200,91 @@
   },
   "news": [
     {
+      "title": "London&#8217;s Marine Insurers Widen Black Sea High Risk Zone as Shipping Attacks Surge",
+      "link": "https://gcaptain.com/londons-marine-insurers-widen-black-sea-high-risk-zone-as-shipping-attacks-surge/",
+      "pubDate": "Fri, 18 Sep 2026 17:00:02 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "London's marine insurance market has widened the area in the Black Sea it deems as ?high risk as the Ukraine-Russia conflict escalates, according to an advisory issued this week.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/09/2024-09-05T105023Z_1059962348_RC2NX5AEBTRZ_RTRMADP_3_UKRAINE-CRISIS-SUMMIT-800x534.jpg",
+      "en": {
+        "headline": "London&#8217;s Marine Insurers Widen Black Sea High Risk Zone as Shipping Attacks Surge",
+        "summary": "London's marine insurance market has widened the area in the Black Sea it deems as ?high risk as the Ukraine-Russia conflict escalates, according to an advisory issued this week.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Trump Returns to UN as Iran War Spreads Across Shipping Chokepoints",
+      "link": "https://gcaptain.com/trump-returns-to-un-as-iran-war-spreads-across-shipping-chokepoints/",
+      "pubDate": "Fri, 18 Sep 2026 16:58:46 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "WASHINGTON, Sept 18 (Reuters)&#160;&#8211;&#160;When President Donald Trump addressed the United Nations a year ago, he touted the US bombing of&#160;Iran’s nuclear sites just months earlier as &#8220;totally obliterating everything&#8221; and...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-08-21T184843Z_2860007_RC2RXGA1DJ3Z_RTRMADP_3_UN-BUDGET-USA.jpg",
+      "en": {
+        "headline": "Trump Returns to UN as Iran War Spreads Across Shipping Chokepoints",
+        "summary": "WASHINGTON, Sept 18 (Reuters)&#160;&#8211;&#160;When President Donald Trump addressed the United Nations a year ago, he touted the US bombing of&#160;Iran’s nuclear sites just months earlier as &#8220;totally obliterating everything&#8221; and...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Three Tanker Attacks Hit Hormuz as Saudi Oil Is Forced Back Toward Strait",
+      "link": "https://gcaptain.com/three-tanker-attacks-hit-hormuz-as-saudi-oil-is-forced-back-toward-strait/",
+      "pubDate": "Fri, 18 Sep 2026 16:07:36 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A new burst of attacks on commercial shipping in the Strait of Hormuz is hitting just as Saudi Arabia is being forced to send more oil back through the waterway...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
+      "en": {
+        "headline": "Three Tanker Attacks Hit Hormuz as Saudi Oil Is Forced Back Toward Strait",
+        "summary": "A new burst of attacks on commercial shipping in the Strait of Hormuz is hitting just as Saudi Arabia is being forced to send more oil back through the waterway...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "U.S. Sanctions Crypto Exchange Tied to Iran’s Hormuz Transit Payments",
+      "link": "https://gcaptain.com/u-s-sanctions-crypto-exchange-tied-to-irans-hormuz-transit-payments/",
+      "pubDate": "Fri, 18 Sep 2026 15:56:09 +0000",
+      "source": "gCaptain",
+      "category": "Bunker",
+      "summary": "The United States has sanctioned an Iranian cryptocurrency exchange that Treasury says was used to move payments collected from ships transiting the Strait of Hormuz into Iran’s financial system. The...",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
+      "en": {
+        "headline": "U.S. Sanctions Crypto Exchange Tied to Iran’s Hormuz Transit Payments",
+        "summary": "The United States has sanctioned an Iranian cryptocurrency exchange that Treasury says was used to move payments collected from ships transiting the Strait of Hormuz into Iran’s financial system. The...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Maersk confirms 26-ship newbuilding spree",
+      "link": "https://splash247.com/maersk-confirms-26-ship-newbuilding-spree/",
+      "pubDate": "Fri, 18 Sep 2026 14:58:11 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Maersk has confirmed orders for 26 large containerships, ending days of speculation over a major fleet expansion programme. The Danish carrier said on Friday that all 26 ships will have capacity of 18,600 teu and will feature dual-fuel engines capable of operating on LNG. Deliver",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/08/Marie-Maersk-Christopher-Triggs-Marine-Traffic.jpg",
+      "en": {
+        "headline": "Maersk confirms 26-ship newbuilding spree",
+        "summary": "Maersk has confirmed orders for 26 large containerships, ending days of speculation over a major fleet expansion programme. The Danish carrier said on Friday that all 26 ships will have capacity of 18,600 teu and will feature dual-fuel engines capable of operating on LNG. Deliver",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Turn Services takes over St. John Fleeting",
       "link": "https://splash247.com/turn-services-takes-over-st-john-fleeting/",
       "pubDate": "Fri, 18 Sep 2026 09:30:00 +0000",
@@ -208,7 +293,7 @@
       "summary": "US inland marine operator Turn Services has completed its acquisition of St. John Fleeting and its affiliated companies, expanding its barge operations on the Lower Mississippi River. The deal gives Turn Services control of St. John’s fleet site at around Mile Marker 140 near Res",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Turn-Services.jpg",
       "en": {
         "headline": "Turn Services takes over St. John Fleeting",
@@ -225,7 +310,7 @@
       "summary": "At least two liquefied natural gas shipments transited the Strait of Hormuz this week as producers look for ways to increase flows to a market struggling with a lack of supply and surging prices.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/06/Copy-of-6LNG-vessels-at-RLC-Port-ver2016-06-17-172118-937_LUCiD.jpg",
       "en": {
         "headline": "More LNG Getting Through Hormuz as Producers Push for Transits",
@@ -242,7 +327,7 @@
       "summary": "Turkey has presented Russia and Ukraine with a draft proposal aimed at ending attacks on commercial vessels in the Black Sea, the latest attempt to contain a maritime conflict that is taking an increasingly heavy toll on merchant shipping. Ankara has shared the text of a memorand",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/10/Ukraine-1.jpg",
       "en": {
         "headline": "Turkey pushes Black Sea truce",
@@ -259,7 +344,7 @@
       "summary": "Shipping people have long memories, and that might be the simplest explanation for why today’s extraordinary market feels nothing like the last great supercycle. Anyone who lived through the heady days of 2008 remembers how quickly the music stopped. The Baltic Dry Index peaked a",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/11/Monaco-champagne.jpg",
       "en": {
         "headline": "Why this shipping supercycle feels different",
@@ -276,7 +361,7 @@
       "summary": "The most extraordinary numbers this week came from tankers, where the Baltic Exchange’s Middle East Gulf-China VLCC benchmark broke through the equivalent of $1m a day for the first time. VLCCs loading outside the Gulf are earning close to a million a day too, suezmax and aframax",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2015/01/China-Merchants-New-vision-vlcc.jpg",
       "en": {
         "headline": "Splash Wrap: When the boom spills over",
@@ -293,7 +378,7 @@
       "summary": "The Dali casualty has become the largest single loss in the history of the P&#38;I market, with reserves now exceeding $2.8bn and the claim reaching a layer of the International Group’s insurance structure never previously tested by a casualty of this scale. Gallagher Specialty s",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/05/Dali22.jpg",
       "en": {
         "headline": "Dali becomes biggest P&#038;I loss in history",
@@ -310,7 +395,7 @@
       "summary": "Iran’s Revolutionary Guards said on Friday they had struck the Togo-flagged product tanker Trend after what Tehran described as an “illegal” attempt to transit Hormuz outside its approved passage system. The 7,119 dwt vessel was hit and stopped after a fire broke out onboard, acc",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/US-Navy-Epic-Fury-Iran.jpeg",
       "en": {
         "headline": "Iran claims fresh Hormuz tanker strike, Italy readies Red Sea escorts",
@@ -327,7 +412,7 @@
       "summary": "Greek tanker newcomer Akrotiri Tankers is making its first move into gas shipping, ordering two very large ammonia carriers at China’s New Times Shipbuilding. Greek shipbuilding market sources say the company, led by Marielena Procopiou and Konstantinos Lampsias, has contracted t",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/New-Times-Shipbuilding.jpg",
       "en": {
         "headline": "Akrotiri Tankers makes gas shipping debut with VLAC pair",
@@ -344,7 +429,7 @@
       "summary": "Nippon Yusen Kaisha (NYK) and its Japanese partners have completed what they claim is the world’s first ship-to-ship ammonia bunkering operation involving an ammonia-fuelled vessel. The operation took place on September 17 at Japan Marine United’s Ariake Shipyard, where ammonia w",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 6,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/NYKAmmoniasts_1.jpeg",
       "en": {
         "headline": "NYK completes world-first ship-to-ship ammonia bunkering",
@@ -361,28 +446,11 @@
       "summary": "Croatia has selected Turkey’s Kuzey Star Shipyard to take control of Uljanik Brodogradnja 1856, moving the historic Pula shipbuilding operation closer to private ownership after years of state-backed restructuring. The Croatian Centre for Restructuring and Sale, CERP, has accepte",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 7,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2016/03/Uljanik.jpg",
       "en": {
         "headline": "Turkish yard wins race for Croatia’s Uljanik",
         "summary": "Croatia has selected Turkey’s Kuzey Star Shipyard to take control of Uljanik Brodogradnja 1856, moving the historic Pula shipbuilding operation closer to private ownership after years of state-backed restructuring. The Croatian Centre for Restructuring and Sale, CERP, has accepte",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "INEOS opens EU’s first full-scale offshore CCS project",
-      "link": "https://splash247.com/ineos-opens-eus-first-full-scale-offshore-ccs-project/",
-      "pubDate": "Fri, 18 Sep 2026 02:40:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "INEOS has started commercial operations at Greensand, the EU’s first full-scale carbon storage facility, opening a new offshore route for European industry to permanently store captured CO2 beneath the North Sea. Greensand provides industry across the EU with the infrastructure i",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Carbon-Destroyer-1-INEOS-Energy.jpg",
-      "en": {
-        "headline": "INEOS opens EU’s first full-scale offshore CCS project",
-        "summary": "INEOS has started commercial operations at Greensand, the EU’s first full-scale carbon storage facility, opening a new offshore route for European industry to permanently store captured CO2 beneath the North Sea. Greensand provides industry across the EU with the infrastructure i",
         "source": "Splash247"
       }
     },
@@ -395,79 +463,11 @@
       "summary": "US Coast Guard and FBI personnel boarded two commercial vessels bound for the United States in the Gulf of Mexico last month after indications that hackers had broken into their computer networks, the agencies said on Thursday.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/03/shutterstock_1779485036.jpg",
       "en": {
         "headline": "Authorities Investigating Cyber Breaches Aboard Two U.S.-Bound Ships",
         "summary": "US Coast Guard and FBI personnel boarded two commercial vessels bound for the United States in the Gulf of Mexico last month after indications that hackers had broken into their computer networks, the agencies said on Thursday.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Finland Practices Ship Boardings at Sea to Stop Undersea Sabotage",
-      "link": "https://gcaptain.com/finland-practices-ship-boardings-at-sea-to-stop-undersea-sabotage/",
-      "pubDate": "Thu, 17 Sep 2026 19:35:06 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Finnish authorities boarded and searched a target vessel in the Baltic Sea on Thursday in a live drill that officials said shows how seriously the region takes the threat of undersea sabotage after a string of incidents.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Finland Practices Ship Boardings at Sea to Stop Undersea Sabotage",
-        "summary": "Finnish authorities boarded and searched a target vessel in the Baltic Sea on Thursday in a live drill that officials said shows how seriously the region takes the threat of undersea sabotage after a string of incidents.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Shipping&#8217;s Fuel Transition Hinges on a Number Nobody Has Agreed On Yet",
-      "link": "https://gcaptain.com/shippings-fuel-transition-hinges-on-a-number-nobody-has-agreed-on-yet/",
-      "pubDate": "Thu, 17 Sep 2026 19:33:37 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "International shipping is being asked to decarbonise before it knows what it will burn.",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 16,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/11/shutterstock_1443851123.jpg",
-      "en": {
-        "headline": "Shipping&#8217;s Fuel Transition Hinges on a Number Nobody Has Agreed On Yet",
-        "summary": "International shipping is being asked to decarbonise before it knows what it will burn.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "USCGC Healy&#8217;s Breakdown Exposes America’s Thin Arctic Icebreaker Fleet",
-      "link": "https://gcaptain.com/uscgc-healys-breakdown-exposes-americas-thin-arctic-icebreaker-fleet/",
-      "pubDate": "Thu, 17 Sep 2026 19:25:54 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The U.S. Coast Guard’s decision to end icebreaker&#160;Healy’s planned high-latitude mission has left the service leaning more heavily on its newest icebreaker during an increasingly active Arctic season. Healy&#160;has remained...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/USCGC-Healy.jpg",
-      "en": {
-        "headline": "USCGC Healy&#8217;s Breakdown Exposes America’s Thin Arctic Icebreaker Fleet",
-        "summary": "The U.S. Coast Guard’s decision to end icebreaker&#160;Healy’s planned high-latitude mission has left the service leaning more heavily on its newest icebreaker during an increasingly active Arctic season. Healy&#160;has remained...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "IMO Sounds Alarm as Attacks on Merchant Ships Spread Across Global Trade Routes",
-      "link": "https://gcaptain.com/imo-sounds-alarm-as-attacks-on-merchant-ships-spread-across-global-trade-routes/",
-      "pubDate": "Thu, 17 Sep 2026 18:01:47 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The head of the International Maritime Organization is calling on governments to stop attacks on merchant shipping as conflicts increasingly spill into some of the world’s most important trade routes....",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/SG-statement-banner_Sept-2026_medium-800x387.jpg",
-      "en": {
-        "headline": "IMO Sounds Alarm as Attacks on Merchant Ships Spread Across Global Trade Routes",
-        "summary": "The head of the International Maritime Organization is calling on governments to stop attacks on merchant shipping as conflicts increasingly spill into some of the world’s most important trade routes....",
         "source": "gCaptain"
       }
     }
