@@ -374,7 +374,8 @@ const TVC_PmsMasterExcel = (function () {
         const g = padGroupNo(groupNo);
         if (!g) return '';
         const ee = String(Math.min(99, Math.max(0, parseInt(equipNo, 10) || 0))).padStart(2, '0');
-        const iii = String(Math.min(999, Math.max(1, parseInt(itemNo, 10) || 1))).padStart(3, '0');
+        const pmsMax = (typeof TVC_SpareCode !== 'undefined' && TVC_SpareCode.PMS_ITEM_MAX) || 99;
+        const iii = String(Math.min(pmsMax, Math.max(1, parseInt(itemNo, 10) || 1))).padStart(3, '0');
         return `${g}-${ee}-${iii}`;
     }
 

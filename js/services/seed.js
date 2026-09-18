@@ -1,9 +1,53 @@
 /* Seed loader from pms-unified.json */
 const TVC_Seed = (function () {
+    const LEGACY_SEED_VESSEL_IDS = new Set(['TVC No1', 'TVC No.1', 'TVC Voyager', 'TVC No 1']);
+
+    async function resolveSeedVesselId(data) {
+        try {
+            const meta = await TVC_DB.getMeta(TVC_META_KEYS.VESSEL_ID);
+            if (meta) return String(meta).trim();
+        } catch (_) { /* ignore */ }
+        if (typeof TVC_Fleet !== 'undefined' && TVC_Fleet.PILOT_VESSEL_ID) {
+            return TVC_Fleet.PILOT_VESSEL_ID;
+        }
+        return String(data?.meta?.vessel_id || 'ABC Voyager').trim();
+    }
+
+    /** pms-unified.json meta (TVC No1) → demo ship ABC Voyager so ship login sees master data. */
+    async function alignLegacySeedVesselIds() {
+        const target = typeof TVC_Fleet !== 'undefined'
+            ? TVC_Fleet.PILOT_VESSEL_ID
+            : 'ABC Voyager';
+        const metaKey = 'seed_vessel_align_v1';
+        const done = await TVC_DB.getMeta(metaKey).catch(() => null);
+        const stores = ['maintenance_jobs', 'maintenance_groups', 'ship_components', 'spare_parts', 'spare_groups'];
+        let touched = 0;
+        for (const name of stores) {
+            const rows = await TVC_DB.getAll(name).catch(() => []);
+            const dirty = [];
+            for (const row of rows) {
+                const vid = String(row?.vessel_id || '').trim();
+                if (!vid || vid === target) continue;
+                if (!LEGACY_SEED_VESSEL_IDS.has(vid)) continue;
+                row.vessel_id = target;
+                row.updated_at = new Date().toISOString();
+                dirty.push(row);
+            }
+            if (dirty.length) {
+                await TVC_DB.bulkPut(name, dirty);
+                touched += dirty.length;
+            }
+        }
+        if (touched || !done) {
+            await TVC_DB.setMeta(TVC_META_KEYS.VESSEL_ID, target);
+            await TVC_DB.setMeta(metaKey, new Date().toISOString());
+        }
+        return { target, touched };
+    }
+
     async function loadFromJson(data) {
         const ts = new Date().toISOString();
-        const seedVessel = data.meta?.vessel_id
-            || (typeof TVC_Fleet !== 'undefined' ? TVC_Fleet.PILOT_VESSEL_ID : 'TVC No1');
+        const seedVessel = await resolveSeedVesselId(data);
         const jobs = (data.maintenance_jobs || []).map(j => ({
             ...j,
             vessel_id: j.vessel_id || seedVessel,
@@ -51,11 +95,17 @@ const TVC_Seed = (function () {
     }
 
     async function ensureSeed() {
+        await alignLegacySeedVesselIds();
+        const jobs = await TVC_DB.getAll('maintenance_jobs').catch(() => []);
         const loaded = await TVC_DB.getMeta(TVC_META_KEYS.SEED_LOADED);
-        if (loaded) return { already: true };
+        if (loaded && jobs.length > 0) return { already: true };
         const result = await tryFetchSeed();
-        if (result) return result;
-        return { needFile: true };
+        if (result) {
+            await alignLegacySeedVesselIds();
+            return result;
+        }
+        if (!jobs.length) return { needFile: true };
+        return { already: true };
     }
 
     /* 정규화된 부품명 → 공통 관리 코드(UniversalItemCode).

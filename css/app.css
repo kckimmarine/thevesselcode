@@ -11252,7 +11252,7 @@ body.mobile-nav-open .mobile-nav-backdrop { display: block; }
 
     #tab-actual .actual-layout .tree-panel .panel-body.tree-scroll,
     #tab-actual #actTree {
-        max-height: 180px !important;
+        max-height: min(42vh, 320px) !important;
         overflow-y: auto !important;
         -webkit-overflow-scrolling: touch;
         border: 1px solid rgba(255, 255, 255, 0.1);
@@ -11261,10 +11261,6 @@ body.mobile-nav-open .mobile-nav-backdrop { display: block; }
 
     #tab-actual .actual-layout .tree-panel .tree-node {
         touch-action: manipulation;
-    }
-
-    #tab-actual .spare-taxonomy-rail {
-        max-height: 160px;
     }
 
     .wr-meas-body { overflow-x: auto; -webkit-overflow-scrolling: touch; }
