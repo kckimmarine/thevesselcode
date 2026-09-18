@@ -12,6 +12,9 @@ const TVC_SpareCode = (function () {
     const RE_STD = /^(\d{2})-(\d{2})-(\d{3})$/;
     const RE_LEGACY_V2 = /^(\d{2})-(\d{3})$/;
     const RE_LEGACY_V3 = /^(\d{2})-(\d{3})-(\d{1,3})$/;
+    /** PMS maintenance jobs: III 001–099; SPARE inventory: III 101–999 (shared GG-MM prefix). */
+    const PMS_ITEM_MAX = 99;
+    const SPARE_ITEM_MIN = 101;
 
     function padGroup(n) {
         const v = parseInt(String(n || '').replace(/\D/g, ''), 10);
@@ -110,6 +113,32 @@ const TVC_SpareCode = (function () {
         return m ? padGroup(m[1]) : '';
     }
 
+    function ggMmPrefix(code) {
+        const p = parse(code);
+        if (!p.valid || !p.groupNo) return '';
+        return `${p.groupNo}-${padEquip(p.equipNo)}`;
+    }
+
+    function isPmsJobCode(code) {
+        const p = parse(code);
+        return p.valid && p.itemNo >= 1 && p.itemNo <= PMS_ITEM_MAX;
+    }
+
+    function isSparePartCode(code) {
+        const p = parse(code);
+        return p.valid && p.itemNo >= SPARE_ITEM_MIN;
+    }
+
+    /** Spare lines consumable for a PMS job — same GG-MM, III in spare range. */
+    function sparesForPmsJob(jobCode, spares) {
+        const prefix = ggMmPrefix(jobCode);
+        if (!prefix) return [];
+        return (spares || []).filter(s => {
+            const p = parse(spareCodeOf(s));
+            return p.valid && `${p.groupNo}-${padEquip(p.equipNo)}` === prefix && p.itemNo >= SPARE_ITEM_MIN;
+        });
+    }
+
     function isStandard(code) {
         return RE_STD.test(String(code || '').trim());
     }
@@ -202,11 +231,11 @@ const TVC_SpareCode = (function () {
         const g = padGroup(groupNo);
         if (!g) return '';
         const eq = intEquipNo(equipNo);
-        let max = 0;
+        let max = SPARE_ITEM_MIN - 1;
         (spares || []).forEach(s => {
             const p = parse(spareCodeOf(s));
             if (p.groupNo !== g || p.equipNo !== eq) return;
-            if (p.valid && p.itemNo > 0) max = Math.max(max, p.itemNo);
+            if (p.valid && p.itemNo >= SPARE_ITEM_MIN) max = Math.max(max, p.itemNo);
         });
         return format(g, eq, max + 1);
     }
@@ -238,7 +267,7 @@ const TVC_SpareCode = (function () {
                 const sample = list[0];
                 const g = resolveGroupNo(sample, opts.groupNoFor?.(sample)) || '99';
                 const eq = resolveEquipNo(sample, { equipNo: opts.equipNoFor?.(sample) });
-                list.forEach((s, i) => out.set(s.id, format(g, eq, i + 1)));
+                list.forEach((s, i) => out.set(s.id, format(g, eq, SPARE_ITEM_MIN + i)));
             });
         return out;
     }
@@ -305,6 +334,12 @@ const TVC_SpareCode = (function () {
         assignCodes,
         assignSimplifiedCodes,
         renumberVessel,
+        PMS_ITEM_MAX,
+        SPARE_ITEM_MIN,
+        ggMmPrefix,
+        isPmsJobCode,
+        isSparePartCode,
+        sparesForPmsJob,
         padEquip,
         padItem,
     };

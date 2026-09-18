@@ -11412,31 +11412,9 @@ const TVC_App = (function () {
     }
 
     // ── TAB: Work Plan ─────────────────────────────────────────────
-    let _actTaxonomyRail = null;
-
-    async function syncActTaxonomyRail() {
-        const host = document.getElementById('actTaxonomyRail');
-        if (!host || typeof TVC_PmsEquipmentTree === 'undefined') return;
-        host.classList.remove('hidden');
-        if (_actTaxonomyRail?.destroy) _actTaxonomyRail.destroy();
-        _actTaxonomyRail = await TVC_PmsEquipmentTree.mountTaxonomyRail(host, {
-            department: state.department,
-            vesselId: state.vesselId,
-            selectedKey: state.selectedGroupKey,
-            onSelect: (key) => {
-                if (key) {
-                    state.selectedGroupKey = key;
-                    renderGroupTree('actTree');
-                    mountJobSheet('actHead', 'actCount', 'actScroll', sheetIds('actual'), 'vlActual');
-                }
-            },
-        });
-    }
-
     function renderActualPlan() {
         clearActualFilterKeysCache();
         renderGroupTree('actTree');
-        syncActTaxonomyRail().catch(e => console.warn('[TVC_PmsEquipmentTree]', e));
         syncPlanGroupUi();
         syncPlanGroupTreeUi();
         updateActualFilterUI();

@@ -21,7 +21,7 @@ const TVC_SpareGroups = (function () {
         return !row?.vessel_id || row.vessel_id === vesselId;
     }
 
-    /** One-time seed: spare_groups from spare_parts labels only. Does not copy PMS Equipment (item_sort1). */
+    /** Seed spare_groups — shared GG machinery groups with PMS (maintenance_groups), then spare part labels. */
     async function ensureSeeded({ vesselId, spares, maintenanceGroups } = {}) {
         const existing = await TVC_DB.getAll('spare_groups').catch(() => []);
         const scoped = existing.filter(g => belongs(g, vesselId));
@@ -31,21 +31,18 @@ const TVC_SpareGroups = (function () {
         const seen = new Set();
         const now = new Date().toISOString();
 
-        for (const s of spares || []) {
-            if (!belongs(s, vesselId)) continue;
-            const label = String(s.group || '').trim();
-            if (!label) continue;
-            const dept = deptFromSpare(s);
-            const key = groupKey(dept, label);
-            if (seen.has(key)) continue;
+        function pushGroup(dept, label, sortOrder) {
+            const lab = String(label || '').trim();
+            if (!lab) return;
+            const key = groupKey(dept, lab);
+            if (seen.has(key)) return;
             seen.add(key);
-
             toPut.push({
                 id: `sgrp-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-                vessel_id: vesselId || s.vessel_id || null,
+                vessel_id: vesselId || null,
                 department: dept,
-                label,
-                sort_order: 0,
+                label: lab,
+                sort_order: sortOrder || 0,
                 machinery_name: '',
                 model_type: '',
                 maker: '',
@@ -57,6 +54,32 @@ const TVC_SpareGroups = (function () {
                 updated_at: now,
                 sync_status: 'LOCAL',
             });
+        }
+
+        for (const g of maintenanceGroups || []) {
+            if (!belongs(g, vesselId)) continue;
+            if (String(g.item_sort1 || '').trim()) continue;
+            pushGroup(g.department || 'ENGINE', g.label, g.sort_order);
+        }
+
+        if (!toPut.length && typeof TVC_MachineryTaxonomy !== 'undefined') {
+            try {
+                await TVC_MachineryTaxonomy.loadTaxonomy();
+                const profileId = await TVC_MachineryTaxonomy.resolveActiveProfile(vesselId);
+                for (const dept of ['DECK', 'ENGINE']) {
+                    const catalog = TVC_MachineryTaxonomy.groupsForDepartment(profileId, dept);
+                    catalog.forEach(row => pushGroup(dept, row.label, parseInt(row.no, 10) || 0));
+                }
+            } catch (e) {
+                console.warn('[TVC_SpareGroups] taxonomy seed', e);
+            }
+        }
+
+        for (const s of spares || []) {
+            if (!belongs(s, vesselId)) continue;
+            const label = String(s.group || '').trim();
+            if (!label) continue;
+            pushGroup(deptFromSpare(s), label, 0);
         }
 
         if (toPut.length) await TVC_DB.bulkPut('spare_groups', toPut);
