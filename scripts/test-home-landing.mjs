@@ -51,7 +51,10 @@ check('home domain authority section', home.includes('id="domain-authority"') &&
 check('hero headline i18n key', home.includes('data-i18n="home.headline"'));
 check('marketing i18n persistence key', readFileSync(join(ROOT, 'js/marketing-i18n.js'), 'utf8').includes("STORAGE_KEY = 'tvc-mkt-lang'"));
 check('hero search form', home.includes('id="homeHeroSearchForm"') && home.includes('homeHeroSearchInput'));
+check('unified search copy', home.includes('home.search.subtitle') && home.includes('Maritime Intelligence'));
 check('hero utility badges', home.includes('home-utility-badge') && home.includes('/toolkit?tool=bunker') && home.includes('tool=compliance'));
+check('hero brain chip', home.includes('data-home-route="brain"'));
+check('unified search script', home.includes('home-hero-search.js'));
 check('home benefits grid', home.includes('home-benefits-section') && home.includes('home-grid-4'));
 check('home product showcase', home.includes('home-showcase-section') && home.includes('/toolkit') && home.includes('Launch Free Toolkit'));
 check('home impa card strip', home.includes('home-impa-card') && home.includes('href="/store/812204"'));
