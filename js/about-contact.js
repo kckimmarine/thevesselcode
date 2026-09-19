@@ -68,9 +68,36 @@
         } catch { /* ignore */ }
     }
 
-    async function submitInquiry(form, data, status, submitBtn) {
+    function ensureRfqDraftWrap() {
+        let wrap = qs('#acRfqDraftWrap');
+        if (wrap) return wrap;
+        const status = qs('#acFormStatus');
+        if (!status?.parentNode) return null;
+        wrap = document.createElement('p');
+        wrap.id = 'acRfqDraftWrap';
+        wrap.className = 'ac-rfq-draft';
+        wrap.hidden = true;
+        status.parentNode.insertBefore(wrap, status.nextSibling);
+        return wrap;
+    }
+
+    function showRfqDraftActions(payload) {
+        const wrap = ensureRfqDraftWrap();
+        const url = String(payload?.rfqDraftUrl || '').trim();
+        if (!wrap || !url) return;
+        const label = t('contact.rfqDraft.link') || 'Open draft quotation (print / PDF)';
+        wrap.innerHTML = `<a class="ac-rfq-draft-link" href="${url.replace(/"/g, '&quot;')}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+        wrap.hidden = false;
+    }
+
+    async function submitInquiry(form, data, status, submitBtn, rawType) {
         if (submitBtn) submitBtn.disabled = true;
         setStatus(status, 'success', t('contact.status.sending') || 'Sending…');
+        const draftWrap = qs('#acRfqDraftWrap');
+        if (draftWrap) {
+            draftWrap.hidden = true;
+            draftWrap.textContent = '';
+        }
 
         try {
             const res = await fetch('/api/contact', {
@@ -91,10 +118,16 @@
                 throw new Error(payload.message || payload.error || 'Send failed');
             }
 
+            let okMsg = t('contact.status.ok') || 'Thank you.';
             if (payload.delivery?.method === 'email') {
-                setStatus(status, 'success', t('contact.status.okEmail') || 'Thank you.');
-            } else {
-                setStatus(status, 'success', t('contact.status.ok') || 'Thank you.');
+                okMsg = t('contact.status.okEmail') || okMsg;
+            }
+            if (rawType === 'rfq') {
+                okMsg = t('contact.status.okRfq') || `${okMsg} Our team will send pricing within 12 hours.`;
+            }
+            setStatus(status, 'success', okMsg);
+            if (rawType === 'rfq' && payload.rfqDraftUrl) {
+                showRfqDraftActions(payload);
             }
             form.reset();
         } catch (err) {
@@ -230,11 +263,19 @@
     function collectAttributionForSubmit() {
         const params = new URLSearchParams(window.location.search);
         const stored = readStoredAttribution();
+        const mkt = globalThis.TVC_Attribution?.get?.() || {};
         return {
-            landingPage: String(params.get('ref') || stored?.landing || window.location.pathname || '').trim(),
-            referrer: String(stored?.referrer || document.referrer || '').trim(),
-            campaign: String(params.get('inquiry') || params.get('utm_campaign') || '').trim(),
+            landingPage: String(params.get('ref') || stored?.landing || mkt.landing || window.location.pathname || '').trim(),
+            referrer: String(stored?.referrer || mkt.referrer || document.referrer || '').trim(),
+            campaign: String(params.get('inquiry') || params.get('utm_campaign') || mkt.utmCampaign || '').trim(),
             impaCode: String(params.get('code') || '').trim(),
+            itemName: String(params.get('name') || '').trim(),
+            port: String(params.get('port') || '').trim(),
+            utmSource: String(params.get('utm_source') || mkt.utmSource || stored?.utmSource || '').trim(),
+            utmMedium: String(params.get('utm_medium') || mkt.utmMedium || stored?.utmMedium || '').trim(),
+            utmCampaign: String(params.get('utm_campaign') || mkt.utmCampaign || stored?.utmCampaign || '').trim(),
+            utmContent: String(params.get('utm_content') || mkt.utmContent || stored?.utmContent || '').trim(),
+            utmTerm: String(params.get('utm_term') || mkt.utmTerm || stored?.utmTerm || '').trim(),
         };
     }
 
@@ -281,7 +322,7 @@
                 return;
             }
 
-            submitInquiry(form, data, status, submitBtn);
+            submitInquiry(form, data, status, submitBtn, rawType);
         });
 
         globalThis.addEventListener('tvc-mkt-lang', () => {

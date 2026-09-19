@@ -1,5 +1,8 @@
 'use strict';
 
+const { notifyContactChannels } = require('./_lib/contactNotify');
+const { quoteRef } = require('./_lib/rfqDraftHtml');
+
 const DEFAULT_REPO = 'kckimmarine/thevesselcode-pms';
 const MAX_BODY_BYTES = 32 * 1024;
 
@@ -68,6 +71,11 @@ function buildInquiryText(body) {
     if (body.landingPage) lines.push(`Landing Page: ${body.landingPage}`);
     if (body.referrer) lines.push(`Referrer: ${body.referrer}`);
     if (body.campaign) lines.push(`Campaign: ${body.campaign}`);
+    if (body.utmSource) {
+        lines.push(
+            `UTM: source=${body.utmSource} medium=${body.utmMedium || ''} campaign=${body.utmCampaign || ''} content=${body.utmContent || ''} term=${body.utmTerm || ''}`.trim(),
+        );
+    }
     lines.push(
         '',
         'Message:',
@@ -193,6 +201,13 @@ async function handler(req, res) {
             referrer: String(raw.referrer || '').trim(),
             campaign: String(raw.campaign || '').trim(),
             impaCode: String(raw.impaCode || '').trim(),
+            utmSource: String(raw.utmSource || '').trim(),
+            utmMedium: String(raw.utmMedium || '').trim(),
+            utmCampaign: String(raw.utmCampaign || '').trim(),
+            utmContent: String(raw.utmContent || '').trim(),
+            utmTerm: String(raw.utmTerm || '').trim(),
+            port: String(raw.port || '').trim(),
+            itemName: String(raw.itemName || '').trim(),
         };
 
         if (!body.companyName || !body.yourName || !body.email || !body.message) {
@@ -229,8 +244,37 @@ async function handler(req, res) {
             if (emailDebug) delivery.emailDebug = emailDebug;
         }
 
+        const origin = String(process.env.STORE_SEO_ORIGIN || process.env.CONTACT_PUBLIC_ORIGIN || 'https://www.thevesselcode.com').replace(/\/$/, '');
+        let rfqDraftUrl = '';
+        const isRfq = /rfq/i.test(body.inquiryType) || body.impaCode;
+        if (isRfq && body.impaCode) {
+            const draftQs = new URLSearchParams({
+                code: body.impaCode,
+                company: body.companyName,
+                contact: body.yourName,
+                email: body.email,
+                port: body.port || '',
+                message: body.message.slice(0, 500),
+            });
+            if (body.itemName) draftQs.set('name', body.itemName);
+            rfqDraftUrl = `${origin}/api/rfq-draft?${draftQs.toString()}`;
+        }
+
+        let notify = [];
+        try {
+            notify = await notifyContactChannels(body, { rfqDraftUrl });
+        } catch (notifyErr) {
+            console.error('[contact] notify', notifyErr);
+        }
+
         console.info('[contact] delivered via', delivery.method, delivery.id || delivery.issueNumber);
-        return res.status(200).json({ ok: true, delivery });
+        return res.status(200).json({
+            ok: true,
+            delivery,
+            notify,
+            rfqDraftUrl: rfqDraftUrl || undefined,
+            rfqQuoteRef: body.impaCode ? quoteRef(body.impaCode) : undefined,
+        });
     } catch (e) {
         console.error('[contact] unhandled error', e);
         if (e.code === 'PAYLOAD_TOO_LARGE') {

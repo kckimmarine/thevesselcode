@@ -439,6 +439,26 @@ body.ac-page.ac-embed .ac-hero {
     color: #fecaca;
 }
 
+.ac-rfq-draft {
+    margin-top: 10px;
+}
+
+.ac-rfq-draft-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    background: #0f766e;
+    color: #fff;
+}
+
+.ac-rfq-draft-link:hover {
+    background: #0d9488;
+}
+
 .ac-footer {
     margin-top: 36px;
     padding-top: 18px;

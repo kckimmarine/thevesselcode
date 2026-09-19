@@ -348,8 +348,14 @@ function buildRelatedItemsSectionHtml(item, related, base) {
 }
 
 function buildContactInquiryUrl(base, params) {
+    const merged = { ...(params || {}) };
+    const code = String(merged.code || '').trim();
+    if (!merged.utm_source) merged.utm_source = 'store_seo';
+    if (!merged.utm_medium) merged.utm_medium = 'organic';
+    if (!merged.utm_campaign) merged.utm_campaign = 'impa_rfq';
+    if (code && !merged.utm_content) merged.utm_content = code;
     const q = new URLSearchParams();
-    Object.entries(params || {}).forEach(([key, val]) => {
+    Object.entries(merged).forEach(([key, val]) => {
         const s = String(val ?? '').trim();
         if (s) q.set(key, s);
     });
@@ -503,6 +509,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
       </div>
     </article>
   </main>
+  <script src="/js/marketing-attribution.js" defer></script>
   <script src="/js/ui/impaDetailShared.js"></script>
   <script src="/js/store-lead.js" defer></script>
   <script>TVC_ImpaDetailShared.initStandalonePage();</script>
