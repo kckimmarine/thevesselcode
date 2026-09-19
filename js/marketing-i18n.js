@@ -57,8 +57,12 @@
         },
         'home.hero.cta.arch': { en: 'Explore Architecture', ko: 'Explore Architecture' },
         'home.search.divider': {
-            en: 'Quick toolkit search (IMPA & calculators)',
-            ko: '빠른 Toolkit 검색 (IMPA·계산기)',
+            en: 'AI Superintendent & Maritime Intelligence',
+            ko: 'AI Superintendent & Maritime Hub (무엇이든 물어보세요)',
+        },
+        'home.search.subtitle': {
+            en: 'Ship engineering, fault diagnosis, parts & standards — ask anything.',
+            ko: '선박 공학, 고장 진단, 부품·규격 — 무엇이든 물어보세요.',
         },
         'home.subtitle': {
             en: 'Instant IMPA lookup and engineering utilities — alongside TVC-SM fleet operations.',
@@ -151,14 +155,18 @@
             ko: '전직 기관장·기술공무감독이 만든 열린 참조 자료. 정확한 기준을 요구하는 선원·감독·엔지니어를 위해.',
         },
         'home.search.label': {
-            en: 'Search IMPA and maritime utilities',
-            ko: 'IMPA 및 해양 유틸리티 검색',
+            en: 'Ask anything about ships',
+            ko: '선박에 관한 무엇이든 질문',
         },
         'home.search.placeholder': {
-            en: 'Enter IMPA code, Valve size, Flange PCD, or Bunker formula...',
-            ko: 'IMPA 코드, 밸브 규격, 플랜지 PCD, 벙커 공식 입력...',
+            en: 'Ask anything about ships (e.g. generator RPM hunting, boiler ignition fault, IMPA 791801, JIS 10K 50A, bunker 54B correction...)',
+            ko: '선박에 관한 모든 것을 질문하세요. (예: Yanmar 6N21L RPM 헌팅 원인, 보일러 착화 불량, IMPA 791801, JIS 10K 50A, 54B 벙커 보정...)',
         },
-        'home.search.button': { en: 'Ask Brain', ko: '물어보기' },
+        'home.search.button': { en: 'Ask AI / Search', ko: '해결책 찾기 (Ask AI)' },
+        'home.utility.chip.engine': {
+            en: '⚙️ Engine / G/E troubleshooting',
+            ko: '⚙️ 엔진·발전기 트러블슈팅',
+        },
         'home.metrics.specs': { en: '<strong>50,000+</strong> Specs', ko: '<strong>50,000+</strong> 스펙' },
         'home.metrics.offline': { en: '<strong>100%</strong> Offline PWA', ko: '<strong>100%</strong> 오프라인 PWA' },
         'home.metrics.sync': { en: '<strong>ZIP</strong> Ship↔Shore', ko: '<strong>ZIP</strong> 선박↔육상' },

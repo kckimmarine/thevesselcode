@@ -38,9 +38,10 @@
                     <a class="home-btn home-btn-primary" href="/contact-us?inquiry=poc" data-i18n="home.hero.cta.poc">1-Ship 14-Day Free PoC</a>
                     <a class="home-btn home-btn-secondary home-btn-contrast-outline" href="#core-capabilities" data-i18n="home.hero.cta.arch">Explore Architecture</a>
                 </div>
-                <p class="home-hero-search-label muted" data-i18n="home.search.divider">Quick toolkit search (IMPA &amp; calculators)</p>
-                <form id="homeHeroSearchForm" class="home-hero-search" role="search" aria-label="Maritime parts and standards search">
-                    <label class="visually-hidden" for="homeHeroSearchInput" data-i18n="home.search.label">Search IMPA and maritime utilities</label>
+                <p class="home-hero-search-label" data-i18n="home.search.divider">AI Superintendent &amp; Maritime Intelligence</p>
+                <p class="home-hero-search-subtitle muted" data-i18n="home.search.subtitle">Ship engineering, fault diagnosis, parts &amp; standards — ask anything.</p>
+                <form id="homeHeroSearchForm" class="home-hero-search" role="search" aria-label="Maritime AI and unified search">
+                    <label class="visually-hidden" for="homeHeroSearchInput" data-i18n="home.search.label">Ask anything about ships</label>
                     <input
                         type="search"
                         id="homeHeroSearchInput"
@@ -49,15 +50,15 @@
                         autocomplete="off"
                         enterkeyhint="search"
                         data-i18n-placeholder="home.search.placeholder"
-                        placeholder="Enter IMPA code, Valve size, Flange PCD, or Bunker formula..."
+                        placeholder="Ask anything about ships (e.g. generator RPM hunting, boiler ignition fault, IMPA 791801, JIS 10K 50A, bunker 54B...)"
                     />
-                    <button type="submit" class="home-btn home-btn-primary home-hero-search-btn" data-i18n="home.search.button">Search</button>
+                    <button type="submit" class="home-btn home-btn-primary home-hero-search-btn" data-i18n="home.search.button">Ask AI / Search</button>
                 </form>
-                <div class="home-hero-utilities" aria-label="Quick utility access">
-                    <a class="home-utility-badge" href="/toolkit" data-i18n="home.utility.impa">📦 50,000+ IMPA Plates</a>
-                    <a class="home-utility-badge" href="/toolkit?tool=bunker" data-i18n="home.utility.bunker">⛽ ASTM 54B Bunker Calc</a>
-                    <a class="home-utility-badge" href="/toolkit?tool=engineering" data-i18n="home.utility.flange">📐 JIS Flange Specs</a>
-                    <a class="home-utility-badge" href="/toolkit?tool=compliance" data-i18n="home.utility.cic">📋 Tokyo MoU CIC Guard</a>
+                <div class="home-hero-utilities" aria-label="Quick maritime intelligence shortcuts">
+                    <a class="home-utility-badge" href="#" data-home-route="brain" data-home-seed="Generator or main engine RPM hunting — probable causes and field checks" data-i18n="home.utility.chip.engine">⚙️ Engine / G/E troubleshooting</a>
+                    <a class="home-utility-badge" href="/toolkit" data-i18n="home.utility.impa">📦 50,000+ IMPA plates</a>
+                    <a class="home-utility-badge" href="/toolkit?tool=bunker" data-i18n="home.utility.bunker">⛽ Bunker calculator (54B)</a>
+                    <a class="home-utility-badge" href="/toolkit?tool=compliance" data-i18n="home.utility.cic">📋 Class &amp; PSC checklists</a>
                 </div>
             </div>
         </section>
@@ -255,7 +256,7 @@
     <script src="../js/marketing/homeSections.js?v=20260917-saas-ir"></script>
     <script src="../js/intelligence/marketFeed.js?v=20260914-news-media-dashboard"></script>
     <script src="../js/brain-chat.js?v=20260919-brain"></script>
-    <script src="../js/home-hero-search.js?v=20260919-brain-hero"></script>
+    <script src="../js/home-hero-search.js?v=20260919-unified-search"></script>
     <script src="../js/marketing-shell.js?v=20260915-enterprise"></script>
 </body>
 </html>
