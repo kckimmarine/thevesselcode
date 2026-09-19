@@ -2,10 +2,10 @@
 const TVC_StoreManager = (function () {
     const CART_KEY = 'tvc_store_requisition_cart';
     const CHUNK_SIZE = 1000;
-    const SEARCH_LIMIT = 50000;
+    const SEARCH_LIMIT = 60_000;
     const BROWSE_PREVIEW = 500;
     const SEARCH_TARGET_MS = 50;
-    const CATALOG_SOURCE_VERSION = '20260916-phase-d-36995';
+    const CATALOG_SOURCE_VERSION = '20260919-phase-e-53927';
 
     const CHAPTER_CATEGORY = {
         '33': 'Safety Equipment',
