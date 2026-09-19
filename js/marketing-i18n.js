@@ -999,7 +999,12 @@
         'contact.field.message': { en: 'Message *', ko: '내용 *' },
         'contact.inquiry.placeholder': { en: '— Select inquiry type —', ko: '— 문의 유형 선택 —' },
         'contact.inquiry.demo': { en: 'TVC-SM Fleet Demo & PoC', ko: 'TVC-SM 파일럿·데모' },
+        'contact.inquiry.rfq': { en: 'Part & Store RFQ', ko: '부품·선용품 RFQ' },
         'contact.inquiry.partnership': { en: 'Maritime Toolkit & Partnership', ko: '실무 공구함·제휴' },
+        'contact.sla': {
+            en: '⚡ Direct Engineering Response within 12 Hours',
+            ko: '⚡ 12시간 내 엔지니어링 팀 직접 회신',
+        },
         'contact.inquiry.support': { en: 'Technical Support & Bug Report', ko: '기술 지원·오류 신고' },
         'contact.inquiry.general': { en: 'General Inquiries', ko: '일반 문의' },
         'contact.message.placeholder': {
@@ -1026,6 +1031,14 @@
         'contact.campaign.fleetTrial': {
             en: 'I would like to start the 30-day risk-free TVC-SM fleet trial (Starter plan — $99/vessel/mo after trial).',
             ko: 'TVC-SM 30일 무위험 선대 체험을 신청합니다 (체험 후 Starter — 선박당 월 $99).',
+        },
+        'contact.campaign.fleetTrialPilot': {
+            en: 'Requesting 30-day pilot for [fleet size] vessels…',
+            ko: '[fleet size]척 선대 30일 파일럿을 신청합니다…',
+        },
+        'contact.campaign.rfq': {
+            en: 'Inquiring about supply/quote for IMPA [code][name]…',
+            ko: 'IMPA [code][name] 공급·견적 문의입니다…',
         },
         'contact.campaign.toolkitPro': {
             en: 'I would like to subscribe to Maritime Toolkit Pro ($9.99/month) for ASTM 54B logs and offline PDF exports.',

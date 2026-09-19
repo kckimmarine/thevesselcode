@@ -20,7 +20,7 @@ async function main() {
     });
     results.push({
       check: 'about mission headline present',
-      ok: /Bridging Maritime Expertise/i.test(await page.locator('#acAboutTitle').textContent() || ''),
+      ok: /Maritime expertise meets practical software/i.test(await page.locator('#acAboutTitle').textContent() || ''),
     });
     results.push({
       check: 'three highlight badges',
@@ -40,8 +40,15 @@ async function main() {
       ok: await page.locator('#acEmailConfirm').isVisible(),
     });
     results.push({
-      check: 'SLA badge removed',
-      ok: await page.locator('.ac-sla').count() === 0,
+      check: '12-hour SLA badge visible',
+      ok: await page.locator('.ac-sla').isVisible(),
+    });
+
+    await page.goto(`${BASE}/contact-us?inquiry=rfq&code=812101`, { waitUntil: 'networkidle' });
+    results.push({
+      check: 'rfq inquiry prefill',
+      ok: (await page.locator('#acInquiryType').inputValue()) === 'rfq'
+        && /812101/.test(await page.locator('#acMessage').inputValue() || ''),
     });
 
     const overflow = await page.evaluate(() => ({
