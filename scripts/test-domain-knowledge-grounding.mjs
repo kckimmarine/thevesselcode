@@ -30,6 +30,9 @@ check('grounding markdown', md.includes('핵심 결론') && md.includes('FWG'), 
 const pn = matchKnowledgeBaseFromData(kb, 'ME-EV-SP-6S50');
 check('part number exact', pn.parts.some((p) => p.part_number === 'ME-EV-SP-6S50'));
 
+const ko = matchKnowledgeBaseFromData(kb, '메인엔진 rpm헌팅');
+check('Korean rpm hunting matches archive', ko.trouble.length + ko.parts.length >= 1, `t=${ko.trouble.length} p=${ko.parts.length}`);
+
 if (process.exitCode) {
     console.error('\nDomain knowledge grounding tests FAILED');
     process.exit(1);

@@ -37,10 +37,32 @@ function loadKnowledgeBase() {
     return null;
 }
 
+/** Korean / mixed-field synonyms → extra English tokens for archive search */
+const TOKEN_ALIASES = {
+    메인엔진: ['main', 'engine', 'm/e'],
+    mainengine: ['main', 'engine'],
+    rpm헌팅: ['rpm', 'hunting', 'surging'],
+    rpm헌팅현상: ['rpm', 'hunting', 'surging'],
+    헌팅: ['hunting', 'surging'],
+    조타: ['steering', 'rudder'],
+    제조기: ['fwg', 'generator', 'fresh', 'water'],
+    aux: ['generator', 'engine'],
+    부품: ['part', 'spare'],
+};
+
 function queryTokens(query) {
     const q = String(query || '').toLowerCase();
-    const tokens = q.match(/[\p{L}\p{N}]{2,}/gu) || [];
-    const uniq = new Set(tokens.filter((t) => t.length >= 2));
+    const raw = q.match(/[\p{L}\p{N}]{2,}/gu) || [];
+    const uniq = new Set(raw.filter((t) => t.length >= 2));
+    for (const t of [...uniq]) {
+        const aliases = TOKEN_ALIASES[t];
+        if (aliases) aliases.forEach((a) => uniq.add(a));
+        if (t.includes('rpm') && t.includes('헌팅')) {
+            uniq.add('rpm');
+            uniq.add('hunting');
+        }
+    }
+    if (uniq.has('rpm') || q.includes('rpm')) uniq.add('rpm');
     return [...uniq];
 }
 
@@ -54,34 +76,75 @@ function scoreHaystack(hay, tokens) {
     return score;
 }
 
+function normalizeRetrievalPart(p) {
+    return {
+        part_number: p.partNumber || p.part_number || p.impa || '',
+        name: p.description || p.name || '',
+        standard_price: p.unitPrice != null ? p.unitPrice : p.standard_price,
+        last_vendor: p.vendor || p.last_vendor || '',
+        compatible_equipment: p.equipment || p.compatible_equipment || '',
+    };
+}
+
+function normalizeRetrievalTrouble(t) {
+    return {
+        equipment: t.equipment || '',
+        symptoms: t.symptoms || '',
+        presumed_cause: t.rootCause || t.presumed_cause || t.trouble_cause || '',
+        action_taken: t.actionTaken || t.action_taken || t.corrective_action || '',
+        inspection_tips: t.classRecommendation || t.inspection_tips || t.class_remarks || '',
+    };
+}
+
+function rankArchiveRows(rows, tokens, blobFn, exactFn) {
+    return rows
+        .map((row) => {
+            const blob = blobFn(row);
+            const score = scoreHaystack(blob, tokens) + (exactFn ? exactFn(row, tokens) : 0);
+            return { item: row, score };
+        })
+        .filter((x) => x.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, KB_MAX_MATCHES)
+        .map((x) => x.item);
+}
+
 function matchKnowledgeBaseFromData(kb, query) {
     if (!kb) return { parts: [], trouble: [] };
 
     const tokens = queryTokens(query);
     if (!tokens.length) return { parts: [], trouble: [] };
 
-    const parts = (kb.structured_parts || [])
-        .map((p) => {
-            const blob = [p.part_number, p.name, p.last_vendor, p.compatible_equipment].join(' ');
-            const score = scoreHaystack(blob, tokens);
-            const pn = String(p.part_number || '').toLowerCase();
-            const exact = tokens.some((t) => pn && (pn === t || pn.includes(t)));
-            return { item: p, score: score + (exact ? 8 : 0) };
-        })
-        .filter((x) => x.score > 0)
-        .sort((a, b) => b.score - a.score)
-        .slice(0, KB_MAX_MATCHES)
-        .map((x) => x.item);
+    const structuredParts = kb.structured_parts || [];
+    const retrievalParts = (kb.retrieval && kb.retrieval.parts) || [];
+    const allParts = [
+        ...structuredParts,
+        ...retrievalParts.map(normalizeRetrievalPart),
+    ];
 
-    const trouble = (kb.trouble_history || [])
-        .map((t) => {
-            const blob = [t.equipment, t.symptoms, t.presumed_cause, t.action_taken, t.inspection_tips].join(' ');
-            return { item: t, score: scoreHaystack(blob, tokens) };
-        })
-        .filter((x) => x.score > 0)
-        .sort((a, b) => b.score - a.score)
-        .slice(0, KB_MAX_MATCHES)
-        .map((x) => x.item);
+    const structuredTrouble = kb.trouble_history || [];
+    const retrievalTrouble = (kb.retrieval && kb.retrieval.troubles) || [];
+    const allTrouble = [
+        ...structuredTrouble,
+        ...retrievalTrouble.map(normalizeRetrievalTrouble),
+    ];
+
+    const parts = rankArchiveRows(
+        allParts,
+        tokens,
+        (p) => [p.part_number, p.name, p.last_vendor, p.compatible_equipment].join(' '),
+        (p, toks) => {
+            const pn = String(p.part_number || '').toLowerCase();
+            return toks.some((t) => pn && (pn === t || pn.includes(t))) ? 8 : 0;
+        },
+    );
+
+    const trouble = rankArchiveRows(
+        allTrouble,
+        tokens,
+        (t) => [t.equipment, t.symptoms, t.presumed_cause, t.action_taken, t.inspection_tips].join(' '),
+        () => 0,
+    );
 
     return { parts, trouble };
 }

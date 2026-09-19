@@ -447,6 +447,15 @@
         }
     }
 
+    function isLlmProviderErrorAnswer(text) {
+        const s = String(text || '');
+        return (
+            s.includes('연결하지 못했습니다')
+            || s.includes('could not reach the configured AI model')
+            || s.includes('GEMINI_API_KEY')
+        );
+    }
+
     function composeAnswer(data, apiFailed) {
         let answer = String(data.answer || '').trim();
         const grounding = String(data.grounding || '').trim();
@@ -490,7 +499,15 @@
 
             let answer = composeAnswer(data, apiFailed);
 
-            if (!answer && apiFailed) {
+            if (isLlmProviderErrorAnswer(answer) || (!answer && apiFailed)) {
+                const archive = await tryStaticArchiveGrounding(q);
+                if (archive) {
+                    const aiNote = state.lang === 'EN'
+                        ? '\n\n_(Archive records above are from TVC ingested history. Generative AI is temporarily unavailable — check Vercel GEMINI_API_KEY / GEMINI_MODEL.)_'
+                        : '\n\n_(위 실적은 TVC ingest 아카이브입니다. 생성형 AI는 일시적으로 연결되지 않았습니다 — Vercel `GEMINI_API_KEY`·`GEMINI_MODEL` 점검.)_';
+                    answer = archive + aiNote;
+                }
+            } else if (!answer && apiFailed) {
                 answer = await tryStaticArchiveGrounding(q);
             }
 
