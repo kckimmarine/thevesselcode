@@ -434,7 +434,11 @@ async function routeBrainQuery(query, lang) {
             }
         } catch (geminiErr) {
             console.error('[ask-brain] Gemini failed', geminiErr.message || geminiErr);
-            if (!openaiKey) throw geminiErr;
+            if (!openaiKey) {
+                const archiveFirst = offlineWithArchives(query, lang);
+                if (archiveFirst) return archiveFirst;
+                throw geminiErr;
+            }
         }
     }
 
@@ -446,6 +450,8 @@ async function routeBrainQuery(query, lang) {
             }
         } catch (openaiErr) {
             console.error('[ask-brain] OpenAI failed', openaiErr.message || openaiErr);
+            const archiveFirst = offlineWithArchives(query, lang);
+            if (archiveFirst) return archiveFirst;
             throw openaiErr;
         }
     }
@@ -471,9 +477,10 @@ async function handler(req, res) {
     }
 
     let lang = 'KO';
+    let query = '';
     try {
         const body = await readJsonBody(req);
-        const query = String(body.query || '').trim();
+        query = String(body.query || '').trim();
         lang = normalizeLang(body.lang);
 
         if (!query) {
@@ -499,6 +506,14 @@ async function handler(req, res) {
         console.error('[ask-brain] unhandled', e);
         if (e.code === 'PAYLOAD_TOO_LARGE') {
             return res.status(413).json({ error: 'Payload too large', answer: '', sources: [] });
+        }
+        const archiveFirst = query ? offlineWithArchives(query, lang) : null;
+        if (archiveFirst) {
+            return res.status(200).json({
+                answer: archiveFirst.answer,
+                sources: archiveFirst.sources,
+                grounding: archiveFirst.grounding,
+            });
         }
         const geminiKey = String(process.env.GEMINI_API_KEY || '').trim();
         const openaiKey = String(process.env.OPENAI_API_KEY || '').trim();
