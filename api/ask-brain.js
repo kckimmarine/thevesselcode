@@ -1,14 +1,14 @@
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+const {
+    loadKnowledgeBase,
+    matchKnowledgeBaseFromData,
+    formatGroundingAnswer,
+    historicalSources,
+} = require('./_lib/brainKnowledgeGrounding');
 
 const MAX_BODY_BYTES = 16 * 1024;
 const MAX_QUERY_CHARS = 4000;
-const KB_PATH = path.join(__dirname, '..', 'data', 'tvc-knowledge-base.json');
-
-let cachedKnowledgeBase = null;
-let cachedKnowledgeMtimeMs = 0;
 
 const SYSTEM_PERSONA = `너는 THE VESSEL CODE BRAIN — 글로벌 선박 표준·규격·운영 데이터에 기반한 중립적 Maritime Search & Intelligence Hub이다.
 1. JIS 플랜지, ASTM 54B, 선급(Class) 규정, IMPA 자재를 물어보면 정밀한 공식과 수치를 최우선 제시하라.
@@ -18,22 +18,6 @@ const SYSTEM_PERSONA = `너는 THE VESSEL CODE BRAIN — 글로벌 선박 표준
 5. 특정 선사명·개인 이름·과거 직함·연차(예: ○○년 차)를 답변에 끌어오지 말고, TVC 지식베이스의 객관적 기록만 인용하라.
 6. 메시지에 [TVC MARITIME INTEL] 블록(PART/TROUBLE/MAIL)이 있으면 해당 기록을 우선 근거로 삼고, 출처(source)를 명시하라.
 7. briefing=true 요청 시 대화형 서두·사과·잡담 없이 단일 페이지 브리핑만 출력하라. 반드시 세 섹션 헤더만 사용: ## Root Cause ➔ ## Immediate Action ➔ ## Parts & Limits (한국어 질의면 ## 근본 원인 ➔ ## 즉시 조치 ➔ ## 부품·한계).`;
-
-function loadKnowledgeBase() {
-    try {
-        if (!fs.existsSync(KB_PATH)) return null;
-        const st = fs.statSync(KB_PATH);
-        if (cachedKnowledgeBase && st.mtimeMs === cachedKnowledgeMtimeMs) {
-            return cachedKnowledgeBase;
-        }
-        cachedKnowledgeBase = JSON.parse(fs.readFileSync(KB_PATH, 'utf8'));
-        cachedKnowledgeMtimeMs = st.mtimeMs;
-        return cachedKnowledgeBase;
-    } catch (e) {
-        console.warn('[ask-brain] knowledge base load failed', e.message || e);
-        return null;
-    }
-}
 
 function tokenizeQuery(query) {
     return String(query || '')
@@ -52,14 +36,34 @@ function scoreText(tokens, text) {
     return score;
 }
 
+function appendDomainArchiveLines(lines, extraSources, kb, query, seenSources) {
+    const { parts, trouble } = matchKnowledgeBaseFromData(kb, query);
+    for (const p of parts) {
+        const price = p.standard_price != null ? `${p.standard_price} USD` : '—';
+        lines.push(
+            `- PART | ${p.part_number || '—'} | ${p.name || '—'} | equip: ${p.compatible_equipment || '—'} | vendor: ${p.last_vendor || '—'} | price: ${price} | src: data/raw_archives`,
+        );
+    }
+    for (const t of trouble) {
+        lines.push(
+            `- TROUBLE | equip: ${t.equipment || '—'} | symptom: ${t.symptoms || '—'} | cause: ${t.presumed_cause || '—'} | action: ${t.action_taken || '—'} | class: ${t.inspection_tips || '—'} | src: data/raw_archives`,
+        );
+    }
+    if ((parts.length || trouble.length) && !seenSources.has('domain-archives')) {
+        seenSources.add('domain-archives');
+        extraSources.push({ label: 'TVC domain archives (raw_archives ingest)', kind: 'tvc_archive_domain' });
+    }
+    return parts.length + trouble.length;
+}
+
 function buildSuperintendentArchiveContext(query, lang) {
     const kb = loadKnowledgeBase();
-    const retrieval = kb && kb.retrieval;
-    if (!retrieval) return { contextBlock: '', extraSources: [] };
+    if (!kb) return { contextBlock: '', extraSources: [] };
 
     const tokens = tokenizeQuery(query);
     if (!tokens.length) return { contextBlock: '', extraSources: [] };
 
+    const retrieval = kb.retrieval || {};
     const parts = (retrieval.parts || [])
         .map((p) => ({
             score: scoreText(tokens, [p.partNumber, p.impa, p.description, p.equipment, p.vendor].join(' ')),
@@ -87,7 +91,15 @@ function buildSuperintendentArchiveContext(query, lang) {
         .sort((a, b) => b.score - a.score)
         .slice(0, 4);
 
-    if (!parts.length && !troubles.length && !mailRows.length) {
+    const domainMatches = matchKnowledgeBaseFromData(kb, query);
+
+    if (
+        !parts.length &&
+        !troubles.length &&
+        !mailRows.length &&
+        !domainMatches.parts.length &&
+        !domainMatches.trouble.length
+    ) {
         return { contextBlock: '', extraSources: [] };
     }
 
@@ -117,6 +129,7 @@ function buildSuperintendentArchiveContext(query, lang) {
 
     const extraSources = [];
     const seen = new Set();
+    appendDomainArchiveLines(lines, extraSources, kb, query, seen);
     for (const { p } of parts) {
         if (p.sourceFile && !seen.has(p.sourceFile)) {
             seen.add(p.sourceFile);
@@ -388,36 +401,71 @@ async function callOpenAI(query, lang, extraSources, briefing) {
     };
 }
 
+function offlineWithArchives(query, lang) {
+    const kb = loadKnowledgeBase();
+    const matches = matchKnowledgeBaseFromData(kb, query);
+    const grounding = formatGroundingAnswer(matches, lang);
+    if (!grounding) return null;
+
+    const aiNote =
+        lang === 'EN'
+            ? '\n\n_(Generative Brain analysis requires GEMINI_API_KEY or OPENAI_API_KEY on the server; archive records above are from your ingested files.)_'
+            : '\n\n_(생성형 Brain 분석은 서버 API 키 연동 후 가능합니다. 위 실적은 ingest된 아카이브 데이터입니다.)_';
+
+    return {
+        answer: grounding + aiNote,
+        grounding,
+        sources: historicalSources(matches, lang),
+    };
+}
+
 async function routeBrainQuery(query, lang, briefing) {
     const augmented = augmentQueryWithArchive(query, lang);
     const queryForModel = augmented.queryForModel;
     const archiveSources = augmented.extraSources;
+    const kbMatches = matchKnowledgeBaseFromData(loadKnowledgeBase(), query);
+    const grounding = formatGroundingAnswer(kbMatches, lang);
     const geminiKey = String(process.env.GEMINI_API_KEY || '').trim();
     const openaiKey = String(process.env.OPENAI_API_KEY || '').trim();
 
     if (!geminiKey && !openaiKey) {
+        const archiveFirst = offlineWithArchives(query, lang);
+        if (archiveFirst) return archiveFirst;
         return offlineFallbackAnswer(lang);
     }
 
     if (geminiKey) {
         try {
             const out = await callGemini(queryForModel, lang, archiveSources, briefing);
-            if (out) return out;
+            if (out) {
+                return grounding ? { ...out, grounding } : out;
+            }
         } catch (geminiErr) {
             console.error('[ask-brain] Gemini failed', geminiErr.message || geminiErr);
-            if (!openaiKey) throw geminiErr;
+            if (!openaiKey) {
+                const archiveFirst = offlineWithArchives(query, lang);
+                if (archiveFirst) return archiveFirst;
+                throw geminiErr;
+            }
         }
     }
 
     if (openaiKey) {
         try {
             const out = await callOpenAI(queryForModel, lang, archiveSources, briefing);
-            if (out) return out;
+            if (out) {
+                return grounding ? { ...out, grounding } : out;
+            }
         } catch (openaiErr) {
             console.error('[ask-brain] OpenAI failed', openaiErr.message || openaiErr);
+            const archiveFirst = offlineWithArchives(query, lang);
+            if (archiveFirst) return archiveFirst;
             throw openaiErr;
         }
     }
+
+    const archiveFirst = offlineWithArchives(query, lang);
+    if (archiveFirst) return archiveFirst;
 
     return providerFailureAnswer(lang, 'All configured providers returned empty.');
 }
@@ -437,9 +485,10 @@ async function handler(req, res) {
     }
 
     let lang = 'KO';
+    let query = '';
     try {
         const body = await readJsonBody(req);
-        const query = String(body.query || '').trim();
+        query = String(body.query || '').trim();
         lang = normalizeLang(body.lang);
         const briefing = body.briefing === true;
 
@@ -456,14 +505,24 @@ async function handler(req, res) {
 
         const result = await routeBrainQuery(query, lang, briefing);
         const sources = Array.isArray(result.sources) ? result.sources : [];
-        return res.status(200).json({
+        const payload = {
             answer: result.answer || '',
             sources,
-        });
+        };
+        if (result.grounding) payload.grounding = result.grounding;
+        return res.status(200).json(payload);
     } catch (e) {
         console.error('[ask-brain] unhandled', e);
         if (e.code === 'PAYLOAD_TOO_LARGE') {
             return res.status(413).json({ error: 'Payload too large', answer: '', sources: [] });
+        }
+        const archiveFirst = query ? offlineWithArchives(query, lang) : null;
+        if (archiveFirst) {
+            return res.status(200).json({
+                answer: archiveFirst.answer,
+                sources: archiveFirst.sources,
+                grounding: archiveFirst.grounding,
+            });
         }
         const geminiKey = String(process.env.GEMINI_API_KEY || '').trim();
         const openaiKey = String(process.env.OPENAI_API_KEY || '').trim();
