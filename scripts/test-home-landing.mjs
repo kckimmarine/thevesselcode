@@ -72,6 +72,7 @@ check('home hero no photo background', !home.includes('mkt-hero-smart-vessel') &
 check('sync-public-assets script exists', existsSync(join(ROOT, 'scripts/sync-public-assets.mjs')));
 check('home hero eyebrow removed', !home.includes('Former C/E') && !home.includes('home-eyebrow'));
 check('services link in marketing shell', shell.includes("href: '/services'"));
+check('services in primary nav', shell.includes("id: 'services'") && shell.includes("i18n: 'nav.services'"));
 check('sm nav internal route', shell.includes("href: '/sm'") && shell.includes("id: 'sm'"));
 check('contact us link in marketing footer', shell.includes("href: '/contact-us'"));
 check('no inline services section on home', !home.includes('id="service-superintendent"'));
