@@ -10,12 +10,13 @@ const KB_PATH = path.join(__dirname, '..', 'data', 'tvc-knowledge-base.json');
 let cachedKnowledgeBase = null;
 let cachedKnowledgeMtimeMs = 0;
 
-const SYSTEM_PERSONA = `너는 1급 기관사이자 10년 차 수석 공무감독 'THE VESSEL CODE BRAIN'이다.
+const SYSTEM_PERSONA = `너는 THE VESSEL CODE BRAIN — 글로벌 선박 표준·규격·운영 데이터에 기반한 중립적 Maritime Search & Intelligence Hub이다.
 1. JIS 플랜지, ASTM 54B, 선급(Class) 규정, IMPA 자재를 물어보면 정밀한 공식과 수치를 최우선 제시하라.
-2. 선박 엔진 결함, 전기 계통 이상, 해사 법규(SOLAS/MARPOL), 용선 계약 분쟁 등 내부 DB 외의 전문 영역도 현장 공무감독의 시각에서 명쾌하게 해결 절차를 설명하라.
-3. 일반 공학, 화학, 번역, 비즈니스 상식을 물어보더라도 논리정연하고 친절하게 즉답하라.
-4. 문체는 차분하고 묵직한 베테랑 선배의 어조를 유지하며, 군더더기를 배제하고 [핵심 결론/기준 수치 -> 현장 조치 절차 -> 안전 및 법적 주의사항] 순서로 출력하라.
-5. 메시지에 [SUPERINTENDENT ARCHIVE] 블록이 포함되면 해당 실제 공무팀 이력(부품·견적·결함 조치)을 우선 근거로 삼고, 출처 파일명을 답변에 명시하라.`;
+2. 선박 기계·전기·해사 법규(SOLAS/MARPOL) 질의는 maker manual·class rule·현장 안전 기준 관점에서 객관적으로 설명하라.
+3. 일반 공학·화학·번역·비즈니스 질의도 논리정연하고 친절하게 답하라.
+4. 문체는 차분하고 전문적이며, [핵심 결론/기준 수치 → 현장 조치 절차 → 안전·법적 주의] 순서로 출력하라.
+5. 특정 선사명·개인 이름·과거 직함·연차(예: ○○년 차)를 답변에 끌어오지 말고, TVC 지식베이스의 객관적 기록만 인용하라.
+6. 메시지에 [TVC MARITIME INTEL] 블록(PART/TROUBLE/MAIL)이 있으면 해당 기록을 우선 근거로 삼고, 출처(source)를 명시하라.`;
 
 function loadKnowledgeBase() {
     try {
@@ -76,15 +77,24 @@ function buildSuperintendentArchiveContext(query, lang) {
         .sort((a, b) => b.score - a.score)
         .slice(0, 6);
 
-    if (!parts.length && !troubles.length) {
+    const mailRows = (retrieval.mailIntel || [])
+        .map((m) => ({
+            score: scoreText(tokens, [m.subject, m.from, m.bodySnippet, (m.attachmentFiles || []).join(' ')].join(' ')),
+            m,
+        }))
+        .filter((x) => x.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 4);
+
+    if (!parts.length && !troubles.length && !mailRows.length) {
         return { contextBlock: '', extraSources: [] };
     }
 
     const lines = [];
     if (lang === 'EN') {
-        lines.push('[SUPERINTENDENT ARCHIVE — historical records from company Google Drive ingest]');
+        lines.push('[TVC MARITIME INTEL — verified parts, pricing, defect/repair records from TVC knowledge base]');
     } else {
-        lines.push('[SUPERINTENDENT ARCHIVE — 공무팀 Google Drive 이력 DB]');
+        lines.push('[TVC MARITIME INTEL — TVC 지식베이스(부품·단가·결함/정비 기록)]');
     }
 
     for (const { p } of parts) {
@@ -98,19 +108,31 @@ function buildSuperintendentArchiveContext(query, lang) {
             `- TROUBLE | equip: ${t.equipment || '—'} | symptom: ${t.symptoms || '—'} | cause: ${t.rootCause || '—'} | action: ${t.actionTaken || '—'} | class: ${t.classRecommendation || '—'} | src: ${t.sourceFile || '—'}`
         );
     }
+    for (const { m } of mailRows) {
+        lines.push(
+            `- MAIL | ${m.date || '—'} | from: ${m.from || '—'} | subject: ${m.subject || '—'} | snippet: ${(m.bodySnippet || '—').slice(0, 280)} | attachments: ${(m.attachmentFiles || []).length}`
+        );
+    }
 
     const extraSources = [];
     const seen = new Set();
     for (const { p } of parts) {
         if (p.sourceFile && !seen.has(p.sourceFile)) {
             seen.add(p.sourceFile);
-            extraSources.push({ label: `Superintendent archive: ${p.sourceFile}`, kind: 'superintendent_archive' });
+            extraSources.push({ label: `TVC archive (PART): ${p.sourceFile}`, kind: 'tvc_archive_part' });
         }
     }
     for (const { t } of troubles) {
         if (t.sourceFile && !seen.has(t.sourceFile)) {
             seen.add(t.sourceFile);
-            extraSources.push({ label: `Superintendent archive: ${t.sourceFile}`, kind: 'superintendent_archive' });
+            extraSources.push({ label: `TVC archive (TROUBLE): ${t.sourceFile}`, kind: 'tvc_archive_trouble' });
+        }
+    }
+    for (const { m } of mailRows) {
+        const label = `Gmail: ${m.subject || m.source || 'maritime mail'}`;
+        if (!seen.has(label)) {
+            seen.add(label);
+            extraSources.push({ label, kind: 'gmail_intel' });
         }
     }
 

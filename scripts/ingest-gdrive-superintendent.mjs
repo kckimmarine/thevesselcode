@@ -11,7 +11,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import XLSX from 'xlsx';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -477,7 +477,16 @@ function loadExistingTroubles() {
     }
 }
 
-function buildKnowledgeBase(meta, parts, troubles, snippets) {
+export function loadExistingKnowledgeBase() {
+    if (!fs.existsSync(OUT_KB)) return null;
+    try {
+        return JSON.parse(fs.readFileSync(OUT_KB, 'utf8'));
+    } catch {
+        return null;
+    }
+}
+
+export function buildKnowledgeBase(meta, parts, troubles, snippets, historicalMailIntel = []) {
     const equipmentIndex = {};
     for (const p of parts) {
         const eq = p.equipment || 'UNKNOWN';
@@ -504,13 +513,27 @@ function buildKnowledgeBase(meta, parts, troubles, snippets) {
             .sort((a, b) => b[1] - a[1])
             .slice(0, 200)
             .map(([name, count]) => ({ name, count })),
+        historical_mail_intel: historicalMailIntel.slice(-5000),
         retrieval: {
             parts: parts.slice(0, 5000),
             troubles: troubles.slice(0, 2000),
             snippets: snippets.slice(0, 3000),
+            mailIntel: historicalMailIntel.slice(-1500),
         },
     };
 }
+
+export {
+    OUT_KB,
+    OUT_PARTS,
+    OUT_TROUBLE,
+    processFile,
+    dedupeParts,
+    dedupeTroubles,
+    loadExistingParts,
+    loadExistingTroubles,
+    writeJson,
+};
 
 function writeJson(filePath, obj) {
     fs.mkdirSync(path.dirname(filePath), { recursive: true });
@@ -519,7 +542,7 @@ function writeJson(filePath, obj) {
 
 function printKoreanReport(meta, parts, troubles, accessible) {
     const pricePoints = parts.filter((p) => p.unitPrice != null).length;
-    console.log('\n========== 공무팀 Google Drive 수집 요약 ==========');
+    console.log('\n========== TVC 로컬 아카이브 수집 요약 (Google Drive) ==========');
     console.log(`소스 경로: ${meta.sourceRoot}`);
     console.log(`접근 가능: ${accessible ? '예' : '아니오 (경로 마운트 또는 TVC_SUPERINTENDENT_ARCHIVE_ROOT 확인)'}`);
     console.log(`모드: ${meta.mode}`);
@@ -586,13 +609,20 @@ async function main() {
             sourceRoot: root,
             cases: mergedTroubles,
         });
-        writeJson(OUT_KB, buildKnowledgeBase(meta, mergedParts, mergedTroubles, snippets));
+        const priorKb = loadExistingKnowledgeBase();
+        const mailIntel = priorKb?.historical_mail_intel || [];
+        writeJson(OUT_KB, buildKnowledgeBase(meta, mergedParts, mergedTroubles, snippets, mailIntel));
     }
 
     printKoreanReport(meta, mergedParts, mergedTroubles, true);
 }
 
-main().catch((e) => {
-    console.error(e);
-    process.exit(1);
-});
+const isDirectRun = process.argv[1]
+    && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url;
+
+if (isDirectRun) {
+    main().catch((e) => {
+        console.error(e);
+        process.exit(1);
+    });
+}
