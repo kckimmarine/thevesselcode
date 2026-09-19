@@ -160,20 +160,39 @@ async function connectClient(user, pass) {
     return client;
 }
 
-async function fetchRecentMessages(client, scanCount) {
+function buildGmailRawQuery() {
+    const tokens = MARITIME_KEYWORDS.map((kw) => kw.replace(/"/g, ''));
+    const quoted = tokens.map((t) => `"${t}"`).join(' OR ');
+    return `{${quoted}}`;
+}
+
+async function searchMaritimeUids(client, cap) {
+    const lock = await client.getMailboxLock('INBOX');
+    try {
+        const raw = buildGmailRawQuery();
+        let uids = await client.search({ gmailRaw: raw }, { uid: true });
+        if (!uids?.length) {
+            uids = await client.search({ all: true }, { uid: true });
+        }
+        uids = (uids || []).sort((a, b) => b - a).slice(0, cap);
+        return uids;
+    } finally {
+        lock.release();
+    }
+}
+
+async function fetchMessagesByUid(client, uids) {
     const lock = await client.getMailboxLock('INBOX');
     const messages = [];
     try {
-        const exists = client.mailbox.exists || 0;
-        if (!exists) return messages;
-        const fromSeq = Math.max(1, exists - scanCount + 1);
-        const range = `${fromSeq}:${exists}`;
-        for await (const msg of client.fetch(range, {
+        if (!uids.length) return messages;
+        const set = uids.join(',');
+        for await (const msg of client.fetch(set, {
             uid: true,
             envelope: true,
             source: true,
             internalDate: true,
-        })) {
+        }, { uid: true })) {
             messages.push(msg);
         }
     } finally {
@@ -218,7 +237,8 @@ async function main() {
         process.exit(1);
     }
 
-    const scanned = await fetchRecentMessages(client, args.scan);
+    const searchUids = await searchMaritimeUids(client, args.scan);
+    const scanned = await fetchMessagesByUid(client, searchUids);
     await client.logout();
 
     const mailIntel = [];
@@ -344,7 +364,7 @@ async function main() {
 
     console.log('\n========== Gmail IMAP 해운 실무 수집 요약 ==========');
     console.log(`계정: ${user}`);
-    console.log(`스캔한 메일(최근 ${args.scan}통 범위): ${scanned.length}`);
+    console.log(`IMAP 검색·조회한 메일(최대 ${args.scan} UID): ${scanned.length}`);
     console.log(`해운 키워드 매칭 메일: ${mailIntel.length} (이번 배치 한도 ${args.matchLimit})`);
     console.log(`다운로드한 Excel/CSV 첨부: ${attachmentsSaved}`);
     console.log(`지식베이스 historical_mail_intel 누적: ${mergedMailIntel.length}`);
