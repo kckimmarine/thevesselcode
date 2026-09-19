@@ -10,6 +10,7 @@ import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
 const askBrain = require('../api/ask-brain.js');
+const searchApi = require('../api/search.js');
 
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const PORT = Number(process.env.PORT || 3000);
@@ -100,6 +101,11 @@ const server = createServer((req, res) => {
         return;
     }
 
+    if (url.pathname === '/api/search' && req.method === 'GET') {
+        searchApi(req, vercelStyleResponse(res));
+        return;
+    }
+
     let abs = safePath(url.pathname);
     if (abs && existsSync(abs) && statSync(abs).isDirectory()) {
         abs = join(abs, 'index.html');
@@ -117,5 +123,5 @@ const server = createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-    console.log(`TVC web + Brain API → http://127.0.0.1:${PORT} (POST /api/ask-brain)`);
+    console.log(`TVC web + Brain API → http://127.0.0.1:${PORT} (POST /api/ask-brain, GET /api/search)`);
 });

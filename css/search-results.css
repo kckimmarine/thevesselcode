@@ -1,0 +1,211 @@
+/* THE VESSEL CODE — in-app maritime web search results */
+.tvc-search-results {
+    margin-top: 20px;
+    border-radius: 14px;
+    border: 1px solid rgba(148, 163, 184, 0.45);
+    background: linear-gradient(165deg, rgba(15, 23, 42, 0.97) 0%, rgba(10, 17, 40, 0.98) 100%);
+    color: #e2e8f0;
+    box-shadow: 0 18px 40px rgba(2, 6, 23, 0.35);
+    overflow: hidden;
+}
+
+.tvc-search-results[hidden] {
+    display: none !important;
+}
+
+.tvc-search-results__head {
+    padding: 16px 18px 12px;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.tvc-search-results__eyebrow {
+    margin: 0 0 4px;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #7dd3fc;
+    font-weight: 600;
+}
+
+.tvc-search-results__title {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.tvc-search-results__meta {
+    margin: 6px 0 0;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.tvc-search-results__body {
+    padding: 14px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tvc-search-results__notice {
+    margin: 0;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: rgba(251, 191, 36, 0.12);
+    border: 1px solid rgba(251, 191, 36, 0.35);
+    color: #fde68a;
+    font-size: 0.92rem;
+}
+
+.tvc-search-results__google-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(56, 189, 248, 0.55);
+    background: rgba(14, 165, 233, 0.18);
+    color: #e0f2fe;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.tvc-search-results__google-btn:hover,
+.tvc-search-results__google-btn:focus-visible {
+    background: rgba(14, 165, 233, 0.32);
+    border-color: #38bdf8;
+    color: #fff;
+}
+
+.tvc-search-results__brain-btn {
+    margin-top: 8px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    background: transparent;
+    color: #cbd5e1;
+    font-size: 0.88rem;
+    cursor: pointer;
+}
+
+.tvc-search-results__brain-btn:hover {
+    border-color: #94a3b8;
+    color: #f1f5f9;
+}
+
+.tvc-search-internal-card,
+.tvc-search-result-card {
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: rgba(30, 41, 59, 0.72);
+    border: 1px solid rgba(100, 116, 139, 0.35);
+}
+
+.tvc-search-internal-card__label {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: rgba(34, 211, 238, 0.15);
+    color: #67e8f9;
+}
+
+.tvc-search-internal-card__title {
+    margin: 0 0 6px;
+    font-size: 1rem;
+    color: #f8fafc;
+}
+
+.tvc-search-internal-card__desc {
+    margin: 0 0 12px;
+    font-size: 0.88rem;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+.tvc-search-internal-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(2, 132, 199, 0.25);
+    border: 1px solid rgba(56, 189, 248, 0.45);
+    color: #7dd3fc;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.88rem;
+}
+
+.tvc-search-internal-card__cta:hover {
+    color: #e0f2fe;
+    background: rgba(2, 132, 199, 0.4);
+}
+
+.tvc-search-result-card__title {
+    margin: 0 0 6px;
+    font-size: 1rem;
+    line-height: 1.35;
+}
+
+.tvc-search-result-card__title a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.tvc-search-result-card__title a:hover {
+    text-decoration: underline;
+    color: #7dd3fc;
+}
+
+.tvc-search-result-card__domain {
+    display: inline-block;
+    margin-bottom: 6px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    background: rgba(15, 23, 42, 0.8);
+    color: #cbd5e1;
+    border: 1px solid rgba(71, 85, 105, 0.6);
+}
+
+.tvc-search-result-card__snippet {
+    margin: 0;
+    font-size: 0.88rem;
+    color: #94a3b8;
+    line-height: 1.55;
+}
+
+.tvc-search-results__status {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+.tvc-search-results__loading {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+    .tvc-search-results {
+        margin-top: 16px;
+        border-radius: 12px;
+    }
+
+    .tvc-search-results__head,
+    .tvc-search-results__body {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}

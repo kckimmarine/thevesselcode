@@ -5,17 +5,38 @@
             ?? String(raw || '').trim();
     }
 
-    function handleSubmit(input) {
+    async function handleSubmit(input) {
         const q = normalizeQuery(input.value);
         if (!q) {
             globalThis.location.href = '/toolkit';
             return;
         }
+
+        const R = globalThis.TVC_SearchResolver;
+        const classification = R?.classifyQuery?.(q) || { type: 'brain', query: q };
+        const Results = globalThis.TVC_SearchResultsView;
+
+        if (Results?.isInternalIntercept?.(classification)) {
+            Results.showInternal(classification, q, { anchor: input.closest('form') });
+            return;
+        }
+
+        if (classification.type === 'brain' && classification.briefing && R?.isBrainNaturalQuery?.(q)) {
+            if (openBrain(q)) return;
+        }
+
+        if (Results?.showWebSearch) {
+            await Results.showWebSearch(q, {
+                anchor: input.closest('form'),
+                showBrainCta: classification.type === 'brain',
+            });
+            return;
+        }
+
         if (globalThis.TVC_SearchPortal?.executePortalSearch) {
             globalThis.TVC_SearchPortal.executePortalSearch(q);
             return;
         }
-        const R = globalThis.TVC_SearchResolver;
         const route = R?.routeHeroQuery?.(q) || { type: 'brain', query: q };
         if (route.type === 'brain') {
             if (globalThis.TVC_BrainChat?.openModal) {
