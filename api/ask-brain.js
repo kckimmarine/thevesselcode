@@ -1,7 +1,131 @@
 'use strict';
 
+const fs = require('fs');
+const path = require('path');
+
 const MAX_BODY_BYTES = 16 * 1024;
 const MAX_QUERY_CHARS = 4000;
+const KB_MAX_MATCHES = 6;
+
+/** @type {{ mtimeMs: number, data: object | null } | null} */
+let knowledgeBaseCache = null;
+
+function knowledgeBasePath() {
+    return path.join(__dirname, '..', 'data', 'tvc-knowledge-base.json');
+}
+
+function loadKnowledgeBase() {
+    const kbPath = knowledgeBasePath();
+    try {
+        const stat = fs.statSync(kbPath);
+        if (knowledgeBaseCache && knowledgeBaseCache.mtimeMs === stat.mtimeMs) {
+            return knowledgeBaseCache.data;
+        }
+        const raw = fs.readFileSync(kbPath, 'utf8');
+        const data = JSON.parse(raw);
+        knowledgeBaseCache = { mtimeMs: stat.mtimeMs, data };
+        return data;
+    } catch {
+        knowledgeBaseCache = { mtimeMs: 0, data: null };
+        return null;
+    }
+}
+
+function queryTokens(query) {
+    const q = String(query || '').toLowerCase();
+    const tokens = q.match(/[\p{L}\p{N}]{2,}/gu) || [];
+    const uniq = new Set(tokens.filter((t) => t.length >= 2));
+    return [...uniq];
+}
+
+function scoreHaystack(hay, tokens) {
+    const text = String(hay || '').toLowerCase();
+    if (!text) return 0;
+    let score = 0;
+    for (const t of tokens) {
+        if (text.includes(t)) score += t.length >= 4 ? 3 : 1;
+    }
+    return score;
+}
+
+function matchKnowledgeBase(query) {
+    const kb = loadKnowledgeBase();
+    if (!kb) return { parts: [], trouble: [] };
+
+    const tokens = queryTokens(query);
+    if (!tokens.length) return { parts: [], trouble: [] };
+
+    const parts = (kb.structured_parts || [])
+        .map((p) => {
+            const blob = [p.part_number, p.name, p.last_vendor, p.compatible_equipment].join(' ');
+            const score = scoreHaystack(blob, tokens);
+            const pn = String(p.part_number || '').toLowerCase();
+            const exact = tokens.some((t) => pn && (pn === t || pn.includes(t)));
+            return { item: p, score: score + (exact ? 8 : 0) };
+        })
+        .filter((x) => x.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, KB_MAX_MATCHES)
+        .map((x) => x.item);
+
+    const trouble = (kb.trouble_history || [])
+        .map((t) => {
+            const blob = [t.equipment, t.symptoms, t.presumed_cause, t.action_taken, t.inspection_tips].join(' ');
+            return { item: t, score: scoreHaystack(blob, tokens) };
+        })
+        .filter((x) => x.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, KB_MAX_MATCHES)
+        .map((x) => x.item);
+
+    return { parts, trouble };
+}
+
+function formatHistoricalContext(matches, lang) {
+    const { parts, trouble } = matches;
+    if (!parts.length && !trouble.length) return '';
+
+    const header =
+        lang === 'EN'
+            ? '[Verified historical context — dock/field repair records & unit pricing from TVC archives]'
+            : '[검증된 역사적 맥락 — 선석/현장 과거 수리 실적 및 단가 데이터 (TVC 아카이브)]';
+
+    const lines = [header, ''];
+
+    if (parts.length) {
+        lines.push(lang === 'EN' ? '— Spare / pricing records:' : '— 부품·단가 실적:');
+        for (const p of parts) {
+            const price =
+                p.standard_price != null && p.standard_price !== ''
+                    ? `USD ${p.standard_price}`
+                    : lang === 'EN'
+                      ? 'price n/a'
+                      : '단가 미기록';
+            lines.push(
+                `• ${p.part_number || '—'} | ${p.name || '—'} | ${price} | vendor: ${p.last_vendor || '—'} | equipment: ${p.compatible_equipment || '—'}`,
+            );
+        }
+        lines.push('');
+    }
+
+    if (trouble.length) {
+        lines.push(lang === 'EN' ? '— Defect / repair history:' : '— 결함·수리 이력:');
+        for (const t of trouble) {
+            lines.push(`• ${t.equipment || '—'}`);
+            lines.push(`  cause/symptoms: ${t.presumed_cause || t.symptoms || '—'}`);
+            lines.push(`  action: ${t.action_taken || '—'}`);
+            if (t.inspection_tips) lines.push(`  class/survey: ${t.inspection_tips}`);
+        }
+    }
+
+    lines.push(
+        lang === 'EN'
+            ? 'Use the above as factual grounding when relevant; state if the user question is outside this data.'
+            : '위 데이터가 질문과 관련 있으면 사실 근거로 활용하고, 범위 밖이면 명시하라.',
+    );
+
+    return lines.join('\n');
+}
 
 const SYSTEM_PERSONA = `너는 1급 기관사이자 10년 차 수석 공무감독 'THE VESSEL CODE BRAIN'이다.
 1. JIS 플랜지, ASTM 54B, 선급(Class) 규정, IMPA 자재를 물어보면 정밀한 공식과 수치를 최우선 제시하라.
@@ -69,19 +193,24 @@ function offlineFallbackAnswer(lang) {
     };
 }
 
-async function callGemini(query, lang) {
+async function callGemini(query, lang, historicalContext) {
     const key = String(process.env.GEMINI_API_KEY || '').trim();
     if (!key) return null;
 
     const model = process.env.GEMINI_MODEL || 'gemini-2.0-flash';
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(key)}`;
 
+    const systemParts = `${SYSTEM_PERSONA}\n\n${langHint(lang)}`;
+    const systemInstruction = historicalContext
+        ? `${systemParts}\n\n${historicalContext}`
+        : systemParts;
+
     const res = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
             systemInstruction: {
-                parts: [{ text: `${SYSTEM_PERSONA}\n\n${langHint(lang)}` }],
+                parts: [{ text: systemInstruction }],
             },
             contents: [
                 {
@@ -121,11 +250,15 @@ async function callGemini(query, lang) {
     };
 }
 
-async function callOpenAI(query, lang) {
+async function callOpenAI(query, lang, historicalContext) {
     const key = String(process.env.OPENAI_API_KEY || '').trim();
     if (!key) return null;
 
     const model = process.env.OPENAI_MODEL || 'gpt-4o-mini';
+    const systemContent = historicalContext
+        ? `${SYSTEM_PERSONA}\n\n${langHint(lang)}\n\n${historicalContext}`
+        : `${SYSTEM_PERSONA}\n\n${langHint(lang)}`;
+
     const res = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
@@ -137,7 +270,7 @@ async function callOpenAI(query, lang) {
             temperature: 0.35,
             max_tokens: 2048,
             messages: [
-                { role: 'system', content: `${SYSTEM_PERSONA}\n\n${langHint(lang)}` },
+                { role: 'system', content: systemContent },
                 { role: 'user', content: query },
             ],
         }),
@@ -164,18 +297,46 @@ async function callOpenAI(query, lang) {
     };
 }
 
+function historicalSources(matches, lang) {
+    const { parts, trouble } = matches;
+    if (!parts.length && !trouble.length) return [];
+    return [
+        {
+            label:
+                lang === 'EN'
+                    ? 'TVC historical archives (parts & repair log)'
+                    : 'TVC 역사 아카이브 (부품·수리 실적)',
+            provider: 'tvc-knowledge-base',
+            path: 'data/tvc-knowledge-base.json',
+        },
+    ];
+}
+
 async function routeBrainQuery(query, lang) {
     const geminiKey = String(process.env.GEMINI_API_KEY || '').trim();
     const openaiKey = String(process.env.OPENAI_API_KEY || '').trim();
 
+    const kbMatches = matchKnowledgeBase(query);
+    const historicalContext = formatHistoricalContext(kbMatches, lang);
+    const kbSources = historicalSources(kbMatches, lang);
+
     if (!geminiKey && !openaiKey) {
-        return offlineFallbackAnswer(lang);
+        const fallback = offlineFallbackAnswer(lang);
+        return {
+            ...fallback,
+            sources: [...kbSources, ...fallback.sources],
+        };
     }
 
     if (geminiKey) {
         try {
-            const out = await callGemini(query, lang);
-            if (out) return out;
+            const out = await callGemini(query, lang, historicalContext);
+            if (out) {
+                return {
+                    ...out,
+                    sources: [...kbSources, ...out.sources],
+                };
+            }
         } catch (geminiErr) {
             console.error('[ask-brain] Gemini failed', geminiErr.message || geminiErr);
             if (!openaiKey) throw geminiErr;
@@ -183,11 +344,20 @@ async function routeBrainQuery(query, lang) {
     }
 
     if (openaiKey) {
-        const out = await callOpenAI(query, lang);
-        if (out) return out;
+        const out = await callOpenAI(query, lang, historicalContext);
+        if (out) {
+            return {
+                ...out,
+                sources: [...kbSources, ...out.sources],
+            };
+        }
     }
 
-    return offlineFallbackAnswer(lang);
+    const fallback = offlineFallbackAnswer(lang);
+    return {
+        ...fallback,
+        sources: [...kbSources, ...fallback.sources],
+    };
 }
 
 async function handler(req, res) {
