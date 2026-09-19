@@ -1300,7 +1300,11 @@ const TVC_StoreMenu = (function () {
         const code = route.impa || R?.impaFromQuery?.(query);
         if (!code) return false;
         try {
-            const item = await TVC_StoreManager.getItemByCode(code);
+            let item = await TVC_StoreManager.getItemByCode(code);
+            if (!item) {
+                const search = await TVC_StoreManager.searchCatalog(code, { limit: 8 });
+                item = (search.items || []).find((i) => (i.impa_code || i.code) === code);
+            }
             if (item) {
                 if (typeof TVC_MaritimeToolkit !== 'undefined') {
                     TVC_MaritimeToolkit.setActiveTool('catalog');
@@ -1424,12 +1428,14 @@ const TVC_StoreMenu = (function () {
             e.preventDefault();
             const q = e.target.value.trim();
             if (!q) return;
-            if (globalThis.TVC_SearchPortal?.executePortalSearch) {
-                const route = globalThis.TVC_SearchResolver?.classifyQuery?.(q);
-                if (route?.type !== 'catalog' && route?.direct) {
-                    await globalThis.TVC_SearchPortal.executePortalSearch(q);
-                    return;
-                }
+            const route = globalThis.TVC_SearchResolver?.classifyQuery?.(q);
+            if (route?.type === 'impa' && route.direct) {
+                await runSearch(root, q);
+                return;
+            }
+            if (globalThis.TVC_SearchPortal?.executePortalSearch && route?.direct && route.type !== 'catalog') {
+                await globalThis.TVC_SearchPortal.executePortalSearch(q);
+                return;
             }
             await runSearch(root, q);
         });

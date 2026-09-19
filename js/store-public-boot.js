@@ -9,7 +9,11 @@
 
         if (route.type === 'impa') {
             try {
-                const item = await TVC_StoreManager.getItemByCode(route.impa);
+                let item = await TVC_StoreManager.getItemByCode(route.impa);
+                if (!item) {
+                    const search = await TVC_StoreManager.searchCatalog(route.impa, { limit: 8 });
+                    item = (search.items || []).find((i) => (i.impa_code || i.code) === route.impa);
+                }
                 if (item) {
                     if (typeof TVC_MaritimeToolkit !== 'undefined') {
                         TVC_MaritimeToolkit.setActiveTool('catalog');

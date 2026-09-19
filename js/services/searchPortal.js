@@ -26,16 +26,34 @@
         global.location.href = href;
     }
 
+    async function ensureCatalogReady() {
+        const M = global.TVC_StoreManager;
+        if (!M?.loadCatalog) return;
+        if (M.getTotalCount?.() > 0 && M.isMemorySearchReady?.()) return;
+        try {
+            await M.loadCatalog();
+            if (M.buildMemoryIndex) await M.buildMemoryIndex();
+        } catch (err) {
+            console.warn('[searchPortal] catalog preload', err);
+        }
+    }
+
     async function openImpaPlate(impa) {
         const code = String(impa || '').replace(/\D/g, '');
         if (code.length !== 6) return false;
+
+        await ensureCatalogReady();
 
         if (global.TVC_StoreManager?.getItemByCode && global.TVC_StoreMenu?.openImpaDetailModal) {
             try {
                 if (global.TVC_MaritimeToolkit?.setActiveTool) {
                     global.TVC_MaritimeToolkit.setActiveTool('catalog');
                 }
-                const item = await global.TVC_StoreManager.getItemByCode(code);
+                let item = await global.TVC_StoreManager.getItemByCode(code);
+                if (!item && global.TVC_StoreManager.searchCatalog) {
+                    const search = await global.TVC_StoreManager.searchCatalog(code, { limit: 8 });
+                    item = (search.items || []).find((i) => (i.impa_code || i.code) === code);
+                }
                 if (item) {
                     global.TVC_StoreMenu.openImpaDetailModal(item);
                     return true;
@@ -44,8 +62,11 @@
                 console.warn('[searchPortal] IMPA direct open', err);
             }
         }
-        navigate(`/store/${code}`);
-        return true;
+        if (!global.TVC_StoreMenu?.openImpaDetailModal) {
+            navigate(`/store/${code}`);
+            return true;
+        }
+        return false;
     }
 
     async function openTopVessel(query, classification) {
