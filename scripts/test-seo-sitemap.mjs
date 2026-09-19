@@ -46,7 +46,12 @@ const html = impaSeo.buildStoreItemHtml(item);
 check('default seo origin is www', impaSeo.storeSeoOrigin() === CANONICAL_ORIGIN);
 const escName = item.name.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 check('html title format', html.includes(`IMPA CODE ${TEST_CODE} - ${escName} | Technical Specs &amp; Maritime Catalog | THE VESSEL CODE</title>`));
-check('html h1 format', html.includes(`<h1>IMPA CODE ${TEST_CODE}: ${escName}</h1>`));
+check(
+    'html h1 format',
+    html.includes(`<span class="impa-detail-unified-badge">IMPA ${TEST_CODE}</span>`)
+        && html.includes('<h1 class="impa-detail-unified-title">')
+        && html.includes(`<h1 class="impa-detail-unified-title">${escName}</h1>`),
+);
 check('html no duplicate microdata product', !html.includes('itemtype="https://schema.org/Product"'));
 check('html json-ld seller', html.includes('"seller"'));
 check('html json-ld validFrom', html.includes('"validFrom"'));
@@ -67,11 +72,20 @@ check('html json-ld techarticle', html.includes('"@type":"TechArticle"') || html
 check('html canonical uses www', html.includes(`<link rel="canonical" href="${CANONICAL_ORIGIN}/store/${TEST_CODE}">`));
 check('html og:url uses www', html.includes(`<meta property="og:url" content="${CANONICAL_ORIGIN}/store/${TEST_CODE}">`));
 check('html meta description', html.includes('Technical specification, dimensions, unit, and maritime catalog plate illustration'));
-check('html spec table', html.includes('<table class="spec-table">'));
+check(
+    'html spec table',
+    html.includes('impa-shipserv-spec-wrap')
+        && html.includes('<table class="impa-shipserv-spec-table spec-table">'),
+);
 check('html rating row', html.includes('<th scope="row">Rating</th>'));
 check('html material row', html.includes('<th scope="row">Material</th>'));
 check('html standard unit row', html.includes('<th scope="row">Standard Unit</th>'));
-check('html toolkit cta', html.includes('Open Interactive Maritime Toolkit'));
+check(
+    'html toolkit cta',
+    html.includes('class="btn-toolkit"')
+        && html.includes(`href="https://www.thevesselcode.com/toolkit?impa=${TEST_CODE}"`)
+        && html.includes('Open Maritime Toolkit'),
+);
 check('html tvc-sm conversion banner', html.includes('TVC-SM NEXT-GEN MARITIME OS'));
 check('html fleet pilot cta', html.includes('/contact-us?inquiry=tvc-sm-demo'));
 check('html related items links', html.includes('class="related-items"') && html.includes(`href="https://www.thevesselcode.com/store/`));
@@ -171,6 +185,17 @@ if (seoCount > 40_000) {
         check('store chunk 5 url count', (storeChunk5.match(/<loc>/g) || []).length === chunk5Count);
     }
 }
+if (seoCount > 50_000) {
+    check('sitemap index references store chunk 6', sitemapIndex.includes('sitemap-store-6.xml'));
+    const storeChunk6Path = join(root, 'public', 'sitemap-store-6.xml');
+    check('sitemap-store-6.xml exists', existsSync(storeChunk6Path));
+    if (existsSync(storeChunk6Path)) {
+        const storeChunk6 = readFileSync(storeChunk6Path, 'utf8');
+        assertValidXml('sitemap-store-6.xml', storeChunk6);
+        const chunk6Count = Math.max(0, seoCount - 50_000);
+        check('store chunk 6 url count', (storeChunk6.match(/<loc>/g) || []).length === chunk6Count);
+    }
+}
 
 const coreSitemap = readFileSync(join(root, 'public', 'sitemap-core.xml'), 'utf8');
 assertValidXml('sitemap-core.xml', coreSitemap);
@@ -188,11 +213,16 @@ const storeChunk4Path = join(root, 'public', 'sitemap-store-4.xml');
 const storeChunk4 = existsSync(storeChunk4Path) ? readFileSync(storeChunk4Path, 'utf8') : '';
 const storeChunk5Path = join(root, 'public', 'sitemap-store-5.xml');
 const storeChunk5 = existsSync(storeChunk5Path) ? readFileSync(storeChunk5Path, 'utf8') : '';
-const testCodeInSitemap = storeChunk.includes(`/store/${TEST_CODE}`)
-    || storeChunk2.includes(`/store/${TEST_CODE}`)
-    || storeChunk3.includes(`/store/${TEST_CODE}`)
-    || storeChunk4.includes(`/store/${TEST_CODE}`)
-    || storeChunk5.includes(`/store/${TEST_CODE}`);
+let testCodeInSitemap = false;
+for (let n = 1; n <= 20; n += 1) {
+    const chunkPath = join(root, 'public', `sitemap-store-${n}.xml`);
+    if (!existsSync(chunkPath)) break;
+    const chunkXml = readFileSync(chunkPath, 'utf8');
+    if (chunkXml.includes(`/store/${TEST_CODE}`)) {
+        testCodeInSitemap = true;
+        break;
+    }
+}
 check('store sitemap includes test code', testCodeInSitemap);
 check('store chunk uses www origin', storeChunk.includes('<loc>https://www.thevesselcode.com/store/'));
 check('robots references www sitemap', readFileSync(join(root, 'public', 'robots.txt'), 'utf8').includes('Sitemap: https://www.thevesselcode.com/sitemap.xml'));
@@ -211,7 +241,11 @@ check('home links impa 232436', home.includes('href="/store/232436"'));
 check('home links impa 812204', home.includes('href="/store/812204"'));
 
 const toolkit = readFileSync(join(root, 'toolkit.html'), 'utf8');
-check('toolkit popular impa section', toolkit.includes('Popular Marine Stores'));
+check(
+    'toolkit popular impa section',
+    toolkit.includes('mkt-module-card--catalog')
+        && (toolkit.includes('IMPA stores index') || toolkit.includes('data-tool-tab="catalog"')),
+);
 check('toolkit canonical', toolkit.includes('rel="canonical" href="https://www.thevesselcode.com/toolkit"'));
 
 HUB_CODES.forEach((code) => {
