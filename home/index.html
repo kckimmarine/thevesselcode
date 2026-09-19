@@ -43,16 +43,27 @@
                 <p class="home-hero-search-subtitle muted" data-i18n="home.search.subtitle">Ship engineering, fault diagnosis, parts &amp; standards — ask anything.</p>
                 <form id="homeHeroSearchForm" class="home-hero-search" role="search" aria-label="Maritime AI and unified search">
                     <label class="visually-hidden" for="homeHeroSearchInput" data-i18n="home.search.label">Ask anything about ships</label>
-                    <input
-                        type="search"
-                        id="homeHeroSearchInput"
-                        class="home-hero-search-input"
-                        name="q"
-                        autocomplete="off"
-                        enterkeyhint="search"
-                        data-i18n-placeholder="home.search.placeholder"
-                        placeholder="Ask anything about ships (e.g. generator RPM hunting, boiler ignition fault, IMPA 791801, JIS 10K 50A, bunker 54B...)"
-                    />
+                    <div class="home-hero-search-field" id="homeHeroSearchField">
+                        <div class="home-hero-search-thumb" id="homeHeroSearchThumb" hidden>
+                            <img id="homeHeroSearchThumbImg" alt="" width="44" height="44" />
+                            <button type="button" class="home-hero-search-thumb-clear" id="homeHeroSearchThumbClear" aria-label="Remove photo">×</button>
+                        </div>
+                        <input
+                            type="search"
+                            id="homeHeroSearchInput"
+                            class="home-hero-search-input"
+                            name="q"
+                            autocomplete="off"
+                            enterkeyhint="search"
+                            data-i18n-placeholder="home.search.placeholder"
+                            placeholder="Ask anything about ships (e.g. generator RPM hunting, boiler ignition fault, IMPA 791801, JIS 10K 50A, bunker 54B...)"
+                        />
+                        <div class="home-hero-search-inline-actions" aria-label="Voice and camera input">
+                            <button type="button" id="btn-voice-input" class="home-hero-input-action" aria-label="Voice input" title="Voice input">🎙️</button>
+                            <label for="btn-camera-input" id="btn-camera-label" class="home-hero-input-action home-hero-input-action--camera" aria-label="Camera or photo" title="Camera">📷</label>
+                            <input type="file" id="btn-camera-input" class="visually-hidden" accept="image/*" capture="environment" tabindex="-1" />
+                        </div>
+                    </div>
                     <button type="submit" class="home-btn home-btn-primary home-hero-search-btn" data-i18n="home.search.button">Ask AI / Search</button>
                 </form>
                 <div class="home-hero-utilities" aria-label="Quick maritime intelligence shortcuts">
