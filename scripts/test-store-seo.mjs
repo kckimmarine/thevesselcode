@@ -46,8 +46,10 @@ check('html has og:image', html.includes('property="og:image"'));
 check('html has spec table', html.includes('spec-table'));
 check('html has toolkit link', html.includes('toolkit?impa='));
 check('html has json-ld', html.includes('application/ld+json'));
-check('html has tvc-sm banner', html.includes('TVC-SM NEXT-GEN MARITIME OS'));
-check('html has fleet pilot cta', html.includes('inquiry=tvc-sm-demo'));
+check('html has tvc-sm banner', html.includes('class="tvc-sm-banner"'));
+check('html has rfq lead block', html.includes('store-rfq-lead'));
+check('html has rfq contact link', html.includes('inquiry=rfq'));
+check('html has fleet poc cta', html.includes('inquiry=poc'));
 check('html has related items section', html.includes('class="related-items"'));
 
 const sitemap = readFileSync(join(root, 'public', 'sitemap.xml'), 'utf8');

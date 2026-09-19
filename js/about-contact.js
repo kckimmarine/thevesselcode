@@ -23,6 +23,7 @@
             partnership: 'contact.inquiry.partnership',
             support: 'contact.inquiry.support',
             general: 'contact.inquiry.general',
+            engineering: 'contact.inquiry.engineering',
         }[value];
         if (key) {
             const label = t(key);
@@ -82,6 +83,7 @@
                     inquiryType: data.inquiryType,
                     message: data.message,
                     source: 'about-contact',
+                    ...collectAttributionForSubmit(),
                 }),
             });
             const payload = await res.json().catch(() => ({}));
@@ -138,6 +140,30 @@
         return template.replace('[fleet size]', size || 'our');
     }
 
+    function readStoredAttribution() {
+        try {
+            const raw = sessionStorage.getItem('tvc_inbound');
+            return raw ? JSON.parse(raw) : null;
+        } catch {
+            return null;
+        }
+    }
+
+    function buildPocPrefill(refPath) {
+        const template =
+            t('contact.campaign.poc') ||
+            '14-day free PoC (1 ship). Fleet size, department (Deck/Engine), and main pain point: ';
+        const ref = String(refPath || '').trim();
+        return ref ? `${template}\n\nLanding: ${ref}` : template;
+    }
+
+    function buildSalesPrefill() {
+        return (
+            t('contact.campaign.sales') ||
+            'Enterprise / multi-vessel pricing. Fleet size, current PMS, and timeline: '
+        );
+    }
+
     function applyInboundCampaignParams() {
         const params = new URLSearchParams(window.location.search);
         const inquiry = String(params.get('inquiry') || '').trim().toLowerCase();
@@ -145,22 +171,51 @@
         const itemName = String(params.get('name') || '').trim();
         const portName = String(params.get('port') || '').trim();
         const fleetSize = String(params.get('fleet') || params.get('vessels') || '').trim();
+        const refParam = String(params.get('ref') || '').trim();
+        const stored = readStoredAttribution();
+        const landingRef = refParam || stored?.landing || '';
         const typeSelect = qs('#acInquiryType');
         const message = qs('#acMessage');
+
         if (inquiry === 'rfq') {
             if (typeSelect) typeSelect.value = 'rfq';
             if (message && !String(message.value || '').trim()) {
-                message.value = buildRfqPrefill(impaCode, itemName, portName);
+                let body = buildRfqPrefill(impaCode, itemName, portName);
+                if (landingRef) body += `\n\nPage: ${landingRef}`;
+                message.value = body;
             }
             return;
         }
-        if (inquiry === 'tvc-sm-demo' || inquiry === 'fleet-trial') {
+        if (
+            inquiry === 'tvc-sm-demo'
+            || inquiry === 'fleet-trial'
+            || inquiry === 'poc'
+        ) {
             if (typeSelect) typeSelect.value = 'demo';
             if (message && !String(message.value || '').trim()) {
+                if (inquiry === 'fleet-trial') {
+                    message.value = buildFleetTrialPrefill(fleetSize);
+                } else if (inquiry === 'poc') {
+                    message.value = buildPocPrefill(landingRef);
+                } else {
+                    message.value = t('contact.campaign.demo') || buildPocPrefill(landingRef);
+                }
+            }
+            return;
+        }
+        if (inquiry === 'sales' || inquiry === 'enterprise') {
+            if (typeSelect) typeSelect.value = 'demo';
+            if (message && !String(message.value || '').trim()) {
+                message.value = buildSalesPrefill();
+            }
+            return;
+        }
+        if (inquiry === 'engineering' || inquiry === 'services') {
+            if (typeSelect) typeSelect.value = 'engineering';
+            if (message && !String(message.value || '').trim()) {
                 message.value =
-                    inquiry === 'fleet-trial'
-                        ? buildFleetTrialPrefill(fleetSize)
-                        : t('contact.campaign.demo') || '';
+                    t('contact.campaign.engineering') ||
+                    'Field engineering / superintendent support. Vessel, port, and scope: ';
             }
             return;
         }
@@ -170,6 +225,17 @@
                 message.value = t('contact.campaign.toolkitPro') || '';
             }
         }
+    }
+
+    function collectAttributionForSubmit() {
+        const params = new URLSearchParams(window.location.search);
+        const stored = readStoredAttribution();
+        return {
+            landingPage: String(params.get('ref') || stored?.landing || window.location.pathname || '').trim(),
+            referrer: String(stored?.referrer || document.referrer || '').trim(),
+            campaign: String(params.get('inquiry') || params.get('utm_campaign') || '').trim(),
+            impaCode: String(params.get('code') || '').trim(),
+        };
     }
 
     function init() {
