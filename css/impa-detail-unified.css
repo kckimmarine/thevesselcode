@@ -163,6 +163,120 @@
     transform: translateX(-50%) translateY(0);
 }
 
+/* RFQ lead block (GSC /store → contact funnel) */
+.store-rfq-lead {
+    margin: 0 0 20px;
+    padding: 18px 16px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #0f766e 0%, #0369a1 100%);
+    color: #f0fdfa;
+    border: 1px solid rgba(45, 212, 191, 0.35);
+    box-shadow: 0 10px 28px rgba(3, 105, 161, 0.22);
+}
+
+.store-rfq-eyebrow {
+    margin: 0 0 8px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #99f6e4;
+}
+
+.store-rfq-title {
+    margin: 0 0 8px;
+    font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+    line-height: 1.25;
+    color: #fff;
+}
+
+.store-rfq-desc {
+    margin: 0 0 14px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccfbf1;
+}
+
+.store-rfq-port-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.store-rfq-lead .btn-rfq-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 18px;
+    border-radius: 10px;
+    font-weight: 800;
+    text-decoration: none;
+    background: #fbbf24;
+    color: #0f172a;
+}
+
+.store-rfq-lead .btn-rfq-port {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 14px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-decoration: none;
+    background: rgba(15, 23, 42, 0.35);
+    color: #ecfeff;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.store-rfq-alt {
+    margin: 14px 0 0;
+    font-size: 13px;
+    color: #a7f3d0;
+}
+
+.store-rfq-alt a {
+    color: #fff;
+    font-weight: 700;
+}
+
+.store-sticky-lead {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99990;
+    padding: 10px 12px max(10px, env(safe-area-inset-bottom, 0px));
+    background: rgba(15, 23, 42, 0.92);
+    border-top: 1px solid rgba(56, 189, 248, 0.35);
+    backdrop-filter: blur(8px);
+    display: none;
+}
+
+.store-sticky-lead.is-visible {
+    display: block;
+}
+
+.store-sticky-lead-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    border-radius: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    background: #fbbf24;
+    color: #0f172a;
+}
+
+@media (min-width: 769px) {
+    .store-sticky-lead {
+        display: none !important;
+    }
+}
+
 /* TVC-SM banner (standalone + modal) */
 .impa-detail-tvc-sm.tvc-sm-banner,
 .tvc-sm-banner.impa-detail-tvc-sm {

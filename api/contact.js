@@ -58,18 +58,25 @@ function isValidEmail(value) {
 }
 
 function buildInquiryText(body) {
-    return [
+    const lines = [
         `Inquiry Type: ${body.inquiryType}`,
         `Company: ${body.companyName}`,
         `Your Name: ${body.yourName}`,
         `Work Email: ${body.email}`,
+    ];
+    if (body.impaCode) lines.push(`IMPA Code: ${body.impaCode}`);
+    if (body.landingPage) lines.push(`Landing Page: ${body.landingPage}`);
+    if (body.referrer) lines.push(`Referrer: ${body.referrer}`);
+    if (body.campaign) lines.push(`Campaign: ${body.campaign}`);
+    lines.push(
         '',
         'Message:',
         body.message,
         '',
         `Submitted: ${new Date().toISOString()}`,
         `Source: ${body.source || 'about-contact'}`,
-    ].join('\n');
+    );
+    return lines.join('\n');
 }
 
 function sandboxSafeRecipients(fromAddress, recipients) {
@@ -182,6 +189,10 @@ async function handler(req, res) {
             inquiryType: String(raw.inquiryType || 'General Inquiries').trim(),
             message: String(raw.message || '').trim(),
             source: String(raw.source || 'about-contact').trim(),
+            landingPage: String(raw.landingPage || '').trim(),
+            referrer: String(raw.referrer || '').trim(),
+            campaign: String(raw.campaign || '').trim(),
+            impaCode: String(raw.impaCode || '').trim(),
         };
 
         if (!body.companyName || !body.yourName || !body.email || !body.message) {

@@ -1625,6 +1625,41 @@ body.tvc-brain-open {
     padding: 8px 14px !important;
 }
 
+.home-convert-section {
+    padding-top: 0;
+}
+
+.home-convert-inner {
+    padding: 28px 24px;
+    text-align: center;
+}
+
+.home-convert-inner h2 {
+    margin: 0 0 10px;
+    color: var(--home-navy);
+    font-size: clamp(1.25rem, 3vw, 1.65rem);
+}
+
+.home-convert-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.home-convert-hotline {
+    margin: 16px 0 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .home-convert-actions .home-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 @media (min-width: 769px) {
     .tvc-brain-a2hs {
         display: none !important;

@@ -341,6 +341,40 @@
             ko: 'Fleet 앱 실행 또는 슈퍼인텐던트 데모를 요청하세요.',
         },
         'home.cta.btn': { en: 'Contact Us', ko: '문의하기' },
+        'home.convert.title': {
+            en: 'Turn search into supply — quote or pilot in one step',
+            ko: '검색을 조달·문의로 — 견적 또는 파일럿 한 번에',
+        },
+        'home.convert.lead': {
+            en: 'IMPA lookup, fleet PMS, or field engineering — pick the path that matches your job today.',
+            ko: 'IMPA 조회, 선단 PMS, 현장 감독·엔지니어링 — 오늘 업무에 맞는 경로를 선택하세요.',
+        },
+        'home.convert.rfq': { en: 'Request part / store RFQ', ko: '부품·선용품 RFQ' },
+        'home.convert.poc': { en: '14-day fleet PoC', ko: '14일 파일럿 PoC' },
+        'home.convert.engineering': {
+            en: 'Superintendent & field engineering',
+            ko: '선주 감독·현장 엔지니어링',
+        },
+        'home.convert.sla': {
+            en: 'Direct engineering reply within 12 hours · +82 10-3889-4291',
+            ko: '12시간 내 엔지니어링 회신 · +82 10-3889-4291',
+        },
+        'contact.inquiry.engineering': {
+            en: 'Field Engineering & Superintendent',
+            ko: '현장 엔지니어링·선주 감독',
+        },
+        'contact.campaign.poc': {
+            en: '14-day free PoC (1 ship). Fleet size, department (Deck/Engine), and main pain point:',
+            ko: '14일 무료 PoC(1척). 선단 규모, 부서(갑/기), 핵심 Pain point:',
+        },
+        'contact.campaign.sales': {
+            en: 'Enterprise / multi-vessel pricing. Fleet size, current PMS, and timeline:',
+            ko: '엔터프라이즈·다척 견적. 선단 규모, 현재 PMS, 도입 시점:',
+        },
+        'contact.campaign.engineering': {
+            en: 'Field engineering / superintendent support. Vessel, port, and scope:',
+            ko: '현장 엔지니어링·감독 용역. 선박, 항구, 범위:',
+        },
         'home.impa.title': { en: 'Popular Marine Stores & Critical Parts', ko: '인기 선용품 · 핵심 부품' },
         'home.impa.lead': {
             en: 'Tap a code — open the IMPA plate in the Toolkit viewer instantly.',

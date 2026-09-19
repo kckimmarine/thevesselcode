@@ -347,20 +347,71 @@ function buildRelatedItemsSectionHtml(item, related, base) {
       </section>`;
 }
 
+function buildContactInquiryUrl(base, params) {
+    const q = new URLSearchParams();
+    Object.entries(params || {}).forEach(([key, val]) => {
+        const s = String(val ?? '').trim();
+        if (s) q.set(key, s);
+    });
+    const qs = q.toString();
+    return `${base.replace(/\/$/, '')}/contact-us${qs ? `?${qs}` : ''}`;
+}
+
+/** Primary monetization path for GSC /store traffic → RFQ form. */
+function buildRfqLeadBlockHtml(item, base) {
+    const code = item.impa_code;
+    const name = cleanProductTitle(item);
+    const rfqBase = {
+        inquiry: 'rfq',
+        code,
+        name,
+        ref: `/store/${code}`,
+    };
+    const busanUrl = buildContactInquiryUrl(base, { ...rfqBase, port: 'Busan' });
+    const singaporeUrl = buildContactInquiryUrl(base, { ...rfqBase, port: 'Singapore' });
+    const shanghaiUrl = buildContactInquiryUrl(base, { ...rfqBase, port: 'Shanghai' });
+    const rfqUrl = buildContactInquiryUrl(base, rfqBase);
+    const pocUrl = buildContactInquiryUrl(base, { inquiry: 'poc', ref: `/store/${code}` });
+    const waText = encodeURIComponent(
+        `RFQ — IMPA ${code} (${name}). Qty / delivery port / vessel name: `
+    );
+    const waUrl = `https://wa.me/821038894291?text=${waText}`;
+    return `
+      <section class="store-rfq-lead" aria-label="Request quotation for this IMPA item">
+        <p class="store-rfq-eyebrow">B2B supply · Busan HQ · 12h response</p>
+        <h2 class="store-rfq-title">Request a quote for IMPA ${escapeHtml(code)}</h2>
+        <p class="store-rfq-desc">${escapeHtml(name)} — delivery, MOQ, and maker alternatives from K-TECH / THE VESSEL CODE.</p>
+        <div class="store-rfq-port-row">
+          <a class="btn btn-rfq-primary" href="${escapeHtml(rfqUrl)}">Get quote (any port)</a>
+          <a class="btn btn-rfq-port" href="${escapeHtml(busanUrl)}">Busan</a>
+          <a class="btn btn-rfq-port" href="${escapeHtml(singaporeUrl)}">Singapore</a>
+          <a class="btn btn-rfq-port" href="${escapeHtml(shanghaiUrl)}">Shanghai</a>
+        </div>
+        <p class="store-rfq-alt">
+          <a href="${escapeHtml(waUrl)}" rel="noopener noreferrer" target="_blank">WhatsApp RFQ</a>
+          · <a href="${escapeHtml(pocUrl)}">14-day fleet PoC</a>
+          · <a href="tel:+821038894291">+82 10-3889-4291</a>
+        </p>
+      </section>
+      <aside class="store-sticky-lead" aria-label="Quick quote">
+        <a class="store-sticky-lead-btn" href="${escapeHtml(rfqUrl)}">Quote IMPA ${escapeHtml(code)}</a>
+      </aside>`;
+}
+
 function buildTvcSmConversionBannerHtml(base) {
-    const demoUrl = `${base}/contact-us?inquiry=tvc-sm-demo`;
+    const demoUrl = buildContactInquiryUrl(base, { inquiry: 'poc' });
     const smUrl = `${base}/sm`;
     return `
       <section class="tvc-sm-banner" aria-label="TVC-SM ship management platform">
-        <p class="tvc-sm-badge">&#9875; TVC-SM NEXT-GEN MARITIME OS</p>
-        <h2 class="tvc-sm-title">Tired of managing vessel spares &amp; stores in disconnected Excels?</h2>
+        <p class="tvc-sm-badge">&#9875; TVC-SM · Fleet OS</p>
+        <h2 class="tvc-sm-title">Managing spares in Excel? Connect ROB, PMS, and superintendent RFQs in one place.</h2>
         <p class="tvc-sm-desc">TVC-SM connects vessel ROB tracking, PMS maintenance cycles, and 1-Click superintendent requisitions in one lightweight platform.</p>
         <ul class="tvc-sm-locks" aria-label="TVC-SM fleet features">
           <li><span class="lock-icon" aria-hidden="true">&#128274;</span> Live vessel ROB tracking &amp; automatic stock deduction</li>
           <li><span class="lock-icon" aria-hidden="true">&#128274;</span> 1-Click superintendent requisitions &amp; shore billing</li>
         </ul>
         <div class="tvc-sm-actions">
-          <a class="btn btn-cta" href="${escapeHtml(demoUrl)}">&#128640; Request Free 30-Day Fleet Pilot / Demo</a>
+          <a class="btn btn-cta" href="${escapeHtml(demoUrl)}">&#128640; 14-Day Free PoC (1 ship)</a>
           <a class="btn btn-secondary" href="${escapeHtml(smUrl)}">Explore TVC-SM</a>
         </div>
       </section>`;
@@ -384,6 +435,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
     const jsonLd = JSON.stringify(buildJsonLd(item, pageUrl, imageUrl || undefined));
     const related = getRelatedItemsByChapter(item.impa_code, 6);
     const relatedHtml = buildRelatedItemsSectionHtml(item, related, base);
+    const rfqLeadHtml = buildRfqLeadBlockHtml(item, base);
     const tvcSmBannerHtml = buildTvcSmConversionBannerHtml(base);
     const displayTitle = cleanProductTitle(item);
     const plateSection = imageUrl
@@ -432,6 +484,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
         </div>
       </header>
       <div class="impa-store-detail-body">
+        ${rfqLeadHtml}
         ${plateSection}
         <section aria-label="Specifications">
           <div class="impa-shipserv-spec-wrap">
@@ -451,6 +504,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
     </article>
   </main>
   <script src="/js/ui/impaDetailShared.js"></script>
+  <script src="/js/store-lead.js" defer></script>
   <script>TVC_ImpaDetailShared.initStandalonePage();</script>
 </body>
 </html>`;
