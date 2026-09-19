@@ -1570,7 +1570,7 @@ body.tvc-brain-open {
     z-index: 11000;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-end;
     gap: 10px;
     padding: 12px 14px;
     border-radius: 14px;
@@ -1580,11 +1580,27 @@ body.tvc-brain-open {
     color: #e2e8f0;
 }
 
-.tvc-brain-a2hs-text {
+.tvc-brain-a2hs-body {
     flex: 1 1 200px;
+    min-width: 0;
+}
+
+.tvc-brain-a2hs-text {
     margin: 0;
     font-size: 0.82rem;
     line-height: 1.45;
+}
+
+.tvc-brain-a2hs-steps {
+    margin: 8px 0 0;
+    padding-left: 1.15rem;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    color: #cbd5e1;
+}
+
+.tvc-brain-a2hs-steps li + li {
+    margin-top: 4px;
 }
 
 .tvc-brain-a2hs-actions {

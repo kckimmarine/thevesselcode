@@ -39,8 +39,12 @@
             whatsapp: '🟢 WhatsApp Instant Chat',
             close: '닫기',
             error: '응답을 불러오지 못했습니다. 잠시 후 다시 시도하십시오.',
-            a2hs: '📲 TVC 해운 브레인을 홈 화면에 앱으로 추가하여 1초 만에 실행하세요',
+            a2hs: '📲 TVC Brain을 홈 화면 앱으로 추가하면 바로 실행할 수 있습니다.',
+            a2hsIosLead: 'iPhone/iPad Safari는 자동 설치 버튼을 지원하지 않습니다. 아래 순서대로 진행하세요.',
+            a2hsAndroidLead: 'Chrome에서 「설치하기」가 안 되면 메뉴(⋮) → 앱 설치 / 홈 화면에 추가를 사용하세요.',
+            a2hsInsecure: '주소창 경고(🔴)가 보이면 https://thevesselcode.com 으로 다시 접속하세요. HTTP에서는 앱 설치가 차단됩니다.',
             install: '설치하기',
+            installShowSteps: '설치 방법 보기',
             dismiss: '닫기',
             voiceUnsupported: '이 브라우저는 음성 입력을 지원하지 않습니다.',
             voiceError: '음성 인식에 실패했습니다. 다시 시도하십시오.',
@@ -55,8 +59,12 @@
             whatsapp: '🟢 WhatsApp Instant Chat',
             close: 'Close',
             error: 'Could not load a response. Please try again shortly.',
-            a2hs: '📲 Add TVC Maritime Brain to your home screen for 1-second launch',
+            a2hs: '📲 Add TVC Brain to your home screen for one-tap launch.',
+            a2hsIosLead: 'iPhone/iPad Safari does not support one-tap web install. Follow the steps below.',
+            a2hsAndroidLead: 'If Install does nothing, use Chrome menu (⋮) → Install app / Add to Home screen.',
+            a2hsInsecure: 'If you see a warning in the address bar, open https://thevesselcode.com (HTTPS required).',
             install: 'Install',
+            installShowSteps: 'How to install',
             dismiss: 'Dismiss',
             voiceUnsupported: 'Voice input is not supported in this browser.',
             voiceError: 'Speech recognition failed. Please try again.',
@@ -479,6 +487,58 @@
             || window.navigator.standalone === true;
     }
 
+    function isIosDevice() {
+        const ua = navigator.userAgent || '';
+        if (/iPad|iPhone|iPod/.test(ua)) return true;
+        return navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+    }
+
+    function isInAppBrowser() {
+        return /KAKAOTALK|Instagram|FBAN|FBAV|Line\//i.test(navigator.userAgent || '');
+    }
+
+    function a2hsStepsHtml() {
+        if (isIosDevice()) {
+            return state.lang === 'EN'
+                ? `<ol class="tvc-brain-a2hs-steps">
+<li>Tap <strong>Share</strong> (square with ↑) at the bottom of Safari.</li>
+<li>Scroll the sheet and tap <strong>Add to Home Screen</strong>.</li>
+<li>Tap <strong>Add</strong> — TVC Brain appears on your home screen.</li>
+</ol>`
+                : `<ol class="tvc-brain-a2hs-steps">
+<li>Safari <strong>하단 중앙 공유(□↑)</strong> 버튼을 탭합니다.</li>
+<li>아래로 스크롤 → <strong>「홈 화면에 추가」</strong> 를 선택합니다.</li>
+<li><strong>추가</strong> 를 누르면 홈 화면에 TVC Brain 아이콘이 생깁니다.</li>
+</ol>`;
+        }
+        return state.lang === 'EN'
+            ? `<ol class="tvc-brain-a2hs-steps">
+<li>Open this site in <strong>Chrome</strong> (not an in-app browser).</li>
+<li>Tap menu <strong>⋮</strong> → <strong>Install app</strong> or <strong>Add to Home screen</strong>.</li>
+<li>Confirm — launch TVC Brain from your home screen.</li>
+</ol>`
+            : `<ol class="tvc-brain-a2hs-steps">
+<li><strong>Chrome</strong> 브라우저에서 열어 주세요(카톡/인앱 브라우저 X).</li>
+<li>우측 상단 <strong>⋮</strong> → <strong>앱 설치</strong> 또는 <strong>홈 화면에 추가</strong>.</li>
+<li>확인 후 홈 화면의 TVC Brain 아이콘으로 실행합니다.</li>
+</ol>`;
+    }
+
+    function a2hsLeadMessage() {
+        const parts = [t('a2hs')];
+        if (!window.isSecureContext) parts.push(t('a2hsInsecure'));
+        if (isInAppBrowser()) {
+            parts.push(state.lang === 'EN'
+                ? 'Open thevesselcode.com in Safari or Chrome (in-app browsers block install).'
+                : 'Safari 또는 Chrome에서 thevesselcode.com 을 직접 여세요(인앱 브라우저는 설치 불가).');
+        } else if (isIosDevice()) {
+            parts.push(t('a2hsIosLead'));
+        } else if (!state.deferredPrompt) {
+            parts.push(t('a2hsAndroidLead'));
+        }
+        return parts.join(' ');
+    }
+
     function ensureA2hsBanner() {
         if (isStandalone()) return;
         if (!window.matchMedia('(max-width: 768px)').matches) return;
@@ -492,34 +552,58 @@
         bar.id = 'tvcBrainA2hs';
         bar.className = 'tvc-brain-a2hs';
         bar.innerHTML = `
-            <p class="tvc-brain-a2hs-text"></p>
+            <div class="tvc-brain-a2hs-body">
+                <p class="tvc-brain-a2hs-text"></p>
+                <div class="tvc-brain-a2hs-steps-wrap" hidden></div>
+            </div>
             <div class="tvc-brain-a2hs-actions">
                 <button type="button" class="tvc-brain-a2hs-install home-btn home-btn-primary"></button>
                 <button type="button" class="tvc-brain-a2hs-dismiss"></button>
             </div>`;
         document.body.appendChild(bar);
 
-        bar.querySelector('.tvc-brain-a2hs-text').textContent = t('a2hs');
-        bar.querySelector('.tvc-brain-a2hs-install').textContent = t('install');
+        const textEl = bar.querySelector('.tvc-brain-a2hs-text');
+        const stepsWrap = bar.querySelector('.tvc-brain-a2hs-steps-wrap');
+        const installBtn = bar.querySelector('.tvc-brain-a2hs-install');
+
+        textEl.textContent = a2hsLeadMessage();
+        const ios = isIosDevice();
+        installBtn.textContent = state.deferredPrompt && !ios ? t('install') : t('installShowSteps');
         bar.querySelector('.tvc-brain-a2hs-dismiss').textContent = t('dismiss');
+
+        if (ios || !state.deferredPrompt) {
+            stepsWrap.innerHTML = a2hsStepsHtml();
+        }
+
+        if (ios) {
+            installBtn.remove();
+            stepsWrap.hidden = false;
+        }
 
         bar.querySelector('.tvc-brain-a2hs-dismiss').addEventListener('click', () => {
             try { localStorage.setItem(A2HS_DISMISS_KEY, '1'); } catch (_) { /* ignore */ }
             bar.remove();
         });
 
-        bar.querySelector('.tvc-brain-a2hs-install').addEventListener('click', async () => {
-            if (state.deferredPrompt) {
-                state.deferredPrompt.prompt();
-                try { await state.deferredPrompt.userChoice; } catch (_) { /* ignore */ }
-                state.deferredPrompt = null;
-                bar.remove();
-                return;
-            }
-            bar.querySelector('.tvc-brain-a2hs-text').textContent = state.lang === 'EN'
-                ? 'Use browser menu → Add to Home Screen / Install app.'
-                : '브라우저 메뉴 → 홈 화면에 추가 / 앱 설치를 선택하세요.';
-        });
+        if (!ios) {
+            installBtn.addEventListener('click', async () => {
+                if (state.deferredPrompt) {
+                    state.deferredPrompt.prompt();
+                    try { await state.deferredPrompt.userChoice; } catch (_) { /* ignore */ }
+                    state.deferredPrompt = null;
+                    bar.remove();
+                    return;
+                }
+                const showing = !stepsWrap.hidden;
+                stepsWrap.hidden = showing;
+                installBtn.textContent = showing
+                    ? (state.deferredPrompt ? t('install') : t('installShowSteps'))
+                    : (state.lang === 'EN' ? 'Hide steps' : '접기');
+                if (!showing) {
+                    stepsWrap.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+                }
+            });
+        }
     }
 
     function registerServiceWorker() {
