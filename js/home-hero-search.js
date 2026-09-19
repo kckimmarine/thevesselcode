@@ -1,73 +1,8 @@
-/* THE VESSEL CODE — Home hero unified search (Toolkit specs + TVC Brain) */
+/* THE VESSEL CODE — Home hero unified search (single direct answer) */
 (function () {
-    const TOOLKIT_HINT_RE = /\b(IMPA|JIS|ANSI|ASTM|54B|PCD|DN\b|NPS|Kg\/cm|bar\b|flange|벙커|플랜지|IMPA\s*\d)/i;
-    const BRAIN_HINT_RE = /(원인|수리|헌팅|고장|조치|증상|결함|누설|불량|점화|trouble|defect|symptom|repair|cause|hunting|failure|malfunction|why|how\s+to|진단|overhaul|maintenance)/i;
-
     function normalizeQuery(raw) {
-        return String(raw || '').trim();
-    }
-
-    function isImpaCode(query) {
-        const digits = query.replace(/\s/g, '');
-        return /^\d{6}$/.test(digits);
-    }
-
-    function impaFromQuery(query) {
-        const m = query.match(/\b(\d{6})\b/);
-        return m ? m[1] : null;
-    }
-
-    function isToolkitSpecQuery(query) {
-        const q = normalizeQuery(query);
-        if (!q) return true;
-        if (isImpaCode(q)) return true;
-        if (impaFromQuery(q) && q.length <= 16) return true;
-        if (TOOLKIT_HINT_RE.test(q) && !BRAIN_HINT_RE.test(q)) return true;
-        if (/^[\d\s./+\-*%,]+$/i.test(q) && q.length <= 28) return true;
-        if (/\d+\s*[Kk]\s*\d+\s*[Aa]/i.test(q)) return true;
-        return false;
-    }
-
-    function isBrainNaturalQuery(query) {
-        const q = normalizeQuery(query);
-        if (!q) return false;
-        if (/[?？]/.test(q)) return true;
-        if (BRAIN_HINT_RE.test(q)) return true;
-        if (q.length > 12 && /[\uac00-\ud7a3]/.test(q)) return true;
-        if (q.length > 18 && /\s/.test(q)) return true;
-        return false;
-    }
-
-    function routeHeroQuery(query) {
-        const q = normalizeQuery(query);
-        if (!q) return { type: 'toolkit', href: '/toolkit' };
-        if (isBrainNaturalQuery(q) && !isImpaCode(q)) {
-            return { type: 'brain', query: q };
-        }
-        if (isToolkitSpecQuery(q)) {
-            if (isImpaCode(q)) {
-                return { type: 'toolkit', href: `/store/${q.replace(/\s/g, '')}` };
-            }
-            const impa = impaFromQuery(q);
-            if (impa && TOOLKIT_HINT_RE.test(q)) {
-                return { type: 'toolkit', href: `/store/${impa}` };
-            }
-            return { type: 'toolkit', href: `/toolkit?q=${encodeURIComponent(q)}` };
-        }
-        return { type: 'brain', query: q };
-    }
-
-    function destinationForQuery(query) {
-        const r = routeHeroQuery(query);
-        return r.type === 'toolkit' ? r.href : `/toolkit?q=${encodeURIComponent(r.query)}`;
-    }
-
-    function openBrain(query) {
-        if (globalThis.TVC_BrainChat && typeof globalThis.TVC_BrainChat.openModal === 'function') {
-            globalThis.TVC_BrainChat.openModal(query);
-            return true;
-        }
-        return false;
+        return globalThis.TVC_SearchResolver?.normalizeQuery?.(raw)
+            ?? String(raw || '').trim();
     }
 
     function handleSubmit(input) {
@@ -76,14 +11,32 @@
             globalThis.location.href = '/toolkit';
             return;
         }
-        const route = routeHeroQuery(q);
+        if (globalThis.TVC_SearchPortal?.executePortalSearch) {
+            globalThis.TVC_SearchPortal.executePortalSearch(q);
+            return;
+        }
+        const R = globalThis.TVC_SearchResolver;
+        const route = R?.routeHeroQuery?.(q) || { type: 'brain', query: q };
         if (route.type === 'brain') {
-            if (!openBrain(route.query)) {
+            if (globalThis.TVC_BrainChat?.openModal) {
+                globalThis.TVC_BrainChat.openModal(route.query, { briefing: true });
+            } else {
                 globalThis.location.href = `/toolkit?q=${encodeURIComponent(q)}`;
             }
             return;
         }
         globalThis.location.href = route.href;
+    }
+
+    function openBrain(query) {
+        if (globalThis.TVC_SearchPortal?.openBrainModal) {
+            return globalThis.TVC_SearchPortal.openBrainModal(query, { briefing: true });
+        }
+        if (globalThis.TVC_BrainChat?.openModal) {
+            globalThis.TVC_BrainChat.openModal(query, { briefing: true });
+            return true;
+        }
+        return false;
     }
 
     function bindQuickChips() {
@@ -119,14 +72,22 @@
             handleSubmit(input);
         });
 
+        const params = new URLSearchParams(globalThis.location?.search || '');
+        const brainQ = params.get('brain');
+        if (brainQ && String(brainQ).trim()) {
+            openBrain(String(brainQ).trim());
+        }
+
         bindQuickChips();
     }
 
+    const R = () => globalThis.TVC_SearchResolver || {};
     const api = {
-        routeHeroQuery,
-        isToolkitSpecQuery,
-        isBrainNaturalQuery,
-        destinationForQuery,
+        routeHeroQuery: (q) => R().routeHeroQuery?.(q),
+        classifyQuery: (q) => R().classifyQuery?.(q),
+        isToolkitSpecQuery: (q) => R().isToolkitSpecQuery?.(q),
+        isBrainNaturalQuery: (q) => R().isBrainNaturalQuery?.(q),
+        destinationForQuery: (q) => R().destinationForQuery?.(q),
     };
     globalThis.TVC_HomeHeroSearch = api;
     if (typeof module !== 'undefined' && module.exports) {
