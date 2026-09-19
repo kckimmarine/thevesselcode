@@ -81,7 +81,8 @@ const TVC_StoreMenu = (function () {
         if (existing && (!existing.querySelector('.impa-detail-plate-viewport')
             || !existing.querySelector('#impaDetailShipservLayout')
             || !existing.querySelector('#modalCloseBtn')
-            || !existing.querySelector('.modal-body'))) {
+            || !existing.querySelector('.modal-body')
+            || !existing.querySelector('#impaDetailConversionAction'))) {
             existing.remove();
             _modalReady = false;
             _plateZoom = null;
@@ -121,6 +122,16 @@ const TVC_StoreMenu = (function () {
                         <div id="impaDetailPublicTvcSm" class="impa-detail-tvc-sm" aria-hidden="true"></div>
                         <div class="impa-detail-actions">
                             <button type="button" class="impa-detail-share-btn" id="impaDetailShareBtn">📋 Share Spec Link</button>
+                        </div>
+                        <div id="impaDetailConversionAction" class="modal-conversion-action" aria-label="Pricing and supply inquiry">
+                            <div class="modal-conversion-action-copy">
+                                <div class="modal-conversion-action-title">Need Pricing or Supply for this Item?</div>
+                                <div class="modal-conversion-action-sub">Direct dispatch to verified supply partners (Busan / Singapore / Global).</div>
+                            </div>
+                            <div class="modal-conversion-action-btns">
+                                <a id="btn-modal-rfq" href="/contact-us?inquiry=rfq" class="btn-action-rfq">📋 Quick RFQ</a>
+                                <a id="btn-modal-wa" href="https://wa.me/821038894291?text=Hello%20TVC%2C%20inquiring%20about%20IMPA" target="_blank" rel="noopener noreferrer" class="btn-action-wa">🟢 WhatsApp</a>
+                            </div>
                         </div>
                         <div class="impa-detail-plg-lock" id="impaDetailPlgLock" aria-label="TVC-SM fleet features"></div>
                     </div>
@@ -692,6 +703,22 @@ const TVC_StoreMenu = (function () {
             </svg>`;
     }
 
+    function updateImpaConversionLinks(item) {
+        const code = String(item?.impa_code || item?.code || '').trim();
+        const name = String(cleanProductTitle(item) || item?.name || '').trim();
+        const rfq = document.getElementById('btn-modal-rfq');
+        const wa = document.getElementById('btn-modal-wa');
+        const params = new URLSearchParams();
+        params.set('inquiry', 'rfq');
+        if (code) params.set('code', code);
+        if (name) params.set('name', name);
+        if (rfq) rfq.href = `/contact-us?${params.toString()}`;
+        const waText = code
+            ? `Hello TVC, inquiring about IMPA ${code}${name ? ` - ${name}` : ''}`
+            : 'Hello TVC, inquiring about IMPA';
+        if (wa) wa.href = `https://wa.me/821038894291?text=${encodeURIComponent(waText)}`;
+    }
+
     function populateShipservDetail(item) {
         const code = item.impa_code || item.code || '';
         const badge = document.getElementById('impaDetailBadge');
@@ -722,6 +749,7 @@ const TVC_StoreMenu = (function () {
                 <a class="mkt-plg-lock" href="/contact-us?inquiry=tvc-sm-demo">🔒 Check Vessel ROB — Available with TVC-SM Fleet Subscription</a>
                 <a class="mkt-plg-lock" href="/contact-us?inquiry=tvc-sm-demo">🔒 1-Click Fleet Requisition — Available with TVC-SM Fleet Subscription</a>`;
         }
+        updateImpaConversionLinks(item);
     }
 
     function specRows(item) {

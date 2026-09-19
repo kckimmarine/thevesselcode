@@ -185,6 +185,29 @@
         }
     }
 
+    const HOTLINE_WA_BASE = 'https://wa.me/821038894291?text=';
+    const HOTLINE_WA_TEXT = encodeURIComponent('Hello TVC Superintendent, I have an inquiry.');
+    const KAKAO_CHANNEL_URL = 'https://pf.kakao.com';
+
+    function ensureFloatingHotline() {
+        if (document.getElementById('mktFloatingHotline')) return;
+        const wrap = document.createElement('div');
+        wrap.id = 'mktFloatingHotline';
+        wrap.className = 'mkt-floating-hotline';
+        wrap.setAttribute('role', 'complementary');
+        wrap.setAttribute('aria-label', 'Quick contact');
+        wrap.innerHTML = `
+            <a class="mkt-hotline-btn mkt-hotline-kakao" href="${KAKAO_CHANNEL_URL}" target="_blank" rel="noopener noreferrer">
+                <span class="mkt-hotline-kakao-icon" aria-hidden="true">💬</span>
+                <span class="mkt-hotline-label">KakaoTalk</span>
+            </a>
+            <a class="mkt-hotline-btn mkt-hotline-wa" href="${HOTLINE_WA_BASE}${HOTLINE_WA_TEXT}" target="_blank" rel="noopener noreferrer">
+                <span class="mkt-hotline-wa-dot" aria-hidden="true">🟢</span>
+                <span class="mkt-hotline-label">Chat on WhatsApp</span>
+            </a>`;
+        document.body.appendChild(wrap);
+    }
+
     function mount() {
         ensureReadabilityCss();
         const active = document.body.getAttribute('data-mkt-active') || '';
@@ -192,6 +215,7 @@
         if (topbarEl) topbarEl.innerHTML = renderTopbar(active);
         const footerEl = document.getElementById('marketing-footer');
         if (footerEl) footerEl.innerHTML = renderFooter();
+        ensureFloatingHotline();
         bindTopbar();
         ensureMarketFeed(() => {
             mountTicker();
