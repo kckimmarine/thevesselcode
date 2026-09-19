@@ -76,7 +76,16 @@ function buildSuperintendentArchiveContext(query, lang) {
         .sort((a, b) => b.score - a.score)
         .slice(0, 6);
 
-    if (!parts.length && !troubles.length) {
+    const mailRows = (retrieval.mailIntel || [])
+        .map((m) => ({
+            score: scoreText(tokens, [m.subject, m.from, m.bodySnippet, (m.attachmentFiles || []).join(' ')].join(' ')),
+            m,
+        }))
+        .filter((x) => x.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 4);
+
+    if (!parts.length && !troubles.length && !mailRows.length) {
         return { contextBlock: '', extraSources: [] };
     }
 
@@ -98,6 +107,11 @@ function buildSuperintendentArchiveContext(query, lang) {
             `- TROUBLE | equip: ${t.equipment || '—'} | symptom: ${t.symptoms || '—'} | cause: ${t.rootCause || '—'} | action: ${t.actionTaken || '—'} | class: ${t.classRecommendation || '—'} | src: ${t.sourceFile || '—'}`
         );
     }
+    for (const { m } of mailRows) {
+        lines.push(
+            `- MAIL | ${m.date || '—'} | from: ${m.from || '—'} | subject: ${m.subject || '—'} | snippet: ${(m.bodySnippet || '—').slice(0, 280)} | attachments: ${(m.attachmentFiles || []).length}`
+        );
+    }
 
     const extraSources = [];
     const seen = new Set();
@@ -111,6 +125,13 @@ function buildSuperintendentArchiveContext(query, lang) {
         if (t.sourceFile && !seen.has(t.sourceFile)) {
             seen.add(t.sourceFile);
             extraSources.push({ label: `Superintendent archive: ${t.sourceFile}`, kind: 'superintendent_archive' });
+        }
+    }
+    for (const { m } of mailRows) {
+        const label = `Gmail: ${m.subject || m.source || 'maritime mail'}`;
+        if (!seen.has(label)) {
+            seen.add(label);
+            extraSources.push({ label, kind: 'gmail_intel' });
         }
     }
 
