@@ -19,6 +19,7 @@
     function inquiryLabel(value) {
         const key = {
             demo: 'contact.inquiry.demo',
+            rfq: 'contact.inquiry.rfq',
             partnership: 'contact.inquiry.partnership',
             support: 'contact.inquiry.support',
             general: 'contact.inquiry.general',
@@ -110,17 +111,47 @@
         }
     }
 
+    function buildRfqPrefill(code, name) {
+        const codePart = String(code || '').trim();
+        const namePart = String(name || '').trim();
+        const template =
+            t('contact.campaign.rfq') ||
+            'Inquiring about supply/quote for IMPA [code][name]…';
+        return template
+            .replace('[code]', codePart || '—')
+            .replace('[name]', namePart ? ` (${namePart})` : '');
+    }
+
+    function buildFleetTrialPrefill(fleetSize) {
+        const size = String(fleetSize || '').trim();
+        const template =
+            t('contact.campaign.fleetTrialPilot') ||
+            t('contact.campaign.fleetTrial') ||
+            'Requesting 30-day pilot for [fleet size] vessels…';
+        return template.replace('[fleet size]', size || 'our');
+    }
+
     function applyInboundCampaignParams() {
         const params = new URLSearchParams(window.location.search);
         const inquiry = String(params.get('inquiry') || '').trim().toLowerCase();
+        const impaCode = String(params.get('code') || '').trim();
+        const itemName = String(params.get('name') || '').trim();
+        const fleetSize = String(params.get('fleet') || params.get('vessels') || '').trim();
         const typeSelect = qs('#acInquiryType');
         const message = qs('#acMessage');
+        if (inquiry === 'rfq') {
+            if (typeSelect) typeSelect.value = 'rfq';
+            if (message && !String(message.value || '').trim()) {
+                message.value = buildRfqPrefill(impaCode, itemName);
+            }
+            return;
+        }
         if (inquiry === 'tvc-sm-demo' || inquiry === 'fleet-trial') {
             if (typeSelect) typeSelect.value = 'demo';
             if (message && !String(message.value || '').trim()) {
                 message.value =
                     inquiry === 'fleet-trial'
-                        ? t('contact.campaign.fleetTrial') || t('contact.campaign.demo') || ''
+                        ? buildFleetTrialPrefill(fleetSize)
                         : t('contact.campaign.demo') || '';
             }
             return;
