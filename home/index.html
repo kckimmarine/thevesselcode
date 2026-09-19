@@ -18,7 +18,8 @@
     <meta property="og:description" content="50,000+ IMPA standards, engineering calculators, and an offline-first fleet management OS — built for daily shipboard and shore work.">
     <meta property="og:url" content="https://thevesselcode.com/">
     <meta property="og:image" content="https://thevesselcode.com/icons/company-logo.png">
-    <link rel="icon" type="image/png" href="../icons/company-logo.png?v=20260804-logo-no-ring">
+    <link rel="icon" type="image/png" href="/assets/icons/icon-192.png?v=20260919-atom">
+    <link rel="apple-touch-icon" href="/assets/icons/icon-192.png?v=20260919-atom">
     <link rel="stylesheet" href="../css/marketing-shell.css?v=20260915-contrast-enterprise">
     <link rel="stylesheet" href="../css/marketing-theme.css?v=20260915-contrast-enterprise">
     <link rel="stylesheet" href="../css/home.css?v=20260915-benefits">
@@ -38,26 +39,38 @@
                     <a class="home-btn home-btn-primary" href="/contact-us?inquiry=poc" data-i18n="home.hero.cta.poc">1-Ship 14-Day Free PoC</a>
                     <a class="home-btn home-btn-secondary home-btn-contrast-outline" href="#core-capabilities" data-i18n="home.hero.cta.arch">Explore Architecture</a>
                 </div>
-                <p class="home-hero-search-label muted" data-i18n="home.search.divider">Quick toolkit search (IMPA &amp; calculators)</p>
-                <form id="homeHeroSearchForm" class="home-hero-search" role="search" aria-label="Maritime parts and standards search">
-                    <label class="visually-hidden" for="homeHeroSearchInput" data-i18n="home.search.label">Search IMPA and maritime utilities</label>
-                    <input
-                        type="search"
-                        id="homeHeroSearchInput"
-                        class="home-hero-search-input"
-                        name="q"
-                        autocomplete="off"
-                        enterkeyhint="search"
-                        data-i18n-placeholder="home.search.placeholder"
-                        placeholder="Enter IMPA code, Valve size, Flange PCD, or Bunker formula..."
-                    />
-                    <button type="submit" class="home-btn home-btn-primary home-hero-search-btn" data-i18n="home.search.button">Search</button>
+                <p class="home-hero-search-label" data-i18n="home.search.divider">AI Superintendent &amp; Maritime Intelligence</p>
+                <p class="home-hero-search-subtitle muted" data-i18n="home.search.subtitle">Ship engineering, fault diagnosis, parts &amp; standards — ask anything.</p>
+                <form id="homeHeroSearchForm" class="home-hero-search" role="search" aria-label="Maritime AI and unified search">
+                    <label class="visually-hidden" for="homeHeroSearchInput" data-i18n="home.search.label">Ask anything about ships</label>
+                    <div class="home-hero-search-field" id="homeHeroSearchField">
+                        <div class="home-hero-search-thumb" id="homeHeroSearchThumb" hidden>
+                            <img id="homeHeroSearchThumbImg" alt="" width="44" height="44" />
+                            <button type="button" class="home-hero-search-thumb-clear" id="homeHeroSearchThumbClear" aria-label="Remove photo">×</button>
+                        </div>
+                        <input
+                            type="search"
+                            id="homeHeroSearchInput"
+                            class="home-hero-search-input"
+                            name="q"
+                            autocomplete="off"
+                            enterkeyhint="search"
+                            data-i18n-placeholder="home.search.placeholder"
+                            placeholder="Ask anything about ships (e.g. generator RPM hunting, boiler ignition fault, IMPA 791801, JIS 10K 50A, bunker 54B...)"
+                        />
+                        <div class="home-hero-search-inline-actions" aria-label="Voice and camera input">
+                            <button type="button" id="btn-voice-input" class="home-hero-input-action" aria-label="Voice input" title="Voice input">🎙️</button>
+                            <label for="btn-camera-input" id="btn-camera-label" class="home-hero-input-action home-hero-input-action--camera" aria-label="Camera or photo" title="Camera">📷</label>
+                            <input type="file" id="btn-camera-input" class="visually-hidden" accept="image/*" capture="environment" tabindex="-1" />
+                        </div>
+                    </div>
+                    <button type="submit" class="home-btn home-btn-primary home-hero-search-btn" data-i18n="home.search.button">Ask AI / Search</button>
                 </form>
-                <div class="home-hero-utilities" aria-label="Quick utility access">
-                    <a class="home-utility-badge" href="/toolkit" data-i18n="home.utility.impa">📦 50,000+ IMPA Plates</a>
-                    <a class="home-utility-badge" href="/toolkit?tool=bunker" data-i18n="home.utility.bunker">⛽ ASTM 54B Bunker Calc</a>
-                    <a class="home-utility-badge" href="/toolkit?tool=engineering" data-i18n="home.utility.flange">📐 JIS Flange Specs</a>
-                    <a class="home-utility-badge" href="/toolkit?tool=compliance" data-i18n="home.utility.cic">📋 Tokyo MoU CIC Guard</a>
+                <div class="home-hero-utilities" aria-label="Quick maritime intelligence shortcuts">
+                    <a class="home-utility-badge" href="#" data-home-route="brain" data-home-seed="Generator or main engine RPM hunting — probable causes and field checks" data-i18n="home.utility.chip.engine">⚙️ Engine / G/E troubleshooting</a>
+                    <a class="home-utility-badge" href="/toolkit" data-i18n="home.utility.impa">📦 50,000+ IMPA plates</a>
+                    <a class="home-utility-badge" href="/toolkit?tool=bunker" data-i18n="home.utility.bunker">⛽ Bunker calculator (54B)</a>
+                    <a class="home-utility-badge" href="/toolkit?tool=compliance" data-i18n="home.utility.cic">📋 Class &amp; PSC checklists</a>
                 </div>
             </div>
         </section>
@@ -256,7 +269,7 @@
     <script src="../js/intelligence/marketFeed.js?v=20260914-news-media-dashboard"></script>
     <script src="../js/brain-knowledge-grounding.js?v=20260919-kb"></script>
     <script src="../js/brain-chat.js?v=20260919-kb"></script>
-    <script src="../js/home-hero-search.js?v=20260919-brain-hero"></script>
+    <script src="../js/home-hero-search.js?v=20260919-unified-search"></script>
     <script src="../js/marketing-shell.js?v=20260915-enterprise"></script>
 </body>
 </html>

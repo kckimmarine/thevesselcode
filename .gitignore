@@ -9,6 +9,10 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
+# Gmail IMAP attachment cache (local only)
+data/raw_archives/gmail_attachments/**
+!data/raw_archives/gmail_attachments/.gitkeep
+
 # Fleet ingest download cache; dev mirror of public/data/fleet for npm start
 data/fleet-cache/
 data/fleet/

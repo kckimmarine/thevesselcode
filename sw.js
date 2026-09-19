@@ -1,5 +1,5 @@
 /* THE VESSEL CODE — Marketing / Toolkit lightweight SW (stale-while-revalidate) */
-const CACHE_VERSION = 'tvc-brain-sw-v1';
+const CACHE_VERSION = 'tvc-brain-sw-v2';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 
 const PRECACHE = [
@@ -20,6 +20,8 @@ const PRECACHE = [
     '/js/home-hero-search.js',
     '/icons/icon.svg',
     '/icons/icon-maskable.svg',
+    '/assets/icons/icon-192.png',
+    '/assets/icons/icon-512.png',
 ];
 
 function isCacheableGet(request) {

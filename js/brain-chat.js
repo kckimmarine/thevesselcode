@@ -5,11 +5,18 @@
     const KAKAO_CHANNEL_URL = 'https://pf.kakao.com/_Txhxnxj';
     const A2HS_DISMISS_KEY = 'tvc-brain-a2hs-dismissed-v1';
 
+    const PHOTO_PROMPT_KO = '[선박 부품/명판 사진 분석 요청]';
+    const PHOTO_PROMPT_EN = '[Vessel part/nameplate photo analysis request]';
+
     const state = {
         lang: 'KO',
         lastQuery: '',
         loading: false,
         deferredPrompt: null,
+        heroImageDataUrl: null,
+        modalImageDataUrl: null,
+        recognition: null,
+        listeningScope: null,
     };
 
     function detectLang() {
@@ -23,7 +30,7 @@
 
     function t(key) {
         const ko = {
-            loading: '공무감독 브레인이 분석 중입니다…',
+            loading: 'TVC Maritime Intelligence가 분석 중입니다…',
             title: 'THE VESSEL CODE Brain',
             followUp: '추가 질문하기',
             followPlaceholder: '후속 질문을 입력하세요…',
@@ -32,12 +39,18 @@
             whatsapp: '🟢 WhatsApp Instant Chat',
             close: '닫기',
             error: '응답을 불러오지 못했습니다. 잠시 후 다시 시도하십시오.',
-            a2hs: '📲 TVC 해운 브레인을 홈 화면에 앱으로 추가하여 1초 만에 실행하세요',
+            a2hs: '📲 TVC Brain을 홈 화면 앱으로 추가하면 바로 실행할 수 있습니다.',
+            a2hsIosLead: 'iPhone/iPad Safari는 자동 설치 버튼을 지원하지 않습니다. 아래 순서대로 진행하세요.',
+            a2hsAndroidLead: 'Chrome에서 「설치하기」가 안 되면 메뉴(⋮) → 앱 설치 / 홈 화면에 추가를 사용하세요.',
+            a2hsInsecure: '주소창 경고(🔴)가 보이면 https://thevesselcode.com 으로 다시 접속하세요. HTTP에서는 앱 설치가 차단됩니다.',
             install: '설치하기',
+            installShowSteps: '설치 방법 보기',
             dismiss: '닫기',
+            voiceUnsupported: '이 브라우저는 음성 입력을 지원하지 않습니다.',
+            voiceError: '음성 인식에 실패했습니다. 다시 시도하십시오.',
         };
         const en = {
-            loading: 'Chief Engineer Brain is analyzing…',
+            loading: 'TVC Maritime Intelligence is analyzing…',
             title: 'THE VESSEL CODE Brain',
             followUp: 'Ask a follow-up',
             followPlaceholder: 'Type your follow-up question…',
@@ -46,9 +59,15 @@
             whatsapp: '🟢 WhatsApp Instant Chat',
             close: 'Close',
             error: 'Could not load a response. Please try again shortly.',
-            a2hs: '📲 Add TVC Maritime Brain to your home screen for 1-second launch',
+            a2hs: '📲 Add TVC Brain to your home screen for one-tap launch.',
+            a2hsIosLead: 'iPhone/iPad Safari does not support one-tap web install. Follow the steps below.',
+            a2hsAndroidLead: 'If Install does nothing, use Chrome menu (⋮) → Install app / Add to Home screen.',
+            a2hsInsecure: 'If you see a warning in the address bar, open https://thevesselcode.com (HTTPS required).',
             install: 'Install',
+            installShowSteps: 'How to install',
             dismiss: 'Dismiss',
+            voiceUnsupported: 'Voice input is not supported in this browser.',
+            voiceError: 'Speech recognition failed. Please try again.',
         };
         const pack = state.lang === 'EN' ? en : ko;
         return pack[key] || key;
@@ -160,7 +179,18 @@
                 <footer class="tvc-brain-footer">
                     <form class="tvc-brain-follow" id="tvcBrainFollowForm">
                         <label class="visually-hidden" for="tvcBrainFollowInput">${escapeHtml(t('followUp'))}</label>
-                        <input id="tvcBrainFollowInput" type="text" autocomplete="off" enterkeyhint="send" />
+                        <div class="tvc-brain-follow-field" id="tvcBrainFollowField">
+                            <div class="home-hero-search-thumb" id="tvcBrainFollowThumb" hidden>
+                                <img id="tvcBrainFollowThumbImg" alt="" width="44" height="44" />
+                                <button type="button" class="home-hero-search-thumb-clear" id="tvcBrainFollowThumbClear" aria-label="Remove photo">×</button>
+                            </div>
+                            <input id="tvcBrainFollowInput" type="text" autocomplete="off" enterkeyhint="send" placeholder="" />
+                            <div class="tvc-brain-follow-inline-actions" aria-label="Voice and camera input">
+                                <button type="button" id="btn-voice-input-modal" class="home-hero-input-action" aria-label="Voice input" title="Voice input">🎙️</button>
+                                <label for="btn-camera-input-modal" class="home-hero-input-action home-hero-input-action--camera" aria-label="Camera or photo" title="Camera">📷</label>
+                                <input type="file" id="btn-camera-input-modal" class="visually-hidden" accept="image/*" capture="environment" tabindex="-1" />
+                            </div>
+                        </div>
                         <button type="submit" class="home-btn home-btn-primary tvc-brain-follow-btn">${escapeHtml(t('ask'))}</button>
                     </form>
                     <div class="tvc-brain-connectors">
@@ -178,10 +208,21 @@
         modal.querySelector('#tvcBrainFollowForm').addEventListener('submit', (e) => {
             e.preventDefault();
             const input = modal.querySelector('#tvcBrainFollowInput');
-            const q = String(input?.value || '').trim();
+            const q = composeQuery('modal', input);
             if (!q) return;
             input.value = '';
+            clearCapture('modal');
             askBrain(q);
+        });
+
+        wireInputCapture('modal', {
+            voiceBtn: modal.querySelector('#btn-voice-input-modal'),
+            cameraInput: modal.querySelector('#btn-camera-input-modal'),
+            textInput: modal.querySelector('#tvcBrainFollowInput'),
+            thumbWrap: modal.querySelector('#tvcBrainFollowThumb'),
+            thumbImg: modal.querySelector('#tvcBrainFollowThumbImg'),
+            thumbClear: modal.querySelector('#tvcBrainFollowThumbClear'),
+            onAutoSubmit: (query) => askBrain(query),
         });
 
         document.addEventListener('keydown', (e) => {
@@ -189,6 +230,169 @@
         });
 
         return modal;
+    }
+
+    function photoPromptTag() {
+        return state.lang === 'EN' ? PHOTO_PROMPT_EN : PHOTO_PROMPT_KO;
+    }
+
+    function appendPhotoPrompt(input) {
+        if (!input) return;
+        const tag = photoPromptTag();
+        const current = String(input.value || '');
+        if (current.includes(tag)) return;
+        input.value = current.trim() ? `${current.trim()} ${tag}` : tag;
+    }
+
+    function composeQuery(scope, inputEl) {
+        const base = String(inputEl?.value || '').trim();
+        const tag = photoPromptTag();
+        const hasImage = scope === 'hero' ? !!state.heroImageDataUrl : !!state.modalImageDataUrl;
+        if (!base && !hasImage) return '';
+        if (hasImage && !base.includes(tag)) {
+            return base ? `${base} ${tag}` : tag;
+        }
+        return base;
+    }
+
+    function clearCapture(scope) {
+        if (scope === 'hero') {
+            state.heroImageDataUrl = null;
+            const wrap = document.getElementById('homeHeroSearchThumb');
+            const img = document.getElementById('homeHeroSearchThumbImg');
+            const file = document.getElementById('btn-camera-input');
+            if (wrap) wrap.hidden = true;
+            if (img) img.removeAttribute('src');
+            if (file) file.value = '';
+        } else {
+            state.modalImageDataUrl = null;
+            const wrap = document.getElementById('tvcBrainFollowThumb');
+            const img = document.getElementById('tvcBrainFollowThumbImg');
+            const file = document.getElementById('btn-camera-input-modal');
+            if (wrap) wrap.hidden = true;
+            if (img) img.removeAttribute('src');
+            if (file) file.value = '';
+        }
+    }
+
+    function readImageFile(file, scope, inputEl, thumbWrap, thumbImg) {
+        if (!file || !file.type.startsWith('image/')) return;
+        const reader = new FileReader();
+        reader.onload = () => {
+            const dataUrl = String(reader.result || '');
+            if (scope === 'hero') state.heroImageDataUrl = dataUrl;
+            else state.modalImageDataUrl = dataUrl;
+            if (thumbImg) {
+                thumbImg.src = dataUrl;
+                thumbImg.alt = state.lang === 'EN' ? 'Attached photo' : '첨부 사진';
+            }
+            if (thumbWrap) thumbWrap.hidden = false;
+            appendPhotoPrompt(inputEl);
+        };
+        reader.readAsDataURL(file);
+    }
+
+    function getSpeechRecognition() {
+        const Ctor = globalThis.SpeechRecognition || globalThis.webkitSpeechRecognition;
+        if (!Ctor) return null;
+        if (!state.recognition) {
+            state.recognition = new Ctor();
+            state.recognition.interimResults = false;
+            state.recognition.maxAlternatives = 1;
+        }
+        return state.recognition;
+    }
+
+    function speechLangs() {
+        return state.lang === 'EN' ? ['en-US', 'ko-KR'] : ['ko-KR', 'en-US'];
+    }
+
+    function setListeningUi(voiceBtn, on) {
+        if (!voiceBtn) return;
+        voiceBtn.classList.toggle('is-listening', on);
+        voiceBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+
+    function startVoiceCapture(scope, voiceBtn, textInput, onAutoSubmit) {
+        const rec = getSpeechRecognition();
+        if (!rec) {
+            window.alert(t('voiceUnsupported'));
+            return;
+        }
+        if (state.listeningScope) {
+            try { rec.stop(); } catch (_) { /* ignore */ }
+        }
+        state.listeningScope = scope;
+        rec.lang = speechLangs()[0];
+        rec.onstart = () => setListeningUi(voiceBtn, true);
+        rec.onend = () => {
+            setListeningUi(voiceBtn, false);
+            state.listeningScope = null;
+        };
+        rec.onerror = () => {
+            setListeningUi(voiceBtn, false);
+            state.listeningScope = null;
+            window.alert(t('voiceError'));
+        };
+        rec.onresult = (event) => {
+            const transcript = Array.from(event.results)
+                .map((r) => r[0]?.transcript || '')
+                .join(' ')
+                .trim();
+            if (!transcript) return;
+            if (textInput) textInput.value = transcript;
+            if (scope === 'hero') {
+                openModal(composeQuery('hero', textInput) || transcript);
+            } else if (typeof onAutoSubmit === 'function') {
+                onAutoSubmit(composeQuery('modal', textInput) || transcript);
+            }
+        };
+        try {
+            rec.start();
+        } catch (err) {
+            setListeningUi(voiceBtn, false);
+            state.listeningScope = null;
+            console.warn('[TVC Brain] speech start failed', err);
+            window.alert(t('voiceError'));
+        }
+    }
+
+    function wireInputCapture(scope, opts) {
+        const {
+            voiceBtn,
+            cameraInput,
+            textInput,
+            thumbWrap,
+            thumbImg,
+            thumbClear,
+            onAutoSubmit,
+        } = opts;
+        if (!voiceBtn || !cameraInput || !textInput) return;
+
+        voiceBtn.addEventListener('click', () => {
+            startVoiceCapture(scope, voiceBtn, textInput, onAutoSubmit);
+        });
+
+        cameraInput.addEventListener('change', () => {
+            const file = cameraInput.files && cameraInput.files[0];
+            readImageFile(file, scope, textInput, thumbWrap, thumbImg);
+        });
+
+        if (thumbClear) {
+            thumbClear.addEventListener('click', () => clearCapture(scope));
+        }
+    }
+
+    function initHeroInputCapture() {
+        wireInputCapture('hero', {
+            voiceBtn: document.getElementById('btn-voice-input'),
+            cameraInput: document.getElementById('btn-camera-input'),
+            textInput: document.getElementById('homeHeroSearchInput'),
+            thumbWrap: document.getElementById('homeHeroSearchThumb'),
+            thumbImg: document.getElementById('homeHeroSearchThumbImg'),
+            thumbClear: document.getElementById('homeHeroSearchThumbClear'),
+            onAutoSubmit: null,
+        });
     }
 
     function setConnectors(query) {
@@ -317,7 +521,7 @@
     function bindHeroForm(form, input) {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
-            const q = String(input.value || '').trim();
+            const q = composeQuery('hero', input);
             if (!q) return;
             openModal(q);
         });
@@ -326,6 +530,58 @@
     function isStandalone() {
         return window.matchMedia('(display-mode: standalone)').matches
             || window.navigator.standalone === true;
+    }
+
+    function isIosDevice() {
+        const ua = navigator.userAgent || '';
+        if (/iPad|iPhone|iPod/.test(ua)) return true;
+        return navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+    }
+
+    function isInAppBrowser() {
+        return /KAKAOTALK|Instagram|FBAN|FBAV|Line\//i.test(navigator.userAgent || '');
+    }
+
+    function a2hsStepsHtml() {
+        if (isIosDevice()) {
+            return state.lang === 'EN'
+                ? `<ol class="tvc-brain-a2hs-steps">
+<li>Tap <strong>Share</strong> (square with ↑) at the bottom of Safari.</li>
+<li>Scroll the sheet and tap <strong>Add to Home Screen</strong>.</li>
+<li>Tap <strong>Add</strong> — TVC Brain appears on your home screen.</li>
+</ol>`
+                : `<ol class="tvc-brain-a2hs-steps">
+<li>Safari <strong>하단 중앙 공유(□↑)</strong> 버튼을 탭합니다.</li>
+<li>아래로 스크롤 → <strong>「홈 화면에 추가」</strong> 를 선택합니다.</li>
+<li><strong>추가</strong> 를 누르면 홈 화면에 TVC Brain 아이콘이 생깁니다.</li>
+</ol>`;
+        }
+        return state.lang === 'EN'
+            ? `<ol class="tvc-brain-a2hs-steps">
+<li>Open this site in <strong>Chrome</strong> (not an in-app browser).</li>
+<li>Tap menu <strong>⋮</strong> → <strong>Install app</strong> or <strong>Add to Home screen</strong>.</li>
+<li>Confirm — launch TVC Brain from your home screen.</li>
+</ol>`
+            : `<ol class="tvc-brain-a2hs-steps">
+<li><strong>Chrome</strong> 브라우저에서 열어 주세요(카톡/인앱 브라우저 X).</li>
+<li>우측 상단 <strong>⋮</strong> → <strong>앱 설치</strong> 또는 <strong>홈 화면에 추가</strong>.</li>
+<li>확인 후 홈 화면의 TVC Brain 아이콘으로 실행합니다.</li>
+</ol>`;
+    }
+
+    function a2hsLeadMessage() {
+        const parts = [t('a2hs')];
+        if (!window.isSecureContext) parts.push(t('a2hsInsecure'));
+        if (isInAppBrowser()) {
+            parts.push(state.lang === 'EN'
+                ? 'Open thevesselcode.com in Safari or Chrome (in-app browsers block install).'
+                : 'Safari 또는 Chrome에서 thevesselcode.com 을 직접 여세요(인앱 브라우저는 설치 불가).');
+        } else if (isIosDevice()) {
+            parts.push(t('a2hsIosLead'));
+        } else if (!state.deferredPrompt) {
+            parts.push(t('a2hsAndroidLead'));
+        }
+        return parts.join(' ');
     }
 
     function ensureA2hsBanner() {
@@ -341,34 +597,58 @@
         bar.id = 'tvcBrainA2hs';
         bar.className = 'tvc-brain-a2hs';
         bar.innerHTML = `
-            <p class="tvc-brain-a2hs-text"></p>
+            <div class="tvc-brain-a2hs-body">
+                <p class="tvc-brain-a2hs-text"></p>
+                <div class="tvc-brain-a2hs-steps-wrap" hidden></div>
+            </div>
             <div class="tvc-brain-a2hs-actions">
                 <button type="button" class="tvc-brain-a2hs-install home-btn home-btn-primary"></button>
                 <button type="button" class="tvc-brain-a2hs-dismiss"></button>
             </div>`;
         document.body.appendChild(bar);
 
-        bar.querySelector('.tvc-brain-a2hs-text').textContent = t('a2hs');
-        bar.querySelector('.tvc-brain-a2hs-install').textContent = t('install');
+        const textEl = bar.querySelector('.tvc-brain-a2hs-text');
+        const stepsWrap = bar.querySelector('.tvc-brain-a2hs-steps-wrap');
+        const installBtn = bar.querySelector('.tvc-brain-a2hs-install');
+
+        textEl.textContent = a2hsLeadMessage();
+        const ios = isIosDevice();
+        installBtn.textContent = state.deferredPrompt && !ios ? t('install') : t('installShowSteps');
         bar.querySelector('.tvc-brain-a2hs-dismiss').textContent = t('dismiss');
+
+        if (ios || !state.deferredPrompt) {
+            stepsWrap.innerHTML = a2hsStepsHtml();
+        }
+
+        if (ios) {
+            installBtn.remove();
+            stepsWrap.hidden = false;
+        }
 
         bar.querySelector('.tvc-brain-a2hs-dismiss').addEventListener('click', () => {
             try { localStorage.setItem(A2HS_DISMISS_KEY, '1'); } catch (_) { /* ignore */ }
             bar.remove();
         });
 
-        bar.querySelector('.tvc-brain-a2hs-install').addEventListener('click', async () => {
-            if (state.deferredPrompt) {
-                state.deferredPrompt.prompt();
-                try { await state.deferredPrompt.userChoice; } catch (_) { /* ignore */ }
-                state.deferredPrompt = null;
-                bar.remove();
-                return;
-            }
-            bar.querySelector('.tvc-brain-a2hs-text').textContent = state.lang === 'EN'
-                ? 'Use browser menu → Add to Home Screen / Install app.'
-                : '브라우저 메뉴 → 홈 화면에 추가 / 앱 설치를 선택하세요.';
-        });
+        if (!ios) {
+            installBtn.addEventListener('click', async () => {
+                if (state.deferredPrompt) {
+                    state.deferredPrompt.prompt();
+                    try { await state.deferredPrompt.userChoice; } catch (_) { /* ignore */ }
+                    state.deferredPrompt = null;
+                    bar.remove();
+                    return;
+                }
+                const showing = !stepsWrap.hidden;
+                stepsWrap.hidden = showing;
+                installBtn.textContent = showing
+                    ? (state.deferredPrompt ? t('install') : t('installShowSteps'))
+                    : (state.lang === 'EN' ? 'Hide steps' : '접기');
+                if (!showing) {
+                    stepsWrap.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+                }
+            });
+        }
     }
 
     function registerServiceWorker() {
@@ -394,6 +674,7 @@
 
         ensureA2hsBanner();
         registerServiceWorker();
+        initHeroInputCapture();
     }
 
     window.TVC_BrainChat = {
