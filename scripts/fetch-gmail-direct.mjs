@@ -40,7 +40,7 @@ const STATE_PATH = path.join(ROOT, 'data', 'raw_archives', 'gmail_ingest_state.j
 
 const MARITIME_KEYWORDS = [
     '견적', '수리', '발주', 'Defect', 'defect', 'quotation', 'Quotation', 'invoice', 'Invoice',
-    'spares', 'Spares', 'ClassNK', 'KR', '선급', '검사', 'bunker', 'flange', 'IMPA', '대명상선',
+    'spares', 'Spares', 'ClassNK', 'KR', '선급', '검사', 'bunker', 'flange', 'IMPA',
     'repair', 'purchase', 'PO', 'P/O', 'work order', 'overhaul', 'M/E', 'A/E', 'spare part',
 ];
 

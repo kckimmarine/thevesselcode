@@ -542,7 +542,7 @@ function writeJson(filePath, obj) {
 
 function printKoreanReport(meta, parts, troubles, accessible) {
     const pricePoints = parts.filter((p) => p.unitPrice != null).length;
-    console.log('\n========== 공무팀 Google Drive 수집 요약 ==========');
+    console.log('\n========== TVC 로컬 아카이브 수집 요약 (Google Drive) ==========');
     console.log(`소스 경로: ${meta.sourceRoot}`);
     console.log(`접근 가능: ${accessible ? '예' : '아니오 (경로 마운트 또는 TVC_SUPERINTENDENT_ARCHIVE_ROOT 확인)'}`);
     console.log(`모드: ${meta.mode}`);
