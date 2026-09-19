@@ -16,7 +16,8 @@ const SYSTEM_PERSONA = `너는 THE VESSEL CODE BRAIN — 글로벌 선박 표준
 3. 일반 공학·화학·번역·비즈니스 질의도 논리정연하고 친절하게 답하라.
 4. 문체는 차분하고 전문적이며, [핵심 결론/기준 수치 → 현장 조치 절차 → 안전·법적 주의] 순서로 출력하라.
 5. 특정 선사명·개인 이름·과거 직함·연차(예: ○○년 차)를 답변에 끌어오지 말고, TVC 지식베이스의 객관적 기록만 인용하라.
-6. 메시지에 [TVC MARITIME INTEL] 블록(PART/TROUBLE/MAIL)이 있으면 해당 기록을 우선 근거로 삼고, 출처(source)를 명시하라.`;
+6. 메시지에 [TVC MARITIME INTEL] 블록(PART/TROUBLE/MAIL)이 있으면 해당 기록을 우선 근거로 삼고, 출처(source)를 명시하라.
+7. briefing=true 요청 시 대화형 서두·사과·잡담 없이 단일 페이지 브리핑만 출력하라. 반드시 세 섹션 헤더만 사용: ## Root Cause ➔ ## Immediate Action ➔ ## Parts & Limits (한국어 질의면 ## 근본 원인 ➔ ## 즉시 조치 ➔ ## 부품·한계).`;
 
 function tokenizeQuery(query) {
     return String(query || '')
@@ -198,6 +199,13 @@ function langHint(lang) {
         : '사용자가 영어로 질문하지 않는 한 한국어로 답하라.';
 }
 
+function briefingHint(lang, enabled) {
+    if (!enabled) return '';
+    return lang === 'EN'
+        ? 'Output exactly one structured superintendent briefing with sections ## Root Cause ➔ ## Immediate Action ➔ ## Parts & Limits. No conversational padding.'
+        : '대화형 서두 없이 ## 근본 원인 ➔ ## 즉시 조치 ➔ ## 부품·한계 세 섹션만 출력하라.';
+}
+
 /** @type {string[]} */
 const GEMINI_MODEL_FALLBACKS = [
     'gemini-2.5-flash',
@@ -274,7 +282,7 @@ function providerFailureAnswer(lang, detail) {
     };
 }
 
-async function callGeminiOnce(model, key, query, lang) {
+async function callGeminiOnce(model, key, query, lang, briefing) {
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(key)}`;
 
     const res = await fetch(url, {
@@ -282,7 +290,7 @@ async function callGeminiOnce(model, key, query, lang) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
             systemInstruction: {
-                parts: [{ text: `${SYSTEM_PERSONA}\n\n${langHint(lang)}` }],
+                parts: [{ text: `${SYSTEM_PERSONA}\n\n${langHint(lang)}\n\n${briefingHint(lang, briefing)}` }],
             },
             contents: [
                 {
@@ -320,7 +328,7 @@ async function callGeminiOnce(model, key, query, lang) {
     return answer;
 }
 
-async function callGemini(query, lang, extraSources) {
+async function callGemini(query, lang, extraSources, briefing) {
     const key = String(process.env.GEMINI_API_KEY || '').trim();
     if (!key) return null;
 
@@ -329,7 +337,7 @@ async function callGemini(query, lang, extraSources) {
 
     for (const model of models) {
         try {
-            const answer = await callGeminiOnce(model, key, query, lang);
+            const answer = await callGeminiOnce(model, key, query, lang, briefing);
             const sources = [{ label: 'THE VESSEL CODE Brain (Gemini)', provider: 'gemini', model }];
             if (extraSources && extraSources.length) sources.push(...extraSources);
             return { answer, sources };
@@ -347,7 +355,7 @@ async function callGemini(query, lang, extraSources) {
     throw lastErr || new Error('Gemini routing failed');
 }
 
-async function callOpenAI(query, lang, extraSources) {
+async function callOpenAI(query, lang, extraSources, briefing) {
     const key = String(process.env.OPENAI_API_KEY || '').trim();
     if (!key) return null;
 
@@ -363,7 +371,7 @@ async function callOpenAI(query, lang, extraSources) {
             temperature: 0.35,
             max_tokens: 2048,
             messages: [
-                { role: 'system', content: `${SYSTEM_PERSONA}\n\n${langHint(lang)}` },
+                { role: 'system', content: `${SYSTEM_PERSONA}\n\n${langHint(lang)}\n\n${briefingHint(lang, briefing)}` },
                 { role: 'user', content: query },
             ],
         }),
@@ -411,7 +419,7 @@ function offlineWithArchives(query, lang) {
     };
 }
 
-async function routeBrainQuery(query, lang) {
+async function routeBrainQuery(query, lang, briefing) {
     const augmented = augmentQueryWithArchive(query, lang);
     const queryForModel = augmented.queryForModel;
     const archiveSources = augmented.extraSources;
@@ -428,7 +436,7 @@ async function routeBrainQuery(query, lang) {
 
     if (geminiKey) {
         try {
-            const out = await callGemini(queryForModel, lang, archiveSources);
+            const out = await callGemini(queryForModel, lang, archiveSources, briefing);
             if (out) {
                 return grounding ? { ...out, grounding } : out;
             }
@@ -444,7 +452,7 @@ async function routeBrainQuery(query, lang) {
 
     if (openaiKey) {
         try {
-            const out = await callOpenAI(queryForModel, lang, archiveSources);
+            const out = await callOpenAI(queryForModel, lang, archiveSources, briefing);
             if (out) {
                 return grounding ? { ...out, grounding } : out;
             }
@@ -482,6 +490,7 @@ async function handler(req, res) {
         const body = await readJsonBody(req);
         query = String(body.query || '').trim();
         lang = normalizeLang(body.lang);
+        const briefing = body.briefing === true;
 
         if (!query) {
             return res.status(400).json({ error: 'query is required', answer: '', sources: [] });
@@ -494,7 +503,7 @@ async function handler(req, res) {
             });
         }
 
-        const result = await routeBrainQuery(query, lang);
+        const result = await routeBrainQuery(query, lang, briefing);
         const sources = Array.isArray(result.sources) ? result.sources : [];
         const payload = {
             answer: result.answer || '',

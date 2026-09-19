@@ -1291,14 +1291,59 @@ const TVC_StoreMenu = (function () {
         }
     }
 
+    async function tryDirectImpaOpen(query) {
+        if (!_publicMode) return false;
+        const R = globalThis.TVC_SearchResolver;
+        const Portal = globalThis.TVC_SearchPortal;
+        const route = R?.classifyQuery?.(query);
+        if (route?.type !== 'impa' || !route.direct) return false;
+        const code = route.impa || R?.impaFromQuery?.(query);
+        if (!code) return false;
+        try {
+            let item = await TVC_StoreManager.getItemByCode(code);
+            if (!item) {
+                const search = await TVC_StoreManager.searchCatalog(code, { limit: 8 });
+                item = (search.items || []).find((i) => (i.impa_code || i.code) === code);
+            }
+            if (item) {
+                if (typeof TVC_MaritimeToolkit !== 'undefined') {
+                    TVC_MaritimeToolkit.setActiveTool('catalog');
+                }
+                openImpaDetailModal(item);
+                return true;
+            }
+        } catch (err) {
+            console.warn('[storeMenu] direct IMPA open', err);
+        }
+        if (Portal?.openImpaPlate) {
+            await Portal.openImpaPlate(code);
+            return true;
+        }
+        return false;
+    }
+
     async function runSearch(root, query) {
         const seq = ++_searchSeq;
         if (_publicMode) _currentPage = 1;
         const countEl = root.querySelector('#storeCatalogCount');
         if (countEl) countEl.textContent = 'Searching…';
         try {
+            if (await tryDirectImpaOpen(query)) {
+                if (seq !== _searchSeq) return;
+                if (countEl) countEl.textContent = `IMPA ${String(query).replace(/\D/g, '').slice(0, 6)}`;
+                return;
+            }
             const search = await TVC_StoreManager.searchCatalog(query);
             if (seq !== _searchSeq) return;
+            const R = globalThis.TVC_SearchResolver;
+            const route = R?.classifyQuery?.(query);
+            if (route?.type === 'impa' && route.direct && search.items?.length) {
+                const exact = search.items.find((i) => (i.impa_code || i.code) === route.impa);
+                if (exact && (await tryDirectImpaOpen(route.impa))) return;
+            }
+            if (R?.shouldSuppressResultList?.(route) && route?.type === 'impa') {
+                return;
+            }
             paintSearchResults(root, search);
         } catch (err) {
             if (seq !== _searchSeq) return;
@@ -1377,6 +1422,22 @@ const TVC_StoreMenu = (function () {
             const q = e.target.value;
             if (_publicMode) _currentPage = 1;
             scheduleSearch(root, q);
+        });
+        searchInput?.addEventListener('keydown', async (e) => {
+            if (e.key !== 'Enter') return;
+            e.preventDefault();
+            const q = e.target.value.trim();
+            if (!q) return;
+            const route = globalThis.TVC_SearchResolver?.classifyQuery?.(q);
+            if (route?.type === 'impa' && route.direct) {
+                await runSearch(root, q);
+                return;
+            }
+            if (globalThis.TVC_SearchPortal?.executePortalSearch && route?.direct && route.type !== 'catalog') {
+                await globalThis.TVC_SearchPortal.executePortalSearch(q);
+                return;
+            }
+            await runSearch(root, q);
         });
 
         root.querySelector('#storeCategoryFilter')?.addEventListener('change', e => {

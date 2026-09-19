@@ -1,5 +1,38 @@
 /* THE VESSEL CODE — Public IMPA catalog (no PMS login) */
 (function () {
+    async function applyQueryDirectAnswer(params) {
+        const q = String(params.get('q') || '').trim();
+        if (!q || !globalThis.TVC_SearchResolver?.classifyQuery) return false;
+
+        const route = globalThis.TVC_SearchResolver.classifyQuery(q);
+        if (!route.direct) return false;
+
+        if (route.type === 'impa') {
+            try {
+                let item = await TVC_StoreManager.getItemByCode(route.impa);
+                if (!item) {
+                    const search = await TVC_StoreManager.searchCatalog(route.impa, { limit: 8 });
+                    item = (search.items || []).find((i) => (i.impa_code || i.code) === route.impa);
+                }
+                if (item) {
+                    if (typeof TVC_MaritimeToolkit !== 'undefined') {
+                        TVC_MaritimeToolkit.setActiveTool('catalog');
+                    }
+                    TVC_StoreMenu.openImpaDetailModal(item);
+                    return true;
+                }
+            } catch (err) {
+                console.warn('[store-public] impa direct', err);
+            }
+        }
+
+        if (globalThis.TVC_SearchPortal?.executePortalSearch) {
+            await globalThis.TVC_SearchPortal.executePortalSearch(q);
+            return true;
+        }
+        return false;
+    }
+
     async function boot() {
         if (typeof TVC_StoreMenu === 'undefined') {
             const root = document.getElementById('storeMenuBody');
@@ -33,11 +66,14 @@
 
         const searchQ = params.get('q');
         if (searchQ && String(searchQ).trim()) {
-            if (typeof TVC_MaritimeToolkit !== 'undefined') {
-                TVC_MaritimeToolkit.setActiveTool('catalog');
+            const handled = await applyQueryDirectAnswer(params);
+            if (!handled) {
+                if (typeof TVC_MaritimeToolkit !== 'undefined') {
+                    TVC_MaritimeToolkit.setActiveTool('catalog');
+                }
+                await TVC_StoreManager.searchCatalog(String(searchQ).trim());
+                await TVC_StoreMenu.render();
             }
-            await TVC_StoreManager.searchCatalog(String(searchQ).trim());
-            await TVC_StoreMenu.render();
         }
 
         const impaCode = new URLSearchParams(window.location.search).get('impa');

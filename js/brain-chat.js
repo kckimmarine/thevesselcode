@@ -342,7 +342,12 @@
             if (!transcript) return;
             if (textInput) textInput.value = transcript;
             if (scope === 'hero') {
-                openModal(composeQuery('hero', textInput) || transcript);
+                const composed = composeQuery('hero', textInput) || transcript;
+                if (globalThis.TVC_SearchPortal?.executePortalSearch) {
+                    globalThis.TVC_SearchPortal.executePortalSearch(composed);
+                } else {
+                    openModal(composed, { briefing: true });
+                }
             } else if (typeof onAutoSubmit === 'function') {
                 onAutoSubmit(composeQuery('modal', textInput) || transcript);
             }
@@ -408,14 +413,18 @@
         }
     }
 
-    function openModal(query) {
+    function openModal(query, options) {
         const modal = ensureModal();
         modal.hidden = false;
         document.body.classList.add('tvc-brain-open');
         setConnectors(query);
         const card = modal.querySelector('.tvc-brain-card');
         if (card) card.focus();
-        askBrain(query);
+        askBrain(query, options);
+    }
+
+    function openBrainModal(query, options) {
+        openModal(query, options);
     }
 
     function closeModal() {
@@ -469,12 +478,15 @@
         return answer;
     }
 
-    async function askBrain(query) {
+    async function askBrain(query, options) {
         const q = String(query || '').trim();
         if (!q || state.loading) return;
         state.lastQuery = q;
         setConnectors(q);
         setLoading(true);
+
+        const briefing = options?.briefing === true
+            || globalThis.TVC_SearchResolver?.classifyQuery?.(q)?.briefing === true;
 
         try {
             const ctrl = new AbortController();
@@ -485,7 +497,7 @@
                 res = await fetch(API_PATH, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ query: q, lang: state.lang }),
+                    body: JSON.stringify({ query: q, lang: state.lang, briefing }),
                     signal: ctrl.signal,
                 });
             } catch (_) {
@@ -697,6 +709,7 @@
     window.TVC_BrainChat = {
         bindHeroForm,
         openModal,
+        openBrainModal,
         closeModal,
         askBrain,
     };

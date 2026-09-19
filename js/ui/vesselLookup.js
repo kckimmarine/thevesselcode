@@ -361,9 +361,10 @@
         global.TVC_VesselMapModal?.close?.();
     }
 
-    async function renderResults(container, vessels, message) {
+    async function renderResults(container, vessels, message, { singleDirect = false } = {}) {
         if (!container) return;
-        if (!vessels.length) {
+        const list = singleDirect && vessels.length ? vessels.slice(0, 1) : vessels;
+        if (!list.length) {
             container.classList.remove('hidden');
             container.innerHTML = message
                 ? `<p class="tvc-vessel-lookup-empty">${esc(message)}</p>`
@@ -373,7 +374,7 @@
         }
         const aisByImo = {};
         await Promise.all(
-            vessels.map(async (vessel) => {
+            list.map(async (vessel) => {
                 const imo = String(vessel.imo || vessel.i || '').replace(/\D/g, '');
                 if (imo.length !== 7) return;
                 const mmsi = String(vessel.mmsi || vessel.s || '').replace(/\D/g, '');
@@ -381,7 +382,23 @@
             })
         );
         container.classList.remove('hidden');
-        container.innerHTML = vessels.map((v) => renderVesselCard(v, aisByImo)).join('');
+        container.innerHTML = list.map((v) => renderVesselCard(v, aisByImo)).join('');
+    }
+
+    async function resolveDirectSearch(query) {
+        const Portal = global.TVC_SearchPortal;
+        const Resolver = global.TVC_SearchResolver;
+        if (!Portal?.executePortalSearch || !Resolver?.classifyQuery) return false;
+        const classification = Resolver.classifyQuery(query);
+        if (classification.type === 'vessel') {
+            await Portal.openTopVessel(query, classification);
+            return true;
+        }
+        if (classification.type !== 'impa' && classification.type !== 'brain' && classification.type !== 'toolkit') {
+            return false;
+        }
+        await Portal.executePortalSearch(query);
+        return true;
     }
 
     function bindResultsActions(container) {
@@ -406,6 +423,38 @@
 
         const minLen = Fleet?.MIN_QUERY_LEN || 3;
 
+        let _inputSeq = 0;
+
+        const runDirect = async (q) => {
+            const Resolver = global.TVC_SearchResolver;
+            const classification = Resolver?.classifyQuery?.(q);
+            if (classification && classification.type !== 'vessel' && classification.direct) {
+                await resolveDirectSearch(q);
+                return true;
+            }
+            if (!Fleet?.searchFleet) {
+                renderResults(results, [], 'Fleet index unavailable.');
+                return true;
+            }
+            results.classList.remove('hidden');
+            results.innerHTML = '<p class="tvc-vessel-lookup-empty">Searching fleet register…</p>';
+            try {
+                const hits = await Fleet.searchFleet(q);
+                if (!hits.length) {
+                    renderResults(results, [], 'No matching vessels in the TVC fleet register.');
+                    return true;
+                }
+                const singleDirect = Resolver?.shouldSuppressResultList?.(classification)
+                    || classification?.type === 'vessel'
+                    || hits.length === 1;
+                await renderResults(results, hits, null, { singleDirect: singleDirect || true });
+            } catch (err) {
+                renderResults(results, [], 'Fleet search failed. Try again.');
+                console.warn('[VesselLookup]', err);
+            }
+            return true;
+        };
+
         const run = () => {
             const q = input.value.trim();
             if (q.length < minLen) {
@@ -413,30 +462,19 @@
                 results.innerHTML = '';
                 return;
             }
-
-            if (!Fleet?.debouncedSearch) {
-                renderResults(results, [], 'Fleet index unavailable.');
-                return;
-            }
-
-            results.classList.remove('hidden');
-            results.innerHTML = '<p class="tvc-vessel-lookup-empty">Searching fleet register…</p>';
-
-            Fleet.debouncedSearch(q, (hits, err) => {
-                if (err) {
-                    renderResults(results, [], 'Fleet search failed. Try again.');
-                    console.warn('[VesselLookup]', err);
-                    return;
-                }
-                if (!hits.length) {
-                    renderResults(results, [], 'No matching vessels in the TVC fleet register.');
-                    return;
-                }
-                renderResults(results, hits, null);
+            const seq = ++_inputSeq;
+            runDirect(q).then(() => {
+                if (seq !== _inputSeq) return;
             });
         };
 
-        input.addEventListener('input', run);
+        input.addEventListener('keydown', (ev) => {
+            if (ev.key !== 'Enter') return;
+            ev.preventDefault();
+            const q = input.value.trim();
+            if (q.length < minLen) return;
+            runDirect(q);
+        });
 
         document.addEventListener('click', (ev) => {
             const wrap = document.getElementById('tvcVesselLookupWrap');
@@ -458,9 +496,11 @@
 
     const api = {
         renderVesselCard,
+        renderResults,
         init,
         openAisModal,
         closeAisModal,
+        resolveDirectSearch,
     };
 
     global.TVC_VesselLookup = api;

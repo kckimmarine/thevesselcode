@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const require = createRequire(import.meta.url);
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const { routeHeroQuery } = require(join(ROOT, 'js/home-hero-search.js'));
+const { routeHeroQuery, classifyQuery } = require(join(ROOT, 'js/services/searchResolver.js'));
 
 function check(name, cond) {
     if (!cond) throw new Error(name);
@@ -17,6 +17,8 @@ check('IMPA code → store', routeHeroQuery('791801').type === 'toolkit' && rout
 check('JIS spec → toolkit', routeHeroQuery('JIS 10K 50A').type === 'toolkit');
 check('54B formula → toolkit', routeHeroQuery('54B 0.985').type === 'toolkit');
 check('RPM hunting → brain', routeHeroQuery('Yanmar 6N21L RPM 헌팅 원인은?').type === 'brain');
+check('812101 → IMPA direct', classifyQuery('812101').type === 'impa' && classifyQuery('812101').impa === '812101');
+check('Yanmar hunting classify → brain', classifyQuery('Yanmar 6N21L RPM 헌팅').type === 'brain');
 check('boiler fault → brain', routeHeroQuery('보일러 착화 불량 조치').type === 'brain');
 check('long english → brain', routeHeroQuery('cargo pump mechanical seal leak troubleshooting').type === 'brain');
 
