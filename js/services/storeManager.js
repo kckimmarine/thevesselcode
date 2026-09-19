@@ -5,7 +5,7 @@ const TVC_StoreManager = (function () {
     const SEARCH_LIMIT = 60_000;
     const BROWSE_PREVIEW = 500;
     const SEARCH_TARGET_MS = 50;
-    const CATALOG_SOURCE_VERSION = '20260919-phase-e-53927';
+    const CATALOG_SOURCE_VERSION = '20260919-post-merge-refresh';
 
     const CHAPTER_CATEGORY = {
         '33': 'Safety Equipment',
@@ -227,7 +227,7 @@ const TVC_StoreManager = (function () {
         const sources = ['/data/impa-full.json', '/data/impa-catalog.json'];
         for (const url of sources) {
             try {
-                const res = await fetch(url, { cache: 'no-store' });
+                const res = await fetch(`${url}?v=${encodeURIComponent(CATALOG_SOURCE_VERSION)}`, { cache: 'no-store' });
                 if (!res.ok) continue;
                 const data = await res.json();
                 const rows = normalizeCatalogPayload(data);

@@ -92,6 +92,10 @@
     {
       "source": "/toolkit.html",
       "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+    },
+    {
+      "source": "/services/index.html",
+      "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
     }
   ]
 }
