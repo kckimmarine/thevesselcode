@@ -16,6 +16,23 @@ test.describe('TVC Brain marketing home', () => {
         await expect(modal).toBeHidden();
     });
 
+    test('iOS Safari banner shows Add to Home Screen steps (no fake Install)', async ({ browser }) => {
+        const context = await browser.newContext({
+            viewport: { width: 390, height: 844 },
+            userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
+        });
+        const page = await context.newPage();
+        await page.addInitScript(() => {
+            try { localStorage.removeItem('tvc-brain-a2hs-dismissed-v1'); } catch (_) { /* ignore */ }
+        });
+        await page.goto('/home/index.html', { waitUntil: 'domcontentloaded' });
+        const bar = page.locator('#tvcBrainA2hs');
+        await expect(bar).toBeVisible();
+        await expect(bar.locator('.tvc-brain-a2hs-steps')).toContainText(/홈 화면에 추가|Add to Home Screen/);
+        await expect(bar.locator('.tvc-brain-a2hs-install')).toHaveCount(0);
+        await context.close();
+    });
+
     test('hero voice and camera controls are present with touch targets', async ({ page }) => {
         await page.goto('/home/index.html', { waitUntil: 'domcontentloaded' });
         const voice = page.locator('#btn-voice-input');
