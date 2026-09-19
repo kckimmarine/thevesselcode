@@ -185,6 +185,29 @@ function langHint(lang) {
         : '사용자가 영어로 질문하지 않는 한 한국어로 답하라.';
 }
 
+/** @type {string[]} */
+const GEMINI_MODEL_FALLBACKS = [
+    'gemini-2.5-flash',
+    'gemini-2.0-flash',
+    'gemini-1.5-flash',
+    'gemini-1.5-flash-8b',
+];
+
+function normalizeGeminiModel(raw) {
+    let model = String(raw || '').trim();
+    if (model.startsWith('models/')) model = model.slice('models/'.length);
+    return model;
+}
+
+function buildGeminiModelList() {
+    const preferred = normalizeGeminiModel(process.env.GEMINI_MODEL || 'gemini-2.5-flash');
+    const list = [preferred];
+    for (const m of GEMINI_MODEL_FALLBACKS) {
+        if (m && !list.includes(m)) list.push(m);
+    }
+    return list;
+}
+
 function offlineFallbackAnswer(lang) {
     if (lang === 'EN') {
         return {
@@ -210,11 +233,35 @@ function offlineFallbackAnswer(lang) {
     };
 }
 
-async function callGemini(query, lang, extraSources) {
-    const key = String(process.env.GEMINI_API_KEY || '').trim();
-    if (!key) return null;
+function providerFailureAnswer(lang, detail) {
+    const detailLine = detail ? `\n\n**Technical:** ${detail}` : '';
+    if (lang === 'EN') {
+        return {
+            answer: [
+                '**Core conclusion:** TVC Brain could not reach the configured AI model (Gemini/OpenAI). Keys may be set, but the model name or API access failed.',
+                '',
+                '**Field steps:** In Vercel → Project → Settings → Environment Variables, verify `GEMINI_API_KEY` and set `GEMINI_MODEL` to `gemini-2.0-flash` if needed, or add `OPENAI_API_KEY` as fallback. IMPA·ASTM·JIS lookups remain available in the free Toolkit.',
+                '',
+                '**Safety & compliance:** Do not treat this message as engineering guidance; cross-check class, flag, and company SMS before any shipboard action.',
+                detailLine,
+            ].join('\n'),
+            sources: [{ label: 'TVC Toolkit', url: '/toolkit' }],
+        };
+    }
+    return {
+        answer: [
+            '**핵심 결론:** TVC Brain이 설정된 AI 모델(Gemini/OpenAI)에 연결하지 못했습니다. API 키는 있을 수 있으나 모델 이름·권한 오류일 수 있습니다.',
+            '',
+            '**현장 조치:** Vercel 프로젝트 → Settings → Environment Variables에서 `GEMINI_API_KEY`를 확인하고, `GEMINI_MODEL`을 `gemini-2.0-flash`로 지정하거나 `OPENAI_API_KEY`를 백업으로 추가하십시오. IMPA·ASTM·JIS는 무료 Toolkit에서 즉시 조회 가능합니다.',
+            '',
+            '**안전·법적 주의:** 본 메시지는 공학 지침이 아닙니다. 선급·국적·사 SMS와 반드시 교차 확인하십시오.',
+            detailLine,
+        ].join('\n'),
+        sources: [{ label: 'TVC Toolkit', url: '/toolkit' }],
+    };
+}
 
-    const model = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+async function callGeminiOnce(model, key, query, lang) {
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(key)}`;
 
     const res = await fetch(url, {
@@ -241,6 +288,7 @@ async function callGemini(query, lang, extraSources) {
         const text = await res.text();
         const err = new Error(`Gemini ${res.status}: ${text.slice(0, 400)}`);
         err.code = 'GEMINI_ERROR';
+        err.httpStatus = res.status;
         throw err;
     }
 
@@ -256,13 +304,34 @@ async function callGemini(query, lang, extraSources) {
         throw err;
     }
 
-    const sources = [{ label: 'THE VESSEL CODE Brain (Gemini)', provider: 'gemini', model }];
-    if (extraSources && extraSources.length) sources.push(...extraSources);
+    return answer;
+}
 
-    return {
-        answer,
-        sources,
-    };
+async function callGemini(query, lang, extraSources) {
+    const key = String(process.env.GEMINI_API_KEY || '').trim();
+    if (!key) return null;
+
+    const models = buildGeminiModelList();
+    let lastErr = null;
+
+    for (const model of models) {
+        try {
+            const answer = await callGeminiOnce(model, key, query, lang);
+            const sources = [{ label: 'THE VESSEL CODE Brain (Gemini)', provider: 'gemini', model }];
+            if (extraSources && extraSources.length) sources.push(...extraSources);
+            return { answer, sources };
+        } catch (err) {
+            lastErr = err;
+            const retryable = err.code === 'GEMINI_ERROR' && (err.httpStatus === 404 || err.httpStatus === 400);
+            if (retryable && models.indexOf(model) < models.length - 1) {
+                console.warn('[ask-brain] Gemini model failed, trying next', model, err.message || err);
+                continue;
+            }
+            throw err;
+        }
+    }
+
+    throw lastErr || new Error('Gemini routing failed');
 }
 
 async function callOpenAI(query, lang, extraSources) {
@@ -333,11 +402,16 @@ async function routeBrainQuery(query, lang) {
     }
 
     if (openaiKey) {
-        const out = await callOpenAI(queryForModel, lang, archiveSources);
-        if (out) return out;
+        try {
+            const out = await callOpenAI(queryForModel, lang, archiveSources);
+            if (out) return out;
+        } catch (openaiErr) {
+            console.error('[ask-brain] OpenAI failed', openaiErr.message || openaiErr);
+            throw openaiErr;
+        }
     }
 
-    return offlineFallbackAnswer(lang);
+    return providerFailureAnswer(lang, 'All configured providers returned empty.');
 }
 
 async function handler(req, res) {
@@ -354,10 +428,11 @@ async function handler(req, res) {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
+    let lang = 'KO';
     try {
         const body = await readJsonBody(req);
         const query = String(body.query || '').trim();
-        const lang = normalizeLang(body.lang);
+        lang = normalizeLang(body.lang);
 
         if (!query) {
             return res.status(400).json({ error: 'query is required', answer: '', sources: [] });
@@ -381,13 +456,23 @@ async function handler(req, res) {
         if (e.code === 'PAYLOAD_TOO_LARGE') {
             return res.status(413).json({ error: 'Payload too large', answer: '', sources: [] });
         }
-        const lang = normalizeLang();
-        const fallback = offlineFallbackAnswer(lang);
+        const geminiKey = String(process.env.GEMINI_API_KEY || '').trim();
+        const openaiKey = String(process.env.OPENAI_API_KEY || '').trim();
+        const detail = String(e.message || e).slice(0, 280);
+        const fallback = (geminiKey || openaiKey)
+            ? providerFailureAnswer(lang, detail)
+            : offlineFallbackAnswer(lang);
         return res.status(200).json({
-            answer: `${fallback.answer}\n\n_(Temporary routing error: ${String(e.message || e).slice(0, 200)})_`,
+            answer: fallback.answer,
             sources: fallback.sources,
         });
     }
 }
 
 module.exports = handler;
+module.exports._testing = {
+    normalizeGeminiModel,
+    buildGeminiModelList,
+    offlineFallbackAnswer,
+    providerFailureAnswer,
+};
