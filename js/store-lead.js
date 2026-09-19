@@ -14,10 +14,15 @@
 
     function persistAttribution() {
         try {
+            if (globalThis.TVC_Attribution?.capture) {
+                globalThis.TVC_Attribution.capture();
+            }
+            const attr = globalThis.TVC_Attribution?.get?.() || {};
             const payload = {
                 landing: storePath(),
-                referrer: document.referrer || '',
+                referrer: document.referrer || attr.referrer || '',
                 ts: Date.now(),
+                ...attr,
             };
             sessionStorage.setItem('tvc_inbound', JSON.stringify(payload));
         } catch { /* ignore */ }

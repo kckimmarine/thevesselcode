@@ -375,6 +375,14 @@
             en: 'Field engineering / superintendent support. Vessel, port, and scope:',
             ko: '현장 엔지니어링·감독 용역. 선박, 항구, 범위:',
         },
+        'contact.status.okRfq': {
+            en: 'Thank you — RFQ received. We aim to reply with pricing within 12 hours.',
+            ko: 'RFQ 접수되었습니다. 12시간 내 견적 회신을 목표로 합니다.',
+        },
+        'contact.rfqDraft.link': {
+            en: 'Open draft quotation (print / save PDF)',
+            ko: '견적 초안 열기 (인쇄 / PDF 저장)',
+        },
         'home.impa.title': { en: 'Popular Marine Stores & Critical Parts', ko: '인기 선용품 · 핵심 부품' },
         'home.impa.lead': {
             en: 'Tap a code — open the IMPA plate in the Toolkit viewer instantly.',
