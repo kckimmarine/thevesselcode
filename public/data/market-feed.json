@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-19T12:05:29.738Z",
+    "generatedAt": "2026-09-19T18:05:12.344Z",
     "benchmarkAsOf": "2026-09-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -200,6 +200,40 @@
   },
   "news": [
     {
+      "title": "World Running Short Of Supertankers Threatens Long-Haul Oil Flow",
+      "link": "https://gcaptain.com/world-running-short-of-supertankers-threatens-long-haul-oil-flow/",
+      "pubDate": "Sat, 19 Sep 2026 15:28:46 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By&#160;Yongchang Chin, Sherry Su, Nathan Risser and Alex Longley Sep 19, 2026 (Bloomberg) &#8211;The soaring cost of moving oil around the world is making some long-distance crude trades uneconomical, threatening...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-17T131826Z_1190888993_RC21LNA4S0NI_RTRMADP_3_SHIPPING-OIL-ROUTES-VLCC-800x530.jpg",
+      "en": {
+        "headline": "World Running Short Of Supertankers Threatens Long-Haul Oil Flow",
+        "summary": "By&#160;Yongchang Chin, Sherry Su, Nathan Risser and Alex Longley Sep 19, 2026 (Bloomberg) &#8211;The soaring cost of moving oil around the world is making some long-distance crude trades uneconomical, threatening...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "US, China Discuss Cutting Tariffs On US LNG Ahead Of Xi Visit",
+      "link": "https://gcaptain.com/us-china-discuss-cutting-tariffs-on-us-lng-ahead-of-xi-visit/",
+      "pubDate": "Sat, 19 Sep 2026 15:08:32 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By Jarrett Renshaw Sept 18 (Reuters) &#8211; The US and China are discussing a plan to reduce or eliminate China&#8217;s tariffs on American LNG as part of a broader package of energy...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-18T201224Z_1027585365_RC2WLNAKYI1S_RTRMADP_3_USA-TRUMP-LNG-CHINA-800x600.jpg",
+      "en": {
+        "headline": "US, China Discuss Cutting Tariffs On US LNG Ahead Of Xi Visit",
+        "summary": "By Jarrett Renshaw Sept 18 (Reuters) &#8211; The US and China are discussing a plan to reduce or eliminate China&#8217;s tariffs on American LNG as part of a broader package of energy...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "AI Error Nearly Triggered U.S. Intercept of Chinese Ship, CNN Reports",
       "link": "https://gcaptain.com/ai-error-nearly-triggered-u-s-intercept-of-chinese-ship-cnn-reports/",
       "pubDate": "Fri, 18 Sep 2026 19:30:47 +0000",
@@ -208,7 +242,7 @@
       "summary": "A false intelligence report produced with the help of artificial intelligence nearly led the U.S. military to intercept and board a Chinese ship in the Middle East during the war...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 16,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/10/shutterstock_2392448797.jpg",
       "en": {
         "headline": "AI Error Nearly Triggered U.S. Intercept of Chinese Ship, CNN Reports",
@@ -225,7 +259,7 @@
       "summary": "By Lori-Ann LaRocco &#8211; It’s a good time to be an ocean carrier or tanker owner. The slower trade caused by bottlenecks stemming from the U.S. war with Iran, Russia’s...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 18,
+      "hoursAgo": 23,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/10/shutterstock_721476064.jpg",
       "en": {
         "headline": "Shipping’s New Normal: Slower Trade, Higher Costs, Bigger Profits",
@@ -242,7 +276,7 @@
       "summary": "A liquefied natural gas tanker bringing fuel from the US to Europe suffered a systems failure that the crew reported as a suspected cyber attack, according to people familiar with the matter.",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 18,
+      "hoursAgo": 24,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/11/shutterstock_33420946.jpg",
       "en": {
         "headline": "Another Tanker Suffers Failure as Crew Suspect Cyber Attack",
@@ -259,7 +293,7 @@
       "summary": "London's marine insurance market has widened the area in the Black Sea it deems as ?high risk as the Ukraine-Russia conflict escalates, according to an advisory issued this week.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 19,
+      "hoursAgo": 25,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/09/2024-09-05T105023Z_1059962348_RC2NX5AEBTRZ_RTRMADP_3_UKRAINE-CRISIS-SUMMIT-800x534.jpg",
       "en": {
         "headline": "London&#8217;s Marine Insurers Widen Black Sea High Risk Zone as Shipping Attacks Surge",
@@ -276,7 +310,7 @@
       "summary": "WASHINGTON, Sept 18 (Reuters)&#160;&#8211;&#160;When President Donald Trump addressed the United Nations a year ago, he touted the US bombing of&#160;Iran’s nuclear sites just months earlier as &#8220;totally obliterating everything&#8221; and...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 19,
+      "hoursAgo": 25,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-08-21T184843Z_2860007_RC2RXGA1DJ3Z_RTRMADP_3_UN-BUDGET-USA.jpg",
       "en": {
         "headline": "Trump Returns to UN as Iran War Spreads Across Shipping Chokepoints",
@@ -293,7 +327,7 @@
       "summary": "A new burst of attacks on commercial shipping in the Strait of Hormuz is hitting just as Saudi Arabia is being forced to send more oil back through the waterway...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 19,
+      "hoursAgo": 25,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
       "en": {
         "headline": "Three Tanker Attacks Hit Hormuz as Saudi Oil Is Forced Back Toward Strait",
@@ -310,7 +344,7 @@
       "summary": "The United States has sanctioned an Iranian cryptocurrency exchange that Treasury says was used to move payments collected from ships transiting the Strait of Hormuz into Iran’s financial system. The...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 20,
+      "hoursAgo": 26,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
       "en": {
         "headline": "U.S. Sanctions Crypto Exchange Tied to Iran’s Hormuz Transit Payments",
@@ -327,7 +361,7 @@
       "summary": "Maersk has confirmed orders for 26 large containerships, ending days of speculation over a major fleet expansion programme. The Danish carrier said on Friday that all 26 ships will have capacity of 18,600 teu and will feature dual-fuel engines capable of operating on LNG. Deliver",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 21,
+      "hoursAgo": 27,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/08/Marie-Maersk-Christopher-Triggs-Marine-Traffic.jpg",
       "en": {
         "headline": "Maersk confirms 26-ship newbuilding spree",
@@ -344,7 +378,7 @@
       "summary": "US inland marine operator Turn Services has completed its acquisition of St. John Fleeting and its affiliated companies, expanding its barge operations on the Lower Mississippi River. The deal gives Turn Services control of St. John’s fleet site at around Mile Marker 140 near Res",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 26,
+      "hoursAgo": 32,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Turn-Services.jpg",
       "en": {
         "headline": "Turn Services takes over St. John Fleeting",
@@ -361,7 +395,7 @@
       "summary": "At least two liquefied natural gas shipments transited the Strait of Hormuz this week as producers look for ways to increase flows to a market struggling with a lack of supply and surging prices.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 26,
+      "hoursAgo": 32,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/06/Copy-of-6LNG-vessels-at-RLC-Port-ver2016-06-17-172118-937_LUCiD.jpg",
       "en": {
         "headline": "More LNG Getting Through Hormuz as Producers Push for Transits",
@@ -378,7 +412,7 @@
       "summary": "Turkey has presented Russia and Ukraine with a draft proposal aimed at ending attacks on commercial vessels in the Black Sea, the latest attempt to contain a maritime conflict that is taking an increasingly heavy toll on merchant shipping. Ankara has shared the text of a memorand",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 27,
+      "hoursAgo": 33,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/10/Ukraine-1.jpg",
       "en": {
         "headline": "Turkey pushes Black Sea truce",
@@ -395,7 +429,7 @@
       "summary": "Shipping people have long memories, and that might be the simplest explanation for why today’s extraordinary market feels nothing like the last great supercycle. Anyone who lived through the heady days of 2008 remembers how quickly the music stopped. The Baltic Dry Index peaked a",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 27,
+      "hoursAgo": 33,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/11/Monaco-champagne.jpg",
       "en": {
         "headline": "Why this shipping supercycle feels different",
@@ -412,7 +446,7 @@
       "summary": "The most extraordinary numbers this week came from tankers, where the Baltic Exchange’s Middle East Gulf-China VLCC benchmark broke through the equivalent of $1m a day for the first time. VLCCs loading outside the Gulf are earning close to a million a day too, suezmax and aframax",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 27,
+      "hoursAgo": 33,
       "imageUrl": "https://splash247.com/wp-content/uploads/2015/01/China-Merchants-New-vision-vlcc.jpg",
       "en": {
         "headline": "Splash Wrap: When the boom spills over",
@@ -429,45 +463,11 @@
       "summary": "The Dali casualty has become the largest single loss in the history of the P&#38;I market, with reserves now exceeding $2.8bn and the claim reaching a layer of the International Group’s insurance structure never previously tested by a casualty of this scale. Gallagher Specialty s",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 28,
+      "hoursAgo": 34,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/05/Dali22.jpg",
       "en": {
         "headline": "Dali becomes biggest P&#038;I loss in history",
         "summary": "The Dali casualty has become the largest single loss in the history of the P&#38;I market, with reserves now exceeding $2.8bn and the claim reaching a layer of the International Group’s insurance structure never previously tested by a casualty of this scale. Gallagher Specialty s",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Iran claims fresh Hormuz tanker strike, Italy readies Red Sea escorts",
-      "link": "https://splash247.com/iran-claims-fresh-hormuz-tanker-strike-italy-readies-red-sea-escorts/",
-      "pubDate": "Fri, 18 Sep 2026 07:22:30 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "Iran’s Revolutionary Guards said on Friday they had struck the Togo-flagged product tanker Trend after what Tehran described as an “illegal” attempt to transit Hormuz outside its approved passage system. The 7,119 dwt vessel was hit and stopped after a fire broke out onboard, acc",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 28,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/US-Navy-Epic-Fury-Iran.jpeg",
-      "en": {
-        "headline": "Iran claims fresh Hormuz tanker strike, Italy readies Red Sea escorts",
-        "summary": "Iran’s Revolutionary Guards said on Friday they had struck the Togo-flagged product tanker Trend after what Tehran described as an “illegal” attempt to transit Hormuz outside its approved passage system. The 7,119 dwt vessel was hit and stopped after a fire broke out onboard, acc",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Akrotiri Tankers makes gas shipping debut with VLAC pair",
-      "link": "https://splash247.com/akrotiri-tankers-makes-gas-shipping-debut-with-vlac-pair/",
-      "pubDate": "Fri, 18 Sep 2026 07:00:49 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Greek tanker newcomer Akrotiri Tankers is making its first move into gas shipping, ordering two very large ammonia carriers at China’s New Times Shipbuilding. Greek shipbuilding market sources say the company, led by Marielena Procopiou and Konstantinos Lampsias, has contracted t",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 29,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/New-Times-Shipbuilding.jpg",
-      "en": {
-        "headline": "Akrotiri Tankers makes gas shipping debut with VLAC pair",
-        "summary": "Greek tanker newcomer Akrotiri Tankers is making its first move into gas shipping, ordering two very large ammonia carriers at China’s New Times Shipbuilding. Greek shipbuilding market sources say the company, led by Marielena Procopiou and Konstantinos Lampsias, has contracted t",
         "source": "Splash247"
       }
     }
