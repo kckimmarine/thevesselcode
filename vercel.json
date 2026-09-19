@@ -58,6 +58,9 @@
     },
     "api/vessel-ais.js": {
       "includeFiles": "data/vessel-overrides.json"
+    },
+    "api/ask-brain.js": {
+      "includeFiles": "data/tvc-knowledge-base.json"
     }
   },
   "headers": [

@@ -832,11 +832,32 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
 }
 
 .home-hero-search-label {
-    margin: 22px 0 8px;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    margin: 22px 0 6px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.35;
+}
+
+.home-hero-search-subtitle {
+    margin: 0 0 10px;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    max-width: 42rem;
+}
+
+@media (max-width: 420px) {
+    .home-hero-search-label {
+        font-size: 0.76rem;
+    }
+
+    .home-hero-search-subtitle {
+        font-size: 0.82rem;
+    }
+
+    .home-hero-search-input {
+        font-size: 16px;
+    }
 }
 
 /* ── Core Capabilities ── */

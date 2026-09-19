@@ -30,7 +30,7 @@
 
     function t(key) {
         const ko = {
-            loading: '공무감독 브레인이 분석 중입니다…',
+            loading: 'TVC Maritime Intelligence가 분석 중입니다…',
             title: 'THE VESSEL CODE Brain',
             followUp: '추가 질문하기',
             followPlaceholder: '후속 질문을 입력하세요…',
@@ -46,7 +46,7 @@
             voiceError: '음성 인식에 실패했습니다. 다시 시도하십시오.',
         };
         const en = {
-            loading: 'Chief Engineer Brain is analyzing…',
+            loading: 'TVC Maritime Intelligence is analyzing…',
             title: 'THE VESSEL CODE Brain',
             followUp: 'Ask a follow-up',
             followPlaceholder: 'Type your follow-up question…',
