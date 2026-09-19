@@ -39,6 +39,7 @@
     "test:engineering-search": "node scripts/test-engineering-search.mjs",
     "verify:all-engineering": "node scripts/verify-all-engineering.mjs",
     "ingest:fleet": "node scripts/ingest-global-fleet.mjs",
+    "ingest:superintendent": "node scripts/ingest-gdrive-superintendent.mjs",
     "enrich:fleet": "node scripts/enrich-fleet-registry.mjs",
     "refresh:fleet-ais": "node scripts/refresh-fleet-ais-positions.mjs",
     "fleet:sync": "node scripts/run-fleet-sync.mjs",

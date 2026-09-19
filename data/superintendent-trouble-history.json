@@ -1,0 +1,5605 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-19T06:37:24.880Z",
+  "sourceRoot": "/workspace/data",
+  "cases": [
+    {
+      "id": "93e609c21f2abef8",
+      "equipment": "",
+      "symptoms": "PMS | Engine → Master | 1 | Engine (CE) | Case Report | {vessel}_casereport_engine_{date}_{seq}.zip | STATION_TO_HUB | O | - | - | - | X (1회, sync_status=SYNCED) | W/M/D/P/C 모두 Case Report ZIP 1개 (개별 defect/wp/postpone ZIP 없음 — Menu C 기준)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Data-Export-Import-Filename-Reference.xlsx"
+    },
+    {
+      "id": "32a6055e8432e066",
+      "equipment": "",
+      "symptoms": "PMS | Engine → Master → HQ | 2 | Master | Case Report | {vessel}_casereport_engine_{date}_{seq}.zip | SHIP_TO_HQ | - | O | - | - | X (Hub leg 1회) | W/M/D/P/C 모두 Case Report ZIP 1개 (개별 defect/wp/postpone ZIP 없음 — Menu C 기준)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Data-Export-Import-Filename-Reference.xlsx"
+    },
+    {
+      "id": "18c20c1e634cd8f2",
+      "equipment": "",
+      "symptoms": "PMS | HQ → Engine | 3 | HQ | Case Report Reply | {vessel}_casereport_engine_hq_{date}_{seq}.zip | HQ_TO_SHIP | O | - | O* | - | X | W/M/D/P/C 모두 Case Report ZIP 1개 (개별 defect/wp/postpone ZIP 없음 — Menu C 기준); *Engine Mode만",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Data-Export-Import-Filename-Reference.xlsx"
+    },
+    {
+      "id": "eb761892944405e1",
+      "equipment": "",
+      "symptoms": "PMS | Deck → Master | 1 | Deck (CO) | Case Report | {vessel}_casereport_deck_{date}_{seq}.zip | STATION_TO_HUB | O | - | - | - | X (1회, sync_status=SYNCED) | W/M/D/P/C 모두 Case Report ZIP 1개 (개별 defect/wp/postpone ZIP 없음 — Menu C 기준)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Data-Export-Import-Filename-Reference.xlsx"
+    },
+    {
+      "id": "296edeb71b63d4dd",
+      "equipment": "",
+      "symptoms": "PMS | Deck → Master → HQ | 2 | Master | Case Report | {vessel}_casereport_deck_{date}_{seq}.zip | SHIP_TO_HQ | - | O | - | - | X (Hub leg 1회) | W/M/D/P/C 모두 Case Report ZIP 1개 (개별 defect/wp/postpone ZIP 없음 — Menu C 기준)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Data-Export-Import-Filename-Reference.xlsx"
+    },
+    {
+      "id": "41f941694ce9116e",
+      "equipment": "",
+      "symptoms": "PMS | HQ → Deck | 3 | HQ | Case Report Reply | {vessel}_casereport_deck_hq_{date}_{seq}.zip | HQ_TO_SHIP | O | - | - | O* | X | W/M/D/P/C 모두 Case Report ZIP 1개 (개별 defect/wp/postpone ZIP 없음 — Menu C 기준); *Deck Mode만",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Data-Export-Import-Filename-Reference.xlsx"
+    },
+    {
+      "id": "fe7bd149ea77d681",
+      "equipment": "",
+      "symptoms": "Signing key saved. successMessage || 'Registry saved.' {var} {var} {var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6e1e474f24bfcb8a",
+      "equipment": "",
+      "symptoms": "Backup {var} now? Restore {var} from the selected backup? Current Master Data will be replaced. Cancel report editing?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c05391976c483ac0",
+      "equipment": "",
+      "symptoms": "Set company \"{var}\" to inactive? It stays in registry files but is hidden from active lists. Set vessel \"{var}\" to inactive? It stays in registry files but is hidden from active contract lists. Revert the last Running Hours update? Work Plan due dates will be recalculated.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ac6178ddd97f74a4",
+      "equipment": "",
+      "symptoms": "Save this Defect Report? Save this Work Report? Save this Work Permit?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "769e43e76ef66462",
+      "equipment": "BOILER",
+      "symptoms": "Enter company reply for {var} selected Work Report(s). New SPARE GROUP name (e.g. {n}. AUX BOILER):",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ebf6e8e12f21441c",
+      "equipment": "BOILER",
+      "symptoms": "Enter password to {var}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f8569f807dd39eeb",
+      "equipment": "BOILER",
+      "symptoms": "Incorrect password.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8c6050a7f3b247d3",
+      "equipment": "BOILER",
+      "symptoms": "Approve {var} Work Permit(s)?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "02e3ffd3d00ef183",
+      "equipment": "BOILER",
+      "symptoms": "Delete {var} Work Permit(s)?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "3b6de21f9d5f0dda",
+      "equipment": "BOILER",
+      "symptoms": "Message",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "1beb8b1797772f3d",
+      "equipment": "BOILER",
+      "symptoms": "_adminRelease.runBuild ? `Run full release build for v${version || '?'}?\\n\\nThis runs npm run release (a",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b33f3e4fe89edbf5",
+      "equipment": "BOILER",
+      "symptoms": "{var} report approved by company.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "640fe5b1c890d47c",
+      "equipment": "BOILER",
+      "symptoms": "Admin print module not loaded.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "62f2c1847a53422d",
+      "equipment": "BOILER",
+      "symptoms": "Admin registry module not loaded.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "269fb86359c01eff",
+      "equipment": "BOILER",
+      "symptoms": "Admin Release module not loaded.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "308e765407425db1",
+      "equipment": "BOILER",
+      "symptoms": "App Update module not loaded.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "801259b8f50c3c32",
+      "equipment": "BOILER",
+      "symptoms": "Control (permission) changes apply after administrator approval.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ba5ef9b7bdc58dde",
+      "equipment": "BOILER",
+      "symptoms": "e.message || String(e)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a87b53a51e262cd0",
+      "equipment": "BOILER",
+      "symptoms": "info.buildableMessage || 'Release build is not available in this environment.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0c8309c419fa111d",
+      "equipment": "No App Update loaded.",
+      "symptoms": "menuXferApplyAppUpdate",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6f12d3c320319678",
+      "equipment": "Release requires Electron Admin Mode (npm run electron:admin).",
+      "symptoms": "openAdminReleaseModal",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e54cf00c17c71ff7",
+      "equipment": "result.message",
+      "symptoms": "recordAdminDeployAndSave",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6716e3717536da9a",
+      "equipment": "result.message",
+      "symptoms": "persistAdminRegistry",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "93abef392b118357",
+      "equipment": "Seat license module not loaded.",
+      "symptoms": "openAdminSeatLicenseModal",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e5241598e9ecbd73",
+      "equipment": "Select a company in the left list first.",
+      "symptoms": "adminPrintContractDraft",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9cbc495a7f648a25",
+      "equipment": "Select a company to update deploy registry.",
+      "symptoms": "adminReleaseRun",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a9b652ac37a372c9",
+      "equipment": "Set company \"{…}\" to inactive? It stays in registry files but is hidden from active lists.",
+      "symptoms": "deactivateAdminCompany",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "aab7d4910f30ac62",
+      "equipment": "Set vessel \"{…}\" to inactive? It stays in registry files but is hidden from active contract lists.",
+      "symptoms": "deactivateAdminVessel",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ed40786d860f0a90",
+      "equipment": "Signing key saved.",
+      "symptoms": "adminSeatLicensePickKey",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6690e047e2cecec1",
+      "equipment": "successMessage || 'Registry saved.'",
+      "symptoms": "persistAdminRegistry",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "31486de86447ba07",
+      "equipment": "{…}: Only files up to 8 MB can be attached.",
+      "symptoms": "uploadVesselDocsAttachment",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e1f634370953bffa",
+      "equipment": "{…}: Only files up to 8 MB can be attached.",
+      "symptoms": "uploadWrAttachment",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "95ef3bda68f33914",
+      "equipment": "e.message || 'Attachment failed.'",
+      "symptoms": "uploadVesselDocsAttachment",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "76a3d22eda247553",
+      "equipment": "e.message || 'Could not read the file.'",
+      "symptoms": "uploadWrAttachment",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a48bd95bc2842fdd",
+      "equipment": "e.message || 'Download failed.'",
+      "symptoms": "download",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5b234c3d949680b3",
+      "equipment": "Pop-up blocked. Allow pop-ups to print or preview.",
+      "symptoms": "openListPrintWindow",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "527e2a9097332c4a",
+      "equipment": "Admin registry (admin/registry.json) load failed.",
+      "symptoms": "onLogin",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "44faac5433b1f9c8",
+      "equipment": "Cannot confirm {…}: other department ({…}) or permission denied.",
+      "symptoms": "histReportApproval",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "445cd8cfeb865fce",
+      "equipment": "e.message || 'Station access denied'",
+      "symptoms": "requirePermission",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "38e05f079691aac0",
+      "equipment": "Modify permission denied.",
+      "symptoms": "histModifyReport",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "887138ce0c01a645",
+      "equipment": "Permission denied: {…}",
+      "symptoms": "requirePermission",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f4706e4424098e5d",
+      "equipment": "Sign in required.",
+      "symptoms": "requirePermission",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9507224e29afbf39",
+      "equipment": "{…} {…} {…}",
+      "symptoms": "runMasterBackup",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ad8572abb01830aa",
+      "equipment": "{…} {…} exported to {…}.",
+      "symptoms": "menuXferExportMonthly",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "cdb9b902efae9256",
+      "equipment": "{…} data import complete{…}{…}",
+      "symptoms": "handleImport",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fd1301b1c3c67723",
+      "equipment": "{…} data was exported as a Captain Hub package.",
+      "symptoms": "handleStationExport",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0f0effafd19c7af2",
+      "equipment": "{…} data ZIP exported ({…}_{…}_PMS_EXPORT_…zip).",
+      "symptoms": "handleExport",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c8ce5dfcdbf3b1cd",
+      "equipment": "{…} Vessel: {…} {…}",
+      "symptoms": "onMasterRestoreFile",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7b67a3fc923cac65",
+      "equipment": "Admin Mode (tvc) only.",
+      "symptoms": "menuXferConfirmAppUpdateExport",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0b40d40a750ce858",
+      "equipment": "App Update exported. {…} Targets: {…} Send this ZIP to HQ/Vessel. Import → App Update → Install update.",
+      "symptoms": "menuXferConfirmAppUpdateExport",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "dcca898a8d5eab30",
+      "equipment": "App Update exported. {…} Version: {…} SKUs: {…} Send this shared ZIP to pool vessels → Import → Install update on each PC (HQ / Master / Engine / Deck).",
+      "symptoms": "adminAppUpdateRun",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e355654919281e91",
+      "equipment": "App Update module unavailable.",
+      "symptoms": "menuXferConfirmAppUpdateExport",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "09f7dfca7b810c01",
+      "equipment": "Backup {…} now?",
+      "symptoms": "runMasterBackup",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f03b47d8c6aa6579",
+      "equipment": "Backup module is not available.",
+      "symptoms": "openMasterBackupModal",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "620bee692eb77549",
+      "equipment": "Backup vessel ({…}) differs from current vessel ({…}). Restore anyway?",
+      "symptoms": "restoreBackup",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "626dee67f06c896c",
+      "equipment": "OWS",
+      "symptoms": "Company report data package created.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fdfe13e43ed799bc",
+      "equipment": "OWS",
+      "symptoms": "confirmMsg",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "553d7f26cdcfac99",
+      "equipment": "OWS",
+      "symptoms": "Data Export & Import requires Chief Officer (co), Chief Engineer (ce), or Captain.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "57bf48bfc420eb73",
+      "equipment": "OWS",
+      "symptoms": "e.message",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f139e8a05d5056f8",
+      "equipment": "OWS",
+      "symptoms": "e.message || 'Export failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7072a800cbc6d0e9",
+      "equipment": "OWS",
+      "symptoms": "e.message || e",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "26662e806d2bdf43",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Import failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fd928404261c1d14",
+      "equipment": "OWS",
+      "symptoms": "e.message || String(e)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fb31dc778cb5e694",
+      "equipment": "OWS",
+      "symptoms": "Export Approved HQ replies to Station separately from Submitted reports going to Company.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "266ad731c6f5ae85",
+      "equipment": "OWS",
+      "symptoms": "Exported {…} postpone {…} package(s) → {…}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "132548ce8d960ce5",
+      "equipment": "OWS",
+      "symptoms": "Import failed:",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ed595cac62a20c81",
+      "equipment": "OWS",
+      "symptoms": "isMasterHubMode() ? 'Select Deck or Engine first, then export Monthly Report to Company.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d9d7391d36a60ec9",
+      "equipment": "OWS",
+      "symptoms": "Monthly Report can export only when no report is still Reported / Draft. Open: W {…} · M {…} · D {…} · P {…} · C {…} Confirm them in Report History first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5022363f7d645a5a",
+      "equipment": "OWS",
+      "symptoms": "No permission for Data Export & Import.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a5cb107b309e92ea",
+      "equipment": "OWS",
+      "symptoms": "No permission for Data Import.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "3e2b32d9af8be244",
+      "equipment": "OWS",
+      "symptoms": "pmsMasterExcelDeniedMessage()",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "613d28e90dec4430",
+      "equipment": "OWS",
+      "symptoms": "Postpone package imported successfully.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7dbdd1bbc9a99838",
+      "equipment": "OWS",
+      "symptoms": "Release export complete. Folder: {…} Files: · {…} Company A → App Update ZIP · Company B → Setup.exe",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c18fae6d1542f9af",
+      "equipment": "OWS",
+      "symptoms": "Restore {…} from the selected backup? Current Master Data will be replaced.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "80104295ab4af333",
+      "equipment": "OWS",
+      "symptoms": "result.message || (result.status === 'SCAFFOLD' ? 'Online sync is scaffolded — use offline ZIP for now.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8a6a870e5366020c",
+      "equipment": "OWS",
+      "symptoms": "Seat license saved. {…} SKU: {…} Expires: {…} Send this file to the crew → Import seat license on their PC.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a3621a0fe4d01715",
+      "equipment": "OWS",
+      "symptoms": "Select a vessel in Fleet first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "98120ba24a6e394e",
+      "equipment": "OWS",
+      "symptoms": "Select an import type first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5a9fad1ee4db6022",
+      "equipment": "OWS",
+      "symptoms": "Select at least one export option.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "caee5df419f018fd",
+      "equipment": "OWS",
+      "symptoms": "Select at least one Monthly Report to export.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "49ed6641e6964c3c",
+      "equipment": "OWS",
+      "symptoms": "Setup export module not loaded.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "942da567acf1e91f",
+      "equipment": "OWS",
+      "symptoms": "Start date cannot be after end date.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b623e96bddb429d8",
+      "equipment": "OWS",
+      "symptoms": "Station data merge complete.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0d88a70b477de164",
+      "equipment": "OWS",
+      "symptoms": "Station merge import requires Vessel Mode — Master (captain account).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c8c33d964f46acd6",
+      "equipment": "OWS",
+      "symptoms": "Vessel Profile Export is available in HQ Mode only.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d39a1b45fcc50eb4",
+      "equipment": "OWS",
+      "symptoms": "Vessel Profile exported. {…} Send this ZIP to the ship → Import → Vessel Profile.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5828d0eb0936bfea",
+      "equipment": "OWS",
+      "symptoms": "Vessel Profile module is unavailable.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "37264c3ad73c1651",
+      "equipment": "OWS",
+      "symptoms": "{…} {…} Case Report(s) ({…}) to {…}{…}?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e6d4021f62fb9851",
+      "equipment": "OWS",
+      "symptoms": "{…} approval removed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ec630b0bbbf91286",
+      "equipment": "OWS",
+      "symptoms": "{…} defect report approved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2e2f408bb95835da",
+      "equipment": "OWS",
+      "symptoms": "{…} defect report confirmed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ec630b67cb759b16",
+      "equipment": "OWS",
+      "symptoms": "{…} defect report unconfirmed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "57a8b53baf3c7e66",
+      "equipment": "OWS",
+      "symptoms": "{…} report(s) confirmed",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0320614ea7084196",
+      "equipment": "OWS",
+      "symptoms": "{…}: {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2cbc2fad473b261e",
+      "equipment": "OWS",
+      "symptoms": "{…}: Only files up to 8 MB can be attached.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8e1d0fd8e025f701",
+      "equipment": "OWS",
+      "symptoms": "Approve is available in HQ mode only.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "cc8754669f56558e",
+      "equipment": "OWS",
+      "symptoms": "Approved items cannot be unconfirmed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d19392e6c6b392ab",
+      "equipment": "OWS",
+      "symptoms": "Cancel report editing?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0f40c92175a99bf7",
+      "equipment": "OWS",
+      "symptoms": "Cannot delete in this status.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a82b1bb334db8985",
+      "equipment": "OWS",
+      "symptoms": "Cannot modify Approved or Submitted items.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0378661503312a98",
+      "equipment": "OWS",
+      "symptoms": "Case not found.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "4d14536bb3641b8e",
+      "equipment": "OWS",
+      "symptoms": "Check one or more Reported items to confirm.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2c4cc9ccfe51e913",
+      "equipment": "OWS",
+      "symptoms": "Company reply saved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b26d12a16ecdafcb",
+      "equipment": "OWS",
+      "symptoms": "Completion package created: {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2381f833ce3a7984",
+      "equipment": "OWS",
+      "symptoms": "Confirm {…} defect report(s)?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "659433706b99cf88",
+      "equipment": "OWS",
+      "symptoms": "Confirm required before Approve.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0b6dced20c06f134",
+      "equipment": "OWS",
+      "symptoms": "Defect package created: {…} Attach ZIP to email or import at HQ.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0a1c3025b05d77ef",
+      "equipment": "OWS",
+      "symptoms": "Defect package imported successfully.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "879aba576131a6d2",
+      "equipment": "OWS",
+      "symptoms": "Defect Report not found.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ae9880ed4ab1629b",
+      "equipment": "OWS",
+      "symptoms": "Defect Report saved ({…} jobs).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "4b59117aa9d8d13a",
+      "equipment": "OWS",
+      "symptoms": "Defect Report saved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "4aad6f7c6405738d",
+      "equipment": "OWS",
+      "symptoms": "Delete {…} defect report(s)?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a9006a91237e495f",
+      "equipment": "OWS",
+      "symptoms": "Delete defect report {…}?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d57e89fdc6debc42",
+      "equipment": "OWS",
+      "symptoms": "e.message || 'Could not read the file.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9a165230480ac654",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Approval failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f85227235985be3b",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Approve failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d47168bd29038a5a",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Confirm failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "20c1986db4cf6ffa",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Delete failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fe6f98fc249ea1dc",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'HQ reply failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d10c3208f603d80c",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Phase 4 close failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "cc92e4f2c29268a3",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Phase 3 save failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d80dd1f9396ae92c",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Save failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "73d456f3449f4968",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Start work failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "3508db2e8469c9ba",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Submit failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "820400a8b5ea4561",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Unapprove failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ffa35e5e8cf226f4",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Unconfirm failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0591031cd466e5ad",
+      "equipment": "OWS",
+      "symptoms": "Exported {…} Case Report(s) ({…}) → {…}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "715bdfbc033b7227",
+      "equipment": "OWS",
+      "symptoms": "Exported {…} defect report(s) → {…}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8ec04964bd95c00e",
+      "equipment": "OWS",
+      "symptoms": "Items from another department cannot be included in the same Defect Report.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6a0eb8f249e2f2f2",
+      "equipment": "OWS",
+      "symptoms": "menuXferCaseIsVesselReview() ? 'No confirmed Case Reports to export.' : 'No approved Cas",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0f466ed76d018bca",
+      "equipment": "OWS",
+      "symptoms": "menuXferCaseIsVesselReview() ? 'Select at least one confirmed Case Report.' : 'Select at",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8c03ef6bc1aa6766",
+      "equipment": "OWS",
+      "symptoms": "Modify permission denied.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "07d00dbcdc0ba947",
+      "equipment": "OWS",
+      "symptoms": "No delete permission or item is Submitted / Approved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c206f892c024f698",
+      "equipment": "OWS",
+      "symptoms": "No permission to approve Defect Report.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c2c7282333c27007",
+      "equipment": "OWS",
+      "symptoms": "No permission to export Case Reports.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "73f9640f6f25a9e3",
+      "equipment": "OWS",
+      "symptoms": "Only Captain / Chief Engineer can delete Confirmed items.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "64b87c328ab7210b",
+      "equipment": "OWS",
+      "symptoms": "Only Captain / Chief Engineer can edit Ship's Comments in Submitted or Approved status.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ccd8683cfa091302",
+      "equipment": "OWS",
+      "symptoms": "Only Captain / Chief Engineer can modify Confirmed items.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "46665708ee19aa6d",
+      "equipment": "OWS",
+      "symptoms": "Only Reported items can be confirmed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "09ba550a61e3ebc5",
+      "equipment": "OWS",
+      "symptoms": "Only SUBMITTED items awaiting HQ review can be confirmed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "afb66cafd5280d6a",
+      "equipment": "OWS",
+      "symptoms": "Other department items cannot be reported.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b49e8427330bdbe8",
+      "equipment": "OWS",
+      "symptoms": "Phase 4 — Case closed by Company D.P.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c5cfbb01c327356b",
+      "equipment": "OWS",
+      "symptoms": "Phase 4 — Company inspection comments saved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f0f28775223b078f",
+      "equipment": "OWS",
+      "symptoms": "Phase 3 — Completion reported to Company.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2451e0007f71b3c3",
+      "equipment": "OWS",
+      "symptoms": "Save this Defect Report?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "01b8199e99a346ae",
+      "equipment": "OWS",
+      "symptoms": "Select a job first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0f3c2bd3dfe2405a",
+      "equipment": "OWS",
+      "symptoms": "Select a job or check one or more rows.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8a4683998d35dfa5",
+      "equipment": "OWS",
+      "symptoms": "Select a vessel first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d9bdc5dc92490df6",
+      "equipment": "OWS",
+      "symptoms": "Select an item from the Defect Report list.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "82d3781efc314cb2",
+      "equipment": "OWS",
+      "symptoms": "Select item(s) to delete.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6ab2327ec767bbaa",
+      "equipment": "OWS",
+      "symptoms": "Select PMS Group No. first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "4a52fef7ac60cb33",
+      "equipment": "OWS",
+      "symptoms": "Select Reported defect report(s) that can be confirmed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "680ce7c2f31e9dd5",
+      "equipment": "OWS",
+      "symptoms": "Selected jobs belong to different PMS groups. Check jobs in one group only.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "90976e99b08b3158",
+      "equipment": "OWS",
+      "symptoms": "Ship verification saved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9c6c6c85134d35ba",
+      "equipment": "OWS",
+      "symptoms": "Ship\\'s Comments saved.{…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "65059922a4351c64",
+      "equipment": "OWS",
+      "symptoms": "Sign in required.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "818bd48d7c2c8e5d",
+      "equipment": "OWS",
+      "symptoms": "Submitted or Approved reports cannot be deleted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "467ee52f5350725c",
+      "equipment": "OWS",
+      "symptoms": "Submitted to Company (URGENT). Create Urgent Export package now? (ZIP + printable HTML for email)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c3dd0afad92beb11",
+      "equipment": "OWS",
+      "symptoms": "{…} item(s) approved",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "11b10665cf836b12",
+      "equipment": "OWS",
+      "symptoms": "{…} item(s) confirmed",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "03361e2bc60f88bd",
+      "equipment": "OWS",
+      "symptoms": "{…} report unconfirmed. (Returned to Reported)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "22c7e60345b0b4a6",
+      "equipment": "OWS",
+      "symptoms": "{…}: Already approved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9fe43fe90a097b04",
+      "equipment": "OWS",
+      "symptoms": "{…}: Cannot confirm in this status.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ce3d8ef785664eb2",
+      "equipment": "OWS",
+      "symptoms": "Approve {…}?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "06bce87deee573e7",
+      "equipment": "OWS",
+      "symptoms": "APPROVED",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7163144312af29aa",
+      "equipment": "OWS",
+      "symptoms": "approveErr.message || approveErr.code || 'Approve failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "1ee132979b79de3f",
+      "equipment": "OWS",
+      "symptoms": "Build complete. Artifacts are in dist/ and release/.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ef3c95ea7e624bed",
+      "equipment": "OWS",
+      "symptoms": "Check one or more Reported items to approve.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "269598a949ada030",
+      "equipment": "OWS",
+      "symptoms": "Confirm {…}?{…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "64349d3b8d495086",
+      "equipment": "OWS",
+      "symptoms": "Confirmed",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c1298730c20f96e4",
+      "equipment": "OWS",
+      "symptoms": "Confirmed & stock deducted",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0fe29caf59132bbe",
+      "equipment": "OWS",
+      "symptoms": "Confirmed reports can be deleted by Captain / Chief Engineer only.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7c9ea8862f513556",
+      "equipment": "OWS",
+      "symptoms": "e.message || 'An error occurred while saving Original Plan.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c7c653c33bc9153e",
+      "equipment": "OWS",
+      "symptoms": "e.message || 'Apply failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "926a31dc576c8865",
+      "equipment": "OWS",
+      "symptoms": "e.message || 'Could not open Documents.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b61e39c897b7e198",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e8d7d4aff8f06528",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Confirm required before Approve.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a2c93adf1a7c144d",
+      "equipment": "OWS",
+      "symptoms": "Each tab is a separate report. Unsaved input on this tab is not kept. Switch report type?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "03d721773b34b0bf",
+      "equipment": "OWS",
+      "symptoms": "Enter password to {…}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "88b92e64a8d000b5",
+      "equipment": "OWS",
+      "symptoms": "Failed to load Work History.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a57b36bfff75b1cf",
+      "equipment": "OWS",
+      "symptoms": "getOriginalPlanLockMessage(getPlanLockDept()) || 'Original Plan Update is not available.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "072f1750aadfc699",
+      "equipment": "OWS",
+      "symptoms": "HQ-approved (APPROVED) reports cannot be deleted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0589afdd3dfa0dbd",
+      "equipment": "OWS",
+      "symptoms": "Incorrect password.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "99f38f8b6c2732b7",
+      "equipment": "OWS",
+      "symptoms": "msg",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0b1687c8513489e7",
+      "equipment": "OWS",
+      "symptoms": "No items available to approve.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "40ed5f8d45da19c2",
+      "equipment": "OWS",
+      "symptoms": "No items available to confirm.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fab85bda8e181ef0",
+      "equipment": "OWS",
+      "symptoms": "No permission to approve Postpone Report.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e7478ae50690c13b",
+      "equipment": "OWS",
+      "symptoms": "No permission to approve Work Plan.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2231a00e68cc3c85",
+      "equipment": "OWS",
+      "symptoms": "No permission to confirm this report.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5081d312343891ef",
+      "equipment": "OWS",
+      "symptoms": "No Vessel Profile to apply.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "1b69fe6084c30351",
+      "equipment": "OWS",
+      "symptoms": "origPlanEditDeniedMessage()",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e3bf2ef24a5fe0ab",
+      "equipment": "OWS",
+      "symptoms": "Other department ({…}) reports cannot be confirmed. Scope: {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e33658c517559013",
+      "equipment": "OWS",
+      "symptoms": "Other department items cannot be approved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6b80f58c2cd4a3a3",
+      "equipment": "OWS",
+      "symptoms": "Print is not available on this tab.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "25a880801ea256bf",
+      "equipment": "OWS",
+      "symptoms": "Report not found.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8429af1d2570e4a7",
+      "equipment": "OWS",
+      "symptoms": "REPORTED submitted",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c0b9c90410aac9b2",
+      "equipment": "OWS",
+      "symptoms": "result.error || 'Install failed.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7d2a6d4a97454ce1",
+      "equipment": "OWS",
+      "symptoms": "result.message || 'Installer launched.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "743bd60b6c0efff3",
+      "equipment": "OWS",
+      "symptoms": "Saved",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "bb2dd2a8279e657b",
+      "equipment": "OWS",
+      "symptoms": "Select a department (Deck / Engine).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7cc3c65a61884287",
+      "equipment": "OWS",
+      "symptoms": "Select an item from Work History.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0d73a08ded675bae",
+      "equipment": "OWS",
+      "symptoms": "Some selected items cannot be approved. Check Reported status and HQ approval permission.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f2ab13b5e4146c9f",
+      "equipment": "OWS",
+      "symptoms": "Some selected items cannot be confirmed. Check Engine (C/E), Deck (C/O), Master (Captain), or HQ permission.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7ce4eefbc18614a0",
+      "equipment": "OWS",
+      "symptoms": "Submitted reports cannot be deleted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e3b7bc1c8c0e0069",
+      "equipment": "OWS",
+      "symptoms": "This account is restricted to the",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6c8bb2de41da1ecf",
+      "equipment": "OWS",
+      "symptoms": "Update Work Plan requires Chief Engineer, Chief Officer, or Captain permission.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2e60cb8cfc353132",
+      "equipment": "OWS",
+      "symptoms": "Vessel Profile applied. {…} IMO: {…} Delivery: {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9ca4a5e8b7e7f6c7",
+      "equipment": "OWS",
+      "symptoms": "wasModify ? (reportIsApproved(finalRep) ? `${WR_TABS[tab]} report saved and approved",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7296841f816d5bfb",
+      "equipment": "OWS",
+      "symptoms": "Work Procedure saved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9df39ee3fac4188a",
+      "equipment": "OWS",
+      "symptoms": "workProcedureEditDeniedMessage()",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "acbcdf12f65980df",
+      "equipment": "OWS",
+      "symptoms": "{…} — \"{…}\" Delete this maintenance item?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f97783d2fbf0e16a",
+      "equipment": "OWS",
+      "symptoms": "{…} Item added.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "78ebcda0c4406b23",
+      "equipment": "OWS",
+      "symptoms": "{…} item deleted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "651052325929c85b",
+      "equipment": "OWS",
+      "symptoms": "{…} Item updated.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "98e812b8c4744b8a",
+      "equipment": "OWS",
+      "symptoms": "{…} report approved by company.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2971e411a5b3b45c",
+      "equipment": "OWS",
+      "symptoms": "A GROUP with the same name already exists in this department.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a568cea16b9920dd",
+      "equipment": "OWS",
+      "symptoms": "Cannot delete: {…} maintenance job(s) in this group.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "1be84654ad72c3ab",
+      "equipment": "OWS",
+      "symptoms": "Chief Engineer / Captain permission required.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2d8063802d2e18b1",
+      "equipment": "OWS",
+      "symptoms": "e.message || 'This report cannot be deleted.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5fe5fab793795827",
+      "equipment": "OWS",
+      "symptoms": "e.message || code",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2fb2bc5530474628",
+      "equipment": "OWS",
+      "symptoms": "e.message || code || 'Delete failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f9a4bee64f5cde40",
+      "equipment": "OWS",
+      "symptoms": "e.message || code || 'Save failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6158d380a0608a79",
+      "equipment": "OWS",
+      "symptoms": "Enter a GROUP name.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ba8973c71d8d0bbd",
+      "equipment": "OWS",
+      "symptoms": "Enter company reply for {…} selected Work Report(s).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8835613e1c47f366",
+      "equipment": "OWS",
+      "symptoms": "Enter Job Code.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "71c4bd3ae7da2b7d",
+      "equipment": "OWS",
+      "symptoms": "Enter Postpone Date.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8bcedcb4a0f9af3a",
+      "equipment": "OWS",
+      "symptoms": "Exported {…} Maintenance Report(s) → {…}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f8776a5f52e5c89b",
+      "equipment": "OWS",
+      "symptoms": "GROUP \"{…}\" was added.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "26584866277eeb14",
+      "equipment": "OWS",
+      "symptoms": "Group deleted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "3e47e0406392cbc9",
+      "equipment": "OWS",
+      "symptoms": "GROUP renamed to \"{…}\".",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b01f93e2a5d8202a",
+      "equipment": "OWS",
+      "symptoms": "Import complete{…} Jobs: {…} rows (new {…}, updated {…}, CODE changed {…}){…}{…}{…}{…}{…}{…}{…}{…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d26b248221b8930c",
+      "equipment": "OWS",
+      "symptoms": "Import PMS Master Excel? {…} Excel will replace Group, Equipment, and Jobs. Jobs removed from the sheet will be deleted (jobs linked to a Work Report keep a temporary CODE). Recommended: Database Backup before Import. Continue?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "97280f5e082c5216",
+      "equipment": "OWS",
+      "symptoms": "isShipConfirmed ? 'Work Report deleted. Stock and dates were restored.' : 'Work Report d",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5d118c2e43b4947c",
+      "equipment": "OWS",
+      "symptoms": "Items from another department cannot be included in the same Work Report.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5476ae3652727720",
+      "equipment": "OWS",
+      "symptoms": "Job item not found.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "af9c4ade70ee8166",
+      "equipment": "OWS",
+      "symptoms": "Job not found.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a75351ab6228dc45",
+      "equipment": "OWS",
+      "symptoms": "Loaded {…} jobs",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a2292902146aa371",
+      "equipment": "OWS",
+      "symptoms": "No confirmed Work Reports ready to export. Confirm reports in Work History first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6ec00fdf15c0ae47",
+      "equipment": "OWS",
+      "symptoms": "No jobs selected.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8b29401bcb0cffbc",
+      "equipment": "OWS",
+      "symptoms": "Other department reports cannot be deleted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7a46b5df92e87a3d",
+      "equipment": "OWS",
+      "symptoms": "planContextCheckedJobIds().length > 1 ? 'Check exactly one job to delete.' : 'Select a j",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "243c5fd2e7544f94",
+      "equipment": "OWS",
+      "symptoms": "planContextCheckedJobIds().length > 1 ? 'Check exactly one job to modify.' : 'Select a j",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "96cf94fc6c11c4c2",
+      "equipment": "OWS",
+      "symptoms": "PMS Master Export is not available.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "cbab58f1e56204aa",
+      "equipment": "OWS",
+      "symptoms": "PMS Master Import is not available.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "83dcbc7d10b35576",
+      "equipment": "OWS",
+      "symptoms": "Save this Work Report?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "99b7605f88907109",
+      "equipment": "OWS",
+      "symptoms": "Select a group in PMS GROUP Tree.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2b49fb2db9dd241f",
+      "equipment": "OWS",
+      "symptoms": "Select a group to delete.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "419a68634dbab8ab",
+      "equipment": "OWS",
+      "symptoms": "Select a GROUP.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "385c1114aa1da7ee",
+      "equipment": "OWS",
+      "symptoms": "Select a job in Work Plan.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b0ed4f489583616f",
+      "equipment": "OWS",
+      "symptoms": "Select at least 2 jobs for Work Report.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6bd2a1594583fa17",
+      "equipment": "OWS",
+      "symptoms": "tab === 'postpone' ? `Postpone report saved (${codedItems.length} jobs, ${status})`",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d84c0148d30d4b1e",
+      "equipment": "OWS",
+      "symptoms": "This group cannot be deleted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e976440f93153105",
+      "equipment": "OWS",
+      "symptoms": "TVC_WorkReport.postponeDateRangeMessage(check)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e662146a24c27891",
+      "equipment": "OWS",
+      "symptoms": "Work Report could not be displayed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f39659a9ef73f70a",
+      "equipment": "OWS",
+      "symptoms": "Work Report not found in the current view.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "356a891890e73406",
+      "equipment": "OWS",
+      "symptoms": "calcError.message || 'An error occurred while calculating Original Plan.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "4c01771d26efb1e3",
+      "equipment": "OWS",
+      "symptoms": "Complete Running Hours Update first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0cc45bf369bb554c",
+      "equipment": "OWS",
+      "symptoms": "Monthly prep: {…} unfinished Work History item(s)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ec45fe16e69588cf",
+      "equipment": "OWS",
+      "symptoms": "No update record to revert.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2ea63f91ced77f46",
+      "equipment": "OWS",
+      "symptoms": "Revert the last Running Hours update? Work Plan due dates will be recalculated.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "3fd632f80e7d85ed",
+      "equipment": "OWS",
+      "symptoms": "rhEditLockTip()",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "1390ab9e0e3d3c3d",
+      "equipment": "OWS",
+      "symptoms": "Running Hours update is already complete. Use Revert to update again.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "614c13e79d1d0bca",
+      "equipment": "OWS",
+      "symptoms": "Running Hours update reverted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "98835cdc82a24228",
+      "equipment": "OWS",
+      "symptoms": "Running Hours updated · {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f09bbff79873780e",
+      "equipment": "OWS",
+      "symptoms": "{msg}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "53c9ee38b3335a2e",
+      "equipment": "OWS",
+      "symptoms": "{…} — select a group to edit first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ab27da4660022a12",
+      "equipment": "OWS",
+      "symptoms": "{…} Import accepts .xls, .xlsx, or .csv files only.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "cc41181841d3d65e",
+      "equipment": "OWS",
+      "symptoms": "{…} non-{…} item(s) will be skipped ({…}). Export {…} {…}?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "05eaacab7b2429e9",
+      "equipment": "OWS",
+      "symptoms": "{…} part(s) added to requisition.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "07063fccc546cdfc",
+      "equipment": "OWS",
+      "symptoms": "{…} part(s) deleted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "4677456cd70b67ce",
+      "equipment": "OWS",
+      "symptoms": "{…} Proceed anyway?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8f43b81716176f6c",
+      "equipment": "OWS",
+      "symptoms": "{…} recorded — {…} item(s)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d62da0fb8cc46cf3",
+      "equipment": "OWS",
+      "symptoms": "Applied: {…}/{…} · DB {…}/{…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "447b6a440b39d265",
+      "equipment": "OWS",
+      "symptoms": "Approval removed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "246ab7169dcd49c4",
+      "equipment": "OWS",
+      "symptoms": "Approved {…} log(s).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "39ec911070a82898",
+      "equipment": "OWS",
+      "symptoms": "Approved {…} log(s). Skipped {…} (not Confirmed or no permission).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "bc65047c1d0eba05",
+      "equipment": "OWS",
+      "symptoms": "Approved {…} requisition(s).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c7c0faa547ac903e",
+      "equipment": "OWS",
+      "symptoms": "Approved {…} requisition(s). Skipped {…} (not Submitted/Evaluating or no permission).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ee0d4bb4eba0977d",
+      "equipment": "OWS",
+      "symptoms": "Approved by Company.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "480969933aacd711",
+      "equipment": "OWS",
+      "symptoms": "Approved by Superintendent.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c144e299fdbb23f1",
+      "equipment": "OWS",
+      "symptoms": "Assessment applied — {…} item(s)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "3906abdda0819fe5",
+      "equipment": "OWS",
+      "symptoms": "Automatic Import is not available in file:// mode.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "356c3dd682ad1a2d",
+      "equipment": "OWS",
+      "symptoms": "BOM linked: {…} · qty {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "73d2217f288ad956",
+      "equipment": "OWS",
+      "symptoms": "Cancel editing?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0111dfba377fe5a2",
+      "equipment": "OWS",
+      "symptoms": "Cancel this requisition?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d71a3d5d8edb5b22",
+      "equipment": "OWS",
+      "symptoms": "Cannot confirm this requisition. Only Reported requisitions can be confirmed with Chief Engineer / Captain permission.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "36987cd571ca44c3",
+      "equipment": "OWS",
+      "symptoms": "Cannot delete: {…} spare part(s) in this group.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "428e84b4a83f7823",
+      "equipment": "OWS",
+      "symptoms": "Cannot delete: spare parts exist in this group.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2a5b8e89e90a83bc",
+      "equipment": "OWS",
+      "symptoms": "Cannot load the inventory file.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0bbbd64a533db60f",
+      "equipment": "OWS",
+      "symptoms": "Cannot open Work Report screen.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "83001c196b3dce34",
+      "equipment": "OWS",
+      "symptoms": "Check one or more approvable Consumption logs to approve.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "61c4ed2ac1128a3a",
+      "equipment": "OWS",
+      "symptoms": "Check one or more approvable requisitions to approve.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "1505836dc3e4547a",
+      "equipment": "OWS",
+      "symptoms": "Check one or more consumption logs to delete.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5ac8f0f0d61bbde1",
+      "equipment": "OWS",
+      "symptoms": "Check one or more Reported logs to confirm.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "adacfff54a8094ba",
+      "equipment": "OWS",
+      "symptoms": "Check one or more Reported requisitions to confirm.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6bf6bd128c6fa81c",
+      "equipment": "OWS",
+      "symptoms": "Check one or more requisitions to delete.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e690dbe8c68b52b7",
+      "equipment": "OWS",
+      "symptoms": "Complete {…} first: export quotation ZIP before importing vendor quote.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5a7c7522314e1cd3",
+      "equipment": "OWS",
+      "symptoms": "Complete {…} first: select vendor, currency, and check at least one item.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f1db4770a67f6fb0",
+      "equipment": "OWS",
+      "symptoms": "Complete Evaluation (Eval column) first: {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b9edb04b583fea2c",
+      "equipment": "OWS",
+      "symptoms": "Complete Evaluation first before Purchase Order.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0ebaa902e1e86fee",
+      "equipment": "OWS",
+      "symptoms": "Complete Import Quote first before Reply Evaluation.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "72f5c8025d061e21",
+      "equipment": "Set company \"{var}\" to inactive? It stays in registry files but is hidden from active lists.",
+      "symptoms": "deactivateAdminCompany",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "91c94b48ffc1c988",
+      "equipment": "Set vessel \"{var}\" to inactive? It stays in registry files but is hidden from active contract lists.",
+      "symptoms": "deactivateAdminVessel",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d435d6f22f3ba5d8",
+      "equipment": "{var}: Only files up to {n} MB can be attached.",
+      "symptoms": "uploadWrAttachment",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a3566c176b77bdb5",
+      "equipment": "Cannot confirm {var}: other department ({var}) or permission denied.",
+      "symptoms": "histReportApproval",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "763117662ee9d295",
+      "equipment": "{var} {var} exported to {var}.",
+      "symptoms": "menuXferExportMonthly",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6dbeff5fc47d08db",
+      "equipment": "{var} data import complete{var}{var}",
+      "symptoms": "handleImport",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9cd90bbd6989f4fb",
+      "equipment": "{var} data ZIP exported ({var}_{var}_PMS_EXPORT_…zip).",
+      "symptoms": "handleExport",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "735fca704cac21d9",
+      "equipment": "App Update exported. {var} Targets: {var} Send this ZIP to HQ/Vessel. Import → App Update → Install update.",
+      "symptoms": "menuXferConfirmAppUpdateExport",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d36d8b8b7a399efe",
+      "equipment": "App Update exported. {var} Version: {var} SKUs: {var} Send this shared ZIP to pool vessels → Import → Install update on each PC (HQ / Master / Engine / Deck).",
+      "symptoms": "adminAppUpdateRun",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b27445c64ceac80b",
+      "equipment": "OWS",
+      "symptoms": "Exported {var} postpone {var} package(s) → {var}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b6618c478f7764b3",
+      "equipment": "OWS",
+      "symptoms": "Release export complete. Folder: {var} Files: · {var} Company A → App Update ZIP · Company B → Setup.exe",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "64dd7cb9f634d09c",
+      "equipment": "OWS",
+      "symptoms": "Seat license saved. {var} SKU: {var} Expires: {var} Send this file to the crew → Import seat license on their PC.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0490b2f69083d74a",
+      "equipment": "OWS",
+      "symptoms": "Vessel Profile exported. {var} Send this ZIP to the ship → Import → Vessel Profile.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "527b120a7266bbcb",
+      "equipment": "OWS",
+      "symptoms": "{var} {var} Case Report(s) ({var}) to {var}{var}?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0bc6eab45a4f2134",
+      "equipment": "OWS",
+      "symptoms": "{var} approval removed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b5d2b1e0c6e6ab15",
+      "equipment": "OWS",
+      "symptoms": "Defect package created: {var} Attach ZIP to email or import at HQ.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "4e9fa8528fe96733",
+      "equipment": "OWS",
+      "symptoms": "Exported {var} Case Report(s) ({var}) → {var}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "53785bcee2bdacf3",
+      "equipment": "OWS",
+      "symptoms": "Exported {var} defect report(s) → {var}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6b19d96e47fe4d02",
+      "equipment": "OWS",
+      "symptoms": "{var} item(s) confirmed",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e344b92d1dc05c66",
+      "equipment": "OWS",
+      "symptoms": "{var} report unconfirmed. (Returned to Reported)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e3846d23e89f1302",
+      "equipment": "OWS",
+      "symptoms": "{var}: {var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "54617da41cb4e91e",
+      "equipment": "OWS",
+      "symptoms": "{var}: Cannot confirm in this status.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f7919d5dfa84de80",
+      "equipment": "OWS",
+      "symptoms": "Enter password to {var}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5a0ed44ef730545d",
+      "equipment": "OWS",
+      "symptoms": "Exported {var} Maintenance Report(s) → {var}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "13679db5b7a6b69f",
+      "equipment": "OWS",
+      "symptoms": "Import PMS Master Excel? {var} Excel will replace Group, Equipment, and Jobs. Jobs removed from the sheet will be deleted (jobs linked to a Work Report keep a temporary CODE). Recommended: Database Backup before Import. Continue?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "327c5c602d150737",
+      "equipment": "OWS",
+      "symptoms": "Loaded {var} jobs",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6770ae42995d1656",
+      "equipment": "OWS",
+      "symptoms": "{var} — select a group to edit first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "860d9e520bf8f7f6",
+      "equipment": "OWS",
+      "symptoms": "{var} Import accepts .xls, .xlsx, or .csv files only.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "4a923517669fa86f",
+      "equipment": "OWS",
+      "symptoms": "{var} non-{var} item(s) will be skipped ({var}). Export {var} {var}?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ebbbed2547b11a6e",
+      "equipment": "OWS",
+      "symptoms": "{var} part(s) added to requisition.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "bea4bb5a5c39b500",
+      "equipment": "OWS",
+      "symptoms": "{var} part(s) deleted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d3a46e598890efde",
+      "equipment": "OWS",
+      "symptoms": "{var} Proceed anyway?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "3c8a59b556daa49a",
+      "equipment": "OWS",
+      "symptoms": "{var} recorded — {var} item(s)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c24d360ef4e0e235",
+      "equipment": "OWS",
+      "symptoms": "Applied: {var}/{var} · DB {var}/{var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8f0faca0c4633a8f",
+      "equipment": "OWS",
+      "symptoms": "Approved {var} log(s).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2c9e2c9dd51721a3",
+      "equipment": "OWS",
+      "symptoms": "Approved {var} log(s). Skipped {var} (not Confirmed or no permission).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "709116a906077fde",
+      "equipment": "OWS",
+      "symptoms": "Approved {var} requisition(s).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fcbb1d00b34028d7",
+      "equipment": "OWS",
+      "symptoms": "Approved {var} requisition(s). Skipped {var} (not Submitted/Evaluating or no permission).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b793335e64577213",
+      "equipment": "OWS",
+      "symptoms": "Assessment applied — {var} item(s)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b33895445150df86",
+      "equipment": "OWS",
+      "symptoms": "BOM linked: {var} · qty {var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "af111bbdd8e9c61c",
+      "equipment": "OWS",
+      "symptoms": "Cannot delete: {var} spare part(s) in this group.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "97812ebae4e4a804",
+      "equipment": "OWS",
+      "symptoms": "Complete {var} first: export quotation ZIP before importing vendor quote.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "543ab2bae95f78dc",
+      "equipment": "OWS",
+      "symptoms": "Complete {var} first: select vendor, currency, and check at least one item.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c96da0dfed6d5d94",
+      "equipment": "OWS",
+      "symptoms": "Complete Evaluation (Eval column) first: {var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "535a0cf056321321",
+      "equipment": "OWS",
+      "symptoms": "lic.error || `License does not allow ${SPARE_XFER_MONTHLY_REPORT_LABEL} export.`",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ef7696b21a3e6c19",
+      "equipment": "OWS",
+      "symptoms": "Vendor registry is not loaded. Please refresh the page (Ctrl+F5).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0b62d4c63d75f30f",
+      "equipment": "OWS",
+      "symptoms": "Message",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "1bdf69e204fe3eb9",
+      "equipment": "OWS",
+      "symptoms": "{var} report approved by company.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ae70114c79685858",
+      "equipment": "OWS",
+      "symptoms": "result.message",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "748dd911ae3bb8db",
+      "equipment": "OWS",
+      "symptoms": "{var}: Only files up to {n} MB can be attached.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8363de40fe597dac",
+      "equipment": "OWS",
+      "symptoms": "e.message || 'Attachment failed.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "83a0022e159f696c",
+      "equipment": "OWS",
+      "symptoms": "e.message || 'Download failed.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d58bf02024c4e30c",
+      "equipment": "OWS",
+      "symptoms": "Pop-up blocked. Allow pop-ups to print or preview.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "81a67cad84c1cd66",
+      "equipment": "OWS",
+      "symptoms": "e.message || 'Station access denied'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0e62daab07167b98",
+      "equipment": "OWS",
+      "symptoms": "Permission denied: {var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ff295453c081c715",
+      "equipment": "OWS",
+      "symptoms": "{var} {var} {var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8110ab00366d29ea",
+      "equipment": "OWS",
+      "symptoms": "{var} Vessel: {var} {var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "90bc4264ad36856e",
+      "equipment": "OWS",
+      "symptoms": "Backup {var} now?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b69ffe3f2cedd33d",
+      "equipment": "OWS",
+      "symptoms": "Backup module is not available.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6e80468a9c84284d",
+      "equipment": "OWS",
+      "symptoms": "Backup vessel ({var}) differs from current vessel ({var}). Restore anyway?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "209409bd9d18a694",
+      "equipment": "OWS",
+      "symptoms": "Monthly Report can export only when no report is still Reported / Draft. Open: W {var} · M {var} · D {var} · P {var} · C {var} Confirm them in Report History first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "735905509467ef9a",
+      "equipment": "OWS",
+      "symptoms": "Restore {var} from the selected backup? Current Master Data will be replaced.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8efb9156d615e833",
+      "equipment": "OWS",
+      "symptoms": "{var} defect report approved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ce59c3cfa5b93875",
+      "equipment": "OWS",
+      "symptoms": "{var} defect report confirmed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "67fd3dc3479435f7",
+      "equipment": "OWS",
+      "symptoms": "{var} defect report unconfirmed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9188cc4fea53fd40",
+      "equipment": "OWS",
+      "symptoms": "{var} report(s) confirmed",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8680926f1964a0ba",
+      "equipment": "OWS",
+      "symptoms": "Confirm {var} defect report(s)?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c490935876df9042",
+      "equipment": "OWS",
+      "symptoms": "Defect Report saved ({var} jobs).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "75f4f862a20b501e",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Phase {n} close failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "84238e2ea6d612e8",
+      "equipment": "OWS",
+      "symptoms": "e.message || e.code || 'Phase {n} save failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f2bbdb2a71e5d9a8",
+      "equipment": "OWS",
+      "symptoms": "Phase {n} — Case closed by Company D.P.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fb2a85004deb3a9d",
+      "equipment": "OWS",
+      "symptoms": "Phase {n} — Company inspection comments saved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ca6c7dbd2f717ab6",
+      "equipment": "OWS",
+      "symptoms": "Phase {n} — Completion reported to Company.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f2773d3e491bf264",
+      "equipment": "OWS",
+      "symptoms": "Ship\\'s Comments saved.{var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "caa0adcb1deb5b7c",
+      "equipment": "OWS",
+      "symptoms": "{var} item(s) approved",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a645a6433a0d3096",
+      "equipment": "OWS",
+      "symptoms": "{var}: Already approved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e6d5f87a94127e39",
+      "equipment": "OWS",
+      "symptoms": "Approve {var}?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e59bfba1a23009b5",
+      "equipment": "OWS",
+      "symptoms": "Confirm {var}?{var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ea73cfd5623cffbb",
+      "equipment": "OWS",
+      "symptoms": "Other department ({var}) reports cannot be confirmed. Scope: {var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "4f01e9f2d65777b0",
+      "equipment": "OWS",
+      "symptoms": "Vessel Profile applied. {var} IMO: {var} Delivery: {var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7879a99e1a0b64a2",
+      "equipment": "OWS",
+      "symptoms": "{var} — \"{var}\" Delete this maintenance item?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8fd9392fc230fc42",
+      "equipment": "OWS",
+      "symptoms": "{var} Item added.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "257418d0176b77f5",
+      "equipment": "OWS",
+      "symptoms": "{var} item deleted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fcf76100e4a98e33",
+      "equipment": "OWS",
+      "symptoms": "{var} Item updated.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "aea96bc34fc8c749",
+      "equipment": "OWS",
+      "symptoms": "Enter company reply for {var} selected Work Report(s).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e9e65456284ddd03",
+      "equipment": "OWS",
+      "symptoms": "GROUP \"{var}\" was added.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ad0c6fd783dc90de",
+      "equipment": "OWS",
+      "symptoms": "Import complete{var} Jobs: {var} rows (new {var}, updated {var}, CODE changed {var}){var}{var}{var}{var}{var}{var}{var}{var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "de4cd3658d31570a",
+      "equipment": "OWS",
+      "symptoms": "planContextCheckedJobIds().length > {n} ? 'Check exactly one job to delete.' : 'Select a j",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ae3dc3ac019a74f6",
+      "equipment": "OWS",
+      "symptoms": "planContextCheckedJobIds().length > {n} ? 'Check exactly one job to modify.' : 'Select a j",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "43111775046813c8",
+      "equipment": "OWS",
+      "symptoms": "Select at least {n} jobs for Work Report.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "afcaf3393b0d1838",
+      "equipment": "OWS",
+      "symptoms": "Monthly prep: {var} unfinished Work History item(s)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a423a51d3c82ed52",
+      "equipment": "OWS",
+      "symptoms": "Running Hours updated · {var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "cec64716dece6a27",
+      "equipment": "OWS",
+      "symptoms": "e.message || 'Renumber failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b57f77a0507cf086",
+      "equipment": "OWS",
+      "symptoms": "err?.message || 'Failed to print Requisition List.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a108bbee2b72ec17",
+      "equipment": "OWS",
+      "symptoms": "Export SPARE Master setup template?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9521b8c2aa6d3499",
+      "equipment": "OWS",
+      "symptoms": "Import complete{var} Spare Parts: {var} rows (new {var}, updated {var}){var} Groups: {var} · Equipment: {var}{var}{var}{var}{var}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e7cd09a485ed29c8",
+      "equipment": "OWS",
+      "symptoms": "Open the Consumption Report to delete it.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7c2bbc2076fac3ad",
+      "equipment": "OWS",
+      "symptoms": "Renumber all spare codes to GG-EE-III format?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "1a84d6e4adcb6e7a",
+      "equipment": "OWS",
+      "symptoms": "Renumbered {var} / {var} spare codes ({var}).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a36e2b8ebd91c15d",
+      "equipment": "OWS",
+      "symptoms": "Requisition List is not ready to print.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0aa2e97784790acd",
+      "equipment": "OWS",
+      "symptoms": "Spare code module unavailable.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "4f65d6f2b0732bf1",
+      "equipment": "OWS",
+      "symptoms": "SPARE list is not ready to print.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e1a1b3e1f4a1ec21",
+      "equipment": "OWS",
+      "symptoms": "SPARE Master Export is not available.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "877cabfe1d5e7181",
+      "equipment": "OWS",
+      "symptoms": "spareMasterExcelDeniedMessage()",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "709f2a1588efa805",
+      "equipment": "OWS",
+      "symptoms": "syncErr.message || 'Spare parts stock sync failed.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f34166462e96ae63",
+      "equipment": "OWS",
+      "symptoms": "syncErr.message || 'Spare parts stock update failed.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c0ff8e1c85d9310b",
+      "equipment": "OWS",
+      "symptoms": "{var} approved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c2d99f4889125a18",
+      "equipment": "OWS",
+      "symptoms": "{var} confirmed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d43b530331e44d8e",
+      "equipment": "OWS",
+      "symptoms": "{var} unconfirmed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c6c8339151b07670",
+      "equipment": "OWS",
+      "symptoms": "Approve {var} Work Permit(s)?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8d401d2ee674387e",
+      "equipment": "OWS",
+      "symptoms": "Check one or more Confirmed Work Permits to approve.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7d798ed144289cd4",
+      "equipment": "OWS",
+      "symptoms": "Check one or more deletable Work Permits.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "39db475c97901b41",
+      "equipment": "OWS",
+      "symptoms": "Close without saving?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "075b0cd296230878",
+      "equipment": "OWS",
+      "symptoms": "Confirmed {var} Work Permit(s).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7a5f75962cdcae8a",
+      "equipment": "OWS",
+      "symptoms": "Delete {var} Work Permit(s)?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "79c26b5e1aae94f3",
+      "equipment": "OWS",
+      "symptoms": "Delete Work Permits from the Work Permit form.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b64cfdfcf5168632",
+      "equipment": "OWS",
+      "symptoms": "isHq() && row && TVC_WorkPermit.isHqReplyExported(row) ? 'HQ reply already exported — Company Comments c",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "dff191fc385834d4",
+      "equipment": "OWS",
+      "symptoms": "isHq() && TVC_WorkPermit.isHqReplyExported(row) ? 'HQ reply already exported — Company Comments cannot b",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d544165140afba23",
+      "equipment": "OWS",
+      "symptoms": "No jobs in scope.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a6d737d1dddc0e4a",
+      "equipment": "OWS",
+      "symptoms": "Select a Work Permit from the list first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "bb3e24686fc944aa",
+      "equipment": "OWS",
+      "symptoms": "This Work Permit cannot be modified.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "80b7d8dff0255450",
+      "equipment": "OWS",
+      "symptoms": "Work Permit not found.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "dcd37db1eaf75d42",
+      "equipment": "OWS",
+      "symptoms": "Work Permit saved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "77fecb323116d893",
+      "equipment": "OWS",
+      "symptoms": "Admin registry (admin/registry.json) load failed.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c3ca83b753d28083",
+      "equipment": "OWS",
+      "symptoms": "Admin Mode (tvc) only.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "657f26a63b978b66",
+      "equipment": "OWS",
+      "symptoms": "App Update module unavailable.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fecd1bce876e59bd",
+      "equipment": "OWS",
+      "symptoms": "App Update exported. {…} Targets: {…} Send this ZIP to HQ/Vessel. Import → App Update → Install update.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9c79612c586cea8e",
+      "equipment": "OWS",
+      "symptoms": "No App Update loaded.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f59079adc01f1113",
+      "equipment": "OWS",
+      "symptoms": "Exported {…} Consumption Report(s) → {…}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d9c6d4e354a64eaf",
+      "equipment": "OWS",
+      "symptoms": "{…} {…} exported to {…}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d83a98112732a3d2",
+      "equipment": "OWS",
+      "symptoms": "Exported {…} Work Permit(s) in 1 package ({…}) → {…} {…}.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "640d9c0e7c2e26d4",
+      "equipment": "OWS",
+      "symptoms": "Admin registry module not loaded.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "675dbc027dc32ef5",
+      "equipment": "OWS",
+      "symptoms": "Admin print module not loaded.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5bcef3844cd27400",
+      "equipment": "OWS",
+      "symptoms": "Select a company in the left list first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "3127d3b1de2e1580",
+      "equipment": "OWS",
+      "symptoms": "Seat license module not loaded.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "29e5d2b8cc4bed20",
+      "equipment": "OWS",
+      "symptoms": "Signing key saved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "312b56bdb9860238",
+      "equipment": "Seat license saved. {…} SKU: {…} Expires: {…} Send this file to the crew → Import seat license on their PC.",
+      "symptoms": "adminSeatLicenseIssueAndSave",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7f76e746c5d3d934",
+      "equipment": "e.message || String(e)",
+      "symptoms": "adminSeatLicenseIssueAndSave",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "3df85f72f5ea5227",
+      "equipment": "e.message || String(e)",
+      "symptoms": "renderAdminSetupExportModal",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "be215ea8ac1c77a8",
+      "equipment": "Setup export module not loaded.",
+      "symptoms": "openAdminSetupExportModal",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a34b8480a79dd629",
+      "equipment": "e.message || String(e)",
+      "symptoms": "adminSetupExportPickFolder",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "92533569c64f5f2e",
+      "equipment": "OWS",
+      "symptoms": "App Update module not loaded.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "af82ed574b0c0ec6",
+      "equipment": "OWS",
+      "symptoms": "App Update exported. {…} Version: {…} SKUs: {…} Send this shared ZIP to pool vessels → Import → Install update on each PC (HQ / Master / Engine / Deck).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c0e6b95165160b20",
+      "equipment": "OWS",
+      "symptoms": "Admin Release module not loaded.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a930044676ee0f00",
+      "equipment": "OWS",
+      "symptoms": "Release requires Electron Admin Mode (npm run electron:admin).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9c0b80efd489fd2b",
+      "equipment": "OWS",
+      "symptoms": "info.buildableMessage || 'Release build is not available in this environment.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "736b43c1b40fd046",
+      "equipment": "OWS",
+      "symptoms": "Select a company to update deploy registry.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ca4f13db28230bc2",
+      "equipment": "OWS",
+      "symptoms": "_adminRelease.runBuild ? `Run full release build for v${version || '?'}?\\n\\nThis runs npm run release (a",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c06564925a4ebbc8",
+      "equipment": "OWS",
+      "symptoms": "successMessage || 'Registry saved.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "66f96a9d535f4fca",
+      "equipment": "OWS",
+      "symptoms": "Set company \"{…}\" to inactive? It stays in registry files but is hidden from active lists.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5eaa41ba8fc041c6",
+      "equipment": "OWS",
+      "symptoms": "Set vessel \"{…}\" to inactive? It stays in registry files but is hidden from active contract lists.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b4a2ea85482541f4",
+      "equipment": "OWS",
+      "symptoms": "Control (permission) changes apply after administrator approval.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "3471481caeb31baf",
+      "equipment": "OWS",
+      "symptoms": "Delete GROUP \"{…}\"? Only empty groups (no jobs, no spare parts) can be deleted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "49d4ef0dcb5f7061",
+      "equipment": "OWS",
+      "symptoms": "Open the Consumption Report to modify it.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fd3ab5b6b23ae3d6",
+      "equipment": "OWS",
+      "symptoms": "Cannot confirm {…}: other department ({…}) or permission denied.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e23dffb5aef64a55",
+      "equipment": "OWS",
+      "symptoms": "Select a part to edit (click the row or check the box).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e5370e2ce7273065",
+      "equipment": "OWS",
+      "symptoms": "Modify allows only one selected item.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "295e7520d1d09e45",
+      "equipment": "OWS",
+      "symptoms": "Select a part to delete (click the row or check the box).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "416fa054d1430efb",
+      "equipment": "OWS",
+      "symptoms": "{…} data was exported as a Captain Hub package.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "22184950b2eb3e44",
+      "equipment": "OWS",
+      "symptoms": "Work Permit package imported successfully.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2e0e329deaf8d7a7",
+      "equipment": "OWS",
+      "symptoms": "{…} data ZIP exported ({…}_{…}_PMS_EXPORT_…zip).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ced5f7017d0cc1ab",
+      "equipment": "OWS",
+      "symptoms": "{…} data import complete{…}{…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2f5fe9d687bd2490",
+      "equipment": "OWS",
+      "symptoms": "Backup {…} now?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6384375951a8a7e1",
+      "equipment": "OWS",
+      "symptoms": "{…} {…} {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "682511a6708c2a0b",
+      "equipment": "OWS",
+      "symptoms": "{…} Vessel: {…} {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "91618dd9e6b99429",
+      "equipment": "OWS",
+      "symptoms": "Renumbered {…} / {…} spare codes ({…}).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ac9f1598f61265ee",
+      "equipment": "OWS",
+      "symptoms": "SPARE Master Import is not available.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "83371877b7f254d0",
+      "equipment": "OWS",
+      "symptoms": "Import SPARE Master Excel? {…}${state.selectedVesselId && TVC_RBAC.isHqAccount(user) ?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f2d92580cb291b7d",
+      "equipment": "OWS",
+      "symptoms": "Import complete{…} Spare Parts: {…} rows (new {…}, updated {…}){…} Groups: {…} · Equipment: {…}{…}{…}{…}{…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "df003cd8b02f1d29",
+      "equipment": "OWS",
+      "symptoms": "Permission denied: {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2f60c440cd402611",
+      "equipment": "OWS",
+      "symptoms": "Backup vessel ({…}) differs from current vessel ({…}). Restore anyway?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6e79e21aed5be34b",
+      "equipment": "OWS",
+      "symptoms": "Remove vendor \"{…}\"?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7b8cdecf4f177fc7",
+      "equipment": "OWS",
+      "symptoms": "e?.message || 'Failed to load requisition.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "48774243cda8e05a",
+      "equipment": "OWS",
+      "symptoms": "Requisition not found.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9b559d21400b5317",
+      "equipment": "OWS",
+      "symptoms": "Consumption log not found.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e7ca5d6eb9234c3d",
+      "equipment": "OWS",
+      "symptoms": "Login required.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "542dd72e522f654e",
+      "equipment": "OWS",
+      "symptoms": "No permission to modify consumption logs.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ccce4252806a367c",
+      "equipment": "OWS",
+      "symptoms": "Select a consumption log from the list first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5ebb4cbe7bd02660",
+      "equipment": "OWS",
+      "symptoms": "consumeHistModifyDisabledTitle(st, displayed) || 'Cannot modify this consumption log.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9d117d19b576bf89",
+      "equipment": "OWS",
+      "symptoms": "None of the selected logs can be confirmed. Only Reported logs can be confirmed, and you need Chief Engineer / Captain permission.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9170f8090cf8cb00",
+      "equipment": "OWS",
+      "symptoms": "Confirmed {…} log(s). Skipped {…} (not Reported or no permission).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5c85e1b4f498e9b9",
+      "equipment": "OWS",
+      "symptoms": "Confirmed {…} log(s).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "43bda9feec577835",
+      "equipment": "OWS",
+      "symptoms": "None of the selected logs can be approved. Confirmed logs, or HQ-authored Reported logs, can be approved with HQ Superintendent permission.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8b10eea3ab5db49d",
+      "equipment": "OWS",
+      "symptoms": "This log cannot be approved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ab306be899f5d666",
+      "equipment": "OWS",
+      "symptoms": "Confirm removed. Consumption returned to Reported.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a9786173960d40b6",
+      "equipment": "OWS",
+      "symptoms": "Only Reported logs can be confirmed, and you need Chief Engineer / Captain permission.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "dba7e5ad17de3758",
+      "equipment": "OWS",
+      "symptoms": "No permission to enter consumption records.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "220b2994d6ff0577",
+      "equipment": "OWS",
+      "symptoms": "No linked Work Report.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9bec5348257252c6",
+      "equipment": "OWS",
+      "symptoms": "Work Report not found.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "276850e67976374c",
+      "equipment": "OWS",
+      "symptoms": "Work Report job item not found.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "001fe4962b204eb0",
+      "equipment": "OWS",
+      "symptoms": "Select a consumption log to edit.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6d563920e374251f",
+      "equipment": "OWS",
+      "symptoms": "No parts to edit.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7dcba5c1b9e33d04",
+      "equipment": "OWS",
+      "symptoms": "No permission to delete consumption logs.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "cdab2f478e757c13",
+      "equipment": "OWS",
+      "symptoms": "Deleted {…} log(s).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0d9e0eeaf4e8542c",
+      "equipment": "OWS",
+      "symptoms": "Select a consumption log.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d9888a739b47d969",
+      "equipment": "OWS",
+      "symptoms": "No permission to create requisitions.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c9f613d9b26f9627",
+      "equipment": "OWS",
+      "symptoms": "Select a requisition to edit.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "36fbff2d5632175c",
+      "equipment": "OWS",
+      "symptoms": "No permission to delete requisitions.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a468df1692a1db43",
+      "equipment": "OWS",
+      "symptoms": "Deleted {…} requisition(s).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "28025c71d05fcf1b",
+      "equipment": "OWS",
+      "symptoms": "ExcelJS library not loaded.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2e630ce810948246",
+      "equipment": "OWS",
+      "symptoms": "No items to export.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fe5e18d434efbe5b",
+      "equipment": "OWS",
+      "symptoms": "Excel export failed: {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "4daecbe7e4a5b005",
+      "equipment": "OWS",
+      "symptoms": "Popup blocked. Please allow popups in your browser.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b05e5cb8974275c1",
+      "equipment": "OWS",
+      "symptoms": "Select a requisition.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "48227a34dac2d24d",
+      "equipment": "OWS",
+      "symptoms": "None of the selected requisitions can be confirmed. Only Reported requisitions can be confirmed, and you need Chief Engineer / Captain / Superintendent permission.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9b4d9a378a21d755",
+      "equipment": "OWS",
+      "symptoms": "Confirmed {…} requisition(s). Skipped {…} (not Reported or no permission).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6e8816cdaed5f59c",
+      "equipment": "OWS",
+      "symptoms": "Confirmed {…} requisition(s).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9c04b73a00521e28",
+      "equipment": "OWS",
+      "symptoms": "None of the selected requisitions can be approved. Submitted or Evaluating requisitions, or HQ-authored Reported requisitions, can be approved with HQ Superintendent permission.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "3043a601265bdb8a",
+      "equipment": "OWS",
+      "symptoms": "No permission to export received data.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9789f07a83a056d3",
+      "equipment": "OWS",
+      "symptoms": "No permission to export requisitions.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6346da910d5cbba8",
+      "equipment": "OWS",
+      "symptoms": "Only {…} requisitions can be exported.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9ee2494188918182",
+      "equipment": "OWS",
+      "symptoms": "Select one or more requisitions to export.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9c1fc3d2de30e0e7",
+      "equipment": "OWS",
+      "symptoms": "Export {…} {…}?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "1a09c8c285f0a7a7",
+      "equipment": "OWS",
+      "symptoms": "Export failed: {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "333afb0945842cc7",
+      "equipment": "OWS",
+      "symptoms": "SPARE ZIP export is not available.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e20dd81f3305c468",
+      "equipment": "OWS",
+      "symptoms": "Only {…} and Approved requisitions can be exported: {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9422cd6f4641a322",
+      "equipment": "OWS",
+      "symptoms": "exportFilename ? `Exported ${ok} item(s).\\n${exportFilename}` : meta.successMsg(ok)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "1a6dd22dc3c1bb4a",
+      "equipment": "OWS",
+      "symptoms": "Select a part to edit (click row or use checkbox).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "80c6d60c335bdf79",
+      "equipment": "OWS",
+      "symptoms": "Select part(s) to delete (click row or use checkbox).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "4568cd10ea4e9ad5",
+      "equipment": "OWS",
+      "symptoms": "Delete {…} selected part(s)? {…} This cannot be undone.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d86d55879243cfc0",
+      "equipment": "OWS",
+      "symptoms": "Requisition created: {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "961d4f2ad275e049",
+      "equipment": "OWS",
+      "symptoms": "Stock is below Min Stock. {…}{…} Create a requisition in the SPARE tab?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b796fb5a9e688571",
+      "equipment": "OWS",
+      "symptoms": "Modify, Append, and Delete require Chief Engineer, Chief Officer, Captain, or Superintendent (HQ) permission.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "1a39a6263320c63e",
+      "equipment": "OWS",
+      "symptoms": "Group append is unavailable.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "155ca2a00af070e1",
+      "equipment": "BOILER",
+      "symptoms": "New SPARE GROUP name (e.g. 06. AUX BOILER):",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "aab79fadac490e2f",
+      "equipment": "BOILER",
+      "symptoms": "SPARE GROUP added.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "bc7b5909781bf981",
+      "equipment": "BOILER",
+      "symptoms": "e.message || 'Add failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "dbf38b5a4aa4eee1",
+      "equipment": "BOILER",
+      "symptoms": "Modify, Append, and Delete require Chief Engineer, Chief Officer, Captain, or Superintendent (HQ) permission.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e1177151810968a9",
+      "equipment": "BOILER",
+      "symptoms": "Select a group to delete.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "302a5d40b7780303",
+      "equipment": "BOILER",
+      "symptoms": "Delete SPARE GROUP \"{…}\"? Only empty groups (no spare parts) can be deleted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "db8139659f54a76b",
+      "equipment": "BOILER",
+      "symptoms": "SPARE GROUP deleted.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "47eb176102e1eb36",
+      "equipment": "BOILER",
+      "symptoms": "Cannot delete: {…} spare part(s) in this group.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e0d6a277ce296582",
+      "equipment": "BOILER",
+      "symptoms": "e.message || code || 'Delete failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "bfe37077d37ddb12",
+      "equipment": "BOILER",
+      "symptoms": "{…} — select a group to edit first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2e1dc5610861d7aa",
+      "equipment": "BOILER",
+      "symptoms": "Equipment header saved for “{…}”.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6e15dfd80d7a4b34",
+      "equipment": "BOILER",
+      "symptoms": "PMS Group header saved.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "5d5a69b6f4b3aea7",
+      "equipment": "BOILER",
+      "symptoms": "SPARE Group header saved ({…} item(s) updated)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a1aef4ff4a3d3ebc",
+      "equipment": "BOILER",
+      "symptoms": "e.message || e.code || 'Save failed'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6f20ebcd7e964814",
+      "equipment": "BOILER",
+      "symptoms": "Select SPARE Group No.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a2beaad897af9bed",
+      "equipment": "BOILER",
+      "symptoms": "Enter Code.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "3532d31ba191b6e4",
+      "equipment": "BOILER",
+      "symptoms": "Enter Item.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "803a752686b1367b",
+      "equipment": "BOILER",
+      "symptoms": "Select Class (G or L).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "13fd7f8ad54f0f48",
+      "equipment": "BOILER",
+      "symptoms": "e.message || e.code",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "2e2e0854380a4829",
+      "equipment": "BOILER",
+      "symptoms": "ENGINE inventory loaded (loadSpareInventory)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fa65cb1c5fd797c8",
+      "equipment": "BOILER",
+      "symptoms": "Automatic Import is not available in file:// mode.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e7f1e39746d0a903",
+      "equipment": "BOILER",
+      "symptoms": "ENGINE inventory import complete",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "419ab141ef768e45",
+      "equipment": "BOILER",
+      "symptoms": "Cannot load the inventory file.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "4f5e094ab442eb12",
+      "equipment": "BOILER",
+      "symptoms": "Import failed:",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "42a04295dd75a5ca",
+      "equipment": "BOILER",
+      "symptoms": "CSV upload failed:",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "7c23dede40db20a6",
+      "equipment": "BOILER",
+      "symptoms": "Applied: {…}/{…} · DB {…}/{…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "dfca81efbd79fcdd",
+      "equipment": "BOILER",
+      "symptoms": "Select an import type first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e601a7164acf89d4",
+      "equipment": "BOILER",
+      "symptoms": "No permission to export requisitions.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "1e4ce9e92c6a0fac",
+      "equipment": "BOILER",
+      "symptoms": "No permission to export quotations.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "b4778f547f1407a6",
+      "equipment": "BOILER",
+      "symptoms": "No permission to export evaluation replies.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "f1ec88b7deb6efeb",
+      "equipment": "BOILER",
+      "symptoms": "No permission to export purchase orders.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "af5e1a4950ad4661",
+      "equipment": "BOILER",
+      "symptoms": "No permission to export received data.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "38a91d2022acfae3",
+      "equipment": "BOILER",
+      "symptoms": "No Confirmed requisitions ready to export.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "88cbda7b60cc4283",
+      "equipment": "BOILER",
+      "symptoms": "SPARE ZIP export is not available.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "00a3dcaf3028882d",
+      "equipment": "BOILER",
+      "symptoms": "Export {…} requisition(s) to Master PC?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "eabe34998a96da75",
+      "equipment": "BOILER",
+      "symptoms": "Exported {…} requisition(s). {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "152f0aa206960dd5",
+      "equipment": "BOILER",
+      "symptoms": "No received requisitions to export.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e9764fd464955c76",
+      "equipment": "BOILER",
+      "symptoms": "Export {…} received requisition(s) to Master PC?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fa523160625bfe27",
+      "equipment": "BOILER",
+      "symptoms": "Exported {…} received requisition(s). {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0b9a344e266c8ae7",
+      "equipment": "BOILER",
+      "symptoms": "lic.error || `License does not allow ${SPARE_XFER_MONTHLY_REPORT_LABEL} export.`",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "909aff67af0d05c1",
+      "equipment": "BOILER",
+      "symptoms": "No parts to export.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "e41fb43bad3ee656",
+      "equipment": "BOILER",
+      "symptoms": "Export {…} spare part(s) as {…}? {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fac01e80db4845e3",
+      "equipment": "BOILER",
+      "symptoms": "Exported {…} part(s). {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "ab7c54c6dd4e935a",
+      "equipment": "BOILER",
+      "symptoms": "e.message || e.code || String(e)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "6c07a05e8305dfa1",
+      "equipment": "BOILER",
+      "symptoms": "Import applied to {…}: {…}/{…} lines · DB {…}/{…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "fcae7b7501646578",
+      "equipment": "BOILER",
+      "symptoms": "Import complete: {…} record(s) from {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0aa54fa3d39a6ece",
+      "equipment": "BOILER",
+      "symptoms": "Only order/evaluation files can be uploaded. · HQ Order .zip · *_ORDER.xlsx / *_EVAL_REPLY.xlsx · Assessment .json",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "0810641c7a361976",
+      "equipment": "BOILER",
+      "symptoms": "Requisition Import accepts .xlsx files only.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "74544b985ed82b1c",
+      "equipment": "BOILER",
+      "symptoms": "Quotation Import accepts .xlsx files only.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c4dcc0f4095148c5",
+      "equipment": "BOILER",
+      "symptoms": "Received Import accepts .xlsx files only.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "26ab9aceff2605d3",
+      "equipment": "BOILER",
+      "symptoms": "{…} Import accepts .xls, .xlsx, or .csv files only.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "c3463170b9d49d0f",
+      "equipment": "BOILER",
+      "symptoms": "Unsupported file type. Use .xlsx (Requisition), .json (Assessment), or .xls/.csv ({…}).",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9eed9ec917f6cf98",
+      "equipment": "BOILER",
+      "symptoms": "No requisitions ready for quotation request.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "94a35c03d95a14d0",
+      "equipment": "BOILER",
+      "symptoms": "Export {…} requisition(s) for vendor quotation?",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "79851625c59beca1",
+      "equipment": "BOILER",
+      "symptoms": "Exported {…} requisition(s) for vendor quotation. {…}",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d4c2ffd8c834dcdd",
+      "equipment": "BOILER",
+      "symptoms": "Select a requisition first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8d887af681f8415a",
+      "equipment": "BOILER",
+      "symptoms": "reqVesselReportTabHint(req) || 'Report tab is not available.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "076ad1c91aa3f68c",
+      "equipment": "BOILER",
+      "symptoms": "reqVesselConfirmTabHint(req) || 'Confirm tab is not available.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9666fa75de610132",
+      "equipment": "BOILER",
+      "symptoms": "Open Requisition List and select a requisition first.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "951cc5119b58a318",
+      "equipment": "BOILER",
+      "symptoms": "Confirm the requisition first before Submit.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "9cce0bab378eb5f5",
+      "equipment": "BOILER",
+      "symptoms": "reqVesselSubmittedTabHint(req) || 'Submitted tab is not available.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "de66fccd43d29589",
+      "equipment": "BOILER",
+      "symptoms": "reqVesselEvaluationImportTabHint(req) || 'Order import is not available.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "824bc5c69417a6b8",
+      "equipment": "BOILER",
+      "symptoms": "reqVesselEvaluatedTabHint(req) || 'Ordered tab is not available.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "a6e1422eaf0574e7",
+      "equipment": "BOILER",
+      "symptoms": "reqVesselReceivedTabHint(req) || 'Received tab is not available.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "1f7d5800448eef4a",
+      "equipment": "BOILER",
+      "symptoms": "reqVesselReceivedExportTabHint(req) || 'Received export is not available.'",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "8bf07851ce243500",
+      "equipment": "BOILER",
+      "symptoms": "Complete {…} first: select vendor, currency, and check at least one item.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "aa0ac3791f8e0e25",
+      "equipment": "BOILER",
+      "symptoms": "Complete {…} first: export quotation ZIP before importing vendor quote.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Alert-Inventory.xlsx"
+    },
+    {
+      "id": "d903a865bdba943f",
+      "equipment": "OWS",
+      "symptoms": "ID | Priority | File | Current (KO) | Proposed (EN) | Surfaces Via | Action",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "249a457d8394ad4a",
+      "equipment": "OWS",
+      "symptoms": "KR-014 | P2 | js/services/defectCase.js | 목록에 저장된 Report만 Confirm할 수 있습니다. | Only saved reports in the list can be confirmed. | TVC_Dialog.alert(e.message) or import fail handler | Replace throw new Error / message string in source",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "32e8624e4f8045fe",
+      "equipment": "OWS",
+      "symptoms": "Spelling",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "ad34320310b38df6",
+      "equipment": "OWS",
+      "symptoms": "Spelling/clarity",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "9e22f90b47944f23",
+      "equipment": "OWS",
+      "symptoms": "Wording",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "7b30f02eb06175f5",
+      "equipment": "OWS",
+      "symptoms": "Grammar",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "65ff58a18b24503a",
+      "equipment": "OWS",
+      "symptoms": "Clarity",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "63814e343b7556f4",
+      "equipment": "OWS",
+      "symptoms": "Tone",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "a6b320d7809fccaa",
+      "equipment": "OWS",
+      "symptoms": "UI jargon",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "502fafdafd262afb",
+      "equipment": "OWS",
+      "symptoms": "User-facing",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "f23eef7f5deac6cb",
+      "equipment": "OWS",
+      "symptoms": "Platform",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "332c9d9a46bde652",
+      "equipment": "OWS",
+      "symptoms": "Developer jargon",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "9a88d80234f14922",
+      "equipment": "OWS",
+      "symptoms": "Grammar/duplicate",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "fc69ee510d167ff7",
+      "equipment": "OWS",
+      "symptoms": "Abbreviation",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "cb903d92a74368b8",
+      "equipment": "OWS",
+      "symptoms": "Current",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "b6e5491f99c4041e",
+      "equipment": "OWS",
+      "symptoms": "HQ Mode — vessel(Master)과 Export / Import 이력을 표시합니다.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "5574937c39360fa0",
+      "equipment": "OWS",
+      "symptoms": "Hub (Captain) — Engine/Deck Station · Company(HQ)와 Export / Import 이력을 표시합니다.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "3d29bb1ab9fba276",
+      "equipment": "OWS",
+      "symptoms": "확인자 — 주로 Master와 Export / Import합니다. …",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "8b3835b197278f6f",
+      "equipment": "OWS",
+      "symptoms": "(same pattern as PMS history)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "ac2f1af41c5ed166",
+      "equipment": "OWS",
+      "symptoms": "승인 완료 / Confirm 권한 없음 …",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "c2a876b6e53bbf4b",
+      "equipment": "OWS",
+      "symptoms": "Deck (HQ 회신) / Engine (HQ 회신)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "e970be00ed9d4793",
+      "equipment": "OWS",
+      "symptoms": "In Proposal Sheet",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "7f61b0f8b9142394",
+      "equipment": "OWS",
+      "symptoms": "TRUE",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "c5a95f23a1e759c3",
+      "equipment": "OWS",
+      "symptoms": "FALSE",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    }
+  ]
+}
