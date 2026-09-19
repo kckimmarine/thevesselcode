@@ -158,7 +158,7 @@
             en: 'Enter IMPA code, Valve size, Flange PCD, or Bunker formula...',
             ko: 'IMPA 코드, 밸브 규격, 플랜지 PCD, 벙커 공식 입력...',
         },
-        'home.search.button': { en: 'Search', ko: '검색' },
+        'home.search.button': { en: 'Ask Brain', ko: '물어보기' },
         'home.metrics.specs': { en: '<strong>50,000+</strong> Specs', ko: '<strong>50,000+</strong> 스펙' },
         'home.metrics.offline': { en: '<strong>100%</strong> Offline PWA', ko: '<strong>100%</strong> 오프라인 PWA' },
         'home.metrics.sync': { en: '<strong>ZIP</strong> Ship↔Shore', ko: '<strong>ZIP</strong> 선박↔육상' },

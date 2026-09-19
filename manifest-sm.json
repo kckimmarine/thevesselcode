@@ -1,0 +1,27 @@
+{
+  "name": "TVC-SM",
+  "short_name": "TVC-SM",
+  "description": "TVC-SM — Ship Management (PMS + SPARE) for vessel and shore operations",
+  "start_url": "/app.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0c1929",
+  "theme_color": "#1a365d",
+  "lang": "ko",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

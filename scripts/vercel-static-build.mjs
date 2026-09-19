@@ -20,6 +20,8 @@ const STATIC_PATHS = [
   'toolkit.html',
   'store-public.html',
   'manifest.json',
+  'manifest-sm.json',
+  'sw.js',
   'service-worker.js',
   'css',
   'js',
