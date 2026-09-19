@@ -959,6 +959,15 @@
             ko: '부산 엔지니어링팀 — 실무 감독과 TVC-SM 롤아웃.',
         },
         'services.cta.btn': { en: 'Contact Us', ko: '문의하기' },
+        'services.network.title': { en: 'Global Operational Hubs', ko: '글로벌 운영 거점' },
+        'services.network.lead': {
+            en: 'Mission-critical supply and superintendent coverage — dark-chart view of verified partner nodes. Click the map to enable scroll zoom.',
+            ko: '미션 크리티컬 공급·공무 커버리지 — 검증 파트너 거점 다크 차트. 스크롤 줌은 지도 클릭 후 사용.',
+        },
+        'services.network.hint': {
+            en: 'CartoDB dark basemap · No paid map API · Tap a hub for RFQ or WhatsApp',
+            ko: 'CartoDB 다크 베이스 · 유료 지도 API 없음 · 거점 탭 → RFQ / WhatsApp',
+        },
 
         'contact.meta.description': {
             en: 'Contact THE VESSEL CODE — fleet demos, partnerships, and technical support from Busan HQ.',
@@ -1039,6 +1048,10 @@
         'contact.campaign.rfq': {
             en: 'Inquiring about supply/quote for IMPA [code][name]…',
             ko: 'IMPA [code][name] 공급·견적 문의입니다…',
+        },
+        'contact.campaign.rfqPort': {
+            en: 'Inquiring about supply/quote and logistics at [port] operational hub…',
+            ko: '[port] 운영 거점 공급·물류·견적 문의입니다…',
         },
         'contact.campaign.toolkitPro': {
             en: 'I would like to subscribe to Maritime Toolkit Pro ($9.99/month) for ASTM 54B logs and offline PDF exports.',
