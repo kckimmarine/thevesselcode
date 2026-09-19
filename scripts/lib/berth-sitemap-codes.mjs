@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
+import { normalizeImpaCode, rowCode } from './impa-quality-gate.mjs';
 
 export function loadBerthSitemapCodes(root) {
   const path = join(root, 'public/data/berth/sitemap-codes.json');
@@ -25,7 +26,8 @@ export function codesMissingFromCatalog(root, berthCodes) {
   if (existsSync(fullPath)) {
     const full = JSON.parse(readFileSync(fullPath, 'utf8'));
     for (const row of full.items || []) {
-      have.add(String(row.c || row.impa_code || '').padStart(6, '0'));
+      const code = normalizeImpaCode(rowCode(row));
+      if (code) have.add(code);
     }
   }
   return berthCodes.filter((c) => !have.has(String(c).padStart(6, '0')));
