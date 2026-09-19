@@ -78,6 +78,7 @@
     "license:issue": "node scripts/issue-license.mjs --all",
     "license:seat": "node scripts/issue-license.mjs",
     "icons:build": "node scripts/build-app-icon.mjs",
+    "icons:pwa": "node scripts/build-pwa-icons.mjs",
     "dist": "node scripts/build-pilot-packages.mjs",
     "dist:app-update": "node scripts/build-app-update-zip.mjs",
     "release": "node scripts/build-release.mjs",
