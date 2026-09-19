@@ -1,131 +1,14 @@
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
+const {
+    matchKnowledgeBase,
+    formatHistoricalContext,
+    formatGroundingAnswer,
+    historicalSources,
+} = require('./_lib/brainKnowledgeGrounding');
 
 const MAX_BODY_BYTES = 16 * 1024;
 const MAX_QUERY_CHARS = 4000;
-const KB_MAX_MATCHES = 6;
-
-/** @type {{ mtimeMs: number, data: object | null } | null} */
-let knowledgeBaseCache = null;
-
-function knowledgeBasePath() {
-    return path.join(__dirname, '..', 'data', 'tvc-knowledge-base.json');
-}
-
-function loadKnowledgeBase() {
-    const kbPath = knowledgeBasePath();
-    try {
-        const stat = fs.statSync(kbPath);
-        if (knowledgeBaseCache && knowledgeBaseCache.mtimeMs === stat.mtimeMs) {
-            return knowledgeBaseCache.data;
-        }
-        const raw = fs.readFileSync(kbPath, 'utf8');
-        const data = JSON.parse(raw);
-        knowledgeBaseCache = { mtimeMs: stat.mtimeMs, data };
-        return data;
-    } catch {
-        knowledgeBaseCache = { mtimeMs: 0, data: null };
-        return null;
-    }
-}
-
-function queryTokens(query) {
-    const q = String(query || '').toLowerCase();
-    const tokens = q.match(/[\p{L}\p{N}]{2,}/gu) || [];
-    const uniq = new Set(tokens.filter((t) => t.length >= 2));
-    return [...uniq];
-}
-
-function scoreHaystack(hay, tokens) {
-    const text = String(hay || '').toLowerCase();
-    if (!text) return 0;
-    let score = 0;
-    for (const t of tokens) {
-        if (text.includes(t)) score += t.length >= 4 ? 3 : 1;
-    }
-    return score;
-}
-
-function matchKnowledgeBase(query) {
-    const kb = loadKnowledgeBase();
-    if (!kb) return { parts: [], trouble: [] };
-
-    const tokens = queryTokens(query);
-    if (!tokens.length) return { parts: [], trouble: [] };
-
-    const parts = (kb.structured_parts || [])
-        .map((p) => {
-            const blob = [p.part_number, p.name, p.last_vendor, p.compatible_equipment].join(' ');
-            const score = scoreHaystack(blob, tokens);
-            const pn = String(p.part_number || '').toLowerCase();
-            const exact = tokens.some((t) => pn && (pn === t || pn.includes(t)));
-            return { item: p, score: score + (exact ? 8 : 0) };
-        })
-        .filter((x) => x.score > 0)
-        .sort((a, b) => b.score - a.score)
-        .slice(0, KB_MAX_MATCHES)
-        .map((x) => x.item);
-
-    const trouble = (kb.trouble_history || [])
-        .map((t) => {
-            const blob = [t.equipment, t.symptoms, t.presumed_cause, t.action_taken, t.inspection_tips].join(' ');
-            return { item: t, score: scoreHaystack(blob, tokens) };
-        })
-        .filter((x) => x.score > 0)
-        .sort((a, b) => b.score - a.score)
-        .slice(0, KB_MAX_MATCHES)
-        .map((x) => x.item);
-
-    return { parts, trouble };
-}
-
-function formatHistoricalContext(matches, lang) {
-    const { parts, trouble } = matches;
-    if (!parts.length && !trouble.length) return '';
-
-    const header =
-        lang === 'EN'
-            ? '[Verified historical context — dock/field repair records & unit pricing from TVC archives]'
-            : '[검증된 역사적 맥락 — 선석/현장 과거 수리 실적 및 단가 데이터 (TVC 아카이브)]';
-
-    const lines = [header, ''];
-
-    if (parts.length) {
-        lines.push(lang === 'EN' ? '— Spare / pricing records:' : '— 부품·단가 실적:');
-        for (const p of parts) {
-            const price =
-                p.standard_price != null && p.standard_price !== ''
-                    ? `USD ${p.standard_price}`
-                    : lang === 'EN'
-                      ? 'price n/a'
-                      : '단가 미기록';
-            lines.push(
-                `• ${p.part_number || '—'} | ${p.name || '—'} | ${price} | vendor: ${p.last_vendor || '—'} | equipment: ${p.compatible_equipment || '—'}`,
-            );
-        }
-        lines.push('');
-    }
-
-    if (trouble.length) {
-        lines.push(lang === 'EN' ? '— Defect / repair history:' : '— 결함·수리 이력:');
-        for (const t of trouble) {
-            lines.push(`• ${t.equipment || '—'}`);
-            lines.push(`  cause/symptoms: ${t.presumed_cause || t.symptoms || '—'}`);
-            lines.push(`  action: ${t.action_taken || '—'}`);
-            if (t.inspection_tips) lines.push(`  class/survey: ${t.inspection_tips}`);
-        }
-    }
-
-    lines.push(
-        lang === 'EN'
-            ? 'Use the above as factual grounding when relevant; state if the user question is outside this data.'
-            : '위 데이터가 질문과 관련 있으면 사실 근거로 활용하고, 범위 밖이면 명시하라.',
-    );
-
-    return lines.join('\n');
-}
 
 const SYSTEM_PERSONA = `너는 1급 기관사이자 10년 차 수석 공무감독 'THE VESSEL CODE BRAIN'이다.
 1. JIS 플랜지, ASTM 54B, 선급(Class) 규정, IMPA 자재를 물어보면 정밀한 공식과 수치를 최우선 제시하라.
@@ -297,19 +180,20 @@ async function callOpenAI(query, lang, historicalContext) {
     };
 }
 
-function historicalSources(matches, lang) {
-    const { parts, trouble } = matches;
-    if (!parts.length && !trouble.length) return [];
-    return [
-        {
-            label:
-                lang === 'EN'
-                    ? 'TVC historical archives (parts & repair log)'
-                    : 'TVC 역사 아카이브 (부품·수리 실적)',
-            provider: 'tvc-knowledge-base',
-            path: 'data/tvc-knowledge-base.json',
-        },
-    ];
+function offlineWithArchives(kbMatches, lang) {
+    const grounding = formatGroundingAnswer(kbMatches, lang);
+    if (!grounding) return null;
+
+    const aiNote =
+        lang === 'EN'
+            ? '\n\n_(Generative Brain analysis requires GEMINI_API_KEY or OPENAI_API_KEY on the server; archive records above are from your ingested files.)_'
+            : '\n\n_(생성형 Brain 분석은 서버 API 키 연동 후 가능합니다. 위 실적은 ingest된 아카이브 데이터입니다.)_';
+
+    return {
+        answer: grounding + aiNote,
+        grounding,
+        sources: historicalSources(kbMatches, lang),
+    };
 }
 
 async function routeBrainQuery(query, lang) {
@@ -319,13 +203,12 @@ async function routeBrainQuery(query, lang) {
     const kbMatches = matchKnowledgeBase(query);
     const historicalContext = formatHistoricalContext(kbMatches, lang);
     const kbSources = historicalSources(kbMatches, lang);
+    const grounding = formatGroundingAnswer(kbMatches, lang);
 
     if (!geminiKey && !openaiKey) {
-        const fallback = offlineFallbackAnswer(lang);
-        return {
-            ...fallback,
-            sources: [...kbSources, ...fallback.sources],
-        };
+        const archiveFirst = offlineWithArchives(kbMatches, lang);
+        if (archiveFirst) return archiveFirst;
+        return offlineFallbackAnswer(lang);
     }
 
     if (geminiKey) {
@@ -334,6 +217,7 @@ async function routeBrainQuery(query, lang) {
             if (out) {
                 return {
                     ...out,
+                    grounding,
                     sources: [...kbSources, ...out.sources],
                 };
             }
@@ -348,16 +232,16 @@ async function routeBrainQuery(query, lang) {
         if (out) {
             return {
                 ...out,
+                grounding,
                 sources: [...kbSources, ...out.sources],
             };
         }
     }
 
-    const fallback = offlineFallbackAnswer(lang);
-    return {
-        ...fallback,
-        sources: [...kbSources, ...fallback.sources],
-    };
+    const archiveFirst = offlineWithArchives(kbMatches, lang);
+    if (archiveFirst) return archiveFirst;
+
+    return offlineFallbackAnswer(lang);
 }
 
 async function handler(req, res) {
@@ -392,10 +276,12 @@ async function handler(req, res) {
 
         const result = await routeBrainQuery(query, lang);
         const sources = Array.isArray(result.sources) ? result.sources : [];
-        return res.status(200).json({
+        const payload = {
             answer: result.answer || '',
             sources,
-        });
+        };
+        if (result.grounding) payload.grounding = result.grounding;
+        return res.status(200).json(payload);
     } catch (e) {
         console.error('[ask-brain] unhandled', e);
         if (e.code === 'PAYLOAD_TOO_LARGE') {

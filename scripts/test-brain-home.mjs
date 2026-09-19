@@ -13,6 +13,7 @@ function check(name, ok, detail = '') {
 }
 
 const home = readFileSync(join(ROOT, 'home/index.html'), 'utf8');
+check('brain-knowledge-grounding on home', home.includes('brain-knowledge-grounding.js'));
 check('brain-chat script on home', home.includes('brain-chat.js'));
 check('manifest link', home.includes('href="/manifest.json"'));
 check('theme-color brain', home.includes('content="#0A1128"'));
