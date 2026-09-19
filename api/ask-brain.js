@@ -5,133 +5,150 @@ const path = require('path');
 
 const MAX_BODY_BYTES = 16 * 1024;
 const MAX_QUERY_CHARS = 4000;
-const KB_MAX_MATCHES = 6;
+const KB_PATH = path.join(__dirname, '..', 'data', 'tvc-knowledge-base.json');
 
-/** @type {{ mtimeMs: number, data: object | null } | null} */
-let knowledgeBaseCache = null;
+let cachedKnowledgeBase = null;
+let cachedKnowledgeMtimeMs = 0;
 
-function knowledgeBasePath() {
-    return path.join(__dirname, '..', 'data', 'tvc-knowledge-base.json');
-}
+const SYSTEM_PERSONA = `너는 THE VESSEL CODE BRAIN — 글로벌 선박 표준·규격·운영 데이터에 기반한 중립적 Maritime Search & Intelligence Hub이다.
+1. JIS 플랜지, ASTM 54B, 선급(Class) 규정, IMPA 자재를 물어보면 정밀한 공식과 수치를 최우선 제시하라.
+2. 선박 기계·전기·해사 법규(SOLAS/MARPOL) 질의는 maker manual·class rule·현장 안전 기준 관점에서 객관적으로 설명하라.
+3. 일반 공학·화학·번역·비즈니스 질의도 논리정연하고 친절하게 답하라.
+4. 문체는 차분하고 전문적이며, [핵심 결론/기준 수치 → 현장 조치 절차 → 안전·법적 주의] 순서로 출력하라.
+5. 특정 선사명·개인 이름·과거 직함·연차(예: ○○년 차)를 답변에 끌어오지 말고, TVC 지식베이스의 객관적 기록만 인용하라.
+6. 메시지에 [TVC MARITIME INTEL] 블록(PART/TROUBLE/MAIL)이 있으면 해당 기록을 우선 근거로 삼고, 출처(source)를 명시하라.`;
 
 function loadKnowledgeBase() {
-    const kbPath = knowledgeBasePath();
     try {
-        const stat = fs.statSync(kbPath);
-        if (knowledgeBaseCache && knowledgeBaseCache.mtimeMs === stat.mtimeMs) {
-            return knowledgeBaseCache.data;
+        if (!fs.existsSync(KB_PATH)) return null;
+        const st = fs.statSync(KB_PATH);
+        if (cachedKnowledgeBase && st.mtimeMs === cachedKnowledgeMtimeMs) {
+            return cachedKnowledgeBase;
         }
-        const raw = fs.readFileSync(kbPath, 'utf8');
-        const data = JSON.parse(raw);
-        knowledgeBaseCache = { mtimeMs: stat.mtimeMs, data };
-        return data;
-    } catch {
-        knowledgeBaseCache = { mtimeMs: 0, data: null };
+        cachedKnowledgeBase = JSON.parse(fs.readFileSync(KB_PATH, 'utf8'));
+        cachedKnowledgeMtimeMs = st.mtimeMs;
+        return cachedKnowledgeBase;
+    } catch (e) {
+        console.warn('[ask-brain] knowledge base load failed', e.message || e);
         return null;
     }
 }
 
-function queryTokens(query) {
-    const q = String(query || '').toLowerCase();
-    const tokens = q.match(/[\p{L}\p{N}]{2,}/gu) || [];
-    const uniq = new Set(tokens.filter((t) => t.length >= 2));
-    return [...uniq];
+function tokenizeQuery(query) {
+    return String(query || '')
+        .toLowerCase()
+        .split(/[\s,./\\|()[\]:;]+/)
+        .map((t) => t.trim())
+        .filter((t) => t.length >= 2);
 }
 
-function scoreHaystack(hay, tokens) {
-    const text = String(hay || '').toLowerCase();
-    if (!text) return 0;
+function scoreText(tokens, text) {
+    const hay = String(text || '').toLowerCase();
     let score = 0;
     for (const t of tokens) {
-        if (text.includes(t)) score += t.length >= 4 ? 3 : 1;
+        if (hay.includes(t)) score += 1;
     }
     return score;
 }
 
-function matchKnowledgeBase(query) {
+function buildSuperintendentArchiveContext(query, lang) {
     const kb = loadKnowledgeBase();
-    if (!kb) return { parts: [], trouble: [] };
+    const retrieval = kb && kb.retrieval;
+    if (!retrieval) return { contextBlock: '', extraSources: [] };
 
-    const tokens = queryTokens(query);
-    if (!tokens.length) return { parts: [], trouble: [] };
+    const tokens = tokenizeQuery(query);
+    if (!tokens.length) return { contextBlock: '', extraSources: [] };
 
-    const parts = (kb.structured_parts || [])
-        .map((p) => {
-            const blob = [p.part_number, p.name, p.last_vendor, p.compatible_equipment].join(' ');
-            const score = scoreHaystack(blob, tokens);
-            const pn = String(p.part_number || '').toLowerCase();
-            const exact = tokens.some((t) => pn && (pn === t || pn.includes(t)));
-            return { item: p, score: score + (exact ? 8 : 0) };
-        })
+    const parts = (retrieval.parts || [])
+        .map((p) => ({
+            score: scoreText(tokens, [p.partNumber, p.impa, p.description, p.equipment, p.vendor].join(' ')),
+            p,
+        }))
         .filter((x) => x.score > 0)
         .sort((a, b) => b.score - a.score)
-        .slice(0, KB_MAX_MATCHES)
-        .map((x) => x.item);
+        .slice(0, 6);
 
-    const trouble = (kb.trouble_history || [])
-        .map((t) => {
-            const blob = [t.equipment, t.symptoms, t.presumed_cause, t.action_taken, t.inspection_tips].join(' ');
-            return { item: t, score: scoreHaystack(blob, tokens) };
-        })
+    const troubles = (retrieval.troubles || [])
+        .map((t) => ({
+            score: scoreText(tokens, [t.equipment, t.symptoms, t.rootCause, t.actionTaken, t.classRecommendation].join(' ')),
+            t,
+        }))
         .filter((x) => x.score > 0)
         .sort((a, b) => b.score - a.score)
-        .slice(0, KB_MAX_MATCHES)
-        .map((x) => x.item);
+        .slice(0, 6);
 
-    return { parts, trouble };
-}
+    const mailRows = (retrieval.mailIntel || [])
+        .map((m) => ({
+            score: scoreText(tokens, [m.subject, m.from, m.bodySnippet, (m.attachmentFiles || []).join(' ')].join(' ')),
+            m,
+        }))
+        .filter((x) => x.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 4);
 
-function formatHistoricalContext(matches, lang) {
-    const { parts, trouble } = matches;
-    if (!parts.length && !trouble.length) return '';
-
-    const header =
-        lang === 'EN'
-            ? '[Verified historical context — dock/field repair records & unit pricing from TVC archives]'
-            : '[검증된 역사적 맥락 — 선석/현장 과거 수리 실적 및 단가 데이터 (TVC 아카이브)]';
-
-    const lines = [header, ''];
-
-    if (parts.length) {
-        lines.push(lang === 'EN' ? '— Spare / pricing records:' : '— 부품·단가 실적:');
-        for (const p of parts) {
-            const price =
-                p.standard_price != null && p.standard_price !== ''
-                    ? `USD ${p.standard_price}`
-                    : lang === 'EN'
-                      ? 'price n/a'
-                      : '단가 미기록';
-            lines.push(
-                `• ${p.part_number || '—'} | ${p.name || '—'} | ${price} | vendor: ${p.last_vendor || '—'} | equipment: ${p.compatible_equipment || '—'}`,
-            );
-        }
-        lines.push('');
+    if (!parts.length && !troubles.length && !mailRows.length) {
+        return { contextBlock: '', extraSources: [] };
     }
 
-    if (trouble.length) {
-        lines.push(lang === 'EN' ? '— Defect / repair history:' : '— 결함·수리 이력:');
-        for (const t of trouble) {
-            lines.push(`• ${t.equipment || '—'}`);
-            lines.push(`  cause/symptoms: ${t.presumed_cause || t.symptoms || '—'}`);
-            lines.push(`  action: ${t.action_taken || '—'}`);
-            if (t.inspection_tips) lines.push(`  class/survey: ${t.inspection_tips}`);
+    const lines = [];
+    if (lang === 'EN') {
+        lines.push('[TVC MARITIME INTEL — verified parts, pricing, defect/repair records from TVC knowledge base]');
+    } else {
+        lines.push('[TVC MARITIME INTEL — TVC 지식베이스(부품·단가·결함/정비 기록)]');
+    }
+
+    for (const { p } of parts) {
+        const price = p.unitPrice != null ? `${p.unitPrice}${p.currency ? ` ${p.currency}` : ''}` : '—';
+        lines.push(
+            `- PART | ${p.partNumber || p.impa || '—'} | ${p.description || '—'} | equip: ${p.equipment || '—'} | vendor: ${p.vendor || '—'} | price: ${price} | src: ${p.sourceFile || '—'}`
+        );
+    }
+    for (const { t } of troubles) {
+        lines.push(
+            `- TROUBLE | equip: ${t.equipment || '—'} | symptom: ${t.symptoms || '—'} | cause: ${t.rootCause || '—'} | action: ${t.actionTaken || '—'} | class: ${t.classRecommendation || '—'} | src: ${t.sourceFile || '—'}`
+        );
+    }
+    for (const { m } of mailRows) {
+        lines.push(
+            `- MAIL | ${m.date || '—'} | from: ${m.from || '—'} | subject: ${m.subject || '—'} | snippet: ${(m.bodySnippet || '—').slice(0, 280)} | attachments: ${(m.attachmentFiles || []).length}`
+        );
+    }
+
+    const extraSources = [];
+    const seen = new Set();
+    for (const { p } of parts) {
+        if (p.sourceFile && !seen.has(p.sourceFile)) {
+            seen.add(p.sourceFile);
+            extraSources.push({ label: `TVC archive (PART): ${p.sourceFile}`, kind: 'tvc_archive_part' });
+        }
+    }
+    for (const { t } of troubles) {
+        if (t.sourceFile && !seen.has(t.sourceFile)) {
+            seen.add(t.sourceFile);
+            extraSources.push({ label: `TVC archive (TROUBLE): ${t.sourceFile}`, kind: 'tvc_archive_trouble' });
+        }
+    }
+    for (const { m } of mailRows) {
+        const label = `Gmail: ${m.subject || m.source || 'maritime mail'}`;
+        if (!seen.has(label)) {
+            seen.add(label);
+            extraSources.push({ label, kind: 'gmail_intel' });
         }
     }
 
-    lines.push(
-        lang === 'EN'
-            ? 'Use the above as factual grounding when relevant; state if the user question is outside this data.'
-            : '위 데이터가 질문과 관련 있으면 사실 근거로 활용하고, 범위 밖이면 명시하라.',
-    );
-
-    return lines.join('\n');
+    return { contextBlock: lines.join('\n'), extraSources };
 }
 
-const SYSTEM_PERSONA = `너는 1급 기관사이자 10년 차 수석 공무감독 'THE VESSEL CODE BRAIN'이다.
-1. JIS 플랜지, ASTM 54B, 선급(Class) 규정, IMPA 자재를 물어보면 정밀한 공식과 수치를 최우선 제시하라.
-2. 선박 엔진 결함, 전기 계통 이상, 해사 법규(SOLAS/MARPOL), 용선 계약 분쟁 등 내부 DB 외의 전문 영역도 현장 공무감독의 시각에서 명쾌하게 해결 절차를 설명하라.
-3. 일반 공학, 화학, 번역, 비즈니스 상식을 물어보더라도 논리정연하고 친절하게 즉답하라.
-4. 문체는 차분하고 묵직한 베테랑 선배의 어조를 유지하며, 군더더기를 배제하고 [핵심 결론/기준 수치 -> 현장 조치 절차 -> 안전 및 법적 주의사항] 순서로 출력하라.`;
+function augmentQueryWithArchive(query, lang) {
+    const { contextBlock, extraSources } = buildSuperintendentArchiveContext(query, lang);
+    if (!contextBlock) {
+        return { queryForModel: query, extraSources: [] };
+    }
+    return {
+        queryForModel: `${contextBlock}\n\n---\nUser question:\n${query}`,
+        extraSources,
+    };
+}
 
 function readJsonBody(req) {
     return new Promise((resolve, reject) => {
@@ -193,24 +210,19 @@ function offlineFallbackAnswer(lang) {
     };
 }
 
-async function callGemini(query, lang, historicalContext) {
+async function callGemini(query, lang, extraSources) {
     const key = String(process.env.GEMINI_API_KEY || '').trim();
     if (!key) return null;
 
-    const model = process.env.GEMINI_MODEL || 'gemini-2.0-flash';
+    const model = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(key)}`;
-
-    const systemParts = `${SYSTEM_PERSONA}\n\n${langHint(lang)}`;
-    const systemInstruction = historicalContext
-        ? `${systemParts}\n\n${historicalContext}`
-        : systemParts;
 
     const res = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
             systemInstruction: {
-                parts: [{ text: systemInstruction }],
+                parts: [{ text: `${SYSTEM_PERSONA}\n\n${langHint(lang)}` }],
             },
             contents: [
                 {
@@ -244,21 +256,20 @@ async function callGemini(query, lang, historicalContext) {
         throw err;
     }
 
+    const sources = [{ label: 'THE VESSEL CODE Brain (Gemini)', provider: 'gemini', model }];
+    if (extraSources && extraSources.length) sources.push(...extraSources);
+
     return {
         answer,
-        sources: [{ label: 'THE VESSEL CODE Brain (Gemini)', provider: 'gemini', model }],
+        sources,
     };
 }
 
-async function callOpenAI(query, lang, historicalContext) {
+async function callOpenAI(query, lang, extraSources) {
     const key = String(process.env.OPENAI_API_KEY || '').trim();
     if (!key) return null;
 
     const model = process.env.OPENAI_MODEL || 'gpt-4o-mini';
-    const systemContent = historicalContext
-        ? `${SYSTEM_PERSONA}\n\n${langHint(lang)}\n\n${historicalContext}`
-        : `${SYSTEM_PERSONA}\n\n${langHint(lang)}`;
-
     const res = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
@@ -270,7 +281,7 @@ async function callOpenAI(query, lang, historicalContext) {
             temperature: 0.35,
             max_tokens: 2048,
             messages: [
-                { role: 'system', content: systemContent },
+                { role: 'system', content: `${SYSTEM_PERSONA}\n\n${langHint(lang)}` },
                 { role: 'user', content: query },
             ],
         }),
@@ -291,52 +302,30 @@ async function callOpenAI(query, lang, historicalContext) {
         throw err;
     }
 
+    const sources = [{ label: 'THE VESSEL CODE Brain (OpenAI)', provider: 'openai', model }];
+    if (extraSources && extraSources.length) sources.push(...extraSources);
+
     return {
         answer,
-        sources: [{ label: 'THE VESSEL CODE Brain (OpenAI)', provider: 'openai', model }],
+        sources,
     };
 }
 
-function historicalSources(matches, lang) {
-    const { parts, trouble } = matches;
-    if (!parts.length && !trouble.length) return [];
-    return [
-        {
-            label:
-                lang === 'EN'
-                    ? 'TVC historical archives (parts & repair log)'
-                    : 'TVC 역사 아카이브 (부품·수리 실적)',
-            provider: 'tvc-knowledge-base',
-            path: 'data/tvc-knowledge-base.json',
-        },
-    ];
-}
-
 async function routeBrainQuery(query, lang) {
+    const augmented = augmentQueryWithArchive(query, lang);
+    const queryForModel = augmented.queryForModel;
+    const archiveSources = augmented.extraSources;
     const geminiKey = String(process.env.GEMINI_API_KEY || '').trim();
     const openaiKey = String(process.env.OPENAI_API_KEY || '').trim();
 
-    const kbMatches = matchKnowledgeBase(query);
-    const historicalContext = formatHistoricalContext(kbMatches, lang);
-    const kbSources = historicalSources(kbMatches, lang);
-
     if (!geminiKey && !openaiKey) {
-        const fallback = offlineFallbackAnswer(lang);
-        return {
-            ...fallback,
-            sources: [...kbSources, ...fallback.sources],
-        };
+        return offlineFallbackAnswer(lang);
     }
 
     if (geminiKey) {
         try {
-            const out = await callGemini(query, lang, historicalContext);
-            if (out) {
-                return {
-                    ...out,
-                    sources: [...kbSources, ...out.sources],
-                };
-            }
+            const out = await callGemini(queryForModel, lang, archiveSources);
+            if (out) return out;
         } catch (geminiErr) {
             console.error('[ask-brain] Gemini failed', geminiErr.message || geminiErr);
             if (!openaiKey) throw geminiErr;
@@ -344,20 +333,11 @@ async function routeBrainQuery(query, lang) {
     }
 
     if (openaiKey) {
-        const out = await callOpenAI(query, lang, historicalContext);
-        if (out) {
-            return {
-                ...out,
-                sources: [...kbSources, ...out.sources],
-            };
-        }
+        const out = await callOpenAI(queryForModel, lang, archiveSources);
+        if (out) return out;
     }
 
-    const fallback = offlineFallbackAnswer(lang);
-    return {
-        ...fallback,
-        sources: [...kbSources, ...fallback.sources],
-    };
+    return offlineFallbackAnswer(lang);
 }
 
 async function handler(req, res) {
