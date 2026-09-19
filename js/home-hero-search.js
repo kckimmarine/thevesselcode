@@ -23,6 +23,11 @@
         const input = document.getElementById('homeHeroSearchInput');
         if (!form || !input) return;
 
+        if (globalThis.TVC_BrainChat && typeof globalThis.TVC_BrainChat.bindHeroForm === 'function') {
+            globalThis.TVC_BrainChat.bindHeroForm(form, input);
+            return;
+        }
+
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             const q = normalizeQuery(input.value);
