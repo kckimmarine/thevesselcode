@@ -2562,3 +2562,257 @@ body.tvc-marketing-body .tvc-ais-vessel-icon {
 body.tvc-marketing-body .leaflet-container {
     font-family: inherit;
 }
+
+/* —— Global Operational Hubs (CartoDB dark network map) —— */
+@keyframes tvc-network-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 14px rgba(56, 189, 248, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(56, 189, 248, 0);
+    }
+}
+
+.tvc-network-map-section {
+    margin-top: 8px;
+}
+
+.tvc-service-network-map-shell {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(56, 189, 248, 0.22);
+    box-shadow:
+        0 0 0 1px rgba(15, 23, 42, 0.6) inset,
+        0 24px 48px -12px rgba(2, 6, 23, 0.55);
+    background: #0b1220;
+}
+
+.tvc-service-network-map {
+    width: 100%;
+    min-height: 420px;
+    height: min(52vh, 520px);
+    background: radial-gradient(ellipse at 50% 40%, rgba(15, 23, 42, 0.9), #020617);
+}
+
+.tvc-service-network-map--loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-size: 0.875rem;
+}
+
+.tvc-service-network-map--loading::after {
+    content: 'Loading operational chart…';
+}
+
+.tvc-service-network-map-hint {
+    margin: 0;
+    padding: 10px 14px 12px;
+    font-size: 0.75rem;
+    color: #64748b;
+    text-align: center;
+    background: rgba(15, 23, 42, 0.85);
+    border-top: 1px solid rgba(56, 189, 248, 0.12);
+}
+
+body.tvc-marketing-body .tvc-service-network-map .leaflet-container {
+    background: #020617;
+    font-family: inherit;
+}
+
+body.tvc-marketing-body .tvc-service-network-map .leaflet-control-zoom a {
+    background: rgba(15, 23, 42, 0.92);
+    color: #e2e8f0;
+    border-color: rgba(56, 189, 248, 0.25);
+}
+
+body.tvc-marketing-body .tvc-service-network-map .leaflet-control-attribution {
+    background: rgba(15, 23, 42, 0.75);
+    color: #64748b;
+    font-size: 10px;
+}
+
+body.tvc-marketing-body .tvc-service-network-map .leaflet-control-attribution a {
+    color: #94a3b8;
+}
+
+.tvc-network-hub-icon-wrap {
+    background: transparent !important;
+    border: none !important;
+}
+
+.tvc-network-hub-marker {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tvc-network-hub-marker--hq {
+    width: 52px;
+    height: 52px;
+}
+
+.tvc-network-hub-pulse {
+    position: absolute;
+    inset: 4px;
+    border-radius: 50%;
+    background: rgba(56, 189, 248, 0.25);
+    animation: tvc-network-pulse 2s infinite;
+    will-change: box-shadow;
+}
+
+.tvc-network-hub-marker--hq .tvc-network-hub-pulse {
+    inset: 6px;
+    background: rgba(251, 191, 36, 0.2);
+    box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.45);
+    animation: tvc-network-pulse 2s infinite;
+}
+
+.tvc-network-hub-core {
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.85));
+}
+
+.tvc-network-hub-marker--hq .tvc-network-hub-core {
+    filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.65));
+}
+
+.tvc-network-hub-hq-label {
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    color: #fbbf24;
+    text-shadow: 0 0 6px rgba(15, 23, 42, 0.95);
+}
+
+.leaflet-popup.tvc-network-popup {
+    margin-bottom: 12px;
+}
+
+.leaflet-popup.tvc-network-popup .leaflet-popup-content-wrapper {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+.leaflet-popup.tvc-network-popup .leaflet-popup-content {
+    margin: 0;
+    width: auto !important;
+}
+
+.leaflet-popup.tvc-network-popup .leaflet-popup-tip {
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: none;
+}
+
+.leaflet-popup.tvc-network-popup .leaflet-popup-close-button {
+    color: #94a3b8 !important;
+    font-size: 20px;
+    padding: 6px 8px 0 0;
+}
+
+.tvc-network-popup-card {
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 8px;
+    padding: 14px 14px 12px;
+    color: #e2e8f0;
+    min-width: 220px;
+    max-width: 280px;
+}
+
+.tvc-network-popup-head {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.tvc-network-popup-flag {
+    font-size: 1.35rem;
+    line-height: 1;
+}
+
+.tvc-network-popup-title {
+    display: block;
+    font-size: 0.9375rem;
+    color: #f8fafc;
+}
+
+.tvc-network-popup-country {
+    display: block;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin-top: 2px;
+}
+
+.tvc-network-popup-cap-label {
+    margin: 0 0 6px;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #38bdf8;
+}
+
+.tvc-network-popup-caps {
+    margin: 0 0 12px;
+    padding-left: 1.1rem;
+    font-size: 0.75rem;
+    color: #cbd5e1;
+    line-height: 1.45;
+}
+
+.tvc-network-popup-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tvc-network-popup-rfq,
+.tvc-network-popup-wa {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 7px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.tvc-network-popup-rfq {
+    background: #0284c7;
+}
+
+.tvc-network-popup-wa {
+    background: #22c55e;
+}
+
+@media (max-width: 768px) {
+    .tvc-service-network-map {
+        min-height: 320px;
+        height: min(48vh, 400px);
+    }
+}
+
+@media (min-width: 1920px) {
+    .tvc-service-network-map {
+        height: min(56vh, 640px);
+    }
+}

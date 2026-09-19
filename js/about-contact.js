@@ -111,7 +111,14 @@
         }
     }
 
-    function buildRfqPrefill(code, name) {
+    function buildRfqPrefill(code, name, port) {
+        const portPart = String(port || '').trim();
+        if (portPart) {
+            const portTemplate =
+                t('contact.campaign.rfqPort') ||
+                'Inquiring about supply/quote and logistics at [port] operational hub…';
+            return portTemplate.replace('[port]', portPart);
+        }
         const codePart = String(code || '').trim();
         const namePart = String(name || '').trim();
         const template =
@@ -136,13 +143,14 @@
         const inquiry = String(params.get('inquiry') || '').trim().toLowerCase();
         const impaCode = String(params.get('code') || '').trim();
         const itemName = String(params.get('name') || '').trim();
+        const portName = String(params.get('port') || '').trim();
         const fleetSize = String(params.get('fleet') || params.get('vessels') || '').trim();
         const typeSelect = qs('#acInquiryType');
         const message = qs('#acMessage');
         if (inquiry === 'rfq') {
             if (typeSelect) typeSelect.value = 'rfq';
             if (message && !String(message.value || '').trim()) {
-                message.value = buildRfqPrefill(impaCode, itemName);
+                message.value = buildRfqPrefill(impaCode, itemName, portName);
             }
             return;
         }
