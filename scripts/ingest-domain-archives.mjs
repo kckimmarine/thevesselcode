@@ -296,12 +296,51 @@ async function main() {
         }
     }
 
+    let prior = {};
+    if (fs.existsSync(OUT_PATH)) {
+        try {
+            prior = JSON.parse(fs.readFileSync(OUT_PATH, 'utf8'));
+        } catch {
+            prior = {};
+        }
+    }
+
+    const structured_parts = dedupeParts(allParts);
+    const trouble_history = dedupeTrouble(allTrouble);
+
+    const domainRetrievalParts = structured_parts.map((p) => ({
+        partNumber: p.part_number,
+        description: p.name,
+        unitPrice: p.standard_price,
+        currency: 'USD',
+        vendor: p.last_vendor,
+        equipment: p.compatible_equipment,
+        sourceFile: 'data/raw_archives',
+    }));
+
+    const domainRetrievalTroubles = trouble_history.map((t) => ({
+        equipment: t.equipment,
+        symptoms: t.symptoms,
+        rootCause: t.presumed_cause,
+        actionTaken: t.action_taken,
+        classRecommendation: t.inspection_tips,
+        sourceFile: 'data/raw_archives',
+    }));
+
+    const priorRetrieval = prior.retrieval || {};
     const payload = {
-        version: 1,
+        ...prior,
+        version: prior.version || 1,
         generated_at: new Date().toISOString(),
-        sources,
-        structured_parts: dedupeParts(allParts),
-        trouble_history: dedupeTrouble(allTrouble),
+        domain_archive_sources: sources,
+        structured_parts,
+        trouble_history,
+        retrieval: {
+            parts: [...(priorRetrieval.parts || []), ...domainRetrievalParts].slice(-5000),
+            troubles: [...(priorRetrieval.troubles || []), ...domainRetrievalTroubles].slice(-2000),
+            snippets: priorRetrieval.snippets || [],
+            mailIntel: priorRetrieval.mailIntel || [],
+        },
     };
 
     fs.writeFileSync(OUT_PATH, `${JSON.stringify(payload)}\n`, 'utf8');

@@ -50,6 +50,11 @@ if (shouldIngestFleet) {
   console.log('OK public/data/fleet (cached fleet-index.json)');
 }
 
+const domainArchives = spawnSync('node', ['scripts/ingest-domain-archives.mjs'], { cwd: root, stdio: 'inherit' });
+if (domainArchives.status !== 0) {
+  console.warn('WARN domain archive ingest exited non-zero (continuing with existing knowledge base)');
+}
+
 const smoke = spawnSync('node', ['scripts/smoke-web-demo.mjs'], { cwd: root, stdio: 'inherit' });
 if (smoke.status !== 0) process.exit(smoke.status ?? 1);
 

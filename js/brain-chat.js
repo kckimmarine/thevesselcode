@@ -436,6 +436,30 @@
         if (answerEl && on) answerEl.innerHTML = '';
     }
 
+    async function tryStaticArchiveGrounding(query) {
+        const lib = window.TVC_BrainKnowledge;
+        if (!lib || typeof lib.matchFromStaticArchive !== 'function') return '';
+        try {
+            const { answer } = await lib.matchFromStaticArchive(query, state.lang);
+            return String(answer || '').trim();
+        } catch (_) {
+            return '';
+        }
+    }
+
+    function composeAnswer(data, apiFailed) {
+        let answer = String(data.answer || '').trim();
+        const grounding = String(data.grounding || '').trim();
+
+        if (!answer && grounding) answer = grounding;
+        else if (answer && grounding && !answer.includes(grounding.slice(0, 40))) {
+            answer = `${answer}\n\n---\n\n${grounding}`;
+        }
+
+        if (!answer && apiFailed) return '';
+        return answer;
+    }
+
     async function askBrain(query) {
         const q = String(query || '').trim();
         if (!q || state.loading) return;
@@ -446,18 +470,34 @@
         try {
             const ctrl = new AbortController();
             const timeoutId = setTimeout(() => ctrl.abort(), 12000);
-            const res = await fetch(API_PATH, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ query: q, lang: state.lang }),
-                signal: ctrl.signal,
-            }).finally(() => clearTimeout(timeoutId));
-            const data = await res.json().catch(() => ({}));
-            let answer = String(data.answer || '').trim();
-            if (!answer && !res.ok) {
+            let res;
+            let apiFailed = false;
+            try {
+                res = await fetch(API_PATH, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: q, lang: state.lang }),
+                    signal: ctrl.signal,
+                });
+            } catch (_) {
+                apiFailed = true;
+            } finally {
+                clearTimeout(timeoutId);
+            }
+
+            const data = res ? await res.json().catch(() => ({})) : {};
+            if (!res || !res.ok) apiFailed = true;
+
+            let answer = composeAnswer(data, apiFailed);
+
+            if (!answer && apiFailed) {
+                answer = await tryStaticArchiveGrounding(q);
+            }
+
+            if (!answer && apiFailed) {
                 answer = state.lang === 'EN'
-                    ? '**Core conclusion:** The Brain API is unavailable on this host (local static preview).\n\n**Field steps:** Deploy with Vercel serverless `/api/ask-brain` or use the Toolkit for IMPA / calculator lookups.\n\n**Safety:** Verify all numbers against class and maker manuals before execution.'
-                    : '**핵심 결론:** 이 호스트에서는 Brain API(`/api/ask-brain`)에 연결할 수 없습니다(로컬 정적 미리보기).\n\n**현장 조치:** Vercel 배포 환경에서 질문하거나, IMPA·계산기는 Toolkit에서 즉시 조회하십시오.\n\n**안전:** 수치·절차는 선급·메이커 매뉴얼과 반드시 교차 확인하십시오.';
+                    ? '**Core conclusion:** The Brain API is unavailable on this host (local static preview).\n\n**Field steps:** Run `npm start` (includes `/api/ask-brain`), deploy to Vercel, or place archives in `data/raw_archives/` and run `node scripts/ingest-domain-archives.mjs`.\n\n**Safety:** Verify all numbers against class and maker manuals before execution.'
+                    : '**핵심 결론:** 이 호스트에서 Brain API(`/api/ask-brain`)에 연결할 수 없습니다.\n\n**현장 조치:** `npm start`로 로컬 API 포함 서버를 실행하거나, Vercel 배포 환경에서 질문하십시오. 아카이브는 `data/raw_archives/` → `node scripts/ingest-domain-archives.mjs` 후 `/data/tvc-knowledge-base.json`으로 조회됩니다.\n\n**안전:** 수치·절차는 선급·메이커 매뉴얼과 반드시 교차 확인하십시오.';
             }
             if (!answer) answer = t('error');
             const modal = ensureModal();
@@ -465,9 +505,14 @@
             if (answerEl) answerEl.innerHTML = renderMarkdown(answer);
         } catch (err) {
             console.warn('[TVC Brain]', err);
+            const fallback = await tryStaticArchiveGrounding(q);
             const modal = ensureModal();
             const answerEl = modal.querySelector('.tvc-brain-answer');
-            if (answerEl) answerEl.innerHTML = `<p class="tvc-brain-p">${escapeHtml(t('error'))}</p>`;
+            if (answerEl) {
+                answerEl.innerHTML = fallback
+                    ? renderMarkdown(fallback)
+                    : `<p class="tvc-brain-p">${escapeHtml(t('error'))}</p>`;
+            }
         } finally {
             setLoading(false);
         }
