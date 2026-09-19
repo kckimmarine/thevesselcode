@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-19T06:37:24.880Z",
-  "sourceRoot": "/workspace/data",
+  "updatedAt": "2026-09-19T07:23:05.035Z",
+  "sourceRoot": "imap://zzangkkc15@gmail.com/INBOX",
   "cases": [
     {
       "id": "93e609c21f2abef8",
@@ -5600,6 +5600,1140 @@
       "actionTaken": "",
       "classRecommendation": "",
       "sourceFile": "data/TVC-Dialog-Message-Unification.xlsx"
+    },
+    {
+      "id": "6db696a13cd46bcc",
+      "equipment": "",
+      "symptoms": "RE: valiant : defect report\n수신: VALIANT 선장님\n\n발신: DMM / 우대희 감독\n\n \n\n수고 많으십니다.\n\n \n\nODME 및 INMARSAT-C 2건에 대한 DEFECT REPORT 수신하였습니다.\n\n각 결함사항에 대한 위험성평가서를 실시한 결과를 회사로 보내주시면 감사하겠습니다.\n\nPADANG 예상 접안 일정 및 부두에서의 OPERATION 시간은 어느정도 되는지요?\n\nODME ALARM건은 사진 화질이 좋지 않은 바, 재 전송 요청드립니다.\n\n \n\n \n\n감사합니다.\n\n \n\n우대희 배상.\n\n \n\nMTT Superintendent / DAE HEE, WOO \n\nAdd: F4, German Bldg, 117, Jungang-daero, Jung-gu, Busan, Korea (4",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/121642/RE_ valiant _ defect report.eml.meta"
+    },
+    {
+      "id": "011ad05a9701f7d0",
+      "equipment": "",
+      "symptoms": "RE: [마린트랜스/대명상선] QUARTERBACK J (기부속 1건+수리 1건) TANJUNG LANGSAT 보급\n수신: 대명상선 / 김경철 부장님\n발신: 마린트랜스코리아 / 신혜지 대리\n\n부장님 안녕하세요\n마린트랜스 신혜지 입니다.\n\n표제 건 금일(12/31) 23시경 본선 보급 예정으로 일정 업데이트 드립니다.\n\n감사합니다.\n\n친절한 안부를 담아 / Warm regards,\n\n[cid:image001.png@01DC7A61.5DDA3470]\nPaula, Shin (신혜지)\nKey Account Manager\n\nMarinetrans\n1002 & 1003, 21, Yangpyeong-Ro 22-Gil, Yeongdeungpo-Gu, Seoul | Korea\nDirect: +82-2-2068-4271\nOff",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/121643/대명상선_ QUARTERBACK J (기부속 1건_수리 1건) TANJUNG LANGSAT 보급.eml.meta"
+    },
+    {
+      "id": "f5dc03984745acbc",
+      "equipment": "",
+      "symptoms": "RE: valiant : defect report\n수신: VALIANT 선장님\n\n발신: DMM / 우대희 감독\n\n \n\n선장님, 작동 불량 상태 당시에, SIMULATION TEST를 하신 것인지, ACTUAL OPERATING을 하신 것인지요?\n\n정황상 접안 대기 중, 1항사께서 성능 점검을 위해 SIMULATION TEST를 실시 한 것으로 사료됩니다만,\n\n배출 조건이 맞지 않을 경우, OVERBOARD VALVE가 열리지 않게 됩니다.\n\n따라서, SIMULATION TEST를 하기 위한 각종 설정 값이 어떻게 입력되어 있는지 확인 할 수 있도록 사진을 보내주시면 감사하겠습니다.\n\n \n\n \n\n우대희 배상.\n\n \n\nMTT Superintendent / DAE HEE, WOO \n\nAdd: F4, German ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/121654/RE_ valiant _ defect report.eml.meta"
+    },
+    {
+      "id": "b97fd207d23223c3",
+      "equipment": "",
+      "symptoms": "DEFECT REPORT SHIP'S GYRO STEERING\nTO : DM MTT\n\nFM : STO AZALEA\n\nGood day,\n\nPls find the attached file.\n\nB.rgds/Master.Kim\n\nMT STO AZALEA\n\n===========\n\nE-MAIL : stoazalea@arionmail.com <mailto:stoazalea@arionmail.com>\n\nTEL : 001-8816-7713-8270\n\nS.LINK BRIDGE : 070-7998-9041\n\nS.LINK CAPTAIN CABIN : 070-7998-9042\n\nHP : +82-10-8757-1842",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/121734/DEFECT REPORT SHIP_S GYRO STEERING.eml.meta"
+    },
+    {
+      "id": "0717dc56c55d709f",
+      "equipment": "",
+      "symptoms": "RE: valiant : defect report\n수고가 많으십니다\n\nrisk ass 첨부하오니 참조하시기 바랍니다.\n\n-----Original Message-----\nFrom: \"Woo Dae Hee\"<dmm@dmmaritime.co.kr>\nTo: \"이부재\"<bjlee58105@naver.com>;\nCc: <dmm@dmmaritime.co.kr>; <kckim@dmmaritime.co.kr>;\nSent: 2025-12-31 (수) 14:26:35 (GMT+09:00)\nSubject: RE: valiant : defect report\n\n수신: VALIANT 선장님\n발신: DMM / 우대희 감독\n \n수고 많으십니다.\n \nODME 및 INMARSAT-C 2건에 대한 DEFECT REPORT 수신하였습니다.\n각 ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/121742/RE_ valiant _ defect report.eml.meta"
+    },
+    {
+      "id": "b29642bac0fa2194",
+      "equipment": "",
+      "symptoms": "M/T QUARTERBACK J / 피스톤링 관련\nTO : DM MARITIME\n\nFM : J-BRO SHIPPING\n\n \n\n반갑습니다.\n\n본선 차항 세부사항을 아래와 같이 공유하여 드리오니, 수리 계획 수립하셔서 회신을 부탁 드립니다.\n\n각 부두 별 접안일정은 예상 이오니, 작업 소요 시간만 우선 참고하시기 바랍니다.\n\n \n\nM/T QUARTERBACK J\n\nDEC., 2025\n\n1800LT 21ST ETA SINGAPORE ANCHORAGE - IPA COLLECT SAMPLE / INA WWT\n\nAM 22ND ETB ADVARIO DCHG IPA 970MT\n\nAM 23RD ETD\n\n \n\nAM 23RD ETB STOLTHAVEN LOAD INA 3,420MT (T/S WITH M/T BOCHEM NEW ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/119809/ 피스톤링 관련.eml.meta"
+    },
+    {
+      "id": "0de6fb72cb499cba",
+      "equipment": "",
+      "symptoms": "Sign Off",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "23f5e90c967a58c0",
+      "equipment": "",
+      "symptoms": "Signature",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "2d1a03441c79d2d0",
+      "equipment": "",
+      "symptoms": "AB",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "c1a61481b1e6226b",
+      "equipment": "",
+      "symptoms": "164",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "5e5eef2564d803a5",
+      "equipment": "",
+      "symptoms": "80",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "34ae402b9fa8611b",
+      "equipment": "",
+      "symptoms": "265",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "4425e9c13f3e541c",
+      "equipment": "",
+      "symptoms": "XXL",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "f1d0379cdc5e3166",
+      "equipment": "",
+      "symptoms": "SINGLE",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "85d5fbacc8f1f68e",
+      "equipment": "",
+      "symptoms": "2 nd Vaccination",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "0e3d51a580fb4bf9",
+      "equipment": "",
+      "symptoms": "2025.10.29",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "997af69e72aa7471",
+      "equipment": "",
+      "symptoms": "1/17/18",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "236f90586ad012ca",
+      "equipment": "",
+      "symptoms": "5/13/19",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "37a89010a5afa0bc",
+      "equipment": "",
+      "symptoms": "1/5/21",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "fd53409f98993341",
+      "equipment": "",
+      "symptoms": "2/23/23",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "4866bbf2c380b4ce",
+      "equipment": "",
+      "symptoms": "5/20/24",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "d7034b0996bfcaf6",
+      "equipment": "",
+      "symptoms": "8/27/25",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "2e3e5ce15e6a536e",
+      "equipment": "",
+      "symptoms": "COOK",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "e0953d013c8c0e3f",
+      "equipment": "",
+      "symptoms": "167",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "2c3af6cfd0a0d1ae",
+      "equipment": "",
+      "symptoms": "90",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "599204233ec9082f",
+      "equipment": "",
+      "symptoms": "280",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "08b66456facc1227",
+      "equipment": "",
+      "symptoms": "3XL",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "a109f75bf7ba4362",
+      "equipment": "",
+      "symptoms": "MARRIED",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "79531213e411817e",
+      "equipment": "",
+      "symptoms": "2024.02.26",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "03d543d09f58f6a3",
+      "equipment": "",
+      "symptoms": "9/15/18",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "658815b42104e630",
+      "equipment": "",
+      "symptoms": "1/6/20",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "2210c2c9fba0f324",
+      "equipment": "",
+      "symptoms": "4/21/21",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "75df34a0d6c6346f",
+      "equipment": "",
+      "symptoms": "9/26/22",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "937680ecbe05046e",
+      "equipment": "",
+      "symptoms": "10/13/23",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119811/COOK(BO BO).xlsx"
+    },
+    {
+      "id": "701482b3bf9660a8",
+      "equipment": "",
+      "symptoms": "STO AZALEA호 특별내부심사 보고서 전달의 건\n수신 : STO AZALEA호 선장님\n\n발신 : 대명상선\n\n \n\n격무에 노고가 많으십니다.\n\n \n\n제목건과 관련하여, ISM 최초 심사 시 식별된 결함사항을 해소하기 위해 2025년\n12월 12일에 실시한 특별 내부심사 보고서를 유첨하여 송부드리오니, 아래\n식별된 부적합 사항에 대하여 시정조치를 시행하여 주시기 바랍니다.\n\n \n\n1. The safety pin of the mooring winch handle was found missing, and\nthe control lever was not properly secured with the safety lock.\n\n무어링 위치 핸들의 안전핀이 삽입되지 있지 않았으며, 레버의 안전고리가\n체결되지 않은 상태가",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/119834/STO AZALEA호 특별내부심사 보고서 전달의 건.eml.meta"
+    },
+    {
+      "id": "b883c71807095d2c",
+      "equipment": "",
+      "symptoms": "RE: STO AZALEA호 특별내부심사 보고서 전달의 건\n수신 : STO AZALEA호 선장님\n\n발신 : 대명상선\n\n \n\n사진 파일이 첨부되지 않아 재 전달 드립니다.\n\n \n\n \n\nFrom: Jeong Han Seuk <hsjeong@dmmaritime.co.kr> \nSent: Friday, December 19, 2025 12:45 PM\nTo: 'STO AZALEA' <stoazalea@arionmail.com>\nCc: dmm@dmmaritime.co.kr\nSubject: STO AZALEA호 특별내부심사 보고서 전달의 건\n\n \n\n수신 : STO AZALEA호 선장님\n\n발신 : 대명상선\n\n \n\n격무에 노고가 많으십니다.\n\n \n\n제목건과 관련하여, ISM 최초 심사 시 식별된 결함사항을 해소하기 위해 20",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/119843/RE_ STO AZALEA호 특별내부심사 보고서 전달의 건.eml.meta"
+    },
+    {
+      "id": "f07d9103021b0e00",
+      "equipment": "",
+      "symptoms": "이 보장됨을 알려드립니다. 중기 옴부즈만은 애로를 제기한 민원인의 인적사항을 타 기관에 제공하지 않으 |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "330c8f9b265ebd58",
+      "equipment": "",
+      "symptoms": "며, 기업 민원인이 해당 행정기관에 불이익을 당하는 경우 중소기업기본법 제23조에 의해 민원인을 대리하 |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "fe61d3f34f3e7225",
+      "equipment": "",
+      "symptoms": "여 보호조치를 취하고 있습니다. |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "03f4e4f1b98918a4",
+      "equipment": "",
+      "symptoms": "안녕하십니까? 중소기업 옴부즈만은 중소기업기본법에 의거하여 기업인의 눈높이에서 경영활동을 제약하는 불합리한 규제를 정비하고 애로사항을 해소하기 위해 노력하고 있습니다. 그럼에도 불구하고 여전히 많은 중소기업들이 각종 규제로 인해 과도한 비용을 부담하고 있는 실정입니다. 이에 중소기업 옴부즈만은 「기업활동 수수료·사용료·부담금 합리화 연구」를 공공관리연구원에 의뢰하여, 기업이 부담하고 있는 규제 관련 비용의 현황과 애로사항을 조사하고, 이를 토대로 불합리한 규제의 개선 및 기업 부담 완화 방안을 마련하고자 합니다. 본 설문에 응답해주시는 내용은 본 조사목적 이외 사용되지 않을 것이며, 통계법 33조, 34조에 의해 비밀이 보장됨을 알려드립니다. 중기 옴부즈만은 애로를 제기한 민원인의 인적사항을 타 기관에 제공하지 않으며, 기업 민원인이 해당 행정기관에 불이익을 당하는 경우 중소기업기본법 제23조에 의해 민원인을 대리하여 보호조치를 취하고 있습니다. 바쁘시더라도 본 조사에 적극적으로 참",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "1f49285d2abb2be2",
+      "equipment": "",
+      "symptoms": "2.229 | 광업출원인의 명의 변경신고 |  |  |  |  |  |  |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "e8d8fe97e7ed994f",
+      "equipment": "",
+      "symptoms": "2.230 | 광업출원인의 명의 일반승계신고 | 광업법 |  |  |  |  |  |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "12ef4fc95990ecfd",
+      "equipment": "",
+      "symptoms": "2.475 | 환경분쟁 조정 원인재정 수수료 |  |  |  |  |  |  |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "70dc8810a55584f0",
+      "equipment": "",
+      "symptoms": "2.1033 | 출원인변경신고료 |  |  |  |  |  |  |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "3ff6161068bc63af",
+      "equipment": "",
+      "symptoms": "2.1076 | 출원인변경신고료 |  |  |  |  |  |  |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "f55ffd571124af00",
+      "equipment": "",
+      "symptoms": "2.1122 | 출원인변경신고료 |  |  |  |  |  |  |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "b6fdc6e398ccbf9f",
+      "equipment": "",
+      "symptoms": "‘부담금’이란 특정 공익사업과 관련에서 법률이 정하는 조세 외 금전지급 의무를 의미함 (예시 : 농지보전부담금, 원인자부담금, 장애인고용부담금 등) |  |  |  |  |  |  |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "c16559d26421d556",
+      "equipment": "발전기",
+      "symptoms": "7 | 개발제한구역 보전부담금 | 개발제한구역의 지정 및 관리에 관한 특별조치법 |  |  |  |  |  |  |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "9f718603dd54014e",
+      "equipment": "발전기",
+      "symptoms": "11 | 원인자부담금 | 도로법 |  |  |  |  |  |  |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "d2cd8a3ed8449d69",
+      "equipment": "발전기",
+      "symptoms": "43 | 관광지등 지원시설 원인자 부담금 | 관광진흥법 |  | 1,5,6 |  |  |  |  |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "b10766a07686054e",
+      "equipment": "발전기",
+      "symptoms": "77 | 원인자부담금 | 수도법 |  |  |  |  |  |  |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "d083942099ce6c33",
+      "equipment": "발전기",
+      "symptoms": "87 | 원인자부담금 | 하수도법 |  |  |  |  |  |  |  |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/119854/_중소기업벤처기업부_ 기업관련수수료_사용료_부담금 제도개선을 위한 규제현황 및 규제애로 발굴 조사 설문지.xlsx"
+    },
+    {
+      "id": "789cc7332cbf7a1b",
+      "equipment": "",
+      "symptoms": "RE: ICC - DEFECT REPORT FOR BWTS\nTO :DMM / 김 경철 부장님\n\nFM : MASTER OF INCHEON CHEMI\n\n \n\n업무에 수고가 많으십니다.\n\n \n\n첨부자료 대로 실시 하였는데 정상적으로 작동하지 않습니다.\n\n \n\n첨부한 보고서 확인하시고 조치 취해주시기 바랍니다.\n\n \n\nTKS & B.RGDS / Capt. SIM JAE HONG \n\n=========================================== \n\ne-Mail : <mailto:incheonchemi@sea-one.com> incheonchemi@sea-one.com\n\nVSAT Phone: +82-70-4497-2048(Capt Office)\n\n +82-70-4497-2049(Bridge)\n\n +82",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/119861/RE_ ICC - DEFECT REPORT FOR BWTS.eml.meta"
+    },
+    {
+      "id": "64d07f054ea9b950",
+      "equipment": "",
+      "symptoms": "KS SUNRISE 호 - 주요 이슈 건\n수신 : KBL SHIPPING\n\n발신 : 대명상선 / 김형찬감독\n\n \n\n업무에 노고가 많으십니다.\n\nKS SUNRISE 호 본선 주요 이슈에 대하여 공유 드립니다.\n\n \n\n1. 선내전화기 : 312만원 + (부산 이외지역 출장비)\n - BRIDGE, CAPTAIN RM, 타기실, C/E RM 등 선내 연결 전화기 불통\n - 케이블은 작동되는 것으로 확인완료\n - 전화기 교체로 해결 가능 \n - 상시 재고는 없고 제작기간 3주\n\n2. 화장실 용 해수펌프 모터 : 45만원\n - MOTOR 절연상태 불량\n - 현재 청수로 사용중\n - NEW MOTOR 군산에서 보급예정\n\n3. GALLEY FAN MOTOR\n - MOTOR COIL 단선으로 작동 불가\n - 군산 입항 시 ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/119929/KS SUNRISE 호 - 주요 이슈 건.eml.meta"
+    },
+    {
+      "id": "8dbdf397cf3943bc",
+      "equipment": "",
+      "symptoms": "RE: KS SUNRISE - BWTS 수리 문의 (부산 남항 N-2 묘박지) 견적서 요청의건 Q20251118043\n수신 : DM MARITIME\n\n발신 : 파나시아 마린서비스팀/ 윤주혁프로\n\n \n\n연일 격무에 노고가 많으십니다.\n\n김경철 부장님 연락이 되지않아 다른 담당자분이 있으시다면 해당 레포트 본선 스탬프 승인후 회신 부탁드립니다.\n\n방선당시 통선시간이 임박하여 추후 레포트 받기로 본선과 협의된 상황입니다.\n\n \n\n감사합니다.\n\n \n\n \n\n <http://www.worldpanasia.com/> <http://www.linkedin.com/company/worldpanasia> <https://www.youtube.com/channel/UC9gAtiC7lrc2nU3vUhNo4WQ> \n\nHenry (",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115514/RE_ KS SUNRISE - BWTS 수리 문의 (부산 남항 N-2 묘박지)  견적서 요청의건 Q20251118043.eml.meta"
+    },
+    {
+      "id": "dee8336ae65e3335",
+      "equipment": "",
+      "symptoms": "2 | 79-57-41 |  |  | AVO METER, MODEL SP-15D W/CASE Remark: 현재 Avo meter 고장난 상태라서 사용불가.전기part 수리 & 정검을 할려해도 할 수가 없습니다. 인도네시아 입핳 first port 에서. 공급하여 주십시요. |  |  |  |  |  |  | SET | NIL | 1 |  |  |  |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115515/긴급.  일반 선용품 청구서 SHIP_S STORE REQ (21st Nov. 2025).xls"
+    },
+    {
+      "id": "c4f8f31fe5658d4c",
+      "equipment": "",
+      "symptoms": "KS SUNRISE 호 - 문제점 및 부산 입항 시 진행/점검 사항 - 11/19 - 완료\n수신 : KBL SHIPPING\n\n발신 : 대명상선 / 김형찬감독\n\n \n\n업무에 노고가 많으십니다.\n\nKS SUNRISE 호 11월 19일 부산 수리 사항을 첨부와 같이 보고 드립니다.\n\n아래 2개 항목을 제외하고 모두 마무리 되었습니다.\n\n3. 선내전화기 \n8. AIR COMPRESSOR\n\n \n\n감사합니다.\n\n김형찬감독 드림.\n\n \n\n-----------------------------------------------------------\n\nAdd: F4, German Bldg, 117, Jungang-daero, Jung-gu, Busan, Korea (48924)\n\nE: dmm@dmmaritime.co.kr <m",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115518/19 - 완료.eml.meta"
+    },
+    {
+      "id": "2b7737f004587717",
+      "equipment": "",
+      "symptoms": "FW: KS SUNRISE - BWTS 수리 문의 (부산 남항 N-2 묘박지) 견적서 요청의건 Q20251118043\n수신: KS SUNRISE / 선장님\n\n발신: 대명상선 / 장애리 주임\n\n \n\n안녕하십니까, 선장님.\n\n바쁜 선무에 노고가 많으십니다.\n\n \n\n공무업체에서 서비스레포트 확인 후 본선 스탬프 날인 요청을 하였습니다.\n\n내역 확인하시어 회신 부탁드립니다.\n\n \n\n감사합니다.\n\n \n\n \n\nBest Regards\n\nGeneral Affairs/Senior Staff_ AR_Jang\n\n========================================\n\nDM MARITIME CO., LTD\n\nAdd : #4, German Bldg, 117, Jungang-Daero, Jung-Gu, \n\nBusa",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115525/FW_ KS SUNRISE - BWTS 수리 문의 (부산 남항 N-2 묘박지)  견적서 요청의건 Q20251118043.eml.meta"
+    },
+    {
+      "id": "78210a2ef190d756",
+      "equipment": "",
+      "symptoms": "FW: KS SUNRISE - BWTS 수리 문의 (부산 남항 N-2 묘박지) 견적서 요청의건 Q20251118043\n수신: 파나시아 / 윤주혁 프로님\n\n발신: 대명상선 / 장애리 주임\n\n \n\n안녕하십니까, 업무에 노고가 많으십니다.\n\n \n\n요청하신 레포트 날인본 전달 드립니다.\n\n확인 부탁드립니다.\n\n \n\n감사합니다.\n\n \n\n \n\nBest Regards\n\nGeneral Affairs/Senior Staff_ AR_Jang\n\n========================================\n\nDM MARITIME CO., LTD\n\nAdd : #4, German Bldg, 117, Jungang-Daero, Jung-Gu, \n\nBusan, Republic of Korea.\n\nE-mail : <mailt",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115550/FW_ KS SUNRISE - BWTS 수리 문의 (부산 남항 N-2 묘박지)  견적서 요청의건 Q20251118043.eml.meta"
+    },
+    {
+      "id": "8dab9cd8a0096498",
+      "equipment": "",
+      "symptoms": "RE: KS SUNRISE - BWTS 수리 문의 (부산 남항 N-2 묘박지) 견적서 요청의건 Q20251118043\n수신 : KS SUNRISE \n발신 : 대명상선 / 김형찬감독\n\n \n\n업무에 노고가 많으십니다.\n\n본선 부산에서 점검하였던 BWTS 관련하여 SERVICE REPORT 전달해 드리오니\n\n확인하시어 본선 스템프 & 서명 후 회신 부탁드립니다.\n\n \n\n감사합니다.\n\n김형찬감독 드림.\n\n \n\n-----------------------------------------------------------\n\nAdd: F4, German Bldg, 117, Jungang-daero, Jung-gu, Busan, Korea (48924)\n\nE: <mailto:dmm@dmmaritime.co.kr> dmm@dm",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115563/RE_ KS SUNRISE - BWTS 수리 문의 (부산 남항 N-2 묘박지)  견적서 요청의건 Q20251118043.eml.meta"
+    },
+    {
+      "id": "fbeb0f2753e540dd",
+      "equipment": "",
+      "symptoms": "Submission of Company Feedback on October 2025 Monlyty minutes & Near-Miss Reports\n수신 : STO LOBELIA호 선장님\n발신 : 대명상선\n\n \n\n격무에 노고가 많으십니다.\n\n \n\n제목건과 관련하여, 10월 안전품질회의록 및 준사고 보고서에 대한 회사\n피드백을 작성하여 전달드리오니 검토 후 관련철에 보관하여 주시기 바랍니다.\n\n \n\n아울러, 준사고 내용 중 “결함사항 발견” 관련 내용은 준사고라 보기 힘들며,\nDEFECT REPORT나 REPAIR REPORT로 대체 작성하여 공무팀에 전달 부탁드립니다.\n\n \n\n또한, 준사고 보고서 내용도 회사 송부 전 반드시 재확인해 주시기 바랍니다.\n\n \n\n감사합니다.\n\n \n\nBest Regards\n\nSQ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115566/Submission of Company Feedback on October 2025 Monlyty minutes _ Near-Miss Reports.eml.meta"
+    },
+    {
+      "id": "a8f092f7e707f5fc",
+      "equipment": "",
+      "symptoms": "Submission of Company Feedback on October 2025 Monlyty minutes & Near-Miss Reports\n수신 : STO AZALEA호 선장님\n발신 : 대명상선\n\n \n\n격무에 노고가 많으십니다.\n\n \n\n제목건과 관련하여, 10월 안전품질회의록 및 준사고 보고서에 대한 회사\n피드백을 작성하여 전달드리오니 검토 후 관련철에 보관하여 주시기 바랍니다.\n\n \n\n아울러, 준사고 내용 중 “자기점화등 고장 발견” 건은 준사고라 보기 힘들며,\n차후 부터는 DEFECT REPORT를 작성하여 관리 부탁드립니다. 또한, 준사고 보고서\n내용도 회사 송부 전 반드시 재확인해 주시기 바랍니다.\n\n \n\n감사합니다.\n\n \n\nBest Regards\n\nSQT. Superintendent / H",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115567/Submission of Company Feedback on October 2025 Monlyty minutes _ Near-Miss Reports.eml.meta"
+    },
+    {
+      "id": "a3dbd721f8a83dd7",
+      "equipment": "",
+      "symptoms": "RE: GSS V2520 - Defect Report\n수신 : GOLDSTAR SHINE / 선장님\n\n발신 : 대명상선 / 유승윤 감독\n\n \n\n연일 업무에 노고가 많으십니다.\n\n \n\n표제 건 관련하여 유첨과 같이 송부하여주신 Defect Report 에 대한 company\ncomment 작성한 자료 송부 드리오니 업무에 참조 부탁 드립니다.\n\n \n\n추가로, 3P & 3S Ballast Tank Frame 수리 요청 건에 대하여서\n\n해당 부식/파손부의 tank 내 위치가 수면 아래 위치하는지, 수면 상부에\n위치하는지 확인 부탁 드립니다.\n\n \n\n \n\n감사합니다.\n\n \n\nBest Regards\n\nMTT. Superintendent / S.Y.YOO\n\n----------------------------------",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115576/RE_ GSS V2520 - Defect Report.eml.meta"
+    },
+    {
+      "id": "e62545390fe50147",
+      "equipment": "",
+      "symptoms": "Nationality (Expiry)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115609/4. PR04-52 승무원 법정자격 및 교육 현황표 Crew Qualification And Training Status Table (25 SEP 2025).xlsx"
+    },
+    {
+      "id": "858cf0a52d137056",
+      "equipment": "",
+      "symptoms": "VSL Nationality (Expiry)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115609/4. PR04-52 승무원 법정자격 및 교육 현황표 Crew Qualification And Training Status Table (25 SEP 2025).xlsx"
+    },
+    {
+      "id": "8c1ecb1ab600b368",
+      "equipment": "",
+      "symptoms": "Korea (Expiry)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115609/4. PR04-52 승무원 법정자격 및 교육 현황표 Crew Qualification And Training Status Table (25 SEP 2025).xlsx"
+    },
+    {
+      "id": "00e6db21ed9d56d7",
+      "equipment": "G/E",
+      "symptoms": "Nationality (Expiry)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115609/4. PR04-52 승무원 법정자격 및 교육 현황표 Crew Qualification And Training Status Table (25 SEP 2025).xlsx"
+    },
+    {
+      "id": "514534689c7e5e6c",
+      "equipment": "G/E",
+      "symptoms": "VSL Nationality (Expiry)",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115609/4. PR04-52 승무원 법정자격 및 교육 현황표 Crew Qualification And Training Status Table (25 SEP 2025).xlsx"
+    },
+    {
+      "id": "cd3d9ece3df72bf4",
+      "equipment": "",
+      "symptoms": "유림(대성)콤푸렛샤입니다.\np{margin-top:0;margin-bottom:0}\n \n \n \n \n \n \n \n \n \n 대용량파일 1개 (36.51MB) ~ 2025.12.21 ( 30일 보관, 100회 다운로드 가능) \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 시운전영상.mp4 (36.51MB) \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 안녕하세요. 유림(대성)콤푸렛샤입니다. 수리&nbsp;관련하여 견적서 및 시운전 영상, 수리 완료된 기계 사진&nbsp;첨부드리오니 확인바랍니다. 본선 SPARE 가운데 필요한 부품은 사용하였고 그 외에 사용가능한 부품은 챙겨가시면 됩니다. 그리고 사용불가한 부품(첨부사진)들은 다시 가져가셔도 되고 저희 쪽에서",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115610/유림(대성)콤푸렛샤입니다..eml.meta"
+    },
+    {
+      "id": "d7b145e48990325e",
+      "equipment": "",
+      "symptoms": "GSS V2520 - Defect Report\n수신 : DMM / 유 승윤 감독님 / 김형찬 전무님\n\n발신 : MASTER OF MT GOLDSTAR SHINE\n\n날짜 : 2025. 11. 21\n\n \n\n업무에 노고가 많으십니다.\n\n보내주신 메일 잘 받았습니다.\n\n3P & 3S BALLAST TANK FRAME은 수리건은 \n\nBALLAST CONDITION때는 수면 위\n\nLOADING 시는 수면 아래 입니다.\n\n \n\n \n\n \n\n \n\nThanks & Best Regards\n\nMaster of M/T. Goldstar Shine\n\nMASTER : Capt. Sim, Jae Hong\nE-MAIL : <mailto:goldstarshine@sea-one.com> goldstarshine@sea-one.com\nINTE",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115618/GSS V2520 -  Defect Report.eml.meta"
+    },
+    {
+      "id": "51c42200cd8cc0fe",
+      "equipment": "",
+      "symptoms": "ICC - DEFECT REPORT FOR HOSE HANDLING CRANE\nTO : DM MARITIME / 김 경철 부장님\n\nFM : MASTER OF INCHEON CHEMI\n\n 바쁘신 업무에 수고가 많으십니다.\n\nHYDRAULIC CARGO HOSE HANDLING CRANE에대한 DEFECT REPORT를 첨부하오니 업무에 참조 하시기 바랍니다.\n\n \n\nTAICHUNG 에서는 부두와 본선 높이가 거의 똑같아서 선원들이 카고호스를 육상에서 끌어와 CONNECTION/DISCONECTION 하였고 갱웨이 역시 선원들의 힘으로 설치/철거 했는데 만약 본선과 부두와의 높낮이가 있으면 선원들의 힘으로 불가능 하므로 빠른 조치가 필요 하오니 육상 기술자를 차항에서 수배 해 주 시길 바랍니다.\n\n \n\nTKS ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115643/ICC - DEFECT REPORT FOR HOSE HANDLING CRANE.eml.meta"
+    },
+    {
+      "id": "9f93c4e92fe8e09b",
+      "equipment": "",
+      "symptoms": "1 | Whether or not there is anyone with a fever of 38°C or higher and acute respiratory symptoms |  |  |  | ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115648/RPM BLANK FORM.xls"
+    },
+    {
+      "id": "c96ab8d9da62394d",
+      "equipment": "",
+      "symptoms": "RE: KS SUNRISE - BWTS 수리 문의 (부산 남항 N-2 묘박지) 견적서 요청의건 Q20251118043\n수신 : 윤주혁 프로님\n\n \n\nSERVICE REPORT 회신 드립니다.\n\n \n\n감사합니다.\n\n김형찬감독 드림.\n\n \n\n-----------------------------------------------------------\n\nAdd: F4, German Bldg, 117, Jungang-daero, Jung-gu, Busan, Korea (48924)\n\nE: <mailto:dmm@dmmaritime.co.kr> dmm@dmmaritime.co.kr / T: 070-4271-3240 / F: 051-469-8081 / M: 010-6275-9426 \n\n---------------------",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115652/RE_ KS SUNRISE - BWTS 수리 문의 (부산 남항 N-2 묘박지)  견적서 요청의건 Q20251118043.eml.meta"
+    },
+    {
+      "id": "3e7799d1e020d62d",
+      "equipment": "",
+      "symptoms": "Re: ICC - DEFECT REPORT FOR HOSE HANDLING CRANE\n수신 : INCHEON CHEMI / 선장님 참조 : INCHEON CHEMI / 기관장님 발신 : 대명상선 / 유승윤 감독 연일 업무에 노고가 많으십니다. 표제 건 관련하여 보내주신 defect report 는 잘 수신하였습니다. 우선, 현장 control level 및 각 부 사진 및 도면 자료를 회신 부탁 드립니다. 또한, 유첨 사진과 똑같은 위치를 촬영을 부탁드리며, 해당 사진의 부품이 고착되진 않았는지 본선 확인을 부탁 드립니다. (정확한 명칭을 도면이 없는 관계로 바로 확인이 어려운 점, 양해 부탁 드립니다.) 해당 부분이 고착되면 유압 압력이 빠지지 않아, 붐대 조작이 되지 않을 수 있으므로 확인 부탁 드립니다",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115663/Re_ ICC - DEFECT REPORT FOR HOSE HANDLING CRANE.eml.meta"
+    },
+    {
+      "id": "63932fe4b17f58b3",
+      "equipment": "",
+      "symptoms": "RE: ICC - DEFECT REPORT FOR HOSE HANDLING CRANE\nTO : 대명상선 / 유승윤 감독님\n\nFM : MASTER OF INCHEON CHEMI\n\n \n\n바쁘신 업무에 수고가 많으십니다.\n\n \n\n현재 크레인의 고장부분을 확인했으며 임시조치를 하였습니다.\n\n첨부한 보고서 참조하시고 빠른시일내에 조치 취해주시기 바랍니다.\n\nTKS & B.RGDS / Capt. SIM JAE HONG \n\n=========================================== \n\ne-Mail : <mailto:incheonchemi@sea-one.com> incheonchemi@sea-one.com\n\nVSAT Phone: +82-70-4497-2048(Capt Office)\n\n +82-70-44",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115669/RE_ ICC - DEFECT REPORT FOR HOSE HANDLING CRANE.eml.meta"
+    },
+    {
+      "id": "5334a934590cc7f5",
+      "equipment": "",
+      "symptoms": "MT \"QUARTERBACK J\" V.QB25013 - CALLING MANILA\nDear SW,\n\nVESSEL’S DEPARTURE REPORT:\n\n21/11/0830 – Arrived\n21/11/0910 – Dropped anchor\n21/11/1000 – Medical Quarantine onboard\n21/11/1004 – Free pratique granted\n21/11/1010 – Customs and other port authorities onboard\n21/11/1030 – Entrance formalities completed/superintendent onboard\n21/11/1200 – Started repairs by ships crew\n22/11/1700 – Finished repa",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115673/MT _QUARTERBACK J_ V.QB25013 - CALLING MANILA.eml.meta"
+    },
+    {
+      "id": "962d3f0104dae1d3",
+      "equipment": "",
+      "symptoms": "STO AZALEA : DEFECT REPORT 송부의 건 \nTO : DMM / 공무팀 유승윤 감독님\n\nFM : MASTER OF MT STO AZALEA\n\n \n\n \n\n업무에 노고가 많으십니다.\n\n \n\n표제 건 관련하여 DEFECT REPORT를 송부 합니다\n\n \n\n \n\n \n\n감사 합니다\n\nThanks & Best regards\n\nMaster of MT STO AZALEA\n\nCaptain Yun Sangsu\n\n---------------------------------------------------\n\nTEL: 001-8816-7713-8276\n\nHP: +82-10-8552-6856\n\nSHIP E-MAIL: <mailto:stoazalea@arionmail.com> stoazalea@arionmail.com",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115693/STO AZALEA _  DEFECT REPORT 송부의 건 .eml.meta"
+    },
+    {
+      "id": "47881e1fda9a743a",
+      "equipment": "",
+      "symptoms": "견적요청 - HIGEN - KMI-03HM3 - KS SUNRISE 호\n수신 : 선진모터펌프\n\n발신 : 대명상선 / 김형찬감독\n\n \n\n안녕하십니까?\n\n저희는 선박관리회사이며 저희 선박에 HIGEN 모터 & 펌프가 설치되어 있습니다.\n모터측의 고장이 있어 NAME PLATE 송부드립니다.\n견적 및 납기 확인이 가능한지 문의 드립니다.\n\n \n\n감사합니다.\n\n김형찬감독 드림.\n\n \n\n-----------------------------------------------------------\n\nAdd: F4, German Bldg, 117, Jungang-daero, Jung-gu, Busan, Korea (48924)\n\nE: <mailto:dmm@dmmaritime.co.kr> dmm@dmmaritime.co.kr",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115697/견적요청 - HIGEN - KMI-03HM3 - KS SUNRISE 호.eml.meta"
+    },
+    {
+      "id": "3f9d93ac80c2718a",
+      "equipment": "",
+      "symptoms": "RE: SPARE PART REQ. - KS SUNRISE\n수신 : KS SUNRISE\n참조 : 기관장님\n\n발신 : 대명상선 / 김형찬전무\n\n \n\n업무에 노고가 많으십니다.\n\n화장실용 해수펌프 모터 고장으로 인한 청구서 잘 수신하였습니다.\nMOTOR 가 어떤 상황인지 몇가지 문의 드립니다.\n\n- 절연저항은 어떤지?\n- START 했을때 배전반의 BRAKER 상태는 어떤지?\n- 손으로 SHAFT 회전해봤을 때 회전상태는 어떤지? (단순 BEARING 의 문제\n일수도)\n\n- G/S PUMP 등 다른 해수라인에서 임시로라도 연결할 수 있는 방안은 없는지?\n\n기관장님\n어떤 기기에 문제가 생기면 최소한 그 기기가 어떤 상태인지?\n본선에서 어떤 점검을 해봤더니 어떻더라 정도는 기재 부탁드립니다. \n뭐가 안되니 회사에서",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115699/RE_ SPARE PART REQ. - KS SUNRISE.eml.meta"
+    },
+    {
+      "id": "db4ee44e595345fe",
+      "equipment": "",
+      "symptoms": "ICC - DEFECT REPORT FOR PORTSIDE ANCHOR WINDLASS\nTO : DM MARITIME / 김 경철 부장님\n\nFM : MASTER OF INCHEON CHEMI\n\n 바쁘신 업무에 수고가 많으십니다.\n\nPORTSIDE ANCHOR WINDLASS에대한 DEFECT REPORT를 첨부하오니 업무에 참조 하시기 바랍니다.\n\n \n\nTKS & B.RGDS / Capt. SIM JAE HONG \n\n=========================================== \n\ne-Mail : <mailto:incheonchemi@sea-one.com> incheonchemi@sea-one.com\n\nVSAT Phone: +82-70-4497-2048(Capt Office)\n\n +82-70",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115716/ICC - DEFECT REPORT FOR PORTSIDE ANCHOR WINDLASS.eml.meta"
+    },
+    {
+      "id": "90da811b13e76b37",
+      "equipment": "",
+      "symptoms": "RE: ICC - DEFECT REPORT FOR PORTSIDE ANCHOR WINDLASS\nTO : DM MARITIME\n\nFM : J-BRO SHIPPING\n\n \n\n안녕하세요. 업무에 수고 많으십니다.\n\n인천케미 크레인 및 앵커 관련 현 상태 및 추후 수리계획 알려주시기 바랍니다.\n\n \n\n \n\n \n\n감사합니다.\n\n \n\nBest regards,\n\nSW Cho\n\n \n\nJ-BRO SHIPPING CO., LTD.\n\n#2201, 17, APEC-ro,\n\nHaeundae-gu, Busan, Korea\n\nTel : 82-51-745-9411\n\nFax : 82-51-745-9415\n\nMob : 82-10-3778-7294 \n\n(KaKao/WhatsApp/WeChat/LINE)\n\nE-mail : <mailto:mai",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115748/RE_ ICC - DEFECT REPORT FOR PORTSIDE ANCHOR WINDLASS.eml.meta"
+    },
+    {
+      "id": "bda5914ef702d880",
+      "equipment": "",
+      "symptoms": "RE: STO AZALEA : 선용품 청구서 / 기부속 청구서 송부의 건 \n수신 : STO AZALEA / 선장님\n\n참조 : STO AZALEA / 기관장님\n\n발신 : 대명상선 / 유승윤 감독\n\n \n\n연일 업무에 노고가 많으십니다.\n\n \n\n표제 건 관련하여 보내주신 청구서 및 Landing List 잘 수신 하였습니다.\n\n \n\n1. Ref. Machine\n\n* 현재 No.2 Ref. Machine 에 대한 내용을 회신 받지 못 하였습니다.\n* Motor 및 Compressor 이외, pipe line 등은 설치 및 연결이 되어 있는지,\n\nMotor 및 Compressor 만 공급 드리면 본선 자체설치가 가능한지 문의 드립니다.\n\n \n\n2. 하륙 수리 요청 건\n\n* 각 Motor 및 기기의 대략적인 무게 및 ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115759/ 기부속 청구서 송부의 건 .eml.meta"
+    },
+    {
+      "id": "aaf9bc54a5679e84",
+      "equipment": "",
+      "symptoms": "C/O",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "18235cf7e5f5be2a",
+      "equipment": "",
+      "symptoms": "177",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "335a7ea6e1fe995e",
+      "equipment": "",
+      "symptoms": "87",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "1a8fe44ef455bba0",
+      "equipment": "",
+      "symptoms": "285",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "bc85b5221abbee73",
+      "equipment": "",
+      "symptoms": "XXXL",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "93697ae672d4d418",
+      "equipment": "",
+      "symptoms": "MOESLIM",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "13c162c7ed5e93e5",
+      "equipment": "",
+      "symptoms": "2021.09.08",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "9a63dfdf1977c2cd",
+      "equipment": "",
+      "symptoms": "CORONAVAC",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "2681fc2153a91212",
+      "equipment": "",
+      "symptoms": "2023.12.12",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "4c3016e865d92455",
+      "equipment": "",
+      "symptoms": "2014.12.05",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "74e04a0a34e33b27",
+      "equipment": "",
+      "symptoms": "2016.03.21",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "484815b173415b5d",
+      "equipment": "",
+      "symptoms": "2016.03.02",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "7e0f4e596ec34f06",
+      "equipment": "",
+      "symptoms": "2025.02.11",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "c6b8575184c4e2f5",
+      "equipment": "",
+      "symptoms": "2022.06.09",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "5716f4793f89beae",
+      "equipment": "",
+      "symptoms": "2021.08.06",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "6ac17a24aa325fe5",
+      "equipment": "",
+      "symptoms": "2016.04.08",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "f9d7d2b63646ceff",
+      "equipment": "",
+      "symptoms": "2016.02.26",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "9d33b6201727f9f6",
+      "equipment": "",
+      "symptoms": "10/13/15",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "8ab85ce1386412a5",
+      "equipment": "",
+      "symptoms": "5/10/17",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "1d1319442afa3426",
+      "equipment": "",
+      "symptoms": "4/20/19",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "5eb2432caf5f87ee",
+      "equipment": "",
+      "symptoms": "1/29/21",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "e47e72129be25c56",
+      "equipment": "",
+      "symptoms": "1/19/22",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "6c8318fd4a80b412",
+      "equipment": "",
+      "symptoms": "7/19/23",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "931244921ad5a6a9",
+      "equipment": "",
+      "symptoms": "10/21/24",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "ce9f32e944cb557d",
+      "equipment": "",
+      "symptoms": "9/17/25",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "data/raw_archives/gmail_attachments/115774/CO(FANDY RAYMOND BATMOMOLIN).xlsx"
+    },
+    {
+      "id": "5bbb61e0fecb7be8",
+      "equipment": "",
+      "symptoms": "RE: Quarterback J V.25014- Morning Report (23 Nov 2025)\nTO : DM MARITIME / 김경철 부장님.\n\nFM : J-BRO SHIPPING\n\n \n\n부장님, 수고 많으십니다.\n\n보내주신 업데이트 잘 받았습니다.\n\n \n\n울산 선기항 입니다.\n\n울산에서 선적 전에 재점검 및 수리가 필요할지 결정하시어 알려주시기 바랍니다.\n\n \n\n## 울산항 선적부두\n\n본항 3/4부두 - MEK 1,000MT 선적\n\n본선 63번석 - KOH 1,800MT 선적\n\nCTK(구 UTT) - MX 1,000MT 선적\n\nOTK - MX 1,700MT 선적\n\n \n\n선적이 시작되면 중간에 12-24시간 확보는 쉽지 않습니다.\n\n \n\n \n\n \n\n감사합니다.\n\n \n\nBest regards,\n\nSW ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115777/RE_ Quarterback J V.25014- Morning Report (23 Nov 2025).eml.meta"
+    },
+    {
+      "id": "9078184c94de95ac",
+      "equipment": "",
+      "symptoms": "GOLDSTAR SHINE : Defect Report 관련\n수신 : GOLDSTAR SHINE / 선장님\n\n발신 : 대명상선 / 유승윤 감독\n\n \n\n연일 업무에 노고가 많으십니다.\n\n \n\n표제 건 관련하여 본선에서 송부하여 주신 Defect Report 에 대하여 하기와 같이\n문의 드리오니\n\n회신 부탁 드립니다.\n\n \n\n1. Life Boat Davit (P) 관련\n\n* Word 파일로 회신 부탁 드립니다.\n* 현재 해당 건에 대한 수리여부 comment 는 받지 못 한 상태입니다.\n\n작업 여부 회신 부탁 드립니다.\n\n* 본선 선원들에 의한 davit test 시행 되었는지 여부 확인 부탁 드립니다.\n\n \n\n \n\n감사합니다.\n\n \n\nBest Regards\n\nMTT. Superintendent / S.Y.Y",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115781/GOLDSTAR SHINE _ Defect Report 관련.eml.meta"
+    },
+    {
+      "id": "372bf366de506837",
+      "equipment": "",
+      "symptoms": "GOLDSTAR SHINE : Defect Report 회신 건\n수신 : GOLDSTAR SHINE / 선장님\n\n참조 : GOLDSTAR SHINE / 기관장님\n\n발신 : 대명상선 / 유승윤 감독\n\n \n\n연일 업무에 노고가 많으십니다.\n\n \n\n표제 건 관련하여 본선으로부터 수신받은 Defect Report 에 대한 Management\nList 및 완료/미결 사항에 대한 company comment 작성하여 회신 드리오니 업무에\n참조 부탁드리며, 본선 보관 부탁 드립니다.\n\n \n\n*BA 및 Life Boat Davit 건에 대하여서, 해당 건은 내용은 양지하고 있으며,\n\nManagement List 에는 list up 하지 않은 점, 참조 부탁 드립니다.\n\n \n\n \n\n감사합니다.\n\n \n\nBest Regards",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115785/GOLDSTAR SHINE _ Defect Report 회신 건.eml.meta"
+    },
+    {
+      "id": "c3337848d802dadf",
+      "equipment": "",
+      "symptoms": "STO LOBELIA : UTI 하륙 수리 건\n수신 : 서광마린텍 / 배영도 이사님\n\n발신 : 대명상선 / 유승윤 감독\n\n \n\n연일 업무에 노고가 많으십니다.\n\n \n\n표제 건 관련하여 현재 당사 사무실에 본선으로부터 하륙한 TANKTECH UTI 2set\n을 보관 중 입니다.\n\n \n\n지난 번, Connector 길이 문제도 있으나 현재로서 2개의 UTI 모두 사용이\n불가능한 상태입니다.\n\n \n\n이와 관련하여 하륙수리도 서광마린텍 측으로 문의드리면 되는지,\n\nTANKTECH 측으로 직접 문의하여야 하는지 확인 부탁 드립니다.\n\n \n\n \n\n \n\n감사합니다.\n\n \n\nBest Regards\n\nMTT. Superintendent / S.Y.YOO\n\n-------------------------------------\n",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115790/STO LOBELIA _ UTI 하륙 수리 건.eml.meta"
+    },
+    {
+      "id": "52d932b29a0c7d62",
+      "equipment": "",
+      "symptoms": "RE: STO LOBELIA : UTI 하륙 수리 건\n수신 : 유승윤 감독님\n발신 : 배영도 이사 배상\n\n위 표제와 관련하여 유선으로 알려드린 기본적인 금액에 대해 아래와같이 알려드리오니 참고하시기 바랍니다.\n발주후 보내실 곳은 아래와 같습니다. 각 박스에 선명을 부착해서 전달 바랍니다.\n\n업체명 : 엘티이\n주소 : 김해시 주촌면 양동리 143-40\n받는분 : 김윤식 대표님\n연락처 : 010-3380-5166\n\n유첨 : 견적서 ------------------------------------- 1파일\n\n비고 : 점검시 금액은 기부속 교체시 금액입니다. 참고하시기 바라오며, 당사로 발주 메일 부탁드립니다. \n 더불어, 각각 MFG NO.에 대해 현재 고장된 내용에 대해 알려주시기 바랍니다.\n 예) 에러코드, ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115793/RE_ STO LOBELIA _ UTI 하륙 수리 건.eml.meta"
+    },
+    {
+      "id": "e700dc2ab3d6cb23",
+      "equipment": "",
+      "symptoms": "STO AZALEA : 본선 상태 보고 건\n수신 : STOCK / 변수영 차장님\n\n참조 : STOCK / 양명훈 대표님\n\n발신 : 대명상선 / 유승윤 감독\n\n \n\n연일 업무에 노고가 많으십니다.\n\n \n\n표제 건 관련하여 STO AZALEA 선박의 현재 운항상태에 대하여 하기와 같이 보고\n드립니다.\n\n \n\n작일부터 본선 M/E 운전 중, 과급기 (T/C) 측에서 “퍽-퍽” 거리는 소리가\n발생하고,\n\n동시에 연돌 측에서 검은 연기가 발생하였다고 보고 받았습니다.\n\n해당 증상으로 인하여 본선 선장님/기관장님 판단으로 RPM 을 150까지 낮추었고,\n\n현재까지 해당 RPM 으로 항해 중에 있습니다.\n\n \n\n과급기에서 위와 같은 증상이 발생하는 원인은 하기와 같습니다.\n\n \n\n1. 소기 압력/소기량 저하\n2. Imp",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115804/STO AZALEA _ 본선 상태 보고 건.eml.meta"
+    },
+    {
+      "id": "7825a0047cd5752e",
+      "equipment": "",
+      "symptoms": "NAVTEX DEFECT REPORT\n유선윤 감독님\n\n다중한 업무에 수고하십니다\n\n다름아니라 본선 부산입항시 JRC NAVTEX를 수급 받아 설치하였지만 계기에\n전원이 들어오지 않았고 \n\n금일도 다시한번 더 체크했지만 전원이 들어오지 않아 첨부와같이 결함보고서\n발송하오니 조치부탁드립니다.\n\n아쉬운것은 본선이 울산에서 2박3일 부두 접안중에 있었는데 조치를 못하고\n출항한것 입니다.\n\n수고하십시요\n\n \n\nSTO LOBELIA 선장 김황기 배상\n\n \n\n \n\nTHANK YOU\n\nB. REGARDS\n\n==================================================\n\nMASTER OF M/T STO LOBELIA\n\nKIM HWANGGI\n\nE-MAIL : stolobelia@arionmail.",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115820/NAVTEX DEFECT REPORT.eml.meta"
+    },
+    {
+      "id": "b1dca151089a518d",
+      "equipment": "",
+      "symptoms": "RE: (대명상선) 외국인 선원 업무 역량 저하로 인한 계약서 조항의 건 \n수신 : 피아선박 \n\n발신 : 대명상선 / 해무팀 이주미감독\n\n \n\n업무에 노고가 많으십니다.\n\n \n\n보내주신 내용은 잘 확인하였으며, 아래와 같이 회신 드립니다.\n\n \n\n1. 3개월 선계약 후 업무능력 평가 및 연장 관련\n\n- 업무능력 3개월 선계약 및 업무능력 평가 후 5개월 연장 고려 중 \n\n- 3개월 계약 끝나기 전, 업무능력 미달 확인되어지면 교대가 이뤄져야한다고\n생각하며, 자의하선 및 징계하선으로 처리(교대 승선자의 비용은 여전히 선주사\n비용 발생)\n\n \n\n2. 업무능력 미달 시 교대(하선) 처리 관련\n\n- 징계하선/자의하선 어려움이 있어 이행되지 않고 하선시키게 되면 고발 경우\n발생 할 수 있기에 송사 진행하는 경우 발생",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115841/RE_ (대명상선) 외국인 선원 업무 역량 저하로 인한 계약서 조항의 건 .eml.meta"
+    },
+    {
+      "id": "1113b92a84957a93",
+      "equipment": "",
+      "symptoms": "STO AZALEA : 견적요청 - Repair\n수신 : 대웅전기 / 진영훈 과장님\n\n발신 : 대명상선 / 유승윤 감독\n\n \n\n연일 업무에 노고가 많으십니다.\n\n \n\n표제 건 관련하여 하기와 같이 수리가 필요한 사항에 대한 내용을 전달드리오니\n\n견적 및 예상 수리공기 회신 부탁 드립니다.\n\n \n\n1. Main Air Compressor (No.1 & 2)\n\n* 간헐적 운전 불가 / Main Panel 및 Motor 점검\n\n \n\n2. Accomodation Gangway Motor 하륙 수리\n\n* Motor 명일 중, 전달 드리도록 하겠습니다.\n\n \n\n3. Sewage Treatment High Level\n\n* High Level 상태에서 Discharging Pump 가 Auto 운전 불가 / Panel 점",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115842/STO AZALEA _ 견적요청 - Repair.eml.meta"
+    },
+    {
+      "id": "e2da3b2f444b3d00",
+      "equipment": "",
+      "symptoms": "STO AZALEA : 견적요청 - Repair\n수신 : LK OCEAN\n\n발신 : 대명상선 / 유승윤 감독\n\n \n\n연일 업무에 노고가 많으십니다.\n\n \n\n표제 건 관련하여 하기와 같이 수리가 필요한 항목에 대하여 전달 드리오니\n\n수리 견적 및 예상 작업공기, 예상 필요자재 견적 회신 부탁 드립니다.\n\n \n\n1. Main Air Compressor (No.1 & 2)\n\n* 간헐적 운전 불가 / Main Panel 및 Motor 점검\n\n \n\n2. Accommodation Ladder Motor 하륙 수리\n\n* Motor 상세는 명일 중 전달 드리도록 하겠습니다.\n\n \n\n3. Sewage Treatment High Level\n\n* High Level 상태에서 Discharging Pump 가 Auto 운전 불가",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115849/STO AZALEA _ 견적요청 - Repair.eml.meta"
+    },
+    {
+      "id": "2e4f9d7d150e755b",
+      "equipment": "",
+      "symptoms": "STO AZALEA : 확인요청 - 본선 수리\n수신 : STO AZALEA / 선장님\n\n참조 : STO AZALEA / 기관장님\n\n발신 : 대명상선 / 유승윤 감독\n\n \n\n연일 업무에 노고가 많으십니다.\n\n \n\n표제 건 관련하여 유첨의 본선 수리 필요 항목에 대하여 정리한 자료 확인\n부탁드리며,\n\n원활한 수리 진행을 위하여 하기 사항에 대한 빠른 회신을 부탁 드립니다.\n\n \n\n*늦어도 명일 오후까지는 회신 부탁 드립니다.\n\n \n\n1. Main Engine\n\n* #4 Cylinder 의 jacket water 누수부가 head jacket 측인지? Liner\njacket 측인지?\n* Aux’ Blower 본선 O/H 가능여부\n\n \n\n2. Generator Engine\n\n* 지난 09월 수리 이후 수급된 Tem",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115854/STO AZALEA _ 확인요청 - 본선 수리.eml.meta"
+    },
+    {
+      "id": "6544b721d6b38138",
+      "equipment": "",
+      "symptoms": "RE: STO AZALEA : 확인요청 - 본선 수리\nFrom: Yoo SeungYoon <syyoo@dmmaritime.co.kr> \nSent: Monday, November 24, 2025 4:47 PM\nTo: 'STOAZALEA' <stoazalea@arionmail.com>\nCc: '대명상선' <dmm@dmmaritime.co.kr>; 'Yoo SeungYoon' <syyoo@dmmaritime.co.\nkr>\nSubject: STO AZALEA : 확인요청 - 본선 수리\n\n \n\n수신 : STO AZALEA / 선장님\n\n참조 : STO AZALEA / 기관장님\n\n발신 : 대명상선 / 유승윤 감독\n\n \n\n연일 업무에 노고가 많으십니다.\n\n \n\n표제 건 관련하여 유첨의 본선 수리 필요 항목에 대하여 정리한",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115862/RE_ STO AZALEA _ 확인요청 - 본선 수리.eml.meta"
+    },
+    {
+      "id": "52b4ebb01f102791",
+      "equipment": "",
+      "symptoms": "견적요청 - HIGEN MOTOR - KMI-03HM3 - KS SUNRISE 호\n수신 : 대우중전기\n\n발신 : 대명상선 / 김형찬감독\n\n \n\n안녕하십니까?\n\n저희는 선박관리회사이며 저희 선박에 HIGEN 모터 & 펌프가 설치되어 있습니다.\n모터측의 고장이 있어 NAME PLATE 송부드립니다.\n견적 및 납기 확인이 가능한지 문의 드립니다.\n\n \n\n감사합니다.\n\n김형찬감독 드림.\n\n \n\n-----------------------------------------------------------\n\nAdd: F4, German Bldg, 117, Jungang-daero, Jung-gu, Busan, Korea (48924)\n\nE: dmm@dmmaritime.co.kr <mailto:dmm@dmmaritime.c",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115911/견적요청 - HIGEN MOTOR - KMI-03HM3 - KS SUNRISE 호.eml.meta"
+    },
+    {
+      "id": "d54f25be489e9ea3",
+      "equipment": "",
+      "symptoms": "V 2516 // MORNING REPORT\nTO: STOCK\n\nCC: DM MARITIME\n\nFR: MASTER OF MT STO AZALEA\n\nDD: 25TH NOV 2025\n\n \n\n \n\n \n\nMNG REPORT///\n\nPlease kindly find attached for MRG RPT & Crew temp record\n\nETA AT PYEONGTAEK.KR P/S, 2300LT On 25TH NOV 2025\n\n( 현재 M. ENG 수리 때문에 관매도 부근에 16시 묘박 예정 입니다\n\n \n\nA. Date : 25TH NOV 2025\nB. Voy : 2516\nC. Position : 34-18.36 N / 125-39.42 E\nD. Hours Propelling : 24HRS\nE. Daily Steam",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/115920/ MORNING REPORT.eml.meta"
+    },
+    {
+      "id": "635b15216d3200bf",
+      "equipment": "",
+      "symptoms": "DEFECT TROUBLE REPORT\nGOOD DAY SIR.\n\n \n\nPLEASE NOTE, THAT ATTCHD FILES.\n\n6 FILES.\n\n \n\nREGDS/MASTER.\n\n \n\n-------------------------------------------\n\nM/V KS SUNRISE\n\nMaster Capt. HYUN DAICHEL\n\nE-mail : <mailto:kssunrise@sea-one.com> kssunrise@sea-one.com\n\nTel : (+)82-70-7729-4457 / 4458\n\nMobile : 010-3790-2400\n\n-----------------------------------------------",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115925/DEFECT TROUBLE REPORT.eml.meta"
+    },
+    {
+      "id": "13009c6d938f2bd9",
+      "equipment": "",
+      "symptoms": "STO AZALEA : M/E Trouble 건\n수신 : STOCK / 변수영 차장님\n\n참조 : STOCK / 양명훈 대표님\n\n발신 : 대명상선 / 유승윤 감독\n\n \n\n연일 업무에 노고가 많으십니다.\n\n \n\n표제 건 관련하여 STO AZALEA 선박의 M/E Trouble 로 인한 묘박지 이동 및 수리\n진행에 대하여 보고 드립니다.\n\n \n\n우선, 현 상황에 대하여 작일 보고드린 본선 M/E Turbo-Charger 이상음 및\n연료유 상태 불량으로 인한 불완전연소 건을 참조 부탁 드립니다.\n\n \n\nT/C Side 이상 소음 및 불완전연소로 인한 검은 연기 발생으로 인하여\n\n본선에서 RPM 150 즈음까지 하강 후에 주의관찰하며 항해 중,\n\n불완전연소가 더 심해지며 작일 밤 늦게 D.O 로 Bunker Chan",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115959/E Trouble 건.eml.meta"
+    },
+    {
+      "id": "daf2e145a38a81ba",
+      "equipment": "",
+      "symptoms": "GSS V2520 - LIFE BOAT DAVIT 건\n수신 : DMM / 유 승윤 감독님 / 김형찬 전무님\n\n발신 : MASTER OF MT GOLDSTAR SHINE\n\n날짜 : 2025. 11. 25\n\n \n\n업무에 노고가 많으십니다.\n\n보내주신 메일 잘 받았습니다.\n\nBA는 연차 검사 시 수리하면 될 것 같습니다.\n\nBoat DAVIT는 아직 수리 안되습니다.\n\n \n\n \n\n \n\nThanks & Best Regards\n\nMaster of M/T. Goldstar Shine\n\nMASTER : Capt. KO SUNG WOOK\nE-MAIL : <mailto:goldstarshine@sea-one.com> goldstarshine@sea-one.com\nINTERNET TEL: 82-70-4432-4940\n : 8",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115970/GSS V2520 -   LIFE BOAT DAVIT 건.eml.meta"
+    },
+    {
+      "id": "cf3270d2ca97f78c",
+      "equipment": "",
+      "symptoms": "GSS V2520 - Defect Report 회신 건\n수신 : DMM / 유 승윤 감독님 / 김형찬 전무님\n\n발신 : MASTER OF MT GOLDSTAR SHINE\n\n날짜 : 2025. 11. 25\n\n \n\n업무에 노고가 많으십니다.\n\n보내주신 메일 잘 받았습니다.\n\nBA는 연차 검사 시 수리하면 될 것 같습니다.\n\nBoat DAVIT는 아직 수리 안되습니다.\n\n \n\n \n\n \n\nThanks & Best Regards\n\nMaster of M/T. Goldstar Shine\n\nMASTER : Capt. KO SUNG WOOK\nE-MAIL : <mailto:goldstarshine@sea-one.com> goldstarshine@sea-one.com\nINTERNET TEL: 82-70-4432-4940\n : ",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "",
+      "sourceFile": "gmail/115971/GSS V2520 -   Defect Report 회신 건.eml.meta"
+    },
+    {
+      "id": "4c255b189bf7cba1",
+      "equipment": "",
+      "symptoms": "RE: QUARTERBACK J - 보일러 FD FAN MOTOR\n첨부사진이 없습니다.\n\n확인 부탁드립니다.\n\nHKE/장귀정 부장\n\n--------- 원본 메일 ---------\n\n> 보낸사람: Kim Kyoung Chul <kckim@dmmaritime.co.kr>\n> 받는사람: HKE <hke-123@hanmail.net>\n> 참조: 대명상선 <dmm@dmmaritime.co.kr>\n> 날짜: 25.11.25 12:49 GMT +0900\n> 제목: QUARTERBACK J - 보일러 FD FAN MOTOR\n> \n> \n> \n> \n> \n> \n> TO : HKE\n> \n> FM : DM MARITIME \n> \n> \n> \n> \n> 수고많으십니다.\n> \n> \n> \n> \n> 보일러 FD FAN MOTOR 고장품 취외",
+      "rootCause": "",
+      "actionTaken": "",
+      "classRecommendation": "See mail / class mention",
+      "sourceFile": "gmail/116014/RE_ QUARTERBACK J - 보일러 FD FAN MOTOR.eml.meta"
     }
   ]
 }
