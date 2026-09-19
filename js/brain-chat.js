@@ -5,11 +5,18 @@
     const KAKAO_CHANNEL_URL = 'https://pf.kakao.com/_Txhxnxj';
     const A2HS_DISMISS_KEY = 'tvc-brain-a2hs-dismissed-v1';
 
+    const PHOTO_PROMPT_KO = '[선박 부품/명판 사진 분석 요청]';
+    const PHOTO_PROMPT_EN = '[Vessel part/nameplate photo analysis request]';
+
     const state = {
         lang: 'KO',
         lastQuery: '',
         loading: false,
         deferredPrompt: null,
+        heroImageDataUrl: null,
+        modalImageDataUrl: null,
+        recognition: null,
+        listeningScope: null,
     };
 
     function detectLang() {
@@ -35,6 +42,8 @@
             a2hs: '📲 TVC 해운 브레인을 홈 화면에 앱으로 추가하여 1초 만에 실행하세요',
             install: '설치하기',
             dismiss: '닫기',
+            voiceUnsupported: '이 브라우저는 음성 입력을 지원하지 않습니다.',
+            voiceError: '음성 인식에 실패했습니다. 다시 시도하십시오.',
         };
         const en = {
             loading: 'Chief Engineer Brain is analyzing…',
@@ -49,6 +58,8 @@
             a2hs: '📲 Add TVC Maritime Brain to your home screen for 1-second launch',
             install: 'Install',
             dismiss: 'Dismiss',
+            voiceUnsupported: 'Voice input is not supported in this browser.',
+            voiceError: 'Speech recognition failed. Please try again.',
         };
         const pack = state.lang === 'EN' ? en : ko;
         return pack[key] || key;
@@ -160,7 +171,18 @@
                 <footer class="tvc-brain-footer">
                     <form class="tvc-brain-follow" id="tvcBrainFollowForm">
                         <label class="visually-hidden" for="tvcBrainFollowInput">${escapeHtml(t('followUp'))}</label>
-                        <input id="tvcBrainFollowInput" type="text" autocomplete="off" enterkeyhint="send" />
+                        <div class="tvc-brain-follow-field" id="tvcBrainFollowField">
+                            <div class="home-hero-search-thumb" id="tvcBrainFollowThumb" hidden>
+                                <img id="tvcBrainFollowThumbImg" alt="" width="44" height="44" />
+                                <button type="button" class="home-hero-search-thumb-clear" id="tvcBrainFollowThumbClear" aria-label="Remove photo">×</button>
+                            </div>
+                            <input id="tvcBrainFollowInput" type="text" autocomplete="off" enterkeyhint="send" placeholder="" />
+                            <div class="tvc-brain-follow-inline-actions" aria-label="Voice and camera input">
+                                <button type="button" id="btn-voice-input-modal" class="home-hero-input-action" aria-label="Voice input" title="Voice input">🎙️</button>
+                                <label for="btn-camera-input-modal" class="home-hero-input-action home-hero-input-action--camera" aria-label="Camera or photo" title="Camera">📷</label>
+                                <input type="file" id="btn-camera-input-modal" class="visually-hidden" accept="image/*" capture="environment" tabindex="-1" />
+                            </div>
+                        </div>
                         <button type="submit" class="home-btn home-btn-primary tvc-brain-follow-btn">${escapeHtml(t('ask'))}</button>
                     </form>
                     <div class="tvc-brain-connectors">
@@ -178,10 +200,21 @@
         modal.querySelector('#tvcBrainFollowForm').addEventListener('submit', (e) => {
             e.preventDefault();
             const input = modal.querySelector('#tvcBrainFollowInput');
-            const q = String(input?.value || '').trim();
+            const q = composeQuery('modal', input);
             if (!q) return;
             input.value = '';
+            clearCapture('modal');
             askBrain(q);
+        });
+
+        wireInputCapture('modal', {
+            voiceBtn: modal.querySelector('#btn-voice-input-modal'),
+            cameraInput: modal.querySelector('#btn-camera-input-modal'),
+            textInput: modal.querySelector('#tvcBrainFollowInput'),
+            thumbWrap: modal.querySelector('#tvcBrainFollowThumb'),
+            thumbImg: modal.querySelector('#tvcBrainFollowThumbImg'),
+            thumbClear: modal.querySelector('#tvcBrainFollowThumbClear'),
+            onAutoSubmit: (query) => askBrain(query),
         });
 
         document.addEventListener('keydown', (e) => {
@@ -189,6 +222,169 @@
         });
 
         return modal;
+    }
+
+    function photoPromptTag() {
+        return state.lang === 'EN' ? PHOTO_PROMPT_EN : PHOTO_PROMPT_KO;
+    }
+
+    function appendPhotoPrompt(input) {
+        if (!input) return;
+        const tag = photoPromptTag();
+        const current = String(input.value || '');
+        if (current.includes(tag)) return;
+        input.value = current.trim() ? `${current.trim()} ${tag}` : tag;
+    }
+
+    function composeQuery(scope, inputEl) {
+        const base = String(inputEl?.value || '').trim();
+        const tag = photoPromptTag();
+        const hasImage = scope === 'hero' ? !!state.heroImageDataUrl : !!state.modalImageDataUrl;
+        if (!base && !hasImage) return '';
+        if (hasImage && !base.includes(tag)) {
+            return base ? `${base} ${tag}` : tag;
+        }
+        return base;
+    }
+
+    function clearCapture(scope) {
+        if (scope === 'hero') {
+            state.heroImageDataUrl = null;
+            const wrap = document.getElementById('homeHeroSearchThumb');
+            const img = document.getElementById('homeHeroSearchThumbImg');
+            const file = document.getElementById('btn-camera-input');
+            if (wrap) wrap.hidden = true;
+            if (img) img.removeAttribute('src');
+            if (file) file.value = '';
+        } else {
+            state.modalImageDataUrl = null;
+            const wrap = document.getElementById('tvcBrainFollowThumb');
+            const img = document.getElementById('tvcBrainFollowThumbImg');
+            const file = document.getElementById('btn-camera-input-modal');
+            if (wrap) wrap.hidden = true;
+            if (img) img.removeAttribute('src');
+            if (file) file.value = '';
+        }
+    }
+
+    function readImageFile(file, scope, inputEl, thumbWrap, thumbImg) {
+        if (!file || !file.type.startsWith('image/')) return;
+        const reader = new FileReader();
+        reader.onload = () => {
+            const dataUrl = String(reader.result || '');
+            if (scope === 'hero') state.heroImageDataUrl = dataUrl;
+            else state.modalImageDataUrl = dataUrl;
+            if (thumbImg) {
+                thumbImg.src = dataUrl;
+                thumbImg.alt = state.lang === 'EN' ? 'Attached photo' : '첨부 사진';
+            }
+            if (thumbWrap) thumbWrap.hidden = false;
+            appendPhotoPrompt(inputEl);
+        };
+        reader.readAsDataURL(file);
+    }
+
+    function getSpeechRecognition() {
+        const Ctor = globalThis.SpeechRecognition || globalThis.webkitSpeechRecognition;
+        if (!Ctor) return null;
+        if (!state.recognition) {
+            state.recognition = new Ctor();
+            state.recognition.interimResults = false;
+            state.recognition.maxAlternatives = 1;
+        }
+        return state.recognition;
+    }
+
+    function speechLangs() {
+        return state.lang === 'EN' ? ['en-US', 'ko-KR'] : ['ko-KR', 'en-US'];
+    }
+
+    function setListeningUi(voiceBtn, on) {
+        if (!voiceBtn) return;
+        voiceBtn.classList.toggle('is-listening', on);
+        voiceBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+
+    function startVoiceCapture(scope, voiceBtn, textInput, onAutoSubmit) {
+        const rec = getSpeechRecognition();
+        if (!rec) {
+            window.alert(t('voiceUnsupported'));
+            return;
+        }
+        if (state.listeningScope) {
+            try { rec.stop(); } catch (_) { /* ignore */ }
+        }
+        state.listeningScope = scope;
+        rec.lang = speechLangs()[0];
+        rec.onstart = () => setListeningUi(voiceBtn, true);
+        rec.onend = () => {
+            setListeningUi(voiceBtn, false);
+            state.listeningScope = null;
+        };
+        rec.onerror = () => {
+            setListeningUi(voiceBtn, false);
+            state.listeningScope = null;
+            window.alert(t('voiceError'));
+        };
+        rec.onresult = (event) => {
+            const transcript = Array.from(event.results)
+                .map((r) => r[0]?.transcript || '')
+                .join(' ')
+                .trim();
+            if (!transcript) return;
+            if (textInput) textInput.value = transcript;
+            if (scope === 'hero') {
+                openModal(composeQuery('hero', textInput) || transcript);
+            } else if (typeof onAutoSubmit === 'function') {
+                onAutoSubmit(composeQuery('modal', textInput) || transcript);
+            }
+        };
+        try {
+            rec.start();
+        } catch (err) {
+            setListeningUi(voiceBtn, false);
+            state.listeningScope = null;
+            console.warn('[TVC Brain] speech start failed', err);
+            window.alert(t('voiceError'));
+        }
+    }
+
+    function wireInputCapture(scope, opts) {
+        const {
+            voiceBtn,
+            cameraInput,
+            textInput,
+            thumbWrap,
+            thumbImg,
+            thumbClear,
+            onAutoSubmit,
+        } = opts;
+        if (!voiceBtn || !cameraInput || !textInput) return;
+
+        voiceBtn.addEventListener('click', () => {
+            startVoiceCapture(scope, voiceBtn, textInput, onAutoSubmit);
+        });
+
+        cameraInput.addEventListener('change', () => {
+            const file = cameraInput.files && cameraInput.files[0];
+            readImageFile(file, scope, textInput, thumbWrap, thumbImg);
+        });
+
+        if (thumbClear) {
+            thumbClear.addEventListener('click', () => clearCapture(scope));
+        }
+    }
+
+    function initHeroInputCapture() {
+        wireInputCapture('hero', {
+            voiceBtn: document.getElementById('btn-voice-input'),
+            cameraInput: document.getElementById('btn-camera-input'),
+            textInput: document.getElementById('homeHeroSearchInput'),
+            thumbWrap: document.getElementById('homeHeroSearchThumb'),
+            thumbImg: document.getElementById('homeHeroSearchThumbImg'),
+            thumbClear: document.getElementById('homeHeroSearchThumbClear'),
+            onAutoSubmit: null,
+        });
     }
 
     function setConnectors(query) {
@@ -272,7 +468,7 @@
     function bindHeroForm(form, input) {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
-            const q = String(input.value || '').trim();
+            const q = composeQuery('hero', input);
             if (!q) return;
             openModal(q);
         });
@@ -349,6 +545,7 @@
 
         ensureA2hsBanner();
         registerServiceWorker();
+        initHeroInputCapture();
     }
 
     window.TVC_BrainChat = {

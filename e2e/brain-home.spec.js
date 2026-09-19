@@ -15,4 +15,17 @@ test.describe('TVC Brain marketing home', () => {
         await page.keyboard.press('Escape');
         await expect(modal).toBeHidden();
     });
+
+    test('hero voice and camera controls are present with touch targets', async ({ page }) => {
+        await page.goto('/home/index.html', { waitUntil: 'domcontentloaded' });
+        const voice = page.locator('#btn-voice-input');
+        const camera = page.locator('#btn-camera-input');
+        await expect(voice).toBeVisible();
+        await expect(page.locator('label[for="btn-camera-input"]')).toBeVisible();
+        await expect(camera).toHaveAttribute('accept', 'image/*');
+        const box = await voice.boundingBox();
+        expect(box).toBeTruthy();
+        expect(box.height).toBeGreaterThanOrEqual(44);
+        expect(box.width).toBeGreaterThanOrEqual(44);
+    });
 });

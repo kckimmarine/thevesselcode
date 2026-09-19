@@ -22,6 +22,9 @@ check('sw.js exists', existsSync(join(ROOT, 'sw.js')));
 check('brain modal css', readFileSync(join(ROOT, 'css/home.css'), 'utf8').includes('.tvc-brain-modal'));
 check('manifest brain name', readFileSync(join(ROOT, 'manifest.json'), 'utf8').includes('TVC Brain'));
 check('pms manifest preserved', existsSync(join(ROOT, 'manifest-sm.json')));
+check('hero voice button', home.includes('id="btn-voice-input"'));
+check('hero camera file input', home.includes('id="btn-camera-input"') && home.includes('capture="environment"'));
+check('hero input action css', readFileSync(join(ROOT, 'css/home.css'), 'utf8').includes('.home-hero-input-action'));
 
 const failed = results.filter((r) => !r.ok);
 if (failed.length) {
