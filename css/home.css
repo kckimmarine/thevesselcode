@@ -1175,6 +1175,92 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
     }
 }
 
+/* ── GSC high-intent IMPA hub (static /store links) ── */
+.high-intent-impa-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+@media (min-width: 640px) {
+    .high-intent-impa-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 960px) {
+    .high-intent-impa-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.high-intent-impa-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--home-border);
+    background: #ffffff;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.high-intent-impa-chip:hover,
+.high-intent-impa-chip:focus-visible {
+    border-color: var(--home-accent);
+    box-shadow: 0 8px 22px rgba(2, 132, 199, 0.14);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+.high-intent-impa-code {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: #0f766e;
+    color: #ecfdf5;
+}
+
+.high-intent-impa-name {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--home-text);
+    line-height: 1.35;
+}
+
+.high-intent-impa-topic {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--home-muted);
+}
+
+.home-impa-index-link {
+    margin-top: 16px;
+    font-size: 0.88rem;
+}
+
+.home-impa-index-link a {
+    font-weight: 700;
+    color: var(--home-accent);
+}
+
+.toolkit-high-intent-section {
+    margin-top: 8px;
+}
+
+.toolkit-high-intent-lead {
+    margin: 0 0 16px;
+    max-width: 42rem;
+}
+
 /* ── IMPA quick strip (interactive cards) ── */
 .home-impa-strip-section .home-section-head {
     text-align: left;
