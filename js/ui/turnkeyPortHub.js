@@ -55,7 +55,10 @@
     }
 
     function parseTurnkeyUrlParams(search) {
-        const params = new URLSearchParams(typeof search === 'string' ? search : (root.location?.search || ''));
+        const defaultSearch = (typeof globalThis !== 'undefined' && globalThis.location)
+            ? globalThis.location.search
+            : '';
+        const params = new URLSearchParams(typeof search === 'string' ? search : defaultSearch);
         return {
             impaCode: String(params.get('impa') || params.get('code') || '').trim(),
             itemName: String(params.get('item') || params.get('name') || '').trim(),
