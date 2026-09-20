@@ -10,7 +10,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 1370 x 2300 mm",
       "Reference": "Bed Sheet, White, 1370 x 2300 mm"
-    }
+    },
+    "industrial_tags": [
+      "2300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150102",
@@ -23,7 +27,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 1370 x 2500 mm",
       "Reference": "Bed Sheet, White, 1370 x 2500 mm"
-    }
+    },
+    "industrial_tags": [
+      "2500 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150103",
@@ -36,7 +44,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 1370 x 2600 mm",
       "Reference": "Bed Sheet, White, 1370 x 2600 mm"
-    }
+    },
+    "industrial_tags": [
+      "2600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150106",
@@ -49,7 +61,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 1500 x 2300 mm",
       "Reference": "Bed Sheet, White, 1500 x 2300 mm"
-    }
+    },
+    "industrial_tags": [
+      "2300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150107",
@@ -62,7 +78,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 1500 x 2400 mm",
       "Reference": "Bed Sheet, White, 1500 x 2400 mm"
-    }
+    },
+    "industrial_tags": [
+      "2400 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150111",
@@ -75,7 +95,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 1600 x 2500 mm",
       "Reference": "Bed Sheet, White, 1600 x 2500 mm"
-    }
+    },
+    "industrial_tags": [
+      "2500 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150112",
@@ -88,7 +112,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 1600 x 2600 mm",
       "Reference": "Bed Sheet, White, 1600 x 2600 mm"
-    }
+    },
+    "industrial_tags": [
+      "2600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150113",
@@ -101,7 +129,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 1600 x 2820 mm",
       "Reference": "Bed Sheet, White, 1600 x 2820 mm"
-    }
+    },
+    "industrial_tags": [
+      "2820 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150116",
@@ -114,7 +146,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 1828 x 2300 mm",
       "Reference": "Bed Sheet, White, 1828 x 2300 mm"
-    }
+    },
+    "industrial_tags": [
+      "2300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150117",
@@ -127,7 +163,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 1828 x 2500 mm",
       "Reference": "Bed Sheet, White, 1828 x 2500 mm"
-    }
+    },
+    "industrial_tags": [
+      "2500 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150118",
@@ -140,7 +180,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 1828 x 2600 mm",
       "Reference": "Bed Sheet, White, 1828 x 2600 mm"
-    }
+    },
+    "industrial_tags": [
+      "2600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150121",
@@ -153,7 +197,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 2030 x 2400 mm",
       "Reference": "Bed Sheet, White, 2030 x 2400 mm"
-    }
+    },
+    "industrial_tags": [
+      "2400 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150122",
@@ -166,7 +214,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 2030 x 2500 mm",
       "Reference": "Bed Sheet, White, 2030 x 2500 mm"
-    }
+    },
+    "industrial_tags": [
+      "2500 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150123",
@@ -179,7 +231,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 2030 x 2600 mm",
       "Reference": "Bed Sheet, White, 2030 x 2600 mm"
-    }
+    },
+    "industrial_tags": [
+      "2600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150126",
@@ -192,7 +248,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 2286 x 2400 mm",
       "Reference": "Bed Sheet, White, 2286 x 2400 mm"
-    }
+    },
+    "industrial_tags": [
+      "2400 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150127",
@@ -205,7 +265,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 2286 x 2500 mm",
       "Reference": "Bed Sheet, White, 2286 x 2500 mm"
-    }
+    },
+    "industrial_tags": [
+      "2500 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150128",
@@ -218,7 +282,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, White, 2286 x 2600 mm",
       "Reference": "Bed Sheet, White, 2286 x 2600 mm"
-    }
+    },
+    "industrial_tags": [
+      "2600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150141",
@@ -231,7 +299,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, Blue, 1370 x 2300 mm",
       "Reference": "Bed Sheet, Blue, 1370 x 2300 mm"
-    }
+    },
+    "industrial_tags": [
+      "2300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150142",
@@ -244,7 +316,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, Blue, 1370 x 2500 mm",
       "Reference": "Bed Sheet, Blue, 1370 x 2500 mm"
-    }
+    },
+    "industrial_tags": [
+      "2500 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150143",
@@ -257,7 +333,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, Blue, 1370 x 2600 mm",
       "Reference": "Bed Sheet, Blue, 1370 x 2600 mm"
-    }
+    },
+    "industrial_tags": [
+      "2600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150146",
@@ -270,7 +350,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, Blue, 1500 x 2400 mm",
       "Reference": "Bed Sheet, Blue, 1500 x 2400 mm"
-    }
+    },
+    "industrial_tags": [
+      "2400 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150151",
@@ -283,7 +367,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, Blue, 1600 x 2820 mm",
       "Reference": "Bed Sheet, Blue, 1600 x 2820 mm"
-    }
+    },
+    "industrial_tags": [
+      "2820 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150156",
@@ -296,7 +384,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, Blue, 1828 x 2300 mm",
       "Reference": "Bed Sheet, Blue, 1828 x 2300 mm"
-    }
+    },
+    "industrial_tags": [
+      "2300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150157",
@@ -309,7 +401,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, Blue, 1828 x 2500 mm",
       "Reference": "Bed Sheet, Blue, 1828 x 2500 mm"
-    }
+    },
+    "industrial_tags": [
+      "2500 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150158",
@@ -322,7 +418,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, Blue, 1828 x 2600 mm",
       "Reference": "Bed Sheet, Blue, 1828 x 2600 mm"
-    }
+    },
+    "industrial_tags": [
+      "2600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150161",
@@ -335,7 +435,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, Blue, 2030 x 2400 mm",
       "Reference": "Bed Sheet, Blue, 2030 x 2400 mm"
-    }
+    },
+    "industrial_tags": [
+      "2400 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150162",
@@ -348,7 +452,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, Blue, 2030 x 2500 mm",
       "Reference": "Bed Sheet, Blue, 2030 x 2500 mm"
-    }
+    },
+    "industrial_tags": [
+      "2500 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150163",
@@ -361,7 +469,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Sheet, Blue, 2030 x 2600 mm",
       "Reference": "Bed Sheet, Blue, 2030 x 2600 mm"
-    }
+    },
+    "industrial_tags": [
+      "2600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150165",
@@ -374,7 +486,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Bedding Sheets, White, 1370x2600 mm",
       "Reference": "Flame Retardant Bedding Sheets, White, 1370x2600 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150166",
@@ -387,7 +501,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Bedding Sheets, White, 1600x2800 mm",
       "Reference": "Flame Retardant Bedding Sheets, White, 1600x2800 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150167",
@@ -400,7 +516,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Bedding Sheets, White, 1830x3000 mm",
       "Reference": "Flame Retardant Bedding Sheets, White, 1830x3000 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150168",
@@ -413,7 +531,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Bedding Sheets, White, 2280x3000 mm",
       "Reference": "Flame Retardant Bedding Sheets, White, 2280x3000 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150169",
@@ -426,7 +546,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Bedding Sheets, Light Blue, 1370x2600 mm",
       "Reference": "Flame Retardant Bedding Sheets, Light Blue, 1370x2600 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150170",
@@ -439,7 +561,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Bedding Sheets, Light Blue, 1600x2800 mm",
       "Reference": "Flame Retardant Bedding Sheets, Light Blue, 1600x2800 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150171",
@@ -452,7 +576,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Bedding Sheets, Light Blue, 1830x3000 mm",
       "Reference": "Flame Retardant Bedding Sheets, Light Blue, 1830x3000 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150172",
@@ -465,7 +591,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Bedding Sheets, Light Blue, 2280x3000 mm",
       "Reference": "Flame Retardant Bedding Sheets, Light Blue, 2280x3000 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150181",
@@ -478,7 +606,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Non-Ironing Bed Sheet, 1370 x 2300 mm",
       "Reference": "Non-Ironing Bed Sheet, 1370 x 2300 mm"
-    }
+    },
+    "industrial_tags": [
+      "2300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150182",
@@ -491,7 +623,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Non-Ironing Bed Sheet, 1828 x 2500 mm",
       "Reference": "Non-Ironing Bed Sheet, 1828 x 2500 mm"
-    }
+    },
+    "industrial_tags": [
+      "2500 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150201",
@@ -504,7 +640,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Mattress, Foam Rubber 900 x 2000 x 150 mm",
       "Reference": "Mattress, Foam Rubber 900 x 2000 x 150 mm"
-    }
+    },
+    "industrial_tags": [
+      "150 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150202",
@@ -517,7 +657,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Mattress, Foam Rubber 1350 x 2000 x 150 mm",
       "Reference": "Mattress, Foam Rubber 1350 x 2000 x 150 mm"
-    }
+    },
+    "industrial_tags": [
+      "150 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150206",
@@ -530,7 +674,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Mattress, Spring Type 900 x 2000 x 150 mm",
       "Reference": "Mattress, Spring Type 900 x 2000 x 150 mm"
-    }
+    },
+    "industrial_tags": [
+      "150 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150207",
@@ -543,7 +691,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Mattress, Spring Type 1350 x 2000 x 150 mm",
       "Reference": "Mattress, Spring Type 1350 x 2000 x 150 mm"
-    }
+    },
+    "industrial_tags": [
+      "150 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150211",
@@ -556,7 +708,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Old Model, Mattress, Kapok-Filled Type 900 x 2000 x 150 mm",
       "Reference": "Old Model, Mattress, Kapok-Filled Type 900 x 2000 x 150 mm"
-    }
+    },
+    "industrial_tags": [
+      "150 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150212",
@@ -569,7 +725,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Old Model, Mattress, Kapok-Filled Type 1350 x 2000 x 150 mm",
       "Reference": "Old Model, Mattress, Kapok-Filled Type 1350 x 2000 x 150 mm"
-    }
+    },
+    "industrial_tags": [
+      "150 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150231",
@@ -582,7 +742,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Mattress, Individual Spring Type, Single 970 x 1980 x 170 mm",
       "Reference": "Mattress, Individual Spring Type, Single 970 x 1980 x 170 mm"
-    }
+    },
+    "industrial_tags": [
+      "170 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150232",
@@ -595,7 +759,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Mattress, Individual Spring Type, Semi Double 1200 x 1980x 170 mm",
       "Reference": "Mattress, Individual Spring Type, Semi Double 1200 x 1980x 170 mm"
-    }
+    },
+    "industrial_tags": [
+      "170 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150233",
@@ -608,7 +776,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Mattress, Individual Spring Type, Double 1370 x1980 x 170 mm",
       "Reference": "Mattress, Individual Spring Type, Double 1370 x1980 x 170 mm"
-    }
+    },
+    "industrial_tags": [
+      "170 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150234",
@@ -621,7 +793,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Mattress, Individual Spring Type, Queen 1520 x1980 x 170 mm",
       "Reference": "Mattress, Individual Spring Type, Queen 1520 x1980 x 170 mm"
-    }
+    },
+    "industrial_tags": [
+      "170 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150235",
@@ -634,7 +810,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Mattress, 1000x2000x200 mm",
       "Reference": "Flame Retardant Mattress, 1000x2000x200 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150236",
@@ -647,7 +825,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Mattress, 1200x2000x200 mm",
       "Reference": "Flame Retardant Mattress, 1200x2000x200 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150237",
@@ -660,7 +840,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Mattress, 1400x2000x200 mm",
       "Reference": "Flame Retardant Mattress, 1400x2000x200 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150238",
@@ -673,7 +855,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Mattress, 1000x2000x100 mm",
       "Reference": "Flame Retardant Mattress, 1000x2000x100 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150241",
@@ -686,7 +870,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Foundation (Box Spring), Single 960 x1970 x 195 mm",
       "Reference": "( ) , Foundation (Box Spring), Single 960 x1970 x 195 mm"
-    }
+    },
+    "industrial_tags": [
+      "195 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150242",
@@ -699,7 +887,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Foundation (Box Spring), Semi-Double 1190 x1970 x 195 mm",
       "Reference": "( ) , Foundation (Box Spring), Semi-Double 1190 x1970 x 195 mm"
-    }
+    },
+    "industrial_tags": [
+      "195 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150243",
@@ -712,7 +904,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Foundation (Box Spring), Double 1360x 1970 x 195 mm",
       "Reference": "( ) , Foundation (Box Spring), Double 1360x 1970 x 195 mm"
-    }
+    },
+    "industrial_tags": [
+      "195 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150244",
@@ -725,7 +921,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Foundation (Box Spring), Queen 1510x 1970 x 195 mm",
       "Reference": "( ) , Foundation (Box Spring), Queen 1510x 1970 x 195 mm"
-    }
+    },
+    "industrial_tags": [
+      "195 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150245",
@@ -738,7 +938,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "High Resilient Mattress Pad, Flame Retardant, 1000x2000x30 mm",
       "Reference": "High Resilient Mattress Pad, Flame Retardant, 1000x2000x30 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150246",
@@ -751,7 +953,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "High Resilient Mattress Pad, Flame Retardant, 1000x2000x80 mm",
       "Reference": "High Resilient Mattress Pad, Flame Retardant, 1000x2000x80 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150247",
@@ -764,7 +968,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Bed Pad, 1000x2000 mm",
       "Reference": "Flame Retardant Bed Pad, 1000x2000 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150248",
@@ -777,7 +983,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Bed Pad, 1200x2000 mm",
       "Reference": "Flame Retardant Bed Pad, 1200x2000 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150249",
@@ -790,7 +998,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Bed Pad, 1400x2000 mm",
       "Reference": "Flame Retardant Bed Pad, 1400x2000 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150251",
@@ -803,7 +1013,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Mattress Cover, (Meterial, Color, Size ??)",
       "Reference": "Mattress Cover, (Meterial, Color, Size ??)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150253",
@@ -816,7 +1028,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "High Resilient Mattress Pad, Flame Retardant, 1400x2000x30 mm",
       "Reference": "High Resilient Mattress Pad, Flame Retardant, 1400x2000x30 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150254",
@@ -829,7 +1043,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "High Resilient Mattress Pad, Flame Retardant, 1600x2000x30 mm",
       "Reference": "High Resilient Mattress Pad, Flame Retardant, 1600x2000x30 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150255",
@@ -842,7 +1058,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "High Resilient Mattress Pad, Flame Retardant, 1200x2000x50 mm",
       "Reference": "High Resilient Mattress Pad, Flame Retardant, 1200x2000x50 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150256",
@@ -855,7 +1073,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "High Resilient Mattress Pad, Flame Retardant, 1400x2000x50 mm",
       "Reference": "High Resilient Mattress Pad, Flame Retardant, 1400x2000x50 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150257",
@@ -868,7 +1088,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "High Resilient Mattress Pad, Flame Retardant, 1600x2000x50 mm",
       "Reference": "High Resilient Mattress Pad, Flame Retardant, 1600x2000x50 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150281",
@@ -881,7 +1103,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow, Polyurethan Rubber 400 x 600 mm",
       "Reference": "Pillow, Polyurethan Rubber 400 x 600 mm"
-    }
+    },
+    "industrial_tags": [
+      "600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150282",
@@ -894,7 +1120,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow, Polyurethan Kapok, 400 x 600 mm",
       "Reference": "Pillow, Polyurethan Kapok, 400 x 600 mm"
-    }
+    },
+    "industrial_tags": [
+      "600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150283",
@@ -907,7 +1137,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow, Polyurethan Feather 460 x 690 mm",
       "Reference": "Pillow, Polyurethan Feather 460 x 690 mm"
-    }
+    },
+    "industrial_tags": [
+      "690 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150285",
@@ -920,7 +1154,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow, Flame Retardant, Feather & Polyethylene Pipe, White, App 1200 grm",
       "Reference": "Pillow, Flame Retardant, Feather & Polyethylene Pipe, White, App 1200 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150286",
@@ -933,7 +1169,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow Case, White, Regular 750 x 500 x 200 mm",
       "Reference": "Pillow Case, White, Regular 750 x 500 x 200 mm"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150287",
@@ -946,7 +1186,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow Case, Blue, Regular 750 x 500 x 200 mm",
       "Reference": "Pillow Case, Blue, Regular 750 x 500 x 200 mm"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150288",
@@ -959,7 +1203,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket Cover Large (Material, Colour, Size??)",
       "Reference": "/ , Blanket Cover Large (Material, Colour, Size??)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150289",
@@ -972,7 +1218,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket Cover Small (Material, Colour, Size??)",
       "Reference": "/ , Blanket Cover Small (Material, Colour, Size??)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150290",
@@ -985,7 +1233,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow, Flame Retardant, Feather, White, App 1400 grm",
       "Reference": "Pillow, Flame Retardant, Feather, White, App 1400 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150291",
@@ -998,7 +1248,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow, Flame Retardant, White, 400x670 mm",
       "Reference": "Pillow, Flame Retardant, White, 400x670 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150292",
@@ -1011,7 +1263,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow, Flame Retardant, White, 450x780 mm",
       "Reference": "Pillow, Flame Retardant, White, 450x780 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150293",
@@ -1024,7 +1278,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow, Flame Retardant, White, 500x900 mm",
       "Reference": "Pillow, Flame Retardant, White, 500x900 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150294",
@@ -1037,7 +1293,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow, Flame Retardant, Light Blue, 400x670 mm",
       "Reference": "Pillow, Flame Retardant, Light Blue, 400x670 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150295",
@@ -1050,7 +1308,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow, Flame Retardant, Light Blue, 450x780 mm",
       "Reference": "Pillow, Flame Retardant, Light Blue, 450x780 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150296",
@@ -1063,7 +1323,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow, Flame Retardant, Light Blue, 500x900 mm",
       "Reference": "Pillow, Flame Retardant, Light Blue, 500x900 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150297",
@@ -1076,7 +1338,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pillow, Flame Retardant, Light Blue, 550x900 mm",
       "Reference": "Pillow, Flame Retardant, Light Blue, 550x900 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150301",
@@ -1089,7 +1353,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Wool 100%, 1400 x 2000 mm White",
       "Reference": "/ , , Blanket, Wool 100%, 1400 x 2000 mm White"
-    }
+    },
+    "industrial_tags": [
+      "2000 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150302",
@@ -1102,7 +1370,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Wool 100%, 1400 x 2000 mm Camel",
       "Reference": "/ , , Blanket, Wool 100%, 1400 x 2000 mm Camel"
-    }
+    },
+    "industrial_tags": [
+      "2000 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150303",
@@ -1115,7 +1387,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Wool 100%, 1400 x 2000 mm Blue",
       "Reference": "/ , , Blanket, Wool 100%, 1400 x 2000 mm Blue"
-    }
+    },
+    "industrial_tags": [
+      "2000 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150306",
@@ -1128,7 +1404,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Wool 100%, 1500 x 2000 mm Blue",
       "Reference": "/ , , Blanket, Wool 100%, 1500 x 2000 mm Blue"
-    }
+    },
+    "industrial_tags": [
+      "2000 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150311",
@@ -1141,7 +1421,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Wool 100%, 1800 x 2300 mm White",
       "Reference": "/ , , Blanket, Wool 100%, 1800 x 2300 mm White"
-    }
+    },
+    "industrial_tags": [
+      "2300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150312",
@@ -1154,7 +1438,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Wool 100%, 1800 x 2300 mm Camel",
       "Reference": "/ , , Blanket, Wool 100%, 1800 x 2300 mm Camel"
-    }
+    },
+    "industrial_tags": [
+      "2300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150313",
@@ -1167,7 +1455,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Wool 100%, 1800 x 2300 mm Blue",
       "Reference": "/ , , Blanket, Wool 100%, 1800 x 2300 mm Blue"
-    }
+    },
+    "industrial_tags": [
+      "2300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150316",
@@ -1180,7 +1472,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Wool 100%, 1800 x 2400 mm Camel",
       "Reference": "/ , , Blanket, Wool 100%, 1800 x 2400 mm Camel"
-    }
+    },
+    "industrial_tags": [
+      "2400 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150326",
@@ -1193,7 +1489,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Rayon& Acryl, 1400 x 2000 mm Camel",
       "Reference": "/ , , Blanket, Rayon& Acryl, 1400 x 2000 mm Camel"
-    }
+    },
+    "industrial_tags": [
+      "2000 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150327",
@@ -1206,7 +1506,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Rayon& Acryl, 1400 x 2000 mm Blue",
       "Reference": "/ , , Blanket, Rayon& Acryl, 1400 x 2000 mm Blue"
-    }
+    },
+    "industrial_tags": [
+      "2000 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150328",
@@ -1219,7 +1523,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Rayon& Acryl, 1800 x 2300 mm Camel",
       "Reference": "/ , , Blanket, Rayon& Acryl, 1800 x 2300 mm Camel"
-    }
+    },
+    "industrial_tags": [
+      "2300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150329",
@@ -1232,7 +1540,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Rayon& Acryl, 1800 x 2300 mm Blue",
       "Reference": "/ , , Blanket, Rayon& Acryl, 1800 x 2300 mm Blue"
-    }
+    },
+    "industrial_tags": [
+      "2300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150341",
@@ -1245,7 +1557,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Acryl 100%, 1400 x 2000 mm Camel",
       "Reference": "/ , , Blanket, Acryl 100%, 1400 x 2000 mm Camel"
-    }
+    },
+    "industrial_tags": [
+      "2000 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150342",
@@ -1258,7 +1574,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Acryl 100%, 1400 x 2000 mm Blue",
       "Reference": "/ , , Blanket, Acryl 100%, 1400 x 2000 mm Blue"
-    }
+    },
+    "industrial_tags": [
+      "2000 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150343",
@@ -1271,7 +1591,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Acryl 100%, 1400 x 2000 mm Gray",
       "Reference": "/ , , Blanket, Acryl 100%, 1400 x 2000 mm Gray"
-    }
+    },
+    "industrial_tags": [
+      "2000 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150346",
@@ -1284,7 +1608,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Acryl 100%, 1500 x 2000 mm Camel",
       "Reference": "/ , , Blanket, Acryl 100%, 1500 x 2000 mm Camel"
-    }
+    },
+    "industrial_tags": [
+      "2000 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150347",
@@ -1297,7 +1625,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Acryl 100%, 1500 x 2000 mm Blue",
       "Reference": "/ , , Blanket, Acryl 100%, 1500 x 2000 mm Blue"
-    }
+    },
+    "industrial_tags": [
+      "2000 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150350",
@@ -1310,7 +1642,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Flame Retardant, 1400x2000mm, Ployester, Beige",
       "Reference": "/ , , Blanket, Flame Retardant, 1400x2000mm, Ployester, Beige"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150351",
@@ -1323,7 +1657,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Acryl 100%, 1800 x 2300 mm Camel",
       "Reference": "/ , , Blanket, Acryl 100%, 1800 x 2300 mm Camel"
-    }
+    },
+    "industrial_tags": [
+      "2300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150352",
@@ -1336,7 +1674,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Acryl 100%, 1800 x 2300 mm Blue",
       "Reference": "/ , , Blanket, Acryl 100%, 1800 x 2300 mm Blue"
-    }
+    },
+    "industrial_tags": [
+      "2300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150353",
@@ -1349,7 +1691,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Flame Retardant, 1400x2000mm, Wool, White",
       "Reference": "/ , , Blanket, Flame Retardant, 1400x2000mm, Wool, White"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150354",
@@ -1362,7 +1706,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket, Flame Retardant, 1400x2000mm, Wool, Beige",
       "Reference": "/ , , Blanket, Flame Retardant, 1400x2000mm, Wool, Beige"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150355",
@@ -1375,7 +1721,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Blanket Cover (Material, Colour, Size??)",
       "Reference": "/ , Blanket Cover (Material, Colour, Size??)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150356",
@@ -1388,7 +1736,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Duvert Cover, Flame Retardant, White, 30% Portex+70% Polyester, 1450x2100mm",
       "Reference": "Duvert Cover, Flame Retardant, White, 30% Portex+70% Polyester, 1450x2100mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150357",
@@ -1401,7 +1751,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Duvert Cover, Flame Retardant, White, 30% Portex+70% Polyester, 1500x2150mm",
       "Reference": "Duvert Cover, Flame Retardant, White, 30% Portex+70% Polyester, 1500x2150mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150358",
@@ -1414,7 +1766,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Duvert Cover, Flame Retardant, White, 30% Portex+70% Polyester, 1550x2150mm",
       "Reference": "Duvert Cover, Flame Retardant, White, 30% Portex+70% Polyester, 1550x2150mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150359",
@@ -1427,7 +1781,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Duvert Cover, Flame Retardant, White, 30% Portex+70% Polyester, 1850x2400mm",
       "Reference": "Duvert Cover, Flame Retardant, White, 30% Portex+70% Polyester, 1850x2400mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150360",
@@ -1440,7 +1796,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Duvert Cover, Flame Retardant, White, 30% Portex+70% Polyester, 1900x2450mm",
       "Reference": "Duvert Cover, Flame Retardant, White, 30% Portex+70% Polyester, 1900x2450mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150361",
@@ -1453,7 +1811,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Duvert Cover, Flame Retardant, Blue, 100% Cotton, 1500x2000mm",
       "Reference": "Duvert Cover, Flame Retardant, Blue, 100% Cotton, 1500x2000mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150371",
@@ -1466,7 +1826,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Spread (Counterpanes), Cotton White 1500 x 2400 mm",
       "Reference": "Bed Spread (Counterpanes), Cotton White 1500 x 2400 mm"
-    }
+    },
+    "industrial_tags": [
+      "2400 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150372",
@@ -1479,7 +1843,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Spread (Counterpanes), Cotton Tartan Check 1500 x 2400 mm",
       "Reference": "Bed Spread (Counterpanes), Cotton Tartan Check 1500 x 2400 mm"
-    }
+    },
+    "industrial_tags": [
+      "2400 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150373",
@@ -1492,7 +1860,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Spread (Counterpanes), Cotton White 1800 x 2600 mm",
       "Reference": "Bed Spread (Counterpanes), Cotton White 1800 x 2600 mm"
-    }
+    },
+    "industrial_tags": [
+      "2600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150374",
@@ -1505,7 +1877,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bed Spread (Counterpanes), Cotton Tartan Check 1800 x 2600 mm",
       "Reference": "Bed Spread (Counterpanes), Cotton Tartan Check 1800 x 2600 mm"
-    }
+    },
+    "industrial_tags": [
+      "2600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150381",
@@ -1518,7 +1894,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Duvet, (Width x Length )",
       "Reference": "Duvet, (Width x Length )"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150382",
@@ -1531,7 +1909,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Cover for Duvet, (Width x Length )",
       "Reference": "Cover for Duvet, (Width x Length )"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150384",
@@ -1544,7 +1924,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Comfort, ( Width x Length )",
       "Reference": "( ) , Comfort, ( Width x Length )"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150385",
@@ -1557,7 +1939,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Cover for Comfort, (Width x Length )",
       "Reference": "Cover for Comfort, (Width x Length )"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150386",
@@ -1570,7 +1954,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Comforter, Flame Retardant, 1500x2000mm, 100% Polyester, White",
       "Reference": "( ), , Comforter, Flame Retardant, 1500x2000mm, 100% Polyester, White"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150387",
@@ -1583,7 +1969,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Quilt, ( Width x Length )",
       "Reference": "Quilt, ( Width x Length )"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150388",
@@ -1596,7 +1984,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Comforter, Flame Retardant, 1500x2000mm, 100% Feather, Beige",
       "Reference": "( ), , Comforter, Flame Retardant, 1500x2000mm, 100% Feather, Beige"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150501",
@@ -1609,7 +1999,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Canvas Laundry Bag, D450 x H1170 mm",
       "Reference": "Canvas Laundry Bag, D450 x H1170 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150505",
@@ -1622,7 +2014,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Old Model, Folding Laundry Cart with Bag, 550 x 580 x 760 mm",
       "Reference": "Old Model, Folding Laundry Cart with Bag, 550 x 580 x 760 mm"
-    }
+    },
+    "industrial_tags": [
+      "760 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150506",
@@ -1635,7 +2031,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Old Model, Laundry Bag for Folding Laundry Cart, Canvas, 470 x 500 x 600 mm",
       "Reference": "Old Model, Laundry Bag for Folding Laundry Cart, Canvas, 470 x 500 x 600 mm"
-    }
+    },
+    "industrial_tags": [
+      "600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150511",
@@ -1648,7 +2048,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Laundry Pinch, Plastic, 10's",
       "Reference": "Laundry Pinch, Plastic, 10's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150512",
@@ -1661,7 +2063,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Laundry Pinch, Plastic, 20's",
       "Reference": "Laundry Pinch, Plastic, 20's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150521",
@@ -1674,7 +2078,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Laundry Line with Hook, 5 Mtr",
       "Reference": "Laundry Line with Hook, 5 Mtr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150522",
@@ -1687,7 +2093,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Laundry Line, 200 Mtr",
       "Reference": "Laundry Line, 200 Mtr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150525",
@@ -1700,7 +2108,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Laundry RACks, Foldable, (Abt 100 x 70 cm)",
       "Reference": "Laundry RACks, Foldable, (Abt 100 x 70 cm)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150526",
@@ -1713,7 +2123,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Hanger Coat, Wood",
       "Reference": "Hanger Coat, Wood"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150527",
@@ -1726,7 +2138,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Hanger Coat, Plastic",
       "Reference": "Hanger Coat, Plastic"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150528",
@@ -1739,7 +2153,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Hanger Coat, St.Steel",
       "Reference": "Hanger Coat, St.Steel"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150531",
@@ -1752,7 +2168,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Plastic Storage Basket, 620 x 440 x 340 mm",
       "Reference": "Plastic Storage Basket, 620 x 440 x 340 mm"
-    }
+    },
+    "industrial_tags": [
+      "340 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150532",
@@ -1765,7 +2185,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Plastic Storage Basket, 600 x 430 x 300 mm",
       "Reference": "Plastic Storage Basket, 600 x 430 x 300 mm"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150541",
@@ -1778,7 +2202,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Plastic Clear Storage Containers with Lid, 530 x 360 x 185 mm",
       "Reference": "Plastic Clear Storage Containers with Lid, 530 x 360 x 185 mm"
-    }
+    },
+    "industrial_tags": [
+      "185 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150542",
@@ -1791,7 +2219,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Plastic Clear Storage Containers with Lid, 530 x 360 x 270 mm",
       "Reference": "Plastic Clear Storage Containers with Lid, 530 x 360 x 270 mm"
-    }
+    },
+    "industrial_tags": [
+      "270 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150543",
@@ -1804,7 +2236,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Plastic Clear Storage Containers with Lid, 530 x 360 x 370 mm",
       "Reference": "Plastic Clear Storage Containers with Lid, 530 x 360 x 370 mm"
-    }
+    },
+    "industrial_tags": [
+      "370 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150544",
@@ -1817,7 +2253,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Plastic Clear Storage Containers with Lid, 530 x 440 x 225 mm",
       "Reference": "Plastic Clear Storage Containers with Lid, 530 x 440 x 225 mm"
-    }
+    },
+    "industrial_tags": [
+      "225 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150545",
@@ -1830,7 +2270,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Plastic Clear Storage Containers with Lid, 635 x 440 x 325 mm",
       "Reference": "Plastic Clear Storage Containers with Lid, 635 x 440 x 325 mm"
-    }
+    },
+    "industrial_tags": [
+      "325 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150546",
@@ -1843,7 +2287,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Plastic Clear Storage Containers with Lid, 635 x 440 x 435 mm",
       "Reference": "Plastic Clear Storage Containers with Lid, 635 x 440 x 435 mm"
-    }
+    },
+    "industrial_tags": [
+      "435 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150551",
@@ -1856,7 +2304,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Dollies for Plastic Container, 355 x 500 x 135 mm",
       "Reference": "Dollies for Plastic Container, 355 x 500 x 135 mm"
-    }
+    },
+    "industrial_tags": [
+      "135 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150552",
@@ -1869,7 +2321,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Dollies for Plastic Container, 440 x 610 x 135 mm",
       "Reference": "Dollies for Plastic Container, 440 x 610 x 135 mm"
-    }
+    },
+    "industrial_tags": [
+      "135 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150601",
@@ -1882,7 +2338,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bath Towel, Cotton 730 x1330 mm White",
       "Reference": "Bath Towel, Cotton 730 x1330 mm White"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150602",
@@ -1895,7 +2353,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bath Towel, Cotton 730 x1330 mm Blue",
       "Reference": "Bath Towel, Cotton 730 x1330 mm Blue"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150603",
@@ -1908,7 +2368,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bath Towel, Cotton 670 x1270 mm White",
       "Reference": "Bath Towel, Cotton 670 x1270 mm White"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150604",
@@ -1921,7 +2383,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Bath Towel, Cotton 670 x1270 mm Blue",
       "Reference": "Bath Towel, Cotton 670 x1270 mm Blue"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150606",
@@ -1934,7 +2398,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Face Towel, Cotton 390 x1000 mm White",
       "Reference": "Face Towel, Cotton 390 x1000 mm White"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150607",
@@ -1947,7 +2413,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Face Towel, Cotton 390 x1000 mm Blue",
       "Reference": "Face Towel, Cotton 390 x1000 mm Blue"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150608",
@@ -1960,7 +2428,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Face Towel, Cotton 400 x 800 mm White",
       "Reference": "Face Towel, Cotton 400 x 800 mm White"
-    }
+    },
+    "industrial_tags": [
+      "800 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150609",
@@ -1973,7 +2445,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Face Towel, Cotton 400 x 800 mm Blue",
       "Reference": "Face Towel, Cotton 400 x 800 mm Blue"
-    }
+    },
+    "industrial_tags": [
+      "800 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150611",
@@ -1986,7 +2462,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Sweat Towel, Cotton, 300 x 760 mm White",
       "Reference": "Sweat Towel, Cotton, 300 x 760 mm White"
-    }
+    },
+    "industrial_tags": [
+      "760 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150616",
@@ -1999,7 +2479,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Sponge Cloth, All Cotton 350 x 450 mm",
       "Reference": "Sponge Cloth, All Cotton 350 x 450 mm"
-    }
+    },
+    "industrial_tags": [
+      "450 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150617",
@@ -2012,7 +2496,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Pantry Towel, Cotton 400 x 690 mm",
       "Reference": "Pantry Towel, Cotton 400 x 690 mm"
-    }
+    },
+    "industrial_tags": [
+      "690 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150618",
@@ -2025,7 +2513,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Glass Towel, Cotton 410 x 700 mm",
       "Reference": "Glass Towel, Cotton 410 x 700 mm"
-    }
+    },
+    "industrial_tags": [
+      "700 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150621",
@@ -2038,7 +2530,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Duster Cloth",
       "Reference": "Duster Cloth"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150626",
@@ -2051,7 +2545,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Mutton Cloth, Stockinet",
       "Reference": "Mutton Cloth, Stockinet"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150641",
@@ -2064,7 +2560,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Table Cloth (Need Size x Materila x Color )",
       "Reference": "Table Cloth (Need Size x Materila x Color )"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150651",
@@ -2077,7 +2575,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Table Clothing, Plastic Cotton Lined Width 1070 mm",
       "Reference": "Table Clothing, Plastic Cotton Lined Width 1070 mm"
-    }
+    },
+    "industrial_tags": [
+      "1070 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150652",
@@ -2090,7 +2592,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Table Clothing, Plastic Cotton Lined Width 1370 mm",
       "Reference": "Table Clothing, Plastic Cotton Lined Width 1370 mm"
-    }
+    },
+    "industrial_tags": [
+      "1370 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150653",
@@ -2103,7 +2609,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Tablecloth, Flame Retardant, 100% Cotton, White, 1200 x 1500 mm",
       "Reference": "Tablecloth, Flame Retardant, 100% Cotton, White, 1200 x 1500 mm"
-    }
+    },
+    "industrial_tags": [
+      "1500 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150654",
@@ -2116,7 +2626,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Tablecloth, Flame Retardant, 100% Cotton, White, 1500 x 1900 mm",
       "Reference": "Tablecloth, Flame Retardant, 100% Cotton, White, 1500 x 1900 mm"
-    }
+    },
+    "industrial_tags": [
+      "1900 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150661",
@@ -2129,7 +2643,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.1 x 915 mm x 50 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.1 x 915 mm x 50 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "915 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150662",
@@ -2142,7 +2660,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.1 x 1370 mm x 50 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.1 x 1370 mm x 50 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "1370 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150663",
@@ -2155,7 +2677,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.1 x 1830 mm x 50 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.1 x 1830 mm x 50 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "1830 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150664",
@@ -2168,7 +2694,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.1 x 915 mm x 100 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.1 x 915 mm x 100 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "915 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150665",
@@ -2181,7 +2711,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.1 x 1370 mm x 100 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.1 x 1370 mm x 100 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "1370 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150666",
@@ -2194,7 +2728,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.2 x 915 mm x 50 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.2 x 915 mm x 50 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "915 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150667",
@@ -2207,7 +2745,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.2 x 1370 mm x 50 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.2 x 1370 mm x 50 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "1370 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150668",
@@ -2220,7 +2762,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.2 x 1830 mm x 50 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.2 x 1830 mm x 50 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "1830 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150671",
@@ -2233,7 +2779,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.3 x 915 mm x 30 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.3 x 915 mm x 30 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "915 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150672",
@@ -2246,7 +2796,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.3 x 1370 mm x 30 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.3 x 1370 mm x 30 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "1370 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150673",
@@ -2259,7 +2813,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.3 x 1830 mm x 30 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.3 x 1830 mm x 30 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "1830 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150676",
@@ -2272,7 +2830,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.5 x 915 mm x 30 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.5 x 915 mm x 30 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "915 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150677",
@@ -2285,7 +2847,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.5 x 1370 mm x 30 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.5 x 1370 mm x 30 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "1370 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150678",
@@ -2298,7 +2864,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 0.5 x 1830 mm x 30 Mtr",
       "Reference": "Transparent Plastic Sheeting, 0.5 x 1830 mm x 30 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "1830 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150679",
@@ -2311,7 +2881,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 1.0 x 915 mm x 10 Mtr",
       "Reference": "Transparent Plastic Sheeting, 1.0 x 915 mm x 10 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "915 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150680",
@@ -2324,7 +2898,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Transparent Plastic Sheeting, 2.0 x 915 mm x 10 Mtr",
       "Reference": "Transparent Plastic Sheeting, 2.0 x 915 mm x 10 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "915 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150681",
@@ -2337,7 +2915,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Moltplain Foam Rubber Sheet, 5 mm 1x2 Mtr",
       "Reference": "Moltplain Foam Rubber Sheet, 5 mm 1x2 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "5 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150682",
@@ -2350,7 +2932,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Moltplain Foam Rubber Sheet, 10 mm 1x2 Mtr",
       "Reference": "Moltplain Foam Rubber Sheet, 10 mm 1x2 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "10 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150683",
@@ -2363,7 +2949,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Moltplain Foam Rubber Sheet, 15 mm 1x2 Mtr",
       "Reference": "Moltplain Foam Rubber Sheet, 15 mm 1x2 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "15 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150684",
@@ -2376,7 +2966,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Moltplain Foam Rubber Sheet, 20 mm 1x2 Mtr",
       "Reference": "Moltplain Foam Rubber Sheet, 20 mm 1x2 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "20 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150685",
@@ -2389,7 +2983,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Moltplain Foam Rubber Sheet, 25 mm 1x2 Mtr",
       "Reference": "Moltplain Foam Rubber Sheet, 25 mm 1x2 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "25 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150690",
@@ -2402,7 +3000,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Non Skid Mesh Sheet, Width 600 mm",
       "Reference": "Non Skid Mesh Sheet, Width 600 mm"
-    }
+    },
+    "industrial_tags": [
+      "600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150691",
@@ -2415,7 +3017,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Non Skid Mesh Sheet, Width 800 mm",
       "Reference": "Non Skid Mesh Sheet, Width 800 mm"
-    }
+    },
+    "industrial_tags": [
+      "800 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150701",
@@ -2428,7 +3034,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Hook & Loop Tapes (Velcro Tapes/ Magic Tapes) 25 mm x 40 cm",
       "Reference": "Hook & Loop Tapes (Velcro Tapes/ Magic Tapes) 25 mm x 40 cm"
-    }
+    },
+    "industrial_tags": [
+      "25 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150702",
@@ -2441,7 +3051,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Hook & Loop Tapes (Velcro Tapes/ Magic Tapes) 25 mm x 1.5 M",
       "Reference": "Hook & Loop Tapes (Velcro Tapes/ Magic Tapes) 25 mm x 1.5 M"
-    }
+    },
+    "industrial_tags": [
+      "25 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150703",
@@ -2454,7 +3068,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Hook & Loop Tapes (Velcro Tapes/ Magic Tapes) 25 mm x 3.0 M",
       "Reference": "Hook & Loop Tapes (Velcro Tapes/ Magic Tapes) 25 mm x 3.0 M"
-    }
+    },
+    "industrial_tags": [
+      "25 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150704",
@@ -2467,7 +3085,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Hook & Loop Tapes (Velcro Tapes/ Magic Tapes) 25 mm x 25 M",
       "Reference": "Hook & Loop Tapes (Velcro Tapes/ Magic Tapes) 25 mm x 25 M"
-    }
+    },
+    "industrial_tags": [
+      "25 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150705",
@@ -2480,7 +3102,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Hook & Loop Tapes (Velcro Tapes/ Magic Tapes) 50 mm x 25 M",
       "Reference": "Hook & Loop Tapes (Velcro Tapes/ Magic Tapes) 50 mm x 25 M"
-    }
+    },
+    "industrial_tags": [
+      "50 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150706",
@@ -2493,7 +3119,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Hook & Loop Tapes (Velcro Tapes/ Magic Tapes) 100 mm x 25 M",
       "Reference": "Hook & Loop Tapes (Velcro Tapes/ Magic Tapes) 100 mm x 25 M"
-    }
+    },
+    "industrial_tags": [
+      "100 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "150710",
@@ -2506,7 +3136,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Roller Blinder",
       "Reference": "Roller Blinder"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150712",
@@ -2519,7 +3151,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Porthole Curtain (Meterial, Size, Type ??)",
       "Reference": "Porthole Curtain (Meterial, Size, Type ??)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150713",
@@ -2532,7 +3166,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Roller Blinder (Need Width x Length x Maerial)",
       "Reference": "Roller Blinder (Need Width x Length x Maerial)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150714",
@@ -2545,7 +3181,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Shower Curtain Vinyl, (Need Size, Color )",
       "Reference": "Shower Curtain Vinyl, (Need Size, Color )"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150715",
@@ -2558,7 +3196,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Door Curtain (Need Size, Material, Type )",
       "Reference": "Door Curtain (Need Size, Material, Type )"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150716",
@@ -2571,7 +3211,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Flame Retardant Curtains (Need Width, Length, Materials)",
       "Reference": "Flame Retardant Curtains (Need Width, Length, Materials)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150717",
@@ -2584,7 +3226,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Adjustable Rail for Shower Curtains (Need Dia & Length)",
       "Reference": "Adjustable Rail for Shower Curtains (Need Dia & Length)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150721",
@@ -2597,7 +3241,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Solar Shades, Spring Roller Type (Need Size, Type)",
       "Reference": "Solar Shades, Spring Roller Type (Need Size, Type)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "150722",
@@ -2610,7 +3256,9 @@
       "Catalog Section": "Chapter 15",
       "Description": "Solar Shades, Clutch Springless Roller Type (Need Size, Type)",
       "Reference": "Solar Shades, Clutch Springless Roller Type (Need Size, Type)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "174361",
@@ -2623,7 +3271,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Dolly for Garbage Can, 360 x 141 mm",
       "Reference": "Dolly for Garbage Can, 360 x 141 mm"
-    }
+    },
+    "industrial_tags": [
+      "141 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "174362",
@@ -2636,7 +3288,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Dolly for Garbage Can, 370 x 141 mm",
       "Reference": "Dolly for Garbage Can, 370 x 141 mm"
-    }
+    },
+    "industrial_tags": [
+      "141 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "174363",
@@ -2649,7 +3305,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Dolly for Garbage Can, 410 x 141 mm",
       "Reference": "Dolly for Garbage Can, 410 x 141 mm"
-    }
+    },
+    "industrial_tags": [
+      "141 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "174364",
@@ -2662,7 +3322,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Dolly for Garbage Can, 440 x 171 mm",
       "Reference": "Dolly for Garbage Can, 440 x 171 mm"
-    }
+    },
+    "industrial_tags": [
+      "171 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "174365",
@@ -2675,7 +3339,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Dolly for Garbage Can, 500 x 171 mm",
       "Reference": "Dolly for Garbage Can, 500 x 171 mm"
-    }
+    },
+    "industrial_tags": [
+      "171 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "511002",
@@ -2688,7 +3356,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Chamois Leather, 400 x 400 mm",
       "Reference": "Chamois Leather, 400 x 400 mm"
-    }
+    },
+    "industrial_tags": [
+      "400 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "511004",
@@ -2701,7 +3373,11 @@
       "Catalog Section": "Chapter 15",
       "Description": "Furniture Cleaning Yellow Duster, 280 x 370 mm",
       "Reference": "Furniture Cleaning Yellow Duster, 280 x 370 mm"
-    }
+    },
+    "industrial_tags": [
+      "370 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "511006",
@@ -2714,6 +3390,8 @@
       "Catalog Section": "Chapter 15",
       "Description": "Cotton Floor Cloth",
       "Reference": "Cotton Floor Cloth"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   }
 ]

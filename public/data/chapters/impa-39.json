@@ -10,7 +10,11 @@
       "Catalog Section": "Chapter 39",
       "Description": "Sterile Burn Dressing, 50 x 150 mm, Water-Jel Technologies",
       "Reference": "Sterile Burn Dressing, 50 x 150 mm, Water-Jel Technologies"
-    }
+    },
+    "industrial_tags": [
+      "150 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "330958",
@@ -23,7 +27,11 @@
       "Catalog Section": "Chapter 39",
       "Description": "Sterile Burn Dressing, 100 x 100 mm, Water-Jel Technologies",
       "Reference": "Sterile Burn Dressing, 100 x 100 mm, Water-Jel Technologies"
-    }
+    },
+    "industrial_tags": [
+      "100 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "330959",
@@ -36,7 +44,11 @@
       "Catalog Section": "Chapter 39",
       "Description": "Sterile Burn Dressing, 100 x 400mm, Water-Jel Technologies",
       "Reference": "Sterile Burn Dressing, 100 x 400mm, Water-Jel Technologies"
-    }
+    },
+    "industrial_tags": [
+      "400 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "331216",
@@ -49,7 +61,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Portable Drug Tester, Druglizer Le5",
       "Reference": "Portable Drug Tester, Druglizer Le5"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "331227",
@@ -62,7 +76,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Drug Testing Cup Set",
       "Reference": "( ) , Drug Testing Cup Set"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390101",
@@ -75,7 +91,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Old Model, Medical Chest In Acc. with W.H.O. Up to 40 Persons",
       "Reference": "WHO , Old Model, Medical Chest In Acc. with W.H.O. Up to 40 Persons"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390102",
@@ -88,7 +106,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Old Model, Medical Chest In Acc. with W.H.O. Over 40 Persons",
       "Reference": "WHO , Old Model, Medical Chest In Acc. with W.H.O. Over 40 Persons"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390103",
@@ -101,7 +121,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Old Model, Medical Chest In Acc. with D.T.I. Scale-2 Up to 50Persons",
       "Reference": "DTI II , Old Model, Medical Chest In Acc. with D.T.I. Scale-2 Up to 50Persons"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390104",
@@ -114,7 +136,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Old Model, Medical Chest In Acc. with D.T.I. Scale-2 Over 50Persons",
       "Reference": "DTI II , Old Model, Medical Chest In Acc. with D.T.I. Scale-2 Over 50Persons"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390105",
@@ -127,7 +151,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Old Model, Skipsmedisin M.V. Pa Skip Group-5 Up to 60 Persons",
       "Reference": "Old Model, Skipsmedisin M.V. Pa Skip Group-5 Up to 60 Persons"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390106",
@@ -140,7 +166,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Medical Stores Required for UK Merchant Ship and Fishing Vessel, Regulation 1955 Si No. 1802 Category A",
       "Reference": "Medical Stores Required for UK Merchant Ship and Fishing Vessel, Regulation 1955 Si No. 1802 Category A"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390107",
@@ -153,7 +181,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Medical Stores Required for UK Merchant Ship and Fishing Vessel, Regulation 1955 Si No. 1802 Category B",
       "Reference": "Medical Stores Required for UK Merchant Ship and Fishing Vessel, Regulation 1955 Si No. 1802 Category B"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390111",
@@ -166,7 +196,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Medical Chest In Acc. with W.H.O. 25-40 Persons",
       "Reference": "WHO 25-40 , Medical Chest In Acc. with W.H.O. 25-40 Persons"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390120",
@@ -179,7 +211,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Adrenaline Injection 10 Amp.",
       "Reference": "Adrenaline Injection 10 Amp."
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390126",
@@ -192,7 +226,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Alcohol Medical 500 ml",
       "Reference": "( ) , Alcohol Medical 500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390128",
@@ -205,7 +241,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Alcohol Surgical 500 ml",
       "Reference": "( ) , Alcohol Surgical 500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390130",
@@ -218,7 +256,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Alcohol Rubbing 500 ml",
       "Reference": "Alcohol Rubbing 500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390136",
@@ -231,7 +271,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Aminophylline Tablet 100 Mg 60Tab",
       "Reference": "( , ) , Aminophylline Tablet 100 Mg 60Tab"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390138",
@@ -244,7 +286,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Ampicillin Capsule 250 Mg 100 Cap",
       "Reference": "( )( , , , ) , Ampicillin Capsule 250 Mg 100 Cap"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390140",
@@ -257,7 +301,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Amyl Nitrite Capsule 6 Cap",
       "Reference": "( ) , Amyl Nitrite Capsule 6 Cap"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390146",
@@ -270,7 +316,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Analgesic Tablet \"Bufferin\" 24 Tab",
       "Reference": "\" \" , Analgesic Tablet \"Bufferin\" 24 Tab"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390147",
@@ -283,7 +331,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Analgesic Tablet \"Bufferin\" 48 Tab",
       "Reference": "\" \" , Analgesic Tablet \"Bufferin\" 48 Tab"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390148",
@@ -296,7 +346,9 @@
       "Catalog Section": "Chapter 39",
       "Description": "Analgesic Tablet \"Bufferin\" 96 Tab",
       "Reference": "\" \" , Analgesic Tablet \"Bufferin\" 96 Tab"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "390150",
@@ -309,6 +361,8 @@
       "Catalog Section": "Chapter 39",
       "Description": "Analgesic Tablet \"Excedrine\" 36 Tab",
       "Reference": "\" \" , Analgesic Tablet \"Excedrine\" 36 Tab"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   }
 ]

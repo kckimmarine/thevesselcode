@@ -10,7 +10,11 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Old Model, Inflatable Painting Pontoon, 1200 x 2400 x 540 mm",
       "Reference": "( ) , Old Model, Inflatable Painting Pontoon, 1200 x 2400 x 540 mm"
-    }
+    },
+    "industrial_tags": [
+      "540 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "232562",
@@ -23,7 +27,11 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Old Model, Inflatable Painting Pontoon, 1500 x 3000 x 600 mm",
       "Reference": "( ) , Old Model, Inflatable Painting Pontoon, 1500 x 3000 x 600 mm"
-    }
+    },
+    "industrial_tags": [
+      "600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "232566",
@@ -36,7 +44,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Inflatable Deep Tank Check Boat, Capa 5 Person",
       "Reference": "Inflatable Deep Tank Check Boat, Capa 5 Person"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330101",
@@ -49,7 +59,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Inflatable Liferaft, Throw-Over Ty, for 6 Men",
       "Reference": "( ) , Inflatable Liferaft, Throw-Over Ty, for 6 Men"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330102",
@@ -62,7 +74,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Inflatable Liferaft, Throw-Over Ty, for 10 Men",
       "Reference": "( ) , Inflatable Liferaft, Throw-Over Ty, for 10 Men"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330103",
@@ -75,7 +89,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Inflatable Liferaft, Throw-Over Ty, for 15 Men",
       "Reference": "( ) , Inflatable Liferaft, Throw-Over Ty, for 15 Men"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330104",
@@ -88,7 +104,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Inflatable Liferaft, Throw-Over Ty, for 20 Men",
       "Reference": "( ) , Inflatable Liferaft, Throw-Over Ty, for 20 Men"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330105",
@@ -101,7 +119,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Inflatable Liferaft, Throw-Over Ty, for 25 Men",
       "Reference": "( ) , Inflatable Liferaft, Throw-Over Ty, for 25 Men"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330111",
@@ -114,7 +134,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Old Model, Inflatable Liferaft for 6 Men High Installation",
       "Reference": "( ) , Old Model, Inflatable Liferaft for 6 Men High Installation"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330112",
@@ -127,7 +149,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Old Model, Inflatable Liferaft for 10 Men High Installation",
       "Reference": "( ) , Old Model, Inflatable Liferaft for 10 Men High Installation"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330113",
@@ -140,7 +164,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Old Model, Inflatable Liferaft for 15 Men High Installation",
       "Reference": "( ) , Old Model, Inflatable Liferaft for 15 Men High Installation"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330114",
@@ -153,7 +179,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Old Model, Inflatable Liferaft for 20 Men High Installation",
       "Reference": "( ) , Old Model, Inflatable Liferaft for 20 Men High Installation"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330115",
@@ -166,7 +194,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Old Model, Inflatable Liferaft for 25 Men High Installation",
       "Reference": "( ) , Old Model, Inflatable Liferaft for 25 Men High Installation"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330119",
@@ -179,7 +209,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Hydrostatic Release Unit for Liferaft, Hammer H20 R",
       "Reference": "Hydrostatic Release Unit for Liferaft, Hammer H20 R"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330121",
@@ -192,7 +224,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Old Model, Inflatable Liferaft for Tanker, 6 Men",
       "Reference": "( ) , Old Model, Inflatable Liferaft for Tanker, 6 Men"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330122",
@@ -205,7 +239,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Old Model, Inflatable Liferaft for Tanker, 10 Men",
       "Reference": "( ) , Old Model, Inflatable Liferaft for Tanker, 10 Men"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330123",
@@ -218,7 +254,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Old Model, Inflatable Liferaft for Tanker, 15 Men",
       "Reference": "( ) , Old Model, Inflatable Liferaft for Tanker, 15 Men"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330124",
@@ -231,7 +269,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Old Model, Inflatable Liferaft for Tanker, 20 Men",
       "Reference": "( ) , Old Model, Inflatable Liferaft for Tanker, 20 Men"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330125",
@@ -244,7 +284,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Old Model, Inflatable Liferaft for Tanker, 25 Men",
       "Reference": "( ) , Old Model, Inflatable Liferaft for Tanker, 25 Men"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330126",
@@ -257,7 +299,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Hydrostatic Release Unit for Epirb, Hammer H20-Yse",
       "Reference": "Hydrostatic Release Unit for Epirb, Hammer H20-Yse"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330128",
@@ -270,7 +314,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Hydrostatic Release Unit for Liferaft, Thanner, Dk-2004",
       "Reference": "Hydrostatic Release Unit for Liferaft, Thanner, Dk-2004"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330129",
@@ -283,7 +329,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Hydrostatic Release Unit for Liferaft, Safetmate, LR-1",
       "Reference": "Hydrostatic Release Unit for Liferaft, Safetmate, LR-1"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330130",
@@ -296,7 +344,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Totally Enclosed Lifeboat",
       "Reference": "Totally Enclosed Lifeboat"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330131",
@@ -309,7 +359,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Life Jacket with Whistle for Adult, HK Approved",
       "Reference": "Life Jacket with Whistle for Adult, HK Approved"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330132",
@@ -322,7 +374,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Life Jacket with Whistle for Child, HK Approved",
       "Reference": "Life Jacket with Whistle for Child, HK Approved"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330134",
@@ -335,7 +389,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Life Jacket with Whistle for Adult, USCG Approved",
       "Reference": "Life Jacket with Whistle for Adult, USCG Approved"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330135",
@@ -348,7 +404,9 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Life Jacket with Whistle for Child, USCG Approved",
       "Reference": "Life Jacket with Whistle for Child, USCG Approved"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330136",
@@ -361,6 +419,8 @@
       "Catalog Section": "Deck & Mooring Stores",
       "Description": "Old Model, Life Jacket with Whistle & Light Type, Na-83V",
       "Reference": "Old Model, Life Jacket with Whistle & Light Type, Na-83V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   }
 ]
