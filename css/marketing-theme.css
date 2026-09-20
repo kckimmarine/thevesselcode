@@ -113,6 +113,17 @@ body.tvc-marketing-body .mkt-site-wrap > .store-public-shell {
     padding-bottom: 0;
 }
 
+/* Ship Repair Korea pillar — dedicated hero (not .home-hero.mkt-hero) */
+body.srk-page .repair-hero-section {
+    background-color: #0a0f1d;
+    background-image:
+        linear-gradient(rgba(10, 15, 29, 0.88), rgba(15, 23, 42, 0.95)),
+        url('/assets/images/shipyard-dock-hero.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .home-pms-hero-actions {
     margin-top: 20px;
 }

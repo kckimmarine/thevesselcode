@@ -16,12 +16,30 @@
     <meta name="twitter:title" content="Ship Repair in Korea | THE VESSEL CODE">
     <meta name="twitter:description" content="Turnkey afloat overhaul, husbandry, and IMPA stores across Busan, Ulsan, and Yeosu.">
     <link rel="icon" type="image/png" href="../icons/company-logo.png?v=20260804-logo-no-ring">
-    <link rel="preload" as="image" href="/assets/images/shipyard-dock-hero.webp" type="image/webp">
+    <link rel="preload" as="image" href="/assets/images/shipyard-dock-hero.webp" type="image/webp" fetchpriority="high">
+    <style>
+        /* Critical hero — avoids marketing .home-hero grid/background resets on live deploy */
+        .srk-page .repair-hero-section {
+            background-color: #0a0f1d;
+            background-image: linear-gradient(rgba(10, 15, 29, 0.88), rgba(15, 23, 42, 0.95)), url('/assets/images/shipyard-dock-hero.webp');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .srk-page .repair-hero-section #srkTitle,
+        .srk-page .repair-hero-section .home-section-head h1 {
+            color: #f8fafc;
+        }
+        .srk-page .repair-hero-section .srk-summary,
+        .srk-page .repair-hero-section .home-section-lead {
+            color: #e2e8f0;
+        }
+    </style>
     <link rel="stylesheet" href="../css/home.css?v=20260915-enterprise">
     <link rel="stylesheet" href="../css/marketing-shell.css?v=20260919-conversion-network">
     <link rel="stylesheet" href="../css/marketing-theme.css?v=20260915-enterprise">
     <link rel="stylesheet" href="../css/marketing-readability.css?v=20260919-conversion-network">
-    <link rel="stylesheet" href="../css/ship-repair-korea.css?v=20260920-shipyard-hero">
+    <link rel="stylesheet" href="../css/ship-repair-korea.css?v=20260920-shipyard-hero-v2">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -78,22 +96,20 @@
 <body class="tvc-marketing-body home-page mkt-page srk-page" data-mkt-active="services">
     <div class="mkt-site-wrap">
         <div id="marketing-topbar"></div>
+        <section class="repair-hero-section" aria-labelledby="srkTitle">
+            <div class="repair-hero-inner">
+                <p class="srk-verified-badge" aria-label="Superintendent verification">✓ 15+ Years Chief Engineer &amp; Class Approval Authority</p>
+                <h1 id="srkTitle">Turnkey Ship Repair &amp; Technical Husbandry in South Korea</h1>
+                <p class="home-section-lead mkt-lead srk-summary">
+                    THE VESSEL CODE delivers <strong>ship repair in Korea</strong> as a single superintendent-led desk:
+                    <strong>Busan ship repair afloat</strong>, alongside valve and pump overhauls, customs and husbandry,
+                    launch-boat logistics, and bonded <strong>IMPA stores</strong> to the berth or anchorage.
+                    Owners and operators get 1st Class Marine Engineer oversight—written scope, class-ready records,
+                    and on-time departure without demurrage from fragmented vendors.
+                </p>
+            </div>
+        </section>
         <div class="home-shell">
-            <section class="home-hero mkt-hero srk-hero repair-hero-section" aria-labelledby="srkTitle">
-                <img class="repair-hero-preload" src="/assets/images/shipyard-dock-hero.webp" alt="" width="1280" height="1282" loading="eager" fetchpriority="high" decoding="async">
-                <div class="home-section-head repair-hero-content">
-                    <p class="srk-verified-badge" aria-label="Superintendent verification">✓ 15+ Years Chief Engineer &amp; Class Approval Authority</p>
-                    <h1 id="srkTitle">Turnkey Ship Repair &amp; Technical Husbandry in South Korea</h1>
-                    <p class="home-section-lead mkt-lead srk-summary">
-                        THE VESSEL CODE delivers <strong>ship repair in Korea</strong> as a single superintendent-led desk:
-                        <strong>Busan ship repair afloat</strong>, alongside valve and pump overhauls, customs and husbandry,
-                        launch-boat logistics, and bonded <strong>IMPA stores</strong> to the berth or anchorage.
-                        Owners and operators get 1st Class Marine Engineer oversight—written scope, class-ready records,
-                        and on-time departure without demurrage from fragmented vendors.
-                    </p>
-                </div>
-            </section>
-
             <section class="home-section" aria-labelledby="srkPortCompareTitle">
                 <div class="home-section-head">
                     <h2 id="srkPortCompareTitle">Korea Port Repair Capability Matrix</h2>
