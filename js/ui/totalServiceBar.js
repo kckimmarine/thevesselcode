@@ -147,14 +147,23 @@ ${cards}
 
     function buildHomeFeaturedSuiteHtml() {
         const cards = FEATURED_PILLARS.map((p) => `
-    <a class="home-featured-card" href="${esc(p.href)}" data-total-service-pillar="${esc(p.id)}">
-      <span class="home-featured-card-media" style="background-image:url('${esc(p.image)}')" aria-hidden="true"></span>
-      <span class="home-featured-card-body">
-        <span class="home-featured-card-title">${esc(p.title)}</span>
-        <span class="home-featured-card-sub">${esc(p.subtitle)}</span>
-      </span>
-    </a>`).join('\n');
-        return `<div class="home-featured-card-grid" role="list">${cards}</div>`;
+      <a class="home-featured-card" href="${esc(p.href)}" data-total-service-pillar="${esc(p.id)}">
+        <span class="home-featured-card-media" style="background-image:url('${esc(p.image)}')" aria-hidden="true"></span>
+        <span class="home-featured-card-body">
+          <span class="home-featured-card-title">${esc(p.title)}</span>
+          <span class="home-featured-card-sub">${esc(p.subtitle)}</span>
+        </span>
+      </a>`).join('\n');
+        return `
+<div class="home-featured-carousel" data-featured-carousel>
+  <button type="button" class="home-featured-carousel-btn home-featured-carousel-btn--prev" data-featured-prev aria-label="Previous service">‹</button>
+  <div class="home-featured-carousel-viewport" data-featured-viewport tabindex="0" aria-label="Featured marine services">
+    <div class="home-featured-card-grid home-featured-card-track" role="list">${cards}
+    </div>
+  </div>
+  <button type="button" class="home-featured-carousel-btn home-featured-carousel-btn--next" data-featured-next aria-label="Next service">›</button>
+  <div class="home-featured-carousel-dots" data-featured-dots role="tablist" aria-label="Featured slides"></div>
+</div>`;
     }
 
     return {

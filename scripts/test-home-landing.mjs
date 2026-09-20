@@ -61,7 +61,12 @@ check('home impa card strip', home.includes('home-impa-card') && home.includes('
 check('topbar launch pill i18n', shell.includes('nav.launchPill') && shell.includes('Launch App'));
 check('hero search-first layout', home.includes('hero-search-first') && !home.includes('hero-realistic-canvas'));
 check('hero ocean chevron layout', home.includes('hero-ocean-chevron') && home.includes('home-ocean-hero-horizon.webp'));
-check('home featured suite section', home.includes('home-featured-suite-wrap') && home.includes('buildHomeFeaturedSuiteHtml'));
+check(
+    'home featured suite section',
+    home.includes('home-featured-suite-wrap') && home.includes('TVC_TotalServiceBar.buildHomeFeaturedSuiteHtml'),
+);
+check('home featured carousel script', home.includes('homeFeaturedCarousel.js'));
+check('featured carousel markup', existsSync(join(ROOT, 'js/ui/homeFeaturedCarousel.js')));
 check(
     'hero ocean image asset exists',
     existsSync(join(ROOT, 'public/assets/images/home-ocean-hero-horizon.webp')),

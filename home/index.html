@@ -26,14 +26,14 @@
                 linear-gradient(180deg, rgba(0, 48, 92, 0.22) 0%, rgba(0, 40, 80, 0.06) 45%, rgba(0, 35, 70, 0.28) 100%),
                 url('/assets/images/home-ocean-hero-horizon.webp');
             background-size: cover;
-            background-position: center 42%;
+            background-position: center 50%;
         }
     </style>
     <link rel="icon" type="image/png" href="/assets/icons/icon-192.png?v=20260919-atom">
     <link rel="apple-touch-icon" href="/assets/icons/icon-192.png?v=20260919-atom">
     <link rel="stylesheet" href="../css/marketing-shell.css?v=20260915-contrast-enterprise">
     <link rel="stylesheet" href="../css/marketing-theme.css?v=20260915-contrast-enterprise">
-    <link rel="stylesheet" href="../css/home.css?v=20260920-ocean-chevron">
+    <link rel="stylesheet" href="../css/home.css?v=20260920-ocean-chevron-v2">
     <link rel="stylesheet" href="../css/marketing-readability.css?v=20260920-ocean-chevron">
     <link rel="stylesheet" href="../css/marketing.css?v=20260914-mobile-hero">
     <link rel="stylesheet" href="../css/search-results.css?v=20260920-light-panel">
@@ -342,12 +342,16 @@
     <script src="../js/ui/searchResultsView.js?v=20260919-maritime-search"></script>
     <script src="../js/home-hero-search.js?v=20260919-maritime-search"></script>
     <script src="../js/marketing-shell.js?v=20260919-nav-services"></script>
-    <script src="../js/ui/totalServiceBar.js?v=20260920-cross-service-mesh"></script>
+    <script src="../js/ui/totalServiceBar.js?v=20260920-featured-carousel"></script>
+    <script src="../js/ui/homeFeaturedCarousel.js?v=20260920-featured-carousel"></script>
     <script>
         (function () {
             const mount = document.getElementById('homeTotalServiceBarMount');
             if (mount && typeof TVC_TotalServiceBar !== 'undefined') {
                 mount.innerHTML = TVC_TotalServiceBar.buildHomeFeaturedSuiteHtml();
+            }
+            if (typeof TVC_HomeFeaturedCarousel !== 'undefined') {
+                TVC_HomeFeaturedCarousel.initDocument();
             }
         })();
     </script>

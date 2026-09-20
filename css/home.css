@@ -1775,6 +1775,11 @@ body.tvc-brain-open {
 }
 
 /* ── Home hero: Chevron-style ocean photo + intelligence band ── */
+:root {
+    --home-ocean-hero-height: clamp(480px, 62vh, 680px);
+    --home-ocean-hero-focal-y: 50%;
+}
+
 body.home-page #hero.hero-ocean-chevron {
     position: relative;
     display: flex;
@@ -1788,12 +1793,12 @@ body.home-page #hero.hero-ocean-chevron .home-hero-ocean-backdrop {
     position: absolute;
     inset: 0;
     bottom: auto;
-    height: min(56vh, 620px);
+    height: var(--home-ocean-hero-height);
     z-index: 0;
     background-color: #1e4a7a;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 42%;
+    background-position: center var(--home-ocean-hero-focal-y);
 }
 
 body.home-page #hero.hero-ocean-chevron .home-hero-ocean-stage {
@@ -1802,8 +1807,8 @@ body.home-page #hero.hero-ocean-chevron .home-hero-ocean-stage {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: min(56vh, 620px);
-    padding: 96px max(20px, calc((100vw - 1180px) / 2 + 20px)) 52px;
+    min-height: var(--home-ocean-hero-height);
+    padding: 96px max(20px, calc((100vw - 1180px) / 2 + 20px)) 44px;
     box-sizing: border-box;
 }
 
@@ -1831,7 +1836,7 @@ body.home-page #hero.hero-ocean-chevron .home-hero-description {
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1rem;
+    font-size: clamp(0.92rem, 1.6vw, 1rem);
     line-height: 1.65;
 }
 
@@ -1921,21 +1926,135 @@ body.home-page #hero.hero-ocean-chevron .home-utility-badge:focus-visible {
     font-size: 0.98rem;
 }
 
+.home-featured-carousel {
+    position: relative;
+    padding: 0 44px;
+}
+
+.home-featured-carousel-viewport {
+    overflow: hidden;
+}
+
 .home-featured-card-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
 }
 
-@media (max-width: 960px) {
+.home-featured-carousel-btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: 1px solid #cbd5e1;
+    background: #fff;
+    color: #003b71;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+}
+
+.home-featured-carousel-btn:hover,
+.home-featured-carousel-btn:focus-visible {
+    background: #003b71;
+    color: #fff;
+    border-color: #003b71;
+}
+
+.home-featured-carousel-btn--prev {
+    left: 0;
+}
+
+.home-featured-carousel-btn--next {
+    right: 0;
+}
+
+.home-featured-carousel-dots {
+    display: none;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.home-featured-carousel-dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 999px;
+    background: #cbd5e1;
+    cursor: pointer;
+}
+
+.home-featured-carousel-dot.is-active {
+    width: 22px;
+    background: #003b71;
+}
+
+@media (max-width: 1100px) {
     .home-featured-card-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 520px) {
-    .home-featured-card-grid {
-        grid-template-columns: 1fr;
+@media (max-width: 767px) {
+    :root {
+        --home-ocean-hero-height: clamp(420px, 58vh, 560px);
+        --home-ocean-hero-focal-y: 56%;
+    }
+
+    body.home-page #hero.hero-ocean-chevron .home-hero-ocean-stage {
+        padding-top: 84px;
+        padding-bottom: 36px;
+    }
+
+    body.home-page #hero.hero-ocean-chevron .home-hero-description {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .home-featured-carousel {
+        padding: 0 36px;
+    }
+
+    .home-featured-carousel-viewport {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-padding-inline: 12px;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .home-featured-carousel-viewport::-webkit-scrollbar {
+        display: none;
+    }
+
+    .home-featured-card-grid.home-featured-card-track {
+        display: flex;
+        gap: 14px;
+        grid-template-columns: unset;
+        padding-bottom: 4px;
+    }
+
+    .home-featured-card-grid .home-featured-card {
+        flex: 0 0 min(82vw, 300px);
+        scroll-snap-align: center;
+    }
+
+    .home-featured-carousel-btn,
+    .home-featured-carousel-dots {
+        display: flex;
+    }
+
+    .home-featured-carousel-dots {
+        display: flex;
     }
 }
 
@@ -1959,7 +2078,7 @@ body.home-page #hero.hero-ocean-chevron .home-utility-badge:focus-visible {
 
 .home-featured-card-media {
     display: block;
-    height: 140px;
+    height: 156px;
     background-size: cover;
     background-position: center;
 }
@@ -1987,13 +2106,3 @@ body.home-page #hero.hero-ocean-chevron .home-utility-badge:focus-visible {
     color: #bae6fd;
 }
 
-@media (max-width: 767px) {
-    body.home-page #hero.hero-ocean-chevron .home-hero-ocean-backdrop,
-    body.home-page #hero.hero-ocean-chevron .home-hero-ocean-stage {
-        min-height: min(50vh, 520px);
-    }
-
-    body.home-page #hero.hero-ocean-chevron .home-hero-ocean-stage {
-        padding-top: 84px;
-    }
-}
