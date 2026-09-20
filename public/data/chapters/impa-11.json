@@ -10,7 +10,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Stationary Bicycle Indoor Use",
       "Reference": "Stationary Bicycle Indoor Use"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110102",
@@ -23,7 +25,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Stationary Bicycle with Ergometer",
       "Reference": "Stationary Bicycle with Ergometer"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110103",
@@ -36,7 +40,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Treadmill (Running Machine), Foldable, AC 110V",
       "Reference": "Treadmill (Running Machine), Foldable, AC 110V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110104",
@@ -49,7 +55,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Treadmill (Running Machine), Foldable, AC 220V",
       "Reference": "Treadmill (Running Machine), Foldable, AC 220V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110105",
@@ -62,7 +70,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Old, Monocycle",
       "Reference": "Old Model, Old, Monocycle"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110106",
@@ -75,7 +85,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Treadmill (Running Machine), Non-Foldable, AC 110V",
       "Reference": "Treadmill (Running Machine), Non-Foldable, AC 110V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110107",
@@ -88,7 +100,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Treadmill (Running Machine), Non-Foldable, AC 220V",
       "Reference": "Treadmill (Running Machine), Non-Foldable, AC 220V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110108",
@@ -101,7 +115,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Cross Trainer",
       "Reference": "Cross Trainer"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110109",
@@ -114,7 +130,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Elliptical Trainer",
       "Reference": "Elliptical Trainer"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110110",
@@ -127,7 +145,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Exerciser Rowing Indoor Use",
       "Reference": "Exerciser Rowing Indoor Use"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110111",
@@ -140,7 +160,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Multi Gym Station, Indoor Use",
       "Reference": "Multi Gym Station, Indoor Use"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110112",
@@ -153,7 +175,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Incline / Decline Bench",
       "Reference": "Incline / Decline Bench"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110113",
@@ -166,7 +190,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Abdominal Bench",
       "Reference": "Abdominal Bench"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110114",
@@ -179,7 +205,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Exercise Mat",
       "Reference": "Exercise Mat"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110115",
@@ -192,7 +220,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Weight Lifting Belt ( Need Wanted Size )",
       "Reference": "Weight Lifting Belt ( Need Wanted Size )"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110116",
@@ -205,7 +235,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Exercise Bll (Gym Ball )",
       "Reference": "Exercise Bll (Gym Ball )"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110117",
@@ -218,7 +250,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Push-Up Bar",
       "Reference": "Push-Up Bar"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110118",
@@ -231,7 +265,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Exercise Wheel",
       "Reference": "Exercise Wheel"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110119",
@@ -244,7 +280,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hand Grip",
       "Reference": "Hand Grip"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110120",
@@ -257,7 +295,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model : Barbell Set",
       "Reference": "Old Model : Barbell Set"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110121",
@@ -270,7 +310,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Barbell Bar",
       "Reference": "Barbell Bar"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110122",
@@ -283,7 +325,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Dumbbell Set",
       "Reference": "Dumbbell Set"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110123",
@@ -296,7 +340,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model : Barbell Disc, (Need Wanted Weight)",
       "Reference": "Old Model : Barbell Disc, (Need Wanted Weight)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110124",
@@ -309,7 +355,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Spine Press Bench",
       "Reference": "Spine Press Bench"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110125",
@@ -322,7 +370,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Barbell Disc, Cast Iron, 1.25 Kg (2's)",
       "Reference": "Barbell Disc, Cast Iron, 1.25 Kg (2's)"
-    }
+    },
+    "industrial_tags": [
+      "25K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "110126",
@@ -335,7 +387,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Barbell Stand",
       "Reference": "Barbell Stand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110127",
@@ -348,7 +402,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Skipping Rope",
       "Reference": "Skipping Rope"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110128",
@@ -361,7 +417,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Ankle Weight (Need Wanted Weight)",
       "Reference": "Ankle Weight (Need Wanted Weight)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110129",
@@ -374,7 +432,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Wrist Weight (Need Wanted Weight)",
       "Reference": "Wrist Weight (Need Wanted Weight)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110130",
@@ -387,7 +447,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Boxing Stand",
       "Reference": "Boxing Stand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110131",
@@ -400,7 +462,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Punch Bag (Need Wanted Size)",
       "Reference": "Punch Bag (Need Wanted Size)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110132",
@@ -413,7 +477,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Boxing Glove (Need Wanted Weight , Once)",
       "Reference": "Boxing Glove (Need Wanted Weight , Once)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110133",
@@ -426,7 +492,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Barbell Disc, Cast Iron, 2.5 Kg (2's)",
       "Reference": "Barbell Disc, Cast Iron, 2.5 Kg (2's)"
-    }
+    },
+    "industrial_tags": [
+      "5K"
+    ],
+    "land_compat_name": "5K"
   },
   {
     "c": "110134",
@@ -439,7 +509,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Rowing Exerciser, Inddor Use, Magnetic Rower",
       "Reference": "Rowing Exerciser, Inddor Use, Magnetic Rower"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110135",
@@ -452,7 +524,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Old, Well Exerciser",
       "Reference": "Old Model, Old, Well Exerciser"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110136",
@@ -465,7 +539,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Barbell Disc, Cast Iron, 5 Kg (2's)",
       "Reference": "Barbell Disc, Cast Iron, 5 Kg (2's)"
-    }
+    },
+    "industrial_tags": [
+      "5K"
+    ],
+    "land_compat_name": "5K"
   },
   {
     "c": "110137",
@@ -478,7 +556,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Barbell Disc, Cast Iron, 10 Kg (2's)",
       "Reference": "Barbell Disc, Cast Iron, 10 Kg (2's)"
-    }
+    },
+    "industrial_tags": [
+      "10K"
+    ],
+    "land_compat_name": "10K"
   },
   {
     "c": "110138",
@@ -491,7 +573,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Barbell Disc, Cast Iron, 15 Kg (2's)",
       "Reference": "Barbell Disc, Cast Iron, 15 Kg (2's)"
-    }
+    },
+    "industrial_tags": [
+      "15K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "110139",
@@ -504,7 +590,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Barbell Disc, Cast Iron, 20 Kg (2's)",
       "Reference": "Barbell Disc, Cast Iron, 20 Kg (2's)"
-    }
+    },
+    "industrial_tags": [
+      "20K"
+    ],
+    "land_compat_name": "20K"
   },
   {
     "c": "110140",
@@ -517,7 +607,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Table for Table Tennis",
       "Reference": ". , Table for Table Tennis"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110141",
@@ -530,7 +622,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Table Tennis Net",
       "Reference": "Table Tennis Net"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110142",
@@ -543,7 +637,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Table Tennis Net Supporter",
       "Reference": "Table Tennis Net Supporter"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110143",
@@ -556,7 +652,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Table Tennis Bat, Rubber-Face Shake-Hand",
       "Reference": "Table Tennis Bat, Rubber-Face Shake-Hand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110144",
@@ -569,7 +667,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Table Tennis Bat, Rubber-Face Penholder",
       "Reference": "Table Tennis Bat, Rubber-Face Penholder"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110145",
@@ -582,7 +682,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Table Tennis Ball",
       "Reference": "Table Tennis Ball"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110146",
@@ -595,7 +697,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Smith Machine Set",
       "Reference": "Smith Machine Set"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110147",
@@ -608,7 +712,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Chin & Dipping Multi Stand",
       "Reference": "Chin & Dipping Multi Stand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110148",
@@ -621,7 +727,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Mat Exercise Protection Puzzle, 60x60x1.2cm",
       "Reference": "Mat Exercise Protection Puzzle, 60x60x1.2cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110149",
@@ -634,7 +742,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Medicine Ball with Further, Details",
       "Reference": "Medicine Ball with Further, Details"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110150",
@@ -647,7 +757,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Jogging Shoes 25 cm",
       "Reference": "Jogging Shoes 25 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110151",
@@ -660,7 +772,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Jogging Shoes 25.5 cm",
       "Reference": "Jogging Shoes 25.5 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110152",
@@ -673,7 +787,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Jogging Shoes 26 cm",
       "Reference": "Jogging Shoes 26 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110153",
@@ -686,7 +802,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Jogging Shoes 26.5 cm",
       "Reference": "Jogging Shoes 26.5 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110154",
@@ -699,7 +817,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Jogging Shoes 27 cm",
       "Reference": "Jogging Shoes 27 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110155",
@@ -712,7 +832,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Jogging Shoes 27.5 cm",
       "Reference": "Jogging Shoes 27.5 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110156",
@@ -725,7 +847,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Jogging Shoes 28 cm",
       "Reference": "Jogging Shoes 28 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110160",
@@ -738,7 +862,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Exercise Shoes 25 cm",
       "Reference": "Exercise Shoes 25 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110161",
@@ -751,7 +877,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Exercise Shoes 25.5 cm",
       "Reference": "Exercise Shoes 25.5 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110162",
@@ -764,7 +892,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Exercise Shoes 26 cm",
       "Reference": "Exercise Shoes 26 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110163",
@@ -777,7 +907,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Exercise Shoes 26.5 cm",
       "Reference": "Exercise Shoes 26.5 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110164",
@@ -790,7 +922,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Exercise Shoes 27 cm",
       "Reference": "Exercise Shoes 27 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110165",
@@ -803,7 +937,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Exercise Shoes 27.5 cm",
       "Reference": "Exercise Shoes 27.5 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110166",
@@ -816,7 +952,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Exercise Shoes 28 cm",
       "Reference": "Exercise Shoes 28 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110170",
@@ -829,7 +967,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Foam Roller Wit Further, Details",
       "Reference": "Foam Roller Wit Further, Details"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110171",
@@ -842,7 +982,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Gym Glove, S",
       "Reference": "Gym Glove, S"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110172",
@@ -855,7 +997,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Gym Glove, M",
       "Reference": "Gym Glove, M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110173",
@@ -868,7 +1012,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Gym Glove, L",
       "Reference": "Gym Glove, L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110174",
@@ -881,7 +1027,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Gym Glove, XL",
       "Reference": "Gym Glove, XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110180",
@@ -894,7 +1042,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Volley Ball Rubber",
       "Reference": "Volley Ball Rubber"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110181",
@@ -907,7 +1057,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Volley Ball Leather",
       "Reference": "Volley Ball Leather"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110182",
@@ -920,7 +1072,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Soccer Ball Rubber",
       "Reference": "Soccer Ball Rubber"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110183",
@@ -933,7 +1087,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Soccer Ball Leather",
       "Reference": "Soccer Ball Leather"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110184",
@@ -946,7 +1102,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Basket Ball Rubber",
       "Reference": "Basket Ball Rubber"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110185",
@@ -959,7 +1117,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Basket Ball Leather",
       "Reference": "Basket Ball Leather"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110186",
@@ -972,7 +1132,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Basket Ball Hoop, Portable Type",
       "Reference": "Basket Ball Hoop, Portable Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110187",
@@ -985,7 +1147,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Basket Ball Hoop, Wall Mount Type",
       "Reference": "Basket Ball Hoop, Wall Mount Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110188",
@@ -998,7 +1162,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fishing Rod with Further, Details",
       "Reference": "Fishing Rod with Further, Details"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110189",
@@ -1011,7 +1177,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fishing Reel with Further, Details",
       "Reference": "Fishing Reel with Further, Details"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110190",
@@ -1024,7 +1192,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fishing Line with Further, Details",
       "Reference": "Fishing Line with Further, Details"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110191",
@@ -1037,7 +1207,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fishing Hook with Further, Details",
       "Reference": "Fishing Hook with Further, Details"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110192",
@@ -1050,7 +1222,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fishing Sinker with Further, Details",
       "Reference": "Fishing Sinker with Further, Details"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110193",
@@ -1063,7 +1237,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fishing Float with Further, Details",
       "Reference": "Fishing Float with Further, Details"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110194",
@@ -1076,7 +1252,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fishing Lure with Further, Details",
       "Reference": "Fishing Lure with Further, Details"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110201",
@@ -1089,7 +1267,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Sweat Suit with Hood Cotton Gray Size-M",
       "Reference": "Sweat Suit with Hood Cotton Gray Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110202",
@@ -1102,7 +1282,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Sweat Suit with Hood Cotton Gray Size-L",
       "Reference": "Sweat Suit with Hood Cotton Gray Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110203",
@@ -1115,7 +1297,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Sweat Suit with Hood Cotton Gray Size-LL",
       "Reference": "Sweat Suit with Hood Cotton Gray Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110206",
@@ -1128,7 +1312,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Sweat Suit without Hood Cotton Gray Size-M",
       "Reference": "Sweat Suit without Hood Cotton Gray Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110207",
@@ -1141,7 +1327,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Sweat Suit without Hood Cotton Gray Size-L",
       "Reference": "Sweat Suit without Hood Cotton Gray Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110208",
@@ -1154,7 +1342,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Sweat Suit without Hood Cotton Gray Size-LL",
       "Reference": "Sweat Suit without Hood Cotton Gray Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110211",
@@ -1167,7 +1357,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Jogging Pants, Color, Size-M",
       "Reference": "Jogging Pants, Color, Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110212",
@@ -1180,7 +1372,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Jogging Pants, Color, Size-L",
       "Reference": "Jogging Pants, Color, Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110213",
@@ -1193,7 +1387,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Jogging Pants, Color, Size-LL",
       "Reference": "Jogging Pants, Color, Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110230",
@@ -1206,7 +1402,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Socks Sporting ,Cotton, White",
       "Reference": "Socks Sporting ,Cotton, White"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110231",
@@ -1219,7 +1417,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Socks Sporting ,Cotton, Colored",
       "Reference": "Socks Sporting ,Cotton, Colored"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110240",
@@ -1232,7 +1432,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Swimming Trunks, Size-M",
       "Reference": "Swimming Trunks, Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110241",
@@ -1245,7 +1447,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Swimming Trunks, Size-L",
       "Reference": "Swimming Trunks, Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110242",
@@ -1258,7 +1462,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Swimming Trunks, Size LL",
       "Reference": "Swimming Trunks, Size LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110401",
@@ -1271,7 +1477,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Cards, Plastic",
       "Reference": "Cards, Plastic"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110402",
@@ -1284,7 +1492,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Cribbage and Cards",
       "Reference": "Cribbage and Cards"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110405",
@@ -1297,7 +1507,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Chess & Checker Game",
       "Reference": "Chess & Checker Game"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110406",
@@ -1310,7 +1522,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Chess Board",
       "Reference": "Chess Board"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110407",
@@ -1323,7 +1537,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Chessmen",
       "Reference": "Chessmen"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110410",
@@ -1336,7 +1552,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Dartboard with Arrow 6's",
       "Reference": "Dartboard with Arrow 6's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110411",
@@ -1349,7 +1567,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Darts 3's",
       "Reference": "Darts 3's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110415",
@@ -1362,7 +1582,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Domino Game",
       "Reference": "Domino Game"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110416",
@@ -1375,7 +1597,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Backgammon",
       "Reference": "Backgammon"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110417",
@@ -1388,7 +1612,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Mahjong Set",
       "Reference": "( ) , Mahjong Set"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110420",
@@ -1401,7 +1627,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Monopoly Game",
       "Reference": "Monopoly Game"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110425",
@@ -1414,7 +1642,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Scramble Game",
       "Reference": "Scramble Game"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110426",
@@ -1427,7 +1657,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Sho-Gi, Japaness Chess",
       "Reference": "Sho-Gi, Japaness Chess"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110427",
@@ -1440,7 +1672,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Go Game",
       "Reference": "Go Game"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110428",
@@ -1453,7 +1687,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Othello Game (Reversi)",
       "Reference": "Othello Game (Reversi)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110429",
@@ -1466,7 +1702,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Rubik's Cube",
       "Reference": "Rubik's Cube"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110430",
@@ -1479,7 +1717,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Dice with Leather Cup",
       "Reference": "Dice with Leather Cup"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110431",
@@ -1492,7 +1732,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Bingo Books Assorted",
       "Reference": "Bingo Books Assorted"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110439",
@@ -1505,7 +1747,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Game, Computer Game, Hard Ware (Need Game Name)",
       "Reference": "Game, Computer Game, Hard Ware (Need Game Name)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110440",
@@ -1518,7 +1762,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Game Computer Game, Soft (With Name of Game)",
       "Reference": "Game Computer Game, Soft (With Name of Game)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110441",
@@ -1531,7 +1777,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Billiard Table Set",
       "Reference": "Billiard Table Set"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110442",
@@ -1544,7 +1792,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Cues for Billiard",
       "Reference": "Cues for Billiard"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110443",
@@ -1557,7 +1807,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Balls for Billiard",
       "Reference": "Balls for Billiard"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110445",
@@ -1570,7 +1822,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Table Scooer Game",
       "Reference": "Table Scooer Game"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110446",
@@ -1583,7 +1837,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Massage Chair Electric 110V",
       "Reference": "Massage Chair Electric 110V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110447",
@@ -1596,7 +1852,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Massage Chair Electric 220V",
       "Reference": "Massage Chair Electric 220V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110501",
@@ -1609,7 +1867,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pipe Smoking Brier Straight",
       "Reference": "Pipe Smoking Brier Straight"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110502",
@@ -1622,7 +1882,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pipe Smoking Brier Curved",
       "Reference": "Pipe Smoking Brier Curved"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110503",
@@ -1635,7 +1897,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pipe Smoking Brier Two-Way",
       "Reference": "Pipe Smoking Brier Two-Way"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110504",
@@ -1648,7 +1912,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pipe Smoking Corn",
       "Reference": "Pipe Smoking Corn"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110506",
@@ -1661,7 +1927,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Smoking Pipe Cleaner 50's",
       "Reference": "Smoking Pipe Cleaner 50's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110510",
@@ -1674,7 +1942,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Lighter Cigarette Oneway Use",
       "Reference": "Lighter Cigarette Oneway Use"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110511",
@@ -1687,7 +1957,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Lighter Cigarette Windproof",
       "Reference": "Lighter Cigarette Windproof"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110515",
@@ -1700,7 +1972,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Butane Gas for Cigarette Lighter 78 grm",
       "Reference": "Butane Gas for Cigarette Lighter 78 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110516",
@@ -1713,7 +1987,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Butane Gas Ronson's 30 grm",
       "Reference": "Butane Gas Ronson's 30 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110520",
@@ -1726,7 +2002,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fuel for Cigarette Lighter 130 ml",
       "Reference": "Fuel for Cigarette Lighter 130 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110522",
@@ -1739,7 +2017,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Flint for Cigarette Lighter 5's",
       "Reference": "Flint for Cigarette Lighter 5's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110550",
@@ -1752,7 +2032,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Sunglasses Plastic Frame",
       "Reference": "Sunglasses Plastic Frame"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110551",
@@ -1765,7 +2047,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Sunglasses Metal Frame",
       "Reference": "Sunglasses Metal Frame"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110601",
@@ -1778,7 +2062,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hair Shampoo 220 ml",
       "Reference": "Hair Shampoo 220 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110602",
@@ -1791,7 +2077,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hair Shampoo 350 ml",
       "Reference": "Hair Shampoo 350 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110603",
@@ -1804,7 +2092,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shampoo for Hair & Shoulder 200 ml",
       "Reference": "Shampoo for Hair & Shoulder 200 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110604",
@@ -1817,7 +2107,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shampoo for Hair & Shoulder 300 ml",
       "Reference": "Shampoo for Hair & Shoulder 300 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110605",
@@ -1830,7 +2122,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shampoo for Hair & Shoulder 400 ml",
       "Reference": "Shampoo for Hair & Shoulder 400 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110606",
@@ -1843,7 +2137,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shower Gel, 250 ml",
       "Reference": "Shower Gel, 250 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110607",
@@ -1856,7 +2152,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hair Conditioner 300 ml",
       "Reference": "Hair Conditioner 300 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110608",
@@ -1869,7 +2167,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hair Oil 200 ml",
       "Reference": "Hair Oil 200 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110610",
@@ -1882,7 +2182,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hair Tonic Old-Spice 150 ml",
       "Reference": "Hair Tonic Old-Spice 150 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110620",
@@ -1895,7 +2197,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hair Cream Old-Spice 75 grm",
       "Reference": "Hair Cream Old-Spice 75 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110630",
@@ -1908,7 +2212,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hair Liquid Old-Spice 150 ml",
       "Reference": "Hair Liquid Old-Spice 150 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110635",
@@ -1921,7 +2227,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pomade Brilliantine Bravas 85 grm",
       "Reference": "Pomade Brilliantine Bravas 85 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110640",
@@ -1934,7 +2242,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hair Spray Bravas 150 ml",
       "Reference": "Hair Spray Bravas 150 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110650",
@@ -1947,7 +2257,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shaving Cream 4-3/4 Oz",
       "Reference": "Shaving Cream 4-3/4 Oz"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110651",
@@ -1960,7 +2272,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shaving Cream 90 grm",
       "Reference": "Shaving Cream 90 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110660",
@@ -1973,7 +2287,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shaving Foam 177 grm",
       "Reference": "Shaving Foam 177 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110661",
@@ -1986,7 +2302,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shaving Foam 300 ml",
       "Reference": "Shaving Foam 300 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110662",
@@ -1999,7 +2317,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shaving Gel 200 ml",
       "Reference": "Shaving Gel 200 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110670",
@@ -2012,7 +2332,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "After Shave Lotion 125 ml",
       "Reference": "After Shave Lotion 125 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110671",
@@ -2025,7 +2347,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "After Shave Lotion 50 ml",
       "Reference": "After Shave Lotion 50 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110672",
@@ -2038,7 +2362,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "After Shave Lotion 100 ml",
       "Reference": "After Shave Lotion 100 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110680",
@@ -2051,7 +2377,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Deodorant Roll-On 30 ml",
       "Reference": "Deodorant Roll-On 30 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110681",
@@ -2064,7 +2392,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Deodorant Spray 70 grm",
       "Reference": "Deodorant Spray 70 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110682",
@@ -2077,7 +2407,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Deodorant Roll-On, 50 ml",
       "Reference": "Deodorant Roll-On, 50 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110683",
@@ -2090,7 +2422,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Deodorant Spray, 150 ml",
       "Reference": "Deodorant Spray, 150 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110684",
@@ -2103,7 +2437,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Deodorant Spray, 200 ml",
       "Reference": "Deodorant Spray, 200 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110685",
@@ -2116,7 +2452,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Body Lotion, 250 ml",
       "Reference": "Body Lotion, 250 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110686",
@@ -2129,7 +2467,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Body Lotion, 400 ml",
       "Reference": "Body Lotion, 400 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110687",
@@ -2142,7 +2482,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Deodorant Roll-On 40 ml",
       "Reference": "Deodorant Roll-On 40 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110688",
@@ -2155,7 +2497,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Deodorant Spray 100 grm",
       "Reference": "Deodorant Spray 100 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110689",
@@ -2168,7 +2512,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Lip Balm (Chap Stick)",
       "Reference": "Lip Balm (Chap Stick)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110690",
@@ -2181,7 +2527,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Perfume for Men 100 ml",
       "Reference": "Perfume for Men 100 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110691",
@@ -2194,7 +2542,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Perfume for Ladies 100 ml",
       "Reference": "Perfume for Ladies 100 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110692",
@@ -2207,7 +2557,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Facial Wash 100 ml",
       "Reference": "Facial Wash 100 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110693",
@@ -2220,7 +2572,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Facial Scrub 100 ml",
       "Reference": "Facial Scrub 100 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110701",
@@ -2233,7 +2587,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Alka Seltzer Tablets 12 Tab",
       "Reference": "Alka Seltzer Tablets 12 Tab"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110705",
@@ -2246,7 +2602,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Eno Fruit Salt 4 Oz",
       "Reference": "Eno Fruit Salt 4 Oz"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110706",
@@ -2259,7 +2617,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Eno Fruit Salt 8 Oz",
       "Reference": "Eno Fruit Salt 8 Oz"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110710",
@@ -2272,7 +2632,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Skin Cream Nivea 56 grm",
       "Reference": "Skin Cream Nivea 56 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110711",
@@ -2285,7 +2647,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Skin Cream, 150 ml",
       "Reference": "Skin Cream, 150 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110712",
@@ -2298,7 +2662,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Skin Cream, 250 ml",
       "Reference": "Skin Cream, 250 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110713",
@@ -2311,7 +2677,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Skin Cream, 400 ml",
       "Reference": "Skin Cream, 400 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110720",
@@ -2324,7 +2692,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Sun Lotion Sunburn Type 100 ml",
       "Reference": "Sun Lotion Sunburn Type 100 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110721",
@@ -2337,7 +2707,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Sun Lotion Sunburn Less Type 100 ml",
       "Reference": "Sun Lotion Sunburn Less Type 100 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110901",
@@ -2350,7 +2722,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Barber Hair Clipper Set",
       "Reference": "Barber Hair Clipper Set"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110902",
@@ -2363,7 +2737,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Barber Hair Scissors Set",
       "Reference": "Barber Hair Scissors Set"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110903",
@@ -2376,7 +2752,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Electric Hair Clipper, 110V",
       "Reference": "Electric Hair Clipper, 110V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110904",
@@ -2389,7 +2767,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Electric Hair Clipper, 220V",
       "Reference": "Electric Hair Clipper, 220V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110905",
@@ -2402,7 +2782,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hair Comb Pocketable with Sack",
       "Reference": "Hair Comb Pocketable with Sack"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110910",
@@ -2415,7 +2797,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hair Brush Plastic",
       "Reference": "Hair Brush Plastic"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110911",
@@ -2428,7 +2812,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hair Brush Bristle",
       "Reference": "Hair Brush Bristle"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110912",
@@ -2441,7 +2827,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hair Dryer, 110V 50/60 Hz",
       "Reference": "Hair Dryer, 110V 50/60 Hz"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110913",
@@ -2454,7 +2842,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hair Dryer, 220V 50/60 Hz",
       "Reference": "Hair Dryer, 220V 50/60 Hz"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110917",
@@ -2467,7 +2857,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Tooth Paste Colgate 75 grm",
       "Reference": "Tooth Paste Colgate 75 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110920",
@@ -2480,7 +2872,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Tooth Paste, Colgate 198 grm",
       "Reference": "Tooth Paste, Colgate 198 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110921",
@@ -2493,7 +2887,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Tooth Paste, 200 grm",
       "Reference": "Tooth Paste, 200 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110922",
@@ -2506,7 +2902,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Tooth Paste, 100 grm",
       "Reference": "Tooth Paste, 100 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110925",
@@ -2519,7 +2917,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Tooth Brush, Bristle",
       "Reference": "Tooth Brush, Bristle"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110926",
@@ -2532,7 +2932,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Tooth Brush, Nylon",
       "Reference": "Tooth Brush, Nylon"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110927",
@@ -2545,7 +2947,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Tooth Brush, Nylon Hard",
       "Reference": "Tooth Brush, Nylon Hard"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110928",
@@ -2558,7 +2962,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Electric Tooth Brush",
       "Reference": "Electric Tooth Brush"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110929",
@@ -2571,7 +2977,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Dental Floss Holder Type",
       "Reference": "Dental Floss Holder Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110930",
@@ -2584,7 +2992,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Dental Floss Roll Type 50 Mtr",
       "Reference": "Dental Floss Roll Type 50 Mtr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110935",
@@ -2597,7 +3007,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Disposable Hand Shaver 5's",
       "Reference": "Disposable Hand Shaver 5's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110936",
@@ -2610,7 +3022,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Hand Shaver InjectOR Type Gillette G-Ii",
       "Reference": "Hand Shaver InjectOR Type Gillette G-Ii"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110937",
@@ -2623,7 +3037,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Electric Shaver, AC 110V",
       "Reference": "Electric Shaver, AC 110V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110938",
@@ -2636,7 +3052,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Electric Shaver, AC 220V",
       "Reference": "Electric Shaver, AC 220V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110939",
@@ -2649,7 +3067,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Moustache Beard Trimmer, 110V",
       "Reference": "Moustache Beard Trimmer, 110V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110940",
@@ -2662,7 +3082,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shaving Blade InjectOR Type",
       "Reference": "Shaving Blade InjectOR Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110941",
@@ -2675,7 +3097,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Moustache Beard Trimmer, 220V",
       "Reference": "Moustache Beard Trimmer, 220V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110945",
@@ -2688,7 +3112,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shaving Brush",
       "Reference": "Shaving Brush"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110950",
@@ -2701,7 +3127,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Nail Clipper Regular",
       "Reference": "Nail Clipper Regular"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110951",
@@ -2714,7 +3142,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Nail Clipper with Pared Nail Pocket",
       "Reference": "Nail Clipper with Pared Nail Pocket"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110955",
@@ -2727,7 +3157,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Nail Brush Nylon",
       "Reference": "Nail Brush Nylon"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110961",
@@ -2740,7 +3172,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Cotton Buds, 100 Sticks",
       "Reference": "Cotton Buds, 100 Sticks"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110970",
@@ -2753,7 +3187,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shoe Polish Liquid 75 ml",
       "Reference": "Shoe Polish Liquid 75 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110971",
@@ -2766,7 +3202,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shoe Polish Solid 45 grm",
       "Reference": "Shoe Polish Solid 45 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110975",
@@ -2779,7 +3217,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shoe Laces",
       "Reference": "Shoe Laces"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "110977",
@@ -2792,7 +3232,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shoe Polishing Brush",
       "Reference": "Shoe Polishing Brush"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111109",
@@ -2805,7 +3247,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "International Shortwave Broadcast Receivable Radio, Handy Ty Sw Radio",
       "Reference": "International Shortwave Broadcast Receivable Radio, Handy Ty Sw Radio"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111110",
@@ -2818,7 +3262,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "International Shortwave Broadcast Receivable Radio, Portable Ty Sw Radio",
       "Reference": "International Shortwave Broadcast Receivable Radio, Portable Ty Sw Radio"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111111",
@@ -2831,7 +3277,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Handy Ty Rodio Cassette Player",
       "Reference": "Old Model, Handy Ty Rodio Cassette Player"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111112",
@@ -2844,7 +3292,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Handy Ty Cassette Tape Player",
       "Reference": "Old Model, Handy Ty Cassette Tape Player"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111113",
@@ -2857,7 +3307,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Handy Ty CD Player",
       "Reference": "CD , Old Model, Handy Ty CD Player"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111114",
@@ -2870,7 +3322,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Handy Ty Md Player",
       "Reference": "MD , Old Model, Handy Ty Md Player"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111116",
@@ -2883,7 +3337,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Modle, Portable Radio Cassette Player",
       "Reference": "Old Modle, Portable Radio Cassette Player"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111117",
@@ -2896,7 +3352,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Modle, Portable Radio with CD Player",
       "Reference": "CD , Old Modle, Portable Radio with CD Player"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111118",
@@ -2909,7 +3367,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Modle, Portable Radio with Cd/Md Player",
       "Reference": "CD,MD , Old Modle, Portable Radio with Cd/Md Player"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111119",
@@ -2922,7 +3382,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Digital Media Player",
       "Reference": "Digital Media Player"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111121",
@@ -2935,7 +3397,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Digital Photo Frame, AC 110V",
       "Reference": "Digital Photo Frame, AC 110V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111122",
@@ -2948,7 +3412,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Digital Photo Frame, AC 220V",
       "Reference": "Digital Photo Frame, AC 220V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111123",
@@ -2961,7 +3427,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Ic Recorder (Digital Voice, Recorder)",
       "Reference": "Ic Recorder (Digital Voice, Recorder)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111124",
@@ -2974,7 +3442,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Headphones with Further, Details",
       "Reference": "Headphones with Further, Details"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111125",
@@ -2987,7 +3457,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Earphones with Further Details",
       "Reference": "Earphones with Further Details"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111126",
@@ -3000,7 +3472,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Interchangeable Lens Digital Camera, Dslr",
       "Reference": "Interchangeable Lens Digital Camera, Dslr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111127",
@@ -3013,7 +3487,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Interchangeable Lens Digital Camera, Mirroless",
       "Reference": "Interchangeable Lens Digital Camera, Mirroless"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111151",
@@ -3026,7 +3502,12 @@
       "Catalog Section": "Chapter 11",
       "Description": "Marine TV Antenna, for 40A Flange",
       "Reference": "TV, , Marine TV Antenna, for 40A Flange"
-    }
+    },
+    "industrial_tags": [
+      "Flange",
+      "40A"
+    ],
+    "land_compat_name": "Flange 40A"
   },
   {
     "c": "111152",
@@ -3039,7 +3520,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Marine TV Antenna, End Ship's Pole",
       "Reference": "TV, , Marine TV Antenna, End Ship's Pole"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111153",
@@ -3052,7 +3535,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Marine TV Antenna, for 40A Pipe",
       "Reference": "TV, , Marine TV Antenna, for 40A Pipe"
-    }
+    },
+    "industrial_tags": [
+      "40A"
+    ],
+    "land_compat_name": "40A"
   },
   {
     "c": "111154",
@@ -3065,7 +3552,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Marine TV Antenna, End Ship's Pole",
       "Reference": "TV, , Marine TV Antenna, End Ship's Pole"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111155",
@@ -3078,7 +3567,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Master for TV Antenna Joint, St.Steel",
       "Reference": "TV, , Master for TV Antenna Joint, St.Steel"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111156",
@@ -3091,7 +3582,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Am Radio Antenna , Whip Type, Frp, L:2.6 Mtr",
       "Reference": "TV, , Am Radio Antenna , Whip Type, Frp, L:2.6 Mtr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111171",
@@ -3104,7 +3597,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Antenna Amplifier Only, In: Fx2 Out:Fx1",
       "Reference": "TV, , Antenna Amplifier Only, In: Fx2 Out:Fx1"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111172",
@@ -3117,7 +3612,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Antenna Amplifier Only, In: Fx1 Out:Fx1",
       "Reference": "TV, , Antenna Amplifier Only, In: Fx1 Out:Fx1"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111173",
@@ -3130,7 +3627,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Antenna Amplifier with Built-In Distributor, In: Fx2 Out:Fx6",
       "Reference": "TV, , Antenna Amplifier with Built-In Distributor, In: Fx2 Out:Fx6"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111174",
@@ -3143,7 +3642,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Antenna Amplifier with Built-In Distributor, In: Fx1 Out:Fx6",
       "Reference": "TV, , Antenna Amplifier with Built-In Distributor, In: Fx1 Out:Fx6"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111176",
@@ -3156,7 +3657,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Antenna Distributor, In: 1 Out:2",
       "Reference": "TV, , Antenna Distributor, In: 1 Out:2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111177",
@@ -3169,7 +3672,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Antenna Distributor, In: 1 Out:4",
       "Reference": "TV, , Antenna Distributor, In: 1 Out:4"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111178",
@@ -3182,7 +3687,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Antenna Distributor, In: 1 Out:6",
       "Reference": "TV, , Antenna Distributor, In: 1 Out:6"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111201",
@@ -3195,7 +3702,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Video Movie Vhs Jvc No:Gr-C1 Comp. with Accessories & Case",
       "Reference": "Old Model, Video Movie Vhs Jvc No:Gr-C1 Comp. with Accessories & Case"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111205",
@@ -3208,7 +3717,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Marine TV Antenna AC110/ 220V with Assembly",
       "Reference": "TV , Marine TV Antenna AC110/ 220V with Assembly"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111206",
@@ -3221,7 +3732,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Smart Digital Tuner TV Worldwide, Model Kst-2000-W",
       "Reference": "TV, , Smart Digital Tuner TV Worldwide, Model Kst-2000-W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111210",
@@ -3234,7 +3747,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Music Instrument Electric Casio No:Pt-20",
       "Reference": "\" \" , Old Model, Music Instrument Electric Casio No:Pt-20"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111211",
@@ -3247,7 +3762,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Music Instrument Electric Casio No:Pt-30",
       "Reference": "\" \" , Old Model, Music Instrument Electric Casio No:Pt-30"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111212",
@@ -3260,7 +3777,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, AC Adaptor No:Ad-4160 for Casio No:Pt-20",
       "Reference": "\" \" , Old Model, AC Adaptor No:Ad-4160 for Casio No:Pt-20"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111213",
@@ -3273,7 +3792,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, AC Adaptor No:Ad-1, for Casio No:Pt-30",
       "Reference": "\" \" , Old Model, AC Adaptor No:Ad-1, for Casio No:Pt-30"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111232",
@@ -3286,7 +3807,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Video, Cassette Recorder/ Player Multi-System",
       "Reference": "& , Old Model, Video, Cassette Recorder/ Player Multi-System"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111233",
@@ -3299,7 +3822,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Digital Video Disc Player",
       "Reference": "Digital Video Disc Player"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111234",
@@ -3312,7 +3837,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Vtr & DVD Player",
       "Reference": "VTR, DVD , Old Model, Vtr & DVD Player"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111236",
@@ -3325,7 +3852,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model : 8mm Video Camera, PAL",
       "Reference": "Old Model : 8mm Video Camera, PAL"
-    }
+    },
+    "industrial_tags": [
+      "8 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "111237",
@@ -3338,7 +3869,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model : 8mm Video Camera, NTSC",
       "Reference": "Old Model : 8mm Video Camera, NTSC"
-    }
+    },
+    "industrial_tags": [
+      "8 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "111238",
@@ -3351,7 +3886,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Portable DVD Playor",
       "Reference": "DVD , Portable DVD Playor"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111239",
@@ -3364,7 +3901,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Home Theater System Sound Bar & Subwoofer",
       "Reference": "Home Theater System Sound Bar & Subwoofer"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111240",
@@ -3377,7 +3916,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Wireless Speaker (Need Spec)",
       "Reference": "Wireless Speaker (Need Spec)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111241",
@@ -3390,7 +3931,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Digital Video Camera, PAL",
       "Reference": "Digital Video Camera, PAL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111242",
@@ -3403,7 +3946,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Digital Video Camera, NTSC",
       "Reference": "Digital Video Camera, NTSC"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111245",
@@ -3416,7 +3961,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Home Singing System (Karaoke), Karaoke Dvd",
       "Reference": "( ) , Home Singing System (Karaoke), Karaoke Dvd"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111246",
@@ -3429,7 +3976,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Home Singing System (Karaoke), Karaoke Mic & System",
       "Reference": "( ) , Home Singing System (Karaoke), Karaoke Mic & System"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111247",
@@ -3442,7 +3991,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Home Singing System (Karaoke), Karaoke Song Chip",
       "Reference": "( ) , Home Singing System (Karaoke), Karaoke Song Chip"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111250",
@@ -3455,7 +4006,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Audio Cassette Tape Normal 60 Minutes",
       "Reference": "Old Model, Audio Cassette Tape Normal 60 Minutes"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111251",
@@ -3468,7 +4021,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Audio Cassette Tape Normal 90 Minutes",
       "Reference": "Old Model, Audio Cassette Tape Normal 90 Minutes"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111255",
@@ -3481,7 +4036,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Audio Cassette Tape Chrome 60 Minutes",
       "Reference": "Old Model, Audio Cassette Tape Chrome 60 Minutes"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111256",
@@ -3494,7 +4051,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Audio Cassette Tape Chrome 90 Minutes",
       "Reference": "Old Model, Audio Cassette Tape Chrome 90 Minutes"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111270",
@@ -3507,7 +4066,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Old, Video Cassette Tape Betamax L-125",
       "Reference": "Old Model, Old, Video Cassette Tape Betamax L-125"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111271",
@@ -3520,7 +4081,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Old, Video Cassette Tape Betamax L-165",
       "Reference": "Old Model, Old, Video Cassette Tape Betamax L-165"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111272",
@@ -3533,7 +4096,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Old, Video Cassette Tape Betamax L-250 Mhg",
       "Reference": "Old Model, Old, Video Cassette Tape Betamax L-250 Mhg"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111273",
@@ -3546,7 +4111,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Old, Video Cassette Tape Betamax L-330 Mhg",
       "Reference": "Old Model, Old, Video Cassette Tape Betamax L-330 Mhg"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111274",
@@ -3559,7 +4126,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Old, Video Cassette Tape Betamax L-370 Mhg",
       "Reference": "Old Model, Old, Video Cassette Tape Betamax L-370 Mhg"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111275",
@@ -3572,7 +4141,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Old, Video Cassette Tape Betamax L-500 Mhg Maxwel",
       "Reference": "Old Model, Old, Video Cassette Tape Betamax L-500 Mhg Maxwel"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111276",
@@ -3585,7 +4156,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Old, Video Cassette Tape Betamax L-750 Mhg Maxwel",
       "Reference": "Old Model, Old, Video Cassette Tape Betamax L-750 Mhg Maxwel"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111277",
@@ -3598,7 +4171,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Old, Video Cassette Tape Betamax L-830",
       "Reference": "Old Model, Old, Video Cassette Tape Betamax L-830"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111282",
@@ -3611,7 +4186,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Video Cassette Tape Vhs, E-120 Er",
       "Reference": "Old Model, Video Cassette Tape Vhs, E-120 Er"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111283",
@@ -3624,7 +4201,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Video Cassette Tape Vhs, E-180 Er",
       "Reference": "Old Model, Video Cassette Tape Vhs, E-180 Er"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111284",
@@ -3637,7 +4216,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Video Cassette Tape Vhs, E-240 Er",
       "Reference": "Old Model, Video Cassette Tape Vhs, E-240 Er"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111291",
@@ -3650,7 +4231,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model : Cassette Films for 8mm Video Camera, PAL, 60 Min",
       "Reference": "PAL , Old Model : Cassette Films for 8mm Video Camera, PAL, 60 Min"
-    }
+    },
+    "industrial_tags": [
+      "8 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "111292",
@@ -3663,7 +4248,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model : Cassette Films for 8mm Video Camera, PAL, 90 Min",
       "Reference": "PAL , Old Model : Cassette Films for 8mm Video Camera, PAL, 90 Min"
-    }
+    },
+    "industrial_tags": [
+      "8 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "111293",
@@ -3676,7 +4265,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model : Cassette Films for 8mm Video Camera, PAL, 120 Min",
       "Reference": "PAL , Old Model : Cassette Films for 8mm Video Camera, PAL, 120 Min"
-    }
+    },
+    "industrial_tags": [
+      "8 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "111295",
@@ -3689,7 +4282,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model : Cassette Films for 8mm Video Camera, NTSC, 60 Min",
       "Reference": "NTSC , Old Model : Cassette Films for 8mm Video Camera, NTSC, 60 Min"
-    }
+    },
+    "industrial_tags": [
+      "8 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "111296",
@@ -3702,7 +4299,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model : Cassette Films for 8mm Video Camera, NTSC, 90 Min",
       "Reference": "NTSC , Old Model : Cassette Films for 8mm Video Camera, NTSC, 90 Min"
-    }
+    },
+    "industrial_tags": [
+      "8 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "111297",
@@ -3715,7 +4316,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model : Cassette Films for 8mm Video Camera, NTSC, 120 Min",
       "Reference": "NTSC , Old Model : Cassette Films for 8mm Video Camera, NTSC, 120 Min"
-    }
+    },
+    "industrial_tags": [
+      "8 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "111301",
@@ -3728,7 +4333,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 1's/Pkt",
       "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 1's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111302",
@@ -3741,7 +4348,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 3's/Pkt",
       "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 3's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111303",
@@ -3754,7 +4363,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 5's/Pkt",
       "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 5's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111304",
@@ -3767,7 +4378,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 10's/Pkt",
       "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 74 Min, 10's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111306",
@@ -3780,7 +4393,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 1's/Pkt",
       "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 1's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111307",
@@ -3793,7 +4408,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 3's/Pkt",
       "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 3's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111308",
@@ -3806,7 +4423,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 5's/Pkt",
       "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 5's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111309",
@@ -3819,7 +4438,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 10's/Pkt",
       "Reference": "MD , Old Model, Cassette Tape, Audio MD Disc (Mini Disc), 80 Min, 10's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111311",
@@ -3832,7 +4453,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Cassette Films for Digital Video Camera, PAL, 60 Min",
       "Reference": "PAL , Old Model, Cassette Films for Digital Video Camera, PAL, 60 Min"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111312",
@@ -3845,7 +4468,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Cassette Films for Digital Video Camera, PAL, 80 Min",
       "Reference": "PAL , Old Model, Cassette Films for Digital Video Camera, PAL, 80 Min"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111315",
@@ -3858,7 +4483,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Cassette Films for Digital Video Camera, NTSC, 60 Min",
       "Reference": "NTSC , Old Model, Cassette Films for Digital Video Camera, NTSC, 60 Min"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111316",
@@ -3871,7 +4498,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Cassette Films for Digital Video Camera, NTSC, 80 Min",
       "Reference": "NTSC , Old Model, Cassette Films for Digital Video Camera, NTSC, 80 Min"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111401",
@@ -3884,7 +4513,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Film Monochrome Iso-100 24E x 135-24",
       "Reference": "Old Model, Film Monochrome Iso-100 24E x 135-24"
-    }
+    },
+    "industrial_tags": [
+      "ISO"
+    ],
+    "land_compat_name": "ISO"
   },
   {
     "c": "111402",
@@ -3897,7 +4530,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Film Monochrome Iso-100 36E x 135-36",
       "Reference": "Old Model, Film Monochrome Iso-100 36E x 135-36"
-    }
+    },
+    "industrial_tags": [
+      "ISO"
+    ],
+    "land_compat_name": "ISO"
   },
   {
     "c": "111405",
@@ -3910,7 +4547,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Film Color Iso-100 24E x 135-24",
       "Reference": "Old Model, Film Color Iso-100 24E x 135-24"
-    }
+    },
+    "industrial_tags": [
+      "ISO"
+    ],
+    "land_compat_name": "ISO"
   },
   {
     "c": "111406",
@@ -3923,7 +4564,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Film Color Iso-100 36E x 135-36",
       "Reference": "Old Model, Film Color Iso-100 36E x 135-36"
-    }
+    },
+    "industrial_tags": [
+      "ISO"
+    ],
+    "land_compat_name": "ISO"
   },
   {
     "c": "111411",
@@ -3936,7 +4581,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Film Color Iso-100 24E x 135-24Kodak",
       "Reference": "Old Model, Film Color Iso-100 24E x 135-24Kodak"
-    }
+    },
+    "industrial_tags": [
+      "ISO"
+    ],
+    "land_compat_name": "ISO"
   },
   {
     "c": "111412",
@@ -3949,7 +4598,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Film Color Iso-100 36E x 135-36Kodak",
       "Reference": "Old Model, Film Color Iso-100 36E x 135-36Kodak"
-    }
+    },
+    "industrial_tags": [
+      "ISO"
+    ],
+    "land_compat_name": "ISO"
   },
   {
     "c": "111414",
@@ -3962,7 +4615,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Film Color Iso-200 24E x 110-24",
       "Reference": "Old Model, Film Color Iso-200 24E x 110-24"
-    }
+    },
+    "industrial_tags": [
+      "ISO"
+    ],
+    "land_compat_name": "ISO"
   },
   {
     "c": "111420",
@@ -3975,7 +4632,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Film Color Iso-400 24E x 135-24",
       "Reference": "Old Model, Film Color Iso-400 24E x 135-24"
-    }
+    },
+    "industrial_tags": [
+      "ISO"
+    ],
+    "land_compat_name": "ISO"
   },
   {
     "c": "111421",
@@ -3988,7 +4649,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Film Color Iso-400 36E x 135-36",
       "Reference": "Old Model, Film Color Iso-400 36E x 135-36"
-    }
+    },
+    "industrial_tags": [
+      "ISO"
+    ],
+    "land_compat_name": "ISO"
   },
   {
     "c": "111431",
@@ -4001,7 +4666,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Film Polaroid Type-88 Color",
       "Reference": "Old Model, Film Polaroid Type-88 Color"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111435",
@@ -4014,7 +4681,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Film Polaroid Type-107 Monochrome",
       "Reference": "Old Model, Film Polaroid Type-107 Monochrome"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111437",
@@ -4027,7 +4696,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Film Polaroid Type-108 Color",
       "Reference": "Old Model, Film Polaroid Type-108 Color"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111451",
@@ -4040,7 +4711,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Flash Mc-4 Magicube \"x\" 12's",
       "Reference": "Old Model, Flash Mc-4 Magicube \"x\" 12's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111452",
@@ -4053,7 +4726,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Flash Fc-4 Flashcube 12's",
       "Reference": "Old Model, Flash Fc-4 Flashcube 12's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111453",
@@ -4066,7 +4741,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Flash Hc-4 Hipower Cube 8's",
       "Reference": "Old Model, Flash Hc-4 Hipower Cube 8's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111454",
@@ -4079,7 +4756,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Flash Ff-10 Flip Flash Super 10's",
       "Reference": "Old Model, Flash Ff-10 Flip Flash Super 10's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111455",
@@ -4092,7 +4771,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Flash Fb-10 Flashbar 10's",
       "Reference": "Old Model, Flash Fb-10 Flashbar 10's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111456",
@@ -4105,7 +4786,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Flash M-3 Bulb 12's",
       "Reference": "Old Model, Flash M-3 Bulb 12's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111651",
@@ -4118,7 +4801,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Old, Barbecue Kamado Pot Small Grill Size 300 mm",
       "Reference": "Old Model, Old, Barbecue Kamado Pot Small Grill Size 300 mm"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "111652",
@@ -4131,7 +4818,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Old, Barbecue Kamado Pot Medium Grill Size 380 mm",
       "Reference": "Old Model, Old, Barbecue Kamado Pot Medium Grill Size 380 mm"
-    }
+    },
+    "industrial_tags": [
+      "380 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "111653",
@@ -4144,7 +4835,11 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Old, Barbecue Kamado Pot Large Grill Size 450 mm",
       "Reference": "Old Model, Old, Barbecue Kamado Pot Large Grill Size 450 mm"
-    }
+    },
+    "industrial_tags": [
+      "450 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "111801",
@@ -4157,7 +4852,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "xmas Tree with Pot Plastic 1.2 Mtr Height",
       "Reference": "xmas Tree with Pot Plastic 1.2 Mtr Height"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111802",
@@ -4170,7 +4867,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "xmas Tree with Stand Plastic 1.5 Mtr Height",
       "Reference": "xmas Tree with Stand Plastic 1.5 Mtr Height"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111805",
@@ -4183,7 +4882,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Decoration Set for xmas Tree Medium",
       "Reference": "Decoration Set for xmas Tree Medium"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111806",
@@ -4196,7 +4897,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Decoration Set for xmas Tree Large",
       "Reference": "Decoration Set for xmas Tree Large"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111807",
@@ -4209,7 +4912,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Decoration Set for xmas Tree Deluxe",
       "Reference": "Decoration Set for xmas Tree Deluxe"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111811",
@@ -4222,7 +4927,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Illumination for xmas Tree AC110V 50's",
       "Reference": "Illumination for xmas Tree AC110V 50's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111812",
@@ -4235,7 +4942,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Illumination for xmas Tree AC220V 40's",
       "Reference": "Illumination for xmas Tree AC220V 40's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111813",
@@ -4248,7 +4957,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Illumination for xmas Tree AC220V 30's",
       "Reference": "Illumination for xmas Tree AC220V 30's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111815",
@@ -4261,7 +4972,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Interior Decoration Set for xmas",
       "Reference": "Interior Decoration Set for xmas"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111820",
@@ -4274,7 +4987,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Poinsettia In Pot Fresh",
       "Reference": "Poinsettia In Pot Fresh"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111825",
@@ -4287,7 +5002,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Artificial Snow Spray In Tin",
       "Reference": "Artificial Snow Spray In Tin"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111830",
@@ -4300,7 +5017,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Napkin Paper 20's for xmas",
       "Reference": "Napkin Paper 20's for xmas"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111835",
@@ -4313,7 +5032,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Paper Table Cloth for xmas 120 x180 cm",
       "Reference": "Paper Table Cloth for xmas 120 x180 cm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111840",
@@ -4326,7 +5047,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Balloon Rubber Colored",
       "Reference": "Balloon Rubber Colored"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111843",
@@ -4339,7 +5062,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Cracker",
       "Reference": "Cracker"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111845",
@@ -4352,7 +5077,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Candle Straight for xmas",
       "Reference": "Candle Straight for xmas"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111846",
@@ -4365,7 +5092,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Candle Twisted for xmas",
       "Reference": "Candle Twisted for xmas"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112001",
@@ -4378,7 +5107,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shirt Open Collared White Short Sleeves Size-M",
       "Reference": "Shirt Open Collared White Short Sleeves Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112002",
@@ -4391,7 +5122,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shirt Open Collared White Short Sleeves Size-L",
       "Reference": "Shirt Open Collared White Short Sleeves Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112003",
@@ -4404,7 +5137,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shirt Open Collared White Short Sleeves Size LL",
       "Reference": "Shirt Open Collared White Short Sleeves Size LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112006",
@@ -4417,7 +5152,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shirt Open Collared Khaki Short Sleeves Size-M",
       "Reference": "Shirt Open Collared Khaki Short Sleeves Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112007",
@@ -4430,7 +5167,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shirt Open Collared Khaki Short Sleeves Size-L",
       "Reference": "Shirt Open Collared Khaki Short Sleeves Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112008",
@@ -4443,7 +5182,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shirt Open Collared Khaki Short Sleeves Size LL",
       "Reference": "Shirt Open Collared Khaki Short Sleeves Size LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112021",
@@ -4456,7 +5197,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shirt Sporting Colored Short Sleeves Size-M",
       "Reference": "Shirt Sporting Colored Short Sleeves Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112022",
@@ -4469,7 +5212,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shirt Sporting Colored Short Sleeves Size-L",
       "Reference": "Shirt Sporting Colored Short Sleeves Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112023",
@@ -4482,7 +5227,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shirt Sporting Colored Short Sleeves Size-LL",
       "Reference": "Shirt Sporting Colored Short Sleeves Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112026",
@@ -4495,7 +5242,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shirt Sporting Colored Long Sleeves Size-M",
       "Reference": "Shirt Sporting Colored Long Sleeves Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112027",
@@ -4508,7 +5257,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shirt Sporting Colored Long Sleeves Size-L",
       "Reference": "Shirt Sporting Colored Long Sleeves Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112028",
@@ -4521,7 +5272,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Shirt Sporting Colored Long Sleeves Size-LL",
       "Reference": "Shirt Sporting Colored Long Sleeves Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112031",
@@ -4534,7 +5287,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "T-Shirt Short Sleeve White Size-M",
       "Reference": "T-Shirt Short Sleeve White Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112032",
@@ -4547,7 +5302,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "T-Shirt Short Sleeve White Size-L",
       "Reference": "T-Shirt Short Sleeve White Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112033",
@@ -4560,7 +5317,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "T-Shirt Short Sleeve White Size-LL",
       "Reference": "T-Shirt Short Sleeve White Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112036",
@@ -4573,7 +5332,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "T-Shirt Short Sleeve Colored Size-M",
       "Reference": "T-Shirt Short Sleeve Colored Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112037",
@@ -4586,7 +5347,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "T-Shirt Short Sleeve Colored Size-L",
       "Reference": "T-Shirt Short Sleeve Colored Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112038",
@@ -4599,7 +5362,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "T-Shirt Short Sleeve Colored Size-LL",
       "Reference": "T-Shirt Short Sleeve Colored Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112041",
@@ -4612,7 +5377,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pants Short White Size-M",
       "Reference": "Pants Short White Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112042",
@@ -4625,7 +5392,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pants Short White Size-L",
       "Reference": "Pants Short White Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112043",
@@ -4638,7 +5407,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pants Short White Size-LL",
       "Reference": "Pants Short White Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112046",
@@ -4651,7 +5422,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pants Short Khaki Size-M",
       "Reference": "Pants Short Khaki Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112047",
@@ -4664,7 +5437,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pants Short Khaki Size-L",
       "Reference": "Pants Short Khaki Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112048",
@@ -4677,7 +5452,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pants Short Khaki Size-LL",
       "Reference": "Pants Short Khaki Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112051",
@@ -4690,7 +5467,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Black/Orange, S",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, S"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112052",
@@ -4703,7 +5482,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Black/Orange, M",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112053",
@@ -4716,7 +5497,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Black/Orange, L",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112054",
@@ -4729,7 +5512,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Black/Orange, XL",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112055",
@@ -4742,7 +5527,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Black/Orange, 2XL",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, 2XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112056",
@@ -4755,7 +5542,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Black/Orange, 3XL",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, 3XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112057",
@@ -4768,7 +5557,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Black/Orange, 4XL",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Black/Orange, 4XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112058",
@@ -4781,7 +5572,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, S",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, S"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112059",
@@ -4794,7 +5587,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, M",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112060",
@@ -4807,7 +5602,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, L",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112061",
@@ -4820,7 +5617,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, XL",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112062",
@@ -4833,7 +5632,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, 2XL",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, 2XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112063",
@@ -4846,7 +5647,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, 3XL",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, 3XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112064",
@@ -4859,7 +5662,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Jacket, Anti-Static, Navy/Yellow, 4XL",
       "Reference": "( ) , Fleece Jacket, Anti-Static, Navy/Yellow, 4XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112065",
@@ -4872,7 +5677,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Black/Orange, S",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, S"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112066",
@@ -4885,7 +5692,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Black/Orange, M",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112067",
@@ -4898,7 +5707,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Black/Orange, L",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112068",
@@ -4911,7 +5722,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Black/Orange, XL",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112069",
@@ -4924,7 +5737,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Black/Orange, 2XL",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, 2XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112070",
@@ -4937,7 +5752,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Black/Orange, 3XL",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, 3XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112071",
@@ -4950,7 +5767,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Black/Orange, 4XL",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Black/Orange, 4XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112072",
@@ -4963,7 +5782,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, S",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, S"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112073",
@@ -4976,7 +5797,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, M",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112074",
@@ -4989,7 +5812,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, L",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112075",
@@ -5002,7 +5827,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, XL",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112076",
@@ -5015,7 +5842,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, 2XL",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, 2XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112077",
@@ -5028,7 +5857,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, 3XL",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, 3XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112078",
@@ -5041,7 +5872,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Fleece Trouser, Anti-Static, Navy/Yellow, 4XL",
       "Reference": "( ) , Fleece Trouser, Anti-Static, Navy/Yellow, 4XL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112101",
@@ -5054,7 +5887,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Undershirt Short Sleeves Crew Neck Cotton White Size-M",
       "Reference": "Undershirt Short Sleeves Crew Neck Cotton White Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112102",
@@ -5067,7 +5902,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Undershirt Short Sleeves Crew Neck Cotton White Size-L",
       "Reference": "Undershirt Short Sleeves Crew Neck Cotton White Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112103",
@@ -5080,7 +5917,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Undershirt Short Sleeves Crew Neck Cotton White Size-LL",
       "Reference": "Undershirt Short Sleeves Crew Neck Cotton White Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112106",
@@ -5093,7 +5932,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Undershirt Short Sleeves Crew Neck Cotton Color Size-M",
       "Reference": "Undershirt Short Sleeves Crew Neck Cotton Color Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112107",
@@ -5106,7 +5947,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Undershirt Short Sleeves Crew Neck Cotton Color Size-L",
       "Reference": "Undershirt Short Sleeves Crew Neck Cotton Color Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112108",
@@ -5119,7 +5962,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Undershirt Short Sleeves Crew Neck Cotton Color Size-LL",
       "Reference": "Undershirt Short Sleeves Crew Neck Cotton Color Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112111",
@@ -5132,7 +5977,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Undershirt Sleeveless Cotton White Size-M",
       "Reference": "Undershirt Sleeveless Cotton White Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112112",
@@ -5145,7 +5992,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Undershirt Sleeveless Cotton White Size-L",
       "Reference": "Undershirt Sleeveless Cotton White Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112113",
@@ -5158,7 +6007,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Undershirt Sleeveless Cotton White Size-LL",
       "Reference": "Undershirt Sleeveless Cotton White Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112116",
@@ -5171,7 +6022,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Undershirt Sleeveless Cotton Colored Size-M",
       "Reference": "Undershirt Sleeveless Cotton Colored Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112117",
@@ -5184,7 +6037,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Undershirt Sleeveless Cotton Colored Size-L",
       "Reference": "Undershirt Sleeveless Cotton Colored Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112118",
@@ -5197,7 +6052,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Undershirt Sleeveless Cotton Colored Size-LL",
       "Reference": "Undershirt Sleeveless Cotton Colored Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112131",
@@ -5210,7 +6067,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Brief Cotton White Size-M",
       "Reference": "Brief Cotton White Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112132",
@@ -5223,7 +6082,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Brief Cotton White Size-L",
       "Reference": "Brief Cotton White Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112133",
@@ -5236,7 +6097,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Brief Cotton White Size-LL",
       "Reference": "Brief Cotton White Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112136",
@@ -5249,7 +6112,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Brief Cotton Colored Size-M",
       "Reference": "Brief Cotton Colored Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112137",
@@ -5262,7 +6127,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Brief Cotton Colored Size-L",
       "Reference": "Brief Cotton Colored Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112138",
@@ -5275,7 +6142,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Brief Cotton Colored Size-LL",
       "Reference": "Brief Cotton Colored Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112141",
@@ -5288,7 +6157,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Trunks Cotton Colored Size-M",
       "Reference": "Trunks Cotton Colored Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112142",
@@ -5301,7 +6172,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Trunks Cotton Colored Size-L",
       "Reference": "Trunks Cotton Colored Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112143",
@@ -5314,7 +6187,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Trunks Cotton Colored Size LL",
       "Reference": "Trunks Cotton Colored Size LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112151",
@@ -5327,7 +6202,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Socks Acryl/Cotton White",
       "Reference": "Socks Acryl/Cotton White"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112152",
@@ -5340,7 +6217,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Socks Acryl/Cotton Colored",
       "Reference": "Socks Acryl/Cotton Colored"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112201",
@@ -5353,7 +6232,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Beach Sandal, Size-M",
       "Reference": "Beach Sandal, Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112202",
@@ -5366,7 +6247,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Beach Sandal, Size-L",
       "Reference": "Beach Sandal, Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112203",
@@ -5379,7 +6262,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Beach Sandal, Size-LL",
       "Reference": "Beach Sandal, Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112206",
@@ -5392,7 +6277,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Plastic Sandal, Size-M",
       "Reference": "Plastic Sandal, Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112207",
@@ -5405,7 +6292,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Plastic Sandal, Size-L",
       "Reference": "Plastic Sandal, Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112208",
@@ -5418,7 +6307,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Plastic Sandal, Size-LL",
       "Reference": "Plastic Sandal, Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112211",
@@ -5431,7 +6322,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Plastic Sandal, Slipper-Type Size-M",
       "Reference": "Plastic Sandal, Slipper-Type Size-M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112212",
@@ -5444,7 +6337,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Plastic Sandal, Slipper-Type Size-L",
       "Reference": "Plastic Sandal, Slipper-Type Size-L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112213",
@@ -5457,7 +6352,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Plastic Sandal, Slipper-Type Size-LL",
       "Reference": "Plastic Sandal, Slipper-Type Size-LL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "112215",
@@ -5470,7 +6367,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "House Shoes (Slipper)",
       "Reference": "House Shoes (Slipper)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "190381",
@@ -5483,7 +6382,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Socks, Cotton, Free Size",
       "Reference": "Socks, Cotton, Free Size"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "190383",
@@ -5496,7 +6397,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Winter Working Socks, Acrylic Pile Fabric",
       "Reference": "Winter Working Socks, Acrylic Pile Fabric"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "190388",
@@ -5509,7 +6412,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Thermal Socks, EU: 35/38",
       "Reference": "Thermal Socks, EU: 35/38"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "190389",
@@ -5522,7 +6427,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Thermal Socks, EU: 39/42",
       "Reference": "Thermal Socks, EU: 39/42"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "190390",
@@ -5535,7 +6442,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Thermal Socks, EU: 43/46",
       "Reference": "Thermal Socks, EU: 43/46"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "190681",
@@ -5548,7 +6457,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Seaman's Sweater, Neck Size, 36",
       "Reference": "Seaman's Sweater, Neck Size, 36"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "190682",
@@ -5561,7 +6472,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Seaman's Sweater, Neck Size, 38",
       "Reference": "Seaman's Sweater, Neck Size, 38"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "190683",
@@ -5574,7 +6487,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Seaman's Sweater, Neck Size, 40",
       "Reference": "Seaman's Sweater, Neck Size, 40"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "190684",
@@ -5587,7 +6502,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Seaman's Sweater, Neck Size, 42",
       "Reference": "Seaman's Sweater, Neck Size, 42"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "190685",
@@ -5600,7 +6517,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Seaman's Sweater, Neck Size, 44",
       "Reference": "Seaman's Sweater, Neck Size, 44"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "190686",
@@ -5613,7 +6532,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Seaman's Sweater, Neck Size, 46",
       "Reference": "Seaman's Sweater, Neck Size, 46"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "232631",
@@ -5626,7 +6547,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Folding Pipe Frame Deck Chair",
       "Reference": "Folding Pipe Frame Deck Chair"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "232632",
@@ -5639,7 +6562,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Folding Wood Frame Deck Chair",
       "Reference": "Folding Wood Frame Deck Chair"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "232633",
@@ -5652,7 +6577,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Folding Alum Pipe Frame Chair with Armrest",
       "Reference": "Folding Alum Pipe Frame Chair with Armrest"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "232638",
@@ -5665,7 +6592,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pilot Chair",
       "Reference": "Pilot Chair"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471501",
@@ -5678,7 +6607,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pipe Frame Folding Chair",
       "Reference": "Pipe Frame Folding Chair"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471503",
@@ -5691,7 +6622,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Pipe Frame Swivel Chair",
       "Reference": "Pipe Frame Swivel Chair"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471504",
@@ -5704,7 +6637,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Swivel Pipe Frame Armchair",
       "Reference": "Swivel Pipe Frame Armchair"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471856",
@@ -5717,7 +6652,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Flash Memory Card (Picture Card) for Digital Camera, 8 Gb",
       "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 8 Gb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471857",
@@ -5730,7 +6667,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Flash Memory Card (Picture Card) for Digital Camera, 16 Gb",
       "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 16 Gb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471858",
@@ -5743,7 +6682,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Flash Memory Card (Picture Card) for Digital Camera, 32 Gb",
       "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 32 Gb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471859",
@@ -5756,7 +6697,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Flash Memory Card (Picture Card) for Digital Camera, 64 Gb",
       "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 64 Gb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471860",
@@ -5769,7 +6712,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Flash Memory Card (Picture Card) for Digital Camera, 128 Gb",
       "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 128 Gb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471863",
@@ -5782,7 +6727,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Memory Card Reader, USB 2.0 (Type A)",
       "Reference": "Memory Card Reader, USB 2.0 (Type A)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471864",
@@ -5795,7 +6742,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Memory Card Reader, USB 3.0 (Type A)",
       "Reference": "Memory Card Reader, USB 3.0 (Type A)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471865",
@@ -5808,7 +6757,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Flash Memory Card (Picture Card) for Digital Camera, 256 Gb",
       "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 256 Gb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471868",
@@ -5821,7 +6772,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Flash Memory Card (Picture Card) for Digital Camera, 512 Gb",
       "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 512 Gb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471869",
@@ -5834,7 +6787,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Selfie Stick for Digital Camera",
       "Reference": "Selfie Stick for Digital Camera"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471870",
@@ -5847,7 +6802,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Memory Card Reader, USB 3.1 (Type C)",
       "Reference": "Memory Card Reader, USB 3.1 (Type C)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471871",
@@ -5860,7 +6817,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Digital Camera, 1 Mb",
       "Reference": "Old Model, Digital Camera, 1 Mb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471872",
@@ -5873,7 +6832,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Digital Camera, 3 Mb",
       "Reference": "Old Model, Digital Camera, 3 Mb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471873",
@@ -5886,7 +6847,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Digital Camera, 6 Mb",
       "Reference": "Old Model, Digital Camera, 6 Mb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471874",
@@ -5899,7 +6862,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Digital Camera, Need Spec",
       "Reference": "Digital Camera, Need Spec"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471875",
@@ -5912,7 +6877,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Films with Lens without Flash, 27's",
       "Reference": "Films with Lens without Flash, 27's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471876",
@@ -5925,7 +6892,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Films with Lens with Flash, 27's",
       "Reference": "Films with Lens with Flash, 27's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471877",
@@ -5938,7 +6907,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Films with Lens without Flash, 39's",
       "Reference": "Films with Lens without Flash, 39's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471878",
@@ -5951,7 +6922,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Films with Lens with Flash, 39's",
       "Reference": "Films with Lens with Flash, 39's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471879",
@@ -5964,7 +6937,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Flash Memory Card (Picture Card) for Digital Camera, 1 Tb",
       "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 1 Tb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471880",
@@ -5977,7 +6952,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Flash Memory Card (Picture Card) for Digital Camera, 2 Tb",
       "Reference": "Flash Memory Card (Picture Card) for Digital Camera, 2 Tb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471881",
@@ -5990,7 +6967,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Polaroid Camera, Model 636",
       "Reference": "Old Model, Polaroid Camera, Model 636"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471882",
@@ -6003,7 +6982,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Polaroid Camera, 630Lmp",
       "Reference": "Old Model, Polaroid Camera, 630Lmp"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471883",
@@ -6016,7 +6997,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Polaroid Camera, Impulse Af",
       "Reference": "Old Model, Polaroid Camera, Impulse Af"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471884",
@@ -6029,7 +7012,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Polaroid Camera, Spectra",
       "Reference": "Old Model, Polaroid Camera, Spectra"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471885",
@@ -6042,7 +7027,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Polaroid Camera, Sx-70 Auto",
       "Reference": "Old Model, Polaroid Camera, Sx-70 Auto"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471886",
@@ -6055,7 +7042,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 128 Mb",
       "Reference": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 128 Mb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471887",
@@ -6068,7 +7057,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 256 Mb",
       "Reference": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 256 Mb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471888",
@@ -6081,7 +7072,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 512 Mb",
       "Reference": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 512 Mb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471889",
@@ -6094,7 +7087,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 2 Gb",
       "Reference": "Old Model, Flash Memory Cards (Picture Card) for Digital Camera, 2 Gb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471891",
@@ -6107,7 +7102,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Polaroid Film, Color 600 10's",
       "Reference": "Old Model, Polaroid Film, Color 600 10's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471892",
@@ -6120,7 +7117,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Polaroid Film, Sx-70 Supercolor",
       "Reference": "Old Model, Polaroid Film, Sx-70 Supercolor"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471893",
@@ -6133,7 +7132,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Polaroid Film, Color Spectra 10's",
       "Reference": "Old Model, Polaroid Film, Color Spectra 10's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471896",
@@ -6146,7 +7147,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Polaroid Flash, 600 10's",
       "Reference": "Old Model, Polaroid Flash, 600 10's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "471897",
@@ -6159,7 +7162,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Old Model, Polaroid Flash, Sx-70 10's",
       "Reference": "Old Model, Polaroid Flash, Sx-70 10's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "472251",
@@ -6172,7 +7177,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Photograph Print Paper, Size:L (89x127 mm), 100's/Pkt",
       "Reference": "Photograph Print Paper, Size:L (89x127 mm), 100's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "472252",
@@ -6185,7 +7192,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Photograph Print Paper, Size:L (89x127 mm), 200's/Pkt",
       "Reference": "Photograph Print Paper, Size:L (89x127 mm), 200's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "472253",
@@ -6198,7 +7207,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Photograph Print Paper, Size:L (89x127 mm), 400's/Pkt",
       "Reference": "Photograph Print Paper, Size:L (89x127 mm), 400's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "472254",
@@ -6211,7 +7222,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Photograph Print Paper, Size:2L (127x178 mm), 50's/Pkt",
       "Reference": "Photograph Print Paper, Size:2L (127x178 mm), 50's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "472255",
@@ -6224,7 +7237,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Photograph Print Paper, Size:2L (127x178 mm), 100's/Pkt",
       "Reference": "Photograph Print Paper, Size:2L (127x178 mm), 100's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "472256",
@@ -6237,7 +7252,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Photograph Print Paper, Size:A-4 (210x297 mm), 20's/Pkt",
       "Reference": "Photograph Print Paper, Size:A-4 (210x297 mm), 20's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "472257",
@@ -6250,7 +7267,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Photograph Print Paper, Size:A-4 (210x297 mm), 50's/Pkt",
       "Reference": "Photograph Print Paper, Size:A-4 (210x297 mm), 50's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "472258",
@@ -6263,7 +7282,9 @@
       "Catalog Section": "Chapter 11",
       "Description": "Photograph Print Paper, Size:A-4 (210x297 mm), 100's/Pkt",
       "Reference": "Photograph Print Paper, Size:A-4 (210x297 mm), 100's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "472259",
@@ -6276,6 +7297,8 @@
       "Catalog Section": "Chapter 11",
       "Description": "Photograph Print Paper, Size:Quarto (254x305 mm), 20's/Pkt",
       "Reference": "Photograph Print Paper, Size:Quarto (254x305 mm), 20's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   }
 ]

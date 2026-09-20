@@ -1606,15 +1606,27 @@ const TVC_ImpaSchema = (function () {
         return specs;
     }
 
+    function buildIndustrialSearchLower(row) {
+        const parts = [
+            String(row.name || ''),
+            String(row.land_compat_name || ''),
+            Array.isArray(row.industrial_tags) ? row.industrial_tags.join(' ') : '',
+        ];
+        return parts.join(' ').toLowerCase().replace(/\s+/g, ' ').trim();
+    }
+
     function enrichDbFields(row) {
         const impa_code = normalizeCode(row.impa_code || row.code);
         const padded = impa_code.replace(/\D/g, '').padStart(6, '0');
         const plate_id = normalizePlateId(row.plate_id || row.plate_no, impa_code);
+        const industrial_search_lower = buildIndustrialSearchLower(row);
+        const nameLower = String(row.name || '').toLowerCase();
         return {
             ...row,
             impa_code,
             code_prefix: padded.slice(0, 2),
-            name_lower: String(row.name || '').toLowerCase(),
+            name_lower: industrial_search_lower || nameLower,
+            industrial_search_lower,
             plate_id,
             plate_no: plate_id,
         };
@@ -1635,6 +1647,8 @@ const TVC_ImpaSchema = (function () {
             plate_id: normalizePlateId(plateRaw, impa_code),
             specs: parseSpecsValue(specRaw, row),
             rob: Math.max(0, Math.floor(Number(pickField(row, FIELD_ALIASES.rob)) || 0)),
+            industrial_tags: Array.isArray(row.industrial_tags) ? [...row.industrial_tags] : [],
+            land_compat_name: String(row.land_compat_name || '').trim(),
         });
         return base;
     }
@@ -1665,6 +1679,9 @@ const TVC_ImpaSchema = (function () {
             plate_no: plate_id,
             specs: enriched.specs && typeof enriched.specs === 'object' ? { ...enriched.specs } : {},
             rob: Math.max(0, Math.floor(Number(enriched.rob) || 0)),
+            industrial_tags: Array.isArray(enriched.industrial_tags) ? [...enriched.industrial_tags] : [],
+            land_compat_name: String(enriched.land_compat_name || '').trim(),
+            industrial_search_lower: enriched.industrial_search_lower || enriched.name_lower || '',
         };
     }
 

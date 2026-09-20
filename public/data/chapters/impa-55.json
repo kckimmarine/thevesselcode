@@ -10,7 +10,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Rat Trap, Sling Type",
       "Reference": "Old Model, Rat Trap, Sling Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "174352",
@@ -23,7 +25,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Rat Trap, Cage Type",
       "Reference": "Rat Trap, Cage Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "174353",
@@ -36,7 +40,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Rat Trap, Adhesive Sheet Type",
       "Reference": "Rat Trap, Adhesive Sheet Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "174357",
@@ -49,7 +55,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Insect Killer Electric Grid, 110V",
       "Reference": "Insect Killer Electric Grid, 110V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "174358",
@@ -62,7 +70,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Insect Killer Electric Grid, 220V",
       "Reference": "Insect Killer Electric Grid, 220V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "174359",
@@ -75,7 +85,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Insect Killer Electric Grid, Battery Ty",
       "Reference": "Insect Killer Electric Grid, Battery Ty"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "232361",
@@ -88,7 +100,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Rat Guard, 600 mm for 56 mm Rope Dia",
       "Reference": "Rat Guard, 600 mm for 56 mm Rope Dia"
-    }
+    },
+    "industrial_tags": [
+      "600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "232362",
@@ -101,7 +117,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Rat Guard, 600 mm for 65 mm Rope Dia",
       "Reference": "Rat Guard, 600 mm for 65 mm Rope Dia"
-    }
+    },
+    "industrial_tags": [
+      "600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "232363",
@@ -114,7 +134,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Rat Guard, 600 mm for 73 mm Rope Dia",
       "Reference": "Rat Guard, 600 mm for 73 mm Rope Dia"
-    }
+    },
+    "industrial_tags": [
+      "600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "232364",
@@ -127,7 +151,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Rat Guard, 600 mm for All Smaller Rope",
       "Reference": "Rat Guard, 600 mm for All Smaller Rope"
-    }
+    },
+    "industrial_tags": [
+      "600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550101",
@@ -140,7 +168,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Cake Solid Soap, 240grm",
       "Reference": "Cake Solid Soap, 240grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550102",
@@ -153,7 +183,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Bar Solid Soap, 600grm",
       "Reference": "Bar Solid Soap, 600grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550103",
@@ -166,7 +198,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Laundry Soap Powder, 1 Kg",
       "Reference": "Laundry Soap Powder, 1 Kg"
-    }
+    },
+    "industrial_tags": [
+      "1K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550104",
@@ -179,7 +215,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Laundry Soap Powder, 20 Kgs",
       "Reference": "Laundry Soap Powder, 20 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550106",
@@ -192,7 +230,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Laundry Soap Powder, 240 grm x 48 Case/Pk",
       "Reference": "Old Model, Laundry Soap Powder, 240 grm x 48 Case/Pk"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550107",
@@ -205,7 +245,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Laundry Soap Powder, 500 grm",
       "Reference": "Laundry Soap Powder, 500 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550108",
@@ -218,7 +260,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Laundry Soap Powder, 10 Kgs",
       "Reference": "Laundry Soap Powder, 10 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550110",
@@ -231,7 +275,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Laundry Soap Powder with Enzyme 1.0 Kg/Pkt",
       "Reference": "Laundry Soap Powder with Enzyme 1.0 Kg/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550111",
@@ -244,7 +290,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Laundry Soap Powder with Enzyme 1.2 Kg/Pkt",
       "Reference": "Laundry Soap Powder with Enzyme 1.2 Kg/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550112",
@@ -257,7 +305,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Laundry Detergent Sheet, Bio Type",
       "Reference": "Laundry Detergent Sheet, Bio Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550113",
@@ -270,7 +320,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Laundry Detergent Sheet, Non-Bio Type",
       "Reference": "Laundry Detergent Sheet, Non-Bio Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550115",
@@ -283,7 +335,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Spray Type Laundry Starch, 330 ml",
       "Reference": "Spray Type Laundry Starch, 330 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550116",
@@ -296,7 +350,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Emulsion Type Laundry Starch, 600 ml",
       "Reference": "Emulsion Type Laundry Starch, 600 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550117",
@@ -309,7 +365,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Powder Type Laundry Starch, 150 grm",
       "Reference": "Powder Type Laundry Starch, 150 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550118",
@@ -322,7 +380,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Powder Type Laundry Starch, 1 Kg",
       "Reference": "Powder Type Laundry Starch, 1 Kg"
-    }
+    },
+    "industrial_tags": [
+      "1K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550120",
@@ -335,7 +397,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Bleaching Water, 600 ml",
       "Reference": "Bleaching Water, 600 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550121",
@@ -348,7 +412,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Bleaching Water, 1500 ml",
       "Reference": "Bleaching Water, 1500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550122",
@@ -361,7 +427,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Bleaching Water, 1 Kg",
       "Reference": "Bleaching Water, 1 Kg"
-    }
+    },
+    "industrial_tags": [
+      "1K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550124",
@@ -374,7 +444,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Laundry Softener, 1.65 Ltr",
       "Reference": "Laundry Softener, 1.65 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550125",
@@ -387,7 +459,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Laundry Softener, 2.5 Ltr",
       "Reference": "Laundry Softener, 2.5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550128",
@@ -400,7 +474,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Soft Soap, 18 Kg",
       "Reference": "Soft Soap, 18 Kg"
-    }
+    },
+    "industrial_tags": [
+      "18K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550130",
@@ -413,7 +491,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "General Cleaning Detergent, Alva, 20 Kgs",
       "Reference": "General Cleaning Detergent, Alva, 20 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550132",
@@ -426,7 +506,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Heavy Duty Detergent, Alva 20 Kgs",
       "Reference": "Old Model, Heavy Duty Detergent, Alva 20 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550133",
@@ -439,7 +521,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Heavy Duty Detergent, Alva 25 Kgs",
       "Reference": "Heavy Duty Detergent, Alva 25 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550134",
@@ -452,7 +536,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Laundry Machine Detergent, 20 Kgs",
       "Reference": "Laundry Machine Detergent, 20 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550136",
@@ -465,7 +551,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "General Cleaning Detergent, Local Brand, 20 Kgs",
       "Reference": "General Cleaning Detergent, Local Brand, 20 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550137",
@@ -478,7 +566,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Heavy Duty Detergent, Local Brand 25 Kgs",
       "Reference": "Heavy Duty Detergent, Local Brand 25 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550141",
@@ -491,7 +581,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Liquid Soap for Galley, 800 cc Btl",
       "Reference": "Liquid Soap for Galley, 800 cc Btl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550142",
@@ -504,7 +596,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Liquid Soap for Galley 18 Kgs",
       "Reference": "Liquid Soap for Galley 18 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550143",
@@ -517,7 +611,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Liquid Soap, Teepol 18 Kgs",
       "Reference": "Liquid Soap, Teepol 18 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550145",
@@ -530,7 +626,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Disinfectant Liquid Soap, 2 Kgs/Btl",
       "Reference": "Disinfectant Liquid Soap, 2 Kgs/Btl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550146",
@@ -543,7 +641,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Disinfectant Liquid Soap, 10 Kgs/Btl",
       "Reference": "Disinfectant Liquid Soap, 10 Kgs/Btl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550147",
@@ -556,7 +656,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Disinfectant Liquid Soap, 20 Kgs/Btl",
       "Reference": "Disinfectant Liquid Soap, 20 Kgs/Btl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550148",
@@ -569,7 +671,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Bleaching Water for Kitchen, 600 ml",
       "Reference": "Bleaching Water for Kitchen, 600 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550149",
@@ -582,7 +686,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Bleaching Water for Kitchen, 1500 ml",
       "Reference": "Bleaching Water for Kitchen, 1500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550151",
@@ -595,7 +701,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Cleanser, Galley Powder 400 grm",
       "Reference": "( ) , Cleanser, Galley Powder 400 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550152",
@@ -608,7 +716,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Cleanser, Vim 500 grm",
       "Reference": "( ) , Old Model, Cleanser, Vim 500 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550153",
@@ -621,7 +731,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Cleanser, Vim 500 grm x 20's",
       "Reference": "( ) , Cleanser, Vim 500 grm x 20's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550154",
@@ -634,7 +746,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Cleanser, Vim 500 grm x 12's",
       "Reference": "( ) , Cleanser, Vim 500 grm x 12's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550156",
@@ -647,7 +761,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Scouring Cream, 400 grm",
       "Reference": "Scouring Cream, 400 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550157",
@@ -660,7 +776,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Scouring Cream, 2.8 Kg",
       "Reference": "Scouring Cream, 2.8 Kg"
-    }
+    },
+    "industrial_tags": [
+      "8K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550158",
@@ -673,7 +793,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Scouring Cream, 5.6 Kg",
       "Reference": "Scouring Cream, 5.6 Kg"
-    }
+    },
+    "industrial_tags": [
+      "6K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550160",
@@ -686,7 +810,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "All Purpose Liquid Cleaner with Ammonia 2 Ltr x 6 BTL",
       "Reference": "All Purpose Liquid Cleaner with Ammonia 2 Ltr x 6 BTL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550161",
@@ -699,7 +825,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "All Purpose Liquid Cleaner with Ammonia 28 Oz x 12 BTL",
       "Reference": "All Purpose Liquid Cleaner with Ammonia 28 Oz x 12 BTL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550162",
@@ -712,7 +840,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, All Purpose Cleaner with Ammonia 750 ml x 20 BTL",
       "Reference": "Old Model, All Purpose Cleaner with Ammonia 750 ml x 20 BTL"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550163",
@@ -725,7 +855,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "All Purpose Liquid Cleaner with Ammonia 750 mlx16 Btl",
       "Reference": "All Purpose Liquid Cleaner with Ammonia 750 mlx16 Btl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550165",
@@ -738,7 +870,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Heavy Duty Kitchen Liquid Concentrated Cleaner, 500 ml",
       "Reference": "Heavy Duty Kitchen Liquid Concentrated Cleaner, 500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550168",
@@ -751,7 +885,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "General Purpore Liquid Cleaner, 500 cc",
       "Reference": "General Purpore Liquid Cleaner, 500 cc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550169",
@@ -764,7 +900,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "General Purpore Liquid Cleaner, 2150 cc",
       "Reference": "General Purpore Liquid Cleaner, 2150 cc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550170",
@@ -777,7 +915,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Heavy Duty Kitchen Liquid Concentrated Cleaner, 800 ml",
       "Reference": "Heavy Duty Kitchen Liquid Concentrated Cleaner, 800 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550171",
@@ -790,7 +930,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Bathroom Cleaning Liquid, 500 ml/Btl",
       "Reference": "Bathroom Cleaning Liquid, 500 ml/Btl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550172",
@@ -803,7 +945,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Bathroom Cleaning Liquid, 4.5 L/Tin",
       "Reference": "Bathroom Cleaning Liquid, 4.5 L/Tin"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550173",
@@ -816,7 +960,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Heavy Duty Kitchen Liquid Spray Cleaner, 400 ml",
       "Reference": "Heavy Duty Kitchen Liquid Spray Cleaner, 400 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550174",
@@ -829,7 +975,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Heavy Duty Kitchen Liquid Spray Cleaner, Refill 400 ml",
       "Reference": "Heavy Duty Kitchen Liquid Spray Cleaner, Refill 400 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550175",
@@ -842,7 +990,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "General Purpore Liquid Cleaner, Spray, 400 ml",
       "Reference": "General Purpore Liquid Cleaner, Spray, 400 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550176",
@@ -855,7 +1005,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "General Purpore Liquid Cleaner, Spray Refill, 350 ml",
       "Reference": "General Purpore Liquid Cleaner, Spray Refill, 350 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550177",
@@ -868,7 +1020,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Bathroom Cleaning Liquid, Spray, 400 ml",
       "Reference": "Bathroom Cleaning Liquid, Spray, 400 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550178",
@@ -881,7 +1035,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Bathroom Cleaning Liquid, Spray, Refill, 350 ml",
       "Reference": "Bathroom Cleaning Liquid, Spray, Refill, 350 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550179",
@@ -894,7 +1050,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Grease Remover for Kitchen Plate, 5 Ltr",
       "Reference": "Grease Remover for Kitchen Plate, 5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550180",
@@ -907,7 +1065,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Dish Washing Machine Detergent, Powder 15 Kgs/Case",
       "Reference": "Dish Washing Machine Detergent, Powder 15 Kgs/Case"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550181",
@@ -920,7 +1080,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Dish Washing Machine Detergent, Powder 20 Kgs/Case",
       "Reference": "Dish Washing Machine Detergent, Powder 20 Kgs/Case"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550182",
@@ -933,7 +1095,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Dish Washing Machine Detergent, Liquid, 25 Kgs/Btl",
       "Reference": "Dish Washing Machine Detergent, Liquid, 25 Kgs/Btl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550185",
@@ -946,7 +1110,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Dish Washing Machine Rinse Additive, 10 Kgs",
       "Reference": "Dish Washing Machine Rinse Additive, 10 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550186",
@@ -959,7 +1125,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Apex Made, Biodegradable Multi-Purpose Cleaner \"Rydyme Marine Boat Cleaner\" 6x710 ml/Case",
       "Reference": "Apex Made, Biodegradable Multi-Purpose Cleaner \"Rydyme Marine Boat Cleaner\" 6x710 ml/Case"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550187",
@@ -972,7 +1140,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Apex Made, Biodegradable Multi-Purpose Cleaner \"Rydyme Marine Boat Cleaner\" 4x3.8 Ltr/Case",
       "Reference": "Apex Made, Biodegradable Multi-Purpose Cleaner \"Rydyme Marine Boat Cleaner\" 4x3.8 Ltr/Case"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550188",
@@ -985,7 +1155,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Apex Made, Biodegradable Multi-Purpose Cleaner \"Rydyme Marine Boat Cleaner\" 18 Ltr/Pail",
       "Reference": "Apex Made, Biodegradable Multi-Purpose Cleaner \"Rydyme Marine Boat Cleaner\" 18 Ltr/Pail"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550189",
@@ -998,7 +1170,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Apex Made, Biodegradable Multi-Purpose Cleaner \"Rydyme Marine Boat Cleaner\" 208 Ltr/Drum",
       "Reference": "Apex Made, Biodegradable Multi-Purpose Cleaner \"Rydyme Marine Boat Cleaner\" 208 Ltr/Drum"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550190",
@@ -1011,7 +1185,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Bathroom Cleaning Liquid, Eco-Friendly, 750 ml",
       "Reference": "Bathroom Cleaning Liquid, Eco-Friendly, 750 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550191",
@@ -1024,7 +1200,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Bathroom Cleaning Liquid, Eco-Friendly, 5 Ltr",
       "Reference": "Bathroom Cleaning Liquid, Eco-Friendly, 5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550192",
@@ -1037,7 +1215,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Grease Remover for Kitcher Plate, Eco-Friendly 750 ml",
       "Reference": "Grease Remover for Kitcher Plate, Eco-Friendly 750 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550193",
@@ -1050,7 +1230,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Grease Remover for Kitcher Plate, Eco-Friendly 5 Ltr",
       "Reference": "Grease Remover for Kitcher Plate, Eco-Friendly 5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550194",
@@ -1063,7 +1245,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Dish Washing Detergent, Eco-Friendly, 750 ml",
       "Reference": "Dish Washing Detergent, Eco-Friendly, 750 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550195",
@@ -1076,7 +1260,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Dish Washing Detergent, Eco-Friendly, 5 Ltr",
       "Reference": "Dish Washing Detergent, Eco-Friendly, 5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550196",
@@ -1089,7 +1275,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Washroom Cleaner, Eco-Friendly, 750 ml",
       "Reference": "Washroom Cleaner, Eco-Friendly, 750 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550197",
@@ -1102,7 +1290,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Washroom Cleaner, Eco-Friendly, 5 Ltr",
       "Reference": "Washroom Cleaner, Eco-Friendly, 5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550201",
@@ -1115,7 +1305,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Machine Warewashing Detergent, Impact 25 Kgs, Ecolam Made",
       "Reference": "Machine Warewashing Detergent, Impact 25 Kgs, Ecolam Made"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550202",
@@ -1128,7 +1320,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Machine Warewashing Detergent, El Impact 50 Kgs",
       "Reference": "Old Model, Machine Warewashing Detergent, El Impact 50 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550203",
@@ -1141,7 +1335,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Machine Warewashing Detergent, Soilite 25 Kgs, Ecolam Made",
       "Reference": "Machine Warewashing Detergent, Soilite 25 Kgs, Ecolam Made"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550204",
@@ -1154,7 +1350,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Machine Warewashing Detergent, El Soilite 50 Kgs",
       "Reference": "Old Model, Machine Warewashing Detergent, El Soilite 50 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550205",
@@ -1167,7 +1365,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Machine Warewashing Detergent, Acclaim 25 Kgs, Ecolam Made",
       "Reference": "Machine Warewashing Detergent, Acclaim 25 Kgs, Ecolam Made"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550206",
@@ -1180,7 +1380,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Machine Warewashing Detergent, El Acclaim 50 Kgs",
       "Reference": "Old Model, Machine Warewashing Detergent, El Acclaim 50 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550210",
@@ -1193,7 +1395,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Machine Warewashing Detergent, El Liquid Assure 20 Kgs",
       "Reference": "Old Model, Machine Warewashing Detergent, El Liquid Assure 20 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550211",
@@ -1206,7 +1410,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Machine Warewashing Detergent, Assure 10 Kgs, Ecolam Made",
       "Reference": "Machine Warewashing Detergent, Assure 10 Kgs, Ecolam Made"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550213",
@@ -1219,7 +1425,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Machine Warewashing Detergent, New Rinsedry 4 Ltr, Ecolam Made",
       "Reference": "Machine Warewashing Detergent, New Rinsedry 4 Ltr, Ecolam Made"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550215",
@@ -1232,7 +1440,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Machine Warewashing Detergent, Tetro x 20 Kgs, Ecolam Made",
       "Reference": "Machine Warewashing Detergent, Tetro x 20 Kgs, Ecolam Made"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550218",
@@ -1245,7 +1455,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Machine Warewashing Detergent, Lime-A-Way 10 Kgs, Ecolam Made",
       "Reference": "Machine Warewashing Detergent, Lime-A-Way 10 Kgs, Ecolam Made"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550219",
@@ -1258,7 +1470,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Machine Warewashing Detergent, Dip-It 20 Kgs, Ecolam Made",
       "Reference": "Machine Warewashing Detergent, Dip-It 20 Kgs, Ecolam Made"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550220",
@@ -1271,7 +1485,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Machine Warewashing Detergent, Grease Cutter 4 Ltr, Ecolam Made",
       "Reference": "Machine Warewashing Detergent, Grease Cutter 4 Ltr, Ecolam Made"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550231",
@@ -1284,7 +1500,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Mold Cleaner, 400 grm",
       "Reference": "Mold Cleaner, 400 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550232",
@@ -1297,7 +1515,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Mold Cleaner, Refill 400 grm",
       "Reference": "Mold Cleaner, Refill 400 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550233",
@@ -1310,7 +1530,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Mold Cleaner, 1000 grm",
       "Reference": "Mold Cleaner, 1000 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550234",
@@ -1323,7 +1545,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Mold Cleaner, Refill 1000 grm",
       "Reference": "Mold Cleaner, Refill 1000 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550235",
@@ -1336,7 +1560,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toilet Cleanser, 500 ml",
       "Reference": "Toilet Cleanser, 500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550236",
@@ -1349,7 +1575,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toilet Cleanser, 800 ml",
       "Reference": "Toilet Cleanser, 800 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550237",
@@ -1362,7 +1590,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Uric Acid Cleaner Concentrate, 25 Ltr",
       "Reference": "Uric Acid Cleaner Concentrate, 25 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550238",
@@ -1375,7 +1605,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Soap In Pump Dispenser, Jell 500 ml",
       "Reference": "Hand Soap In Pump Dispenser, Jell 500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550239",
@@ -1388,7 +1620,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Soap In Pump Dispenser, Jell Refill 500 ml",
       "Reference": "Hand Soap In Pump Dispenser, Jell Refill 500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550240",
@@ -1401,7 +1635,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Soap In Pump Dispenser, Foal 500 ml",
       "Reference": "Hand Soap In Pump Dispenser, Foal 500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550241",
@@ -1414,7 +1650,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Soap In Pump Dispenser, Foal Refill 500 ml",
       "Reference": "Hand Soap In Pump Dispenser, Foal Refill 500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550248",
@@ -1427,7 +1665,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toilet Soap, Lux 90 grm x 2's",
       "Reference": "Toilet Soap, Lux 90 grm x 2's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550249",
@@ -1440,7 +1680,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toilet Soap, Lux 100 grm x 3's",
       "Reference": "Toilet Soap, Lux 100 grm x 3's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550251",
@@ -1453,7 +1695,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toilet Soap, Private Brand 71 grm",
       "Reference": "Toilet Soap, Private Brand 71 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550252",
@@ -1466,7 +1710,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toilet Soap, Lux 3Oz",
       "Reference": "Toilet Soap, Lux 3Oz"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550253",
@@ -1479,7 +1725,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toilet Soap, Lux 75 grm x 72's",
       "Reference": "Toilet Soap, Lux 75 grm x 72's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550254",
@@ -1492,7 +1740,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Toilet Soap, Lifebuoy 100 grm",
       "Reference": "Old Model, Toilet Soap, Lifebuoy 100 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550255",
@@ -1505,7 +1755,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Toilet Soap, Lifebuoy 100 grm x 24's",
       "Reference": "Old Model, Toilet Soap, Lifebuoy 100 grm x 24's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550256",
@@ -1518,7 +1770,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toilet Soap, Camay 85 grm",
       "Reference": "Toilet Soap, Camay 85 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550260",
@@ -1531,7 +1785,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Pumice Soap, 95 grm",
       "Reference": "Pumice Soap, 95 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550262",
@@ -1544,7 +1800,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Disinfectant & Antiseptic Hand Liquid, 500grm",
       "Reference": "Disinfectant & Antiseptic Hand Liquid, 500grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550263",
@@ -1557,7 +1815,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Disinfectant & Antiseptic Hand Liquid, 3Kg",
       "Reference": "Disinfectant & Antiseptic Hand Liquid, 3Kg"
-    }
+    },
+    "industrial_tags": [
+      "3K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550264",
@@ -1570,7 +1832,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Disinfectant & Antiseptic Hand Liquid, 5 Kg",
       "Reference": "Disinfectant & Antiseptic Hand Liquid, 5 Kg"
-    }
+    },
+    "industrial_tags": [
+      "5K"
+    ],
+    "land_compat_name": "5K"
   },
   {
     "c": "550265",
@@ -1583,7 +1849,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Wall Mount Container, for Disinfect Hand, Plastic",
       "Reference": "Wall Mount Container, for Disinfect Hand, Plastic"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550266",
@@ -1596,7 +1864,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Rapid Hand Cleaner, Swarfega 1 Kg",
       "Reference": "Rapid Hand Cleaner, Swarfega 1 Kg"
-    }
+    },
+    "industrial_tags": [
+      "1K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550267",
@@ -1609,7 +1881,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Rapid Hand Cleaner, Swarfega 1 Kg x 6 BTL",
       "Reference": "Rapid Hand Cleaner, Swarfega 1 Kg x 6 BTL"
-    }
+    },
+    "industrial_tags": [
+      "1K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550268",
@@ -1622,7 +1898,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Rapid Hand Cleaner, Swarfega 4 Kgs",
       "Reference": "Rapid Hand Cleaner, Swarfega 4 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550269",
@@ -1635,7 +1913,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Dispenser for Swarfega 4 Kgs",
       "Reference": "Dispenser for Swarfega 4 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550271",
@@ -1648,7 +1928,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Waterless Hand Cleaner, (Yunisol Tl) 1 Ltr",
       "Reference": "Waterless Hand Cleaner, (Yunisol Tl) 1 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550272",
@@ -1661,7 +1943,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Waterless Hand Cleaner, (Yunisol Tl) 10 Ltr",
       "Reference": "Waterless Hand Cleaner, (Yunisol Tl) 10 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550273",
@@ -1674,7 +1958,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Cleaner, Eco-Friendly, 500 ml",
       "Reference": "Hand Cleaner, Eco-Friendly, 500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550274",
@@ -1687,7 +1973,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Cleaner, Eco-Friendly, Refill 5 Ltr",
       "Reference": "Hand Cleaner, Eco-Friendly, Refill 5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550281",
@@ -1700,7 +1988,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Cleaning Wipe, Red Box 150's",
       "Reference": "Hand Cleaning Wipe, Red Box 150's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550282",
@@ -1713,7 +2003,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Cleaning Wipe, Black Box 150's",
       "Reference": "Hand Cleaning Wipe, Black Box 150's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550283",
@@ -1726,7 +2018,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Cleaning Wipe, Tough Wipes, 0.35 Kg , 30's/Pkt",
       "Reference": "Hand Cleaning Wipe, Tough Wipes, 0.35 Kg , 30's/Pkt"
-    }
+    },
+    "industrial_tags": [
+      "35K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550284",
@@ -1739,7 +2035,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Cleaning Wipe, Tough Wipes, 1.2 Kg , 100's/Pkt",
       "Reference": "Hand Cleaning Wipe, Tough Wipes, 1.2 Kg , 100's/Pkt"
-    }
+    },
+    "industrial_tags": [
+      "2K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550285",
@@ -1752,7 +2052,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model : Hand Cleaner, Loctite Orange, 4 Ltr",
       "Reference": "Old Model : Hand Cleaner, Loctite Orange, 4 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550287",
@@ -1765,7 +2067,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Cleaner, \"Scrubs\", 72 Towels/Bucket",
       "Reference": "Hand Cleaner, \"Scrubs\", 72 Towels/Bucket"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550288",
@@ -1778,7 +2082,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Cleaner, \"Scrubs\", 36 Towels/Bucket",
       "Reference": "Hand Cleaner, \"Scrubs\", 36 Towels/Bucket"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550289",
@@ -1791,7 +2097,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Cleaner, \"Scrubs\", Multi, 24 Towels/Pack",
       "Reference": "Hand Cleaner, \"Scrubs\", Multi, 24 Towels/Pack"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550291",
@@ -1804,7 +2112,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Soap In Pump Dispenser, Jell 250 ml",
       "Reference": "Hand Soap In Pump Dispenser, Jell 250 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550292",
@@ -1817,7 +2127,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Soap In Pump Dispenser, Jell Refill 250 ml",
       "Reference": "Hand Soap In Pump Dispenser, Jell Refill 250 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550293",
@@ -1830,7 +2142,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Soap In Pump Dispenser, Foam 250 ml",
       "Reference": "Hand Soap In Pump Dispenser, Foam 250 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550294",
@@ -1843,7 +2157,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hand Soap In Pump Dispenser, Foam Refill 500 ml",
       "Reference": "Hand Soap In Pump Dispenser, Foam Refill 500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550295",
@@ -1856,7 +2172,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Wall Mount Container, for Sanitiser, Red",
       "Reference": "Wall Mount Container, for Sanitiser, Red"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550296",
@@ -1869,7 +2187,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Wall Mount Container, for Handwash, Light Blue",
       "Reference": "Wall Mount Container, for Handwash, Light Blue"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550297",
@@ -1882,7 +2202,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Wall Mount Container, for Shower Get, Dark Blue",
       "Reference": "Wall Mount Container, for Shower Get, Dark Blue"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550298",
@@ -1895,7 +2217,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Wall Mount Container, for Skin Protection Cream (Before Work), Yellow",
       "Reference": "Wall Mount Container, for Skin Protection Cream (Before Work), Yellow"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550299",
@@ -1908,7 +2232,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Wall Mount Container, for Skin Moisture/Restoreing Cream (After Work), Green",
       "Reference": "Wall Mount Container, for Skin Moisture/Restoreing Cream (After Work), Green"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550300",
@@ -1921,7 +2247,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Wall Mount Container, for Heavy Duty Hand Cleaner, Purple",
       "Reference": "Wall Mount Container, for Heavy Duty Hand Cleaner, Purple"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550301",
@@ -1934,7 +2262,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Oven Cleaner, 300 grm",
       "Reference": "Oven Cleaner, 300 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550304",
@@ -1947,7 +2277,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toilet Bowl Cleanser, Eco-Friendly, 1 Ltr",
       "Reference": "Toilet Bowl Cleanser, Eco-Friendly, 1 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550305",
@@ -1960,7 +2292,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toilet Bowl Cleanser, Eco-Friendly, Refill 5 Ltr",
       "Reference": "Toilet Bowl Cleanser, Eco-Friendly, Refill 5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550306",
@@ -1973,7 +2307,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Toilet Bowl Cleanser, Sani-Flush 473 grm",
       "Reference": "Old Model, Toilet Bowl Cleanser, Sani-Flush 473 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550307",
@@ -1986,7 +2322,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toilet Bowl Cleanser, Harpic 500 grm",
       "Reference": "Toilet Bowl Cleanser, Harpic 500 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550310",
@@ -1999,7 +2337,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toilet Bowl Cleanser, Duck Neck, 700 ml",
       "Reference": "Toilet Bowl Cleanser, Duck Neck, 700 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550311",
@@ -2012,7 +2352,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Aerosol Glass Cleaner, 310 ml",
       "Reference": "Aerosol Glass Cleaner, 310 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550312",
@@ -2025,7 +2367,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Aerosol Glass Cleaner, 280 ml",
       "Reference": "Aerosol Glass Cleaner, 280 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550313",
@@ -2038,7 +2382,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Aerosol Glass Cleaner, 480 ml",
       "Reference": "Aerosol Glass Cleaner, 480 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550314",
@@ -2051,7 +2397,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Aerosol Glass Cleaner, 300 ml",
       "Reference": "Aerosol Glass Cleaner, 300 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550315",
@@ -2064,7 +2412,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Window Cleaner, Eco-Friendly, 750 ml",
       "Reference": "Window Cleaner, Eco-Friendly, 750 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550316",
@@ -2077,7 +2427,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Window Cleaner, Eco-Friendly, 5 Ltr",
       "Reference": "Window Cleaner, Eco-Friendly, 5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550321",
@@ -2090,7 +2442,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Deodorizer, 60 grm",
       "Reference": "Deodorizer, 60 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550322",
@@ -2103,7 +2457,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Deodorizer, 120 grm",
       "Reference": "Deodorizer, 120 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550331",
@@ -2116,7 +2472,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Air Freshener, 220 ml",
       "Reference": "Air Freshener, 220 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550332",
@@ -2129,7 +2487,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Air Freshener, 420 ml",
       "Reference": "Air Freshener, 420 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550333",
@@ -2142,7 +2502,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Air Freshener, 5 Ltr",
       "Reference": "Air Freshener, 5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550334",
@@ -2155,7 +2517,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Deodorizing Coagulant Powder, 10 Kg",
       "Reference": "Deodorizing Coagulant Powder, 10 Kg"
-    }
+    },
+    "industrial_tags": [
+      "10K"
+    ],
+    "land_compat_name": "10K"
   },
   {
     "c": "550335",
@@ -2168,7 +2534,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Disinfecting Deodorant, 50 Pkt/Cs",
       "Reference": "Disinfecting Deodorant, 50 Pkt/Cs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550336",
@@ -2181,7 +2549,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toilet Odor Ball",
       "Reference": "Toilet Odor Ball"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550337",
@@ -2194,7 +2564,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Liquid Air Freshener for Linen & Cloth, 400 ml",
       "Reference": "Liquid Air Freshener for Linen & Cloth, 400 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550338",
@@ -2207,7 +2579,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Liquid Air Freshener for Shoes, 400 ml",
       "Reference": "Liquid Air Freshener for Shoes, 400 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550339",
@@ -2220,7 +2594,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Liquid Air Freshener for Toilet, 400 ml",
       "Reference": "Liquid Air Freshener for Toilet, 400 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550340",
@@ -2233,7 +2609,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Drain Pipe Cleaner, 250 grm",
       "Reference": "( ) , Drain Pipe Cleaner, 250 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550341",
@@ -2246,7 +2624,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Drain Pipe Cleaner, 500 grm",
       "Reference": "( ) , Drain Pipe Cleaner, 500 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550342",
@@ -2259,7 +2639,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Drain Pipe Cleaner, 1 Kg",
       "Reference": "( ) , Drain Pipe Cleaner, 1 Kg"
-    }
+    },
+    "industrial_tags": [
+      "1K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550343",
@@ -2272,7 +2656,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Drain Pipe Cleaner, 5 Kgs",
       "Reference": "( ) , Drain Pipe Cleaner, 5 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550345",
@@ -2285,7 +2671,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Liquid Air Freshener, Eco-Friendly, 750 ml",
       "Reference": ". , Liquid Air Freshener, Eco-Friendly, 750 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550346",
@@ -2298,7 +2686,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Liquid Air Freshener, Eco-Friendly, Refill 5 Ltr",
       "Reference": ". , Liquid Air Freshener, Eco-Friendly, Refill 5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550351",
@@ -2311,7 +2701,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Metal Polish Liquid, 300 grm",
       "Reference": "Metal Polish Liquid, 300 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550352",
@@ -2324,7 +2716,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Metal Polish Liquid, 360 grm",
       "Reference": "Metal Polish Liquid, 360 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550355",
@@ -2337,7 +2731,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "St.Steel Cleaner & Polish, Spray 420 ml",
       "Reference": "St.Steel Cleaner & Polish, Spray 420 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550358",
@@ -2350,7 +2746,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Paste Metal Polish, 250 grm",
       "Reference": "Paste Metal Polish, 250 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550359",
@@ -2363,7 +2761,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Glass & St.Steel Cleaner, Eco-Friendly, 750 ml",
       "Reference": "Glass & St.Steel Cleaner, Eco-Friendly, 750 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550360",
@@ -2376,7 +2776,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Glass & St.Steel Cleaner, Eco-Friendly, Refill 5 Ltr",
       "Reference": "Glass & St.Steel Cleaner, Eco-Friendly, Refill 5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550361",
@@ -2389,7 +2791,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Liquid Furniture Polish, 200 cc",
       "Reference": "Liquid Furniture Polish, 200 cc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550362",
@@ -2402,7 +2806,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Liquid Furniture Polish, 400 cc",
       "Reference": "Liquid Furniture Polish, 400 cc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550363",
@@ -2415,7 +2821,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Liquid Furniture Polish, 1.13 Ltr",
       "Reference": "Liquid Furniture Polish, 1.13 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550364",
@@ -2428,7 +2836,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Liquid Furniture Polish, 4.5 Ltr",
       "Reference": "Liquid Furniture Polish, 4.5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550368",
@@ -2441,7 +2851,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Spray Furniture Polish, 220 grm",
       "Reference": "Spray Furniture Polish, 220 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550369",
@@ -2454,7 +2866,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Spray Furniture Polish, 420 grm",
       "Reference": "Spray Furniture Polish, 420 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550374",
@@ -2467,7 +2881,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Plain Wood Polish, Liquid 700 cc",
       "Reference": "Plain Wood Polish, Liquid 700 cc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550375",
@@ -2480,7 +2896,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Plain Wood Polish, Liquid 500 cc",
       "Reference": "Plain Wood Polish, Liquid 500 cc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550376",
@@ -2493,7 +2911,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Plain Wood Polish, Liquid 1 Ltr",
       "Reference": "Plain Wood Polish, Liquid 1 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550377",
@@ -2506,7 +2926,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Plain Wood Polish, Liquid 2 Ltr",
       "Reference": "Plain Wood Polish, Liquid 2 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550378",
@@ -2519,7 +2941,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Plain Wood Polish, Liquid 4 Ltr",
       "Reference": "Plain Wood Polish, Liquid 4 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550380",
@@ -2532,7 +2956,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Plain Wood Polish, Paste 260 grm",
       "Reference": "Plain Wood Polish, Paste 260 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550381",
@@ -2545,7 +2971,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Plain Wood Polish, Paste 500 grm",
       "Reference": "Plain Wood Polish, Paste 500 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550384",
@@ -2558,7 +2986,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Varnished Floor Polish, Liquid 500 cc",
       "Reference": "Varnished Floor Polish, Liquid 500 cc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550385",
@@ -2571,7 +3001,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Varnished Floor Polish, Liquid 1 Ltr",
       "Reference": "Varnished Floor Polish, Liquid 1 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550386",
@@ -2584,7 +3016,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Varnished Floor Polish, Liquid 2 Ltr",
       "Reference": "Varnished Floor Polish, Liquid 2 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550387",
@@ -2597,7 +3031,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Varnished Floor Polish, Liquid 4 Ltr",
       "Reference": "Varnished Floor Polish, Liquid 4 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550388",
@@ -2610,7 +3046,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Floor Cleaner, Eco-Friendly, 5 Ltr",
       "Reference": "Floor Cleaner, Eco-Friendly, 5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550390",
@@ -2623,7 +3061,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Tile Emulsion Polish, 500 cc",
       "Reference": "Tile Emulsion Polish, 500 cc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550391",
@@ -2636,7 +3076,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Tile Emulsion Polish, 1 Ltr",
       "Reference": "Tile Emulsion Polish, 1 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550392",
@@ -2649,7 +3091,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Tile Emulsion Polish, 2 Ltr",
       "Reference": "Tile Emulsion Polish, 2 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550393",
@@ -2662,7 +3106,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Tile Emulsion Polish, 4 Ltr",
       "Reference": "Tile Emulsion Polish, 4 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550396",
@@ -2675,7 +3121,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Carpet Shampoo, Spray 480 cc",
       "Reference": "& , Carpet Shampoo, Spray 480 cc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550397",
@@ -2688,7 +3136,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Carpet Cleaner, Liquid 4 Ltr",
       "Reference": "& , Carpet Cleaner, Liquid 4 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550398",
@@ -2701,7 +3151,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Carpet Cleaner, Liquid 18 Ltr",
       "Reference": "& , Carpet Cleaner, Liquid 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550501",
@@ -2714,7 +3166,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Floor Stripper, New Super All-Go 4 Ltr",
       "Reference": "( ) , Old Model, Floor Stripper, New Super All-Go 4 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550502",
@@ -2727,7 +3181,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Floor Stripper, New Super All-Go 18 Ltr",
       "Reference": "( ) , Floor Stripper, New Super All-Go 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550503",
@@ -2740,7 +3196,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Floor Stripper, Power Go 18 Ltr",
       "Reference": "( ) , Floor Stripper, Power Go 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550504",
@@ -2753,7 +3211,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Floor Stripper, Bravo Heavy Duty Stripper, 18 Ltr",
       "Reference": "( ) , Floor Stripper, Bravo Heavy Duty Stripper, 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550505",
@@ -2766,7 +3226,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Floor Stripper, Get Off 18 Ltr",
       "Reference": "( ) , Floor Stripper, Get Off 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550507",
@@ -2779,7 +3241,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Floor Cleaner, Forward 18 Ltr",
       "Reference": "Floor Cleaner, Forward 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550508",
@@ -2792,7 +3256,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Floor Cleaner, Big Bare Heavy Duty 18 Ltr",
       "Reference": "Floor Cleaner, Big Bare Heavy Duty 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550509",
@@ -2805,7 +3271,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Floor Cleaner, Forward Disinfectant 4 Ltr",
       "Reference": "Old Model, Floor Cleaner, Forward Disinfectant 4 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550510",
@@ -2818,7 +3286,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Floor Cleaner, Forward Disinfectant 18 Ltr",
       "Reference": "Floor Cleaner, Forward Disinfectant 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550511",
@@ -2831,7 +3301,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Floor Cleaner, Forward Disinfectant 200 Ltr",
       "Reference": "Old Model, Floor Cleaner, Forward Disinfectant 200 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550512",
@@ -2844,7 +3316,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Floor Cleaner, Neutra Fresh 18 Ltr",
       "Reference": "Floor Cleaner, Neutra Fresh 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550513",
@@ -2857,7 +3331,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Floor Cleaner, J-Clean 18 Ltr",
       "Reference": "Old Model, Floor Cleaner, J-Clean 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550518",
@@ -2870,7 +3346,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Wood Floor Wax, Sted-Fast, Woodfloor Polishing Wax 18 Ltr",
       "Reference": "Wood Floor Wax, Sted-Fast, Woodfloor Polishing Wax 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550519",
@@ -2883,7 +3361,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Wood Floor Wax, Gymac 18 Ltr",
       "Reference": "Wood Floor Wax, Gymac 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550520",
@@ -2896,7 +3376,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Wood Floor Wax, Oil Emulsion Soft Type 18 Ltr",
       "Reference": "Old Model, Wood Floor Wax, Oil Emulsion Soft Type 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550522",
@@ -2909,7 +3391,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Wood Floor Wax, Oil Emulsion ,High Gloss Wood Floor Finshi 18 Ltr",
       "Reference": "Old Model, Wood Floor Wax, Oil Emulsion ,High Gloss Wood Floor Finshi 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550524",
@@ -2922,7 +3406,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Wood Floor Wax, Beauti-Flor 18 Ltr",
       "Reference": "Old Model, Wood Floor Wax, Beauti-Flor 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550526",
@@ -2935,7 +3421,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Plain Wood Floor Wax, Finish Kentoku-Liquid 18 Ltr",
       "Reference": "Old Model, Plain Wood Floor Wax, Finish Kentoku-Liquid 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550532",
@@ -2948,7 +3436,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "High Gloss Floor Finsisher, Stardom, 18 Ltr",
       "Reference": "( ) , High Gloss Floor Finsisher, Stardom, 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550533",
@@ -2961,7 +3451,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Toughest Long Lashing Floor Finish Wax, Complete S, 5 Gal",
       "Reference": "( ) , Toughest Long Lashing Floor Finish Wax, Complete S, 5 Gal"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550534",
@@ -2974,7 +3466,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Toughest Long Lashing Floor Finish Wax, Complete S, 200 Ltr",
       "Reference": "Old Model, Toughest Long Lashing Floor Finish Wax, Complete S, 200 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550535",
@@ -2987,7 +3481,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Metal-Interlock Floor Finish, Super Complete 4 Ltr",
       "Reference": "Old Model, Metal-Interlock Floor Finish, Super Complete 4 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550536",
@@ -3000,7 +3496,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Metal-Interlock Floor Finish, Super Complete 18 Ltr",
       "Reference": "( ) , Metal-Interlock Floor Finish, Super Complete 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550537",
@@ -3013,7 +3511,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Metal-Interlock Floor Finish, Super Complete 200 Ltr",
       "Reference": "Old Model, Metal-Interlock Floor Finish, Super Complete 200 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550539",
@@ -3026,7 +3526,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "High Gloss Floor Finish, John Star 18 Ltr",
       "Reference": "( ) , High Gloss Floor Finish, John Star 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550540",
@@ -3039,7 +3541,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Floor Finish Long Lasting, John Coat 200 Ltr",
       "Reference": "Old Model, Floor Finish Long Lasting, John Coat 200 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550542",
@@ -3052,7 +3556,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "High Gloss Floor Finish, Impress Coat 18 Ltr",
       "Reference": "( ) , High Gloss Floor Finish, Impress Coat 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550543",
@@ -3065,7 +3571,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Metal Interlock Floor Finish, Pronto 200 Ltr",
       "Reference": "Old Model, Metal Interlock Floor Finish, Pronto 200 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550545",
@@ -3078,7 +3586,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Self Shining Non-Buff Non-Slip 18 Ltr",
       "Reference": "( ) , Self Shining Non-Buff Non-Slip 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550546",
@@ -3091,7 +3601,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Zinc-Free Finiah, Neutra Coat, 18 Ltr",
       "Reference": "( ) , Zinc-Free Finiah, Neutra Coat, 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550548",
@@ -3104,7 +3616,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Hi-Performance Uhs Finish, Jsaver, 18 Ltr",
       "Reference": "Hi-Performance Uhs Finish, Jsaver, 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550549",
@@ -3117,7 +3631,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Ultra High-Speed Floor Finish, Pro Stage 18 Ltr",
       "Reference": "Ultra High-Speed Floor Finish, Pro Stage 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550550",
@@ -3130,7 +3646,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "High Performance Floor Finish, Fast-Step 18 Ltr",
       "Reference": "High Performance Floor Finish, Fast-Step 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550551",
@@ -3143,7 +3661,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "High Performance Floor Finish, Grandprix, 18 Ltr",
       "Reference": "High Performance Floor Finish, Grandprix, 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550552",
@@ -3156,7 +3676,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "High Performance Floor Finish, Centurion 18 Ltr",
       "Reference": "High Performance Floor Finish, Centurion 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550556",
@@ -3169,7 +3691,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Self Polishing Floor Finish, T/G 18 Ltr",
       "Reference": "Self Polishing Floor Finish, T/G 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550558",
@@ -3182,7 +3706,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, High Gloss with Light Buff, Yukasui Emulsion Wax 18 Ltr",
       "Reference": "Old Model, High Gloss with Light Buff, Yukasui Emulsion Wax 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550564",
@@ -3195,7 +3721,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Long Lasting Sealer, Basic Coat, 18 Ltr",
       "Reference": "Long Lasting Sealer, Basic Coat, 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550566",
@@ -3208,7 +3736,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Concrete Sealer Finish, Concrete Sealer 18 Ltr",
       "Reference": "Concrete Sealer Finish, Concrete Sealer 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550601",
@@ -3221,7 +3751,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Pine Scent Disinfectant Solution, 500 ml",
       "Reference": "Pine Scent Disinfectant Solution, 500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550602",
@@ -3234,7 +3766,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Pine Scent Disinfectant Solution, 4 Ltr",
       "Reference": "Pine Scent Disinfectant Solution, 4 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550603",
@@ -3247,7 +3781,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Pine Scent Disinfectant Solution, 18 Ltr",
       "Reference": "Pine Scent Disinfectant Solution, 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550606",
@@ -3260,7 +3796,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Insecticide Fluid 4 Ltr",
       "Reference": "Insecticide Fluid 4 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550607",
@@ -3273,7 +3811,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Insecticide Fluid 18 Ltr",
       "Reference": "Insecticide Fluid 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550608",
@@ -3286,7 +3826,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Insecticide Residual Liquid, 5 Ltr",
       "Reference": "Insecticide Residual Liquid, 5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550610",
@@ -3299,7 +3841,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Insecticide Residual Spray, 400 ml",
       "Reference": "Insecticide Residual Spray, 400 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550611",
@@ -3312,7 +3856,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Disinfectant Liquid, Cresol 500 cc",
       "Reference": "Disinfectant Liquid, Cresol 500 cc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550612",
@@ -3325,7 +3871,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Disinfectant Liquid, Cresol 18 Ltr",
       "Reference": "Disinfectant Liquid, Cresol 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550616",
@@ -3338,7 +3886,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Disinfectant Liquid, Phenol 500 ml",
       "Reference": "Disinfectant Liquid, Phenol 500 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550617",
@@ -3351,7 +3901,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Disinfectant Liquid, Phenol 18 Ltr",
       "Reference": "Old Model, Disinfectant Liquid, Phenol 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550618",
@@ -3364,7 +3916,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Acetic/ Citric Acid Disinfectant Liquid",
       "Reference": "/ , Acetic/ Citric Acid Disinfectant Liquid"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550619",
@@ -3377,7 +3931,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Plastic Pump Spray Bottle",
       "Reference": "Plastic Pump Spray Bottle"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550621",
@@ -3390,7 +3946,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Cockroach Killer Aerosol 300 cc",
       "Reference": "Cockroach Killer Aerosol 300 cc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550622",
@@ -3403,7 +3961,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Cockroach Killer Aerosol \"Keen\" 300 ml x 12Tin",
       "Reference": "Cockroach Killer Aerosol \"Keen\" 300 ml x 12Tin"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550624",
@@ -3416,7 +3976,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Insect Killer Aerosol 300 cc",
       "Reference": "Insect Killer Aerosol 300 cc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550625",
@@ -3429,7 +3991,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Insect Killer Aerosol \"Keen\" 300 ml x 12Tin",
       "Reference": "Insect Killer Aerosol \"Keen\" 300 ml x 12Tin"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550627",
@@ -3442,7 +4006,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Insecticide Powder 500 grm",
       "Reference": "Insecticide Powder 500 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550630",
@@ -3455,7 +4021,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Rat Poison 125 grm",
       "Reference": "Rat Poison 125 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550635",
@@ -3468,7 +4036,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Self-Heat Cockroach Fumigator 20 grm, Capa 10-13 M2",
       "Reference": "Self-Heat Cockroach Fumigator 20 grm, Capa 10-13 M2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550636",
@@ -3481,7 +4051,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Self-Heat Cockroach Fumigator 40 grm, Capa 20-26 M2",
       "Reference": "Self-Heat Cockroach Fumigator 40 grm, Capa 20-26 M2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550637",
@@ -3494,7 +4066,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Self-Heat Cockroach Fumigator 60 grm, Capa 30-40 M2",
       "Reference": "Self-Heat Cockroach Fumigator 60 grm, Capa 30-40 M2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550638",
@@ -3507,7 +4081,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Self-Heat Cockroach Fumigator 80 grm, Capa 40-50 M2",
       "Reference": "Self-Heat Cockroach Fumigator 80 grm, Capa 40-50 M2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550640",
@@ -3520,7 +4096,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Cockroach Trap Disposable with Special Food Bait",
       "Reference": "Cockroach Trap Disposable with Special Food Bait"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550645",
@@ -3533,7 +4111,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Electro Mosquito Destroyer 220V",
       "Reference": "Old Model, Electro Mosquito Destroyer 220V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550646",
@@ -3546,7 +4126,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Electro Mosquito Destroyer 110V",
       "Reference": "Old Model, Electro Mosquito Destroyer 110V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550647",
@@ -3559,7 +4141,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model, Mat for Electro Mosquito Destroyer 30's/Pkt",
       "Reference": "Old Model, Mat for Electro Mosquito Destroyer 30's/Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550651",
@@ -3572,7 +4156,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Insecticide Smoke No.3 120 grm",
       "Reference": "Insecticide Smoke No.3 120 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550652",
@@ -3585,7 +4171,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Insecticide Smoke No.2 240 grm",
       "Reference": "Insecticide Smoke No.2 240 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550653",
@@ -3598,7 +4186,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Insecticide Smoke No.1 480 grm",
       "Reference": "Insecticide Smoke No.1 480 grm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550660",
@@ -3611,7 +4201,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Handy Sprayer",
       "Reference": "Handy Sprayer"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550661",
@@ -3624,7 +4216,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Shoulder Sprayer Type 4 Ltr",
       "Reference": "Shoulder Sprayer Type 4 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550662",
@@ -3637,7 +4231,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Shoulder Sprayer Type 10 Ltr",
       "Reference": "Shoulder Sprayer Type 10 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550663",
@@ -3650,7 +4246,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Shoulder Sprayer Type 11 Ltr",
       "Reference": "Shoulder Sprayer Type 11 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550665",
@@ -3663,7 +4261,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Drinking Water Disinfectant, Hadex, 1 Ltr",
       "Reference": "Drinking Water Disinfectant, Hadex, 1 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550666",
@@ -3676,7 +4276,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Drinking Water Disinfectant, Hadex, 2.5 Ltr",
       "Reference": "Drinking Water Disinfectant, Hadex, 2.5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550667",
@@ -3689,7 +4291,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Drinking Water Disinfectant, Hadex, 10 Ltr",
       "Reference": "Drinking Water Disinfectant, Hadex, 10 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550668",
@@ -3702,7 +4306,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Drinking Water Disinfectant, Hadex, 25 Ltr",
       "Reference": "Drinking Water Disinfectant, Hadex, 25 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550669",
@@ -3715,7 +4321,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Orgacure Made, Fruit & Vegetable Extra-Shelf-Life Cleaner, Orgacure Powder, 500 grm x 3 Pouch",
       "Reference": "Orgacure Made, Fruit & Vegetable Extra-Shelf-Life Cleaner, Orgacure Powder, 500 grm x 3 Pouch"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550670",
@@ -3728,7 +4336,11 @@
       "Catalog Section": "Chapter 55",
       "Description": "Orgacure Made, Fruit & Vegetable Extra-Shelf-Life Cleaner, Orgacure Powder, 1 Kg x 5 Pouch",
       "Reference": "Orgacure Made, Fruit & Vegetable Extra-Shelf-Life Cleaner, Orgacure Powder, 1 Kg x 5 Pouch"
-    }
+    },
+    "industrial_tags": [
+      "1K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "550671",
@@ -3741,7 +4353,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Sodium Hypochlorite Solution, Purelox 600 cc",
       "Reference": "Sodium Hypochlorite Solution, Purelox 600 cc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550672",
@@ -3754,7 +4368,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Sodium Hypochlorite Solution, Purelox 18 Ltr",
       "Reference": "Sodium Hypochlorite Solution, Purelox 18 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550676",
@@ -3767,7 +4383,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Sewage Sanitary Detergent, Chlorinated Isocyanurate Tablet, 15 grm x 20 Tab/Pkt x 33 Pkt",
       "Reference": "Sewage Sanitary Detergent, Chlorinated Isocyanurate Tablet, 15 grm x 20 Tab/Pkt x 33 Pkt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550677",
@@ -3780,7 +4398,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Sewage Sanitary Detergent, Chlorinated Isocyanurate Tablet, 15 grm x 1000 Tab/Ctn",
       "Reference": "Sewage Sanitary Detergent, Chlorinated Isocyanurate Tablet, 15 grm x 1000 Tab/Ctn"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550680",
@@ -3793,7 +4413,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Activate Microbial Preparation Decomposer for Ship Digestion Tank, 10 Kgs",
       "Reference": "Activate Microbial Preparation Decomposer for Ship Digestion Tank, 10 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550681",
@@ -3806,7 +4428,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Microzyme Sewage Liquid, 10 Ltr",
       "Reference": "Microzyme Sewage Liquid, 10 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550682",
@@ -3819,7 +4443,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Microzyme Sewage Liquid, 25 Ltr",
       "Reference": "Microzyme Sewage Liquid, 25 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "550685",
@@ -3832,7 +4458,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "(Eca) Electro-Chemically Activated Water Generating Device",
       "Reference": "(Eca) Electro-Chemically Activated Water Generating Device"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "551524",
@@ -3845,7 +4473,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Loctite Product, General Hadn Cleaner, No.7850, 400 ml",
       "Reference": "Loctite Product, General Hadn Cleaner, No.7850, 400 ml"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "551525",
@@ -3858,7 +4488,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Loctite Product, General Hadn Cleaner, No.7850, 3 Ltr/ Can",
       "Reference": "Loctite Product, General Hadn Cleaner, No.7850, 3 Ltr/ Can"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "551526",
@@ -3871,7 +4503,9 @@
       "Catalog Section": "Chapter 55",
       "Description": "Loctite Product, Heavy Duty Hand Cleaner, No.7855, 5 Ltr/ Can",
       "Reference": "Loctite Product, Heavy Duty Hand Cleaner, No.7855, 5 Ltr/ Can"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "551527",
@@ -3884,6 +4518,8 @@
       "Catalog Section": "Chapter 55",
       "Description": "Old Model : Loctite Product, Heavy Duty Hand Cleaner, No.7855, 20 Ltr/ Can",
       "Reference": "Old Model : Loctite Product, Heavy Duty Hand Cleaner, No.7855, 20 Ltr/ Can"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   }
 ]

@@ -10,7 +10,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Heineken (330ml x 24 can)",
       "Reference": "Beer Heineken (330ml x 24 can)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100105",
@@ -23,7 +25,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Kronenbourg (330ml x 24 can)",
       "Reference": "Beer Kronenbourg (330ml x 24 can)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100107",
@@ -36,7 +40,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Ringnes (330ml x 24 can)",
       "Reference": "Beer Ringnes (330ml x 24 can)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100110",
@@ -49,7 +55,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer San Miguel (330ml x 24 can)",
       "Reference": "Beer San Miguel (330ml x 24 can)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100120",
@@ -62,7 +70,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Efes Pilsener (330ml x 24 can)",
       "Reference": "Beer Efes Pilsener (330ml x 24 can)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100122",
@@ -75,7 +85,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Becks (330ml x 24 Btl)",
       "Reference": "Beer Becks (330ml x 24 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100123",
@@ -88,7 +100,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Non Alcohol 0.00% (330ml x 24 can)",
       "Reference": "Beer Non Alcohol 0.00% (330ml x 24 can)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100130",
@@ -101,7 +115,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Darguner Gold Lager (330ml x 24 can)",
       "Reference": "Beer Darguner Gold Lager (330ml x 24 can)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100131",
@@ -114,7 +130,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Darguner Weizen (330ml x 24 can)",
       "Reference": "Beer Darguner Weizen (330ml x 24 can)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100301",
@@ -127,7 +145,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Suntory, (350mlx 24 Tin)",
       "Reference": "Beer Suntory, (350mlx 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100307",
@@ -140,7 +160,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Suntory Draft, (2Ltr x 6 Keg)",
       "Reference": "Beer Suntory Draft, (2Ltr x 6 Keg)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100309",
@@ -153,7 +175,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Suntory Draft, (3Ltr x 6 Keg)",
       "Reference": "Beer Suntory Draft, (3Ltr x 6 Keg)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100315",
@@ -166,7 +190,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Suntory, (633mlx 12 Btl)",
       "Reference": "Beer Suntory, (633mlx 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100321",
@@ -179,7 +205,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Sapporo, (350mlx 24 Tin)",
       "Reference": "Beer Sapporo, (350mlx 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100323",
@@ -192,7 +220,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Sapporo Draft, (2Ltr x 6 Keg)",
       "Reference": "Beer Sapporo Draft, (2Ltr x 6 Keg)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100329",
@@ -205,7 +235,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Sapporo, (633mlx 12 Btl)",
       "Reference": "Beer Sapporo, (633mlx 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100339",
@@ -218,7 +250,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Asahi Supper-Dry (500ml x 12 Btl)",
       "Reference": "Beer Asahi Supper-Dry (500ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100340",
@@ -231,7 +265,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Asahi Supper-Dry (3ltr x 6 Can)",
       "Reference": "Beer Asahi Supper-Dry (3ltr x 6 Can)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100341",
@@ -244,7 +280,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Asahi Supper-Dry (350ml x 24 Can)",
       "Reference": "Beer Asahi Supper-Dry (350ml x 24 Can)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100342",
@@ -257,7 +295,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Asahi Supper-Dry (633ml x 12 Btl)",
       "Reference": "Beer Asahi Supper-Dry (633ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100343",
@@ -270,7 +310,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Asahi Supper-Dry (334ml x 24 Btl)",
       "Reference": "Beer Asahi Supper-Dry (334ml x 24 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100344",
@@ -283,7 +325,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Asahi Supper-Dry (500ml x 24 Can)",
       "Reference": "Beer Asahi Supper-Dry (500ml x 24 Can)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100345",
@@ -296,7 +340,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Kirin Lager (350mlx 24 Tin)",
       "Reference": "Beer Kirin Lager (350mlx 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100346",
@@ -309,7 +355,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Kirin Lager (334mlx 24 Btl)",
       "Reference": "Beer Kirin Lager (334mlx 24 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100347",
@@ -322,7 +370,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Kirin Ichiban-Shibori (350mlx 24 Tin)",
       "Reference": "Beer Kirin Ichiban-Shibori (350mlx 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100348",
@@ -335,7 +385,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Kirin Ichiban-Shibori (500mlx 24 Tin)",
       "Reference": "Beer Kirin Ichiban-Shibori (500mlx 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100349",
@@ -348,7 +400,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Kirin Lagar (633mlx 12 Btl)",
       "Reference": "Beer Kirin Lagar (633mlx 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100350",
@@ -361,7 +415,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Kirin Lagar (500mlx 12 Btl)",
       "Reference": "Beer Kirin Lagar (500mlx 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100351",
@@ -374,7 +430,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Kirin Lagar (500mlx 24 Tin)",
       "Reference": "Beer Kirin Lagar (500mlx 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100352",
@@ -387,7 +445,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Beer Asahi Non Alcohol 0.0% (250ml x 12 Can)",
       "Reference": "Beer Asahi Non Alcohol 0.0% (250ml x 12 Can)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100501",
@@ -400,7 +460,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch Bell's 40Deg, (700ml x 12 Btl)",
       "Reference": "Whisky Scotch Bell's 40Deg, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100503",
@@ -413,7 +475,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Edinburgh Wain Megrez 40Deg, (700ml x 12 Btl)",
       "Reference": "Whisky Edinburgh Wain Megrez 40Deg, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100504",
@@ -426,7 +490,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch Bell's 20 Yr, (750ml x 12 Btl)",
       "Reference": "Whisky Scotch Bell's 20 Yr, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100511",
@@ -439,7 +505,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Dufftown-Glenlivet 8Yr, (750ml x 12 Btl)",
       "Reference": "Whisky Dufftown-Glenlivet 8Yr, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100513",
@@ -452,7 +520,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch Dunhill Old Master, (750ml x 6 Btl)",
       "Reference": "Whisky Scotch Dunhill Old Master, (750ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100514",
@@ -465,7 +535,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch Ballantie's Finest, (750 ml)",
       "Reference": "Whisky Scotch Ballantie's Finest, (750 ml)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100515",
@@ -478,7 +550,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Glenfiddich, (750ml x 12 Btl)",
       "Reference": "Whisky Glenfiddich, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100516",
@@ -491,7 +565,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch Glenmark 3 Yr, (750ml x 12 Btl)",
       "Reference": "Whisky Scotch Glenmark 3 Yr, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100517",
@@ -504,7 +580,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch Glenmark 12 Yr, (750ml x 6 Btl)",
       "Reference": "Whisky Scotch Glenmark 12 Yr, (750ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100518",
@@ -517,7 +595,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch Grant's, (750ml x 12 Btl)",
       "Reference": "Whisky Scotch Grant's, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100519",
@@ -530,7 +610,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Grant's Royal 12Yr, (750ml x 12 Btl)",
       "Reference": "Whisky Grant's Royal 12Yr, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100520",
@@ -543,7 +625,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky King Castle, (700 ml)",
       "Reference": "Whisky King Castle, (700 ml)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100521",
@@ -556,7 +640,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch Haig, (750ml x 12 Btl)",
       "Reference": "Whisky Scotch Haig, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100523",
@@ -569,7 +655,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch J&B, (700ml x 12 Btl)",
       "Reference": "Whisky Scotch J&B, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100524",
@@ -582,7 +670,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch J&B Reserve, (700ml x 12 Btl)",
       "Reference": "Whisky Scotch J&B Reserve, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100527",
@@ -595,7 +685,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch Johnnie Walker Red, (750ml x 12 Btl)",
       "Reference": "Whisky Scotch Johnnie Walker Red, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100528",
@@ -608,7 +700,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch Johnnie Walker Black, (750ml x 12 Btl)",
       "Reference": "Whisky Scotch Johnnie Walker Black, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100529",
@@ -621,7 +715,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Johnnie Walker Swing, (750ml x 12 Btl)",
       "Reference": "Whisky Johnnie Walker Swing, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100533",
@@ -634,7 +730,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch The Antiquary, (750ml x 12 Btl)",
       "Reference": "Whisky Scotch The Antiquary, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100534",
@@ -647,7 +745,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch Chivas Regal 12Yr, (700ml x 12 Btl)",
       "Reference": "Whisky Scotch Chivas Regal 12Yr, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100535",
@@ -660,7 +760,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Scotch VAT69, (750ml x 12 Btl)",
       "Reference": "VAT69 , Whisky Scotch VAT69, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100551",
@@ -673,7 +775,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Irish John Jameson, (750ml x 12 Btl)",
       "Reference": "Whisky Irish John Jameson, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100552",
@@ -686,7 +790,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Irish John Jameson 12 Yr, (750ml x 12 Btl)",
       "Reference": "Whisky Irish John Jameson 12 Yr, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100555",
@@ -699,7 +805,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Irish Tullamore Dew, (750ml x 12 Btl)",
       "Reference": "Whisky Irish Tullamore Dew, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100561",
@@ -712,7 +820,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Bourbon Early Times, (750ml x 12 Btl)",
       "Reference": "Whisky Bourbon Early Times, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100563",
@@ -725,7 +835,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Bourbon I.W. Harper, (750ml x 12 Btl)",
       "Reference": "I.W. , Whisky Bourbon I.W. Harper, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100565",
@@ -738,7 +850,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Jack Daniel's Black, (750ml x 12 Btl)",
       "Reference": "Whisky Jack Daniel's Black, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100567",
@@ -751,7 +865,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Bourbon Wild Turkey, (750ml x 12 Btl)",
       "Reference": "Whisky Bourbon Wild Turkey, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100571",
@@ -764,7 +880,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Whisky Canadian Club, (750ml x 12 Btl)",
       "Reference": "Whisky Canadian Club, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100901",
@@ -777,7 +895,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine California Red, (750ml x 12 Btl)",
       "Reference": "Wine California Red, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100902",
@@ -790,7 +910,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine California Inglenook Rose, (750ml x 12 Btl)",
       "Reference": "Wine California Inglenook Rose, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100903",
@@ -803,7 +925,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine California White, (750ml x 12 Btl)",
       "Reference": "Wine California White, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100905",
@@ -816,7 +940,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Bordeaux Delor Rouge, (750ml x 12 Btl)",
       "Reference": "Wine Bordeaux Delor Rouge, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100906",
@@ -829,7 +955,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Bordeaux Delor Blanc, (750ml x 12 Btl)",
       "Reference": "Wine Bordeaux Delor Blanc, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100907",
@@ -842,7 +970,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Bordeaux Delor Medoc, (750ml x 12 Btl)",
       "Reference": "Wine Bordeaux Delor Medoc, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100909",
@@ -855,7 +985,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Bordeaux Superieur Rouge, (750ml x 12 Btl)",
       "Reference": "Wine Bordeaux Superieur Rouge, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100910",
@@ -868,7 +1000,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Bordeaux Superieur Blanc, (750ml x 12 Btl)",
       "Reference": "Wine Bordeaux Superieur Blanc, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100913",
@@ -881,7 +1015,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Cuvee D'antan Rouge, (700ml x 12 Btl)",
       "Reference": "Wine Cuvee D'antan Rouge, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100914",
@@ -894,7 +1030,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Cuvee D'antan Rose, (700ml x 12 Btl)",
       "Reference": "Wine Cuvee D'antan Rose, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100915",
@@ -907,7 +1045,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Cuvee D'antan Blanc, (700ml x 12 Btl)",
       "Reference": "Wine Cuvee D'antan Blanc, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100917",
@@ -920,7 +1060,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Moselle Green Gold, (700ml x 12 Btl)",
       "Reference": "Wine Moselle Green Gold, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100921",
@@ -933,7 +1075,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Winre Orsenhag Liebfraumilch, (700ml x 12 Btl)",
       "Reference": "Winre Orsenhag Liebfraumilch, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100923",
@@ -946,7 +1090,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Tafel Kellerwine, (700ml x 12 Btl)",
       "Reference": "Wine Tafel Kellerwine, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100932",
@@ -959,7 +1105,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Portuguese Mateus Rose, (1000ml x 12 Btl)",
       "Reference": "Wine Portuguese Mateus Rose, (1000ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100933",
@@ -972,7 +1120,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Red, (750 ml)",
       "Reference": "Wine Red, (750 ml)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100934",
@@ -985,7 +1135,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine White, (750 ml)",
       "Reference": "Wine White, (750 ml)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100935",
@@ -998,7 +1150,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Red, (3 Ltr)",
       "Reference": "Wine Red, (3 Ltr)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100936",
@@ -1011,7 +1165,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine White, (3 Ltr)",
       "Reference": "Wine White, (3 Ltr)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100937",
@@ -1024,7 +1180,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Wine Sparkling, (750 ml)",
       "Reference": "Wine Sparkling, (750 ml)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100941",
@@ -1037,7 +1195,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Brandy Comte De Laffitte Extra Decanter, (700ml x 12 Btl)",
       "Reference": "Brandy Comte De Laffitte Extra Decanter, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100943",
@@ -1050,7 +1210,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Brandy De Valcourt Napoleon, (750ml x 12 Btl)",
       "Reference": "Brandy De Valcourt Napoleon, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100955",
@@ -1063,7 +1225,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cognac F.O.V., (700ml x 12 Btl)",
       "Reference": "F.O.V. , Cognac F.O.V., (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100956",
@@ -1076,7 +1240,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cognac Hine VSOP, (700ml x 12 Btl)",
       "Reference": "VSOP , Cognac Hine VSOP, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100957",
@@ -1089,7 +1255,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cognac Hine Arc De Triomphe, (700ml x 12 Btl)",
       "Reference": "Cognac Hine Arc De Triomphe, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100958",
@@ -1102,7 +1270,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cognac Hine Napoleon, (700ml x 12 Btl)",
       "Reference": "Cognac Hine Napoleon, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100961",
@@ -1115,7 +1285,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cognac Martell 3-Star, (700ml x 6 Btl)",
       "Reference": "3 , Cognac Martell 3-Star, (700ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100965",
@@ -1128,7 +1300,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cognac Remy Martin VSOP, (700ml x 6 Btl)",
       "Reference": "VSOP , Cognac Remy Martin VSOP, (700ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100966",
@@ -1141,7 +1315,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cognac Remy Martin Napoleon, (700ml x 6 Btl)",
       "Reference": "Cognac Remy Martin Napoleon, (700ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100967",
@@ -1154,7 +1330,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cognac Remy Martin Centaure XO, (700ml x 12 Btl)",
       "Reference": "XO , Cognac Remy Martin Centaure XO, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100968",
@@ -1167,7 +1345,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cognac Remy Martin Centaure EXTRA, (700ml x 6 Btl)",
       "Reference": "Cognac Remy Martin Centaure EXTRA, (700ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100969",
@@ -1180,7 +1360,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cognac Remy Martin Centaure Crystal, (700ml x 6 Btl)",
       "Reference": "Cognac Remy Martin Centaure Crystal, (700ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100970",
@@ -1193,7 +1375,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cognac Remy Martin Centaure Limoges, (700ml x 6 Btl)",
       "Reference": "Cognac Remy Martin Centaure Limoges, (700ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100971",
@@ -1206,7 +1390,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cognac Remy Martin Louis XIII, (700ml x 6 Btl)",
       "Reference": "13 , Cognac Remy Martin Louis XIII, (700ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100991",
@@ -1219,7 +1405,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Sherry W.&Humbery Dry Sack, (700ml x 6 Btl)",
       "Reference": "W.& , Sherry W.&Humbery Dry Sack, (700ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "100996",
@@ -1232,7 +1420,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Sherry Harveys Bristol Cream, (750ml x 6 Btl)",
       "Reference": "Sherry Harveys Bristol Cream, (750ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101101",
@@ -1245,7 +1435,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Akvavit Aalborg, (700ml x 12 Btl)",
       "Reference": "Akvavit Aalborg, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101105",
@@ -1258,7 +1450,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Dry Gin Beefeater, (750ml x 12 Btl)",
       "Reference": "Dry Gin Beefeater, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101107",
@@ -1271,7 +1465,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Dry Gin Gordon's, (750ml x 12 Btl)",
       "Reference": "Dry Gin Gordon's, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101115",
@@ -1284,7 +1480,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Rum Bacardi Gold, (750ml x 12 Btl)",
       "Reference": "Rum Bacardi Gold, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101116",
@@ -1297,7 +1495,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Rum Bacardi Silver, (750ml x 12 Btl)",
       "Reference": "Rum Bacardi Silver, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101117",
@@ -1310,7 +1510,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Rum Bacardi Black, (750ml x 12 Btl)",
       "Reference": "Rum Bacardi Black, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101121",
@@ -1323,7 +1525,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Vermouth Cinzano Dry, (750ml x 12 Btl)",
       "Reference": "Vermouth Cinzano Dry, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101122",
@@ -1336,7 +1540,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Vermouth Cinzano Red, (1000ml x 12 Btl)",
       "Reference": "Vermouth Cinzano Red, (1000ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101124",
@@ -1349,7 +1555,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Vermouth Martini Dry, (1000ml x 12 Btl)",
       "Reference": "Vermouth Martini Dry, (1000ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101125",
@@ -1362,7 +1570,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Vermouth Martini Rosso, (1000ml x 12 Btl)",
       "Reference": "Vermouth Martini Rosso, (1000ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101126",
@@ -1375,7 +1585,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Vermouth Noilly Prat Dry, (1000ml x 12 Btl)",
       "Reference": "Vermouth Noilly Prat Dry, (1000ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101127",
@@ -1388,7 +1600,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Vermouth Noilly Prat Rouge, (1000ml x 12 Btl)",
       "Reference": "Vermouth Noilly Prat Rouge, (1000ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101131",
@@ -1401,7 +1615,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Vodka Smirnoff 80PF, (750ml x 12 Btl)",
       "Reference": "80 , Vodka Smirnoff 80PF, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101132",
@@ -1414,7 +1630,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Vodka Smirnoff 100ProoF, (750ml x 12 Btl)",
       "Reference": "100 , Vodka Smirnoff 100ProoF, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101134",
@@ -1427,7 +1645,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Vodka Absolute, (1000ml)",
       "Reference": "Vodka Absolute, (1000ml)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101151",
@@ -1440,7 +1660,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Liquor Campari, (1000ml x 12 Btl)",
       "Reference": "Liquor Campari, (1000ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101153",
@@ -1453,7 +1675,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Liquor Cherry Peter Heering, (700ml x 12 Btl)",
       "Reference": "Liquor Cherry Peter Heering, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101157",
@@ -1466,7 +1690,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Liquor Coffee Kahlua, (700ml x 12 Btl)",
       "Reference": "Liquor Coffee Kahlua, (700ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101159",
@@ -1479,7 +1705,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Liquor Drambuie, (750ml x 12 Btl)",
       "Reference": "Liquor Drambuie, (750ml x 12 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101161",
@@ -1492,7 +1720,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Liquor Korean Ginseng Ju, (720ml x 6 Btl)",
       "Reference": "Liquor Korean Ginseng Ju, (720ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101301",
@@ -1505,7 +1735,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Japan Brandy Suntory VO, (640ml)",
       "Reference": "VO , Japan Brandy Suntory VO, (640ml)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101362",
@@ -1518,7 +1750,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Sake Japanese Delux, (1800ml)",
       "Reference": "Sake Japanese Delux, (1800ml)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101363",
@@ -1531,7 +1765,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Sake Japanese Delux, (720ml)",
       "Reference": "Sake Japanese Delux, (720ml)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101377",
@@ -1544,7 +1780,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Spirit Japanese Shouchu (Mugi), (1.8 Ltr)",
       "Reference": "( ) , Spirit Japanese Shouchu (Mugi), (1.8 Ltr)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101378",
@@ -1557,7 +1795,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Spirit Japanese Shouchu (IMO), (1.8 Ltr)",
       "Reference": "(IMO) , Spirit Japanese Shouchu (IMO), (1.8 Ltr)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101379",
@@ -1570,7 +1810,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Spirit Japanese Shouchu (Soba), (1.8 Ltr)",
       "Reference": "( ) , Spirit Japanese Shouchu (Soba), (1.8 Ltr)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101501",
@@ -1583,7 +1825,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Coca Cola, (250ml x 30 Tin)",
       "Reference": "Coca Cola, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101502",
@@ -1596,7 +1840,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Coca Cola, (350ml x 24 Tin)",
       "Reference": "Coca Cola, (350ml x 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101505",
@@ -1609,7 +1855,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Pepsi Cola, (250ml x 30 Tin)",
       "Reference": "Pepsi Cola, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101506",
@@ -1622,7 +1870,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Pepsi Cola, (330ml x 24 Tin)",
       "Reference": "Pepsi Cola, (330ml x 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101507",
@@ -1635,7 +1885,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Pepsi Cola Light (Less Sugar), (250ml x 30 Tin)",
       "Reference": "( ) , Pepsi Cola Light (Less Sugar), (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101508",
@@ -1648,7 +1900,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Pepsi Cola Light (Non Sugar), (250ml x 30 Tin)",
       "Reference": "( ) , Pepsi Cola Light (Non Sugar), (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101511",
@@ -1661,7 +1915,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Grapeade Fanta, (250ml x 30 Tin)",
       "Reference": "Grapeade Fanta, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101512",
@@ -1674,7 +1930,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Grapeade Fanta, (350ml x 24 Tin)",
       "Reference": "Grapeade Fanta, (350ml x 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101513",
@@ -1687,7 +1945,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Grapeade Miranda, (250ml x 30 Tin)",
       "Reference": "Grapeade Miranda, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101517",
@@ -1700,7 +1960,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Grapefruit Soda Suntory Pop, (250ml x 30 Tin)",
       "Reference": "Grapefruit Soda Suntory Pop, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101521",
@@ -1713,7 +1975,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Lemonade Fanta, (250ml x 30 Tin)",
       "Reference": "Lemonade Fanta, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101522",
@@ -1726,7 +1990,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Lemonade Miranda, (250ml x 30 Tin)",
       "Reference": "Lemonade Miranda, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101523",
@@ -1739,7 +2005,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Lemonade Royal Island, (354ml x 30 Tin)",
       "Reference": "Lemonade Royal Island, (354ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101531",
@@ -1752,7 +2020,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Orangeade Fanta, (250ml x 30 Tin)",
       "Reference": "Orangeade Fanta, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101532",
@@ -1765,7 +2035,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Orangeade Fanta, (350ml x 24 Tin)",
       "Reference": "Orangeade Fanta, (350ml x 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101533",
@@ -1778,7 +2050,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Orangeade Miranda, (250ml x 30 Tin)",
       "Reference": "Orangeade Miranda, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101534",
@@ -1791,7 +2065,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Orangeade Nora Solo, (250ml x 24 Btl)",
       "Reference": "Orangeade Nora Solo, (250ml x 24 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101535",
@@ -1804,7 +2080,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Orangeade Royal Island, (354ml x 24 Tin)",
       "Reference": "Orangeade Royal Island, (354ml x 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101541",
@@ -1817,7 +2095,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Seven Up, (250ml x 30 Tin)",
       "Reference": "Seven Up, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101542",
@@ -1830,7 +2110,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Seven Up, (330ml x 24 Tin)",
       "Reference": "Seven Up, (330ml x 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101545",
@@ -1843,7 +2125,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Sprite Coke, (250ml x 30 Tin)",
       "Reference": "Sprite Coke, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101551",
@@ -1856,7 +2140,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Bitter Lemon, (330ml x 24 Tin)",
       "Reference": "Bitter Lemon, (330ml x 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101552",
@@ -1869,7 +2155,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Bitter Lemon, (250ml x 24 Btl)",
       "Reference": "Bitter Lemon, (250ml x 24 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101561",
@@ -1882,7 +2170,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Ginger Ale Canadadry, (250ml x 30 Tin)",
       "Reference": "Ginger Ale Canadadry, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101562",
@@ -1895,7 +2185,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Ginger Ale Canadadry, (210ml x 24 Btl)",
       "Reference": "Ginger Ale Canadadry, (210ml x 24 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101565",
@@ -1908,7 +2200,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Apple Cider Sparkling, (340ml x 24 Tin)",
       "Reference": "Apple Cider Sparkling, (340ml x 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101566",
@@ -1921,7 +2215,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Apple Cider Sparkling, (200ml x 24 Btl)",
       "Reference": "Apple Cider Sparkling, (200ml x 24 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101571",
@@ -1934,7 +2230,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Mineral Water Fuji, (780ml x 20 Btl)",
       "Reference": "Mineral Water Fuji, (780ml x 20 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101573",
@@ -1947,7 +2245,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Mineral Water, (900ml x 15 Btl)",
       "Reference": "Mineral Water, (900ml x 15 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101574",
@@ -1960,7 +2260,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Mineral Water, (1000ml x 6 Btl)",
       "Reference": "Mineral Water, (1000ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101577",
@@ -1973,7 +2275,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Mineral Water in Tetra Pack, (500ml x 6 Btl)",
       "Reference": "Mineral Water in Tetra Pack, (500ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101578",
@@ -1986,7 +2290,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Mineral Water in Tetra Pack, (1000ml x 6 Btl)",
       "Reference": "Mineral Water in Tetra Pack, (1000ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101579",
@@ -1999,7 +2305,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Mineral Water in Tetra Pack, (1500ml x 6 Btl)",
       "Reference": "Mineral Water in Tetra Pack, (1500ml x 6 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101581",
@@ -2012,7 +2320,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Soda Water Canadadry, (250ml x 30 Tin)",
       "Reference": "Soda Water Canadadry, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101582",
@@ -2025,7 +2335,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Soda Water, (200ml x 24 Btl)",
       "Reference": "Soda Water, (200ml x 24 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101585",
@@ -2038,7 +2350,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Isotonic Drink Pocari Sweat, (250ml x 30'S)",
       "Reference": "Isotonic Drink Pocari Sweat, (250ml x 30'S)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101591",
@@ -2051,7 +2365,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tonic Water Canadadry, (330ml x 24 Tin)",
       "Reference": "Tonic Water Canadadry, (330ml x 24 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101592",
@@ -2064,7 +2380,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tonic Water, (190ml x 24 Btl)",
       "Reference": "Tonic Water, (190ml x 24 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101593",
@@ -2077,7 +2395,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tonic Water Canadadry, (250ml x 30 Tin)",
       "Reference": "Tonic Water Canadadry, (250ml x 30 Tin)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101594",
@@ -2090,7 +2410,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tonic Water Canadadry, (207ml x 24 Btl)",
       "Reference": "Tonic Water Canadadry, (207ml x 24 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101597",
@@ -2103,7 +2425,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tonic Water Wilkinson, (190ml x 24 Btl)",
       "Reference": "Tonic Water Wilkinson, (190ml x 24 Btl)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101701",
@@ -2116,7 +2440,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Camel REG w/o Filter, (200's)",
       "Reference": "Cigarettes Camel REG w/o Filter, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101702",
@@ -2129,7 +2455,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Camel FK, (200's)",
       "Reference": "FK , Cigarettes Camel FK, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101703",
@@ -2142,7 +2470,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Kent FK, (200's)",
       "Reference": "FK , Cigarettes Kent FK, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101704",
@@ -2155,7 +2485,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Malboro FK Soft Pack, (200's)",
       "Reference": "FK , Cigarettes Malboro FK Soft Pack, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101705",
@@ -2168,7 +2500,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Salem FK, (200's)",
       "Reference": "FK , Cigarettes Salem FK, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101706",
@@ -2181,7 +2515,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Malboro Light Menthol KS Box",
       "Reference": "KS , Cigarettes Malboro Light Menthol KS Box"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101707",
@@ -2194,7 +2530,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Winston FK, (200's)",
       "Reference": "FK , Cigarettes Winston FK, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101708",
@@ -2207,7 +2545,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Malboro Box Hard Pack, (200's)",
       "Reference": "Cigarettes Malboro Box Hard Pack, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101711",
@@ -2220,7 +2560,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Malboro Light FK, (200's)",
       "Reference": "FK , Cigarettes Malboro Light FK, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101714",
@@ -2233,7 +2575,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Malboro Menthol KS Box",
       "Reference": "KS , Cigarettes Malboro Menthol KS Box"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101721",
@@ -2246,7 +2590,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Kent Super Light Box",
       "Reference": "Cigarettes Kent Super Light Box"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101723",
@@ -2259,7 +2605,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Salem FSK, (200's)",
       "Reference": "FSK , Cigarettes Salem FSK, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101741",
@@ -2272,7 +2620,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Benson & Hedges SF, (200's)",
       "Reference": "SF , Cigarettes Benson & Hedges SF, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101742",
@@ -2285,7 +2635,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Rothmans FK, (200's)",
       "Reference": "FK , Cigarettes Rothmans FK, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101743",
@@ -2298,7 +2650,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes State Express 555, (200's)",
       "Reference": "555 , Cigarettes State Express 555, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101745",
@@ -2311,7 +2665,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes L&M Red Label, (210's)",
       "Reference": "L&M , Cigarettes L&M Red Label, (210's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101751",
@@ -2324,7 +2680,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Dunhill Int'l Filter, (200's)",
       "Reference": "Cigarettes Dunhill Int'l Filter, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101752",
@@ -2337,7 +2695,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes Rothmans Int'l Filter, (200's)",
       "Reference": "Cigarettes Rothmans Int'l Filter, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101761",
@@ -2350,7 +2710,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tobacco Pettero's Blanding No.3, (200 grm)",
       "Reference": "No.3 , Tobacco Pettero's Blanding No.3, (200 grm)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101762",
@@ -2363,7 +2725,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tobacco Tiedemanns Gul Mix No.2, (200 grm)",
       "Reference": "No.2 , Tobacco Tiedemanns Gul Mix No.2, (200 grm)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101779",
@@ -2376,7 +2740,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes L&M Box",
       "Reference": "L&M , Cigarettes L&M Box"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101781",
@@ -2389,7 +2755,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarillo Roi Tan Tips, (5's)",
       "Reference": "Cigarillo Roi Tan Tips, (5's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101782",
@@ -2402,7 +2770,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigar Coronas Sumatra, (25's)",
       "Reference": "Cigar Coronas Sumatra, (25's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101783",
@@ -2415,7 +2785,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigar King Edward Panetela Deluxe, (5's)",
       "Reference": "Cigar King Edward Panetela Deluxe, (5's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101784",
@@ -2428,7 +2800,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigar Old Port, (5's)",
       "Reference": "Cigar Old Port, (5's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101790",
@@ -2441,7 +2815,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Cigarettes L&M Blue Label, (210's)",
       "Reference": "L&M , Cigarettes L&M Blue Label, (210's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101791",
@@ -2454,7 +2830,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tobacco Argosy Black, (50 grm)",
       "Reference": "Tobacco Argosy Black, (50 grm)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101792",
@@ -2467,7 +2845,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tobacco Borkum Riff Cherry Canendish",
       "Reference": "Tobacco Borkum Riff Cherry Canendish"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101793",
@@ -2480,7 +2860,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tobacco Erinmore Mixture, (50 grm)",
       "Reference": "Tobacco Erinmore Mixture, (50 grm)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101794",
@@ -2493,7 +2875,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tobacco Skandinavik Aromatic, (50 gmr)",
       "Reference": "Tobacco Skandinavik Aromatic, (50 gmr)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101795",
@@ -2506,7 +2890,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tobacco Sinclairs Navy Flake, (50 gmr)",
       "Reference": "Tobacco Sinclairs Navy Flake, (50 gmr)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101796",
@@ -2519,7 +2905,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tobacco Sweet Dublin Black Cavendish",
       "Reference": "Tobacco Sweet Dublin Black Cavendish"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101797",
@@ -2532,7 +2920,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Tobacco Sweet Dublin Irish Whiskey, (50 grm)",
       "Reference": "Tobacco Sweet Dublin Irish Whiskey, (50 grm)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101902",
@@ -2545,7 +2935,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Japan Cigarettes Hi-Lite Soft Pack, (200's)",
       "Reference": "Japan Cigarettes Hi-Lite Soft Pack, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101915",
@@ -2558,7 +2950,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Japan Cigarettes Peace KS, (200's)",
       "Reference": "KS , Japan Cigarettes Peace KS, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101916",
@@ -2571,7 +2965,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Japan Cigarettes Seven Stars King Hard Pack, (200's)",
       "Reference": "Japan Cigarettes Seven Stars King Hard Pack, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101931",
@@ -2584,7 +2980,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Japan Cigarettes Winston Cabin Red Box 5MG",
       "Reference": "5MG , Japan Cigarettes Winston Cabin Red Box 5MG"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101939",
@@ -2597,7 +2995,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Japan Cigarettes Winston Caster white Box 3MG",
       "Reference": "3MG , Japan Cigarettes Winston Caster white Box 3MG"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101980",
@@ -2610,7 +3010,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Japan Cigarettes Mevius Box, (200's)",
       "Reference": "Japan Cigarettes Mevius Box, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101981",
@@ -2623,7 +3025,9 @@
       "Catalog Section": "Chapter 10",
       "Description": "Japan Cigarettes Mevius Light Box, (200's)",
       "Reference": "Japan Cigarettes Mevius Light Box, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "101982",
@@ -2636,6 +3040,8 @@
       "Catalog Section": "Chapter 10",
       "Description": "Japan Cigarettes Mevius Super Light Box, (200's)",
       "Reference": "Japan Cigarettes Mevius Super Light Box, (200's)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   }
 ]

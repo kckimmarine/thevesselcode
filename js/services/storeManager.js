@@ -5,7 +5,7 @@ const TVC_StoreManager = (function () {
     const SEARCH_LIMIT = 60_000;
     const BROWSE_PREVIEW = 500;
     const SEARCH_TARGET_MS = 50;
-    const CATALOG_SOURCE_VERSION = '20260919-post-merge-refresh';
+    const CATALOG_SOURCE_VERSION = '20260920-industrial-tags';
 
     const CHAPTER_CATEGORY = {
         '33': 'Safety Equipment',
@@ -102,10 +102,36 @@ const TVC_StoreManager = (function () {
         return _lastSearch;
     }
 
+    function tokenizeSearchQuery(query) {
+        return String(query || '')
+            .toLowerCase()
+            .split(/\s+/)
+            .map((t) => t.replace(/[^a-z0-9]/g, ''))
+            .filter(Boolean);
+    }
+
+    function rowMatchesTextQuery(row, qLower, tokens) {
+        const code = String(row.impa_code || row.code || '');
+        const cat = String(row.category || '').toLowerCase();
+        const hay = String(
+            row.industrial_search_lower || row.name_lower || row.name || '',
+        )
+            .toLowerCase()
+            .replace(/[^a-z0-9\s]/g, ' ')
+            .replace(/\s+/g, ' ');
+        if (tokens.length > 1) {
+            if (tokens.every((tok) => hay.includes(tok))) return true;
+            return false;
+        }
+        if (code.includes(qLower) || hay.includes(qLower) || cat.includes(qLower)) return true;
+        return false;
+    }
+
     function searchCatalogMemory(query, { limit = SEARCH_LIMIT } = {}) {
         const started = performance.now();
         const q = String(query || '').trim();
         const qLower = q.toLowerCase();
+        const tokens = tokenizeSearchQuery(q);
         const idx = _memoryIndex || [];
         let items = [];
 
@@ -119,12 +145,7 @@ const TVC_StoreManager = (function () {
         } else {
             for (let i = 0; i < idx.length && items.length < limit; i++) {
                 const row = idx[i];
-                const code = String(row.impa_code || row.code || '');
-                const name = String(row.name || '').toLowerCase();
-                const cat = String(row.category || '').toLowerCase();
-                if (code.includes(q) || name.includes(qLower) || cat.includes(qLower)) {
-                    items.push(row);
-                }
+                if (rowMatchesTextQuery(row, qLower, tokens)) items.push(row);
             }
         }
 
@@ -149,14 +170,10 @@ const TVC_StoreManager = (function () {
                 if (code.startsWith(q)) items.push(idx[i]);
             }
         } else {
+            const tokens = tokenizeSearchQuery(q);
             for (let i = 0; i < idx.length; i++) {
                 const row = idx[i];
-                const code = String(row.impa_code || row.code || '');
-                const name = String(row.name || '').toLowerCase();
-                const cat = String(row.category || '').toLowerCase();
-                if (code.includes(q) || name.includes(qLower) || cat.includes(qLower)) {
-                    items.push(row);
-                }
+                if (rowMatchesTextQuery(row, qLower, tokens)) items.push(row);
             }
         }
 
@@ -186,6 +203,10 @@ const TVC_StoreManager = (function () {
             plate_no: ui.plate_no,
             rob: ui.rob,
             specs: ui.specs,
+            industrial_tags: ui.industrial_tags,
+            land_compat_name: ui.land_compat_name,
+            industrial_search_lower: ui.industrial_search_lower,
+            name_lower: ui.industrial_search_lower || String(ui.name || '').toLowerCase(),
         };
     }
 
@@ -262,6 +283,8 @@ const TVC_StoreManager = (function () {
             plate_id: raw.p || '',
             plate_no: raw.p || '',
             specs: raw.specs && typeof raw.specs === 'object' ? { ...raw.specs } : {},
+            industrial_tags: Array.isArray(raw.industrial_tags) ? [...raw.industrial_tags] : [],
+            land_compat_name: String(raw.land_compat_name || '').trim(),
         };
     }
 
@@ -415,31 +438,39 @@ const TVC_StoreManager = (function () {
                 map: toLightRow,
             });
         } else {
-            const range = IDBKeyRange.bound(qLower, `${qLower}\uffff`);
-            items = await TVC_DB.cursorMap('impa_master', {
-                indexName: 'by_name_lower',
-                range,
-                limit,
-                map: toLightRow,
-            });
-            if (items.length < limit && qLower.length >= 2) {
-                const bucket = qLower.slice(0, 2);
-                const extra = await TVC_DB.cursorMap('impa_master', {
-                    indexName: 'by_name_lower',
-                    range: IDBKeyRange.bound(bucket, `${bucket}\uffff`),
-                    limit: limit * 2,
-                    map: row => {
-                        const name = String(row?.name_lower || row?.name || '').toLowerCase();
-                        if (!name.includes(qLower)) return null;
-                        return toLightRow(row);
-                    },
+            const tokens = tokenizeSearchQuery(q);
+            if (tokens.length > 1) {
+                items = await TVC_DB.cursorMap('impa_master', {
+                    limit: limit * 4,
+                    map: row => (rowMatchesTextQuery(row, qLower, tokens) ? toLightRow(row) : null),
                 });
-                const seen = new Set(items.map(i => i.impa_code));
-                for (const row of extra) {
-                    if (!row || seen.has(row.impa_code)) continue;
-                    items.push(row);
-                    seen.add(row.impa_code);
-                    if (items.length >= limit) break;
+                items = items.filter(Boolean).slice(0, limit);
+            } else {
+                const range = IDBKeyRange.bound(qLower, `${qLower}\uffff`);
+                items = await TVC_DB.cursorMap('impa_master', {
+                    indexName: 'by_name_lower',
+                    range,
+                    limit,
+                    map: toLightRow,
+                });
+                if (items.length < limit && qLower.length >= 2) {
+                    const bucket = qLower.slice(0, 2);
+                    const extra = await TVC_DB.cursorMap('impa_master', {
+                        indexName: 'by_name_lower',
+                        range: IDBKeyRange.bound(bucket, `${bucket}\uffff`),
+                        limit: limit * 2,
+                        map: row => {
+                            if (!rowMatchesTextQuery(row, qLower, tokens)) return null;
+                            return toLightRow(row);
+                        },
+                    });
+                    const seen = new Set(items.map(i => i.impa_code));
+                    for (const row of extra) {
+                        if (!row || seen.has(row.impa_code)) continue;
+                        items.push(row);
+                        seen.add(row.impa_code);
+                        if (items.length >= limit) break;
+                    }
                 }
             }
         }
