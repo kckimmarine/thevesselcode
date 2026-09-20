@@ -3,9 +3,13 @@
     background: #f8fafc;
 }
 
-/* Beat marketing-theme .home-hero.mkt-hero { background-image: none } (0,2,0) */
-.srk-page section.home-hero.mkt-hero.repair-hero-section {
+.srk-page .repair-hero-section {
     display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: clamp(2.5rem, 5vw, 3.5rem) max(20px, calc((100vw - 1180px) / 2 + 20px));
+    box-sizing: border-box;
     background-color: #0a0f1d;
     background-image:
         linear-gradient(rgba(10, 15, 29, 0.88), rgba(15, 23, 42, 0.95)),
@@ -16,26 +20,27 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.repair-hero-preload {
-    display: none;
-}
-
-.repair-hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 72rem;
+.repair-hero-inner {
+    width: min(100%, 1180px);
     margin: 0 auto;
 }
 
-.srk-page .repair-hero-section .home-section-head h1,
 .srk-page .repair-hero-section #srkTitle {
+    margin: 0 0 12px;
+    font-size: clamp(32px, 4vw, 44px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
     color: #f8fafc;
     text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
 }
 
 .srk-page .repair-hero-section .srk-summary,
-.srk-page .repair-hero-section .home-section-head .home-section-lead {
+.srk-page .repair-hero-section .home-section-lead {
     color: #e2e8f0;
+    max-width: 72ch;
+    font-size: 1.05rem;
+    line-height: 1.65;
 }
 
 .srk-page .repair-hero-section .srk-summary strong {
@@ -55,12 +60,6 @@
     color: #0f172a;
     background: linear-gradient(90deg, #fde68a 0%, #fbbf24 100%);
     border: 1px solid rgba(180, 83, 9, 0.25);
-}
-
-.srk-summary {
-    max-width: 72ch;
-    font-size: 1.05rem;
-    line-height: 1.65;
 }
 
 .srk-page .home-section .mkt-prose {
