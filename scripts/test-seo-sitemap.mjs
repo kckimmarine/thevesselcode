@@ -211,6 +211,9 @@ check('core sitemap has home', coreSitemap.includes('<loc>https://www.thevesselc
 check('core sitemap has toolkit', coreSitemap.includes('<loc>https://www.thevesselcode.com/toolkit</loc>'));
 check('core sitemap has contact-us', coreSitemap.includes('<loc>https://www.thevesselcode.com/contact-us</loc>'));
 check('core sitemap has ship-repair-korea', coreSitemap.includes('<loc>https://www.thevesselcode.com/ship-repair-korea</loc>'));
+check('core sitemap has sm', coreSitemap.includes('<loc>https://www.thevesselcode.com/sm</loc>'));
+check('core sitemap has services', coreSitemap.includes('<loc>https://www.thevesselcode.com/services</loc>'));
+check('core sitemap has insights', coreSitemap.includes('<loc>https://www.thevesselcode.com/insights</loc>'));
 
 const storeChunk = readFileSync(join(root, 'public', 'sitemap-store-1.xml'), 'utf8');
 assertValidXml('sitemap-store-1.xml', storeChunk);

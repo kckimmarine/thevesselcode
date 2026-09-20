@@ -126,6 +126,10 @@
                 okMsg = t('contact.status.okRfq') || `${okMsg} Our team will send pricing within 12 hours.`;
             }
             setStatus(status, 'success', okMsg);
+            globalThis.TVC_MarketingAnalytics?.trackLeadFormSubmit({
+                inquiry_type: rawType || data.inquiryType,
+                delivery: payload.delivery?.method || 'email',
+            });
             if (rawType === 'rfq' && payload.rfqDraftUrl) {
                 showRfqDraftActions(payload);
             }
