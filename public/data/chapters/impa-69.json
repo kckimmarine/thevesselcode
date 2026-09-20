@@ -10,7 +10,9 @@
       "Catalog Section": "Chapter 69",
       "Description": "Old Model, Old Model, Slide-Loc Lifting Points, Unc Thread, Sl-150, Bolt Size: 3/8-16x1",
       "Reference": "( ) , Old Model, Old Model, Slide-Loc Lifting Points, Unc Thread, Sl-150, Bolt Size: 3/8-16x1"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "234486",
@@ -23,7 +25,9 @@
       "Catalog Section": "Chapter 69",
       "Description": "Old Model, Old Model, Slide-Loc Lifting Points, Unc Thread, Sl-150, Bolt Size: 1/2-13x1",
       "Reference": "( ) , Old Model, Old Model, Slide-Loc Lifting Points, Unc Thread, Sl-150, Bolt Size: 1/2-13x1"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "234487",
@@ -36,7 +40,9 @@
       "Catalog Section": "Chapter 69",
       "Description": "Old Model, Slide-Loc Lifting Points, Unc Thread, Sl-150, Bolt Size: 5/8-11x1-5/8",
       "Reference": "( ) , Old Model, Slide-Loc Lifting Points, Unc Thread, Sl-150, Bolt Size: 5/8-11x1-5/8"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "234488",
@@ -49,7 +55,9 @@
       "Catalog Section": "Chapter 69",
       "Description": "Old Model, Slide-Loc Lifting Points, Unc Thread, Sl-150, Bolt Size: 3/4-10x2",
       "Reference": "( ) , Old Model, Slide-Loc Lifting Points, Unc Thread, Sl-150, Bolt Size: 3/4-10x2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "234489",
@@ -62,7 +70,9 @@
       "Catalog Section": "Chapter 69",
       "Description": "Old Model, Slide-Loc Lifting Points, Unc Thread, Sl-150, Bolt Size: 7/8-9x2",
       "Reference": "( ) , Old Model, Slide-Loc Lifting Points, Unc Thread, Sl-150, Bolt Size: 7/8-9x2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "234490",
@@ -75,7 +85,9 @@
       "Catalog Section": "Chapter 69",
       "Description": "Old Model, Slide-Loc Lifting Points, Unc Thread, Sl-150, Bolt Size: 1-8x3",
       "Reference": "( ) , Old Model, Slide-Loc Lifting Points, Unc Thread, Sl-150, Bolt Size: 1-8x3"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "234491",
@@ -88,7 +100,9 @@
       "Catalog Section": "Chapter 69",
       "Description": "Slide-Loc Lifting Points, Metric Thread, Sl-150, Bolt Size: M10x1.5 x25",
       "Reference": "( ) , Slide-Loc Lifting Points, Metric Thread, Sl-150, Bolt Size: M10x1.5 x25"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "234492",
@@ -101,7 +115,9 @@
       "Catalog Section": "Chapter 69",
       "Description": "Slide-Loc Lifting Points, Metric Thread, Sl-150, Bolt Size: M12x1.75x30",
       "Reference": "( ) , Slide-Loc Lifting Points, Metric Thread, Sl-150, Bolt Size: M12x1.75x30"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "234493",
@@ -114,7 +130,9 @@
       "Catalog Section": "Chapter 69",
       "Description": "Slide-Loc Lifting Points, Metric Thread, Sl-150, Bolt Size: M16x2x40",
       "Reference": "( ) , Slide-Loc Lifting Points, Metric Thread, Sl-150, Bolt Size: M16x2x40"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "234494",
@@ -127,7 +145,9 @@
       "Catalog Section": "Chapter 69",
       "Description": "Slide-Loc Lifting Points, Metric Thread, Sl-150, Bolt Size: M20x2.5 x50",
       "Reference": "( ) , Slide-Loc Lifting Points, Metric Thread, Sl-150, Bolt Size: M20x2.5 x50"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "234495",
@@ -140,7 +160,9 @@
       "Catalog Section": "Chapter 69",
       "Description": "Slide-Loc Lifting Points, Metric Thread, Sl-150, Bolt Size: M24x3x60",
       "Reference": "( ) , Slide-Loc Lifting Points, Metric Thread, Sl-150, Bolt Size: M24x3x60"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "613874",
@@ -153,7 +175,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 6 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 6 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "6 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613881",
@@ -166,7 +193,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 6.4 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 6.4 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "6.4 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613882",
@@ -179,7 +211,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 8 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 8 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "8 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613883",
@@ -192,7 +229,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 9.5 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 9.5 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "9.5 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613884",
@@ -205,7 +247,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 10 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 10 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "10 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613897",
@@ -218,7 +265,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 12 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 12 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "12 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613898",
@@ -231,7 +283,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 12.7 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 12.7 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "12.7 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613899",
@@ -244,7 +301,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 13.5 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 13.5 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "13.5 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613900",
@@ -257,7 +319,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 14 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 14 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "14 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613901",
@@ -270,7 +337,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 15 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 15 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "15 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613902",
@@ -283,7 +355,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 16 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 16 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "16 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613903",
@@ -296,7 +373,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 17.2 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 17.2 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "17.2 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613904",
@@ -309,7 +391,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 18 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 18 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "18 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613905",
@@ -322,7 +409,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 19 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 19 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "19 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613906",
@@ -335,7 +427,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 20 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 20 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "20 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613907",
@@ -348,7 +445,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 21.3 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 21.3 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "21.3 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613908",
@@ -361,7 +463,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 22 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 22 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "22 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613909",
@@ -374,7 +481,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 23 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 23 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "23 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613910",
@@ -387,7 +499,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 25 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 25 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "25 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613911",
@@ -400,7 +517,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 25.4 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 25.4 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "25.4 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613912",
@@ -413,7 +535,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 26.9 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 26.9 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "26.9 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613913",
@@ -426,7 +553,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 28 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 28 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "28 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613914",
@@ -439,7 +571,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 30 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 30 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "30 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613915",
@@ -452,7 +589,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 32 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 32 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "32 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613916",
@@ -465,7 +607,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 33.7 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 33.7 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "33.7 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613917",
@@ -478,7 +625,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 35 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 35 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "35 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613918",
@@ -491,7 +643,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 38 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 38 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "38 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613919",
@@ -504,7 +661,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 40 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 40 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "40 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613920",
@@ -517,7 +679,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 42 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 42 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "42 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613921",
@@ -530,7 +697,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 44.5 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 44.5 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "44.5 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613922",
@@ -543,7 +715,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 48.3 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 48.3 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "48.3 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613923",
@@ -556,7 +733,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 50.8 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 50.8 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "50.8 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613924",
@@ -569,7 +751,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 57.2 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 57.2 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "57.2 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613925",
@@ -582,7 +769,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 60.3 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 60.3 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "60.3 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613926",
@@ -595,7 +787,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 63.5 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 63.5 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "63.5 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613927",
@@ -608,7 +805,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 70 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 70 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "70 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613928",
@@ -621,7 +823,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 73 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 73 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "73 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613929",
@@ -634,7 +841,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 76.1 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 76.1 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "76.1 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613930",
@@ -647,7 +859,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 88.9 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 88.9 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "88.9 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613931",
@@ -660,7 +877,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 101.6 mm",
       "Reference": "PP Tube Clamp, Standard Series (Din 3015/1), World Wide Metric, Dia 101.6 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "101.6 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613932",
@@ -673,7 +895,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 6 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 6 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "6 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613933",
@@ -686,7 +913,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 6.4 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 6.4 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "6.4 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613934",
@@ -699,7 +931,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 8 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 8 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "8 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613935",
@@ -712,7 +949,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 9.5 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 9.5 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "9.5 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613936",
@@ -725,7 +967,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 10 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 10 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "10 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613937",
@@ -738,7 +985,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 12 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 12 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "12 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613938",
@@ -751,7 +1003,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 12.7 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 12.7 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "12.7 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613939",
@@ -764,7 +1021,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 13.5 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 13.5 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "13.5 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613940",
@@ -777,7 +1039,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 14 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 14 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "14 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613941",
@@ -790,7 +1057,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 15 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 15 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "15 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613942",
@@ -803,7 +1075,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 16 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 16 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "16 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613943",
@@ -816,7 +1093,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 17.2 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 17.2 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "17.2 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613944",
@@ -829,7 +1111,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 18 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 18 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "18 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613945",
@@ -842,7 +1129,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 19 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 19 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "19 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613946",
@@ -855,7 +1147,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 20 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 20 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "20 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613947",
@@ -868,7 +1165,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 21.3 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 21.3 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "21.3 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613948",
@@ -881,7 +1183,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 22 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 22 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "22 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613949",
@@ -894,7 +1201,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 25 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 25 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "25 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613950",
@@ -907,7 +1219,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 25.4 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 25.4 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "25.4 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613951",
@@ -920,7 +1237,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 26.9 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 26.9 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "26.9 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613952",
@@ -933,7 +1255,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 28 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 28 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "28 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613953",
@@ -946,7 +1273,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 30 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 30 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "30 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613954",
@@ -959,7 +1291,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 32 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 32 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "32 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613955",
@@ -972,7 +1309,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 33.7 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 33.7 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "33.7 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613956",
@@ -985,7 +1327,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 35 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 35 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "35 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613957",
@@ -998,7 +1345,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 38 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 38 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "38 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613958",
@@ -1011,7 +1363,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 40 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 40 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "40 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613959",
@@ -1024,7 +1381,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 42 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 42 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "42 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613960",
@@ -1037,7 +1399,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 44.5 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 44.5 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "44.5 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613961",
@@ -1050,7 +1417,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 48.3 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 48.3 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "48.3 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613962",
@@ -1063,7 +1435,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 50.8 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 50.8 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "50.8 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613963",
@@ -1076,7 +1453,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 55 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 55 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "55 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613964",
@@ -1089,7 +1471,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 57 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 57 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "57 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613965",
@@ -1102,7 +1489,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 60.3 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 60.3 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "60.3 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613966",
@@ -1115,7 +1507,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 63.5 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 63.5 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "63.5 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613967",
@@ -1128,7 +1525,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 65 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 65 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "65 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613968",
@@ -1141,7 +1543,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 70 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 70 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "70 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613969",
@@ -1154,7 +1561,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 73 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 73 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "73 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613970",
@@ -1167,7 +1579,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 76.1 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 76.1 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "76.1 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613971",
@@ -1180,7 +1597,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 80 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 80 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "80 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613972",
@@ -1193,7 +1615,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 82.5 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 82.5 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "82.5 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613973",
@@ -1206,7 +1633,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 88.9 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 88.9 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "88.9 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613974",
@@ -1219,7 +1651,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 100 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 100 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "100 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613975",
@@ -1232,7 +1669,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 101.6 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 101.6 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "101.6 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613976",
@@ -1245,7 +1687,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 108 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 108 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "108 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613977",
@@ -1258,7 +1705,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 114.3 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 114.3 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "114.3 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613978",
@@ -1271,7 +1723,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 127 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 127 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "127 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613979",
@@ -1284,7 +1741,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 133 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 133 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "133 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613980",
@@ -1297,7 +1759,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 139.7 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 139.7 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "139.7 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613981",
@@ -1310,7 +1777,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 152.4 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 152.4 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "152.4 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613982",
@@ -1323,7 +1795,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 159 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 159 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "159 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613983",
@@ -1336,7 +1813,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 165 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 165 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "165 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613984",
@@ -1349,7 +1831,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 168.3 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 168.3 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "168.3 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613985",
@@ -1362,7 +1849,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 177.8 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 177.8 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "177.8 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613986",
@@ -1375,7 +1867,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 193.7 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 193.7 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "193.7 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613987",
@@ -1388,7 +1885,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 216 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 216 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "216 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613988",
@@ -1401,7 +1903,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 219.1 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 219.1 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "219.1 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613989",
@@ -1414,7 +1921,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 244.5 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 244.5 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "244.5 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613990",
@@ -1427,7 +1939,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 273 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 273 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "273 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613991",
@@ -1440,7 +1957,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 323.9 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 323.9 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "323.9 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613992",
@@ -1453,7 +1975,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 355.6 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 355.6 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "355.6 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613993",
@@ -1466,7 +1993,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 406.4 mm",
       "Reference": "PP Tube Clamp, Heavy Series (Din 3015/2), World Wide Metric, Dia 406.4 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "406.4 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613994",
@@ -1479,7 +2011,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 6 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 6 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "6 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613995",
@@ -1492,7 +2029,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 6.4 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 6.4 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "6.4 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613996",
@@ -1505,7 +2047,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 8 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 8 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "8 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613997",
@@ -1518,7 +2065,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 9.5 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 9.5 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "9.5 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613998",
@@ -1531,7 +2083,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 10 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 10 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "10 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "613999",
@@ -1544,7 +2101,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 12 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 12 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "12 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614000",
@@ -1557,7 +2119,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 12.7 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 12.7 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "12.7 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614102",
@@ -1570,7 +2137,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 13.5 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 13.5 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "13.5 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614108",
@@ -1583,7 +2155,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 14 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 14 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "14 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614114",
@@ -1596,7 +2173,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 15 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 15 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "15 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614190",
@@ -1609,7 +2191,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 16 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 16 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "16 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614197",
@@ -1622,7 +2209,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 17.2 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 17.2 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "17.2 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614199",
@@ -1635,7 +2227,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 18 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 18 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "18 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614200",
@@ -1648,7 +2245,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 19 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 19 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "19 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614218",
@@ -1661,7 +2263,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 20 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 20 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "20 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614219",
@@ -1674,7 +2281,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 21.3 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 21.3 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "21.3 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614220",
@@ -1687,7 +2299,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 22 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 22 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "22 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614224",
@@ -1700,7 +2317,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 25 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 25 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "25 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614225",
@@ -1713,7 +2335,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 25 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 25 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "25 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614226",
@@ -1726,7 +2353,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 25.4 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 25.4 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "25.4 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614227",
@@ -1739,7 +2371,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 26.9 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 26.9 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "26.9 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614228",
@@ -1752,7 +2389,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 28 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 28 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "28 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614229",
@@ -1765,7 +2407,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 30 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 30 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "30 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614295",
@@ -1778,7 +2425,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 32 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 32 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "32 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614296",
@@ -1791,7 +2443,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 33.7 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 33.7 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "33.7 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614297",
@@ -1804,7 +2461,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 35 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 35 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "35 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614298",
@@ -1817,7 +2479,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 38 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 38 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "38 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614299",
@@ -1830,7 +2497,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 40 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 40 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "40 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "614300",
@@ -1843,7 +2515,12 @@
       "Catalog Section": "Chapter 69",
       "Description": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 42 mm",
       "Reference": "PP Tube Clamp, Twin Series (Din 3015/3), World Wide Metric, Dia 42 mm"
-    }
+    },
+    "industrial_tags": [
+      "DIN",
+      "42 mm"
+    ],
+    "land_compat_name": "DIN"
   },
   {
     "c": "690101",
@@ -1856,7 +2533,11 @@
       "Catalog Section": "Chapter 69",
       "Description": "Hex. Head Bolt Only, Steel, Un-Galv. M3 x 5 mm",
       "Reference": "Hex. Head Bolt Only, Steel, Un-Galv. M3 x 5 mm"
-    }
+    },
+    "industrial_tags": [
+      "5 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "690102",
@@ -1869,7 +2550,11 @@
       "Catalog Section": "Chapter 69",
       "Description": "Hex. Head Bolt Only, Steel, Un-Galv. M3 x 6 mm",
       "Reference": "Hex. Head Bolt Only, Steel, Un-Galv. M3 x 6 mm"
-    }
+    },
+    "industrial_tags": [
+      "6 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "690103",
@@ -1882,7 +2567,11 @@
       "Catalog Section": "Chapter 69",
       "Description": "Hex. Head Bolt Only, Steel, Un-Galv. M3 x 8 mm",
       "Reference": "Hex. Head Bolt Only, Steel, Un-Galv. M3 x 8 mm"
-    }
+    },
+    "industrial_tags": [
+      "8 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "690104",
@@ -1895,7 +2584,11 @@
       "Catalog Section": "Chapter 69",
       "Description": "Hex. Head Bolt Only, Steel, Un-Galv. M3 x 10 mm",
       "Reference": "Hex. Head Bolt Only, Steel, Un-Galv. M3 x 10 mm"
-    }
+    },
+    "industrial_tags": [
+      "10 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "690105",
@@ -1908,6 +2601,10 @@
       "Catalog Section": "Chapter 69",
       "Description": "Hex. Head Bolt Only, Steel, Un-Galv. M3 x 12 mm",
       "Reference": "Hex. Head Bolt Only, Steel, Un-Galv. M3 x 12 mm"
-    }
+    },
+    "industrial_tags": [
+      "12 mm"
+    ],
+    "land_compat_name": ""
   }
 ]

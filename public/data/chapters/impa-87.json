@@ -10,7 +10,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Sea Water Desalination Machine, 11 Gal/41 Ltr",
       "Reference": "( ) , Sea Water Desalination Machine, 11 Gal/41 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871251",
@@ -23,7 +25,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Engine Start Motor, Hydraulic Ty",
       "Reference": "Engine Start Motor, Hydraulic Ty"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871252",
@@ -36,7 +40,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Engine Start Motor, Air Ty",
       "Reference": "Engine Start Motor, Air Ty"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871253",
@@ -49,7 +55,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Engine Start Motor, Spring Ty",
       "Reference": "Engine Start Motor, Spring Ty"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871301",
@@ -62,7 +70,11 @@
       "Catalog Section": "Chapter 87",
       "Description": "Hydraulic Coupling for M/E Open, 150 Mpa, Coupling, G1/4\" Female with Valve",
       "Reference": "M/E , Hydraulic Coupling for M/E Open, 150 Mpa, Coupling, G1/4\" Female with Valve"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "871302",
@@ -75,7 +87,11 @@
       "Catalog Section": "Chapter 87",
       "Description": "Hydraulic Coupling for M/E Open, 150 Mpa, Nipple, G1/4\" Female with Valve",
       "Reference": "M/E , Hydraulic Coupling for M/E Open, 150 Mpa, Nipple, G1/4\" Female with Valve"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "871303",
@@ -88,7 +104,11 @@
       "Catalog Section": "Chapter 87",
       "Description": "Hydraulic Coupling for M/E Open, 150 Mpa, Nipple, G1/4\" Male without Valve",
       "Reference": "M/E , Hydraulic Coupling for M/E Open, 150 Mpa, Nipple, G1/4\" Male without Valve"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "871304",
@@ -101,7 +121,11 @@
       "Catalog Section": "Chapter 87",
       "Description": "Hydraulic Coupling for M/E Open, 200 Mpa, Coupling, G1/4\" Female with Valve",
       "Reference": "M/E , Hydraulic Coupling for M/E Open, 200 Mpa, Coupling, G1/4\" Female with Valve"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "871305",
@@ -114,7 +138,11 @@
       "Catalog Section": "Chapter 87",
       "Description": "Hydraulic Coupling for M/E Open, 200 Mpa, Nipple, G1/4\" Female with Valve",
       "Reference": "M/E , Hydraulic Coupling for M/E Open, 200 Mpa, Nipple, G1/4\" Female with Valve"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "871306",
@@ -127,7 +155,11 @@
       "Catalog Section": "Chapter 87",
       "Description": "Hydraulic Coupling for M/E Open, 200 Mpa, Nipple, G1/4\" Male without Valve",
       "Reference": "M/E , Hydraulic Coupling for M/E Open, 200 Mpa, Nipple, G1/4\" Male without Valve"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "871307",
@@ -140,7 +172,11 @@
       "Catalog Section": "Chapter 87",
       "Description": "Hydraulic Coupling for M/E Open, 250 Mpa, Coupling, G1/4\" Female with Valve",
       "Reference": "M/E , Hydraulic Coupling for M/E Open, 250 Mpa, Coupling, G1/4\" Female with Valve"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "871308",
@@ -153,7 +189,11 @@
       "Catalog Section": "Chapter 87",
       "Description": "Hydraulic Coupling for M/E Open, 250 Mpa, Nipple, G1/4\" Female with Valve",
       "Reference": "M/E , Hydraulic Coupling for M/E Open, 250 Mpa, Nipple, G1/4\" Female with Valve"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "871309",
@@ -166,7 +206,11 @@
       "Catalog Section": "Chapter 87",
       "Description": "Hydraulic Coupling for M/E Open, 250 Mpa, Nipple, G1/4\" Female 90Deg Connection with Valve",
       "Reference": "M/E , Hydraulic Coupling for M/E Open, 250 Mpa, Nipple, G1/4\" Female 90Deg Connection with Valve"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "871311",
@@ -179,7 +223,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Adapter for M/E Open, 150 Mpa, Adaper, G1/4\" w/60Deg Internal Cone x NPT3/8\"",
       "Reference": "M/E , Adapter for M/E Open, 150 Mpa, Adaper, G1/4\" w/60Deg Internal Cone x NPT3/8\""
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871312",
@@ -192,7 +238,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Adapter for M/E Open, 150 Mpa, Adaper, G1/4\" w/60Deg Internal Cone x R3/8\"",
       "Reference": "M/E , Adapter for M/E Open, 150 Mpa, Adaper, G1/4\" w/60Deg Internal Cone x R3/8\""
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871313",
@@ -205,7 +253,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Adapter for M/E Open, 150 Mpa, Adaper, G1/4\" w/120Deg External Cone x R1/4\"",
       "Reference": "M/E , Adapter for M/E Open, 150 Mpa, Adaper, G1/4\" w/120Deg External Cone x R1/4\""
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871314",
@@ -218,7 +268,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Adapter for M/E Open, 200 Mpa, Adaper, G1/4\" w/120Deg External Cone x G1/4\" w/120Deg External Cone",
       "Reference": "M/E , Adapter for M/E Open, 200 Mpa, Adaper, G1/4\" w/120Deg External Cone x G1/4\" w/120Deg External Cone"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871315",
@@ -231,7 +283,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Adapter for M/E Open, 200 Mpa, Adaper, G1/4\" w/60Deg Internal Cone x G1/4\" w/120Deg External Cone",
       "Reference": "M/E , Adapter for M/E Open, 200 Mpa, Adaper, G1/4\" w/60Deg Internal Cone x G1/4\" w/120Deg External Cone"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871316",
@@ -244,7 +298,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Adapter for M/E Open, 200 Mpa, Adaper, G1/4\" w/120Deg External Cone x 3/4-16 Unf w/60Deg External Cone",
       "Reference": "M/E , Adapter for M/E Open, 200 Mpa, Adaper, G1/4\" w/120Deg External Cone x 3/4-16 Unf w/60Deg External Cone"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871317",
@@ -257,7 +313,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Adapter for M/E Open, 250 Mpa, Elbow Adaper, G1/4\" w/120Deg External Cone Female Swivel x G1/4\" w/120Deg External Cone Fixed Male Thread",
       "Reference": "M/E , Adapter for M/E Open, 250 Mpa, Elbow Adaper, G1/4\" w/120Deg External Cone Female Swivel x G1/4\" w/120Deg External "
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871321",
@@ -270,7 +328,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Porting Blocks for M/E Open, 300 Mpa 4 Way Block Steel, G1/4\" w/120Deg Internal Sealing Cone Female Thread",
       "Reference": "M/E , Porting Blocks for M/E Open, 300 Mpa 4 Way Block Steel, G1/4\" w/120Deg Internal Sealing Cone Female Thread"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871322",
@@ -283,7 +343,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Porting Blocks for M/E Open, 300 Mpa 3 Way Block Steel, G1/4\" w/120Deg Internal Sealing Cone Female Thread",
       "Reference": "M/E , Porting Blocks for M/E Open, 300 Mpa 3 Way Block Steel, G1/4\" w/120Deg Internal Sealing Cone Female Thread"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871323",
@@ -296,7 +358,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Porting Blocks for M/E Open, 300 Mpa 3 Way Block St.Steel, G1/4\" w/120Deg Internal Sealing Cone Female Thread",
       "Reference": "M/E , Porting Blocks for M/E Open, 300 Mpa 3 Way Block St.Steel, G1/4\" w/120Deg Internal Sealing Cone Female Thread"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871324",
@@ -309,7 +373,9 @@
       "Catalog Section": "Chapter 87",
       "Description": "Porting Blocks for M/E Open, 300 Mpa 5 Way Block Steel, G1/4\" w/120Deg Internal Sealing Cone Female Thread",
       "Reference": "M/E , Porting Blocks for M/E Open, 300 Mpa 5 Way Block Steel, G1/4\" w/120Deg Internal Sealing Cone Female Thread"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "871326",
@@ -322,6 +388,8 @@
       "Catalog Section": "Chapter 87",
       "Description": "Ultra High Press Hose for M/E Open, 1,800 Bar, 4 Spiral Layer of High Tensile Steel Wire",
       "Reference": "M/E , Ultra High Press Hose for M/E Open, 1,800 Bar, 4 Spiral Layer of High Tensile Steel Wire"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   }
 ]

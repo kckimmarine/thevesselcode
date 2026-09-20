@@ -10,7 +10,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Marine Depth Sounder Fuso Model 160",
       "Reference": "Old Model, Marine Depth Sounder Fuso Model 160"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111602",
@@ -23,7 +25,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Marine Depth Sounder Fuso Model 160 W",
       "Reference": "Old Model, Marine Depth Sounder Fuso Model 160 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "111603",
@@ -36,7 +40,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Marine Depth Sounder Fuso Model 160 Am",
       "Reference": "Old Model, Marine Depth Sounder Fuso Model 160 Am"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330428",
@@ -49,7 +55,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Communication System for Scba, Draeger Fps Com 5000 with Fps 7000 MSAk (without Radio Connection and Earphone), Drager",
       "Reference": "Communication System for Scba, Draeger Fps Com 5000 with Fps 7000 MSAk (without Radio Connection and Earphone), Drager"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330429",
@@ -62,7 +70,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Communication System for Scba, Radio-Exhalation Valve, Positive Pressure Version, MSA, P.No:D2055720",
       "Reference": "Communication System for Scba, Radio-Exhalation Valve, Positive Pressure Version, MSA, P.No:D2055720"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "330430",
@@ -75,7 +85,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Communication System for Scba, Radio-Exhalation Valve, Normal Pressure Version, MSA, P.No:D2055761",
       "Reference": "Communication System for Scba, Radio-Exhalation Valve, Normal Pressure Version, MSA, P.No:D2055761"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "331205",
@@ -88,7 +100,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, ISPS Code Declaration of Security Record Book",
       "Reference": "Old Model, ISPS Code Declaration of Security Record Book"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "332615",
@@ -101,7 +115,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Fire Traning Manual",
       "Reference": "Old Model, Fire Traning Manual"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "332617",
@@ -114,7 +130,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Fire Safety Operational Booklet",
       "Reference": "Fire Safety Operational Booklet"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "332631",
@@ -127,7 +145,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Solas Training Manual",
       "Reference": "Old Model, Solas Training Manual"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "332633",
@@ -140,7 +160,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Solas Check List",
       "Reference": "SOLAS , Solas Check List"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "332636",
@@ -153,7 +175,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Garbage Management Plan & Record Book",
       "Reference": "Old Model, Garbage Management Plan & Record Book"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "332637",
@@ -166,7 +190,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Smpep (Shipboard Marine Pollution Emergency Plan)",
       "Reference": "Old Model, Smpep (Shipboard Marine Pollution Emergency Plan)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "332638",
@@ -179,7 +205,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Smpep (Shipboard Oil Pollution Emergency Plan)",
       "Reference": "Old Model, Smpep (Shipboard Oil Pollution Emergency Plan)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "332639",
@@ -192,7 +220,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Welcome-On-Board Booklet",
       "Reference": "Old Model, Welcome-On-Board Booklet"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "332640",
@@ -205,7 +235,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Survival Booklet",
       "Reference": "Old Model, Survival Booklet"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "332641",
@@ -218,7 +250,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Garbage Record Book",
       "Reference": "Old Model, Garbage Record Book"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "332642",
@@ -231,7 +265,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Water Ballast Record Book",
       "Reference": "Old Model, Water Ballast Record Book"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370101",
@@ -244,7 +280,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Signal Bell, Cast Brass, 200 mm",
       "Reference": "Signal Bell, Cast Brass, 200 mm"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370102",
@@ -257,7 +297,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Signal Bell, Cast Brass, 300 mm",
       "Reference": "Signal Bell, Cast Brass, 300 mm"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370103",
@@ -270,7 +314,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Signal Bell, Cast Brass, 400 mm",
       "Reference": "Signal Bell, Cast Brass, 400 mm"
-    }
+    },
+    "industrial_tags": [
+      "400 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370105",
@@ -283,7 +331,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Air Horn, Manual Operation 132Hz for 75-200 Mtr Length",
       "Reference": "86 , Old Model, Air Horn, Manual Operation 132Hz for 75-200 Mtr Length"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370106",
@@ -296,7 +346,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Air Horn, Electric Operation 132Hz for 75-200 Mtr Length",
       "Reference": "86 , Old Model, Air Horn, Electric Operation 132Hz for 75-200 Mtr Length"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370107",
@@ -309,7 +361,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Air Horn ,Electric Operation with Heater 132Hz F/75-200Mtr",
       "Reference": "86 , Old Model, Air Horn ,Electric Operation with Heater 132Hz F/75-200Mtr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370111",
@@ -322,7 +376,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Electronic Keyers, AC100V",
       "Reference": "Old Model, Electronic Keyers, AC100V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370112",
@@ -335,7 +391,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Electronic Keyers, Mk-1024 with Programmable Memory",
       "Reference": "Old Model, Electronic Keyers, Mk-1024 with Programmable Memory"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370113",
@@ -348,7 +406,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Electronic Keyers, AC220V",
       "Reference": "Old Model, Electronic Keyers, AC220V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370115",
@@ -361,7 +421,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Handheld Marine Radio, Dx544-Is VHF, Entel UK Ltd",
       "Reference": "VHF , Handheld Marine Radio, Dx544-Is VHF, Entel UK Ltd"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370116",
@@ -374,7 +436,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Handheld Marine Radio, Dx585M-Is UHF, Entel UK Ltd",
       "Reference": "UHF , Handheld Marine Radio, Dx585M-Is UHF, Entel UK Ltd"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370117",
@@ -387,7 +451,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Intrinsically Safe Marine Uhf Transiver, 400Mhz 2W Waterproof, Jhs-431, Japan Raido",
       "Reference": "UHF , Intrinsically Safe Marine Uhf Transiver, 400Mhz 2W Waterproof, Jhs-431, Japan Raido"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370119",
@@ -400,7 +466,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Battery Charger for Handheld Marine Radio",
       "Reference": "Battery Charger for Handheld Marine Radio"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370120",
@@ -413,7 +481,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Battery Charger, Nc-88C for Hx370S, 230V, Ty of Battery Pack: Fnb-V571S",
       "Reference": "Old Model, Battery Charger, Nc-88C for Hx370S, 230V, Ty of Battery Pack: Fnb-V571S"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370121",
@@ -426,7 +496,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Walkie Talkie Rj-270D",
       "Reference": "Old Model, Walkie Talkie Rj-270D"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370122",
@@ -439,7 +511,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Walkie Talkie Rj-370D/12",
       "Reference": "Old Model, Walkie Talkie Rj-370D/12"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370124",
@@ -452,7 +526,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Battery Charger, Vac-800B for Vx-417, 110V, Ty Batt' Pack: Fnb-V571S",
       "Reference": "Old Model, Battery Charger, Vac-800B for Vx-417, 110V, Ty Batt' Pack: Fnb-V571S"
-    }
+    },
+    "industrial_tags": [
+      "800B"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370125",
@@ -465,7 +543,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Battery Charger, Vac-800C for Vx-417, 230V, Ty Batt' Pack: Fnb-V571S",
       "Reference": "Old Model, Battery Charger, Vac-800C for Vx-417, 230V, Ty Batt' Pack: Fnb-V571S"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370126",
@@ -478,7 +558,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Vhf-Fm Marine Radio Horizon Hx-200S Handphones",
       "Reference": "Old Model, Vhf-Fm Marine Radio Horizon Hx-200S Handphones"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370127",
@@ -491,7 +573,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Battery Charger 100/220/240V for Hand Phone Radio Hx-200S",
       "Reference": "Old Model, Battery Charger 100/220/240V for Hand Phone Radio Hx-200S"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370128",
@@ -504,7 +588,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Handheld Marine Radio, Hx-500S Intrinsically Safe",
       "Reference": "Old Model, Handheld Marine Radio, Hx-500S Intrinsically Safe"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370129",
@@ -517,7 +603,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Battery Charger for Handheld Radio Hx-500S AC100/220V",
       "Reference": "Old Model, Battery Charger for Handheld Radio Hx-500S AC100/220V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370130",
@@ -530,7 +618,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Crystal for Handheld Marine Radio Hx-500S Vhf",
       "Reference": "Old Model, Crystal for Handheld Marine Radio Hx-500S Vhf"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370131",
@@ -543,7 +633,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Handheld Marine Radio, Dt885Ff Uhf",
       "Reference": "UHF , Handheld Marine Radio, Dt885Ff Uhf"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370133",
@@ -556,7 +648,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Two-Way VHF Radio Telephone Conforms to Gmdss",
       "Reference": "VHF , Two-Way VHF Radio Telephone Conforms to Gmdss"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370134",
@@ -569,7 +663,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Handheld Marine Radio, Dt844 Vhf",
       "Reference": "VHF , Handheld Marine Radio, Dt844 Vhf"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370135",
@@ -582,7 +678,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Battery Charger for Gmdss VHF 2-Way VHF Radiotelephone, AC110V",
       "Reference": "Battery Charger for Gmdss VHF 2-Way VHF Radiotelephone, AC110V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370136",
@@ -595,7 +693,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Battery Charger for Gmdss VHF 2-Way VHF Radiotelephone, AC220V",
       "Reference": "Battery Charger for Gmdss VHF 2-Way VHF Radiotelephone, AC220V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370141",
@@ -608,7 +708,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Portable Telephone, Model P-11",
       "Reference": "86 , Old Model, Portable Telephone, Model P-11"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370142",
@@ -621,7 +723,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Portable Telephone, Model P-8 T Intrinsically Safe",
       "Reference": "86 , Old Model, Portable Telephone, Model P-8 T Intrinsically Safe"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370143",
@@ -634,7 +738,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Portable Telephone, Model P-8 B Intrinsically Safe",
       "Reference": "86 , Old Model, Portable Telephone, Model P-8 B Intrinsically Safe"
-    }
+    },
+    "industrial_tags": [
+      "8B"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370144",
@@ -647,7 +755,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Portable Telephone, Model P-8 R Intrinsically Safe",
       "Reference": "86 , Old Model, Portable Telephone, Model P-8 R Intrinsically Safe"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370145",
@@ -660,7 +770,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Handband Ty Communication System, L'Com Communication, MSA",
       "Reference": "Handband Ty Communication System, L'Com Communication, MSA"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370146",
@@ -673,7 +785,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Handband Ty Communication System, Osteo Communication, MSA",
       "Reference": "Handband Ty Communication System, Osteo Communication, MSA"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370147",
@@ -686,7 +800,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Headset with Headband, Model cc, Snr 28 - H/M/L 32/26/18, Blue, No:Sor41000",
       "Reference": "Headset with Headband, Model cc, Snr 28 - H/M/L 32/26/18, Blue, No:Sor41000"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370148",
@@ -699,7 +815,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Headset with Headband, Model cc, Snr 27 - H/M/L 30/24/17, Blue, No:Sor41502",
       "Reference": "Headset with Headband, Model cc, Snr 27 - H/M/L 30/24/17, Blue, No:Sor41502"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370149",
@@ -712,7 +830,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Handband Ty Communication System, Micro Built-In Microphone, MSA",
       "Reference": "Handband Ty Communication System, Micro Built-In Microphone, MSA"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370150",
@@ -725,7 +845,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Handband Ty Communication System, Micro External Microphone, MSA",
       "Reference": "Handband Ty Communication System, Micro External Microphone, MSA"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370151",
@@ -738,7 +860,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Telephone, Desk/Wall Type",
       "Reference": "86 , Old Model, Ship Borne Telephone, Desk/Wall Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370152",
@@ -751,7 +875,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Telephone, Built-In Type",
       "Reference": "86 , Old Model, Ship Borne Telephone, Built-In Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370153",
@@ -764,7 +890,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Telephone, Wall-Mounting Type",
       "Reference": "86 , Old Model, Ship Borne Telephone, Wall-Mounting Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370154",
@@ -777,7 +905,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Telephone, Small Wall-Mounting Type",
       "Reference": "86 , Old Model, Ship Borne Telephone, Small Wall-Mounting Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370156",
@@ -790,7 +920,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Common Battery Telephone, Master/Slave Desk/Wall Type",
       "Reference": "86 , Old Model, Ship Borne Common Battery Telephone, Master/Slave Desk/Wall Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370157",
@@ -803,7 +935,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Common Battery Telephone, Master/Slave Built-In Type",
       "Reference": "86 , Old Model, Ship Borne Common Battery Telephone, Master/Slave Built-In Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370158",
@@ -816,7 +950,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Common Battery Telephone, Master/Slave Wall-Mounting Type",
       "Reference": "86 , Old Model, Ship Borne Common Battery Telephone, Master/Slave Wall-Mounting Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370159",
@@ -829,7 +965,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Common Battery Telephone, 1:2 Master Built-In Type",
       "Reference": "86 , Old Model, Ship Borne Common Battery Telephone, 1:2 Master Built-In Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370160",
@@ -842,7 +980,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Common Battery Telephone, 1:2 Master Wall-Mounting Type",
       "Reference": "86 , Old Model, Ship Borne Common Battery Telephone, 1:2 Master Wall-Mounting Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370161",
@@ -855,7 +995,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Common Battery Telephone, 1:3 Master Built-In Type",
       "Reference": "86 , Old Model, Ship Borne Common Battery Telephone, 1:3 Master Built-In Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370162",
@@ -868,7 +1010,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Common Battery Telephone, 1:3 Master Wall-Mounting Type",
       "Reference": "86 , Old Model, Ship Borne Common Battery Telephone, 1:3 Master Wall-Mounting Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370166",
@@ -881,7 +1025,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Common Battery Telephone, 12-Ext. Linedesk/Wall Type",
       "Reference": "86 , Old Model, Ship Borne Common Battery Telephone, 12-Ext. Linedesk/Wall Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370167",
@@ -894,7 +1040,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Common Battery Telephone, 12-Ext. Linewall-Mounting Type",
       "Reference": "86 , Old Model, Ship Borne Common Battery Telephone, 12-Ext. Linewall-Mounting Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370168",
@@ -907,7 +1055,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Common Battery Telephone, 12-Ext. Linebuilt-In Type",
       "Reference": "86 , Old Model, Ship Borne Common Battery Telephone, 12-Ext. Linebuilt-In Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370171",
@@ -920,7 +1070,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Sound Powered Telephone, Direct Desk-Type",
       "Reference": "86 , Old Model, Ship Borne Sound Powered Telephone, Direct Desk-Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370172",
@@ -933,7 +1085,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Sound Powered Telephone, Direct Wall-Mounting Type",
       "Reference": "86 , Old Model, Ship Borne Sound Powered Telephone, Direct Wall-Mounting Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370173",
@@ -946,7 +1100,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Sound Powered Telephone, Direct Built-In Type",
       "Reference": "86 , Old Model, Ship Borne Sound Powered Telephone, Direct Built-In Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370174",
@@ -959,7 +1115,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Sound Powered Telephone, Selective Desk-Type",
       "Reference": "86 , Old Model, Ship Borne Sound Powered Telephone, Selective Desk-Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370175",
@@ -972,7 +1130,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Sound Powered Telephone, Selective Wall-Mounting Type",
       "Reference": "86 , Old Model, Ship Borne Sound Powered Telephone, Selective Wall-Mounting Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370176",
@@ -985,7 +1145,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Ship Borne Sound Powered Telephone, Selective Built-In Type",
       "Reference": "86 , Old Model, Ship Borne Sound Powered Telephone, Selective Built-In Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370181",
@@ -998,7 +1160,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Waterproof Microphone, with Curl Cord, 40 Ohm",
       "Reference": "Waterproof Microphone, with Curl Cord, 40 Ohm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370182",
@@ -1011,7 +1175,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Waterproof Microphone, without Curl Cord, 40 Ohm",
       "Reference": "Waterproof Microphone, without Curl Cord, 40 Ohm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370183",
@@ -1024,7 +1190,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Waterproof Microphone, with Curl Cord, 600 Ohm",
       "Reference": "Waterproof Microphone, with Curl Cord, 600 Ohm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370184",
@@ -1037,7 +1205,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Waterproof Microphone, without Curl Cord, 600 Ohm",
       "Reference": "Waterproof Microphone, without Curl Cord, 600 Ohm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370185",
@@ -1050,7 +1220,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Air Horn, Hull Length 75 ~200 Mtr, 135 Hz, 138 Db, AC110V 1P",
       "Reference": "75~200 , Air Horn, Hull Length 75 ~200 Mtr, 135 Hz, 138 Db, AC110V 1P"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370186",
@@ -1063,7 +1235,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Air Horn, Hull Length 75 ~200 Mtr, 135 Hz, 138 Db, AC220V 1P",
       "Reference": "75~200 , Air Horn, Hull Length 75 ~200 Mtr, 135 Hz, 138 Db, AC220V 1P"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370187",
@@ -1076,7 +1250,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Air Horn, Hull Length 75 ~200 Mtr, 135 Hz, 138 Db, DC24V",
       "Reference": "75~200 , Air Horn, Hull Length 75 ~200 Mtr, 135 Hz, 138 Db, DC24V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370188",
@@ -1089,7 +1265,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Air Horn, Hull Length 75 ~200 Mtr, 165 Hz, 138 Db, AC110V 1P",
       "Reference": "75~200 , Air Horn, Hull Length 75 ~200 Mtr, 165 Hz, 138 Db, AC110V 1P"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370189",
@@ -1102,7 +1280,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Air Horn, Hull Length 75 ~200 Mtr, 165 Hz, 138 Db, AC220V 1P",
       "Reference": "75~200 , Air Horn, Hull Length 75 ~200 Mtr, 165 Hz, 138 Db, AC220V 1P"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370190",
@@ -1115,7 +1295,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Air Horn, Hull Length 75 ~200 Mtr, 165 Hz, 138 Db, DC24V",
       "Reference": "75~200 , Air Horn, Hull Length 75 ~200 Mtr, 165 Hz, 138 Db, DC24V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370191",
@@ -1128,7 +1310,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Air Horn, Hull Length 75 ~200 Mtr, 200 Hz, 138 Db, AC110V 1P",
       "Reference": "75~200 , Air Horn, Hull Length 75 ~200 Mtr, 200 Hz, 138 Db, AC110V 1P"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370192",
@@ -1141,7 +1325,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Air Horn, Hull Length 75 ~200 Mtr, 200 Hz, 138 Db, AC220V 1P",
       "Reference": "75~200 , Air Horn, Hull Length 75 ~200 Mtr, 200 Hz, 138 Db, AC220V 1P"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370193",
@@ -1154,7 +1340,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Air Horn, Hull Length 75 ~200 Mtr, 200 Hz, 138 Db, DC24V",
       "Reference": "75~200 , Air Horn, Hull Length 75 ~200 Mtr, 200 Hz, 138 Db, DC24V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370195",
@@ -1167,7 +1355,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Air Horn, Hull Length More 200 Mtr, 128 Hz, 143 Db, AC110V 1P",
       "Reference": "200 , Air Horn, Hull Length More 200 Mtr, 128 Hz, 143 Db, AC110V 1P"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370196",
@@ -1180,7 +1370,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Air Horn, Hull Length More 200 Mtr, 128 Hz, 143 Db, AC220V 1P",
       "Reference": "200 , Air Horn, Hull Length More 200 Mtr, 128 Hz, 143 Db, AC220V 1P"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370197",
@@ -1193,7 +1385,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Air Horn, Hull Length More 200 Mtr, 128 Hz, 143 Db, DC24V",
       "Reference": "200 , Air Horn, Hull Length More 200 Mtr, 128 Hz, 143 Db, DC24V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370201",
@@ -1206,7 +1400,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Radio Room Clock, Quartz 200 mm",
       "Reference": "Radio Room Clock, Quartz 200 mm"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370202",
@@ -1219,7 +1417,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Radio Room Clock, St.Steel Casing, Vapour-Proof , 200 mm",
       "Reference": "Radio Room Clock, St.Steel Casing, Vapour-Proof , 200 mm"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370204",
@@ -1232,7 +1434,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Marine Clock, Quartz 200 mm",
       "Reference": "Marine Clock, Quartz 200 mm"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370205",
@@ -1245,7 +1451,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Marine Clock, St.Steel Casing, Vapour-Proof , 200 mm",
       "Reference": "Marine Clock, St.Steel Casing, Vapour-Proof , 200 mm"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370207",
@@ -1258,7 +1468,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Chronometer, Quartz Qm-10",
       "Reference": "Old Model, Chronometer, Quartz Qm-10"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370211",
@@ -1271,7 +1483,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Analogue Stopwatch, 1/5 Second",
       "Reference": "Analogue Stopwatch, 1/5 Second"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370212",
@@ -1284,7 +1498,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Analogue Stopwatch, 1/10 Second",
       "Reference": "Analogue Stopwatch, 1/10 Second"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370213",
@@ -1297,7 +1513,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Digital Stopwatch, 1/100 Second",
       "Reference": "Digital Stopwatch, 1/100 Second"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370216",
@@ -1310,7 +1528,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "System Digital Stopwatch, 1/100 Second",
       "Reference": "System Digital Stopwatch, 1/100 Second"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370217",
@@ -1323,7 +1543,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Time Printer for Digital Stop Watch",
       "Reference": "Old Model, Time Printer for Digital Stop Watch"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370218",
@@ -1336,7 +1558,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Roll Paper for Stopwatch Time Printer, W38 mm x 2.5 Mtr 2's",
       "Reference": "Roll Paper for Stopwatch Time Printer, W38 mm x 2.5 Mtr 2's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370219",
@@ -1349,7 +1573,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Roll Paper for Stopwatch Time Printer, W38 mm x 2.5 Mtr 5's",
       "Reference": "Roll Paper for Stopwatch Time Printer, W38 mm x 2.5 Mtr 5's"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370226",
@@ -1362,7 +1588,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Astro-Navigation Calculator Nc-77",
       "Reference": "Old Model, Astro-Navigation Calculator Nc-77"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370227",
@@ -1375,7 +1603,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Navigation Calculator",
       "Reference": "Navigation Calculator"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370231",
@@ -1388,7 +1618,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Digital Planimeter with Case Planix-7, Measureing : 300 mm x 3 Mtr, Tamaya",
       "Reference": "TAMAYA , Digital Planimeter with Case Planix-7, Measureing : 300 mm x 3 Mtr, Tamaya"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370232",
@@ -1401,7 +1635,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Digital Planimeter with Case Planix-10S Marble, Measureing : 300 mm x 10 Mtr, Tamaya",
       "Reference": "TAMAYA , Digital Planimeter with Case Planix-10S Marble, Measureing : 300 mm x 10 Mtr, Tamaya"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370236",
@@ -1414,7 +1652,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Automatic Chart Plotter, AC 110V",
       "Reference": "Automatic Chart Plotter, AC 110V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370237",
@@ -1427,7 +1667,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Automatic Chart Plotter, AC 220V",
       "Reference": "Automatic Chart Plotter, AC 220V"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370241",
@@ -1440,7 +1682,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Dial Type Clinometer, 200 mm",
       "Reference": "Dial Type Clinometer, 200 mm"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370242",
@@ -1453,7 +1699,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Tube Type (Bubble) Clinometer",
       "Reference": "( ) , Tube Type (Bubble) Clinometer"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370243",
@@ -1466,7 +1714,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Tube Type (Ball) Clinometer",
       "Reference": "( ) , Tube Type (Ball) Clinometer"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370246",
@@ -1479,7 +1729,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Marine Aneroid Barometer, 150 mm Diam",
       "Reference": "Marine Aneroid Barometer, 150 mm Diam"
-    }
+    },
+    "industrial_tags": [
+      "150 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370247",
@@ -1492,7 +1746,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Marine Aneroid Barometer, 200 mm Diam",
       "Reference": "Marine Aneroid Barometer, 200 mm Diam"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370251",
@@ -1505,7 +1763,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Wet & Dry Bulb Hygrometer",
       "Reference": "Wet & Dry Bulb Hygrometer"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370256",
@@ -1518,7 +1778,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Wall-Mount Dial Thermo Hygrometer, 100 mm Diam",
       "Reference": "Wall-Mount Dial Thermo Hygrometer, 100 mm Diam"
-    }
+    },
+    "industrial_tags": [
+      "100 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370258",
@@ -1531,7 +1795,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Digital Thermo-Hygrometer, Pen Type",
       "Reference": "Digital Thermo-Hygrometer, Pen Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370259",
@@ -1544,7 +1810,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Digital Thermo-Hygrometer, Pocketable Type",
       "Reference": "Digital Thermo-Hygrometer, Pocketable Type"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370261",
@@ -1557,7 +1825,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Sling Psychrometer (Hygrometers) Complete",
       "Reference": "Sling Psychrometer (Hygrometers) Complete"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370266",
@@ -1570,7 +1840,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Hair Hygrometer (Lambreht's Polymeter) with Mercury Thermometer",
       "Reference": "Hair Hygrometer (Lambreht's Polymeter) with Mercury Thermometer"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370271",
@@ -1583,7 +1855,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Hand Anemometer with Dial Gauge Up to 22 Mtr/Sec",
       "Reference": "Hand Anemometer with Dial Gauge Up to 22 Mtr/Sec"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370272",
@@ -1596,7 +1870,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Portable Anemometer with Generator",
       "Reference": "Old Model, Portable Anemometer with Generator"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370273",
@@ -1609,7 +1885,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Digital Anemometer with Intergrated Vane",
       "Reference": "Digital Anemometer with Intergrated Vane"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370274",
@@ -1622,7 +1900,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Digital Anemometer with Intergrated Vane Extended by Curied Cord",
       "Reference": "Digital Anemometer with Intergrated Vane Extended by Curied Cord"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370281",
@@ -1635,7 +1915,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Portable Weather Instrument Unit with Case Complete",
       "Reference": "Old Model, Portable Weather Instrument Unit with Case Complete"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370286",
@@ -1648,7 +1930,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Barograph with Recording Paper for 1-Year, 940-1045 Mb",
       "Reference": "Barograph with Recording Paper for 1-Year, 940-1045 Mb"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370287",
@@ -1661,7 +1945,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Record Paper for Barograph, 7 Days 55 Sht",
       "Reference": "Record Paper for Barograph, 7 Days 55 Sht"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370288",
@@ -1674,7 +1960,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Record Paper for Barograph, 1 Day 400 Sht",
       "Reference": "Record Paper for Barograph, 1 Day 400 Sht"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370301",
@@ -1687,7 +1975,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Sounding Lead, 3.2 Kg",
       "Reference": "Sounding Lead, 3.2 Kg"
-    }
+    },
+    "industrial_tags": [
+      "2K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370302",
@@ -1700,7 +1992,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Sounding Lead, 12.7 Kg",
       "Reference": "Sounding Lead, 12.7 Kg"
-    }
+    },
+    "industrial_tags": [
+      "7K"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370306",
@@ -1713,7 +2009,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Straight Sounding Rod, Brass, Round Metric, 1 Mtr",
       "Reference": "( ) , Straight Sounding Rod, Brass, Round Metric, 1 Mtr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370307",
@@ -1726,7 +2024,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "3-Folded Sounding Rod, Brass, Round Metric, 1 Mtr",
       "Reference": "( ) , 3-Folded Sounding Rod, Brass, Round Metric, 1 Mtr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370308",
@@ -1739,7 +2039,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "4-Folded Sounding Rod, Brass, Round Metric, 1 Mtr",
       "Reference": "( ) , 4-Folded Sounding Rod, Brass, Round Metric, 1 Mtr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370309",
@@ -1752,7 +2054,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "5-Folded Sounding Rod, Brass, Square Metric & Inch, 1 M",
       "Reference": "( ) , 5-Folded Sounding Rod, Brass, Square Metric & Inch, 1 M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370310",
@@ -1765,7 +2069,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "6-Folded Sounding Rod, Brass, Round Metric & Inch, 3 Ft",
       "Reference": "( ) , 6-Folded Sounding Rod, Brass, Round Metric & Inch, 3 Ft"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370321",
@@ -1778,7 +2084,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Azimuth Circle, ID. 246 mm, Tokimec",
       "Reference": "Azimuth Circle, ID. 246 mm, Tokimec"
-    }
+    },
+    "industrial_tags": [
+      "246 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370322",
@@ -1791,7 +2101,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Azimuth Circle, ID 246 mm, Kx603 Yokogawa-Navitek",
       "Reference": "Azimuth Circle, ID 246 mm, Kx603 Yokogawa-Navitek"
-    }
+    },
+    "industrial_tags": [
+      "246 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370323",
@@ -1804,7 +2118,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Azimuth Circle, Others Maker",
       "Reference": "Azimuth Circle, Others Maker"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370331",
@@ -1817,7 +2133,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Sextant, without Light 4x40 mm",
       "Reference": "Old Model, Sextant, without Light 4x40 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370332",
@@ -1830,7 +2148,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Sextant with Light, 4x40 mm",
       "Reference": "Old Model, Sextant with Light, 4x40 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370333",
@@ -1843,7 +2163,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Sextant with Light, 7x35 mm",
       "Reference": "Sextant with Light, 7x35 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370334",
@@ -1856,7 +2178,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Sextant with Light, 7x50 mm",
       "Reference": "Sextant with Light, 7x50 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370341",
@@ -1869,7 +2193,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Binoculars, 7x35 Cf",
       "Reference": "Binoculars, 7x35 Cf"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370342",
@@ -1882,7 +2208,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Binoculars, 7x50 Cf",
       "Reference": "Binoculars, 7x50 Cf"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370343",
@@ -1895,7 +2223,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Binoculars, 7x50 If",
       "Reference": "Binoculars, 7x50 If"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370344",
@@ -1908,7 +2238,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Water-Proof Binoculars, 7x50 If, Wp",
       "Reference": "Water-Proof Binoculars, 7x50 If, Wp"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370345",
@@ -1921,7 +2253,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Water-Proof with Scale Binoculars, 7x50 If, Wp",
       "Reference": "Water-Proof with Scale Binoculars, 7x50 If, Wp"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370348",
@@ -1934,7 +2268,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Water-Proof Binoculars, Stand Type 15x80 If",
       "Reference": "Water-Proof Binoculars, Stand Type 15x80 If"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370351",
@@ -1947,7 +2283,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Internal Gyro-Stabilized Binoculas, S-1240",
       "Reference": "Internal Gyro-Stabilized Binoculas, S-1240"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370352",
@@ -1960,7 +2298,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Internal Gyro-Stabilized Binoculas, S-1640",
       "Reference": "Internal Gyro-Stabilized Binoculas, S-1640"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370353",
@@ -1973,7 +2313,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Digital Binocular with Hd Video Recording",
       "Reference": "Digital Binocular with Hd Video Recording"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370355",
@@ -1986,7 +2328,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Night Vision Binoculars, Bushell Night Vision, 2.5 x 42",
       "Reference": "Night Vision Binoculars, Bushell Night Vision, 2.5 x 42"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370356",
@@ -1999,7 +2343,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Night Vision Binoculars, Yukon Night Vision, 5 x 42",
       "Reference": "Night Vision Binoculars, Yukon Night Vision, 5 x 42"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370357",
@@ -2012,7 +2358,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Night Vision Binoculars, Nikon Oceanpro, 7 x 50",
       "Reference": "Old Model, Night Vision Binoculars, Nikon Oceanpro, 7 x 50"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370401",
@@ -2025,7 +2373,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-1 Double Glass Lens & Metal Case, MSAthead Light, Clear",
       "Reference": "86 A-1 , Old Model, Navigation Light, A-1 Double Glass Lens & Metal Case, MSAthead Light, Clear"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370402",
@@ -2038,7 +2388,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-1 Double Glass Lens & Metal Case, Side Light, Green (Starboard)",
       "Reference": "86 A-1 , Old Model, Navigation Light, A-1 Double Glass Lens & Metal Case, Side Light, Green (Starboard)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370403",
@@ -2051,7 +2403,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-1 Double Glass Lens & Metal Case, Side Light, Red (Port)",
       "Reference": "86 A-1 , Old Model, Navigation Light, A-1 Double Glass Lens & Metal Case, Side Light, Red (Port)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370404",
@@ -2064,7 +2418,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-1 Double Glass Lens & Metal Case, Stern Light, Clear",
       "Reference": "86 A-1 , Old Model, Navigation Light, A-1 Double Glass Lens & Metal Case, Stern Light, Clear"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370405",
@@ -2077,7 +2433,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-1 Double Glass Lens & Metal Case, Towing Light, Yellow",
       "Reference": "86 A-1 , Old Model, Navigation Light, A-1 Double Glass Lens & Metal Case, Towing Light, Yellow"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370406",
@@ -2090,7 +2448,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-1 Single Glass Lens & Metal Case, White Light (Anchor Light)",
       "Reference": "86 A-1 , Old Model, Navigation Light, A-1 Single Glass Lens & Metal Case, White Light (Anchor Light)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370407",
@@ -2103,7 +2463,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-1 Single Glass Lens & Metal Case, Red Light(Not Under Command Light)",
       "Reference": "86 A-1 , Old Model, Navigation Light, A-1 Single Glass Lens & Metal Case, Red Light(Not Under Command Light)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370421",
@@ -2116,7 +2478,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Navigation Light, A-2 Double Polycarbonate Lens & Case, MSAthead Light, Clear",
       "Reference": "2 , , Navigation Light, A-2 Double Polycarbonate Lens & Case, MSAthead Light, Clear"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370422",
@@ -2129,7 +2493,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Navigation Light, A-2 Double Polycarbonate Lens & Case, Side Light Green (Starboard)",
       "Reference": "2 , , Navigation Light, A-2 Double Polycarbonate Lens & Case, Side Light Green (Starboard)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370423",
@@ -2142,7 +2508,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Navigation Light, A-2 Double Polycarbonate Lens & Case, Side Light Red (Port)",
       "Reference": "2 , , Navigation Light, A-2 Double Polycarbonate Lens & Case, Side Light Red (Port)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370424",
@@ -2155,7 +2523,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Navigation Light, A-2 Double Polycarbonate Lens & Case, Stern Light Clear",
       "Reference": "2 , , Navigation Light, A-2 Double Polycarbonate Lens & Case, Stern Light Clear"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370425",
@@ -2168,7 +2538,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Navigation Light, A-2 Single Polycarbonate Lens & Case, Towing Light",
       "Reference": "1 , , Navigation Light, A-2 Single Polycarbonate Lens & Case, Towing Light"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370426",
@@ -2181,7 +2553,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Navigation Light, A-2 Single Polycarbonate Lens & Case, White Light (Anchor Light)",
       "Reference": "1 , , Navigation Light, A-2 Single Polycarbonate Lens & Case, White Light (Anchor Light)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370427",
@@ -2194,7 +2568,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Navigation Light, A-2 Single Polycarbonate Lens & Case, Red Light (Non Under Command Light)",
       "Reference": "1 , , Navigation Light, A-2 Single Polycarbonate Lens & Case, Red Light (Non Under Command Light)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370428",
@@ -2207,7 +2583,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Navigation Light, A-2 Single Polycarbonate Lens & Case, Green Light",
       "Reference": "1 , , Navigation Light, A-2 Single Polycarbonate Lens & Case, Green Light"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370441",
@@ -2220,7 +2598,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-2 Double Glass Lens & Metal Case, MSAt Head Light, Clear",
       "Reference": "2 , , Old Model, Navigation Light, A-2 Double Glass Lens & Metal Case, MSAt Head Light, Clear"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370442",
@@ -2233,7 +2613,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-2 Double Glass Lens & Metal Case, Side Light, Green",
       "Reference": "2 , , Old Model, Navigation Light, A-2 Double Glass Lens & Metal Case, Side Light, Green"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370443",
@@ -2246,7 +2628,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-2 Double Glass Lens & Metal Case, Side Light, Red",
       "Reference": "2 , , Old Model, Navigation Light, A-2 Double Glass Lens & Metal Case, Side Light, Red"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370444",
@@ -2259,7 +2643,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-2 Double Glass Lens & Metal Case, Stern Light, Clear",
       "Reference": "2 , , Old Model, Navigation Light, A-2 Double Glass Lens & Metal Case, Stern Light, Clear"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370445",
@@ -2272,7 +2658,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-2 Double Glass Lens & Metal Case, Towing Light, Yellow",
       "Reference": "2 , , Old Model, Navigation Light, A-2 Double Glass Lens & Metal Case, Towing Light, Yellow"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370446",
@@ -2285,7 +2673,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-2 Single Glass Lens & Metal Case, White Light",
       "Reference": "1 , , Old Model, Navigation Light, A-2 Single Glass Lens & Metal Case, White Light"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370447",
@@ -2298,7 +2688,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-2 Single Glass Lens & Metal Case, Red Light",
       "Reference": "1 , , Old Model, Navigation Light, A-2 Single Glass Lens & Metal Case, Red Light"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370448",
@@ -2311,7 +2703,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Navigation Light, A-2 Single Glass Lens & Metal Case, Green Light",
       "Reference": "1 , , Old Model, Navigation Light, A-2 Single Glass Lens & Metal Case, Green Light"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370461",
@@ -2324,7 +2718,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Green Flashing Light, Polycarbonate Lens & Case, E-26 100-115V 60W",
       "Reference": "Green Flashing Light, Polycarbonate Lens & Case, E-26 100-115V 60W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370462",
@@ -2337,7 +2733,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Green Flashing Light, Glass Lens & Metal Case, B-22 100-115V 100W",
       "Reference": "Green Flashing Light, Glass Lens & Metal Case, B-22 100-115V 100W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370463",
@@ -2350,7 +2748,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Green Flashing Light, Glass Lens & Metal Case, B-22 220V 100W",
       "Reference": "Green Flashing Light, Glass Lens & Metal Case, B-22 220V 100W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370464",
@@ -2363,7 +2763,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Green Flashing Light, Polycarbonate Lens & Case, E-26 220V 60W",
       "Reference": "Green Flashing Light, Polycarbonate Lens & Case, E-26 220V 60W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370466",
@@ -2376,7 +2778,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Red Flashing Light, Polycarbonate Lens & Case, E-26, 100-115V 60W",
       "Reference": "Red Flashing Light, Polycarbonate Lens & Case, E-26, 100-115V 60W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370467",
@@ -2389,7 +2793,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Red Flashing Light, Glass Lens & Metal Case, B-22, 100-115V 100W",
       "Reference": "Red Flashing Light, Glass Lens & Metal Case, B-22, 100-115V 100W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370468",
@@ -2402,7 +2808,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Red Flashing Light, Glass Lens & Metal Case, B-22, 220V 100W",
       "Reference": "Red Flashing Light, Glass Lens & Metal Case, B-22, 220V 100W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370469",
@@ -2415,7 +2823,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Red Flashing Light, Polycarbonate Lens & Case, E-26, 220V 60W",
       "Reference": "Red Flashing Light, Polycarbonate Lens & Case, E-26, 220V 60W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370471",
@@ -2428,7 +2838,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Spare Bulb for Flashing Light, 100V 60 W E-26",
       "Reference": "Spare Bulb for Flashing Light, 100V 60 W E-26"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370472",
@@ -2441,7 +2853,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Spare Bulb for Flashing Light, 100V 100 W B-22",
       "Reference": "Spare Bulb for Flashing Light, 100V 100 W B-22"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370473",
@@ -2454,7 +2868,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Spare Bulb for Flashing Light, 115V 60 W E-26",
       "Reference": "Spare Bulb for Flashing Light, 115V 60 W E-26"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370474",
@@ -2467,7 +2883,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Spare Bulb for Flashing Light, 115V 100 W B-22",
       "Reference": "Spare Bulb for Flashing Light, 115V 100 W B-22"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370475",
@@ -2480,7 +2898,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Spare Bulb for Flashing Light, 220V 100 W B-22",
       "Reference": "Spare Bulb for Flashing Light, 220V 100 W B-22"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370476",
@@ -2493,7 +2913,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Spare Bulb for Flashing Light, 220V 60 W B-26",
       "Reference": "Spare Bulb for Flashing Light, 220V 60 W B-26"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370481",
@@ -2506,7 +2928,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Searchlight, AC110V 2000 W Range 1730 Mtr, Sw 450/2000 Wiska",
       "Reference": "Searchlight, AC110V 2000 W Range 1730 Mtr, Sw 450/2000 Wiska"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370482",
@@ -2519,7 +2943,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Searchlight, AC220V 2000 W Range 1430 Mtr, Sw 450/2000 Wiska",
       "Reference": "Searchlight, AC220V 2000 W Range 1430 Mtr, Sw 450/2000 Wiska"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370485",
@@ -2532,7 +2958,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Searchlight, AC220V 2000 W Range 1300 Mtr, Ds 463 Hgs Pesch Seematz",
       "Reference": "Searchlight, AC220V 2000 W Range 1300 Mtr, Ds 463 Hgs Pesch Seematz"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370486",
@@ -2545,7 +2973,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Searchlight, AC220V 2000 W Range 1500 Mtr, Ds 525 Hgs Pesch Seematz",
       "Reference": "Searchlight, AC220V 2000 W Range 1500 Mtr, Ds 525 Hgs Pesch Seematz"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370491",
@@ -2558,7 +2988,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "xenon Searchlight, DC24V 7.8A 1.5 Mil CD Beam Angle 5 Deg",
       "Reference": "xenon Searchlight, DC24V 7.8A 1.5 Mil CD Beam Angle 5 Deg"
-    }
+    },
+    "industrial_tags": [
+      "7.8A"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370492",
@@ -2571,7 +3005,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "xenon Searchlight, DC24V 7.8A 1 Mil CD Beam Angle 10 Deg",
       "Reference": "xenon Searchlight, DC24V 7.8A 1 Mil CD Beam Angle 10 Deg"
-    }
+    },
+    "industrial_tags": [
+      "7.8A"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370501",
@@ -2584,7 +3022,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp Used Suez Canal Searchlight, 100V 2000 W",
       "Reference": "Incandescent Lamp Used Suez Canal Searchlight, 100V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370502",
@@ -2597,7 +3037,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp Used Suez Canal Searchlight, 100V 3000 W",
       "Reference": "Incandescent Lamp Used Suez Canal Searchlight, 100V 3000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370503",
@@ -2610,7 +3052,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp Used Suez Canal Searchlight, 115V 2000 W",
       "Reference": "Incandescent Lamp Used Suez Canal Searchlight, 115V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370504",
@@ -2623,7 +3067,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp Used Suez Canal Searchlight, 115V 3000 W",
       "Reference": "Incandescent Lamp Used Suez Canal Searchlight, 115V 3000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370505",
@@ -2636,7 +3082,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp Used Suez Canal Searchlight, 220V 2000 W",
       "Reference": "Incandescent Lamp Used Suez Canal Searchlight, 220V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370506",
@@ -2649,7 +3097,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp Used Suez Canal Searchlight, 220V 3000 W",
       "Reference": "Incandescent Lamp Used Suez Canal Searchlight, 220V 3000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370507",
@@ -2662,7 +3112,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp Used Suez Canal Searchlight, 230V 2000 W",
       "Reference": "Incandescent Lamp Used Suez Canal Searchlight, 230V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370508",
@@ -2675,7 +3127,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp Used Suez Canal Searchlight, 230V 3000 W",
       "Reference": "Incandescent Lamp Used Suez Canal Searchlight, 230V 3000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370511",
@@ -2688,7 +3142,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Halogen Lamp Used Suez Canal Searchlight, 100V 2000 W",
       "Reference": "Halogen Lamp Used Suez Canal Searchlight, 100V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370512",
@@ -2701,7 +3157,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Halogen Lamp Used Suez Canal Searchlight, 115V 2000 W",
       "Reference": "Halogen Lamp Used Suez Canal Searchlight, 115V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370513",
@@ -2714,7 +3172,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Halogen Lamp Used Suez Canal Searchlight, 220V 2000 W",
       "Reference": "Halogen Lamp Used Suez Canal Searchlight, 220V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370514",
@@ -2727,7 +3187,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Halogen Lamp Used Suez Canal Searchlight, 230V 2000 W",
       "Reference": "Halogen Lamp Used Suez Canal Searchlight, 230V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370521",
@@ -2740,7 +3202,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp for Suez Canal Searchlight, Base-G 100V 2000 W",
       "Reference": "Incandescent Lamp for Suez Canal Searchlight, Base-G 100V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370522",
@@ -2753,7 +3217,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp for Suez Canal Searchlight, Base-G 115V 2000 W",
       "Reference": "Incandescent Lamp for Suez Canal Searchlight, Base-G 115V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370523",
@@ -2766,7 +3232,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp for Suez Canal Searchlight, Base-G 220V 2000 W",
       "Reference": "Incandescent Lamp for Suez Canal Searchlight, Base-G 220V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370524",
@@ -2779,7 +3247,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp for Suez Canal Searchlight, Base-G 100V 3000 W",
       "Reference": "Incandescent Lamp for Suez Canal Searchlight, Base-G 100V 3000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370525",
@@ -2792,7 +3262,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp for Suez Canal Searchlight, Base-G 115V 3000 W",
       "Reference": "Incandescent Lamp for Suez Canal Searchlight, Base-G 115V 3000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370526",
@@ -2805,7 +3277,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Incandescent Lamp for Suez Canal Searchlight, Base-G 220V 3000 W",
       "Reference": "Incandescent Lamp for Suez Canal Searchlight, Base-G 220V 3000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370531",
@@ -2818,7 +3292,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Halogen Lamp for Suez Canal Searchlight, Base-G 38, 100V 2000 W",
       "Reference": "Halogen Lamp for Suez Canal Searchlight, Base-G 38, 100V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370532",
@@ -2831,7 +3307,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Halogen Lamp for Suez Canal Searchlight, Base-G 38, 120V 2000 W",
       "Reference": "Halogen Lamp for Suez Canal Searchlight, Base-G 38, 120V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370533",
@@ -2844,7 +3322,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Halogen Lamp for Suez Canal Searchlight, Base-G 38, 220V 2000 W",
       "Reference": "Halogen Lamp for Suez Canal Searchlight, Base-G 38, 220V 2000 W"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370534",
@@ -2857,7 +3337,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Marine Led Searchlight (Need Model/Power)",
       "Reference": "LED , Marine Led Searchlight (Need Model/Power)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370535",
@@ -2870,7 +3352,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Remote Control Led Searchlight, DC 24V, Rgl40E",
       "Reference": "LED , Remote Control Led Searchlight, DC 24V, Rgl40E"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370536",
@@ -2883,7 +3367,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Remote Control Led Searchlight, AC 100/220V, Rgl80E",
       "Reference": "LED , Remote Control Led Searchlight, AC 100/220V, Rgl80E"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370541",
@@ -2896,7 +3382,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Camera Monitoring Sys, AC 110V, Isps-850K-S Kyokuyo Electric",
       "Reference": "Old Model, Camera Monitoring Sys, AC 110V, Isps-850K-S Kyokuyo Electric"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370543",
@@ -2909,7 +3397,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Camera Monitoring System with Infrared Illuminators, Sme-41220, Samsun",
       "Reference": "Camera Monitoring System with Infrared Illuminators, Sme-41220, Samsun"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370581",
@@ -2922,7 +3412,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Day Signal, Black Ball Net, 610 mm",
       "Reference": "Day Signal, Black Ball Net, 610 mm"
-    }
+    },
+    "industrial_tags": [
+      "610 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370582",
@@ -2935,7 +3429,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Day Signal, Black Cylindrical Shape Net, 610 mm",
       "Reference": "Day Signal, Black Cylindrical Shape Net, 610 mm"
-    }
+    },
+    "industrial_tags": [
+      "610 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370583",
@@ -2948,7 +3446,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Day Signal, Black Conical Shape Net, 610 mm",
       "Reference": "Day Signal, Black Conical Shape Net, 610 mm"
-    }
+    },
+    "industrial_tags": [
+      "610 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370584",
@@ -2961,7 +3463,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Day Signal, Double Conical Shape Net, 610 mm",
       "Reference": "Day Signal, Double Conical Shape Net, 610 mm"
-    }
+    },
+    "industrial_tags": [
+      "610 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370585",
@@ -2974,7 +3480,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Day Signal, Diamond Shape Net, 610 mm",
       "Reference": "Day Signal, Diamond Shape Net, 610 mm"
-    }
+    },
+    "industrial_tags": [
+      "610 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370601",
@@ -2987,7 +3497,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Brown's Nautical Almanac",
       "Reference": "Brown's Nautical Almanac"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370602",
@@ -3000,7 +3512,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np314, The Nautical Almanac",
       "Reference": "UK , UK Publication, Np314, The Nautical Almanac"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370603",
@@ -3013,7 +3527,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Gp 100 The Astronomical Almanac",
       "Reference": "Gp 100 The Astronomical Almanac"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370604",
@@ -3026,7 +3542,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Gp 200 Astronomical Phenomena",
       "Reference": "Gp 200 Astronomical Phenomena"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370605",
@@ -3039,7 +3557,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Ap 1602 The UK Air Almanac",
       "Reference": "Ap 1602 The UK Air Almanac"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370606",
@@ -3052,7 +3572,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model : Np-201/08 B.A.Tide Table Vol.1",
       "Reference": "Old Model : Np-201/08 B.A.Tide Table Vol.1"
-    }
+    },
+    "industrial_tags": [
+      "08B"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370607",
@@ -3065,7 +3589,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np202, Admiralty Tide Tables Vol. 2 - North Atlantic Ocean and Arctic Regions",
       "Reference": "UK , UK Publication, Np202, Admiralty Tide Tables Vol. 2 - North Atlantic Ocean and Arctic Regions"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370608",
@@ -3078,7 +3604,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np203, Admiralty Tide Tables Vol. 3 - Indian Ocean (Including Tidal Stream Tables)",
       "Reference": "UK , UK Publication, Np203, Admiralty Tide Tables Vol. 3 - Indian Ocean (Including Tidal Stream Tables)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370609",
@@ -3091,7 +3619,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np204, Admiralty Tide Tables Vol. 4 - South Pacific Ocean (Including Tidal Stream Tables)",
       "Reference": "UK , UK Publication, Np204, Admiralty Tide Tables Vol. 4 - South Pacific Ocean (Including Tidal Stream Tables)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370610",
@@ -3104,7 +3634,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np205, Admiralty Tide Tables Vol. 5 - South China Sea and Indonesia (Including Tidal Stream Table)",
       "Reference": "UK , UK Publication, Np205, Admiralty Tide Tables Vol. 5 - South China Sea and Indonesia (Including Tidal Stream Table)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370611",
@@ -3117,7 +3649,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np074, British Isles and North Coast of France, Volume. A",
       "Reference": "List of Lightsand Fog Signal, Np074, British Isles and North Coast of France, Volume. A"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370612",
@@ -3130,7 +3664,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np075, Southern & Eastern Sides of The North Sea, Volume. B",
       "Reference": "List of Lightsand Fog Signal, Np075, Southern & Eastern Sides of The North Sea, Volume. B"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370613",
@@ -3143,7 +3679,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np076, Baltic Sea Including Kattegat, Belts and Sound, Volume. C",
       "Reference": "List of Lightsand Fog Signal, Np076, Baltic Sea Including Kattegat, Belts and Sound, Volume. C"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370614",
@@ -3156,7 +3694,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np077, Eastern Atlantic, Western Indian, Arabian & Seas, Volume. D",
       "Reference": "List of Lightsand Fog Signal, Np077, Eastern Atlantic, Western Indian, Arabian & Seas, Volume. D"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370615",
@@ -3169,7 +3709,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np078, West Mediterranean, Volume. E",
       "Reference": "List of Lightsand Fog Signal, Np078, West Mediterranean, Volume. E"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370616",
@@ -3182,7 +3724,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np079, N.E. Indian Ocean, Central Part of South China and Eastern Archipelagic Seas, Volume F",
       "Reference": "List of Lightsand Fog Signal, Np079, N.E. Indian Ocean, Central Part of South China and Eastern Archipelagic Seas, Volum"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370617",
@@ -3195,7 +3739,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np080, Western Side of South Atlantic Ocean & East Pacific Ocean, Volume. G",
       "Reference": "List of Lightsand Fog Signal, Np080, Western Side of South Atlantic Ocean & East Pacific Ocean, Volume. G"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370618",
@@ -3208,7 +3754,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np081, Northern and Eastern Coasts of Canada, Volume. H",
       "Reference": "List of Lightsand Fog Signal, Np081, Northern and Eastern Coasts of Canada, Volume. H"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370619",
@@ -3221,7 +3769,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np082, Western Side of The North Atlantic Ocean, Volume. J",
       "Reference": "List of Lightsand Fog Signal, Np082, Western Side of The North Atlantic Ocean, Volume. J"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370620",
@@ -3234,7 +3784,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np083, Western Pacific Oceans, South of The Equator, Volume. K",
       "Reference": "List of Lightsand Fog Signal, Np083, Western Pacific Oceans, South of The Equator, Volume. K"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370621",
@@ -3247,7 +3799,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np084, Northern Seas: Coast of Norway North of Latitude 60° 55' N, Volume. L",
       "Reference": "List of Lightsand Fog Signal, Np084, Northern Seas: Coast of Norway North of Latitude 60° 55' N, Volume. L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370622",
@@ -3260,7 +3814,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Admirality List of Light & Fog Signal, Vol.M Np-85",
       "Reference": "Old Model, Admirality List of Light & Fog Signal, Vol.M Np-85"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370623",
@@ -3273,7 +3829,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np206, Admiralty Tide Tables Vol. 6 - North Pacific Ocean (Including Tidal Stream Table)",
       "Reference": "UK , UK Publication, Np206, Admiralty Tide Tables Vol. 6 - North Pacific Ocean (Including Tidal Stream Table)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370624",
@@ -3286,7 +3844,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np201A, Admiralty Tide Tables Vol. 1A - United Kingdom - English Channel to River Humber",
       "Reference": "UK , UK Publication, Np201A, Admiralty Tide Tables Vol. 1A - United Kingdom - English Channel to River Humber"
-    }
+    },
+    "industrial_tags": [
+      "1A"
+    ],
+    "land_compat_name": "1A"
   },
   {
     "c": "370625",
@@ -3299,7 +3861,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np201B, Admiralty Tide Tables Vol. 1B - United Kingdom and Ireland",
       "Reference": "UK , UK Publication, Np201B, Admiralty Tide Tables Vol. 1B - United Kingdom and Ireland"
-    }
+    },
+    "industrial_tags": [
+      "1B"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "370626",
@@ -3312,7 +3878,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np281(1), Admiralty Lists of Radio Signals Vol. 1 Part 1: Maritime Radio Stations: EU, Africa & Asia",
       "Reference": "UK , UK Publication, Np281(1), Admiralty Lists of Radio Signals Vol. 1 Part 1: Maritime Radio Stations: EU, Africa & Asi"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370627",
@@ -3325,7 +3893,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np281(2), Admiralty Lists of Radio Signals Vol. 1 Part 2: Maritime Radio Stations: The Americas, Far East and Oceania",
       "Reference": "UK , UK Publication, Np281(2), Admiralty Lists of Radio Signals Vol. 1 Part 2: Maritime Radio Stations: The Americas, Fa"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370628",
@@ -3338,7 +3908,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np282(1), Admiralty Lists of Radio Signals Vol. 2: Radio Aids to Navigation, Differential GPS (Dgps), Legal Time, Radio Time Signals & Electronic Position Fixing System, EU, Africa and Asia (Excluding The Far East)",
       "Reference": "UK , UK Publication, Np282(1), Admiralty Lists of Radio Signals Vol. 2: Radio Aids to Navigation, Differential GPS (Dgps"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370629",
@@ -3351,7 +3923,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Admirality Radio Signal, Vol.2A Np-282A",
       "Reference": "UK , Old Model, Admirality Radio Signal, Vol.2A Np-282A"
-    }
+    },
+    "industrial_tags": [
+      "2A"
+    ],
+    "land_compat_name": "2A"
   },
   {
     "c": "370630",
@@ -3364,7 +3940,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np283(1), Admiralty Lists of Radio Signals Vol. 3 Part 1: Maritime Safety Information Services: EU, Africa and Asia (Excluding Far East)",
       "Reference": "UK , UK Publication, Np283(1), Admiralty Lists of Radio Signals Vol. 3 Part 1: Maritime Safety Information Services: EU,"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370631",
@@ -3377,7 +3955,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np283(2), Admiralty Lists of Radio Signals Vol. 3 Part 2: Maritime Safety Information Services: The Americas, Far East and Oceania",
       "Reference": "UK , UK Publication, Np283(2), Admiralty Lists of Radio Signals Vol. 3 Part 2: Maritime Safety Information Services: The"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370632",
@@ -3390,7 +3970,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np284, Admiralty List of Radio Signals Vol. 4: Meteorological Observation Stations",
       "Reference": "UK , UK Publication, Np284, Admiralty List of Radio Signals Vol. 4: Meteorological Observation Stations"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370633",
@@ -3403,7 +3985,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np285, Admiralty List of Radio Signals Vol. 5: Global Maritime Distress & Safety Systems (Gmdss)",
       "Reference": "UK , UK Publication, Np285, Admiralty List of Radio Signals Vol. 5: Global Maritime Distress & Safety Systems (Gmdss)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370634",
@@ -3416,7 +4000,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Admirality Radio Signal, Vol.5A Np-285A",
       "Reference": "UK , Old Model, Admirality Radio Signal, Vol.5A Np-285A"
-    }
+    },
+    "industrial_tags": [
+      "5A"
+    ],
+    "land_compat_name": "5A"
   },
   {
     "c": "370635",
@@ -3429,7 +4017,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np286(1), Admiralty List of Radio Signals Vol. 6 Part 1: Pilot Services, Vessel Traffic Services & Port Operations: United Kingdom & Europe",
       "Reference": "UK , UK Publication, Np286(1), Admiralty List of Radio Signals Vol. 6 Part 1: Pilot Services, Vessel Traffic Services & "
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370636",
@@ -3442,7 +4032,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np286(2), Admiralty List of Radio Signals Vol. 6 Part 2: Pilot Services, Vessel Traffic Services & Port Operations: EU, Arctic & Baltic Coasts",
       "Reference": "UK , UK Publication, Np286(2), Admiralty List of Radio Signals Vol. 6 Part 2: Pilot Services, Vessel Traffic Services & "
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370637",
@@ -3455,7 +4047,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np286(3), Admiralty List of Radio Signals Vol. 6 Part 3: Pilot Services, Vessel Traffic Services & Port Operations: Mediterranean Sea, Black Sea, Caspian Sea & Suez Canal",
       "Reference": "UK , UK Publication, Np286(3), Admiralty List of Radio Signals Vol. 6 Part 3: Pilot Services, Vessel Traffic Services & "
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370638",
@@ -3468,7 +4062,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np286(4), Admiralty List of Radio Signals Vol. 6 Part 4: Pilot Services, Vessel Traffic Services & Port Operations: Indian Sub-Continent, South East Asia & Australasia",
       "Reference": "UK , UK Publication, Np286(4), Admiralty List of Radio Signals Vol. 6 Part 4: Pilot Services, Vessel Traffic Services & "
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370639",
@@ -3481,7 +4077,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np286(5), Admiralty List of Radio Signals Vol. 6 Part 5: Pilot Services, Vessel Traffic Services & Port Operations: North America, Canada & Greenland",
       "Reference": "UK , UK Publication, Np286(5), Admiralty List of Radio Signals Vol. 6 Part 5: Pilot Services, Vessel Traffic Services & "
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370641",
@@ -3494,7 +4092,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np350(1), Admiralty Distance Tables Vol.1 - Atlantic Ocean",
       "Reference": "UK , UK Publication, Np350(1), Admiralty Distance Tables Vol.1 - Atlantic Ocean"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370642",
@@ -3507,7 +4107,11 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Admirality Distance Table, Vol.1A Np-350 (1)S",
       "Reference": "UK , Old Model, Admirality Distance Table, Vol.1A Np-350 (1)S"
-    }
+    },
+    "industrial_tags": [
+      "1A"
+    ],
+    "land_compat_name": "1A"
   },
   {
     "c": "370643",
@@ -3520,7 +4124,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np350(2), Admiralty Distance Tables Vol. 2 - Indian Ocean",
       "Reference": "UK , UK Publication, Np350(2), Admiralty Distance Tables Vol. 2 - Indian Ocean"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370644",
@@ -3533,7 +4139,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np350(3), Admiralty Distance Tables Vol. 3 - Pacific Ocean",
       "Reference": "UK , UK Publication, Np350(3), Admiralty Distance Tables Vol. 3 - Pacific Ocean"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370645",
@@ -3546,7 +4154,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Admiralty Distance Table, Supplement to Vol. 2 Np-350(2)S",
       "Reference": "UK , Old Model, Admiralty Distance Table, Supplement to Vol. 2 Np-350(2)S"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370646",
@@ -3559,7 +4169,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np286(6), Admiralty List of Radio Signals Vol. 6 Part 6: Pilot Services, Vessel Traffic Services & Port Operations: North East Asia & Russia (Pacific Coast)",
       "Reference": "UK , UK Publication, Np286(6), Admiralty List of Radio Signals Vol. 6 Part 6: Pilot Services, Vessel Traffic Services & "
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370647",
@@ -3572,7 +4184,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np286(7), Admiralty List of Radio Signals Vol. 6 Part 7: Pilot Services, Vessel Traffic Services & Port Operations: Central & South America & The Caribbean",
       "Reference": "UK , UK Publication, Np286(7), Admiralty List of Radio Signals Vol. 6 Part 7: Pilot Services, Vessel Traffic Services & "
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370648",
@@ -3585,7 +4199,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np286(8), Admiralty List of Radio Signals Vol. 6 Part 8: Pilot Services, Vessel Traffic Services & Port Operations: Africa (Excluding Mediterranean Coast), Red Sea and The Persian Gulf",
       "Reference": "UK , UK Publication, Np286(8), Admiralty List of Radio Signals Vol. 6 Part 8: Pilot Services, Vessel Traffic Services & "
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370649",
@@ -3598,7 +4214,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np207, Admiralty Tide Tables Vol. 7 - South West Atlantic Ocean and South America",
       "Reference": "UK , UK Publication, Np207, Admiralty Tide Tables Vol. 7 - South West Atlantic Ocean and South America"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370650",
@@ -3611,7 +4229,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np208, Admiralty Tide Tables Vol. 8 - South East Atlantic Ocean, West Africa and Mediterranean (Including Tidal Stream Tables)",
       "Reference": "UK , UK Publication, Np208, Admiralty Tide Tables Vol. 8 - South East Atlantic Ocean, West Africa and Mediterranean (Inc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370651",
@@ -3624,7 +4244,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Sight Reduction Table, Vol.1 Np-401(1) 0-15 Deg",
       "Reference": "UK , Old Model, Sight Reduction Table, Vol.1 Np-401(1) 0-15 Deg"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370652",
@@ -3637,7 +4259,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Sight Reduction Table, Vol.2 Np-401(2) 15-30 Deg",
       "Reference": "UK , Old Model, Sight Reduction Table, Vol.2 Np-401(2) 15-30 Deg"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370653",
@@ -3650,7 +4274,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Sight Reduction Table, Vol.3 Np-401(3) 30-45 Deg",
       "Reference": "UK , Old Model, Sight Reduction Table, Vol.3 Np-401(3) 30-45 Deg"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370654",
@@ -3663,7 +4289,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Sight Reduction Table, Vol.4 Np-401(4) 45-60 Deg",
       "Reference": "UK , Old Model, Sight Reduction Table, Vol.4 Np-401(4) 45-60 Deg"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370655",
@@ -3676,7 +4304,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Sight Reduction Table, Vol.5 Np-401(5) 60-75 Deg",
       "Reference": "UK , Old Model, Sight Reduction Table, Vol.5 Np-401(5) 60-75 Deg"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370656",
@@ -3689,7 +4319,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Sight Reduction Table, Vol.6 Np-401(6) 75-90 Deg",
       "Reference": "UK , Old Model, Sight Reduction Table, Vol.6 Np-401(6) 75-90 Deg"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370657",
@@ -3702,7 +4334,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np085, Western Side of North Pacific Ocean, Volume. M",
       "Reference": "List of Lightsand Fog Signal, Np085, Western Side of North Pacific Ocean, Volume. M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370658",
@@ -3715,7 +4349,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np086, East Mediterranean and Black Seas, Volume. N",
       "Reference": "List of Lightsand Fog Signal, Np086, East Mediterranean and Black Seas, Volume. N"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370659",
@@ -3728,7 +4364,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np087, North Part of South China and Eastern Archipelagic Seas, Volume P",
       "Reference": "List of Lightsand Fog Signal, Np087, North Part of South China and Eastern Archipelagic Seas, Volume P"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370660",
@@ -3741,7 +4379,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, -, Code of Practice for Controlling Risks Due to Noise on Ships",
       "Reference": "UK , UK Publication, -, Code of Practice for Controlling Risks Due to Noise on Ships"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370661",
@@ -3754,7 +4394,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Sailing Directions Np-1 to Np-72",
       "Reference": "UK , Old Model, Sailing Directions Np-1 to Np-72"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370662",
@@ -3767,7 +4409,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Sailing Direction Supplement for Np-1 to Np-72",
       "Reference": "UK , Old Model, Sailing Direction Supplement for Np-1 to Np-72"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370663",
@@ -3780,7 +4424,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, -, Code of Practice for Controlling Risks Due to Whole-Body Vibration In Ships",
       "Reference": "UK , UK Publication, -, Code of Practice for Controlling Risks Due to Whole-Body Vibration In Ships"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370664",
@@ -3793,7 +4439,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, -, Code of Practice for Controlling Risks Due to Hand-Transmitted Vibration on Ship",
       "Reference": "UK , UK Publication, -, Code of Practice for Controlling Risks Due to Hand-Transmitted Vibration on Ship"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370665",
@@ -3806,7 +4454,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "List of Lightsand Fog Signal, Np088, Eastern Indian Ocean, South of The Equator, Volume Q",
       "Reference": "List of Lightsand Fog Signal, Np088, Eastern Indian Ocean, South of The Equator, Volume Q"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370666",
@@ -3819,7 +4469,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Gtpe-2023, Guide to Port Entry",
       "Reference": "UK Publication, Gtpe-2023, Guide to Port Entry"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370667",
@@ -3832,7 +4484,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "IMO Publication, Ib994E, International Code of Signals",
       "Reference": "IMO Publication, Ib994E, International Code of Signals"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370668",
@@ -3845,7 +4499,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np100, The Mariner's Handbook",
       "Reference": "UK , UK Publication, Np100, The Mariner's Handbook"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370669",
@@ -3858,7 +4514,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Misc. Publication, Norries Table",
       "Reference": "Misc. Publication, Norries Table"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370670",
@@ -3871,7 +4529,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Misc. Publication, Notice to Mariners",
       "Reference": "Old Model, Misc. Publication, Notice to Mariners"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370671",
@@ -3884,7 +4544,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np136-1, Ocean Passages for The World - Atlantic Ocean Vol. I",
       "Reference": "UK , UK Publication, Np136-1, Ocean Passages for The World - Atlantic Ocean Vol. I"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370672",
@@ -3897,7 +4559,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Misc. Publication, Petroleum Measurement Tables",
       "Reference": "Old Model, Misc. Publication, Petroleum Measurement Tables"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370673",
@@ -3910,7 +4574,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np323, The Star Finder & Identifier",
       "Reference": "UK , UK Publication, Np323, The Star Finder & Identifier"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370674",
@@ -3923,7 +4589,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "IMO Publication, I115E, International Medical Guide for Ships 3Rd Edition",
       "Reference": "IMO Publication, I115E, International Medical Guide for Ships 3Rd Edition"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370675",
@@ -3936,7 +4604,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Who or Dti Publication. Merchant Shipping Medical Scale",
       "Reference": "Old Model, Who or Dti Publication. Merchant Shipping Medical Scale"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370676",
@@ -3949,7 +4619,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Who or Dti Publication. Ships Captain Medical Guide",
       "Reference": "Who or Dti Publication. Ships Captain Medical Guide"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370677",
@@ -3962,7 +4634,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Who or Dti Publication.Supplement for Ship Captain's Medical Guide",
       "Reference": "Old Model, Who or Dti Publication.Supplement for Ship Captain's Medical Guide"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370678",
@@ -3975,7 +4649,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Misc. Publication, Ship's Routing and Supplements",
       "Reference": "Misc. Publication, Ship's Routing and Supplements"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370679",
@@ -3988,7 +4664,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Misc Publication, Supplement to Mariners Hand Book (Np-100)",
       "Reference": "Old Model, Misc Publication, Supplement to Mariners Hand Book (Np-100)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370680",
@@ -4001,7 +4679,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Misc Publication, Medical First Aid Guide",
       "Reference": "Old Model, Misc Publication, Medical First Aid Guide"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370681",
@@ -4014,7 +4694,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Misc Publication, International Health Regulations",
       "Reference": "Misc Publication, International Health Regulations"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370682",
@@ -4027,7 +4709,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Misc Publication, Vaccination Certificate Requirements and Health Advice",
       "Reference": "Misc Publication, Vaccination Certificate Requirements and Health Advice"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370683",
@@ -4040,7 +4724,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Misc Publication, Tanker Safety Guide Chemicals",
       "Reference": "Misc Publication, Tanker Safety Guide Chemicals"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370684",
@@ -4053,7 +4739,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Misc Publication, Mooring Equipment Guidelines 2Nd Edition Ocim",
       "Reference": "Misc Publication, Mooring Equipment Guidelines 2Nd Edition Ocim"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370685",
@@ -4066,7 +4754,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Misc Publication, Survival At Sea Brow091",
       "Reference": "Old Model, Misc Publication, Survival At Sea Brow091"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370686",
@@ -4079,7 +4769,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Misc Publication, The Ships Atlas 10Th Ed Ship002",
       "Reference": "Misc Publication, The Ships Atlas 10Th Ed Ship002"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370687",
@@ -4092,7 +4784,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Misc Publication, Reeds Marine Distance Tables Reed016",
       "Reference": "Misc Publication, Reeds Marine Distance Tables Reed016"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370688",
@@ -4105,7 +4799,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Misc Publication, Collision Regulation",
       "Reference": "Old Model, Misc Publication, Collision Regulation"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370689",
@@ -4118,7 +4814,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Misc Publication, Tank Cleaning Guide Dr. Verways Tcg001",
       "Reference": "Misc Publication, Tank Cleaning Guide Dr. Verways Tcg001"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370690",
@@ -4131,7 +4829,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Misc Publication, Stwage & Segregation Guide to The Imdg Ssg001",
       "Reference": "Misc Publication, Stwage & Segregation Guide to The Imdg Ssg001"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370691",
@@ -4144,7 +4844,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Misc Publication, Clean Seas Guide for Oil Tankers 4Th/1994",
       "Reference": "Old Model, Misc Publication, Clean Seas Guide for Oil Tankers 4Th/1994"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370692",
@@ -4157,7 +4859,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np131, Catalogue of Admiralty Charts and Publications",
       "Reference": "UK , UK Publication, Np131, Catalogue of Admiralty Charts and Publications"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370693",
@@ -4170,7 +4874,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np136-2, Ocean Passages for The World - Indian & Pacific Oceans Vol. Ii",
       "Reference": "UK , UK Publication, Np136-2, Ocean Passages for The World - Indian & Pacific Oceans Vol. Ii"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370694",
@@ -4183,7 +4889,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "UK Publication, Np282(2), Admiralty Lists of Radio Signals Vol. 2: Radio Aids to Navigation, Differential GPS (Dgps), Legal Time, Radio Time Signals & Electronic Position Fixing System, The America, Far East and Oceania",
       "Reference": "UK , UK Publication, Np282(2), Admiralty Lists of Radio Signals Vol. 2: Radio Aids to Navigation, Differential GPS (Dgps"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370701",
@@ -4196,7 +4904,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Tcta, U.S. Tidal Current Tables - Atlantic and Gulf Coasts of The United States",
       "Reference": "US , US Publication, US Tcta, U.S. Tidal Current Tables - Atlantic and Gulf Coasts of The United States"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370702",
@@ -4209,7 +4919,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Tctp, U.S. Tidal Current Tables - Pacific Coast of United States Including The Hawaiian Islands",
       "Reference": "US , US Publication, US Tctp, U.S. Tidal Current Tables - Pacific Coast of United States Including The Hawaiian Islands"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370703",
@@ -4222,7 +4934,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US 5090, Maneuvering Board (Pad of 50)",
       "Reference": "US , US Publication, US 5090, Maneuvering Board (Pad of 50)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370704",
@@ -4235,7 +4949,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Wp9998, 9998 Chart Correction Template",
       "Reference": "US , US Publication, US Wp9998, 9998 Chart Correction Template"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370705",
@@ -4248,7 +4964,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Pub.9, American Practical Navigator Bowditch Vol 1 & 2",
       "Reference": "US , US Publication, US Pub.9, American Practical Navigator Bowditch Vol 1 & 2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370706",
@@ -4261,7 +4979,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Mhc Tide Table, DmaNo: Nospbtteurafr",
       "Reference": "US , Old Model, Mhc Tide Table, DmaNo: Nospbtteurafr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370707",
@@ -4274,7 +4994,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Noaa, U.S. Tide Tables - East and Gulf Coasts of The United States (Including The Bahamas and Caribbean)",
       "Reference": "US , US Publication, US Noaa, U.S. Tide Tables - East and Gulf Coasts of The United States (Including The Bahamas and Ca"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370708",
@@ -4287,7 +5009,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, US Publication, US Pub011",
       "Reference": "US , Old Model, US Publication, US Pub011"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370709",
@@ -4300,7 +5024,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Noaa, U.S. Tide Tables - West Coast of The United States Including The Hawaiian Islands and U.S. Territories In The Pacific",
       "Reference": "US , US Publication, US Noaa, U.S. Tide Tables - West Coast of The United States Including The Hawaiian Islands and U.S."
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370710",
@@ -4313,7 +5039,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Cp2, U.S. Coast Pilot Vol. 2 - Atlantic Coast: Cape Cod, Ma to Sandy Hook, Nj",
       "Reference": "US , US Publication, US Cp2, U.S. Coast Pilot Vol. 2 - Atlantic Coast: Cape Cod, Ma to Sandy Hook, Nj"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370711",
@@ -4326,7 +5054,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Cp1, U.S. Coast Pilot Vol. 1 - Atlantic Coast: Eastport, Me to Cape Cod, Ma",
       "Reference": "US , US Publication, US Cp1, U.S. Coast Pilot Vol. 1 - Atlantic Coast: Eastport, Me to Cape Cod, Ma"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370712",
@@ -4339,7 +5069,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model : US Publication, US Pub014",
       "Reference": "US , Old Model : US Publication, US Pub014"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370713",
@@ -4352,7 +5084,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Cp3, U.S. Coast Pilot Vol. 3 - Atlantic Coast: Sandy Hook, Nj to Cape Henry, Va",
       "Reference": "US , US Publication, US Cp3, U.S. Coast Pilot Vol. 3 - Atlantic Coast: Sandy Hook, Nj to Cape Henry, Va"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370714",
@@ -4365,7 +5099,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Cp4, U.S. Coast Pilot Vol. 4 - Atlantic Coast: Cape Henry, VA to Key West, Fl",
       "Reference": "US , US Publication, US Cp4, U.S. Coast Pilot Vol. 4 - Atlantic Coast: Cape Henry, VA to Key West, Fl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370715",
@@ -4378,7 +5114,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Cp5, U.S. Coast Pilot Vol. 5 - Gulf of Mexico, Puerto Rico and Virgin Islands",
       "Reference": "US , US Publication, US Cp5, U.S. Coast Pilot Vol. 5 - Gulf of Mexico, Puerto Rico and Virgin Islands"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370716",
@@ -4391,7 +5129,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Cp6, U.S. Coast Pilot Vol. 6 - Great Lakes & Their Connecting Waterways",
       "Reference": "US , US Publication, US Cp6, U.S. Coast Pilot Vol. 6 - Great Lakes & Their Connecting Waterways"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370717",
@@ -4404,7 +5144,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Cp7, U.S. Coast Pilot Vol. 7 - Pacific Coast, California",
       "Reference": "US , US Publication, US Cp7, U.S. Coast Pilot Vol. 7 - Pacific Coast, California"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370718",
@@ -4417,7 +5159,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Cp8, U.S. Coast Pilot Vol. 8 - Alaska: Dixon Entrance to Cape Spencer",
       "Reference": "US , US Publication, US Cp8, U.S. Coast Pilot Vol. 8 - Alaska: Dixon Entrance to Cape Spencer"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370719",
@@ -4430,7 +5174,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Cp9, U.S. Coast Pilot Vol. 9 - Pacific & Arctic Coasts Alaska: Cape Spencer to Beaufort Sea",
       "Reference": "US , US Publication, US Cp9, U.S. Coast Pilot Vol. 9 - Pacific & Arctic Coasts Alaska: Cape Spencer to Beaufort Sea"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370720",
@@ -4443,7 +5189,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Cp10, U.S. Coast Pilot Vol. 10 - Pacific Coast: Oregon, Washington, Hawaii and Pacific Islands",
       "Reference": "US , US Publication, US Cp10, U.S. Coast Pilot Vol. 10 - Pacific Coast: Oregon, Washington, Hawaii and Pacific Islands"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370721",
@@ -4456,7 +5204,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US LL110, USCG List of Lights - Greenland, The East Coasts of North & South America & The West Indies",
       "Reference": "US , US Publication, US LL110, USCG List of Lights - Greenland, The East Coasts of North & South America & The West Indi"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370722",
@@ -4469,7 +5219,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Pub.111, U. S. List of Lights - The West Coasts of North & South America, Australia, Tasmania, New Zealand, & Islands of The North and South Pacific Oceans",
       "Reference": "US , US Publication, US Pub.111, U. S. List of Lights - The West Coasts of North & South America, Australia, Tasmania, N"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370723",
@@ -4482,7 +5234,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Pub.112, U. S. List of Lights - Western Pacific and Indian Ocean Including The Persian Gulf & Red Sea",
       "Reference": "US , US Publication, US Pub.112, U. S. List of Lights - Western Pacific and Indian Ocean Including The Persian Gulf & Re"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370724",
@@ -4495,7 +5249,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Pub.113, U.S. List of Lights - The West Coasts of Europe and Africa, The Mediterranean Sea, Black Sea & Azovskoye More (Sea of Azov)",
       "Reference": "US , US Publication, US Pub.113, U.S. List of Lights - The West Coasts of Europe and Africa, The Mediterranean Sea, Blac"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370725",
@@ -4508,7 +5264,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Pub.114, U.S. List of Lights - British Isles, English Channel, and North Sea",
       "Reference": "US , US Publication, US Pub.114, U.S. List of Lights - British Isles, English Channel, and North Sea"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370726",
@@ -4521,7 +5279,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Pub.115, U.S. List of Lights - Norway, Iceland and Arctic Ocean",
       "Reference": "US , US Publication, US Pub.115, U.S. List of Lights - Norway, Iceland and Arctic Ocean"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370727",
@@ -4534,7 +5294,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Pub.116, U.S. List of Lights - Baltic Sea with Kattegat, Belts and Sound and Gulf of Bothnia",
       "Reference": "US , US Publication, US Pub.116, U.S. List of Lights - Baltic Sea with Kattegat, Belts and Sound and Gulf of Bothnia"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370731",
@@ -4547,7 +5309,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Sr229-1, Sight Reduction Tables Marine Navigation Vol 1 Lat. 0 to 15 Inclusive",
       "Reference": "US , US Publication, US Sr229-1, Sight Reduction Tables Marine Navigation Vol 1 Lat. 0 to 15 Inclusive"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370732",
@@ -4560,7 +5324,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Sr229-2, Sight Reduction Tables Marine Navigation Vol 2 Lat. 15 to 30 Inclusive",
       "Reference": "US , US Publication, US Sr229-2, Sight Reduction Tables Marine Navigation Vol 2 Lat. 15 to 30 Inclusive"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370733",
@@ -4573,7 +5339,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Sr229-3, Sight Reduction Tables Marine Navigation Vol 3 Lat. 30 to 45 Inclusive",
       "Reference": "US , US Publication, US Sr229-3, Sight Reduction Tables Marine Navigation Vol 3 Lat. 30 to 45 Inclusive"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370734",
@@ -4586,7 +5354,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Sr229-4, Sight Reduction Tables Marine Navigation Vol 4 Lat. 45 to 60 Inclusive",
       "Reference": "US , US Publication, US Sr229-4, Sight Reduction Tables Marine Navigation Vol 4 Lat. 45 to 60 Inclusive"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370735",
@@ -4599,7 +5369,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Sr229-5, Sight Reduction Tables Marine Navigation Vol 5 Lat. 60 to 75 Inclusive",
       "Reference": "US , US Publication, US Sr229-5, Sight Reduction Tables Marine Navigation Vol 5 Lat. 60 to 75 Inclusive"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370736",
@@ -4612,7 +5384,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Sr229-6, Sight Reduction Tables Marine Navigation Vol 6 Lat. 75 to 90 Inclusive",
       "Reference": "US , US Publication, US Sr229-6, Sight Reduction Tables Marine Navigation Vol 6 Lat. 75 to 90 Inclusive"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370737",
@@ -4625,7 +5399,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model : Dma Sight Reduction Table, Inserts for Vol.5&6",
       "Reference": "US , Old Model : Dma Sight Reduction Table, Inserts for Vol.5&6"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370738",
@@ -4638,7 +5414,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Sr249-1, Sight Reduction Tables for Air Navigation Vol 1 Selected Stars",
       "Reference": "US , US Publication, US Sr249-1, Sight Reduction Tables for Air Navigation Vol 1 Selected Stars"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370739",
@@ -4651,7 +5429,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Sr249-2, Sight Reduction Tables for Air Navigation Vol 2 Lat. 0 to 40",
       "Reference": "US , US Publication, US Sr249-2, Sight Reduction Tables for Air Navigation Vol 2 Lat. 0 to 40"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370740",
@@ -4664,7 +5444,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Sr249-3, Sight Reduction Tables for Air Navigation Vol 3 Lat. 39 to 89",
       "Reference": "US , US Publication, US Sr249-3, Sight Reduction Tables for Air Navigation Vol 3 Lat. 39 to 89"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370741",
@@ -4677,7 +5459,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Nv105, Atlas of Pilot Charts - South Atlantic Ocean",
       "Reference": "US , US Publication, US Nv105, Atlas of Pilot Charts - South Atlantic Ocean"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370742",
@@ -4690,7 +5474,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Nv106, Atlas of Pilot Charts - North Atlantic Ocean",
       "Reference": "US , US Publication, US Nv106, Atlas of Pilot Charts - North Atlantic Ocean"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370743",
@@ -4703,7 +5489,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Nv107, Atlas of Pilot Charts - South Pacific Ocean",
       "Reference": "US , US Publication, US Nv107, Atlas of Pilot Charts - South Pacific Ocean"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370744",
@@ -4716,7 +5504,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Nv108, Atlas of Pilot Charts - North Pacific Ocean",
       "Reference": "US , US Publication, US Nv108, Atlas of Pilot Charts - North Pacific Ocean"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370745",
@@ -4729,7 +5519,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Nv109, Atlas of Pilot Charts - Indian Ocean",
       "Reference": "US , US Publication, US Nv109, Atlas of Pilot Charts - Indian Ocean"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370748",
@@ -4742,7 +5534,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Pub125, U.S. Sailing Directions - West Coast of South America",
       "Reference": "US , US Publication, US Pub125, U.S. Sailing Directions - West Coast of South America"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370751",
@@ -4755,7 +5549,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Dma Radio Navigational Aids DmaNo: Rapub117 A",
       "Reference": "US , Old Model, Dma Radio Navigational Aids DmaNo: Rapub117 A"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370752",
@@ -4768,7 +5564,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Dma Radio Navigational Aids DmaNo: Rapub117 B",
       "Reference": "US , Old Model, Dma Radio Navigational Aids DmaNo: Rapub117 B"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370753",
@@ -4781,7 +5579,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Ra117, Radio Navigational Aids",
       "Reference": "US , US Publication, US Ra117, Radio Navigational Aids"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370756",
@@ -4794,7 +5594,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Nv102, International Code of Signals (U.S.) Pub. 102",
       "Reference": "US , US Publication, US Nv102, International Code of Signals (U.S.) Pub. 102"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370757",
@@ -4807,7 +5609,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Nv151, Distance Between Ports",
       "Reference": "US , US Publication, US Nv151, Distance Between Ports"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370758",
@@ -4820,7 +5624,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Nr1, USCG Navigation Rules and Regulations Handbook",
       "Reference": "US , US Publication, US Nr1, USCG Navigation Rules and Regulations Handbook"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370759",
@@ -4833,7 +5639,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US Nv150, World Port Index",
       "Reference": "US , US Publication, US Nv150, World Port Index"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370771",
@@ -4846,7 +5654,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US LL1, USCG Light Lists Vol.1 - Atlantic Coast - St. Croix River, Maine to Shrewsbury River, New Jersey",
       "Reference": "US , US Publication, US LL1, USCG Light Lists Vol.1 - Atlantic Coast - St. Croix River, Maine to Shrewsbury River, New J"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370772",
@@ -4859,7 +5669,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US LL2, USCG Light Lists Vol.2 - Atlantic Coast - Shrewsbury River, New Jersey to Little River, South Carolina",
       "Reference": "US , US Publication, US LL2, USCG Light Lists Vol.2 - Atlantic Coast - Shrewsbury River, New Jersey to Little River, Sou"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370773",
@@ -4872,7 +5684,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US LL3, USCG Light Lists Vol.3 - Atlantic & Gulf Coasts - Little River, S.Carolina to Econfina River, Florida",
       "Reference": "US , US Publication, US LL3, USCG Light Lists Vol.3 - Atlantic & Gulf Coasts - Little River, S.Carolina to Econfina Rive"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370774",
@@ -4885,7 +5699,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US LL4, USCG Light Lists Vol.4 - Gulf of Mexico - Econfina River, Florida to Rio Grande, Texas",
       "Reference": "US , US Publication, US LL4, USCG Light Lists Vol.4 - Gulf of Mexico - Econfina River, Florida to Rio Grande, Texas"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370775",
@@ -4898,7 +5714,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US LL5, USCG Light Lists Vol.5 - Mississippi River System",
       "Reference": "US , US Publication, US LL5, USCG Light Lists Vol.5 - Mississippi River System"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370776",
@@ -4911,7 +5729,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US LL6, USCG Light Lists Vol.6 - Pacific Coast & Pacific Islands",
       "Reference": "US , US Publication, US LL6, USCG Light Lists Vol.6 - Pacific Coast & Pacific Islands"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370777",
@@ -4924,7 +5744,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "US Publication, US LL7, USCG Light Lists Vol.7 - Great Lakes & The St. Lawrence River Above The St. Regis River",
       "Reference": "US , US Publication, US LL7, USCG Light Lists Vol.7 - Great Lakes & The St. Lawrence River Above The St. Regis River"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370786",
@@ -4937,7 +5759,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Tide Table Japanese Vol.1 No.781",
       "Reference": "Tide Table Japanese Vol.1 No.781"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370787",
@@ -4950,7 +5774,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Tide Table Japanese Vol.2 No.782",
       "Reference": "Tide Table Japanese Vol.2 No.782"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370788",
@@ -4963,7 +5789,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Light List Japanese No.411",
       "Reference": "Light List Japanese No.411"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370789",
@@ -4976,7 +5804,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Nautical Almanac Japanese No.681",
       "Reference": "Nautical Almanac Japanese No.681"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370790",
@@ -4989,7 +5819,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Panama Publication, Mropc",
       "Reference": "Panama Publication, Mropc"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370791",
@@ -5002,7 +5834,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "ITU Publication, No:Itu 41745",
       "Reference": "ITU , ITU Publication, No:Itu 41745"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370792",
@@ -5015,7 +5849,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model : ITU Publication, No:Itu003",
       "Reference": "ITU , Old Model : ITU Publication, No:Itu003"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370793",
@@ -5028,7 +5864,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "ITU Publication, No:Itu 41421",
       "Reference": "ITU , ITU Publication, No:Itu 41421"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370794",
@@ -5041,7 +5879,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model : ITU Publication, No:Itu004",
       "Reference": "ITU , Old Model : ITU Publication, No:Itu004"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370795",
@@ -5054,7 +5894,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "ITU Publication, No:Itu 40511",
       "Reference": "ITU , ITU Publication, No:Itu 40511"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370796",
@@ -5067,7 +5909,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "ITU Publication, Radio Regulation",
       "Reference": "ITU , ITU Publication, Radio Regulation"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370797",
@@ -5080,7 +5924,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Egyptian Publication, Suez Cannel Ruls of Navigation",
       "Reference": "Egyptian Publication, Suez Cannel Ruls of Navigation"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370798",
@@ -5093,7 +5939,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Tide Table Japanese, Corn 501, Check List for Life Saving Appliance",
       "Reference": "Tide Table Japanese, Corn 501, Check List for Life Saving Appliance"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370801",
@@ -5106,7 +5954,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Issa Ship Stores Catalogue, Second Edition",
       "Reference": "ISSA , Old Model, Issa Ship Stores Catalogue, Second Edition"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370802",
@@ -5119,7 +5969,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Issa Ship Stores Catalogue, 1St Edition",
       "Reference": "ISSA , Old Model, Issa Ship Stores Catalogue, 1St Edition"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370803",
@@ -5132,7 +5984,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "IMPA Marine Stores Guide, New Edition",
       "Reference": "IMPA , IMPA Marine Stores Guide, New Edition"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370804",
@@ -5145,7 +5999,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Marine Stores Guide on CD-Rom",
       "Reference": "IMPA , Old Model, Marine Stores Guide on CD-Rom"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370806",
@@ -5158,7 +6014,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Chart Catalogue, Np-131",
       "Reference": "Chart Catalogue, Np-131"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370807",
@@ -5171,7 +6029,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "American Chart Catalogue",
       "Reference": "American Chart Catalogue"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370808",
@@ -5184,7 +6044,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Australian Chart Catalogue",
       "Reference": "Australian Chart Catalogue"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370809",
@@ -5197,7 +6059,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Japanese Chart Catalogue No.900",
       "Reference": "Japanese Chart Catalogue No.900"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370810",
@@ -5210,7 +6074,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Canadian Chart Catalogue",
       "Reference": "Canadian Chart Catalogue"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370811",
@@ -5223,7 +6089,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "New Zealand Chart Catalogue",
       "Reference": "New Zealand Chart Catalogue"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370816",
@@ -5236,7 +6104,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "British, Nautical Chart (Need Chart Number ?? )",
       "Reference": "British, Nautical Chart (Need Chart Number ?? )"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370817",
@@ -5249,7 +6119,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "British, Admiralty Chart Folio",
       "Reference": "British, Admiralty Chart Folio"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370818",
@@ -5262,7 +6134,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, British, Decca Navigator Chart",
       "Reference": "Old Model, British, Decca Navigator Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370819",
@@ -5275,7 +6149,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "British, Loran C Navigator Chart",
       "Reference": "British, Loran C Navigator Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370820",
@@ -5288,7 +6164,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "British, Omega Navigator Chart",
       "Reference": "British, Omega Navigator Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370823",
@@ -5301,7 +6179,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "American, D.M.A. Chart",
       "Reference": "American, D.M.A. Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370824",
@@ -5314,7 +6194,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "American, Nos Chart",
       "Reference": "American, Nos Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370826",
@@ -5327,7 +6209,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Japanese, Japanese Chart",
       "Reference": "Japanese, Japanese Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370827",
@@ -5340,7 +6224,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Japanese, Decca Navigator Chart",
       "Reference": "Old Model, Japanese, Decca Navigator Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370828",
@@ -5353,7 +6239,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Japanese, Loran C Chart",
       "Reference": "Japanese, Loran C Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370831",
@@ -5366,7 +6254,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Australian, Australian Chart",
       "Reference": "Australian, Australian Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370832",
@@ -5379,7 +6269,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Australian, Decca Navigator Chart",
       "Reference": "Old Model, Australian, Decca Navigator Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370836",
@@ -5392,7 +6284,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Canadian, Canadian Chart",
       "Reference": "Canadian, Canadian Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370837",
@@ -5405,7 +6299,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Old Model, Canadian, Decca Navigator Chart",
       "Reference": "Old Model, Canadian, Decca Navigator Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370838",
@@ -5418,7 +6314,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Canadian, Loran C Navigator Chart",
       "Reference": "Canadian, Loran C Navigator Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370841",
@@ -5431,7 +6329,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Other Country, New Zealand Chart",
       "Reference": "Other Country, New Zealand Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370842",
@@ -5444,7 +6344,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Other Country, Chinese Chart",
       "Reference": "Other Country, Chinese Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370843",
@@ -5457,7 +6359,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Other Country, Egyptian Chart",
       "Reference": "Other Country, Egyptian Chart"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370851",
@@ -5470,7 +6374,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Log Book, B-4, English",
       "Reference": "Deck Forms, Log Book, B-4, English"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370852",
@@ -5483,7 +6389,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Noon Report B-6",
       "Reference": "Deck Forms, Noon Report B-6"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370853",
@@ -5496,7 +6404,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Oil Record Book for Tanker B-4",
       "Reference": "Deck Forms, Oil Record Book for Tanker B-4"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370854",
@@ -5509,7 +6419,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Bell Book",
       "Reference": "Deck Forms, Bell Book"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370857",
@@ -5522,7 +6434,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Engine Foams, Chief Engineer's Log Book A-3",
       "Reference": "Engine Foams, Chief Engineer's Log Book A-3"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370860",
@@ -5535,7 +6449,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Engine Foams, Noon Report B-6",
       "Reference": "Engine Foams, Noon Report B-6"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370861",
@@ -5548,7 +6464,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Engine Foams, Oil Record Book for All Ships B-4",
       "Reference": "Engine Foams, Oil Record Book for All Ships B-4"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370862",
@@ -5561,7 +6479,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Engine Foams, Bell Book A-5",
       "Reference": "Engine Foams, Bell Book A-5"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370866",
@@ -5574,7 +6494,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Radio Foams, Radio Log Book A-4",
       "Reference": "Radio Foams, Radio Log Book A-4"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370867",
@@ -5587,7 +6509,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Radio Foams, Radar Log Book A-4",
       "Reference": "Radio Foams, Radar Log Book A-4"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370868",
@@ -5600,7 +6524,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Radio Foams, Gmdss Radio Log (English) (2207) A4",
       "Reference": "GMDSS , Radio Foams, Gmdss Radio Log (English) (2207) A4"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370869",
@@ -5613,7 +6539,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Radio Foams, VHF Radio Telephone Log (2211) B5",
       "Reference": "VHF , Radio Foams, VHF Radio Telephone Log (2211) B5"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370870",
@@ -5626,7 +6554,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Radio Foams, Bridge Report (2250)",
       "Reference": "Radio Foams, Bridge Report (2250)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370871",
@@ -5639,7 +6569,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Official Log Book, A-4",
       "Reference": "Deck Forms, Official Log Book, A-4"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370872",
@@ -5652,7 +6584,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Deck Abstract Log, B-3",
       "Reference": "Deck Forms, Deck Abstract Log, B-3"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370873",
@@ -5665,7 +6599,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Commander's Daily Report, B-6",
       "Reference": "Deck Forms, Commander's Daily Report, B-6"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370874",
@@ -5678,7 +6614,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Quarter Master's Daily Report, B-6",
       "Reference": "Deck Forms, Quarter Master's Daily Report, B-6"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370875",
@@ -5691,7 +6629,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Bridge Daily Report, B-6",
       "Reference": "Deck Forms, Bridge Daily Report, B-6"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370876",
@@ -5704,7 +6644,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Chronometer Journal, B-5",
       "Reference": "Deck Forms, Chronometer Journal, B-5"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370877",
@@ -5717,7 +6659,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Compass Journal, B-5",
       "Reference": "Deck Forms, Compass Journal, B-5"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370878",
@@ -5730,7 +6674,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Bridge Order Book, B-5",
       "Reference": "Deck Forms, Bridge Order Book, B-5"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370879",
@@ -5743,7 +6689,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Radar Log, A-4",
       "Reference": "Deck Forms, Radar Log, A-4"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370880",
@@ -5756,7 +6704,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Radar Log, B-4",
       "Reference": "Deck Forms, Radar Log, B-4"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370881",
@@ -5769,7 +6719,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Night Order Book, A-4",
       "Reference": "Deck Forms, Night Order Book, A-4"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370882",
@@ -5782,7 +6734,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Sight Observation Note Book, A-4",
       "Reference": "Deck Forms, Sight Observation Note Book, A-4"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370883",
@@ -5795,7 +6749,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Deck Forms, Compass Error Log Book",
       "Reference": "Deck Forms, Compass Error Log Book"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370886",
@@ -5808,7 +6764,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Radio Foams, Inventory (2250) A4",
       "Reference": "Radio Foams, Inventory (2250) A4"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370887",
@@ -5821,7 +6779,9 @@
       "Catalog Section": "Chapter 37",
       "Description": "Panamanian Marine Form, Oil Record Book",
       "Reference": "Panamanian Marine Form, Oil Record Book"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "370888",
@@ -5834,6 +6794,8 @@
       "Catalog Section": "Chapter 37",
       "Description": "Panamanian Marine Form, Official Log Book",
       "Reference": "Panamanian Marine Form, Official Log Book"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   }
 ]

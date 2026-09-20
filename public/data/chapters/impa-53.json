@@ -10,7 +10,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Japanese Style Toilet Plunger, 130 mm",
       "Reference": "Japanese Style Toilet Plunger, 130 mm"
-    }
+    },
+    "industrial_tags": [
+      "130 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "174257",
@@ -23,7 +27,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Japanese Style Toilet Plunger, 160 mm",
       "Reference": "Japanese Style Toilet Plunger, 160 mm"
-    }
+    },
+    "industrial_tags": [
+      "160 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "174258",
@@ -36,7 +44,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Western Style Toilet Plunger, 165 mm",
       "Reference": "( ) , Western Style Toilet Plunger, 165 mm"
-    }
+    },
+    "industrial_tags": [
+      "165 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "174261",
@@ -49,7 +61,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Domestic Pipe Cleaner. 6 mm x 5 Mtr",
       "Reference": "( ) , Domestic Pipe Cleaner. 6 mm x 5 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "6 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "174262",
@@ -62,7 +78,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Domestic Pipe Cleaner. 6 mm x 10 Mtr",
       "Reference": "( ) , Domestic Pipe Cleaner. 6 mm x 10 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "6 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "174356",
@@ -75,7 +95,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Fly Swatter, Length 550 mm",
       "Reference": "Fly Swatter, Length 550 mm"
-    }
+    },
+    "industrial_tags": [
+      "550 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "491401",
@@ -88,7 +112,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Brass Sponge & Soap Holder, 243 x 125 x 77.5 mm",
       "Reference": "Brass Sponge & Soap Holder, 243 x 125 x 77.5 mm"
-    }
+    },
+    "industrial_tags": [
+      "77.5 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "491411",
@@ -101,7 +129,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Brass Decanter Holder, ID 130 x Depth 81 mm",
       "Reference": "Old Model, Brass Decanter Holder, ID 130 x Depth 81 mm"
-    }
+    },
+    "industrial_tags": [
+      "81 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "491412",
@@ -114,7 +146,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, St.Steel Decanter Holder, ID 120 x Depth 95 mm",
       "Reference": "Old Model, St.Steel Decanter Holder, ID 120 x Depth 95 mm"
-    }
+    },
+    "industrial_tags": [
+      "95 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "491413",
@@ -127,7 +163,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "St.Steel Thermos Holder, ID160 x Depth120 mm",
       "Reference": "St.Steel Thermos Holder, ID160 x Depth120 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "491421",
@@ -140,7 +178,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Brass Tumbler Holder, ID 80 x Depth 61 mm",
       "Reference": "Old Model, Brass Tumbler Holder, ID 80 x Depth 61 mm"
-    }
+    },
+    "industrial_tags": [
+      "61 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "491422",
@@ -153,7 +195,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, St.Steel Tumbler Holder, ID 72 x Depth 65 mm",
       "Reference": "Old Model, St.Steel Tumbler Holder, ID 72 x Depth 65 mm"
-    }
+    },
+    "industrial_tags": [
+      "65 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "491431",
@@ -166,7 +212,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Ashtray, Wall Type, Die-Casting, 140 x 122 x 45 mm",
       "Reference": "Old Model, Ashtray, Wall Type, Die-Casting, 140 x 122 x 45 mm"
-    }
+    },
+    "industrial_tags": [
+      "45 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "491451",
@@ -179,7 +229,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Net Rack for Bed, 220 x 135 mm",
       "Reference": "Net Rack for Bed, 220 x 135 mm"
-    }
+    },
+    "industrial_tags": [
+      "135 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "491452",
@@ -192,7 +246,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Net Rack for Cabin, 420 x 194 mm",
       "Reference": "Old Model, Net Rack for Cabin, 420 x 194 mm"
-    }
+    },
+    "industrial_tags": [
+      "194 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "493101",
@@ -205,7 +263,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Bad Ladder with 3 Step, Aluminium Anodized",
       "Reference": "Bad Ladder with 3 Step, Aluminium Anodized"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "493102",
@@ -218,7 +278,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Bad Ladder with 4 Step, Gray Covered",
       "Reference": "Bad Ladder with 4 Step, Gray Covered"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "493103",
@@ -231,7 +293,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "2 Wall Bracket for Bed Ladder, Aluminium Anodized, 200x45x8 mm",
       "Reference": "2 Wall Bracket for Bed Ladder, Aluminium Anodized, 200x45x8 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530101",
@@ -244,7 +308,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Faucet 13 (1/2)",
       "Reference": "Wall Faucet 13 (1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530102",
@@ -257,7 +323,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Faucet 20 (3/4)",
       "Reference": "Wall Faucet 20 (3/4)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530105",
@@ -270,7 +338,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Long Shank Wall Faucet 13 (1/2)",
       "Reference": "Long Shank Wall Faucet 13 (1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530106",
@@ -283,7 +353,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Long Shank Wall Faucet 20 (3/4)",
       "Reference": "Old Model, Long Shank Wall Faucet 20 (3/4)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530107",
@@ -296,7 +368,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Long Shank Wall Faucet 25 (1)",
       "Reference": "Old Model, Long Shank Wall Faucet 25 (1)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530108",
@@ -309,7 +383,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Long Shank Wall Faucet with Aerator 13 (1/2)",
       "Reference": "Old Model, Long Shank Wall Faucet with Aerator 13 (1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530109",
@@ -322,7 +398,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Long Shank Wall Faucet with Adjustable Flange 13 (1/2)",
       "Reference": "Long Shank Wall Faucet with Adjustable Flange 13 (1/2)"
-    }
+    },
+    "industrial_tags": [
+      "Flange"
+    ],
+    "land_compat_name": "Flange"
   },
   {
     "c": "530110",
@@ -335,7 +415,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Long Shank Wall Faucet with Adjustable Flange 20 (3/4)",
       "Reference": "Long Shank Wall Faucet with Adjustable Flange 20 (3/4)"
-    }
+    },
+    "industrial_tags": [
+      "Flange"
+    ],
+    "land_compat_name": "Flange"
   },
   {
     "c": "530116",
@@ -348,7 +432,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Self Closing Wall Faucet 1/2",
       "Reference": "Self Closing Wall Faucet 1/2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530121",
@@ -361,7 +447,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Hose End Wall Faucets with Hose Coupling 13 (1/2)",
       "Reference": "Old Model, Hose End Wall Faucets with Hose Coupling 13 (1/2)"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "530122",
@@ -374,7 +464,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Hose End Wall Faucets with Hose Coupling 20 (3/4)",
       "Reference": "Old Model, Hose End Wall Faucets with Hose Coupling 20 (3/4)"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "530123",
@@ -387,7 +481,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Hose End Wall Faucets with Hose Coupling 25 (1)",
       "Reference": "Old Model, Hose End Wall Faucets with Hose Coupling 25 (1)"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "530124",
@@ -400,7 +498,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Hose End Wall Faucets with Rotary Spout 13 (1/2)",
       "Reference": "Hose End Wall Faucets with Rotary Spout 13 (1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530125",
@@ -413,7 +513,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Hose End Wall Faucets with Rotary Spout 20 (3/4)",
       "Reference": "Hose End Wall Faucets with Rotary Spout 20 (3/4)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530126",
@@ -426,7 +528,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Hose End Wall Faucets with Adjustable Flange 13 (1/2)",
       "Reference": "Hose End Wall Faucets with Adjustable Flange 13 (1/2)"
-    }
+    },
+    "industrial_tags": [
+      "Flange"
+    ],
+    "land_compat_name": "Flange"
   },
   {
     "c": "530131",
@@ -439,7 +545,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Hose End Long Shank Wall Faucets with Hose Coupling 13 (1/2)",
       "Reference": "Old Model, Hose End Long Shank Wall Faucets with Hose Coupling 13 (1/2)"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "530132",
@@ -452,7 +562,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Hose End Long Shank Wall Faucets with Rotary Spout 13 (1/2)",
       "Reference": "Old Model, Hose End Long Shank Wall Faucets with Rotary Spout 13 (1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530136",
@@ -465,7 +577,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Faucets with Snap on Hose Coupling 13 (1/2)",
       "Reference": "Wall Faucets with Snap on Hose Coupling 13 (1/2)"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "530137",
@@ -478,7 +594,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Faucets with Snap on Hose Coupling 20 (3/4)",
       "Reference": "Wall Faucets with Snap on Hose Coupling 20 (3/4)"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "530138",
@@ -491,7 +611,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Wall Faucets with Snap on Hose Coupling 25 (1)",
       "Reference": "Old Model, Wall Faucets with Snap on Hose Coupling 25 (1)"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "530141",
@@ -504,7 +628,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Sill Cock with Hose Coupling 13 (1/2)",
       "Reference": "Old Model, Sill Cock with Hose Coupling 13 (1/2)"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "530142",
@@ -517,7 +645,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Sill Cock with Hose Coupling 20 (3/4)",
       "Reference": "Old Model, Sill Cock with Hose Coupling 20 (3/4)"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "530143",
@@ -530,7 +662,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Sill Cock with Snap on Hose Coupling 13 (1/2)",
       "Reference": "Sill Cock with Snap on Hose Coupling 13 (1/2)"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "530144",
@@ -543,7 +679,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Sill Cock with Snap on Hose Coupling 20 (3/4)",
       "Reference": "Sill Cock with Snap on Hose Coupling 20 (3/4)"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "530145",
@@ -556,7 +696,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Sill Cock with Snap on Hose Coupling 25 (1)",
       "Reference": "Old Model, Sill Cock with Snap on Hose Coupling 25 (1)"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "530151",
@@ -569,7 +713,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Lavatory Faucet 13 (1/2)",
       "Reference": "Lavatory Faucet 13 (1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530152",
@@ -582,7 +728,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Lavatory Faucet with Rotary Spout 13 (1/2)",
       "Reference": "Lavatory Faucet with Rotary Spout 13 (1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530153",
@@ -595,7 +743,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Lavatory Faucet Self-Closing 13 (1/2)",
       "Reference": "Old Model, Lavatory Faucet Self-Closing 13 (1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530156",
@@ -608,7 +758,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Combination Wall Faucet with Overhead Swivel Spout 13(1/2)",
       "Reference": "Combination Wall Faucet with Overhead Swivel Spout 13(1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530157",
@@ -621,7 +773,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Combination Wall Faucet with Overhead Swivel Spout & Aerator 13(1/2)",
       "Reference": "Old Model, Combination Wall Faucet with Overhead Swivel Spout & Aerator 13(1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530161",
@@ -634,7 +788,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Combination Wall Faucet with Underside Swivel Spout 13(1/2)",
       "Reference": "Combination Wall Faucet with Underside Swivel Spout 13(1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530162",
@@ -647,7 +803,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Combination Wall Faucet with Underside Swivel Spout & Aerator 13(1/2)",
       "Reference": "Old Model, Combination Wall Faucet with Underside Swivel Spout & Aerator 13(1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530164",
@@ -660,7 +818,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mixing Lavetory Faucets for Hand Basin, Single Handle, Tlhg31 for L210C/250C",
       "Reference": "Mixing Lavetory Faucets for Hand Basin, Single Handle, Tlhg31 for L210C/250C"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530165",
@@ -673,7 +833,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mixing Lavetory Faucets for Hand Basin, Single Handle, Tls21 for L210C/250C",
       "Reference": "Mixing Lavetory Faucets for Hand Basin, Single Handle, Tls21 for L210C/250C"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530166",
@@ -686,7 +848,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Single Lever Mixing Sink Faucet with Heat Insulating Cap Tf620Ah (1/2)",
       "Reference": "Old Model, Single Lever Mixing Sink Faucet with Heat Insulating Cap Tf620Ah (1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530168",
@@ -699,7 +863,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mixing Lavetory Faucets for Hand Basin, Doubl Handle, Tl306Ra for L250C",
       "Reference": "Mixing Lavetory Faucets for Hand Basin, Doubl Handle, Tl306Ra for L250C"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530169",
@@ -712,7 +878,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Mixing Lavetory Faucets for Hand Basin, Doubl Handle, Tgl306Maa for L250C",
       "Reference": "Old Model, Mixing Lavetory Faucets for Hand Basin, Doubl Handle, Tgl306Maa for L250C"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530171",
@@ -725,7 +893,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Wall Faucet with Underside Swivel Spout, 13(1/2)",
       "Reference": "Old Model, Wall Faucet with Underside Swivel Spout, 13(1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530172",
@@ -738,7 +908,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Faucet with Underside Swivel Spout, 20(3/4)",
       "Reference": "Wall Faucet with Underside Swivel Spout, 20(3/4)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530173",
@@ -751,7 +923,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Faucet with Underside Swivel Spout, & Aerator 13(1/2)",
       "Reference": "Wall Faucet with Underside Swivel Spout, & Aerator 13(1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530174",
@@ -764,7 +938,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Wall Faucet with Underside Swivel Spout, & Aerator 20(3/4)",
       "Reference": "Old Model, Wall Faucet with Underside Swivel Spout, & Aerator 20(3/4)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530176",
@@ -777,7 +953,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Right Handle Wall Faucet with Overhead Swivel Spout 13(1/2)",
       "Reference": "Old Model, Right Handle Wall Faucet with Overhead Swivel Spout 13(1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530177",
@@ -790,7 +968,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Right Handle Wall Faucet with Overhead Swivel Spout 20(3/4)",
       "Reference": "Right Handle Wall Faucet with Overhead Swivel Spout 20(3/4)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530178",
@@ -803,7 +983,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Right Handle Wall Faucet with Overhead Swivel Spout & Aerator 13(1/2)",
       "Reference": "Right Handle Wall Faucet with Overhead Swivel Spout & Aerator 13(1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530179",
@@ -816,7 +998,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Right Handle Wall Faucet with Overhead Swivel Spout & Aerator 20(3/4)",
       "Reference": "Old Model, Right Handle Wall Faucet with Overhead Swivel Spout & Aerator 20(3/4)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530180",
@@ -829,7 +1013,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Right Handle Wall Faucet with Overhead Swivel Spout & Check Valve 13(1/2)",
       "Reference": "Old Model, Right Handle Wall Faucet with Overhead Swivel Spout & Check Valve 13(1/2)"
-    }
+    },
+    "industrial_tags": [
+      "Check Valve"
+    ],
+    "land_compat_name": "Check Valve"
   },
   {
     "c": "530186",
@@ -842,7 +1030,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Right Hand Wall Faucet with Goose Neck Swivel Spout 13(1/2)",
       "Reference": "Old Model, Right Hand Wall Faucet with Goose Neck Swivel Spout 13(1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530187",
@@ -855,7 +1045,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Right Hand Wall Faucet with Goose Neck Swivel Spout 20(3/4)",
       "Reference": "Old Model, Right Hand Wall Faucet with Goose Neck Swivel Spout 20(3/4)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530188",
@@ -868,7 +1060,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Right Hand Wall Faucet with Goose Neck Swivel Spout & Aerator 13(1/2)",
       "Reference": "Right Hand Wall Faucet with Goose Neck Swivel Spout & Aerator 13(1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530191",
@@ -881,7 +1075,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Right Hand Wall Faucet with High Swivel Spout 13(1/2)",
       "Reference": "Old Model, Right Hand Wall Faucet with High Swivel Spout 13(1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530192",
@@ -894,7 +1090,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Right Hand Wall Faucet with High Swivel Spout & Aerator 13(1/2)",
       "Reference": "Right Hand Wall Faucet with High Swivel Spout & Aerator 13(1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530201",
@@ -907,7 +1105,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Wall Hung Hand Basin with High Back 510 x 470 mm 7.5 Ltr",
       "Reference": "Old Model, Wall Hung Hand Basin with High Back 510 x 470 mm 7.5 Ltr"
-    }
+    },
+    "industrial_tags": [
+      "470 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530202",
@@ -920,7 +1122,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Fittings for Wall Hung Hand Basin 510 x 470 mm 7.5 Ltr",
       "Reference": "Old Model, Fittings for Wall Hung Hand Basin 510 x 470 mm 7.5 Ltr"
-    }
+    },
+    "industrial_tags": [
+      "470 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530211",
@@ -933,7 +1139,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Hung Conner Hand Basin, 601 x 475 mm 4.5 Ltr",
       "Reference": "Wall Hung Conner Hand Basin, 601 x 475 mm 4.5 Ltr"
-    }
+    },
+    "industrial_tags": [
+      "475 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530221",
@@ -946,7 +1156,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Wall Hung Hand Basin Small Size 500 x 400 mm 5.5 Ltr",
       "Reference": "Old Model, Wall Hung Hand Basin Small Size 500 x 400 mm 5.5 Ltr"
-    }
+    },
+    "industrial_tags": [
+      "400 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530222",
@@ -959,7 +1173,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Back Hanger 2 Plates & 6 Screws for Small Hand Basin",
       "Reference": "Old Model, Back Hanger 2 Plates & 6 Screws for Small Hand Basin"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530223",
@@ -972,7 +1188,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Strap 2 Plates & 2 Screws for Small Size Hand Basin",
       "Reference": "Old Model, Strap 2 Plates & 2 Screws for Small Size Hand Basin"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530225",
@@ -985,7 +1203,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Hung Hand Basin, Small Size, L210C",
       "Reference": "Wall Hung Hand Basin, Small Size, L210C"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530231",
@@ -998,7 +1218,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Wall Hung Hand Basin, Medium Size 530 x 430mm 6.0Ltr",
       "Reference": "Old Model, Wall Hung Hand Basin, Medium Size 530 x 430mm 6.0Ltr"
-    }
+    },
+    "industrial_tags": [
+      "430 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530232",
@@ -1011,7 +1235,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Back Hanger with 2 Plates & 8 Screws",
       "Reference": "Old Model, Back Hanger with 2 Plates & 8 Screws"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530233",
@@ -1024,7 +1250,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Close Fitting, Mounting Bracket, Tl10D",
       "Reference": "Close Fitting, Mounting Bracket, Tl10D"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530234",
@@ -1037,7 +1265,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mounting Bracket, Tl250D",
       "Reference": "Mounting Bracket, Tl250D"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530241",
@@ -1050,7 +1280,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Wall Hung Hand Basin, Large Size 560 x 460mm 6.5Ltr",
       "Reference": "Old Model, Wall Hung Hand Basin, Large Size 560 x 460mm 6.5Ltr"
-    }
+    },
+    "industrial_tags": [
+      "460 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530242",
@@ -1063,7 +1297,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Hung Hand Basin, Large Size, L240C",
       "Reference": "Wall Hung Hand Basin, Large Size, L240C"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530301",
@@ -1076,7 +1312,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Water Closet Wash-Down Model C-14",
       "Reference": "Water Closet Wash-Down Model C-14"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530302",
@@ -1089,7 +1327,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Water Closet Wash-Down Toto No:Cs494M",
       "Reference": "Water Closet Wash-Down Toto No:Cs494M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530303",
@@ -1102,7 +1342,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Flush Valve (For Fresh Water) Toto No:Tv565P",
       "Reference": "Flush Valve (For Fresh Water) Toto No:Tv565P"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530306",
@@ -1115,7 +1357,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Water Closet Siphon-Jet Model C-48",
       "Reference": "Old Model, Water Closet Siphon-Jet Model C-48"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530307",
@@ -1128,7 +1372,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model : Seat Bumper Model Ts155 for Water Closet",
       "Reference": "Old Model : Seat Bumper Model Ts155 for Water Closet"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530311",
@@ -1141,7 +1387,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Water Closet Siphonic Wash Down Model C-21",
       "Reference": "Old Model, Water Closet Siphonic Wash Down Model C-21"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530312",
@@ -1154,7 +1402,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Screws to Floor Model T53Ds for Lavatory",
       "Reference": "Old Model, Screws to Floor Model T53Ds for Lavatory"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530313",
@@ -1167,7 +1417,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Screws to Floor 63 mm, 2's, T53Dn",
       "Reference": "Screws to Floor 63 mm, 2's, T53Dn"
-    }
+    },
+    "industrial_tags": [
+      "63 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530331",
@@ -1180,7 +1434,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Toilet Seat, Open Front with Cover, Model Tc-252N",
       "Reference": "Old Model, Toilet Seat, Open Front with Cover, Model Tc-252N"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530332",
@@ -1193,7 +1449,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Toilet Seat, Open Front with Cover, Model Tc-254N",
       "Reference": "Old Model, Toilet Seat, Open Front with Cover, Model Tc-254N"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530333",
@@ -1206,7 +1464,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Toilet Seat, Open Front without Cover, Model Tc-1",
       "Reference": "Toilet Seat, Open Front without Cover, Model Tc-1"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530334",
@@ -1219,7 +1479,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Toilet Seat, Closed Front with Cover Model, Tc-262N",
       "Reference": "Toilet Seat, Closed Front with Cover Model, Tc-262N"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530335",
@@ -1232,7 +1494,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Toilet Seat, Closed Front with Cover Model, Tc-272N",
       "Reference": "Toilet Seat, Closed Front with Cover Model, Tc-272N"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530341",
@@ -1245,7 +1509,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Lavatory Water Supply Pipe with Stop 1/2\", End to End= 698mm",
       "Reference": ". , , Lavatory Water Supply Pipe with Stop 1/2\", End to End= 698mm"
-    }
+    },
+    "industrial_tags": [
+      "698 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530342",
@@ -1258,7 +1526,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Lavatory S Pipe, Plug & Chain Waste with S-Trap 1-1/4\", End to End= 613mm",
       "Reference": ". , S , Lavatory S Pipe, Plug & Chain Waste with S-Trap 1-1/4\", End to End= 613mm"
-    }
+    },
+    "industrial_tags": [
+      "613 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530343",
@@ -1271,7 +1543,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Lavatory S Pipe, Pop-Up Waste with S-Trap 1-1/4\", End to End= 595mm",
       "Reference": ". , S , Old Model, Lavatory S Pipe, Pop-Up Waste with S-Trap 1-1/4\", End to End= 595mm"
-    }
+    },
+    "industrial_tags": [
+      "595 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530344",
@@ -1284,7 +1560,12 @@
       "Catalog Section": "Chapter 53",
       "Description": "Lavatory Floor Flange for 75mm Pipe, Model T53Wr75",
       "Reference": ". , , Lavatory Floor Flange for 75mm Pipe, Model T53Wr75"
-    }
+    },
+    "industrial_tags": [
+      "Flange",
+      "75 mm"
+    ],
+    "land_compat_name": "Flange"
   },
   {
     "c": "530345",
@@ -1297,7 +1578,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Lavatory Inlet Spud 32mm, Model T82C32",
       "Reference": ". , , Lavatory Inlet Spud 32mm, Model T82C32"
-    }
+    },
+    "industrial_tags": [
+      "32 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530346",
@@ -1310,7 +1595,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Lavatory Inlet Spud 32mm, Model T52S32R",
       "Reference": ". , , Lavatory Inlet Spud 32mm, Model T52S32R"
-    }
+    },
+    "industrial_tags": [
+      "32 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530347",
@@ -1323,7 +1612,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, S-Trap 1-1/4\" w/ Plug & Chain, T22Bs",
       "Reference": ". , S , Old Model, S-Trap 1-1/4\" w/ Plug & Chain, T22Bs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530348",
@@ -1336,7 +1627,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model : Water Supply Pipe w/Stop 1/2\" Distance End to End 706 mm, T4B10U",
       "Reference": ". , , Old Model : Water Supply Pipe w/Stop 1/2\" Distance End to End 706 mm, T4B10U"
-    }
+    },
+    "industrial_tags": [
+      "706 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530349",
@@ -1349,7 +1644,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Plumbing Set for Flush Valve, Tsf75Lr",
       "Reference": "Plumbing Set for Flush Valve, Tsf75Lr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530350",
@@ -1362,7 +1659,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Plumbing Set for Flush Valve, Tsf100Ar",
       "Reference": "Plumbing Set for Flush Valve, Tsf100Ar"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530351",
@@ -1375,7 +1674,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Flush Valve, Model T-160, In/Out Pipe Thread : 32 mm",
       "Reference": "( ) , Old Model, Flush Valve, Model T-160, In/Out Pipe Thread : 32 mm"
-    }
+    },
+    "industrial_tags": [
+      "32 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530352",
@@ -1388,7 +1691,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Flush Valve, Model Tm-161",
       "Reference": "( ) , Old Model, Flush Valve, Model Tm-161"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530353",
@@ -1401,7 +1706,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Flush Valve, Model Tv-150N, Floor Supply Floor Outlet",
       "Reference": "( ) , Old Model, Flush Valve, Model Tv-150N, Floor Supply Floor Outlet"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530354",
@@ -1414,7 +1721,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Flush Valve, Model Tv-150Nc, Floor Supply Floor Outlet",
       "Reference": "( ) , Old Model, Flush Valve, Model Tv-150Nc, Floor Supply Floor Outlet"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530355",
@@ -1427,7 +1736,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Flush Valve, Model Tv550S & Tsf75Lr , Wall Supply Outlet w/Vacuum Breaker",
       "Reference": "( ) , Flush Valve, Model Tv550S & Tsf75Lr , Wall Supply Outlet w/Vacuum Breaker"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530356",
@@ -1440,7 +1751,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Flush Valve, Model Tv550S & Tsr100Ar, Wall Supply Straight Outlet w/Vacuum Breaker",
       "Reference": "( ) , Flush Valve, Model Tv550S & Tsr100Ar, Wall Supply Straight Outlet w/Vacuum Breaker"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530357",
@@ -1453,7 +1766,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Flush Valve, Model for Sea Water T-153Nr, Floor Supply Floor Outlet",
       "Reference": "( ) , Old Model, Flush Valve, Model for Sea Water T-153Nr, Floor Supply Floor Outlet"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530358",
@@ -1466,7 +1781,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Flush Valve, Model for Sea Water T-153Nlr, Wall Suply Elbow Outlet",
       "Reference": "( ) , Old Model, Flush Valve, Model for Sea Water T-153Nlr, Wall Suply Elbow Outlet"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530359",
@@ -1479,7 +1796,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Flush Valve, Tv550S",
       "Reference": "( ) , Flush Valve, Tv550S"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530361",
@@ -1492,7 +1811,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model : Laundry Sink W510 x D455 x H355mm",
       "Reference": "Old Model : Laundry Sink W510 x D455 x H355mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530362",
@@ -1505,7 +1826,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Laundry Sink W460 x D400 x H300mm",
       "Reference": "Laundry Sink W460 x D400 x H300mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530366",
@@ -1518,7 +1841,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Waste with S-Trap Pipe, 38 mm Diam",
       "Reference": ". , S , Waste with S-Trap Pipe, 38 mm Diam"
-    }
+    },
+    "industrial_tags": [
+      "38 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530371",
@@ -1531,7 +1858,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Exposure Shower Set, Complete",
       "Reference": "( , , ) , Old Model, Exposure Shower Set, Complete"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530375",
@@ -1544,7 +1873,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Plastic Hand Held Shower Head with 1.2 Mtr Rubber Hose, Pf1/2",
       "Reference": "Plastic Hand Held Shower Head with 1.2 Mtr Rubber Hose, Pf1/2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530376",
@@ -1557,7 +1888,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model : Wall Mounted Shower Head with Ball Joint, PF 1/2",
       "Reference": "Old Model : Wall Mounted Shower Head with Ball Joint, PF 1/2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530377",
@@ -1570,7 +1903,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Wall Mounted Shower Head with Noiseless Valve, PF 1/2",
       "Reference": "Old Model, Wall Mounted Shower Head with Noiseless Valve, PF 1/2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530378",
@@ -1583,7 +1918,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Mounted Shower Head with Flow Control Valve, PF 1/2",
       "Reference": "Wall Mounted Shower Head with Flow Control Valve, PF 1/2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530379",
@@ -1596,7 +1933,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Mounted Shower Head with Wide Face, PF 1/2",
       "Reference": "Wall Mounted Shower Head with Wide Face, PF 1/2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530386",
@@ -1609,7 +1948,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Thermo Element Control Mixing Valve",
       "Reference": "( ) , Old Model, Thermo Element Control Mixing Valve"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530387",
@@ -1622,7 +1963,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Hot/Cold Zone Control Mixing Valve",
       "Reference": "( ) , Old Model, Hot/Cold Zone Control Mixing Valve"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530391",
@@ -1635,7 +1978,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Thermostatic Mixing Valve, Rada 722M",
       "Reference": "Thermostatic Mixing Valve, Rada 722M"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530393",
@@ -1648,7 +1993,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model : Manual Mixing Valves, Rada 88, In/Out : 1/2\" Bsp",
       "Reference": "Old Model : Manual Mixing Valves, Rada 88, In/Out : 1/2\" Bsp"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530411",
@@ -1661,7 +2008,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Mount Soap Tray, Porcelain",
       "Reference": "Wall Mount Soap Tray, Porcelain"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530412",
@@ -1674,7 +2023,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Mount Soap Tray, Chrome Plated",
       "Reference": "Wall Mount Soap Tray, Chrome Plated"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530413",
@@ -1687,7 +2038,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Mount Soap Tray, St.Steel",
       "Reference": "Wall Mount Soap Tray, St.Steel"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530414",
@@ -1700,7 +2053,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Wall Mount Soap Tray, Plastic OHS No:7113",
       "Reference": "Old Model, Wall Mount Soap Tray, Plastic OHS No:7113"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530416",
@@ -1713,7 +2068,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Bathroom Shelf, Porcelain, W140 x L454 x D65mm",
       "Reference": "Bathroom Shelf, Porcelain, W140 x L454 x D65mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530417",
@@ -1726,7 +2083,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Bathroom Shelf, Porcelain. W120 x L300 x D50mm",
       "Reference": "Bathroom Shelf, Porcelain. W120 x L300 x D50mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530418",
@@ -1739,7 +2098,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Bathroom Shelf, Recessed Porcelain, W97 x L389 x D16mm",
       "Reference": "Bathroom Shelf, Recessed Porcelain, W97 x L389 x D16mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530419",
@@ -1752,7 +2113,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Bathroom Shelf with Guard Bar with Glass Plate, W100 x L410 x D80mm",
       "Reference": "Bathroom Shelf with Guard Bar with Glass Plate, W100 x L410 x D80mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530420",
@@ -1765,7 +2128,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Bathroom Shelf with Guard Bar with Plastic Plate, W125 x L456 x D94mm",
       "Reference": "Bathroom Shelf with Guard Bar with Plastic Plate, W125 x L456 x D94mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530451",
@@ -1778,7 +2143,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror 303 x 363mm",
       "Reference": "Mirror 303 x 363mm"
-    }
+    },
+    "industrial_tags": [
+      "363 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530452",
@@ -1791,7 +2160,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror 303 x 455mm",
       "Reference": "Mirror 303 x 455mm"
-    }
+    },
+    "industrial_tags": [
+      "455 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530453",
@@ -1804,7 +2177,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror 363 x 455mm",
       "Reference": "Mirror 363 x 455mm"
-    }
+    },
+    "industrial_tags": [
+      "455 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530454",
@@ -1817,7 +2194,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror 363 x 608mm",
       "Reference": "Mirror 363 x 608mm"
-    }
+    },
+    "industrial_tags": [
+      "608 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530455",
@@ -1830,7 +2211,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror 455 x 608mm",
       "Reference": "Mirror 455 x 608mm"
-    }
+    },
+    "industrial_tags": [
+      "608 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530456",
@@ -1843,7 +2228,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror 201 x 760mm",
       "Reference": "Mirror 201 x 760mm"
-    }
+    },
+    "industrial_tags": [
+      "760 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530457",
@@ -1856,7 +2245,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror 303 x 760mm",
       "Reference": "Mirror 303 x 760mm"
-    }
+    },
+    "industrial_tags": [
+      "760 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530458",
@@ -1869,7 +2262,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror 506 x 760mm",
       "Reference": "Mirror 506 x 760mm"
-    }
+    },
+    "industrial_tags": [
+      "760 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530459",
@@ -1882,7 +2279,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror 608 x 760mm",
       "Reference": "Mirror 608 x 760mm"
-    }
+    },
+    "industrial_tags": [
+      "760 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530460",
@@ -1895,7 +2296,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror 608 x 811mm",
       "Reference": "Mirror 608 x 811mm"
-    }
+    },
+    "industrial_tags": [
+      "811 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530461",
@@ -1908,7 +2313,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror 201 x 912mm",
       "Reference": "Mirror 201 x 912mm"
-    }
+    },
+    "industrial_tags": [
+      "912 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530462",
@@ -1921,7 +2330,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror 303 x 912mm",
       "Reference": "Mirror 303 x 912mm"
-    }
+    },
+    "industrial_tags": [
+      "912 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530466",
@@ -1934,7 +2347,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Medicine Cabinet Size W265 x H485 x D135 mm",
       "Reference": "Medicine Cabinet Size W265 x H485 x D135 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530467",
@@ -1947,7 +2362,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Medicine Cabinet Size W305 x H510 x D145 mm",
       "Reference": "Medicine Cabinet Size W305 x H510 x D145 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530468",
@@ -1960,7 +2377,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Medicine Cabinet Size W415 x H715 x D160 mm",
       "Reference": "Medicine Cabinet Size W415 x H715 x D160 mm"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530501",
@@ -1973,7 +2392,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wash Basin, 3 Ltr, 270 mm",
       "Reference": "Wash Basin, 3 Ltr, 270 mm"
-    }
+    },
+    "industrial_tags": [
+      "270 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530502",
@@ -1986,7 +2409,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wash Basin, 4.3 Ltr, 320 mm",
       "Reference": "Wash Basin, 4.3 Ltr, 320 mm"
-    }
+    },
+    "industrial_tags": [
+      "320 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530503",
@@ -1999,7 +2426,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Basin with Handle, 1.8 Ltr, 140 mm",
       "Reference": "Basin with Handle, 1.8 Ltr, 140 mm"
-    }
+    },
+    "industrial_tags": [
+      "140 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530504",
@@ -2012,7 +2443,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Soap Case",
       "Reference": "Soap Case"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530506",
@@ -2025,7 +2458,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Bathroom Stool, H:150 mm",
       "Reference": "Bathroom Stool, H:150 mm"
-    }
+    },
+    "industrial_tags": [
+      "150 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530508",
@@ -2038,7 +2475,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Stirring Bar, L: 560 mm",
       "Reference": "Stirring Bar, L: 560 mm"
-    }
+    },
+    "industrial_tags": [
+      "560 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "530601",
@@ -2051,7 +2492,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Emergency Drench Shower, Horizontal Supply, 1\" Ips Female",
       "Reference": "Emergency Drench Shower, Horizontal Supply, 1\" Ips Female"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530602",
@@ -2064,7 +2507,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Emergency Drench Shower, Vertical Supply, 1\" Ips Female",
       "Reference": "Emergency Drench Shower, Vertical Supply, 1\" Ips Female"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530603",
@@ -2077,7 +2522,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Emergency Drench Shower, Free Standing, 1-1/4\" Ips Female",
       "Reference": "Old Model, Emergency Drench Shower, Free Standing, 1-1/4\" Ips Female"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530604",
@@ -2090,7 +2537,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Portable, Sefl-Containerd Eye Washer, 34.1 Ltr",
       "Reference": "Portable, Sefl-Containerd Eye Washer, 34.1 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530605",
@@ -2103,7 +2552,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Portable, Sefl-Containerd Eye Washer, 60.5 Ltr",
       "Reference": "Portable, Sefl-Containerd Eye Washer, 60.5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530611",
@@ -2116,7 +2567,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Emergency Eye Wash, Wall Mount, 1/2\" Ips Female",
       "Reference": "Emergency Eye Wash, Wall Mount, 1/2\" Ips Female"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530612",
@@ -2129,7 +2582,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Emergency Eye Wash, Stand, 1/2\" Ips Female",
       "Reference": "Emergency Eye Wash, Stand, 1/2\" Ips Female"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "530621",
@@ -2142,7 +2597,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Emergency Combination, Free-Standing, 1-1/4\" Ips Female",
       "Reference": "Emergency Combination, Free-Standing, 1-1/4\" Ips Female"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531101",
@@ -2155,7 +2612,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Lavatory Faucet, Spout, for Cold, 1/2\", Alligator Brand",
       "Reference": "Lavatory Faucet, Spout, for Cold, 1/2\", Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531102",
@@ -2168,7 +2627,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Lavatory Faucet, Spout, for Hot, 1/2\", Alligator Brand",
       "Reference": "Lavatory Faucet, Spout, for Hot, 1/2\", Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531103",
@@ -2181,7 +2642,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Lavatory Faucet, with Swivel Spout, for Cold, 1/2\" - 200 mm, Alligator Brand",
       "Reference": "Lavatory Faucet, with Swivel Spout, for Cold, 1/2\" - 200 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531104",
@@ -2194,7 +2659,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Lavatory Faucet, with Swivel Spout, for Hot, 1/2\" - 145 mm, Alligator Brand",
       "Reference": "Lavatory Faucet, with Swivel Spout, for Hot, 1/2\" - 145 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "145 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531106",
@@ -2207,7 +2676,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Sink Faucet, Single Lever, 130-170 mm, Alligator Brand",
       "Reference": "Sink Faucet, Single Lever, 130-170 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "170 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531111",
@@ -2220,7 +2693,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Sink Faucet, w/Overhead Swivel Spout, 128-178 mm, Alligator Brand",
       "Reference": "Sink Faucet, w/Overhead Swivel Spout, 128-178 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "178 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531112",
@@ -2233,7 +2710,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Sink Faucet, w/Underside Swivel Spout, 128-178 mm, Alligator Brand",
       "Reference": "Sink Faucet, w/Underside Swivel Spout, 128-178 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "178 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531116",
@@ -2246,7 +2727,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Faucet, with Hose Coupling, 1/2\", Alligator Brand",
       "Reference": "Wall Faucet, with Hose Coupling, 1/2\", Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "Coupling"
+    ],
+    "land_compat_name": "Coupling"
   },
   {
     "c": "531117",
@@ -2259,7 +2744,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Faucet, U Upper Swivel Spout, 1/2\" - 200 mm, Alligator Brand",
       "Reference": "Wall Faucet, U Upper Swivel Spout, 1/2\" - 200 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531118",
@@ -2272,7 +2761,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Wall Faucet, S Upper Swivel Spout, 1/2\" - 200 mm, Alligator Brand",
       "Reference": "Wall Faucet, S Upper Swivel Spout, 1/2\" - 200 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531121",
@@ -2285,7 +2778,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Washbasin Faucet, 1 Hole Fixed Spout, 125 mm, Alligator Brand",
       "Reference": "Washbasin Faucet, 1 Hole Fixed Spout, 125 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "125 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531122",
@@ -2298,7 +2795,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Washbasin Faucet, 1 Hole with Swivel Spout, 140 mm, Alligator Brand",
       "Reference": "Washbasin Faucet, 1 Hole with Swivel Spout, 140 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "140 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531124",
@@ -2311,7 +2812,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Washbasin Faucet, Single Lever, Alligator Brand",
       "Reference": "Washbasin Faucet, Single Lever, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531126",
@@ -2324,7 +2827,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Washbasin Faucet, with Swivel Spout 145mm, 160-250 mm, Alligator Brand",
       "Reference": "Washbasin Faucet, with Swivel Spout 145mm, 160-250 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "145 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531131",
@@ -2337,7 +2844,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Bath/Shower Faucet, w/S Swivel Spout Reversible, 126-178 mm, 1/2\", Alligator Brand",
       "Reference": "Bath/Shower Faucet, w/S Swivel Spout Reversible, 126-178 mm, 1/2\", Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "178 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531132",
@@ -2350,7 +2861,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Bath/Shower Faucet, Single Lever Reversible, 130-170 mm, 1/2\", Alligator Brand",
       "Reference": "Bath/Shower Faucet, Single Lever Reversible, 130-170 mm, 1/2\", Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "170 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531134",
@@ -2363,7 +2878,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Shower Faucet, 128-178 mm, 1/2\", Alligator Brand",
       "Reference": "Shower Faucet, 128-178 mm, 1/2\", Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "178 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531135",
@@ -2376,7 +2895,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Shower Faucet, Single Lever, 130-170 mm, 1/2\", Alligator Brand",
       "Reference": "Shower Faucet, Single Lever, 130-170 mm, 1/2\", Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "170 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531136",
@@ -2389,7 +2912,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Shower Faucet, Thermostatic, 130-170 mm, 1/2\", Alligator Brand",
       "Reference": "Shower Faucet, Thermostatic, 130-170 mm, 1/2\", Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "170 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531141",
@@ -2402,7 +2929,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Kitchen Faucet, 1 Hole w/Swivel Spout, 200 mm, Alligator Brand",
       "Reference": "Kitchen Faucet, 1 Hole w/Swivel Spout, 200 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531142",
@@ -2415,7 +2946,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Kitchen Faucet, 1 Hole Fixed Spout, 185 mm, Alligator Brand",
       "Reference": "Kitchen Faucet, 1 Hole Fixed Spout, 185 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "185 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531144",
@@ -2428,7 +2963,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Kitchen Faucet, Single Lever, 200 mm, Alligator Brand",
       "Reference": "Kitchen Faucet, Single Lever, 200 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531145",
@@ -2441,7 +2980,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Kitchen Faucet, Single Lever Included Shwer, 250 mm, Alligator Brand",
       "Reference": "Kitchen Faucet, Single Lever Included Shwer, 250 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "250 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531151",
@@ -2454,7 +2997,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "BIB Tap, 1/2\" Cold Type, Alligator Brand",
       "Reference": "BIB Tap, 1/2\" Cold Type, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531152",
@@ -2467,7 +3012,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "BIB Tap, 1/2\" Hot Type, Alligator Brand",
       "Reference": "BIB Tap, 1/2\" Hot Type, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531153",
@@ -2480,7 +3027,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "BIB Tap, 1/2\" Cold Type, Alligator Brand",
       "Reference": "BIB Tap, 1/2\" Cold Type, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531154",
@@ -2493,7 +3042,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Washer for Tap, 15x4x4 mm (3/8)",
       "Reference": "Washer for Tap, 15x4x4 mm (3/8)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531155",
@@ -2506,7 +3057,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Washer for Tap, 17x4x4 mm (1/2)",
       "Reference": "Washer for Tap, 17x4x4 mm (1/2)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531156",
@@ -2519,7 +3072,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Washer for Tap, 23x4x4 mm (3/4)",
       "Reference": "Washer for Tap, 23x4x4 mm (3/4)"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531157",
@@ -2532,7 +3087,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Washer Set for Tap, 15 Sizes, 390 Pcs/ Set",
       "Reference": "Washer Set for Tap, 15 Sizes, 390 Pcs/ Set"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531301",
@@ -2545,7 +3102,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Washbasin, Waterline, 1 Tap Hole, 410 x 300 mm, Alligator Brand",
       "Reference": "Washbasin, Waterline, 1 Tap Hole, 410 x 300 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531302",
@@ -2558,7 +3119,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Washbasin, Waterline, 1 Tap Hole, 540 x 410 mm, Alligator Brand",
       "Reference": "Washbasin, Waterline, 1 Tap Hole, 540 x 410 mm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [
+      "410 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531501",
@@ -2571,7 +3136,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Water Closet, P-Trap, Alligator Brand",
       "Reference": "Water Closet, P-Trap, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531502",
@@ -2584,7 +3151,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Water Closet, S-Trap, Alligator Brand",
       "Reference": "Water Closet, S-Trap, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531503",
@@ -2597,7 +3166,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Water Closet, Ao, Alligator Brand",
       "Reference": "Water Closet, Ao, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531504",
@@ -2610,7 +3181,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Water Closet, Combination, Bo, Alligator Brand",
       "Reference": "Water Closet, Combination, Bo, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531505",
@@ -2623,7 +3196,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Water Closet, Combination, P-Trap, Alligator Brand",
       "Reference": "Water Closet, Combination, P-Trap, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531511",
@@ -2636,7 +3211,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Toilet Seat, Closed Front, Alligator Brand",
       "Reference": "Toilet Seat, Closed Front, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531521",
@@ -2649,7 +3226,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Urinal Bowls, Europa 55, Alligator Brand",
       "Reference": "Urinal Bowls, Europa 55, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531531",
@@ -2662,7 +3241,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Cisterns, Low Lever Ty, Alligator Brand",
       "Reference": "Cisterns, Low Lever Ty, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531801",
@@ -2675,7 +3256,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Hand Shower, Hose Size 1/2\", Alligator Brand",
       "Reference": "Hand Shower, Hose Size 1/2\", Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531802",
@@ -2688,7 +3271,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Hand Shower Rail, Hose Size 1/2\", Alligator Brand",
       "Reference": "Hand Shower Rail, Hose Size 1/2\", Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531803",
@@ -2701,7 +3286,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Hand Shower w/Thermostic Faucet, 1/2\" Hose and Stop Tray, Alligator Brand",
       "Reference": "Hand Shower w/Thermostic Faucet, 1/2\" Hose and Stop Tray, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531811",
@@ -2714,7 +3301,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Hand Shower, 1/2\", Alligator Brand",
       "Reference": "Hand Shower, 1/2\", Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531812",
@@ -2727,7 +3316,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Hand Shower, Adjustable 1/2\", Alligator Brand",
       "Reference": "Hand Shower, Adjustable 1/2\", Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531821",
@@ -2740,7 +3331,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Shower Hose, White, PVC, 1/2\" 150 cm, Alligator Brand",
       "Reference": "Shower Hose, White, PVC, 1/2\" 150 cm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531822",
@@ -2753,7 +3346,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Shower Hose, Chrome PVC, 1/2\" 125 cm, Alligator Brand",
       "Reference": "Shower Hose, Chrome PVC, 1/2\" 125 cm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531823",
@@ -2766,7 +3361,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Shower Hose, Chrome PVC, 1/2\" 150 cm, Alligator Brand",
       "Reference": "Shower Hose, Chrome PVC, 1/2\" 150 cm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531824",
@@ -2779,7 +3376,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Shower Hose, Chrome PVC, 1/2\" 200 cm, Alligator Brand",
       "Reference": "Shower Hose, Chrome PVC, 1/2\" 200 cm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531825",
@@ -2792,7 +3391,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Shower Hose, Chrome Metal, 1/2\" 150 cm, Alligator Brand",
       "Reference": "Shower Hose, Chrome Metal, 1/2\" 150 cm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531826",
@@ -2805,7 +3406,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 10 x10 x 300 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 10 x10 x 300 mm"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531827",
@@ -2818,7 +3423,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 10 x12 x 300 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 10 x12 x 300 mm"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531828",
@@ -2831,7 +3440,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 10 x15 x 300 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 10 x15 x 300 mm"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531829",
@@ -2844,7 +3457,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 12 x12 x 300 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 12 x12 x 300 mm"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531830",
@@ -2857,7 +3474,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 12 x15 x 300 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 12 x15 x 300 mm"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531831",
@@ -2870,7 +3491,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 15 x15 x 300 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 15 x15 x 300 mm"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531832",
@@ -2883,7 +3508,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, M10 Male x 1/2 BSP Female x 300 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, M10 Male x 1/2 BSP Female x 300 mm"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531833",
@@ -2896,7 +3525,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 1/2 BSP Female x Female x 300 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 1/2 BSP Female x Female x 300 mm"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531834",
@@ -2909,7 +3542,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 1/2 BSP Female x Male x 300 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 1/2 BSP Female x Male x 300 mm"
-    }
+    },
+    "industrial_tags": [
+      "300 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531835",
@@ -2922,7 +3559,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 1/2 BSP Female x Female x 600 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 1/2 BSP Female x Female x 600 mm"
-    }
+    },
+    "industrial_tags": [
+      "600 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531836",
@@ -2935,7 +3576,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 1/2 x 1/2 x 1000 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 1/2 x 1/2 x 1000 mm"
-    }
+    },
+    "industrial_tags": [
+      "1000 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531837",
@@ -2948,7 +3593,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 3/8\" BSP Female x Female 400 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 3/8\" BSP Female x Female 400 mm"
-    }
+    },
+    "industrial_tags": [
+      "400 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531838",
@@ -2961,7 +3610,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 3/8\" BSP Female x Female 800 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 3/8\" BSP Female x Female 800 mm"
-    }
+    },
+    "industrial_tags": [
+      "800 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531839",
@@ -2974,7 +3627,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 3/8\" BSP Female x Female 1,200 mm",
       "Reference": "Alligator Made, Flexible Hose for Joining Faucet & Water Pipe, 3/8\" BSP Female x Female 1,200 mm"
-    }
+    },
+    "industrial_tags": [
+      "200 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "531901",
@@ -2987,7 +3644,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror, Waterline Ty, W40 x L50 cm, Alligator Brand",
       "Reference": "Mirror, Waterline Ty, W40 x L50 cm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531902",
@@ -3000,7 +3659,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Mirror, Waterline Ty, W40 x L57 cm, Alligator Brand",
       "Reference": "Mirror, Waterline Ty, W40 x L57 cm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531911",
@@ -3013,7 +3674,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Medicine Cabinet, PVC, 35x45x15 cm,, Alligator Brand",
       "Reference": "Medicine Cabinet, PVC, 35x45x15 cm,, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531912",
@@ -3026,7 +3689,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Medicine Cabinet with 220V Plug and Lamp, PVC, 65x49x11 cm,, Alligator Brand",
       "Reference": "Medicine Cabinet with 220V Plug and Lamp, PVC, 65x49x11 cm,, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531921",
@@ -3039,7 +3704,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Shelf, L50 cm, Alligator Brand",
       "Reference": "Shelf, L50 cm, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "531941",
@@ -3052,7 +3719,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Stop Tray, Thread Model, Alligator Brand",
       "Reference": "Stop Tray, Thread Model, Alligator Brand"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "615201",
@@ -3065,7 +3734,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Plumber's Snake Wire Pipe Cleaner, 6 mm x 5 Mtr",
       "Reference": "( ) , Plumber's Snake Wire Pipe Cleaner, 6 mm x 5 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "6 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "615202",
@@ -3078,7 +3751,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Plumber's Snake Wire Pipe Cleaner, 6 mm x 7.5 Mtr",
       "Reference": "( ) , Plumber's Snake Wire Pipe Cleaner, 6 mm x 7.5 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "6 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "615203",
@@ -3091,7 +3768,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Plumber's Snake Wire Pipe Cleaner, 6 mm x 10 Mtr",
       "Reference": "( ) , Plumber's Snake Wire Pipe Cleaner, 6 mm x 10 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "6 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "615204",
@@ -3104,7 +3785,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Plumber's Snake Wire Pipe Cleaner, 10 mm x 10 Mtr",
       "Reference": "( ) , Plumber's Snake Wire Pipe Cleaner, 10 mm x 10 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "10 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "615205",
@@ -3117,7 +3802,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Plumber's Snake Wire Pipe Cleaner, 10 mm x 15 Mtr",
       "Reference": "( ) , Plumber's Snake Wire Pipe Cleaner, 10 mm x 15 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "10 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "615206",
@@ -3130,7 +3819,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Plumber's Snake Wire Pipe Cleaner, 13 mm x 10 Mtr",
       "Reference": "( ) , Plumber's Snake Wire Pipe Cleaner, 13 mm x 10 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "13 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "615207",
@@ -3143,7 +3836,11 @@
       "Catalog Section": "Chapter 53",
       "Description": "Plumber's Snake Wire Pipe Cleaner, 13 mm x 15 Mtr",
       "Reference": "( ) , Plumber's Snake Wire Pipe Cleaner, 13 mm x 15 Mtr"
-    }
+    },
+    "industrial_tags": [
+      "13 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "615210",
@@ -3156,7 +3853,9 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, High Power Handy Drain Cleaner",
       "Reference": "Old Model, High Power Handy Drain Cleaner"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "615215",
@@ -3169,6 +3868,8 @@
       "Catalog Section": "Chapter 53",
       "Description": "Old Model, Kinetic Rim Gun for Cleaning Closing Pipes and Tubes, \"Three Bond\" Model H",
       "Reference": "( , ) , Old Model, Kinetic Rim Gun for Cleaning Closing Pipes and Tubes, \"Three Bond\" Model H"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   }
 ]

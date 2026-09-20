@@ -10,7 +10,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Emergency Door Key Case",
       "Reference": "( ) , Emergency Door Key Case"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490101",
@@ -23,7 +25,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Latch Set, Roller Mortise for Swing Door, OHS No:2000",
       "Reference": "Old Model, Latch Set, Roller Mortise for Swing Door, OHS No:2000"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490103",
@@ -36,7 +40,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Mortise Latch with Knob, OHS No:2115",
       "Reference": "Mortise Latch with Knob, OHS No:2115"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490105",
@@ -49,7 +55,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Cylinder Mortise Lock with Knob, OHS No:2325",
       "Reference": "+ , Cylinder Mortise Lock with Knob, OHS No:2325"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490107",
@@ -62,7 +70,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Mortise Latch with Lever Handle, OHS No:2110",
       "Reference": "Mortise Latch with Lever Handle, OHS No:2110"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490108",
@@ -75,7 +85,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Indicator Mortise Latch with Lever Handle, OHS No:2220",
       "Reference": "Indicator Mortise Latch with Lever Handle, OHS No:2220"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490109",
@@ -88,7 +100,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Indicator Mortise Lock with Lever Handle, OHS No:2270",
       "Reference": "+ , , Indicator Mortise Lock with Lever Handle, OHS No:2270"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490111",
@@ -101,7 +115,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Lock Set, Cylinder Mortise with Knob, OHS No:2305",
       "Reference": "+ , Old Model, Lock Set, Cylinder Mortise with Knob, OHS No:2305"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490113",
@@ -114,7 +130,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Cylinder Mortise Lock with Lever Handle, OHS No:2320",
       "Reference": "+ ( ) , Cylinder Mortise Lock with Lever Handle, OHS No:2320"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490114",
@@ -127,7 +145,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Part for Mortise Lock, OHS No:2320, No:5, Cylinder Collar",
       "Reference": "+ OHS 2320 , Part for Mortise Lock, OHS No:2320, No:5, Cylinder Collar"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490115",
@@ -140,7 +160,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Mortise Lock, OHS No:2320, No:1, Front",
       "Reference": "+ OHS 2320 , Old Model, Part for Mortise Lock, OHS No:2320, No:1, Front"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490116",
@@ -153,7 +175,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Mortise Lock, OHS No:2320, No:2, Case",
       "Reference": "+ OHS 2320 , Old Model, Part for Mortise Lock, OHS No:2320, No:2, Case"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490117",
@@ -166,7 +190,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Mortise Lock, OHS No:2320, No:3, Dead Bolt",
       "Reference": "+ OHS 2320 , Old Model, Part for Mortise Lock, OHS No:2320, No:3, Dead Bolt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490118",
@@ -179,7 +205,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Mortise Lock, OHS No:2320, No:4, Latch Bolt",
       "Reference": "+ OHS 2320 , Old Model, Part for Mortise Lock, OHS No:2320, No:4, Latch Bolt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490119",
@@ -192,7 +220,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Part for Mortise Lock, OHS No:2320, No:6, Cylinder Lock",
       "Reference": "+ OHS 2320 , Part for Mortise Lock, OHS No:2320, No:6, Cylinder Lock"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490120",
@@ -205,7 +235,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Part for Mortise Lock, OHS No:2320, No:7, Key",
       "Reference": "+ OHS 2320 , Part for Mortise Lock, OHS No:2320, No:7, Key"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490121",
@@ -218,7 +250,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Mortise Lock, OHS No:2320, No:8, Thumbturn",
       "Reference": "+ OHS 2320 , Old Model, Part for Mortise Lock, OHS No:2320, No:8, Thumbturn"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490122",
@@ -231,7 +265,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Mortise Lock, OHS No:2320, No:9, Thumbturn Fitting Screw",
       "Reference": "+ OHS 2320 , Old Model, Part for Mortise Lock, OHS No:2320, No:9, Thumbturn Fitting Screw"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490123",
@@ -244,7 +280,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Mortise Lock, OHS No:2320, No:10, Adjusting Plate",
       "Reference": "+ OHS 2320 , Old Model, Part for Mortise Lock, OHS No:2320, No:10, Adjusting Plate"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490124",
@@ -257,7 +295,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Mortise Lock, OHS No:2320, No:11, Adjusting Screw",
       "Reference": "+ OHS 2320 , Old Model, Part for Mortise Lock, OHS No:2320, No:11, Adjusting Screw"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490125",
@@ -270,7 +310,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Mortise Lock, OHS No:2320, No:12, Handle Fitting Screw",
       "Reference": "+ OHS 2320 , Old Model, Part for Mortise Lock, OHS No:2320, No:12, Handle Fitting Screw"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490126",
@@ -283,7 +325,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Mortise Lock, OHS No:2320, No:13, Lever Handle",
       "Reference": "+ OHS 2320 , Old Model, Part for Mortise Lock, OHS No:2320, No:13, Lever Handle"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490127",
@@ -296,7 +340,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Mortise Lock, OHS No:2320, No:14, Handle Shaft",
       "Reference": "+ OHS 2320 , Old Model, Part for Mortise Lock, OHS No:2320, No:14, Handle Shaft"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490128",
@@ -309,7 +355,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Part for Mortise Lock, OHS No:2320, No:15, Strike",
       "Reference": "+ OHS 2320 , Part for Mortise Lock, OHS No:2320, No:15, Strike"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490129",
@@ -322,7 +370,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Part for Mortise Lock, OHS No:2320, No:16, Wrought Box",
       "Reference": "+ OHS 2320 , Part for Mortise Lock, OHS No:2320, No:16, Wrought Box"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490130",
@@ -335,7 +385,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Part for Mortise Lock, OHS No:2320, No:17, Cylinder Set Pin",
       "Reference": "+ OHS 2320 , Part for Mortise Lock, OHS No:2320, No:17, Cylinder Set Pin"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490131",
@@ -348,7 +400,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Lever Tumbler Mortise Lock with Knob, OHS No:2405",
       "Reference": "+ , Old Model, Lever Tumbler Mortise Lock with Knob, OHS No:2405"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490133",
@@ -361,7 +415,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Lever Tumbler Mortise Lock with Lever Handle, OHS No:2410",
       "Reference": "+ ( ) , Lever Tumbler Mortise Lock with Lever Handle, OHS No:2410"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490135",
@@ -374,7 +430,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:1, Front",
       "Reference": "+ OHS 2410 , Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:1, Front"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490136",
@@ -387,7 +445,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:2, Case",
       "Reference": "+ OHS 2410 , Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:2, Case"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490137",
@@ -400,7 +460,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:3, Latch Bolt",
       "Reference": "+ OHS 2410 , Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:3, Latch Bolt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490138",
@@ -413,7 +475,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:4, Dead Bolt",
       "Reference": "+ OHS 2410 , Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:4, Dead Bolt"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490139",
@@ -426,7 +490,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Part for Tumbler Mortise Lock, OHS No:2410, No:5, Escutcheon",
       "Reference": "+ OHS 2410 , Part for Tumbler Mortise Lock, OHS No:2410, No:5, Escutcheon"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490140",
@@ -439,7 +505,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Part for Tumbler Mortise Lock, OHS No:2410, No:6, Key",
       "Reference": "+ OHS 2410 , Part for Tumbler Mortise Lock, OHS No:2410, No:6, Key"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490141",
@@ -452,7 +520,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:7, Adjusting Plate",
       "Reference": "+ OHS 2410 , Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:7, Adjusting Plate"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490142",
@@ -465,7 +535,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:8, Adjusting Screw",
       "Reference": "+ OHS 2410 , Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:8, Adjusting Screw"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490143",
@@ -478,7 +550,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:9, Handle Fit Screw",
       "Reference": "+ OHS 2410 , Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:9, Handle Fit Screw"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490144",
@@ -491,7 +565,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:10, Lever Handle",
       "Reference": "+ OHS 2410 , Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:10, Lever Handle"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490145",
@@ -504,7 +580,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:11, Handle Shaft",
       "Reference": "+ OHS 2410 , Old Model, Part for Tumbler Mortise Lock, OHS No:2410, No:11, Handle Shaft"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490146",
@@ -517,7 +595,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Part for Tumbler Mortise Lock, OHS No:2410, No:12, Strike",
       "Reference": "+ OHS 2410 , Part for Tumbler Mortise Lock, OHS No:2410, No:12, Strike"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490147",
@@ -530,7 +610,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Part for Tumbler Mortise Lock, OHS No:2410, No:13, Wrought Box",
       "Reference": "+ OHS 2410 , Part for Tumbler Mortise Lock, OHS No:2410, No:13, Wrought Box"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490151",
@@ -543,7 +625,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Cylinder Mortise Dead Lock, OHS No:2510",
       "Reference": "+ , OHS 2510 , Cylinder Mortise Dead Lock, OHS No:2510"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490153",
@@ -556,7 +640,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Cylinder Mortise Dead Lock, OHS No:2560",
       "Reference": "+ , OHS 2560 , Old Model, Cylinder Mortise Dead Lock, OHS No:2560"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490154",
@@ -569,7 +655,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Cylinder Mortise Dead Locks, OHS-2570",
       "Reference": "+ , OHS 2570 , Cylinder Mortise Dead Locks, OHS-2570"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490155",
@@ -582,7 +670,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Latch Set Mortise for Sliding Door, OHS No:2700",
       "Reference": "Old Model, Latch Set Mortise for Sliding Door, OHS No:2700"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490157",
@@ -595,7 +685,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Lock Set Cylinder Mortise for Sliding Door, OHS No:2800",
       "Reference": "Old Model, Lock Set Cylinder Mortise for Sliding Door, OHS No:2800"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490159",
@@ -608,7 +700,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Lock Set Cylinder Mortise for Sliding Door, OHS No:2850",
       "Reference": "Old Model, Lock Set Cylinder Mortise for Sliding Door, OHS No:2850"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490161",
@@ -621,7 +715,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Lock Set Lever Tumbler Mortise for Sliding Door, OHS No:2900",
       "Reference": "Old Model, Lock Set Lever Tumbler Mortise for Sliding Door, OHS No:2900"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490163",
@@ -634,7 +730,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Lever Tumbler Mortise Lock for Sliding Door, OHS No:2910",
       "Reference": "Lever Tumbler Mortise Lock for Sliding Door, OHS No:2910"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490165",
@@ -647,7 +745,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Lock Set Lever Tumbler Mortise for Sliding Door, OHS No:2950",
       "Reference": "Old Model, Lock Set Lever Tumbler Mortise for Sliding Door, OHS No:2950"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490171",
@@ -660,7 +760,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Latch Set Rim with Lever Handle, OHS No:3100",
       "Reference": "Old Model, Latch Set Rim with Lever Handle, OHS No:3100"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490173",
@@ -673,7 +775,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Latch Set Rim with Knob OHS No:3105",
       "Reference": "Old Model, Latch Set Rim with Knob OHS No:3105"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490175",
@@ -686,7 +790,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Indicator Rim Latch with Lever Handle OHS No:3200",
       "Reference": "Indicator Rim Latch with Lever Handle OHS No:3200"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490177",
@@ -699,7 +805,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Latch Set Indicator Rim with Knob OHS No:3205",
       "Reference": "Old Model, Latch Set Indicator Rim with Knob OHS No:3205"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490179",
@@ -712,7 +820,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Lock Set Cylinder Rim with Lever Handle OHS No:3300",
       "Reference": "Old Model, Lock Set Cylinder Rim with Lever Handle OHS No:3300"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490181",
@@ -725,7 +835,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Lock Set Cylinder Rim with Knob OHS No:3305",
       "Reference": "Old Model, Lock Set Cylinder Rim with Knob OHS No:3305"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490183",
@@ -738,7 +850,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Lever Tumbler Rim Lock with Lever Handle OHS No:3400",
       "Reference": "Lever Tumbler Rim Lock with Lever Handle OHS No:3400"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490185",
@@ -751,7 +865,9 @@
       "Catalog Section": "Chapter 49",
       "Description": "Old Model, Lock Set Lever Tumbler Rim with Knob OHS No:3405",
       "Reference": "Old Model, Lock Set Lever Tumbler Rim with Knob OHS No:3405"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "490187",
@@ -764,6 +880,8 @@
       "Catalog Section": "Chapter 49",
       "Description": "Steel Door Cylinder Rim Lock with Lever Handle OHS No:3550",
       "Reference": "Steel Door Cylinder Rim Lock with Lever Handle OHS No:3550"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   }
 ]

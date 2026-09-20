@@ -10,7 +10,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for Oxygen",
       "Reference": "Gas Charge for Oxygen"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850104",
@@ -23,7 +25,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for Acetylene",
       "Reference": "Gas Charge for Acetylene"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850106",
@@ -36,7 +40,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Gas Charge for Refrigerant-12, R-12",
       "Reference": "Old Model, Gas Charge for Refrigerant-12, R-12"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850107",
@@ -49,7 +55,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model : Gas Charge for Refrigerant-22, R-22",
       "Reference": "Old Model : Gas Charge for Refrigerant-22, R-22"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850108",
@@ -62,7 +70,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Gas Charge for Refrigerant-R502",
       "Reference": "Old Model, Gas Charge for Refrigerant-R502"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850109",
@@ -75,7 +85,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for HFC-134A",
       "Reference": "Gas Charge for HFC-134A"
-    }
+    },
+    "industrial_tags": [
+      "134A"
+    ],
+    "land_compat_name": "134A"
   },
   {
     "c": "850110",
@@ -88,7 +102,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for R-404A",
       "Reference": "Gas Charge for R-404A"
-    }
+    },
+    "industrial_tags": [
+      "404A"
+    ],
+    "land_compat_name": "404A"
   },
   {
     "c": "850111",
@@ -101,7 +119,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for R-407C",
       "Reference": "Gas Charge for R-407C"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850112",
@@ -114,7 +134,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for Propane",
       "Reference": "Gas Charge for Propane"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850113",
@@ -127,7 +149,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for R-407H",
       "Reference": "Gas Charge for R-407H"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850114",
@@ -140,7 +164,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for Carbon Dioxide",
       "Reference": "Gas Charge for Carbon Dioxide"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850115",
@@ -153,7 +179,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for R-448A",
       "Reference": "Gas Charge for R-448A"
-    }
+    },
+    "industrial_tags": [
+      "448A"
+    ],
+    "land_compat_name": "448A"
   },
   {
     "c": "850116",
@@ -166,7 +196,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for Helium",
       "Reference": "Gas Charge for Helium"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850117",
@@ -179,7 +211,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for R-449A",
       "Reference": "Gas Charge for R-449A"
-    }
+    },
+    "industrial_tags": [
+      "449A"
+    ],
+    "land_compat_name": "449A"
   },
   {
     "c": "850118",
@@ -192,7 +228,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for Argon",
       "Reference": "/ , Gas Charge for Argon"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850120",
@@ -205,7 +243,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for Hydrogen",
       "Reference": "Gas Charge for Hydrogen"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850122",
@@ -218,7 +258,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for Nitrogen",
       "Reference": "Gas Charge for Nitrogen"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850124",
@@ -231,7 +273,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Charge for Ammonia",
       "Reference": "Gas Charge for Ammonia"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850125",
@@ -244,7 +288,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Hycool Marine 45",
       "Reference": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Hycool Marine 45"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850126",
@@ -257,7 +303,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Hycool Marine 45 In 25 Ltr/Can",
       "Reference": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Hycool Marine 45 In 25 Ltr/Can"
-    }
+    },
+    "industrial_tags": [
+      "45 inch"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "850127",
@@ -270,7 +320,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-407F",
       "Reference": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-407F"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850128",
@@ -283,7 +335,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-407F In 12 Ltr/Cyl",
       "Reference": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-407F In 12 Ltr/Cyl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850129",
@@ -296,7 +350,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-407F In 56 Ltr/Cyl",
       "Reference": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-407F In 56 Ltr/Cyl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850130",
@@ -309,7 +365,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-410A",
       "Reference": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-410A"
-    }
+    },
+    "industrial_tags": [
+      "410A"
+    ],
+    "land_compat_name": "410A"
   },
   {
     "c": "850134",
@@ -322,7 +382,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-410A In 12 Ltr/Cyl",
       "Reference": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-410A In 12 Ltr/Cyl"
-    }
+    },
+    "industrial_tags": [
+      "410A"
+    ],
+    "land_compat_name": "410A"
   },
   {
     "c": "850138",
@@ -335,7 +399,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-410A In 56 Ltr/Cyl",
       "Reference": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-410A In 56 Ltr/Cyl"
-    }
+    },
+    "industrial_tags": [
+      "410A"
+    ],
+    "land_compat_name": "410A"
   },
   {
     "c": "850139",
@@ -348,7 +416,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-417D",
       "Reference": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-417D"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850140",
@@ -361,7 +431,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-417D In 12 Ltr/Cyl",
       "Reference": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-417D In 12 Ltr/Cyl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850141",
@@ -374,7 +446,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Seamless Oxygen Gas Cylinder, Gas Capacity 7 M3, Water Capa: 46.7 Ltr",
       "Reference": "Seamless Oxygen Gas Cylinder, Gas Capacity 7 M3, Water Capa: 46.7 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850142",
@@ -387,7 +461,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Seamless Oxygen Gas Cylinder, Gas Capacity 6 M3, Water Capa: 40.0 Ltr",
       "Reference": "Seamless Oxygen Gas Cylinder, Gas Capacity 6 M3, Water Capa: 40.0 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850143",
@@ -400,7 +476,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Seamless Oxygen Gas Cylinder, Gas Capacity 4 M3, Water Capa: 26.7 Ltr",
       "Reference": "Old Model, Seamless Oxygen Gas Cylinder, Gas Capacity 4 M3, Water Capa: 26.7 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850144",
@@ -413,7 +491,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Seamless Oxygen Gas Cylinder, Gas Capacity 3 M3, Water Capa: 20.0 Ltr",
       "Reference": "Old Model, Seamless Oxygen Gas Cylinder, Gas Capacity 3 M3, Water Capa: 20.0 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850147",
@@ -426,7 +506,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-417D In 56 Ltr/Cyl",
       "Reference": "Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-417D In 56 Ltr/Cyl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850148",
@@ -439,7 +521,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-422D",
       "Reference": "Old Model, Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-422D"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850149",
@@ -452,7 +536,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-422D In 56 Ltr/Cyl",
       "Reference": "Old Model, Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-422D In 56 Ltr/Cyl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850150",
@@ -465,7 +551,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-507",
       "Reference": "Old Model, Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-507"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850151",
@@ -478,7 +566,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Acetylene Gas Cylinder, Capacity 7 Kgs, Water Capa: 41 Ltr",
       "Reference": "Acetylene Gas Cylinder, Capacity 7 Kgs, Water Capa: 41 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850152",
@@ -491,7 +581,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Acetylene Gas Cylinder, Capacity 4 Kgs, Water Capa: 24 Ltr",
       "Reference": "Acetylene Gas Cylinder, Capacity 4 Kgs, Water Capa: 24 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850153",
@@ -504,7 +596,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Acetylene Gas Cylinder, Capacity 2 Kgs, Water Capa: 12.5 Ltr",
       "Reference": "Acetylene Gas Cylinder, Capacity 2 Kgs, Water Capa: 12.5 Ltr"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850156",
@@ -517,7 +611,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Spanner for Oxygen & Acetylene Gas Cyliner",
       "Reference": "Spanner for Oxygen & Acetylene Gas Cyliner"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850157",
@@ -530,7 +626,12 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas Cylinder, HFC-134A, 10 Kg",
       "Reference": "Refrigerant Gas Cylinder, HFC-134A, 10 Kg"
-    }
+    },
+    "industrial_tags": [
+      "10K",
+      "134A"
+    ],
+    "land_compat_name": "10K 134A"
   },
   {
     "c": "850158",
@@ -543,7 +644,12 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas Cylinder, HFC-134A, 20 Kg",
       "Reference": "Refrigerant Gas Cylinder, HFC-134A, 20 Kg"
-    }
+    },
+    "industrial_tags": [
+      "20K",
+      "134A"
+    ],
+    "land_compat_name": "20K 134A"
   },
   {
     "c": "850159",
@@ -556,7 +662,12 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Refrigerant Gas Cylinder, HFC-134A, 40 Kg",
       "Reference": "Old Model, Refrigerant Gas Cylinder, HFC-134A, 40 Kg"
-    }
+    },
+    "industrial_tags": [
+      "40K",
+      "134A"
+    ],
+    "land_compat_name": "134A"
   },
   {
     "c": "850160",
@@ -569,7 +680,12 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Gas Cylinder, HFC-134A, 100 Kg",
       "Reference": "Refrigerant Gas Cylinder, HFC-134A, 100 Kg"
-    }
+    },
+    "industrial_tags": [
+      "100K",
+      "134A"
+    ],
+    "land_compat_name": "134A"
   },
   {
     "c": "850161",
@@ -582,7 +698,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Refrigerant Cylinder, R-12, Capacity 11.5 Kgs",
       "Reference": "Old Model, Refrigerant Cylinder, R-12, Capacity 11.5 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850162",
@@ -595,7 +713,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Refrigerant Cylinder, R-12, Capacity 23 Kgs",
       "Reference": "Old Model, Refrigerant Cylinder, R-12, Capacity 23 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850163",
@@ -608,7 +728,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Refrigerant Cylinder, R-12, Capacity 46.5 Kgs",
       "Reference": "Old Model, Refrigerant Cylinder, R-12, Capacity 46.5 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850164",
@@ -621,7 +743,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Refrigerant Cylinder, R-12, Capacity 116 Kgs",
       "Reference": "Old Model, Refrigerant Cylinder, R-12, Capacity 116 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850165",
@@ -634,7 +758,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Cylinder, R-404A, Capacity 100 Kgs",
       "Reference": "Refrigerant Cylinder, R-404A, Capacity 100 Kgs"
-    }
+    },
+    "industrial_tags": [
+      "404A"
+    ],
+    "land_compat_name": "404A"
   },
   {
     "c": "850166",
@@ -647,7 +775,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model : Refrigerant Cylinder, R-22, Capacity 10 Kgs",
       "Reference": "Old Model : Refrigerant Cylinder, R-22, Capacity 10 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850167",
@@ -660,7 +790,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model : Refrigerant Cylinder, R-22, Capacity 20 Kgs",
       "Reference": "Old Model : Refrigerant Cylinder, R-22, Capacity 20 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850168",
@@ -673,7 +805,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model : Refrigerant Cylinder, R-22, Capacity 40 Kgs",
       "Reference": "Old Model : Refrigerant Cylinder, R-22, Capacity 40 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850169",
@@ -686,7 +820,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model : Refrigerant Cylinder, R-22, Capacity 100 Kgs",
       "Reference": "Old Model : Refrigerant Cylinder, R-22, Capacity 100 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850170",
@@ -699,7 +835,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Cylinder, R-407C, Capacity 100 Kgs",
       "Reference": "Refrigerant Cylinder, R-407C, Capacity 100 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850172",
@@ -712,7 +850,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model : Refrigerant Cylinder, R-22, Dot Approved Ty Capacity 53-57 Kgs",
       "Reference": "Old Model : Refrigerant Cylinder, R-22, Dot Approved Ty Capacity 53-57 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850173",
@@ -725,7 +865,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Cylinder, R-404A, Capacity 10 Kgs",
       "Reference": "Refrigerant Cylinder, R-404A, Capacity 10 Kgs"
-    }
+    },
+    "industrial_tags": [
+      "404A"
+    ],
+    "land_compat_name": "404A"
   },
   {
     "c": "850174",
@@ -738,7 +882,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Cylinder, R-404A, Capacity 20 Kgs",
       "Reference": "Refrigerant Cylinder, R-404A, Capacity 20 Kgs"
-    }
+    },
+    "industrial_tags": [
+      "404A"
+    ],
+    "land_compat_name": "404A"
   },
   {
     "c": "850177",
@@ -751,7 +899,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Nitrogen Gas Cylinder, Seamless Capacity 9-10 M3",
       "Reference": "Nitrogen Gas Cylinder, Seamless Capacity 9-10 M3"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850178",
@@ -764,7 +914,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Non Refillable Refrigerant Gas Cylinder, R-410A, 10 Kg/Cyl",
       "Reference": "Non Refillable Refrigerant Gas Cylinder, R-410A, 10 Kg/Cyl"
-    }
+    },
+    "industrial_tags": [
+      "410A"
+    ],
+    "land_compat_name": "410A"
   },
   {
     "c": "850179",
@@ -777,7 +931,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Non Refillable Refrigerant Gas Cylinder, R-404A, 10 Kg/Cyl",
       "Reference": "Non Refillable Refrigerant Gas Cylinder, R-404A, 10 Kg/Cyl"
-    }
+    },
+    "industrial_tags": [
+      "404A"
+    ],
+    "land_compat_name": "404A"
   },
   {
     "c": "850180",
@@ -790,7 +948,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Non Refillable Refrigerant Gas Cylinder, R-407C, 10 Kg/Cyl",
       "Reference": "Non Refillable Refrigerant Gas Cylinder, R-407C, 10 Kg/Cyl"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850181",
@@ -803,7 +963,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Propane Gas Cylinder, Capacity 5 Kgs",
       "Reference": "Propane Gas Cylinder, Capacity 5 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850182",
@@ -816,7 +978,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Propane Gas Cylinder, Capacity 10 Kgs",
       "Reference": "Propane Gas Cylinder, Capacity 10 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850183",
@@ -829,7 +993,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Propane Gas Cylinder, Capacity 20 Kgs",
       "Reference": "Propane Gas Cylinder, Capacity 20 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850186",
@@ -842,7 +1008,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Top Valve for Oxygen Cylinder, with Male Thread W22 x 14TPI",
       "Reference": "Old Model, Top Valve for Oxygen Cylinder, with Male Thread W22 x 14TPI"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850187",
@@ -855,7 +1023,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Top Valve for Oxygen Cylinder, with Female Thread W23 x 14TPI",
       "Reference": "Old Model, Top Valve for Oxygen Cylinder, with Female Thread W23 x 14TPI"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850188",
@@ -868,7 +1038,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Top Valve for Acetylene, Cylinder",
       "Reference": "Old Model, Top Valve for Acetylene, Cylinder"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850189",
@@ -881,7 +1053,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Top Valve for Refrigerant Cylinder with Male Thread W26 x 14TPI",
       "Reference": "Old Model, Top Valve for Refrigerant Cylinder with Male Thread W26 x 14TPI"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850190",
@@ -894,7 +1068,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Adaptor for Gas Cylinder Regulator, 22.8 x 14mm, Male",
       "Reference": "( ) , Adaptor for Gas Cylinder Regulator, 22.8 x 14mm, Male"
-    }
+    },
+    "industrial_tags": [
+      "14 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "850191",
@@ -907,7 +1085,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Oxygen Regulator, Male Thread for Inlet W 22.8 x 14TPI",
       "Reference": ". ( ) , Oxygen Regulator, Male Thread for Inlet W 22.8 x 14TPI"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850192",
@@ -920,7 +1100,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Oxygen Regulator, Female Thread for Inlet W 22 x 14TPI",
       "Reference": ". ( ) , Oxygen Regulator, Female Thread for Inlet W 22 x 14TPI"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850193",
@@ -933,7 +1115,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Acetylene Regulator, Clamp Inlte",
       "Reference": ". ( ) , Acetylene Regulator, Clamp Inlte"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850194",
@@ -946,7 +1130,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Adaptor for Gas Cylinder Regulator, 22 x 14mm, Female",
       "Reference": "( ) , Adaptor for Gas Cylinder Regulator, 22 x 14mm, Female"
-    }
+    },
+    "industrial_tags": [
+      "14 mm"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "850195",
@@ -959,7 +1147,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Cylinder, R-407C, Capacity 10 Kgs",
       "Reference": "Refrigerant Cylinder, R-407C, Capacity 10 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850196",
@@ -972,7 +1162,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Refrigerant Cylinder, R-407C, Capacity 20 Kgs",
       "Reference": "Refrigerant Cylinder, R-407C, Capacity 20 Kgs"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850198",
@@ -985,7 +1177,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-507 In 12 Ltr/Cyl",
       "Reference": "Old Model, Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-507 In 12 Ltr/Cyl"
-    }
+    },
+    "industrial_tags": [
+      "507 inch"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "850199",
@@ -998,7 +1194,11 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-507 In 56 Ltr/Cyl",
       "Reference": "Old Model, Refrigerant Gas, As Alternative for Cfc Refrigerant, Wilhelmsen, Unicool R-507 In 56 Ltr/Cyl"
-    }
+    },
+    "industrial_tags": [
+      "507 inch"
+    ],
+    "land_compat_name": ""
   },
   {
     "c": "850201",
@@ -1011,7 +1211,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Welding Torch with Nozzle Set, Wt-05",
       "Reference": "Gas Welding Torch with Nozzle Set, Wt-05"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850202",
@@ -1024,7 +1226,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Welding Torch with Nozzle Set, Wt-00",
       "Reference": "Gas Welding Torch with Nozzle Set, Wt-00"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850203",
@@ -1037,7 +1241,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Welding Torch with Nozzle Set, Wt-02",
       "Reference": "Gas Welding Torch with Nozzle Set, Wt-02"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850204",
@@ -1050,7 +1256,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Gas Welding Torch with Nozzle Set, Wt-04",
       "Reference": "Gas Welding Torch with Nozzle Set, Wt-04"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850205",
@@ -1063,7 +1271,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Gas Welding Torch with Nozzle Set, No.A2",
       "Reference": "Old Model, Gas Welding Torch with Nozzle Set, No.A2"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850206",
@@ -1076,7 +1286,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Old Model, Gas Welding Torch with Nozzle Set, No.L",
       "Reference": "Old Model, Gas Welding Torch with Nozzle Set, No.L"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850211",
@@ -1089,7 +1301,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Spare Nozzle for No.3 Gas Welding Torch, No.25",
       "Reference": "Spare Nozzle for No.3 Gas Welding Torch, No.25"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850212",
@@ -1102,7 +1316,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Spare Nozzle for No.3 Gas Welding Torch, No.50",
       "Reference": "Spare Nozzle for No.3 Gas Welding Torch, No.50"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850213",
@@ -1115,7 +1331,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Spare Nozzle for No.3 Gas Welding Torch, No.75",
       "Reference": "Spare Nozzle for No.3 Gas Welding Torch, No.75"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850214",
@@ -1128,7 +1346,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Spare Nozzle for No.3 Gas Welding Torch, No.100",
       "Reference": "Spare Nozzle for No.3 Gas Welding Torch, No.100"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850215",
@@ -1141,7 +1361,9 @@
       "Catalog Section": "Chapter 85",
       "Description": "Spare Nozzle for No.3 Gas Welding Torch, No.150",
       "Reference": "Spare Nozzle for No.3 Gas Welding Torch, No.150"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   },
   {
     "c": "850216",
@@ -1154,6 +1376,8 @@
       "Catalog Section": "Chapter 85",
       "Description": "Spare Nozzle for No.S Gas Welding Torch, No.50",
       "Reference": "Spare Nozzle for No.S Gas Welding Torch, No.50"
-    }
+    },
+    "industrial_tags": [],
+    "land_compat_name": ""
   }
 ]

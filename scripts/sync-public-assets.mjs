@@ -20,10 +20,17 @@ rmSync(dest, { recursive: true, force: true });
 cpSync(src, dest, { recursive: true });
 console.log('OK public/assets → assets/');
 
-const aisSrc = join(ROOT, 'public', 'data', 'fleet-ais-positions.json');
 const dataDir = join(ROOT, 'data');
-if (existsSync(aisSrc)) {
-    mkdirSync(dataDir, { recursive: true });
-    copyFileSync(aisSrc, join(dataDir, 'fleet-ais-positions.json'));
-    console.log('OK public/data/fleet-ais-positions.json → data/');
+mkdirSync(dataDir, { recursive: true });
+
+const dataMirrors = [
+    ['public/data/fleet-ais-positions.json', 'fleet-ais-positions.json'],
+    ['public/data/impa-full.json', 'impa-full.json'],
+];
+
+for (const [relSrc, destName] of dataMirrors) {
+    const srcPath = join(ROOT, relSrc);
+    if (!existsSync(srcPath)) continue;
+    copyFileSync(srcPath, join(dataDir, destName));
+    console.log(`OK ${relSrc} → data/${destName}`);
 }
