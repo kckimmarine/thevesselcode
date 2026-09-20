@@ -243,16 +243,25 @@ storeChunks.forEach((fileName) => {
 check('robots references sitemap core', robotsTxt.includes('Sitemap: https://www.thevesselcode.com/sitemap-core.xml'));
 check('robots sitemap count matches index', (robotsTxt.match(/^Sitemap: /gm) || []).length === storeChunks.length + 2);
 
+const GSC_HUB_CODES = [
+    '231016', '790669', '790228', '812101', '617425', '331197', '591150', '190123', '614273',
+];
+
 const home = readFileSync(join(root, 'home', 'index.html'), 'utf8');
-check('home popular impa section', home.includes('Popular Marine Stores'));
-check('home links impa 232436', home.includes('href="/store/232436"'));
-check('home links impa 812204', home.includes('href="/store/812204"'));
+check('home high-intent impa grid', home.includes('class="high-intent-impa-grid"'));
+check('home store spec index link', home.includes('<a href="/store/812101">Marine Store Spec Index (IMPA 812101)</a>'));
+GSC_HUB_CODES.forEach((code) => {
+    check(`home links /store/${code}`, home.includes(`href="/store/${code}"`));
+});
 
 const toolkit = readFileSync(join(root, 'toolkit.html'), 'utf8');
+check('toolkit high-intent impa grid', toolkit.includes('class="high-intent-impa-grid"'));
+GSC_HUB_CODES.forEach((code) => {
+    check(`toolkit links /store/${code}`, toolkit.includes(`href="/store/${code}"`));
+});
 check(
-    'toolkit popular impa section',
-    toolkit.includes('mkt-module-card--catalog')
-        && (toolkit.includes('IMPA stores index') || toolkit.includes('data-tool-tab="catalog"')),
+    'toolkit catalog tab',
+    toolkit.includes('data-tool-tab="catalog"') || toolkit.includes('mkt-module-card--catalog'),
 );
 check('toolkit canonical', toolkit.includes('rel="canonical" href="https://www.thevesselcode.com/toolkit"'));
 

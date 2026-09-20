@@ -388,6 +388,14 @@
             en: 'Tap a code — open the IMPA plate in the Toolkit viewer instantly.',
             ko: '코드를 누르면 Toolkit 도판 뷰어에서 즉시 열립니다.',
         },
+        'home.impa.hub.title': {
+            en: 'High-traffic IMPA catalog pages',
+            ko: '검색 수요가 높은 IMPA 카탈로그',
+        },
+        'home.impa.hub.lead': {
+            en: 'Direct links to drawing, specs, and fast RFQ — verified search demand from shipboard and shore teams.',
+            ko: '도면·스펙·빠른 RFQ로 바로 연결 — 선박·육상 검색 수요가 검증된 코드입니다.',
+        },
 
         'sm.meta.description': {
             en: 'TVC-SM — The resilient, local-first ship management OS for PMS, SPARE, and shore ZIP sync. Built for fleets that sail offline.',
