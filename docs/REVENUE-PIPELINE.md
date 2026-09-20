@@ -50,7 +50,8 @@ Response includes `actions[]` with `priority`, `message`, and `revenue` hint.
 
 ## Weekly cron
 
-Vercel runs `GET /api/cron/revenue-digest` every **Monday 00:00 UTC** (09:00 KST).
+GitHub Actions workflow **Revenue pipeline digest** (`.github/workflows/revenue-digest-cron.yml`) calls production every **Monday 00:15 UTC** (~09:15 KST).  
+Set repo secret **`CRON_SECRET`** (or **`REVENUE_PIPELINE_SECRET`**) to match Vercel.
 
 Manual trigger:
 

@@ -1,0 +1,33 @@
+name: Revenue pipeline digest
+
+# Weekly GSC + GA4 → money-actions email (Mon 00:15 UTC ≈ 09:15 KST).
+# Manual: Actions → Revenue pipeline digest → Run workflow
+
+on:
+  schedule:
+    - cron: '15 0 * * 1'
+  workflow_dispatch:
+
+concurrency:
+  group: revenue-digest-cron
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger production revenue digest
+        env:
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          REVENUE_PIPELINE_SECRET: ${{ secrets.REVENUE_PIPELINE_SECRET }}
+        run: |
+          set -euo pipefail
+          SECRET="${CRON_SECRET:-$REVENUE_PIPELINE_SECRET}"
+          if [ -z "$SECRET" ]; then
+            echo "Missing CRON_SECRET or REVENUE_PIPELINE_SECRET in repo secrets."
+            exit 1
+          fi
+          curl -fsS -H "Authorization: Bearer ${SECRET}" \
+            "https://www.thevesselcode.com/api/cron/revenue-digest" \
+            | head -c 4000
+          echo ""
