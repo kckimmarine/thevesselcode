@@ -76,6 +76,7 @@ function buildInquiryText(body) {
             `UTM: source=${body.utmSource} medium=${body.utmMedium || ''} campaign=${body.utmCampaign || ''} content=${body.utmContent || ''} term=${body.utmTerm || ''}`.trim(),
         );
     }
+    if (body.utmTerm) lines.push(`GSC query hint (utm_term): ${body.utmTerm}`);
     lines.push(
         '',
         'Message:',
