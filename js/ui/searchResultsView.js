@@ -1,5 +1,5 @@
 /**
- * THE VESSEL CODE — in-app Google Custom Search results (TVC branded, no Google widgets).
+ * THE VESSEL CODE — in-app Tavily web search results (TVC branded, no third-party widgets).
  */
 (function (global) {
     'use strict';
@@ -208,7 +208,7 @@
             body.innerHTML = `
                 ${priorityInternal}
                 ${quotaNoticeHtml(q)}
-                <p class="tvc-search-results__status">Configure GOOGLE_SEARCH_API_KEY and GOOGLE_SEARCH_CX on the server to enable live results.</p>
+                <p class="tvc-search-results__status">Configure TAVILY_API_KEY on the server to enable live maritime web results.</p>
             `;
             return { ok: false, data };
         }
