@@ -42,6 +42,10 @@ for (const raw of kept) {
     };
     if (raw.category) entry.category = String(raw.category).trim();
     if (raw.specs && typeof raw.specs === 'object') entry.specs = raw.specs;
+    if (Array.isArray(raw.industrial_tags) && raw.industrial_tags.length) {
+        entry.industrial_tags = raw.industrial_tags;
+    }
+    if (raw.land_compat_name) entry.land_compat_name = String(raw.land_compat_name).trim();
     map[normalized] = entry;
 }
 
