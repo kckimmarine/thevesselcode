@@ -23,6 +23,8 @@
     { "source": "/maritime-pms/", "destination": "/sm", "permanent": true }
   ],
   "rewrites": [
+    { "source": "/api/rfq-draft", "destination": "/api/rfq" },
+    { "source": "/api/rfq-submit", "destination": "/api/rfq" },
     {
       "source": "/",
       "has": [{ "type": "host", "value": "app.thevesselcode.com" }],
@@ -66,9 +68,6 @@
       "includeFiles": "data/tvc-knowledge-base.json"
     },
     "api/revenue-pipeline.js": {
-      "maxDuration": 30
-    },
-    "api/cron/revenue-digest.js": {
       "maxDuration": 30
     }
   },

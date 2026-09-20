@@ -8,7 +8,7 @@ Turn **Search Console**, **GA4**, and **contact leads** into a weekly action lis
 Google Search (GSC) ──┐
 GA4 (sessions, events) ├──► /api/revenue-pipeline ──► JSON + digestText
 GitHub [Contact] issues ┘         │
-                                  ├── Weekly cron → email / Slack / Kakao Work
+                                  ├── Weekly digest (?digest=1) → email / Slack / Kakao Work
                                   └── npm run revenue:report (local)
 ```
 
@@ -26,7 +26,7 @@ GitHub [Contact] issues ┘         │
 | `GSC_SITE_URL` | Exact GSC property URL, e.g. `https://www.thevesselcode.com/` or `sc-domain:thevesselcode.com` |
 | `GOOGLE_SERVICE_ACCOUNT_JSON` | Service account JSON (raw or base64). Same key as indexing is OK if APIs enabled |
 | `REVENUE_PIPELINE_SECRET` | Bearer token for `GET /api/revenue-pipeline` |
-| `CRON_SECRET` | Vercel Cron auth (also accepts as pipeline secret) |
+| `CRON_SECRET` | GitHub Actions weekly digest auth (also accepts as pipeline secret) |
 | `REVENUE_DIGEST_TO` | Optional email override for weekly digest (defaults to `CONTACT_TO_EMAILS`) |
 | `CONTACT_SLACK_WEBHOOK_URL` / `CONTACT_KAKAO_WORK_WEBHOOK_URL` | Optional instant digest |
 | `RESEND_API_KEY` | Weekly digest email |
@@ -57,7 +57,7 @@ Manual trigger:
 
 ```bash
 curl -s -H "Authorization: Bearer $CRON_SECRET" \
-  https://www.thevesselcode.com/api/cron/revenue-digest
+  "https://www.thevesselcode.com/api/revenue-pipeline?digest=1"
 ```
 
 ## Local report
