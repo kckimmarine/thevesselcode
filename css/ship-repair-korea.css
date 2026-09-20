@@ -72,6 +72,10 @@
     line-height: 1.65;
 }
 
+.srk-page .home-section .mkt-prose {
+    color: var(--mkt-text, #334155);
+}
+
 .srk-table-wrap {
     overflow-x: auto;
     margin: 1.25rem 0 1.75rem;
