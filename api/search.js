@@ -128,7 +128,9 @@ async function handler(req, res) {
     }
 
     try {
+        const startedMs = Date.now();
         const result = await fetchGoogleSearch(q);
+        const executionMs = Date.now() - startedMs;
         if (!result.ok) {
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json; charset=utf-8');
@@ -145,9 +147,13 @@ async function handler(req, res) {
 
         dailyApiCallCount += 1;
 
+        const totalResults = result.searchInformation?.totalResults;
         const payload = {
             query: q,
             items: result.items,
+            resultCount: result.items.length,
+            totalResults: totalResults != null ? String(totalResults) : undefined,
+            executionMs,
             fallback: false,
             quotaExceeded: false,
             cached: false,

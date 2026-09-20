@@ -137,9 +137,10 @@
         }
 
         if (isVesselImoQuery(q)) {
+            const imo = digitsOnly(q).slice(0, 7);
             return {
                 type: 'vessel',
-                imo: impaDigits.slice(0, 7),
+                imo,
                 confidence: 'high',
                 direct: true,
                 query: q,

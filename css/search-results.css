@@ -57,7 +57,7 @@
     font-size: 0.92rem;
 }
 
-.tvc-search-results__google-btn {
+.tvc-search-results__external-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -75,8 +75,8 @@
     transition: background 0.15s ease, border-color 0.15s ease;
 }
 
-.tvc-search-results__google-btn:hover,
-.tvc-search-results__google-btn:focus-visible {
+.tvc-search-results__external-link:hover,
+.tvc-search-results__external-link:focus-visible {
     background: rgba(14, 165, 233, 0.32);
     border-color: #38bdf8;
     color: #fff;
@@ -181,8 +181,65 @@
 .tvc-search-result-card__snippet {
     margin: 0;
     font-size: 0.88rem;
-    color: #94a3b8;
+    color: #334155;
     line-height: 1.55;
+}
+
+.tvc-search-results__web-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.tvc-search-results__empty {
+    margin: 0;
+    padding: 14px;
+    border-radius: 10px;
+    background: rgba(248, 250, 252, 0.08);
+    border: 1px dashed rgba(148, 163, 184, 0.45);
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+.tvc-search-skeleton {
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: rgba(30, 41, 59, 0.45);
+    border: 1px solid rgba(100, 116, 139, 0.25);
+    margin-bottom: 10px;
+}
+
+.tvc-search-skeleton__line {
+    height: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    background: linear-gradient(90deg, rgba(71, 85, 105, 0.35) 0%, rgba(148, 163, 184, 0.25) 50%, rgba(71, 85, 105, 0.35) 100%);
+    background-size: 200% 100%;
+    animation: tvc-search-shimmer 1.2s ease-in-out infinite;
+}
+
+.tvc-search-skeleton__line--title {
+    height: 14px;
+    width: 72%;
+}
+
+.tvc-search-skeleton__line--short {
+    width: 38%;
+}
+
+@keyframes tvc-search-shimmer {
+    0% { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+}
+
+.home-hero-search-mount {
+    width: 100%;
+    max-width: 100%;
+}
+
+.home-hero-search-mount .tvc-search-results {
+    margin-top: 14px;
 }
 
 .tvc-search-results__status {
@@ -207,5 +264,27 @@
     .tvc-search-results__body {
         padding-left: 14px;
         padding-right: 14px;
+    }
+}
+
+@media (max-width: 420px) {
+    .tvc-search-results__title {
+        font-size: 0.95rem;
+        word-break: break-word;
+    }
+
+    .tvc-search-results__head,
+    .tvc-search-results__body {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .tvc-search-result-card__title {
+        font-size: 0.92rem;
+    }
+
+    .home-hero-search-mount .tvc-search-results {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
