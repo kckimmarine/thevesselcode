@@ -400,6 +400,9 @@ const TVC_ImpaDetailShared = (function () {
         const topBadge = document.querySelector('[data-impa-top-badge]');
         if (topBadge) topBadge.classList.toggle('hidden', !isTopRequisitionedItem(code));
         bindCommerceActions(document.body, { impa_code: code, name });
+        if (typeof TVC_TurnkeyPortHub !== 'undefined') {
+            TVC_TurnkeyPortHub.initDocument(document.body);
+        }
     }
 
     return {

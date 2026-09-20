@@ -56,6 +56,8 @@ check('html has tvc-sm banner', html.includes('class="tvc-sm-banner"'));
 check('html has rfq lead block', html.includes('store-rfq-lead'));
 check('html has rfq contact link', html.includes('inquiry=rfq'));
 check('html has fleet poc cta', html.includes('inquiry=poc'));
+check('html has turnkey port hub', html.includes('class="turnkey-port-hub"') && html.includes('Turnkey Port Solution'));
+check('html has turnkey inquiry cta', html.includes('data-turnkey-inquiry-open'));
 check('html has related items section', html.includes('class="related-items"'));
 
 const sitemap = readFileSync(join(root, 'public', 'sitemap.xml'), 'utf8');

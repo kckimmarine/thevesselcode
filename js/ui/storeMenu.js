@@ -84,7 +84,8 @@ const TVC_StoreMenu = (function () {
             || !existing.querySelector('.modal-body')
             || !existing.querySelector('#impaDetailConversionAction')
             || !existing.querySelector('#impaDetailTrustHeader')
-            || !existing.querySelector('#impaDetailStockSla'))) {
+            || !existing.querySelector('#impaDetailStockSla')
+            || !existing.querySelector('#impaDetailTurnkeyHub'))) {
             existing.remove();
             _modalReady = false;
             _plateZoom = null;
@@ -125,6 +126,7 @@ const TVC_StoreMenu = (function () {
                                 <tbody id="impaDetailShipservSpec"></tbody>
                             </table>
                         </div>
+                        <div id="impaDetailTurnkeyHub" class="impa-detail-turnkey-host" aria-label="Turnkey port services"></div>
                         <section class="impa-shipserv-desc" aria-label="Description and use">
                             <h3 class="impa-shipserv-desc-title">Description / Use</h3>
                             <p class="impa-shipserv-desc-text" id="impaDetailProductDesc"></p>
@@ -757,6 +759,15 @@ const TVC_StoreMenu = (function () {
             dimsEl.classList.toggle('hidden', !dims);
         }
         if (specBody) specBody.innerHTML = shipservSpecRows(item);
+        const turnkeyHost = document.getElementById('impaDetailTurnkeyHub');
+        if (turnkeyHost && typeof TVC_TurnkeyPortHub !== 'undefined') {
+            TVC_TurnkeyPortHub.mountTurnkeyHost(turnkeyHost, {
+                impaCode: code,
+                itemName: cleanTitle,
+            });
+        } else if (turnkeyHost) {
+            turnkeyHost.innerHTML = '';
+        }
         if (desc) desc.textContent = buildProductDescription(item);
         const plgHost = document.getElementById('impaDetailPlgLock');
         if (plgHost) {
