@@ -128,6 +128,17 @@ function derivePlateAssetUrl(item) {
 
 const PRIORITY_SPEC_KEYS = ['Rating', 'Material', 'Standard Unit', 'Standard'];
 
+/** Google SERP title — aim ≤60 chars when truncating long product names. */
+const SERP_TITLE_MAX_LEN = 60;
+const SERP_META_DESC_MAX_LEN = 160;
+
+function truncateSerpText(text, maxLen) {
+    const raw = String(text || '').trim();
+    if (raw.length <= maxLen) return raw;
+    if (maxLen <= 1) return raw.slice(0, maxLen);
+    return `${raw.slice(0, maxLen - 1).trimEnd()}…`;
+}
+
 function specRows(item) {
     const specs = item.specs && typeof item.specs === 'object' ? item.specs : {};
     const used = new Set();
@@ -157,13 +168,29 @@ function specRows(item) {
 }
 
 function buildOgTitle(item) {
-    const name = item.name || 'Marine Store Item';
-    return `IMPA CODE ${item.impa_code} - ${name}`;
+    const cleanName = cleanProductTitle(item);
+    return `[Drawing & Specs] IMPA ${item.impa_code} — ${cleanName}`;
 }
 
 function buildPageTitle(item) {
-    const name = item.name || 'Marine Store Item';
-    return `IMPA CODE ${item.impa_code} - ${name} | Technical Specs & Maritime Catalog | THE VESSEL CODE`;
+    const code = item.impa_code;
+    const cleanName = cleanProductTitle(item);
+    const suffixLong = ' | Dimensions, Weight & Fast RFQ';
+    const suffixShort = ' | Fast RFQ';
+    const prefix = `[Drawing & Specs] IMPA ${code} : `;
+    let title = `${prefix}${cleanName}${suffixLong}`;
+    if (title.length > SERP_TITLE_MAX_LEN) {
+        const nameBudget = SERP_TITLE_MAX_LEN - prefix.length - suffixLong.length;
+        const shortName = nameBudget >= 6
+            ? truncateSerpText(cleanName, nameBudget)
+            : truncateSerpText(cleanName, Math.max(4, SERP_TITLE_MAX_LEN - prefix.length - suffixShort.length));
+        title = `${prefix}${shortName}${suffixLong}`;
+    }
+    if (title.length > SERP_TITLE_MAX_LEN) {
+        const nameBudget = SERP_TITLE_MAX_LEN - prefix.length - suffixShort.length;
+        title = `${prefix}${truncateSerpText(cleanName, Math.max(4, nameBudget))}${suffixShort}`;
+    }
+    return title;
 }
 
 function buildPrimaryHeading(item) {
@@ -178,17 +205,43 @@ function cleanProductTitle(item) {
     return name.trim() || String(item?.name || 'Marine Store Item');
 }
 
-function buildOgDescription(item) {
-    return `Technical specification, dimensions, unit, and maritime catalog plate illustration for IMPA ${item.impa_code}.`;
+function buildMetaDescription(item) {
+    const code = item.impa_code;
+    const cleanName = cleanProductTitle(item);
+    const desc = `View verified technical drawing, flange/thread dimensions, and equivalent specs for IMPA ${code} (${cleanName}). Instant quotation available at Busan, Singapore & Global ports.`;
+    return truncateSerpText(desc, SERP_META_DESC_MAX_LEN);
 }
 
-function buildMetaDescription(item) {
-    const name = item.name || 'Marine Store Item';
-    return `${buildOgDescription(item)} ${name}.`;
+function buildOgDescription(item) {
+    return buildMetaDescription(item);
 }
 
 function buildDescription(item) {
     return buildMetaDescription(item);
+}
+
+function buildPlateImageAlt(item) {
+    const cleanName = cleanProductTitle(item);
+    return `IMPA CODE ${item.impa_code} ${cleanName} Technical Drawing and Catalog Plate`;
+}
+
+function buildSpecAdditionalProperties(item) {
+    const specs = item.specs && typeof item.specs === 'object' ? item.specs : {};
+    const rows = [];
+    PRIORITY_SPEC_KEYS.forEach((key) => {
+        const value = specs[key];
+        if (value != null && String(value).trim()) {
+            rows.push({
+                '@type': 'PropertyValue',
+                name: key,
+                value: String(value).trim(),
+            });
+        }
+    });
+    if (item.unit && !rows.some((r) => r.name === 'Standard Unit')) {
+        rows.push({ '@type': 'PropertyValue', name: 'Standard Unit', value: String(item.unit).trim() });
+    }
+    return rows;
 }
 
 function resolveMpn(item) {
@@ -276,17 +329,29 @@ function buildB2bProductOffer(pageUrl) {
     };
 }
 
-function buildProductJsonLd(item, pageUrl, imageUrl) {
+function buildProductJsonLd(item, pageUrl, imageUrl, base) {
+    const cleanName = cleanProductTitle(item);
+    const rfqUrl = buildContactInquiryUrl(base, {
+        inquiry: 'rfq',
+        code: item.impa_code,
+        name: cleanName,
+        ref: `/store/${item.impa_code}`,
+    });
+    const additionalProperty = buildSpecAdditionalProperties(item);
     return {
         '@context': 'https://schema.org',
         '@type': 'Product',
-        name: item.name || `IMPA ${item.impa_code}`,
+        name: `IMPA ${item.impa_code} ${cleanName} — Drawing, Dimensions & Fast RFQ`,
         sku: item.impa_code,
         mpn: resolveMpn(item),
         category: SEO_PRODUCT_CATEGORY,
         description: buildDescription(item),
         url: pageUrl,
-        offers: buildB2bProductOffer(pageUrl),
+        offers: {
+            ...buildB2bProductOffer(pageUrl),
+            name: 'Fast RFQ — Busan, Singapore & global delivery',
+            description: 'Instant B2B quotation on request. Invoice pricing per PO.',
+        },
         brand: {
             '@type': 'Brand',
             name: 'IMPA Marine Stores Guide',
@@ -296,17 +361,25 @@ function buildProductJsonLd(item, pageUrl, imageUrl) {
             name: 'THE VESSEL CODE',
         },
         ...(imageUrl ? { image: [imageUrl] } : {}),
+        ...(additionalProperty.length ? { additionalProperty } : {}),
+        potentialAction: {
+            '@type': 'OrderAction',
+            target: rfqUrl,
+            name: 'Request instant quotation',
+        },
     };
 }
 
-function buildTechArticleJsonLd(item, pageUrl) {
+function buildTechArticleJsonLd(item, pageUrl, imageUrl) {
+    const cleanName = cleanProductTitle(item);
     return {
         '@context': 'https://schema.org',
         '@type': 'TechArticle',
-        headline: `IMPA CODE ${item.impa_code} Technical Specifications`,
+        headline: `[Drawing & Specs] IMPA ${item.impa_code} Technical Drawing & Dimensions`,
         name: buildPrimaryHeading(item),
         description: buildDescription(item),
         url: pageUrl,
+        ...(imageUrl ? { image: imageUrl } : {}),
         author: {
             '@type': 'Organization',
             name: 'THE VESSEL CODE',
@@ -316,15 +389,28 @@ function buildTechArticleJsonLd(item, pageUrl) {
             '@type': 'DefinedTerm',
             name: `IMPA ${item.impa_code}`,
             termCode: item.impa_code,
-            description: item.name || `IMPA ${item.impa_code}`,
+            description: cleanName,
         },
     };
 }
 
-function buildJsonLd(item, pageUrl, imageUrl) {
+function buildBreadcrumbJsonLd(item, pageUrl, base) {
+    const toolkit = `${base.replace(/\/$/, '')}/toolkit`;
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Maritime Toolkit', item: toolkit },
+            { '@type': 'ListItem', position: 2, name: `IMPA ${item.impa_code}`, item: pageUrl },
+        ],
+    };
+}
+
+function buildJsonLd(item, pageUrl, imageUrl, base) {
     return [
-        buildProductJsonLd(item, pageUrl, imageUrl),
-        buildTechArticleJsonLd(item, pageUrl),
+        buildProductJsonLd(item, pageUrl, imageUrl, base),
+        buildTechArticleJsonLd(item, pageUrl, imageUrl),
+        buildBreadcrumbJsonLd(item, pageUrl, base),
     ];
 }
 
@@ -438,7 +524,8 @@ function buildStoreItemHtml(item, { origin } = {}) {
     const tableHtml = rows.map(([label, value]) => (
         `<tr><th scope="row">${escapeHtml(label)}</th><td>${escapeHtml(value)}</td></tr>`
     )).join('');
-    const jsonLd = JSON.stringify(buildJsonLd(item, pageUrl, imageUrl || undefined));
+    const plateAlt = buildPlateImageAlt(item);
+    const jsonLd = JSON.stringify(buildJsonLd(item, pageUrl, imageUrl || undefined, base));
     const related = getRelatedItemsByChapter(item.impa_code, 6);
     const relatedHtml = buildRelatedItemsSectionHtml(item, related, base);
     const rfqLeadHtml = buildRfqLeadBlockHtml(item, base);
@@ -448,7 +535,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
         ? `<section class="impa-shipserv-photo impa-plate-preview" aria-label="Catalog plate">
           <img class="impa-store-plate-img" src="${escapeHtml(plateUrl)}" data-plate-hires="${escapeHtml(plateUrl)}"
             data-plate-title="${escapeHtml(`IMPA ${item.impa_code} — ${displayTitle}`)}"
-            alt="IMPA ${escapeHtml(item.impa_code)} catalog plate" width="${PLATE_IMG_WIDTH}" height="${PLATE_IMG_HEIGHT}" loading="lazy" decoding="async">
+            alt="${escapeHtml(plateAlt)}" width="${PLATE_IMG_WIDTH}" height="${PLATE_IMG_HEIGHT}" loading="lazy" decoding="async">
           <span class="impa-plate-zoom-hint">🔍 Click / Tap to view high-res full plate</span>
         </section>`
         : `<section class="impa-shipserv-photo impa-plate-preview" aria-label="Catalog plate">
@@ -556,6 +643,9 @@ module.exports = {
     buildPrimaryHeading,
     buildOgDescription,
     buildMetaDescription,
+    buildPlateImageAlt,
+    truncateSerpText,
+    SERP_TITLE_MAX_LEN,
     derivePlateAssetUrl,
     SEO_PRODUCT_CATEGORY,
     buildDescription,

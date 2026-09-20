@@ -39,9 +39,15 @@ const item = impaSeo.getItemByCode(sampleCode);
 check('lookup sample item', !!item?.name, sampleCode);
 
 const html = impaSeo.buildStoreItemHtml(item, { origin: 'https://app.thevesselcode.com' });
-check('html has title', html.includes('Technical Specs &amp; Maritime Catalog | THE VESSEL CODE'));
+const pageTitle = impaSeo.buildPageTitle(item);
+check('title has drawing specs hook', pageTitle.includes('[Drawing & Specs]') && pageTitle.includes('Fast RFQ'));
+check('title length serp budget', pageTitle.length <= impaSeo.SERP_TITLE_MAX_LEN, String(pageTitle.length));
+check('html has title', html.includes(`<title>${pageTitle.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</title>`));
 check('html has canonical', html.includes(`/store/${sampleCode}`));
-check('html has description meta', html.includes('maritime catalog plate illustration'));
+check('html has description meta', html.includes('View verified technical drawing') && html.includes('Instant quotation available at Busan'));
+check('html plate alt drawing', html.includes('Technical Drawing and Catalog Plate'));
+check('html json-ld breadcrumb', html.includes('BreadcrumbList'));
+check('html json-ld order action', html.includes('OrderAction'));
 check('html has og:image', html.includes('property="og:image"'));
 check('html has spec table', html.includes('spec-table'));
 check('html has toolkit link', html.includes('toolkit?impa='));
