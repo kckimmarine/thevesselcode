@@ -25,7 +25,7 @@ function check(name, ok, detail = '') {
 const browser = await chromium.launch({ headless: true });
 const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
 
-await page.goto(`${BASE}/toolkit`, { waitUntil: 'domcontentloaded', timeout: 120_000 });
+await page.goto(`${BASE}/toolkit.html`, { waitUntil: 'domcontentloaded', timeout: 120_000 });
 await page.locator('.store-search').waitFor({ state: 'visible', timeout: 120_000 });
 for (let i = 0; i < 24; i += 1) {
     const ready = await page.evaluate(() => (globalThis.TVC_StoreManager?.getTotalCount?.() || 0) > 1000);
@@ -46,11 +46,17 @@ await page.goto(`${BASE}/home/`, { waitUntil: 'domcontentloaded' });
 await page.locator('#homeHeroSearchInput').waitFor({ state: 'visible' });
 await page.locator('#homeHeroSearchInput').fill('Yanmar 6N21L RPM 헌팅');
 await page.locator('#homeHeroSearchForm').evaluate((f) => f.requestSubmit());
-await page.locator('#modal-tvc-brain').waitFor({ state: 'visible', timeout: 15_000 });
-const brainVisible = await page.locator('#modal-tvc-brain').isVisible();
-check('Yanmar hunting opens Brain modal', brainVisible);
+await page.locator('#tvcSearchResultsPanel').waitFor({ state: 'visible', timeout: 15_000 });
+const panelText = await page.locator('#tvcSearchResultsPanel').innerText();
+check(
+    'Yanmar hunting shows in-page TVC search panel (not Brain auto-open)',
+    /MARITIME INTEL/i.test(panelText) && /Yanmar/i.test(panelText),
+    panelText.slice(0, 160),
+);
+const brainAuto = await page.locator('#modal-tvc-brain').isVisible().catch(() => false);
+check('Yanmar submit does not auto-open Brain modal', !brainAuto);
 await page.waitForTimeout(1500);
-await page.screenshot({ path: join(ART, 'direct-search-brain-briefing.png'), fullPage: false });
+await page.screenshot({ path: join(ART, 'direct-search-home-inline-panel.png'), fullPage: false });
 await browser.close();
 
 if (process.exitCode) {

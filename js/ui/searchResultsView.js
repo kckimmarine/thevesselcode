@@ -1,11 +1,11 @@
 /**
- * THE VESSEL CODE — in-app Google Custom Search results (TVC branded).
+ * THE VESSEL CODE — in-app Google Custom Search results (TVC branded, no Google widgets).
  */
 (function (global) {
     'use strict';
 
     const PANEL_ID = 'tvcSearchResultsPanel';
-    const GOOGLE_SEARCH_URL = 'https://www.google.com/search?q=';
+    const EYEBROW = 'THE VESSEL CODE MARITIME INTEL';
 
     function escapeHtml(str) {
         return String(str || '')
@@ -15,8 +15,8 @@
             .replace(/"/g, '&quot;');
     }
 
-    function googleSearchUrl(query) {
-        return GOOGLE_SEARCH_URL + encodeURIComponent(String(query || '').trim());
+    function externalWebSearchUrl(query) {
+        return `https://www.google.com/search?q=${encodeURIComponent(String(query || '').trim())}`;
     }
 
     function ensurePanel(anchor) {
@@ -28,22 +28,43 @@
         panel.className = 'tvc-search-results';
         panel.hidden = true;
         panel.setAttribute('aria-live', 'polite');
-        panel.setAttribute('aria-label', 'Maritime search results');
+        panel.setAttribute('aria-label', 'TVC maritime search results');
 
-        const mountAfter = anchor || document.getElementById('homeHeroSearchForm');
-        if (mountAfter?.parentNode) {
-            mountAfter.insertAdjacentElement('afterend', panel);
+        const mount = document.getElementById('homeHeroSearchMount');
+        if (mount) {
+            mount.appendChild(panel);
         } else {
-            document.body.appendChild(panel);
+            const mountAfter = anchor || document.getElementById('homeHeroSearchForm');
+            if (mountAfter?.parentNode) {
+                mountAfter.insertAdjacentElement('afterend', panel);
+            } else {
+                document.body.appendChild(panel);
+            }
         }
         return panel;
+    }
+
+    function skeletonHtml() {
+        return `
+            <div class="tvc-search-skeleton" aria-hidden="true">
+                <div class="tvc-search-skeleton__line tvc-search-skeleton__line--title"></div>
+                <div class="tvc-search-skeleton__line tvc-search-skeleton__line--short"></div>
+                <div class="tvc-search-skeleton__line"></div>
+                <div class="tvc-search-skeleton__line"></div>
+            </div>
+            <div class="tvc-search-skeleton" aria-hidden="true">
+                <div class="tvc-search-skeleton__line tvc-search-skeleton__line--title"></div>
+                <div class="tvc-search-skeleton__line tvc-search-skeleton__line--short"></div>
+                <div class="tvc-search-skeleton__line"></div>
+            </div>
+        `;
     }
 
     function renderShell(panel, query, metaLine) {
         panel.hidden = false;
         panel.innerHTML = `
             <header class="tvc-search-results__head">
-                <p class="tvc-search-results__eyebrow">THE VESSEL CODE MARITIME SEARCH</p>
+                <p class="tvc-search-results__eyebrow">${escapeHtml(EYEBROW)}</p>
                 <h2 class="tvc-search-results__title">${escapeHtml(query)}</h2>
                 <p class="tvc-search-results__meta">${escapeHtml(metaLine || '')}</p>
             </header>
@@ -51,6 +72,13 @@
         `;
         panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         return panel.querySelector('#tvcSearchResultsBody');
+    }
+
+    function shouldPrioritizeInternal(classification) {
+        if (!classification) return false;
+        if (classification.type === 'impa' && classification.impa) return true;
+        if (classification.type === 'vessel' && classification.imo) return true;
+        return false;
     }
 
     function internalCardHtml(classification, query) {
@@ -65,24 +93,15 @@
         if (classification.type === 'impa' && classification.impa) {
             label = 'IMPA Plate';
             title = `IMPA ${classification.impa}`;
-            desc = 'Direct IMPA catalog plate — no external search quota used.';
+            desc = 'Verified catalog plate, dimensions, and fast RFQ — served from TVC (no Gmail/Drive archive).';
             href = `/store/${classification.impa}`;
             cta = 'View IMPA plate ↗';
-        } else if (classification.type === 'vessel') {
+        } else if (classification.type === 'vessel' && classification.imo) {
             label = 'Vessel Particulars';
-            title = classification.imo ? `IMO ${classification.imo}` : q;
-            desc = 'Fleet registry lookup — resolved locally without Google API.';
-            href = classification.imo
-                ? `/toolkit?imo=${encodeURIComponent(classification.imo)}`
-                : `/toolkit?vessel=${encodeURIComponent(q)}`;
+            title = `IMO ${classification.imo}`;
+            desc = 'Fleet registry lookup on TVC — no legacy mail or drive ingestion.';
+            href = `/toolkit?imo=${encodeURIComponent(classification.imo)}`;
             cta = 'Open vessel record ↗';
-        } else if (classification.type === 'toolkit') {
-            label = 'Maritime Toolkit';
-            title = q;
-            desc = 'Engineering calculator, flange spec, bunker 54B, or compliance module.';
-            const route = R?.routeHeroQuery?.(q);
-            href = route?.href || `/toolkit?q=${encodeURIComponent(q)}`;
-            cta = 'Launch toolkit module ↗';
         }
 
         return `
@@ -97,7 +116,9 @@
 
     function resultCardsHtml(items) {
         if (!items?.length) {
-            return '<p class="tvc-search-results__status">No web results returned for this query.</p>';
+            return `
+                <p class="tvc-search-results__empty">No indexed web matches for this query. Try an IMPA code, IMO number, or refine keywords.</p>
+            `;
         }
         return items
             .map((item) => {
@@ -122,29 +143,31 @@
     }
 
     function quotaNoticeHtml(query) {
-        const gUrl = googleSearchUrl(query);
+        const extUrl = externalWebSearchUrl(query);
         return `
-            <p class="tvc-search-results__notice">Daily in-app search quota reached for today.</p>
-            <a class="tvc-search-results__google-btn" href="${escapeHtml(gUrl)}" target="_blank" rel="noopener noreferrer">[ ↗ Continue Search on Google in New Tab ]</a>
+            <p class="tvc-search-results__notice">Daily TVC in-app search quota reached (95/day UTC). Cached queries still work at no cost.</p>
+            <a class="tvc-search-results__external-link" href="${escapeHtml(extUrl)}" target="_blank" rel="noopener noreferrer">Continue on the open web ↗</a>
         `;
     }
 
+    function formatMetaLine(data, clientMs, itemCount) {
+        const parts = [];
+        const count = itemCount ?? data?.items?.length ?? 0;
+        const elapsedSec = ((data?.executionMs ?? clientMs ?? 0) / 1000).toFixed(2);
+        parts.push(`Found ${count} results in ${elapsedSec}s`);
+        if (data?.cacheHit || data?.cached) parts.push('24h TVC cache · 0 API cost');
+        else if (data?.dailyCount != null) parts.push(`API today ${data.dailyCount}/${data.dailyLimit || 95}`);
+        return parts.join(' · ');
+    }
+
     function isInternalIntercept(classification) {
-        if (!classification?.direct) return false;
-        return ['impa', 'vessel', 'toolkit'].includes(classification.type);
+        return shouldPrioritizeInternal(classification);
     }
 
     function showInternal(classification, query, opts = {}) {
         const panel = ensurePanel(opts.anchor);
-        const body = renderShell(
-            panel,
-            query,
-            'Local TVC resolver — zero Google API cost',
-        );
+        const body = renderShell(panel, query, 'TVC resolver — local catalog / fleet data');
         body.innerHTML = internalCardHtml(classification, query);
-        if (opts.alsoWebSearch) {
-            body.insertAdjacentHTML('beforeend', '<p class="tvc-search-results__status">Loading supplemental web results…</p>');
-        }
         return panel;
     }
 
@@ -156,38 +179,49 @@
     }
 
     async function showWebSearch(query, opts = {}) {
+        return showUnifiedSearch(query, null, opts);
+    }
+
+    async function showUnifiedSearch(query, classification, opts = {}) {
         const q = String(query || '').trim();
         const panel = ensurePanel(opts.anchor);
-        const body = renderShell(panel, q, 'Fetching indexed maritime web results…');
-        body.innerHTML = '<p class="tvc-search-results__loading">Searching…</p>';
+        const body = renderShell(panel, q, 'Searching maritime web index…');
+        body.innerHTML = skeletonHtml();
+
+        const t0 = typeof performance !== 'undefined' ? performance.now() : Date.now();
+        const priorityInternal = classification && shouldPrioritizeInternal(classification)
+            ? internalCardHtml(classification, q)
+            : '';
 
         const { data } = await fetchSearchApi(q);
-        const metaParts = [];
-        if (data?.cacheHit || data?.cached) metaParts.push('Served from 24h edge cache (0 API cost)');
-        else if (data?.dailyCount != null) metaParts.push(`API usage today: ${data.dailyCount}/${data.dailyLimit || 95}`);
-        else metaParts.push('Maritime web index');
-
-        panel.querySelector('.tvc-search-results__meta').textContent = metaParts.join(' · ');
+        const clientMs = (typeof performance !== 'undefined' ? performance.now() : Date.now()) - t0;
+        const metaEl = panel.querySelector('.tvc-search-results__meta');
+        const itemCount = data?.items?.length ?? 0;
+        if (metaEl) metaEl.textContent = formatMetaLine(data, clientMs, itemCount);
 
         if (data?.quotaExceeded) {
-            body.innerHTML = quotaNoticeHtml(q);
+            body.innerHTML = `${priorityInternal}${quotaNoticeHtml(q)}`;
             return { ok: true, data };
         }
 
-        if (data?.fallback) {
+        if (data?.fallback && !data?.items?.length) {
             body.innerHTML = `
+                ${priorityInternal}
                 ${quotaNoticeHtml(q)}
-                <p class="tvc-search-results__status">In-app search is temporarily unavailable.</p>
+                <p class="tvc-search-results__status">Configure GOOGLE_SEARCH_API_KEY and GOOGLE_SEARCH_CX on the server to enable live results.</p>
             `;
             return { ok: false, data };
         }
 
-        body.innerHTML = resultCardsHtml(data?.items || []);
+        const webBlock = resultCardsHtml(data?.items || []);
+        body.innerHTML = priorityInternal
+            ? `${priorityInternal}<div class="tvc-search-results__web-block">${webBlock}</div>`
+            : webBlock;
 
         if (opts.showBrainCta && global.TVC_BrainChat) {
             body.insertAdjacentHTML(
                 'beforeend',
-                '<button type="button" class="tvc-search-results__brain-btn" id="tvcSearchBrainCta">Ask TVC Brain for an AI superintendent briefing</button>',
+                '<button type="button" class="tvc-search-results__brain-btn" id="tvcSearchBrainCta">Ask TVC Brain (superintendent briefing — separate from web index)</button>',
             );
             body.querySelector('#tvcSearchBrainCta')?.addEventListener('click', () => {
                 if (global.TVC_SearchPortal?.openBrainModal) {
@@ -210,8 +244,10 @@
         ensurePanel,
         showInternal,
         showWebSearch,
+        showUnifiedSearch,
         hide,
         isInternalIntercept,
-        googleSearchUrl,
+        shouldPrioritizeInternal,
+        googleSearchUrl: externalWebSearchUrl,
     };
 })(typeof globalThis !== 'undefined' ? globalThis : window);

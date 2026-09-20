@@ -24,7 +24,7 @@ await page.locator('#homeHeroSearchInput').fill('791801');
 await page.locator('#homeHeroSearchForm').evaluate((f) => f.requestSubmit());
 await page.locator('#tvcSearchResultsPanel').waitFor({ state: 'visible', timeout: 8000 });
 const internalText = await page.locator('#tvcSearchResultsPanel').innerText();
-check('IMPA intercept shows TVC panel', /MARITIME SEARCH/i.test(internalText) && /791801/.test(internalText));
+check('IMPA intercept shows TVC panel', /MARITIME INTEL/i.test(internalText) && /791801/.test(internalText));
 await page.screenshot({ path: join(ART, 'search-results-impa-internal.png'), fullPage: false });
 
 await page.locator('#homeHeroSearchInput').fill('xyz quota fallback probe');
@@ -34,10 +34,29 @@ await page.waitForTimeout(800);
 const webText = await page.locator('#tvcSearchResultsPanel').innerText();
 check(
     'web query shows results or fallback notice',
-    /Continue Search on Google/i.test(webText) || /Searching/i.test(webText) || webText.includes('example.com') || webText.includes('quota'),
+    /Continue on the open web/i.test(webText) ||
+        /Found \d+ results/i.test(webText) ||
+        webText.includes('example.com') ||
+        webText.includes('quota') ||
+        webText.includes('Configure GOOGLE_SEARCH'),
     webText.slice(0, 120),
 );
 await page.screenshot({ path: join(ART, 'search-results-web-fallback.png'), fullPage: false });
+
+const mobile = await browser.newPage({ viewport: { width: 390, height: 844 } });
+await mobile.goto(`${BASE}/home/`, { waitUntil: 'domcontentloaded' });
+await mobile.locator('#homeHeroSearchInput').fill('812101');
+await mobile.locator('#homeHeroSearchForm').evaluate((f) => f.requestSubmit());
+await mobile.locator('#tvcSearchResultsPanel').waitFor({ state: 'visible', timeout: 8000 });
+const mountBox = await mobile.locator('#homeHeroSearchMount').boundingBox();
+const panelBox = await mobile.locator('#tvcSearchResultsPanel').boundingBox();
+check(
+    'mobile (390px) panel sits under hero mount',
+    mountBox && panelBox && panelBox.y >= mountBox.y - 4,
+    mountBox && panelBox ? `mountY=${mountBox.y} panelY=${panelBox.y}` : 'no box',
+);
+await mobile.screenshot({ path: join(ART, 'search-results-mobile-390.png'), fullPage: false });
+await mobile.close();
 
 await browser.close();
 if (process.exitCode) process.exit(1);

@@ -1,4 +1,4 @@
-/* THE VESSEL CODE — Home hero unified search (single direct answer) */
+/* THE VESSEL CODE — Home hero maritime web search (Google CSE via /api/search, TVC-branded) */
 (function () {
     function normalizeQuery(raw) {
         return globalThis.TVC_SearchResolver?.normalizeQuery?.(raw)
@@ -16,13 +16,12 @@
         const classification = R?.classifyQuery?.(q) || { type: 'brain', query: q };
         const Results = globalThis.TVC_SearchResultsView;
 
-        if (Results?.isInternalIntercept?.(classification)) {
-            Results.showInternal(classification, q, { anchor: input.closest('form') });
+        if (Results?.showUnifiedSearch) {
+            await Results.showUnifiedSearch(q, classification, {
+                anchor: input.closest('form'),
+                showBrainCta: classification.type === 'brain' || R?.isBrainNaturalQuery?.(q),
+            });
             return;
-        }
-
-        if (classification.type === 'brain' && classification.briefing && R?.isBrainNaturalQuery?.(q)) {
-            if (openBrain(q)) return;
         }
 
         if (Results?.showWebSearch) {
@@ -30,23 +29,7 @@
                 anchor: input.closest('form'),
                 showBrainCta: classification.type === 'brain',
             });
-            return;
         }
-
-        if (globalThis.TVC_SearchPortal?.executePortalSearch) {
-            globalThis.TVC_SearchPortal.executePortalSearch(q);
-            return;
-        }
-        const route = R?.routeHeroQuery?.(q) || { type: 'brain', query: q };
-        if (route.type === 'brain') {
-            if (globalThis.TVC_BrainChat?.openModal) {
-                globalThis.TVC_BrainChat.openModal(route.query, { briefing: true });
-            } else {
-                globalThis.location.href = `/toolkit?q=${encodeURIComponent(q)}`;
-            }
-            return;
-        }
-        globalThis.location.href = route.href;
     }
 
     function openBrain(query) {
