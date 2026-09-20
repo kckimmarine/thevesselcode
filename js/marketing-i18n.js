@@ -10,6 +10,7 @@
     const T = {
         'nav.home': { en: 'Home', ko: '홈' },
         'nav.services': { en: 'Services', ko: '서비스' },
+        'nav.shipRepairKorea': { en: 'Ship Repair Korea', ko: '한국 선박 수리' },
         'nav.toolkit': { en: 'Maritime Toolkit', ko: '해운 실무 공구함' },
         'nav.insights': { en: 'Insights', ko: '인사이트' },
         'nav.forum': { en: 'Exchange', ko: '해양 Q&A' },

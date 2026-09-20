@@ -14,6 +14,7 @@ const lastmod = new Date().toISOString().slice(0, 10);
 const CORE_PAGES = [
   { path: '/', changefreq: 'weekly', priority: '1.0' },
   { path: '/toolkit', changefreq: 'weekly', priority: '0.9' },
+  { path: '/ship-repair-korea', changefreq: 'weekly', priority: '0.85' },
   { path: '/contact-us', changefreq: 'monthly', priority: '0.7' },
 ];
 

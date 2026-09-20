@@ -13,6 +13,7 @@ const out = join(root, 'dist');
 const STATIC_PATHS = [
   'home',
   'services',
+  'ship-repair-korea',
   'sm',
   'contact-us',
   'forum',

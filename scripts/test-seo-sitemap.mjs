@@ -210,6 +210,7 @@ assertValidXml('sitemap-core.xml', coreSitemap);
 check('core sitemap has home', coreSitemap.includes('<loc>https://www.thevesselcode.com/</loc>'));
 check('core sitemap has toolkit', coreSitemap.includes('<loc>https://www.thevesselcode.com/toolkit</loc>'));
 check('core sitemap has contact-us', coreSitemap.includes('<loc>https://www.thevesselcode.com/contact-us</loc>'));
+check('core sitemap has ship-repair-korea', coreSitemap.includes('<loc>https://www.thevesselcode.com/ship-repair-korea</loc>'));
 
 const storeChunk = readFileSync(join(root, 'public', 'sitemap-store-1.xml'), 'utf8');
 assertValidXml('sitemap-store-1.xml', storeChunk);
@@ -250,6 +251,7 @@ const GSC_HUB_CODES = [
 const home = readFileSync(join(root, 'home', 'index.html'), 'utf8');
 check('home high-intent impa grid', home.includes('class="high-intent-impa-grid"'));
 check('home store spec index link', home.includes('<a href="/store/812101">Marine Store Spec Index (IMPA 812101)</a>'));
+check('home ship repair korea pillar link', home.includes('href="/ship-repair-korea"') && home.includes('Ship Repair in Korea'));
 GSC_HUB_CODES.forEach((code) => {
     check(`home links /store/${code}`, home.includes(`href="/store/${code}"`));
 });
@@ -264,6 +266,19 @@ check(
     toolkit.includes('data-tool-tab="catalog"') || toolkit.includes('mkt-module-card--catalog'),
 );
 check('toolkit canonical', toolkit.includes('rel="canonical" href="https://www.thevesselcode.com/toolkit"'));
+check('toolkit ship repair korea pillar link', toolkit.includes('href="/ship-repair-korea"') && toolkit.includes('Ship Repair in Korea'));
+check(
+    'store page ship repair korea footer link',
+    html.includes('href="https://www.thevesselcode.com/ship-repair-korea"')
+        && html.includes('Ship Repair in Korea (Busan · Ulsan · Yeosu)'),
+);
+
+const srkPage = readFileSync(join(root, 'ship-repair-korea', 'index.html'), 'utf8');
+check('ship repair korea page title', srkPage.includes('Ship Repair in Korea | 24/7 Turnkey Afloat &amp; Port Service'));
+check('ship repair korea meta description', srkPage.includes('Certified 24/7 ship repair, technical husbandry, and drydock attendance across Busan, Ulsan, and Yeosu'));
+check('ship repair korea h1', srkPage.includes('Turnkey Ship Repair &amp; Technical Husbandry in South Korea'));
+check('ship repair korea port table', srkPage.includes('srk-port-table') && srkPage.includes('Busan') && srkPage.includes('Yeosu'));
+check('ship repair korea json-ld professional service', srkPage.includes('"@type": "ProfessionalService"'));
 
 HUB_CODES.forEach((code) => {
     const hubItem = impaSeo.getItemByCode(code);
