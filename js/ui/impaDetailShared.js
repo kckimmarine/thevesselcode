@@ -321,6 +321,11 @@ const TVC_ImpaDetailShared = (function () {
                 const port = form.port?.value || '';
                 const contact = form.contact?.value?.trim() || '';
                 const ref = form.dataset.ref || '';
+                globalThis.TVC_MarketingAnalytics?.trackLeadFormSubmit({
+                    inquiry_type: 'rfq',
+                    lead_source: 'impa_fast_rfq_modal',
+                    impa_code: code,
+                });
                 const url = buildContactRfqUrl({ code, name, qty, port, contact, ref });
                 window.location.href = url;
             });

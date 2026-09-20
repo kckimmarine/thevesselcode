@@ -57,7 +57,10 @@ check('hero brain chip', home.includes('data-home-route="brain"'));
 check('unified search script', home.includes('home-hero-search.js'));
 check('home benefits grid', home.includes('home-benefits-section') && home.includes('home-grid-4'));
 check('home product showcase', home.includes('home-showcase-section') && home.includes('/toolkit') && home.includes('Launch Free Toolkit'));
-check('home impa card strip', home.includes('home-impa-card') && home.includes('href="/store/812204"'));
+check(
+    'home impa card strip',
+    home.includes('high-intent-impa-grid') && home.includes('href="/store/812101"'),
+);
 check('topbar launch pill i18n', shell.includes('nav.launchPill') && shell.includes('Launch App'));
 check('hero search-first layout', home.includes('hero-search-first') && !home.includes('hero-realistic-canvas'));
 check('hero ocean chevron layout', home.includes('hero-ocean-chevron') && home.includes('home-ocean-hero-horizon.webp'));
@@ -87,7 +90,7 @@ check('services in primary nav', shell.includes("id: 'services'") && shell.inclu
 check('sm nav internal route', shell.includes("href: '/sm'") && shell.includes("id: 'sm'"));
 check('contact us link in marketing footer', shell.includes("href: '/contact-us'"));
 check('no inline services section on home', !home.includes('id="service-superintendent"'));
-check('canonical root', home.includes('https://thevesselcode.com/'));
+check('canonical root www', home.includes('https://www.thevesselcode.com/'));
 
 const services = readFileSync(join(ROOT, 'services/index.html'), 'utf8');
 check('services page concise cards', services.includes('Technical Superintendent Oversight') && services.includes('TVC-SM Fleet Integration'));
