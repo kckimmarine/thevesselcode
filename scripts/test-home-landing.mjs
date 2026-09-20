@@ -60,7 +60,12 @@ check('home product showcase', home.includes('home-showcase-section') && home.in
 check('home impa card strip', home.includes('home-impa-card') && home.includes('href="/store/812204"'));
 check('topbar launch pill i18n', shell.includes('nav.launchPill') && shell.includes('Launch App'));
 check('hero search-first layout', home.includes('hero-search-first') && !home.includes('hero-realistic-canvas'));
-check('hero ocean horizon draft', home.includes('hero-ocean-voyage-draft') && home.includes('home-ocean-hero-horizon.webp'));
+check('hero ocean chevron layout', home.includes('hero-ocean-chevron') && home.includes('home-ocean-hero-horizon.webp'));
+check('home featured suite section', home.includes('home-featured-suite-wrap') && home.includes('buildHomeFeaturedSuiteHtml'));
+check(
+    'hero ocean image asset exists',
+    existsSync(join(ROOT, 'public/assets/images/home-ocean-hero-horizon.webp')),
+);
 check('marketing readability css', home.includes('marketing-readability.css'));
 const toolkitHtml = readFileSync(join(ROOT, 'toolkit.html'), 'utf8');
 check('toolkit no promo clutter', !toolkitHtml.includes('mkt-pricing-band') && !toolkitHtml.includes('toolkit-plg-band') && !toolkitHtml.includes('toolkit-popular-impa') && !toolkitHtml.includes('mkt-plg-locks'));

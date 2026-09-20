@@ -265,6 +265,15 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero.hero-search-first {
     border-bottom: 1px solid #e2e8f0;
 }
 
+/* Chevron-style photo hero — no slate fill; backdrop layer holds the image */
+body.home-page.home-bg-fixed #hero.hero-search-first.hero-ocean-chevron,
+body.home-page.home-bg-fixed .home-hero.mkt-hero.hero-search-first.hero-ocean-chevron {
+    background: transparent;
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .hero-search-first .home-hero-copy h1,
 .hero-search-first #homeHeroTitle {
     color: #0f172a !important;

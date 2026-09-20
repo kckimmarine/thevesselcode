@@ -19,12 +19,22 @@
     <meta property="og:url" content="https://thevesselcode.com/">
     <meta property="og:image" content="https://thevesselcode.com/icons/company-logo.png">
     <link rel="preload" as="image" href="/assets/images/home-ocean-hero-horizon.webp" type="image/webp" fetchpriority="high">
+    <style>
+        /* Critical: Chevron-style ocean canvas (light scrim — ship + horizon visible) */
+        body.home-page #hero.hero-ocean-chevron .home-hero-ocean-backdrop {
+            background-image:
+                linear-gradient(180deg, rgba(0, 48, 92, 0.22) 0%, rgba(0, 40, 80, 0.06) 45%, rgba(0, 35, 70, 0.28) 100%),
+                url('/assets/images/home-ocean-hero-horizon.webp');
+            background-size: cover;
+            background-position: center 42%;
+        }
+    </style>
     <link rel="icon" type="image/png" href="/assets/icons/icon-192.png?v=20260919-atom">
     <link rel="apple-touch-icon" href="/assets/icons/icon-192.png?v=20260919-atom">
     <link rel="stylesheet" href="../css/marketing-shell.css?v=20260915-contrast-enterprise">
     <link rel="stylesheet" href="../css/marketing-theme.css?v=20260915-contrast-enterprise">
-    <link rel="stylesheet" href="../css/home.css?v=20260920-ocean-hero-draft">
-    <link rel="stylesheet" href="../css/marketing-readability.css?v=20260920-ocean-hero-draft">
+    <link rel="stylesheet" href="../css/home.css?v=20260920-ocean-chevron">
+    <link rel="stylesheet" href="../css/marketing-readability.css?v=20260920-ocean-chevron">
     <link rel="stylesheet" href="../css/marketing.css?v=20260914-mobile-hero">
     <link rel="stylesheet" href="../css/search-results.css?v=20260920-light-panel">
     <link rel="stylesheet" href="../css/impa-detail-unified.css?v=20260920-cross-service-mesh">
@@ -32,16 +42,21 @@
 <body class="tvc-marketing-body home-page mkt-page home-bg-fixed" data-mkt-active="home">
     <div class="mkt-site-wrap">
         <div id="marketing-topbar"></div>
-        <div class="home-shell">
-        <section id="hero" class="home-hero mkt-hero hero-search-first hero-ocean-voyage-draft" aria-labelledby="homeHeroTitle">
-            <div class="home-hero-copy home-hero-copy--search">
-                <h1 id="homeHeroTitle" data-i18n="home.headline">THE VESSEL CODE (TVC-SM)</h1>
-                <p class="home-hero-subhead mkt-lead" data-i18n="home.subheadline">Pioneering Maritime AX with Domain-Specific AI &amp; Big Data</p>
-                <p class="home-hero-description mkt-prose" data-i18n="home.description">A smart ship management platform combining field engineering know-how with maritime big data — from unstructured maintenance manual AI to autonomous class &amp; PSC readiness. Start maritime digital transformation with per-vessel monthly SaaS.</p>
-                <div class="home-hero-actions home-hero-cta-row">
-                    <a class="home-btn home-btn-primary" href="/contact-us?inquiry=poc" data-i18n="home.hero.cta.poc">1-Ship 14-Day Free PoC</a>
-                    <a class="home-btn home-btn-secondary home-btn-contrast-outline" href="#core-capabilities" data-i18n="home.hero.cta.arch">Explore Architecture</a>
+        <section id="hero" class="home-hero mkt-hero hero-search-first hero-ocean-chevron" aria-labelledby="homeHeroTitle">
+            <div class="home-hero-ocean-backdrop" aria-hidden="true"></div>
+            <div class="home-hero-ocean-stage">
+                <div class="home-hero-copy home-hero-copy--search home-hero-copy--ocean-photo">
+                    <h1 id="homeHeroTitle" data-i18n="home.headline">THE VESSEL CODE (TVC-SM)</h1>
+                    <p class="home-hero-subhead mkt-lead" data-i18n="home.subheadline">Pioneering Maritime AX with Domain-Specific AI &amp; Big Data</p>
+                    <p class="home-hero-description mkt-prose" data-i18n="home.description">A smart ship management platform combining field engineering know-how with maritime big data — from unstructured maintenance manual AI to autonomous class &amp; PSC readiness. Start maritime digital transformation with per-vessel monthly SaaS.</p>
+                    <div class="home-hero-actions home-hero-cta-row home-hero-cta-row--ocean">
+                        <a class="home-btn home-btn-primary" href="/contact-us?inquiry=poc" data-i18n="home.hero.cta.poc">1-Ship 14-Day Free PoC</a>
+                        <a class="home-btn home-btn-secondary home-btn-hero-outline-light" href="#core-capabilities" data-i18n="home.hero.cta.arch">Explore Architecture</a>
+                    </div>
                 </div>
+            </div>
+            <div class="home-hero-intelligence-panel">
+                <div class="home-hero-intelligence-inner">
                 <p class="home-hero-search-label" data-i18n="home.search.divider">AI Superintendent &amp; Maritime Intelligence</p>
                 <p class="home-hero-search-subtitle muted" data-i18n="home.search.subtitle">Ship engineering, fault diagnosis, parts &amp; standards — ask anything.</p>
                 <form id="homeHeroSearchForm" class="home-hero-search" role="search" aria-label="Maritime AI and unified search">
@@ -76,10 +91,19 @@
                     <a class="home-utility-badge" href="/toolkit?tool=bunker" data-i18n="home.utility.bunker">⛽ Bunker calculator (54B)</a>
                     <a class="home-utility-badge" href="/toolkit?tool=compliance" data-i18n="home.utility.cic">📋 Class &amp; PSC checklists</a>
                 </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-featured-suite-wrap" aria-labelledby="homeFeaturedSuiteTitle">
+            <div class="home-featured-suite-inner">
+                <h2 id="homeFeaturedSuiteTitle" class="home-featured-suite-title">Complete port call &amp; technical care</h2>
+                <p class="home-featured-suite-lead">Korea · China · Singapore — stores, repair, husbandry, and fleet OS in one desk.</p>
                 <div id="homeTotalServiceBarMount" class="home-total-service-mount" aria-live="polite"></div>
             </div>
         </section>
 
+        <div class="home-shell">
         <section class="home-section home-capabilities-section" id="core-capabilities" aria-labelledby="homeCapabilitiesTitle">
             <div class="home-section-head home-capabilities-head">
                 <h2 id="homeCapabilitiesTitle" data-i18n="home.capabilities.title">Core Capabilities (TVC-SM)</h2>
@@ -323,7 +347,7 @@
         (function () {
             const mount = document.getElementById('homeTotalServiceBarMount');
             if (mount && typeof TVC_TotalServiceBar !== 'undefined') {
-                mount.innerHTML = TVC_TotalServiceBar.buildTotalServiceBarHtml();
+                mount.innerHTML = TVC_TotalServiceBar.buildHomeFeaturedSuiteHtml();
             }
         })();
     </script>

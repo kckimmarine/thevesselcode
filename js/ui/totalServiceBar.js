@@ -114,9 +114,54 @@ ${cards}
 </p>`;
     }
 
+    const FEATURED_PILLARS = [
+        {
+            id: 'impa',
+            title: 'IMPA stores sourcing',
+            subtitle: 'Direct berth & anchorage supply',
+            href: '/toolkit',
+            image: '/assets/images/home-ocean-hero-horizon.webp',
+        },
+        {
+            id: 'repair',
+            title: 'Certified ship repair',
+            subtitle: 'Engine, valve, piping & class approval',
+            href: '/ship-repair-korea',
+            image: '/assets/images/shipyard-dock-hero.webp',
+        },
+        {
+            id: 'husbandry',
+            title: 'Technical husbandry',
+            subtitle: 'Port clearance, launch boats & customs',
+            href: '/ship-repair-korea#srkEmergencyTitle',
+            image: '/assets/images/samples/set-b/ocean-voyage-setb-sunset-fjord.webp',
+        },
+        {
+            id: 'sm',
+            title: 'TVC-SM fleet platform',
+            subtitle: 'Real-time inventory & requisition OS',
+            href: '/sm#pricing',
+            image: '/assets/images/digital-port-bg.jpg',
+        },
+    ];
+
+    function buildHomeFeaturedSuiteHtml() {
+        const cards = FEATURED_PILLARS.map((p) => `
+    <a class="home-featured-card" href="${esc(p.href)}" data-total-service-pillar="${esc(p.id)}">
+      <span class="home-featured-card-media" style="background-image:url('${esc(p.image)}')" aria-hidden="true"></span>
+      <span class="home-featured-card-body">
+        <span class="home-featured-card-title">${esc(p.title)}</span>
+        <span class="home-featured-card-sub">${esc(p.subtitle)}</span>
+      </span>
+    </a>`).join('\n');
+        return `<div class="home-featured-card-grid" role="list">${cards}</div>`;
+    }
+
     return {
         PILLARS,
+        FEATURED_PILLARS,
         buildTotalServiceBarHtml,
+        buildHomeFeaturedSuiteHtml,
         buildStoreRepairBridgeCtaHtml,
         buildRepairCatalogBridgeCtaHtml,
     };

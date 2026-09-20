@@ -1774,62 +1774,226 @@ body.tvc-brain-open {
     }
 }
 
-/* ── Home hero draft: ocean horizon (real photo + readable copy) ── */
-body.home-page.home-bg-fixed #hero.home-hero.mkt-hero.hero-search-first.hero-ocean-voyage-draft {
-    background-color: #0a1128;
-    background-image:
-        linear-gradient(
-            180deg,
-            rgba(10, 17, 40, 0.72) 0%,
-            rgba(15, 23, 42, 0.38) 42%,
-            rgba(15, 23, 42, 0.78) 100%
-        ),
-        url('/assets/images/home-ocean-hero-horizon.webp');
-    background-size: cover;
-    background-position: center 38%;
+/* ── Home hero: Chevron-style ocean photo + intelligence band ── */
+body.home-page #hero.hero-ocean-chevron {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    overflow: hidden;
+}
+
+body.home-page #hero.hero-ocean-chevron .home-hero-ocean-backdrop {
+    position: absolute;
+    inset: 0;
+    bottom: auto;
+    height: min(56vh, 620px);
+    z-index: 0;
+    background-color: #1e4a7a;
     background-repeat: no-repeat;
-    border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+    background-size: cover;
+    background-position: center 42%;
 }
 
-body.home-page #hero.hero-ocean-voyage-draft .home-hero-copy h1,
-body.home-page #hero.hero-ocean-voyage-draft #homeHeroTitle {
-    color: #f8fafc !important;
-    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.35);
+body.home-page #hero.hero-ocean-chevron .home-hero-ocean-stage {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: min(56vh, 620px);
+    padding: 96px max(20px, calc((100vw - 1180px) / 2 + 20px)) 52px;
+    box-sizing: border-box;
 }
 
-body.home-page #hero.hero-ocean-voyage-draft .home-hero-subhead,
-body.home-page #hero.hero-ocean-voyage-draft .home-hero-description,
-body.home-page #hero.hero-ocean-voyage-draft .home-hero-tagline,
-body.home-page #hero.hero-ocean-voyage-draft .mkt-lead {
-    color: #e2e8f0 !important;
-    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
+body.home-page #hero.hero-ocean-chevron .home-hero-copy--ocean-photo {
+    max-width: 52rem;
 }
 
-body.home-page #hero.hero-ocean-voyage-draft .home-hero-search-label {
-    color: #cbd5e1 !important;
+body.home-page #hero.hero-ocean-chevron .home-hero-copy h1,
+body.home-page #hero.hero-ocean-chevron #homeHeroTitle {
+    color: #ffffff !important;
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.35), 0 1px 3px rgba(0, 0, 0, 0.4);
+    font-size: clamp(1.85rem, 4.5vw, 3rem) !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em;
 }
 
-body.home-page #hero.hero-ocean-voyage-draft .home-hero-search-subtitle,
-body.home-page #hero.hero-ocean-voyage-draft .home-hero-search-subtitle.muted {
-    color: #94a3b8 !important;
+body.home-page #hero.hero-ocean-chevron .home-hero-subhead,
+body.home-page #hero.hero-ocean-chevron .home-hero-description,
+body.home-page #hero.hero-ocean-chevron .mkt-lead {
+    color: #f1f5f9 !important;
+    text-shadow: 0 1px 14px rgba(0, 0, 0, 0.35);
 }
 
-body.home-page #hero.hero-ocean-voyage-draft .home-utility-badge {
-    background: rgba(15, 23, 42, 0.55);
-    border-color: rgba(148, 163, 184, 0.35);
-    color: #e2e8f0;
-    backdrop-filter: blur(6px);
+body.home-page #hero.hero-ocean-chevron .home-hero-description {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    line-height: 1.65;
 }
 
-body.home-page #hero.hero-ocean-voyage-draft .home-utility-badge:hover,
-body.home-page #hero.hero-ocean-voyage-draft .home-utility-badge:focus-visible {
-    background: rgba(30, 41, 59, 0.75);
-    border-color: rgba(125, 211, 252, 0.45);
-    color: #f8fafc;
+body.home-page #hero.hero-ocean-chevron .home-hero-cta-row--ocean {
+    justify-content: center;
+    margin-top: 22px;
+}
+
+body.home-page #hero.hero-ocean-chevron .home-btn-hero-outline-light {
+    background: transparent;
+    color: #fff !important;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+body.home-page #hero.hero-ocean-chevron .home-btn-hero-outline-light:hover,
+body.home-page #hero.hero-ocean-chevron .home-btn-hero-outline-light:focus-visible {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+body.home-page #hero.hero-ocean-chevron .home-hero-intelligence-panel {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background: linear-gradient(180deg, #003b71 0%, #002952 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 40px rgba(0, 25, 60, 0.25);
+}
+
+body.home-page #hero.hero-ocean-chevron .home-hero-intelligence-inner {
+    width: min(100%, 1180px);
+    margin: 0 auto;
+    padding: 28px 20px 32px;
+    text-align: center;
+}
+
+body.home-page #hero.hero-ocean-chevron .home-hero-search-label {
+    color: #e0f2fe !important;
+    margin-top: 0;
+}
+
+body.home-page #hero.hero-ocean-chevron .home-hero-search-subtitle,
+body.home-page #hero.hero-ocean-chevron .home-hero-search-subtitle.muted {
+    color: #bae6fd !important;
+}
+
+body.home-page #hero.hero-ocean-chevron .home-utility-badge {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(186, 230, 253, 0.35);
+    color: #f0f9ff;
+}
+
+body.home-page #hero.hero-ocean-chevron .home-utility-badge:hover,
+body.home-page #hero.hero-ocean-chevron .home-utility-badge:focus-visible {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: #7dd3fc;
+    color: #fff;
+}
+
+.home-featured-suite-wrap {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background: #f1f5f9;
+    padding: 44px 20px 52px;
+}
+
+.home-featured-suite-inner {
+    width: min(100%, 1180px);
+    margin: 0 auto;
+}
+
+.home-featured-suite-title {
+    margin: 0 0 8px;
+    text-align: center;
+    font-size: clamp(1.35rem, 3vw, 1.85rem);
+    font-weight: 800;
+    color: #003b71;
+    letter-spacing: -0.02em;
+    text-transform: lowercase;
+}
+
+.home-featured-suite-lead {
+    margin: 0 0 28px;
+    text-align: center;
+    color: #475569;
+    font-size: 0.98rem;
+}
+
+.home-featured-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+@media (max-width: 960px) {
+    .home-featured-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .home-featured-card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.home-featured-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.home-featured-card:hover,
+.home-featured-card:focus-visible {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12);
+}
+
+.home-featured-card-media {
+    display: block;
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-featured-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 14px 14px 16px;
+    background: linear-gradient(180deg, #003b71 0%, #002952 100%);
+    min-height: 88px;
+}
+
+.home-featured-card-title {
+    font-size: 0.92rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.3;
+    text-transform: lowercase;
+}
+
+.home-featured-card-sub {
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: #bae6fd;
 }
 
 @media (max-width: 767px) {
-    body.home-page.home-bg-fixed #hero.hero-ocean-voyage-draft {
-        background-position: center 32%;
+    body.home-page #hero.hero-ocean-chevron .home-hero-ocean-backdrop,
+    body.home-page #hero.hero-ocean-chevron .home-hero-ocean-stage {
+        min-height: min(50vh, 520px);
+    }
+
+    body.home-page #hero.hero-ocean-chevron .home-hero-ocean-stage {
+        padding-top: 84px;
     }
 }
