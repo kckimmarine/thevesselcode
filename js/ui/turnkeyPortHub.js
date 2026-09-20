@@ -14,6 +14,7 @@
 
     const WA_NUMBER = '821038894291';
     let _modalBound = false;
+    let _pageQueryContext = null;
 
     function esc(text) {
         return String(text ?? '')
@@ -33,6 +34,68 @@
         const etaText = String(eta || '').trim() || '[ETA]';
         const text = `Hello TVC, vessel ${vessel} needs turnkey port assistance at ${portName} around ${etaText}.`;
         return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+    }
+
+    function buildShipRepairKoreaUrl({ impaCode, itemName } = {}) {
+        const code = String(impaCode || '').trim();
+        const name = String(itemName || '').trim();
+        if (!code && !name) return '/ship-repair-korea';
+        const q = new URLSearchParams();
+        if (code) q.set('impa', code);
+        if (name) q.set('item', name);
+        return `/ship-repair-korea?${q.toString()}`;
+    }
+
+    function buildDefaultRepairScope({ impaCode, itemName } = {}) {
+        const code = String(impaCode || '').trim();
+        const name = String(itemName || '').trim();
+        if (!code && !name) return '';
+        const label = [code ? `IMPA ${code}` : '', name].filter(Boolean).join(' — ');
+        return `Installation / overhaul scope for ${label}. Afloat fit-up, alignment, and class-ready completion at Korea, Singapore, or China port call.`;
+    }
+
+    function parseTurnkeyUrlParams(search) {
+        const params = new URLSearchParams(typeof search === 'string' ? search : (root.location?.search || ''));
+        return {
+            impaCode: String(params.get('impa') || params.get('code') || '').trim(),
+            itemName: String(params.get('item') || params.get('name') || '').trim(),
+        };
+    }
+
+    function getTurnkeyPageContext() {
+        if (_pageQueryContext) return _pageQueryContext;
+        _pageQueryContext = parseTurnkeyUrlParams();
+        return _pageQueryContext;
+    }
+
+    function buildTurnkeyInstallFunnelHtml(ctx) {
+        const impaCode = esc(ctx?.impaCode || '');
+        const itemName = esc(ctx?.itemName || '');
+        const href = esc(buildShipRepairKoreaUrl({
+            impaCode: ctx?.impaCode,
+            itemName: ctx?.itemName,
+        }));
+        const itemHint = impaCode
+            ? `<p class="turnkey-install-item">Linked item: <strong>IMPA ${impaCode}</strong>${itemName ? ` — ${itemName}` : ''}</p>`
+            : '';
+        return `
+<section class="turnkey-install-funnel" aria-label="Turnkey port installation and overhaul"${impaCode ? ` data-impa-code="${impaCode}" data-impa-name="${itemName}"` : ''}>
+  <p class="turnkey-install-eyebrow">Parts → Repair → Husbandry</p>
+  <h2 class="turnkey-install-title">Turnkey Port Installation &amp; Overhaul</h2>
+  <p class="turnkey-install-lead">Planning to install or overhaul this part at Korea, Singapore, or China?</p>
+  ${itemHint}
+  <p class="turnkey-install-copy">Bridge to superintendent-led afloat work: berth husbandry, launch-boat access, IMPA stores delivery, and certified fit-up — one desk from spec to sail.</p>
+  <a class="btn-turnkey-install-bridge" href="${href}">🛠️ Plan install / overhaul at this port call →</a>
+</section>`;
+    }
+
+    function buildTvcSmRetentionBannerHtml() {
+        return `
+<section class="tvc-sm-retention-banner" aria-label="TVC-SM fleet platform">
+  <p class="tvc-sm-retention-eyebrow">Closed-loop fleet operations</p>
+  <h2 class="tvc-sm-retention-title">Manage maintenance records, parts ROB, and turnkey port calls on one screen.</h2>
+  <a class="btn-tvc-sm-retention" href="/sm#pricing">🚢 Explore TVC-SM Fleet Platform (Starter $99/mo)</a>
+</section>`;
     }
 
     function buildTurnkeyPortHubHtml(ctx) {
@@ -58,7 +121,9 @@
 </section>`;
     }
 
-    function buildContactTurnkeyUrl({ vessel, portEta, needs, impaCode, itemName, ref }) {
+    function buildContactTurnkeyUrl({
+        vessel, portEta, needs, impaCode, itemName, ref, includeHusbandry, includeImpaSourcing,
+    }) {
         const params = new URLSearchParams();
         params.set('inquiry', 'engineering');
         if (impaCode) params.set('code', impaCode);
@@ -68,7 +133,9 @@
             'Turnkey Port Care & Repair inquiry',
             vessel ? `Vessel / IMO: ${vessel}` : '',
             portEta ? `Port & ETA: ${portEta}` : '',
-            needs ? `Repair & sourcing: ${needs}` : '',
+            `Port husbandry (clearance, launch, customs): ${includeHusbandry ? 'YES' : 'no'}`,
+            `IMPA spares & stores sourcing/delivery: ${includeImpaSourcing ? 'YES' : 'no'}`,
+            needs ? `Repair & sourcing scope: ${needs}` : '',
             impaCode ? `Context IMPA: ${impaCode}` : '',
         ].filter(Boolean);
         params.set('message', lines.join('\n'));
@@ -77,6 +144,11 @@
 
     function ensureTurnkeyInquiryModal() {
         let modal = document.getElementById('turnkeyPortInquiryModal');
+        if (modal && !modal.querySelector('#turnkeyOptHusbandry')) {
+            modal.remove();
+            _modalBound = false;
+            modal = null;
+        }
         if (modal) return modal;
         modal = document.createElement('div');
         modal.id = 'turnkeyPortInquiryModal';
@@ -98,6 +170,17 @@
                         <label for="turnkeyPortEta">Port &amp; ETA</label>
                         <input id="turnkeyPortEta" name="portEta" type="text" placeholder="Busan · 24 Apr 2026 · AM berth" required>
                     </div>
+                    <fieldset class="turnkey-inquiry-options">
+                        <legend class="turnkey-inquiry-options-legend">Include in turnkey scope</legend>
+                        <label class="turnkey-inquiry-check">
+                            <input type="checkbox" id="turnkeyOptHusbandry" name="includeHusbandry" value="1" checked>
+                            Include Port Husbandry (Clearance, Launch Boat, Customs)
+                        </label>
+                        <label class="turnkey-inquiry-check">
+                            <input type="checkbox" id="turnkeyOptImpaSourcing" name="includeImpaSourcing" value="1" checked>
+                            Sourcing &amp; Delivery of related IMPA spares &amp; stores
+                        </label>
+                    </fieldset>
                     <div class="turnkey-inquiry-field">
                         <label for="turnkeyNeeds">Repair &amp; Sourcing Needs</label>
                         <textarea id="turnkeyNeeds" name="needs" rows="4" placeholder="IMPA stores, valve overhaul, customs husbandry, launch boat…" required></textarea>
@@ -123,6 +206,8 @@
                 const vessel = form.vessel?.value?.trim() || '';
                 const portEta = form.portEta?.value?.trim() || '';
                 const needs = form.needs?.value?.trim() || '';
+                const includeHusbandry = !!form.querySelector('#turnkeyOptHusbandry')?.checked;
+                const includeImpaSourcing = !!form.querySelector('#turnkeyOptImpaSourcing')?.checked;
                 const url = buildContactTurnkeyUrl({
                     vessel,
                     portEta,
@@ -130,6 +215,8 @@
                     impaCode: form.dataset.impaCode || '',
                     itemName: form.dataset.impaName || '',
                     ref: form.dataset.ref || '',
+                    includeHusbandry,
+                    includeImpaSourcing,
                 });
                 window.location.href = url;
             });
@@ -137,13 +224,34 @@
         return modal;
     }
 
+    function mergeTurnkeyContext(ctx) {
+        const fromUrl = getTurnkeyPageContext();
+        return {
+            impaCode: ctx?.impaCode || fromUrl.impaCode || '',
+            itemName: ctx?.itemName || fromUrl.itemName || '',
+            ref: ctx?.ref || `${window.location.pathname}${window.location.search}`,
+        };
+    }
+
     function openTurnkeyInquiryModal(ctx) {
         const modal = ensureTurnkeyInquiryModal();
         const form = modal.querySelector('#turnkeyInquiryForm');
+        const merged = mergeTurnkeyContext(ctx || {});
         if (form) {
-            form.dataset.impaCode = ctx?.impaCode || '';
-            form.dataset.impaName = ctx?.itemName || '';
-            form.dataset.ref = ctx?.ref || `${window.location.pathname}${window.location.search}`;
+            form.dataset.impaCode = merged.impaCode;
+            form.dataset.impaName = merged.itemName;
+            form.dataset.ref = merged.ref;
+        }
+        const needsEl = modal.querySelector('#turnkeyNeeds');
+        const husbandryEl = modal.querySelector('#turnkeyOptHusbandry');
+        const sourcingEl = modal.querySelector('#turnkeyOptImpaSourcing');
+        if (husbandryEl) husbandryEl.checked = true;
+        if (sourcingEl) sourcingEl.checked = true;
+        if (needsEl) {
+            const preset = ctx?.prefillNeeds || buildDefaultRepairScope(merged);
+            if (preset && (!needsEl.value.trim() || ctx?.forcePrefillNeeds)) {
+                needsEl.value = preset;
+            }
         }
         modal.classList.remove('hidden');
         modal.setAttribute('aria-hidden', 'false');
@@ -218,6 +326,27 @@
         bindTurnkeyPortHub(hostEl, ctx);
     }
 
+    function mountInstallFunnelHost(hostEl, ctx) {
+        if (!hostEl) return;
+        hostEl.innerHTML = buildTurnkeyInstallFunnelHtml(ctx);
+    }
+
+    function initShipRepairPage() {
+        _pageQueryContext = parseTurnkeyUrlParams();
+        const merged = mergeTurnkeyContext({});
+        document.querySelectorAll('[data-turnkey-inquiry-open], #srkRepairInquiryBtn').forEach((btn) => {
+            if (btn.dataset.turnkeySrkBound === '1') return;
+            btn.dataset.turnkeySrkBound = '1';
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                openTurnkeyInquiryModal({
+                    ...merged,
+                    forcePrefillNeeds: true,
+                });
+            });
+        });
+    }
+
     function initDocument(root) {
         const scope = root || document;
         scope.querySelectorAll('.turnkey-port-hub').forEach((section) => {
@@ -231,12 +360,19 @@
     return {
         WA_NUMBER,
         buildTurnkeyPortHubHtml,
+        buildTurnkeyInstallFunnelHtml,
+        buildTvcSmRetentionBannerHtml,
+        buildShipRepairKoreaUrl,
+        buildDefaultRepairScope,
+        parseTurnkeyUrlParams,
         buildTurnkeyWhatsAppUrl,
         buildContactTurnkeyUrl,
         bindTurnkeyPortHub,
         mountTurnkeyHost,
+        mountInstallFunnelHost,
         openTurnkeyInquiryModal,
         closeTurnkeyInquiryModal,
         initDocument,
+        initShipRepairPage,
     };
 }));

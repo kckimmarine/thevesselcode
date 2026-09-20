@@ -58,6 +58,12 @@ check('html has rfq contact link', html.includes('inquiry=rfq'));
 check('html has fleet poc cta', html.includes('inquiry=poc'));
 check('html has turnkey port hub', html.includes('class="turnkey-port-hub"') && html.includes('Turnkey Port Solution'));
 check('html has turnkey inquiry cta', html.includes('data-turnkey-inquiry-open'));
+check('html has install overhaul funnel', html.includes('class="turnkey-install-funnel"') && html.includes('Turnkey Port Installation'));
+check(
+    'html install funnel links ship repair with impa',
+    html.includes('/ship-repair-korea?') && html.includes(`impa=${sampleCode}`),
+);
+check('html has tvc-sm retention banner', html.includes('class="tvc-sm-retention-banner"') && html.includes('/sm#pricing'));
 check('html has related items section', html.includes('class="related-items"'));
 
 const sitemap = readFileSync(join(root, 'public', 'sitemap.xml'), 'utf8');

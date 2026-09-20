@@ -709,3 +709,143 @@
         width: 100%;
     }
 }
+
+/* Store → Repair install / overhaul bridge */
+.turnkey-install-funnel {
+    margin: 20px 0 0;
+    padding: 18px 16px;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #0f2744 0%, #1e3a5f 100%);
+    color: #f1f5f9;
+    border: 1px solid rgba(56, 189, 248, 0.22);
+}
+
+.turnkey-install-eyebrow {
+    margin: 0 0 8px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #7dd3fc;
+}
+
+.turnkey-install-title {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.turnkey-install-lead {
+    margin: 0 0 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+.turnkey-install-item {
+    margin: 0 0 10px;
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+.turnkey-install-copy {
+    margin: 0 0 14px;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #94a3b8;
+}
+
+.btn-turnkey-install-bridge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    background: #fbbf24;
+    color: #0f172a;
+}
+
+.btn-turnkey-install-bridge:hover,
+.btn-turnkey-install-bridge:focus-visible {
+    filter: brightness(1.05);
+}
+
+.turnkey-inquiry-options {
+    margin: 0;
+    padding: 12px 12px 4px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.turnkey-inquiry-options-legend {
+    padding: 0 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #475569;
+}
+
+.turnkey-inquiry-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.45;
+    color: #334155;
+    cursor: pointer;
+}
+
+.turnkey-inquiry-check input {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* TVC-SM retention funnel */
+.tvc-sm-retention-banner {
+    margin: 28px 0 20px;
+    padding: 22px 18px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #0b3d91 0%, #0e7490 100%);
+    color: #f8fafc;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    box-shadow: 0 10px 28px rgba(11, 61, 145, 0.2);
+}
+
+.tvc-sm-retention-eyebrow {
+    margin: 0 0 8px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #bae6fd;
+}
+
+.tvc-sm-retention-title {
+    margin: 0 0 14px;
+    font-size: clamp(1rem, 2.4vw, 1.25rem);
+    line-height: 1.35;
+    color: #fff;
+}
+
+.btn-tvc-sm-retention {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 18px;
+    border-radius: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    background: #fbbf24;
+    color: #0f172a;
+}
+
+.mkt-toolkit-page .tvc-sm-retention-banner,
+.srk-page .tvc-sm-retention-banner {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}

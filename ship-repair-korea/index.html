@@ -180,21 +180,18 @@
                 </p>
             </section>
 
+            <section class="tvc-sm-retention-banner" aria-label="TVC-SM fleet platform">
+                <p class="tvc-sm-retention-eyebrow">Closed-loop fleet operations</p>
+                <h2 class="tvc-sm-retention-title">Manage maintenance records, parts ROB, and turnkey port calls on one screen.</h2>
+                <a class="btn-tvc-sm-retention" href="/sm#pricing">🚢 Explore TVC-SM Fleet Platform (Starter $99/mo)</a>
+            </section>
+
             <div id="marketing-footer"></div>
         </div>
     </div>
     <script src="../js/marketing-i18n.js?v=20260915-enterprise"></script>
     <script src="../js/marketing-shell.js?v=20260919-nav-services"></script>
-    <script src="../js/ui/turnkeyPortHub.js?v=20260920-turnkey-port"></script>
-    <script>
-        (function () {
-            const btn = document.getElementById('srkRepairInquiryBtn');
-            if (btn && window.TVC_TurnkeyPortHub) {
-                btn.addEventListener('click', function () {
-                    TVC_TurnkeyPortHub.openTurnkeyInquiryModal({ ref: '/ship-repair-korea' });
-                });
-            }
-        })();
-    </script>
+    <script src="../js/ui/turnkeyPortHub.js?v=20260920-closed-loop-funnel"></script>
+    <script>TVC_TurnkeyPortHub.initShipRepairPage();</script>
 </body>
 </html>

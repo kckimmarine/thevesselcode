@@ -85,7 +85,8 @@ const TVC_StoreMenu = (function () {
             || !existing.querySelector('#impaDetailConversionAction')
             || !existing.querySelector('#impaDetailTrustHeader')
             || !existing.querySelector('#impaDetailStockSla')
-            || !existing.querySelector('#impaDetailTurnkeyHub'))) {
+            || !existing.querySelector('#impaDetailTurnkeyHub')
+            || !existing.querySelector('#impaDetailInstallFunnel'))) {
             existing.remove();
             _modalReady = false;
             _plateZoom = null;
@@ -126,6 +127,7 @@ const TVC_StoreMenu = (function () {
                                 <tbody id="impaDetailShipservSpec"></tbody>
                             </table>
                         </div>
+                        <div id="impaDetailInstallFunnel" class="impa-detail-install-funnel-host" aria-label="Turnkey installation funnel"></div>
                         <div id="impaDetailTurnkeyHub" class="impa-detail-turnkey-host" aria-label="Turnkey port services"></div>
                         <section class="impa-shipserv-desc" aria-label="Description and use">
                             <h3 class="impa-shipserv-desc-title">Description / Use</h3>
@@ -759,12 +761,16 @@ const TVC_StoreMenu = (function () {
             dimsEl.classList.toggle('hidden', !dims);
         }
         if (specBody) specBody.innerHTML = shipservSpecRows(item);
+        const funnelCtx = { impaCode: code, itemName: cleanTitle };
+        const installHost = document.getElementById('impaDetailInstallFunnel');
+        if (installHost && typeof TVC_TurnkeyPortHub !== 'undefined') {
+            TVC_TurnkeyPortHub.mountInstallFunnelHost(installHost, funnelCtx);
+        } else if (installHost) {
+            installHost.innerHTML = '';
+        }
         const turnkeyHost = document.getElementById('impaDetailTurnkeyHub');
         if (turnkeyHost && typeof TVC_TurnkeyPortHub !== 'undefined') {
-            TVC_TurnkeyPortHub.mountTurnkeyHost(turnkeyHost, {
-                impaCode: code,
-                itemName: cleanTitle,
-            });
+            TVC_TurnkeyPortHub.mountTurnkeyHost(turnkeyHost, funnelCtx);
         } else if (turnkeyHost) {
             turnkeyHost.innerHTML = '';
         }

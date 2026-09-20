@@ -449,7 +449,11 @@ function buildContactInquiryUrl(base, params) {
     return `${base.replace(/\/$/, '')}/contact-us${qs ? `?${qs}` : ''}`;
 }
 
-const { buildTurnkeyPortHubHtml } = require('../../js/ui/turnkeyPortHub.js');
+const {
+    buildTurnkeyPortHubHtml,
+    buildTurnkeyInstallFunnelHtml,
+    buildTvcSmRetentionBannerHtml,
+} = require('../../js/ui/turnkeyPortHub.js');
 
 const TOP_REQUISITION_CHAPTERS = new Set(['31', '33', '55', '59', '61', '75', '79', '87']);
 
@@ -571,6 +575,11 @@ function buildStoreItemHtml(item, { origin } = {}) {
         impaCode: item.impa_code,
         itemName: cleanProductTitle(item),
     });
+    const installFunnelHtml = buildTurnkeyInstallFunnelHtml({
+        impaCode: item.impa_code,
+        itemName: cleanProductTitle(item),
+    });
+    const tvcSmRetentionHtml = buildTvcSmRetentionBannerHtml();
     const displayTitle = cleanProductTitle(item);
     const plateSection = imageUrl
         ? `<section class="impa-shipserv-photo impa-plate-preview" aria-label="Catalog plate">
@@ -630,6 +639,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
             </table>
           </div>
         </section>
+        ${installFunnelHtml}
         ${turnkeyHubHtml}
         <div class="impa-detail-tvc-sm">${tvcSmBannerHtml}</div>
         ${buildImpaCommerceActionsHtml(item)}
@@ -638,6 +648,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
           <a class="btn-toolkit" href="${escapeHtml(toolkitUrl)}">Open Maritime Toolkit</a>
         </div>
         ${relatedHtml}
+        ${tvcSmRetentionHtml}
         <p class="store-pillar-crosslink"><a href="${escapeHtml(`${base}/ship-repair-korea`)}">🛠️ Ship Repair in Korea (Busan · Ulsan · Yeosu)</a></p>
         <p class="footer-note">THE VESSEL CODE — offline-first PMS + SPICS and maritime toolkit for shipboard operations.</p>
       </div>
