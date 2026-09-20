@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-20T00:06:32.013Z",
+    "generatedAt": "2026-09-20T06:06:28.332Z",
     "benchmarkAsOf": "2026-09-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -200,6 +200,23 @@
   },
   "news": [
     {
+      "title": "US Tariffs Threaten Great Lakes Shipping Tied To Canada Trade",
+      "link": "https://gcaptain.com/us-tariffs-threaten-great-lakes-shipping-tied-to-canada-trade/",
+      "pubDate": "Sun, 20 Sep 2026 03:18:43 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By&#160;Brendan Murray Sep 19, 2026 (Bloomberg) &#8211;The American Century often draws a crowd when the ship pulls into the Port of Duluth-Superior to load Minnesota iron ore. Kids cheer when the captain...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/01/port_of_duluth.jpg",
+      "en": {
+        "headline": "US Tariffs Threaten Great Lakes Shipping Tied To Canada Trade",
+        "summary": "By&#160;Brendan Murray Sep 19, 2026 (Bloomberg) &#8211;The American Century often draws a crowd when the ship pulls into the Port of Duluth-Superior to load Minnesota iron ore. Kids cheer when the captain...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "US Reaches Greenland Deal To End Row That Threatened NATO",
       "link": "https://gcaptain.com/us-reaches-greenland-deal-to-end-row-that-threatened-nato/",
       "pubDate": "Sat, 19 Sep 2026 20:09:34 +0000",
@@ -208,7 +225,7 @@
       "summary": "By&#160;Sanne Wass Sep 19, 2026 (Bloomberg) &#8211;The US, Denmark and Greenland struck a security deal that expands Washington’s role on the Arctic island, ending for now a long-running diplomatic spat...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-07T140157Z_1942348378_RC2AENAUEHNW_RTRMADP_3_EU-GREENLAND-800x533.jpg",
       "en": {
         "headline": "US Reaches Greenland Deal To End Row That Threatened NATO",
@@ -225,7 +242,7 @@
       "summary": "By&#160;Yongchang Chin, Sherry Su, Nathan Risser and Alex Longley Sep 19, 2026 (Bloomberg) &#8211;The soaring cost of moving oil around the world is making some long-distance crude trades uneconomical, threatening...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-17T131826Z_1190888993_RC21LNA4S0NI_RTRMADP_3_SHIPPING-OIL-ROUTES-VLCC-800x530.jpg",
       "en": {
         "headline": "World Running Short Of Supertankers Threatens Long-Haul Oil Flow",
@@ -242,7 +259,7 @@
       "summary": "By Jarrett Renshaw Sept 18 (Reuters) &#8211; The US and China are discussing a plan to reduce or eliminate China&#8217;s tariffs on American LNG as part of a broader package of energy...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-18T201224Z_1027585365_RC2WLNAKYI1S_RTRMADP_3_USA-TRUMP-LNG-CHINA-800x600.jpg",
       "en": {
         "headline": "US, China Discuss Cutting Tariffs On US LNG Ahead Of Xi Visit",
@@ -259,7 +276,7 @@
       "summary": "A false intelligence report produced with the help of artificial intelligence nearly led the U.S. military to intercept and board a Chinese ship in the Middle East during the war...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 28,
+      "hoursAgo": 34,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/10/shutterstock_2392448797.jpg",
       "en": {
         "headline": "AI Error Nearly Triggered U.S. Intercept of Chinese Ship, CNN Reports",
@@ -276,7 +293,7 @@
       "summary": "By Lori-Ann LaRocco &#8211; It’s a good time to be an ocean carrier or tanker owner. The slower trade caused by bottlenecks stemming from the U.S. war with Iran, Russia’s...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 30,
+      "hoursAgo": 36,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/10/shutterstock_721476064.jpg",
       "en": {
         "headline": "Shipping’s New Normal: Slower Trade, Higher Costs, Bigger Profits",
@@ -293,7 +310,7 @@
       "summary": "A liquefied natural gas tanker bringing fuel from the US to Europe suffered a systems failure that the crew reported as a suspected cyber attack, according to people familiar with the matter.",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 30,
+      "hoursAgo": 36,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/11/shutterstock_33420946.jpg",
       "en": {
         "headline": "Another Tanker Suffers Failure as Crew Suspect Cyber Attack",
@@ -310,7 +327,7 @@
       "summary": "London's marine insurance market has widened the area in the Black Sea it deems as ?high risk as the Ukraine-Russia conflict escalates, according to an advisory issued this week.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 31,
+      "hoursAgo": 37,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/09/2024-09-05T105023Z_1059962348_RC2NX5AEBTRZ_RTRMADP_3_UKRAINE-CRISIS-SUMMIT-800x534.jpg",
       "en": {
         "headline": "London&#8217;s Marine Insurers Widen Black Sea High Risk Zone as Shipping Attacks Surge",
@@ -327,7 +344,7 @@
       "summary": "WASHINGTON, Sept 18 (Reuters)&#160;&#8211;&#160;When President Donald Trump addressed the United Nations a year ago, he touted the US bombing of&#160;Iran’s nuclear sites just months earlier as &#8220;totally obliterating everything&#8221; and...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 31,
+      "hoursAgo": 37,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-08-21T184843Z_2860007_RC2RXGA1DJ3Z_RTRMADP_3_UN-BUDGET-USA.jpg",
       "en": {
         "headline": "Trump Returns to UN as Iran War Spreads Across Shipping Chokepoints",
@@ -344,7 +361,7 @@
       "summary": "A new burst of attacks on commercial shipping in the Strait of Hormuz is hitting just as Saudi Arabia is being forced to send more oil back through the waterway...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 31,
+      "hoursAgo": 37,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
       "en": {
         "headline": "Three Tanker Attacks Hit Hormuz as Saudi Oil Is Forced Back Toward Strait",
@@ -361,8 +378,8 @@
       "summary": "The United States has sanctioned an Iranian cryptocurrency exchange that Treasury says was used to move payments collected from ships transiting the Strait of Hormuz into Iran’s financial system. The...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 32,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
+      "hoursAgo": 38,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "U.S. Sanctions Crypto Exchange Tied to Iran’s Hormuz Transit Payments",
         "summary": "The United States has sanctioned an Iranian cryptocurrency exchange that Treasury says was used to move payments collected from ships transiting the Strait of Hormuz into Iran’s financial system. The...",
@@ -378,7 +395,7 @@
       "summary": "Maersk has confirmed orders for 26 large containerships, ending days of speculation over a major fleet expansion programme. The Danish carrier said on Friday that all 26 ships will have capacity of 18,600 teu and will feature dual-fuel engines capable of operating on LNG. Deliver",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 33,
+      "hoursAgo": 39,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/08/Marie-Maersk-Christopher-Triggs-Marine-Traffic.jpg",
       "en": {
         "headline": "Maersk confirms 26-ship newbuilding spree",
@@ -395,7 +412,7 @@
       "summary": "US inland marine operator Turn Services has completed its acquisition of St. John Fleeting and its affiliated companies, expanding its barge operations on the Lower Mississippi River. The deal gives Turn Services control of St. John’s fleet site at around Mile Marker 140 near Res",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 38,
+      "hoursAgo": 44,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Turn-Services.jpg",
       "en": {
         "headline": "Turn Services takes over St. John Fleeting",
@@ -412,8 +429,8 @@
       "summary": "At least two liquefied natural gas shipments transited the Strait of Hormuz this week as producers look for ways to increase flows to a market struggling with a lack of supply and surging prices.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 38,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 44,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "More LNG Getting Through Hormuz as Producers Push for Transits",
         "summary": "At least two liquefied natural gas shipments transited the Strait of Hormuz this week as producers look for ways to increase flows to a market struggling with a lack of supply and surging prices.",
@@ -429,7 +446,7 @@
       "summary": "Turkey has presented Russia and Ukraine with a draft proposal aimed at ending attacks on commercial vessels in the Black Sea, the latest attempt to contain a maritime conflict that is taking an increasingly heavy toll on merchant shipping. Ankara has shared the text of a memorand",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 39,
+      "hoursAgo": 45,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/10/Ukraine-1.jpg",
       "en": {
         "headline": "Turkey pushes Black Sea truce",
@@ -446,28 +463,11 @@
       "summary": "Shipping people have long memories, and that might be the simplest explanation for why today’s extraordinary market feels nothing like the last great supercycle. Anyone who lived through the heady days of 2008 remembers how quickly the music stopped. The Baltic Dry Index peaked a",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 39,
+      "hoursAgo": 45,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/11/Monaco-champagne.jpg",
       "en": {
         "headline": "Why this shipping supercycle feels different",
         "summary": "Shipping people have long memories, and that might be the simplest explanation for why today’s extraordinary market feels nothing like the last great supercycle. Anyone who lived through the heady days of 2008 remembers how quickly the music stopped. The Baltic Dry Index peaked a",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Splash Wrap: When the boom spills over",
-      "link": "https://splash247.com/splash-wrap-when-the-boom-spills-over/",
-      "pubDate": "Fri, 18 Sep 2026 08:15:28 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "The most extraordinary numbers this week came from tankers, where the Baltic Exchange’s Middle East Gulf-China VLCC benchmark broke through the equivalent of $1m a day for the first time. VLCCs loading outside the Gulf are earning close to a million a day too, suezmax and aframax",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 39,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2015/01/China-Merchants-New-vision-vlcc.jpg",
-      "en": {
-        "headline": "Splash Wrap: When the boom spills over",
-        "summary": "The most extraordinary numbers this week came from tankers, where the Baltic Exchange’s Middle East Gulf-China VLCC benchmark broke through the equivalent of $1m a day for the first time. VLCCs loading outside the Gulf are earning close to a million a day too, suezmax and aframax",
         "source": "Splash247"
       }
     }
