@@ -130,12 +130,12 @@
                     /* keep displayLink */
                 }
                 return `
-                    <article class="tvc-search-result-card">
-                        <h3 class="tvc-search-result-card__title">
+                    <article class="tvc-search-result-card search-result-item">
+                        <h3 class="tvc-search-result-card__title search-result-item__title">
                             <a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title || item.link)}</a>
                         </h3>
-                        <span class="tvc-search-result-card__domain">${escapeHtml(host || domain)}</span>
-                        <p class="tvc-search-result-card__snippet">${escapeHtml(item.snippet || '')}</p>
+                        <span class="tvc-search-result-card__domain search-result-item__domain">${escapeHtml(host || domain)}</span>
+                        <p class="tvc-search-result-card__snippet search-result-item__snippet">${escapeHtml(item.snippet || '')}</p>
                     </article>
                 `;
             })
