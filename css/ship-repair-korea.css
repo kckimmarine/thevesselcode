@@ -1,6 +1,54 @@
 /* Ship Repair in Korea — SEO pillar page */
-.srk-page .srk-hero {
-    padding-top: 1.5rem;
+.srk-page .home-shell {
+    background: #f8fafc;
+}
+
+.repair-hero-section {
+    background:
+        linear-gradient(rgba(10, 15, 29, 0.88), rgba(15, 23, 42, 0.95)),
+        url('/assets/images/shipyard-dock-hero.webp') center / cover no-repeat;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: clamp(2rem, 5vw, 3.25rem) max(1.25rem, calc(50vw - 560px));
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+.repair-hero-preload {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.repair-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+.repair-hero-section .home-section-head h1,
+.repair-hero-section #srkTitle {
+    color: #f8fafc;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
+}
+
+.repair-hero-section .srk-summary,
+.repair-hero-section .home-section-lead {
+    color: #e2e8f0;
+}
+
+.repair-hero-section .srk-summary strong {
+    color: #fff;
 }
 
 .srk-verified-badge {
@@ -22,7 +70,6 @@
     max-width: 72ch;
     font-size: 1.05rem;
     line-height: 1.65;
-    color: var(--mkt-text, #334155);
 }
 
 .srk-table-wrap {
