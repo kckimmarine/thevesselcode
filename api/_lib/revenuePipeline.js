@@ -1,6 +1,6 @@
 'use strict';
 
-const { authClient } = require('./googleServiceAccount');
+const { getAccessToken } = require('./googleServiceAccount');
 
 const GA4_SCOPES = ['https://www.googleapis.com/auth/analytics.readonly'];
 const GSC_SCOPES = ['https://www.googleapis.com/auth/webmasters.readonly'];
@@ -45,59 +45,65 @@ function daysAgo(n) {
     return d.toISOString().slice(0, 10);
 }
 
+async function ga4RunReport(property, requestBody, token) {
+    const url = `https://analyticsdata.googleapis.com/v1beta/${property}:runReport`;
+    const res = await fetch(url, {
+        method: 'POST',
+        headers: {
+            Authorization: `Bearer ${token}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestBody),
+    });
+    const payload = await res.json().catch(() => ({}));
+    if (!res.ok) {
+        throw new Error(`GA4 ${res.status}: ${JSON.stringify(payload).slice(0, 400)}`);
+    }
+    return payload;
+}
+
 async function fetchGa4Summary(days = 7) {
     const property = ga4PropertyId();
     if (!property) {
         return { configured: false, reason: 'GA4_PROPERTY_ID not set' };
     }
-    const auth = authClient(GA4_SCOPES);
-    const { google } = require('googleapis');
-    const analyticsdata = google.analyticsdata({ version: 'v1beta', auth });
+    const token = await getAccessToken(GA4_SCOPES);
     const startDate = daysAgo(days);
     const endDate = daysAgo(0);
 
     const [overviewRes, eventsRes, pagesRes] = await Promise.all([
-        analyticsdata.properties.runReport({
-            property,
-            requestBody: {
-                dateRanges: [{ startDate, endDate }],
-                metrics: [
-                    { name: 'sessions' },
-                    { name: 'activeUsers' },
-                    { name: 'screenPageViews' },
-                ],
-            },
-        }),
-        analyticsdata.properties.runReport({
-            property,
-            requestBody: {
-                dateRanges: [{ startDate, endDate }],
-                dimensions: [{ name: 'eventName' }],
-                metrics: [{ name: 'eventCount' }],
-                orderBys: [{ desc: true, metric: { metricName: 'eventCount' } }],
-                limit: 30,
-            },
-        }),
-        analyticsdata.properties.runReport({
-            property,
-            requestBody: {
-                dateRanges: [{ startDate, endDate }],
-                dimensions: [{ name: 'pagePath' }],
-                metrics: [{ name: 'screenPageViews' }],
-                orderBys: [{ desc: true, metric: { metricName: 'screenPageViews' } }],
-                limit: 15,
-            },
-        }),
+        ga4RunReport(property, {
+            dateRanges: [{ startDate, endDate }],
+            metrics: [
+                { name: 'sessions' },
+                { name: 'activeUsers' },
+                { name: 'screenPageViews' },
+            ],
+        }, token),
+        ga4RunReport(property, {
+            dateRanges: [{ startDate, endDate }],
+            dimensions: [{ name: 'eventName' }],
+            metrics: [{ name: 'eventCount' }],
+            orderBys: [{ desc: true, metric: { metricName: 'eventCount' } }],
+            limit: 30,
+        }, token),
+        ga4RunReport(property, {
+            dateRanges: [{ startDate, endDate }],
+            dimensions: [{ name: 'pagePath' }],
+            metrics: [{ name: 'screenPageViews' }],
+            orderBys: [{ desc: true, metric: { metricName: 'screenPageViews' } }],
+            limit: 15,
+        }, token),
     ]);
 
-    const metricValues = overviewRes.data?.rows?.[0]?.metricValues || [];
-    const eventRows = (eventsRes.data?.rows || []).map((row) => ({
+    const metricValues = overviewRes?.rows?.[0]?.metricValues || [];
+    const eventRows = (eventsRes?.rows || []).map((row) => ({
         name: row.dimensionValues?.[0]?.value || '',
         count: Number(row.metricValues?.[0]?.value || 0),
     }));
     const focus = new Set(['lead_form_submit', 'poc_cta_click', 'page_view', 'session_start', 'first_visit']);
     const events = eventRows.filter((e) => focus.has(e.name) || e.name.startsWith('poc_') || e.name.startsWith('lead_'));
-    const topPages = (pagesRes.data?.rows || []).map((row) => ({
+    const topPages = (pagesRes?.rows || []).map((row) => ({
         path: row.dimensionValues?.[0]?.value || '',
         views: Number(row.metricValues?.[0]?.value || 0),
     }));
@@ -115,24 +121,32 @@ async function fetchGa4Summary(days = 7) {
 
 async function fetchGscSummary(days = 7) {
     const siteUrl = gscSiteUrl();
-    const auth = authClient(GSC_SCOPES);
-    const { google } = require('googleapis');
-    const webmasters = google.webmasters({ version: 'v3', auth });
+    const token = await getAccessToken(GSC_SCOPES);
     const end = new Date();
     const start = new Date();
     start.setUTCDate(start.getUTCDate() - days);
 
-    const res = await webmasters.searchanalytics.query({
-        siteUrl,
-        requestBody: {
+    const encodedSite = encodeURIComponent(siteUrl);
+    const url = `https://www.googleapis.com/webmasters/v3/sites/${encodedSite}/searchAnalytics/query`;
+    const res = await fetch(url, {
+        method: 'POST',
+        headers: {
+            Authorization: `Bearer ${token}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
             startDate: start.toISOString().slice(0, 10),
             endDate: end.toISOString().slice(0, 10),
             dimensions: ['query', 'page'],
             rowLimit: 50,
-        },
+        }),
     });
+    const payload = await res.json().catch(() => ({}));
+    if (!res.ok) {
+        throw new Error(`GSC ${res.status}: ${JSON.stringify(payload).slice(0, 400)}`);
+    }
 
-    const rows = res.data?.rows || [];
+    const rows = payload?.rows || [];
     const byQuery = new Map();
     const byPage = new Map();
     for (const row of rows) {
