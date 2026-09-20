@@ -1,26 +1,27 @@
 /**
  * THE VESSEL CODE — GA4 (gtag) for marketing pages.
- * Set window.TVC_GA4_MEASUREMENT_ID before this script, or replace the default placeholder.
+ * Default measurement ID: G-XB1B5NY3NB (override via window.TVC_GA4_MEASUREMENT_ID).
  */
 (function (global) {
     'use strict';
 
-    const PLACEHOLDER_RE = /X{4,}/i;
-    const DEFAULT_ID = 'G-XXXXXXXXXX';
+    const DEFAULT_ID = 'G-XB1B5NY3NB';
 
     function measurementId() {
         return String(global.TVC_GA4_MEASUREMENT_ID || DEFAULT_ID).trim();
     }
 
     function isConfigured(id) {
-        return Boolean(id) && !PLACEHOLDER_RE.test(id);
+        return /^G-[A-Z0-9]+$/i.test(String(id || '').trim());
     }
 
-    function ensureGtagLoaded(id, onReady) {
+    function ensureGtagReady(onReady) {
         if (typeof global.gtag === 'function') {
             onReady();
             return;
         }
+        const id = measurementId();
+        if (!isConfigured(id)) return;
         global.dataLayer = global.dataLayer || [];
         global.gtag = function gtag() {
             global.dataLayer.push(arguments);
@@ -54,9 +55,8 @@
     }
 
     function init() {
-        const id = measurementId();
-        if (!isConfigured(id)) return;
-        ensureGtagLoaded(id, () => {
+        if (!isConfigured(measurementId())) return;
+        ensureGtagReady(() => {
             bindPocCtaClicks();
         });
     }
