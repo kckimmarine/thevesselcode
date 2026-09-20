@@ -379,6 +379,24 @@
     color: #94a3b8;
 }
 
+.impa-store-detail .store-pillar-crosslink {
+    margin-top: 22px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(56, 189, 248, 0.15);
+    font-size: 14px;
+}
+
+.impa-store-detail .store-pillar-crosslink a {
+    color: #38bdf8;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.impa-store-detail .store-pillar-crosslink a:hover,
+.impa-store-detail .store-pillar-crosslink a:focus-visible {
+    text-decoration: underline;
+}
+
 .impa-store-detail .footer-note {
     margin-top: 18px;
     color: #94a3b8;

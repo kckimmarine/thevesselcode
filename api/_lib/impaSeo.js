@@ -638,6 +638,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
           <a class="btn-toolkit" href="${escapeHtml(toolkitUrl)}">Open Maritime Toolkit</a>
         </div>
         ${relatedHtml}
+        <p class="store-pillar-crosslink"><a href="${escapeHtml(`${base}/ship-repair-korea`)}">🛠️ Ship Repair in Korea (Busan · Ulsan · Yeosu)</a></p>
         <p class="footer-note">THE VESSEL CODE — offline-first PMS + SPICS and maritime toolkit for shipboard operations.</p>
       </div>
     </article>
