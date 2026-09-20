@@ -38,7 +38,7 @@ check(
         /Found \d+ results/i.test(webText) ||
         webText.includes('example.com') ||
         webText.includes('quota') ||
-        webText.includes('Configure GOOGLE_SEARCH'),
+        webText.includes('Configure TAVILY_API_KEY'),
     webText.slice(0, 120),
 );
 await page.screenshot({ path: join(ART, 'search-results-web-fallback.png'), fullPage: false });

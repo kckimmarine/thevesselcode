@@ -3,6 +3,8 @@
 const CACHE_TTL_MS = 24 * 60 * 60 * 1000;
 const DAILY_QUOTA_LIMIT = 95;
 const MAX_QUERY_CHARS = 512;
+const TAVILY_SEARCH_URL = 'https://api.tavily.com/search';
+const TAVILY_MAX_RESULTS = 8;
 
 /** @type {Map<string, { expiresAt: number, payload: object }>} */
 const queryCache = new Map();
@@ -49,28 +51,45 @@ function setCache(q, payload) {
     });
 }
 
-function mapGoogleItems(data) {
-    const items = Array.isArray(data?.items) ? data.items : [];
-    return items.slice(0, 10).map((item) => ({
-        title: String(item.title || '').trim(),
-        link: String(item.link || '').trim(),
-        displayLink: String(item.displayLink || '').trim(),
-        snippet: String(item.snippet || '').trim(),
-    }));
+function hostnameFromUrl(url) {
+    try {
+        return new URL(String(url || '').trim()).hostname.replace(/^www\./, '');
+    } catch {
+        return '';
+    }
 }
 
-async function fetchGoogleSearch(q) {
-    const apiKey = String(process.env.GOOGLE_SEARCH_API_KEY || '').trim();
-    const cx = String(process.env.GOOGLE_SEARCH_CX || '').trim();
-    if (!apiKey || !cx) {
+function mapTavilyItems(data) {
+    const results = Array.isArray(data?.results) ? data.results : [];
+    return results.slice(0, TAVILY_MAX_RESULTS).map((item) => {
+        const link = String(item.url || '').trim();
+        return {
+            title: String(item.title || '').trim(),
+            snippet: String(item.content || '').trim(),
+            link,
+            displayLink: hostnameFromUrl(link) || String(item.url || '').trim(),
+        };
+    });
+}
+
+async function fetchTavilySearch(q) {
+    const apiKey = String(process.env.TAVILY_API_KEY || '').trim();
+    if (!apiKey) {
         return { ok: false, reason: 'missing-config' };
     }
 
-    const url =
-        `https://www.googleapis.com/customsearch/v1?key=${encodeURIComponent(apiKey)}` +
-        `&cx=${encodeURIComponent(cx)}&q=${encodeURIComponent(q)}`;
+    const res = await fetch(TAVILY_SEARCH_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            api_key: apiKey,
+            query: q,
+            search_depth: 'basic',
+            include_answer: false,
+            max_results: TAVILY_MAX_RESULTS,
+        }),
+    });
 
-    const res = await fetch(url, { method: 'GET' });
     if (res.status === 429) {
         return { ok: false, reason: 'rate-limited', status: 429 };
     }
@@ -78,7 +97,8 @@ async function fetchGoogleSearch(q) {
         return { ok: false, reason: 'http-error', status: res.status };
     }
     const data = await res.json();
-    return { ok: true, items: mapGoogleItems(data), searchInformation: data.searchInformation || null };
+    const items = mapTavilyItems(data);
+    return { ok: true, items, responseTime: data.response_time };
 }
 
 function fallbackPayload(q, extra = {}) {
@@ -129,7 +149,7 @@ async function handler(req, res) {
 
     try {
         const startedMs = Date.now();
-        const result = await fetchGoogleSearch(q);
+        const result = await fetchTavilySearch(q);
         const executionMs = Date.now() - startedMs;
         if (!result.ok) {
             res.statusCode = 200;
@@ -147,19 +167,19 @@ async function handler(req, res) {
 
         dailyApiCallCount += 1;
 
-        const totalResults = result.searchInformation?.totalResults;
         const payload = {
             query: q,
             items: result.items,
             resultCount: result.items.length,
-            totalResults: totalResults != null ? String(totalResults) : undefined,
+            totalResults: result.items.length ? String(result.items.length) : undefined,
             executionMs,
             fallback: false,
             quotaExceeded: false,
             cached: false,
             dailyCount: dailyApiCallCount,
             dailyLimit: DAILY_QUOTA_LIMIT,
-            searchInformation: result.searchInformation,
+            provider: 'tavily',
+            responseTime: result.responseTime,
         };
 
         setCache(q, payload);
@@ -180,6 +200,7 @@ module.exports = handler;
 module.exports._testing = {
     DAILY_QUOTA_LIMIT,
     CACHE_TTL_MS,
+    TAVILY_MAX_RESULTS,
     normalizeQuery,
     getCached,
     setCache,
@@ -193,5 +214,5 @@ module.exports._testing = {
         dailyApiCallCount = Math.max(0, Number(n) || 0);
     },
     clearCache: () => queryCache.clear(),
-    mapGoogleItems,
+    mapTavilyItems,
 };
