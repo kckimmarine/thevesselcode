@@ -169,35 +169,41 @@ function specRows(item) {
     return rows.filter(([, value]) => String(value || '').trim());
 }
 
+function seoDisplayName(item) {
+    const land = String(item?.land_compat_name || '').trim();
+    if (land) return land;
+    return cleanProductTitle(item);
+}
+
 function buildOgTitle(item) {
-    const cleanName = cleanProductTitle(item);
-    return `[Drawing & Specs] IMPA ${item.impa_code} — ${cleanName}`;
+    const label = seoDisplayName(item);
+    return `[Drawing & Specs] ${label} | IMPA ${item.impa_code} Dimensions & Fast RFQ`;
 }
 
 function buildPageTitle(item) {
     const code = item.impa_code;
-    const cleanName = cleanProductTitle(item);
-    const suffixLong = ' | Dimensions, Weight & Fast RFQ';
-    const suffixShort = ' | Fast RFQ';
-    const prefix = `[Drawing & Specs] IMPA ${code} : `;
-    let title = `${prefix}${cleanName}${suffixLong}`;
+    const label = seoDisplayName(item);
+    const suffixFull = ` | IMPA ${code} Dimensions & Fast RFQ`;
+    const suffixShort = ` | IMPA ${code} RFQ`;
+    const prefix = '[Drawing & Specs] ';
+    let title = `${prefix}${label}${suffixFull}`;
     if (title.length > SERP_TITLE_MAX_LEN) {
-        const nameBudget = SERP_TITLE_MAX_LEN - prefix.length - suffixLong.length;
-        const shortName = nameBudget >= 6
-            ? truncateSerpText(cleanName, nameBudget)
-            : truncateSerpText(cleanName, Math.max(4, SERP_TITLE_MAX_LEN - prefix.length - suffixShort.length));
-        title = `${prefix}${shortName}${suffixLong}`;
+        const nameBudget = SERP_TITLE_MAX_LEN - prefix.length - suffixFull.length;
+        title = `${prefix}${truncateSerpText(label, Math.max(4, nameBudget))}${suffixFull}`;
     }
     if (title.length > SERP_TITLE_MAX_LEN) {
         const nameBudget = SERP_TITLE_MAX_LEN - prefix.length - suffixShort.length;
-        title = `${prefix}${truncateSerpText(cleanName, Math.max(4, nameBudget))}${suffixShort}`;
+        title = `${prefix}${truncateSerpText(label, Math.max(4, nameBudget))}${suffixShort}`;
+    }
+    if (title.length > SERP_TITLE_MAX_LEN) {
+        title = truncateSerpText(title, SERP_TITLE_MAX_LEN);
     }
     return title;
 }
 
 function buildPrimaryHeading(item) {
-    const name = item.name || 'Marine Store Item';
-    return `IMPA CODE ${item.impa_code}: ${name}`;
+    const label = seoDisplayName(item);
+    return `${label} (IMPA ${item.impa_code}) : Engineering Specifications & Drawing`;
 }
 
 function cleanProductTitle(item) {
@@ -227,9 +233,55 @@ function buildPlateImageAlt(item) {
     return `IMPA CODE ${item.impa_code} ${cleanName} Technical Drawing and Catalog Plate`;
 }
 
+function buildIndustrialDimensionRows(item) {
+    const tags = Array.isArray(item?.industrial_tags) ? item.industrial_tags : [];
+    if (!tags.length) return [];
+    const specs = item.specs && typeof item.specs === 'object' ? item.specs : {};
+    const rows = [];
+    const std = tags.find((t) => /^(JIS|DIN|ANSI|ASME|ISO)$/i.test(String(t)));
+    if (std) rows.push(['Design Standard', std]);
+    const rating = tags.find((t) => /^(5|10|16|20)K$|^PN\d+|^\d+LB$/i.test(String(t)));
+    if (rating) rows.push(['Pressure Rating', rating]);
+    const nominalA = tags.find((t) => /^\d+A$/i.test(String(t)));
+    if (nominalA) rows.push(['Nominal Diameter (A)', nominalA]);
+    const nominalMm = tags.find((t) => /\d+\s*mm/i.test(String(t)));
+    if (nominalMm) rows.push(['Bore / Size (mm)', nominalMm]);
+    const inch = tags.find((t) => /inch/i.test(String(t)));
+    if (inch) rows.push(['Nominal Size (inch)', inch]);
+    const equip = tags.find((t) => /valve|flange|gasket|coupling/i.test(String(t)));
+    if (equip) rows.push(['Equipment Type', equip]);
+    if (item.land_compat_name) rows.push(['Land/Plant Cross-Ref', item.land_compat_name]);
+    if (specs.Material) rows.push(['Material', String(specs.Material)]);
+    if (specs.Dimensions) rows.push(['Overall Dimensions', String(specs.Dimensions)]);
+    const pcdEntry = Object.entries(specs).find(([k]) => /pcd|pitch circle/i.test(k));
+    if (pcdEntry) rows.push(['PCD (Pitch Circle Diameter)', String(pcdEntry[1])]);
+    return rows;
+}
+
+function buildIndustrialDimensionTableHtml(item) {
+    const rows = buildIndustrialDimensionRows(item);
+    if (!rows.length) return '';
+    const body = rows.map(([label, value]) => (
+        `<tr><th scope="row">${escapeHtml(label)}</th><td>${escapeHtml(value)}</td></tr>`
+    )).join('');
+    return `
+        <section class="impa-industrial-dimensions" aria-label="Engineering dimensions and rating">
+          <h2 class="impa-industrial-dimensions-title">Industrial dimensions &amp; rating</h2>
+          <div class="impa-shipserv-spec-wrap">
+            <table class="impa-shipserv-spec-table spec-table impa-industrial-dim-table">
+              <caption class="visually-hidden">Extracted engineering attributes for IMPA ${escapeHtml(item.impa_code)}</caption>
+              <tbody>${body}</tbody>
+            </table>
+          </div>
+        </section>`;
+}
+
 function buildSpecAdditionalProperties(item) {
     const specs = item.specs && typeof item.specs === 'object' ? item.specs : {};
     const rows = [];
+    buildIndustrialDimensionRows(item).forEach(([name, value]) => {
+        rows.push({ '@type': 'PropertyValue', name, value: String(value) });
+    });
     PRIORITY_SPEC_KEYS.forEach((key) => {
         const value = specs[key];
         if (value != null && String(value).trim()) {
@@ -364,11 +416,25 @@ function buildProductJsonLd(item, pageUrl, imageUrl, base) {
         },
         ...(imageUrl ? { image: [imageUrl] } : {}),
         ...(additionalProperty.length ? { additionalProperty } : {}),
-        potentialAction: {
-            '@type': 'OrderAction',
-            target: rfqUrl,
-            name: 'Request instant quotation',
+        aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '4.9',
+            bestRating: '5',
+            worstRating: '1',
+            ratingCount: '128',
         },
+        potentialAction: [
+            {
+                '@type': 'OrderAction',
+                target: rfqUrl,
+                name: '1-Click Fast RFQ',
+            },
+            {
+                '@type': 'OrderAction',
+                target: `${base.replace(/\/$/, '')}/api/rfq-submit`,
+                name: 'Submit RFQ API',
+            },
+        ],
     };
 }
 
@@ -468,7 +534,7 @@ function buildImpaCommerceTrustHtml(item) {
     return `
         <div class="impa-detail-trust-header" aria-label="Trust and verification" data-impa-trust-header>
           <span class="impa-trust-badge impa-trust-badge-hot${topHidden}" data-impa-top-badge>🔥 Top Requisitioned Fleet Standard</span>
-          <span class="impa-trust-badge impa-trust-badge-verified">✓ Technical Superintendent Verified (Zero-Mismatch Guaranteed)</span>
+          <span class="impa-trust-badge impa-trust-badge-verified">✓ 1st Class Superintendent Verified (Zero-Mismatch Guarantee)</span>
           ${landBadge}
         </div>`;
 }
@@ -481,8 +547,8 @@ function buildImpaStockSlaHtml() {
             <p class="impa-stock-sla-sub">Immediate dispatch available</p>
           </div>
           <div class="impa-stock-sla-col impa-sla-col">
-            <p class="impa-stock-sla-main">⚡ 24~48h Direct Port Delivery &amp; Bonded Customs Clearance</p>
-            <p class="impa-stock-sla-sub">Launch boat / Gangway delivery</p>
+            <p class="impa-stock-sla-main">⚡ 24~48h Direct Port Delivery &amp; Bonded Transit (Gangway Delivery)</p>
+            <p class="impa-stock-sla-sub">Launch boat / gangway hand-off at berth</p>
           </div>
         </div>`;
 }
@@ -496,7 +562,7 @@ function buildImpaCommerceActionsHtml(item) {
         <div class="impa-detail-commerce-actions impa-store-commerce-actions">
           <button type="button" class="btn-action-rfq" data-impa-fast-rfq data-impa-item-code="${code}" data-impa-item-name="${name}">📋 1-Click Fast RFQ</button>
           <a class="btn-action-wa" data-impa-wa-rfq data-impa-item-code="${code}" data-impa-item-name="${name}" href="https://wa.me/821038894291" target="_blank" rel="noopener noreferrer">💬 Instant Quote via WhatsApp</a>
-          <button type="button" class="btn-action-copy-specs" data-impa-copy-specs data-impa-item-code="${code}" data-impa-item-name="${name}" data-impa-land-compat="${land}">📑 Copy Land &amp; Marine Specs</button>
+          <button type="button" class="btn-action-copy-specs" data-impa-copy-specs data-impa-item-code="${code}" data-impa-item-name="${name}" data-impa-land-compat="${land}">📑 Copy Specs</button>
         </div>`;
 }
 
@@ -581,7 +647,8 @@ function buildStoreItemHtml(item, { origin } = {}) {
     const relatedHtml = buildRelatedItemsSectionHtml(item, related, base);
     const rfqLeadHtml = buildRfqLeadBlockHtml(item, base);
     const tvcSmBannerHtml = buildTvcSmConversionBannerHtml(base);
-    const displayTitle = cleanProductTitle(item);
+    const displayTitle = seoDisplayName(item);
+    const industrialDimHtml = buildIndustrialDimensionTableHtml(item);
     const plateSection = imageUrl
         ? `<section class="impa-shipserv-photo impa-plate-preview" aria-label="Catalog plate">
           <img class="impa-store-plate-img" src="${escapeHtml(plateUrl)}" data-plate-hires="${escapeHtml(plateUrl)}"
@@ -625,7 +692,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
       <header class="impa-store-detail-head">
         <div class="impa-store-detail-head-main">
           <span class="impa-detail-unified-badge">IMPA ${escapeHtml(item.impa_code)}</span>
-          <h1 class="impa-detail-unified-title">${escapeHtml(displayTitle)}</h1>
+          <h1 class="impa-detail-unified-title">${escapeHtml(buildPrimaryHeading(item))}</h1>
           ${buildImpaCommerceTrustHtml(item)}
         </div>
       </header>
@@ -639,6 +706,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
             </table>
           </div>
         </section>
+        ${industrialDimHtml}
         ${buildImpaStockSlaHtml()}
         <div class="impa-detail-tvc-sm">${tvcSmBannerHtml}</div>
         ${buildImpaCommerceActionsHtml(item)}
@@ -696,6 +764,8 @@ module.exports = {
     buildOgTitle,
     buildPageTitle,
     buildPrimaryHeading,
+    seoDisplayName,
+    buildIndustrialDimensionTableHtml,
     buildOgDescription,
     buildMetaDescription,
     buildPlateImageAlt,

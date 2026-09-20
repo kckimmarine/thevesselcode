@@ -40,7 +40,7 @@ await page.evaluate(async () => {
 await page.locator('#impaDetailModal').waitFor({ state: 'visible', timeout: 30_000 });
 
 const trust = await page.locator('#impaDetailTrustHeader').innerText();
-check('superintendent verified badge', /Technical Superintendent Verified/i.test(trust));
+check('superintendent verified badge', /1st Class Superintendent Verified/i.test(trust));
 check('land compat badge on valve', /Land\/Plant Compatible.*50A/i.test(trust));
 
 const stock = await page.locator('#impaDetailStockSla').innerText();

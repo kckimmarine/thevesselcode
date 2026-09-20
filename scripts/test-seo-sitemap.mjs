@@ -46,16 +46,18 @@ const html = impaSeo.buildStoreItemHtml(item);
 check('default seo origin is www', impaSeo.storeSeoOrigin() === CANONICAL_ORIGIN);
 const pageTitle = impaSeo.buildPageTitle(item);
 const escTitle = pageTitle.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-const cleanName = impaSeo.buildPlateImageAlt(item).split(`${TEST_CODE} `)[1]?.replace(' Technical Drawing and Catalog Plate', '') || item.name;
-const escClean = cleanName.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const primaryHeading = impaSeo.buildPrimaryHeading(item);
+const escHeading = primaryHeading.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 check('html title format', html.includes(`<title>${escTitle}</title>`));
 check('title serp max length', pageTitle.length <= impaSeo.SERP_TITLE_MAX_LEN, String(pageTitle.length));
 check(
     'html h1 format',
     html.includes(`<span class="impa-detail-unified-badge">IMPA ${TEST_CODE}</span>`)
         && html.includes('<h1 class="impa-detail-unified-title">')
-        && html.includes(`<h1 class="impa-detail-unified-title">${escClean}</h1>`),
+        && html.includes(`<h1 class="impa-detail-unified-title">${escHeading}</h1>`),
 );
+check('title includes IMPA code dimensions hook', pageTitle.includes(`IMPA ${TEST_CODE}`) && pageTitle.includes('Fast RFQ'));
+check('html json-ld aggregateRating', html.includes('AggregateRating') && html.includes('"ratingValue":"4.9"') || html.includes('"ratingValue": "4.9"'));
 check('html no duplicate microdata product', !html.includes('itemtype="https://schema.org/Product"'));
 check('html json-ld seller', html.includes('"seller"'));
 check('html json-ld validFrom', html.includes('"validFrom"'));

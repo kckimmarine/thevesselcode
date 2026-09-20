@@ -450,8 +450,8 @@ const TVC_ImpaDetailShared = (function () {
                 <p class="impa-stock-sla-sub">Immediate dispatch available</p>
             </div>
             <div class="impa-stock-sla-col impa-sla-col">
-                <p class="impa-stock-sla-main">⚡ 24~48h Direct Port Delivery &amp; Bonded Customs Clearance</p>
-                <p class="impa-stock-sla-sub">Launch boat / Gangway delivery</p>
+                <p class="impa-stock-sla-main">⚡ 24~48h Direct Port Delivery &amp; Bonded Transit (Gangway Delivery)</p>
+                <p class="impa-stock-sla-sub">Launch boat / gangway hand-off at berth</p>
             </div>`;
     }
 
@@ -470,7 +470,7 @@ const TVC_ImpaDetailShared = (function () {
             : '<span class="impa-trust-badge impa-trust-badge-land hidden" id="impaDetailLandCompat" data-impa-land-badge></span>';
         return `
             <span class="impa-trust-badge impa-trust-badge-hot${topHidden}" id="impaDetailBadgeTop" data-impa-top-badge>🔥 Top Requisitioned Fleet Standard</span>
-            <span class="impa-trust-badge impa-trust-badge-verified">✓ Technical Superintendent Verified (Zero-Mismatch Guaranteed)</span>
+            <span class="impa-trust-badge impa-trust-badge-verified">✓ 1st Class Superintendent Verified (Zero-Mismatch Guarantee)</span>
             ${landSpan}`;
     }
 

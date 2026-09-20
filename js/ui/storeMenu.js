@@ -136,7 +136,7 @@ const TVC_StoreMenu = (function () {
                             <div class="modal-conversion-action-btns impa-detail-commerce-actions">
                                 <button type="button" id="btn-modal-rfq" class="btn-action-rfq">📋 1-Click Fast RFQ</button>
                                 <a id="btn-modal-wa" href="https://wa.me/821038894291?text=Hello%20TVC%2C%20inquiring%20about%20IMPA" target="_blank" rel="noopener noreferrer" class="btn-action-wa">💬 Instant Quote via WhatsApp</a>
-                                <button type="button" id="btn-copy-land-specs" class="btn-action-copy-specs">📑 Copy Land &amp; Marine Specs</button>
+                                <button type="button" id="btn-copy-land-specs" class="btn-action-copy-specs">📑 Copy Specs</button>
                             </div>
                         </div>
                         <div class="impa-detail-plg-lock" id="impaDetailPlgLock" aria-label="TVC-SM fleet features"></div>

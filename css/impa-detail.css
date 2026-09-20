@@ -333,6 +333,35 @@
     }
 }
 
+.impa-industrial-dimensions {
+    margin: 12px 0 16px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.impa-industrial-dimensions-title {
+    margin: 0 0 8px;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.impa-industrial-dim-table {
+    width: 100%;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 @media (max-width: 390px) {
     .impa-stock-sla-card {
         grid-template-columns: 1fr;
