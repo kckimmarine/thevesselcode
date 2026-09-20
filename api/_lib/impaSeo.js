@@ -449,6 +449,41 @@ function buildContactInquiryUrl(base, params) {
     return `${base.replace(/\/$/, '')}/contact-us${qs ? `?${qs}` : ''}`;
 }
 
+const TOP_REQUISITION_CHAPTERS = new Set(['31', '33', '55', '59', '61', '75', '79', '87']);
+
+function isTopRequisitionedItem(item) {
+    const code = normalizeCode(item?.impa_code || item?.code || '');
+    if (code.length < 2) return false;
+    return TOP_REQUISITION_CHAPTERS.has(code.slice(0, 2));
+}
+
+function buildImpaCommerceTrustHtml(item) {
+    const topHidden = isTopRequisitionedItem(item) ? '' : ' hidden';
+    return `
+        <div class="impa-detail-trust-header" aria-label="Trust and verification">
+          <span class="impa-trust-badge impa-trust-badge-hot${topHidden}" data-impa-top-badge>🔥 Top Requisitioned Item</span>
+          <span class="impa-trust-badge impa-trust-badge-verified">✓ Verified by 1st Class Marine Engineer</span>
+        </div>`;
+}
+
+function buildImpaStockSlaHtml() {
+    return `
+        <div class="impa-stock-sla-card" aria-label="Stock and delivery">
+          <div class="impa-stock-sla-col impa-stock-col">🟢 In Stock (Busan Hub / Singapore Transit Ready)</div>
+          <div class="impa-stock-sla-col impa-sla-col">⚡ 24~48h Port-side Delivery &amp; Bonded Transit</div>
+        </div>`;
+}
+
+function buildImpaCommerceActionsHtml(item) {
+    const code = escapeHtml(item.impa_code);
+    const name = escapeHtml(cleanProductTitle(item));
+    return `
+        <div class="impa-detail-commerce-actions impa-store-commerce-actions">
+          <button type="button" class="btn-action-rfq" data-impa-fast-rfq data-impa-item-code="${code}" data-impa-item-name="${name}">📋 1-Click Fast RFQ</button>
+          <a class="btn-action-wa" data-impa-wa-rfq data-impa-item-code="${code}" data-impa-item-name="${name}" href="https://wa.me/821038894291" target="_blank" rel="noopener noreferrer">💬 Instant Quote via WhatsApp</a>
+        </div>`;
+}
+
 /** Primary monetization path for GSC /store traffic → RFQ form. */
 function buildRfqLeadBlockHtml(item, base) {
     const code = item.impa_code;
@@ -566,6 +601,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
   <link rel="stylesheet" href="/css/store.css">
   <link rel="stylesheet" href="/css/store-public.css">
   <link rel="stylesheet" href="/css/impa-detail-unified.css">
+  <link rel="stylesheet" href="/css/impa-detail.css">
 </head>
 <body class="impa-store-standalone">
   <main class="impa-store-detail wrap">
@@ -574,11 +610,13 @@ function buildStoreItemHtml(item, { origin } = {}) {
         <div class="impa-store-detail-head-main">
           <span class="impa-detail-unified-badge">IMPA ${escapeHtml(item.impa_code)}</span>
           <h1 class="impa-detail-unified-title">${escapeHtml(displayTitle)}</h1>
+          ${buildImpaCommerceTrustHtml(item)}
         </div>
       </header>
-      <div class="impa-store-detail-body">
+      <div class="impa-store-detail-body" data-impa-item-code="${escapeHtml(item.impa_code)}" data-impa-item-name="${escapeHtml(displayTitle)}">
         ${rfqLeadHtml}
         ${plateSection}
+        ${buildImpaStockSlaHtml()}
         <section aria-label="Specifications">
           <div class="impa-shipserv-spec-wrap">
             <table class="impa-shipserv-spec-table spec-table">
@@ -587,6 +625,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
           </div>
         </section>
         <div class="impa-detail-tvc-sm">${tvcSmBannerHtml}</div>
+        ${buildImpaCommerceActionsHtml(item)}
         <div class="impa-detail-actions">
           <button type="button" class="btn-share-spec" data-impa-share-code="${escapeHtml(item.impa_code)}">📋 Share Spec Link</button>
           <a class="btn-toolkit" href="${escapeHtml(toolkitUrl)}">Open Maritime Toolkit</a>

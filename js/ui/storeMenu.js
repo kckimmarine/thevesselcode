@@ -82,7 +82,9 @@ const TVC_StoreMenu = (function () {
             || !existing.querySelector('#impaDetailShipservLayout')
             || !existing.querySelector('#modalCloseBtn')
             || !existing.querySelector('.modal-body')
-            || !existing.querySelector('#impaDetailConversionAction'))) {
+            || !existing.querySelector('#impaDetailConversionAction')
+            || !existing.querySelector('#impaDetailTrustHeader')
+            || !existing.querySelector('#impaDetailStockSla'))) {
             existing.remove();
             _modalReady = false;
             _plateZoom = null;
@@ -109,7 +111,15 @@ const TVC_StoreMenu = (function () {
                             <span class="impa-plate-zoom-hint" id="impaDetailPlateZoomHint" hidden>🔍 Click / Tap to view high-res full plate</span>
                         </div>
                         <h2 class="impa-shipserv-title impa-shipserv-title-duplicate" id="impaDetailProductTitle">—</h2>
+                        <div class="impa-detail-trust-header" id="impaDetailTrustHeader" aria-label="Trust and verification">
+                            <span class="impa-trust-badge impa-trust-badge-hot hidden" id="impaDetailBadgeTop">🔥 Top Requisitioned Item</span>
+                            <span class="impa-trust-badge impa-trust-badge-verified">✓ Verified by 1st Class Marine Engineer</span>
+                        </div>
                         <p class="impa-shipserv-dims" id="impaDetailProductDims"></p>
+                        <div class="impa-stock-sla-card" id="impaDetailStockSla" aria-label="Stock and delivery">
+                            <div class="impa-stock-sla-col impa-stock-col">🟢 In Stock (Busan Hub / Singapore Transit Ready)</div>
+                            <div class="impa-stock-sla-col impa-sla-col">⚡ 24~48h Port-side Delivery &amp; Bonded Transit</div>
+                        </div>
                         <div class="impa-shipserv-spec-wrap">
                             <table class="impa-shipserv-spec-table">
                                 <tbody id="impaDetailShipservSpec"></tbody>
@@ -123,14 +133,14 @@ const TVC_StoreMenu = (function () {
                         <div class="impa-detail-actions">
                             <button type="button" class="impa-detail-share-btn" id="impaDetailShareBtn">📋 Share Spec Link</button>
                         </div>
-                        <div id="impaDetailConversionAction" class="modal-conversion-action" aria-label="Pricing and supply inquiry">
+                        <div id="impaDetailConversionAction" class="modal-conversion-action impa-detail-commerce-block" aria-label="Pricing and supply inquiry">
                             <div class="modal-conversion-action-copy">
                                 <div class="modal-conversion-action-title">Need Pricing or Supply for this Item?</div>
                                 <div class="modal-conversion-action-sub">Direct dispatch to verified supply partners (Busan / Singapore / Global).</div>
                             </div>
-                            <div class="modal-conversion-action-btns">
-                                <a id="btn-modal-rfq" href="/contact-us?inquiry=rfq" class="btn-action-rfq">📋 Quick RFQ</a>
-                                <a id="btn-modal-wa" href="https://wa.me/821038894291?text=Hello%20TVC%2C%20inquiring%20about%20IMPA" target="_blank" rel="noopener noreferrer" class="btn-action-wa">🟢 WhatsApp</a>
+                            <div class="modal-conversion-action-btns impa-detail-commerce-actions">
+                                <button type="button" id="btn-modal-rfq" class="btn-action-rfq">📋 1-Click Fast RFQ</button>
+                                <a id="btn-modal-wa" href="https://wa.me/821038894291?text=Hello%20TVC%2C%20inquiring%20about%20IMPA" target="_blank" rel="noopener noreferrer" class="btn-action-wa">💬 Instant Quote via WhatsApp</a>
                             </div>
                         </div>
                         <div class="impa-detail-plg-lock" id="impaDetailPlgLock" aria-label="TVC-SM fleet features"></div>
@@ -705,18 +715,23 @@ const TVC_StoreMenu = (function () {
 
     function updateImpaConversionLinks(item) {
         const code = String(item?.impa_code || item?.code || '').trim();
-        const name = String(cleanProductTitle(item) || item?.name || '').trim();
-        const rfq = document.getElementById('btn-modal-rfq');
-        const wa = document.getElementById('btn-modal-wa');
-        const params = new URLSearchParams();
-        params.set('inquiry', 'rfq');
-        if (code) params.set('code', code);
-        if (name) params.set('name', name);
-        if (rfq) rfq.href = `/contact-us?${params.toString()}`;
-        const waText = code
-            ? `Hello TVC, inquiring about IMPA ${code}${name ? ` - ${name}` : ''}`
-            : 'Hello TVC, inquiring about IMPA';
-        if (wa) wa.href = `https://wa.me/821038894291?text=${encodeURIComponent(waText)}`;
+        const cleanTitle = String(cleanProductTitle(item) || item?.name || '').trim();
+        const qtyInput = document.getElementById('impaDetailQty');
+        const qty = qtyInput?.value || '1';
+        if (typeof TVC_ImpaDetailShared !== 'undefined') {
+            TVC_ImpaDetailShared.bindCommerceActions(
+                document.getElementById('impaDetailShipservLayout'),
+                { impa_code: code, name: cleanTitle }
+            );
+            const wa = document.getElementById('btn-modal-wa');
+            if (wa) {
+                wa.href = TVC_ImpaDetailShared.buildWhatsAppRfqUrl(code, cleanTitle, qty, 'Busan');
+            }
+            const topBadge = document.getElementById('impaDetailBadgeTop');
+            if (topBadge) {
+                topBadge.classList.toggle('hidden', !TVC_ImpaDetailShared.isTopRequisitionedItem(code));
+            }
+        }
     }
 
     function populateShipservDetail(item) {
