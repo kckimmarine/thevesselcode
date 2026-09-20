@@ -203,6 +203,8 @@
         const impaCode = String(params.get('code') || '').trim();
         const itemName = String(params.get('name') || '').trim();
         const portName = String(params.get('port') || '').trim();
+        const rfqQty = String(params.get('qty') || '').trim();
+        const rfqContact = String(params.get('contact') || '').trim();
         const fleetSize = String(params.get('fleet') || params.get('vessels') || '').trim();
         const refParam = String(params.get('ref') || '').trim();
         const stored = readStoredAttribution();
@@ -214,6 +216,8 @@
             if (typeSelect) typeSelect.value = 'rfq';
             if (message && !String(message.value || '').trim()) {
                 let body = buildRfqPrefill(impaCode, itemName, portName);
+                if (rfqQty) body += `\nQty: ${rfqQty}`;
+                if (rfqContact) body += `\nContact: ${rfqContact}`;
                 if (landingRef) body += `\n\nPage: ${landingRef}`;
                 message.value = body;
             }
