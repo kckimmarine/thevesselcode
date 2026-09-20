@@ -27,6 +27,8 @@ Real photography (Unsplash License). Use with a dark gradient overlay so white h
 
 License: [Unsplash License](https://unsplash.com/license) (free for commercial use; attribution appreciated, not required).
 
+**Applied draft (2026-09-20):** home `#hero` uses `hero-ocean-voyage-draft` + `/assets/images/home-ocean-hero-horizon.webp` (from `set-b/ocean-voyage-setb-horizon-alone`).
+
 Suggested CSS (home hero):
 
 ```css

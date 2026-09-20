@@ -1773,3 +1773,63 @@ body.tvc-brain-open {
         padding: 18px;
     }
 }
+
+/* ── Home hero draft: ocean horizon (real photo + readable copy) ── */
+body.home-page.home-bg-fixed #hero.home-hero.mkt-hero.hero-search-first.hero-ocean-voyage-draft {
+    background-color: #0a1128;
+    background-image:
+        linear-gradient(
+            180deg,
+            rgba(10, 17, 40, 0.72) 0%,
+            rgba(15, 23, 42, 0.38) 42%,
+            rgba(15, 23, 42, 0.78) 100%
+        ),
+        url('/assets/images/home-ocean-hero-horizon.webp');
+    background-size: cover;
+    background-position: center 38%;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+body.home-page #hero.hero-ocean-voyage-draft .home-hero-copy h1,
+body.home-page #hero.hero-ocean-voyage-draft #homeHeroTitle {
+    color: #f8fafc !important;
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45), 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+body.home-page #hero.hero-ocean-voyage-draft .home-hero-subhead,
+body.home-page #hero.hero-ocean-voyage-draft .home-hero-description,
+body.home-page #hero.hero-ocean-voyage-draft .home-hero-tagline,
+body.home-page #hero.hero-ocean-voyage-draft .mkt-lead {
+    color: #e2e8f0 !important;
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
+}
+
+body.home-page #hero.hero-ocean-voyage-draft .home-hero-search-label {
+    color: #cbd5e1 !important;
+}
+
+body.home-page #hero.hero-ocean-voyage-draft .home-hero-search-subtitle,
+body.home-page #hero.hero-ocean-voyage-draft .home-hero-search-subtitle.muted {
+    color: #94a3b8 !important;
+}
+
+body.home-page #hero.hero-ocean-voyage-draft .home-utility-badge {
+    background: rgba(15, 23, 42, 0.55);
+    border-color: rgba(148, 163, 184, 0.35);
+    color: #e2e8f0;
+    backdrop-filter: blur(6px);
+}
+
+body.home-page #hero.hero-ocean-voyage-draft .home-utility-badge:hover,
+body.home-page #hero.hero-ocean-voyage-draft .home-utility-badge:focus-visible {
+    background: rgba(30, 41, 59, 0.75);
+    border-color: rgba(125, 211, 252, 0.45);
+    color: #f8fafc;
+}
+
+@media (max-width: 767px) {
+    body.home-page.home-bg-fixed #hero.hero-ocean-voyage-draft {
+        background-position: center 32%;
+    }
+}
