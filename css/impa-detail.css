@@ -34,30 +34,47 @@
     border: 1px solid rgba(148, 163, 184, 0.45);
 }
 
+.impa-trust-badge-land {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
 .impa-stock-sla-card {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 0 0 16px;
-    padding: 12px 14px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+    padding: 14px 16px;
     border-radius: 12px;
-    background: rgba(15, 23, 42, 0.55);
-    border: 1px solid rgba(56, 189, 248, 0.22);
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
     max-width: 100%;
     box-sizing: border-box;
 }
 
 .impa-stock-sla-col {
-    flex: 1 1 140px;
     min-width: 0;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    line-height: 1.45;
-    color: #e2e8f0;
 }
 
-.impa-stock-sla-col.impa-sla-col {
-    color: #bae6fd;
+.impa-stock-sla-main {
+    margin: 0 0 4px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #0f172a;
+}
+
+.impa-stock-sla-sub {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.35;
+    color: #64748b;
+}
+
+.impa-stock-sla-col.impa-sla-col .impa-stock-sla-main {
+    color: #0369a1;
 }
 
 .impa-detail-commerce-actions {
@@ -91,6 +108,7 @@
 .impa-detail-commerce-actions .btn-action-rfq {
     background: #0284c7;
     color: #fff;
+    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.35);
 }
 
 .impa-detail-commerce-actions .btn-action-rfq:hover,
@@ -107,6 +125,61 @@
 .impa-detail-commerce-actions .btn-action-wa:focus-visible {
     background: #16a34a;
     color: #fff;
+}
+
+.impa-detail-commerce-actions .btn-action-copy-specs,
+.impa-store-commerce-actions .btn-action-copy-specs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    background: transparent;
+    color: #334155;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.impa-detail-commerce-actions .btn-action-copy-specs:hover,
+.impa-detail-commerce-actions .btn-action-copy-specs:focus-visible {
+    background: #f1f5f9;
+    border-color: #94a3b8;
+}
+
+.impa-qty-stepper {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.impa-qty-stepper input {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.impa-qty-step {
+    min-width: 44px;
+    border: none;
+    background: #334155;
+    color: #f8fafc;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.impa-fast-rfq-field.hidden {
+    display: none !important;
 }
 
 .modal-conversion-action.impa-detail-commerce-block {
@@ -262,7 +335,7 @@
 
 @media (max-width: 390px) {
     .impa-stock-sla-card {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .impa-detail-trust-header {

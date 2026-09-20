@@ -57,6 +57,8 @@ function expandCompactRow(raw, code) {
         chapter,
         plate_id: String(raw.p || raw.plate_id || raw.plate_no || '').trim(),
         specs,
+        industrial_tags: Array.isArray(raw.industrial_tags) ? [...raw.industrial_tags] : [],
+        land_compat_name: String(raw.land_compat_name || '').trim(),
     };
 }
 
@@ -449,7 +451,7 @@ function buildContactInquiryUrl(base, params) {
     return `${base.replace(/\/$/, '')}/contact-us${qs ? `?${qs}` : ''}`;
 }
 
-const TOP_REQUISITION_CHAPTERS = new Set(['31', '33', '55', '59', '61', '75', '79', '87']);
+const TOP_REQUISITION_CHAPTERS = new Set(['23', '59', '61', '81']);
 
 function isTopRequisitionedItem(item) {
     const code = normalizeCode(item?.impa_code || item?.code || '');
@@ -459,28 +461,42 @@ function isTopRequisitionedItem(item) {
 
 function buildImpaCommerceTrustHtml(item) {
     const topHidden = isTopRequisitionedItem(item) ? '' : ' hidden';
+    const land = String(item.land_compat_name || '').trim();
+    const landBadge = land
+        ? `<span class="impa-trust-badge impa-trust-badge-land" data-impa-land-badge>🏭 Land/Plant Compatible: ${escapeHtml(land)}</span>`
+        : '';
     return `
-        <div class="impa-detail-trust-header" aria-label="Trust and verification">
-          <span class="impa-trust-badge impa-trust-badge-hot${topHidden}" data-impa-top-badge>🔥 Top Requisitioned Item</span>
-          <span class="impa-trust-badge impa-trust-badge-verified">✓ Verified by 1st Class Marine Engineer</span>
+        <div class="impa-detail-trust-header" aria-label="Trust and verification" data-impa-trust-header>
+          <span class="impa-trust-badge impa-trust-badge-hot${topHidden}" data-impa-top-badge>🔥 Top Requisitioned Fleet Standard</span>
+          <span class="impa-trust-badge impa-trust-badge-verified">✓ Technical Superintendent Verified (Zero-Mismatch Guaranteed)</span>
+          ${landBadge}
         </div>`;
 }
 
 function buildImpaStockSlaHtml() {
     return `
-        <div class="impa-stock-sla-card" aria-label="Stock and delivery">
-          <div class="impa-stock-sla-col impa-stock-col">🟢 In Stock (Busan Hub / Singapore Transit Ready)</div>
-          <div class="impa-stock-sla-col impa-sla-col">⚡ 24~48h Port-side Delivery &amp; Bonded Transit</div>
+        <div class="impa-stock-sla-card" aria-label="Stock and delivery" data-impa-stock-sla>
+          <div class="impa-stock-sla-col impa-stock-col">
+            <p class="impa-stock-sla-main">🟢 In-Stock: Busan Logistics Hub &amp; Singapore Transit Ready</p>
+            <p class="impa-stock-sla-sub">Immediate dispatch available</p>
+          </div>
+          <div class="impa-stock-sla-col impa-sla-col">
+            <p class="impa-stock-sla-main">⚡ 24~48h Direct Port Delivery &amp; Bonded Customs Clearance</p>
+            <p class="impa-stock-sla-sub">Launch boat / Gangway delivery</p>
+          </div>
         </div>`;
 }
 
 function buildImpaCommerceActionsHtml(item) {
     const code = escapeHtml(item.impa_code);
     const name = escapeHtml(cleanProductTitle(item));
+    const land = escapeHtml(String(item.land_compat_name || '').trim());
+    const tags = escapeHtml(JSON.stringify(item.industrial_tags || []));
     return `
         <div class="impa-detail-commerce-actions impa-store-commerce-actions">
           <button type="button" class="btn-action-rfq" data-impa-fast-rfq data-impa-item-code="${code}" data-impa-item-name="${name}">📋 1-Click Fast RFQ</button>
           <a class="btn-action-wa" data-impa-wa-rfq data-impa-item-code="${code}" data-impa-item-name="${name}" href="https://wa.me/821038894291" target="_blank" rel="noopener noreferrer">💬 Instant Quote via WhatsApp</a>
+          <button type="button" class="btn-action-copy-specs" data-impa-copy-specs data-impa-item-code="${code}" data-impa-item-name="${name}" data-impa-land-compat="${land}">📑 Copy Land &amp; Marine Specs</button>
         </div>`;
 }
 
@@ -613,10 +629,9 @@ function buildStoreItemHtml(item, { origin } = {}) {
           ${buildImpaCommerceTrustHtml(item)}
         </div>
       </header>
-      <div class="impa-store-detail-body" data-impa-item-code="${escapeHtml(item.impa_code)}" data-impa-item-name="${escapeHtml(displayTitle)}">
+      <div class="impa-store-detail-body" data-impa-item-code="${escapeHtml(item.impa_code)}" data-impa-item-name="${escapeHtml(displayTitle)}" data-impa-land-compat="${escapeHtml(String(item.land_compat_name || '').trim())}" data-impa-industrial-tags="${escapeHtml(JSON.stringify(item.industrial_tags || []))}">
         ${rfqLeadHtml}
         ${plateSection}
-        ${buildImpaStockSlaHtml()}
         <section aria-label="Specifications">
           <div class="impa-shipserv-spec-wrap">
             <table class="impa-shipserv-spec-table spec-table">
@@ -624,6 +639,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
             </table>
           </div>
         </section>
+        ${buildImpaStockSlaHtml()}
         <div class="impa-detail-tvc-sm">${tvcSmBannerHtml}</div>
         ${buildImpaCommerceActionsHtml(item)}
         <div class="impa-detail-actions">
