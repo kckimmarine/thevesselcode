@@ -66,18 +66,12 @@
       "includeFiles": "data/tvc-knowledge-base.json"
     },
     "api/revenue-pipeline.js": {
-      "maxDuration": 60
+      "maxDuration": 30
     },
     "api/cron/revenue-digest.js": {
-      "maxDuration": 60
+      "maxDuration": 30
     }
   },
-  "crons": [
-    {
-      "path": "/api/cron/revenue-digest",
-      "schedule": "0 0 * * 1"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
