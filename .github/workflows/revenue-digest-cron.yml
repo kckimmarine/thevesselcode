@@ -28,6 +28,6 @@ jobs:
             exit 1
           fi
           curl -fsS -H "Authorization: Bearer ${SECRET}" \
-            "https://www.thevesselcode.com/api/cron/revenue-digest" \
+            "https://www.thevesselcode.com/api/revenue-pipeline?digest=1" \
             | head -c 4000
           echo ""

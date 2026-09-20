@@ -1,15 +1,35 @@
 'use strict';
 
-/**
- * POST /api/rfq-submit — lightweight B2B RFQ intake (JSON body).
- * Falls back client-side to contact-us / WhatsApp when unavailable.
- */
-module.exports = async function handler(req, res) {
-    if (req.method !== 'POST') {
-        res.setHeader('Allow', 'POST');
-        return res.status(405).json({ ok: false, error: 'method_not_allowed' });
-    }
+const impaSeo = require('./_lib/impaSeo');
+const { buildRfqDraftHtml } = require('./_lib/rfqDraftHtml');
 
+async function handleDraft(req, res) {
+    try {
+        const q = req.query || {};
+        const code = String(q.code || q.impa || '').trim();
+        const item = code ? impaSeo.getItemByCode(code) : null;
+        const itemName = String(q.name || '').trim() || item?.name || '';
+
+        const html = buildRfqDraftHtml({
+            impaCode: code || item?.impa_code,
+            itemName,
+            companyName: String(q.company || '').trim(),
+            yourName: String(q.contact || q.yourName || '').trim(),
+            email: String(q.email || '').trim(),
+            message: String(q.message || '').trim(),
+            port: String(q.port || '').trim(),
+        });
+
+        res.setHeader('Content-Type', 'text/html; charset=utf-8');
+        res.setHeader('Cache-Control', 'private, no-store');
+        return res.status(200).send(html);
+    } catch (e) {
+        console.error('[rfq draft]', e);
+        return res.status(500).send('Draft generation failed');
+    }
+}
+
+async function handleSubmit(req, res) {
     try {
         let body = req.body;
         if (!body || typeof body !== 'object') {
@@ -50,7 +70,7 @@ module.exports = async function handler(req, res) {
             source: String(body.source || 'impa_detail').trim(),
         };
 
-        console.info('[rfq-submit]', JSON.stringify(payload));
+        console.info('[rfq submit]', JSON.stringify(payload));
 
         const notifyTo = String(process.env.RFQ_NOTIFY_EMAIL || process.env.CONTACT_TO_EMAIL || '').trim();
         if (notifyTo && process.env.SMTP_HOST) {
@@ -63,7 +83,18 @@ module.exports = async function handler(req, res) {
             code,
         });
     } catch (err) {
-        console.error('[rfq-submit]', err);
+        console.error('[rfq submit]', err);
         return res.status(500).json({ ok: false, error: 'server_error' });
     }
+}
+
+module.exports = async function handler(req, res) {
+    if (req.method === 'GET') {
+        return handleDraft(req, res);
+    }
+    if (req.method === 'POST') {
+        return handleSubmit(req, res);
+    }
+    res.setHeader('Allow', 'GET, POST');
+    return res.status(405).json({ ok: false, error: 'method_not_allowed' });
 };

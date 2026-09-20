@@ -22,21 +22,25 @@ function loadServiceAccountCredentials() {
     return null;
 }
 
-function authClient(scopes) {
-    const { google } = require('googleapis');
+async function getAccessToken(scopes) {
     const creds = loadServiceAccountCredentials();
     if (!creds) {
         const err = new Error('Google service account JSON not configured');
         err.code = 'GOOGLE_CREDENTIALS_MISSING';
         throw err;
     }
-    return new google.auth.GoogleAuth({
-        credentials: creds,
-        scopes,
-    });
+    const { GoogleAuth } = require('google-auth-library');
+    const auth = new GoogleAuth({ credentials: creds, scopes });
+    const client = await auth.getClient();
+    const tokenResponse = await client.getAccessToken();
+    const token = tokenResponse?.token;
+    if (!token) {
+        throw new Error('Failed to obtain Google access token');
+    }
+    return token;
 }
 
 module.exports = {
     loadServiceAccountCredentials,
-    authClient,
+    getAccessToken,
 };

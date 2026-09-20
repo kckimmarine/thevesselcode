@@ -48,6 +48,9 @@ jobs:
       - name: Build static output for Vercel
         run: node scripts/vercel-static-build.mjs
 
+      - name: Assert Vercel Hobby function count
+        run: node scripts/check-vercel-function-count.mjs
+
       - name: Assert dist artifacts
         run: |
           test ! -f dist/index.html

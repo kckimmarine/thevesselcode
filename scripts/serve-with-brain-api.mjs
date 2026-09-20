@@ -11,7 +11,7 @@ import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 const askBrain = require('../api/ask-brain.js');
 const searchApi = require('../api/search.js');
-const rfqSubmit = require('../api/rfq-submit.js');
+const rfqApi = require('../api/rfq.js');
 
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const PORT = Number(process.env.PORT || 3000);
@@ -107,26 +107,36 @@ const server = createServer((req, res) => {
         return;
     }
 
-    if (url.pathname === '/api/rfq-submit' && req.method === 'POST') {
-        const chunks = [];
-        req.on('data', (c) => chunks.push(c));
-        req.on('end', () => {
-            const body = Buffer.concat(chunks).toString('utf8');
-            let parsed = {};
-            try {
-                parsed = body ? JSON.parse(body) : {};
-            } catch {
-                res.writeHead(400, { 'Content-Type': 'application/json' });
-                res.end(JSON.stringify({ ok: false, error: 'invalid_json' }));
-                return;
-            }
-            const mockReq = Object.assign(Object.create(req), {
-                method: 'POST',
-                headers: req.headers,
-                body: parsed,
-            });
-            rfqSubmit(mockReq, vercelStyleResponse(res));
+    if (
+        (url.pathname === '/api/rfq-submit' && req.method === 'POST')
+        || (url.pathname === '/api/rfq-draft' && req.method === 'GET')
+        || (url.pathname === '/api/rfq' && (req.method === 'GET' || req.method === 'POST'))
+    ) {
+        const mockReq = Object.assign(Object.create(req), {
+            method: req.method,
+            headers: req.headers,
+            url: `${url.pathname}${url.search}`,
+            query: Object.fromEntries(url.searchParams),
         });
+        if (req.method === 'POST') {
+            const chunks = [];
+            req.on('data', (c) => chunks.push(c));
+            req.on('end', () => {
+                const body = Buffer.concat(chunks).toString('utf8');
+                let parsed = {};
+                try {
+                    parsed = body ? JSON.parse(body) : {};
+                } catch {
+                    res.writeHead(400, { 'Content-Type': 'application/json' });
+                    res.end(JSON.stringify({ ok: false, error: 'invalid_json' }));
+                    return;
+                }
+                mockReq.body = parsed;
+                rfqApi(mockReq, vercelStyleResponse(res));
+            });
+            return;
+        }
+        rfqApi(mockReq, vercelStyleResponse(res));
         return;
     }
 
