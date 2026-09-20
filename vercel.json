@@ -11,6 +11,8 @@
     { "source": "/about-contact/", "destination": "/contact-us", "permanent": true },
     { "source": "/contact", "destination": "/contact-us", "permanent": true },
     { "source": "/contact/", "destination": "/contact-us", "permanent": true },
+    { "source": "/store", "destination": "/toolkit", "permanent": false },
+    { "source": "/store/", "destination": "/toolkit", "permanent": false },
     { "source": "/store-public.html", "destination": "/toolkit", "permanent": true },
     { "source": "/store-public", "destination": "/toolkit", "permanent": true },
     { "source": "/maritime-toolkit", "destination": "/toolkit", "permanent": true },

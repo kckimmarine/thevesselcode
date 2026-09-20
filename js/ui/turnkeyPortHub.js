@@ -122,7 +122,8 @@
     }
 
     function buildContactTurnkeyUrl({
-        vessel, portEta, needs, impaCode, itemName, ref, includeHusbandry, includeImpaSourcing,
+        vessel, portEta, needs, impaCode, itemName, ref,
+        includeHusbandry, includeImpaSourcing, includeSuperintendent,
     }) {
         const params = new URLSearchParams();
         params.set('inquiry', 'engineering');
@@ -133,8 +134,9 @@
             'Turnkey Port Care & Repair inquiry',
             vessel ? `Vessel / IMO: ${vessel}` : '',
             portEta ? `Port & ETA: ${portEta}` : '',
-            `Port husbandry (clearance, launch, customs): ${includeHusbandry ? 'YES' : 'no'}`,
-            `IMPA spares & stores sourcing/delivery: ${includeImpaSourcing ? 'YES' : 'no'}`,
+            `Port husbandry / launch boat: ${includeHusbandry ? 'YES' : 'no'}`,
+            `IMPA stores / parts sourcing: ${includeImpaSourcing ? 'YES' : 'no'}`,
+            `Technical superintendent attendance: ${includeSuperintendent ? 'YES' : 'no'}`,
             needs ? `Repair & sourcing scope: ${needs}` : '',
             impaCode ? `Context IMPA: ${impaCode}` : '',
         ].filter(Boolean);
@@ -144,7 +146,7 @@
 
     function ensureTurnkeyInquiryModal() {
         let modal = document.getElementById('turnkeyPortInquiryModal');
-        if (modal && !modal.querySelector('#turnkeyOptHusbandry')) {
+        if (modal && !modal.querySelector('#turnkeyOptSuperintendent')) {
             modal.remove();
             _modalBound = false;
             modal = null;
@@ -174,11 +176,15 @@
                         <legend class="turnkey-inquiry-options-legend">Include in turnkey scope</legend>
                         <label class="turnkey-inquiry-check">
                             <input type="checkbox" id="turnkeyOptHusbandry" name="includeHusbandry" value="1" checked>
-                            Include Port Husbandry (Clearance, Launch Boat, Customs)
+                            Include Port Husbandry / Launch Boat
                         </label>
                         <label class="turnkey-inquiry-check">
                             <input type="checkbox" id="turnkeyOptImpaSourcing" name="includeImpaSourcing" value="1" checked>
-                            Sourcing &amp; Delivery of related IMPA spares &amp; stores
+                            Include IMPA Stores / Parts Sourcing
+                        </label>
+                        <label class="turnkey-inquiry-check">
+                            <input type="checkbox" id="turnkeyOptSuperintendent" name="includeSuperintendent" value="1" checked>
+                            Technical Superintendent Attendance
                         </label>
                     </fieldset>
                     <div class="turnkey-inquiry-field">
@@ -208,6 +214,7 @@
                 const needs = form.needs?.value?.trim() || '';
                 const includeHusbandry = !!form.querySelector('#turnkeyOptHusbandry')?.checked;
                 const includeImpaSourcing = !!form.querySelector('#turnkeyOptImpaSourcing')?.checked;
+                const includeSuperintendent = !!form.querySelector('#turnkeyOptSuperintendent')?.checked;
                 const url = buildContactTurnkeyUrl({
                     vessel,
                     portEta,
@@ -217,6 +224,7 @@
                     ref: form.dataset.ref || '',
                     includeHusbandry,
                     includeImpaSourcing,
+                    includeSuperintendent,
                 });
                 window.location.href = url;
             });
@@ -245,8 +253,10 @@
         const needsEl = modal.querySelector('#turnkeyNeeds');
         const husbandryEl = modal.querySelector('#turnkeyOptHusbandry');
         const sourcingEl = modal.querySelector('#turnkeyOptImpaSourcing');
+        const superintendentEl = modal.querySelector('#turnkeyOptSuperintendent');
         if (husbandryEl) husbandryEl.checked = true;
         if (sourcingEl) sourcingEl.checked = true;
+        if (superintendentEl) superintendentEl.checked = true;
         if (needsEl) {
             const preset = ctx?.prefillNeeds || buildDefaultRepairScope(merged);
             if (preset && (!needsEl.value.trim() || ctx?.forcePrefillNeeds)) {

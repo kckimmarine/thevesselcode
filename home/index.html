@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../css/marketing-readability.css?v=20260915-benefits">
     <link rel="stylesheet" href="../css/marketing.css?v=20260914-mobile-hero">
     <link rel="stylesheet" href="../css/search-results.css?v=20260920-light-panel">
+    <link rel="stylesheet" href="../css/impa-detail-unified.css?v=20260920-cross-service-mesh">
 </head>
 <body class="tvc-marketing-body home-page mkt-page home-bg-fixed" data-mkt-active="home">
     <div class="mkt-site-wrap">
@@ -74,6 +75,7 @@
                     <a class="home-utility-badge" href="/toolkit?tool=bunker" data-i18n="home.utility.bunker">⛽ Bunker calculator (54B)</a>
                     <a class="home-utility-badge" href="/toolkit?tool=compliance" data-i18n="home.utility.cic">📋 Class &amp; PSC checklists</a>
                 </div>
+                <div id="homeTotalServiceBarMount" class="home-total-service-mount" aria-live="polite"></div>
             </div>
         </section>
 
@@ -315,5 +317,14 @@
     <script src="../js/ui/searchResultsView.js?v=20260919-maritime-search"></script>
     <script src="../js/home-hero-search.js?v=20260919-maritime-search"></script>
     <script src="../js/marketing-shell.js?v=20260919-nav-services"></script>
+    <script src="../js/ui/totalServiceBar.js?v=20260920-cross-service-mesh"></script>
+    <script>
+        (function () {
+            const mount = document.getElementById('homeTotalServiceBarMount');
+            if (mount && typeof TVC_TotalServiceBar !== 'undefined') {
+                mount.innerHTML = TVC_TotalServiceBar.buildTotalServiceBarHtml();
+            }
+        })();
+    </script>
 </body>
 </html>

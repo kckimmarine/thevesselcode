@@ -843,6 +843,170 @@
     color: #0f172a;
 }
 
+/* Total Marine Care — 4-pillar suite bar */
+.total-service-bar {
+    margin: 24px 0 20px;
+    padding: 20px 16px 18px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    background: linear-gradient(180deg, #f8fafc 0%, #fff 100%);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.total-service-bar-head {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.total-service-bar-title {
+    margin: 0 0 8px;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.35;
+    color: #0f172a;
+}
+
+.total-service-bar-lead {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #475569;
+}
+
+.total-service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+@media (min-width: 768px) {
+    .total-service-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.total-service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 14px 12px;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.total-service-card:hover,
+.total-service-card:focus-visible {
+    border-color: #0ea5e9;
+    box-shadow: 0 6px 18px rgba(14, 165, 233, 0.15);
+    transform: translateY(-1px);
+}
+
+.total-service-card--active {
+    border-color: #0284c7;
+    background: linear-gradient(180deg, #f0f9ff 0%, #fff 100%);
+    box-shadow: 0 0 0 1px rgba(2, 132, 199, 0.2);
+}
+
+.total-service-card-emoji {
+    font-size: 1.35rem;
+    line-height: 1;
+}
+
+.total-service-card-title {
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #0f172a;
+}
+
+.total-service-card-sub {
+    font-size: 11px;
+    line-height: 1.4;
+    color: #64748b;
+}
+
+.cross-bridge-cta {
+    margin: 16px 0 8px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #334155;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+}
+
+.cross-bridge-cta-link {
+    display: inline-block;
+    margin-left: 6px;
+    font-weight: 800;
+    color: #0369a1;
+    text-decoration: none;
+}
+
+.cross-bridge-cta-link:hover,
+.cross-bridge-cta-link:focus-visible {
+    text-decoration: underline;
+}
+
+.home-page .total-service-bar,
+.srk-page .total-service-bar {
+    border-color: rgba(148, 163, 184, 0.35);
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.72) 0%, rgba(15, 23, 42, 0.55) 100%);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.home-page .total-service-bar-title,
+.srk-page .total-service-bar-title {
+    color: #f1f5f9;
+}
+
+.home-page .total-service-bar-lead,
+.srk-page .total-service-bar-lead {
+    color: #cbd5e1;
+}
+
+.home-page .total-service-card,
+.srk-page .total-service-card {
+    border-color: rgba(148, 163, 184, 0.35);
+    background: rgba(30, 41, 59, 0.65);
+}
+
+.home-page .total-service-card-title,
+.srk-page .total-service-card-title {
+    color: #f8fafc;
+}
+
+.home-page .total-service-card-sub,
+.srk-page .total-service-card-sub {
+    color: #94a3b8;
+}
+
+.home-page .cross-bridge-cta,
+.srk-page .cross-bridge-cta {
+    background: rgba(30, 58, 138, 0.35);
+    border-color: rgba(96, 165, 250, 0.35);
+    color: #e2e8f0;
+}
+
+.home-page .cross-bridge-cta-link,
+.srk-page .cross-bridge-cta-link {
+    color: #7dd3fc;
+}
+
+.home-total-service-mount {
+    margin-top: 20px;
+}
+
+.srk-total-service-mount {
+    max-width: 1180px;
+    margin: 0 auto 8px;
+    padding: 0 16px;
+}
+
 .mkt-toolkit-page .tvc-sm-retention-banner,
 .srk-page .tvc-sm-retention-banner {
     max-width: 1180px;

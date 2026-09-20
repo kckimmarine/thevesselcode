@@ -86,7 +86,8 @@ const TVC_StoreMenu = (function () {
             || !existing.querySelector('#impaDetailTrustHeader')
             || !existing.querySelector('#impaDetailStockSla')
             || !existing.querySelector('#impaDetailTurnkeyHub')
-            || !existing.querySelector('#impaDetailInstallFunnel'))) {
+            || !existing.querySelector('#impaDetailInstallFunnel')
+            || !existing.querySelector('#impaDetailTotalServiceBar'))) {
             existing.remove();
             _modalReady = false;
             _plateZoom = null;
@@ -127,6 +128,8 @@ const TVC_StoreMenu = (function () {
                                 <tbody id="impaDetailShipservSpec"></tbody>
                             </table>
                         </div>
+                        <div id="impaDetailTotalServiceBar" class="impa-detail-total-service-host" aria-label="Total marine care suite"></div>
+                        <div id="impaDetailStoreBridgeCta" class="impa-detail-store-bridge-host"></div>
                         <div id="impaDetailInstallFunnel" class="impa-detail-install-funnel-host" aria-label="Turnkey installation funnel"></div>
                         <div id="impaDetailTurnkeyHub" class="impa-detail-turnkey-host" aria-label="Turnkey port services"></div>
                         <section class="impa-shipserv-desc" aria-label="Description and use">
@@ -762,6 +765,21 @@ const TVC_StoreMenu = (function () {
         }
         if (specBody) specBody.innerHTML = shipservSpecRows(item);
         const funnelCtx = { impaCode: code, itemName: cleanTitle };
+        const totalServiceHost = document.getElementById('impaDetailTotalServiceBar');
+        if (totalServiceHost && typeof TVC_TotalServiceBar !== 'undefined') {
+            totalServiceHost.innerHTML = TVC_TotalServiceBar.buildTotalServiceBarHtml({
+                ...funnelCtx,
+                activePillar: 'impa',
+            });
+        } else if (totalServiceHost) {
+            totalServiceHost.innerHTML = '';
+        }
+        const bridgeHost = document.getElementById('impaDetailStoreBridgeCta');
+        if (bridgeHost && typeof TVC_TotalServiceBar !== 'undefined') {
+            bridgeHost.innerHTML = TVC_TotalServiceBar.buildStoreRepairBridgeCtaHtml(funnelCtx);
+        } else if (bridgeHost) {
+            bridgeHost.innerHTML = '';
+        }
         const installHost = document.getElementById('impaDetailInstallFunnel');
         if (installHost && typeof TVC_TurnkeyPortHub !== 'undefined') {
             TVC_TurnkeyPortHub.mountInstallFunnelHost(installHost, funnelCtx);

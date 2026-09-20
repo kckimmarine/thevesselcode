@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="../css/marketing-theme.css?v=20260915-enterprise">
     <link rel="stylesheet" href="../css/marketing-readability.css?v=20260919-conversion-network">
     <link rel="stylesheet" href="../css/ship-repair-korea.css?v=20260920-shipyard-hero-v2">
+    <link rel="stylesheet" href="../css/impa-detail-unified.css?v=20260920-cross-service-mesh">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -161,6 +162,8 @@
                 </div>
             </section>
 
+            <div id="srkTotalServiceMesh" class="srk-total-service-mount" aria-live="polite"></div>
+
             <section class="srk-emergency-block" aria-labelledby="srkEmergencyTitle">
                 <h2 id="srkEmergencyTitle">Emergency Contact &amp; Repair RFQ</h2>
                 <p>24/7 duty superintendent for urgent afloat jobs, stores bottlenecks, or port-delay risk at Busan, Ulsan, or Yeosu.</p>
@@ -191,7 +194,17 @@
     </div>
     <script src="../js/marketing-i18n.js?v=20260915-enterprise"></script>
     <script src="../js/marketing-shell.js?v=20260919-nav-services"></script>
-    <script src="../js/ui/turnkeyPortHub.js?v=20260920-closed-loop-funnel"></script>
-    <script>TVC_TurnkeyPortHub.initShipRepairPage();</script>
+    <script src="../js/ui/totalServiceBar.js?v=20260920-cross-service-mesh"></script>
+    <script src="../js/ui/turnkeyPortHub.js?v=20260920-cross-service-mesh"></script>
+    <script>
+        (function () {
+            const mesh = document.getElementById('srkTotalServiceMesh');
+            if (mesh && typeof TVC_TotalServiceBar !== 'undefined') {
+                mesh.innerHTML = TVC_TotalServiceBar.buildRepairCatalogBridgeCtaHtml()
+                    + TVC_TotalServiceBar.buildTotalServiceBarHtml({ activePillar: 'repair' });
+            }
+            TVC_TurnkeyPortHub.initShipRepairPage();
+        })();
+    </script>
 </body>
 </html>

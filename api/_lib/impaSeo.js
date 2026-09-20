@@ -454,6 +454,10 @@ const {
     buildTurnkeyInstallFunnelHtml,
     buildTvcSmRetentionBannerHtml,
 } = require('../../js/ui/turnkeyPortHub.js');
+const {
+    buildTotalServiceBarHtml,
+    buildStoreRepairBridgeCtaHtml,
+} = require('../../js/ui/totalServiceBar.js');
 
 const TOP_REQUISITION_CHAPTERS = new Set(['31', '33', '55', '59', '61', '75', '79', '87']);
 
@@ -581,6 +585,9 @@ function buildStoreItemHtml(item, { origin } = {}) {
     });
     const tvcSmRetentionHtml = buildTvcSmRetentionBannerHtml();
     const displayTitle = cleanProductTitle(item);
+    const storeCtx = { impaCode: item.impa_code, itemName: displayTitle };
+    const totalServiceBarHtml = buildTotalServiceBarHtml({ ...storeCtx, activePillar: 'impa' });
+    const storeBridgeCtaHtml = buildStoreRepairBridgeCtaHtml(storeCtx);
     const plateSection = imageUrl
         ? `<section class="impa-shipserv-photo impa-plate-preview" aria-label="Catalog plate">
           <img class="impa-store-plate-img" src="${escapeHtml(plateUrl)}" data-plate-hires="${escapeHtml(plateUrl)}"
@@ -639,6 +646,8 @@ function buildStoreItemHtml(item, { origin } = {}) {
             </table>
           </div>
         </section>
+        ${totalServiceBarHtml}
+        ${storeBridgeCtaHtml}
         ${installFunnelHtml}
         ${turnkeyHubHtml}
         <div class="impa-detail-tvc-sm">${tvcSmBannerHtml}</div>

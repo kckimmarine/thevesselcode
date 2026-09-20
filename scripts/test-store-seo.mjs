@@ -64,7 +64,34 @@ check(
     html.includes('/ship-repair-korea?') && html.includes(`impa=${sampleCode}`),
 );
 check('html has tvc-sm retention banner', html.includes('class="tvc-sm-retention-banner"') && html.includes('/sm#pricing'));
+check(
+    'html has total service suite bar',
+    html.includes('class="total-service-bar"')
+        && html.includes('Complete Port Call &amp; Technical Care in Korea · China · Singapore'),
+);
+check(
+    'html store bridge turnkey cta',
+    html.includes('cross-bridge-cta--store')
+        && html.includes('Book Turnkey Port Call')
+        && html.includes('/ship-repair-korea?')
+        && html.includes(`impa=${sampleCode}`),
+);
 check('html has related items section', html.includes('class="related-items"'));
+
+const turnkey = require('../js/ui/turnkeyPortHub.js');
+const modalProbe = turnkey.buildContactTurnkeyUrl({
+    vessel: 'MV Test',
+    portEta: 'Busan',
+    needs: 'Valve job',
+    includeHusbandry: true,
+    includeImpaSourcing: true,
+    includeSuperintendent: true,
+});
+const modalMsg = new URL(modalProbe, 'https://thevesselcode.com').searchParams.get('message') || '';
+check(
+    'turnkey contact url includes superintendent scope',
+    modalMsg.includes('Technical superintendent attendance: YES'),
+);
 
 const sitemap = readFileSync(join(root, 'public', 'sitemap.xml'), 'utf8');
 check('sitemap index exists', sitemap.includes('<sitemapindex'));
