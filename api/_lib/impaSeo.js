@@ -449,6 +449,8 @@ function buildContactInquiryUrl(base, params) {
     return `${base.replace(/\/$/, '')}/contact-us${qs ? `?${qs}` : ''}`;
 }
 
+const { buildTurnkeyPortHubHtml } = require('../../js/ui/turnkeyPortHub.js');
+
 const TOP_REQUISITION_CHAPTERS = new Set(['31', '33', '55', '59', '61', '75', '79', '87']);
 
 function isTopRequisitionedItem(item) {
@@ -565,6 +567,10 @@ function buildStoreItemHtml(item, { origin } = {}) {
     const relatedHtml = buildRelatedItemsSectionHtml(item, related, base);
     const rfqLeadHtml = buildRfqLeadBlockHtml(item, base);
     const tvcSmBannerHtml = buildTvcSmConversionBannerHtml(base);
+    const turnkeyHubHtml = buildTurnkeyPortHubHtml({
+        impaCode: item.impa_code,
+        itemName: cleanProductTitle(item),
+    });
     const displayTitle = cleanProductTitle(item);
     const plateSection = imageUrl
         ? `<section class="impa-shipserv-photo impa-plate-preview" aria-label="Catalog plate">
@@ -624,6 +630,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
             </table>
           </div>
         </section>
+        ${turnkeyHubHtml}
         <div class="impa-detail-tvc-sm">${tvcSmBannerHtml}</div>
         ${buildImpaCommerceActionsHtml(item)}
         <div class="impa-detail-actions">
@@ -636,9 +643,10 @@ function buildStoreItemHtml(item, { origin } = {}) {
     </article>
   </main>
   <script src="/js/marketing-attribution.js" defer></script>
+  <script src="/js/ui/turnkeyPortHub.js"></script>
   <script src="/js/ui/impaDetailShared.js"></script>
   <script src="/js/store-lead.js" defer></script>
-  <script>TVC_ImpaDetailShared.initStandalonePage();</script>
+  <script>TVC_TurnkeyPortHub.initDocument(); TVC_ImpaDetailShared.initStandalonePage();</script>
 </body>
 </html>`;
 }
