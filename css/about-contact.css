@@ -275,6 +275,16 @@ body.ac-page.ac-embed .ac-hero {
     text-decoration: none;
 }
 
+.ac-info-phones {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ac-phone-line {
+    display: block;
+}
+
 .ac-info-value a:hover,
 .ac-info-value a:focus-visible {
     color: var(--ac-link);

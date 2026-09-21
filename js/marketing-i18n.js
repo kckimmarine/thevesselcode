@@ -1028,8 +1028,8 @@
         'contact.hero.eyebrow': { en: 'Contact Us', ko: '문의하기' },
         'contact.hero.title': { en: 'Connect with THE VESSEL CODE', ko: 'THE VESSEL CODE에 문의' },
         'contact.hotline': {
-            en: '🛟 24/7 Technical Hotline · +82 10-3889-4291',
-            ko: '🛟 24시간 기술 핫라인 · +82 10-3889-4291',
+            en: '🛟 24/7 Technical Hotline · +82-10-3889-4291',
+            ko: '🛟 24시간 기술 핫라인 · +82-10-3889-4291',
         },
         'contact.hero.sub': {
             en: 'Fleet demos, partnerships, and support for open maritime tools and TVC-SM.',
