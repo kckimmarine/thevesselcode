@@ -211,6 +211,8 @@ check('core sitemap has home', coreSitemap.includes('<loc>https://www.thevesselc
 check('core sitemap has toolkit', coreSitemap.includes('<loc>https://www.thevesselcode.com/toolkit</loc>'));
 check('core sitemap has contact-us', coreSitemap.includes('<loc>https://www.thevesselcode.com/contact-us</loc>'));
 check('core sitemap has ship-repair-korea', coreSitemap.includes('<loc>https://www.thevesselcode.com/ship-repair-korea</loc>'));
+check('core sitemap has ship-repair-chandler-korea', coreSitemap.includes('<loc>https://www.thevesselcode.com/ship-repair-chandler-korea</loc>'));
+check('core sitemap chandler hub priority', coreSitemap.includes('/ship-repair-chandler-korea</loc>') && coreSitemap.includes('<priority>0.9</priority>'));
 check('core sitemap has sm', coreSitemap.includes('<loc>https://www.thevesselcode.com/sm</loc>'));
 check('core sitemap has services', coreSitemap.includes('<loc>https://www.thevesselcode.com/services</loc>'));
 check('core sitemap has insights', coreSitemap.includes('<loc>https://www.thevesselcode.com/insights</loc>'));
@@ -271,9 +273,14 @@ check(
 check('toolkit canonical', toolkit.includes('rel="canonical" href="https://www.thevesselcode.com/toolkit"'));
 check('toolkit ship repair korea pillar link', toolkit.includes('href="/ship-repair-korea"') && toolkit.includes('Ship Repair in Korea'));
 check(
+    'store page korea chandler hub footer link',
+    html.includes('href="https://www.thevesselcode.com/ship-repair-chandler-korea"')
+        && html.includes('Ship Chandler'),
+);
+check(
     'store page ship repair korea footer link',
     html.includes('href="https://www.thevesselcode.com/ship-repair-korea"')
-        && html.includes('Ship Repair in Korea (Busan · Ulsan · Yeosu)'),
+        && html.includes('Ship Repair in Korea'),
 );
 
 const srkPage = readFileSync(join(root, 'ship-repair-korea', 'index.html'), 'utf8');
@@ -282,6 +289,14 @@ check('ship repair korea meta description', srkPage.includes('Certified 24/7 shi
 check('ship repair korea h1', srkPage.includes('Turnkey Ship Repair &amp; Technical Husbandry in South Korea'));
 check('ship repair korea port table', srkPage.includes('srk-port-table') && srkPage.includes('Busan') && srkPage.includes('Yeosu'));
 check('ship repair korea json-ld professional service', srkPage.includes('"@type": "ProfessionalService"'));
+check('ship repair korea nationwide banner', srkPage.includes('srk-nationwide-banner') && srkPage.includes('/ship-repair-chandler-korea'));
+
+const srckPage = readFileSync(join(root, 'ship-repair-chandler-korea', 'index.html'), 'utf8');
+check('korea chandler hub title', srckPage.includes('Ship Repair &amp; Ship Chandler in Korea'));
+check('korea chandler hub h1', srckPage.includes('Ship Repair, Ship Chandler &amp; Technical Supply Across South Korea'));
+check('korea chandler hub 8 ports table', srckPage.includes('Pohang') && srckPage.includes('Donghae') && srckPage.includes('srk-port-table--nationwide'));
+check('korea chandler hub json-ld wholesale store', srckPage.includes('"@type": "WholesaleStore"'));
+check('korea chandler hub ship store keywords', srckPage.includes('ship store') && srckPage.includes('ship\'s store'));
 
 HUB_CODES.forEach((code) => {
     const hubItem = impaSeo.getItemByCode(code);
