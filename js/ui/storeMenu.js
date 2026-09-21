@@ -111,8 +111,9 @@ const TVC_StoreMenu = (function () {
                         <div class="impa-shipserv-photo impa-plate-preview" id="impaDetailProductPhoto">
                             <img id="impaDetailProductImg" class="impa-shipserv-photo-img" alt="" hidden>
                             <div id="impaDetailProductFallback" class="impa-shipserv-photo-fallback" hidden></div>
-                            <span class="impa-plate-zoom-hint" id="impaDetailPlateZoomHint" hidden>🔍 Click / Tap to view high-res full plate</span>
+                            <span class="impa-plate-zoom-hint" id="impaDetailPlateZoomHint" hidden>🔍 Click / Tap to enlarge reference photo</span>
                         </div>
+                        <div id="impaDetailProductAttribution" class="impa-product-photo-attribution-host" hidden aria-live="polite"></div>
                         <h2 class="impa-shipserv-title impa-shipserv-title-duplicate" id="impaDetailProductTitle">—</h2>
                         <div class="impa-detail-trust-header" id="impaDetailTrustHeader" aria-label="Trust and verification">
                             <span class="impa-trust-badge impa-trust-badge-hot hidden" id="impaDetailBadgeTop">🔥 Top Requisitioned Item</span>
@@ -511,6 +512,11 @@ const TVC_StoreMenu = (function () {
                 : platePendingHtml(item, plateId, reason);
             fallback.hidden = false;
         }
+        const attributionHost = document.getElementById('impaDetailProductAttribution');
+        if (attributionHost) {
+            attributionHost.innerHTML = '';
+            attributionHost.hidden = true;
+        }
         if (zoomBtn) zoomBtn.hidden = true;
         if (fsImg) fsImg.removeAttribute('src');
     }
@@ -565,6 +571,7 @@ const TVC_StoreMenu = (function () {
         const onLoaded = () => {
             if (loadToken !== _plateLoadToken) return;
             viewport?.classList.add('has-photo');
+            if (result.isProductPhoto) viewport?.classList.add('impa-hero-product');
             img.hidden = false;
             fallback.hidden = true;
             if (zoomBtn) zoomBtn.hidden = false;
@@ -573,7 +580,22 @@ const TVC_StoreMenu = (function () {
                 fsImg.alt = img.alt;
             }
             const hint = document.getElementById('impaDetailPlateZoomHint');
-            if (hint && _publicMode) hint.hidden = false;
+            if (hint && _publicMode) {
+                hint.hidden = false;
+                hint.textContent = result.isProductPhoto
+                    ? '🔍 Click / Tap to enlarge reference photo'
+                    : '🔍 Click / Tap to view high-res full plate';
+            }
+            const attributionHost = document.getElementById('impaDetailProductAttribution');
+            if (attributionHost && _publicMode) {
+                if (result.isProductPhoto && result.productMeta && window.TVC_ImpaProductPhotoUi) {
+                    attributionHost.innerHTML = TVC_ImpaProductPhotoUi.buildAttributionHtml(result.productMeta);
+                    attributionHost.hidden = false;
+                } else {
+                    attributionHost.innerHTML = '';
+                    attributionHost.hidden = true;
+                }
+            }
         };
 
         img.onload = onLoaded;

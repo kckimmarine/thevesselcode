@@ -28,6 +28,7 @@
     "test:push-indexing": "node scripts/test-push-indexing.mjs",
     "test:store-seo": "node scripts/test-store-seo.mjs",
     "test:impa-product-photos": "node scripts/test-impa-product-photos.mjs",
+    "ingest:high-intent-photos": "node scripts/ingest-high-intent-product-photos.mjs",
     "test:seo-sitemap": "node scripts/test-seo-sitemap.mjs",
     "verify:seo-gsc": "node scripts/verify-seo-gsc-ready.mjs",
     "revenue:report": "node scripts/revenue-pipeline-report.mjs",

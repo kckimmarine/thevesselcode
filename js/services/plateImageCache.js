@@ -80,14 +80,26 @@ const TVC_PlateImageCache = (function () {
         return _productPhotoIndexPromise;
     }
 
-    async function resolveProductPhotoUrl(impaCode) {
+    function productPhotoEntry(index, impaCode) {
         const code = String(impaCode || '').replace(/\D/g, '').padStart(6, '0');
-        if (!code || code === '000000') return '';
-        const index = await loadProductPhotoIndex();
+        if (!code || code === '000000') return null;
         const entry = index[code];
-        const file = entry && typeof entry === 'object' ? String(entry.file || '').trim() : '';
-        if (!file || /[/\\]/.test(file)) return '';
-        return `${PRODUCT_PHOTO_BASE}/${file}`;
+        if (!entry || typeof entry !== 'object') return null;
+        const file = String(entry.file || '').trim();
+        if (!file || /[/\\]/.test(file)) return null;
+        const photoUrl = String(entry.photo_url || '').trim() || `${PRODUCT_PHOTO_BASE}/${file}`;
+        return { ...entry, file, photo_url: photoUrl };
+    }
+
+    async function resolveProductPhotoUrl(impaCode) {
+        const index = await loadProductPhotoIndex();
+        const entry = productPhotoEntry(index, impaCode);
+        return entry?.photo_url || '';
+    }
+
+    async function resolveProductPhotoMeta(impaCode) {
+        const index = await loadProductPhotoIndex();
+        return productPhotoEntry(index, impaCode);
     }
 
     async function evictOldest(cache, order) {
@@ -142,10 +154,13 @@ const TVC_PlateImageCache = (function () {
      */
     async function fetchPlate(plateId, impaCode) {
         if (impaCode) {
-            const productUrl = await resolveProductPhotoUrl(impaCode);
+            const productMeta = await resolveProductPhotoMeta(impaCode);
+            const productUrl = productMeta?.photo_url || '';
             if (productUrl) {
                 const productResult = await fetchUrl(productUrl);
-                if (productResult.ok) return productResult;
+                if (productResult.ok) {
+                    return { ...productResult, productMeta, isProductPhoto: true };
+                }
             }
         }
         const berthId = impaCode ? await resolveBerthPlateId(impaCode) : '';
@@ -175,6 +190,7 @@ const TVC_PlateImageCache = (function () {
         assetUrl,
         resolveBerthPlateId,
         resolveProductPhotoUrl,
+        resolveProductPhotoMeta,
         loadBerthIndex,
         loadProductPhotoIndex,
         clearAll,
