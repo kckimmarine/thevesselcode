@@ -61,7 +61,7 @@ check('html has turnkey inquiry cta', html.includes('data-turnkey-inquiry-open')
 check('html has install overhaul funnel', html.includes('class="turnkey-install-funnel"') && html.includes('Turnkey Port Installation'));
 check(
     'html install funnel links ship repair with impa',
-    html.includes('/ship-repair-korea?') && html.includes(`impa=${sampleCode}`),
+    html.includes('/services?') && html.includes(`impa=${sampleCode}`) && html.includes('#ship-repair-korea'),
 );
 check('html has tvc-sm retention banner', html.includes('class="tvc-sm-retention-banner"') && html.includes('/sm#pricing'));
 check(
@@ -73,7 +73,8 @@ check(
     'html store bridge turnkey cta',
     html.includes('cross-bridge-cta--store')
         && html.includes('Book Turnkey Port Call')
-        && html.includes('/ship-repair-korea?')
+        && html.includes('/services?')
+        && html.includes('#ship-repair-korea')
         && html.includes(`impa=${sampleCode}`),
 );
 check('html has related items section', html.includes('class="related-items"'));

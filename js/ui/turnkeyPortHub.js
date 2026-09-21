@@ -39,11 +39,11 @@
     function buildShipRepairKoreaUrl({ impaCode, itemName } = {}) {
         const code = String(impaCode || '').trim();
         const name = String(itemName || '').trim();
-        if (!code && !name) return '/ship-repair-korea';
+        if (!code && !name) return '/services#ship-repair-korea';
         const q = new URLSearchParams();
         if (code) q.set('impa', code);
         if (name) q.set('item', name);
-        return `/ship-repair-korea?${q.toString()}`;
+        return `/services?${q.toString()}#ship-repair-korea`;
     }
 
     function buildDefaultRepairScope({ impaCode, itemName } = {}) {

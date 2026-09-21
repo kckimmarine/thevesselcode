@@ -33,14 +33,14 @@
             emoji: '🛠️',
             title: 'Certified Ship Repair',
             subtitle: 'Engine, Valve, Piping &amp; Class Approval',
-            href: '/ship-repair-korea',
+            href: '/services#ship-repair-korea',
         },
         {
             id: 'husbandry',
             emoji: '⚓',
             title: 'Technical Husbandry',
             subtitle: 'Port Clearance, Launch Boats &amp; Customs',
-            href: '/ship-repair-korea#srkEmergencyTitle',
+            href: '/services#srkEmergencyTitle',
         },
         {
             id: 'sm',
@@ -67,7 +67,7 @@
                 const q = new URLSearchParams();
                 if (options.impaCode) q.set('impa', options.impaCode);
                 if (options.itemName) q.set('item', options.itemName);
-                href = `/ship-repair-korea?${q.toString()}`;
+                href = `/services?${q.toString()}#ship-repair-korea`;
             }
             const activeClass = active === p.id ? ' total-service-card--active' : '';
             return `
@@ -96,7 +96,7 @@ ${cards}
         const q = new URLSearchParams();
         if (code) q.set('impa', code);
         if (name) q.set('item', name);
-        const href = esc(`/ship-repair-korea?${q.toString()}`);
+        const href = esc(`/services?${q.toString()}#ship-repair-korea`);
         const label = code ? `IMPA ${esc(code)}` : esc(name);
         return `
 <p class="cross-bridge-cta cross-bridge-cta--store">
@@ -126,14 +126,14 @@ ${cards}
             id: 'repair',
             title: 'Certified ship repair',
             subtitle: 'Engine, valve, piping & class approval',
-            href: '/ship-repair-korea',
+            href: '/services#ship-repair-korea',
             image: '/assets/images/shipyard-dock-hero.webp',
         },
         {
             id: 'husbandry',
             title: 'Technical husbandry',
             subtitle: 'Port clearance, launch boats & customs',
-            href: '/ship-repair-korea#srkEmergencyTitle',
+            href: '/services#srkEmergencyTitle',
             image: '/assets/images/samples/set-b/ocean-voyage-setb-sunset-fjord.webp',
         },
         {
