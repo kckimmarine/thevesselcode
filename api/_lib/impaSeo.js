@@ -2,6 +2,12 @@
 
 const { readFileSync, existsSync } = require('node:fs');
 const { join } = require('node:path');
+const { deriveCatalogPlateUrlFromItem, resolvePlateAssetUrl: resolvePlateAssetUrlFromId } = require('./plateAssetUrl');
+const {
+    getProductPhotoForCode,
+    buildProductPhotoAlt,
+    buildProductPhotoCreditHtml,
+} = require('./impaProductPhotos');
 
 const CHAPTER_CATEGORY = {
     '33': 'Safety Equipment',
@@ -112,18 +118,29 @@ const PLATE_IMG_WIDTH = 560;
 const PLATE_IMG_HEIGHT = 420;
 
 function derivePlateAssetUrl(item) {
-    const plateId = String(item?.plate_id || '').trim();
-    if (plateId) {
-        const safe = plateId.replace(/[^a-zA-Z0-9._-]/g, '');
-        if (safe) return `/data/plates/${safe}.webp`;
+    return deriveCatalogPlateUrlFromItem(item);
+}
+
+/** Prefer land/industrial product photo, then catalog plate drawing. */
+function resolveStoreHeroImage(item) {
+    const product = getProductPhotoForCode(item?.impa_code || item?.code);
+    if (product?.url) {
+        return {
+            kind: 'product',
+            path: product.url,
+            meta: product.meta,
+            alt: buildProductPhotoAlt(item),
+        };
     }
-    const code = item?.impa_code || '';
-    const chapter = code.slice(0, 2);
-    const segment = code.slice(2, 4);
-    if (chapter && segment) {
-        return `/data/plates/PL-${chapter}-${segment}.webp`;
+    const platePath = deriveCatalogPlateUrlFromItem(item);
+    if (platePath) {
+        return {
+            kind: 'plate',
+            path: platePath,
+            alt: buildPlateImageAlt(item),
+        };
     }
-    return '';
+    return { kind: 'none', path: '', alt: '' };
 }
 
 const PRIORITY_SPEC_KEYS = ['Rating', 'Material', 'Standard Unit', 'Standard'];
@@ -563,13 +580,14 @@ function buildStoreItemHtml(item, { origin } = {}) {
     const heading = buildPrimaryHeading(item);
     const description = buildMetaDescription(item);
     const ogDescription = buildOgDescription(item);
-    const plateUrl = derivePlateAssetUrl(item);
-    const imageUrl = plateUrl ? `${base}${plateUrl}` : '';
+    const heroImage = resolveStoreHeroImage(item);
+    const heroPath = heroImage.path || '';
+    const imageUrl = heroPath ? `${base}${heroPath}` : '';
     const rows = specRows(item);
     const tableHtml = rows.map(([label, value]) => (
         `<tr><th scope="row">${escapeHtml(label)}</th><td>${escapeHtml(value)}</td></tr>`
     )).join('');
-    const plateAlt = buildPlateImageAlt(item);
+    const plateAlt = heroImage.alt || buildPlateImageAlt(item);
     const jsonLd = JSON.stringify(buildJsonLd(item, pageUrl, imageUrl || undefined, base));
     const related = getRelatedItemsByChapter(item.impa_code, 6);
     const relatedHtml = buildRelatedItemsSectionHtml(item, related, base);
@@ -588,12 +606,20 @@ function buildStoreItemHtml(item, { origin } = {}) {
     const storeCtx = { impaCode: item.impa_code, itemName: displayTitle };
     const totalServiceBarHtml = buildTotalServiceBarHtml({ ...storeCtx, activePillar: 'impa' });
     const storeBridgeCtaHtml = buildStoreRepairBridgeCtaHtml(storeCtx);
+    const heroAria = heroImage.kind === 'product' ? 'Product reference photo' : 'Catalog plate';
+    const heroHint = heroImage.kind === 'product'
+        ? '🔍 Click / Tap to enlarge reference photo'
+        : '🔍 Click / Tap to view high-res full plate';
+    const photoCredit = heroImage.kind === 'product'
+        ? buildProductPhotoCreditHtml(heroImage.meta)
+        : '';
     const plateSection = imageUrl
-        ? `<section class="impa-shipserv-photo impa-plate-preview" aria-label="Catalog plate">
-          <img class="impa-store-plate-img" src="${escapeHtml(plateUrl)}" data-plate-hires="${escapeHtml(plateUrl)}"
+        ? `<section class="impa-shipserv-photo impa-plate-preview impa-hero-${escapeHtml(heroImage.kind)}" aria-label="${escapeHtml(heroAria)}">
+          <img class="impa-store-plate-img" src="${escapeHtml(heroPath)}" data-plate-hires="${escapeHtml(heroPath)}"
             data-plate-title="${escapeHtml(`IMPA ${item.impa_code} — ${displayTitle}`)}"
             alt="${escapeHtml(plateAlt)}" width="${PLATE_IMG_WIDTH}" height="${PLATE_IMG_HEIGHT}" loading="lazy" decoding="async">
-          <span class="impa-plate-zoom-hint">🔍 Click / Tap to view high-res full plate</span>
+          <span class="impa-plate-zoom-hint">${heroHint}</span>
+          ${photoCredit}
         </section>`
         : `<section class="impa-shipserv-photo impa-plate-preview" aria-label="Catalog plate">
           <div class="impa-shipserv-photo-fallback">Catalog plate reference: ${escapeHtml(item.plate_id || 'Not available')}</div>
@@ -716,6 +742,8 @@ module.exports = {
     truncateSerpText,
     SERP_TITLE_MAX_LEN,
     derivePlateAssetUrl,
+    resolvePlateAssetUrlFromId,
+    resolveStoreHeroImage,
     SEO_PRODUCT_CATEGORY,
     buildDescription,
     buildB2bProductOffer,

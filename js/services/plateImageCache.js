@@ -4,9 +4,13 @@ const TVC_PlateImageCache = (function () {
     const LRU_KEY = 'tvc_plate_lru_order_v1';
     const MAX_ENTRIES = 50;
     const BERTH_INDEX_URL = '/data/berth-impa-index.json';
+    const PRODUCT_PHOTO_INDEX_URL = '/data/impa-product-photos.json';
+    const PRODUCT_PHOTO_BASE = '/data/product-photos';
 
     let _berthIndex = null;
     let _berthIndexPromise = null;
+    let _productPhotoIndex = null;
+    let _productPhotoIndexPromise = null;
 
     function readLru() {
         try {
@@ -60,6 +64,32 @@ const TVC_PlateImageCache = (function () {
         return index[code] || index[String(impaCode || '').trim()] || '';
     }
 
+    async function loadProductPhotoIndex() {
+        if (_productPhotoIndex) return _productPhotoIndex;
+        if (_productPhotoIndexPromise) return _productPhotoIndexPromise;
+        _productPhotoIndexPromise = fetch(PRODUCT_PHOTO_INDEX_URL, { cache: 'no-store' })
+            .then(res => (res.ok ? res.json() : { photos: {} }))
+            .then(data => {
+                _productPhotoIndex = data?.photos && typeof data.photos === 'object' ? data.photos : {};
+                return _productPhotoIndex;
+            })
+            .catch(() => {
+                _productPhotoIndex = {};
+                return _productPhotoIndex;
+            });
+        return _productPhotoIndexPromise;
+    }
+
+    async function resolveProductPhotoUrl(impaCode) {
+        const code = String(impaCode || '').replace(/\D/g, '').padStart(6, '0');
+        if (!code || code === '000000') return '';
+        const index = await loadProductPhotoIndex();
+        const entry = index[code];
+        const file = entry && typeof entry === 'object' ? String(entry.file || '').trim() : '';
+        if (!file || /[/\\]/.test(file)) return '';
+        return `${PRODUCT_PHOTO_BASE}/${file}`;
+    }
+
     async function evictOldest(cache, order) {
         while (order.length > MAX_ENTRIES) {
             const url = order.shift();
@@ -111,6 +141,13 @@ const TVC_PlateImageCache = (function () {
      * @returns {Promise<{ok:boolean, objectUrl?:string, fromCache?:boolean, reason?:string}>}
      */
     async function fetchPlate(plateId, impaCode) {
+        if (impaCode) {
+            const productUrl = await resolveProductPhotoUrl(impaCode);
+            if (productUrl) {
+                const productResult = await fetchUrl(productUrl);
+                if (productResult.ok) return productResult;
+            }
+        }
         const berthId = impaCode ? await resolveBerthPlateId(impaCode) : '';
         if (berthId) {
             const berthUrl = assetUrl(berthId);
@@ -137,7 +174,9 @@ const TVC_PlateImageCache = (function () {
         fetchUrl,
         assetUrl,
         resolveBerthPlateId,
+        resolveProductPhotoUrl,
         loadBerthIndex,
+        loadProductPhotoIndex,
         clearAll,
         getStats,
         MAX_ENTRIES,
