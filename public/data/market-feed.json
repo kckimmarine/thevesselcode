@@ -1,10 +1,11 @@
 {
   "meta": {
-    "generatedAt": "2026-09-20T18:05:28.793Z",
+    "generatedAt": "2026-09-21T00:06:14.359Z",
     "benchmarkAsOf": "2026-09-14",
     "fetchStatus": "partial",
     "rssErrors": [
-      "Maritime Executive: HTTP 404"
+      "Maritime Executive: HTTP 404",
+      "Splash247: HTTP 415"
     ],
     "source": "TVC Market Desk · RSS aggregation",
     "updatedLabelEn": "Market benchmark as of 2026-09-14",
@@ -200,6 +201,40 @@
   },
   "news": [
     {
+      "title": "Qatar Energy Chief Says Bessent ‘Wrong’ About Hormuz Future",
+      "link": "https://gcaptain.com/qatar-energy-chief-says-bessent-wrong-about-hormuz-future/",
+      "pubDate": "Sun, 20 Sep 2026 22:39:11 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By&#160;Kevin Whitelaw and Annmarie Hordern Sep 20, 2026 (Bloomberg) &#8212;Qatari Energy Minister Saad Al-Kaabi said Treasury Secretary Scott Bessent is “wrong” when he said that the strategic Strait of Hormuz...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-11T150156Z_1227186291_RC2EWJAUHNHV_RTRMADP_3_IRAN-CRISIS-QATAR-LNG-800x533.jpg",
+      "en": {
+        "headline": "Qatar Energy Chief Says Bessent ‘Wrong’ About Hormuz Future",
+        "summary": "By&#160;Kevin Whitelaw and Annmarie Hordern Sep 20, 2026 (Bloomberg) &#8212;Qatari Energy Minister Saad Al-Kaabi said Treasury Secretary Scott Bessent is “wrong” when he said that the strategic Strait of Hormuz...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Indonesia Continues Search For Hundreds Missing In Capsized Ship",
+      "link": "https://gcaptain.com/indonesia-continues-search-for-hundreds-missing-in-capsized-ship/",
+      "pubDate": "Sun, 20 Sep 2026 22:18:57 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "JAKARTA, Sept 20 (Reuters) &#8211; Indonesian authorities will continue searching on Monday for more than a hundred people still missing after a passenger ship sank in the Java Sea last week, with the confirmed death...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-19T011953Z_177505213_RC21MNATI113_RTRMADP_3_INDONESIA-SHIP.jpg",
+      "en": {
+        "headline": "Indonesia Continues Search For Hundreds Missing In Capsized Ship",
+        "summary": "JAKARTA, Sept 20 (Reuters) &#8211; Indonesian authorities will continue searching on Monday for more than a hundred people still missing after a passenger ship sank in the Java Sea last week, with the confirmed death...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Indonesia Got A Free Aircraft Carrier; Fixes Will Cost Millions",
       "link": "https://gcaptain.com/indonesia-got-a-free-aircraft-carrier-fixes-will-cost-millions/",
       "pubDate": "Sun, 20 Sep 2026 15:27:02 +0000",
@@ -208,7 +243,7 @@
       "summary": "By&#160;Chandra Asmara Sep 17, 2026 (Bloomberg) &#8211;A retired Italian aircraft carrier built to launch Harrier fighter jets arrived at Indonesia’s busiest port Friday with plans for a very different second...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/ITS_Giuseppe_Garibaldi_C_551.jpg",
       "en": {
         "headline": "Indonesia Got A Free Aircraft Carrier; Fixes Will Cost Millions",
@@ -225,7 +260,7 @@
       "summary": "COPENHAGEN, Sept 18 (Reuters)&#160;&#8211;&#160;Denmark is speeding up a donation to Ukraine in response to a recent incident in which a Russian warship fired flares towards a Danish military helicopter, narrowly...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/01/2022-01-26T123848Z_2036632786_RC207S9P41EP_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-NAVY-BLACK-SEA.jpg",
       "en": {
         "headline": "Denmark Speeds Up Ukraine Aid Package After Russian Warship Fires Flares At Helicopter",
@@ -242,46 +277,12 @@
       "summary": "By&#160;Yvonne Yue Li, James Attwood and Julian Luk Sep 18, 2026 (Bloomberg) &#8211;There’s nothing outwardly remarkable about the journey of the Nord Norfolk, a Liberian-flagged bulk carrier sailing across the...",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/09/2560px-MSC_Marina_docked_at_Port_of_New_Orleans-800x531.jpg",
       "en": {
         "headline": "Deluge Of Copper Arriving In US Leaves New Orleans With Logjam",
         "summary": "By&#160;Yvonne Yue Li, James Attwood and Julian Luk Sep 18, 2026 (Bloomberg) &#8211;There’s nothing outwardly remarkable about the journey of the Nord Norfolk, a Liberian-flagged bulk carrier sailing across the...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Crew claims hackers seized control of LNG carrier safety systems",
-      "link": "https://splash247.com/crew-claims-hackers-seized-control-of-lng-carrier-safety-systems/",
-      "pubDate": "Sun, 20 Sep 2026 10:10:12 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "A US LNG cargo bound for Italy has been diverted after the crew of its carrier reported a systems failure as a suspected cyberattack, adding to growing concerns over attacks on shipboard digital systems. The Liberia-flagged Vivit Africa LNG, owned by South Korea’s H-Line Shipping",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Cydome-Cyber-Hack.jpg",
-      "en": {
-        "headline": "Crew claims hackers seized control of LNG carrier safety systems",
-        "summary": "A US LNG cargo bound for Italy has been diverted after the crew of its carrier reported a systems failure as a suspected cyberattack, adding to growing concerns over attacks on shipboard digital systems. The Liberia-flagged Vivit Africa LNG, owned by South Korea’s H-Line Shipping",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Trump signs Russia sanctions law with shadow fleet in the crosshairs",
-      "link": "https://splash247.com/trump-signs-russia-sanctions-law-with-shadow-fleet-in-the-crosshairs/",
-      "pubDate": "Sun, 20 Sep 2026 09:01:35 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "President Donald Trump signed sweeping new sanctions legislation on Friday targeting Moscow’s oil trade and the tanker fleet that supports it. The White House confirmed Trump had signed the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026, expanding statutory sanctions, ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Donald-Trump-signing.jpg",
-      "en": {
-        "headline": "Trump signs Russia sanctions law with shadow fleet in the crosshairs",
-        "summary": "President Donald Trump signed sweeping new sanctions legislation on Friday targeting Moscow’s oil trade and the tanker fleet that supports it. The White House confirmed Trump had signed the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026, expanding statutory sanctions, ",
-        "source": "Splash247"
       }
     },
     {
@@ -293,7 +294,7 @@
       "summary": "By&#160;Brendan Murray Sep 19, 2026 (Bloomberg) &#8211;The American Century often draws a crowd when the ship pulls into the Port of Duluth-Superior to load Minnesota iron ore. Kids cheer when the captain...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/01/port_of_duluth.jpg",
       "en": {
         "headline": "US Tariffs Threaten Great Lakes Shipping Tied To Canada Trade",
@@ -310,7 +311,7 @@
       "summary": "By&#160;Sanne Wass Sep 19, 2026 (Bloomberg) &#8211;The US, Denmark and Greenland struck a security deal that expands Washington’s role on the Arctic island, ending for now a long-running diplomatic spat...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 21,
+      "hoursAgo": 27,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-07T140157Z_1942348378_RC2AENAUEHNW_RTRMADP_3_EU-GREENLAND-800x533.jpg",
       "en": {
         "headline": "US Reaches Greenland Deal To End Row That Threatened NATO",
@@ -327,7 +328,7 @@
       "summary": "By&#160;Yongchang Chin, Sherry Su, Nathan Risser and Alex Longley Sep 19, 2026 (Bloomberg) &#8211;The soaring cost of moving oil around the world is making some long-distance crude trades uneconomical, threatening...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 26,
+      "hoursAgo": 32,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-17T131826Z_1190888993_RC21LNA4S0NI_RTRMADP_3_SHIPPING-OIL-ROUTES-VLCC-800x530.jpg",
       "en": {
         "headline": "World Running Short Of Supertankers Threatens Long-Haul Oil Flow",
@@ -344,7 +345,7 @@
       "summary": "By Jarrett Renshaw Sept 18 (Reuters) &#8211; The US and China are discussing a plan to reduce or eliminate China&#8217;s tariffs on American LNG as part of a broader package of energy...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 26,
+      "hoursAgo": 32,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-18T201224Z_1027585365_RC2WLNAKYI1S_RTRMADP_3_USA-TRUMP-LNG-CHINA-800x600.jpg",
       "en": {
         "headline": "US, China Discuss Cutting Tariffs On US LNG Ahead Of Xi Visit",
@@ -361,7 +362,7 @@
       "summary": "A false intelligence report produced with the help of artificial intelligence nearly led the U.S. military to intercept and board a Chinese ship in the Middle East during the war...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 46,
+      "hoursAgo": 52,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/10/shutterstock_2392448797.jpg",
       "en": {
         "headline": "AI Error Nearly Triggered U.S. Intercept of Chinese Ship, CNN Reports",
@@ -378,8 +379,8 @@
       "summary": "By Lori-Ann LaRocco &#8211; It’s a good time to be an ocean carrier or tanker owner. The slower trade caused by bottlenecks stemming from the U.S. war with Iran, Russia’s...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 48,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/10/shutterstock_721476064.jpg",
+      "hoursAgo": 54,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Shipping’s New Normal: Slower Trade, Higher Costs, Bigger Profits",
         "summary": "By Lori-Ann LaRocco &#8211; It’s a good time to be an ocean carrier or tanker owner. The slower trade caused by bottlenecks stemming from the U.S. war with Iran, Russia’s...",
@@ -395,80 +396,12 @@
       "summary": "A liquefied natural gas tanker bringing fuel from the US to Europe suffered a systems failure that the crew reported as a suspected cyber attack, according to people familiar with the matter.",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 48,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/11/shutterstock_33420946.jpg",
+      "hoursAgo": 54,
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Another Tanker Suffers Failure as Crew Suspect Cyber Attack",
         "summary": "A liquefied natural gas tanker bringing fuel from the US to Europe suffered a systems failure that the crew reported as a suspected cyber attack, according to people familiar with the matter.",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "London&#8217;s Marine Insurers Widen Black Sea High Risk Zone as Shipping Attacks Surge",
-      "link": "https://gcaptain.com/londons-marine-insurers-widen-black-sea-high-risk-zone-as-shipping-attacks-surge/",
-      "pubDate": "Fri, 18 Sep 2026 17:00:02 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "London's marine insurance market has widened the area in the Black Sea it deems as ?high risk as the Ukraine-Russia conflict escalates, according to an advisory issued this week.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 49,
-      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "London&#8217;s Marine Insurers Widen Black Sea High Risk Zone as Shipping Attacks Surge",
-        "summary": "London's marine insurance market has widened the area in the Black Sea it deems as ?high risk as the Ukraine-Russia conflict escalates, according to an advisory issued this week.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Trump Returns to UN as Iran War Spreads Across Shipping Chokepoints",
-      "link": "https://gcaptain.com/trump-returns-to-un-as-iran-war-spreads-across-shipping-chokepoints/",
-      "pubDate": "Fri, 18 Sep 2026 16:58:46 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "WASHINGTON, Sept 18 (Reuters)&#160;&#8211;&#160;When President Donald Trump addressed the United Nations a year ago, he touted the US bombing of&#160;Iran’s nuclear sites just months earlier as &#8220;totally obliterating everything&#8221; and...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 49,
-      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Trump Returns to UN as Iran War Spreads Across Shipping Chokepoints",
-        "summary": "WASHINGTON, Sept 18 (Reuters)&#160;&#8211;&#160;When President Donald Trump addressed the United Nations a year ago, he touted the US bombing of&#160;Iran’s nuclear sites just months earlier as &#8220;totally obliterating everything&#8221; and...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Maersk confirms 26-ship newbuilding spree",
-      "link": "https://splash247.com/maersk-confirms-26-ship-newbuilding-spree/",
-      "pubDate": "Fri, 18 Sep 2026 14:58:11 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Maersk has confirmed orders for 26 large containerships, ending days of speculation over a major fleet expansion programme. The Danish carrier said on Friday that all 26 ships will have capacity of 18,600 teu and will feature dual-fuel engines capable of operating on LNG. Deliver",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 51,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/08/Marie-Maersk-Christopher-Triggs-Marine-Traffic.jpg",
-      "en": {
-        "headline": "Maersk confirms 26-ship newbuilding spree",
-        "summary": "Maersk has confirmed orders for 26 large containerships, ending days of speculation over a major fleet expansion programme. The Danish carrier said on Friday that all 26 ships will have capacity of 18,600 teu and will feature dual-fuel engines capable of operating on LNG. Deliver",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Turn Services takes over St. John Fleeting",
-      "link": "https://splash247.com/turn-services-takes-over-st-john-fleeting/",
-      "pubDate": "Fri, 18 Sep 2026 09:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "US inland marine operator Turn Services has completed its acquisition of St. John Fleeting and its affiliated companies, expanding its barge operations on the Lower Mississippi River. The deal gives Turn Services control of St. John’s fleet site at around Mile Marker 140 near Res",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 56,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Turn-Services.jpg",
-      "en": {
-        "headline": "Turn Services takes over St. John Fleeting",
-        "summary": "US inland marine operator Turn Services has completed its acquisition of St. John Fleeting and its affiliated companies, expanding its barge operations on the Lower Mississippi River. The deal gives Turn Services control of St. John’s fleet site at around Mile Marker 140 near Res",
-        "source": "Splash247"
       }
     }
   ]
