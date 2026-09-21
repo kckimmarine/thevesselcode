@@ -1,14 +1,20 @@
 #!/usr/bin/env node
 /**
- * Batch-ingest high-intent IMPA product photos from scripts/data/high-intent-product-photos-manifest.json
+ * Batch-ingest IMPA product photos from a JSON manifest.
+ *
+ *   node scripts/ingest-high-intent-product-photos.mjs
+ *   node scripts/ingest-high-intent-product-photos.mjs --manifest=scripts/data/batch2-product-photos-manifest.json
  */
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, copyFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const MANIFEST = join(ROOT, 'scripts', 'data', 'high-intent-product-photos-manifest.json');
+const manifestArg = process.argv.find((a) => a.startsWith('--manifest='));
+const MANIFEST = manifestArg
+    ? join(ROOT, manifestArg.slice('--manifest='.length))
+    : join(ROOT, 'scripts', 'data', 'high-intent-product-photos-manifest.json');
 const OUT_DIR = join(ROOT, 'public', 'data', 'product-photos');
 const INDEX_PATH = join(ROOT, 'public', 'data', 'impa-product-photos.json');
 const MAX_WIDTH = 1200;
@@ -40,26 +46,31 @@ function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function downloadWebp(code, url) {
-    const outFile = `${code}.webp`;
-    const outPath = join(OUT_DIR, outFile);
+async function downloadWebp(code, url, outFile) {
+    const fileName = String(outFile || `${code}.webp`).trim();
+    const outPath = join(OUT_DIR, fileName);
     let res;
     for (let attempt = 0; attempt < 5; attempt += 1) {
         res = await fetch(url, { headers: { 'User-Agent': 'TVC-IMPA-Photo/1.0' } });
         if (res.status !== 429) break;
-        await sleep(2000 * (attempt + 1));
+        await sleep(4000 * (attempt + 1));
     }
-    if (!res.ok) throw new Error(`HTTP ${res.status} for ${code}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status} for ${code} (${url})`);
     const buf = Buffer.from(await res.arrayBuffer());
     await sharp(buf)
         .rotate()
         .resize({ width: MAX_WIDTH, withoutEnlargement: true })
         .webp({ quality: WEBP_QUALITY })
         .toFile(outPath);
-    return outFile;
+    return fileName;
 }
 
 async function main() {
+    if (!existsSync(MANIFEST)) {
+        console.error('Manifest not found:', MANIFEST);
+        process.exit(1);
+    }
+    console.log('Manifest:', MANIFEST);
     const rows = JSON.parse(readFileSync(MANIFEST, 'utf8'));
     mkdirSync(OUT_DIR, { recursive: true });
 
@@ -74,10 +85,29 @@ async function main() {
         const code = normalizeCode(row.code);
         const url = String(row.url || '').trim();
         if (!code || !url) continue;
-        const file = await downloadWebp(code, url);
+        const outFile = String(row.file || `${code}.webp`).trim();
+        const outPath = join(OUT_DIR, outFile);
+        let file = outFile;
+        const reuseFrom = normalizeCode(row.reuse_from || row.reuseFrom || '');
+        if (existsSync(outPath)) {
+            console.log('SKIP on disk', code, '→', outFile);
+        } else if (reuseFrom) {
+            const srcFile = String(index.photos[reuseFrom]?.file || row.reuse_file || `photo_${reuseFrom}.webp`).trim();
+            const srcPath = join(OUT_DIR, srcFile);
+            if (existsSync(srcPath)) {
+                copyFileSync(srcPath, outPath);
+                console.log('COPY', reuseFrom, '→', code, outFile);
+            } else {
+                file = await downloadWebp(code, url, outFile);
+                console.log('OK', code, '→', file);
+                await sleep(3500);
+            }
+        } else {
+            file = await downloadWebp(code, url, outFile);
+            console.log('OK', code, '→', file);
+            await sleep(3500);
+        }
         index.photos[code] = buildEntry(code, file, row);
-        console.log('OK', code, '→', file);
-        await sleep(1200);
     }
 
     writeFileSync(INDEX_PATH, `${JSON.stringify(index, null, 2)}\n`, 'utf8');

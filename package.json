@@ -29,6 +29,7 @@
     "test:store-seo": "node scripts/test-store-seo.mjs",
     "test:impa-product-photos": "node scripts/test-impa-product-photos.mjs",
     "ingest:high-intent-photos": "node scripts/ingest-high-intent-product-photos.mjs",
+    "ingest:batch2-photos": "node scripts/ingest-high-intent-product-photos.mjs --manifest=scripts/data/batch2-product-photos-manifest.json",
     "test:seo-sitemap": "node scripts/test-seo-sitemap.mjs",
     "verify:seo-gsc": "node scripts/verify-seo-gsc-ready.mjs",
     "revenue:report": "node scripts/revenue-pipeline-report.mjs",
