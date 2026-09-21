@@ -79,7 +79,7 @@ const toolkitHtml = readFileSync(join(ROOT, 'toolkit.html'), 'utf8');
 check('toolkit no promo clutter', !toolkitHtml.includes('mkt-pricing-band') && !toolkitHtml.includes('toolkit-plg-band') && !toolkitHtml.includes('toolkit-popular-impa') && !toolkitHtml.includes('mkt-plg-locks'));
 check('toolkit engineering modules', toolkitHtml.includes('mkt-engineering-modules') && toolkitHtml.includes('data-tool-tab="electrical"'));
 check('toolkit hero condensed (no top search)', toolkitHtml.includes('toolkit-hero-desc') && !toolkitHtml.includes('mktEngSearchInput'));
-check('footer engineer signature', shell.includes('footer-engineer-signature') && shell.includes('Mr. Kyoung-Chul, Kim'));
+check('footer engineer signature', shell.includes('footer-engineer-signature') && shell.includes('1st Class Marine Engineer License'));
 check('home no abstract trio grid', !home.includes('mkt-trio-grid') && !home.includes('home-edge-section'));
 check('nav four core tabs only', shell.includes("id: 'toolkit'") && shell.includes("id: 'sm'") && !shell.includes("id: 'forum'"));
 check('home hero no photo background', !home.includes('mkt-hero-smart-vessel') && !home.includes('home-hero-variant-picker'));
