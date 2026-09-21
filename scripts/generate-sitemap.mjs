@@ -17,6 +17,7 @@ const CORE_PAGES = [
   { path: '/sm', changefreq: 'weekly', priority: '0.9' },
   { path: '/services', changefreq: 'weekly', priority: '0.8' },
   { path: '/ship-repair-korea', changefreq: 'weekly', priority: '0.8' },
+  { path: '/ship-repair-chandler-korea', changefreq: 'weekly', priority: '0.9' },
   { path: '/insights', changefreq: 'weekly', priority: '0.7' },
   { path: '/contact-us', changefreq: 'monthly', priority: '0.7' },
 ];

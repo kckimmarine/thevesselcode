@@ -66,6 +66,32 @@
     color: var(--mkt-text, #334155);
 }
 
+.srk-nationwide-banner {
+    margin: 0 auto 1.25rem;
+    padding: 14px 18px;
+    max-width: min(100%, 1180px);
+    border-radius: 12px;
+    background: linear-gradient(90deg, #0f2744 0%, #1e3a5f 100%);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.srk-nationwide-banner a {
+    color: #e0f2fe;
+    text-decoration: none;
+}
+
+.srk-nationwide-banner a:hover {
+    text-decoration: underline;
+}
+
+.srk-port-table--nationwide {
+    min-width: 960px;
+}
+
 .srk-table-wrap {
     overflow-x: auto;
     margin: 1.25rem 0 1.75rem;

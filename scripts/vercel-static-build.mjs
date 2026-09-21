@@ -14,6 +14,7 @@ const STATIC_PATHS = [
   'home',
   'services',
   'ship-repair-korea',
+  'ship-repair-chandler-korea',
   'sm',
   'contact-us',
   'forum',

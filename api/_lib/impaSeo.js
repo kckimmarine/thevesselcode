@@ -480,7 +480,7 @@ function buildImpaStockSlaHtml() {
     return `
         <div class="impa-stock-sla-card" aria-label="Stock and delivery">
           <div class="impa-stock-sla-col impa-stock-col">🟢 In Stock (Busan Hub / Singapore Transit Ready)</div>
-          <div class="impa-stock-sla-col impa-sla-col">⚡ 24~48h Port-side Delivery &amp; Bonded Transit</div>
+          <div class="impa-stock-sla-col impa-sla-col">⚡ Nationwide delivery: Busan, Ulsan, Yeosu, Pohang, Daesan, Pyeongtaek, Incheon, Donghae · bonded transit</div>
         </div>`;
 }
 
@@ -658,7 +658,8 @@ function buildStoreItemHtml(item, { origin } = {}) {
         </div>
         ${relatedHtml}
         ${tvcSmRetentionHtml}
-        <p class="store-pillar-crosslink"><a href="${escapeHtml(`${base}/ship-repair-korea`)}">🛠️ Ship Repair in Korea (Busan · Ulsan · Yeosu)</a></p>
+        <p class="store-pillar-crosslink"><a href="${escapeHtml(`${base}/ship-repair-chandler-korea`)}">⚓ Ship Repair, Ship Chandler &amp; Ship Supply — all Korea ports (Busan · Ulsan · Yeosu · Pohang · Daesan · Pyeongtaek · Incheon · Donghae)</a></p>
+        <p class="store-pillar-crosslink"><a href="${escapeHtml(`${base}/ship-repair-korea`)}">🛠️ Ship Repair in Korea (Busan · Ulsan · Yeosu focus)</a></p>
         <p class="footer-note">THE VESSEL CODE — offline-first PMS + SPICS and maritime toolkit for shipboard operations.</p>
       </div>
     </article>
