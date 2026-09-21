@@ -89,6 +89,26 @@
     display: block;
 }
 
+.impa-hero-product .impa-store-plate-img,
+.impa-hero-product .impa-shipserv-photo-img {
+    object-fit: contain;
+    background: #f8fafc;
+}
+
+.impa-product-photo-credit {
+    margin: 8px 0 0;
+    padding: 0 4px;
+    font-size: 0.68rem;
+    line-height: 1.35;
+    color: #64748b;
+    text-align: center;
+}
+
+.impa-product-photo-credit a {
+    color: #0369a1;
+    text-decoration: underline;
+}
+
 .impa-plate-zoom-hint {
     position: absolute;
     left: 10px;

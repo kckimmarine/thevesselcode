@@ -12,6 +12,7 @@ const require = createRequire(import.meta.url);
 const askBrain = require('../api/ask-brain.js');
 const searchApi = require('../api/search.js');
 const rfqApi = require('../api/rfq.js');
+const storeHandler = require('../api/store/[code].js');
 
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const PORT = Number(process.env.PORT || 3000);
@@ -137,6 +138,30 @@ const server = createServer((req, res) => {
             return;
         }
         rfqApi(mockReq, vercelStyleResponse(res));
+        return;
+    }
+
+    const storeMatch = url.pathname.match(/^\/store\/(\d{4,6})\/?$/);
+    if (storeMatch && (req.method === 'GET' || req.method === 'HEAD')) {
+        const mockReq = { method: req.method, query: { code: storeMatch[1] } };
+        const mockRes = {
+            statusCode: 200,
+            setHeader(k, v) {
+                res.setHeader(k, v);
+            },
+            status(code) {
+                this.statusCode = code;
+                return this;
+            },
+            send(body) {
+                res.statusCode = this.statusCode || 200;
+                res.end(body);
+            },
+            end() {
+                res.end();
+            },
+        };
+        storeHandler(mockReq, mockRes);
         return;
     }
 
