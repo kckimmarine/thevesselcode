@@ -95,7 +95,7 @@ th { background: #ecfdf5; text-align: left; }
   </table>
   ${notes ? `<h2 style="font-size:1rem;margin:16px 0 8px;">Inquiry notes</h2><div class="notes">${escapeHtml(notes)}</div>` : ''}
   <footer class="foot">
-    THE VESSEL CODE (K-TECH) · 166 Goejeong-ro, Saha-gu, Busan · +82 10-3889-4291 · thevesselcode.com
+    THE VESSEL CODE (K-TECH) · 100, Dongmyeong-ro 105beon-gil, Nam-gu, Busan · Office +82-51-628-8889 · Hotline +82-10-3889-4291 · thevesselcode.com
   </footer>
   <p class="no-print"><button type="button" onclick="window.print()">Print / Save as PDF</button></p>
 </div>
