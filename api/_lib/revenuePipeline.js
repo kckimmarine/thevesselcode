@@ -8,8 +8,7 @@ const GSC_SCOPES = ['https://www.googleapis.com/auth/webmasters.readonly'];
 const MONEY_PAGES = [
     { path: '/', product: 'Home / Brain search', action: 'PoC or RFQ follow-up' },
     { path: '/sm', product: 'TVC-SM SaaS', action: 'Fleet demo / 14-day PoC' },
-    { path: '/services', product: 'Superintendent services', action: 'Engineering scope call' },
-    { path: '/ship-repair-korea', product: 'Korea repair hub', action: 'Port repair RFQ' },
+    { path: '/services', product: 'Superintendent & Korea repair hub', action: 'Port repair RFQ or engineering scope call' },
     { path: '/toolkit', product: 'Maritime Toolkit PLG', action: 'IMPA → RFQ upsell' },
     { path: '/contact-us', product: 'Direct inquiry', action: 'Reply within 12h SLA' },
 ];

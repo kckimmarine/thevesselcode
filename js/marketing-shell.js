@@ -22,7 +22,6 @@
         { href: '/sm', i18n: 'nav.sm' },
         { href: '/contact-us', i18n: 'nav.contact' },
         { href: '/services', i18n: 'nav.services' },
-        { href: '/ship-repair-korea', i18n: 'nav.shipRepairKorea' },
     ];
 
     const LOGO = '/icons/company-logo.png?v=20260804-logo-no-ring';

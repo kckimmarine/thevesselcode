@@ -20,7 +20,9 @@
     { "source": "/impa", "destination": "/toolkit", "permanent": true },
     { "source": "/impa/", "destination": "/toolkit", "permanent": true },
     { "source": "/maritime-pms", "destination": "/sm", "permanent": true },
-    { "source": "/maritime-pms/", "destination": "/sm", "permanent": true }
+    { "source": "/maritime-pms/", "destination": "/sm", "permanent": true },
+    { "source": "/ship-repair-korea", "destination": "/services#ship-repair-korea", "permanent": true },
+    { "source": "/ship-repair-korea/", "destination": "/services#ship-repair-korea", "permanent": true }
   ],
   "rewrites": [
     { "source": "/api/rfq-draft", "destination": "/api/rfq" },
@@ -41,7 +43,6 @@
       "destination": "/home/index.html"
     },
     { "source": "/services", "destination": "/services/index.html" },
-    { "source": "/ship-repair-korea", "destination": "/ship-repair-korea/index.html" },
     { "source": "/ship-repair-chandler-korea", "destination": "/ship-repair-chandler-korea/index.html" },
     { "source": "/ship-chandler-korea", "destination": "/ship-repair-chandler-korea/index.html" },
     { "source": "/korea-ship-services", "destination": "/ship-repair-chandler-korea/index.html" },

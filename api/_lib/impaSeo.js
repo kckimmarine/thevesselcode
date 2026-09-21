@@ -659,7 +659,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
         ${relatedHtml}
         ${tvcSmRetentionHtml}
         <p class="store-pillar-crosslink"><a href="${escapeHtml(`${base}/ship-repair-chandler-korea`)}">⚓ Ship Repair, Ship Chandler &amp; Ship Supply — all Korea ports (Busan · Ulsan · Yeosu · Pohang · Daesan · Pyeongtaek · Incheon · Donghae)</a></p>
-        <p class="store-pillar-crosslink"><a href="${escapeHtml(`${base}/ship-repair-korea`)}">🛠️ Ship Repair in Korea (Busan · Ulsan · Yeosu focus)</a></p>
+        <p class="store-pillar-crosslink"><a href="${escapeHtml(`${base}/services#ship-repair-korea`)}">🛠️ Ship Repair in Korea (Busan · Ulsan · Yeosu focus)</a></p>
         <p class="footer-note">THE VESSEL CODE — offline-first PMS + SPICS and maritime toolkit for shipboard operations.</p>
       </div>
     </article>
