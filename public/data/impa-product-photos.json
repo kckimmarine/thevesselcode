@@ -1,12 +1,104 @@
 {
-  "version": 1,
+  "version": 2,
   "photos": {
+    "190123": {
+      "file": "190123.webp",
+      "photo_url": "/data/product-photos/190123.webp",
+      "source_name": "Wikimedia Commons — el cajon yacht club",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Leather_work_gloves_wear_progress_2020-09-18_10-42-37_487.jpg",
+      "license": "CC BY 2.0",
+      "disclaimer": "Reference photo for industrial/commercial specification. Actual maritime supply brand/finish may vary.",
+      "credit": "Wikimedia Commons — el cajon yacht club",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Leather_work_gloves_wear_progress_2020-09-18_10-42-37_487.jpg",
+      "fetched_at": "2026-09-21T14:19:05.925Z"
+    },
+    "231016": {
+      "file": "231016.webp",
+      "photo_url": "/data/product-photos/231016.webp",
+      "source_name": "Wikimedia Commons — W.carter",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Steel_wire_rope_on_a_drum.jpg",
+      "license": "CC0 1.0",
+      "disclaimer": "Reference photo for industrial/commercial specification. Actual maritime supply brand/finish may vary.",
+      "credit": "Wikimedia Commons — W.carter",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Steel_wire_rope_on_a_drum.jpg",
+      "fetched_at": "2026-09-21T14:18:33.563Z"
+    },
+    "331197": {
+      "file": "331197.webp",
+      "photo_url": "/data/product-photos/331197.webp",
+      "source_name": "Wikimedia Commons — Jakub Halicki",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Floor_marking_5S_safety_Scanfil_Sieradz.jpg",
+      "license": "CC BY-SA 3.0 PL",
+      "disclaimer": "Reference photo for industrial/commercial specification. Actual maritime supply brand/finish may vary.",
+      "credit": "Wikimedia Commons — Jakub Halicki",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Floor_marking_5S_safety_Scanfil_Sieradz.jpg",
+      "fetched_at": "2026-09-21T14:18:59.287Z"
+    },
     "591150": {
       "file": "591150.webp",
       "credit": "Wikimedia Commons (4/8 indent crimping tool, Rennsteig DigiCrimp MIL)",
       "license": "CC BY-SA 4.0",
       "source_page": "https://commons.wikimedia.org/wiki/File:4-8_indent_crimping_tool_.jpg",
-      "fetched_at": "2026-09-21T13:36:30.730Z"
+      "fetched_at": "2026-09-21T13:36:30.730Z",
+      "photo_url": "/data/product-photos/591150.webp",
+      "source_name": "Wikimedia Commons — Rennsteig DigiCrimp MIL (4/8 indent crimping tool)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:4-8_indent_crimping_tool_.jpg",
+      "disclaimer": "Reference photo for industrial/commercial specification. Actual maritime supply brand/finish may vary."
+    },
+    "614273": {
+      "file": "614273.webp",
+      "photo_url": "/data/product-photos/614273.webp",
+      "source_name": "Wikimedia Commons — Achim Hering",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vic_couplings.jpg",
+      "license": "CC BY 3.0",
+      "disclaimer": "Reference photo for industrial/commercial specification. Actual maritime supply brand/finish may vary.",
+      "credit": "Wikimedia Commons — Achim Hering",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Vic_couplings.jpg",
+      "fetched_at": "2026-09-21T14:19:12.207Z"
+    },
+    "617425": {
+      "file": "617425.webp",
+      "photo_url": "/data/product-photos/617425.webp",
+      "source_name": "Wikimedia Commons — Shaddack",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Barrel_Transfer_or_Drum_Pumps_pic1.JPG",
+      "license": "Public domain",
+      "disclaimer": "Reference photo for industrial/commercial specification. Actual maritime supply brand/finish may vary.",
+      "credit": "Wikimedia Commons — Shaddack",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Barrel_Transfer_or_Drum_Pumps_pic1.JPG",
+      "fetched_at": "2026-09-21T14:18:58.761Z"
+    },
+    "790228": {
+      "file": "790228.webp",
+      "photo_url": "/data/product-photos/790228.webp",
+      "source_name": "Wikimedia Commons — Loadmaster",
+      "source_url": "https://commons.wikimedia.org/wiki/File:LED-E27-Light-Bulb-1134-cropped.jpg",
+      "license": "CC BY-SA 4.0",
+      "disclaimer": "Reference photo for industrial/commercial specification. Actual maritime supply brand/finish may vary.",
+      "credit": "Wikimedia Commons — Loadmaster",
+      "source_page": "https://commons.wikimedia.org/wiki/File:LED-E27-Light-Bulb-1134-cropped.jpg",
+      "fetched_at": "2026-09-21T14:18:40.045Z"
+    },
+    "790669": {
+      "file": "790669.webp",
+      "photo_url": "/data/product-photos/790669.webp",
+      "source_name": "Wikimedia Commons — Petar Milošević",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lamp_with_lit_incandescent_light_bulb_and_black_background.jpg",
+      "license": "CC BY-SA 4.0",
+      "disclaimer": "Reference photo for industrial/commercial specification. Actual maritime supply brand/finish may vary.",
+      "credit": "Wikimedia Commons — Petar Milošević",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lamp_with_lit_incandescent_light_bulb_and_black_background.jpg",
+      "fetched_at": "2026-09-21T14:18:33.756Z"
+    },
+    "812101": {
+      "file": "812101.webp",
+      "photo_url": "/data/product-photos/812101.webp",
+      "source_name": "Wikimedia Commons — Valvesonlyusa03",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bellow_Seal_Gate_Valve.jpg",
+      "license": "CC0 1.0",
+      "disclaimer": "Reference photo for industrial/commercial specification. Actual maritime supply brand/finish may vary.",
+      "credit": "Wikimedia Commons — Valvesonlyusa03",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bellow_Seal_Gate_Valve.jpg",
+      "fetched_at": "2026-09-21T14:18:46.154Z"
     }
   }
 }

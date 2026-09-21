@@ -19,6 +19,9 @@ const OUT_DIR = join(ROOT, 'public', 'data', 'product-photos');
 const INDEX_PATH = join(ROOT, 'public', 'data', 'impa-product-photos.json');
 const MAX_WIDTH = 1200;
 const WEBP_QUALITY = 82;
+const PHOTO_BASE = '/data/product-photos';
+const DEFAULT_DISCLAIMER =
+    'Reference photo for industrial/commercial specification. Actual maritime supply brand/finish may vary.';
 
 function parseArgs(argv) {
     const out = {};
@@ -66,11 +69,18 @@ async function main() {
         if (!index.photos || typeof index.photos !== 'object') index.photos = {};
     }
 
+    const sourceName = String(args['source-name'] || args.source_name || args.credit || '').trim();
+    const sourceUrl = String(args['source-url'] || args['source-page'] || args.source_page || url).trim();
+    index.version = 2;
     index.photos[code] = {
         file: outFile,
-        credit: String(args.credit || '').trim(),
+        photo_url: `${PHOTO_BASE}/${outFile}`,
+        source_name: sourceName,
+        source_url: sourceUrl,
         license: String(args.license || '').trim(),
-        source_page: String(args['source-page'] || args.source_page || url).trim(),
+        disclaimer: String(args.disclaimer || DEFAULT_DISCLAIMER).trim(),
+        credit: sourceName,
+        source_page: sourceUrl,
         fetched_at: new Date().toISOString(),
     };
 

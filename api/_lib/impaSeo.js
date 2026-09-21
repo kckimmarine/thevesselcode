@@ -6,7 +6,7 @@ const { deriveCatalogPlateUrlFromItem, resolvePlateAssetUrl: resolvePlateAssetUr
 const {
     getProductPhotoForCode,
     buildProductPhotoAlt,
-    buildProductPhotoCreditHtml,
+    buildProductPhotoAttributionHtml,
 } = require('./impaProductPhotos');
 
 const CHAPTER_CATEGORY = {
@@ -611,7 +611,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
         ? '🔍 Click / Tap to enlarge reference photo'
         : '🔍 Click / Tap to view high-res full plate';
     const photoCredit = heroImage.kind === 'product'
-        ? buildProductPhotoCreditHtml(heroImage.meta)
+        ? buildProductPhotoAttributionHtml(heroImage.meta)
         : '';
     const plateSection = imageUrl
         ? `<section class="impa-shipserv-photo impa-plate-preview impa-hero-${escapeHtml(heroImage.kind)}" aria-label="${escapeHtml(heroAria)}">

@@ -10,7 +10,26 @@ const INDEX_PATHS = [
 
 const PRODUCT_PHOTO_BASE = '/data/product-photos';
 
+const DEFAULT_DISCLAIMER =
+    'Reference photo for industrial/commercial specification. Actual maritime supply brand/finish may vary.';
+
 let _indexCache = null;
+
+function normalizePhotoEntry(raw) {
+    if (!raw || typeof raw !== 'object') return null;
+    const file = String(raw.file || '').trim();
+    if (!file || /[/\\]/.test(file)) return null;
+    const photoUrl = String(raw.photo_url || '').trim() || `${PRODUCT_PHOTO_BASE}/${file}`;
+    return {
+        ...raw,
+        file,
+        photo_url: photoUrl,
+        source_name: String(raw.source_name || raw.credit || '').trim(),
+        source_url: String(raw.source_url || raw.source_page || '').trim(),
+        license: String(raw.license || '').trim(),
+        disclaimer: String(raw.disclaimer || DEFAULT_DISCLAIMER).trim(),
+    };
+}
 
 function normalizeCode(value) {
     return String(value || '').trim().replace(/\D/g, '').padStart(6, '0').slice(-6);
@@ -39,12 +58,10 @@ function loadProductPhotoIndex() {
 function getProductPhotoForCode(impaCode) {
     const code = normalizeCode(impaCode);
     if (!code || code === '000000') return null;
-    const entry = loadProductPhotoIndex().photos[code];
-    if (!entry || typeof entry !== 'object') return null;
-    const file = String(entry.file || '').trim();
-    if (!file || /[/\\]/.test(file)) return null;
+    const entry = normalizePhotoEntry(loadProductPhotoIndex().photos[code]);
+    if (!entry) return null;
     return {
-        url: `${PRODUCT_PHOTO_BASE}/${file}`,
+        url: entry.photo_url,
         meta: entry,
     };
 }
@@ -69,29 +86,46 @@ function escapeText(value) {
         .replace(/>/g, '&gt;');
 }
 
-function buildProductPhotoCreditHtml(meta) {
-    if (!meta || typeof meta !== 'object') return '';
+function buildProductPhotoAttributionHtml(meta) {
+    const entry = normalizePhotoEntry(meta);
+    if (!entry) return '';
+
     const parts = [];
-    const credit = String(meta.credit || meta.author || '').trim();
-    const license = String(meta.license || '').trim();
-    const sourcePage = String(meta.source_page || meta.source_url || '').trim();
-    if (credit) parts.push(escapeText(credit));
-    if (license) parts.push(escapeText(license));
-    let inner = parts.join(' · ');
-    if (sourcePage) {
-        const href = escapeAttr(sourcePage);
-        inner = inner
-            ? `${inner} · <a href="${href}" rel="noopener noreferrer" target="_blank">Source</a>`
+    if (entry.source_name) parts.push(escapeText(entry.source_name));
+    let creditLine = parts.join(' · ');
+    if (entry.source_url) {
+        const href = escapeAttr(entry.source_url);
+        creditLine = creditLine
+            ? `${creditLine} · <a href="${href}" rel="noopener noreferrer" target="_blank">Source</a>`
             : `<a href="${href}" rel="noopener noreferrer" target="_blank">Image source</a>`;
     }
-    if (!inner) return '';
-    return `<p class="impa-product-photo-credit">${inner}</p>`;
+
+    const licenseBadge = entry.license
+        ? `<span class="impa-photo-license-badge">${escapeText(entry.license)}</span>`
+        : '';
+
+    const disclaimer = escapeText(entry.disclaimer || DEFAULT_DISCLAIMER);
+
+    return `
+            <div class="impa-product-photo-attribution" role="note">
+                ${licenseBadge}
+                ${creditLine ? `<p class="impa-product-photo-credit">${creditLine}</p>` : ''}
+                <p class="impa-product-photo-disclaimer">${disclaimer}</p>
+            </div>`;
+}
+
+/** @deprecated use buildProductPhotoAttributionHtml */
+function buildProductPhotoCreditHtml(meta) {
+    return buildProductPhotoAttributionHtml(meta);
 }
 
 module.exports = {
     PRODUCT_PHOTO_BASE,
+    DEFAULT_DISCLAIMER,
     loadProductPhotoIndex,
+    normalizePhotoEntry,
     getProductPhotoForCode,
     buildProductPhotoAlt,
+    buildProductPhotoAttributionHtml,
     buildProductPhotoCreditHtml,
 };
