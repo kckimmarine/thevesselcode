@@ -31,8 +31,8 @@
             ko: 'TVC-SM · © 2026 K-TECH. All rights reserved.',
         },
         'footer.signature': {
-            en: 'The Vessel Code is an engineering commons and fleet operating architecture designed by Mr. Kyoung-Chul, Kim (1st Class Marine Engineer License / Chief Engineer / Superintendent).',
-            ko: 'The Vessel Code는 1급 기관사 면허·기관장·공무감독 김경철(Kyoung-Chul, Kim)이 설계한 엔지니어링 커먼즈 및 선대 운영 아키텍처입니다.',
+            en: 'The Vessel Code is an engineering commons and fleet operating architecture designed by (1st Class Marine Engineer License / Chief Engineer / Superintendent).',
+            ko: 'The Vessel Code는 (1급 기관사 면허 / 기관장 / 공무감독) 자격을 바탕으로 설계한 엔지니어링 커먼즈 및 선대 운영 아키텍처입니다.',
         },
 
         'home.meta.description': {
