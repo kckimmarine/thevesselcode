@@ -892,13 +892,7 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     display: none !important;
 }
 
-/* Maritime Toolkit public modal — never show legacy PMS plate viewer */
-.impa-detail-modal-public #impaDetailPmsLayout,
-.impa-detail-modal-public .impa-detail-plate-section {
-    display: none !important;
-}
-
-/* Maritime Toolkit — ShipServ-style centered IMPA detail modal */
+/* Maritime Toolkit public modal — store detail card only (no PMS plate shell) */
 .impa-detail-modal-public {
     position: fixed;
     inset: 0;
@@ -946,8 +940,12 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     min-height: 140px;
 }
 
-.impa-detail-modal-public .impa-detail-pms-scroll {
-    display: none !important;
+.impa-detail-modal-public #impaStoreDetailHost {
+    max-height: 85vh;
+    max-height: 85dvh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
 }
 
 .impa-detail-modal-public #modalCloseBtn {
@@ -960,24 +958,6 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     color: #fff;
     border: 1px solid #334155;
     font-size: 18px;
-}
-
-.impa-detail-modal-public .impa-shipserv-layout.impa-store-detail {
-    max-height: 85vh;
-    max-height: 85dvh;
-    overflow-y: auto;
-}
-
-.impa-detail-modal-public .modal-body,
-.impa-detail-modal-public .impa-detail-scroll {
-    flex: 1 1 auto;
-    min-height: 0;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
-    touch-action: pan-y;
-    padding: 20px;
-    background: #0f172a;
 }
 
 .impa-shipserv-photo:not(.impa-plate-preview) {

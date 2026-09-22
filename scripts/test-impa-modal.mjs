@@ -22,7 +22,7 @@ async function openStoreModal(page) {
   await page.locator('.store-code-link').first().waitFor({ state: 'visible', timeout: 30_000 });
   await page.locator('.store-code-link').first().click();
   await page.locator('#impaDetailModal').waitFor({ state: 'visible', timeout: 5_000 });
-  await page.locator('#impaDetailShipservLayout').waitFor({ state: 'visible', timeout: 5_000 });
+  await page.locator('#impaStoreDetailHost').waitFor({ state: 'visible', timeout: 5_000 });
 }
 
 async function isModalHidden(page) {
@@ -38,7 +38,7 @@ async function main() {
     await openStoreModal(page);
     results.push({
       check: 'shipserv layout visible',
-      ok: await page.locator('#impaDetailShipservLayout').isVisible(),
+      ok: await page.locator('#impaStoreDetailHost').isVisible(),
     });
 
     const closeBtn = page.locator('#modalCloseBtn');
