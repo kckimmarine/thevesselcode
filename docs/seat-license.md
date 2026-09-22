@@ -1,5 +1,7 @@
 # Seat license (1 PC / vessel install)
 
+**Commercial tiers:** [`PRICING-TIERS-V1.md`](PRICING-TIERS-V1.md) — Basic / Pro / Fleet per-vessel pricing, 30-day trial → 3-month pilot → 12-month production seats.
+
 Packaged TVC-PMS setups do **not** include a runnable `license.json`. After install, the app opens the activation gate until TVC issues a **seat license** bound to that PC’s machine ID.
 
 **Exception:** **`ADMIN_TVC` (Admin Mode)** — no seat license. Install and run with login `tvc` / `0000` only.
@@ -41,7 +43,9 @@ node scripts/issue-license.mjs --request machine-request.json --out license.json
 
 **Expired:** App shows license expired; no Master/History wipe — only re-import a valid seat.
 
-Track in TVC ledger: company, PC, SKU, machineId, issued, expires, months, paid (Y/N).
+Track in TVC ledger: company, PC, SKU, **license tier (Basic/Pro/Fleet)**, machineId, issued, expires, months, paid (Y/N).
+
+See [`PRICING-TIERS-V1.md`](PRICING-TIERS-V1.md) for tier ↔ feature mapping.
 
 ## Rules
 

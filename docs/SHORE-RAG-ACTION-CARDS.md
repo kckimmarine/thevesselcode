@@ -1,7 +1,7 @@
 # Shore-HQ Vault RAG & Action Card Packaging
 
 **Status:** Architecture specification (Phase 1 — docs + contract)  
-**Related:** [`SYNC-ENVELOPE-V2.md`](SYNC-ENVELOPE-V2.md), [`VESSEL-ARCHETYPE-V0.md`](VESSEL-ARCHETYPE-V0.md), [`data-scope-policy.md`](data-scope-policy.md)
+**Related:** [`SYNC-ENVELOPE-V2.md`](SYNC-ENVELOPE-V2.md), [`VESSEL-ARCHETYPE-V0.md`](VESSEL-ARCHETYPE-V0.md), [`data-scope-policy.md`](data-scope-policy.md), [`PRICING-TIERS-V1.md`](PRICING-TIERS-V1.md) (Pro+ tier)
 
 ---
 
