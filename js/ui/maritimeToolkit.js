@@ -48,6 +48,18 @@ const TVC_MaritimeToolkit = (function () {
         { category: 'Hydraulic Oil', grade: 'ISO VG 46', shell: 'Tellus S2 M 46', mobil: 'Mobil DTE 10 Excel 46', castrol: 'Hyspin AWS 46', total: 'Azolla ZS 46' },
         { category: 'Hydraulic Oil', grade: 'ISO VG 68', shell: 'Tellus S2 M 68', mobil: 'Mobil DTE 10 Excel 68', castrol: 'Hyspin AWS 68', total: 'Azolla ZS 68' },
         { category: 'Hydraulic Oil', grade: 'ISO VG 100', shell: 'Tellus S2 M 100', mobil: 'Mobil DTE 10 Excel 100', castrol: 'Hyspin AWS 100', total: 'Azolla ZS 100' },
+        { category: 'Cylinder Oil', grade: '40BN', shell: 'Alexia 40', mobil: 'Mobil Gard 540', castrol: 'Cleeton 40', total: 'Disola A 30' },
+        { category: 'Cylinder Oil', grade: '50BN', shell: 'Alexia 50', mobil: 'Mobil Gard 560', castrol: 'Cleeton 50', total: 'Disola A 40' },
+        { category: 'Cylinder Oil', grade: '120BN', shell: 'Alexia 120', mobil: 'Mobil Gard 620', castrol: 'Cleeton 120', total: 'Disola A 80' },
+        { category: 'Trunk Piston Oil', grade: '30BN', shell: 'Gadinia 30', mobil: 'Mobil Delvac 1300', castrol: 'Cyltech 30', total: 'Aurelia X 300' },
+        { category: 'Trunk Piston Oil', grade: '60BN', shell: 'Gadinia 60', mobil: 'Mobil Delvac 1 SHC', castrol: 'Cyltech 60', total: 'Aurelia X 600' },
+        { category: 'Trunk Piston Oil', grade: '70BN', shell: 'Gadinia 70', mobil: 'Mobil Delvac 1 SHC', castrol: 'Cyltech 70', total: 'Aurelia X 700' },
+        { category: 'System Oil', grade: 'SAE 20', shell: 'Gadinia 20', mobil: 'Mobil Delvac 1220', castrol: 'Cyltech 20', total: 'Aurelia X 200' },
+        { category: 'System Oil', grade: 'TPEO 30', shell: 'Argina S3 30', mobil: 'Mobilgard ADL 30', castrol: 'Cyltech TPEO 30', total: 'Aurelia TI 3030' },
+        { category: 'System Oil', grade: 'TPEO 40', shell: 'Argina S3 40', mobil: 'Mobilgard ADL 40', castrol: 'Cyltech TPEO 40', total: 'Aurelia TI 3040' },
+        { category: 'Hydraulic Oil', grade: 'ISO VG 22', shell: 'Tellus S2 M 22', mobil: 'Mobil DTE 10 Excel 22', castrol: 'Hyspin AWS 22', total: 'Azolla ZS 22' },
+        { category: 'Hydraulic Oil', grade: 'ISO VG 32 EP', shell: 'Tellus S2 MX 32', mobil: 'Mobil DTE 25', castrol: 'Hyspin AWS 32', total: 'Azolla ZS 32' },
+        { category: 'Hydraulic Oil', grade: 'ISO VG 46 EP', shell: 'Tellus S2 MX 46', mobil: 'Mobil DTE 26', castrol: 'Hyspin AWS 46', total: 'Azolla ZS 46' },
     ];
 
     const CIC_ROWS = [
@@ -67,6 +79,13 @@ const TVC_MaritimeToolkit = (function () {
         { type: 'Epoxy Primer', product: 'Pure Epoxy', chugoku: 'Epicon B-13', jotun: 'Barrier 77', hempel: 'Hempadur 15553', ip: 'Intershield 300' },
         { type: 'Epoxy Primer', product: 'High-Build Epoxy', chugoku: 'Epicon HB', jotun: 'Barrier 80', hempel: 'Hempadur 17240', ip: 'Intershield 803' },
         { type: 'Epoxy Primer', product: 'Tank Coating', chugoku: 'Tankguard 100', jotun: 'Tankguard Storage', hempel: 'Hempadur Mastic 45880', ip: 'Interline 984' },
+        { type: 'Zinc Silicate', product: 'Ethyl Silicate', chugoku: 'Zinc Rich Primer', jotun: 'Barrier SmartPack', hempel: 'Hempadur Zinc 17360', ip: 'Interzinc 52' },
+        { type: 'Zinc Silicate', product: 'Waterborne ZS', chugoku: 'SeaGrandfather ZS', jotun: 'Tankguard Zinc', hempel: 'Hempadur Zinc 85530', ip: 'Interzinc 22' },
+        { type: 'Polyurethane Topcoat', product: 'Gloss White', chugoku: 'Marine Alkyd Gloss', jotun: 'Hardtop AX', hempel: 'Hempel\'s Classic', ip: 'Interthane 990' },
+        { type: 'Polyurethane Topcoat', product: 'Gloss Grey', chugoku: 'Marine Alkyd Grey', jotun: 'Hardtop XP', hempel: 'Hempathane 55210', ip: 'Interthane 878' },
+        { type: 'Polyurethane Topcoat', product: 'Satin', chugoku: 'Marine Satin', jotun: 'Pilot II Topcoat', hempel: 'Hempathane 45530', ip: 'Interthane 870' },
+        { type: 'Antifouling (A/F)', product: 'Hard A/F', chugoku: 'SeaGrandfather 500', jotun: 'SeaForce 30', hempel: 'Olympic+', ip: 'Interspeed 663' },
+        { type: 'Anticorrosive (A/C)', product: 'Epoxy A/C', chugoku: 'Epicon A/C', jotun: 'Penguard Express', hempel: 'Hempadur 45143', ip: 'Intergard 269' },
     ];
 
     let _activeTool = 'catalog';
