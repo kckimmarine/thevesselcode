@@ -100,6 +100,7 @@
     "setup-online-sync": "node scripts/setup-online-sync-auto.mjs",
     "setup-supabase-ingest": "node scripts/setup-supabase-ingest.mjs",
     "verify-sync-ingest": "node scripts/verify-sync-ingest.mjs",
+    "verify-sync-envelope-v2": "node scripts/verify-sync-envelope-v2.mjs",
     "verify-sync-cloud": "node scripts/verify-sync-cloud-api.mjs",
     "verify-sync-cloud-restore": "node scripts/verify-sync-cloud-restore.mjs",
     "purge-vessel-sync": "node scripts/purge-vessel-sync-data.mjs",

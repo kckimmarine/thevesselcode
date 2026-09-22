@@ -510,14 +510,16 @@ const TVC_Sync = (function () {
         };
 
         const zip = new JSZip();
-        let exportPayload = payload;
+        let exportDocument = payload;
+        let innerPayload = payload;
         if (typeof TVC_DataExchangeService !== 'undefined') {
             const packed = await TVC_DataExchangeService.exportDataPackage(zip, payload, opts);
-            exportPayload = packed.payload;
+            exportDocument = packed.payload;
+            innerPayload = packed.innerPayload || payload;
         } else {
             zip.file('tvc_sync.json', JSON.stringify(payload, null, 2));
         }
-        zip.file('tvc_station_export.json', JSON.stringify(exportPayload, null, 2));
+        zip.file('tvc_station_export.json', JSON.stringify(exportDocument, null, 2));
         zip.file('README.txt', opts.caseReview
             ? `TVC-PMS Case Report\nVessel: ${vesselId}\nDept: ${dept}\nDate: ${payload.export_meta.export_date}\nDirection: ${direction}\nIncludes W/M/D/P/C for ${hubRelayHqReply ? 'Station (HQ approval reply)' : 'Company period review'}.`
             : `TVC-PMS Sync Package\nVessel: ${vesselId}\nDept: ${dept}\nDate: ${payload.export_meta.export_date}\nDirection: ${direction}`);
@@ -561,7 +563,8 @@ const TVC_Sync = (function () {
         return {
             blob,
             filename,
-            payload: exportPayload,
+            payload: innerPayload,
+            envelope: exportDocument,
             delta,
             record_count: recordCount,
             vessel_id: vesselId,
@@ -699,7 +702,17 @@ const TVC_Sync = (function () {
         const jsonFile = zip.file('tvc_sync.json');
         if (!jsonFile) throw new Error('tvc_sync.json not found in zip');
 
-        const payload = JSON.parse(await jsonFile.async('string'));
+        const payloadRaw = JSON.parse(await jsonFile.async('string'));
+        let payload = payloadRaw;
+        if (typeof TVC_DataExchangeService !== 'undefined' && TVC_DataExchangeService.verifyEnvelopeForImport) {
+            const preVerify = await TVC_DataExchangeService.verifyEnvelopeForImport(payloadRaw, {});
+            if (!preVerify.ok) {
+                const err = new Error(preVerify.message || 'Sync envelope verification failed');
+                err.code = preVerify.code || 'ERR_TAMPERED_PACKAGE';
+                await failImport(err);
+            }
+            if (preVerify.payload) payload = preVerify.payload;
+        }
         const fileDept = payload.export_meta?.department;
         const fileDirection = payload.export_meta?.direction;
 
@@ -1152,16 +1165,16 @@ const TVC_Sync = (function () {
         };
 
         const zip = new JSZip();
-        let exportPayload = payload;
+        let exportDocument = payload;
         if (typeof TVC_DataExchangeService !== 'undefined') {
             const packed = await TVC_DataExchangeService.exportDataPackage(zip, payload, {
                 packageType: 'COMPANY_REPORT',
             });
-            exportPayload = packed.payload;
+            exportDocument = packed.payload;
         } else {
             zip.file('tvc_sync.json', JSON.stringify(payload, null, 2));
         }
-        zip.file('tvc_company_report.json', JSON.stringify(exportPayload, null, 2));
+        zip.file('tvc_company_report.json', JSON.stringify(exportDocument, null, 2));
         zip.file('README.txt', `TVC-PMS Company Report Package\nVessel: ${vesselId}\nDate: ${payload.export_meta.export_date}\nDirection: SHIP_TO_SM`);
 
         const filename = `${vesselId}_COMPANY_REPORT_${exportDate}.zip`;
