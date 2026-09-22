@@ -1777,7 +1777,7 @@ body.tvc-brain-open {
 /* ── Home hero: Chevron-style ocean photo + intelligence band ── */
 :root {
     --home-ocean-hero-height: clamp(480px, 62vh, 680px);
-    --home-ocean-hero-focal-y: 50%;
+    --home-ocean-hero-focal-y: 46%;
 }
 
 body.home-page #hero.hero-ocean-chevron {
@@ -1796,6 +1796,9 @@ body.home-page #hero.hero-ocean-chevron .home-hero-ocean-backdrop {
     height: var(--home-ocean-hero-height);
     z-index: 0;
     background-color: #1e4a7a;
+    background-image:
+        linear-gradient(180deg, rgba(0, 32, 64, 0.52) 0%, rgba(0, 40, 80, 0.14) 42%, rgba(0, 35, 70, 0.42) 100%),
+        url('/assets/images/home-ocean-hero-horizon.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center var(--home-ocean-hero-focal-y);
