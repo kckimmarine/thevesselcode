@@ -12,13 +12,16 @@ const require = createRequire(import.meta.url);
 const HIGH_INTENT = [
     '231016', '790669', '790228', '812101', '617425', '331197', '190123', '614273',
 ];
+const TRACK_A_BATCH2 = [
+    '812102', '812103', '591151', '591152', '231011', '232001', '790101', '617426',
+];
 const BATCH2 = [
     '812102', '812103', '812104', '812105', '812121', '812122', '750231', '750232',
     '590601', '590602', '590711', '590712', '330101', '330102', '330465', '330851',
     '232431', '232432', '232436', '210101', '210102', '231011', '231012',
     '614576', '614577', '617426', '790668', '790670', '790227', '790229',
 ];
-const ALL_REGISTERED = [...HIGH_INTENT, '591150', ...BATCH2];
+const ALL_REGISTERED = [...HIGH_INTENT, ...TRACK_A_BATCH2, '591150', ...BATCH2];
 
 const { resolvePlateAssetUrl } = require('../api/_lib/plateAssetUrl.js');
 const impaSeo = require('../api/_lib/impaSeo.js');
@@ -45,6 +48,11 @@ check(
 
 check('index version 2', index.version === 2, String(index.version));
 check('batch2 count in index', BATCH2.every((c) => index.photos?.[c]), String(BATCH2.length));
+check(
+    'track A batch2 high-intent photos',
+    TRACK_A_BATCH2.every((c) => index.photos?.[c]?.photo_url),
+    TRACK_A_BATCH2.join(','),
+);
 
 for (const code of ALL_REGISTERED) {
     const product = getProductPhotoForCode(code);
