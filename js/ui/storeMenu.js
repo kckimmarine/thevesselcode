@@ -81,15 +81,12 @@ const TVC_StoreMenu = (function () {
 
     function ensureImpaDetailModal() {
         const existing = document.getElementById('impaDetailModal');
-        if (existing && (!existing.querySelector('.impa-detail-plate-viewport')
+        if (existing && (!existing.querySelector('#impaDetailStoreBody')
+            || !existing.querySelector('#impaDetailRfqLeadHost')
             || !existing.querySelector('#impaDetailShipservLayout')
             || !existing.querySelector('#modalCloseBtn')
-            || !existing.querySelector('.modal-body')
             || !existing.querySelector('#impaDetailConversionAction')
             || !existing.querySelector('#impaDetailTrustHeader')
-            || !existing.querySelector('#impaDetailStockSla')
-            || !existing.querySelector('#impaDetailTurnkeyHub')
-            || !existing.querySelector('#impaDetailInstallFunnel')
             || !existing.querySelector('#impaDetailTotalServiceBar'))) {
             existing.remove();
             _modalReady = false;
@@ -101,61 +98,43 @@ const TVC_StoreMenu = (function () {
         wrap.id = 'impaDetailModal';
         wrap.className = 'modal hidden impa-detail-modal';
         wrap.innerHTML = `
-            <div class="modal-box impa-detail-box impa-modal-container modal-card" role="dialog" aria-modal="true" aria-labelledby="impaDetailProductTitle">
-                <header class="impa-detail-head">
-                    <div class="impa-detail-head-main">
-                        <span class="impa-detail-badge" id="impaDetailBadge">IMPA</span>
-                        <h2 class="impa-detail-title" id="impaDetailTitle">—</h2>
-                    </div>
-                    <button type="button" id="modalCloseBtn" class="impa-detail-close-btn impa-detail-close-float" aria-label="Close">✕</button>
-                </header>
-                <div class="modal-body impa-detail-scroll">
-                    <div id="impaDetailShipservLayout" class="impa-shipserv-layout hidden" aria-label="IMPA product details">
+            <div class="modal-box impa-store-detail-card impa-modal-container modal-card" role="dialog" aria-modal="true" aria-labelledby="impaDetailProductTitle">
+                <button type="button" id="modalCloseBtn" class="impa-detail-close-btn impa-detail-close-float" aria-label="Close">✕</button>
+                <div id="impaDetailShipservLayout" class="impa-store-detail impa-shipserv-layout hidden" aria-label="IMPA product details">
+                    <header class="impa-store-detail-head">
+                        <div class="impa-store-detail-head-main">
+                            <span class="impa-detail-unified-badge" id="impaDetailBadge">IMPA</span>
+                            <h1 class="impa-detail-unified-title" id="impaDetailProductTitle">—</h1>
+                            <div id="impaDetailTrustHeader" aria-label="Trust and verification"></div>
+                        </div>
+                    </header>
+                    <div id="impaDetailStoreBody" class="impa-store-detail-body">
+                        <div id="impaDetailRfqLeadHost"></div>
                         <div class="impa-shipserv-photo impa-plate-preview" id="impaDetailProductPhoto">
-                            <img id="impaDetailProductImg" class="impa-shipserv-photo-img" alt="" hidden>
+                            <img id="impaDetailProductImg" class="impa-shipserv-photo-img impa-store-plate-img" alt="" hidden>
                             <div id="impaDetailProductFallback" class="impa-shipserv-photo-fallback" hidden></div>
                             <span class="impa-plate-zoom-hint" id="impaDetailPlateZoomHint" hidden>🔍 Click / Tap to enlarge reference photo</span>
                         </div>
                         <div id="impaDetailProductAttribution" class="impa-product-photo-attribution-host" hidden aria-live="polite"></div>
-                        <h2 class="impa-shipserv-title impa-shipserv-title-duplicate" id="impaDetailProductTitle">—</h2>
-                        <div class="impa-detail-trust-header" id="impaDetailTrustHeader" aria-label="Trust and verification">
-                            <span class="impa-trust-badge impa-trust-badge-hot hidden" id="impaDetailBadgeTop">🔥 Top Requisitioned Item</span>
-                            <span class="impa-trust-badge impa-trust-badge-verified">✓ Verified by 1st Class Marine Engineer</span>
-                        </div>
-                        <p class="impa-shipserv-dims" id="impaDetailProductDims"></p>
-                        <div class="impa-stock-sla-card" id="impaDetailStockSla" aria-label="Stock and delivery">
-                            <div class="impa-stock-sla-col impa-stock-col">🟢 In Stock (Busan Hub / Singapore Transit Ready)</div>
-                            <div class="impa-stock-sla-col impa-sla-col">⚡ 24~48h Port-side Delivery &amp; Bonded Transit</div>
-                        </div>
-                        <div class="impa-shipserv-spec-wrap">
-                            <table class="impa-shipserv-spec-table">
-                                <tbody id="impaDetailShipservSpec"></tbody>
-                            </table>
-                        </div>
+                        <div id="impaDetailStockSlaHost"></div>
+                        <section aria-label="Specifications">
+                            <div class="impa-shipserv-spec-wrap">
+                                <table class="impa-shipserv-spec-table spec-table">
+                                    <tbody id="impaDetailShipservSpec"></tbody>
+                                </table>
+                            </div>
+                        </section>
                         <div id="impaDetailTotalServiceBar" class="impa-detail-total-service-host" aria-label="Total marine care suite"></div>
                         <div id="impaDetailStoreBridgeCta" class="impa-detail-store-bridge-host"></div>
                         <div id="impaDetailInstallFunnel" class="impa-detail-install-funnel-host" aria-label="Turnkey installation funnel"></div>
                         <div id="impaDetailTurnkeyHub" class="impa-detail-turnkey-host" aria-label="Turnkey port services"></div>
-                        <section class="impa-shipserv-desc" aria-label="Description and use">
-                            <h3 class="impa-shipserv-desc-title">Description / Use</h3>
-                            <p class="impa-shipserv-desc-text" id="impaDetailProductDesc"></p>
-                        </section>
-                        <div id="impaDetailPublicTvcSm" class="impa-detail-tvc-sm" aria-hidden="true"></div>
+                        <div id="impaDetailConversionAction" class="impa-detail-commerce-block" aria-label="Pricing and supply inquiry"></div>
                         <div class="impa-detail-actions">
-                            <button type="button" class="impa-detail-share-btn" id="impaDetailShareBtn">📋 Share Spec Link</button>
+                            <button type="button" class="impa-detail-share-btn btn-share-spec" id="impaDetailShareBtn">📋 Share Spec Link</button>
                         </div>
-                        <div id="impaDetailConversionAction" class="modal-conversion-action impa-detail-commerce-block" aria-label="Pricing and supply inquiry">
-                            <div class="modal-conversion-action-copy">
-                                <div class="modal-conversion-action-title">Need Pricing or Supply for this Item?</div>
-                                <div class="modal-conversion-action-sub">Direct dispatch to verified supply partners (Busan / Singapore / Global).</div>
-                            </div>
-                            <div class="modal-conversion-action-btns impa-detail-commerce-actions">
-                                <button type="button" id="btn-modal-rfq" class="btn-action-rfq">📋 1-Click Fast RFQ</button>
-                                <a id="btn-modal-wa" href="https://wa.me/821038894291?text=Hello%20TVC%2C%20inquiring%20about%20IMPA" target="_blank" rel="noopener noreferrer" class="btn-action-wa">💬 Instant Quote via WhatsApp</a>
-                            </div>
-                        </div>
-                        <div class="impa-detail-plg-lock" id="impaDetailPlgLock" aria-label="TVC-SM fleet features"></div>
                     </div>
+                </div>
+                <div class="modal-body impa-detail-scroll impa-detail-pms-scroll">
                     <div id="impaDetailPmsLayout" class="impa-detail-pms-layout">
                     <section class="impa-detail-plate-section" aria-label="Catalog plate viewer">
                         <div class="impa-detail-plate-toolbar">
@@ -235,7 +214,7 @@ const TVC_StoreMenu = (function () {
         wrap.querySelectorAll('.impa-detail-close-bottom').forEach(btn => {
             btn.addEventListener('click', closeImpaDetailModal);
         });
-        wrap.querySelector('.impa-modal-container, .impa-detail-box')?.addEventListener('click', e => e.stopPropagation());
+        wrap.querySelector('.impa-modal-container, .impa-store-detail-card')?.addEventListener('click', e => e.stopPropagation());
         wrap.querySelector('#impaDetailCartBtn')?.addEventListener('click', onAddToCart);
         wrap.querySelector('#impaDetailZoomBtn')?.addEventListener('click', openPlateFullscreen);
 
@@ -293,7 +272,7 @@ const TVC_StoreMenu = (function () {
         const bottomClose = document.querySelector('#impaDetailModal .impa-detail-close-bottom');
         const shipservLayout = document.getElementById('impaDetailShipservLayout');
         const pmsLayout = document.getElementById('impaDetailPmsLayout');
-        const headerTitle = document.getElementById('impaDetailTitle');
+        const pmsScroll = document.querySelector('#impaDetailModal .impa-detail-pms-scroll');
         if (_publicMode) {
             rob?.classList.add('hidden');
             cart?.classList.add('hidden');
@@ -302,7 +281,7 @@ const TVC_StoreMenu = (function () {
             bottomClose?.classList.add('hidden');
             shipservLayout?.classList.remove('hidden');
             pmsLayout?.classList.add('hidden');
-            headerTitle?.classList.remove('hidden');
+            pmsScroll?.classList.add('hidden');
             document.getElementById('impaDetailModal')?.classList.add('impa-detail-modal-public');
         } else {
             rob?.classList.remove('hidden');
@@ -312,9 +291,16 @@ const TVC_StoreMenu = (function () {
             bottomClose?.classList.remove('hidden');
             shipservLayout?.classList.add('hidden');
             pmsLayout?.classList.remove('hidden');
-            headerTitle?.classList.remove('hidden');
+            pmsScroll?.classList.remove('hidden');
             document.getElementById('impaDetailModal')?.classList.remove('impa-detail-modal-public');
         }
+    }
+
+    function resolvePublicDetailReturnUrl() {
+        const params = new URLSearchParams(window.location.search);
+        params.delete('impa');
+        const qs = params.toString();
+        return qs ? `/toolkit?${qs}` : '/toolkit';
     }
 
     function setPublicMode(enabled) {
@@ -753,7 +739,7 @@ const TVC_StoreMenu = (function () {
         const qty = qtyInput?.value || '1';
         if (typeof TVC_ImpaDetailShared !== 'undefined') {
             TVC_ImpaDetailShared.bindCommerceActions(
-                document.getElementById('impaDetailShipservLayout'),
+                document.getElementById('impaDetailStoreBody') || document.getElementById('impaDetailShipservLayout'),
                 { impa_code: code, name: cleanTitle }
             );
             const wa = document.getElementById('btn-modal-wa');
@@ -769,27 +755,15 @@ const TVC_StoreMenu = (function () {
 
     function populateShipservDetail(item) {
         const code = item.impa_code || item.code || '';
-        const badge = document.getElementById('impaDetailBadge');
-        const title = document.getElementById('impaDetailProductTitle');
-        const dimsEl = document.getElementById('impaDetailProductDims');
-        const specBody = document.getElementById('impaDetailShipservSpec');
-        const desc = document.getElementById('impaDetailProductDesc');
-        const cleanTitle = cleanProductTitle(item);
-        if (badge) badge.textContent = code ? `IMPA ${code}` : 'IMPA';
-        if (title) title.textContent = cleanTitle;
-        const headerTitle = document.getElementById('impaDetailTitle');
-        if (headerTitle) headerTitle.textContent = cleanTitle;
-        const tvcHost = document.getElementById('impaDetailPublicTvcSm');
-        if (tvcHost) {
-            tvcHost.innerHTML = publicTvcSmBannerHtml();
-            tvcHost.removeAttribute('aria-hidden');
+        const cleanTitle = typeof TVC_ImpaStoreDetailLayout !== 'undefined'
+            ? TVC_ImpaStoreDetailLayout.cleanProductTitle(item)
+            : cleanProductTitle(item);
+        const layoutRoot = document.getElementById('impaDetailShipservLayout');
+        if (typeof TVC_ImpaStoreDetailLayout !== 'undefined' && layoutRoot) {
+            TVC_ImpaStoreDetailLayout.populateStoreDetailCard(layoutRoot, item, {
+                includeStickyLead: false,
+            });
         }
-        const dims = extractDimensions(item);
-        if (dimsEl) {
-            dimsEl.textContent = dims;
-            dimsEl.classList.toggle('hidden', !dims);
-        }
-        if (specBody) specBody.innerHTML = shipservSpecRows(item);
         const funnelCtx = { impaCode: code, itemName: cleanTitle };
         const totalServiceHost = document.getElementById('impaDetailTotalServiceBar');
         if (totalServiceHost && typeof TVC_TotalServiceBar !== 'undefined') {
@@ -817,13 +791,6 @@ const TVC_StoreMenu = (function () {
             TVC_TurnkeyPortHub.mountTurnkeyHost(turnkeyHost, funnelCtx);
         } else if (turnkeyHost) {
             turnkeyHost.innerHTML = '';
-        }
-        if (desc) desc.textContent = buildProductDescription(item);
-        const plgHost = document.getElementById('impaDetailPlgLock');
-        if (plgHost) {
-            plgHost.innerHTML = `
-                <a class="mkt-plg-lock" href="/contact-us?inquiry=tvc-sm-demo">🔒 Check Vessel ROB — Available with TVC-SM Fleet Subscription</a>
-                <a class="mkt-plg-lock" href="/contact-us?inquiry=tvc-sm-demo">🔒 1-Click Fleet Requisition — Available with TVC-SM Fleet Subscription</a>`;
         }
         updateImpaConversionLinks(item);
     }
@@ -910,7 +877,7 @@ const TVC_StoreMenu = (function () {
 
         const modal = document.getElementById('impaDetailModal');
         const badge = document.getElementById('impaDetailBadge');
-        const title = document.getElementById('impaDetailTitle');
+        const title = document.getElementById('impaDetailProductTitle');
         const specBody = document.getElementById('impaDetailSpecBody');
         const robValue = document.getElementById('impaDetailRobValue');
         const qtyInput = document.getElementById('impaDetailQty');
@@ -934,7 +901,7 @@ const TVC_StoreMenu = (function () {
         document.body.style.overflow = 'hidden';
         if (_publicMode) {
             const code = item.impa_code || item.code;
-            _detailReturnUrl = `${window.location.pathname}${window.location.search}`;
+            _detailReturnUrl = resolvePublicDetailReturnUrl();
             if (code) {
                 try {
                     window.history.pushState({ impaDetail: code }, '', `/store/${code}`);

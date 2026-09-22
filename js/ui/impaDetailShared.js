@@ -423,5 +423,8 @@ const TVC_ImpaDetailShared = (function () {
         initStandalonePage,
         openStandaloneLightbox,
         closeStandaloneLightbox,
+        populateStoreDetailCard: (root, item, options) => (
+            globalThis.TVC_ImpaStoreDetailLayout?.populateStoreDetailCard(root, item, options)
+        ),
     };
 })();
