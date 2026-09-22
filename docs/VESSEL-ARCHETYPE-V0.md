@@ -169,6 +169,7 @@ vessel archetypes data OK
 - Additional archetypes (general cargo, chemical, LNG)
 - Owner-approved Class job CSV import overlay
 - HQ-side archetype versioning + signed template bundles (see [`SYNC-ENVELOPE-V2.md`](SYNC-ENVELOPE-V2.md))
+- Shore Vault RAG → **Action Cards** on ship (see [`SHORE-RAG-ACTION-CARDS.md`](SHORE-RAG-ACTION-CARDS.md))
 
 ---
 

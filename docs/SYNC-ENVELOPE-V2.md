@@ -66,10 +66,25 @@ Legacy packages (flat `tvc_sync.json` with optional v1 `compliance.package_hash_
     "maintenance_jobs": [],
     "daily_work_reports": [],
     "run_hours": {},
-    "company_comments": []
+    "company_comments": [],
+    "action_cards": [],
+    "action_card_logs": []
   }
 }
 ```
+
+### Intelligence payload extensions (Action Cards)
+
+Defined in [`SHORE-RAG-ACTION-CARDS.md`](SHORE-RAG-ACTION-CARDS.md). Optional arrays inside **`payload`** (participate in `payload_hash` signing):
+
+| Field | Typical direction | Merge rule |
+|-------|-------------------|------------|
+| `action_cards` | `SM_TO_SHIP` | Upsert by `card_id`; only `governance.status === 'APPROVED_FOR_FLEET'` |
+| `action_card_logs` | `SHIP_TO_HQ` / station export | Upsert by log `id`; append-only audit |
+
+Ship edge **must not** require these keys to be present (empty or omitted = valid). Ingest treats unknown payload keys as inert until Phase 2 store registration.
+
+**Work Report linkage:** `daily_work_reports[].action_card_id` (optional) references a card delivered in a prior import; export collector denormalizes into `action_card_logs[]` for HQ audit.
 
 ### `sync_id` format
 
@@ -151,6 +166,7 @@ When columns are absent, ingest still writes `status` + `error_message`.
 | Component | Path |
 |-----------|------|
 | Spec | `docs/SYNC-ENVELOPE-V2.md` |
+| Action Cards (Shore RAG) | [`docs/SHORE-RAG-ACTION-CARDS.md`](SHORE-RAG-ACTION-CARDS.md) |
 | Browser export / import verify | `js/services/dataExchangeService.js` |
 | Node shared crypto | `api/_lib/syncEnvelopeV2.js` |
 | Cloud ingest | `api/_lib/syncIngest.js` |
