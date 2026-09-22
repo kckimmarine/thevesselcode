@@ -1774,10 +1774,9 @@ body.tvc-brain-open {
     }
 }
 
-/* ── Home hero: Chevron-style ocean photo + intelligence band ── */
+/* ── Home hero: native-aspect smart-vessel photo + intelligence band ── */
 :root {
-    --home-ocean-hero-height: clamp(340px, 46vh, 480px);
-    --home-ocean-hero-focal-y: 46%;
+    --home-ocean-hero-aspect: 1198 / 481;
 }
 
 body.home-page #hero.hero-ocean-chevron {
@@ -1789,30 +1788,41 @@ body.home-page #hero.hero-ocean-chevron {
     overflow: hidden;
 }
 
+body.home-page #hero.hero-ocean-chevron .home-hero-ocean-frame {
+    position: relative;
+    width: 100%;
+}
+
 body.home-page #hero.hero-ocean-chevron .home-hero-ocean-backdrop {
-    position: absolute;
-    inset: 0;
-    bottom: auto;
-    height: var(--home-ocean-hero-height);
+    position: relative;
     z-index: 0;
+    width: 100%;
+    aspect-ratio: var(--home-ocean-hero-aspect);
     background-color: #1e4a7a;
     background-image:
         linear-gradient(180deg, rgba(0, 18, 40, 0.82) 0%, rgba(0, 28, 56, 0.48) 40%, rgba(0, 22, 48, 0.78) 100%),
         url('/assets/images/home-ocean-hero-horizon.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center var(--home-ocean-hero-focal-y);
+    background-position: center center;
 }
 
 body.home-page #hero.hero-ocean-chevron .home-hero-ocean-stage {
-    position: relative;
+    position: absolute;
+    inset: 0;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: var(--home-ocean-hero-height);
-    padding: 72px max(20px, calc((100vw - 1180px) / 2 + 20px)) 24px;
+    min-height: 0;
+    padding: 56px max(20px, calc((100vw - 1180px) / 2 + 20px)) 20px;
     box-sizing: border-box;
+    pointer-events: none;
+}
+
+body.home-page #hero.hero-ocean-chevron .home-hero-ocean-stage .home-hero-copy,
+body.home-page #hero.hero-ocean-chevron .home-hero-ocean-stage .home-hero-actions {
+    pointer-events: auto;
 }
 
 body.home-page #hero.hero-ocean-chevron .home-hero-copy--ocean-photo {
@@ -2006,14 +2016,20 @@ body.home-page #hero.hero-ocean-chevron .home-utility-badge:focus-visible {
 }
 
 @media (max-width: 767px) {
-    :root {
-        --home-ocean-hero-height: clamp(300px, 42vh, 400px);
-        --home-ocean-hero-focal-y: 56%;
+    body.home-page #hero.hero-ocean-chevron .home-hero-ocean-frame {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body.home-page #hero.hero-ocean-chevron .home-hero-ocean-backdrop {
+        flex-shrink: 0;
     }
 
     body.home-page #hero.hero-ocean-chevron .home-hero-ocean-stage {
-        padding-top: 72px;
-        padding-bottom: 20px;
+        position: relative;
+        inset: auto;
+        padding: 20px 16px 24px;
+        background: linear-gradient(180deg, rgba(0, 28, 56, 0.92) 0%, rgba(0, 35, 70, 0.98) 100%);
     }
 
     body.home-page #hero.hero-ocean-chevron .home-hero-description {
