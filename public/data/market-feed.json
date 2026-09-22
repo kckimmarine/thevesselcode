@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-22T06:06:31.775Z",
+    "generatedAt": "2026-09-22T12:05:35.923Z",
     "benchmarkAsOf": "2026-09-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -200,6 +200,74 @@
   },
   "news": [
     {
+      "title": "Kallas Urges EU to Bolster Red Sea Mission Against Houthi Threat",
+      "link": "https://gcaptain.com/kallas-urges-eu-to-bolster-red-sea-mission-against-houthi-threat/",
+      "pubDate": "Tue, 22 Sep 2026 08:20:33 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The European Union’s top diplomat, Kaja Kallas, called for member states to send more naval vessels to protect commercial shipping in the Red Sea.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-22T003703Z_1841774059_RC20KMABOA8G_RTRMADP_3_IRAN-CRISIS-EU-KALLAS-800x533.jpg",
+      "en": {
+        "headline": "Kallas Urges EU to Bolster Red Sea Mission Against Houthi Threat",
+        "summary": "The European Union’s top diplomat, Kaja Kallas, called for member states to send more naval vessels to protect commercial shipping in the Red Sea.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Coal’s shrinking tonnes are travelling further",
+      "link": "https://splash247.com/coals-shrinking-tonnes-are-travelling-further/",
+      "pubDate": "Tue, 22 Sep 2026 07:21:31 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "The seaborne coal trade is throwing up an increasingly important paradox for dry bulk shipping: headline demand from China is weakening, but changes in where the coal comes from are helping to keep vessel demand surprisingly resilient. Recent research from Greece’s Ursa Shipbroke",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Hay-Point-Coal.jpeg",
+      "en": {
+        "headline": "Coal’s shrinking tonnes are travelling further",
+        "summary": "The seaborne coal trade is throwing up an increasingly important paradox for dry bulk shipping: headline demand from China is weakening, but changes in where the coal comes from are helping to keep vessel demand surprisingly resilient. Recent research from Greece’s Ursa Shipbroke",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Four in 10 seafarers unwilling to report serious safety concerns",
+      "link": "https://splash247.com/four-in-10-seafarers-unwilling-to-report-serious-safety-concerns/",
+      "pubDate": "Tue, 22 Sep 2026 06:53:45 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "More than four in 10 seafarers either do not feel safe raising a serious concern at sea or are unsure whether they could do so without repercussions, according to a new five-year review of crew welfare standards. The finding is among the starkest in Five Years into the Code of Co",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/12/EnclosedSpace-e1788001123629.jpg",
+      "en": {
+        "headline": "Four in 10 seafarers unwilling to report serious safety concerns",
+        "summary": "More than four in 10 seafarers either do not feel safe raising a serious concern at sea or are unsure whether they could do so without repercussions, according to a new five-year review of crew welfare standards. The finding is among the starkest in Five Years into the Code of Co",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "MSC eyes Meyer Werft",
+      "link": "https://splash247.com/msc-eyes-meyer-werft/",
+      "pubDate": "Tue, 22 Sep 2026 06:52:28 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Cruise and container giant Mediterranean Shipping Co (MSC) is in talks over a possible investment in German shipyard Meyer Werft. Bloomberg and multiple German media have reported MSC is negotiating for a possible acquisition of the 80% stake in Meyer Werft currently held by Germ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/08/Meyer-Werft.jpg",
+      "en": {
+        "headline": "MSC eyes Meyer Werft",
+        "summary": "Cruise and container giant Mediterranean Shipping Co (MSC) is in talks over a possible investment in German shipyard Meyer Werft. Bloomberg and multiple German media have reported MSC is negotiating for a possible acquisition of the 80% stake in Meyer Werft currently held by Germ",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "How three wars are crowding out the challenges that will actually define the next decade",
       "link": "https://splash247.com/how-three-wars-are-crowding-out-the-challenges-that-will-actually-define-the-next-decade/",
       "pubDate": "Tue, 22 Sep 2026 05:34:00 +0000",
@@ -208,7 +276,7 @@
       "summary": "Punit Oza from Maritime NXT on risks that come from crisis distraction, a big topic up for discussion at Thursday’s Splash Singapore conference. Since early 2026 the world&#8217;s attention — and its risk desks, insurance markets, and naval assets — have been consumed by three ov",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/01/Ukraines-Special-Operations-Forces.jpg",
       "en": {
         "headline": "How three wars are crowding out the challenges that will actually define the next decade",
@@ -217,43 +285,77 @@
       }
     },
     {
-      "title": "More Jones Act Waiver Voyages Went Unreported Than Previously Known",
-      "link": "https://gcaptain.com/more-jones-act-waiver-voyages-went-unreported-than-previously-known/",
-      "pubDate": "Mon, 21 Sep 2026 21:32:29 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The number of foreign-vessel voyages missing from federal Jones Act waiver records appears to be larger than previously known, with new analysis identifying at least 15 movements that never showed...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2019/09/HR-LAYOUT_shutterstock_1170673279_resized-1200-x-800.jpg",
+      "title": "Transpetrol broadens tanker fleet with LR1 newbuilds",
+      "link": "https://splash247.com/transpetrol-broadens-tanker-fleet-with-lr1-newbuilds/",
+      "pubDate": "Tue, 22 Sep 2026 04:30:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Transpetrol has moved into the LR1 newbuilding segment, ordering two 75,000 dwt product tankers at China’s Yangzijiang Shipbuilding as the Belgian owner continues to reshape its fleet. The privately held company said the two “super eco” vessels are scheduled for delivery in the f",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/08/Alpine-Confidence-Transpetrol.jpg",
       "en": {
-        "headline": "More Jones Act Waiver Voyages Went Unreported Than Previously Known",
-        "summary": "The number of foreign-vessel voyages missing from federal Jones Act waiver records appears to be larger than previously known, with new analysis identifying at least 15 movements that never showed...",
-        "source": "gCaptain"
+        "headline": "Transpetrol broadens tanker fleet with LR1 newbuilds",
+        "summary": "Transpetrol has moved into the LR1 newbuilding segment, ordering two 75,000 dwt product tankers at China’s Yangzijiang Shipbuilding as the Belgian owner continues to reshape its fleet. The privately held company said the two “super eco” vessels are scheduled for delivery in the f",
+        "source": "Splash247"
       }
     },
     {
-      "title": "Asyad sheds ageing tanker trio for $178m",
-      "link": "https://splash247.com/asyad-sheds-ageing-tanker-trio-for-178m/",
-      "pubDate": "Mon, 21 Sep 2026 20:52:00 +0000",
+      "title": "Marfret orders boxship pair at Chinese newcomer yard",
+      "link": "https://splash247.com/marfret-orders-boxship-pair-at-chinese-newcomer-yard/",
+      "pubDate": "Tue, 22 Sep 2026 04:00:00 +0000",
       "source": "Splash247",
-      "category": "S&P",
-      "summary": "Oman’s Asyad Shipping has agreed to sell three of the oldest tankers in its fleet for a combined OMR68.44m ($178m) as the Muscat-listed owner accelerates the replacement of ageing tonnage with a large slate of newbuildings. The company is selling the 2011-built VLCCs Seeb and Sam",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/MarineTraffic-Philippe-Guichot-Al-Amerat.jpg",
+      "category": "Trade",
+      "summary": "Marseille-based liner Marfret has signed for two feeder containerships at China’s Hubei Guangji Green Energy Shipbuilding, handing the recently commissioned Yangtze yard another overseas order. The contract covers two 480 teu ships. Pricing and delivery dates have not been disclo",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Marfret.jpg",
       "en": {
-        "headline": "Asyad sheds ageing tanker trio for $178m",
-        "summary": "Oman’s Asyad Shipping has agreed to sell three of the oldest tankers in its fleet for a combined OMR68.44m ($178m) as the Muscat-listed owner accelerates the replacement of ageing tonnage with a large slate of newbuildings. The company is selling the 2011-built VLCCs Seeb and Sam",
+        "headline": "Marfret orders boxship pair at Chinese newcomer yard",
+        "summary": "Marseille-based liner Marfret has signed for two feeder containerships at China’s Hubei Guangji Green Energy Shipbuilding, handing the recently commissioned Yangtze yard another overseas order. The contract covers two 480 teu ships. Pricing and delivery dates have not been disclo",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Emirates Shipping Line bans plastic waste cargoes",
+      "link": "https://splash247.com/emirates-shipping-line-bans-plastic-waste-cargoes/",
+      "pubDate": "Tue, 22 Sep 2026 03:30:19 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "Emirates Shipping Line (ESL) will stop accepting plastic waste shipments from October 1, becoming only the second ocean carrier to impose a blanket ban on the trade. The Dubai-based carrier said it would no longer take bookings for plastic waste cargoes under HS Code 3915, citing",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 8,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/Emirates-Shipping-Line-ESL.jpg",
+      "en": {
+        "headline": "Emirates Shipping Line bans plastic waste cargoes",
+        "summary": "Emirates Shipping Line (ESL) will stop accepting plastic waste shipments from October 1, becoming only the second ocean carrier to impose a blanket ban on the trade. The Dubai-based carrier said it would no longer take bookings for plastic waste cargoes under HS Code 3915, citing",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Ultra large ethane carrier project gets underway",
+      "link": "https://splash247.com/ultra-large-ethane-carrier-project-gets-underway/",
+      "pubDate": "Tue, 22 Sep 2026 03:00:00 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "HD Hyundai Heavy Industries, GTT and Lloyd’s Register have launched a project to develop what would be the largest vessel concept yet for the ethane carrier market. The three companies have signed a joint development project covering a 150,000 cu m ultra-large ethane carrier (ULE",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 9,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/BW-LNG-Hyundai.jpg",
+      "en": {
+        "headline": "Ultra large ethane carrier project gets underway",
+        "summary": "HD Hyundai Heavy Industries, GTT and Lloyd’s Register have launched a project to develop what would be the largest vessel concept yet for the ethane carrier market. The three companies have signed a joint development project covering a 150,000 cu m ultra-large ethane carrier (ULE",
         "source": "Splash247"
       }
     },
     {
       "title": "ATE Energy brings new cable layer into Taiwan market",
       "link": "https://splash247.com/ate-energy-brings-new-cable-layer-into-taiwan-market/",
-      "pubDate": "Mon, 21 Sep 2026 20:40:00 +0000",
+      "pubDate": "Tue, 22 Sep 2026 02:40:00 +0000",
       "source": "Splash247",
       "category": "Trade",
       "summary": "Taiwanese offshore engineering player ATE Energy International has brought its new cable-laying vessel Oceanus 1 into service, adding another locally based installation asset to the country’s growing offshore energy supply chain. The Taiwan-flagged DPS-2 vessel arrived in Kaohsiu",
@@ -268,26 +370,9 @@
       }
     },
     {
-      "title": "Transpetrol broadens tanker fleet with LR1 newbuilds",
-      "link": "https://splash247.com/transpetrol-broadens-tanker-fleet-with-lr1-newbuilds/",
-      "pubDate": "Mon, 21 Sep 2026 20:30:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Transpetrol has moved into the LR1 newbuilding segment, ordering two 75,000 dwt product tankers at China’s Yangzijiang Shipbuilding as the Belgian owner continues to reshape its fleet. The privately held company said the two “super eco” vessels are scheduled for delivery in the f",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/08/Alpine-Confidence-Transpetrol.jpg",
-      "en": {
-        "headline": "Transpetrol broadens tanker fleet with LR1 newbuilds",
-        "summary": "Transpetrol has moved into the LR1 newbuilding segment, ordering two 75,000 dwt product tankers at China’s Yangzijiang Shipbuilding as the Belgian owner continues to reshape its fleet. The privately held company said the two “super eco” vessels are scheduled for delivery in the f",
-        "source": "Splash247"
-      }
-    },
-    {
       "title": "LS Marine seals record $113m offshore wind cable contract",
       "link": "https://splash247.com/ls-marine-seals-record-113m-offshore-wind-cable-contract/",
-      "pubDate": "Mon, 21 Sep 2026 20:30:00 +0000",
+      "pubDate": "Tue, 22 Sep 2026 02:30:00 +0000",
       "source": "Splash247",
       "category": "Trade",
       "summary": "South Korean subsea cable contractor LS Marine Solution has converted its preferred-bidder position on the Shinan Ui offshore wind development into a KRW156.9bn ($113m) firm transport and installation contract with Hanwha Ocean. The contract is the largest in LS Marine’s history.",
@@ -302,54 +387,20 @@
       }
     },
     {
-      "title": "Cadeler expands offshore wind maintenance push with Vattenfall partnership",
-      "link": "https://splash247.com/cadeler-expands-offshore-wind-maintenance-push-with-vattenfall-partnership/",
-      "pubDate": "Mon, 21 Sep 2026 20:20:00 +0000",
-      "source": "Splash247",
+      "title": "More Jones Act Waiver Voyages Went Unreported Than Previously Known",
+      "link": "https://gcaptain.com/more-jones-act-waiver-voyages-went-unreported-than-previously-known/",
+      "pubDate": "Mon, 21 Sep 2026 21:32:29 +0000",
+      "source": "gCaptain",
       "category": "Trade",
-      "summary": "Cadeler’s offshore wind services platform Nexra has signed a memorandum of understanding with Vattenfall to develop new methods for maintaining large offshore turbines. The companies will focus on major component exchanges, including replacing heavy turbine parts such as blades, ",
+      "summary": "The number of foreign-vessel voyages missing from federal Jones Act waiver records appears to be larger than previously known, with new analysis identifying at least 15 movements that never showed...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Cadeler-1.jpg",
+      "hoursAgo": 14,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2019/09/HR-LAYOUT_shutterstock_1170673279_resized-1200-x-800.jpg",
       "en": {
-        "headline": "Cadeler expands offshore wind maintenance push with Vattenfall partnership",
-        "summary": "Cadeler’s offshore wind services platform Nexra has signed a memorandum of understanding with Vattenfall to develop new methods for maintaining large offshore turbines. The companies will focus on major component exchanges, including replacing heavy turbine parts such as blades, ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Turkey delays Black Sea FPU deployment",
-      "link": "https://splash247.com/turkey-delays-black-sea-fpu-deployment/",
-      "pubDate": "Mon, 21 Sep 2026 20:10:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Turkey has pushed back the planned departure of the Osman Gazi floating production platform from Filyos Port to late October, delaying its deployment to the Sakarya gas field in the Black Sea. Energy and Natural Resources Minister Alparslan Bayraktar had previously said the unit ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Osman-Gazi-Alparslan-Bayraktar-X-accoun.jpg",
-      "en": {
-        "headline": "Turkey delays Black Sea FPU deployment",
-        "summary": "Turkey has pushed back the planned departure of the Osman Gazi floating production platform from Filyos Port to late October, delaying its deployment to the Sakarya gas field in the Black Sea. Energy and Natural Resources Minister Alparslan Bayraktar had previously said the unit ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Marfret orders boxship pair at Chinese newcomer yard",
-      "link": "https://splash247.com/marfret-orders-boxship-pair-at-chinese-newcomer-yard/",
-      "pubDate": "Mon, 21 Sep 2026 20:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Marseille-based liner Marfret has signed for two feeder containerships at China’s Hubei Guangji Green Energy Shipbuilding, handing the recently commissioned Yangtze yard another overseas order. The contract covers two 480 teu ships. Pricing and delivery dates have not been disclo",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Marfret.jpg",
-      "en": {
-        "headline": "Marfret orders boxship pair at Chinese newcomer yard",
-        "summary": "Marseille-based liner Marfret has signed for two feeder containerships at China’s Hubei Guangji Green Energy Shipbuilding, handing the recently commissioned Yangtze yard another overseas order. The contract covers two 480 teu ships. Pricing and delivery dates have not been disclo",
-        "source": "Splash247"
+        "headline": "More Jones Act Waiver Voyages Went Unreported Than Previously Known",
+        "summary": "The number of foreign-vessel voyages missing from federal Jones Act waiver records appears to be larger than previously known, with new analysis identifying at least 15 movements that never showed...",
+        "source": "gCaptain"
       }
     },
     {
@@ -361,7 +412,7 @@
       "summary": "Commodity trading giant Trafigura is launching a new tanker company with plans to raise about $500 million and list the business in Oslo, opening its growing VLCC fleet to outside...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2015/10/shutterstock_59062519-3.jpg",
       "en": {
         "headline": "Trafigura Launches Volare Shipping With $500 Million Oslo Listing Plan",
@@ -378,7 +429,7 @@
       "summary": "A fight over whether Indian shipbreaking yards using the controversial beaching method should qualify under European environmental rules is widening, with steelmakers, recyclers, trade unions and environmental groups now urging...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2015/07/2015-07-16T211935Z_1801433795_GF10000159653_RTRMADP_3_SHIPBREAKING-SOUTHASIA.jpg",
       "en": {
         "headline": "EU Ship Recycling Fight Escalates Over Indian Beaching Yards",
@@ -395,7 +446,7 @@
       "summary": "Diesel prices have rallied in Europe and the United States to record highs as wars in Iran and Ukraine sharply cut exports from some of the biggest producers such as Russia, Saudi Arabia and the United Arab Emirates, with little options to prevent further gains.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-06T095816Z_194114751_RC2PDKASTT4O_RTRMADP_3_RUSSIA-DIESEL-EXPORTS-800x533.jpg",
       "en": {
         "headline": "Global Diesel Prices Hit Record Highs",
@@ -412,62 +463,11 @@
       "summary": "A new shuttling system is reshaping the Middle East oil market, as producers seek to keep exports flowing despite the escalating regional conflict. The question now is whether this complex, expensive process is a stopgap measure or the global energy market’s new normal.",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 13,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-21T113312Z_986150390_RC25YLAX1ZOM_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
       "en": {
         "headline": "Hormuz Shuttles Keep Oil Flowing, But At a High Cost",
         "summary": "A new shuttling system is reshaping the Middle East oil market, as producers seek to keep exports flowing despite the escalating regional conflict. The question now is whether this complex, expensive process is a stopgap measure or the global energy market’s new normal.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "MSC Said in Talks to Buy German State-Held Meyer Werft Stake",
-      "link": "https://gcaptain.com/msc-said-in-talks-to-buy-german-state-held-meyer-werft-stake-2/",
-      "pubDate": "Mon, 21 Sep 2026 16:28:33 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "(Bloomberg) &#8212; MSC Mediterranean Shipping Co. is in talks to acquire the roughly 80% stake in German cruise-ship builder Meyer Werft GmbH held by the federal government and the state...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2016/02/Ovation_of_the_Seas.jpg",
-      "en": {
-        "headline": "MSC Said in Talks to Buy German State-Held Meyer Werft Stake",
-        "summary": "(Bloomberg) &#8212; MSC Mediterranean Shipping Co. is in talks to acquire the roughly 80% stake in German cruise-ship builder Meyer Werft GmbH held by the federal government and the state...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Capesize Bulker Remains Aground Off Australia After Refloating Attempts Fail",
-      "link": "https://gcaptain.com/capesize-bulker-remains-aground-off-australia-after-refloating-attempts-fail/",
-      "pubDate": "Mon, 21 Sep 2026 16:13:18 +0000",
-      "source": "gCaptain",
-      "category": "Dry Bulk",
-      "summary": "Australian authorities have launched an investigation after the 182,066-dwt bulk carrier&#160;Cape Falcon&#160;ran aground off the Port of Gladstone, Queensland, with efforts to refloat the vessel so far unsuccessful. The Liberian-flagged...",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/03/Dry-bulk-image-01-800x536.jpeg",
-      "en": {
-        "headline": "Capesize Bulker Remains Aground Off Australia After Refloating Attempts Fail",
-        "summary": "Australian authorities have launched an investigation after the 182,066-dwt bulk carrier&#160;Cape Falcon&#160;ran aground off the Port of Gladstone, Queensland, with efforts to refloat the vessel so far unsuccessful. The Liberian-flagged...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Two More Tankers Hit in Strait of Hormuz as Attacks Mount",
-      "link": "https://gcaptain.com/two-more-tankers-hit-in-strait-of-hormuz-as-attacks-mount/",
-      "pubDate": "Mon, 21 Sep 2026 16:06:53 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Two more tankers have been struck while transiting the Strait of Hormuz, with two seafarers injured, extending a string of attacks against commercial shipping through the strategic waterway.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
-      "en": {
-        "headline": "Two More Tankers Hit in Strait of Hormuz as Attacks Mount",
-        "summary": "Two more tankers have been struck while transiting the Strait of Hormuz, with two seafarers injured, extending a string of attacks against commercial shipping through the strategic waterway.",
         "source": "gCaptain"
       }
     }
