@@ -2,7 +2,7 @@
 
 **Status:** Single source of truth (commercial + product contract)  
 **Audience:** Sales, grants (e.g. Q3-2), marketing, engineering, support  
-**Related:** [`seat-license.md`](seat-license.md), [`SYNC-ENVELOPE-V2.md`](SYNC-ENVELOPE-V2.md), [`SHORE-RAG-ACTION-CARDS.md`](SHORE-RAG-ACTION-CARDS.md), [`VESSEL-ARCHETYPE-V0.md`](VESSEL-ARCHETYPE-V0.md)
+**Related:** [`seat-license.md`](seat-license.md), [`SYNC-ENVELOPE-V2.md`](SYNC-ENVELOPE-V2.md), [`SHORE-RAG-ACTION-CARDS.md`](SHORE-RAG-ACTION-CARDS.md), [`VESSEL-ARCHETYPE-V0.md`](VESSEL-ARCHETYPE-V0.md), [`FLEET-NOC-DASHBOARD-V1.md`](FLEET-NOC-DASHBOARD-V1.md)
 
 **Marketing surfaces:** [`sm/index.html`](../sm/index.html) (Track A/B cards), [`js/marketing-i18n.js`](../js/marketing-i18n.js), billing hooks [`js/billing/checkout.js`](../js/billing/checkout.js)
 
@@ -106,7 +106,7 @@ Ship remains **LLM-free**; Pro enables **HQ-side** LLM/RAG only.
 | Capability | Detail |
 |------------|--------|
 | **All Pro features** | |
-| **Fleet NOC exception dashboard** | Prioritized overdue jobs, defect alerts, low ROB/stock across fleet |
+| **Fleet NOC exception dashboard** | Prioritized overdue jobs, defect alerts, low ROB/stock across fleet — [`FLEET-NOC-DASHBOARD-V1.md`](FLEET-NOC-DASHBOARD-V1.md) |
 | **Enterprise multi-tenant** | Company-wide admin, RLS-aligned cloud ingest — [`data-scope-policy.md`](data-scope-policy.md) |
 | **RFQ / Supplier Mode (optional)** | 1-click RFQ; **1–3% platform transaction fee** on matched supply (TVC does not hold inventory) |
 
@@ -129,7 +129,7 @@ Logical flags for seat license, HQ entitlements, and future `license.json` field
 | Shore Vault RAG (HQ) | — | ✓ | ✓ |
 | Action Card publish & ship bundle | — | ✓ | ✓ |
 | `action_card_logs` signed return | — | ✓ | ✓ |
-| Fleet NOC exception dashboard | — | — | ✓ |
+| Fleet NOC exception dashboard | — | — | ✓ ([spec](FLEET-NOC-DASHBOARD-V1.md)) |
 | Multi-tenant company admin / restore | — | — | ✓ |
 | Supplier RFQ + platform fee (1–3%) | — | — | ✓ (optional) |
 | **List USD / vessel / mo** | **$99** | **$299** | **$499+** |

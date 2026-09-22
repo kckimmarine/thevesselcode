@@ -1,7 +1,7 @@
 # SYNC-ENVELOPE-V2 — Signed sync package contract
 
 **Status:** Implemented (export + cloud ingest + client import verification)  
-**Related:** [`data-scope-policy.md`](data-scope-policy.md), [`FLEET-SYNC-ARCHITECTURE.md`](FLEET-SYNC-ARCHITECTURE.md), [`PRICING-TIERS-V1.md`](PRICING-TIERS-V1.md) (Pro+ tier)
+**Related:** [`data-scope-policy.md`](data-scope-policy.md), [`FLEET-SYNC-ARCHITECTURE.md`](FLEET-SYNC-ARCHITECTURE.md), [`PRICING-TIERS-V1.md`](PRICING-TIERS-V1.md) (Pro+ tier), [`FLEET-NOC-DASHBOARD-V1.md`](FLEET-NOC-DASHBOARD-V1.md) (sync staleness signals)
 
 ---
 
