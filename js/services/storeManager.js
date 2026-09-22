@@ -23,6 +23,112 @@ const TVC_StoreManager = (function () {
     let _memoryIndex = null;
     let _memoryIndexPromise = null;
     let _useMemorySearch = false;
+    /** @type {'seed'|'full'|null} */
+    let _hydrationState = null;
+    let _hydrationListeners = [];
+    let _fullIngestPromise = null;
+
+    function scheduleIdleWork(fn) {
+        return new Promise((resolve) => {
+            const run = () => Promise.resolve().then(fn).then(resolve, resolve);
+            if (typeof requestIdleCallback === 'function') {
+                requestIdleCallback(() => { run(); }, { timeout: 2500 });
+            } else {
+                setTimeout(() => { run(); }, 0);
+            }
+        });
+    }
+
+    function subscribeCatalogHydration(listener) {
+        if (typeof listener !== 'function') return () => {};
+        _hydrationListeners.push(listener);
+        if (_hydrationState === 'full') {
+            try { listener({ state: 'full', total: _totalCount }); } catch { /* ignore */ }
+        }
+        return () => {
+            _hydrationListeners = _hydrationListeners.filter(l => l !== listener);
+        };
+    }
+
+    function getCatalogHydrationState() {
+        return _hydrationState;
+    }
+
+    function notifyCatalogHydration(detail) {
+        for (const fn of _hydrationListeners) {
+            try { fn(detail); } catch { /* ignore */ }
+        }
+    }
+
+    function seedPayloadToLightRows(rawRows) {
+        const out = [];
+        for (const raw of rawRows) {
+            const expanded = expandCompactRow(raw);
+            const dbRow = TVC_ImpaSchema.fromCatalogJson(expanded);
+            if (!dbRow?.impa_code) continue;
+            const light = toLightRow(TVC_ImpaSchema.sanitizeImpaForDb(dbRow));
+            if (light) out.push(light);
+        }
+        return out;
+    }
+
+    function bootstrapInstantCatalog() {
+        if (_hydrationState === 'full' && _memoryIndex?.length) return true;
+        if (_hydrationState === 'seed' && _memoryIndex?.length) return true;
+        const raw = globalThis.TVC_ImpaCatalogSeed;
+        if (!Array.isArray(raw) || !raw.length) return false;
+        const rows = seedPayloadToLightRows(raw);
+        if (!rows.length) return false;
+        _memoryIndex = rows;
+        _memoryIndexPromise = Promise.resolve(rows);
+        _useMemorySearch = true;
+        _hydrationState = 'seed';
+        _totalCount = rows.length;
+        _lastSearch = {
+            query: '',
+            items: rows.slice(0, Math.min(BROWSE_PREVIEW, rows.length)),
+            matched: rows.length,
+            total: _totalCount,
+            ms: 0,
+            browseLimited: false,
+            capped: false,
+            engine: 'seed',
+        };
+        return true;
+    }
+
+    function scheduleFullCatalogIngest() {
+        if (_hydrationState === 'full') {
+            return _fullIngestPromise || _loadPromise || Promise.resolve(_lastSearch);
+        }
+        if (_fullIngestPromise) return _fullIngestPromise;
+        _fullIngestPromise = scheduleIdleWork(async () => {
+            try {
+                if (!_loadPromise) {
+                    _loadPromise = ensureImpaMaster()
+                        .then(async (count) => {
+                            _totalCount = count;
+                            return count;
+                        })
+                        .catch((err) => {
+                            _loadPromise = null;
+                            throw err;
+                        });
+                }
+                await _loadPromise;
+                _memoryIndex = null;
+                _memoryIndexPromise = null;
+                await buildMemoryIndex({ force: true });
+                _hydrationState = 'full';
+                searchCatalogMemory('', { limit: BROWSE_PREVIEW });
+                notifyCatalogHydration({ state: 'full', total: _totalCount });
+            } catch (err) {
+                console.warn('[TVC_Store] background catalog ingest', err);
+                _fullIngestPromise = null;
+            }
+        });
+        return _fullIngestPromise;
+    }
 
     function readCart() {
         try {
@@ -68,9 +174,14 @@ const TVC_StoreManager = (function () {
         return [...set].sort((a, b) => a.localeCompare(b));
     }
 
-    async function buildMemoryIndex() {
-        if (_memoryIndex) return _memoryIndex;
-        if (_memoryIndexPromise) return _memoryIndexPromise;
+    async function buildMemoryIndex(options = {}) {
+        const force = options === true || options?.force;
+        if (_memoryIndex && !force) return _memoryIndex;
+        if (_memoryIndexPromise && !force) return _memoryIndexPromise;
+        if (force) {
+            _memoryIndex = null;
+            _memoryIndexPromise = null;
+        }
         _memoryIndexPromise = (async () => {
             await TVC_DB.open();
             await ensureSearchFieldsBackfill();
@@ -377,6 +488,9 @@ const TVC_StoreManager = (function () {
 
     async function loadCatalog(options = {}) {
         if (!options.force && _loadPromise) return _loadPromise;
+        if (!options.force && _hydrationState === 'seed') {
+            return scheduleFullCatalogIngest().then(() => _lastSearch);
+        }
         _loadPromise = ensureImpaMaster()
             .then(async count => {
                 _totalCount = count;
@@ -700,6 +814,10 @@ const TVC_StoreManager = (function () {
         loadCatalog,
         reloadCatalog,
         searchCatalog,
+        bootstrapInstantCatalog,
+        scheduleFullCatalogIngest,
+        subscribeCatalogHydration,
+        getCatalogHydrationState,
         enableMemorySearch,
         buildMemoryIndex,
         isMemorySearchReady,

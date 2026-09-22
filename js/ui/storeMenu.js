@@ -19,8 +19,11 @@ const TVC_StoreMenu = (function () {
     let _popstateBound = false;
     const STORE_ROW_H = 44;
     const PAGE_SIZE_OPTIONS = [25, 50, 100];
+    const PAGE_SIZE_OPTIONS_PUBLIC = [13, 25, 50, 100];
     const PAGE_SIZE_DEFAULT = PAGE_SIZE_OPTIONS[0];
+    const PAGE_SIZE_DEFAULT_PUBLIC = PAGE_SIZE_OPTIONS_PUBLIC[0];
     let _pageSize = PAGE_SIZE_DEFAULT;
+    let _hydrationUiBound = false;
     const SEARCH_DEBOUNCE_MS = 180;
     const PUBLIC_SEARCH_DEBOUNCE_MS = 100;
 
@@ -319,6 +322,7 @@ const TVC_StoreMenu = (function () {
         if (_publicMode) {
             document.documentElement.classList.add('store-public-mode');
             TVC_StoreManager.enableMemorySearch(true);
+            _pageSize = PAGE_SIZE_DEFAULT_PUBLIC;
             loadSavedPageSize();
         }
         applyModalPublicMode();
@@ -1055,9 +1059,13 @@ const TVC_StoreMenu = (function () {
         return _pageSize;
     }
 
+    function pageSizeOptionsList() {
+        return _publicMode ? PAGE_SIZE_OPTIONS_PUBLIC : PAGE_SIZE_OPTIONS;
+    }
+
     function setPageSize(size) {
         const n = Number(size);
-        if (!PAGE_SIZE_OPTIONS.includes(n)) return;
+        if (!pageSizeOptionsList().includes(n)) return;
         _pageSize = n;
         try {
             sessionStorage.setItem('tvc_impa_page_size', String(n));
@@ -1068,7 +1076,7 @@ const TVC_StoreMenu = (function () {
         try {
             const raw = sessionStorage.getItem('tvc_impa_page_size');
             const n = Number(raw);
-            if (PAGE_SIZE_OPTIONS.includes(n)) _pageSize = n;
+            if (pageSizeOptionsList().includes(n)) _pageSize = n;
         } catch { /* ignore */ }
     }
 
@@ -1083,8 +1091,34 @@ const TVC_StoreMenu = (function () {
     }
 
     function pageSizeOptionsHtml() {
-        return PAGE_SIZE_OPTIONS.map(n =>
+        return pageSizeOptionsList().map(n =>
             `<option value="${n}"${n === _pageSize ? ' selected' : ''}>${n} / page</option>`).join('');
+    }
+
+    function refreshPublicCatalogMeta(root, search) {
+        if (!_publicMode || !root) return;
+        const allItems = resolvePublicCatalogItems(search);
+        const totalFiltered = allItems.length;
+        const pageSize = getPageSize();
+        const totalPages = Math.max(1, Math.ceil(totalFiltered / pageSize));
+        if (_currentPage > totalPages) _currentPage = totalPages;
+        const countEl = root.querySelector('#storeCatalogCount');
+        if (countEl) {
+            countEl.textContent = publicPaginationCountLabel(totalFiltered, _currentPage);
+        }
+        renderImpaPagination(root, _currentPage, totalPages);
+    }
+
+    function ensureCatalogHydrationUi(root) {
+        if (!_publicMode || _hydrationUiBound || typeof TVC_StoreManager.subscribeCatalogHydration !== 'function') {
+            return;
+        }
+        _hydrationUiBound = true;
+        TVC_StoreManager.subscribeCatalogHydration(() => {
+            const host = document.getElementById('storeMenuBody');
+            if (!host) return;
+            refreshPublicCatalogMeta(host, TVC_StoreManager.getLastSearch());
+        });
     }
 
     function syncImpaTableLayout(root, visibleRowCount) {
@@ -1590,6 +1624,7 @@ const TVC_StoreMenu = (function () {
         bindCatalogEvents(root);
         if (_publicMode) {
             paintSearchResults(root, state);
+            ensureCatalogHydrationUi(root);
         } else if (_listState.items.length) {
             mountVirtualList(root);
         }
@@ -1600,6 +1635,20 @@ const TVC_StoreMenu = (function () {
         const root = document.getElementById('storeMenuBody');
         if (!root) return;
 
+        if (_publicMode) {
+            if (!_mounted) {
+                if (typeof TVC_StoreManager.bootstrapInstantCatalog === 'function') {
+                    TVC_StoreManager.bootstrapInstantCatalog();
+                }
+                _mounted = true;
+                renderCatalog(root, TVC_StoreManager.getLastSearch());
+                return;
+            }
+            const search = await TVC_StoreManager.searchCatalog(TVC_StoreManager.getLastSearch().query || '');
+            renderCatalog(root, search);
+            return;
+        }
+
         if (_mounted && TVC_StoreManager.getTotalCount() > 0) {
             const search = await TVC_StoreManager.searchCatalog(TVC_StoreManager.getLastSearch().query || '');
             renderCatalog(root, search);
@@ -1609,7 +1658,6 @@ const TVC_StoreMenu = (function () {
         root.innerHTML = '<p class="store-loading">Loading catalog…</p>';
         try {
             await TVC_StoreManager.loadCatalog();
-            if (_publicMode) await TVC_StoreManager.buildMemoryIndex();
             _mounted = true;
             renderCatalog(root, TVC_StoreManager.getLastSearch());
         } catch (err) {
