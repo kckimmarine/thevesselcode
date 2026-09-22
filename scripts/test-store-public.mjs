@@ -34,7 +34,7 @@ async function assertShipservModal(page, code, results, viewportLabel = 'desktop
 
   results.push({
     check: `${code} ${viewportLabel} shipserv layout visible`,
-    ok: await page.locator('#impaDetailShipservLayout').isVisible(),
+    ok: await page.locator('#impaStoreDetailHost').isVisible(),
   });
   results.push({
     check: `${code} ${viewportLabel} legacy plate section hidden`,
@@ -161,7 +161,7 @@ async function main() {
 
     results.push({
       check: 'shipserv layout visible',
-      ok: await page.locator('#impaDetailShipservLayout').isVisible(),
+      ok: await page.locator('#impaStoreDetailHost').isVisible(),
     });
     results.push({
       check: 'product title in modal body',

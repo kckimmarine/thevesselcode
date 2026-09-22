@@ -164,6 +164,78 @@
         return 'https://www.thevesselcode.com';
     }
 
+    function buildToolkitDetailHostMarkup() {
+        return `
+                <div id="impaStoreDetailHost" class="impa-store-detail impa-shipserv-layout" aria-label="IMPA product details">
+                    <header class="impa-store-detail-head">
+                        <div class="impa-store-detail-head-main">
+                            <span class="impa-detail-unified-badge" id="impaDetailBadge">IMPA</span>
+                            <h1 class="impa-detail-unified-title" id="impaDetailProductTitle">—</h1>
+                            <div id="impaDetailTrustHeader" aria-label="Trust and verification"></div>
+                        </div>
+                    </header>
+                    <div id="impaDetailStoreBody" class="impa-store-detail-body">
+                        <div id="impaDetailRfqLeadHost"></div>
+                        <div class="impa-shipserv-photo impa-plate-preview" id="impaDetailProductPhoto">
+                            <img id="impaDetailProductImg" class="impa-shipserv-photo-img impa-store-plate-img" alt="" hidden>
+                            <div id="impaDetailProductFallback" class="impa-shipserv-photo-fallback" hidden></div>
+                            <span class="impa-plate-zoom-hint" id="impaDetailPlateZoomHint" hidden>🔍 Click / Tap to enlarge reference photo</span>
+                        </div>
+                        <div id="impaDetailProductAttribution" class="impa-product-photo-attribution-host" hidden aria-live="polite"></div>
+                        <div id="impaDetailStockSlaHost"></div>
+                        <section aria-label="Specifications">
+                            <div class="impa-shipserv-spec-wrap">
+                                <table class="impa-shipserv-spec-table spec-table">
+                                    <tbody id="impaDetailShipservSpec"></tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <div id="impaDetailTotalServiceBar" class="impa-detail-total-service-host" aria-label="Total marine care suite"></div>
+                        <div id="impaDetailStoreBridgeCta" class="impa-detail-store-bridge-host"></div>
+                        <div id="impaDetailInstallFunnel" class="impa-detail-install-funnel-host" aria-label="Turnkey installation funnel"></div>
+                        <div id="impaDetailTurnkeyHub" class="impa-detail-turnkey-host" aria-label="Turnkey port services"></div>
+                        <div id="impaDetailConversionAction" class="impa-detail-commerce-block" aria-label="Pricing and supply inquiry"></div>
+                        <div class="impa-detail-actions">
+                            <button type="button" class="impa-detail-share-btn btn-share-spec" id="impaDetailShareBtn">📋 Share Spec Link</button>
+                        </div>
+                    </div>
+                </div>`;
+    }
+
+    function mountToolkitExtensionBlocks(root, item) {
+        if (!root || !item) return;
+        const code = item.impa_code || item.code || '';
+        const displayTitle = cleanProductTitle(item);
+        const funnelCtx = { impaCode: code, itemName: displayTitle };
+        const totalServiceHost = root.querySelector('#impaDetailTotalServiceBar');
+        if (totalServiceHost && typeof globalThis.TVC_TotalServiceBar !== 'undefined') {
+            totalServiceHost.innerHTML = globalThis.TVC_TotalServiceBar.buildTotalServiceBarHtml({
+                ...funnelCtx,
+                activePillar: 'impa',
+            });
+        } else if (totalServiceHost) {
+            totalServiceHost.innerHTML = '';
+        }
+        const bridgeHost = root.querySelector('#impaDetailStoreBridgeCta');
+        if (bridgeHost && typeof globalThis.TVC_TotalServiceBar !== 'undefined') {
+            bridgeHost.innerHTML = globalThis.TVC_TotalServiceBar.buildStoreRepairBridgeCtaHtml(funnelCtx);
+        } else if (bridgeHost) {
+            bridgeHost.innerHTML = '';
+        }
+        const installHost = root.querySelector('#impaDetailInstallFunnel');
+        if (installHost && typeof globalThis.TVC_TurnkeyPortHub !== 'undefined') {
+            globalThis.TVC_TurnkeyPortHub.mountInstallFunnelHost(installHost, funnelCtx);
+        } else if (installHost) {
+            installHost.innerHTML = '';
+        }
+        const turnkeyHost = root.querySelector('#impaDetailTurnkeyHub');
+        if (turnkeyHost && typeof globalThis.TVC_TurnkeyPortHub !== 'undefined') {
+            globalThis.TVC_TurnkeyPortHub.mountTurnkeyHost(turnkeyHost, funnelCtx);
+        } else if (turnkeyHost) {
+            turnkeyHost.innerHTML = '';
+        }
+    }
+
     function populateStoreDetailCard(root, item, options = {}) {
         if (!root || !item) return;
         const base = options.base || resolvePublicBaseUrl();
@@ -197,6 +269,10 @@
 
         const commerceHost = root.querySelector('#impaDetailConversionAction');
         if (commerceHost) commerceHost.innerHTML = buildImpaCommerceActionsHtml(item);
+
+        if (options.mountExtensions !== false) {
+            mountToolkitExtensionBlocks(root, item);
+        }
     }
 
     return {
@@ -211,6 +287,8 @@
         buildImpaCommerceActionsHtml,
         buildRfqLeadBlockHtml,
         buildContactInquiryUrl,
+        buildToolkitDetailHostMarkup,
+        mountToolkitExtensionBlocks,
         populateStoreDetailCard,
         resolvePublicBaseUrl,
     };
