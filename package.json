@@ -36,6 +36,7 @@
     "test:revenue-pipeline": "node scripts/test-revenue-pipeline.mjs",
     "test:home-landing": "node scripts/test-home-landing.mjs",
     "test:maritime-toolkit-data": "node scripts/test-maritime-toolkit-data.mjs",
+    "test:toolkit-e2e-suite": "node scripts/test-toolkit-e2e-suite.mjs",
     "test:vessel-archetypes": "node scripts/test-vessel-archetypes.mjs",
     "test:mechanical-calc": "node scripts/test-mechanical-engineering-calc.mjs",
     "test:combustion-calc": "node scripts/test-combustion-calc.mjs",

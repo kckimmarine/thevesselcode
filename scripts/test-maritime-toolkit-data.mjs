@@ -52,14 +52,16 @@ check(
 );
 
 const dist = Bunker.calcBunkerAstM54B({ volumeM3: 100, density15: 800, tempC: 20, fuelKey: 'LSMGO' });
-check('distillate K0 branch', Bunker.kCoefficients(800).K1 === 0);
+check('distillate K0 branch', Bunker.kCoefficients(800).K0 === 341.0957 && Bunker.kCoefficients(800).K1 === 0);
+const residualK = Bunker.kCoefficients(991);
+check('residual K0/K1', residualK.K0 === 103.872 && residualK.K1 === 0.2701);
 check('LSMGO CO₂ factor', dist.co2Factor === 3.206);
 
 check('flange dataset rows', rows.length >= 80, `count=${rows.length}`);
 
 const jis10_50 = rows.find((r) => r.standard === 'JIS 10K' && r.nb === '50A');
 check('JIS 10K 50A OD/PCD', jis10_50?.od === 155 && jis10_50?.pcd === 120, JSON.stringify(jis10_50));
-check('JIS 10K 50A bolts', jis10_50?.bolts === 8 && jis10_50?.hole === 19 && jis10_50?.bolt === 'M16');
+check('JIS 10K 50A bolts', jis10_50?.bolts === 4 && jis10_50?.hole === 19 && jis10_50?.bolt === 'M16');
 
 const jis10_100 = rows.find((r) => r.standard === 'JIS 10K' && r.nb === '100A');
 check('JIS 10K 100A', jis10_100?.od === 210 && jis10_100?.pcd === 175 && jis10_100?.bolts === 8);
