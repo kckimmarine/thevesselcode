@@ -5,6 +5,15 @@
  * Merge semantics mirror client mergePayload: newer updated_at wins.
  */
 const JSZip = require('jszip');
+const {
+    isEnvelopeV2,
+    verifySyncDocument,
+    unwrapEnvelopeToLegacyShape,
+    loadPublicKeyRegistryFromEnv,
+    envelopeLegacyAllowed,
+    envelopeSignatureRequired,
+    ERR,
+} = require('./syncEnvelopeV2');
 
 /** IndexedDB stores included in standard sync payloads */
 const SYNC_STORES = [
@@ -172,6 +181,61 @@ async function writeIngestLog(supabase, row) {
     if (error) throw error;
 }
 
+async function findIngestBySyncId(supabase, syncId) {
+    if (!syncId) return null;
+    const { data, error } = await supabase
+        .from('sync_package_ingest')
+        .select('package_id, status, verification_status')
+        .eq('sync_id', syncId)
+        .maybeSingle();
+    if (error) {
+        const msg = String(error.message || '').toLowerCase();
+        if (msg.includes('sync_id') && (msg.includes('does not exist') || msg.includes('schema cache'))) {
+            return null;
+        }
+        throw error;
+    }
+    return data;
+}
+
+function auditRowExtras(verificationStatus, syncId) {
+    return {
+        sync_id: syncId || null,
+        verification_status: verificationStatus || null,
+    };
+}
+
+/**
+ * Verify envelope / legacy compliance before record merge.
+ */
+async function verifyIncomingDocument(doc, { companyId, vesselId } = {}) {
+    const registry = loadPublicKeyRegistryFromEnv();
+    const requireV2 = envelopeSignatureRequired();
+    const allowLegacy = envelopeLegacyAllowed();
+
+    if (isEnvelopeV2(doc)) {
+        return verifySyncDocument(doc, {
+            companyId,
+            vesselId,
+            publicKeyRegistry: registry,
+            requireEnvelopeV2: requireV2,
+        });
+    }
+
+    if (requireV2) {
+        return { ok: false, code: 'ERR_LEGACY_PACKAGE', message: 'Envelope v2 signature required' };
+    }
+    if (!allowLegacy) {
+        return { ok: false, code: 'ERR_LEGACY_PACKAGE', message: 'Legacy packages disabled' };
+    }
+    return verifySyncDocument(doc, { companyId, vesselId });
+}
+
+function effectiveSyncPayload(doc) {
+    if (isEnvelopeV2(doc)) return unwrapEnvelopeToLegacyShape(doc);
+    return doc;
+}
+
 function isMissingIngestTableError(err) {
     const msg = String(err?.message || err || '').toLowerCase();
     return msg.includes('sync_records') && (msg.includes('does not exist') || msg.includes('schema cache'));
@@ -197,9 +261,9 @@ async function ingestSyncPackage({
 
     try {
         const buf = Buffer.isBuffer(body) ? body : Buffer.from(body || []);
-        const payload = await parseSyncZipBuffer(buf);
+        const rawDoc = await parseSyncZipBuffer(buf);
 
-        if (!payload) {
+        if (!rawDoc) {
             await writeIngestLog(supabase, {
                 ...baseLog,
                 status: 'SKIPPED',
@@ -211,9 +275,65 @@ async function ingestSyncPackage({
             return { ok: true, status: 'SKIPPED', records_upserted: 0, records_skipped: 0, meta_upserted: 0 };
         }
 
+        const envelopeMeta = rawDoc.metadata || {};
+        const preMeta = rawDoc.export_meta || {};
+        const cidHeader = String(companyId || envelopeMeta.company_id || preMeta.company_id || '').trim() || 'UNKNOWN';
+        const vidHeader = String(vesselId || envelopeMeta.vessel_id || preMeta.vessel_id || '').trim();
+
+        const verified = await verifyIncomingDocument(rawDoc, {
+            companyId: cidHeader,
+            vesselId: vidHeader,
+        });
+
+        if (!verified.ok) {
+            await writeIngestLog(supabase, {
+                ...baseLog,
+                status: 'FAILED',
+                records_upserted: 0,
+                records_skipped: 0,
+                meta_upserted: 0,
+                ...auditRowExtras('REJECTED', rawDoc.sync_id),
+                error_message: `${verified.code || 'VERIFY_FAILED'}: ${verified.message || ''}`.slice(0, 2000),
+            });
+            return {
+                ok: false,
+                status: 'FAILED',
+                error: verified.code || ERR.TAMPERED,
+                message: verified.message,
+                verification_status: 'REJECTED',
+            };
+        }
+
+        const syncId = verified.sync_id || rawDoc.sync_id || null;
+        if (syncId) {
+            const prior = await findIngestBySyncId(supabase, syncId);
+            if (prior && prior.package_id !== packageId) {
+                await writeIngestLog(supabase, {
+                    ...baseLog,
+                    status: 'SKIPPED',
+                    records_upserted: 0,
+                    records_skipped: 0,
+                    meta_upserted: 0,
+                    ...auditRowExtras('DUPLICATE', syncId),
+                    error_message: `Duplicate sync_id ${syncId} (prior package ${prior.package_id})`,
+                });
+                return {
+                    ok: true,
+                    status: 'SKIPPED',
+                    idempotent: true,
+                    verification_status: 'DUPLICATE',
+                    sync_id: syncId,
+                    records_upserted: 0,
+                    records_skipped: 0,
+                    meta_upserted: 0,
+                };
+            }
+        }
+
+        const payload = verified.payload || effectiveSyncPayload(rawDoc);
         const meta = payload.export_meta || {};
-        const cid = String(companyId || meta.company_id || '').trim() || 'UNKNOWN';
-        const vid = String(vesselId || meta.vessel_id || '').trim();
+        const cid = String(companyId || meta.company_id || cidHeader).trim() || 'UNKNOWN';
+        const vid = String(vesselId || meta.vessel_id || vidHeader).trim();
         if (!vid) {
             await writeIngestLog(supabase, {
                 ...baseLog,
@@ -222,6 +342,8 @@ async function ingestSyncPackage({
             });
             return { ok: false, status: 'FAILED', error: 'vessel_id missing' };
         }
+
+        const verificationStatus = verified.legacy ? 'LEGACY' : 'VERIFIED';
 
         const items = collectRecordItems(payload, cid, vid, packageId);
         const BATCH = 100;
@@ -245,11 +367,14 @@ async function ingestSyncPackage({
             records_skipped: skipped,
             meta_upserted: metaUpserted,
             error_message: null,
+            ...auditRowExtras(verificationStatus, syncId, null),
         });
 
         return {
             ok: true,
             status: 'OK',
+            verification_status: verificationStatus,
+            sync_id: syncId,
             records_upserted: upserted,
             records_skipped: skipped,
             meta_upserted: metaUpserted,
@@ -285,5 +410,7 @@ module.exports = {
     upsertMetaItems,
     recordUpdatedAt,
     recordKey,
+    verifyIncomingDocument,
+    effectiveSyncPayload,
     ingestSyncPackage,
 };
