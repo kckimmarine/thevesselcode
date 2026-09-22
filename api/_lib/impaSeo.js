@@ -8,6 +8,7 @@ const {
     buildProductPhotoAlt,
     buildProductPhotoAttributionHtml,
 } = require('./impaProductPhotos');
+const layout = require('../../js/ui/impaStoreDetailLayout.js');
 
 const CHAPTER_CATEGORY = {
     '33': 'Safety Equipment',
@@ -216,10 +217,7 @@ function buildPrimaryHeading(item) {
 }
 
 function cleanProductTitle(item) {
-    let name = String(item?.name || 'Marine Store Item');
-    name = name.replace(/\s+\d+(?:\.\d+)?\s*(?:mm|cm|m|mtr|inch|in|")\s*(?:x\s*.+)?$/i, '');
-    name = name.replace(/\s+\d+\s*(?:rolls?|rols|pcs|pieces?|boxes?|sets?)(?:\s*per\s*box)?.*$/i, '');
-    return name.trim() || String(item?.name || 'Marine Store Item');
+    return layout.cleanProductTitle(item);
 }
 
 function buildMetaDescription(item) {
@@ -476,81 +474,13 @@ const {
     buildStoreRepairBridgeCtaHtml,
 } = require('../../js/ui/totalServiceBar.js');
 
-const TOP_REQUISITION_CHAPTERS = new Set(['31', '33', '55', '59', '61', '75', '79', '87']);
-
-function isTopRequisitionedItem(item) {
-    const code = normalizeCode(item?.impa_code || item?.code || '');
-    if (code.length < 2) return false;
-    return TOP_REQUISITION_CHAPTERS.has(code.slice(0, 2));
-}
-
-function buildImpaCommerceTrustHtml(item) {
-    const topHidden = isTopRequisitionedItem(item) ? '' : ' hidden';
-    return `
-        <div class="impa-detail-trust-header" aria-label="Trust and verification">
-          <span class="impa-trust-badge impa-trust-badge-hot${topHidden}" data-impa-top-badge>🔥 Top Requisitioned Item</span>
-          <span class="impa-trust-badge impa-trust-badge-verified">✓ Verified by 1st Class Marine Engineer</span>
-        </div>`;
-}
-
-function buildImpaStockSlaHtml() {
-    return `
-        <div class="impa-stock-sla-card" aria-label="Stock and delivery">
-          <div class="impa-stock-sla-col impa-stock-col">🟢 In Stock (Busan Hub / Singapore Transit Ready)</div>
-          <div class="impa-stock-sla-col impa-sla-col">⚡ Nationwide delivery: Busan, Ulsan, Yeosu, Pohang, Daesan, Pyeongtaek, Incheon, Donghae · bonded transit</div>
-        </div>`;
-}
-
-function buildImpaCommerceActionsHtml(item) {
-    const code = escapeHtml(item.impa_code);
-    const name = escapeHtml(cleanProductTitle(item));
-    return `
-        <div class="impa-detail-commerce-actions impa-store-commerce-actions">
-          <button type="button" class="btn-action-rfq" data-impa-fast-rfq data-impa-item-code="${code}" data-impa-item-name="${name}">📋 1-Click Fast RFQ</button>
-          <a class="btn-action-wa" data-impa-wa-rfq data-impa-item-code="${code}" data-impa-item-name="${name}" href="https://wa.me/821038894291" target="_blank" rel="noopener noreferrer">💬 Instant Quote via WhatsApp</a>
-        </div>`;
-}
-
-/** Primary monetization path for GSC /store traffic → RFQ form. */
-function buildRfqLeadBlockHtml(item, base) {
-    const code = item.impa_code;
-    const name = cleanProductTitle(item);
-    const rfqBase = {
-        inquiry: 'rfq',
-        code,
-        name,
-        ref: `/store/${code}`,
-    };
-    const busanUrl = buildContactInquiryUrl(base, { ...rfqBase, port: 'Busan' });
-    const singaporeUrl = buildContactInquiryUrl(base, { ...rfqBase, port: 'Singapore' });
-    const shanghaiUrl = buildContactInquiryUrl(base, { ...rfqBase, port: 'Shanghai' });
-    const rfqUrl = buildContactInquiryUrl(base, rfqBase);
-    const pocUrl = buildContactInquiryUrl(base, { inquiry: 'poc', ref: `/store/${code}` });
-    const waText = encodeURIComponent(
-        `RFQ — IMPA ${code} (${name}). Qty / delivery port / vessel name: `
-    );
-    const waUrl = `https://wa.me/821038894291?text=${waText}`;
-    return `
-      <section class="store-rfq-lead" aria-label="Request quotation for this IMPA item">
-        <p class="store-rfq-eyebrow">B2B supply · Busan HQ · 12h response</p>
-        <h2 class="store-rfq-title">Request a quote for IMPA ${escapeHtml(code)}</h2>
-        <p class="store-rfq-desc">${escapeHtml(name)} — delivery, MOQ, and maker alternatives from K-TECH / THE VESSEL CODE.</p>
-        <div class="store-rfq-port-row">
-          <a class="btn btn-rfq-primary" href="${escapeHtml(rfqUrl)}">Get quote (any port)</a>
-          <a class="btn btn-rfq-port" href="${escapeHtml(busanUrl)}">Busan</a>
-          <a class="btn btn-rfq-port" href="${escapeHtml(singaporeUrl)}">Singapore</a>
-          <a class="btn btn-rfq-port" href="${escapeHtml(shanghaiUrl)}">Shanghai</a>
-        </div>
-        <p class="store-rfq-alt">
-          <a href="${escapeHtml(waUrl)}" rel="noopener noreferrer" target="_blank">WhatsApp RFQ</a>
-          · <a href="${escapeHtml(pocUrl)}">14-day fleet PoC</a>
-          · <a href="tel:+821038894291">+82 10-3889-4291</a>
-        </p>
-      </section>
-      <aside class="store-sticky-lead" aria-label="Quick quote">
-        <a class="store-sticky-lead-btn" href="${escapeHtml(rfqUrl)}">Quote IMPA ${escapeHtml(code)}</a>
-      </aside>`;
-}
+const {
+    buildImpaCommerceTrustHtml,
+    buildImpaStockSlaHtml,
+    buildImpaCommerceActionsHtml,
+    buildRfqLeadBlockHtml,
+    isTopRequisitionedItem,
+} = layout;
 
 function buildTvcSmConversionBannerHtml(base) {
     const demoUrl = buildContactInquiryUrl(base, { inquiry: 'poc' });
@@ -583,7 +513,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
     const heroImage = resolveStoreHeroImage(item);
     const heroPath = heroImage.path || '';
     const imageUrl = heroPath ? `${base}${heroPath}` : '';
-    const rows = specRows(item);
+    const rows = layout.specRows(item);
     const tableHtml = rows.map(([label, value]) => (
         `<tr><th scope="row">${escapeHtml(label)}</th><td>${escapeHtml(value)}</td></tr>`
     )).join('');

@@ -911,9 +911,10 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
 }
 
 .impa-detail-modal-public .impa-detail-box,
-.impa-detail-modal-public .impa-modal-container {
+.impa-detail-modal-public .impa-modal-container,
+.impa-detail-modal-public .impa-store-detail-card {
     width: 100%;
-    max-width: 520px;
+    max-width: 560px;
     max-height: 85vh;
     max-height: 85dvh;
     background: #0f172a;
@@ -924,46 +925,29 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
 }
 
 .impa-detail-modal-public .impa-detail-head {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 14px 16px;
-    background: #0f172a;
-    border-bottom: 1px solid #1e293b;
-    color: #f8fafc;
-}
-
-.impa-detail-modal-public .impa-detail-head-main {
-    min-width: 0;
-}
-
-.impa-detail-modal-public .impa-detail-title {
-    display: block;
-    margin: 8px 0 0;
-    font-size: 1.05rem;
-    font-weight: 700;
-    line-height: 1.35;
-    color: #f8fafc;
-}
-
-.impa-detail-modal-public .impa-shipserv-title.impa-shipserv-title-duplicate {
     display: none;
 }
 
-.impa-detail-modal-public .impa-detail-badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 6px 12px;
-    border-radius: 999px;
-    background: #1e293b;
-    color: #e2e8f0;
-    font-size: 0.8125rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
+.impa-detail-modal-public .impa-store-detail-head {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #0f172a;
+}
+
+.impa-detail-modal-public .store-sticky-lead {
+    display: none !important;
+}
+
+.impa-detail-modal-public .impa-plate-preview,
+.impa-detail-modal-public .impa-shipserv-photo.impa-plate-preview {
+    max-height: 240px;
+    height: auto;
+    min-height: 140px;
+}
+
+.impa-detail-modal-public .impa-detail-pms-scroll {
+    display: none !important;
 }
 
 .impa-detail-modal-public #modalCloseBtn {
@@ -976,6 +960,12 @@ body.store-pull-active.store-pull-refreshing .store-public-panel {
     color: #fff;
     border: 1px solid #334155;
     font-size: 18px;
+}
+
+.impa-detail-modal-public .impa-shipserv-layout.impa-store-detail {
+    max-height: 85vh;
+    max-height: 85dvh;
+    overflow-y: auto;
 }
 
 .impa-detail-modal-public .modal-body,
