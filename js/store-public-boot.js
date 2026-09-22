@@ -42,6 +42,7 @@
 
         TVC_StoreManager.enableMemorySearch(true);
         TVC_StoreMenu.setPublicMode(true);
+        TVC_StoreManager.bootstrapInstantCatalog();
 
         if (typeof TVC_MaritimeToolkit !== 'undefined') {
             await TVC_MaritimeToolkit.init();
@@ -55,16 +56,17 @@
             TVC_MaritimeToolkit.openToolkitModule(toolTab, { scroll: false, syncUrl: true });
         }
 
-        try {
-            await TVC_StoreManager.loadCatalog();
-            await TVC_StoreManager.buildMemoryIndex();
-        } catch (err) {
-            console.warn('[store-public] catalog preload', err);
-        }
-
         await TVC_StoreMenu.render();
+        const fullIngest = TVC_StoreManager.scheduleFullCatalogIngest();
 
         const searchQ = params.get('q');
+        const impaCode = params.get('impa');
+        if ((searchQ && String(searchQ).trim()) || impaCode) {
+            await fullIngest.catch((err) => {
+                console.warn('[store-public] catalog background ingest', err);
+            });
+        }
+
         if (searchQ && String(searchQ).trim()) {
             const handled = await applyQueryDirectAnswer(params);
             if (!handled) {
@@ -76,7 +78,6 @@
             }
         }
 
-        const impaCode = new URLSearchParams(window.location.search).get('impa');
         if (impaCode) {
             try {
                 const item = await TVC_StoreManager.getItemByCode(impaCode);
