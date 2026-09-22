@@ -77,6 +77,15 @@ const TVC_TemplateService = (function () {
         return t?.maker_options || { MAIN_ENGINE: [], GEN_ENGINE: [] };
     }
 
+    function resolveCompanyId(opts = {}) {
+        const fromOpts = String(opts.companyId || '').trim();
+        if (fromOpts) return fromOpts;
+        if (typeof TVC_Fleet !== 'undefined' && typeof TVC_Fleet.licenseCompanyId === 'function') {
+            return String(TVC_Fleet.licenseCompanyId() || '').trim();
+        }
+        return '';
+    }
+
     async function vesselHasMachineryData(vesselId) {
         const vid = String(vesselId || '').trim();
         if (!vid) return false;
@@ -87,7 +96,7 @@ const TVC_TemplateService = (function () {
         return hasComp || hasJob;
     }
 
-    function rebuildComponentTree(jobs, vesselId) {
+    function rebuildComponentTree(jobs, vesselId, companyId) {
         const components = {};
         let order = 0;
         function ensure(path, nodeType, label, parentId) {
@@ -98,6 +107,7 @@ const TVC_TemplateService = (function () {
             components[key] = {
                 id,
                 vessel_id: vesselId || null,
+                ...(companyId ? { company_id: companyId } : {}),
                 parent_id: parentId || null,
                 path: [...path],
                 label,
@@ -156,6 +166,7 @@ const TVC_TemplateService = (function () {
 
         const ts = new Date().toISOString();
         const today = ts.slice(0, 10);
+        const companyId = resolveCompanyId(opts);
         const jobs = [];
         let jobSeq = 0;
 
@@ -182,6 +193,7 @@ const TVC_TemplateService = (function () {
                 jobs.push({
                     id: uuid(),
                     vessel_id: vid,
+                    ...(companyId ? { company_id: companyId } : {}),
                     department: dept,
                     group: grp,
                     sort: 'A. ROUTINE MAINTENANCE',
@@ -209,7 +221,7 @@ const TVC_TemplateService = (function () {
             }
         }
 
-        const components = rebuildComponentTree(jobs, vid);
+        const components = rebuildComponentTree(jobs, vid, companyId);
         for (const c of components) {
             if (c.node_type === 'ITEM_L2' || c.node_type === 'EQUIPMENT') {
                 const matchJob = jobs.find(j => j.ship_component_id === c.id);
@@ -225,6 +237,7 @@ const TVC_TemplateService = (function () {
                 groupDefs.set(gk, {
                     id: `arc-grp-${uuid()}`,
                     vessel_id: vid,
+                    ...(companyId ? { company_id: companyId } : {}),
                     department: j.department,
                     label: j.group,
                     sort_order: no,

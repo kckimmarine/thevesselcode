@@ -264,7 +264,8 @@ const TVC_VesselRegistryModal = (function () {
             const result = await TVC_TemplateService.applyVesselArchetype(
                 vesselId,
                 state.archetypeKey,
-                makerOverrides
+                makerOverrides,
+                { companyId: state.companyId || (typeof TVC_Fleet !== 'undefined' ? TVC_Fleet.licenseCompanyId() : '') }
             );
 
             if (typeof TVC_Fleet !== 'undefined' && TVC_Fleet.syncFromAdminRegistry) {
