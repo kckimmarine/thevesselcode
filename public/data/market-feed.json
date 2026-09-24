@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-23T18:06:13.197Z",
+    "generatedAt": "2026-09-24T00:05:58.805Z",
     "benchmarkAsOf": "2026-09-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -200,6 +200,142 @@
   },
   "news": [
     {
+      "title": "Onex VLCC buying spree takes shape",
+      "link": "https://splash247.com/onex-vlcc-buying-spree-takes-shape/",
+      "pubDate": "Wed, 23 Sep 2026 22:42:39 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Onex DMCC has emerged as one of the tanker market’s most aggressive VLCC buyers, with at least five supertankers now linked to the Dubai trading house through broker reports and sales registers. Splash reported on September 11 that Onex had paid a record $200m for George Procopio",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/12/DP-World-Dubai.jpg",
+      "en": {
+        "headline": "Onex VLCC buying spree takes shape",
+        "summary": "Onex DMCC has emerged as one of the tanker market’s most aggressive VLCC buyers, with at least five supertankers now linked to the Dubai trading house through broker reports and sales registers. Splash reported on September 11 that Onex had paid a record $200m for George Procopio",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Seafarer killed and capesize adrift in Hormuz",
+      "link": "https://splash247.com/seafarer-killed-and-capesize-adrift-in-hormuz/",
+      "pubDate": "Wed, 23 Sep 2026 22:40:47 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "The human and commercial toll from the battle for the Strait of Hormuz continues to mount, with one seafarer killed yesterday after the Cape Dao capesize was struck while transiting the waterway. The 2002-built, Antigua and Barbuda-flagged bulker was hit at around 0630 UTC off Om",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/Hormuz-IMO.jpg",
+      "en": {
+        "headline": "Seafarer killed and capesize adrift in Hormuz",
+        "summary": "The human and commercial toll from the battle for the Strait of Hormuz continues to mount, with one seafarer killed yesterday after the Cape Dao capesize was struck while transiting the waterway. The 2002-built, Antigua and Barbuda-flagged bulker was hit at around 0630 UTC off Om",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "The charts that explain shipping’s extraordinary decade",
+      "link": "https://splash247.com/the-charts-that-explain-shippings-extraordinary-decade/",
+      "pubDate": "Wed, 23 Sep 2026 22:39:15 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Shipping has spent the 2020s lurching from one earnings boom to another, with successive crises repeatedly rescuing markets that conventional supply-demand analysis suggested should be weakening. Two new charts capture how today’s supercycle came to be, and which sectors face a l",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Mayuree-Naree-Iran.jpg",
+      "en": {
+        "headline": "The charts that explain shipping’s extraordinary decade",
+        "summary": "Shipping has spent the 2020s lurching from one earnings boom to another, with successive crises repeatedly rescuing markets that conventional supply-demand analysis suggested should be weakening. Two new charts capture how today’s supercycle came to be, and which sectors face a l",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Shubpreet Singh takes over at V.Ships",
+      "link": "https://splash247.com/shubpreet-singh-takes-over-at-v-ships/",
+      "pubDate": "Wed, 23 Sep 2026 22:36:58 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "V.Group has appointed Shubpreet Singh as chief executive of V.Ships, promoting from within as the shipmanagement giant reshuffles its senior leadership. Singh, a master mariner, has most recently been leading the execution of V.Ships’ strategy after previously heading the group’s",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/VShips-Crew-V.Ships-V.Group-VGroup.jpeg",
+      "en": {
+        "headline": "Shubpreet Singh takes over at V.Ships",
+        "summary": "V.Group has appointed Shubpreet Singh as chief executive of V.Ships, promoting from within as the shipmanagement giant reshuffles its senior leadership. Singh, a master mariner, has most recently been leading the execution of V.Ships’ strategy after previously heading the group’s",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Ships blamed for bulk of chronic ocean oil pollution",
+      "link": "https://splash247.com/ships-blamed-for-bulk-of-chronic-ocean-oil-pollution/",
+      "pubDate": "Wed, 23 Sep 2026 22:35:33 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Ships are associated with the overwhelming majority of attributable chronic oil pollution at sea, according to a new global analysis from satellite-monitoring group SkyTruth. The study estimates that around 1.58m sq km of ocean surface is covered by oil slicks each year, with mor",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/02/Rubymar-slick.jpg",
+      "en": {
+        "headline": "Ships blamed for bulk of chronic ocean oil pollution",
+        "summary": "Ships are associated with the overwhelming majority of attributable chronic oil pollution at sea, according to a new global analysis from satellite-monitoring group SkyTruth. The study estimates that around 1.58m sq km of ocean surface is covered by oil slicks each year, with mor",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "What happens when net zero becomes auditable?",
+      "link": "https://splash247.com/what-happens-when-net-zero-becomes-auditable/",
+      "pubDate": "Wed, 23 Sep 2026 21:39:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Captain Alex Byelyavtsev is back with some uncomfortable predictions for some owners.  ISO’s public consultation on ISO 14060 closed on September 9, 2026. The draft is intended to become what ISO describes as the world’s first international independently verifiable standard for c",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/04/Jack-Hall-PA-Media-Assignments-8.jpg",
+      "en": {
+        "headline": "What happens when net zero becomes auditable?",
+        "summary": "Captain Alex Byelyavtsev is back with some uncomfortable predictions for some owners.  ISO’s public consultation on ISO 14060 closed on September 9, 2026. The draft is intended to become what ISO describes as the world’s first international independently verifiable standard for c",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Coast Guard Awards $315 Million Kodiak Pier Contract to Support Arctic Fleet Expansion",
+      "link": "https://gcaptain.com/coast-guard-awards-315-million-kodiak-pier-contract-to-support-arctic-fleet-expansion/",
+      "pubDate": "Wed, 23 Sep 2026 21:34:42 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The U.S. Coast Guard has awarded a $315 million contract to Tutor Perini Corp. to build a new fuel pier and major cutter mooring at Base Kodiak, Alaska, as the service prepares...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/09/250820-G-G0200-1002.jpg",
+      "en": {
+        "headline": "Coast Guard Awards $315 Million Kodiak Pier Contract to Support Arctic Fleet Expansion",
+        "summary": "The U.S. Coast Guard has awarded a $315 million contract to Tutor Perini Corp. to build a new fuel pier and major cutter mooring at Base Kodiak, Alaska, as the service prepares...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Traders Push for Discounts for Venezuelan Oil as Shipping Costs Soar",
+      "link": "https://gcaptain.com/traders-push-for-discounts-for-venezuelan-oil-as-shipping-costs-soar/",
+      "pubDate": "Wed, 23 Sep 2026 20:25:54 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Global oil trading firms Vitol and Trafigura are pushing for steeper discounts on Venezuelan crude oil as rising freight rates shrink their margins, five sources familiar with the matter said.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/01/5RAZNVHDZVNCJOYCHYDK75ITKY.jpg",
+      "en": {
+        "headline": "Traders Push for Discounts for Venezuelan Oil as Shipping Costs Soar",
+        "summary": "Global oil trading firms Vitol and Trafigura are pushing for steeper discounts on Venezuelan crude oil as rising freight rates shrink their margins, five sources familiar with the matter said.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Shipping Magnate Worth $13.5 Billion Rides AI Boom With Nvidia",
       "link": "https://gcaptain.com/shipping-magnate-worth-13-5-billion-rides-ai-boom-with-nvidia/",
       "pubDate": "Wed, 23 Sep 2026 17:25:36 +0000",
@@ -208,7 +344,7 @@
       "summary": "Maria Angelicoussis, the magnate behind Greece’s biggest shipping fortune, has scored big gains outside her maritime empire with a bet on technology giant Nvidia Corp. after her family office shifted away from private markets.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-10T132136Z_1847599582_RC2QRLAIJ7F4_RTRMADP_3_D-MATRIX-NVIDIA.jpg",
       "en": {
         "headline": "Shipping Magnate Worth $13.5 Billion Rides AI Boom With Nvidia",
@@ -225,7 +361,7 @@
       "summary": "resident Volodymyr Zelenskiy told leaders at the United Nations on Wednesday that Ukraine was ready for a maritime truce in the Black Sea based on proposals by Egypt, India and Turkey and said it was now up to Russia to respond.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-22T182722Z_382310736_RC2HONAYM2Y7_RTRMADP_3_UKRAINE-CRISIS-TRUMP-ZELENSKIY.jpg",
       "en": {
         "headline": "Zelenskiy Says Ukraine Ready for Maritime Truce if Russia Agrees",
@@ -242,7 +378,7 @@
       "summary": "The container shipping market is still benefiting from geopolitical disruption and longer sailing distances in 2026, but a rapidly expanding fleet could turn that support into a supply problem next...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/11/shutterstock_118101748.jpg",
       "en": {
         "headline": "Container Shipping Faces 2027 Pressure as Huge Orderbook Hits the Water",
@@ -259,7 +395,7 @@
       "summary": "President Donald Trump used his address to the United Nations General Assembly on Tuesday to renew his attack on the International Maritime Organization’s Net-Zero Framework, accusing the UN shipping agency...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-22T153811Z_1522533895_RC2FONAE1982_RTRMADP_3_UN-ASSEMBLY.jpg",
       "en": {
         "headline": "Trump Takes Aim at Shipping&#8217;s Net-Zero Plan at UN",
@@ -273,14 +409,14 @@
       "pubDate": "Wed, 23 Sep 2026 14:47:51 +0000",
       "source": "gCaptain",
       "category": "Dry Bulk",
-      "summary": "An Indian seafarer has been killed and another crew member injured after a bulk carrier was struck in the Strait of Hormuz, the latest attack on merchant shipping as U.S....",
+      "summary": "An Indian seafarer has been killed after the Antigua and Barbuda-flagged bulk carrier&#160;Cape Dao&#160;was attacked and abandoned near the Strait of Hormuz, adding to a mounting casualty toll as the...",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
       "en": {
         "headline": "Seafarer Killed in Hormuz Attack as Trump Pushes Iran Deal at UN",
-        "summary": "An Indian seafarer has been killed and another crew member injured after a bulk carrier was struck in the Strait of Hormuz, the latest attack on merchant shipping as U.S....",
+        "summary": "An Indian seafarer has been killed after the Antigua and Barbuda-flagged bulk carrier&#160;Cape Dao&#160;was attacked and abandoned near the Strait of Hormuz, adding to a mounting casualty toll as the...",
         "source": "gCaptain"
       }
     },
@@ -293,7 +429,7 @@
       "summary": "Bardex to deliver new 25,000Te OmniLift® Shiplift for River Port, LLC. The  system will be operated by East Coast Repair &#38; Fabrication, LLC, expanding the Newport  News facility’s capacity to...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Bardex_River_Port_OmniLift_Shiplift-800x450.jpg",
       "en": {
         "headline": "Transforming the River Port, LLC Shipyard &#8211; Expanding What&#8217;s Possible",
@@ -310,7 +446,7 @@
       "summary": "Angeliki Frangou-led Navios Maritime Partners has been linked to another four containership newbuilds at South Korea’s HJ Shipbuilding &#38; Construction (HJSC), in a deal worth around $500m. HJSC disclosed this week that it had signed up an unidentified Oceania-based owner for f",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/03/Angeliki-Frangou-Zhoushan-Changhong-International-Shipyard.jpg",
       "en": {
         "headline": "Navios tied to four boxship newbuilds in South Korea",
@@ -327,148 +463,12 @@
       "summary": "Germany’s DAB Group is moving into shipowning, ordering two ultramax bulk carriers at China’s Jiangsu Soho Innovation &#38; Technology Shipbuilding with an option for a third vessel. The 64,500 dwt ships have been ordered through group company Dassler Schiffahrts- und Handelsgese",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Dolphin-64500-dwt-SDARI.jpg",
       "en": {
         "headline": "DAB Group enters shipowning with Chinese ultramax pair",
         "summary": "Germany’s DAB Group is moving into shipowning, ordering two ultramax bulk carriers at China’s Jiangsu Soho Innovation &#38; Technology Shipbuilding with an option for a third vessel. The 64,500 dwt ships have been ordered through group company Dassler Schiffahrts- und Handelsgese",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "US opens rethink of $2.5bn vessel investment pool",
-      "link": "https://splash247.com/us-opens-rethink-of-2-5bn-vessel-investment-pool/",
-      "pubDate": "Wed, 23 Sep 2026 12:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The US Maritime Administration is proposing the biggest rewrite in decades of rules governing the Capital Construction Fund, a tax-deferral programme currently holding about $2.56bn for investment in US commercial vessels. MARAD published a notice of proposed rulemaking on Septem",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/MARAD.jpg",
-      "en": {
-        "headline": "US opens rethink of $2.5bn vessel investment pool",
-        "summary": "The US Maritime Administration is proposing the biggest rewrite in decades of rules governing the Capital Construction Fund, a tax-deferral programme currently holding about $2.56bn for investment in US commercial vessels. MARAD published a notice of proposed rulemaking on Septem",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Synergy links up with Cochin across newbuilds and conversions",
-      "link": "https://splash247.com/synergy-links-up-with-cochin-across-newbuilds-and-conversions/",
-      "pubDate": "Wed, 23 Sep 2026 11:30:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Singapore shipmanager Synergy Marine Group has joined forces with Cochin Shipyard to pursue shipbuilding, repair and conversion work in India, adding another international partner to the state-controlled yard’s expanding network. The two companies signed an MoU in Kochi covering ",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Cochin-Shipyard.jpg",
-      "en": {
-        "headline": "Synergy links up with Cochin across newbuilds and conversions",
-        "summary": "Singapore shipmanager Synergy Marine Group has joined forces with Cochin Shipyard to pursue shipbuilding, repair and conversion work in India, adding another international partner to the state-controlled yard’s expanding network. The two companies signed an MoU in Kochi covering ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "China Merchants tanker arm lines up LR2 quartet",
-      "link": "https://splash247.com/china-merchants-tanker-arm-lines-up-lr2-quartet/",
-      "pubDate": "Wed, 23 Sep 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "China Merchants-controlled Nanjing Tanker has launched a tender for four additional LR2 tankers, potentially tripling its newbuilding exposure in the segment from two ships to six. The Shanghai-listed owner is inviting bids to construct four LR2 product/crude carriers, with submi",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/10/Dalian-Shipbuilding-Industry-Co.-DSIC.jpg",
-      "en": {
-        "headline": "China Merchants tanker arm lines up LR2 quartet",
-        "summary": "China Merchants-controlled Nanjing Tanker has launched a tender for four additional LR2 tankers, potentially tripling its newbuilding exposure in the segment from two ships to six. The Shanghai-listed owner is inviting bids to construct four LR2 product/crude carriers, with submi",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Diana extends rate run with new ultramax fixture",
-      "link": "https://splash247.com/diana-extends-rate-run-with-new-ultramax-fixture/",
-      "pubDate": "Wed, 23 Sep 2026 10:30:00 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Diana Shipping has extended its run of stronger dry bulk fixtures, locking the ultramax DSI Polaris into a new charter with Dai An Ocean Shipping at $18,000 per day, nearly 47% above its current rate. The 2018-built, 60,404 dwt bulker will start its new employment on September 25",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/07/MarineTraffic-Sergei-Skriabin-STH-Oslo-DSI-Polaris-Diana-Shipping.jpg",
-      "en": {
-        "headline": "Diana extends rate run with new ultramax fixture",
-        "summary": "Diana Shipping has extended its run of stronger dry bulk fixtures, locking the ultramax DSI Polaris into a new charter with Dai An Ocean Shipping at $18,000 per day, nearly 47% above its current rate. The 2018-built, 60,404 dwt bulker will start its new employment on September 25",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Jinhui keeps ultramax ordering spree rolling",
-      "link": "https://splash247.com/jinhui-keeps-ultramax-ordering-spree-rolling/",
-      "pubDate": "Wed, 23 Sep 2026 09:51:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Jinhui Shipping and Transportation has returned to Jiangmen Nanyang Ship Engineering for another pair of ultramax bulkers, taking its newbuilding programme in the segment to 14 ships. The Oslo- and Hong Kong-listed owner is paying $35.7m each, or $71.4m in total, for the two 64,5",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/10/Jinhui-bulker.jpg",
-      "en": {
-        "headline": "Jinhui keeps ultramax ordering spree rolling",
-        "summary": "Jinhui Shipping and Transportation has returned to Jiangmen Nanyang Ship Engineering for another pair of ultramax bulkers, taking its newbuilding programme in the segment to 14 ships. The Oslo- and Hong Kong-listed owner is paying $35.7m each, or $71.4m in total, for the two 64,5",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "CLdN extends HD Hyundai run with fresh order",
-      "link": "https://splash247.com/cldn-extends-hd-hyundai-run-with-fresh-order/",
-      "pubDate": "Wed, 23 Sep 2026 09:49:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Luxembourg-based CLdN has returned to South Korea for another pair of large roros, ordering two 6,700-lane-metre ships at HD Hyundai Heavy Industries for KRW336.2bn ($248m). The two vessels will be the 15th and 16th ships CLdN has ordered from the Korean shipbuilding group over t",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/02/Delphine-rotor-sails.jpg",
-      "en": {
-        "headline": "CLdN extends HD Hyundai run with fresh order",
-        "summary": "Luxembourg-based CLdN has returned to South Korea for another pair of large roros, ordering two 6,700-lane-metre ships at HD Hyundai Heavy Industries for KRW336.2bn ($248m). The two vessels will be the 15th and 16th ships CLdN has ordered from the Korean shipbuilding group over t",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Boxship orderbook points to looming capacity showdown",
-      "link": "https://splash247.com/boxship-orderbook-points-to-looming-capacity-showdown/",
-      "pubDate": "Wed, 23 Sep 2026 08:15:19 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Container shipping’s extraordinary newbuilding binge has reached a point where several carriers now have more ships on order than they have in their entire existing fleets. Shipping analyst Lars Jensen, who runs Vespucci Maritime, highlighted five operators in Alphaliner’s top 10",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/04/MSC-Migsan-MSC-Zivana-naming-ceremony.jpg",
-      "en": {
-        "headline": "Boxship orderbook points to looming capacity showdown",
-        "summary": "Container shipping’s extraordinary newbuilding binge has reached a point where several carriers now have more ships on order than they have in their entire existing fleets. Shipping analyst Lars Jensen, who runs Vespucci Maritime, highlighted five operators in Alphaliner’s top 10",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "US, Korea Hail ‘Significant Progress’ on $350 Billion Trade Deal",
-      "link": "https://gcaptain.com/us-korea-hail-significant-progress-on-350-billion-trade-deal/",
-      "pubDate": "Wed, 23 Sep 2026 07:48:40 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Donald Trump and South Korean President Lee Jae Myung hailed “significant progress” on implementing the two countries’ long-stalled investment deal, with lawmakers in Seoul saying the first project would be a $22.3 billion gas-fired power development in Texas.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-11T044808Z_848659433_RC2HEGAYICGX_RTRMADP_3_USA-SOUTHKOREA-TRADE-800x533.jpg",
-      "en": {
-        "headline": "US, Korea Hail ‘Significant Progress’ on $350 Billion Trade Deal",
-        "summary": "Donald Trump and South Korean President Lee Jae Myung hailed “significant progress” on implementing the two countries’ long-stalled investment deal, with lawmakers in Seoul saying the first project would be a $22.3 billion gas-fired power development in Texas.",
-        "source": "gCaptain"
       }
     }
   ]
