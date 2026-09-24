@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-24T00:05:58.805Z",
+    "generatedAt": "2026-09-24T06:06:12.964Z",
     "benchmarkAsOf": "2026-09-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -200,6 +200,74 @@
   },
   "news": [
     {
+      "title": "Subsea 7 picked for Turkish FPU installation",
+      "link": "https://splash247.com/subsea-7-picked-for-turkish-fpu-installation/",
+      "pubDate": "Thu, 24 Sep 2026 02:40:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Offshore engineering and services player Subsea 7 has received an extension for work on the Sakarya Phase 3 Black Sea gas development offshore Turkey from Turkish Petroleum Offshore Technology Centre (TP-OTC). The additional scope covers towing and mooring line installation and c",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Osman-Gazi-TPAO.jpg",
+      "en": {
+        "headline": "Subsea 7 picked for Turkish FPU installation",
+        "summary": "Offshore engineering and services player Subsea 7 has received an extension for work on the Sakarya Phase 3 Black Sea gas development offshore Turkey from Turkish Petroleum Offshore Technology Centre (TP-OTC). The additional scope covers towing and mooring line installation and c",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "DeepOcean and TFKable plan new offshore wind cable vessel",
+      "link": "https://splash247.com/deepocean-and-tfkable-plan-dedicated-offshore-wind-cable-vessel/",
+      "pubDate": "Thu, 24 Sep 2026 02:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Norwegian ocean services contractor DeepOcean and TFKable Group are planning a purpose-built cable-laying vessel for the offshore wind market as part of a proposed joint venture targeting inter-array cable projects. The vessel would be owned by a separate company involving Poland",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/07/DeepOcean-vessel-RWE.jpg",
+      "en": {
+        "headline": "DeepOcean and TFKable plan new offshore wind cable vessel",
+        "summary": "Norwegian ocean services contractor DeepOcean and TFKable Group are planning a purpose-built cable-laying vessel for the offshore wind market as part of a proposed joint venture targeting inter-array cable projects. The vessel would be owned by a separate company involving Poland",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Perenco plans $110m power-from-shore project off Brazil",
+      "link": "https://splash247.com/perenco-plans-110m-power-from-shore-project-off-brazil/",
+      "pubDate": "Thu, 24 Sep 2026 02:20:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Perenco and Porto do Açu have signed a letter of intent to develop an offshore electrification scheme for the Pargo and Cherne production clusters in the Campos Basin. The project would connect the shallow-water facilities to Brazil’s onshore grid through an 80 km subsea cable ru",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Pargo-Perenco.jpg",
+      "en": {
+        "headline": "Perenco plans $110m power-from-shore project off Brazil",
+        "summary": "Perenco and Porto do Açu have signed a letter of intent to develop an offshore electrification scheme for the Pargo and Cherne production clusters in the Campos Basin. The project would connect the shallow-water facilities to Brazil’s onshore grid through an 80 km subsea cable ru",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Fugro wins survey and inspection work offshore Australia",
+      "link": "https://splash247.com/fugro-wins-survey-and-inspection-work-offshore-australia/",
+      "pubDate": "Thu, 24 Sep 2026 02:10:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Dutch surveyor Fugro has secured a marine asset integrity contract with an undisclosed client in Australia. Fugro will replace critical subsea infrastructure to support the long-term reliability and performance of our client’s offshore assets. In addition to the replacement works",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Fugro-Etive.jpg",
+      "en": {
+        "headline": "Fugro wins survey and inspection work offshore Australia",
+        "summary": "Dutch surveyor Fugro has secured a marine asset integrity contract with an undisclosed client in Australia. Fugro will replace critical subsea infrastructure to support the long-term reliability and performance of our client’s offshore assets. In addition to the replacement works",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Onex VLCC buying spree takes shape",
       "link": "https://splash247.com/onex-vlcc-buying-spree-takes-shape/",
       "pubDate": "Wed, 23 Sep 2026 22:42:39 +0000",
@@ -208,7 +276,7 @@
       "summary": "Onex DMCC has emerged as one of the tanker market’s most aggressive VLCC buyers, with at least five supertankers now linked to the Dubai trading house through broker reports and sales registers. Splash reported on September 11 that Onex had paid a record $200m for George Procopio",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/12/DP-World-Dubai.jpg",
       "en": {
         "headline": "Onex VLCC buying spree takes shape",
@@ -225,7 +293,7 @@
       "summary": "The human and commercial toll from the battle for the Strait of Hormuz continues to mount, with one seafarer killed yesterday after the Cape Dao capesize was struck while transiting the waterway. The 2002-built, Antigua and Barbuda-flagged bulker was hit at around 0630 UTC off Om",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/Hormuz-IMO.jpg",
       "en": {
         "headline": "Seafarer killed and capesize adrift in Hormuz",
@@ -242,7 +310,7 @@
       "summary": "Shipping has spent the 2020s lurching from one earnings boom to another, with successive crises repeatedly rescuing markets that conventional supply-demand analysis suggested should be weakening. Two new charts capture how today’s supercycle came to be, and which sectors face a l",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Mayuree-Naree-Iran.jpg",
       "en": {
         "headline": "The charts that explain shipping’s extraordinary decade",
@@ -259,7 +327,7 @@
       "summary": "V.Group has appointed Shubpreet Singh as chief executive of V.Ships, promoting from within as the shipmanagement giant reshuffles its senior leadership. Singh, a master mariner, has most recently been leading the execution of V.Ships’ strategy after previously heading the group’s",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/VShips-Crew-V.Ships-V.Group-VGroup.jpeg",
       "en": {
         "headline": "Shubpreet Singh takes over at V.Ships",
@@ -276,7 +344,7 @@
       "summary": "Ships are associated with the overwhelming majority of attributable chronic oil pollution at sea, according to a new global analysis from satellite-monitoring group SkyTruth. The study estimates that around 1.58m sq km of ocean surface is covered by oil slicks each year, with mor",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/02/Rubymar-slick.jpg",
       "en": {
         "headline": "Ships blamed for bulk of chronic ocean oil pollution",
@@ -293,7 +361,7 @@
       "summary": "Captain Alex Byelyavtsev is back with some uncomfortable predictions for some owners.  ISO’s public consultation on ISO 14060 closed on September 9, 2026. The draft is intended to become what ISO describes as the world’s first international independently verifiable standard for c",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/04/Jack-Hall-PA-Media-Assignments-8.jpg",
       "en": {
         "headline": "What happens when net zero becomes auditable?",
@@ -310,7 +378,7 @@
       "summary": "The U.S. Coast Guard has awarded a $315 million contract to Tutor Perini Corp. to build a new fuel pier and major cutter mooring at Base Kodiak, Alaska, as the service prepares...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/09/250820-G-G0200-1002.jpg",
       "en": {
         "headline": "Coast Guard Awards $315 Million Kodiak Pier Contract to Support Arctic Fleet Expansion",
@@ -327,7 +395,7 @@
       "summary": "Global oil trading firms Vitol and Trafigura are pushing for steeper discounts on Venezuelan crude oil as rising freight rates shrink their margins, five sources familiar with the matter said.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/01/5RAZNVHDZVNCJOYCHYDK75ITKY.jpg",
       "en": {
         "headline": "Traders Push for Discounts for Venezuelan Oil as Shipping Costs Soar",
@@ -344,7 +412,7 @@
       "summary": "Maria Angelicoussis, the magnate behind Greece’s biggest shipping fortune, has scored big gains outside her maritime empire with a bet on technology giant Nvidia Corp. after her family office shifted away from private markets.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 6,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-10T132136Z_1847599582_RC2QRLAIJ7F4_RTRMADP_3_D-MATRIX-NVIDIA.jpg",
       "en": {
         "headline": "Shipping Magnate Worth $13.5 Billion Rides AI Boom With Nvidia",
@@ -361,7 +429,7 @@
       "summary": "resident Volodymyr Zelenskiy told leaders at the United Nations on Wednesday that Ukraine was ready for a maritime truce in the Black Sea based on proposals by Egypt, India and Turkey and said it was now up to Russia to respond.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-22T182722Z_382310736_RC2HONAYM2Y7_RTRMADP_3_UKRAINE-CRISIS-TRUMP-ZELENSKIY.jpg",
       "en": {
         "headline": "Zelenskiy Says Ukraine Ready for Maritime Truce if Russia Agrees",
@@ -378,7 +446,7 @@
       "summary": "The container shipping market is still benefiting from geopolitical disruption and longer sailing distances in 2026, but a rapidly expanding fleet could turn that support into a supply problem next...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/11/shutterstock_118101748.jpg",
       "en": {
         "headline": "Container Shipping Faces 2027 Pressure as Huge Orderbook Hits the Water",
@@ -395,80 +463,12 @@
       "summary": "President Donald Trump used his address to the United Nations General Assembly on Tuesday to renew his attack on the International Maritime Organization’s Net-Zero Framework, accusing the UN shipping agency...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-22T153811Z_1522533895_RC2FONAE1982_RTRMADP_3_UN-ASSEMBLY.jpg",
       "en": {
         "headline": "Trump Takes Aim at Shipping&#8217;s Net-Zero Plan at UN",
         "summary": "President Donald Trump used his address to the United Nations General Assembly on Tuesday to renew his attack on the International Maritime Organization’s Net-Zero Framework, accusing the UN shipping agency...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Seafarer Killed in Hormuz Attack as Trump Pushes Iran Deal at UN",
-      "link": "https://gcaptain.com/seafarer-killed-in-hormuz-attack-as-trump-pushes-iran-deal-at-un/",
-      "pubDate": "Wed, 23 Sep 2026 14:47:51 +0000",
-      "source": "gCaptain",
-      "category": "Dry Bulk",
-      "summary": "An Indian seafarer has been killed after the Antigua and Barbuda-flagged bulk carrier&#160;Cape Dao&#160;was attacked and abandoned near the Strait of Hormuz, adding to a mounting casualty toll as the...",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
-      "en": {
-        "headline": "Seafarer Killed in Hormuz Attack as Trump Pushes Iran Deal at UN",
-        "summary": "An Indian seafarer has been killed after the Antigua and Barbuda-flagged bulk carrier&#160;Cape Dao&#160;was attacked and abandoned near the Strait of Hormuz, adding to a mounting casualty toll as the...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Transforming the River Port, LLC Shipyard &#8211; Expanding What&#8217;s Possible",
-      "link": "https://gcaptain.com/transforming-the-river-port-llc-shipyard-expanding-whats-possible/",
-      "pubDate": "Wed, 23 Sep 2026 13:32:34 +0000",
-      "source": "gCaptain",
-      "category": "Bunker",
-      "summary": "Bardex to deliver new 25,000Te OmniLift® Shiplift for River Port, LLC. The  system will be operated by East Coast Repair &#38; Fabrication, LLC, expanding the Newport  News facility’s capacity to...",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Bardex_River_Port_OmniLift_Shiplift-800x450.jpg",
-      "en": {
-        "headline": "Transforming the River Port, LLC Shipyard &#8211; Expanding What&#8217;s Possible",
-        "summary": "Bardex to deliver new 25,000Te OmniLift® Shiplift for River Port, LLC. The  system will be operated by East Coast Repair &#38; Fabrication, LLC, expanding the Newport  News facility’s capacity to...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Navios tied to four boxship newbuilds in South Korea",
-      "link": "https://splash247.com/navios-tied-to-four-boxship-newbuilds-in-south-korea/",
-      "pubDate": "Wed, 23 Sep 2026 13:00:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Angeliki Frangou-led Navios Maritime Partners has been linked to another four containership newbuilds at South Korea’s HJ Shipbuilding &#38; Construction (HJSC), in a deal worth around $500m. HJSC disclosed this week that it had signed up an unidentified Oceania-based owner for f",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 11,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/03/Angeliki-Frangou-Zhoushan-Changhong-International-Shipyard.jpg",
-      "en": {
-        "headline": "Navios tied to four boxship newbuilds in South Korea",
-        "summary": "Angeliki Frangou-led Navios Maritime Partners has been linked to another four containership newbuilds at South Korea’s HJ Shipbuilding &#38; Construction (HJSC), in a deal worth around $500m. HJSC disclosed this week that it had signed up an unidentified Oceania-based owner for f",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "DAB Group enters shipowning with Chinese ultramax pair",
-      "link": "https://splash247.com/dab-group-enters-shipowning-with-chinese-ultramax-pair/",
-      "pubDate": "Wed, 23 Sep 2026 12:27:00 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Germany’s DAB Group is moving into shipowning, ordering two ultramax bulk carriers at China’s Jiangsu Soho Innovation &#38; Technology Shipbuilding with an option for a third vessel. The 64,500 dwt ships have been ordered through group company Dassler Schiffahrts- und Handelsgese",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Dolphin-64500-dwt-SDARI.jpg",
-      "en": {
-        "headline": "DAB Group enters shipowning with Chinese ultramax pair",
-        "summary": "Germany’s DAB Group is moving into shipowning, ordering two ultramax bulk carriers at China’s Jiangsu Soho Innovation &#38; Technology Shipbuilding with an option for a third vessel. The 64,500 dwt ships have been ordered through group company Dassler Schiffahrts- und Handelsgese",
-        "source": "Splash247"
       }
     }
   ]
