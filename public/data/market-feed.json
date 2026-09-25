@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-24T18:05:49.525Z",
+    "generatedAt": "2026-09-25T00:06:36.676Z",
     "benchmarkAsOf": "2026-09-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -200,6 +200,91 @@
   },
   "news": [
     {
+      "title": "The ship that didn&#8217;t have an accident today",
+      "link": "https://splash247.com/the-ship-that-didnt-have-an-accident-today/",
+      "pubDate": "Thu, 24 Sep 2026 21:41:00 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "Neville Jayant from SalusTech on why maritime safety must learn from everyday success as well as failure. Every day, ships complete demanding operations safely. Mooring continues through difficult weather, bunkering is completed despite changing conditions, and experienced crew m",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/12/EnclosedSpace-e1788001123629.jpg",
+      "en": {
+        "headline": "The ship that didn&#8217;t have an accident today",
+        "summary": "Neville Jayant from SalusTech on why maritime safety must learn from everyday success as well as failure. Every day, ships complete demanding operations safely. Mooring continues through difficult weather, bunkering is completed despite changing conditions, and experienced crew m",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Federal Training Ship Empire State VII Ordered to Norfolk Ahead of U.S. Navy Mission",
+      "link": "https://gcaptain.com/federal-training-ship-empire-state-vii-ordered-to-norfolk-ahead-of-u-s-navy-mission/",
+      "pubDate": "Thu, 24 Sep 2026 21:32:01 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "SUNY Maritime College’s training ship&#160;Empire State VII&#160;has been ordered to depart New York on September 30 for Norfolk, Virginia, where it will undergo a month-long activation and flight deck certification...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/Empire-State-VII.jpg",
+      "en": {
+        "headline": "Federal Training Ship Empire State VII Ordered to Norfolk Ahead of U.S. Navy Mission",
+        "summary": "SUNY Maritime College’s training ship&#160;Empire State VII&#160;has been ordered to depart New York on September 30 for Norfolk, Virginia, where it will undergo a month-long activation and flight deck certification...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "DNV: Shipping’s Fuel Future Hinges on What Regulators Do Next",
+      "link": "https://gcaptain.com/dnv-shippings-fuel-future-hinges-on-what-regulators-do-next/",
+      "pubDate": "Thu, 24 Sep 2026 18:58:52 +0000",
+      "source": "gCaptain",
+      "category": "Bunker",
+      "summary": "Regulatory uncertainty is becoming a major factor in shipowners’ investment decisions as the industry weighs vessels and fuel systems that will remain in service for decades, according to DNV’s latest Maritime...",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/07/2022-07-11T050025Z_666471803_RC2G9V9UXH5H_RTRMADP_3_SHIPPING-EMISSIONS-800x533.jpg",
+      "en": {
+        "headline": "DNV: Shipping’s Fuel Future Hinges on What Regulators Do Next",
+        "summary": "Regulatory uncertainty is becoming a major factor in shipowners’ investment decisions as the industry weighs vessels and fuel systems that will remain in service for decades, according to DNV’s latest Maritime...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Venezuela Spot Oil Sales Snarled by Surging Freight Costs",
+      "link": "https://gcaptain.com/venezuela-spot-oil-sales-snarled-by-surging-freight-costs/",
+      "pubDate": "Thu, 24 Sep 2026 18:51:59 +0000",
+      "source": "gCaptain",
+      "category": "S&P",
+      "summary": "Sales of Venezuelan oil for loading in October stalled after a surge in shipping costs muddled negotiations between the country’s state oil company and buyers of its oil.",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/2026-01-29T214657Z_1615896222_RC2P9JAIK1QE_RTRMADP_3_VENEZUELA-OIL-LAW-800x534.jpg",
+      "en": {
+        "headline": "Venezuela Spot Oil Sales Snarled by Surging Freight Costs",
+        "summary": "Sales of Venezuelan oil for loading in October stalled after a surge in shipping costs muddled negotiations between the country’s state oil company and buyers of its oil.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Bahrain Leads Countries&#8217; Call for Full Reopening of Strait of Hormuz Without Tolls",
+      "link": "https://gcaptain.com/bahrain-leads-countries-call-for-full-reopening-of-strait-of-hormuz-without-tolls/",
+      "pubDate": "Thu, 24 Sep 2026 17:34:30 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A Bahrain-led group backed by 80 countries has called for the immediate reopening of the Strait of Hormuz, demanding safe and unimpeded passage for commercial ships without tolls, conditions or...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-01T164535Z_267159373_RC2KVKADMUK6_RTRMADP_3_GLOBAL-OIL-800x600.jpg",
+      "en": {
+        "headline": "Bahrain Leads Countries&#8217; Call for Full Reopening of Strait of Hormuz Without Tolls",
+        "summary": "A Bahrain-led group backed by 80 countries has called for the immediate reopening of the Strait of Hormuz, demanding safe and unimpeded passage for commercial ships without tolls, conditions or...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "World Maritime Day 2026: IMO Warns Shipping Rules Are Under Strain as Seafarers Face Deadly Attacks",
       "link": "https://gcaptain.com/world-maritime-day-2026-imo-warns-shipping-rules-are-under-strain-as-seafarers-face-deadly-attacks/",
       "pubDate": "Thu, 24 Sep 2026 16:17:50 +0000",
@@ -208,7 +293,7 @@
       "summary": "The global maritime industry is marking World Maritime Day on Thursday with an unusually immediate backdrop: merchant ships under attack, seafarers being killed and some of the world’s most important...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-22T121323Z_1819482205_RC26ELATGE3R_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
       "en": {
         "headline": "World Maritime Day 2026: IMO Warns Shipping Rules Are Under Strain as Seafarers Face Deadly Attacks",
@@ -225,7 +310,7 @@
       "summary": "The Drewry World Container Index edged lower this week as falling Asia-Europe rates outweighed firmer pricing on the Transpacific, with carriers preparing another round of blank sailings ahead of China’s...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/OOCL-Portugal-Suez-Canal-800x545.jpg",
       "en": {
         "headline": "Container Rates Edge Lower Ahead of Golden Week as Suez Traffic Returns",
@@ -242,7 +327,7 @@
       "summary": "Taiwan has upgraded its maritime patrol capacity around the Pratas Islands in the disputed South China Sea, including regularly sending larger ships there, the government said, responding to an increase in Chinese activities.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/2026-01-29T052602Z_916046467_RC2QAJACPMG1_RTRMADP_3_TAIWAN-DEFENCE-800x533.jpg",
       "en": {
         "headline": "Taiwan Upgrades Maritime Patrol Capacity for Vulnerable South China Sea Outpost",
@@ -259,7 +344,7 @@
       "summary": "A supercharged rally in tanker earnings is attracting new investors to the global shipping industry, as the war in Iran points to how geopolitical crises can drastically curtail the supply of vessels.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-24T194006Z_526739983_RC2LD6A7RFZM_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x533.jpg",
       "en": {
         "headline": "Supertanker Rally Lures Investors as War Squeezes Vessel Supply",
@@ -276,7 +361,7 @@
       "summary": "Shipping has spent the 2020s lurching from one earnings boom to another, with successive crises repeatedly rescuing markets that conventional supply-demand analysis suggested should be weakening. Two new charts capture how today’s supercycle came to be, and which sectors face a l",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 12,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Mayuree-Naree-Iran.jpg",
       "en": {
         "headline": "The charts that explain shipping’s extraordinary decade",
@@ -293,7 +378,7 @@
       "summary": "Ships are associated with the overwhelming majority of attributable chronic oil pollution at sea, according to a new global analysis from satellite-monitoring group SkyTruth. The study estimates that around 1.58m sq km of ocean surface is covered by oil slicks each year, with mor",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/02/Rubymar-slick.jpg",
       "en": {
         "headline": "Ships blamed for bulk of chronic ocean oil pollution",
@@ -310,7 +395,7 @@
       "summary": "V.Group has appointed Shubpreet Singh as chief executive of V.Ships, promoting from within as the shipmanagement giant reshuffles its senior leadership. Singh, a master mariner, has most recently been leading the execution of V.Ships’ strategy after previously heading the group’s",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 19,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/VShips-Crew-V.Ships-V.Group-VGroup.jpeg",
       "en": {
         "headline": "Shubpreet Singh takes over at V.Ships",
@@ -327,7 +412,7 @@
       "summary": "The human and commercial toll from the battle for the Strait of Hormuz continues to mount, with one seafarer killed yesterday after the Cape Dao capesize was struck while transiting the waterway. The 2002-built, Antigua and Barbuda-flagged bulker was hit at around 0630 UTC off Om",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 19,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/Hormuz-IMO.jpg",
       "en": {
         "headline": "Seafarer killed and capesize adrift in Hormuz",
@@ -344,7 +429,7 @@
       "summary": "Onex DMCC has emerged as one of the tanker market’s most aggressive VLCC buyers, with at least five supertankers now linked to the Dubai trading house through broker reports and sales registers. Splash reported on September 11 that Onex had paid a record $200m for George Procopio",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 14,
+      "hoursAgo": 20,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/12/DP-World-Dubai.jpg",
       "en": {
         "headline": "Onex VLCC buying spree takes shape",
@@ -361,7 +446,7 @@
       "summary": "Angeliki Frangou-led Navios Maritime Partners has been linked to another four containership newbuilds at South Korea’s HJ Shipbuilding &#38; Construction (HJSC), in a deal worth around $500m. HJSC disclosed this week that it had signed up an unidentified Oceania-based owner for f",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 14,
+      "hoursAgo": 20,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/03/Angeliki-Frangou-Zhoushan-Changhong-International-Shipyard.jpg",
       "en": {
         "headline": "Navios tied to four boxship newbuilds in South Korea",
@@ -378,97 +463,12 @@
       "summary": "Germany’s DAB Group is moving into shipowning, ordering two ultramax bulk carriers at China’s Jiangsu Soho Innovation &#38; Technology Shipbuilding with an option for a third vessel. The 64,500 dwt ships have been ordered through group company Dassler Schiffahrts- und Handelsgese",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
+      "hoursAgo": 20,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Dolphin-64500-dwt-SDARI.jpg",
       "en": {
         "headline": "DAB Group enters shipowning with Chinese ultramax pair",
         "summary": "Germany’s DAB Group is moving into shipowning, ordering two ultramax bulk carriers at China’s Jiangsu Soho Innovation &#38; Technology Shipbuilding with an option for a third vessel. The 64,500 dwt ships have been ordered through group company Dassler Schiffahrts- und Handelsgese",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "What happens when net zero becomes auditable?",
-      "link": "https://splash247.com/what-happens-when-net-zero-becomes-auditable/",
-      "pubDate": "Thu, 24 Sep 2026 03:20:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Captain Alex Byelyavtsev is back with some uncomfortable predictions for some owners.  ISO’s public consultation on ISO 14060 closed on September 9, 2026. The draft is intended to become what ISO describes as the world’s first international independently verifiable standard for c",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/04/Jack-Hall-PA-Media-Assignments-8.jpg",
-      "en": {
-        "headline": "What happens when net zero becomes auditable?",
-        "summary": "Captain Alex Byelyavtsev is back with some uncomfortable predictions for some owners.  ISO’s public consultation on ISO 14060 closed on September 9, 2026. The draft is intended to become what ISO describes as the world’s first international independently verifiable standard for c",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Subsea 7 picked for Turkish FPU installation",
-      "link": "https://splash247.com/subsea-7-picked-for-turkish-fpu-installation/",
-      "pubDate": "Thu, 24 Sep 2026 02:40:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Offshore engineering and services player Subsea 7 has received an extension for work on the Sakarya Phase 3 Black Sea gas development offshore Turkey from Turkish Petroleum Offshore Technology Centre (TP-OTC). The additional scope covers towing and mooring line installation and c",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Osman-Gazi-TPAO.jpg",
-      "en": {
-        "headline": "Subsea 7 picked for Turkish FPU installation",
-        "summary": "Offshore engineering and services player Subsea 7 has received an extension for work on the Sakarya Phase 3 Black Sea gas development offshore Turkey from Turkish Petroleum Offshore Technology Centre (TP-OTC). The additional scope covers towing and mooring line installation and c",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "DeepOcean and TFKable plan new offshore wind cable vessel",
-      "link": "https://splash247.com/deepocean-and-tfkable-plan-dedicated-offshore-wind-cable-vessel/",
-      "pubDate": "Thu, 24 Sep 2026 02:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norwegian ocean services contractor DeepOcean and TFKable Group are planning a purpose-built cable-laying vessel for the offshore wind market as part of a proposed joint venture targeting inter-array cable projects. The vessel would be owned by a separate company involving Poland",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/07/DeepOcean-vessel-RWE.jpg",
-      "en": {
-        "headline": "DeepOcean and TFKable plan new offshore wind cable vessel",
-        "summary": "Norwegian ocean services contractor DeepOcean and TFKable Group are planning a purpose-built cable-laying vessel for the offshore wind market as part of a proposed joint venture targeting inter-array cable projects. The vessel would be owned by a separate company involving Poland",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Coast Guard Awards $315 Million Kodiak Pier Contract to Support Arctic Fleet Expansion",
-      "link": "https://gcaptain.com/coast-guard-awards-315-million-kodiak-pier-contract-to-support-arctic-fleet-expansion/",
-      "pubDate": "Wed, 23 Sep 2026 21:34:42 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The U.S. Coast Guard has awarded a $315 million contract to Tutor Perini Corp. to build a new fuel pier and major cutter mooring at Base Kodiak, Alaska, as the service prepares...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/09/250820-G-G0200-1002.jpg",
-      "en": {
-        "headline": "Coast Guard Awards $315 Million Kodiak Pier Contract to Support Arctic Fleet Expansion",
-        "summary": "The U.S. Coast Guard has awarded a $315 million contract to Tutor Perini Corp. to build a new fuel pier and major cutter mooring at Base Kodiak, Alaska, as the service prepares...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Traders Push for Discounts for Venezuelan Oil as Shipping Costs Soar",
-      "link": "https://gcaptain.com/traders-push-for-discounts-for-venezuelan-oil-as-shipping-costs-soar/",
-      "pubDate": "Wed, 23 Sep 2026 20:25:54 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Global oil trading firms Vitol and Trafigura are pushing for steeper discounts on Venezuelan crude oil as rising freight rates shrink their margins, five sources familiar with the matter said.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 21,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/01/5RAZNVHDZVNCJOYCHYDK75ITKY.jpg",
-      "en": {
-        "headline": "Traders Push for Discounts for Venezuelan Oil as Shipping Costs Soar",
-        "summary": "Global oil trading firms Vitol and Trafigura are pushing for steeper discounts on Venezuelan crude oil as rising freight rates shrink their margins, five sources familiar with the matter said.",
-        "source": "gCaptain"
       }
     }
   ]
