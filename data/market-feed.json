@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-25T00:06:36.676Z",
+    "generatedAt": "2026-09-25T06:06:11.415Z",
     "benchmarkAsOf": "2026-09-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -200,19 +200,172 @@
   },
   "news": [
     {
+      "title": "How the resilience premium is reshaping shipping",
+      "link": "https://splash247.com/how-the-resilience-premium-is-reshaping-shipping/",
+      "pubDate": "Fri, 25 Sep 2026 05:16:06 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Shipping companies have been forced to rethink how they plan, invest and manage risk as the industry moves deeper into an era of overlapping geopolitical, technological and regulatory disruption, senior executives told nearly 300 delegates attending the opening Big Issues session",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/SSOpening.jpeg",
+      "en": {
+        "headline": "How the resilience premium is reshaping shipping",
+        "summary": "Shipping companies have been forced to rethink how they plan, invest and manage risk as the industry moves deeper into an era of overlapping geopolitical, technological and regulatory disruption, senior executives told nearly 300 delegates attending the opening Big Issues session",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Panama slips to third in global flag rankings",
+      "link": "https://splash247.com/panama-slips-to-third-in-global-flag-rankings/",
+      "pubDate": "Fri, 25 Sep 2026 05:00:42 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Panama’s long retreat from the top of the global ship registry rankings has reached another milestone, with the once dominant flag now overtaken by the Marshall Islands to fall into third place. The latest Clarksons Research data, dated September 1, shows the Marshall Islands fle",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/10/Panama-Maritime-Authority-flag-1.jpg",
+      "en": {
+        "headline": "Panama slips to third in global flag rankings",
+        "summary": "Panama’s long retreat from the top of the global ship registry rankings has reached another milestone, with the once dominant flag now overtaken by the Marshall Islands to fall into third place. The latest Clarksons Research data, dated September 1, shows the Marshall Islands fle",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Volare hits $1.2bn valuation after $500m raise",
+      "link": "https://splash247.com/volare-hits-1-2bn-valuation-after-500m-raise/",
+      "pubDate": "Fri, 25 Sep 2026 04:50:31 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Trafigura-backed Volare Shipping has completed a $500m equity raise ahead of its planned Oslo listing, putting a post-money value of around NOK11.5bn ($1.2bn) on the newly created VLCC owner. The Singapore-incorporated company allocated 30.7m new shares at NOK154 apiece in a priv",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Andrea-Olivi-Trafigura.jpg",
+      "en": {
+        "headline": "Volare hits $1.2bn valuation after $500m raise",
+        "summary": "Trafigura-backed Volare Shipping has completed a $500m equity raise ahead of its planned Oslo listing, putting a post-money value of around NOK11.5bn ($1.2bn) on the newly created VLCC owner. The Singapore-incorporated company allocated 30.7m new shares at NOK154 apiece in a priv",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Splash Wrap: The boom and the bill",
+      "link": "https://splash247.com/splash-wrap-the-boom-and-the-bill/",
+      "pubDate": "Fri, 25 Sep 2026 04:40:34 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Shipping spent another week discovering that the same forces making it extraordinarily profitable are also storing up the ingredients for its next downturn. The headline number came from Clarksons. Its cross-sector ClarkSea Index reached $64,569 a day, 27% above the previous all-",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/05/Money-ship-finance.jpg",
+      "en": {
+        "headline": "Splash Wrap: The boom and the bill",
+        "summary": "Shipping spent another week discovering that the same forces making it extraordinarily profitable are also storing up the ingredients for its next downturn. The headline number came from Clarksons. Its cross-sector ClarkSea Index reached $64,569 a day, 27% above the previous all-",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Russia plans $2.35bn exporter levy to bankroll Arctic icebreakers",
+      "link": "https://splash247.com/russia-plans-2-35bn-exporter-levy-to-bankroll-arctic-icebreakers/",
+      "pubDate": "Fri, 25 Sep 2026 04:30:20 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Russia is proposing a new levy on seaborne exports to raise more than RUB200bn ($2.35bn) for nuclear icebreakers needed to expand traffic along the Northern Sea Route. A draft government decree prepared by the transport ministry would impose a shipbuilding charge of RUB20.07 per ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/02/Arctic-LNG-2.jpg",
+      "en": {
+        "headline": "Russia plans $2.35bn exporter levy to bankroll Arctic icebreakers",
+        "summary": "Russia is proposing a new levy on seaborne exports to raise more than RUB200bn ($2.35bn) for nuclear icebreakers needed to expand traffic along the Northern Sea Route. A draft government decree prepared by the transport ministry would impose a shipbuilding charge of RUB20.07 per ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Offen plots boxship ordering comeback at GSI",
+      "link": "https://splash247.com/offen-plots-boxship-ordering-comeback-at-gsi/",
+      "pubDate": "Fri, 25 Sep 2026 04:20:23 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Germany’s Offen Group is looking to return to containership newbuildings after more than a decade away, with the Hamburg tonnage provider linked to up to four ships at China’s Guangzhou Shipyard International. Shipbroking and market sources have Offen in discussions with the CSSC",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Guangzhou-Shipyard-International-GSI.jpg",
+      "en": {
+        "headline": "Offen plots boxship ordering comeback at GSI",
+        "summary": "Germany’s Offen Group is looking to return to containership newbuildings after more than a decade away, with the Hamburg tonnage provider linked to up to four ships at China’s Guangzhou Shipyard International. Shipbroking and market sources have Offen in discussions with the CSSC",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Global green shipping corridor alliance launches in Beijing",
+      "link": "https://splash247.com/global-green-shipping-corridor-alliance-launches-in-beijing/",
+      "pubDate": "Fri, 25 Sep 2026 04:10:19 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A new international body has been launched in Beijing to coordinate the development of green shipping corridors and accelerate cooperation across shipping, ports, fuels and regulation. The International Green Shipping Corridor Alliance was inaugurated during the 2026 Global Susta",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Cosco-Green-Methanol-bunkering.jpg",
+      "en": {
+        "headline": "Global green shipping corridor alliance launches in Beijing",
+        "summary": "A new international body has been launched in Beijing to coordinate the development of green shipping corridors and accelerate cooperation across shipping, ports, fuels and regulation. The International Green Shipping Corridor Alliance was inaugurated during the 2026 Global Susta",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "The ship that didn&#8217;t have an accident today",
       "link": "https://splash247.com/the-ship-that-didnt-have-an-accident-today/",
-      "pubDate": "Thu, 24 Sep 2026 21:41:00 +0000",
+      "pubDate": "Fri, 25 Sep 2026 03:00:00 +0000",
       "source": "Splash247",
       "category": "Bunker",
       "summary": "Neville Jayant from SalusTech on why maritime safety must learn from everyday success as well as failure. Every day, ships complete demanding operations safely. Mooring continues through difficult weather, bunkering is completed despite changing conditions, and experienced crew m",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 2,
+      "hoursAgo": 3,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/12/EnclosedSpace-e1788001123629.jpg",
       "en": {
         "headline": "The ship that didn&#8217;t have an accident today",
         "summary": "Neville Jayant from SalusTech on why maritime safety must learn from everyday success as well as failure. Every day, ships complete demanding operations safely. Mooring continues through difficult weather, bunkering is completed despite changing conditions, and experienced crew m",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Ventura Offshore adds Indonesia drilling work for semisub",
+      "link": "https://splash247.com/ventura-offshore-adds-indonesia-drilling-work-for-semisub/",
+      "pubDate": "Fri, 25 Sep 2026 02:40:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Offshore driller Ventura Offshore has won another contract extension for one of its semisubmersible rigs. Ventura Offshore said Searah West Ganal Limited and Searah Ganal Deepwater Limited, subsidiaries of Searah, a JV between Eni and Petronas, exercised the option for another we",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/06/df77a9c4219f635336e12b7ab07663e4.png",
+      "en": {
+        "headline": "Ventura Offshore adds Indonesia drilling work for semisub",
+        "summary": "Offshore driller Ventura Offshore has won another contract extension for one of its semisubmersible rigs. Ventura Offshore said Searah West Ganal Limited and Searah Ganal Deepwater Limited, subsidiaries of Searah, a JV between Eni and Petronas, exercised the option for another we",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Rosetti Marino secures Danish North Sea platform project",
+      "link": "https://splash247.com/rosetti-marino-secures-danish-north-sea-platform-project/",
+      "pubDate": "Fri, 25 Sep 2026 02:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Italian fabricator and shipyard Rosetti Marino has been awarded a new contract for offshore operations in the North Sea, valued at between €250m and €300 million by Ineos. The project involves an EPC contract to build a platform for the Hejre development project off the coast of ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/09/Yard-Piomboni-Rosetti-Marino.jpg",
+      "en": {
+        "headline": "Rosetti Marino secures Danish North Sea platform project",
+        "summary": "Italian fabricator and shipyard Rosetti Marino has been awarded a new contract for offshore operations in the North Sea, valued at between €250m and €300 million by Ineos. The project involves an EPC contract to build a platform for the Hejre development project off the coast of ",
         "source": "Splash247"
       }
     },
@@ -225,7 +378,7 @@
       "summary": "SUNY Maritime College’s training ship&#160;Empire State VII&#160;has been ordered to depart New York on September 30 for Norfolk, Virginia, where it will undergo a month-long activation and flight deck certification...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/Empire-State-VII.jpg",
       "en": {
         "headline": "Federal Training Ship Empire State VII Ordered to Norfolk Ahead of U.S. Navy Mission",
@@ -242,7 +395,7 @@
       "summary": "Regulatory uncertainty is becoming a major factor in shipowners’ investment decisions as the industry weighs vessels and fuel systems that will remain in service for decades, according to DNV’s latest Maritime...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/07/2022-07-11T050025Z_666471803_RC2G9V9UXH5H_RTRMADP_3_SHIPPING-EMISSIONS-800x533.jpg",
       "en": {
         "headline": "DNV: Shipping’s Fuel Future Hinges on What Regulators Do Next",
@@ -259,7 +412,7 @@
       "summary": "Sales of Venezuelan oil for loading in October stalled after a surge in shipping costs muddled negotiations between the country’s state oil company and buyers of its oil.",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/2026-01-29T214657Z_1615896222_RC2P9JAIK1QE_RTRMADP_3_VENEZUELA-OIL-LAW-800x534.jpg",
       "en": {
         "headline": "Venezuela Spot Oil Sales Snarled by Surging Freight Costs",
@@ -276,7 +429,7 @@
       "summary": "A Bahrain-led group backed by 80 countries has called for the immediate reopening of the Strait of Hormuz, demanding safe and unimpeded passage for commercial ships without tolls, conditions or...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-01T164535Z_267159373_RC2KVKADMUK6_RTRMADP_3_GLOBAL-OIL-800x600.jpg",
       "en": {
         "headline": "Bahrain Leads Countries&#8217; Call for Full Reopening of Strait of Hormuz Without Tolls",
@@ -293,7 +446,7 @@
       "summary": "The global maritime industry is marking World Maritime Day on Thursday with an unusually immediate backdrop: merchant ships under attack, seafarers being killed and some of the world’s most important...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-22T121323Z_1819482205_RC26ELATGE3R_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
       "en": {
         "headline": "World Maritime Day 2026: IMO Warns Shipping Rules Are Under Strain as Seafarers Face Deadly Attacks",
@@ -310,165 +463,12 @@
       "summary": "The Drewry World Container Index edged lower this week as falling Asia-Europe rates outweighed firmer pricing on the Transpacific, with carriers preparing another round of blank sailings ahead of China’s...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/OOCL-Portugal-Suez-Canal-800x545.jpg",
       "en": {
         "headline": "Container Rates Edge Lower Ahead of Golden Week as Suez Traffic Returns",
         "summary": "The Drewry World Container Index edged lower this week as falling Asia-Europe rates outweighed firmer pricing on the Transpacific, with carriers preparing another round of blank sailings ahead of China’s...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Taiwan Upgrades Maritime Patrol Capacity for Vulnerable South China Sea Outpost",
-      "link": "https://gcaptain.com/taiwan-upgrades-maritime-patrol-capacity-for-vulnerable-south-china-sea-outpost/",
-      "pubDate": "Thu, 24 Sep 2026 12:00:18 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Taiwan has upgraded its maritime patrol capacity around the Pratas Islands in the disputed South China Sea, including regularly sending larger ships there, the government said, responding to an increase in Chinese activities.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/2026-01-29T052602Z_916046467_RC2QAJACPMG1_RTRMADP_3_TAIWAN-DEFENCE-800x533.jpg",
-      "en": {
-        "headline": "Taiwan Upgrades Maritime Patrol Capacity for Vulnerable South China Sea Outpost",
-        "summary": "Taiwan has upgraded its maritime patrol capacity around the Pratas Islands in the disputed South China Sea, including regularly sending larger ships there, the government said, responding to an increase in Chinese activities.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Supertanker Rally Lures Investors as War Squeezes Vessel Supply",
-      "link": "https://gcaptain.com/supertanker-rally-lures-investors-as-war-squeezes-vessel-supply/",
-      "pubDate": "Thu, 24 Sep 2026 11:57:35 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A supercharged rally in tanker earnings is attracting new investors to the global shipping industry, as the war in Iran points to how geopolitical crises can drastically curtail the supply of vessels.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-24T194006Z_526739983_RC2LD6A7RFZM_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x533.jpg",
-      "en": {
-        "headline": "Supertanker Rally Lures Investors as War Squeezes Vessel Supply",
-        "summary": "A supercharged rally in tanker earnings is attracting new investors to the global shipping industry, as the war in Iran points to how geopolitical crises can drastically curtail the supply of vessels.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "The charts that explain shipping’s extraordinary decade",
-      "link": "https://splash247.com/the-charts-that-explain-shippings-extraordinary-decade/",
-      "pubDate": "Thu, 24 Sep 2026 06:00:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Shipping has spent the 2020s lurching from one earnings boom to another, with successive crises repeatedly rescuing markets that conventional supply-demand analysis suggested should be weakening. Two new charts capture how today’s supercycle came to be, and which sectors face a l",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 18,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Mayuree-Naree-Iran.jpg",
-      "en": {
-        "headline": "The charts that explain shipping’s extraordinary decade",
-        "summary": "Shipping has spent the 2020s lurching from one earnings boom to another, with successive crises repeatedly rescuing markets that conventional supply-demand analysis suggested should be weakening. Two new charts capture how today’s supercycle came to be, and which sectors face a l",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Ships blamed for bulk of chronic ocean oil pollution",
-      "link": "https://splash247.com/ships-blamed-for-bulk-of-chronic-ocean-oil-pollution/",
-      "pubDate": "Thu, 24 Sep 2026 05:35:33 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Ships are associated with the overwhelming majority of attributable chronic oil pollution at sea, according to a new global analysis from satellite-monitoring group SkyTruth. The study estimates that around 1.58m sq km of ocean surface is covered by oil slicks each year, with mor",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/02/Rubymar-slick.jpg",
-      "en": {
-        "headline": "Ships blamed for bulk of chronic ocean oil pollution",
-        "summary": "Ships are associated with the overwhelming majority of attributable chronic oil pollution at sea, according to a new global analysis from satellite-monitoring group SkyTruth. The study estimates that around 1.58m sq km of ocean surface is covered by oil slicks each year, with mor",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Shubpreet Singh takes over at V.Ships",
-      "link": "https://splash247.com/shubpreet-singh-takes-over-at-v-ships/",
-      "pubDate": "Thu, 24 Sep 2026 04:36:58 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "V.Group has appointed Shubpreet Singh as chief executive of V.Ships, promoting from within as the shipmanagement giant reshuffles its senior leadership. Singh, a master mariner, has most recently been leading the execution of V.Ships’ strategy after previously heading the group’s",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/VShips-Crew-V.Ships-V.Group-VGroup.jpeg",
-      "en": {
-        "headline": "Shubpreet Singh takes over at V.Ships",
-        "summary": "V.Group has appointed Shubpreet Singh as chief executive of V.Ships, promoting from within as the shipmanagement giant reshuffles its senior leadership. Singh, a master mariner, has most recently been leading the execution of V.Ships’ strategy after previously heading the group’s",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Seafarer killed and capesize adrift in Hormuz",
-      "link": "https://splash247.com/seafarer-killed-and-capesize-adrift-in-hormuz/",
-      "pubDate": "Thu, 24 Sep 2026 04:20:47 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "The human and commercial toll from the battle for the Strait of Hormuz continues to mount, with one seafarer killed yesterday after the Cape Dao capesize was struck while transiting the waterway. The 2002-built, Antigua and Barbuda-flagged bulker was hit at around 0630 UTC off Om",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/Hormuz-IMO.jpg",
-      "en": {
-        "headline": "Seafarer killed and capesize adrift in Hormuz",
-        "summary": "The human and commercial toll from the battle for the Strait of Hormuz continues to mount, with one seafarer killed yesterday after the Cape Dao capesize was struck while transiting the waterway. The 2002-built, Antigua and Barbuda-flagged bulker was hit at around 0630 UTC off Om",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Onex VLCC buying spree takes shape",
-      "link": "https://splash247.com/onex-vlcc-buying-spree-takes-shape/",
-      "pubDate": "Thu, 24 Sep 2026 03:42:39 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Onex DMCC has emerged as one of the tanker market’s most aggressive VLCC buyers, with at least five supertankers now linked to the Dubai trading house through broker reports and sales registers. Splash reported on September 11 that Onex had paid a record $200m for George Procopio",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 20,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/12/DP-World-Dubai.jpg",
-      "en": {
-        "headline": "Onex VLCC buying spree takes shape",
-        "summary": "Onex DMCC has emerged as one of the tanker market’s most aggressive VLCC buyers, with at least five supertankers now linked to the Dubai trading house through broker reports and sales registers. Splash reported on September 11 that Onex had paid a record $200m for George Procopio",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Navios tied to four boxship newbuilds in South Korea",
-      "link": "https://splash247.com/navios-tied-to-four-boxship-newbuilds-in-south-korea/",
-      "pubDate": "Thu, 24 Sep 2026 03:30:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Angeliki Frangou-led Navios Maritime Partners has been linked to another four containership newbuilds at South Korea’s HJ Shipbuilding &#38; Construction (HJSC), in a deal worth around $500m. HJSC disclosed this week that it had signed up an unidentified Oceania-based owner for f",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 20,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/03/Angeliki-Frangou-Zhoushan-Changhong-International-Shipyard.jpg",
-      "en": {
-        "headline": "Navios tied to four boxship newbuilds in South Korea",
-        "summary": "Angeliki Frangou-led Navios Maritime Partners has been linked to another four containership newbuilds at South Korea’s HJ Shipbuilding &#38; Construction (HJSC), in a deal worth around $500m. HJSC disclosed this week that it had signed up an unidentified Oceania-based owner for f",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "DAB Group enters shipowning with Chinese ultramax pair",
-      "link": "https://splash247.com/dab-group-enters-shipowning-with-chinese-ultramax-pair/",
-      "pubDate": "Thu, 24 Sep 2026 03:27:00 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Germany’s DAB Group is moving into shipowning, ordering two ultramax bulk carriers at China’s Jiangsu Soho Innovation &#38; Technology Shipbuilding with an option for a third vessel. The 64,500 dwt ships have been ordered through group company Dassler Schiffahrts- und Handelsgese",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Dolphin-64500-dwt-SDARI.jpg",
-      "en": {
-        "headline": "DAB Group enters shipowning with Chinese ultramax pair",
-        "summary": "Germany’s DAB Group is moving into shipowning, ordering two ultramax bulk carriers at China’s Jiangsu Soho Innovation &#38; Technology Shipbuilding with an option for a third vessel. The 64,500 dwt ships have been ordered through group company Dassler Schiffahrts- und Handelsgese",
-        "source": "Splash247"
       }
     }
   ]
