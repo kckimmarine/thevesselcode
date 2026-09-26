@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-25T18:05:18.454Z",
+    "generatedAt": "2026-09-26T00:05:54.329Z",
     "benchmarkAsOf": "2026-09-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -200,7 +200,24 @@
   },
   "news": [
     {
-      "title": "Next disruption? Bring it on!",
+      "title": "ARC Freedom Expands U.S.-Flag Fleet With New Sealift Capacity",
+      "link": "https://gcaptain.com/arc-freedom-expands-u-s-flag-fleet-with-new-sealift-capacity/",
+      "pubDate": "Fri, 25 Sep 2026 19:44:33 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "American Roll-On/Roll-Off Carrier Group has added the ARC Freedom to its U.S.-flag fleet, bringing another large vehicle carrier into the Maritime Security Program as the United States looks to strengthen its commercial...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/ARC-Freedom-after-reflag.jpg",
+      "en": {
+        "headline": "ARC Freedom Expands U.S.-Flag Fleet With New Sealift Capacity",
+        "summary": "American Roll-On/Roll-Off Carrier Group has added the ARC Freedom to its U.S.-flag fleet, bringing another large vehicle carrier into the Maritime Security Program as the United States looks to strengthen its commercial...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Global Trade Keeps Getting Hit—and Keeps Moving",
       "link": "https://gcaptain.com/next-disruption-bring-it-on/",
       "pubDate": "Fri, 25 Sep 2026 16:57:12 +0000",
       "source": "gCaptain",
@@ -208,10 +225,10 @@
       "summary": "The world of trade is led by optimists, and the data shows the resilience of the strategies these stewards of trade have developed and deployed.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/04/2025-04-21T061221Z_131722683_RC23ZDATC5XM_RTRMADP_3_USA-TRUMP-TARIFFS-CHINA-800x533.jpg",
       "en": {
-        "headline": "Next disruption? Bring it on!",
+        "headline": "Global Trade Keeps Getting Hit—and Keeps Moving",
         "summary": "The world of trade is led by optimists, and the data shows the resilience of the strategies these stewards of trade have developed and deployed.",
         "source": "gCaptain"
       }
@@ -225,7 +242,7 @@
       "summary": "Two of the Iran-linked oil supertankers interdicted by American naval forces early in the war are just weeks away from reaching the US, where authorities have pledged to seize the vessels and millions of dollars worth of crude that they’re transporting.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/Tifani-boarding.jpg",
       "en": {
         "headline": "Seized Iranian Oil Tankers Head Toward U.S. With $600 Million Cargo",
@@ -242,7 +259,7 @@
       "summary": "Ship-to-ship transfers in the Gulf of Oman for Middle Eastern oil from inside the Strait of Hormuz have reached their limits after Saudi Arabia diverted exports from the Red Sea, adding to shipments from other producers, trade sources and analysts said.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-16T083335Z_191715910_RC2LSLATOOSW_RTRMADP_3_IRAN-CRISIS-OIL-TRANSFERS-1.jpg",
       "en": {
         "headline": "Gulf of Oman Ship-to-ship Oil Transfers Reach Limit as Saudi Exports Surge",
@@ -259,7 +276,7 @@
       "summary": "A line-hauling hatch that opened unexpectedly in heavy seas triggered the flooding and eventual sinking of the fishing vessel&#160;Argos Georgia&#160;off the Falkland Islands in 2024, killing 13 of the 27...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Argos-Georgia.jpg",
       "en": {
         "headline": "Hatch Failure Triggered Deadly Fishing Vessel Sinking That Killed 13, MAIB Finds",
@@ -276,7 +293,7 @@
       "summary": "Qatar has ramped up liquefied natural gas tanker traffic through the Strait of Hormuz to the highest in more than two months, a sign it’s becoming more comfortable moving ships through the waterway.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/06/Copy-of-6LNG-vessels-at-RLC-Port-ver2016-06-17-172118-937_LUCiD.jpg",
       "en": {
         "headline": "Qatar Boosts LNG Traffic Via Hormuz as Global Shortage Bites",
@@ -293,8 +310,8 @@
       "summary": "A US-sanctioned oil tanker, Sibu 1, has been freed after being hijacked by Somali pirates in August, the maritime police force in Somalia's semi-autonomous Puntland region said on Friday.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2012/01/Pirates_near_Rasu_Bina_Village.jpg",
+      "hoursAgo": 13,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/Iranian-flagged-dhow-ALWASEEMI.jpg",
       "en": {
         "headline": "US-Sanctioned Oil Tanker &#8216;Sibu 1&#8217; Rescued from Somali Pirates",
         "summary": "A US-sanctioned oil tanker, Sibu 1, has been freed after being hijacked by Somali pirates in August, the maritime police force in Somalia's semi-autonomous Puntland region said on Friday.",
@@ -310,7 +327,7 @@
       "summary": "NYK has ordered an offshore wind service operation vessel from PaxOcean Group for deployment in Taiwan and other Asia-Pacific markets from around 2029. The 89.6 m vessel will provide accommodation, logistics and offshore access for personnel working on the construction and mainte",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/NYK-CSOV.jpg",
       "en": {
         "headline": "NYK orders new offshore wind SOV from PaxOcean",
@@ -327,7 +344,7 @@
       "summary": "Taiwanese owner Sincere Navigation has agreed to pay $38.5m for a 2019-built kamsarmax as it continues reshaping its mixed tanker and dry bulk fleet. The Taipei-listed company disclosed that its indirect wholly owned subsidiary Majestic Bloom will acquire an 81,770 dwt bulker fro",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Babitonga-leo-deurholt-Marine-Traffic.jpg",
       "en": {
         "headline": "Sincere Navigation adds modern kamsarmax in $38.5m deal",
@@ -344,7 +361,7 @@
       "summary": "Rio Tinto has offloaded the final two ships from its eight-strong owned newcastlemax fleet, with Turkey’s Yasa Shipping taking the 2013-built RTM Drake and RTM Tasman. Yasa’s own fleet records now list the ships as the 205,437 dwt Yasa Drake and 205,432 dwt Yasa Pioneer, respecti",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/05/RTM-Tasman-Rio-Tinto.jpg",
       "en": {
         "headline": "Rio Tinto offloads final newcastlemax pair to Yasa",
@@ -361,7 +378,7 @@
       "summary": "Thailand’s Precious Shipping has lined up another index-linked ultramax charter, fixing the Sunisa Naree to Singapore’s PACC Line for up to 13 months. The Bangkok-listed owner told the stock exchange that the charter started on September 23 for 11 to 13 months at a gross variable",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/11/Khalid-Hashim.jpg",
       "en": {
         "headline": "Precious seals fresh ultramax fixture",
@@ -378,7 +395,7 @@
       "summary": "Shipping companies have been forced to rethink how they plan, invest and manage risk as the industry moves deeper into an era of overlapping geopolitical, technological and regulatory disruption, senior executives told nearly 300 delegates attending the opening Big Issues session",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/SSOpening.jpeg",
       "en": {
         "headline": "How the resilience premium is reshaping shipping",
@@ -395,7 +412,7 @@
       "summary": "Panama’s long retreat from the top of the global ship registry rankings has reached another milestone, with the once dominant flag now overtaken by the Marshall Islands to fall into third place. The latest Clarksons Research data, dated September 1, shows the Marshall Islands fle",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 19,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/10/Panama-Maritime-Authority-flag-1.jpg",
       "en": {
         "headline": "Panama slips to third in global flag rankings",
@@ -412,7 +429,7 @@
       "summary": "Trafigura-backed Volare Shipping has completed a $500m equity raise ahead of its planned Oslo listing, putting a post-money value of around NOK11.5bn ($1.2bn) on the newly created VLCC owner. The Singapore-incorporated company allocated 30.7m new shares at NOK154 apiece in a priv",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 19,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Andrea-Olivi-Trafigura.jpg",
       "en": {
         "headline": "Volare hits $1.2bn valuation after $500m raise",
@@ -429,7 +446,7 @@
       "summary": "Shipping spent another week discovering that the same forces making it extraordinarily profitable are also storing up the ingredients for its next downturn. The headline number came from Clarksons. Its cross-sector ClarkSea Index reached $64,569 a day, 27% above the previous all-",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 13,
+      "hoursAgo": 19,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/05/Money-ship-finance.jpg",
       "en": {
         "headline": "Splash Wrap: The boom and the bill",
@@ -446,28 +463,11 @@
       "summary": "Russia is proposing a new levy on seaborne exports to raise more than RUB200bn ($2.35bn) for nuclear icebreakers needed to expand traffic along the Northern Sea Route. A draft government decree prepared by the transport ministry would impose a shipbuilding charge of RUB20.07 per ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 19,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/02/Arctic-LNG-2.jpg",
       "en": {
         "headline": "Russia plans $2.35bn exporter levy to bankroll Arctic icebreakers",
         "summary": "Russia is proposing a new levy on seaborne exports to raise more than RUB200bn ($2.35bn) for nuclear icebreakers needed to expand traffic along the Northern Sea Route. A draft government decree prepared by the transport ministry would impose a shipbuilding charge of RUB20.07 per ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Offen plots boxship ordering comeback at GSI",
-      "link": "https://splash247.com/offen-plots-boxship-ordering-comeback-at-gsi/",
-      "pubDate": "Fri, 25 Sep 2026 04:20:23 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Germany’s Offen Group is looking to return to containership newbuildings after more than a decade away, with the Hamburg tonnage provider linked to up to four ships at China’s Guangzhou Shipyard International. Shipbroking and market sources have Offen in discussions with the CSSC",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 13,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Guangzhou-Shipyard-International-GSI.jpg",
-      "en": {
-        "headline": "Offen plots boxship ordering comeback at GSI",
-        "summary": "Germany’s Offen Group is looking to return to containership newbuildings after more than a decade away, with the Hamburg tonnage provider linked to up to four ships at China’s Guangzhou Shipyard International. Shipbroking and market sources have Offen in discussions with the CSSC",
         "source": "Splash247"
       }
     }
