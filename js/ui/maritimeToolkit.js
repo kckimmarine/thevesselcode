@@ -1167,6 +1167,7 @@ const TVC_MaritimeToolkit = (function () {
         renderConversionBanner();
         initEngineeringModuleCards();
         globalThis.TVC_PipeScheduleRenderer?.init?.('#pipeScheduleToolHost');
+        globalThis.TVC_EcaMapRenderer?.init?.('#eca-map');
         globalThis.addEventListener('tvc-mkt-lang', () => {
             if (hosts.bunker) renderBunkerPanel(hosts.bunker);
             if (hosts.lube) renderLubePanel(hosts.lube);

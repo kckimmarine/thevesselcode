@@ -98,6 +98,41 @@ check(
         && toolkitHtml.includes('pipeScheduleRenderer.js')
         && toolkitHtml.includes('TechArticle'),
 );
+check(
+    'toolkit eca map section',
+    toolkitHtml.includes('id="eca-map"')
+        && toolkitHtml.includes('ecaMapRenderer.js')
+        && toolkitHtml.includes('SOx ECA boundaries map'),
+);
+const maritimeRegsPath = join(ROOT, 'data/maritime-regulations.json');
+check('maritime-regulations.json exists', existsSync(maritimeRegsPath));
+if (existsSync(maritimeRegsPath)) {
+    const maritimeRegs = JSON.parse(readFileSync(maritimeRegsPath, 'utf8'));
+    check(
+        'maritime ECA region datasets',
+        Array.isArray(maritimeRegs.ecaRegions) && maritimeRegs.ecaRegions.length >= 7,
+        String(maritimeRegs.ecaRegions?.length),
+    );
+    check(
+        'maritime port dossiers',
+        Array.isArray(maritimeRegs.ports) && maritimeRegs.ports.length >= 6,
+        String(maritimeRegs.ports?.length),
+    );
+    maritimeRegs.ecaRegions.forEach((region) => {
+        check(
+            `ECA polygon ${region.id}`,
+            Array.isArray(region.polygon) && region.polygon.length >= 3,
+            String(region.polygon?.length),
+        );
+    });
+}
+const ecaRendererSrc = readFileSync(join(ROOT, 'js/toolkit/ecaMapRenderer.js'), 'utf8');
+check('eca map renderer exports', ecaRendererSrc.includes('TVC_EcaMapRenderer') && ecaRendererSrc.includes('maritime-regulations.json'));
+check('korea ports hub page', existsSync(join(ROOT, 'services/korea-ports-hub/index.html')));
+check(
+    'vercel korea ports hub rewrite',
+    rewrites.some((r) => r.source === '/services/korea-ports-hub' && r.destination === '/services/korea-ports-hub/index.html'),
+);
 const pipeScheduleSandbox = { globalThis: {}, module: { exports: {} } };
 pipeScheduleSandbox.globalThis = pipeScheduleSandbox;
 vm.runInNewContext(

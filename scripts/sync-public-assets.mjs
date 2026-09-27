@@ -28,6 +28,7 @@ const dataMirrors = [
     ['public/data/impa-full.json', 'impa-full.json'],
     ['public/data/impa-product-photos.json', 'impa-product-photos.json'],
     ['public/data/berth-impa-index.json', 'berth-impa-index.json'],
+    ['public/data/maritime-regulations.json', 'maritime-regulations.json'],
 ];
 
 for (const [relSrc, destName] of dataMirrors) {

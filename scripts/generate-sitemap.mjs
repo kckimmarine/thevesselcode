@@ -20,6 +20,7 @@ const CORE_PAGES = [
   { path: '/mro/tools', changefreq: 'weekly', priority: '0.88' },
   { path: '/sm', changefreq: 'weekly', priority: '0.9' },
   { path: '/services', changefreq: 'weekly', priority: '0.85' },
+  { path: '/services/korea-ports-hub', changefreq: 'weekly', priority: '0.86' },
   { path: '/ship-repair-chandler-korea', changefreq: 'weekly', priority: '0.9' },
   { path: '/insights', changefreq: 'weekly', priority: '0.7' },
   { path: '/contact-us', changefreq: 'monthly', priority: '0.7' },

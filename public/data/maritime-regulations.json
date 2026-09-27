@@ -1,0 +1,285 @@
+{
+  "version": "2025-09-27",
+  "updated": "2025-09-27",
+  "disclaimer": "Reference summary for planning — verify against flag, class, and latest IMO/port notices before operation.",
+  "searchAliases": {
+    "china deca": "china-coastal-deca",
+    "deca": "china-coastal-deca",
+    "med eca": "mediterranean-sea-eca",
+    "mediterranean 0.10": "mediterranean-sea-eca",
+    "korea eca": "korea-coastal-eca",
+    "부산": "busan",
+    "인천": "incheon",
+    "울산": "ulsan",
+    "여수": "yeosu-gwangyang",
+    "광양": "yeosu-gwangyang"
+  },
+  "ecaRegions": [
+    {
+      "id": "baltic-sea-eca",
+      "name": "Baltic Sea ECA",
+      "layers": ["sox_010", "nox_tier3"],
+      "regulation": "MARPOL Annex VI — Baltic Sea SOx ECA (SECA) and NOx Tier III ECAs for new builds in designated areas.",
+      "sulphurLimit": "0.10% m/m (1 January 2015); global cap 0.50% outside ECA.",
+      "noxNote": "Tier III applies to new marine diesel engines installed on ships constructed on/after applicable dates in Baltic NOx ECAs.",
+      "fuelChangeoverSop": "Complete change-over before entry; log start/end positions, times, ROB of each grade, and purging of service tanks/manifolds. Allow settling and line flushing — typical planning buffer 30–60 nm or 4–8 hours sea time depending on tank layout.",
+      "polygon": [
+        [65.5, 10.0], [66.0, 20.0], [65.0, 28.0], [60.0, 30.0], [55.5, 14.0], [54.0, 10.5], [57.0, 9.0], [65.5, 10.0]
+      ]
+    },
+    {
+      "id": "north-sea-eca",
+      "name": "North Sea ECA",
+      "layers": ["sox_010", "nox_tier3"],
+      "regulation": "MARPOL Annex VI — North Sea SOx ECA (includes English Channel approaches).",
+      "sulphurLimit": "0.10% m/m in ECA; verify UK/EU reception facilities for scrubber residues when alongside.",
+      "noxNote": "North Sea NOx ECA — Tier III for qualifying new installations per engine category dates.",
+      "fuelChangeoverSop": "Plan switch at least one consumption cycle before ECA boundary; record FONAR only when truly unforeseeable — PSC trend is strict on incomplete logs.",
+      "polygon": [
+        [62.0, -4.0], [62.5, 5.0], [58.0, 9.0], [51.0, 8.0], [49.0, -2.0], [50.5, -6.0], [55.0, -8.0], [62.0, -4.0]
+      ]
+    },
+    {
+      "id": "north-american-eca",
+      "name": "North American ECA",
+      "layers": ["sox_010", "nox_tier3"],
+      "regulation": "MARPOL Annex VI — US/Canada coordinated ECA (200 nm from baseline, with exceptions).",
+      "sulphurLimit": "0.10% m/m; US EPA/CG verify scrubber compliance and monitoring records.",
+      "noxNote": "Tier III NOx standards for applicable new engines in North American ECAs.",
+      "fuelChangeoverSop": "USCG PSC focus: change-over log aligned with ECDIS track, BDN sulphur %, and segregated low-sulphur service tank soundings.",
+      "polygon": [
+        [48.0, -141.0], [60.0, -141.0], [60.0, -64.0], [24.0, -64.0], [24.0, -82.0], [31.0, -98.0], [48.0, -125.0], [48.0, -141.0]
+      ]
+    },
+    {
+      "id": "us-caribbean-eca",
+      "name": "US Caribbean ECA",
+      "layers": ["sox_010", "nox_tier3"],
+      "regulation": "MARPOL Annex VI — Puerto Rico and US Virgin Islands ECA.",
+      "sulphurLimit": "0.10% m/m within ECA boundaries.",
+      "noxNote": "Tier III where applicable for new engines in Caribbean ECA.",
+      "fuelChangeoverSop": "Coordinate with USCG AMVER/ECA entry when routing via Mona Passage — allow extra time for purging if single HFO service tank.",
+      "polygon": [
+        [19.0, -68.0], [19.0, -64.0], [17.0, -64.0], [17.0, -68.0], [19.0, -68.0]
+      ]
+    },
+    {
+      "id": "mediterranean-sea-eca",
+      "name": "Mediterranean Sea ECA (IMO 0.10% S)",
+      "layers": ["sox_010"],
+      "regulation": "MARPOL Annex VI — Mediterranean Sea SOx ECA in force 1 May 2025 (MEPC.359(79)).",
+      "sulphurLimit": "0.10% m/m throughout Mediterranean SOx ECA unless equivalent arrangement (e.g. closed-loop scrubber) approved.",
+      "noxNote": "NOx Tier III not designated for entire Med by default — confirm for specific port/flag combinations.",
+      "fuelChangeoverSop": "2025 compliance focus: pre-load LSMGO/MGO with verified sulphur ≤0.10% at Gibraltar, Suez, or prior bunkering hub; keep BDN and sampling chain intact for Paris MoU.",
+      "polygon": [
+        [36.0, -6.0], [42.0, 3.0], [45.0, 14.0], [36.0, 28.0], [31.0, 34.0], [30.0, 32.0], [32.0, 24.0], [35.0, 12.0], [36.0, -6.0]
+      ]
+    },
+    {
+      "id": "china-coastal-deca",
+      "name": "China Coastal DECA (0.10% S zone)",
+      "layers": ["sox_010"],
+      "regulation": "PRC Ministry of Transport — domestic emission control areas (DECA) at 0.50% then 0.10% m/m sulphur in designated coastal waters.",
+      "sulphurLimit": "0.10% m/m in core DECA waters (verify latest MOT circular for exact coordinates and inland river extensions).",
+      "noxNote": "Local NOx/reporting rules may apply in key ports — check agent for Yangtze/Pearl River deltas.",
+      "fuelChangeoverSop": "Agent briefing mandatory: many terminals require pre-arrival fuel change declaration; keep HFO heating off low-sulphur lines to avoid contamination.",
+      "polygon": [
+        [41.0, 121.0], [39.0, 122.0], [31.0, 123.0], [24.0, 118.0], [21.0, 110.0], [21.0, 108.0], [38.0, 120.0], [41.0, 121.0]
+      ]
+    },
+    {
+      "id": "korea-coastal-eca",
+      "name": "Korea Coastal ECA (designated port waters)",
+      "layers": ["sox_010"],
+      "regulation": "Republic of Korea — designated sulphur control areas at major ports (Busan, Ulsan, Yeosu/Gwangyang, Incheon, Pyeongtaek) per MOF/MOLIT guidance.",
+      "sulphurLimit": "0.10% m/m in designated port control areas; align with Korean ECA implementation schedules.",
+      "noxNote": "Port-specific environmental inspections may include scrubber washwater and BWMS records.",
+      "fuelChangeoverSop": "Enter port limits on compliant fuel; Korean PSC checks change-over logbook, oil record book cross-references, and sample labels.",
+      "polygon": [
+        [37.8, 126.2], [37.2, 126.8], [34.5, 128.2], [34.2, 127.8], [34.8, 126.0], [37.8, 126.2]
+      ]
+    }
+  ],
+  "ports": [
+    {
+      "id": "busan",
+      "name": "Busan",
+      "country": "Republic of Korea",
+      "lat": 35.1028,
+      "lng": 129.0403,
+      "aliases": ["Pusan", "부산"],
+      "scrubberBanOpenLoop": true,
+      "dossier": {
+        "fuelSulphurAtBerth": "0.10% m/m in designated control areas",
+        "fuelSulphurInPort": "0.10% m/m — verify latest Busan Port Authority notice",
+        "fuelSulphurAnchorage": "0.10% m/m when inside port ECA limits",
+        "openLoopScrubberWashwater": "Prohibited — discharge of open-loop scrubber washwater restricted in port waters",
+        "ballastWaterBiofouling": "Report BWMS operation; biofouling management plan available for inspection; local agent may require advance BWM declaration",
+        "logbookEntries": ["Fuel change-over record (date, position, tanks)", "ORB Part I operations if tank washings", "Engine log — fuel grade switch", "Scrubber operating mode if fitted"],
+        "pscAuditCheckpoints": ["BDN sulphur content vs sample", "Scrubber mode and washwater handling", "Quick-closing valves and OWS 15 ppm", "BWMS record book last 30 days"]
+      }
+    },
+    {
+      "id": "ulsan",
+      "name": "Ulsan",
+      "country": "Republic of Korea",
+      "lat": 35.5384,
+      "lng": 129.3114,
+      "aliases": ["울산"],
+      "scrubberBanOpenLoop": true,
+      "dossier": {
+        "fuelSulphurAtBerth": "0.10% m/m",
+        "fuelSulphurInPort": "0.10% m/m in port control area",
+        "fuelSulphurAnchorage": "0.10% m/m within ECA",
+        "openLoopScrubberWashwater": "Prohibited in port — use closed-loop or compliant fuel",
+        "ballastWaterBiofouling": "Industrial port — coordinate with terminal on BW exchange restrictions",
+        "logbookEntries": ["Fuel switch log before pilot station", "Scrubber alarm log if applicable"],
+        "pscAuditCheckpoints": ["Low-sulphur fuel segregation", "Scrubber bypass locked/sealed evidence", "MARPOL equipment certificates"]
+      }
+    },
+    {
+      "id": "yeosu-gwangyang",
+      "name": "Yeosu / Gwangyang",
+      "country": "Republic of Korea",
+      "lat": 34.7604,
+      "lng": 127.6622,
+      "aliases": ["Yeosu", "Gwangyang", "여수", "광양"],
+      "scrubberBanOpenLoop": true,
+      "dossier": {
+        "fuelSulphurAtBerth": "0.10% m/m",
+        "fuelSulphurInPort": "0.10% m/m",
+        "fuelSulphurAnchorage": "0.10% m/m in control zone",
+        "openLoopScrubberWashwater": "Prohibited — local enforcement at anchorage",
+        "ballastWaterBiofouling": "Yeosu national coastal park proximity — heightened scrutiny on biofouling",
+        "logbookEntries": ["Change-over before entering Gwangyang fairway", "BWMS treatment records"],
+        "pscAuditCheckpoints": ["Fuel sample seal chain", "Scrubber washwater tank levels", "CIC topical items if active"]
+      }
+    },
+    {
+      "id": "incheon",
+      "name": "Incheon",
+      "country": "Republic of Korea",
+      "lat": 37.4563,
+      "lng": 126.7052,
+      "aliases": ["인천"],
+      "scrubberBanOpenLoop": true,
+      "dossier": {
+        "fuelSulphurAtBerth": "0.10% m/m",
+        "fuelSulphurInPort": "0.10% m/m",
+        "fuelSulphurAnchorage": "0.10% m/m",
+        "openLoopScrubberWashwater": "Prohibited",
+        "ballastWaterBiofouling": "Yellow Sea reporting — agent files port waste/BW forms",
+        "logbookEntries": ["Fuel grade ROB at Incheon pilot boarding", "Garbage record if sludge landing"],
+        "pscAuditCheckpoints": ["MARPOL Annex VI documentation", "EEDI/EEXI files if applicable", "Crew familiarization SMS"]
+      }
+    },
+    {
+      "id": "pyeongtaek",
+      "name": "Pyeongtaek",
+      "country": "Republic of Korea",
+      "lat": 36.9921,
+      "lng": 126.8238,
+      "aliases": ["평택"],
+      "scrubberBanOpenLoop": true,
+      "dossier": {
+        "fuelSulphurAtBerth": "0.10% m/m",
+        "fuelSulphurInPort": "0.10% m/m",
+        "fuelSulphurAnchorage": "0.10% m/m",
+        "openLoopScrubberWashwater": "Prohibited",
+        "ballastWaterBiofouling": "Naval/commercial mixed traffic — follow terminal BW instructions",
+        "logbookEntries": ["Fuel switch prior to Daesan/Pyeongtaek approaches", "Security log if ISPS Level elevated"],
+        "pscAuditCheckpoints": ["Annex VI certificate", "Scrubber compliance letter from class", "OWS 15 ppm test log"]
+      }
+    },
+    {
+      "id": "singapore",
+      "name": "Singapore",
+      "country": "Singapore",
+      "lat": 1.2902,
+      "lng": 103.8519,
+      "aliases": ["SG", "싱가포르"],
+      "scrubberBanOpenLoop": true,
+      "dossier": {
+        "fuelSulphurAtBerth": "0.10% m/m (MARPOL ECA aligned)",
+        "fuelSulphurInPort": "0.10% m/m",
+        "fuelSulphurAnchorage": "0.10% m/m in port limits",
+        "openLoopScrubberWashwater": "Prohibited — discharge of scrubber washwater in port waters",
+        "ballastWaterBiofouling": "MPA ballast water reporting; biofouling management plan on board",
+        "logbookEntries": ["MPA pre-arrival notification fuel grade", "Bunker delivery note retention", "Scrubber operating log"],
+        "pscAuditCheckpoints": ["MPA PSC fuel sampling", "Scrubber approval letter", "BWMS type approval certificate"]
+      }
+    },
+    {
+      "id": "rotterdam",
+      "name": "Rotterdam",
+      "country": "Netherlands",
+      "lat": 51.9244,
+      "lng": 4.4777,
+      "aliases": ["NL", "로테르담"],
+      "scrubberBanOpenLoop": false,
+      "dossier": {
+        "fuelSulphurAtBerth": "0.10% m/m (North Sea ECA)",
+        "fuelSulphurInPort": "0.10% m/m",
+        "fuelSulphurAnchorage": "0.10% m/m",
+        "openLoopScrubberWashwater": "Allowed subject to port reception and scrubber compliance — verify latest Port of Rotterdam notice",
+        "ballastWaterBiofouling": "EU BWM Regulation — reporting via SafeSeaNet/Port Community System",
+        "logbookEntries": ["Fuel change-over before ECA entry", "EU MRV/reporting if applicable", "Scrubber residue landing receipts"],
+        "pscAuditCheckpoints": ["Paris MoU focus areas", "Scrubber washwater pH/PAH monitoring records", "Fuel switch procedure in SMS"]
+      }
+    },
+    {
+      "id": "shanghai",
+      "name": "Shanghai",
+      "country": "China",
+      "lat": 31.2304,
+      "lng": 121.4737,
+      "aliases": ["上海", "Yangtze"],
+      "scrubberBanOpenLoop": true,
+      "dossier": {
+        "fuelSulphurAtBerth": "0.10% m/m in DECA",
+        "fuelSulphurInPort": "0.10% m/m",
+        "fuelSulphurAnchorage": "0.10% m/m in DECA waters",
+        "openLoopScrubberWashwater": "Prohibited in inland/coastal DECA — use compliant fuel or closed-loop",
+        "ballastWaterBiofouling": "MSA reporting for Yangtze Delta; ballast water declaration to agent",
+        "logbookEntries": ["DECA entry fuel switch log", "Agent DECA declaration form", "Scrubber mode record"],
+        "pscAuditCheckpoints": ["Fuel quality sample", "Scrubber bypass interlocks", "Local MSA inspection items"]
+      }
+    },
+    {
+      "id": "los-angeles",
+      "name": "Los Angeles / Long Beach",
+      "country": "United States",
+      "lat": 33.7406,
+      "lng": -118.2719,
+      "aliases": ["LA", "Long Beach", "San Pedro"],
+      "scrubberBanOpenLoop": false,
+      "dossier": {
+        "fuelSulphurAtBerth": "0.10% m/m (North American ECA); CARB OGV fuel rule stricter at berth for visiting vessels",
+        "fuelSulphurInPort": "Verify CARB marine notice for auxiliary engines and hotel load",
+        "fuelSulphurAnchorage": "0.10% m/m ECA; CARB requirements may apply at designated anchorages",
+        "openLoopScrubberWashwater": "Allowed offshore per USCG/MARPOL — not alongside unless approved reception",
+        "ballastWaterBiofouling": "USCG BWM reporting; California biofouling management regulations",
+        "logbookEntries": ["CARB fuel switch if applicable", "ECA entry/exit log", "BWM record book"],
+        "pscAuditCheckpoints": ["USCG COTP inspection focus", "Fuel switch timing vs AIS track", "OWS and sludge landing receipts"]
+      }
+    },
+    {
+      "id": "panama",
+      "name": "Panama (Balboa / Cristobal)",
+      "country": "Panama",
+      "lat": 8.9824,
+      "lng": -79.5199,
+      "aliases": ["Canal", "Balboa", "Cristobal"],
+      "scrubberBanOpenLoop": false,
+      "dossier": {
+        "fuelSulphurAtBerth": "0.10% m/m when in US Caribbean ECA segments; confirm for Pacific side anchorage",
+        "fuelSulphurInPort": "Align with Canal transit fuel grade requirements",
+        "fuelSulphurAnchorage": "Plan switch before Gulf of Panama anchorage if routing to ECA",
+        "openLoopScrubberWashwater": "Allowed per MARPOL offshore — Canal waters follow PCA environmental guidance",
+        "ballastWaterBiofouling": "PCA BW forms; tropical biofouling inspection risk",
+        "logbookEntries": ["Canal transit fuel ROB declaration", "Fuel change-over before ECA legs", "BW management log"],
+        "pscAuditCheckpoints": ["PCA inspection coordination", "Fuel segregation", "Scrubber compliance if using HFO with scrubber"]
+      }
+    }
+  ]
+}
