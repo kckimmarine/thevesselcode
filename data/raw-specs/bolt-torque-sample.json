@@ -1,0 +1,20 @@
+{
+  "source": "mechanical-tightening-table-v1",
+  "category": "fastener",
+  "records": [
+    {
+      "label": "M16 hex bolt zinc",
+      "nominal_diameter": "M16",
+      "flange_standard": "DIN",
+      "tightening_torque_nm": 95,
+      "pressure_rating": "PN16"
+    },
+    {
+      "label": "1/2 inch stud ANSI 150LB",
+      "nominal_diameter": "1/2 in",
+      "flange_standard": "ANSI",
+      "tightening_torque_nm": 68,
+      "pressure_rating": "150LB"
+    }
+  ]
+}

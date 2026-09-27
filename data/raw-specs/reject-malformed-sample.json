@@ -1,0 +1,9 @@
+{
+  "source": "qa-negative-fixtures",
+  "records": [
+    { "label": "bad pcd", "pcd_mm": "not-a-number", "flange_standard": "JIS" },
+    { "label": "bad torque", "tightening_torque_nm": -12, "flange_standard": "DIN" },
+    { "label": "unknown std only", "flange_standard": "MADEUP" },
+    { "label": "empty row" }
+  ]
+}

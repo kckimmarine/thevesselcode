@@ -1,0 +1,21 @@
+{
+  "source": "field-manual-excerpt-v1",
+  "category": "flange",
+  "records": [
+    {
+      "label": "JIS 10K 50A flange",
+      "standard": "JIS 10K",
+      "nominal_diameter": "50A",
+      "pcd_mm": 155,
+      "pressure_rating": "10K",
+      "bolt_holes": 4
+    },
+    {
+      "label": "JIS 10K 80A flange",
+      "standard": "JIS 10K",
+      "nominal": "80A",
+      "pcd": "185",
+      "pressure": "10Kgf/cm2"
+    }
+  ]
+}
