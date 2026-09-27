@@ -102,6 +102,8 @@
     "setup-supabase-ingest": "node scripts/setup-supabase-ingest.mjs",
     "verify-sync-ingest": "node scripts/verify-sync-ingest.mjs",
     "verify-sync-envelope-v2": "node scripts/verify-sync-envelope-v2.mjs",
+    "enrich:vault": "node scripts/tools/enrich-domain-vault.mjs",
+    "test:fleet-stress": "node scripts/tools/stress-fleet-sync.mjs",
     "verify-sync-cloud": "node scripts/verify-sync-cloud-api.mjs",
     "verify-sync-cloud-restore": "node scripts/verify-sync-cloud-restore.mjs",
     "purge-vessel-sync": "node scripts/purge-vessel-sync-data.mjs",
