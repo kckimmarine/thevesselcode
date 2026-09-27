@@ -133,6 +133,52 @@ check(
     'vercel korea ports hub rewrite',
     rewrites.some((r) => r.source === '/services/korea-ports-hub' && r.destination === '/services/korea-ports-hub/index.html'),
 );
+
+function extractJsonLdBlocks(html) {
+    const blocks = [];
+    const re = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi;
+    let m;
+    while ((m = re.exec(html)) !== null) {
+        try {
+            const parsed = JSON.parse(m[1].trim());
+            if (Array.isArray(parsed)) blocks.push(...parsed);
+            else blocks.push(parsed);
+        } catch {
+            /* skip malformed */
+        }
+    }
+    return blocks;
+}
+
+function validateGoogleDataset(node, label) {
+    if (!node || node['@type'] !== 'Dataset') return false;
+    const desc = String(node.description || '');
+    const creator = node.creator;
+    const publisher = node.publisher;
+    const creatorOk = creator?.['@type'] === 'Organization' && creator.name && creator.url;
+    const publisherOk = publisher?.['@type'] === 'Organization' && publisher.name && publisher.url;
+    const licenseOk = typeof node.license === 'string' && node.license.startsWith('https://');
+    const spatialOk = Boolean(node.spatialCoverage || node.variableMeasured);
+    return Boolean(
+        node.name
+            && desc.length >= 50
+            && node.url
+            && creatorOk
+            && publisherOk
+            && licenseOk
+            && node.isAccessibleForFree === true
+            && spatialOk,
+    );
+}
+
+const toolkitLd = extractJsonLdBlocks(toolkitHtml);
+const toolkitDataset = toolkitLd.find((n) => n['@type'] === 'Dataset');
+check('toolkit Dataset JSON-LD valid for GSC', validateGoogleDataset(toolkitDataset, 'toolkit'));
+const koreaHubHtml = existsSync(join(ROOT, 'services/korea-ports-hub/index.html'))
+    ? readFileSync(join(ROOT, 'services/korea-ports-hub/index.html'), 'utf8')
+    : '';
+const koreaDataset = extractJsonLdBlocks(koreaHubHtml).find((n) => n['@type'] === 'Dataset');
+check('korea ports hub Dataset JSON-LD valid for GSC', validateGoogleDataset(koreaDataset, 'korea-ports-hub'));
 const pipeScheduleSandbox = { globalThis: {}, module: { exports: {} } };
 pipeScheduleSandbox.globalThis = pipeScheduleSandbox;
 vm.runInNewContext(
