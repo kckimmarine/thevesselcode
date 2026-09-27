@@ -34,10 +34,12 @@
     <link rel="stylesheet" href="css/store-public.css?v=20260919-conversion-network">
     <link rel="stylesheet" href="css/impa-detail-unified.css?v=20260920-closed-loop-funnel">
     <link rel="stylesheet" href="css/impa-detail.css?v=20260920-commerce-badges">
-    <link rel="stylesheet" href="css/marketing-readability.css?v=20260919-conversion-network">
+    <link rel="stylesheet" href="css/marketing-readability.css?v=20260927-eca-map">
     <script type="application/ld+json">[
       {"@context":"https://schema.org","@type":"TechArticle","headline":"Pipe Schedule Reference — ASME B36.10M & JIS G3452/G3454","description":"Interactive wall thickness, outside diameter, and weight tables for SCH 40, SCH 80, and SCH 160 carbon steel pipe (NPS 1/2 in to 12 in / 15A–300A).","author":{"@type":"Organization","name":"THE VESSEL CODE"},"publisher":{"@type":"Organization","name":"THE VESSEL CODE"},"mainEntityOfPage":"https://www.thevesselcode.com/toolkit#pipe-schedule","about":["ASME B36.10M","JIS G3452","JIS G3454","Pipe schedule"]},
-      {"@context":"https://schema.org","@type":"HowTo","name":"Look up pipe wall thickness (SCH 40 / 80 / 160)","description":"Filter nominal bore, compare OD and wall thickness, then send a pipe & fitting RFQ.","step":[{"@type":"HowToStep","name":"Select nominal size","text":"Filter by NPS, DN, or JIS A size (e.g. 50A or 2 inch)."},{"@type":"HowToStep","name":"Read schedules","text":"Compare SCH 40 (STD), SCH 80 (XS), and SCH 160 wall thickness and weight."},{"@type":"HowToStep","name":"RFQ","text":"Click Inquire Pipe & Fitting RFQ to prefill a contact message with the selected schedule."}]}
+      {"@context":"https://schema.org","@type":"HowTo","name":"Look up pipe wall thickness (SCH 40 / 80 / 160)","description":"Filter nominal bore, compare OD and wall thickness, then send a pipe & fitting RFQ.","step":[{"@type":"HowToStep","name":"Select nominal size","text":"Filter by NPS, DN, or JIS A size (e.g. 50A or 2 inch)."},{"@type":"HowToStep","name":"Read schedules","text":"Compare SCH 40 (STD), SCH 80 (XS), and SCH 160 wall thickness and weight."},{"@type":"HowToStep","name":"RFQ","text":"Click Inquire Pipe & Fitting RFQ to prefill a contact message with the selected schedule."}]},
+      {"@context":"https://schema.org","@type":"TechArticle","headline":"Interactive Global SOx/NOx ECA Map & Port Environmental Rules","description":"Toggle SOx 0.10% ECAs, NOx Tier III areas, and scrubber washwater ban ports. Port dossiers for Busan, Singapore, Rotterdam, Shanghai, Los Angeles, and Panama with fuel limits and PSC checkpoints.","author":{"@type":"Organization","name":"THE VESSEL CODE"},"publisher":{"@type":"Organization","name":"THE VESSEL CODE"},"mainEntityOfPage":"https://www.thevesselcode.com/toolkit#eca-map","keywords":["SOx ECA boundaries map","Mediterranean ECA 2025 rule","Korea port low sulphur limit","Scrubber washwater banned ports"],"about":["MARPOL Annex VI","Emission Control Area","DECA China","Mediterranean SOx ECA 2025"]},
+      {"@context":"https://schema.org","@type":"Dataset","name":"Global maritime ECA boundaries and port environmental dossiers","description":"Reference polygons for Baltic, North Sea, North American, US Caribbean, Mediterranean, China DECA, and Korea coastal ECAs plus major hub port fuel and scrubber policies.","url":"https://www.thevesselcode.com/data/maritime-regulations.json","creator":{"@type":"Organization","name":"THE VESSEL CODE"},"keywords":["SOx ECA boundaries map","Mediterranean ECA 2025","Korea port low sulphur limit","Scrubber washwater banned ports"],"distribution":{"@type":"DataDownload","contentUrl":"https://www.thevesselcode.com/data/maritime-regulations.json","encodingFormat":"application/json"}}
     ]</script>
 </head>
 <body class="tvc-marketing-body store-public-body store-tool-catalog home-page mkt-page mkt-toolkit-page" data-mkt-active="toolkit">
@@ -176,6 +178,11 @@
                     <h3 data-i18n="tk.mod.5.title">Electrical &amp; controls (EE)</h3>
                     <p class="mkt-prose" data-i18n="tk.mod.5.d">PT100 RTD inversion (IEC 60751) and motor FLC / EOCR protection calculator.</p>
                 </a>
+                <a class="home-card mkt-glass-card mkt-module-card module-card" href="#eca-map" role="button">
+                    <span class="mkt-module-index">ECA</span>
+                    <h3 data-i18n="tk.mod.eca.title">SOx / NOx ECA map</h3>
+                    <p class="mkt-prose" data-i18n="tk.mod.eca.d">Global ECA polygons, scrubber-ban ports, and instant port environmental dossiers.</p>
+                </a>
                 <a class="home-card mkt-glass-card mkt-module-card module-card" href="#tab-psc-guard" data-tool-tab="compliance" role="button">
                     <span class="mkt-module-index">06</span>
                     <h3 data-i18n="tk.mod.6.title">Statutory &amp; Survey</h3>
@@ -197,6 +204,12 @@
         <section id="pipe-schedule" class="home-section pipe-schedule-section" aria-labelledby="pipeScheduleSectionTitle" data-pipe-schedule-rows="14">
             <h2 id="pipeScheduleSectionTitle" class="mkt-section-label" data-i18n="tk.pipeSchedule.sectionLabel">Pipe schedule reference</h2>
             <div id="pipeScheduleToolHost" class="mkt-glass-card pipe-schedule-tool-host"></div>
+        </section>
+
+        <section id="eca-map-section" class="home-section tvc-eca-map-section" aria-labelledby="ecaMapSectionTitle">
+            <h2 id="ecaMapSectionTitle" class="mkt-section-label" data-i18n="tk.eca.sectionLabel">SOx / NOx ECA map &amp; port environmental rules</h2>
+            <p class="mkt-prose tvc-eca-section-lead" data-i18n="tk.eca.sectionLead">Interactive Leaflet map — toggle SOx 0.10% ECAs, NOx Tier III overlays, and scrubber washwater ban ports. Click polygons for fuel change-over SOP tips; click port markers for dossiers.</p>
+            <div id="eca-map" class="tvc-eca-map-host mkt-glass-card"></div>
         </section>
 
         <nav class="store-public-toolkit mkt-tool-tabs" id="storePublicToolkit" role="tablist" aria-label="Maritime utility tabs">
@@ -250,6 +263,7 @@
     <script src="js/toolkit/flangeData.js?v=20260914-flange-matrix"></script>
     <script src="js/toolkit/pipeScheduleData.js?v=20260927-pipe-schedule"></script>
     <script src="js/toolkit/pipeScheduleRenderer.js?v=20260927-pipe-schedule"></script>
+    <script src="js/toolkit/ecaMapRenderer.js?v=20260927-eca-map"></script>
     <script src="js/data/impaCatalogSeed.js?v=20260922-instant-catalog"></script>
     <script src="js/core/schema.js?v=20260920-industrial-tags"></script>
     <script src="js/core/db.js?v=20260906-plate-pipeline"></script>

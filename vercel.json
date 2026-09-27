@@ -43,6 +43,7 @@
       "destination": "/home/index.html"
     },
     { "source": "/services", "destination": "/services/index.html" },
+    { "source": "/services/korea-ports-hub", "destination": "/services/korea-ports-hub/index.html" },
     { "source": "/ship-repair-chandler-korea", "destination": "/ship-repair-chandler-korea/index.html" },
     { "source": "/ship-chandler-korea", "destination": "/ship-repair-chandler-korea/index.html" },
     { "source": "/korea-ship-services", "destination": "/ship-repair-chandler-korea/index.html" },
