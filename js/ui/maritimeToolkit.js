@@ -1166,6 +1166,7 @@ const TVC_MaritimeToolkit = (function () {
         if (hosts.auxiliary) renderAuxiliaryPanel(hosts.auxiliary);
         renderConversionBanner();
         initEngineeringModuleCards();
+        globalThis.TVC_PipeScheduleRenderer?.init?.('#pipeScheduleToolHost');
         globalThis.addEventListener('tvc-mkt-lang', () => {
             if (hosts.bunker) renderBunkerPanel(hosts.bunker);
             if (hosts.lube) renderLubePanel(hosts.lube);

@@ -6,6 +6,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import vm from 'node:vm';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const results = [];
@@ -89,6 +90,26 @@ check(
         && toolkitHtml.includes('href="/mro/pipes-fittings"')
         && toolkitHtml.includes('href="/mro/bearings"')
         && toolkitHtml.includes('href="/mro/tools"'),
+);
+check(
+    'toolkit pipe schedule section',
+    toolkitHtml.includes('id="pipe-schedule"')
+        && toolkitHtml.includes('pipeScheduleData.js')
+        && toolkitHtml.includes('pipeScheduleRenderer.js')
+        && toolkitHtml.includes('TechArticle'),
+);
+const pipeScheduleSandbox = { globalThis: {}, module: { exports: {} } };
+pipeScheduleSandbox.globalThis = pipeScheduleSandbox;
+vm.runInNewContext(
+    readFileSync(join(ROOT, 'js/toolkit/pipeScheduleData.js'), 'utf8'),
+    pipeScheduleSandbox,
+    { filename: 'pipeScheduleData.js' },
+);
+const pipeRows = pipeScheduleSandbox.globalThis.TVC_PipeScheduleData?.allRows?.() || [];
+check('pipe schedule data row count', pipeRows.length >= 10, String(pipeRows.length));
+check(
+    'mro pipes-fittings pipe schedule cross-link',
+    readFileSync(join(ROOT, 'mro/pipes-fittings/index.html'), 'utf8').includes('/toolkit#pipe-schedule'),
 );
 const MRO_HUB_SLUGS = ['valves', 'pipes-fittings', 'bearings', 'tools'];
 MRO_HUB_SLUGS.forEach((slug) => {

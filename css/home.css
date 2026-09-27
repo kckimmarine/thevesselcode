@@ -1295,6 +1295,25 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
     text-decoration: underline;
 }
 
+.pipe-schedule-section {
+    scroll-margin-top: 88px;
+}
+
+.pipe-schedule-tool-host {
+    padding: 20px 18px 24px;
+}
+
+.pipe-schedule-row-selected {
+    outline: 2px solid #0ea5e9;
+    outline-offset: -2px;
+    background: #e0f2fe !important;
+}
+
+.pipe-schedule-crosslink a {
+    font-weight: 700;
+    margin-left: 6px;
+}
+
 /* ── IMPA quick strip (interactive cards) ── */
 .home-impa-strip-section .home-section-head {
     text-align: left;

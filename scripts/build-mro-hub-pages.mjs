@@ -35,6 +35,7 @@ const HUBS = [
     {
         slug: 'pipes-fittings',
         categoryTitle: 'Pipes, Flanges & Fittings',
+        pipeScheduleBanner: true,
         metaDescription:
             'Flanges, gaskets, couplings, and expansion joints — industrial and marine piping specs (IMPA Ch 81). JIS/DIN/ANSI dimensions with instant RFQ for plant and port delivery.',
         h1: 'Pipes & Fittings — Flanges, Gaskets, Couplings (JIS · DIN · ANSI)',
@@ -145,6 +146,12 @@ function buildHubHtml(hub) {
 
     const standardsLi = hub.standards.map((s) => `<li>${escapeHtml(s)}</li>`).join('');
 
+    const pipeScheduleBlock = hub.pipeScheduleBanner
+        ? `<aside class="mro-pipe-schedule-banner" aria-label="Pipe schedule cross-link">
+        <p>Need precise wall thickness (SCH 40/80/160)? Check our <a href="/toolkit#pipe-schedule">Interactive Pipe Schedule Table</a> ↗</p>
+      </aside>`
+        : '';
+
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -184,7 +191,8 @@ function buildHubHtml(hub) {
         <h1>${escapeHtml(hub.h1)}</h1>
         <p class="mro-hub-lead">${escapeHtml(hub.intro)}</p>
         <ul class="mro-hub-standards">${standardsLi}</ul>
-      </article>
+      </article>${pipeScheduleBlock ? `
+      ${pipeScheduleBlock}` : ''}
       <section aria-label="Standard specification cross-reference">
         <h2 class="mkt-section-label">Specification cross-reference (top IMPA links)</h2>
         <div class="mro-hub-spec-wrap">

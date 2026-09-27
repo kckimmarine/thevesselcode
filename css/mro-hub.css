@@ -124,3 +124,23 @@ body.mro-hub-page .home-shell {
 .mro-hub-links a {
     color: #0284c7;
 }
+
+.mro-pipe-schedule-banner {
+    margin: 0 0 24px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid #bae6fd;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    font-size: 0.9375rem;
+    color: #0f172a;
+}
+
+.mro-pipe-schedule-banner a {
+    font-weight: 700;
+    color: #0369a1;
+    text-decoration: none;
+}
+
+.mro-pipe-schedule-banner a:hover {
+    text-decoration: underline;
+}
