@@ -51,9 +51,13 @@
     { "source": "/forum", "destination": "/forum/index.html" },
     { "source": "/insights", "destination": "/insights/index.html" },
     { "source": "/toolkit", "destination": "/toolkit.html" },
+    { "source": "/mro/valves", "destination": "/mro/valves/index.html" },
+    { "source": "/mro/pipes-fittings", "destination": "/mro/pipes-fittings/index.html" },
+    { "source": "/mro/bearings", "destination": "/mro/bearings/index.html" },
+    { "source": "/mro/tools", "destination": "/mro/tools/index.html" },
     { "source": "/store/:code", "destination": "/api/store/:code" },
     {
-      "source": "/((?!vendor|js|css|icons|data|public|admin|downloads|bluehost|api|manifest.json|manifest-sm.json|sw.js|service-worker.js|package.json|app.html|toolkit.html|store-public.html|home|services|ship-repair-korea|ship-repair-chandler-korea|sm|contact-us|forum|insights|store|sitemap|robots\\.txt).+)",
+      "source": "/((?!vendor|js|css|icons|data|public|admin|downloads|bluehost|api|manifest.json|manifest-sm.json|sw.js|service-worker.js|package.json|app.html|toolkit.html|store-public.html|home|services|ship-repair-korea|ship-repair-chandler-korea|sm|contact-us|forum|insights|mro|store|sitemap|robots\\.txt).+)",
       "has": [{ "type": "host", "value": "app.thevesselcode.com" }],
       "destination": "/app.html"
     }

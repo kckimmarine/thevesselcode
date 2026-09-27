@@ -36,6 +36,10 @@ check('sm rewrite', rewrites.some((r) => r.destination === '/sm/index.html'));
 check('no pms redirect to sm', !redirects.some((r) => r.source === '/pms' || r.source === '/pms/'));
 check('pms not rewritten to app', !rewrites.some((r) => r.destination === '/pms/index.html'));
 check('contact-us rewrite', rewrites.some((r) => r.destination === '/contact-us/index.html'));
+check('mro valves rewrite', rewrites.some((r) => r.source === '/mro/valves' && r.destination === '/mro/valves/index.html'));
+check('mro pipes-fittings rewrite', rewrites.some((r) => r.source === '/mro/pipes-fittings' && r.destination === '/mro/pipes-fittings/index.html'));
+check('mro bearings rewrite', rewrites.some((r) => r.source === '/mro/bearings' && r.destination === '/mro/bearings/index.html'));
+check('mro tools rewrite', rewrites.some((r) => r.source === '/mro/tools' && r.destination === '/mro/tools/index.html'));
 
 const shell = readFileSync(join(ROOT, 'js/marketing-shell.js'), 'utf8');
 const home = readFileSync(join(ROOT, 'home/index.html'), 'utf8');
@@ -78,6 +82,28 @@ check('marketing readability css', home.includes('marketing-readability.css'));
 const toolkitHtml = readFileSync(join(ROOT, 'toolkit.html'), 'utf8');
 check('toolkit no promo clutter', !toolkitHtml.includes('mkt-pricing-band') && !toolkitHtml.includes('toolkit-plg-band') && !toolkitHtml.includes('toolkit-popular-impa') && !toolkitHtml.includes('mkt-plg-locks'));
 check('toolkit no enterprise slate in hero', !toolkitHtml.includes('impa-enterprise-preview-slate'));
+check(
+    'toolkit industrial specs hub links',
+    toolkitHtml.includes('mro-industrial-specs-list')
+        && toolkitHtml.includes('href="/mro/valves"')
+        && toolkitHtml.includes('href="/mro/pipes-fittings"')
+        && toolkitHtml.includes('href="/mro/bearings"')
+        && toolkitHtml.includes('href="/mro/tools"'),
+);
+const MRO_HUB_SLUGS = ['valves', 'pipes-fittings', 'bearings', 'tools'];
+MRO_HUB_SLUGS.forEach((slug) => {
+    const hubPath = join(ROOT, 'mro', slug, 'index.html');
+    check(`mro/${slug}/index.html exists`, existsSync(hubPath));
+    if (!existsSync(hubPath)) return;
+    const hubHtml = readFileSync(hubPath, 'utf8');
+    check(`mro/${slug} has h1`, /<h1[^>]*>[\s\S]+<\/h1>/.test(hubHtml));
+    check(`mro/${slug} spec table`, hubHtml.includes('mro-hub-spec-table'));
+    check(
+        `mro/${slug} rfq triggers`,
+        hubHtml.includes('btn-action-rfq') && hubHtml.includes('Multi-Item RFQ') && hubHtml.includes('btn-action-wa'),
+    );
+    check(`mro/${slug} marketing shell`, hubHtml.includes('marketing-shell.js'));
+});
 check('toolkit engineering modules', toolkitHtml.includes('mkt-engineering-modules') && toolkitHtml.includes('data-tool-tab="electrical"'));
 check('toolkit hero condensed (no top search)', toolkitHtml.includes('toolkit-hero-desc') && !toolkitHtml.includes('mktEngSearchInput'));
 check('footer engineer signature', shell.includes('footer-engineer-signature') && shell.includes('1st Class Marine Engineer License'));

@@ -224,6 +224,10 @@ check('core sitemap has ship-repair-chandler-korea', coreSitemap.includes('<loc>
 check('core sitemap chandler hub priority', coreSitemap.includes('/ship-repair-chandler-korea</loc>') && coreSitemap.includes('<priority>0.9</priority>'));
 check('core sitemap has sm', coreSitemap.includes('<loc>https://www.thevesselcode.com/sm</loc>'));
 check('core sitemap has insights', coreSitemap.includes('<loc>https://www.thevesselcode.com/insights</loc>'));
+const MRO_HUB_PATHS = ['/mro/valves', '/mro/pipes-fittings', '/mro/bearings', '/mro/tools'];
+MRO_HUB_PATHS.forEach((hubPath) => {
+    check(`core sitemap has ${hubPath}`, coreSitemap.includes(`<loc>${CANONICAL_ORIGIN}${hubPath}</loc>`));
+});
 
 const storeChunk = readFileSync(join(root, 'public', 'sitemap-store-1.xml'), 'utf8');
 assertValidXml('sitemap-store-1.xml', storeChunk);
@@ -280,6 +284,13 @@ check(
 );
 check('toolkit canonical', toolkit.includes('rel="canonical" href="https://www.thevesselcode.com/toolkit"'));
 check('toolkit ship repair korea pillar link', toolkit.includes('href="/services#ship-repair-korea"') && toolkit.includes('Ship Repair in Korea'));
+check(
+    'toolkit industrial specs hub links',
+    toolkit.includes('href="/mro/valves"')
+        && toolkit.includes('href="/mro/pipes-fittings"')
+        && toolkit.includes('href="/mro/bearings"')
+        && toolkit.includes('href="/mro/tools"'),
+);
 check(
     'store page korea chandler hub footer link',
     html.includes('href="https://www.thevesselcode.com/ship-repair-chandler-korea"')

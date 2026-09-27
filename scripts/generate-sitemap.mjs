@@ -14,6 +14,10 @@ const lastmod = new Date().toISOString().slice(0, 10);
 const CORE_PAGES = [
   { path: '/', changefreq: 'weekly', priority: '1.0' },
   { path: '/toolkit', changefreq: 'weekly', priority: '0.9' },
+  { path: '/mro/valves', changefreq: 'weekly', priority: '0.88' },
+  { path: '/mro/pipes-fittings', changefreq: 'weekly', priority: '0.88' },
+  { path: '/mro/bearings', changefreq: 'weekly', priority: '0.88' },
+  { path: '/mro/tools', changefreq: 'weekly', priority: '0.88' },
   { path: '/sm', changefreq: 'weekly', priority: '0.9' },
   { path: '/services', changefreq: 'weekly', priority: '0.85' },
   { path: '/ship-repair-chandler-korea', changefreq: 'weekly', priority: '0.9' },
