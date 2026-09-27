@@ -1034,6 +1034,7 @@
         'tk.eca.popup.regulation': { en: 'Regulation', ko: '규정' },
         'tk.eca.popup.sulphur': { en: 'Sulphur limit', ko: '유황 한도' },
         'tk.eca.popup.sop': { en: 'Fuel change-over SOP', ko: '연료 전환 SOP' },
+        'tk.eca.popup.coords': { en: 'Boundary data', ko: '경계 좌표 출처' },
         'tk.eca.scrubberBan': { en: 'Open-loop scrubber washwater restricted', ko: '개방형 스크러버 washwater 제한' },
         'tk.eca.loadError': { en: 'Unable to load ECA map data.', ko: 'ECA 지도 데이터를 불러올 수 없습니다.' },
         'services.koreaPorts.title': { en: 'Korea Port Environmental Regulatory Hub', ko: '한국 항만 환경 규제 허브' },

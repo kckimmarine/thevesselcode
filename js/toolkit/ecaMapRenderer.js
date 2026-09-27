@@ -138,12 +138,16 @@
     }
 
     function regionPopupHtml(region) {
+        const source = region.boundarySource
+            ? `<p class="tvc-eca-popup-sop"><span class="tvc-eca-popup-label">${esc(t('tk.eca.popup.coords', 'Boundary data'))}</span> ${esc(region.boundarySource)}</p>`
+            : '';
         return `
             <div class="tvc-eca-popup">
                 <strong>${esc(region.name)}</strong>
                 <p><span class="tvc-eca-popup-label">${esc(t('tk.eca.popup.regulation', 'Regulation'))}</span> ${esc(region.regulation)}</p>
                 <p><span class="tvc-eca-popup-label">${esc(t('tk.eca.popup.sulphur', 'Sulphur limit'))}</span> ${esc(region.sulphurLimit)}</p>
                 <p class="tvc-eca-popup-sop"><span class="tvc-eca-popup-label">${esc(t('tk.eca.popup.sop', 'Fuel change-over SOP'))}</span> ${esc(region.fuelChangeoverSop)}</p>
+                ${source}
             </div>`;
     }
 
@@ -186,14 +190,19 @@
         }).addTo(_map);
 
         (_data.ecaRegions || []).forEach((region) => {
-            const latlngs = (region.polygon || []).map(([lat, lng]) => [lat, lng]);
-            if (latlngs.length < 3) return;
-            (region.layers || []).forEach((layerKey) => {
-                const style = { ...LAYER_STYLES[layerKey] };
-                const poly = L.polygon(latlngs, style);
-                poly.bindPopup(regionPopupHtml(region), { maxWidth: 320, className: 'tvc-eca-popup-wrap' });
-                poly.on('click', () => poly.openPopup());
-                poly.addTo(_layerGroups[layerKey] || _layerGroups.sox_010);
+            const rings = (region.polygons && region.polygons.length)
+                ? region.polygons
+                : (region.polygon ? [region.polygon] : []);
+            rings.forEach((ring) => {
+                const latlngs = (ring || []).map(([lat, lng]) => [lat, lng]);
+                if (latlngs.length < 3) return;
+                (region.layers || []).forEach((layerKey) => {
+                    const style = { ...LAYER_STYLES[layerKey] };
+                    const poly = L.polygon(latlngs, style);
+                    poly.bindPopup(regionPopupHtml(region), { maxWidth: 320, className: 'tvc-eca-popup-wrap' });
+                    poly.on('click', () => poly.openPopup());
+                    poly.addTo(_layerGroups[layerKey] || _layerGroups.sox_010);
+                });
             });
         });
 
@@ -239,7 +248,10 @@
     function focusRegion(regionId) {
         const region = _regionById[regionId];
         if (!region || !_map) return;
-        const latlngs = (region.polygon || []).map(([lat, lng]) => [lat, lng]);
+        const rings = (region.polygons && region.polygons.length)
+            ? region.polygons
+            : (region.polygon ? [region.polygon] : []);
+        const latlngs = rings.flat();
         if (latlngs.length) {
             _map.fitBounds(latlngs, { padding: [40, 40], maxZoom: 7 });
         }
