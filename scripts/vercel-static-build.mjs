@@ -61,6 +61,9 @@ if (domainArchives.status !== 0) {
 const smoke = spawnSync('node', ['scripts/smoke-web-demo.mjs'], { cwd: root, stdio: 'inherit' });
 if (smoke.status !== 0) process.exit(smoke.status ?? 1);
 
+const maritimeRegs = spawnSync('node', ['scripts/build-maritime-regulations.mjs'], { cwd: root, stdio: 'inherit' });
+if (maritimeRegs.status !== 0) process.exit(maritimeRegs.status ?? 1);
+
 spawnSync('node', ['scripts/merge-impa-chapters.mjs'], { cwd: root, stdio: 'inherit' });
 
 const seoIndex = spawnSync('node', ['scripts/generate-impa-seo-index.mjs'], { cwd: root, stdio: 'inherit' });

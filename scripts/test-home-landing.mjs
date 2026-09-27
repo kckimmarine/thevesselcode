@@ -119,10 +119,12 @@ if (existsSync(maritimeRegsPath)) {
         String(maritimeRegs.ports?.length),
     );
     maritimeRegs.ecaRegions.forEach((region) => {
+        const rings = region.polygons?.length ? region.polygons : [region.polygon];
+        const verts = rings.reduce((n, ring) => n + (ring?.length || 0), 0);
         check(
             `ECA polygon ${region.id}`,
-            Array.isArray(region.polygon) && region.polygon.length >= 3,
-            String(region.polygon?.length),
+            rings.every((ring) => Array.isArray(ring) && ring.length >= 3) && verts >= 8,
+            `${rings.length} ring(s), ${verts} vertices`,
         );
     });
 }
