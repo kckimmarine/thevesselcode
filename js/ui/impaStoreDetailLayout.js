@@ -114,6 +114,26 @@
         </div>`;
     }
 
+    function buildEnterprisePreviewSlateHtml(item, base) {
+        const code = item?.impa_code || item?.code || '';
+        const ref = code ? `/store/${normalizeCode(code)}` : 'store-detail';
+        const trialUrl = buildContactInquiryUrl(base || resolvePublicBaseUrl(), {
+            inquiry: 'fleet-trial',
+            ref,
+            code: code || undefined,
+        });
+        return `
+        <div class="impa-enterprise-preview-slate" aria-label="TVC-SM fleet features preview">
+          <div class="enterprise-preview-row">
+            <span class="preview-badge">⚓ TVC-SM Fleet OS</span>
+            <span class="preview-text">Live Vessel ROB Auto-Deduction &amp; 1-Click Requisition are managed via TVC-SM.</span>
+          </div>
+          <div class="enterprise-preview-action">
+            <a href="${escapeHtml(trialUrl)}" class="preview-link" data-analytics="poc_cta_click">Start 30-Day Fleet Trial ↗</a>
+          </div>
+        </div>`;
+    }
+
     function buildRfqLeadBlockHtml(item, base, { includeSticky = true } = {}) {
         const code = item.impa_code || item.code || '';
         const name = cleanProductTitle(item);
@@ -195,6 +215,7 @@
                         <div id="impaDetailInstallFunnel" class="impa-detail-install-funnel-host" aria-label="Turnkey installation funnel"></div>
                         <div id="impaDetailTurnkeyHub" class="impa-detail-turnkey-host" aria-label="Turnkey port services"></div>
                         <div id="impaDetailConversionAction" class="impa-detail-commerce-block" aria-label="Pricing and supply inquiry"></div>
+                        <div id="impaDetailEnterprisePreview" class="impa-enterprise-preview-host" aria-hidden="true"></div>
                         <div class="impa-detail-actions">
                             <button type="button" class="impa-detail-share-btn btn-share-spec" id="impaDetailShareBtn">📋 Share Spec Link</button>
                         </div>
@@ -270,6 +291,12 @@
         const commerceHost = root.querySelector('#impaDetailConversionAction');
         if (commerceHost) commerceHost.innerHTML = buildImpaCommerceActionsHtml(item);
 
+        const previewHost = root.querySelector('#impaDetailEnterprisePreview');
+        if (previewHost) {
+            previewHost.innerHTML = buildEnterprisePreviewSlateHtml(item, base);
+            previewHost.removeAttribute('aria-hidden');
+        }
+
         if (options.mountExtensions !== false) {
             mountToolkitExtensionBlocks(root, item);
         }
@@ -285,6 +312,7 @@
         buildImpaCommerceTrustHtml,
         buildImpaStockSlaHtml,
         buildImpaCommerceActionsHtml,
+        buildEnterprisePreviewSlateHtml,
         buildRfqLeadBlockHtml,
         buildContactInquiryUrl,
         buildToolkitDetailHostMarkup,

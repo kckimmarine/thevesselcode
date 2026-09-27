@@ -550,6 +550,7 @@ const {
     buildImpaCommerceTrustHtml,
     buildImpaStockSlaHtml,
     buildImpaCommerceActionsHtml,
+    buildEnterprisePreviewSlateHtml,
     buildRfqLeadBlockHtml,
     isTopRequisitionedItem,
 } = layout;
@@ -680,6 +681,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
         ${turnkeyHubHtml}
         <div class="impa-detail-tvc-sm">${tvcSmBannerHtml}</div>
         ${buildImpaCommerceActionsHtml(item)}
+        ${buildEnterprisePreviewSlateHtml(item, base)}
         <div class="impa-detail-actions">
           <button type="button" class="btn-share-spec" data-impa-share-code="${escapeHtml(item.impa_code)}">📋 Share Spec Link</button>
           <a class="btn-toolkit" href="${escapeHtml(toolkitUrl)}">Open Maritime Toolkit</a>
