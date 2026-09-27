@@ -38,13 +38,48 @@ const impaSeo = require('../api/_lib/impaSeo.js');
 const item = impaSeo.getItemByCode(sampleCode);
 check('lookup sample item', !!item?.name, sampleCode);
 
+const industrialCode = impaSeo.getItemByCode('750231') ? '750231' : '750101';
+const industrialItem = impaSeo.getItemByCode(industrialCode);
+check('industrial sample lookup', !!industrialItem?.land_compat_name || !!industrialItem?.industrial_tags?.length, industrialCode);
+check('industrial SEO mode', impaSeo.isIndustrialSeoItem(industrialItem), industrialCode);
+
+const industrialTitle = impaSeo.buildPageTitle(industrialItem);
+check('industrial title references IMPA code', industrialTitle.includes(`[IMPA ${industrialCode}]`));
+check(
+    'industrial title uses land compat or tags',
+    industrialTitle.includes('Globe Valve') || industrialTitle.includes('Ind. & Marine') || industrialTitle.includes('Valve'),
+    industrialTitle,
+);
+check('industrial title length serp budget', industrialTitle.length <= impaSeo.SERP_TITLE_MAX_LEN, String(industrialTitle.length));
+
+const industrialDesc = impaSeo.buildMetaDescription(industrialItem);
+check('industrial meta mentions MRO', industrialDesc.includes('Industrial MRO') || industrialDesc.includes('industrial MRO'));
+
+const marineSample = Object.keys(index.items)
+    .sort()
+    .map((c) => impaSeo.getItemByCode(c))
+    .find((row) => row && !impaSeo.isIndustrialSeoItem(row));
+check('marine fallback sample exists', !!marineSample?.impa_code, marineSample?.impa_code || 'none');
+
 const html = impaSeo.buildStoreItemHtml(item, { origin: 'https://app.thevesselcode.com' });
 const pageTitle = impaSeo.buildPageTitle(item);
-check('title has drawing specs hook', pageTitle.includes('[Drawing & Specs]') && pageTitle.includes('Fast RFQ'));
-check('title length serp budget', pageTitle.length <= impaSeo.SERP_TITLE_MAX_LEN, String(pageTitle.length));
+if (marineSample) {
+    const marineTitle = impaSeo.buildPageTitle(marineSample);
+    check('marine title has drawing specs hook', marineTitle.includes('[Drawing & Specs]') && marineTitle.includes('Fast RFQ'));
+    check('marine title length serp budget', marineTitle.length <= impaSeo.SERP_TITLE_MAX_LEN, String(marineTitle.length));
+    const marineDesc = impaSeo.buildMetaDescription(marineSample);
+    check('marine meta has busan hook', marineDesc.includes('Busan'));
+} else {
+    check('marine title has drawing specs hook', pageTitle.includes('[Drawing & Specs]') && pageTitle.includes('Fast RFQ'));
+    check('title length serp budget', pageTitle.length <= impaSeo.SERP_TITLE_MAX_LEN, String(pageTitle.length));
+}
 check('html has title', html.includes(`<title>${pageTitle.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</title>`));
 check('html has canonical', html.includes(`/store/${sampleCode}`));
-check('html has description meta', html.includes('View verified technical drawing') && html.includes('Instant quotation available at Busan'));
+const descForHtml = impaSeo.buildMetaDescription(item);
+const descSnippet = descForHtml.includes('Busan')
+    ? 'Instant quotation available at Busan'
+    : 'Industrial MRO';
+check('html has description meta', html.includes('name="description"') && html.includes(descSnippet.slice(0, 20)));
 check('html plate alt drawing', html.includes('Technical Drawing and Catalog Plate'));
 check('html json-ld breadcrumb', html.includes('BreadcrumbList'));
 check('html json-ld order action', html.includes('OrderAction'));
