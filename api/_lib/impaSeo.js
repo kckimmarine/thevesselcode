@@ -19,6 +19,11 @@ const CHAPTER_CATEGORY = {
     '81': 'Packing & Jointing',
 };
 
+/** Chapters with strong land/plant MRO search intent — conditional SERP copy when tags present. */
+const INDUSTRIAL_SEO_CHAPTERS = new Set(['61', '71', '73', '75', '77', '81']);
+
+const INDUSTRIAL_LAND_NAME_RE = /\b(valve|flange|pipe|bearing|gasket|packing|coupling|tool|bolt|nut|wrench|schedule)\b/i;
+
 const INDEX_PATHS = [
     join(process.cwd(), 'api', '_data', 'impa-seo-index.json'),
     join(process.cwd(), 'public', 'data', 'impa-seo-index.json'),
@@ -55,6 +60,10 @@ function expandCompactRow(raw, code) {
     if (!impaCode || impaCode === '000000') return null;
     const chapter = String(raw.g || impaCode.slice(0, 2) || '').trim();
     const specs = raw.specs && typeof raw.specs === 'object' ? { ...raw.specs } : {};
+    const industrialTags = Array.isArray(raw.industrial_tags)
+        ? raw.industrial_tags.map((t) => String(t || '').trim()).filter(Boolean)
+        : [];
+    const landCompat = String(raw.land_compat_name || '').trim();
     return {
         impa_code: impaCode,
         code: impaCode,
@@ -64,6 +73,8 @@ function expandCompactRow(raw, code) {
         chapter,
         plate_id: String(raw.p || raw.plate_id || raw.plate_no || '').trim(),
         specs,
+        ...(industrialTags.length ? { industrial_tags: industrialTags } : {}),
+        ...(landCompat ? { land_compat_name: landCompat } : {}),
     };
 }
 
@@ -157,6 +168,40 @@ function truncateSerpText(text, maxLen) {
     return `${raw.slice(0, maxLen - 1).trimEnd()}…`;
 }
 
+function itemChapter(item) {
+    return String(item?.chapter || item?.impa_code?.slice(0, 2) || '').trim();
+}
+
+function buildIndustrialHeadline(item) {
+    const land = String(item?.land_compat_name || '').trim();
+    if (land) return land;
+    const tags = Array.isArray(item?.industrial_tags) ? item.industrial_tags.filter(Boolean) : [];
+    if (tags.length) return tags.slice(0, 4).join(' ');
+    return cleanProductTitle(item);
+}
+
+function isIndustrialSeoItem(item) {
+    if (!item) return false;
+    const land = String(item.land_compat_name || '').trim();
+    const tags = Array.isArray(item.industrial_tags) ? item.industrial_tags : [];
+    if (!land && !tags.length) return false;
+    const ch = itemChapter(item);
+    if (INDUSTRIAL_SEO_CHAPTERS.has(ch)) return true;
+    return !!(land && INDUSTRIAL_LAND_NAME_RE.test(land));
+}
+
+function fitSerpTitle(prefix, core, suffixPrimary, suffixFallback) {
+    let title = `${prefix}${core}${suffixPrimary}`;
+    if (title.length <= SERP_TITLE_MAX_LEN) return title;
+    const nameBudget = SERP_TITLE_MAX_LEN - prefix.length - suffixPrimary.length;
+    if (nameBudget >= 6) {
+        title = `${prefix}${truncateSerpText(core, nameBudget)}${suffixPrimary}`;
+    }
+    if (title.length <= SERP_TITLE_MAX_LEN) return title;
+    const shortBudget = SERP_TITLE_MAX_LEN - prefix.length - suffixFallback.length;
+    return `${prefix}${truncateSerpText(core, Math.max(4, shortBudget))}${suffixFallback}`;
+}
+
 function specRows(item) {
     const specs = item.specs && typeof item.specs === 'object' ? item.specs : {};
     const used = new Set();
@@ -186,32 +231,38 @@ function specRows(item) {
 }
 
 function buildOgTitle(item) {
+    if (isIndustrialSeoItem(item)) {
+        const headline = buildIndustrialHeadline(item);
+        return `[IMPA ${item.impa_code}] ${headline} — Industrial & Marine Spec`;
+    }
     const cleanName = cleanProductTitle(item);
     return `[Drawing & Specs] IMPA ${item.impa_code} — ${cleanName}`;
 }
 
 function buildPageTitle(item) {
     const code = item.impa_code;
+    if (isIndustrialSeoItem(item)) {
+        const headline = buildIndustrialHeadline(item);
+        const prefix = `[IMPA ${code}] `;
+        return fitSerpTitle(
+            prefix,
+            headline,
+            ' - Ind. & Marine Spec | TVC',
+            ' | TVC',
+        );
+    }
     const cleanName = cleanProductTitle(item);
     const suffixLong = ' | Dimensions, Weight & Fast RFQ';
     const suffixShort = ' | Fast RFQ';
     const prefix = `[Drawing & Specs] IMPA ${code} : `;
-    let title = `${prefix}${cleanName}${suffixLong}`;
-    if (title.length > SERP_TITLE_MAX_LEN) {
-        const nameBudget = SERP_TITLE_MAX_LEN - prefix.length - suffixLong.length;
-        const shortName = nameBudget >= 6
-            ? truncateSerpText(cleanName, nameBudget)
-            : truncateSerpText(cleanName, Math.max(4, SERP_TITLE_MAX_LEN - prefix.length - suffixShort.length));
-        title = `${prefix}${shortName}${suffixLong}`;
-    }
-    if (title.length > SERP_TITLE_MAX_LEN) {
-        const nameBudget = SERP_TITLE_MAX_LEN - prefix.length - suffixShort.length;
-        title = `${prefix}${truncateSerpText(cleanName, Math.max(4, nameBudget))}${suffixShort}`;
-    }
-    return title;
+    return fitSerpTitle(prefix, cleanName, suffixLong, suffixShort);
 }
 
 function buildPrimaryHeading(item) {
+    if (isIndustrialSeoItem(item)) {
+        const headline = buildIndustrialHeadline(item);
+        return `IMPA ${item.impa_code}: ${headline} — Industrial & Marine Specification`;
+    }
     const name = item.name || 'Marine Store Item';
     return `IMPA CODE ${item.impa_code}: ${name}`;
 }
@@ -222,6 +273,13 @@ function cleanProductTitle(item) {
 
 function buildMetaDescription(item) {
     const code = item.impa_code;
+    if (isIndustrialSeoItem(item)) {
+        const headline = buildIndustrialHeadline(item);
+        const tags = Array.isArray(item.industrial_tags) ? item.industrial_tags.slice(0, 3).join(', ') : '';
+        const stdBit = tags ? ` Standards: ${tags}.` : '';
+        const desc = `Industrial MRO & marine spec for ${headline} (IMPA ${code}).${stdBit} Dimensions, catalog plate & fast RFQ for plant and shipboard buyers.`;
+        return truncateSerpText(desc, SERP_META_DESC_MAX_LEN);
+    }
     const cleanName = cleanProductTitle(item);
     const desc = `View verified technical drawing, flange/thread dimensions, and equivalent specs for IMPA ${code} (${cleanName}). Instant quotation available at Busan, Singapore & Global ports.`;
     return truncateSerpText(desc, SERP_META_DESC_MAX_LEN);
@@ -346,6 +404,10 @@ function buildB2bProductOffer(pageUrl) {
 
 function buildProductJsonLd(item, pageUrl, imageUrl, base) {
     const cleanName = cleanProductTitle(item);
+    const displayName = isIndustrialSeoItem(item) ? buildIndustrialHeadline(item) : cleanName;
+    const productTitleSuffix = isIndustrialSeoItem(item)
+        ? ' — Industrial & Marine Specification & RFQ'
+        : ' — Drawing, Dimensions & Fast RFQ';
     const rfqUrl = buildContactInquiryUrl(base, {
         inquiry: 'rfq',
         code: item.impa_code,
@@ -353,10 +415,17 @@ function buildProductJsonLd(item, pageUrl, imageUrl, base) {
         ref: `/store/${item.impa_code}`,
     });
     const additionalProperty = buildSpecAdditionalProperties(item);
+    if (isIndustrialSeoItem(item) && item.land_compat_name) {
+        additionalProperty.push({
+            '@type': 'PropertyValue',
+            name: 'Industrial cross-reference',
+            value: String(item.land_compat_name).trim(),
+        });
+    }
     return {
         '@context': 'https://schema.org',
         '@type': 'Product',
-        name: `IMPA ${item.impa_code} ${cleanName} — Drawing, Dimensions & Fast RFQ`,
+        name: `IMPA ${item.impa_code} ${displayName}${productTitleSuffix}`,
         sku: item.impa_code,
         mpn: resolveMpn(item),
         category: SEO_PRODUCT_CATEGORY,
@@ -387,10 +456,13 @@ function buildProductJsonLd(item, pageUrl, imageUrl, base) {
 
 function buildTechArticleJsonLd(item, pageUrl, imageUrl) {
     const cleanName = cleanProductTitle(item);
+    const headline = isIndustrialSeoItem(item)
+        ? `[IMPA ${item.impa_code}] ${buildIndustrialHeadline(item)} — Industrial & Marine Specification`
+        : `[Drawing & Specs] IMPA ${item.impa_code} Technical Drawing & Dimensions`;
     return {
         '@context': 'https://schema.org',
         '@type': 'TechArticle',
-        headline: `[Drawing & Specs] IMPA ${item.impa_code} Technical Drawing & Dimensions`,
+        headline,
         name: buildPrimaryHeading(item),
         description: buildDescription(item),
         url: pageUrl,
@@ -587,7 +659,7 @@ function buildStoreItemHtml(item, { origin } = {}) {
       <header class="impa-store-detail-head">
         <div class="impa-store-detail-head-main">
           <span class="impa-detail-unified-badge">IMPA ${escapeHtml(item.impa_code)}</span>
-          <h1 class="impa-detail-unified-title">${escapeHtml(displayTitle)}</h1>
+          <h1 class="impa-detail-unified-title">${escapeHtml(heading)}</h1>
           ${buildImpaCommerceTrustHtml(item)}
         </div>
       </header>
@@ -682,4 +754,7 @@ module.exports = {
     buildJsonLd,
     buildStoreItemHtml,
     buildNotFoundHtml,
+    isIndustrialSeoItem,
+    buildIndustrialHeadline,
+    INDUSTRIAL_SEO_CHAPTERS,
 };
