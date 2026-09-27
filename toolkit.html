@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta name="theme-color" content="#f1f5f9">
-    <meta name="description" content="Maritime Toolkit — thermodynamics, piping flanges, lubrication, coatings, electrical diagnostics, and PSC checkpoints. Marine engineering reference by THE VESSEL CODE.">
+    <meta name="description" content="Maritime Toolkit — thermodynamics, piping flanges, ASME B36.10M pipe schedules, lubrication, coatings, electrical diagnostics, and PSC checkpoints. Marine engineering reference by THE VESSEL CODE.">
     <title>Maritime Toolkit &amp; IMPA Catalog | THE VESSEL CODE</title>
     <link rel="canonical" href="https://www.thevesselcode.com/toolkit">
     <meta property="og:type" content="website">
@@ -35,6 +35,10 @@
     <link rel="stylesheet" href="css/impa-detail-unified.css?v=20260920-closed-loop-funnel">
     <link rel="stylesheet" href="css/impa-detail.css?v=20260920-commerce-badges">
     <link rel="stylesheet" href="css/marketing-readability.css?v=20260919-conversion-network">
+    <script type="application/ld+json">[
+      {"@context":"https://schema.org","@type":"TechArticle","headline":"Pipe Schedule Reference — ASME B36.10M & JIS G3452/G3454","description":"Interactive wall thickness, outside diameter, and weight tables for SCH 40, SCH 80, and SCH 160 carbon steel pipe (NPS 1/2 in to 12 in / 15A–300A).","author":{"@type":"Organization","name":"THE VESSEL CODE"},"publisher":{"@type":"Organization","name":"THE VESSEL CODE"},"mainEntityOfPage":"https://www.thevesselcode.com/toolkit#pipe-schedule","about":["ASME B36.10M","JIS G3452","JIS G3454","Pipe schedule"]},
+      {"@context":"https://schema.org","@type":"HowTo","name":"Look up pipe wall thickness (SCH 40 / 80 / 160)","description":"Filter nominal bore, compare OD and wall thickness, then send a pipe & fitting RFQ.","step":[{"@type":"HowToStep","name":"Select nominal size","text":"Filter by NPS, DN, or JIS A size (e.g. 50A or 2 inch)."},{"@type":"HowToStep","name":"Read schedules","text":"Compare SCH 40 (STD), SCH 80 (XS), and SCH 160 wall thickness and weight."},{"@type":"HowToStep","name":"RFQ","text":"Click Inquire Pipe & Fitting RFQ to prefill a contact message with the selected schedule."}]}
+    ]</script>
 </head>
 <body class="tvc-marketing-body store-public-body store-tool-catalog home-page mkt-page mkt-toolkit-page" data-mkt-active="toolkit">
     <div class="mkt-site-wrap">
@@ -142,6 +146,11 @@
                     <h3 data-i18n="tk.mod.2.title">Piping &amp; Fluid Mechanics</h3>
                     <p class="mkt-prose" data-i18n="tk.mod.2.d">JIS 5K/10K/16K, ANSI 150#, DIN flange matrix (OD, PCD, bolts).</p>
                 </a>
+                <a class="home-card mkt-glass-card mkt-module-card module-card" href="#pipe-schedule" role="button">
+                    <span class="mkt-module-index">PS</span>
+                    <h3 data-i18n="tk.mod.pipeSchedule.title">Pipe schedule (ASME / JIS)</h3>
+                    <p class="mkt-prose" data-i18n="tk.mod.pipeSchedule.d">SCH 40, 80, 160 wall thickness, OD, and kg/m — NPS ½″–12″ / 15A–300A.</p>
+                </a>
                 <a class="home-card mkt-glass-card mkt-module-card module-card" href="#tab-mechanical" data-tool-tab="mechanical" role="button">
                     <span class="mkt-module-index">ME</span>
                     <h3 data-i18n="tk.mod.mech.title">Mechanical elements</h3>
@@ -183,6 +192,11 @@
                     <p class="mkt-prose" data-i18n="tk.mod.catalog.d">53,000+ spec pages with catalog plates.</p>
                 </a>
             </div>
+        </section>
+
+        <section id="pipe-schedule" class="home-section pipe-schedule-section" aria-labelledby="pipeScheduleSectionTitle" data-pipe-schedule-rows="14">
+            <h2 id="pipeScheduleSectionTitle" class="mkt-section-label" data-i18n="tk.pipeSchedule.sectionLabel">Pipe schedule reference</h2>
+            <div id="pipeScheduleToolHost" class="mkt-glass-card pipe-schedule-tool-host"></div>
         </section>
 
         <nav class="store-public-toolkit mkt-tool-tabs" id="storePublicToolkit" role="tablist" aria-label="Maritime utility tabs">
@@ -234,6 +248,8 @@
     <script src="js/toolkit/auxiliaryCalc.js?v=20260915-auxiliary"></script>
     <script src="js/toolkit/engineeringSearch.js?v=20260915-eng-search"></script>
     <script src="js/toolkit/flangeData.js?v=20260914-flange-matrix"></script>
+    <script src="js/toolkit/pipeScheduleData.js?v=20260927-pipe-schedule"></script>
+    <script src="js/toolkit/pipeScheduleRenderer.js?v=20260927-pipe-schedule"></script>
     <script src="js/data/impaCatalogSeed.js?v=20260922-instant-catalog"></script>
     <script src="js/core/schema.js?v=20260920-industrial-tags"></script>
     <script src="js/core/db.js?v=20260906-plate-pipeline"></script>
