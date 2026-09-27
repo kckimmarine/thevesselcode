@@ -91,6 +91,12 @@ check('html has tvc-sm banner', html.includes('class="tvc-sm-banner"'));
 check('html has rfq lead block', html.includes('store-rfq-lead'));
 check('html has rfq contact link', html.includes('inquiry=rfq'));
 check('html has fleet poc cta', html.includes('inquiry=poc'));
+check(
+    'html has enterprise preview slate',
+    html.includes('impa-enterprise-preview-slate')
+        && html.includes('Start 30-Day Fleet Trial')
+        && html.includes('inquiry=fleet-trial'),
+);
 check('html has turnkey port hub', html.includes('class="turnkey-port-hub"') && html.includes('Turnkey Port Solution'));
 check('html has turnkey inquiry cta', html.includes('data-turnkey-inquiry-open'));
 check('html has install overhaul funnel', html.includes('class="turnkey-install-funnel"') && html.includes('Turnkey Port Installation'));
