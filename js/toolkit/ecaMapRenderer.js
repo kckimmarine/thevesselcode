@@ -391,4 +391,4 @@
     document.addEventListener('DOMContentLoaded', () => {
         if (document.getElementById('eca-map')) init('#eca-map');
     });
-})();
+}(typeof globalThis !== 'undefined' ? globalThis : window));
