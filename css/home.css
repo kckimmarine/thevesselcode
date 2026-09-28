@@ -219,22 +219,16 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
 .home-hero-search-field {
     flex: 1 1 220px;
     display: flex;
-    align-items: center;
-    gap: 8px;
+    align-items: stretch;
     min-height: 52px;
-    padding: 6px 8px 6px 10px;
-    border-radius: 12px;
-    border: 1px solid #cbd5e1;
-    background: rgba(255, 255, 255, 0.92);
-    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
 }
 
 .home-hero-search-field:focus-within {
-    outline: 2px solid #0284c7;
-    outline-offset: 2px;
-    border-color: #0284c7;
+    outline: none;
 }
 
 .home-hero-search-thumb {
@@ -271,11 +265,13 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
 
 .home-hero-search-input {
     flex: 1 1 120px;
+    width: 100%;
     min-width: 0;
-    min-height: 40px;
-    padding: 0 4px;
-    border: 0;
-    background: transparent;
+    min-height: 52px;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.96);
     color: #0f172a;
     font-size: 1rem;
     font-weight: 500;
@@ -372,7 +368,9 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
 }
 
 .home-hero-search-input:focus {
-    outline: none;
+    outline: 2px solid #0284c7;
+    outline-offset: 2px;
+    border-color: #0284c7;
 }
 
 .home-hero-search-btn {
@@ -2000,6 +1998,26 @@ body.home-page #hero.hero-ocean-chevron .home-hero-search-label {
 body.home-page #hero.hero-ocean-chevron .home-hero-search-subtitle,
 body.home-page #hero.hero-ocean-chevron .home-hero-search-subtitle.muted {
     color: #bae6fd !important;
+}
+
+body.home-page #hero.hero-ocean-chevron .home-hero-search-input {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(186, 230, 253, 0.45);
+    border-radius: 0;
+    color: #f0f9ff;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+body.home-page #hero.hero-ocean-chevron .home-hero-search-input::placeholder {
+    color: rgba(186, 230, 253, 0.72);
+}
+
+body.home-page #hero.hero-ocean-chevron .home-hero-search-input:focus {
+    outline: none;
+    border-bottom-color: #7dd3fc;
+    box-shadow: 0 1px 0 0 rgba(125, 211, 252, 0.65);
 }
 
 body.home-page #hero.hero-ocean-chevron .home-utility-badge {
