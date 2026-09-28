@@ -1,53 +1,24 @@
 {
   "v": 1,
-  "startedAt": "2026-09-28T02:35:42.277Z",
+  "startedAt": "2026-09-28T02:37:28.582Z",
   "flags": {
-    "market": false,
-    "fleet": true,
+    "market": true,
+    "fleet": false,
     "impa": false
   },
   "steps": {
-    "fleet": {
-      "steps": [
-        {
-          "name": "ingest",
-          "ok": true,
-          "exitCode": 0,
-          "durationMs": 2706,
-          "label": "fleet:ingest"
-        },
-        {
-          "name": "generateEnrichment",
-          "ok": true,
-          "count": 831
-        },
-        {
-          "name": "enrich",
-          "ok": true,
-          "exitCode": 0,
-          "durationMs": 205,
-          "label": "fleet:enrich"
-        },
-        {
-          "name": "normalizeChunks",
-          "ok": true,
-          "normalized": 49634
-        }
-      ],
-      "warnings": [],
-      "validation": {
+    "market": {
+      "ok": true,
+      "exitCode": 0,
+      "durationMs": 2365,
+      "label": "market:fetch",
+      "normalize": {
         "ok": true,
-        "warnings": [],
-        "errors": [],
-        "vesselCount": 49634,
-        "chunkCount": 66,
-        "indexSha256": "bd20df009fa5ff65b8bd87d7375ddde341cce52bb0fd3fc78c07de19dafdb26d",
-        "generated": "2026-09-28T02:35:44.944Z",
-        "enrichedAt": "2026-09-28T02:35:45.146Z"
+        "news": 16
       }
     }
   },
   "warnings": [],
   "ok": true,
-  "completedAt": "2026-09-28T02:35:45.522Z"
+  "completedAt": "2026-09-28T02:37:30.950Z"
 }
