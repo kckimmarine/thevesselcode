@@ -218,7 +218,7 @@ body.mkt-contact-page .ac-form-sub {
 
 .home-topnav a:hover,
 .home-topnav a[aria-current="page"],
-.home-card a,
+.home-card a:not(.home-btn),
 .home-service-intro a {
     color: var(--mkt-accent);
 }

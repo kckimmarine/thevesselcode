@@ -185,10 +185,16 @@ body.tvc-marketing-body .home-hero-actions .home-btn-primary {
     box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
 }
 
-body.tvc-marketing-body .home-hero-actions .home-btn-secondary {
+body.tvc-marketing-body .home-hero-actions .home-btn-secondary:not(.home-btn-hero-outline-light) {
     background: #ffffff !important;
     color: #0f172a !important;
     border: 1px solid #0f172a !important;
+}
+
+body.tvc-marketing-body .home-hero-actions .home-btn-secondary.home-btn-hero-outline-light {
+    background: transparent !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, 0.85) !important;
 }
 
 body.tvc-marketing-body #marketing-topbar .mkt-commercial-stack {
@@ -1396,13 +1402,15 @@ body.tvc-marketing-body .store-public-mode .store-vl-cell {
     padding: 18px;
 }
 
-body.tvc-marketing-body .mkt-pricing-card .home-btn-primary {
+body.tvc-marketing-body .mkt-pricing-card .home-btn-primary,
+body.tvc-marketing-body .home-pricing-card .home-btn-primary {
     background: #0284c7 !important;
     color: #ffffff !important;
     border-color: #0284c7 !important;
 }
 
-body.tvc-marketing-body .mkt-pricing-card .home-btn-secondary {
+body.tvc-marketing-body .mkt-pricing-card .home-btn-secondary,
+body.tvc-marketing-body .home-pricing-card .home-btn-secondary {
     background: #ffffff !important;
     color: #0f172a !important;
     border: 1px solid #0f172a !important;
