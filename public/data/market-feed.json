@@ -1,18 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-09-28T02:32:07.166Z",
+    "generatedAt": "2026-09-28T02:35:02.662Z",
     "benchmarkAsOf": "2026-09-25",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
     ],
     "marketErrors": [
-      "indices: set OILPRICE_API_KEY for live Baltic benchmarks"
+      "bunker-keyed: HTTP 400",
+      "indices: HTTP 400"
     ],
     "source": "TVC Market Desk · RSS aggregation",
     "dataSources": {
       "bunker": "OilPriceAPI · market_reporting",
-      "indices": "cached (set OILPRICE_API_KEY for live indices)"
+      "indices": "OilPriceAPI · Baltic Exchange"
     },
     "updatedLabelEn": "Market as of 2026-09-25",
     "updatedLabelKo": "2026-09-25 기준 시장가"
@@ -283,7 +284,7 @@
       "summary": "By Jacob Gronholt-Pedersen COPENHAGEN, Sept 14 (Reuters)&#160;&#8211;&#160;Iceland&#8217;s last remaining active whaling company said it believed it could survive a renewed push to ban the practice, given that previous attempts to...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 27,
+      "hoursAgo": 28,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-14T115504Z_1061078343_RC2ZINAKUP13_RTRMADP_3_ICELAND-WHALING-800x533.jpg",
       "en": {
         "headline": "Iceland&#8217;s Last Whaling Company Shrugs Off Threat Of Permanent Ban",
@@ -436,7 +437,7 @@
       "summary": "Taiwanese owner Sincere Navigation has agreed to pay $38.5m for a 2019-built kamsarmax as it continues reshaping its mixed tanker and dry bulk fleet. The Taipei-listed company disclosed that its indirect wholly owned subsidiary Majestic Bloom will acquire an 81,770 dwt bulker fro",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 64,
+      "hoursAgo": 65,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Babitonga-leo-deurholt-Marine-Traffic.jpg",
       "en": {
         "headline": "Sincere Navigation adds modern kamsarmax in $38.5m deal",
