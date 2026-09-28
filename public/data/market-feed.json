@@ -1,14 +1,15 @@
 {
   "meta": {
-    "generatedAt": "2026-09-28T02:37:30.942Z",
+    "generatedAt": "2026-09-28T02:42:01.098Z",
     "benchmarkAsOf": "2026-09-25",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
     ],
     "marketErrors": [
-      "bunker-keyed: HTTP 400",
-      "indices: HTTP 400"
+      "MGO_05S_KRPUS_USD: HTTP 400",
+      "BALTIC_DIRTY_TANKER_INDEX: HTTP 400",
+      "BALTIC_CLEAN_TANKER_INDEX: HTTP 400"
     ],
     "source": "TVC Market Desk · RSS aggregation",
     "dataSources": {
@@ -175,23 +176,54 @@
         "asOf": "2026-09-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
+      },
+      {
+        "port": "Busan",
+        "gradeKey": "VLSFO",
+        "gradeLabel": "VLSFO",
+        "fuel": "VLSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 925,
+        "deltaPct": 0,
+        "asOf": "2026-09-25T22:41:34.054Z",
+        "source": "market_reporting",
+        "provider": "OilPriceAPI"
+      },
+      {
+        "port": "Busan",
+        "gradeKey": "HSFO380",
+        "gradeLabel": "HSFO 380",
+        "fuel": "HSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 790,
+        "deltaPct": 0,
+        "asOf": "2026-09-25T22:41:34.030Z",
+        "source": "market_reporting",
+        "provider": "OilPriceAPI"
       }
     ]
   },
   "indices": {
     "bdi": {
-      "value": 1842,
-      "deltaPct": 0.65
+      "value": 3426,
+      "deltaPct": 0,
+      "unit": "pts",
+      "source": "market_reporting",
+      "asOf": "2026-09-25T13:40:13.622Z"
     },
     "capesizeTc": {
-      "value": 24850,
-      "deltaPct": 1.1,
-      "unit": "$/day"
+      "value": 5939,
+      "deltaPct": 0,
+      "unit": "pts",
+      "source": "market_reporting",
+      "asOf": "2026-09-25T06:43:30.431Z"
     },
     "panamaxTc": {
-      "value": 14220,
-      "deltaPct": 0.85,
-      "unit": "$/day"
+      "value": 2382,
+      "deltaPct": 0,
+      "unit": "pts",
+      "source": "market_reporting",
+      "asOf": "2026-09-25T14:26:14.736Z"
     },
     "bdti": {
       "value": 1185,
@@ -200,10 +232,6 @@
     "bcti": {
       "value": 892,
       "deltaPct": 0.2
-    },
-    "scfi": {
-      "value": 2193,
-      "deltaPct": 0.81
     }
   },
   "news": [
@@ -233,7 +261,7 @@
       "summary": "MOSCOW, Sept 27 (Reuters) &#8211; The Russian defense ministry said on Sunday its forces had carried out overnight drone strikes on logistics centers, port and transport infrastructure, as well as communications centers and vessels that...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/08/2023-07-25T142501Z_1537315073_RC2DA2A6M3VE_RTRMADP_3_UKRAINE-CRISIS-DANUBE-800x448.jpg",
       "en": {
         "headline": "Russia Says It Struck Vessels In Ukraine",
@@ -403,7 +431,7 @@
       "summary": "Ship-to-ship transfers in the Gulf of Oman for Middle Eastern oil from inside the Strait of Hormuz have reached their limits after Saudi Arabia diverted exports from the Red Sea, adding to shipments from other producers, trade sources and analysts said.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 57,
+      "hoursAgo": 58,
       "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Gulf of Oman Ship-to-ship Oil Transfers Reach Limit as Saudi Exports Surge",
