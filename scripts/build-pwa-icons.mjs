@@ -12,19 +12,20 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const SRC = path.join(ROOT, 'icons', 'company-logo.png');
 const OUT_DIR = path.join(ROOT, 'public', 'assets', 'icons');
-const BG = '#111111';
+/** Transparent pad — opaque #111 corners showed as a black square in Chrome favicons. */
+const PAD_BG = { r: 0, g: 0, b: 0, alpha: 0 };
 
 async function writeIcon(size) {
     const pad = Math.round(size * 0.08);
     const inner = size - pad * 2;
     const buf = await sharp(SRC)
-        .resize(inner, inner, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+        .resize(inner, inner, { fit: 'contain', background: PAD_BG })
         .extend({
             top: pad,
             bottom: pad,
             left: pad,
             right: pad,
-            background: BG,
+            background: PAD_BG,
         })
         .png()
         .toBuffer();
