@@ -755,11 +755,19 @@ body.home-page.home-bg-fixed .home-hero.mkt-hero {
     font-size: 0.92rem;
 }
 
-.home-card a {
+.home-card a:not(.home-btn) {
     color: var(--home-accent-2);
     font-weight: 700;
     text-decoration: none;
     font-size: 0.875rem;
+}
+
+.home-card a.home-btn-primary {
+    color: #fff;
+}
+
+.home-card a.home-btn-secondary {
+    color: #0f172a;
 }
 
 .home-product-card {
@@ -1958,7 +1966,7 @@ body.home-page #hero.hero-ocean-chevron .home-hero-cta-row--ocean {
 }
 
 body.home-page #hero.hero-ocean-chevron .home-btn-hero-outline-light {
-    background: transparent;
+    background: transparent !important;
     color: #fff !important;
     border: 2px solid rgba(255, 255, 255, 0.85);
 }
