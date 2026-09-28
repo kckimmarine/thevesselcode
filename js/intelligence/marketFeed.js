@@ -196,10 +196,6 @@
     function renderTickerHtml(lang) {
         const d = data();
         const label = t('intel.ticker.label', lang);
-        const updated =
-            lang === 'ko'
-                ? d.meta?.updatedLabelKo || t('intel.ticker.updated', lang)
-                : d.meta?.updatedLabelEn || t('intel.ticker.updated', lang);
         const quotes = getBunkerQuotes();
         const chips = quotes
             .map((q) => {
@@ -220,7 +216,6 @@
                 <div class="mkt-ticker-track-wrap">
                     <div class="mkt-ticker-track">${chips}</div>
                 </div>
-                <span class="mkt-ticker-updated">${escapeHtml(updated)}</span>
             </div>
         </div>`;
     }
