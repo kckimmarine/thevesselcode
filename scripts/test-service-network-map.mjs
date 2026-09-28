@@ -17,12 +17,20 @@ async function checkViewport(page, label, width, height) {
   const metrics = await page.evaluate(() => {
     const mapEl = document.getElementById('tvc-service-network-map');
     const tile = mapEl?.querySelector('.leaflet-tile');
+    const tileSrc = tile?.getAttribute('src') || '';
     const hubs = document.querySelectorAll('.tvc-network-hub-marker').length;
     const overflow = {
       scrollWidth: document.documentElement.scrollWidth,
       clientWidth: document.documentElement.clientWidth,
     };
-    return { hubs, hasTile: !!tile, overflow, mapHeight: mapEl?.offsetHeight || 0 };
+    return {
+      hubs,
+      hasTile: !!tile,
+      tileSrc,
+      tileOk: tileSrc.includes('arcgisonline.com') && !tileSrc.includes('cartocdn.com'),
+      overflow,
+      mapHeight: mapEl?.offsetHeight || 0,
+    };
   });
   return { label, width, height, ...metrics };
 }
@@ -36,7 +44,7 @@ async function main() {
     const desktop = await checkViewport(page, 'desktop', 1920, 1080);
     results.push({
       check: 'desktop map ready with tiles',
-      ok: desktop.hasTile && desktop.mapHeight >= 400,
+      ok: desktop.hasTile && desktop.tileOk && desktop.mapHeight >= 400,
       detail: desktop,
     });
     results.push({
@@ -67,7 +75,7 @@ async function main() {
     const mobile = await checkViewport(page, 'mobile', 390, 844);
     results.push({
       check: 'mobile map height',
-      ok: mobile.mapHeight >= 300 && mobile.hasTile,
+      ok: mobile.mapHeight >= 300 && mobile.hasTile && mobile.tileOk,
       detail: mobile,
     });
     results.push({
