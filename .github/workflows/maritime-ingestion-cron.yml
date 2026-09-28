@@ -45,9 +45,21 @@ jobs:
       - name: Install dependencies
         run: npm install --ignore-scripts
 
-      - name: Market pipeline
+      - name: Check OilPrice API secret (presence only)
         env:
           OILPRICE_API_KEY: ${{ secrets.OILPRICE_API_KEY }}
+          OILPRICEAPI_KEY: ${{ secrets.OILPRICEAPI_KEY }}
+        run: |
+          if [ -n "$OILPRICE_API_KEY" ] || [ -n "$OILPRICEAPI_KEY" ]; then
+            echo "OilPrice API secret: configured"
+          else
+            echo "::warning::Missing repository secret. Add Actions secret OILPRICE_API_KEY (or OILPRICEAPI_KEY)."
+          fi
+
+      - name: Market pipeline
+        env:
+          OILPRICE_API_KEY: ${{ secrets.OILPRICE_API_KEY || secrets.OILPRICEAPI_KEY }}
+          OILPRICEAPI_KEY: ${{ secrets.OILPRICEAPI_KEY || secrets.OILPRICE_API_KEY }}
         run: npm run pipeline:market
         continue-on-error: true
 
