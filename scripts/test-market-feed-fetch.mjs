@@ -13,9 +13,9 @@ const GRADES = ['VLSFO', 'LSMGO', 'HSFO380'];
 
 function assertFeedShape(feed) {
     assert.ok(feed.meta?.benchmarkAsOf, 'meta.benchmarkAsOf');
-    assert.ok(feed.meta?.updatedLabelEn?.includes('UTC daily'), 'meta.updatedLabelEn');
+    assert.ok(feed.meta?.updatedLabelEn?.includes('Market as of'), 'meta.updatedLabelEn');
     assert.equal(feed.bunker?.hubs?.length, 4, 'bunker hubs');
-    assert.equal(feed.bunker?.quotes?.length, 12, 'bunker quotes');
+    assert.ok(feed.bunker?.quotes?.length >= 9, 'bunker quotes (live marine + optional Busan via API key)');
     for (const q of feed.bunker.quotes) {
         assert.ok(HUBS.includes(q.port), `port ${q.port}`);
         assert.ok(GRADES.includes(q.gradeKey), `grade ${q.gradeKey}`);

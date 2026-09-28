@@ -46,6 +46,8 @@ jobs:
         run: npm install --ignore-scripts
 
       - name: Market pipeline
+        env:
+          OILPRICE_API_KEY: ${{ secrets.OILPRICE_API_KEY }}
         run: npm run pipeline:market
         continue-on-error: true
 

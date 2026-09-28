@@ -26,7 +26,7 @@
 
     const LOGO = '/icons/company-logo.png?v=20260804-logo-no-ring';
     const INTEL_CSS = '/css/marketing-readability.css?v=20260915-engineering-voice';
-    const INTEL_JS = '/js/intelligence/marketFeed.js?v=20260928-daily-market';
+    const INTEL_JS = '/js/intelligence/marketFeed.js?v=20260928-live-market';
 
     const SVG_STROKE =
         'viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"';

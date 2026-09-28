@@ -9,6 +9,14 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {
+    fetchMarineBunkerLatest,
+    fetchBunkerQuotesByApiKey,
+    fetchFreightIndices,
+    buildBunkerQuotesFromMarine,
+    mergeBunkerQuotes,
+    pickBenchmarkAsOf,
+} from './lib/live-market-sources.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BASELINE_PATH = join(ROOT, 'data/market-indices.json');
@@ -347,12 +355,60 @@ function buildBunkerQuotes(bunker, seed) {
     return quotes;
 }
 
-function buildFeed({ rssItems, rssErrors, previous }) {
+async function fetchLiveMarketData(previous) {
+    const apiKey = process.env.OILPRICE_API_KEY || process.env.OILPRICEAPI_KEY || '';
+    const liveErrors = [];
+    let quotes = [];
+    let indices = previous?.indices ? clone(previous.indices) : {};
+    const asOfDates = [];
+    const prevQuotes = previous?.bunker?.quotes || [];
+
+    try {
+        const ports = await fetchMarineBunkerLatest();
+        const marine = buildBunkerQuotesFromMarine(ports, prevQuotes);
+        quotes = marine.quotes;
+        asOfDates.push(...marine.asOfDates);
+    } catch (e) {
+        liveErrors.push(`bunker-marine: ${e.message || e}`);
+    }
+
+    if (apiKey) {
+        try {
+            const keyed = await fetchBunkerQuotesByApiKey(apiKey, prevQuotes);
+            quotes = mergeBunkerQuotes(quotes, keyed.quotes);
+            asOfDates.push(...keyed.asOfDates);
+        } catch (e) {
+            liveErrors.push(`bunker-keyed: ${e.message || e}`);
+        }
+        try {
+            const idx = await fetchFreightIndices(apiKey, previous?.indices || {});
+            indices = idx.indices;
+            asOfDates.push(...idx.asOfDates);
+        } catch (e) {
+            liveErrors.push(`indices: ${e.message || e}`);
+        }
+    } else {
+        liveErrors.push('indices: set OILPRICE_API_KEY for live Baltic benchmarks');
+    }
+
+    return {
+        quotes,
+        indices,
+        benchmarkAsOf: pickBenchmarkAsOf(asOfDates),
+        liveErrors,
+        hasApiKey: Boolean(apiKey),
+    };
+}
+
+function buildFeed({ rssItems, rssErrors, previous, live }) {
     const baseline = readJson(BASELINE_PATH);
     if (!baseline) throw new Error('Missing data/market-indices.json');
 
     const overrides = readJson(OVERRIDES_PATH, {});
-    const asOf = new Date().toISOString().slice(0, 10);
+    const asOf =
+        live?.benchmarkAsOf ||
+        previous?.meta?.benchmarkAsOf ||
+        new Date().toISOString().slice(0, 10);
     const seed = daySeed(new Date(`${asOf}T12:00:00Z`));
 
     const bunker = clone(baseline.bunker);
@@ -360,18 +416,43 @@ function buildFeed({ rssItems, rssErrors, previous }) {
         bunker.basePricesUsdMt,
         overrides.bunker?.basePricesUsdMt,
     );
-    bunker.quotes = buildBunkerQuotes(bunker, seed);
 
-    const indices = buildIndices(baseline, overrides, seed);
+    if (live?.quotes?.length) {
+        const merged = mergeBunkerQuotes(live.quotes, []);
+        const prevQ = previous?.bunker?.quotes || [];
+        for (const q of prevQ) {
+            const k = `${q.port}|${q.gradeKey}`;
+            if (!merged.find((m) => `${m.port}|${m.gradeKey}` === k)) merged.push(q);
+        }
+        bunker.quotes = merged;
+    } else if (previous?.bunker?.quotes?.length) {
+        bunker.quotes = clone(previous.bunker.quotes);
+    } else {
+        bunker.quotes = buildBunkerQuotes(bunker, seed);
+    }
+
+    let indices;
+    if (live?.indices && Object.keys(live.indices).length) {
+        indices = live.indices;
+    } else if (previous?.indices && Object.keys(previous.indices).length) {
+        indices = clone(previous.indices);
+    } else {
+        indices = buildIndices(baseline, overrides, seed);
+    }
 
     let news = rssItems;
     let fetchStatus = 'ok';
+    const marketErrors = [...(live?.liveErrors || [])];
+    if (!live?.quotes?.length) marketErrors.push('bunker: no live quotes; using cache or baseline');
     if (!news.length && rssErrors.length) {
         fetchStatus = 'rss-failed';
         news = previous?.news?.length ? previous.news : baseline.news || [];
-    } else if (rssErrors.length) {
+    } else if (rssErrors.length || marketErrors.length) {
         fetchStatus = 'partial';
     }
+
+    const stampEn = asOf ? `Market as of ${asOf}` : 'Market benchmarks';
+    const stampKo = asOf ? `${asOf} 기준 시장가` : '시장 벤치마크';
 
     return {
         meta: {
@@ -379,9 +460,18 @@ function buildFeed({ rssItems, rssErrors, previous }) {
             benchmarkAsOf: asOf,
             fetchStatus,
             rssErrors: rssErrors.length ? rssErrors : undefined,
+            marketErrors: marketErrors.length ? marketErrors : undefined,
             source: 'TVC Market Desk · RSS aggregation',
-            updatedLabelEn: 'Indicative · UTC daily',
-            updatedLabelKo: '참고가 · UTC 일일',
+            dataSources: {
+                bunker: live?.quotes?.length
+                    ? 'OilPriceAPI · market_reporting'
+                    : 'cached / baseline',
+                indices: live?.hasApiKey
+                    ? 'OilPriceAPI · Baltic Exchange'
+                    : 'cached (set OILPRICE_API_KEY for live indices)',
+            },
+            updatedLabelEn: stampEn,
+            updatedLabelKo: stampKo,
         },
         bunker,
         indices,
@@ -416,7 +506,11 @@ async function main() {
     }
 
     try {
-        const feed = buildFeed({ rssItems, rssErrors, previous });
+        let live = null;
+        if (!OFFLINE) {
+            live = await fetchLiveMarketData(previous);
+        }
+        const feed = buildFeed({ rssItems, rssErrors, previous, live });
         writeFeed(feed);
         console.log('OK market-feed.json', feed.meta.fetchStatus, `news=${feed.news.length}`, OUT_PATH);
         return 0;
