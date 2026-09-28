@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-09-28T00:07:17.235Z",
-    "benchmarkAsOf": "2026-09-14",
-    "fetchStatus": "partial",
+    "generatedAt": "2026-09-28T01:14:22.880Z",
+    "benchmarkAsOf": "2026-09-28",
+    "fetchStatus": "rss-failed",
     "rssErrors": [
-      "Maritime Executive: HTTP 404"
+      "offline mode"
     ],
     "source": "TVC Market Desk · RSS aggregation",
-    "updatedLabelEn": "Market benchmark as of 2026-09-14",
-    "updatedLabelKo": "2026-09-14 기준 시장 벤치마크"
+    "updatedLabelEn": "Indicative · UTC daily",
+    "updatedLabelKo": "참고가 · UTC 일일"
   },
   "bunker": {
     "hubs": [
@@ -66,8 +66,8 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 616.77,
-        "deltaPct": 0.78
+        "priceUsdMt": 617.14,
+        "deltaPct": 0.84
       },
       {
         "port": "Singapore",
@@ -75,8 +75,8 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 753.24,
-        "deltaPct": 0.7
+        "priceUsdMt": 754.81,
+        "deltaPct": 0.91
       },
       {
         "port": "Singapore",
@@ -84,8 +84,8 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 462.26,
-        "deltaPct": 0.93
+        "priceUsdMt": 461.11,
+        "deltaPct": 0.68
       },
       {
         "port": "Rotterdam",
@@ -93,8 +93,8 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 602.84,
-        "deltaPct": 0.81
+        "priceUsdMt": 603.26,
+        "deltaPct": 0.88
       },
       {
         "port": "Rotterdam",
@@ -102,8 +102,8 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 727.34,
-        "deltaPct": 0.74
+        "priceUsdMt": 728.86,
+        "deltaPct": 0.95
       },
       {
         "port": "Rotterdam",
@@ -111,8 +111,8 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 445.23,
-        "deltaPct": 0.96
+        "priceUsdMt": 444.22,
+        "deltaPct": 0.73
       },
       {
         "port": "Busan",
@@ -120,26 +120,26 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 629.31,
-        "deltaPct": 0.69
-      },
-      {
-        "port": "Busan",
-        "gradeKey": "LSMGO",
-        "gradeLabel": "LSMGO",
-        "fuel": "LSMGO",
-        "defaultDensity": 850,
-        "priceUsdMt": 768,
+        "priceUsdMt": 630.75,
         "deltaPct": 0.92
       },
       {
         "port": "Busan",
+        "gradeKey": "LSMGO",
+        "gradeLabel": "LSMGO",
+        "fuel": "LSMGO",
+        "defaultDensity": 850,
+        "priceUsdMt": 766.25,
+        "deltaPct": 0.69
+      },
+      {
+        "port": "Busan",
         "gradeKey": "HSFO380",
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 476.01,
-        "deltaPct": 0.85
+        "priceUsdMt": 475.59,
+        "deltaPct": 0.76
       },
       {
         "port": "Houston",
@@ -147,8 +147,8 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 593.36,
-        "deltaPct": 0.74
+        "priceUsdMt": 594.77,
+        "deltaPct": 0.98
       },
       {
         "port": "Houston",
@@ -156,8 +156,8 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 721.86,
-        "deltaPct": 0.96
+        "priceUsdMt": 720.15,
+        "deltaPct": 0.72
       },
       {
         "port": "Houston",
@@ -165,8 +165,8 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 438.92,
-        "deltaPct": 0.9
+        "priceUsdMt": 438.61,
+        "deltaPct": 0.83
       }
     ]
   },
@@ -194,8 +194,8 @@
       "deltaPct": 0.2
     },
     "scfi": {
-      "value": 2158,
-      "deltaPct": 0.88
+      "value": 2193,
+      "deltaPct": 0.81
     }
   },
   "news": [

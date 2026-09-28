@@ -352,7 +352,7 @@ function buildFeed({ rssItems, rssErrors, previous }) {
     if (!baseline) throw new Error('Missing data/market-indices.json');
 
     const overrides = readJson(OVERRIDES_PATH, {});
-    const asOf = overrides.benchmarkAsOf || new Date().toISOString().slice(0, 10);
+    const asOf = new Date().toISOString().slice(0, 10);
     const seed = daySeed(new Date(`${asOf}T12:00:00Z`));
 
     const bunker = clone(baseline.bunker);
@@ -380,8 +380,8 @@ function buildFeed({ rssItems, rssErrors, previous }) {
             fetchStatus,
             rssErrors: rssErrors.length ? rssErrors : undefined,
             source: 'TVC Market Desk · RSS aggregation',
-            updatedLabelEn: `Market benchmark as of ${asOf}`,
-            updatedLabelKo: `${asOf} 기준 시장 벤치마크`,
+            updatedLabelEn: 'Indicative · UTC daily',
+            updatedLabelKo: '참고가 · UTC 일일',
         },
         bunker,
         indices,

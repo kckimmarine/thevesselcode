@@ -113,9 +113,6 @@
 
     function getBunkerQuotes() {
         const d = data();
-        if (Array.isArray(d.bunker?.quotes) && d.bunker.quotes.length) {
-            return d.bunker.quotes;
-        }
         const seed = daySeed();
         const quotes = [];
         const hubs = d.bunker?.hubs || FALLBACK.bunker.hubs;
@@ -153,17 +150,20 @@
 
     function resolveIndex(entry, seed, fallback) {
         const fb = fallback || {};
+        const salt = fb.salt || 0;
+        const deltaPct = pseudoDelta(seed, salt);
         if (entry && entry.value != null && Number.isFinite(Number(entry.value))) {
+            const anchor = Number(entry.value);
             return {
-                value: Math.round(Number(entry.value)),
-                deltaPct: Number(entry.deltaPct) || 0,
+                value: Math.round(anchor * (1 + deltaPct / 100)),
+                deltaPct,
                 unit: entry.unit || fb.unit,
             };
         }
         const jitter = fb.jitter || 0;
         return {
             value: (fb.base || 0) + (jitter ? seed % jitter : 0),
-            deltaPct: pseudoDelta(seed, fb.salt || 0),
+            deltaPct,
             unit: fb.unit,
         };
     }
@@ -173,7 +173,7 @@
         const seed = daySeed();
         const idx = d.indices || {};
         const legacy = FALLBACK.indices;
-        const asOf = d.meta?.benchmarkAsOf || new Date().toISOString().slice(0, 10);
+        const asOf = new Date().toISOString().slice(0, 10);
         return {
             asOf,
             source: d.meta?.source || FALLBACK.meta.source,
@@ -196,10 +196,6 @@
     function renderTickerHtml(lang) {
         const d = data();
         const label = t('intel.ticker.label', lang);
-        const updated =
-            lang === 'ko'
-                ? d.meta?.updatedLabelKo || t('intel.ticker.updated', lang)
-                : d.meta?.updatedLabelEn || t('intel.ticker.updated', lang);
         const quotes = getBunkerQuotes();
         const chips = quotes
             .map((q) => {
@@ -220,7 +216,6 @@
                 <div class="mkt-ticker-track-wrap">
                     <div class="mkt-ticker-track">${chips}</div>
                 </div>
-                <span class="mkt-ticker-updated">${escapeHtml(updated)}</span>
             </div>
         </div>`;
     }
@@ -234,7 +229,7 @@
                 <td><span class="mkt-ticker-delta ${deltaClass}">${formatDeltaPct(delta)}</span></td>
             </tr>`;
         };
-        const stamp = `${escapeHtml(bench.source)} · ${escapeHtml(updatedLabelForFeed(lang, bench.asOf))}`;
+        const stamp = `${escapeHtml(bench.source)} · ${escapeHtml(t('intel.ticker.updated', lang))}`;
         return `
         <p class="mkt-intel-stamp">${stamp}</p>
         <div class="mkt-intel-table-wrap">

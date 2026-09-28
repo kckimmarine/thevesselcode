@@ -13,7 +13,7 @@ const GRADES = ['VLSFO', 'LSMGO', 'HSFO380'];
 
 function assertFeedShape(feed) {
     assert.ok(feed.meta?.benchmarkAsOf, 'meta.benchmarkAsOf');
-    assert.ok(feed.meta?.updatedLabelEn?.includes('Market benchmark as of'), 'meta.updatedLabelEn');
+    assert.ok(feed.meta?.updatedLabelEn?.includes('UTC daily'), 'meta.updatedLabelEn');
     assert.equal(feed.bunker?.hubs?.length, 4, 'bunker hubs');
     assert.equal(feed.bunker?.quotes?.length, 12, 'bunker quotes');
     for (const q of feed.bunker.quotes) {

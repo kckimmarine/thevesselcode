@@ -1,6 +1,5 @@
 {
   "_comment": "Manual git-commit overrides for commercial dashboard benchmarks. Omit keys to keep generated baseline.",
-  "benchmarkAsOf": "2026-09-14",
   "bunker": {
     "basePricesUsdMt": {
       "Singapore": { "VLSFO": 612, "LSMGO": 748, "HSFO380": 458 }
