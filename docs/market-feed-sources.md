@@ -8,7 +8,7 @@ Production values are written to `public/data/market-feed.json` by `scripts/fetc
 |----------|--------|----------------|
 | **BUNKER STEM** (Singapore, Rotterdam, Houston) | [OilPriceAPI](https://www.oilpriceapi.com/) `GET /v1/prices/marine-fuels/latest` (`market_reporting`) | When provider publishes (typically daily per port/grade) |
 | **BUNKER STEM** (Busan) | OilPriceAPI per-port codes (`VLSFO_KRPUS_USD`, etc.) | Same (requires API key) |
-| **Freight & shipping indices** | OilPriceAPI `GET /v1/prices/latest?by_code=BALTIC_*` (Baltic Exchange benchmarks) | London business days for BDI/BCI; other codes when available |
+| **Freight & shipping indices** | OilPriceAPI `BALTIC_DRY_INDEX`, `BALTIC_CAPESIZE_INDEX` (and optional codes fetched one-by-one) | London business days for BDI/BCI |
 
 The browser **does not** re-randomize prices. It displays `market-feed.json` as fetched.
 

@@ -19,13 +19,13 @@ export const BUNKER_GRADES = [
     { gradeKey: 'HSFO380', gradeLabel: 'HSFO 380', fuel: 'HSFO', defaultDensity: 991, fuelType: 'HFO_380', codeSuffix: 'HFO_380' },
 ];
 
-/** @type {Record<string, { apiCode: string, unit?: string, label?: string }>} */
+/** OilPriceAPI-documented Baltic codes (fetch per-code; invalid codes are skipped). */
 export const FREIGHT_INDEX_CODES = {
     bdi: { apiCode: 'BALTIC_DRY_INDEX', unit: 'pts' },
     capesizeTc: { apiCode: 'BALTIC_CAPESIZE_INDEX', unit: 'pts' },
-    panamaxTc: { apiCode: 'BALTIC_PANAMAX_INDEX', unit: 'pts' },
-    bdti: { apiCode: 'BALTIC_DIRTY_TANKER_INDEX', unit: 'pts' },
-    bcti: { apiCode: 'BALTIC_CLEAN_TANKER_INDEX', unit: 'pts' },
+    panamaxTc: { apiCode: 'BALTIC_PANAMAX_INDEX', unit: 'pts', optional: true },
+    bdti: { apiCode: 'BALTIC_DIRTY_TANKER_INDEX', unit: 'pts', optional: true },
+    bcti: { apiCode: 'BALTIC_CLEAN_TANKER_INDEX', unit: 'pts', optional: true },
 };
 
 const FETCH_TIMEOUT_MS = 15_000;
@@ -61,6 +61,40 @@ export async function fetchJson(url, { headers = {} } = {}) {
     } finally {
         clearTimeout(timer);
     }
+}
+
+function normalizeLatestPrices(json) {
+    if (!json || json.status === 'error') return [];
+    const raw = json?.data?.prices ?? json?.data;
+    if (Array.isArray(raw)) return raw;
+    if (raw && typeof raw === 'object' && raw.price != null) {
+        return [{ ...raw, code: raw.code || raw.commodity_code }];
+    }
+    return [];
+}
+
+async function fetchLatestByCode(apiKey, code) {
+    const url = `${PRICES_LATEST_URL}?by_code=${encodeURIComponent(code)}`;
+    const json = await fetchJson(url, {
+        headers: { Authorization: `Token ${apiKey}` },
+    });
+    const list = normalizeLatestPrices(json);
+    return list.find((p) => p.code === code) || list[0] || null;
+}
+
+async function fetchLatestByCodes(apiKey, codes) {
+    const prices = new Map();
+    const errors = [];
+    for (const code of codes) {
+        try {
+            const row = await fetchLatestByCode(apiKey, code);
+            if (row?.price != null) prices.set(code, row);
+            else errors.push(`${code}: empty response`);
+        } catch (e) {
+            errors.push(`${code}: ${e.message || e}`);
+        }
+    }
+    return { prices, errors };
 }
 
 export async function fetchMarineBunkerLatest() {
@@ -144,17 +178,12 @@ export async function fetchBunkerQuotesByApiKey(apiKey, previousQuotes = []) {
             if (code) codes.push({ hub, grade, code });
         }
     }
-    if (!codes.length) return { quotes: [], asOfDates: [] };
+    if (!codes.length) return { quotes: [], asOfDates: [], errors: [] };
 
-    const byCode = codes.map((c) => c.code).join(',');
-    const url = `${PRICES_LATEST_URL}?by_code=${encodeURIComponent(byCode)}`;
-    const json = await fetchJson(url, {
-        headers: { Authorization: `Token ${apiKey}` },
-    });
-
-    const prices = json?.data?.prices || json?.data || [];
-    const list = Array.isArray(prices) ? prices : [prices];
-    const byApiCode = new Map(list.map((p) => [p.code, p]));
+    const { prices: byApiCode, errors } = await fetchLatestByCodes(
+        apiKey,
+        codes.map((c) => c.code),
+    );
     const prev = previousQuoteMap(previousQuotes);
     const quotes = [];
     const asOfDates = [];
@@ -177,19 +206,12 @@ export async function fetchBunkerQuotesByApiKey(apiKey, previousQuotes = []) {
         if (fuelRow.as_of) asOfDates.push(String(fuelRow.as_of).slice(0, 10));
     }
 
-    return { quotes, asOfDates };
+    return { quotes, asOfDates, errors };
 }
 
 export async function fetchFreightIndices(apiKey, previousIndices = {}) {
-    const codes = Object.values(FREIGHT_INDEX_CODES).map((x) => x.apiCode);
-    const url = `${PRICES_LATEST_URL}?by_code=${encodeURIComponent(codes.join(','))}`;
-    const json = await fetchJson(url, {
-        headers: { Authorization: `Token ${apiKey}` },
-    });
-
-    const prices = json?.data?.prices || json?.data || [];
-    const list = Array.isArray(prices) ? prices : [prices];
-    const byCode = new Map(list.map((p) => [p.code, p]));
+    const apiCodes = Object.values(FREIGHT_INDEX_CODES).map((x) => x.apiCode);
+    const { prices: byCode, errors } = await fetchLatestByCodes(apiKey, apiCodes);
 
     const indices = {};
     const asOfDates = [];
@@ -218,7 +240,7 @@ export async function fetchFreightIndices(apiKey, previousIndices = {}) {
         if (indices[key].asOf) asOfDates.push(String(indices[key].asOf).slice(0, 10));
     }
 
-    return { indices, asOfDates };
+    return { indices, asOfDates, errors };
 }
 
 export function mergeBunkerQuotes(primary, supplemental) {

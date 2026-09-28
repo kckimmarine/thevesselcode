@@ -377,6 +377,9 @@ async function fetchLiveMarketData(previous) {
             const keyed = await fetchBunkerQuotesByApiKey(apiKey, prevQuotes);
             quotes = mergeBunkerQuotes(quotes, keyed.quotes);
             asOfDates.push(...keyed.asOfDates);
+            if (keyed.errors?.length) {
+                liveErrors.push(...keyed.errors.slice(0, 8));
+            }
         } catch (e) {
             liveErrors.push(`bunker-keyed: ${e.message || e}`);
         }
@@ -384,6 +387,9 @@ async function fetchLiveMarketData(previous) {
             const idx = await fetchFreightIndices(apiKey, previous?.indices || {});
             indices = idx.indices;
             asOfDates.push(...idx.asOfDates);
+            if (idx.errors?.length) {
+                liveErrors.push(...idx.errors.slice(0, 8));
+            }
         } catch (e) {
             liveErrors.push(`indices: ${e.message || e}`);
         }
