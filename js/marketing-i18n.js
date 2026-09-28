@@ -1092,8 +1092,8 @@
             ko: '미션 크리티컬 공급·공무 커버리지 — 검증 파트너 거점 다크 차트. 스크롤 줌은 지도 클릭 후 사용.',
         },
         'services.network.hint': {
-            en: 'CartoDB dark basemap · No paid map API · Tap a hub for RFQ or WhatsApp',
-            ko: 'CartoDB 다크 베이스 · 유료 지도 API 없음 · 거점 탭 → RFQ / WhatsApp',
+            en: 'Dark chart basemap · Tap a hub for RFQ or WhatsApp',
+            ko: '다크 차트 · 거점 탭 → RFQ / WhatsApp',
         },
 
         'contact.meta.description': {

@@ -2648,7 +2648,7 @@ body.tvc-marketing-body .leaflet-container {
     font-family: inherit;
 }
 
-/* —— Global Operational Hubs (CartoDB dark network map) —— */
+/* —— Global Operational Hubs (Esri dark canvas network map) —— */
 @keyframes tvc-network-pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7);

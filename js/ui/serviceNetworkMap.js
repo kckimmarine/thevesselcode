@@ -1,12 +1,18 @@
 /**
- * Global Operational Hubs — enterprise dark maritime network map (Leaflet + CartoDB Dark).
+ * Global Operational Hubs — enterprise dark maritime network map (Leaflet + Esri dark canvas).
+ * Carto basemaps now require an API key (tiles otherwise show "API KEY REQUIRED" watermarks).
  */
 (function (global) {
     'use strict';
 
     const LEAFLET_CSS = '/vendor/leaflet/leaflet.css';
     const LEAFLET_JS = '/vendor/leaflet/leaflet.js';
-    const DARK_TILE = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+    const ESRI_DARK_BASE =
+        'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}';
+    const ESRI_DARK_LABELS =
+        'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}';
+    const MAP_ATTRIBUTION =
+        '&copy; <a href="https://www.esri.com/">Esri</a> &mdash; Esri, HERE, Garmin, FAO, NOAA, USGS';
     const WA_BASE = 'https://wa.me/821038894291?text=';
 
     /** @type {Promise<typeof L>|null} */
@@ -229,10 +235,13 @@
             attributionControl: true,
         });
 
-        L.tileLayer(DARK_TILE, {
-            subdomains: 'abcd',
-            maxZoom: 8,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+        L.tileLayer(ESRI_DARK_BASE, {
+            maxZoom: 16,
+            attribution: MAP_ATTRIBUTION,
+        }).addTo(map);
+        L.tileLayer(ESRI_DARK_LABELS, {
+            maxZoom: 16,
+            attribution: '',
         }).addTo(map);
 
         map.on('click', () => {
