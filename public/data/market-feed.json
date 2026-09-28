@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-28T12:06:17.745Z",
+    "generatedAt": "2026-09-28T18:05:57.828Z",
     "benchmarkAsOf": "2026-09-28",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 3426,
-      "deltaPct": 0,
+      "value": 3268,
+      "deltaPct": -4.61,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-09-25T13:40:13.622Z"
+      "asOf": "2026-09-28T13:16:40.121Z"
     },
     "capesizeTc": {
       "value": 5784,
-      "deltaPct": -2.61,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-09-28T06:43:07.083Z"
     },
     "panamaxTc": {
-      "value": 2382,
-      "deltaPct": 0,
+      "value": 2407,
+      "deltaPct": 1.05,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-09-25T14:26:14.736Z"
+      "asOf": "2026-09-28T14:26:03.660Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,261 @@
   },
   "news": [
     {
+      "title": "DryDel piles on kamsarmax tonnage at Tsuneishi",
+      "link": "https://splash247.com/drydel-piles-on-kamsarmax-tonnage-at-tsuneishi/",
+      "pubDate": "Mon, 28 Sep 2026 17:50:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Greek dry bulk owner DryDel Shipping has added two more ships to its Japanese newbuilding programme, signing up for a pair of 82,000 dwt kamsarmaxes at Tsuneishi Shipbuilding. The Costas Delaportas-led company has not disclosed the price or delivery dates for the latest vessels, ",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/Costas-Delaportas-Geneva-Dry.jpg",
+      "en": {
+        "headline": "DryDel piles on kamsarmax tonnage at Tsuneishi",
+        "summary": "Greek dry bulk owner DryDel Shipping has added two more ships to its Japanese newbuilding programme, signing up for a pair of 82,000 dwt kamsarmaxes at Tsuneishi Shipbuilding. The Costas Delaportas-led company has not disclosed the price or delivery dates for the latest vessels, ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Zodiac opens LNG chapter with $500m Hanwha order",
+      "link": "https://splash247.com/zodiac-opens-lng-chapter-with-500m-hanwha-order/",
+      "pubDate": "Mon, 28 Sep 2026 17:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Eyal Ofer’s Zodiac Maritime is making its first move into the conventional LNG carrier sector, with shipbuilding sources placing the London-based owner behind a KRW680bn ($499.6m) order at Hanwha Ocean. The South Korean shipbuilder disclosed on Monday that it had won a contract c",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/Hanwha-Ocean.jpg",
+      "en": {
+        "headline": "Zodiac opens LNG chapter with $500m Hanwha order",
+        "summary": "Eyal Ofer’s Zodiac Maritime is making its first move into the conventional LNG carrier sector, with shipbuilding sources placing the London-based owner behind a KRW680bn ($499.6m) order at Hanwha Ocean. The South Korean shipbuilder disclosed on Monday that it had won a contract c",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Panama Canal Adds Transit Capacity as Rainfall Brings Relief",
+      "link": "https://gcaptain.com/panama-canal-adds-transit-capacity-as-rainfall-brings-relief/",
+      "pubDate": "Mon, 28 Sep 2026 17:11:07 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Panama Canal is easing restrictions on vessel draft and daily transits after improved rainfall and water-saving measures helped stabilize conditions in the waterway’s drought-sensitive watershed. The Panama Canal Authority said the...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/Neopanamax-locks.jpg",
+      "en": {
+        "headline": "Panama Canal Adds Transit Capacity as Rainfall Brings Relief",
+        "summary": "The Panama Canal is easing restrictions on vessel draft and daily transits after improved rainfall and water-saving measures helped stabilize conditions in the waterway’s drought-sensitive watershed. The Panama Canal Authority said the...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Pan Ocean lands $110m Trafigura VLCC charter",
+      "link": "https://splash247.com/pan-ocean-lands-110m-trafigura-vlcc-charter/",
+      "pubDate": "Mon, 28 Sep 2026 17:06:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "South Korea’s Pan Ocean has fixed a VLCC to Trafigura Maritime Logistics for three years in a deal worth KRW148.18bn ($109.6m). The Harim-controlled owner disclosed the charter in a stock exchange filing, saying the vessel will start work on December 1 and remain with Trafigura u",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/Grand-Bonanza-PanOcean.jpg",
+      "en": {
+        "headline": "Pan Ocean lands $110m Trafigura VLCC charter",
+        "summary": "South Korea’s Pan Ocean has fixed a VLCC to Trafigura Maritime Logistics for three years in a deal worth KRW148.18bn ($109.6m). The Harim-controlled owner disclosed the charter in a stock exchange filing, saying the vessel will start work on December 1 and remain with Trafigura u",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "EU’s Kallas Says Two Countries May Send Ships to Counter Houthis",
+      "link": "https://gcaptain.com/eus-kallas-says-two-countries-may-send-ships-to-counter-houthis/",
+      "pubDate": "Mon, 28 Sep 2026 17:03:11 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "(Bloomberg) &#8212; Two countries signaled interest in sending ships to counter Houthi strikes in the Red Sea, top European Union diplomat Kaja Kallas said.  Kallas has been pressing countries to...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-22T003703Z_1841774059_RC20KMABOA8G_RTRMADP_3_IRAN-CRISIS-EU-KALLAS-800x533.jpg",
+      "en": {
+        "headline": "EU’s Kallas Says Two Countries May Send Ships to Counter Houthis",
+        "summary": "(Bloomberg) &#8212; Two countries signaled interest in sending ships to counter Houthi strikes in the Red Sea, top European Union diplomat Kaja Kallas said.  Kallas has been pressing countries to...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "U.S. and Iran Set to Hold Separate Talks With Mediators on Monday or Tuesday",
+      "link": "https://gcaptain.com/us-iran-set-to-hold-separate-talks-with-mediators-on-monday-or-tuesday/",
+      "pubDate": "Mon, 28 Sep 2026 17:00:33 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Sept 28 (Reuters) &#8211; Qatari mediators are likely to hold separate talks with Iranian Foreign Minister Abbas Araqchi in New York and with the US side on Monday or Tuesday, an official briefed on the negotiations told Reuters, in...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-05-28T170031Z_1033704711_RC2THLAMQXA1_RTRMADP_3_IRAN-CRISIS-MEMORANDUM-800x569.jpg",
+      "en": {
+        "headline": "U.S. and Iran Set to Hold Separate Talks With Mediators on Monday or Tuesday",
+        "summary": "Sept 28 (Reuters) &#8211; Qatari mediators are likely to hold separate talks with Iranian Foreign Minister Abbas Araqchi in New York and with the US side on Monday or Tuesday, an official briefed on the negotiations told Reuters, in...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
+      "link": "https://gcaptain.com/europe-draws-more-lng-as-hormuz-crisis-tightens-global-market/",
+      "pubDate": "Mon, 28 Sep 2026 16:58:47 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "European imports of liquefied natural gas are rising ahead of the Northern Hemisphere winter, as prolonged disruptions to flows through the Strait of Hormuz threaten to intensify global competition for the fuel.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/shutterstock_33420973.jpg",
+      "en": {
+        "headline": "Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
+        "summary": "European imports of liquefied natural gas are rising ahead of the Northern Hemisphere winter, as prolonged disruptions to flows through the Strait of Hormuz threaten to intensify global competition for the fuel.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "A.P. Moller Capital Takes Majority Stake in Euroports",
+      "link": "https://gcaptain.com/a-p-moller-capital-takes-majority-stake-in-euroports/",
+      "pubDate": "Mon, 28 Sep 2026 16:10:43 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A.P. Moller Capital has agreed to acquire a majority stake in Euroports Group, adding one of Europe’s largest bulk and breakbulk terminal operators to its growing portfolio of transportation&#160;and logistics...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Rauma2.jpg",
+      "en": {
+        "headline": "A.P. Moller Capital Takes Majority Stake in Euroports",
+        "summary": "A.P. Moller Capital has agreed to acquire a majority stake in Euroports Group, adding one of Europe’s largest bulk and breakbulk terminal operators to its growing portfolio of transportation&#160;and logistics...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "NBC News: Eight Marines Injured in Previously Undisclosed Iranian Attack in Hormuz",
+      "link": "https://gcaptain.com/nbc-news-eight-marines-injured-in-previously-undisclosed-iranian-attack-in-hormuz/",
+      "pubDate": "Mon, 28 Sep 2026 15:16:28 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Eight U.S. Marines were injured when an Iranian cruise missile struck a vessel they were operating aboard in the Strait of Hormuz earlier this month, according to a previously unreported...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
+      "en": {
+        "headline": "NBC News: Eight Marines Injured in Previously Undisclosed Iranian Attack in Hormuz",
+        "summary": "Eight U.S. Marines were injured when an Iranian cruise missile struck a vessel they were operating aboard in the Strait of Hormuz earlier this month, according to a previously unreported...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Philippines Accuses Chinese Vessel of Spoofing Location in Northern Waters",
+      "link": "https://gcaptain.com/philippines-accuses-chinese-vessel-of-spoofing-location-in-northern-waters/",
+      "pubDate": "Mon, 28 Sep 2026 13:25:33 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Philippine Coast Guard accused a Chinese research vessel on Monday of spoofing its location while loitering off Batanes, the country's northernmost island group near Taiwan, saying its movements were consistent with unauthorised marine scientific research.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-23T074343Z_1660455737_RC2JJMAOYDCZ_RTRMADP_3_SOUTHCHINASEA-CHINA-PHILIPPINES-COASTGUARD-800x452.jpg",
+      "en": {
+        "headline": "Philippines Accuses Chinese Vessel of Spoofing Location in Northern Waters",
+        "summary": "The Philippine Coast Guard accused a Chinese research vessel on Monday of spoofing its location while loitering off Batanes, the country's northernmost island group near Taiwan, saying its movements were consistent with unauthorised marine scientific research.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "A.P. Moller Capital strikes deal for Euroports majority",
+      "link": "https://splash247.com/a-p-moller-capital-strikes-deal-for-euroports-majority/",
+      "pubDate": "Mon, 28 Sep 2026 13:22:37 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A.P. Moller Capital has struck a deal to take control of Euroports, adding one of Europe’s largest bulk and breakbulk terminal platforms to its growing transport infrastructure portfolio. The Copenhagen-based infrastructure investor has agreed to acquire a 53.35% stake in Thaumas",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Euroports-A.P.-Moller-Capita.jpg",
+      "en": {
+        "headline": "A.P. Moller Capital strikes deal for Euroports majority",
+        "summary": "A.P. Moller Capital has struck a deal to take control of Euroports, adding one of Europe’s largest bulk and breakbulk terminal platforms to its growing transport infrastructure portfolio. The Copenhagen-based infrastructure investor has agreed to acquire a 53.35% stake in Thaumas",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Rhine Drops Below Shipping Threshold as Freight Costs Rise",
+      "link": "https://gcaptain.com/rhine-drops-below-shipping-threshold-as-freight-costs-rise/",
+      "pubDate": "Mon, 28 Sep 2026 13:16:50 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Water levels in the Rhine River plummeted to record lows over the weekend, threatening transport on a key shipping corridor for energy and industrial commodities across central Europe.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-30T104212Z_1747527408_RC26OMA3IM0L_RTRMADP_3_EUROPE-WEATHER-GERMANY-800x600.jpg",
+      "en": {
+        "headline": "Rhine Drops Below Shipping Threshold as Freight Costs Rise",
+        "summary": "Water levels in the Rhine River plummeted to record lows over the weekend, threatening transport on a key shipping corridor for energy and industrial commodities across central Europe.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "The Great Lakes Towing Company Orders Two New Damen Tugs from Great Lakes Shipyard",
+      "link": "https://gcaptain.com/the-great-lakes-towing-company-orders-two-new-damen-tugs-from-great-lakes-shipyard/",
+      "pubDate": "Mon, 28 Sep 2026 13:01:44 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Hulls 11 and 12 will continue the company’s fleet renewal and expansion program and its long-term investment in  Great Lakes shipping The Great Lakes Towing Company announced today that it...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/644554795_10110925268027146_87094736979190175_n-800x533.jpg",
+      "en": {
+        "headline": "The Great Lakes Towing Company Orders Two New Damen Tugs from Great Lakes Shipyard",
+        "summary": "Hulls 11 and 12 will continue the company’s fleet renewal and expansion program and its long-term investment in  Great Lakes shipping The Great Lakes Towing Company announced today that it...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "At Sea, Confined Spaces Leave No Room for Error",
+      "link": "https://gcaptain.com/at-sea-confined-spaces-leave-no-room-for-error/",
+      "pubDate": "Mon, 28 Sep 2026 12:31:26 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "On a laid-up mobile offshore drilling unit (MODU), a worker descended alone into the leg to check on a diesel pump being used for dewatering operations. When he didn’t return,...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/confined-spaces-oct-2026.jpg",
+      "en": {
+        "headline": "At Sea, Confined Spaces Leave No Room for Error",
+        "summary": "On a laid-up mobile offshore drilling unit (MODU), a worker descended alone into the leg to check on a diesel pump being used for dewatering operations. When he didn’t return,...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Tullow books Noble drillship for Ghana campaign",
+      "link": "https://splash247.com/tullow-books-noble-drillship-for-ghana-campaign/",
+      "pubDate": "Mon, 28 Sep 2026 12:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Offshore drilling giant Noble Corporation has been awarded a contract by Tullow Oil for one of its drillships. The London-based oil and gas player hired the 2013-built drillship Noble Faye Kozack for work offshore Ghana. The contract includes up to 10 wells and is expected to com",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/11/Noble-Faye-Kozack-Pacific-Khamsin.jpg",
+      "en": {
+        "headline": "Tullow books Noble drillship for Ghana campaign",
+        "summary": "Offshore drilling giant Noble Corporation has been awarded a contract by Tullow Oil for one of its drillships. The London-based oil and gas player hired the 2013-built drillship Noble Faye Kozack for work offshore Ghana. The contract includes up to 10 wells and is expected to com",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Fugro survey supports Petronas fields off Malaysia",
       "link": "https://splash247.com/fugro-survey-supports-petronas-fields-off-malaysia/",
       "pubDate": "Mon, 28 Sep 2026 12:00:00 +0000",
@@ -244,267 +499,12 @@
       "summary": "Dutch surveyor Fugro has executed a geohazard site survey contract for Petronas Carigali for the Megah and Limbayong fields off the coast of Sabah, offshore East Malaysia. The development supports ongoing efforts to develop Malaysia&#8217;s offshore resources. Fugro’s survey deli",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Fugro-Equator-AUV-Fugro.jpg",
       "en": {
         "headline": "Fugro survey supports Petronas fields off Malaysia",
         "summary": "Dutch surveyor Fugro has executed a geohazard site survey contract for Petronas Carigali for the Megah and Limbayong fields off the coast of Sabah, offshore East Malaysia. The development supports ongoing efforts to develop Malaysia&#8217;s offshore resources. Fugro’s survey deli",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "Uni-Tankers lines up eight stainless newbuilds",
-      "link": "https://splash247.com/uni-tankers-lines-up-eight-stainless-newbuilds/",
-      "pubDate": "Mon, 28 Sep 2026 11:20:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Denmark’s Uni-Tankers has lined up eight stainless steel chemical tanker newbuildings as it accelerates the replacement of older tonnage. The 7,600 dwt vessels will be built at state-owned Haidong Shipyard in Taizhou, China, with deliveries starting in 2028. Uni-Tankers confirmed",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 1,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Uni-Tankers.jpg",
-      "en": {
-        "headline": "Uni-Tankers lines up eight stainless newbuilds",
-        "summary": "Denmark’s Uni-Tankers has lined up eight stainless steel chemical tanker newbuildings as it accelerates the replacement of older tonnage. The 7,600 dwt vessels will be built at state-owned Haidong Shipyard in Taizhou, China, with deliveries starting in 2028. Uni-Tankers confirmed",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Siemens Gamesa taps Purus for offshore wind vessel support",
-      "link": "https://splash247.com/siemens-gamesa-taps-purus-for-offshore-wind-vessel-support/",
-      "pubDate": "Mon, 28 Sep 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Spain-based wind turbine manufacturer Siemens Gamesa has taken Purus’ service operation vessel Purus Horizon on a long-term charter for offshore wind maintenance in the North Sea. Purus has not identified the wind farms involved or disclosed the charter length or value. However, ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 1,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Purus-Horizon-Purus.jpg",
-      "en": {
-        "headline": "Siemens Gamesa taps Purus for offshore wind vessel support",
-        "summary": "Spain-based wind turbine manufacturer Siemens Gamesa has taken Purus’ service operation vessel Purus Horizon on a long-term charter for offshore wind maintenance in the North Sea. Purus has not identified the wind farms involved or disclosed the charter length or value. However, ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "RCL signs third Huangpu Wenchong boxship series",
-      "link": "https://splash247.com/rcl-signs-third-huangpu-wenchong-boxship-series/",
-      "pubDate": "Mon, 28 Sep 2026 10:50:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Thailand’s Regional Container Lines has returned to CSSC Huangpu Wenchong for another four containerships, adding a new 3,100 teu class to its rapidly expanding orderbook at the Guangzhou-based builder. RCL signed for four of Huangpu Wenchong’s in-house Honghu-series ships, takin",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 1,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/RCL-4448-TEU-Huangpu.jpg",
-      "en": {
-        "headline": "RCL signs third Huangpu Wenchong boxship series",
-        "summary": "Thailand’s Regional Container Lines has returned to CSSC Huangpu Wenchong for another four containerships, adding a new 3,100 teu class to its rapidly expanding orderbook at the Guangzhou-based builder. RCL signed for four of Huangpu Wenchong’s in-house Honghu-series ships, takin",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Marinakis pays up for prompt Exmar suezmax",
-      "link": "https://splash247.com/marinakis-pays-up-for-prompt-exmar-suezmax/",
-      "pubDate": "Mon, 28 Sep 2026 10:20:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Evangelos Marinakis-led Capital Group has emerged as the buyer of Exmar’s first suezmax newbuilding in a resale deal reported at more than $106m. Greek shipping and financial sources place Capital behind the 157,000 dwt hull HN5112, currently under construction at South Korea’s D",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 1,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/Evangelos-Marinakis-Capital-Group.jpg",
-      "en": {
-        "headline": "Marinakis pays up for prompt Exmar suezmax",
-        "summary": "Evangelos Marinakis-led Capital Group has emerged as the buyer of Exmar’s first suezmax newbuilding in a resale deal reported at more than $106m. Greek shipping and financial sources place Capital behind the 157,000 dwt hull HN5112, currently under construction at South Korea’s D",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Heavy-lift drones move nine tonnes during offshore wind campaign",
-      "link": "https://splash247.com/heavy-lift-drones-move-nine-tonnes-during-offshore-wind-campaign/",
-      "pubDate": "Mon, 28 Sep 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Cargo drones have moved beyond short demonstrations into sustained offshore operations, with RWE and Ampelmann completing more than 250 drone flights during a six-week maintenance campaign at the Triton Knoll wind farm off the UK. More than nine tonnes of tools, spare parts and s",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Ampelmann-drone-offshore-wind-RWE.jpg",
-      "en": {
-        "headline": "Heavy-lift drones move nine tonnes during offshore wind campaign",
-        "summary": "Cargo drones have moved beyond short demonstrations into sustained offshore operations, with RWE and Ampelmann completing more than 250 drone flights during a six-week maintenance campaign at the Triton Knoll wind farm off the UK. More than nine tonnes of tools, spare parts and s",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "ZIM workers reject sweetened Hapag-Lloyd takeover offer",
-      "link": "https://splash247.com/zim-workers-reject-sweetened-hapag-lloyd-takeover-offer/",
-      "pubDate": "Mon, 28 Sep 2026 09:51:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Opposition to Hapag-Lloyd’s $4.2bn takeover of ZIM is showing little sign of fading in Israel, with workers rejecting the German carrier’s substantially revised proposal despite new commitments covering Asian services, employment and maritime security. ZIM labour union chief Oren",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/02/Zim-Antwerp.jpg",
-      "en": {
-        "headline": "ZIM workers reject sweetened Hapag-Lloyd takeover offer",
-        "summary": "Opposition to Hapag-Lloyd’s $4.2bn takeover of ZIM is showing little sign of fading in Israel, with workers rejecting the German carrier’s substantially revised proposal despite new commitments covering Asian services, employment and maritime security. ZIM labour union chief Oren",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "India&#8217;s Cochin Shipyard buys into Dutch ship designer Conoship",
-      "link": "https://splash247.com/indias-cochin-shipyard-buys-into-dutch-ship-designer-conoship/",
-      "pubDate": "Mon, 28 Sep 2026 09:50:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "India’s Cochin Shipyard has agreed to acquire 23% of Dutch naval architect Conoship International for €2.3m ($2.62m) as the state-controlled builder looks to strengthen its position in European shortsea shipping. Cochin signed a share purchase agreement and a shareholders’ and co",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Cochin-Shipyard.jpg",
-      "en": {
-        "headline": "India&#8217;s Cochin Shipyard buys into Dutch ship designer Conoship",
-        "summary": "India’s Cochin Shipyard has agreed to acquire 23% of Dutch naval architect Conoship International for €2.3m ($2.62m) as the state-controlled builder looks to strengthen its position in European shortsea shipping. Cochin signed a share purchase agreement and a shareholders’ and co",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Brazil puts container demurrage rules under review",
-      "link": "https://splash247.com/brazil-puts-container-demurrage-rules-under-review/",
-      "pubDate": "Mon, 28 Sep 2026 09:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Brazil has opened a formal review of its container demurrage rules, putting one of the country’s more contentious liner charging issues back on the regulatory agenda. Waterway regulator ANTAQ has launched a public call for evidence covering container demurrage under Resolution 62",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Rio-De-jenairo-Brazil.jpg",
-      "en": {
-        "headline": "Brazil puts container demurrage rules under review",
-        "summary": "Brazil has opened a formal review of its container demurrage rules, putting one of the country’s more contentious liner charging issues back on the regulatory agenda. Waterway regulator ANTAQ has launched a public call for evidence covering container demurrage under Resolution 62",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Shipping earnings surge deeper into record territory",
-      "link": "https://splash247.com/shipping-earnings-surge-deeper-into-record-territory/",
-      "pubDate": "Mon, 28 Sep 2026 08:30:31 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Shipping earnings have pushed further into uncharted territory, with Clarksons’ cross-sector ClarkSea Index hitting a third consecutive all-time high of $66,421 a day, up another 3% last week and more than 50% since the end of August. The benchmark is now nearly three times its l",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/01/Dhalkut-VLCC-Asyad-Shipping.jpg",
-      "en": {
-        "headline": "Shipping earnings surge deeper into record territory",
-        "summary": "Shipping earnings have pushed further into uncharted territory, with Clarksons’ cross-sector ClarkSea Index hitting a third consecutive all-time high of $66,421 a day, up another 3% last week and more than 50% since the end of August. The benchmark is now nearly three times its l",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Iran Says Won’t Soften Demands As Trump Rejects Hormuz Offer",
-      "link": "https://gcaptain.com/iran-says-wont-soften-demands-as-trump-rejects-hormuz-offer/",
-      "pubDate": "Sun, 27 Sep 2026 20:07:19 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By&#160;Eltaf Najafizada and Courtney Subramanian Sep 27, 2026 (Bloomberg) &#8211;Iran stuck to its seven-day proposal for reopening the crucial Strait of Hormuz, saying it won’t soften its conditions, while President...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-14T193943Z_33032287_RC2DINA3FLHM_RTRMADP_3_IRAN-CRISIS-USS-GEORGE-WASHINGTON-800x533.jpg",
-      "en": {
-        "headline": "Iran Says Won’t Soften Demands As Trump Rejects Hormuz Offer",
-        "summary": "By&#160;Eltaf Najafizada and Courtney Subramanian Sep 27, 2026 (Bloomberg) &#8211;Iran stuck to its seven-day proposal for reopening the crucial Strait of Hormuz, saying it won’t soften its conditions, while President...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Russia Says It Struck Vessels In Ukraine",
-      "link": "https://gcaptain.com/russia-says-it-struck-vessels-in-ukraine/",
-      "pubDate": "Sun, 27 Sep 2026 19:39:37 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "MOSCOW, Sept 27 (Reuters) &#8211; The Russian defense ministry said on Sunday its forces had carried out overnight drone strikes on logistics centers, port and transport infrastructure, as well as communications centers and vessels that...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/08/2023-07-25T142501Z_1537315073_RC2DA2A6M3VE_RTRMADP_3_UKRAINE-CRISIS-DANUBE-800x448.jpg",
-      "en": {
-        "headline": "Russia Says It Struck Vessels In Ukraine",
-        "summary": "MOSCOW, Sept 27 (Reuters) &#8211; The Russian defense ministry said on Sunday its forces had carried out overnight drone strikes on logistics centers, port and transport infrastructure, as well as communications centers and vessels that...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Philippines Says China Blocked Sea Mission, First Since 2024",
-      "link": "https://gcaptain.com/philippines-says-china-blocked-sea-mission-first-since-2024/",
-      "pubDate": "Sun, 27 Sep 2026 15:35:31 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By&#160;Cliff Venzon Sep 27, 2026 (Bloomberg) &#8211;The Philippines said Chinese ships hindered a resupply mission to Manila’s military outpost in a disputed South China Sea shoal, in what could be...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-24T062459Z_1893879581_RC26KMAD1W1N_RTRMADP_3_SOUTHCHINASEA-CHINA-PHILIPPINES-800x452.jpg",
-      "en": {
-        "headline": "Philippines Says China Blocked Sea Mission, First Since 2024",
-        "summary": "By&#160;Cliff Venzon Sep 27, 2026 (Bloomberg) &#8211;The Philippines said Chinese ships hindered a resupply mission to Manila’s military outpost in a disputed South China Sea shoal, in what could be...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Low Rhine Levels Force Companies To Adapt To New Normal",
-      "link": "https://gcaptain.com/low-rhine-levels-force-companies-to-adapt-to-new-normal/",
-      "pubDate": "Sun, 27 Sep 2026 03:29:39 +0000",
-      "source": "gCaptain",
-      "category": "Bunker",
-      "summary": "By&#160;Eva Brendel and Marilen Martin Sep 26, 2026 (Bloomberg) &#8211;The halls of the Development Center for Ship Technology and Transport Systems in Duisburg, Germany are lined with model ships, small-scale...",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 32,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/08/2022-08-10T101259Z_799489108_RC2URV932Q6N_RTRMADP_3_EUROPE-WEATHER-RHINE.jpg",
-      "en": {
-        "headline": "Low Rhine Levels Force Companies To Adapt To New Normal",
-        "summary": "By&#160;Eva Brendel and Marilen Martin Sep 26, 2026 (Bloomberg) &#8211;The halls of the Development Center for Ship Technology and Transport Systems in Duisburg, Germany are lined with model ships, small-scale...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Iceland&#8217;s Last Whaling Company Shrugs Off Threat Of Permanent Ban",
-      "link": "https://gcaptain.com/icelands-last-whaling-company-shrugs-off-threat-of-permanent-ban/",
-      "pubDate": "Sat, 26 Sep 2026 22:32:20 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By Jacob Gronholt-Pedersen COPENHAGEN, Sept 14 (Reuters)&#160;&#8211;&#160;Iceland&#8217;s last remaining active whaling company said it believed it could survive a renewed push to ban the practice, given that previous attempts to...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 37,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-14T115504Z_1061078343_RC2ZINAKUP13_RTRMADP_3_ICELAND-WHALING-800x533.jpg",
-      "en": {
-        "headline": "Iceland&#8217;s Last Whaling Company Shrugs Off Threat Of Permanent Ban",
-        "summary": "By Jacob Gronholt-Pedersen COPENHAGEN, Sept 14 (Reuters)&#160;&#8211;&#160;Iceland&#8217;s last remaining active whaling company said it believed it could survive a renewed push to ban the practice, given that previous attempts to...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Russia Can Restart 80% Of Black Sea Grain Export If Attacks Stop",
-      "link": "https://gcaptain.com/russia-can-restart-80-of-black-sea-grain-export-if-attacks-stop/",
-      "pubDate": "Sat, 26 Sep 2026 18:29:30 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By Gleb Stolyarov MOSCOW, Sept 25 (Reuters)&#160;&#8211;&#160;Russia could quickly restart up to 80% of its grain terminal capacity in the Black Sea and Sea of Azov if diplomatic efforts to...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 41,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-02T111050Z_153626843_RC21Z9APA1OI_RTRMADP_3_UKRAINE-CRISIS-GRAINS-TURKEY-1.jpg",
-      "en": {
-        "headline": "Russia Can Restart 80% Of Black Sea Grain Export If Attacks Stop",
-        "summary": "By Gleb Stolyarov MOSCOW, Sept 25 (Reuters)&#160;&#8211;&#160;Russia could quickly restart up to 80% of its grain terminal capacity in the Black Sea and Sea of Azov if diplomatic efforts to...",
-        "source": "gCaptain"
       }
     }
   ]
