@@ -1,11 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-09-29T17:19:42.066Z",
+    "generatedAt": "2026-09-29T21:41:04.852Z",
     "benchmarkAsOf": "2026-09-29",
     "fetchStatus": "partial",
     "rssErrors": [
-      "Maritime Executive: HTTP 404",
-      "Splash247: HTTP 415"
+      "Maritime Executive: HTTP 404"
     ],
     "marketErrors": [
       "MGO_05S_KRPUS_USD: HTTP 400",
@@ -77,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 874,
-        "deltaPct": -0.57,
+        "deltaPct": 0,
         "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -89,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1304,
-        "deltaPct": -0.46,
+        "deltaPct": 0,
         "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -101,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 751,
-        "deltaPct": 1.49,
+        "deltaPct": 0,
         "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -113,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 698.5,
-        "deltaPct": 0.72,
+        "deltaPct": 0,
         "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -125,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1430,
-        "deltaPct": 0.81,
+        "deltaPct": 0,
         "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -137,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 638.5,
-        "deltaPct": 2.82,
+        "deltaPct": 0,
         "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -149,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 748,
-        "deltaPct": -1.97,
+        "deltaPct": 0,
         "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -161,7 +160,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1386.5,
-        "deltaPct": -1.63,
+        "deltaPct": 0,
         "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -173,7 +172,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 556.5,
-        "deltaPct": -2.88,
+        "deltaPct": 0,
         "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -207,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 3178,
-      "deltaPct": -2.75,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-09-29T14:39:19.457Z"
     },
     "capesizeTc": {
       "value": 5351,
-      "deltaPct": -7.49,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-09-29T06:43:31.638Z"
     },
     "panamaxTc": {
       "value": 2402,
-      "deltaPct": -0.21,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-09-29T14:26:14.820Z"
@@ -237,6 +236,159 @@
   },
   "news": [
     {
+      "title": "AI risks hollowing out shipping’s next generation of expertise",
+      "link": "https://splash247.com/ai-risks-hollowing-out-shippings-next-generation-of-expertise/",
+      "pubDate": "Tue, 29 Sep 2026 20:08:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Shipping’s AI debate is moving rapidly beyond technology towards the far more difficult question of what happens to the people expected to work alongside it. That was the central theme running through the AI, Digitalisation and the Maritime Workforce panel at last week’s Splash S",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/AI-Digi-Splash-Singapore.jpg",
+      "en": {
+        "headline": "AI risks hollowing out shipping’s next generation of expertise",
+        "summary": "Shipping’s AI debate is moving rapidly beyond technology towards the far more difficult question of what happens to the people expected to work alongside it. That was the central theme running through the AI, Digitalisation and the Maritime Workforce panel at last week’s Splash S",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Geneva Dry unveils expanded agenda for 2027 edition",
+      "link": "https://splash247.com/geneva-dry-unveils-expanded-agenda-for-2027-edition/",
+      "pubDate": "Tue, 29 Sep 2026 20:00:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Geneva Dry, the world’s premier annual dry bulk shipping conference, has launched marketing for its 2027 edition with an expanded agenda featuring new sessions on bauxite, investment and crewing, alongside a significantly revamped workshop programme. The fourth edition of Geneva ",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/Geneva-Dry-2026-Minor-Bulks.jpeg",
+      "en": {
+        "headline": "Geneva Dry unveils expanded agenda for 2027 edition",
+        "summary": "Geneva Dry, the world’s premier annual dry bulk shipping conference, has launched marketing for its 2027 edition with an expanded agenda featuring new sessions on bauxite, investment and crewing, alongside a significantly revamped workshop programme. The fourth edition of Geneva ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Cheniere Signs 22-Year LNG Supply Deal With Petrobras",
+      "link": "https://gcaptain.com/cheniere-signs-22-year-lng-supply-deal-with-petrobras/",
+      "pubDate": "Tue, 29 Sep 2026 19:32:26 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Cheniere Energy has signed a 22-year agreement to supply Brazil’s Petrobras with U.S. liquefied natural gas, adding another long-term customer as the company looks to support further expansion of its...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/03/DJI_0023_LUCiD.jpg",
+      "en": {
+        "headline": "Cheniere Signs 22-Year LNG Supply Deal With Petrobras",
+        "summary": "Cheniere Energy has signed a 22-year agreement to supply Brazil’s Petrobras with U.S. liquefied natural gas, adding another long-term customer as the company looks to support further expansion of its...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Russian Crude Exports Boom Blunted by Kremlin’s Diesel Sales Ban",
+      "link": "https://gcaptain.com/russian-crude-exports-boom-blunted-by-kremlins-diesel-sales-ban/",
+      "pubDate": "Tue, 29 Sep 2026 16:41:11 +0000",
+      "source": "gCaptain",
+      "category": "S&P",
+      "summary": "Russia shipped the most crude in a month-and-a-half, while a jump in prices propelled the value of those cargoes close to the highest since the start of the invasion of Ukraine in 2022. But the benefits to the Kremlin are being undermined by its ban on overseas diesel sales.",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-06T095816Z_194114751_RC2PDKASTT4O_RTRMADP_3_RUSSIA-DIESEL-EXPORTS-800x533.jpg",
+      "en": {
+        "headline": "Russian Crude Exports Boom Blunted by Kremlin’s Diesel Sales Ban",
+        "summary": "Russia shipped the most crude in a month-and-a-half, while a jump in prices propelled the value of those cargoes close to the highest since the start of the invasion of Ukraine in 2022. But the benefits to the Kremlin are being undermined by its ban on overseas diesel sales.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Old Hulls, New Money: Why the VLCC Market Has Stopped Counting Years",
+      "link": "https://gcaptain.com/old-hulls-new-money-why-the-vlcc-market-has-stopped-counting-years/",
+      "pubDate": "Tue, 29 Sep 2026 16:40:08 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "For most of shipping history, the valuation equation has been straightforward. A ship leaves the yard, begins ageing and progressively loses value. New steel commands the premium. Older steel trades at a discount.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
+      "en": {
+        "headline": "Old Hulls, New Money: Why the VLCC Market Has Stopped Counting Years",
+        "summary": "For most of shipping history, the valuation equation has been straightforward. A ship leaves the yard, begins ageing and progressively loses value. New steel commands the premium. Older steel trades at a discount.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Trump Denies Offering Iran Sanctions Relief, Tehran Says it is Ready for Talks",
+      "link": "https://gcaptain.com/trump-denies-offering-iran-sanctions-relief-tehran-says-it-is-ready-for-talks/",
+      "pubDate": "Tue, 29 Sep 2026 16:38:24 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "US President Donald Trump said he has offered Iran nothing to end the war, rejecting media reports that cited US officials saying he was willing to ease sanctions and release frozen funds for \"concrete\" steps regarding Iran's nuclear program.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-10T111832Z_327337754_RC29TMATWR3B_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-PLAN.jpg",
+      "en": {
+        "headline": "Trump Denies Offering Iran Sanctions Relief, Tehran Says it is Ready for Talks",
+        "summary": "US President Donald Trump said he has offered Iran nothing to end the war, rejecting media reports that cited US officials saying he was willing to ease sanctions and release frozen funds for \"concrete\" steps regarding Iran's nuclear program.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Maersk Expands Fuel Options With First U.S. Ethanol Bunkering",
+      "link": "https://gcaptain.com/maersk-expands-fuel-options-with-first-u-s-ethanol-bunkering/",
+      "pubDate": "Tue, 29 Sep 2026 16:19:26 +0000",
+      "source": "gCaptain",
+      "category": "Bunker",
+      "summary": "A.P. Moller-Maersk has bunkered one of its dual-fuel containerships with 100% U.S.-produced corn ethanol, marking what the company says is the first ship-to-ship commercial ethanol bunkering of a deep-sea container...",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/tangier-maersk-at-the-port-of-mobile_1024x576.jpg.avif",
+      "en": {
+        "headline": "Maersk Expands Fuel Options With First U.S. Ethanol Bunkering",
+        "summary": "A.P. Moller-Maersk has bunkered one of its dual-fuel containerships with 100% U.S.-produced corn ethanol, marking what the company says is the first ship-to-ship commercial ethanol bunkering of a deep-sea container...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Fog of War Deepens in Hormuz as Ship Attacks Go Unreported for Days",
+      "link": "https://gcaptain.com/fog-of-war-deepens-in-hormuz-as-ship-attacks-go-unreported-for-days/",
+      "pubDate": "Tue, 29 Sep 2026 15:53:56 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The maritime picture in the Strait of Hormuz is becoming harder to verify, with another delayed report of a vessel strike raising questions over how much of the fighting is...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T134318Z_693026131_RC2N1MAQSWKP_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x524.jpg",
+      "en": {
+        "headline": "Fog of War Deepens in Hormuz as Ship Attacks Go Unreported for Days",
+        "summary": "The maritime picture in the Strait of Hormuz is becoming harder to verify, with another delayed report of a vessel strike raising questions over how much of the fighting is...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Carnival Posts Record $1.9 Billion Profit as 2027 Bookings Hit New High",
+      "link": "https://gcaptain.com/carnival-posts-record-1-9-billion-profit-as-2027-bookings-hit-new-high/",
+      "pubDate": "Tue, 29 Sep 2026 15:26:27 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Carnival Corporation reported record third-quarter revenue and net income on Tuesday as strong cruise demand and lower-than-expected operating costs helped offset a sharp increase in fuel expenses. The cruise giant...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/04/2021-04-07T141122Z_1827671125_RC22RM9BX0PB_RTRMADP_3_CARNIVAL-RESULTS.jpg",
+      "en": {
+        "headline": "Carnival Posts Record $1.9 Billion Profit as 2027 Bookings Hit New High",
+        "summary": "Carnival Corporation reported record third-quarter revenue and net income on Tuesday as strong cruise demand and lower-than-expected operating costs helped offset a sharp increase in fuel expenses. The cruise giant...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "LNG Canada Greenlights Phase 2, Doubling Export Capacity",
       "link": "https://gcaptain.com/lng-canada-greenlights-phase-2-doubling-export-capacity/",
       "pubDate": "Tue, 29 Sep 2026 15:17:24 +0000",
@@ -245,12 +397,29 @@
       "summary": "The partners behind LNG Canada have approved a major expansion of the British Columbia export terminal, clearing the way to double its production capacity to 28 million tonnes of LNG...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 6,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/07/LNG-canada-800x493.jpg",
       "en": {
         "headline": "LNG Canada Greenlights Phase 2, Doubling Export Capacity",
         "summary": "The partners behind LNG Canada have approved a major expansion of the British Columbia export terminal, clearing the way to double its production capacity to 28 million tonnes of LNG...",
         "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Scorpio pushes fleet renewal with tanker newbuilds and ship sales",
+      "link": "https://splash247.com/scorpio-pushes-fleet-renewal-with-tanker-newbuilds-and-ship-sales/",
+      "pubDate": "Tue, 29 Sep 2026 12:57:12 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Scorpio Tankers has doubled its directly controlled VLCC orderbook and added another pair of LR2s in China, committing $415.6m to four newbuildings while continuing to clear older tonnage from its fleet. The Emanuele Lauro-led owner has agreed to acquire two scrubber-fitted VLCCs",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 8,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Emanuele-Lauro.jpg",
+      "en": {
+        "headline": "Scorpio pushes fleet renewal with tanker newbuilds and ship sales",
+        "summary": "Scorpio Tankers has doubled its directly controlled VLCC orderbook and added another pair of LR2s in China, committing $415.6m to four newbuildings while continuing to clear older tonnage from its fleet. The Emanuele Lauro-led owner has agreed to acquire two scrubber-fitted VLCCs",
+        "source": "Splash247"
       }
     },
     {
@@ -262,7 +431,7 @@
       "summary": "Rauma Marine Constructions in Finland has made rapid progress on the first of two Arctic Security Cutters it is building for the U.S. Coast Guard, with almost half of the vessel's blocks already launched and construction of the second ship approaching, according to the Finnish sh",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/04/Rauma-Shipyard-1-800x450.jpg",
       "en": {
         "headline": "First U.S. Coast Guard Arctic Security Cutter in Finland Nears Halfway Point as Second Approaches Construction",
@@ -279,7 +448,7 @@
       "summary": "Shareholders in the Shell Plc-led LNG Canada venture greenlit plans to double its liquefied natural gas export capacity, forging ahead with the multibillion-dollar investment as key customers in Asia face the biggest supply shock of recent times.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/07/LNG-canada-800x493.jpg",
       "en": {
         "headline": "Shell to Double LNG Canada Plant in Multibillion-Dollar Plan",
@@ -296,8 +465,8 @@
       "summary": "Hapag-Lloyd HLAG.DE on Tuesday urged Israeli authorities to review improved terms in the company's $4.2 billion bid for ZIM Integrated Shipping Services.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/Hapag-Lloyd-ZIM-acquisition.jpg",
+      "hoursAgo": 9,
+      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Hapag-Lloyd Urges Israel to Review Improved Offer for Shipping Services Company ZIM",
         "summary": "Hapag-Lloyd HLAG.DE on Tuesday urged Israeli authorities to review improved terms in the company's $4.2 billion bid for ZIM Integrated Shipping Services.",
@@ -305,139 +474,37 @@
       }
     },
     {
-      "title": "CMA CGM Ship Rescues Four After Yacht Strikes Whale in South Pacific",
-      "link": "https://gcaptain.com/cma-cgm-ship-rescues-four-after-yacht-strikes-whale-in-south-pacific/",
-      "pubDate": "Tue, 29 Sep 2026 00:05:13 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Four sailors have been rescued from a life raft in the South Pacific after their yacht struck a whale and began taking on water about 250 nautical miles north of...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Yacht-rescue-NZDF.jpg",
+      "title": "Tufton scores 81% uplift on MR charter",
+      "link": "https://splash247.com/tufton-scores-81-uplift-on-mr-charter/",
+      "pubDate": "Tue, 29 Sep 2026 12:03:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "London-listed Tufton Assets has capitalised on the strong tanker market, fixing one of its MR product tankers at $39,000 per day, an 81% increase on the vessel’s existing employment. The Mia Grace has been fixed for 12 to 14 months, up from its current rate of $21,500 per day. Th",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 9,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Mia-Grace-MR2-tanker-Philippe-Guichot-Marine-Traffic.jpg",
       "en": {
-        "headline": "CMA CGM Ship Rescues Four After Yacht Strikes Whale in South Pacific",
-        "summary": "Four sailors have been rescued from a life raft in the South Pacific after their yacht struck a whale and began taking on water about 250 nautical miles north of...",
-        "source": "gCaptain"
+        "headline": "Tufton scores 81% uplift on MR charter",
+        "summary": "London-listed Tufton Assets has capitalised on the strong tanker market, fixing one of its MR product tankers at $39,000 per day, an 81% increase on the vessel’s existing employment. The Mia Grace has been fixed for 12 to 14 months, up from its current rate of $21,500 per day. Th",
+        "source": "Splash247"
       }
     },
     {
-      "title": "Panama Canal Adds Transit Capacity as Rainfall Brings Relief",
-      "link": "https://gcaptain.com/panama-canal-adds-transit-capacity-as-rainfall-brings-relief/",
-      "pubDate": "Mon, 28 Sep 2026 17:11:07 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Panama Canal is easing restrictions on vessel draft and daily transits after improved rainfall and water-saving measures helped stabilize conditions in the waterway’s drought-sensitive watershed. The Panama Canal Authority said the...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 24,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/Neopanamax-locks.jpg",
+      "title": "Great Eastern adds newbuild suezmax to fleet renewal drive",
+      "link": "https://splash247.com/great-eastern-adds-newbuild-suezmax-to-fleet-renewal-drive/",
+      "pubDate": "Tue, 29 Sep 2026 11:37:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "India’s Great Eastern Shipping has contracted to acquire a 157,000 dwt newbuilding suezmax, adding a yard-built ship to a fleet renewal drive that has so far been dominated by secondhand transactions. The Mumbai-listed owner disclosed the deal late on Monday, saying the tanker wi",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 10,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/HD-Hyundai-Vietnam.jpg",
       "en": {
-        "headline": "Panama Canal Adds Transit Capacity as Rainfall Brings Relief",
-        "summary": "The Panama Canal is easing restrictions on vessel draft and daily transits after improved rainfall and water-saving measures helped stabilize conditions in the waterway’s drought-sensitive watershed. The Panama Canal Authority said the...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "EU’s Kallas Says Two Countries May Send Ships to Counter Houthis",
-      "link": "https://gcaptain.com/eus-kallas-says-two-countries-may-send-ships-to-counter-houthis/",
-      "pubDate": "Mon, 28 Sep 2026 17:03:11 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "(Bloomberg) &#8212; Two countries signaled interest in sending ships to counter Houthi strikes in the Red Sea, top European Union diplomat Kaja Kallas said.  Kallas has been pressing countries to...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 24,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-22T003703Z_1841774059_RC20KMABOA8G_RTRMADP_3_IRAN-CRISIS-EU-KALLAS-800x533.jpg",
-      "en": {
-        "headline": "EU’s Kallas Says Two Countries May Send Ships to Counter Houthis",
-        "summary": "(Bloomberg) &#8212; Two countries signaled interest in sending ships to counter Houthi strikes in the Red Sea, top European Union diplomat Kaja Kallas said.  Kallas has been pressing countries to...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "U.S. and Iran Set to Hold Separate Talks With Mediators on Monday or Tuesday",
-      "link": "https://gcaptain.com/us-iran-set-to-hold-separate-talks-with-mediators-on-monday-or-tuesday/",
-      "pubDate": "Mon, 28 Sep 2026 17:00:33 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Sept 28 (Reuters) &#8211; Qatari mediators are likely to hold separate talks with Iranian Foreign Minister Abbas Araqchi in New York and with the US side on Monday or Tuesday, an official briefed on the negotiations told Reuters, in...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 24,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-05-28T170031Z_1033704711_RC2THLAMQXA1_RTRMADP_3_IRAN-CRISIS-MEMORANDUM-800x569.jpg",
-      "en": {
-        "headline": "U.S. and Iran Set to Hold Separate Talks With Mediators on Monday or Tuesday",
-        "summary": "Sept 28 (Reuters) &#8211; Qatari mediators are likely to hold separate talks with Iranian Foreign Minister Abbas Araqchi in New York and with the US side on Monday or Tuesday, an official briefed on the negotiations told Reuters, in...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
-      "link": "https://gcaptain.com/europe-draws-more-lng-as-hormuz-crisis-tightens-global-market/",
-      "pubDate": "Mon, 28 Sep 2026 16:58:47 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "European imports of liquefied natural gas are rising ahead of the Northern Hemisphere winter, as prolonged disruptions to flows through the Strait of Hormuz threaten to intensify global competition for the fuel.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 24,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/shutterstock_33420973.jpg",
-      "en": {
-        "headline": "Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
-        "summary": "European imports of liquefied natural gas are rising ahead of the Northern Hemisphere winter, as prolonged disruptions to flows through the Strait of Hormuz threaten to intensify global competition for the fuel.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "A.P. Moller Capital Takes Majority Stake in Euroports",
-      "link": "https://gcaptain.com/a-p-moller-capital-takes-majority-stake-in-euroports/",
-      "pubDate": "Mon, 28 Sep 2026 16:10:43 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A.P. Moller Capital has agreed to acquire a majority stake in Euroports Group, adding one of Europe’s largest bulk and breakbulk terminal operators to its growing portfolio of transportation&#160;and logistics...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 25,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Rauma2.jpg",
-      "en": {
-        "headline": "A.P. Moller Capital Takes Majority Stake in Euroports",
-        "summary": "A.P. Moller Capital has agreed to acquire a majority stake in Euroports Group, adding one of Europe’s largest bulk and breakbulk terminal operators to its growing portfolio of transportation&#160;and logistics...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "NBC News: Eight Marines Injured in Previously Undisclosed Iranian Attack in Hormuz",
-      "link": "https://gcaptain.com/nbc-news-eight-marines-injured-in-previously-undisclosed-iranian-attack-in-hormuz/",
-      "pubDate": "Mon, 28 Sep 2026 15:16:28 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Eight U.S. Marines were injured when an Iranian cruise missile struck a vessel they were operating aboard in the Strait of Hormuz earlier this month, according to a previously unreported...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 26,
-      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "NBC News: Eight Marines Injured in Previously Undisclosed Iranian Attack in Hormuz",
-        "summary": "Eight U.S. Marines were injured when an Iranian cruise missile struck a vessel they were operating aboard in the Strait of Hormuz earlier this month, according to a previously unreported...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Philippines Accuses Chinese Vessel of Spoofing Location in Northern Waters",
-      "link": "https://gcaptain.com/philippines-accuses-chinese-vessel-of-spoofing-location-in-northern-waters/",
-      "pubDate": "Mon, 28 Sep 2026 13:25:33 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Philippine Coast Guard accused a Chinese research vessel on Monday of spoofing its location while loitering off Batanes, the country's northernmost island group near Taiwan, saying its movements were consistent with unauthorised marine scientific research.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 27,
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Philippines Accuses Chinese Vessel of Spoofing Location in Northern Waters",
-        "summary": "The Philippine Coast Guard accused a Chinese research vessel on Monday of spoofing its location while loitering off Batanes, the country's northernmost island group near Taiwan, saying its movements were consistent with unauthorised marine scientific research.",
-        "source": "gCaptain"
+        "headline": "Great Eastern adds newbuild suezmax to fleet renewal drive",
+        "summary": "India’s Great Eastern Shipping has contracted to acquire a 157,000 dwt newbuilding suezmax, adding a yard-built ship to a fleet renewal drive that has so far been dominated by secondhand transactions. The Mumbai-listed owner disclosed the deal late on Monday, saying the tanker wi",
+        "source": "Splash247"
       }
     }
   ]
