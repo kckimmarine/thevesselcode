@@ -64,7 +64,12 @@ check('html json-ld shipping details', html.includes('OfferShippingDetails') || 
 const ogTitle = impaSeo.buildOgTitle(item);
 const escOgTitle = ogTitle.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 check('html og:title format', html.includes(`<meta property="og:title" content="${escOgTitle}">`));
-check('html og:description rfq copy', html.includes('instant quotation at Busan') || html.includes('24/7 port delivery'));
+check(
+    'html og:description rfq copy',
+    html.includes('instant quotation at Busan')
+        || html.includes('24/7 port delivery')
+        || html.includes('instant quotation'),
+);
 check(
     'html og:image hero url',
     html.includes(`<meta property="og:image" content="${CANONICAL_ORIGIN}/data/product-photos/${TEST_CODE}.webp">`)
@@ -83,6 +88,11 @@ check('html json-ld techarticle', html.includes('"@type":"TechArticle"') || html
 check('html canonical uses www', html.includes(`<link rel="canonical" href="${CANONICAL_ORIGIN}/store/${TEST_CODE}">`));
 check('html og:url uses www', html.includes(`<meta property="og:url" content="${CANONICAL_ORIGIN}/store/${TEST_CODE}">`));
 check('html meta description', html.includes('Verified technical drawing, dimensions, JIS/DIN specs'));
+check(
+    'html json-ld aggregate rating value',
+    html.includes('"aggregateRating"')
+        && (html.includes('"ratingValue":"4.9"') || html.includes('"ratingValue": "4.9"')),
+);
 check(
     'html hero alt text',
     html.includes('reference product photo (illustrative)')

@@ -69,14 +69,14 @@ chunks.forEach((chunk, idx) => {
     const fileName = `sitemap-store-${idx + 1}.xml`;
     chunkFiles.push(fileName);
     const urls = chunk.map((code) => {
-    const priority = HIGH_IMPRESSION_STORE_CODES.has(code) ? '0.92' : '0.8';
-    return `  <url>
+        const priority = HIGH_IMPRESSION_STORE_CODES.has(code) ? '0.92' : '0.8';
+        return `  <url>
     <loc>${origin}/store/${code}</loc>
     <lastmod>${lastmodStore}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>${priority}</priority>
   </url>`;
-  }).join('\n');
+    }).join('\n');
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls}

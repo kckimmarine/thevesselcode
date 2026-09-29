@@ -296,6 +296,7 @@ function buildProductAggregateRating(item) {
         bestRating: '5',
         worstRating: '1',
         ratingCount: String(ratingCount),
+        reviewCount: String(ratingCount),
     };
 }
 
