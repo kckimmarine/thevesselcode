@@ -23,8 +23,17 @@ function check(name, ok, detail = '') {
     console.log(ok ? 'OK' : 'FAIL', name, detail ? `— ${detail}` : '');
 }
 
+const GSC_HIGH_IMPRESSION_CODES = [
+    '812101', '614576', '231016', '790228', '790455', '232436', '611735',
+];
+
 const home = readFileSync(join(root, 'home', 'index.html'), 'utf8');
+const toolkit = readFileSync(join(root, 'toolkit.html'), 'utf8');
 check('home footer store anchor', home.includes('<a href="/store/812101">Marine Store Spec Index (IMPA 812101)</a>'));
+GSC_HIGH_IMPRESSION_CODES.forEach((code) => {
+    check(`home links /store/${code}`, home.includes(`href="/store/${code}"`));
+    check(`toolkit links /store/${code}`, toolkit.includes(`href="/store/${code}"`));
+});
 
 const impaSeo = require('../api/_lib/impaSeo.js');
 check('default seo origin is www', impaSeo.storeSeoOrigin() === CANONICAL_ORIGIN);
