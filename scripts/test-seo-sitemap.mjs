@@ -64,7 +64,7 @@ check('html json-ld shipping details', html.includes('OfferShippingDetails') || 
 const ogTitle = impaSeo.buildOgTitle(item);
 const escOgTitle = ogTitle.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 check('html og:title format', html.includes(`<meta property="og:title" content="${escOgTitle}">`));
-check('html og:description rfq copy', html.includes('Instant quotation availa'));
+check('html og:description rfq copy', html.includes('instant quotation at Busan') || html.includes('24/7 port delivery'));
 check(
     'html og:image hero url',
     html.includes(`<meta property="og:image" content="${CANONICAL_ORIGIN}/data/product-photos/${TEST_CODE}.webp">`)
@@ -78,10 +78,11 @@ check('html json-ld offer availability', html.includes('schema.org/InStock'));
 check('html json-ld invoice price type', html.includes('schema.org/InvoicePrice'));
 check('html json-ld marine category', html.includes('"Marine Stores"'));
 check('html json-ld product', html.includes('"@type":"Product"') || html.includes('"@type": "Product"'));
+check('html json-ld aggregateRating', html.includes('AggregateRating') && html.includes('"ratingValue"'));
 check('html json-ld techarticle', html.includes('"@type":"TechArticle"') || html.includes('"@type": "TechArticle"'));
 check('html canonical uses www', html.includes(`<link rel="canonical" href="${CANONICAL_ORIGIN}/store/${TEST_CODE}">`));
 check('html og:url uses www', html.includes(`<meta property="og:url" content="${CANONICAL_ORIGIN}/store/${TEST_CODE}">`));
-check('html meta description', html.includes('View verified technical drawing, flange/thread dimensions'));
+check('html meta description', html.includes('Verified technical drawing, dimensions, JIS/DIN specs'));
 check(
     'html hero alt text',
     html.includes('reference product photo (illustrative)')
@@ -269,7 +270,8 @@ check('robots references sitemap core', robotsTxt.includes('Sitemap: https://www
 check('robots sitemap count matches index', (robotsTxt.match(/^Sitemap: /gm) || []).length === storeChunks.length + 2);
 
 const GSC_HUB_CODES = [
-    '231016', '790669', '790228', '812101', '617425', '331197', '591150', '190123', '614273',
+    '812101', '614576', '231016', '790228', '790455', '232436', '611735',
+    '790669', '617425', '331197', '591150', '190123', '614273',
 ];
 
 const home = readFileSync(join(root, 'home', 'index.html'), 'utf8');
@@ -302,6 +304,12 @@ check(
     'store page korea chandler hub footer link',
     html.includes('href="https://www.thevesselcode.com/ship-repair-chandler-korea"')
         && html.includes('Ship Chandler'),
+);
+check(
+    'store page footer toolkit bridge',
+    html.includes('class="store-seo-footer-bridge"')
+        && html.includes('href="https://www.thevesselcode.com/toolkit"')
+        && html.includes('Maritime Toolkit'),
 );
 check(
     'store page ship repair korea footer link',
