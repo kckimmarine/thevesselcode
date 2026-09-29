@@ -64,7 +64,7 @@ check('html json-ld shipping details', html.includes('OfferShippingDetails') || 
 const ogTitle = impaSeo.buildOgTitle(item);
 const escOgTitle = ogTitle.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 check('html og:title format', html.includes(`<meta property="og:title" content="${escOgTitle}">`));
-check('html og:description rfq copy', html.includes('Instant quotation availa'));
+check('html og:description rfq copy', html.includes('instant quotation') || html.includes('Instant quotation'));
 check(
     'html og:image hero url',
     html.includes(`<meta property="og:image" content="${CANONICAL_ORIGIN}/data/product-photos/${TEST_CODE}.webp">`)
@@ -81,7 +81,13 @@ check('html json-ld product', html.includes('"@type":"Product"') || html.include
 check('html json-ld techarticle', html.includes('"@type":"TechArticle"') || html.includes('"@type": "TechArticle"'));
 check('html canonical uses www', html.includes(`<link rel="canonical" href="${CANONICAL_ORIGIN}/store/${TEST_CODE}">`));
 check('html og:url uses www', html.includes(`<meta property="og:url" content="${CANONICAL_ORIGIN}/store/${TEST_CODE}">`));
-check('html meta description', html.includes('View verified technical drawing, flange/thread dimensions'));
+check('html meta description', html.includes('Verified technical drawing, dimensions, JIS/DIN specs'));
+check(
+    'html json-ld aggregate rating',
+    html.includes('"aggregateRating"')
+        && (html.includes('"ratingValue":"4.9"') || html.includes('"ratingValue": "4.9"')),
+);
+check('html store footer toolkit bridge', html.includes('class="store-seo-footer-bridge"') && html.includes(`${CANONICAL_ORIGIN}/toolkit`));
 check(
     'html hero alt text',
     html.includes('reference product photo (illustrative)')
@@ -269,7 +275,8 @@ check('robots references sitemap core', robotsTxt.includes('Sitemap: https://www
 check('robots sitemap count matches index', (robotsTxt.match(/^Sitemap: /gm) || []).length === storeChunks.length + 2);
 
 const GSC_HUB_CODES = [
-    '231016', '790669', '790228', '812101', '617425', '331197', '591150', '190123', '614273',
+    '231016', '790669', '790228', '790455', '812101', '614576', '232436', '611735',
+    '617425', '331197', '591150', '190123', '614273',
 ];
 
 const home = readFileSync(join(root, 'home', 'index.html'), 'utf8');

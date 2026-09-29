@@ -77,7 +77,7 @@ check('html has title', html.includes(`<title>${pageTitle.replace(/&/g, '&amp;')
 check('html has canonical', html.includes(`/store/${sampleCode}`));
 const descForHtml = impaSeo.buildMetaDescription(item);
 const descSnippet = descForHtml.includes('Busan')
-    ? 'Instant quotation available at Busan'
+    ? 'instant quotation at Busan'
     : 'Industrial MRO';
 check('html has description meta', html.includes('name="description"') && html.includes(descSnippet.slice(0, 20)));
 check('html plate alt drawing', html.includes('Technical Drawing and Catalog Plate'));
