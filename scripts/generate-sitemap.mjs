@@ -18,7 +18,7 @@ const CORE_PAGES = [
   { path: '/mro/pipes-fittings', changefreq: 'weekly', priority: '0.88' },
   { path: '/mro/bearings', changefreq: 'weekly', priority: '0.88' },
   { path: '/mro/tools', changefreq: 'weekly', priority: '0.88' },
-  { path: '/sm', changefreq: 'weekly', priority: '0.9' },
+  { path: '/sm', changefreq: 'weekly', priority: '1.0' },
   { path: '/services', changefreq: 'weekly', priority: '0.85' },
   { path: '/services/korea-ports-hub', changefreq: 'weekly', priority: '0.86' },
   { path: '/ship-repair-chandler-korea', changefreq: 'weekly', priority: '0.9' },

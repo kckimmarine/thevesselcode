@@ -223,6 +223,13 @@ check('core sitemap no legacy ship-repair-korea url', !coreSitemap.includes('<lo
 check('core sitemap has ship-repair-chandler-korea', coreSitemap.includes('<loc>https://www.thevesselcode.com/ship-repair-chandler-korea</loc>'));
 check('core sitemap chandler hub priority', coreSitemap.includes('/ship-repair-chandler-korea</loc>') && coreSitemap.includes('<priority>0.9</priority>'));
 check('core sitemap has sm', coreSitemap.includes('<loc>https://www.thevesselcode.com/sm</loc>'));
+check(
+    'core sitemap sm priority',
+    (() => {
+        const smBlock = coreSitemap.split('<loc>https://www.thevesselcode.com/sm</loc>')[1] || '';
+        return smBlock.includes('<priority>1.0</priority>');
+    })(),
+);
 check('core sitemap has insights', coreSitemap.includes('<loc>https://www.thevesselcode.com/insights</loc>'));
 const MRO_HUB_PATHS = ['/mro/valves', '/mro/pipes-fittings', '/mro/bearings', '/mro/tools'];
 MRO_HUB_PATHS.forEach((hubPath) => {

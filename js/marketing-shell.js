@@ -81,6 +81,41 @@
         document.head.appendChild(link);
     }
 
+    /** Mirror og:title / og:description to Twitter tags when a page omits them (crawler-friendly). */
+    function ensureMarketingSocialMeta() {
+        const head = document.head;
+        if (!head) return;
+
+        const ogTitle = document.querySelector('meta[property="og:title"]')?.getAttribute('content');
+        const ogDesc = document.querySelector('meta[property="og:description"]')?.getAttribute('content');
+        const ogImage = document.querySelector('meta[property="og:image"]')?.getAttribute('content');
+
+        if (!document.querySelector('meta[name="twitter:card"]')) {
+            const card = document.createElement('meta');
+            card.name = 'twitter:card';
+            card.content = ogImage ? 'summary_large_image' : 'summary';
+            head.appendChild(card);
+        }
+        if (ogTitle && !document.querySelector('meta[name="twitter:title"]')) {
+            const twTitle = document.createElement('meta');
+            twTitle.name = 'twitter:title';
+            twTitle.content = ogTitle;
+            head.appendChild(twTitle);
+        }
+        if (ogDesc && !document.querySelector('meta[name="twitter:description"]')) {
+            const twDesc = document.createElement('meta');
+            twDesc.name = 'twitter:description';
+            twDesc.content = ogDesc;
+            head.appendChild(twDesc);
+        }
+        if (ogImage && !document.querySelector('meta[name="twitter:image"]')) {
+            const twImg = document.createElement('meta');
+            twImg.name = 'twitter:image';
+            twImg.content = ogImage;
+            head.appendChild(twImg);
+        }
+    }
+
     function ensureMarketFeed(done) {
         if (globalThis.TVC_MarketFeed) {
             done();
@@ -211,6 +246,7 @@
 
     function mount() {
         ensureReadabilityCss();
+        ensureMarketingSocialMeta();
         const active = document.body.getAttribute('data-mkt-active') || '';
         const topbarEl = document.getElementById('marketing-topbar');
         if (topbarEl) topbarEl.innerHTML = renderTopbar(active);
