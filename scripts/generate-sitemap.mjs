@@ -11,8 +11,8 @@ const URLS_PER_SITEMAP = 10_000;
 const origin = String(process.env.STORE_SEO_ORIGIN || 'https://www.thevesselcode.com').replace(/\/$/, '');
 const lastmod = new Date().toISOString().slice(0, 10);
 
-/** GSC high-impression store URLs — slightly higher sitemap priority for recrawl equity. */
-const HIGH_GSC_IMPRESSION_STORE_CODES = new Set([
+/** GSC high-impression store URLs — slightly higher crawl priority in sitemap. */
+const HIGH_IMPRESSION_STORE_CODES = new Set([
   '812101', '614576', '231016', '790228', '790455', '232436', '611735',
 ]);
 
@@ -69,7 +69,7 @@ chunks.forEach((chunk, idx) => {
     const fileName = `sitemap-store-${idx + 1}.xml`;
     chunkFiles.push(fileName);
     const urls = chunk.map((code) => {
-        const priority = HIGH_GSC_IMPRESSION_STORE_CODES.has(code) ? '0.92' : '0.8';
+        const priority = HIGH_IMPRESSION_STORE_CODES.has(code) ? '0.92' : '0.8';
         return `  <url>
     <loc>${origin}/store/${code}</loc>
     <lastmod>${lastmodStore}</lastmod>
