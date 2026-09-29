@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-09-29T00:07:09.039Z",
-    "benchmarkAsOf": "2026-09-28",
+    "generatedAt": "2026-09-29T11:51:09.406Z",
+    "benchmarkAsOf": "2026-09-29",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-09-28",
-    "updatedLabelKo": "2026-09-28 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-09-29",
+    "updatedLabelKo": "2026-09-29 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 879,
-        "deltaPct": 0,
-        "asOf": "2026-09-25T17:00:00.000Z",
+        "priceUsdMt": 874,
+        "deltaPct": -0.57,
+        "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1310,
-        "deltaPct": 0,
-        "asOf": "2026-09-25T17:00:00.000Z",
+        "priceUsdMt": 1304,
+        "deltaPct": -0.46,
+        "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 740,
-        "deltaPct": 0,
-        "asOf": "2026-09-25T17:00:00.000Z",
+        "priceUsdMt": 751,
+        "deltaPct": 1.49,
+        "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 693.5,
-        "deltaPct": 0,
-        "asOf": "2026-09-25T17:00:00.000Z",
+        "priceUsdMt": 698.5,
+        "deltaPct": 0.72,
+        "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1418.5,
-        "deltaPct": 0,
-        "asOf": "2026-09-25T17:00:00.000Z",
+        "priceUsdMt": 1430,
+        "deltaPct": 0.81,
+        "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 621,
-        "deltaPct": 0,
-        "asOf": "2026-09-25T17:00:00.000Z",
+        "priceUsdMt": 638.5,
+        "deltaPct": 2.82,
+        "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 763,
-        "deltaPct": 0,
-        "asOf": "2026-09-25T17:00:00.000Z",
+        "priceUsdMt": 748,
+        "deltaPct": -1.97,
+        "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1409.5,
-        "deltaPct": 0,
-        "asOf": "2026-09-25T17:00:00.000Z",
+        "priceUsdMt": 1386.5,
+        "deltaPct": -1.63,
+        "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -171,9 +171,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 573,
-        "deltaPct": 0,
-        "asOf": "2026-09-25T17:00:00.000Z",
+        "priceUsdMt": 556.5,
+        "deltaPct": -2.88,
+        "asOf": "2026-09-28T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -184,7 +184,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 950,
-        "deltaPct": 2.7,
+        "deltaPct": 0,
         "asOf": "2026-09-28T22:41:35.361Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 830,
-        "deltaPct": 5.06,
+        "deltaPct": 0,
         "asOf": "2026-09-28T22:41:35.318Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -212,11 +212,11 @@
       "asOf": "2026-09-28T13:16:40.121Z"
     },
     "capesizeTc": {
-      "value": 5784,
-      "deltaPct": 0,
+      "value": 5351,
+      "deltaPct": -7.49,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-09-28T06:43:07.083Z"
+      "asOf": "2026-09-29T06:43:31.638Z"
     },
     "panamaxTc": {
       "value": 2407,
@@ -236,54 +236,190 @@
   },
   "news": [
     {
-      "title": "Maritime tech’s scale problem comes under the spotlight at Splash Singapore",
-      "link": "https://splash247.com/maritime-techs-scale-problem-comes-under-the-spotlight-at-splash-singapore/",
-      "pubDate": "Mon, 28 Sep 2026 20:34:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Maritime technology may be attracting more money, more founders and more attention than ever, but last week’s SplashTech Digital Leaders Forum in Singapore repeatedly returned to an uncomfortable question: can the sector produce genuinely scalable companies, or is most of the ind",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/SplashTech-Splash-Singapore-2026.jpeg",
-      "en": {
-        "headline": "Maritime tech’s scale problem comes under the spotlight at Splash Singapore",
-        "summary": "Maritime technology may be attracting more money, more founders and more attention than ever, but last week’s SplashTech Digital Leaders Forum in Singapore repeatedly returned to an uncomfortable question: can the sector produce genuinely scalable companies, or is most of the ind",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "DryDel piles on kamsarmax tonnage at Tsuneishi",
-      "link": "https://splash247.com/drydel-piles-on-kamsarmax-tonnage-at-tsuneishi/",
-      "pubDate": "Mon, 28 Sep 2026 17:50:00 +0000",
+      "title": "Great Eastern adds newbuild suezmax to fleet renewal drive",
+      "link": "https://splash247.com/great-eastern-adds-newbuild-suezmax-to-fleet-renewal-drive/",
+      "pubDate": "Tue, 29 Sep 2026 11:37:00 +0000",
       "source": "Splash247",
       "category": "S&P",
-      "summary": "Greek dry bulk owner DryDel Shipping has added two more ships to its Japanese newbuilding programme, signing up for a pair of 82,000 dwt kamsarmaxes at Tsuneishi Shipbuilding. The Costas Delaportas-led company has not disclosed the price or delivery dates for the latest vessels, ",
+      "summary": "India’s Great Eastern Shipping has contracted to acquire a 157,000 dwt newbuilding suezmax, adding a yard-built ship to a fleet renewal drive that has so far been dominated by secondhand transactions. The Mumbai-listed owner disclosed the deal late on Monday, saying the tanker wi",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/Costas-Delaportas-Geneva-Dry.jpg",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/HD-Hyundai-Vietnam.jpg",
       "en": {
-        "headline": "DryDel piles on kamsarmax tonnage at Tsuneishi",
-        "summary": "Greek dry bulk owner DryDel Shipping has added two more ships to its Japanese newbuilding programme, signing up for a pair of 82,000 dwt kamsarmaxes at Tsuneishi Shipbuilding. The Costas Delaportas-led company has not disclosed the price or delivery dates for the latest vessels, ",
+        "headline": "Great Eastern adds newbuild suezmax to fleet renewal drive",
+        "summary": "India’s Great Eastern Shipping has contracted to acquire a 157,000 dwt newbuilding suezmax, adding a yard-built ship to a fleet renewal drive that has so far been dominated by secondhand transactions. The Mumbai-listed owner disclosed the deal late on Monday, saying the tanker wi",
         "source": "Splash247"
       }
     },
     {
-      "title": "Zodiac opens LNG chapter with $500m Hanwha order",
-      "link": "https://splash247.com/zodiac-opens-lng-chapter-with-500m-hanwha-order/",
-      "pubDate": "Mon, 28 Sep 2026 17:30:00 +0000",
+      "title": "Bernhard Schulte Shipmanagement buys into Norwegian crewing specialist",
+      "link": "https://splash247.com/bernhard-schulte-shipmanagement-buys-into-norwegian-crewing-specialist/",
+      "pubDate": "Tue, 29 Sep 2026 11:26:00 +0000",
       "source": "Splash247",
       "category": "Trade",
-      "summary": "Eyal Ofer’s Zodiac Maritime is making its first move into the conventional LNG carrier sector, with shipbuilding sources placing the London-based owner behind a KRW680bn ($499.6m) order at Hanwha Ocean. The South Korean shipbuilder disclosed on Monday that it had won a contract c",
+      "summary": "Germany&#8217;s Bernhard Schulte Shipmanagement has agreed to acquire a 50% interest in Kristiansand-based OffshoreCrew, widening the shipmanager’s access to specialised offshore personnel. OffshoreCrew supplies recruitment, agency staffing, crew-management services, and maintain",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/Hanwha-Ocean.jpg",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/OffshoreCrew.jpg",
       "en": {
-        "headline": "Zodiac opens LNG chapter with $500m Hanwha order",
-        "summary": "Eyal Ofer’s Zodiac Maritime is making its first move into the conventional LNG carrier sector, with shipbuilding sources placing the London-based owner behind a KRW680bn ($499.6m) order at Hanwha Ocean. The South Korean shipbuilder disclosed on Monday that it had won a contract c",
+        "headline": "Bernhard Schulte Shipmanagement buys into Norwegian crewing specialist",
+        "summary": "Germany&#8217;s Bernhard Schulte Shipmanagement has agreed to acquire a 50% interest in Kristiansand-based OffshoreCrew, widening the shipmanager’s access to specialised offshore personnel. OffshoreCrew supplies recruitment, agency staffing, crew-management services, and maintain",
         "source": "Splash247"
+      }
+    },
+    {
+      "title": "Hoa Phat goes local for latest bulker newbuild",
+      "link": "https://splash247.com/hoa-phat-goes-local-for-latest-bulker-newbuild/",
+      "pubDate": "Tue, 29 Sep 2026 11:13:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Vietnamese steelmaker Hoa Phat has turned to a domestic yard for its latest fleet expansion, contracting Nam Trieu Shipbuilding to build an ultramax bulk carrier. Hoa Phat Shipping signed the contract for the 65,000 dwt unit with the Haiphong-based yard, better known as NASICO, w",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Hoa-Phat-ultramax-newbuild.jpg",
+      "en": {
+        "headline": "Hoa Phat goes local for latest bulker newbuild",
+        "summary": "Vietnamese steelmaker Hoa Phat has turned to a domestic yard for its latest fleet expansion, contracting Nam Trieu Shipbuilding to build an ultramax bulk carrier. Hoa Phat Shipping signed the contract for the 65,000 dwt unit with the Haiphong-based yard, better known as NASICO, w",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "KKB unit bags Shell deal for Malaysian offshore developments",
+      "link": "https://splash247.com/kkb-unit-bags-shell-deal-for-malaysian-offshore-developments/",
+      "pubDate": "Tue, 29 Sep 2026 11:04:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Malaysian fabricator OceanMight has secured an engineering, procurement, and construction contract from Shell for fixed offshore structures linked to several field developments off Malaysia. Parent company KKB Engineering said OceanMight received a letter of award covering the SK",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/OceanMight.jpg",
+      "en": {
+        "headline": "KKB unit bags Shell deal for Malaysian offshore developments",
+        "summary": "Malaysian fabricator OceanMight has secured an engineering, procurement, and construction contract from Shell for fixed offshore structures linked to several field developments off Malaysia. Parent company KKB Engineering said OceanMight received a letter of award covering the SK",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Tsakos clears out oldest ship as fleet renewal rolls on",
+      "link": "https://splash247.com/tsakos-clears-out-oldest-ship-as-fleet-renewal-rolls-on/",
+      "pubDate": "Tue, 29 Sep 2026 10:52:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Tsakos Energy Navigation has sold the oldest ship in its fleet, continuing to clear out ageing tonnage as a 26-vessel newbuilding programme feeds younger ships into the company. The New York-listed Greek owner said the 2003-built panamax/LR1 tanker Andes has been sold to independ",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Andes-LR1-John-Govers-Marine-Traffic.jpg",
+      "en": {
+        "headline": "Tsakos clears out oldest ship as fleet renewal rolls on",
+        "summary": "Tsakos Energy Navigation has sold the oldest ship in its fleet, continuing to clear out ageing tonnage as a 26-vessel newbuilding programme feeds younger ships into the company. The New York-listed Greek owner said the 2003-built panamax/LR1 tanker Andes has been sold to independ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Mermaid teams with Marine Platforms for Nigeria subsea push",
+      "link": "https://splash247.com/mermaid-teams-with-marine-platforms-for-nigeria-subsea-push/",
+      "pubDate": "Tue, 29 Sep 2026 10:49:13 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Thailand’s Mermaid Maritime has teamed up with Nigerian offshore services player Marine Platforms to establish a local subsea joint venture targeting work with TotalEnergies and other oil and gas majors. The Singapore-listed offshore contractor has taken a 49% stake in Mermaid Su",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/African-Concept-Marine-Platforms.jpg",
+      "en": {
+        "headline": "Mermaid teams with Marine Platforms for Nigeria subsea push",
+        "summary": "Thailand’s Mermaid Maritime has teamed up with Nigerian offshore services player Marine Platforms to establish a local subsea joint venture targeting work with TotalEnergies and other oil and gas majors. The Singapore-listed offshore contractor has taken a 49% stake in Mermaid Su",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Amer Shipping adds two more Concordia Damen river bulkers",
+      "link": "https://splash247.com/amer-shipping-adds-two-more-concordia-damen-river-bulkers/",
+      "pubDate": "Tue, 29 Sep 2026 10:39:43 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Dutch inland shipping player Amer Shipping has returned to Concordia Damen for two more CDS dry cargo 110 newbuilds, taking its series of the shallow-draught vessels to six. The 110 m ships are scheduled for delivery in the fourth quarter of 2027 and the second quarter of 2028. T",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Amer-Shipping-trials-proefvaart-Arnold-Sr.jpg",
+      "en": {
+        "headline": "Amer Shipping adds two more Concordia Damen river bulkers",
+        "summary": "Dutch inland shipping player Amer Shipping has returned to Concordia Damen for two more CDS dry cargo 110 newbuilds, taking its series of the shallow-draught vessels to six. The 110 m ships are scheduled for delivery in the fourth quarter of 2027 and the second quarter of 2028. T",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Google, Microsoft and DSV join green shipping buyers alliance",
+      "link": "https://splash247.com/google-microsoft-and-dsv-join-green-shipping-buyers-alliance/",
+      "pubDate": "Tue, 29 Sep 2026 10:30:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Google, Microsoft and logistics giant DSV have joined the Zero Emission Maritime Buyers Alliance (ZEMBA). ZEMBA pools demand from cargo owners before tendering for shipping services powered by low- and zero-emission fuels, allowing participating companies to tackle Scope 3 emissi",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2020/05/Hapag-Lloyd-New-York-Express-Essen-Express-e1653296143810.jpg",
+      "en": {
+        "headline": "Google, Microsoft and DSV join green shipping buyers alliance",
+        "summary": "Google, Microsoft and logistics giant DSV have joined the Zero Emission Maritime Buyers Alliance (ZEMBA). ZEMBA pools demand from cargo owners before tendering for shipping services powered by low- and zero-emission fuels, allowing participating companies to tackle Scope 3 emissi",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Jefferson to buy Port Arthur terminal in $255m logistics deal",
+      "link": "https://splash247.com/jefferson-to-buy-port-arthur-terminal-in-255m-logistics-deal/",
+      "pubDate": "Tue, 29 Sep 2026 10:27:11 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "FTAI Infrastructure subsidiary Jefferson has agreed to acquire the Port Arthur Terminal in Texas and a 50% interest in a diluent recovery unit in Hardisty, Alberta, from USD Group in a $255m deal. The assets form an integrated crude oil logistics chain serving the US Gulf Coast u",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Porth-Arthur-USD-Terminal.jpg",
+      "en": {
+        "headline": "Jefferson to buy Port Arthur terminal in $255m logistics deal",
+        "summary": "FTAI Infrastructure subsidiary Jefferson has agreed to acquire the Port Arthur Terminal in Texas and a 50% interest in a diluent recovery unit in Hardisty, Alberta, from USD Group in a $255m deal. The assets form an integrated crude oil logistics chain serving the US Gulf Coast u",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "HNA wraps up $52m bulker disposal sweep",
+      "link": "https://splash247.com/hna-wraps-up-52m-bulker-disposal-sweep/",
+      "pubDate": "Tue, 29 Sep 2026 09:59:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Shanghai-listed HNA Technology has agreed to sell the last of three bulkers earmarked for disposal, taking the combined value of its latest fleet sales to $51.55m. The company’s wholly owned unit Asian Star Marine has struck a deal to sell the 2012-built capesize Bulk Joyance to ",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Bulk-Joyance-Andy-Ru.-Marine-Traffic.jpg",
+      "en": {
+        "headline": "HNA wraps up $52m bulker disposal sweep",
+        "summary": "Shanghai-listed HNA Technology has agreed to sell the last of three bulkers earmarked for disposal, taking the combined value of its latest fleet sales to $51.55m. The company’s wholly owned unit Asian Star Marine has struck a deal to sell the 2012-built capesize Bulk Joyance to ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "CMA CGM Ship Rescues Four After Yacht Strikes Whale in South Pacific",
+      "link": "https://gcaptain.com/cma-cgm-ship-rescues-four-after-yacht-strikes-whale-in-south-pacific/",
+      "pubDate": "Tue, 29 Sep 2026 00:05:13 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Four sailors have been rescued from a life raft in the South Pacific after their yacht struck a whale and began taking on water about 250 nautical miles north of...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 11,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Yacht-rescue-NZDF.jpg",
+      "en": {
+        "headline": "CMA CGM Ship Rescues Four After Yacht Strikes Whale in South Pacific",
+        "summary": "Four sailors have been rescued from a life raft in the South Pacific after their yacht struck a whale and began taking on water about 250 nautical miles north of...",
+        "source": "gCaptain"
       }
     },
     {
@@ -295,29 +431,12 @@
       "summary": "The Panama Canal is easing restrictions on vessel draft and daily transits after improved rainfall and water-saving measures helped stabilize conditions in the waterway’s drought-sensitive watershed. The Panama Canal Authority said the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/Neopanamax-locks.jpg",
       "en": {
         "headline": "Panama Canal Adds Transit Capacity as Rainfall Brings Relief",
         "summary": "The Panama Canal is easing restrictions on vessel draft and daily transits after improved rainfall and water-saving measures helped stabilize conditions in the waterway’s drought-sensitive watershed. The Panama Canal Authority said the...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Pan Ocean lands $110m Trafigura VLCC charter",
-      "link": "https://splash247.com/pan-ocean-lands-110m-trafigura-vlcc-charter/",
-      "pubDate": "Mon, 28 Sep 2026 17:06:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "South Korea’s Pan Ocean has fixed a VLCC to Trafigura Maritime Logistics for three years in a deal worth KRW148.18bn ($109.6m). The Harim-controlled owner disclosed the charter in a stock exchange filing, saying the vessel will start work on December 1 and remain with Trafigura u",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/Grand-Bonanza-PanOcean.jpg",
-      "en": {
-        "headline": "Pan Ocean lands $110m Trafigura VLCC charter",
-        "summary": "South Korea’s Pan Ocean has fixed a VLCC to Trafigura Maritime Logistics for three years in a deal worth KRW148.18bn ($109.6m). The Harim-controlled owner disclosed the charter in a stock exchange filing, saying the vessel will start work on December 1 and remain with Trafigura u",
-        "source": "Splash247"
       }
     },
     {
@@ -329,7 +448,7 @@
       "summary": "(Bloomberg) &#8212; Two countries signaled interest in sending ships to counter Houthi strikes in the Red Sea, top European Union diplomat Kaja Kallas said.  Kallas has been pressing countries to...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-22T003703Z_1841774059_RC20KMABOA8G_RTRMADP_3_IRAN-CRISIS-EU-KALLAS-800x533.jpg",
       "en": {
         "headline": "EU’s Kallas Says Two Countries May Send Ships to Counter Houthis",
@@ -346,7 +465,7 @@
       "summary": "Sept 28 (Reuters) &#8211; Qatari mediators are likely to hold separate talks with Iranian Foreign Minister Abbas Araqchi in New York and with the US side on Monday or Tuesday, an official briefed on the negotiations told Reuters, in...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-05-28T170031Z_1033704711_RC2THLAMQXA1_RTRMADP_3_IRAN-CRISIS-MEMORANDUM-800x569.jpg",
       "en": {
         "headline": "U.S. and Iran Set to Hold Separate Talks With Mediators on Monday or Tuesday",
@@ -363,7 +482,7 @@
       "summary": "European imports of liquefied natural gas are rising ahead of the Northern Hemisphere winter, as prolonged disruptions to flows through the Strait of Hormuz threaten to intensify global competition for the fuel.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/shutterstock_33420973.jpg",
       "en": {
         "headline": "Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
@@ -380,131 +499,12 @@
       "summary": "A.P. Moller Capital has agreed to acquire a majority stake in Euroports Group, adding one of Europe’s largest bulk and breakbulk terminal operators to its growing portfolio of transportation&#160;and logistics...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Rauma2.jpg",
       "en": {
         "headline": "A.P. Moller Capital Takes Majority Stake in Euroports",
         "summary": "A.P. Moller Capital has agreed to acquire a majority stake in Euroports Group, adding one of Europe’s largest bulk and breakbulk terminal operators to its growing portfolio of transportation&#160;and logistics...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "NBC News: Eight Marines Injured in Previously Undisclosed Iranian Attack in Hormuz",
-      "link": "https://gcaptain.com/nbc-news-eight-marines-injured-in-previously-undisclosed-iranian-attack-in-hormuz/",
-      "pubDate": "Mon, 28 Sep 2026 15:16:28 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Eight U.S. Marines were injured when an Iranian cruise missile struck a vessel they were operating aboard in the Strait of Hormuz earlier this month, according to a previously unreported...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
-      "en": {
-        "headline": "NBC News: Eight Marines Injured in Previously Undisclosed Iranian Attack in Hormuz",
-        "summary": "Eight U.S. Marines were injured when an Iranian cruise missile struck a vessel they were operating aboard in the Strait of Hormuz earlier this month, according to a previously unreported...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Philippines Accuses Chinese Vessel of Spoofing Location in Northern Waters",
-      "link": "https://gcaptain.com/philippines-accuses-chinese-vessel-of-spoofing-location-in-northern-waters/",
-      "pubDate": "Mon, 28 Sep 2026 13:25:33 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Philippine Coast Guard accused a Chinese research vessel on Monday of spoofing its location while loitering off Batanes, the country's northernmost island group near Taiwan, saying its movements were consistent with unauthorised marine scientific research.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-23T074343Z_1660455737_RC2JJMAOYDCZ_RTRMADP_3_SOUTHCHINASEA-CHINA-PHILIPPINES-COASTGUARD-800x452.jpg",
-      "en": {
-        "headline": "Philippines Accuses Chinese Vessel of Spoofing Location in Northern Waters",
-        "summary": "The Philippine Coast Guard accused a Chinese research vessel on Monday of spoofing its location while loitering off Batanes, the country's northernmost island group near Taiwan, saying its movements were consistent with unauthorised marine scientific research.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "A.P. Moller Capital strikes deal for Euroports majority",
-      "link": "https://splash247.com/a-p-moller-capital-strikes-deal-for-euroports-majority/",
-      "pubDate": "Mon, 28 Sep 2026 13:22:37 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "A.P. Moller Capital has struck a deal to take control of Euroports, adding one of Europe’s largest bulk and breakbulk terminal platforms to its growing transport infrastructure portfolio. The Copenhagen-based infrastructure investor has agreed to acquire a 53.35% stake in Thaumas",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Euroports-A.P.-Moller-Capita.jpg",
-      "en": {
-        "headline": "A.P. Moller Capital strikes deal for Euroports majority",
-        "summary": "A.P. Moller Capital has struck a deal to take control of Euroports, adding one of Europe’s largest bulk and breakbulk terminal platforms to its growing transport infrastructure portfolio. The Copenhagen-based infrastructure investor has agreed to acquire a 53.35% stake in Thaumas",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Rhine Drops Below Shipping Threshold as Freight Costs Rise",
-      "link": "https://gcaptain.com/rhine-drops-below-shipping-threshold-as-freight-costs-rise/",
-      "pubDate": "Mon, 28 Sep 2026 13:16:50 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Water levels in the Rhine River plummeted to record lows over the weekend, threatening transport on a key shipping corridor for energy and industrial commodities across central Europe.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-30T104212Z_1747527408_RC26OMA3IM0L_RTRMADP_3_EUROPE-WEATHER-GERMANY-800x600.jpg",
-      "en": {
-        "headline": "Rhine Drops Below Shipping Threshold as Freight Costs Rise",
-        "summary": "Water levels in the Rhine River plummeted to record lows over the weekend, threatening transport on a key shipping corridor for energy and industrial commodities across central Europe.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "The Great Lakes Towing Company Orders Two New Damen Tugs from Great Lakes Shipyard",
-      "link": "https://gcaptain.com/the-great-lakes-towing-company-orders-two-new-damen-tugs-from-great-lakes-shipyard/",
-      "pubDate": "Mon, 28 Sep 2026 13:01:44 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Hulls 11 and 12 will continue the company’s fleet renewal and expansion program and its long-term investment in  Great Lakes shipping The Great Lakes Towing Company announced today that it...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/644554795_10110925268027146_87094736979190175_n-800x533.jpg",
-      "en": {
-        "headline": "The Great Lakes Towing Company Orders Two New Damen Tugs from Great Lakes Shipyard",
-        "summary": "Hulls 11 and 12 will continue the company’s fleet renewal and expansion program and its long-term investment in  Great Lakes shipping The Great Lakes Towing Company announced today that it...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "At Sea, Confined Spaces Leave No Room for Error",
-      "link": "https://gcaptain.com/at-sea-confined-spaces-leave-no-room-for-error/",
-      "pubDate": "Mon, 28 Sep 2026 12:31:26 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "On a laid-up mobile offshore drilling unit (MODU), a worker descended alone into the leg to check on a diesel pump being used for dewatering operations. When he didn’t return,...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/confined-spaces-oct-2026.jpg",
-      "en": {
-        "headline": "At Sea, Confined Spaces Leave No Room for Error",
-        "summary": "On a laid-up mobile offshore drilling unit (MODU), a worker descended alone into the leg to check on a diesel pump being used for dewatering operations. When he didn’t return,...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Tullow books Noble drillship for Ghana campaign",
-      "link": "https://splash247.com/tullow-books-noble-drillship-for-ghana-campaign/",
-      "pubDate": "Mon, 28 Sep 2026 12:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Offshore drilling giant Noble Corporation has been awarded a contract by Tullow Oil for one of its drillships. The London-based oil and gas player hired the 2013-built drillship Noble Faye Kozack for work offshore Ghana. The contract includes up to 10 wells and is expected to com",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/11/Noble-Faye-Kozack-Pacific-Khamsin.jpg",
-      "en": {
-        "headline": "Tullow books Noble drillship for Ghana campaign",
-        "summary": "Offshore drilling giant Noble Corporation has been awarded a contract by Tullow Oil for one of its drillships. The London-based oil and gas player hired the 2013-built drillship Noble Faye Kozack for work offshore Ghana. The contract includes up to 10 wells and is expected to com",
-        "source": "Splash247"
       }
     }
   ]
