@@ -36,8 +36,8 @@
         },
 
         'home.meta.description': {
-            en: 'THE VESSEL CODE — Marine engineering knowledge base and fleet operating tools. Open IMPA reference, thermodynamics, piping, lubrication, coatings, and survey checklists.',
-            ko: 'THE VESSEL CODE — 해양 엔지니어링 지식 기반 및 선대 운영 도구. IMPA·역학·배관·윤활·도장·검사 체크리스트.',
+            en: 'Instant IMPA lookup, ASTM 54B bunker math, JIS flange specs, and offline-first TVC-SM Ship Planned Maintenance System (PMS). Marine PMS, ship PMS software, and maritime answers in seconds.',
+            ko: 'IMPA·54B·JIS 스펙과 오프라인 TVC-SM 선박 PMS(Planned Maintenance System). 해상 PMS·선박 정비 소프트웨어와 즉시 해양 답변.',
         },
         'home.eyebrow': { en: 'THE VESSEL CODE', ko: 'THE VESSEL CODE' },
         'home.headline': {
