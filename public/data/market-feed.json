@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-28T18:05:57.828Z",
+    "generatedAt": "2026-09-29T00:07:09.039Z",
     "benchmarkAsOf": "2026-09-28",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -183,9 +183,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 925,
-        "deltaPct": 0,
-        "asOf": "2026-09-25T22:41:34.054Z",
+        "priceUsdMt": 950,
+        "deltaPct": 2.7,
+        "asOf": "2026-09-28T22:41:35.361Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 790,
-        "deltaPct": 0,
-        "asOf": "2026-09-25T22:41:34.030Z",
+        "priceUsdMt": 830,
+        "deltaPct": 5.06,
+        "asOf": "2026-09-28T22:41:35.318Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,7 +206,7 @@
   "indices": {
     "bdi": {
       "value": 3268,
-      "deltaPct": -4.61,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-09-28T13:16:40.121Z"
@@ -220,7 +220,7 @@
     },
     "panamaxTc": {
       "value": 2407,
-      "deltaPct": 1.05,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-09-28T14:26:03.660Z"
@@ -236,6 +236,23 @@
   },
   "news": [
     {
+      "title": "Maritime tech’s scale problem comes under the spotlight at Splash Singapore",
+      "link": "https://splash247.com/maritime-techs-scale-problem-comes-under-the-spotlight-at-splash-singapore/",
+      "pubDate": "Mon, 28 Sep 2026 20:34:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Maritime technology may be attracting more money, more founders and more attention than ever, but last week’s SplashTech Digital Leaders Forum in Singapore repeatedly returned to an uncomfortable question: can the sector produce genuinely scalable companies, or is most of the ind",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/SplashTech-Splash-Singapore-2026.jpeg",
+      "en": {
+        "headline": "Maritime tech’s scale problem comes under the spotlight at Splash Singapore",
+        "summary": "Maritime technology may be attracting more money, more founders and more attention than ever, but last week’s SplashTech Digital Leaders Forum in Singapore repeatedly returned to an uncomfortable question: can the sector produce genuinely scalable companies, or is most of the ind",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "DryDel piles on kamsarmax tonnage at Tsuneishi",
       "link": "https://splash247.com/drydel-piles-on-kamsarmax-tonnage-at-tsuneishi/",
       "pubDate": "Mon, 28 Sep 2026 17:50:00 +0000",
@@ -244,7 +261,7 @@
       "summary": "Greek dry bulk owner DryDel Shipping has added two more ships to its Japanese newbuilding programme, signing up for a pair of 82,000 dwt kamsarmaxes at Tsuneishi Shipbuilding. The Costas Delaportas-led company has not disclosed the price or delivery dates for the latest vessels, ",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/Costas-Delaportas-Geneva-Dry.jpg",
       "en": {
         "headline": "DryDel piles on kamsarmax tonnage at Tsuneishi",
@@ -261,7 +278,7 @@
       "summary": "Eyal Ofer’s Zodiac Maritime is making its first move into the conventional LNG carrier sector, with shipbuilding sources placing the London-based owner behind a KRW680bn ($499.6m) order at Hanwha Ocean. The South Korean shipbuilder disclosed on Monday that it had won a contract c",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/Hanwha-Ocean.jpg",
       "en": {
         "headline": "Zodiac opens LNG chapter with $500m Hanwha order",
@@ -278,7 +295,7 @@
       "summary": "The Panama Canal is easing restrictions on vessel draft and daily transits after improved rainfall and water-saving measures helped stabilize conditions in the waterway’s drought-sensitive watershed. The Panama Canal Authority said the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/Neopanamax-locks.jpg",
       "en": {
         "headline": "Panama Canal Adds Transit Capacity as Rainfall Brings Relief",
@@ -295,7 +312,7 @@
       "summary": "South Korea’s Pan Ocean has fixed a VLCC to Trafigura Maritime Logistics for three years in a deal worth KRW148.18bn ($109.6m). The Harim-controlled owner disclosed the charter in a stock exchange filing, saying the vessel will start work on December 1 and remain with Trafigura u",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/Grand-Bonanza-PanOcean.jpg",
       "en": {
         "headline": "Pan Ocean lands $110m Trafigura VLCC charter",
@@ -312,7 +329,7 @@
       "summary": "(Bloomberg) &#8212; Two countries signaled interest in sending ships to counter Houthi strikes in the Red Sea, top European Union diplomat Kaja Kallas said.  Kallas has been pressing countries to...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-22T003703Z_1841774059_RC20KMABOA8G_RTRMADP_3_IRAN-CRISIS-EU-KALLAS-800x533.jpg",
       "en": {
         "headline": "EU’s Kallas Says Two Countries May Send Ships to Counter Houthis",
@@ -329,7 +346,7 @@
       "summary": "Sept 28 (Reuters) &#8211; Qatari mediators are likely to hold separate talks with Iranian Foreign Minister Abbas Araqchi in New York and with the US side on Monday or Tuesday, an official briefed on the negotiations told Reuters, in...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-05-28T170031Z_1033704711_RC2THLAMQXA1_RTRMADP_3_IRAN-CRISIS-MEMORANDUM-800x569.jpg",
       "en": {
         "headline": "U.S. and Iran Set to Hold Separate Talks With Mediators on Monday or Tuesday",
@@ -346,7 +363,7 @@
       "summary": "European imports of liquefied natural gas are rising ahead of the Northern Hemisphere winter, as prolonged disruptions to flows through the Strait of Hormuz threaten to intensify global competition for the fuel.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/shutterstock_33420973.jpg",
       "en": {
         "headline": "Europe Draws More LNG as Hormuz Crisis Tightens Global Market",
@@ -363,7 +380,7 @@
       "summary": "A.P. Moller Capital has agreed to acquire a majority stake in Euroports Group, adding one of Europe’s largest bulk and breakbulk terminal operators to its growing portfolio of transportation&#160;and logistics...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Rauma2.jpg",
       "en": {
         "headline": "A.P. Moller Capital Takes Majority Stake in Euroports",
@@ -380,7 +397,7 @@
       "summary": "Eight U.S. Marines were injured when an Iranian cruise missile struck a vessel they were operating aboard in the Strait of Hormuz earlier this month, according to a previously unreported...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
       "en": {
         "headline": "NBC News: Eight Marines Injured in Previously Undisclosed Iranian Attack in Hormuz",
@@ -397,7 +414,7 @@
       "summary": "The Philippine Coast Guard accused a Chinese research vessel on Monday of spoofing its location while loitering off Batanes, the country's northernmost island group near Taiwan, saying its movements were consistent with unauthorised marine scientific research.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-23T074343Z_1660455737_RC2JJMAOYDCZ_RTRMADP_3_SOUTHCHINASEA-CHINA-PHILIPPINES-COASTGUARD-800x452.jpg",
       "en": {
         "headline": "Philippines Accuses Chinese Vessel of Spoofing Location in Northern Waters",
@@ -414,7 +431,7 @@
       "summary": "A.P. Moller Capital has struck a deal to take control of Euroports, adding one of Europe’s largest bulk and breakbulk terminal platforms to its growing transport infrastructure portfolio. The Copenhagen-based infrastructure investor has agreed to acquire a 53.35% stake in Thaumas",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Euroports-A.P.-Moller-Capita.jpg",
       "en": {
         "headline": "A.P. Moller Capital strikes deal for Euroports majority",
@@ -431,7 +448,7 @@
       "summary": "Water levels in the Rhine River plummeted to record lows over the weekend, threatening transport on a key shipping corridor for energy and industrial commodities across central Europe.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-30T104212Z_1747527408_RC26OMA3IM0L_RTRMADP_3_EUROPE-WEATHER-GERMANY-800x600.jpg",
       "en": {
         "headline": "Rhine Drops Below Shipping Threshold as Freight Costs Rise",
@@ -448,7 +465,7 @@
       "summary": "Hulls 11 and 12 will continue the company’s fleet renewal and expansion program and its long-term investment in  Great Lakes shipping The Great Lakes Towing Company announced today that it...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/644554795_10110925268027146_87094736979190175_n-800x533.jpg",
       "en": {
         "headline": "The Great Lakes Towing Company Orders Two New Damen Tugs from Great Lakes Shipyard",
@@ -465,7 +482,7 @@
       "summary": "On a laid-up mobile offshore drilling unit (MODU), a worker descended alone into the leg to check on a diesel pump being used for dewatering operations. When he didn’t return,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/confined-spaces-oct-2026.jpg",
       "en": {
         "headline": "At Sea, Confined Spaces Leave No Room for Error",
@@ -482,28 +499,11 @@
       "summary": "Offshore drilling giant Noble Corporation has been awarded a contract by Tullow Oil for one of its drillships. The London-based oil and gas player hired the 2013-built drillship Noble Faye Kozack for work offshore Ghana. The contract includes up to 10 wells and is expected to com",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/11/Noble-Faye-Kozack-Pacific-Khamsin.jpg",
       "en": {
         "headline": "Tullow books Noble drillship for Ghana campaign",
         "summary": "Offshore drilling giant Noble Corporation has been awarded a contract by Tullow Oil for one of its drillships. The London-based oil and gas player hired the 2013-built drillship Noble Faye Kozack for work offshore Ghana. The contract includes up to 10 wells and is expected to com",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Fugro survey supports Petronas fields off Malaysia",
-      "link": "https://splash247.com/fugro-survey-supports-petronas-fields-off-malaysia/",
-      "pubDate": "Mon, 28 Sep 2026 12:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Dutch surveyor Fugro has executed a geohazard site survey contract for Petronas Carigali for the Megah and Limbayong fields off the coast of Sabah, offshore East Malaysia. The development supports ongoing efforts to develop Malaysia&#8217;s offshore resources. Fugro’s survey deli",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Fugro-Equator-AUV-Fugro.jpg",
-      "en": {
-        "headline": "Fugro survey supports Petronas fields off Malaysia",
-        "summary": "Dutch surveyor Fugro has executed a geohazard site survey contract for Petronas Carigali for the Megah and Limbayong fields off the coast of Sabah, offshore East Malaysia. The development supports ongoing efforts to develop Malaysia&#8217;s offshore resources. Fugro’s survey deli",
         "source": "Splash247"
       }
     }
