@@ -36,8 +36,8 @@
         },
 
         'home.meta.description': {
-            en: 'THE VESSEL CODE — Marine engineering knowledge base and fleet operating tools. Open IMPA reference, thermodynamics, piping, lubrication, coatings, and survey checklists.',
-            ko: 'THE VESSEL CODE — 해양 엔지니어링 지식 기반 및 선대 운영 도구. IMPA·역학·배관·윤활·도장·검사 체크리스트.',
+            en: 'Instant IMPA lookup, ASTM 54B bunker math, JIS flange specs, and offline-first TVC-SM Ship Planned Maintenance System (PMS). Marine PMS, ship PMS software, and maritime answers in seconds.',
+            ko: 'IMPA·54B·JIS 스펙과 오프라인 TVC-SM 선박 PMS(Planned Maintenance System). 해상 PMS·선박 정비 소프트웨어와 즉시 해양 답변.',
         },
         'home.eyebrow': { en: 'THE VESSEL CODE', ko: 'THE VESSEL CODE' },
         'home.headline': {
@@ -399,25 +399,33 @@
         },
 
         'sm.meta.description': {
-            en: 'TVC-SM — The resilient, local-first ship management OS for PMS, SPARE, and shore ZIP sync. Built for fleets that sail offline.',
-            ko: 'TVC-SM — 인터넷이 끊겨도 바로 쓰는 현장 중심 선박관리. 정비·예비품·육상 연동을 한곳에서.',
+            en: 'TVC-SM is an offline-first Ship Planned Maintenance System (PMS) and fleet management platform. Automates maintenance cycles, ClassNK compliance, spare inventory (ROB), and superintendent oversight.',
+            ko: 'TVC-SM — 오프라인 완결형 선박 Planned Maintenance System(PMS) 및 선대 관리. 정비 주기, ClassNK 대응, 예비품(ROB), 공무감독 승인을 한곳에서.',
         },
         'sm.document.title': {
-            en: 'TVC-SM | Ship Management Platform | THE VESSEL CODE',
-            ko: 'TVC-SM | 선박관리 플랫폼 | THE VESSEL CODE',
+            en: 'TVC-SM | Next-Gen Ship Planned Maintenance System (PMS) & Fleet OS',
+            ko: 'TVC-SM | 차세대 선박 PMS(Planned Maintenance System) & Fleet OS',
+        },
+        'sm.og.title': {
+            en: 'TVC-SM | Ship Planned Maintenance System (PMS) & Fleet OS',
+            ko: 'TVC-SM | 선박 Planned Maintenance System(PMS) & Fleet OS',
+        },
+        'sm.og.description': {
+            en: 'Offline-first maritime PMS & inventory sync. Eliminate disconnected Excel records across sea and shore.',
+            ko: '오프라인 우선 해상 PMS·재고 동기화. 해상과 육상의 엑셀 단절 기록을 없앱니다.',
         },
         'sm.eyebrow': { en: 'THE VESSEL CODE · Ship management SaaS', ko: 'THE VESSEL CODE · 선박관리 소프트웨어' },
         'sm.hero.title': {
-            en: 'TVC-SM Ship Management',
-            ko: 'TVC-SM 선박관리',
+            en: 'TVC-SM: Intelligent Ship Planned Maintenance System (PMS) & Fleet OS',
+            ko: 'TVC-SM: 지능형 선박 Planned Maintenance System(PMS) & Fleet OS',
         },
         'sm.hero.tagline': {
-            en: 'TVC-SM (Vessel Core / Fleet OS) — local-first ship management engineered by superintendents.',
-            ko: 'TVC-SM (Vessel Core / Fleet OS) — 슈퍼인텐던트가 설계한 로컬 우선 선박관리',
+            en: 'Engineered for deep-sea reliability, TVC-SM provides an offline-first Planned Maintenance System (PMS) connecting shipboard crew, shore superintendents, and class survey audit trails.',
+            ko: '원양 신뢰성을 위해 설계된 TVC-SM — 선원·육상 슈퍼인텐던트·선급 감사 추적을 연결하는 오프라인 우선 PMS.',
         },
         'sm.hero.lead': {
-            en: 'Offline-complete maintenance and SPARE on board. Superintendent oversight via ZIP or online Fleet HQ.',
-            ko: '선상 오프라인 정비·SPARE 완결. ZIP 또는 온라인 Fleet HQ로 감독.',
+            en: 'Class-compliant maintenance jobs, spare parts (SPICS) synchronization, and a superintendent approval queue — without always-on cloud at sea.',
+            ko: 'Class 대응 정비 Job, SPICS(예비품) 동기화, 공무감독 승인 큐 — 해상 상시 클라우드 없이.',
         },
         'sm.metrics.offline': { en: '<strong>100%</strong> Offline PWA', ko: '<strong>100%</strong> 오프라인 PWA' },
         'sm.metrics.zip': { en: '<strong>ZIP</strong> sync', ko: '<strong>ZIP</strong> 동기화' },
@@ -437,40 +445,40 @@
             en: 'One offline core on the ship. One approval line for superintendents. ZIP when the link is down.',
             ko: '선박 오프라인 코어, 감독 승인 라인, 링크 단절 시 ZIP.',
         },
-        'sm.essentials.1.t': { en: 'Report · Confirm · Approve', ko: 'Report · Confirm · Approve' },
+        'sm.essentials.1.t': { en: 'Class-Compliant Maintenance Jobs', ko: 'Class 대응 정비 Job' },
         'sm.essentials.1.d': {
-            en: 'Structured statuses from deck and engine through chief officers to superintendent approval.',
-            ko: '갑판·기관에서 기관장·갑판장, 슈퍼인텐던트 승인까지 구조화된 상태.',
+            en: 'Planned Maintenance System (PMS) workflows from deck and engine through chief officers to superintendent approval.',
+            ko: '갑판·기관에서 기관장·갑판장, 슈퍼인텐던트 승인까지 PMS 워크플로.',
         },
-        'sm.essentials.2.t': { en: 'Linked maintenance & SPARE', ko: '정비·SPARE 연동' },
+        'sm.essentials.2.t': { en: 'Spare Parts (SPICS) Synchronization', ko: 'Spare Parts(SPICS) 동기화' },
         'sm.essentials.2.d': {
-            en: 'Work reports and IMPA consumption stay aligned — no duplicate stock deductions on confirm.',
-            ko: '작업보고와 IMPA 소모가 연동 — 확인 시 이중 차감 없음.',
+            en: 'Work reports and IMPA consumption stay aligned with PMS job cards — no duplicate stock deductions on confirm.',
+            ko: '작업보고·IMPA 소모가 PMS Job Card와 연동 — 확인 시 이중 차감 없음.',
         },
-        'sm.essentials.3.t': { en: 'ZIP ship ↔ shore', ko: 'ZIP 선박 ↔ 육상' },
+        'sm.essentials.3.t': { en: 'Superintendent Approval Queue', ko: 'Superintendent Approval Queue' },
         'sm.essentials.3.d': {
-            en: 'Signed export/import packets over email, USB, or messenger — no always-on cloud at sea.',
-            ko: '이메일·USB·메신저로 서명된 ZIP — 해상 상시 클라우드 불필요.',
+            en: 'Signed ZIP export/import packets over email, USB, or messenger — shore oversight without always-on cloud at sea.',
+            ko: '이메일·USB·메신저 ZIP — 해상 상시 클라우드 없이 육상 감독.',
         },
         'sm.pillars.title': { en: 'Three core TVC-SM pillars', ko: 'TVC-SM 핵심 3대 축' },
         'sm.pillars.lead': {
             en: 'Shipboard execution, shore oversight, and procurement — one offline-first platform.',
             ko: '선박 실행, 육상 감독, 조달 — 하나의 오프라인 우선 플랫폼.',
         },
-        'sm.pillar.1.t': { en: 'TVC-SM Vessel Core', ko: 'TVC-SM Vessel Core' },
+        'sm.pillar.1.t': { en: 'Planned Maintenance System (PMS) · Vessel Core', ko: 'Planned Maintenance System(PMS) · Vessel Core' },
         'sm.pillar.1.d': {
-            en: 'Deck and engine workflows, atomic stock, defect & permit — fully usable without satellite.',
-            ko: 'Deck·Engine 워크플로, 원자적 재고, 결함·작업허가 — 위성 없이 완결.',
+            en: 'Class-compliant maintenance jobs on deck and engine — defect, permit, and PMS job cards fully usable without satellite.',
+            ko: 'Class 대응 정비 Job — 결함·작업허가·PMS Job Card, 위성 없이 완결.',
         },
-        'sm.pillar.2.t': { en: 'Shore Superintendent Fleet Oversight', ko: '육상 슈퍼인텐던트 선대 관제' },
+        'sm.pillar.2.t': { en: 'Superintendent Approval Queue', ko: 'Superintendent Approval Queue' },
         'sm.pillar.2.d': {
-            en: 'Confirm, approve, and audit fleet-wide maintenance and ROB via ZIP or online HQ.',
-            ko: 'ZIP 또는 온라인 HQ로 선대 정비·ROB 확인·승인·감사.',
+            en: 'Confirm, approve, and audit fleet-wide PMS and ROB via ZIP or online Fleet HQ.',
+            ko: 'ZIP 또는 Fleet HQ로 선대 PMS·ROB 확인·승인·감사.',
         },
-        'sm.pillar.3.t': { en: 'RFQ Procurement', ko: 'RFQ 조달' },
+        'sm.pillar.3.t': { en: 'Spare Parts (SPICS) Synchronization', ko: 'Spare Parts(SPICS) 동기화' },
         'sm.pillar.3.d': {
-            en: '1-click requisitions to suppliers with spec history tied to IMPA and job cards.',
-            ko: 'IMPA·작업카드와 연결된 1클릭 청구 및 공급사 RFQ.',
+            en: 'IMPA-linked consumption and RFQ with spec history tied to PMS job cards — no duplicate stock deductions.',
+            ko: 'PMS Job Card와 연결된 IMPA 소모·RFQ — 이중 재고 차감 없음.',
         },
         'sm.cta.toolkit': { en: 'Free Maritime Toolkit', ko: '무료 Toolkit' },
         'sm.diagram.title': { en: 'Ship ↔ Shore sync', ko: '선박 ↔ 육상 동기화' },
@@ -1398,6 +1406,14 @@
         forum: 'forum.document.title',
     };
 
+    const OG_TITLE_KEYS = {
+        sm: 'sm.og.title',
+    };
+
+    const OG_DESC_KEYS = {
+        sm: 'sm.og.description',
+    };
+
     function applyLang(lang) {
         document.documentElement.lang = lang === 'ko' ? 'ko' : 'en';
         document.body.classList.toggle('mkt-lang-ko', lang === 'ko');
@@ -1424,6 +1440,30 @@
         if (page && DOCUMENT_TITLE_KEYS[page]) {
             const title = t(DOCUMENT_TITLE_KEYS[page], lang);
             if (title) document.title = title;
+        }
+
+        if (page && OG_TITLE_KEYS[page]) {
+            const ogTitle = t(OG_TITLE_KEYS[page], lang);
+            if (ogTitle) {
+                document.querySelectorAll('meta[property="og:title"]').forEach((el) => {
+                    el.setAttribute('content', ogTitle);
+                });
+                document.querySelectorAll('meta[name="twitter:title"]').forEach((el) => {
+                    el.setAttribute('content', ogTitle);
+                });
+            }
+        }
+
+        if (page && OG_DESC_KEYS[page]) {
+            const ogDesc = t(OG_DESC_KEYS[page], lang);
+            if (ogDesc) {
+                document.querySelectorAll('meta[property="og:description"]').forEach((el) => {
+                    el.setAttribute('content', ogDesc);
+                });
+                document.querySelectorAll('meta[name="twitter:description"]').forEach((el) => {
+                    el.setAttribute('content', ogDesc);
+                });
+            }
         }
 
         document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {

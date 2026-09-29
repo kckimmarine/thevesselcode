@@ -230,7 +230,10 @@ check('services active nav', services.includes('data-mkt-active="services"'));
 check('services no photo card classes', !services.includes('home-service-card--photo'));
 
 const sm = readFileSync(join(ROOT, 'sm/index.html'), 'utf8');
-check('sm page hero title', sm.includes('Integrated Ship Management Platform'));
+check('sm page hero title', sm.includes('Ship Planned Maintenance System (PMS)'));
+check('sm page seo title', sm.includes('Next-Gen Ship Planned Maintenance System (PMS)'));
+check('sm page json-ld software', sm.includes('"@type": "SoftwareApplication"') && sm.includes('TVC Marine PMS'));
+check('sm page keywords meta', sm.includes('name="keywords"') && sm.includes('marine pms'));
 check('sm active nav', sm.includes('data-mkt-active="sm"'));
 check('sm launch app CTA', sm.includes('Launch TVC-SM') && sm.includes('href="https://app.thevesselcode.com"'));
 check('sm fleet demo CTA', sm.includes('Request Fleet Demo') && sm.includes('href="/contact-us'));
@@ -277,7 +280,7 @@ if (existsSync(join(ROOT, 'dist/home/index.html'))) {
 }
 if (existsSync(join(ROOT, 'dist/sm/index.html'))) {
     const distSm = readFileSync(join(ROOT, 'dist/sm/index.html'), 'utf8');
-    check('dist/sm/index.html is TVC-SM intro', distSm.includes('Integrated Ship Management Platform'));
+    check('dist/sm/index.html is TVC-SM intro', distSm.includes('Ship Planned Maintenance System (PMS)'));
 }
 check('dist has no pms route', !existsSync(join(ROOT, 'dist/pms/index.html')));
 
