@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-30T11:37:46.808Z",
+    "generatedAt": "2026-09-30T17:17:36.326Z",
     "benchmarkAsOf": "2026-09-30",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 865.5,
-        "deltaPct": -0.97,
+        "deltaPct": 0,
         "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1289.5,
-        "deltaPct": -1.11,
+        "deltaPct": 0,
         "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 740,
-        "deltaPct": -1.46,
+        "deltaPct": 0,
         "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 686.5,
-        "deltaPct": -1.72,
+        "deltaPct": 0,
         "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1390,
-        "deltaPct": -2.8,
+        "deltaPct": 0,
         "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 610,
-        "deltaPct": -4.46,
+        "deltaPct": 0,
         "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 740.5,
-        "deltaPct": -1,
+        "deltaPct": 0,
         "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1388,
-        "deltaPct": 0.11,
+        "deltaPct": 0,
         "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -172,7 +172,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 553.5,
-        "deltaPct": -0.54,
+        "deltaPct": 0,
         "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 3178,
-      "deltaPct": 0,
+      "value": 3113,
+      "deltaPct": -2.05,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-09-29T14:39:19.457Z"
+      "asOf": "2026-09-30T14:40:33.478Z"
     },
     "capesizeTc": {
       "value": 5103,
-      "deltaPct": -4.63,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-09-30T06:43:28.527Z"
     },
     "panamaxTc": {
-      "value": 2402,
-      "deltaPct": 0,
+      "value": 2390,
+      "deltaPct": -0.5,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-09-29T14:26:14.820Z"
+      "asOf": "2026-09-30T14:26:13.935Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,74 @@
   },
   "news": [
     {
+      "title": "BOMESC wins FPSO topsides deal from SBM Offshore",
+      "link": "https://splash247.com/bomesc-wins-fpso-topsides-deal-from-sbm-offshore/",
+      "pubDate": "Wed, 30 Sep 2026 12:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Chinese offshore engineering contractor BOMESC has secured a contract worth between RMB1.6bn and RMB2.1bn ($225m and $295m) from SBM Offshore for work on an FPSO destined for South America. BOMESC said its wholly owned subsidiary Tianjin BOMESC Offshore Engineering had signed the",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2016/11/bomesc.jpg",
+      "en": {
+        "headline": "BOMESC wins FPSO topsides deal from SBM Offshore",
+        "summary": "Chinese offshore engineering contractor BOMESC has secured a contract worth between RMB1.6bn and RMB2.1bn ($225m and $295m) from SBM Offshore for work on an FPSO destined for South America. BOMESC said its wholly owned subsidiary Tianjin BOMESC Offshore Engineering had signed the",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "COSCO Shipping Specialized Carriers piles on 14 heavylift newbuilds",
+      "link": "https://splash247.com/cosco-shipping-specialized-carriers-piles-on-14-more-heavylifters/",
+      "pubDate": "Wed, 30 Sep 2026 12:00:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "COSCO Shipping Specialized Carriers is pressing ahead with another major fleet expansion, lining up 14 more 60,000 dwt multipurpose heavylift ships through a mix of owned newbuildings and long-term bareboat charters. The Shanghai-listed unit of COSCO Shipping Group has approved e",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/COSCO-Shipping-Specialized-Carriers.jpg",
+      "en": {
+        "headline": "COSCO Shipping Specialized Carriers piles on 14 heavylift newbuilds",
+        "summary": "COSCO Shipping Specialized Carriers is pressing ahead with another major fleet expansion, lining up 14 more 60,000 dwt multipurpose heavylift ships through a mix of owned newbuildings and long-term bareboat charters. The Shanghai-listed unit of COSCO Shipping Group has approved e",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Trump Set to Tout Korean Investment in Alaska LNG, Other Projects, Sources Say",
+      "link": "https://gcaptain.com/trump-set-to-tout-korean-investment-in-alaska-lng-other-projects-sources-say/",
+      "pubDate": "Wed, 30 Sep 2026 11:52:46 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "President Donald Trump could unveil plans as soon as Wednesday to tap South Korea's pledged strategic investment package for about $54 billion to build a liquefied natural gas facility in Alaska and several other major US projects, according to two people familiar with the discus",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/04/Liquefaction-Facility.jpeg",
+      "en": {
+        "headline": "Trump Set to Tout Korean Investment in Alaska LNG, Other Projects, Sources Say",
+        "summary": "President Donald Trump could unveil plans as soon as Wednesday to tap South Korea's pledged strategic investment package for about $54 billion to build a liquefied natural gas facility in Alaska and several other major US projects, according to two people familiar with the discus",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "JPMorgan and Goldman See Mideast Oil Flows Near Pre-War Levels",
+      "link": "https://gcaptain.com/jpmorgan-and-goldman-see-mideast-oil-flows-near-pre-war-levels/",
+      "pubDate": "Wed, 30 Sep 2026 11:48:06 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Crude oil flows from the Middle East are returning toward pre-war levels despite continued risks to shipping, according to separate estimates from JPMorgan Chase &#038; Co. and Goldman Sachs Group Inc.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/03/2026-03-03T202420Z_971757570_RC20XJAYJDRL_RTRMADP_3_IRAN-CRISIS-US-OIL-800x533.jpg",
+      "en": {
+        "headline": "JPMorgan and Goldman See Mideast Oil Flows Near Pre-War Levels",
+        "summary": "Crude oil flows from the Middle East are returning toward pre-war levels despite continued risks to shipping, according to separate estimates from JPMorgan Chase &#038; Co. and Goldman Sachs Group Inc.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Erasmus keeps China boxship spree rolling",
       "link": "https://splash247.com/erasmus-keeps-china-boxship-spree-rolling/",
       "pubDate": "Wed, 30 Sep 2026 11:28:00 +0000",
@@ -244,7 +312,7 @@
       "summary": "Athens-based Erasmus Shipinvest has returned to CSSC Huangpu Wenchong for another pair of 1,900 teu containerships, taking its firm programme with the Guangzhou-based builder to eight ships. The John Su-led owner signed the latest contract with the yard and China Shipbuilding Tra",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 5,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/John-Su-Group-Chairman-CEO-Erasmus-Shipinvest-Group.jpg",
       "en": {
         "headline": "Erasmus keeps China boxship spree rolling",
@@ -261,7 +329,7 @@
       "summary": "Japanese shipping giant NYK Line is moving beyond transporting captured carbon into the storage business, agreeing to acquire a 30% stake in Norway’s Trudvang CCS project. NYK has signed a deal with Vår Energi CCS for a 30% interest in Trudvang CCS ANS and the corresponding share",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/KNCC.jpg",
       "en": {
         "headline": "NYK buys into North Sea CO2 storage project",
@@ -278,7 +346,7 @@
       "summary": "Thailand’s Precious Shipping has returned to China’s Taizhou Sanfu Ship Engineering for another four ultramax newbuilds in a deal worth $141.8m. The Khalid Hashim-led owner has signed contracts for four 64,500 dwt bulkers priced at $35.45m each, with deliveries scheduled for Apri",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/11/Khalid-Hashim.jpg",
       "en": {
         "headline": "Precious returns to Taizhou Sanfu with $142m ultramax quartet",
@@ -295,7 +363,7 @@
       "summary": "COSCO Shipping Energy Transportation is putting another RMB1.7bn ($253m) into its LNG investment vehicle as the Chinese shipping giant continues to build out its gas carrier portfolio. The Shanghai- and Hong Kong-listed owner said its board approved the cash injection into Shangh",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/03/Jiangnan-Shipyard-LNG.jpg",
       "en": {
         "headline": "COSCO injects $253m into LNG arm",
@@ -312,7 +380,7 @@
       "summary": "AI is taking over more of the science behind fixing ships, but the art of knowing who and what to believe still rests with people. Willem Vermaat reflects on his time on stage last week at Splash Singapore. Last week I sat on a panel at Splash Singapore, representing Heidelberg M",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/BusinessCards.jpeg",
       "en": {
         "headline": "Why trust still beats technology in chartering",
@@ -329,7 +397,7 @@
       "summary": "The tanker S&#38;P market continues to deliver eye-catching prices. A sale has raised eyebrows among brokers who report a non-eco suezmax selling for $90m — a price difficult to imagine only weeks ago. The deal involves Greek shipping heavyweight George Procopiou’s Dynacom Tanker",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2019/05/Andromeda-suezmax-white-trader-e1759479249866.jpg",
       "en": {
         "headline": "$90m for near-17-year-old non-eco suezmax",
@@ -346,7 +414,7 @@
       "summary": "Middle Eastern crude exports have staged a dramatic recovery in September, with tanker movements through the Strait of Hormuz rebounding while Saudi Arabia simultaneously restarts its alternative Red Sea export route. Updated Kpler data cited by Reuters put crude exports from Sau",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/Yasa-Scorpion-VLCC-Yasa-Holding.jpg",
       "en": {
         "headline": "Gulf crude exports rebound sharply",
@@ -363,45 +431,11 @@
       "summary": "The $4.2bn Hapag-Lloyd takeover of ZIM is not formally dead, but the transaction agreed in February has effectively been sent back to the drawing board after Israeli authorities stopped reviewing the existing structure. Israel’s Government Companies Authority informed ZIM on Tues",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/10/Zim-in-port.jpg",
       "en": {
         "headline": "Israel sends Hapag-Lloyd back to drawing board on ZIM",
         "summary": "The $4.2bn Hapag-Lloyd takeover of ZIM is not formally dead, but the transaction agreed in February has effectively been sent back to the drawing board after Israeli authorities stopped reviewing the existing structure. Israel’s Government Companies Authority informed ZIM on Tues",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "First Somali piracy crew deaths in over a decade",
-      "link": "https://splash247.com/first-somali-piracy-crew-deaths-in-over-a-decade/",
-      "pubDate": "Wed, 30 Sep 2026 06:45:35 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Five seafarers were killed by Somali pirates before Puntland security forces recaptured the hijacked product tanker Honour 25, marking what appear to be the first crew deaths at the hands of Somali pirates in more than a decade. Puntland’s information ministry said three Pakistan",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2015/02/PIRACY_02-2-e1629182513924.jpg",
-      "en": {
-        "headline": "First Somali piracy crew deaths in over a decade",
-        "summary": "Five seafarers were killed by Somali pirates before Puntland security forces recaptured the hijacked product tanker Honour 25, marking what appear to be the first crew deaths at the hands of Somali pirates in more than a decade. Puntland’s information ministry said three Pakistan",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Geneva Dry unveils expanded agenda for 2027 edition",
-      "link": "https://splash247.com/geneva-dry-unveils-expanded-agenda-for-2027-edition/",
-      "pubDate": "Wed, 30 Sep 2026 06:30:00 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Geneva Dry, the world’s premier annual dry bulk shipping conference, has launched marketing for its 2027 edition with an expanded agenda featuring new sessions on bauxite, investment and crewing, alongside a significantly revamped workshop programme. The fourth edition of Geneva ",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 5,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/Geneva-Dry-2026-Minor-Bulks.jpeg",
-      "en": {
-        "headline": "Geneva Dry unveils expanded agenda for 2027 edition",
-        "summary": "Geneva Dry, the world’s premier annual dry bulk shipping conference, has launched marketing for its 2027 edition with an expanded agenda featuring new sessions on bauxite, investment and crewing, alongside a significantly revamped workshop programme. The fourth edition of Geneva ",
         "source": "Splash247"
       }
     },
@@ -414,7 +448,7 @@
       "summary": "McAllister Towing is proud to announce our newest arrival! Welcome tug MARY McALLISTER. As ourcustomer&#8217;s vessels grow larger and services for these behemoths become increasingly demanding, McAllistercontinues to meet their...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 12,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Mary-leaving-Maine-800x600.jpg",
       "en": {
         "headline": "The Mare McAllister: McAllister&#8217;s Latest High-tech Low-Emission Tug Arrives",
@@ -431,7 +465,7 @@
       "summary": "Saronic Technologies has won a U.S. Navy production contract for its 180-foot&#160;Marauder&#160;autonomous surface vessel after completing an at-sea evaluation that put the ship through more than 140 scenarios over eight...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/Saronic-Marauder-MUSV-3.jpg",
       "en": {
         "headline": "Saronic Wins Navy Production Contract for 180-Foot Autonomous Surface Vessel",
@@ -448,7 +482,7 @@
       "summary": "Cheniere Energy has signed a 22-year agreement to supply Brazil’s Petrobras with U.S. liquefied natural gas, adding another long-term customer as the company looks to support further expansion of its...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 16,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/03/DJI_0023_LUCiD.jpg",
       "en": {
         "headline": "Cheniere Signs 22-Year LNG Supply Deal With Petrobras",
@@ -465,45 +499,11 @@
       "summary": "Russia shipped the most crude in a month-and-a-half, while a jump in prices propelled the value of those cargoes close to the highest since the start of the invasion of Ukraine in 2022. But the benefits to the Kremlin are being undermined by its ban on overseas diesel sales.",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 18,
+      "hoursAgo": 24,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-06T095816Z_194114751_RC2PDKASTT4O_RTRMADP_3_RUSSIA-DIESEL-EXPORTS-800x533.jpg",
       "en": {
         "headline": "Russian Crude Exports Boom Blunted by Kremlin’s Diesel Sales Ban",
         "summary": "Russia shipped the most crude in a month-and-a-half, while a jump in prices propelled the value of those cargoes close to the highest since the start of the invasion of Ukraine in 2022. But the benefits to the Kremlin are being undermined by its ban on overseas diesel sales.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Old Hulls, New Money: Why the VLCC Market Has Stopped Counting Years",
-      "link": "https://gcaptain.com/old-hulls-new-money-why-the-vlcc-market-has-stopped-counting-years/",
-      "pubDate": "Tue, 29 Sep 2026 16:40:08 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "For most of shipping history, the valuation equation has been straightforward. A ship leaves the yard, begins ageing and progressively loses value. New steel commands the premium. Older steel trades at a discount.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
-      "en": {
-        "headline": "Old Hulls, New Money: Why the VLCC Market Has Stopped Counting Years",
-        "summary": "For most of shipping history, the valuation equation has been straightforward. A ship leaves the yard, begins ageing and progressively loses value. New steel commands the premium. Older steel trades at a discount.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Trump Denies Offering Iran Sanctions Relief, Tehran Says it is Ready for Talks",
-      "link": "https://gcaptain.com/trump-denies-offering-iran-sanctions-relief-tehran-says-it-is-ready-for-talks/",
-      "pubDate": "Tue, 29 Sep 2026 16:38:24 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "US President Donald Trump said he has offered Iran nothing to end the war, rejecting media reports that cited US officials saying he was willing to ease sanctions and release frozen funds for \"concrete\" steps regarding Iran's nuclear program.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-10T111832Z_327337754_RC29TMATWR3B_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-PLAN.jpg",
-      "en": {
-        "headline": "Trump Denies Offering Iran Sanctions Relief, Tehran Says it is Ready for Talks",
-        "summary": "US President Donald Trump said he has offered Iran nothing to end the war, rejecting media reports that cited US officials saying he was willing to ease sanctions and release frozen funds for \"concrete\" steps regarding Iran's nuclear program.",
         "source": "gCaptain"
       }
     }
