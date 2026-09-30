@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-30T17:17:36.326Z",
+    "generatedAt": "2026-09-30T21:41:42.284Z",
     "benchmarkAsOf": "2026-09-30",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -206,7 +206,7 @@
   "indices": {
     "bdi": {
       "value": 3113,
-      "deltaPct": -2.05,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-09-30T14:40:33.478Z"
@@ -220,7 +220,7 @@
     },
     "panamaxTc": {
       "value": 2390,
-      "deltaPct": -0.5,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-09-30T14:26:13.935Z"
@@ -236,6 +236,159 @@
   },
   "news": [
     {
+      "title": "U.S. Ports Push Nuclear Power, Faster Dredging at Record AAPA Convention",
+      "link": "https://gcaptain.com/u-s-ports-push-nuclear-power-faster-dredging-at-record-aapa-convention/",
+      "pubDate": "Wed, 30 Sep 2026 21:06:56 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The American Association of Port Authorities wrapped up its annual convention in New Orleans on Wednesday after drawing its largest attendance ever, with more than 900 participants representing over 90 ports.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/Lanpher_251017_0024-1-1024x712-1.jpg",
+      "en": {
+        "headline": "U.S. Ports Push Nuclear Power, Faster Dredging at Record AAPA Convention",
+        "summary": "The American Association of Port Authorities wrapped up its annual convention in New Orleans on Wednesday after drawing its largest attendance ever, with more than 900 participants representing over 90 ports.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Saronic Starts Construction on $3 Billion Texas Shipyard",
+      "link": "https://gcaptain.com/saronic-starts-construction-on-3-billion-texas-shipyard/",
+      "pubDate": "Wed, 30 Sep 2026 20:46:15 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Saronic Technologies has broken ground on its planned $3 billion Port Alpha shipyard in Brownsville, moving one of the largest new U.S. shipbuilding projects in decades from the planning stage...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/ATT000773.jpeg",
+      "en": {
+        "headline": "Saronic Starts Construction on $3 Billion Texas Shipyard",
+        "summary": "Saronic Technologies has broken ground on its planned $3 billion Port Alpha shipyard in Brownsville, moving one of the largest new U.S. shipbuilding projects in decades from the planning stage...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "How maritime influencers are transforming brand storytelling at sea",
+      "link": "https://splash247.com/how-maritime-influencers-are-transforming-brand-storytelling-at-sea/",
+      "pubDate": "Wed, 30 Sep 2026 20:38:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Chloe Buchanan, head of PR &#38; social media at The MTM Agency, writes for Splash today. When we talk about influencers, maritime probably isn’t the first industry that springs to mind. But perhaps it should be. Influencer marketing has moved a long way beyond its beauty, fashio",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/03/Anglo-Eastern-crew.jpg",
+      "en": {
+        "headline": "How maritime influencers are transforming brand storytelling at sea",
+        "summary": "Chloe Buchanan, head of PR &#38; social media at The MTM Agency, writes for Splash today. When we talk about influencers, maritime probably isn’t the first industry that springs to mind. But perhaps it should be. Influencer marketing has moved a long way beyond its beauty, fashio",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "China Merchants locks in $2.8bn Simandou VLOC contract",
+      "link": "https://splash247.com/china-merchants-locks-in-2-8bn-simandou-vloc-contract/",
+      "pubDate": "Wed, 30 Sep 2026 20:33:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "China Merchants Energy Shipping has locked in a major piece of the emerging Simandou iron ore trade, signing a 25-year transport agreement worth at least $2.8bn. Shanghai-listed CMES said that its dry bulk arm, Hong Kong Ming Wah, has signed the long-term transportation agreement",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/CMES-Valemax.jpg",
+      "en": {
+        "headline": "China Merchants locks in $2.8bn Simandou VLOC contract",
+        "summary": "China Merchants Energy Shipping has locked in a major piece of the emerging Simandou iron ore trade, signing a 25-year transport agreement worth at least $2.8bn. Shanghai-listed CMES said that its dry bulk arm, Hong Kong Ming Wah, has signed the long-term transportation agreement",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Chartering’s AI revolution brings competitive edge back to people",
+      "link": "https://splash247.com/charterings-ai-revolution-brings-competitive-edge-back-to-people/",
+      "pubDate": "Wed, 30 Sep 2026 19:57:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "The paradox confronting modern chartering desks is becoming increasingly clear: the more data and technology everybody gets, the harder it becomes to differentiate. That was one of the central themes to emerge from the Chartering Spotlight at last week’s Splash Singapore, where c",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Splash-Singapore-Chartering.jpg",
+      "en": {
+        "headline": "Chartering’s AI revolution brings competitive edge back to people",
+        "summary": "The paradox confronting modern chartering desks is becoming increasingly clear: the more data and technology everybody gets, the harder it becomes to differentiate. That was one of the central themes to emerge from the Chartering Spotlight at last week’s Splash Singapore, where c",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "IWS orders four CSOVs in offshore wind expansion",
+      "link": "https://splash247.com/iws-orders-four-csovs-in-offshore-wind-expansion/",
+      "pubDate": "Wed, 30 Sep 2026 19:45:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Integrated Wind Solutions is expanding its offshore wind vessel fleet with four new Skywalker-class commissioning service operation vessels in a €260m ($295m) order at China’s Nantong Rainbow Offshore &#38; Engineering Equipment. The Oslo-listed company said its IWS Fleet subsidi",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/IWS-Skywalker.jpg",
+      "en": {
+        "headline": "IWS orders four CSOVs in offshore wind expansion",
+        "summary": "Integrated Wind Solutions is expanding its offshore wind vessel fleet with four new Skywalker-class commissioning service operation vessels in a €260m ($295m) order at China’s Nantong Rainbow Offshore &#38; Engineering Equipment. The Oslo-listed company said its IWS Fleet subsidi",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Russia Sends Nuclear Warning to NATO as Tensions Rise in the Baltic",
+      "link": "https://gcaptain.com/russia-sends-nuclear-warning-to-nato-as-tensions-rise-in-the-baltic/",
+      "pubDate": "Wed, 30 Sep 2026 17:37:18 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Russia has warned NATO it would be ready to resort to nuclear weapons if the Western alliance attempted to cut off Kaliningrad, a Russian exclave that borders the Baltic Sea.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-30T093806Z_969578847_RC2YAKARDATD_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-EUROPE-800x522.jpg",
+      "en": {
+        "headline": "Russia Sends Nuclear Warning to NATO as Tensions Rise in the Baltic",
+        "summary": "Russia has warned NATO it would be ready to resort to nuclear weapons if the Western alliance attempted to cut off Kaliningrad, a Russian exclave that borders the Baltic Sea.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Ships Face Fuel Delays at China’s Zhoushan on Supply Squeeze",
+      "link": "https://gcaptain.com/ships-face-fuel-delays-at-chinas-zhoushan-on-supply-squeeze/",
+      "pubDate": "Wed, 30 Sep 2026 17:30:39 +0000",
+      "source": "gCaptain",
+      "category": "Bunker",
+      "summary": "Ships are being forced to wait significantly longer to refuel at China’s top bunkering hub of Zhoushan, where the fallout from the US-Iran war has tightened supplies and pushed up prices.",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/06/2025-06-27T071026Z_2006999045_RC2MJY9986XR_RTRMADP_3_CHINA-IRAN-OIL-800x533.jpg",
+      "en": {
+        "headline": "Ships Face Fuel Delays at China’s Zhoushan on Supply Squeeze",
+        "summary": "Ships are being forced to wait significantly longer to refuel at China’s top bunkering hub of Zhoushan, where the fallout from the US-Iran war has tightened supplies and pushed up prices.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Three More Tanker Attacks Surface in Delayed Hormuz Reports",
+      "link": "https://gcaptain.com/three-more-tanker-attacks-surface-in-delayed-hormuz-reports/",
+      "pubDate": "Wed, 30 Sep 2026 15:36:09 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Three more attacks on tankers in the Strait of Hormuz have surfaced through delayed reports from UK Maritime Trade Operations, adding to growing uncertainty over how quickly incidents in the...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
+      "en": {
+        "headline": "Three More Tanker Attacks Surface in Delayed Hormuz Reports",
+        "summary": "Three more attacks on tankers in the Strait of Hormuz have surfaced through delayed reports from UK Maritime Trade Operations, adding to growing uncertainty over how quickly incidents in the...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "BOMESC wins FPSO topsides deal from SBM Offshore",
       "link": "https://splash247.com/bomesc-wins-fpso-topsides-deal-from-sbm-offshore/",
       "pubDate": "Wed, 30 Sep 2026 12:30:00 +0000",
@@ -244,7 +397,7 @@
       "summary": "Chinese offshore engineering contractor BOMESC has secured a contract worth between RMB1.6bn and RMB2.1bn ($225m and $295m) from SBM Offshore for work on an FPSO destined for South America. BOMESC said its wholly owned subsidiary Tianjin BOMESC Offshore Engineering had signed the",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2016/11/bomesc.jpg",
       "en": {
         "headline": "BOMESC wins FPSO topsides deal from SBM Offshore",
@@ -261,7 +414,7 @@
       "summary": "COSCO Shipping Specialized Carriers is pressing ahead with another major fleet expansion, lining up 14 more 60,000 dwt multipurpose heavylift ships through a mix of owned newbuildings and long-term bareboat charters. The Shanghai-listed unit of COSCO Shipping Group has approved e",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 5,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/COSCO-Shipping-Specialized-Carriers.jpg",
       "en": {
         "headline": "COSCO Shipping Specialized Carriers piles on 14 heavylift newbuilds",
@@ -278,7 +431,7 @@
       "summary": "President Donald Trump could unveil plans as soon as Wednesday to tap South Korea's pledged strategic investment package for about $54 billion to build a liquefied natural gas facility in Alaska and several other major US projects, according to two people familiar with the discus",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/04/Liquefaction-Facility.jpeg",
       "en": {
         "headline": "Trump Set to Tout Korean Investment in Alaska LNG, Other Projects, Sources Say",
@@ -295,7 +448,7 @@
       "summary": "Crude oil flows from the Middle East are returning toward pre-war levels despite continued risks to shipping, according to separate estimates from JPMorgan Chase &#038; Co. and Goldman Sachs Group Inc.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/03/2026-03-03T202420Z_971757570_RC20XJAYJDRL_RTRMADP_3_IRAN-CRISIS-US-OIL-800x533.jpg",
       "en": {
         "headline": "JPMorgan and Goldman See Mideast Oil Flows Near Pre-War Levels",
@@ -312,7 +465,7 @@
       "summary": "Athens-based Erasmus Shipinvest has returned to CSSC Huangpu Wenchong for another pair of 1,900 teu containerships, taking its firm programme with the Guangzhou-based builder to eight ships. The John Su-led owner signed the latest contract with the yard and China Shipbuilding Tra",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/John-Su-Group-Chairman-CEO-Erasmus-Shipinvest-Group.jpg",
       "en": {
         "headline": "Erasmus keeps China boxship spree rolling",
@@ -329,7 +482,7 @@
       "summary": "Japanese shipping giant NYK Line is moving beyond transporting captured carbon into the storage business, agreeing to acquire a 30% stake in Norway’s Trudvang CCS project. NYK has signed a deal with Vår Energi CCS for a 30% interest in Trudvang CCS ANS and the corresponding share",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/KNCC.jpg",
       "en": {
         "headline": "NYK buys into North Sea CO2 storage project",
@@ -346,165 +499,12 @@
       "summary": "Thailand’s Precious Shipping has returned to China’s Taizhou Sanfu Ship Engineering for another four ultramax newbuilds in a deal worth $141.8m. The Khalid Hashim-led owner has signed contracts for four 64,500 dwt bulkers priced at $35.45m each, with deliveries scheduled for Apri",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/11/Khalid-Hashim.jpg",
       "en": {
         "headline": "Precious returns to Taizhou Sanfu with $142m ultramax quartet",
         "summary": "Thailand’s Precious Shipping has returned to China’s Taizhou Sanfu Ship Engineering for another four ultramax newbuilds in a deal worth $141.8m. The Khalid Hashim-led owner has signed contracts for four 64,500 dwt bulkers priced at $35.45m each, with deliveries scheduled for Apri",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "COSCO injects $253m into LNG arm",
-      "link": "https://splash247.com/cosco-injects-253m-into-lng-arm/",
-      "pubDate": "Wed, 30 Sep 2026 10:13:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "COSCO Shipping Energy Transportation is putting another RMB1.7bn ($253m) into its LNG investment vehicle as the Chinese shipping giant continues to build out its gas carrier portfolio. The Shanghai- and Hong Kong-listed owner said its board approved the cash injection into Shangh",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/03/Jiangnan-Shipyard-LNG.jpg",
-      "en": {
-        "headline": "COSCO injects $253m into LNG arm",
-        "summary": "COSCO Shipping Energy Transportation is putting another RMB1.7bn ($253m) into its LNG investment vehicle as the Chinese shipping giant continues to build out its gas carrier portfolio. The Shanghai- and Hong Kong-listed owner said its board approved the cash injection into Shangh",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Why trust still beats technology in chartering",
-      "link": "https://splash247.com/why-trust-still-beats-technology-in-chartering/",
-      "pubDate": "Wed, 30 Sep 2026 09:31:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "AI is taking over more of the science behind fixing ships, but the art of knowing who and what to believe still rests with people. Willem Vermaat reflects on his time on stage last week at Splash Singapore. Last week I sat on a panel at Splash Singapore, representing Heidelberg M",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/BusinessCards.jpeg",
-      "en": {
-        "headline": "Why trust still beats technology in chartering",
-        "summary": "AI is taking over more of the science behind fixing ships, but the art of knowing who and what to believe still rests with people. Willem Vermaat reflects on his time on stage last week at Splash Singapore. Last week I sat on a panel at Splash Singapore, representing Heidelberg M",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "$90m for near-17-year-old non-eco suezmax",
-      "link": "https://splash247.com/90m-for-near-17-year-old-non-eco-suezmax/",
-      "pubDate": "Wed, 30 Sep 2026 09:28:42 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "The tanker S&#38;P market continues to deliver eye-catching prices. A sale has raised eyebrows among brokers who report a non-eco suezmax selling for $90m — a price difficult to imagine only weeks ago. The deal involves Greek shipping heavyweight George Procopiou’s Dynacom Tanker",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2019/05/Andromeda-suezmax-white-trader-e1759479249866.jpg",
-      "en": {
-        "headline": "$90m for near-17-year-old non-eco suezmax",
-        "summary": "The tanker S&#38;P market continues to deliver eye-catching prices. A sale has raised eyebrows among brokers who report a non-eco suezmax selling for $90m — a price difficult to imagine only weeks ago. The deal involves Greek shipping heavyweight George Procopiou’s Dynacom Tanker",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Gulf crude exports rebound sharply",
-      "link": "https://splash247.com/gulf-crude-exports-rebound-sharply/",
-      "pubDate": "Wed, 30 Sep 2026 09:22:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Middle Eastern crude exports have staged a dramatic recovery in September, with tanker movements through the Strait of Hormuz rebounding while Saudi Arabia simultaneously restarts its alternative Red Sea export route. Updated Kpler data cited by Reuters put crude exports from Sau",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/Yasa-Scorpion-VLCC-Yasa-Holding.jpg",
-      "en": {
-        "headline": "Gulf crude exports rebound sharply",
-        "summary": "Middle Eastern crude exports have staged a dramatic recovery in September, with tanker movements through the Strait of Hormuz rebounding while Saudi Arabia simultaneously restarts its alternative Red Sea export route. Updated Kpler data cited by Reuters put crude exports from Sau",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Israel sends Hapag-Lloyd back to drawing board on ZIM",
-      "link": "https://splash247.com/israel-sends-hapag-lloyd-back-to-drawing-board-on-zim/",
-      "pubDate": "Wed, 30 Sep 2026 07:00:51 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "The $4.2bn Hapag-Lloyd takeover of ZIM is not formally dead, but the transaction agreed in February has effectively been sent back to the drawing board after Israeli authorities stopped reviewing the existing structure. Israel’s Government Companies Authority informed ZIM on Tues",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 10,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/10/Zim-in-port.jpg",
-      "en": {
-        "headline": "Israel sends Hapag-Lloyd back to drawing board on ZIM",
-        "summary": "The $4.2bn Hapag-Lloyd takeover of ZIM is not formally dead, but the transaction agreed in February has effectively been sent back to the drawing board after Israeli authorities stopped reviewing the existing structure. Israel’s Government Companies Authority informed ZIM on Tues",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "The Mare McAllister: McAllister&#8217;s Latest High-tech Low-Emission Tug Arrives",
-      "link": "https://gcaptain.com/the-mare-mcallister-mcallisters-latest-high-tech-low-emission-tug-arrives/",
-      "pubDate": "Tue, 29 Sep 2026 23:15:19 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "McAllister Towing is proud to announce our newest arrival! Welcome tug MARY McALLISTER. As ourcustomer&#8217;s vessels grow larger and services for these behemoths become increasingly demanding, McAllistercontinues to meet their...",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Mary-leaving-Maine-800x600.jpg",
-      "en": {
-        "headline": "The Mare McAllister: McAllister&#8217;s Latest High-tech Low-Emission Tug Arrives",
-        "summary": "McAllister Towing is proud to announce our newest arrival! Welcome tug MARY McALLISTER. As ourcustomer&#8217;s vessels grow larger and services for these behemoths become increasingly demanding, McAllistercontinues to meet their...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Saronic Wins Navy Production Contract for 180-Foot Autonomous Surface Vessel",
-      "link": "https://gcaptain.com/saronic-wins-navy-production-contract-for-180-foot-autonomous-surface-vessel/",
-      "pubDate": "Tue, 29 Sep 2026 22:20:46 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Saronic Technologies has won a U.S. Navy production contract for its 180-foot&#160;Marauder&#160;autonomous surface vessel after completing an at-sea evaluation that put the ship through more than 140 scenarios over eight...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/Saronic-Marauder-MUSV-3.jpg",
-      "en": {
-        "headline": "Saronic Wins Navy Production Contract for 180-Foot Autonomous Surface Vessel",
-        "summary": "Saronic Technologies has won a U.S. Navy production contract for its 180-foot&#160;Marauder&#160;autonomous surface vessel after completing an at-sea evaluation that put the ship through more than 140 scenarios over eight...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Cheniere Signs 22-Year LNG Supply Deal With Petrobras",
-      "link": "https://gcaptain.com/cheniere-signs-22-year-lng-supply-deal-with-petrobras/",
-      "pubDate": "Tue, 29 Sep 2026 19:32:26 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Cheniere Energy has signed a 22-year agreement to supply Brazil’s Petrobras with U.S. liquefied natural gas, adding another long-term customer as the company looks to support further expansion of its...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 21,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/03/DJI_0023_LUCiD.jpg",
-      "en": {
-        "headline": "Cheniere Signs 22-Year LNG Supply Deal With Petrobras",
-        "summary": "Cheniere Energy has signed a 22-year agreement to supply Brazil’s Petrobras with U.S. liquefied natural gas, adding another long-term customer as the company looks to support further expansion of its...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Russian Crude Exports Boom Blunted by Kremlin’s Diesel Sales Ban",
-      "link": "https://gcaptain.com/russian-crude-exports-boom-blunted-by-kremlins-diesel-sales-ban/",
-      "pubDate": "Tue, 29 Sep 2026 16:41:11 +0000",
-      "source": "gCaptain",
-      "category": "S&P",
-      "summary": "Russia shipped the most crude in a month-and-a-half, while a jump in prices propelled the value of those cargoes close to the highest since the start of the invasion of Ukraine in 2022. But the benefits to the Kremlin are being undermined by its ban on overseas diesel sales.",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 24,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-06T095816Z_194114751_RC2PDKASTT4O_RTRMADP_3_RUSSIA-DIESEL-EXPORTS-800x533.jpg",
-      "en": {
-        "headline": "Russian Crude Exports Boom Blunted by Kremlin’s Diesel Sales Ban",
-        "summary": "Russia shipped the most crude in a month-and-a-half, while a jump in prices propelled the value of those cargoes close to the highest since the start of the invasion of Ukraine in 2022. But the benefits to the Kremlin are being undermined by its ban on overseas diesel sales.",
-        "source": "gCaptain"
       }
     }
   ]
