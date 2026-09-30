@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-09-30T03:08:04.766Z",
-    "benchmarkAsOf": "2026-09-29",
+    "generatedAt": "2026-09-30T11:37:46.808Z",
+    "benchmarkAsOf": "2026-09-30",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-09-29",
-    "updatedLabelKo": "2026-09-29 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-09-30",
+    "updatedLabelKo": "2026-09-30 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 874,
-        "deltaPct": 0,
-        "asOf": "2026-09-28T17:00:00.000Z",
+        "priceUsdMt": 865.5,
+        "deltaPct": -0.97,
+        "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1304,
-        "deltaPct": 0,
-        "asOf": "2026-09-28T17:00:00.000Z",
+        "priceUsdMt": 1289.5,
+        "deltaPct": -1.11,
+        "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 751,
-        "deltaPct": 0,
-        "asOf": "2026-09-28T17:00:00.000Z",
+        "priceUsdMt": 740,
+        "deltaPct": -1.46,
+        "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 698.5,
-        "deltaPct": 0,
-        "asOf": "2026-09-28T17:00:00.000Z",
+        "priceUsdMt": 686.5,
+        "deltaPct": -1.72,
+        "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1430,
-        "deltaPct": 0,
-        "asOf": "2026-09-28T17:00:00.000Z",
+        "priceUsdMt": 1390,
+        "deltaPct": -2.8,
+        "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 638.5,
-        "deltaPct": 0,
-        "asOf": "2026-09-28T17:00:00.000Z",
+        "priceUsdMt": 610,
+        "deltaPct": -4.46,
+        "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 748,
-        "deltaPct": 0,
-        "asOf": "2026-09-28T17:00:00.000Z",
+        "priceUsdMt": 740.5,
+        "deltaPct": -1,
+        "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1386.5,
-        "deltaPct": 0,
-        "asOf": "2026-09-28T17:00:00.000Z",
+        "priceUsdMt": 1388,
+        "deltaPct": 0.11,
+        "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -171,9 +171,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 556.5,
-        "deltaPct": 0,
-        "asOf": "2026-09-28T17:00:00.000Z",
+        "priceUsdMt": 553.5,
+        "deltaPct": -0.54,
+        "asOf": "2026-09-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -184,7 +184,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 970,
-        "deltaPct": 2.11,
+        "deltaPct": 0,
         "asOf": "2026-09-29T22:41:47.506Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 840,
-        "deltaPct": 1.2,
+        "deltaPct": 0,
         "asOf": "2026-09-29T22:41:47.482Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -212,11 +212,11 @@
       "asOf": "2026-09-29T14:39:19.457Z"
     },
     "capesizeTc": {
-      "value": 5351,
-      "deltaPct": 0,
+      "value": 5103,
+      "deltaPct": -4.63,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-09-29T06:43:31.638Z"
+      "asOf": "2026-09-30T06:43:28.527Z"
     },
     "panamaxTc": {
       "value": 2402,
@@ -236,6 +236,176 @@
   },
   "news": [
     {
+      "title": "Erasmus keeps China boxship spree rolling",
+      "link": "https://splash247.com/erasmus-keeps-china-boxship-spree-rolling/",
+      "pubDate": "Wed, 30 Sep 2026 11:28:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Athens-based Erasmus Shipinvest has returned to CSSC Huangpu Wenchong for another pair of 1,900 teu containerships, taking its firm programme with the Guangzhou-based builder to eight ships. The John Su-led owner signed the latest contract with the yard and China Shipbuilding Tra",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/John-Su-Group-Chairman-CEO-Erasmus-Shipinvest-Group.jpg",
+      "en": {
+        "headline": "Erasmus keeps China boxship spree rolling",
+        "summary": "Athens-based Erasmus Shipinvest has returned to CSSC Huangpu Wenchong for another pair of 1,900 teu containerships, taking its firm programme with the Guangzhou-based builder to eight ships. The John Su-led owner signed the latest contract with the yard and China Shipbuilding Tra",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "NYK buys into North Sea CO2 storage project",
+      "link": "https://splash247.com/nyk-buys-into-north-sea-co2-storage-project/",
+      "pubDate": "Wed, 30 Sep 2026 10:40:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Japanese shipping giant NYK Line is moving beyond transporting captured carbon into the storage business, agreeing to acquire a 30% stake in Norway’s Trudvang CCS project. NYK has signed a deal with Vår Energi CCS for a 30% interest in Trudvang CCS ANS and the corresponding share",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/KNCC.jpg",
+      "en": {
+        "headline": "NYK buys into North Sea CO2 storage project",
+        "summary": "Japanese shipping giant NYK Line is moving beyond transporting captured carbon into the storage business, agreeing to acquire a 30% stake in Norway’s Trudvang CCS project. NYK has signed a deal with Vår Energi CCS for a 30% interest in Trudvang CCS ANS and the corresponding share",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Precious returns to Taizhou Sanfu with $142m ultramax quartet",
+      "link": "https://splash247.com/precious-returns-to-taizhou-sanfu-with-142m-ultramax-quartet/",
+      "pubDate": "Wed, 30 Sep 2026 10:29:16 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Thailand’s Precious Shipping has returned to China’s Taizhou Sanfu Ship Engineering for another four ultramax newbuilds in a deal worth $141.8m. The Khalid Hashim-led owner has signed contracts for four 64,500 dwt bulkers priced at $35.45m each, with deliveries scheduled for Apri",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/11/Khalid-Hashim.jpg",
+      "en": {
+        "headline": "Precious returns to Taizhou Sanfu with $142m ultramax quartet",
+        "summary": "Thailand’s Precious Shipping has returned to China’s Taizhou Sanfu Ship Engineering for another four ultramax newbuilds in a deal worth $141.8m. The Khalid Hashim-led owner has signed contracts for four 64,500 dwt bulkers priced at $35.45m each, with deliveries scheduled for Apri",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "COSCO injects $253m into LNG arm",
+      "link": "https://splash247.com/cosco-injects-253m-into-lng-arm/",
+      "pubDate": "Wed, 30 Sep 2026 10:13:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "COSCO Shipping Energy Transportation is putting another RMB1.7bn ($253m) into its LNG investment vehicle as the Chinese shipping giant continues to build out its gas carrier portfolio. The Shanghai- and Hong Kong-listed owner said its board approved the cash injection into Shangh",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/03/Jiangnan-Shipyard-LNG.jpg",
+      "en": {
+        "headline": "COSCO injects $253m into LNG arm",
+        "summary": "COSCO Shipping Energy Transportation is putting another RMB1.7bn ($253m) into its LNG investment vehicle as the Chinese shipping giant continues to build out its gas carrier portfolio. The Shanghai- and Hong Kong-listed owner said its board approved the cash injection into Shangh",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Why trust still beats technology in chartering",
+      "link": "https://splash247.com/why-trust-still-beats-technology-in-chartering/",
+      "pubDate": "Wed, 30 Sep 2026 09:31:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "AI is taking over more of the science behind fixing ships, but the art of knowing who and what to believe still rests with people. Willem Vermaat reflects on his time on stage last week at Splash Singapore. Last week I sat on a panel at Splash Singapore, representing Heidelberg M",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/BusinessCards.jpeg",
+      "en": {
+        "headline": "Why trust still beats technology in chartering",
+        "summary": "AI is taking over more of the science behind fixing ships, but the art of knowing who and what to believe still rests with people. Willem Vermaat reflects on his time on stage last week at Splash Singapore. Last week I sat on a panel at Splash Singapore, representing Heidelberg M",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "$90m for near-17-year-old non-eco suezmax",
+      "link": "https://splash247.com/90m-for-near-17-year-old-non-eco-suezmax/",
+      "pubDate": "Wed, 30 Sep 2026 09:28:42 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "The tanker S&#38;P market continues to deliver eye-catching prices. A sale has raised eyebrows among brokers who report a non-eco suezmax selling for $90m — a price difficult to imagine only weeks ago. The deal involves Greek shipping heavyweight George Procopiou’s Dynacom Tanker",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2019/05/Andromeda-suezmax-white-trader-e1759479249866.jpg",
+      "en": {
+        "headline": "$90m for near-17-year-old non-eco suezmax",
+        "summary": "The tanker S&#38;P market continues to deliver eye-catching prices. A sale has raised eyebrows among brokers who report a non-eco suezmax selling for $90m — a price difficult to imagine only weeks ago. The deal involves Greek shipping heavyweight George Procopiou’s Dynacom Tanker",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Gulf crude exports rebound sharply",
+      "link": "https://splash247.com/gulf-crude-exports-rebound-sharply/",
+      "pubDate": "Wed, 30 Sep 2026 09:22:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Middle Eastern crude exports have staged a dramatic recovery in September, with tanker movements through the Strait of Hormuz rebounding while Saudi Arabia simultaneously restarts its alternative Red Sea export route. Updated Kpler data cited by Reuters put crude exports from Sau",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/Yasa-Scorpion-VLCC-Yasa-Holding.jpg",
+      "en": {
+        "headline": "Gulf crude exports rebound sharply",
+        "summary": "Middle Eastern crude exports have staged a dramatic recovery in September, with tanker movements through the Strait of Hormuz rebounding while Saudi Arabia simultaneously restarts its alternative Red Sea export route. Updated Kpler data cited by Reuters put crude exports from Sau",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Israel sends Hapag-Lloyd back to drawing board on ZIM",
+      "link": "https://splash247.com/israel-sends-hapag-lloyd-back-to-drawing-board-on-zim/",
+      "pubDate": "Wed, 30 Sep 2026 07:00:51 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "The $4.2bn Hapag-Lloyd takeover of ZIM is not formally dead, but the transaction agreed in February has effectively been sent back to the drawing board after Israeli authorities stopped reviewing the existing structure. Israel’s Government Companies Authority informed ZIM on Tues",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/10/Zim-in-port.jpg",
+      "en": {
+        "headline": "Israel sends Hapag-Lloyd back to drawing board on ZIM",
+        "summary": "The $4.2bn Hapag-Lloyd takeover of ZIM is not formally dead, but the transaction agreed in February has effectively been sent back to the drawing board after Israeli authorities stopped reviewing the existing structure. Israel’s Government Companies Authority informed ZIM on Tues",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "First Somali piracy crew deaths in over a decade",
+      "link": "https://splash247.com/first-somali-piracy-crew-deaths-in-over-a-decade/",
+      "pubDate": "Wed, 30 Sep 2026 06:45:35 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Five seafarers were killed by Somali pirates before Puntland security forces recaptured the hijacked product tanker Honour 25, marking what appear to be the first crew deaths at the hands of Somali pirates in more than a decade. Puntland’s information ministry said three Pakistan",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2015/02/PIRACY_02-2-e1629182513924.jpg",
+      "en": {
+        "headline": "First Somali piracy crew deaths in over a decade",
+        "summary": "Five seafarers were killed by Somali pirates before Puntland security forces recaptured the hijacked product tanker Honour 25, marking what appear to be the first crew deaths at the hands of Somali pirates in more than a decade. Puntland’s information ministry said three Pakistan",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Geneva Dry unveils expanded agenda for 2027 edition",
+      "link": "https://splash247.com/geneva-dry-unveils-expanded-agenda-for-2027-edition/",
+      "pubDate": "Wed, 30 Sep 2026 06:30:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Geneva Dry, the world’s premier annual dry bulk shipping conference, has launched marketing for its 2027 edition with an expanded agenda featuring new sessions on bauxite, investment and crewing, alongside a significantly revamped workshop programme. The fourth edition of Geneva ",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/Geneva-Dry-2026-Minor-Bulks.jpeg",
+      "en": {
+        "headline": "Geneva Dry unveils expanded agenda for 2027 edition",
+        "summary": "Geneva Dry, the world’s premier annual dry bulk shipping conference, has launched marketing for its 2027 edition with an expanded agenda featuring new sessions on bauxite, investment and crewing, alongside a significantly revamped workshop programme. The fourth edition of Geneva ",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "The Mare McAllister: McAllister&#8217;s Latest High-tech Low-Emission Tug Arrives",
       "link": "https://gcaptain.com/the-mare-mcallister-mcallisters-latest-high-tech-low-emission-tug-arrives/",
       "pubDate": "Tue, 29 Sep 2026 23:15:19 +0000",
@@ -244,7 +414,7 @@
       "summary": "McAllister Towing is proud to announce our newest arrival! Welcome tug MARY McALLISTER. As ourcustomer&#8217;s vessels grow larger and services for these behemoths become increasingly demanding, McAllistercontinues to meet their...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 3,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/Mary-leaving-Maine-800x600.jpg",
       "en": {
         "headline": "The Mare McAllister: McAllister&#8217;s Latest High-tech Low-Emission Tug Arrives",
@@ -261,46 +431,12 @@
       "summary": "Saronic Technologies has won a U.S. Navy production contract for its 180-foot&#160;Marauder&#160;autonomous surface vessel after completing an at-sea evaluation that put the ship through more than 140 scenarios over eight...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/Saronic-Marauder-MUSV-3.jpg",
       "en": {
         "headline": "Saronic Wins Navy Production Contract for 180-Foot Autonomous Surface Vessel",
         "summary": "Saronic Technologies has won a U.S. Navy production contract for its 180-foot&#160;Marauder&#160;autonomous surface vessel after completing an at-sea evaluation that put the ship through more than 140 scenarios over eight...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "AI risks hollowing out shipping’s next generation of expertise",
-      "link": "https://splash247.com/ai-risks-hollowing-out-shippings-next-generation-of-expertise/",
-      "pubDate": "Tue, 29 Sep 2026 20:08:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Shipping’s AI debate is moving rapidly beyond technology towards the far more difficult question of what happens to the people expected to work alongside it. That was the central theme running through the AI, Digitalisation and the Maritime Workforce panel at last week’s Splash S",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Splash-Singapore-2026-AI.jpg",
-      "en": {
-        "headline": "AI risks hollowing out shipping’s next generation of expertise",
-        "summary": "Shipping’s AI debate is moving rapidly beyond technology towards the far more difficult question of what happens to the people expected to work alongside it. That was the central theme running through the AI, Digitalisation and the Maritime Workforce panel at last week’s Splash S",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Geneva Dry unveils expanded agenda for 2027 edition",
-      "link": "https://splash247.com/geneva-dry-unveils-expanded-agenda-for-2027-edition/",
-      "pubDate": "Tue, 29 Sep 2026 20:00:00 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Geneva Dry, the world’s premier annual dry bulk shipping conference, has launched marketing for its 2027 edition with an expanded agenda featuring new sessions on bauxite, investment and crewing, alongside a significantly revamped workshop programme. The fourth edition of Geneva ",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/Geneva-Dry-2026-Minor-Bulks.jpeg",
-      "en": {
-        "headline": "Geneva Dry unveils expanded agenda for 2027 edition",
-        "summary": "Geneva Dry, the world’s premier annual dry bulk shipping conference, has launched marketing for its 2027 edition with an expanded agenda featuring new sessions on bauxite, investment and crewing, alongside a significantly revamped workshop programme. The fourth edition of Geneva ",
-        "source": "Splash247"
       }
     },
     {
@@ -312,7 +448,7 @@
       "summary": "Cheniere Energy has signed a 22-year agreement to supply Brazil’s Petrobras with U.S. liquefied natural gas, adding another long-term customer as the company looks to support further expansion of its...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/03/DJI_0023_LUCiD.jpg",
       "en": {
         "headline": "Cheniere Signs 22-Year LNG Supply Deal With Petrobras",
@@ -329,7 +465,7 @@
       "summary": "Russia shipped the most crude in a month-and-a-half, while a jump in prices propelled the value of those cargoes close to the highest since the start of the invasion of Ukraine in 2022. But the benefits to the Kremlin are being undermined by its ban on overseas diesel sales.",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-06T095816Z_194114751_RC2PDKASTT4O_RTRMADP_3_RUSSIA-DIESEL-EXPORTS-800x533.jpg",
       "en": {
         "headline": "Russian Crude Exports Boom Blunted by Kremlin’s Diesel Sales Ban",
@@ -346,7 +482,7 @@
       "summary": "For most of shipping history, the valuation equation has been straightforward. A ship leaves the yard, begins ageing and progressively loses value. New steel commands the premium. Older steel trades at a discount.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
       "en": {
         "headline": "Old Hulls, New Money: Why the VLCC Market Has Stopped Counting Years",
@@ -363,148 +499,12 @@
       "summary": "US President Donald Trump said he has offered Iran nothing to end the war, rejecting media reports that cited US officials saying he was willing to ease sanctions and release frozen funds for \"concrete\" steps regarding Iran's nuclear program.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-10T111832Z_327337754_RC29TMATWR3B_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-PLAN.jpg",
       "en": {
         "headline": "Trump Denies Offering Iran Sanctions Relief, Tehran Says it is Ready for Talks",
         "summary": "US President Donald Trump said he has offered Iran nothing to end the war, rejecting media reports that cited US officials saying he was willing to ease sanctions and release frozen funds for \"concrete\" steps regarding Iran's nuclear program.",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Maersk Expands Fuel Options With First U.S. Ethanol Bunkering",
-      "link": "https://gcaptain.com/maersk-expands-fuel-options-with-first-u-s-ethanol-bunkering/",
-      "pubDate": "Tue, 29 Sep 2026 16:19:26 +0000",
-      "source": "gCaptain",
-      "category": "Bunker",
-      "summary": "A.P. Moller-Maersk has bunkered one of its dual-fuel containerships with 100% U.S.-produced corn ethanol, marking what the company says is the first ship-to-ship commercial ethanol bunkering of a deep-sea container...",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/tangier-maersk-at-the-port-of-mobile_1024x576.jpg.avif",
-      "en": {
-        "headline": "Maersk Expands Fuel Options With First U.S. Ethanol Bunkering",
-        "summary": "A.P. Moller-Maersk has bunkered one of its dual-fuel containerships with 100% U.S.-produced corn ethanol, marking what the company says is the first ship-to-ship commercial ethanol bunkering of a deep-sea container...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Fog of War Deepens in Hormuz as Ship Attacks Go Unreported for Days",
-      "link": "https://gcaptain.com/fog-of-war-deepens-in-hormuz-as-ship-attacks-go-unreported-for-days/",
-      "pubDate": "Tue, 29 Sep 2026 15:53:56 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The maritime picture in the Strait of Hormuz is becoming harder to verify, with another delayed report of a vessel strike raising questions over how much of the fighting is...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T134318Z_693026131_RC2N1MAQSWKP_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x524.jpg",
-      "en": {
-        "headline": "Fog of War Deepens in Hormuz as Ship Attacks Go Unreported for Days",
-        "summary": "The maritime picture in the Strait of Hormuz is becoming harder to verify, with another delayed report of a vessel strike raising questions over how much of the fighting is...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Carnival Posts Record $1.9 Billion Profit as 2027 Bookings Hit New High",
-      "link": "https://gcaptain.com/carnival-posts-record-1-9-billion-profit-as-2027-bookings-hit-new-high/",
-      "pubDate": "Tue, 29 Sep 2026 15:26:27 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Carnival Corporation reported record third-quarter revenue and net income on Tuesday as strong cruise demand and lower-than-expected operating costs helped offset a sharp increase in fuel expenses. The cruise giant...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/04/2021-04-07T141122Z_1827671125_RC22RM9BX0PB_RTRMADP_3_CARNIVAL-RESULTS.jpg",
-      "en": {
-        "headline": "Carnival Posts Record $1.9 Billion Profit as 2027 Bookings Hit New High",
-        "summary": "Carnival Corporation reported record third-quarter revenue and net income on Tuesday as strong cruise demand and lower-than-expected operating costs helped offset a sharp increase in fuel expenses. The cruise giant...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "LNG Canada Greenlights Phase 2, Doubling Export Capacity",
-      "link": "https://gcaptain.com/lng-canada-greenlights-phase-2-doubling-export-capacity/",
-      "pubDate": "Tue, 29 Sep 2026 15:17:24 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The partners behind LNG Canada have approved a major expansion of the British Columbia export terminal, clearing the way to double its production capacity to 28 million tonnes of LNG...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/07/LNG-canada-800x493.jpg",
-      "en": {
-        "headline": "LNG Canada Greenlights Phase 2, Doubling Export Capacity",
-        "summary": "The partners behind LNG Canada have approved a major expansion of the British Columbia export terminal, clearing the way to double its production capacity to 28 million tonnes of LNG...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Scorpio pushes fleet renewal with tanker newbuilds and ship sales",
-      "link": "https://splash247.com/scorpio-pushes-fleet-renewal-with-tanker-newbuilds-and-ship-sales/",
-      "pubDate": "Tue, 29 Sep 2026 12:57:12 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Scorpio Tankers has doubled its directly controlled VLCC orderbook and added another pair of LR2s in China, committing $415.6m to four newbuildings while continuing to clear older tonnage from its fleet. The Emanuele Lauro-led owner has agreed to acquire two scrubber-fitted VLCCs",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Emanuele-Lauro.jpg",
-      "en": {
-        "headline": "Scorpio pushes fleet renewal with tanker newbuilds and ship sales",
-        "summary": "Scorpio Tankers has doubled its directly controlled VLCC orderbook and added another pair of LR2s in China, committing $415.6m to four newbuildings while continuing to clear older tonnage from its fleet. The Emanuele Lauro-led owner has agreed to acquire two scrubber-fitted VLCCs",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "First U.S. Coast Guard Arctic Security Cutter in Finland Nears Halfway Point as Second Approaches Construction",
-      "link": "https://gcaptain.com/first-u-s-coast-guard-arctic-security-cutter-in-finland-nears-halfway-point-as-second-approaches-construction/",
-      "pubDate": "Tue, 29 Sep 2026 12:36:25 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Rauma Marine Constructions in Finland has made rapid progress on the first of two Arctic Security Cutters it is building for the U.S. Coast Guard, with almost half of the vessel's blocks already launched and construction of the second ship approaching, according to the Finnish sh",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "First U.S. Coast Guard Arctic Security Cutter in Finland Nears Halfway Point as Second Approaches Construction",
-        "summary": "Rauma Marine Constructions in Finland has made rapid progress on the first of two Arctic Security Cutters it is building for the U.S. Coast Guard, with almost half of the vessel's blocks already launched and construction of the second ship approaching, according to the Finnish sh",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Shell to Double LNG Canada Plant in Multibillion-Dollar Plan",
-      "link": "https://gcaptain.com/shell-to-double-lng-canada-plant-in-multibillion-dollar-plan/",
-      "pubDate": "Tue, 29 Sep 2026 12:29:27 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Shareholders in the Shell Plc-led LNG Canada venture greenlit plans to double its liquefied natural gas export capacity, forging ahead with the multibillion-dollar investment as key customers in Asia face the biggest supply shock of recent times.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Shell to Double LNG Canada Plant in Multibillion-Dollar Plan",
-        "summary": "Shareholders in the Shell Plc-led LNG Canada venture greenlit plans to double its liquefied natural gas export capacity, forging ahead with the multibillion-dollar investment as key customers in Asia face the biggest supply shock of recent times.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Tufton scores 81% uplift on MR charter",
-      "link": "https://splash247.com/tufton-scores-81-uplift-on-mr-charter/",
-      "pubDate": "Tue, 29 Sep 2026 12:03:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "London-listed Tufton Assets has capitalised on the strong tanker market, fixing one of its MR product tankers at $39,000 per day, an 81% increase on the vessel’s existing employment. The Mia Grace has been fixed for 12 to 14 months, up from its current rate of $21,500 per day. Th",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Mia-Grace-MR2-tanker-Philippe-Guichot-Marine-Traffic.jpg",
-      "en": {
-        "headline": "Tufton scores 81% uplift on MR charter",
-        "summary": "London-listed Tufton Assets has capitalised on the strong tanker market, fixing one of its MR product tankers at $39,000 per day, an 81% increase on the vessel’s existing employment. The Mia Grace has been fixed for 12 to 14 months, up from its current rate of $21,500 per day. Th",
-        "source": "Splash247"
       }
     }
   ]
