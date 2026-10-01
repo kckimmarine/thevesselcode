@@ -1,10 +1,11 @@
 {
   "meta": {
-    "generatedAt": "2026-10-01T12:06:40.201Z",
+    "generatedAt": "2026-10-01T22:09:30.739Z",
     "benchmarkAsOf": "2026-10-01",
     "fetchStatus": "partial",
     "rssErrors": [
-      "Maritime Executive: HTTP 404"
+      "Maritime Executive: HTTP 404",
+      "Splash247: HTTP 415"
     ],
     "marketErrors": [
       "MGO_05S_KRPUS_USD: HTTP 400",
@@ -112,7 +113,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 681,
-        "deltaPct": -0.8,
+        "deltaPct": 0,
         "asOf": "2026-09-30T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +125,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1400,
-        "deltaPct": 0.72,
+        "deltaPct": 0,
         "asOf": "2026-09-30T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +137,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 605,
-        "deltaPct": -0.82,
+        "deltaPct": 0,
         "asOf": "2026-09-30T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -213,17 +214,17 @@
     },
     "capesizeTc": {
       "value": 4928,
-      "deltaPct": -3.43,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-01T06:43:16.474Z"
     },
     "panamaxTc": {
-      "value": 2390,
-      "deltaPct": 0,
+      "value": 2384,
+      "deltaPct": -0.25,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-09-30T14:26:13.935Z"
+      "asOf": "2026-10-01T14:26:22.867Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,88 +237,122 @@
   },
   "news": [
     {
-      "title": "Akrotiri Tankers doubles suezmax order at New Times",
-      "link": "https://splash247.com/akrotiri-tankers-doubles-suezmax-order-at-new-times/",
-      "pubDate": "Thu, 01 Oct 2026 12:00:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Greek tanker newcomer Akrotiri Tankers has returned to New Times Shipbuilding for a second suezmax, continuing a rapid expansion of its Chinese newbuilding programme. Shipbroking sources place the latest order at $84.4m for a 157,000 dwt crude tanker scheduled for delivery in Jun",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 1,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/New-Times-Shipbuilding.jpg",
+      "title": "U.S. Targets Iran’s Rail and Shadow Banking Networks as Maritime Blockade Tightens",
+      "link": "https://gcaptain.com/u-s-targets-irans-rail-and-shadow-banking-networks-as-maritime-blockade-tightens/",
+      "pubDate": "Thu, 01 Oct 2026 19:58:53 +0000",
+      "source": "gCaptain",
+      "category": "Bunker",
+      "summary": "The Trump administration expanded its economic campaign against Iran on Thursday, targeting the country’s rail system, major industrial companies and a Russia-linked shadow banking network that U.S. officials say has...",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-25T025418Z_961541165_RC22WKA2E4ZU_RTRMADP_3_IRAN-CRISIS-US-BLOCKADE.jpg",
       "en": {
-        "headline": "Akrotiri Tankers doubles suezmax order at New Times",
-        "summary": "Greek tanker newcomer Akrotiri Tankers has returned to New Times Shipbuilding for a second suezmax, continuing a rapid expansion of its Chinese newbuilding programme. Shipbroking sources place the latest order at $84.4m for a 157,000 dwt crude tanker scheduled for delivery in Jun",
-        "source": "Splash247"
+        "headline": "U.S. Targets Iran’s Rail and Shadow Banking Networks as Maritime Blockade Tightens",
+        "summary": "The Trump administration expanded its economic campaign against Iran on Thursday, targeting the country’s rail system, major industrial companies and a Russia-linked shadow banking network that U.S. officials say has...",
+        "source": "gCaptain"
       }
     },
     {
-      "title": "Imperial Petroleum moves out of suezmaxes with $82m deal",
-      "link": "https://splash247.com/imperial-petroleum-moves-out-of-suezmaxes-with-82m-deal/",
-      "pubDate": "Thu, 01 Oct 2026 11:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Harry Vafias-led Imperial Petroleum has reportedly sold its remaining suezmax, the 2008-built Suez Protopia, for $82m. VesselsValue identified Imperial Petroleum as the seller in its September 30 transaction data. The buyer has not been disclosed. VesselsValue estimates the Samsu",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 1,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Suez-Protopia-Graham-Buchan-Innes-Marine-Traffic.jpg",
-      "en": {
-        "headline": "Imperial Petroleum moves out of suezmaxes with $82m deal",
-        "summary": "Harry Vafias-led Imperial Petroleum has reportedly sold its remaining suezmax, the 2008-built Suez Protopia, for $82m. VesselsValue identified Imperial Petroleum as the seller in its September 30 transaction data. The buyer has not been disclosed. VesselsValue estimates the Samsu",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Eurotankers gets $60m for vintage LR2",
-      "link": "https://splash247.com/eurotankers-gets-60m-for-vintage-lr2/",
-      "pubDate": "Thu, 01 Oct 2026 11:00:00 +0000",
-      "source": "Splash247",
+      "title": "Resilience Doesn’t Equal Security- Lloyd’s List",
+      "link": "https://gcaptain.com/resilience-doesnt-equal-security-lloyds-list/",
+      "pubDate": "Thu, 01 Oct 2026 17:53:57 +0000",
+      "source": "gCaptain",
       "category": "Carbon",
-      "summary": "Greek owner Eurotankers has reportedly sold its 2009-built LR2 for $60m, continuing to cash in older tanker tonnage as secondhand values remain elevated. S&#38;P sources list the Hyundai Heavy Industries-built 105,291 dwt Eurointegrity among the latest tanker sales at $60m. The b",
+      "summary": "Strait of Hormuz transit data for the month of September reveals how the oil and container markets are tactically adjusting to the U.S./Israel war on Iran.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 1,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Eurointegrity-LR2-Eurotankers.jpg",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/Hormuz-Heat-Map.jpg",
       "en": {
-        "headline": "Eurotankers gets $60m for vintage LR2",
-        "summary": "Greek owner Eurotankers has reportedly sold its 2009-built LR2 for $60m, continuing to cash in older tanker tonnage as secondhand values remain elevated. S&#38;P sources list the Hyundai Heavy Industries-built 105,291 dwt Eurointegrity among the latest tanker sales at $60m. The b",
-        "source": "Splash247"
+        "headline": "Resilience Doesn’t Equal Security- Lloyd’s List",
+        "summary": "Strait of Hormuz transit data for the month of September reveals how the oil and container markets are tactically adjusting to the U.S./Israel war on Iran.",
+        "source": "gCaptain"
       }
     },
     {
-      "title": "Contships goes big in China with up to 30 newbuilds",
-      "link": "https://splash247.com/contships-goes-big-in-china-with-up-to-30-newbuilds/",
-      "pubDate": "Thu, 01 Oct 2026 10:48:28 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Greek feeder specialist Contships Logistics has launched a potentially 30-ship newbuilding programme in China as the Nikolas Pateras-led owner shifts its fleet renewal drive towards fresh tonnage. Wholly owned CLC Newbuildings has signed a letter of intent with Hubei Guangji Gree",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 1,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Contships.jpg",
-      "en": {
-        "headline": "Contships goes big in China with up to 30 newbuilds",
-        "summary": "Greek feeder specialist Contships Logistics has launched a potentially 30-ship newbuilding programme in China as the Nikolas Pateras-led owner shifts its fleet renewal drive towards fresh tonnage. Wholly owned CLC Newbuildings has signed a letter of intent with Hubei Guangji Gree",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Boskalis scores Dutch North Sea cabling job",
-      "link": "https://splash247.com/boskalis-scores-dutch-north-sea-cabling-job/",
-      "pubDate": "Thu, 01 Oct 2026 10:37:26 +0000",
-      "source": "Splash247",
+      "title": "Premier Alliance Prepares for Asia-N Europe Services Return to Suez",
+      "link": "https://gcaptain.com/premier-alliance-prepares-for-asia-n-europe-services-return-to-suez/",
+      "pubDate": "Thu, 01 Oct 2026 17:42:26 +0000",
+      "source": "gCaptain",
       "category": "Trade",
-      "summary": "Dutch marine contractor Boskalis has secured a contract worth between €50m and €150m ($57m-$170m) for inter-array cable installation on the first phase of the Zeevonk offshore wind farm in the Dutch North Sea. The contract, awarded by the Vattenfall and Copenhagen Infrastructure ",
+      "summary": "October will see almost all global ocean carriers make a tentative return to Suez transits on Asia-Europe sailings, after revised pro forma shipping schedules show the Premier Alliance is set to send one of its vessels on the route through the Red Sea and Egyptian waterway.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/Boka-Ocean-Boskalis-1.jpg",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/OOCL-Portugal-Suez-Canal-800x545.jpg",
       "en": {
-        "headline": "Boskalis scores Dutch North Sea cabling job",
-        "summary": "Dutch marine contractor Boskalis has secured a contract worth between €50m and €150m ($57m-$170m) for inter-array cable installation on the first phase of the Zeevonk offshore wind farm in the Dutch North Sea. The contract, awarded by the Vattenfall and Copenhagen Infrastructure ",
-        "source": "Splash247"
+        "headline": "Premier Alliance Prepares for Asia-N Europe Services Return to Suez",
+        "summary": "October will see almost all global ocean carriers make a tentative return to Suez transits on Asia-Europe sailings, after revised pro forma shipping schedules show the Premier Alliance is set to send one of its vessels on the route through the Red Sea and Egyptian waterway.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Nuclear-Powered LNG Carrier Would Cost 2.5 Times More to Build, Study Finds",
+      "link": "https://gcaptain.com/nuclear-powered-lng-carrier-would-cost-2-5-times-more-to-build-study-finds/",
+      "pubDate": "Thu, 01 Oct 2026 17:35:21 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A nuclear-powered LNG carrier could cost roughly 2.5 times as much to build as a conventional vessel, but lower fuel costs could significantly change the economics over the ship’s operating...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/07/shutterstock_723587314.jpg",
+      "en": {
+        "headline": "Nuclear-Powered LNG Carrier Would Cost 2.5 Times More to Build, Study Finds",
+        "summary": "A nuclear-powered LNG carrier could cost roughly 2.5 times as much to build as a conventional vessel, but lower fuel costs could significantly change the economics over the ship’s operating...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Turkey and UN Broker New Talks on Russia-Ukraine Black Sea Truce",
+      "link": "https://gcaptain.com/turkey-and-un-broker-new-talks-on-russia-ukraine-black-sea-truce/",
+      "pubDate": "Thu, 01 Oct 2026 17:27:39 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "(Bloomberg) &#8212; Turkey and the United Nations have set up fresh talks in Russia and Ukraine to discuss a Black Sea ceasefire, trying to coalesce scattered efforts to protect grain...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/03/2023-03-01T113751Z_714202100_RC2P3Y980IZS_RTRMADP_3_UKRAINE-CRISIS-GRAINDEAL-QUEUE-800x533.jpg",
+      "en": {
+        "headline": "Turkey and UN Broker New Talks on Russia-Ukraine Black Sea Truce",
+        "summary": "(Bloomberg) &#8212; Turkey and the United Nations have set up fresh talks in Russia and Ukraine to discuss a Black Sea ceasefire, trying to coalesce scattered efforts to protect grain...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Salvage Work Begins on WWII ‘Time Bomb’ Wreck in Thames Estuary",
+      "link": "https://gcaptain.com/salvage-work-begins-on-wwii-time-bomb-wreck-in-thames-estuary/",
+      "pubDate": "Thu, 01 Oct 2026 16:33:05 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "More than 80 years after the&#160;SS Richard Montgomery&#160;sank in the Thames Estuary with roughly 1,400 tons of explosives still aboard, marine contractors have begun one of the most delicate interventions...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/DSC00273-800x533.jpg",
+      "en": {
+        "headline": "Salvage Work Begins on WWII ‘Time Bomb’ Wreck in Thames Estuary",
+        "summary": "More than 80 years after the&#160;SS Richard Montgomery&#160;sank in the Thames Estuary with roughly 1,400 tons of explosives still aboard, marine contractors have begun one of the most delicate interventions...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Alternative-Fuel Ship Orders Surge to Two-Year High",
+      "link": "https://gcaptain.com/alternative-fuel-ship-orders-surge-to-two-year-high/",
+      "pubDate": "Thu, 01 Oct 2026 15:53:40 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Alternative-fuel ship orders rebounded sharply in the third quarter, with September delivering the strongest monthly total in nearly two years as LNG remained the dominant choice for new vessels. Shipowners...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2020/05/CMA-CGM-Jacques-Saad%C3%A9.jpeg",
+      "en": {
+        "headline": "Alternative-Fuel Ship Orders Surge to Two-Year High",
+        "summary": "Alternative-fuel ship orders rebounded sharply in the third quarter, with September delivering the strongest monthly total in nearly two years as LNG remained the dominant choice for new vessels. Shipowners...",
+        "source": "gCaptain"
       }
     },
     {
@@ -329,7 +364,7 @@
       "summary": "The United Kingdom has sanctioned five liquefied natural gas carriers as part of a new package of measures targeting Russia's efforts to expand a maritime \"shadow fleet\" for LNG exports, including three Russian-built Arc7 ice-class vessels intended to support the Arctic LNG 2 pro",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/12/Alexey-Kosygin-LNG-tanker-2.jpg",
       "en": {
         "headline": "UK Sanctions Five LNG Carriers in New Russia Package",
@@ -346,97 +381,12 @@
       "summary": "Persian Gulf oil producers are shifting critical cargo transfer operations even farther out of the war-hit region as waters just outside the Strait of Hormuz become congested with tankers.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/05/shutterstock_1370644517.jpg",
       "en": {
         "headline": "Tanker Congestion Shunts Vital Oil Transfers Farther From Hormuz",
         "summary": "Persian Gulf oil producers are shifting critical cargo transfer operations even farther out of the war-hit region as waters just outside the Strait of Hormuz become congested with tankers.",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Japan claims world-first hydrogen tanker voyage",
-      "link": "https://splash247.com/japan-claims-world-first-hydrogen-tanker-voyage/",
-      "pubDate": "Thu, 01 Oct 2026 09:47:00 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "Japan has chalked up another maritime decarbonisation first, successfully completing a demonstration voyage of a coastal tanker powered by a hydrogen-only marine engine. The 4,500 gt Kiko Maru sailed for approximately two hours and covered around 33 km in Osaka Bay using its hydr",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Kikou-Maru.jpg",
-      "en": {
-        "headline": "Japan claims world-first hydrogen tanker voyage",
-        "summary": "Japan has chalked up another maritime decarbonisation first, successfully completing a demonstration voyage of a coastal tanker powered by a hydrogen-only marine engine. The 4,500 gt Kiko Maru sailed for approximately two hours and covered around 33 km in Osaka Bay using its hydr",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Nuclear LNG carrier study puts price on atomic shipping",
-      "link": "https://splash247.com/nuclear-lng-carrier-study-puts-price-on-atomic-shipping/",
-      "pubDate": "Thu, 01 Oct 2026 09:46:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "A nuclear-powered LNG carrier could cost around two-and-a-half times as much to build as a conventional vessel yet still deliver lower lifetime costs under certain carbon-pricing scenarios, according to a new study backed by ABS. The class society, Japanese nuclear technology dev",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/10/Nuclear-powered-LNG-carrier-ABS.jpg",
-      "en": {
-        "headline": "Nuclear LNG carrier study puts price on atomic shipping",
-        "summary": "A nuclear-powered LNG carrier could cost around two-and-a-half times as much to build as a conventional vessel yet still deliver lower lifetime costs under certain carbon-pricing scenarios, according to a new study backed by ABS. The class society, Japanese nuclear technology dev",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Japanese owners push for tonnage tax overhaul",
-      "link": "https://splash247.com/japanese-owners-push-for-tonnage-tax-overhaul/",
-      "pubDate": "Thu, 01 Oct 2026 09:33:00 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "Japan’s shipowners are pressing Tokyo for a fundamental overhaul of the country’s tonnage tax regime, including opening the system directly to shipowners and relaxing its reliance on Japanese-flagged tonnage. Japan Shipowners’ Association president Hitoshi Nagasawa, who is also c",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2020/03/japanese-yen-e1584068980161-1.jpg",
-      "en": {
-        "headline": "Japanese owners push for tonnage tax overhaul",
-        "summary": "Japan’s shipowners are pressing Tokyo for a fundamental overhaul of the country’s tonnage tax regime, including opening the system directly to shipowners and relaxing its reliance on Japanese-flagged tonnage. Japan Shipowners’ Association president Hitoshi Nagasawa, who is also c",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "APM Terminals boss urges ports to sweat existing assets harder",
-      "link": "https://splash247.com/apm-terminals-boss-urges-ports-to-sweat-existing-assets-harder/",
-      "pubDate": "Thu, 01 Oct 2026 08:30:59 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Sister title Splash Ports today carries an exclusive interview with APM Terminals chief executive Keith Svendsen who argues that the next phase of terminal growth will depend less on simply adding cranes and quay length and more on capital discipline, operational efficiency and l",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/APM-Terminals-Keith-Svendsen.jpeg",
-      "en": {
-        "headline": "APM Terminals boss urges ports to sweat existing assets harder",
-        "summary": "Sister title Splash Ports today carries an exclusive interview with APM Terminals chief executive Keith Svendsen who argues that the next phase of terminal growth will depend less on simply adding cranes and quay length and more on capital discipline, operational efficiency and l",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Premier Alliance joins accelerating return to Suez",
-      "link": "https://splash247.com/premier-alliance-joins-accelerating-return-to-suez/",
-      "pubDate": "Thu, 01 Oct 2026 08:15:06 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The Premier Alliance is preparing to send one of its Asia-Europe strings back through the Suez Canal this month, adding fresh momentum to the container sector’s retreat from lengthy Cape of Good Hope diversions and sharpening concerns over how much vessel capacity a fuller Red Se",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/06/HMM-Algeciras-24000-teu-Suez-Canal.jpg",
-      "en": {
-        "headline": "Premier Alliance joins accelerating return to Suez",
-        "summary": "The Premier Alliance is preparing to send one of its Asia-Europe strings back through the Suez Canal this month, adding fresh momentum to the container sector’s retreat from lengthy Cape of Good Hope diversions and sharpening concerns over how much vessel capacity a fuller Red Se",
-        "source": "Splash247"
       }
     },
     {
@@ -448,7 +398,7 @@
       "summary": "A new federal watchdog report says gaps in training, coordination and emergency planning continue to complicate the response to ship fires at U.S. ports, three years after two firefighters were...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/07/Grande-Costa-dAvorio.jpg",
       "en": {
         "headline": "GAO Finds Marine Firefighting Gaps Persist at U.S. Ports",
@@ -465,8 +415,8 @@
       "summary": "Canada is committing C$1.2 billion (USD $843 million) to ocean protection and marine safety as the federal government prepares for a significant increase in commercial vessel traffic tied to new...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/10/shutterstock_515503693.jpg",
+      "hoursAgo": 18,
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Canada Makes Major Investment in Marine Safety as Ship Traffic Grows",
         "summary": "Canada is committing C$1.2 billion (USD $843 million) to ocean protection and marine safety as the federal government prepares for a significant increase in commercial vessel traffic tied to new...",
@@ -482,28 +432,11 @@
       "summary": "The American Association of Port Authorities wrapped up its annual convention in New Orleans on Wednesday after drawing its largest attendance ever, with more than 900 participants representing over 90 ports.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/Lanpher_251017_0024-1-1024x712-1.jpg",
+      "hoursAgo": 25,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "U.S. Ports Push Nuclear Power, Faster Dredging at Record AAPA Convention",
         "summary": "The American Association of Port Authorities wrapped up its annual convention in New Orleans on Wednesday after drawing its largest attendance ever, with more than 900 participants representing over 90 ports.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Saronic Starts Construction on $3 Billion Texas Shipyard",
-      "link": "https://gcaptain.com/saronic-starts-construction-on-3-billion-texas-shipyard/",
-      "pubDate": "Wed, 30 Sep 2026 20:46:15 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Saronic Technologies has broken ground on its planned $3 billion Port Alpha shipyard in Brownsville, moving one of the largest new U.S. shipbuilding projects in decades from the planning stage...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/ATT000773.jpeg",
-      "en": {
-        "headline": "Saronic Starts Construction on $3 Billion Texas Shipyard",
-        "summary": "Saronic Technologies has broken ground on its planned $3 billion Port Alpha shipyard in Brownsville, moving one of the largest new U.S. shipbuilding projects in decades from the planning stage...",
         "source": "gCaptain"
       }
     }
