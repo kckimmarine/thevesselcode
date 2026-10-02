@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-02T17:05:53.247Z",
+    "generatedAt": "2026-10-02T21:37:03.765Z",
     "benchmarkAsOf": "2026-10-02",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -206,14 +206,14 @@
   "indices": {
     "bdi": {
       "value": 3148,
-      "deltaPct": 0.25,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-02T14:39:47.815Z"
     },
     "capesizeTc": {
       "value": 5042,
-      "deltaPct": 2.31,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-02T16:53:05.622Z"
@@ -236,6 +236,125 @@
   },
   "news": [
     {
+      "title": "Six Vessels Hit in Strait of Hormuz Since Sunday",
+      "link": "https://gcaptain.com/six-vessels-hit-in-strait-of-hormuz-since-sunday/",
+      "pubDate": "Fri, 02 Oct 2026 19:02:06 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Another tanker has been struck in the Strait of Hormuz, bringing the number of vessels reported hit in the strategic waterway since Sunday to at least six. UK Maritime Trade...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
+      "en": {
+        "headline": "Six Vessels Hit in Strait of Hormuz Since Sunday",
+        "summary": "Another tanker has been struck in the Strait of Hormuz, bringing the number of vessels reported hit in the strategic waterway since Sunday to at least six. UK Maritime Trade...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Three Dead, Two Missing After Rescue Boat Capsizes Off South Africa",
+      "link": "https://gcaptain.com/three-dead-two-missing-after-rescue-boat-capsizes-off-south-africa/",
+      "pubDate": "Fri, 02 Oct 2026 17:59:40 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Three seafarers have died and two remain missing after a rescue boat capsized during an emergency response from the South African emergency towing vessel&#160;Umkhuseli. The incident occurred Wednesday, September 30,...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Umkhuseli.jpg",
+      "en": {
+        "headline": "Three Dead, Two Missing After Rescue Boat Capsizes Off South Africa",
+        "summary": "Three seafarers have died and two remain missing after a rescue boat capsized during an emergency response from the South African emergency towing vessel&#160;Umkhuseli. The incident occurred Wednesday, September 30,...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Port Congestion Ties Up 12% of Global Global Container Shipping Capacity",
+      "link": "https://gcaptain.com/port-congestion-ties-up-12-of-global-global-container-shipping-capacity/",
+      "pubDate": "Fri, 02 Oct 2026 17:23:34 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Global shipping is not running short of ships. The bigger problem is that a growing share of them are getting caught in congestion. Roughly 12% of global container ship capacity...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/04/2022-04-05T140711Z_1738200706_RC22HT9V3KEF_RTRMADP_3_USA-ECONOMY-800x534.jpg",
+      "en": {
+        "headline": "Port Congestion Ties Up 12% of Global Global Container Shipping Capacity",
+        "summary": "Global shipping is not running short of ships. The bigger problem is that a growing share of them are getting caught in congestion. Roughly 12% of global container ship capacity...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Saudis Plan Assault on Houthis to Break Red Sea Chokehold",
+      "link": "https://gcaptain.com/saudis-plan-assault-on-houthis-to-break-red-sea-chokehold/",
+      "pubDate": "Fri, 02 Oct 2026 17:07:10 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Saudi Arabia is planning an offensive against Iran-backed Houthi militants in Yemen, with options being considered including a coastal push to secure the Red Sea shipping route or an assault on multiple fronts, regional and Western officials told Reuters.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
+      "en": {
+        "headline": "Saudis Plan Assault on Houthis to Break Red Sea Chokehold",
+        "summary": "Saudi Arabia is planning an offensive against Iran-backed Houthi militants in Yemen, with options being considered including a coastal push to secure the Red Sea shipping route or an assault on multiple fronts, regional and Western officials told Reuters.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "G7 to Release Up to 100 Million Barrels of Diesel, Crude",
+      "link": "https://gcaptain.com/g7-to-release-up-to-100-million-barrels-of-diesel-crude/",
+      "pubDate": "Fri, 02 Oct 2026 16:58:02 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Group of Seven nations and its partners are to release as much as 100 million barrels of emergency oil and diesel stocks amid pressure from the Trump administration to quell rising fuel prices.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2013/05/shutterstock_112568177.jpg",
+      "en": {
+        "headline": "G7 to Release Up to 100 Million Barrels of Diesel, Crude",
+        "summary": "The Group of Seven nations and its partners are to release as much as 100 million barrels of emergency oil and diesel stocks amid pressure from the Trump administration to quell rising fuel prices.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "U.S. Adds Carrier and 10,000 Troops to Middle East",
+      "link": "https://gcaptain.com/us-adds-carrier-and-10000-troops-to-middle-east/",
+      "pubDate": "Fri, 02 Oct 2026 16:55:30 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Pentagon is deploying an additional aircraft carrier and 10,000 sailors and Marines to the Persian Gulf, according to a US official, a move that gives American commanders more options if President Donald Trump chooses to escalate attacks on Iran.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/09/usns-big-horn-unrep-800x533.jpg",
+      "en": {
+        "headline": "U.S. Adds Carrier and 10,000 Troops to Middle East",
+        "summary": "The Pentagon is deploying an additional aircraft carrier and 10,000 sailors and Marines to the Persian Gulf, according to a US official, a move that gives American commanders more options if President Donald Trump chooses to escalate attacks on Iran.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "U.S. Coast Guard Intercepts ‘Dark Fleet’ Fuel Shipment to Cuba",
+      "link": "https://gcaptain.com/u-s-coast-guard-intercepts-dark-fleet-fuel-shipment-to-cuba/",
+      "pubDate": "Fri, 02 Oct 2026 15:53:35 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The U.S. Coast Guard has intercepted a vessel carrying fuel to Cuba after an international enforcement operation found large quantities of fuel concealed inside the ship’s ballast tanks. The&#160;Coast Guard...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/011026-G-KH296-1001.jpg",
+      "en": {
+        "headline": "U.S. Coast Guard Intercepts ‘Dark Fleet’ Fuel Shipment to Cuba",
+        "summary": "The U.S. Coast Guard has intercepted a vessel carrying fuel to Cuba after an international enforcement operation found large quantities of fuel concealed inside the ship’s ballast tanks. The&#160;Coast Guard...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "No Lights, No Radio: Getting Oil Through Hormuz Is a Risky Job",
       "link": "https://gcaptain.com/no-lights-no-radio-getting-oil-through-hormuz-is-a-risky-job/",
       "pubDate": "Fri, 02 Oct 2026 11:45:47 +0000",
@@ -244,7 +363,7 @@
       "summary": "The tanker captain summoned his years of experience when he saw the blast in front of him. He veered his 300-meter-long ship around the vessel ahead and could see a fire had started. He called the US Navy to tell them of the attack.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-01T164535Z_267159373_RC2KVKADMUK6_RTRMADP_3_GLOBAL-OIL-800x600.jpg",
       "en": {
         "headline": "No Lights, No Radio: Getting Oil Through Hormuz Is a Risky Job",
@@ -261,7 +380,7 @@
       "summary": "US President Donald Trump's push to steer $54 billion of South Korean investment into Alaska LNG is putting a fresh focus on a 20 million-ton-a-year export project that would cost more than twice as much as a comparable US Gulf Coast plant.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/04/Liquefaction-Facility.jpeg",
       "en": {
         "headline": "Alaska LNG Could Cost More Than Double Gulf Coast Rivals, Raising Questions Over Economics",
@@ -278,7 +397,7 @@
       "summary": "Norwegian offshore vessel owner DOF has received a letter of intent to hire an I-class vessel in 2028. The scope of work includes DOF&#8217;s in-house project management and engineering, procurement, and logistics support services. DOF expects to confirm the full contract award b",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/Skandi-Implementer-DOF.jpg",
       "en": {
         "headline": "DOF secures preliminary award for 2028 project",
@@ -295,7 +414,7 @@
       "summary": "UK oilfield services specialist EnerMech has secured a five-year extension to its non-destructive testing contract with Chevron Australia, retaining the inspection and asset-integrity work until the end of 2031. The Aberdeen-headquartered services company first won the assignment",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/12/Gorgon-LNG-Chevron.jpg",
       "en": {
         "headline": "Chevron extends Australia asset-integrity deal with EnerMech",
@@ -312,7 +431,7 @@
       "summary": "Japanese shipping giant Mitsui OSK Lines (MOL) will operate two 210,000-dwt ore carriers for Vale under a 25-year contract, introducing tri-fuel propulsion to the long-haul iron ore trade. MOL Ocean Bulk, the group’s Singapore-based capesize bulker operator, signed the agreement ",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/MOL-Mitsui-OSK-Bulker.jpg",
       "en": {
         "headline": "MOL lands Vale charter for two tri-fuel ore carriers",
@@ -329,7 +448,7 @@
       "summary": "Anthony Inglessis-led Carlova Maritime has ordered two 114,000 dwt aframax tankers at Imabari Shipbuilding, marking the Greek owner’s first newbuilding contracts in Japan since emerging from the break-up of Samos Steamship. Carlova’s newly updated fleet list shows the ships sched",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 7,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Phaedra-aframax-Carlova-Maritime.jpg",
       "en": {
         "headline": "Carlova returns to Japan with Imabari aframax pair",
@@ -346,7 +465,7 @@
       "summary": "Ocean Network Express is consolidating its Asian regional management in Singapore, folding its Hong Kong-based East Asia headquarters into a new Asia Pacific operation from April 1, 2027. The Japanese containerline said the new Asia Pacific regional headquarters will combine its ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/OCEAN-NETWORK-EXPRESS.jpg",
       "en": {
         "headline": "ONE folds Hong Kong regional HQ into Singapore",
@@ -363,7 +482,7 @@
       "summary": "Like climbers entering the death zone above 8,000 metres en route to the summit of Everest, VLCCs have entered their own peak: the moment where prices for secondhand tonnage surpass newbuild prices, and sell signs flash hard. These moments tend to be fleeting and have historicall",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 8,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/DHT-Antelope-VLCC.jpg",
       "en": {
         "headline": "Tankers enter the death zone",
@@ -380,131 +499,12 @@
       "summary": "Kuwait Oil Tanker Company has suffered its second VLCC strike in four days, while a separate projectile attack at Saudi Arabia’s Yanbu port briefly disrupted loading operations, piling fresh security pressure on two of the Middle East’s key oil export routes. Maritime security fi",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Kazimah-III-Derrick-Pinington-Marine-Traffic.png",
       "en": {
         "headline": "Fresh attacks hit Hormuz tanker and Saudi oil gateway",
         "summary": "Kuwait Oil Tanker Company has suffered its second VLCC strike in four days, while a separate projectile attack at Saudi Arabia’s Yanbu port briefly disrupted loading operations, piling fresh security pressure on two of the Middle East’s key oil export routes. Maritime security fi",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "Splash Wrap: When normal becomes the risk",
-      "link": "https://splash247.com/splash-wrap-when-normal-becomes-the-risk/",
-      "pubDate": "Fri, 02 Oct 2026 08:00:54 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "For an industry that has spent much of the 2020s making extraordinary money from things going wrong, this week brought an unfamiliar threat: things starting to go right. Some of shipping’s most important pressure points showed signs of easing. At the Panama Canal, for instance, i",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/11/Panama-Canal-tanker.jpg",
-      "en": {
-        "headline": "Splash Wrap: When normal becomes the risk",
-        "summary": "For an industry that has spent much of the 2020s making extraordinary money from things going wrong, this week brought an unfamiliar threat: things starting to go right. Some of shipping’s most important pressure points showed signs of easing. At the Panama Canal, for instance, i",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Contships goes big in China with up to 30 newbuilds",
-      "link": "https://splash247.com/contships-goes-big-in-china-with-up-to-30-newbuilds/",
-      "pubDate": "Fri, 02 Oct 2026 07:45:28 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Greek feeder specialist Contships Logistics has launched a potentially 30-ship newbuilding programme in China as the Nikolas Pateras-led owner shifts its fleet renewal drive towards fresh tonnage. Wholly owned CLC Newbuildings has signed a letter of intent with Hubei Guangji Gree",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Contships.jpg",
-      "en": {
-        "headline": "Contships goes big in China with up to 30 newbuilds",
-        "summary": "Greek feeder specialist Contships Logistics has launched a potentially 30-ship newbuilding programme in China as the Nikolas Pateras-led owner shifts its fleet renewal drive towards fresh tonnage. Wholly owned CLC Newbuildings has signed a letter of intent with Hubei Guangji Gree",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Mitsubishi puts $635m behind shipyard expansion",
-      "link": "https://splash247.com/mitsubishi-puts-635m-behind-shipyard-expansion/",
-      "pubDate": "Fri, 02 Oct 2026 07:30:59 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Mitsubishi Heavy Industries is putting around ¥100bn ($635m) into expanding shipbuilding capacity at Shimonoseki, sealing a land deal with the city for a new production base on the artificial island of Choshu Dejima. MHI said its Mitsubishi Shipbuilding unit will transfer some fu",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Choshu-Dejima-Shimonoseki-City-Yamaguchi-Prefecture.jpg",
-      "en": {
-        "headline": "Mitsubishi puts $635m behind shipyard expansion",
-        "summary": "Mitsubishi Heavy Industries is putting around ¥100bn ($635m) into expanding shipbuilding capacity at Shimonoseki, sealing a land deal with the city for a new production base on the artificial island of Choshu Dejima. MHI said its Mitsubishi Shipbuilding unit will transfer some fu",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "UK Hits Eight Russian Ships in New Sanctions Package",
-      "link": "https://gcaptain.com/uk-hits-eight-russian-ships-in-new-sanctions-package/",
-      "pubDate": "Thu, 01 Oct 2026 21:37:13 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The United Kingdom has imposed sanctions on eight ships as part of a broader package targeting Russian energy revenues, maritime logistics and individuals accused of supporting Moscow’s war in Ukraine....",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-14T100145Z_1220743582_RC2HTLA9PHRH_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-BRITAIN-800x533.jpg",
-      "en": {
-        "headline": "UK Hits Eight Russian Ships in New Sanctions Package",
-        "summary": "The United Kingdom has imposed sanctions on eight ships as part of a broader package targeting Russian energy revenues, maritime logistics and individuals accused of supporting Moscow’s war in Ukraine....",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Another Tanker Hit in Strait of Hormuz as Attacks Continue",
-      "link": "https://gcaptain.com/another-tanker-hit-in-strait-of-hormuz-as-attacks-continue/",
-      "pubDate": "Thu, 01 Oct 2026 21:28:21 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A tanker has been struck by an unknown projectile while transiting the Strait of Hormuz, the latest in a string of attacks that have emerged over the past several days...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
-      "en": {
-        "headline": "Another Tanker Hit in Strait of Hormuz as Attacks Continue",
-        "summary": "A tanker has been struck by an unknown projectile while transiting the Strait of Hormuz, the latest in a string of attacks that have emerged over the past several days...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "U.S. Targets Iran’s Rail and Shadow Banking Networks as Maritime Blockade Tightens",
-      "link": "https://gcaptain.com/u-s-targets-irans-rail-and-shadow-banking-networks-as-maritime-blockade-tightens/",
-      "pubDate": "Thu, 01 Oct 2026 19:58:53 +0000",
-      "source": "gCaptain",
-      "category": "Bunker",
-      "summary": "The Trump administration expanded its economic campaign against Iran on Thursday, targeting the country’s rail system, major industrial companies and a Russia-linked shadow banking network that U.S. officials say has...",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 21,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-25T025418Z_961541165_RC22WKA2E4ZU_RTRMADP_3_IRAN-CRISIS-US-BLOCKADE.jpg",
-      "en": {
-        "headline": "U.S. Targets Iran’s Rail and Shadow Banking Networks as Maritime Blockade Tightens",
-        "summary": "The Trump administration expanded its economic campaign against Iran on Thursday, targeting the country’s rail system, major industrial companies and a Russia-linked shadow banking network that U.S. officials say has...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Resilience Doesn’t Equal Security- Lloyd’s List",
-      "link": "https://gcaptain.com/resilience-doesnt-equal-security-lloyds-list/",
-      "pubDate": "Thu, 01 Oct 2026 17:53:57 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "Strait of Hormuz transit data for the month of September reveals how the oil and container markets are tactically adjusting to the U.S./Israel war on Iran.",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 23,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/Hormuz-Heat-Map.jpg",
-      "en": {
-        "headline": "Resilience Doesn’t Equal Security- Lloyd’s List",
-        "summary": "Strait of Hormuz transit data for the month of September reveals how the oil and container markets are tactically adjusting to the U.S./Israel war on Iran.",
-        "source": "gCaptain"
       }
     }
   ]
