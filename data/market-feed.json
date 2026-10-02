@@ -1,11 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-10-01T22:09:30.739Z",
-    "benchmarkAsOf": "2026-10-01",
+    "generatedAt": "2026-10-02T03:15:52.786Z",
+    "benchmarkAsOf": "2026-10-02",
     "fetchStatus": "partial",
     "rssErrors": [
-      "Maritime Executive: HTTP 404",
-      "Splash247: HTTP 415"
+      "Maritime Executive: HTTP 404"
     ],
     "marketErrors": [
       "MGO_05S_KRPUS_USD: HTTP 400",
@@ -17,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-10-01",
-    "updatedLabelKo": "2026-10-01 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-10-02",
+    "updatedLabelKo": "2026-10-02 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -76,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 854,
-        "deltaPct": 0,
-        "asOf": "2026-09-30T17:00:00.000Z",
+        "priceUsdMt": 876.5,
+        "deltaPct": 2.63,
+        "asOf": "2026-10-01T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -88,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1278.5,
-        "deltaPct": 0,
-        "asOf": "2026-09-30T17:00:00.000Z",
+        "priceUsdMt": 1323,
+        "deltaPct": 3.48,
+        "asOf": "2026-10-01T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -100,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 729,
-        "deltaPct": 0,
-        "asOf": "2026-09-30T17:00:00.000Z",
+        "priceUsdMt": 753.5,
+        "deltaPct": 3.36,
+        "asOf": "2026-10-01T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 725.5,
-        "deltaPct": 0,
-        "asOf": "2026-09-30T17:00:00.000Z",
+        "priceUsdMt": 739,
+        "deltaPct": 1.86,
+        "asOf": "2026-10-01T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -160,9 +159,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1364.5,
-        "deltaPct": 0,
-        "asOf": "2026-09-30T17:00:00.000Z",
+        "priceUsdMt": 1384,
+        "deltaPct": 1.43,
+        "asOf": "2026-10-01T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -172,9 +171,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 538.5,
-        "deltaPct": 0,
-        "asOf": "2026-09-30T17:00:00.000Z",
+        "priceUsdMt": 540,
+        "deltaPct": 0.28,
+        "asOf": "2026-10-01T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -184,9 +183,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 940,
-        "deltaPct": 0,
-        "asOf": "2026-09-30T22:41:13.243Z",
+        "priceUsdMt": 970,
+        "deltaPct": 3.19,
+        "asOf": "2026-10-01T22:41:24.693Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -196,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 830,
-        "deltaPct": 0,
-        "asOf": "2026-09-30T22:41:13.220Z",
+        "priceUsdMt": 865,
+        "deltaPct": 4.22,
+        "asOf": "2026-10-01T22:41:24.641Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,11 +205,11 @@
   },
   "indices": {
     "bdi": {
-      "value": 3113,
-      "deltaPct": 0,
+      "value": 3140,
+      "deltaPct": 0.87,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-09-30T14:40:33.478Z"
+      "asOf": "2026-10-02T02:39:54.127Z"
     },
     "capesizeTc": {
       "value": 4928,
@@ -221,7 +220,7 @@
     },
     "panamaxTc": {
       "value": 2384,
-      "deltaPct": -0.25,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-01T14:26:22.867Z"
@@ -237,6 +236,57 @@
   },
   "news": [
     {
+      "title": "UK Hits Eight Russian Ships in New Sanctions Package",
+      "link": "https://gcaptain.com/uk-hits-eight-russian-ships-in-new-sanctions-package/",
+      "pubDate": "Thu, 01 Oct 2026 21:37:13 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The United Kingdom has imposed sanctions on eight ships as part of a broader package targeting Russian energy revenues, maritime logistics and individuals accused of supporting Moscow’s war in Ukraine....",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-14T100145Z_1220743582_RC2HTLA9PHRH_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-BRITAIN-800x533.jpg",
+      "en": {
+        "headline": "UK Hits Eight Russian Ships in New Sanctions Package",
+        "summary": "The United Kingdom has imposed sanctions on eight ships as part of a broader package targeting Russian energy revenues, maritime logistics and individuals accused of supporting Moscow’s war in Ukraine....",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Another Tanker Hit in Strait of Hormuz as Attacks Continue",
+      "link": "https://gcaptain.com/another-tanker-hit-in-strait-of-hormuz-as-attacks-continue/",
+      "pubDate": "Thu, 01 Oct 2026 21:28:21 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A tanker has been struck by an unknown projectile while transiting the Strait of Hormuz, the latest in a string of attacks that have emerged over the past several days...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
+      "en": {
+        "headline": "Another Tanker Hit in Strait of Hormuz as Attacks Continue",
+        "summary": "A tanker has been struck by an unknown projectile while transiting the Strait of Hormuz, the latest in a string of attacks that have emerged over the past several days...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Fragmented trade drives dry bulk tonne-mile demand",
+      "link": "https://splash247.com/fragmented-trade-drives-dry-bulk-tonne-mile-demand/",
+      "pubDate": "Thu, 01 Oct 2026 20:00:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Dry bulk shipping has entered the final quarter of 2026 in considerably better shape than most owners expected, with industry leaders at last week’s Splash Singapore conference arguing that increasingly fragmented trade could keep vessel demand elevated even without spectacular g",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Splash-Singapore-2026-Dry-Bulk.jpeg",
+      "en": {
+        "headline": "Fragmented trade drives dry bulk tonne-mile demand",
+        "summary": "Dry bulk shipping has entered the final quarter of 2026 in considerably better shape than most owners expected, with industry leaders at last week’s Splash Singapore conference arguing that increasingly fragmented trade could keep vessel demand elevated even without spectacular g",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "U.S. Targets Iran’s Rail and Shadow Banking Networks as Maritime Blockade Tightens",
       "link": "https://gcaptain.com/u-s-targets-irans-rail-and-shadow-banking-networks-as-maritime-blockade-tightens/",
       "pubDate": "Thu, 01 Oct 2026 19:58:53 +0000",
@@ -245,12 +295,29 @@
       "summary": "The Trump administration expanded its economic campaign against Iran on Thursday, targeting the country’s rail system, major industrial companies and a Russia-linked shadow banking network that U.S. officials say has...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-25T025418Z_961541165_RC22WKA2E4ZU_RTRMADP_3_IRAN-CRISIS-US-BLOCKADE.jpg",
       "en": {
         "headline": "U.S. Targets Iran’s Rail and Shadow Banking Networks as Maritime Blockade Tightens",
         "summary": "The Trump administration expanded its economic campaign against Iran on Thursday, targeting the country’s rail system, major industrial companies and a Russia-linked shadow banking network that U.S. officials say has...",
         "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Tankers enter the death zone",
+      "link": "https://splash247.com/tankers-enter-the-death-zone/",
+      "pubDate": "Thu, 01 Oct 2026 18:04:09 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Like climbers entering the death zone above 8,000 metres en route to the summit of Everest, VLCCs have entered their own peak: the moment where prices for secondhand tonnage surpass newbuild prices, and sell signs flash hard. These moments tend to be fleeting and have historicall",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 9,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/DHT-Antelope-VLCC.jpg",
+      "en": {
+        "headline": "Tankers enter the death zone",
+        "summary": "Like climbers entering the death zone above 8,000 metres en route to the summit of Everest, VLCCs have entered their own peak: the moment where prices for secondhand tonnage surpass newbuild prices, and sell signs flash hard. These moments tend to be fleeting and have historicall",
+        "source": "Splash247"
       }
     },
     {
@@ -262,7 +329,7 @@
       "summary": "Strait of Hormuz transit data for the month of September reveals how the oil and container markets are tactically adjusting to the U.S./Israel war on Iran.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/Hormuz-Heat-Map.jpg",
       "en": {
         "headline": "Resilience Doesn’t Equal Security- Lloyd’s List",
@@ -279,7 +346,7 @@
       "summary": "October will see almost all global ocean carriers make a tentative return to Suez transits on Asia-Europe sailings, after revised pro forma shipping schedules show the Premier Alliance is set to send one of its vessels on the route through the Red Sea and Egyptian waterway.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/OOCL-Portugal-Suez-Canal-800x545.jpg",
       "en": {
         "headline": "Premier Alliance Prepares for Asia-N Europe Services Return to Suez",
@@ -296,7 +363,7 @@
       "summary": "A nuclear-powered LNG carrier could cost roughly 2.5 times as much to build as a conventional vessel, but lower fuel costs could significantly change the economics over the ship’s operating...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/07/shutterstock_723587314.jpg",
       "en": {
         "headline": "Nuclear-Powered LNG Carrier Would Cost 2.5 Times More to Build, Study Finds",
@@ -313,7 +380,7 @@
       "summary": "(Bloomberg) &#8212; Turkey and the United Nations have set up fresh talks in Russia and Ukraine to discuss a Black Sea ceasefire, trying to coalesce scattered efforts to protect grain...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/03/2023-03-01T113751Z_714202100_RC2P3Y980IZS_RTRMADP_3_UKRAINE-CRISIS-GRAINDEAL-QUEUE-800x533.jpg",
       "en": {
         "headline": "Turkey and UN Broker New Talks on Russia-Ukraine Black Sea Truce",
@@ -330,7 +397,7 @@
       "summary": "More than 80 years after the&#160;SS Richard Montgomery&#160;sank in the Thames Estuary with roughly 1,400 tons of explosives still aboard, marine contractors have begun one of the most delicate interventions...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/DSC00273-800x533.jpg",
       "en": {
         "headline": "Salvage Work Begins on WWII ‘Time Bomb’ Wreck in Thames Estuary",
@@ -347,7 +414,7 @@
       "summary": "Alternative-fuel ship orders rebounded sharply in the third quarter, with September delivering the strongest monthly total in nearly two years as LNG remained the dominant choice for new vessels. Shipowners...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2020/05/CMA-CGM-Jacques-Saad%C3%A9.jpeg",
       "en": {
         "headline": "Alternative-Fuel Ship Orders Surge to Two-Year High",
@@ -356,88 +423,88 @@
       }
     },
     {
-      "title": "UK Sanctions Five LNG Carriers in New Russia Package",
-      "link": "https://gcaptain.com/uk-sanctions-five-lng-carriers-in-new-russia-package/",
-      "pubDate": "Thu, 01 Oct 2026 10:30:25 +0000",
-      "source": "gCaptain",
+      "title": "Yangzijiang Maritime tanker spree builds with Haifeng LR2 series",
+      "link": "https://splash247.com/yangzijiang-maritime-tanker-spree-builds-with-haifeng-lr2-series/",
+      "pubDate": "Thu, 01 Oct 2026 14:22:00 +0000",
+      "source": "Splash247",
       "category": "Trade",
-      "summary": "The United Kingdom has sanctioned five liquefied natural gas carriers as part of a new package of measures targeting Russia's efforts to expand a maritime \"shadow fleet\" for LNG exports, including three Russian-built Arc7 ice-class vessels intended to support the Arctic LNG 2 pro",
+      "summary": "Singapore-listed Yangzijiang Maritime Development has built up a sizeable LR2 programme at China’s Jiangsu Haifeng Shipbuilding as the Ren Yuanlin-led group continues one of this year’s most aggressive tanker investment drives. Shipbuilding database information seen by Splash sho",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/12/Alexey-Kosygin-LNG-tanker-2.jpg",
+      "hoursAgo": 12,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/Ren-Yuanlin-Yangzijiang-Financial-Holding.jpg",
       "en": {
-        "headline": "UK Sanctions Five LNG Carriers in New Russia Package",
-        "summary": "The United Kingdom has sanctioned five liquefied natural gas carriers as part of a new package of measures targeting Russia's efforts to expand a maritime \"shadow fleet\" for LNG exports, including three Russian-built Arc7 ice-class vessels intended to support the Arctic LNG 2 pro",
-        "source": "gCaptain"
+        "headline": "Yangzijiang Maritime tanker spree builds with Haifeng LR2 series",
+        "summary": "Singapore-listed Yangzijiang Maritime Development has built up a sizeable LR2 programme at China’s Jiangsu Haifeng Shipbuilding as the Ren Yuanlin-led group continues one of this year’s most aggressive tanker investment drives. Shipbuilding database information seen by Splash sho",
+        "source": "Splash247"
       }
     },
     {
-      "title": "Tanker Congestion Shunts Vital Oil Transfers Farther From Hormuz",
-      "link": "https://gcaptain.com/tanker-congestion-shunts-vital-oil-transfers-farther-from-hormuz/",
-      "pubDate": "Thu, 01 Oct 2026 10:27:39 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Persian Gulf oil producers are shifting critical cargo transfer operations even farther out of the war-hit region as waters just outside the Strait of Hormuz become congested with tankers.",
-      "tag": "Trade",
+      "title": "Precious adds Asyad deal to ultramax fixing run",
+      "link": "https://splash247.com/precious-adds-asyad-deal-to-ultramax-fixing-run/",
+      "pubDate": "Thu, 01 Oct 2026 14:00:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Thai dry bulk owner Precious Shipping has fixed its recently delivered ultramax Rossarin Naree to Asyad Shipping for up to 14 months in the latest index-linked deal for its larger bulker fleet. The Khalid Hashim-led company said the 63,500 dwt ship started a 12-to-14-month charte",
+      "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/05/shutterstock_1370644517.jpg",
+      "hoursAgo": 13,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Rossarin-Naree-Max-Wei-Marine-Traffic.jpg",
       "en": {
-        "headline": "Tanker Congestion Shunts Vital Oil Transfers Farther From Hormuz",
-        "summary": "Persian Gulf oil producers are shifting critical cargo transfer operations even farther out of the war-hit region as waters just outside the Strait of Hormuz become congested with tankers.",
-        "source": "gCaptain"
+        "headline": "Precious adds Asyad deal to ultramax fixing run",
+        "summary": "Thai dry bulk owner Precious Shipping has fixed its recently delivered ultramax Rossarin Naree to Asyad Shipping for up to 14 months in the latest index-linked deal for its larger bulker fleet. The Khalid Hashim-led company said the 63,500 dwt ship started a 12-to-14-month charte",
+        "source": "Splash247"
       }
     },
     {
-      "title": "GAO Finds Marine Firefighting Gaps Persist at U.S. Ports",
-      "link": "https://gcaptain.com/gao-finds-marine-firefighting-gaps-persist-at-u-s-ports/",
-      "pubDate": "Thu, 01 Oct 2026 04:08:24 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A new federal watchdog report says gaps in training, coordination and emergency planning continue to complicate the response to ship fires at U.S. ports, three years after two firefighters were...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/07/Grande-Costa-dAvorio.jpg",
+      "title": "Torm cashes in on ageing MR",
+      "link": "https://splash247.com/torm-cashes-in-on-ageing-mr/",
+      "pubDate": "Thu, 01 Oct 2026 13:30:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Danish product tanker giant Torm has been linked to another fleet disposal, with brokers reporting the sale of one of its oldest MRs to China’s Seacon Shipping group for $22.5m. Splash understands the 2008-built Torm Laura has been picked up by Seacon Tankers Shipping. The 50,000",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 13,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/03/Torm-Success.jpg",
       "en": {
-        "headline": "GAO Finds Marine Firefighting Gaps Persist at U.S. Ports",
-        "summary": "A new federal watchdog report says gaps in training, coordination and emergency planning continue to complicate the response to ship fires at U.S. ports, three years after two firefighters were...",
-        "source": "gCaptain"
+        "headline": "Torm cashes in on ageing MR",
+        "summary": "Danish product tanker giant Torm has been linked to another fleet disposal, with brokers reporting the sale of one of its oldest MRs to China’s Seacon Shipping group for $22.5m. Splash understands the 2008-built Torm Laura has been picked up by Seacon Tankers Shipping. The 50,000",
+        "source": "Splash247"
       }
     },
     {
-      "title": "Canada Makes Major Investment in Marine Safety as Ship Traffic Grows",
-      "link": "https://gcaptain.com/canada-makes-major-investment-in-marine-safety-as-ship-traffic-grows/",
-      "pubDate": "Thu, 01 Oct 2026 04:04:57 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Canada is committing C$1.2 billion (USD $843 million) to ocean protection and marine safety as the federal government prepares for a significant increase in commercial vessel traffic tied to new...",
-      "tag": "Trade",
+      "title": "Rio Tinto sell-down spreads to post-panamaxes",
+      "link": "https://splash247.com/rio-tinto-sell-down-spreads-to-post-panamaxes/",
+      "pubDate": "Thu, 01 Oct 2026 13:04:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Rio Tinto’s owned-vessel sell-down appears to be extending beyond the newcastlemax fleet it cleared out this year, with a pair of 2013-built post-panamax bulkers reported sold en bloc for $42.8m. Broker reports list the 89,892 dwt RTM Dias and RTM Flinders, both built by Namura i",
+      "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 14,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/RTM-Flinders-Jonas-Kruger-Marine-Traffic.jpg",
       "en": {
-        "headline": "Canada Makes Major Investment in Marine Safety as Ship Traffic Grows",
-        "summary": "Canada is committing C$1.2 billion (USD $843 million) to ocean protection and marine safety as the federal government prepares for a significant increase in commercial vessel traffic tied to new...",
-        "source": "gCaptain"
+        "headline": "Rio Tinto sell-down spreads to post-panamaxes",
+        "summary": "Rio Tinto’s owned-vessel sell-down appears to be extending beyond the newcastlemax fleet it cleared out this year, with a pair of 2013-built post-panamax bulkers reported sold en bloc for $42.8m. Broker reports list the 89,892 dwt RTM Dias and RTM Flinders, both built by Namura i",
+        "source": "Splash247"
       }
     },
     {
-      "title": "U.S. Ports Push Nuclear Power, Faster Dredging at Record AAPA Convention",
-      "link": "https://gcaptain.com/u-s-ports-push-nuclear-power-faster-dredging-at-record-aapa-convention/",
-      "pubDate": "Wed, 30 Sep 2026 21:06:56 +0000",
-      "source": "gCaptain",
+      "title": "Transpetrol trims aframax fleet in $73m deal",
+      "link": "https://splash247.com/transpetrol-trims-aframax-fleet-in-73m-deal/",
+      "pubDate": "Thu, 01 Oct 2026 12:30:00 +0000",
+      "source": "Splash247",
       "category": "Trade",
-      "summary": "The American Association of Port Authorities wrapped up its annual convention in New Orleans on Wednesday after drawing its largest attendance ever, with more than 900 participants representing over 90 ports.",
+      "summary": "Belgian tanker owner Transpetrol Maritime Services has offloaded its 2016-built aframax in a $73m deal with Turkish buyers. VesselsValue data identified Transpetrol as the seller of the Hyundai Samho-built 114,070 dwt TP Affinity and put the ship’s current market value at $80.72m",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 25,
-      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 14,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Affinity-V-aframax-Transpetrol.jpg",
       "en": {
-        "headline": "U.S. Ports Push Nuclear Power, Faster Dredging at Record AAPA Convention",
-        "summary": "The American Association of Port Authorities wrapped up its annual convention in New Orleans on Wednesday after drawing its largest attendance ever, with more than 900 participants representing over 90 ports.",
-        "source": "gCaptain"
+        "headline": "Transpetrol trims aframax fleet in $73m deal",
+        "summary": "Belgian tanker owner Transpetrol Maritime Services has offloaded its 2016-built aframax in a $73m deal with Turkish buyers. VesselsValue data identified Transpetrol as the seller of the Hyundai Samho-built 114,070 dwt TP Affinity and put the ship’s current market value at $80.72m",
+        "source": "Splash247"
       }
     }
   ]
