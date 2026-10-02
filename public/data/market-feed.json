@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-02T11:37:26.244Z",
+    "generatedAt": "2026-10-02T17:05:53.247Z",
     "benchmarkAsOf": "2026-10-02",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 700,
-        "deltaPct": 2.79,
+        "deltaPct": 0,
         "asOf": "2026-10-01T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1408.5,
-        "deltaPct": 0.61,
+        "deltaPct": 0,
         "asOf": "2026-10-01T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 628.5,
-        "deltaPct": 3.88,
+        "deltaPct": 0,
         "asOf": "2026-10-01T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -205,18 +205,18 @@
   },
   "indices": {
     "bdi": {
-      "value": 3140,
-      "deltaPct": 0,
+      "value": 3148,
+      "deltaPct": 0.25,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-02T02:39:54.127Z"
+      "asOf": "2026-10-02T14:39:47.815Z"
     },
     "capesizeTc": {
-      "value": 4928,
-      "deltaPct": 0,
+      "value": 5042,
+      "deltaPct": 2.31,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-01T06:43:16.474Z"
+      "asOf": "2026-10-02T16:53:05.622Z"
     },
     "panamaxTc": {
       "value": 2384,
@@ -236,6 +236,40 @@
   },
   "news": [
     {
+      "title": "No Lights, No Radio: Getting Oil Through Hormuz Is a Risky Job",
+      "link": "https://gcaptain.com/no-lights-no-radio-getting-oil-through-hormuz-is-a-risky-job/",
+      "pubDate": "Fri, 02 Oct 2026 11:45:47 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The tanker captain summoned his years of experience when he saw the blast in front of him. He veered his 300-meter-long ship around the vessel ahead and could see a fire had started. He called the US Navy to tell them of the attack.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-01T164535Z_267159373_RC2KVKADMUK6_RTRMADP_3_GLOBAL-OIL-800x600.jpg",
+      "en": {
+        "headline": "No Lights, No Radio: Getting Oil Through Hormuz Is a Risky Job",
+        "summary": "The tanker captain summoned his years of experience when he saw the blast in front of him. He veered his 300-meter-long ship around the vessel ahead and could see a fire had started. He called the US Navy to tell them of the attack.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Alaska LNG Could Cost More Than Double Gulf Coast Rivals, Raising Questions Over Economics",
+      "link": "https://gcaptain.com/alaska-lng-could-cost-more-than-double-gulf-coast-rivals-raising-questions-over-economics/",
+      "pubDate": "Fri, 02 Oct 2026 11:43:33 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "US President Donald Trump's push to steer $54 billion of South Korean investment into Alaska LNG is putting a fresh focus on a 20 million-ton-a-year export project that would cost more than twice as much as a comparable US Gulf Coast plant.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/04/Liquefaction-Facility.jpeg",
+      "en": {
+        "headline": "Alaska LNG Could Cost More Than Double Gulf Coast Rivals, Raising Questions Over Economics",
+        "summary": "US President Donald Trump's push to steer $54 billion of South Korean investment into Alaska LNG is putting a fresh focus on a 20 million-ton-a-year export project that would cost more than twice as much as a comparable US Gulf Coast plant.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "DOF secures preliminary award for 2028 project",
       "link": "https://splash247.com/dof-secures-preliminary-award-for-2028-project/",
       "pubDate": "Fri, 02 Oct 2026 10:15:00 +0000",
@@ -244,7 +278,7 @@
       "summary": "Norwegian offshore vessel owner DOF has received a letter of intent to hire an I-class vessel in 2028. The scope of work includes DOF&#8217;s in-house project management and engineering, procurement, and logistics support services. DOF expects to confirm the full contract award b",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/Skandi-Implementer-DOF.jpg",
       "en": {
         "headline": "DOF secures preliminary award for 2028 project",
@@ -261,7 +295,7 @@
       "summary": "UK oilfield services specialist EnerMech has secured a five-year extension to its non-destructive testing contract with Chevron Australia, retaining the inspection and asset-integrity work until the end of 2031. The Aberdeen-headquartered services company first won the assignment",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/12/Gorgon-LNG-Chevron.jpg",
       "en": {
         "headline": "Chevron extends Australia asset-integrity deal with EnerMech",
@@ -278,7 +312,7 @@
       "summary": "Japanese shipping giant Mitsui OSK Lines (MOL) will operate two 210,000-dwt ore carriers for Vale under a 25-year contract, introducing tri-fuel propulsion to the long-haul iron ore trade. MOL Ocean Bulk, the group’s Singapore-based capesize bulker operator, signed the agreement ",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/MOL-Mitsui-OSK-Bulker.jpg",
       "en": {
         "headline": "MOL lands Vale charter for two tri-fuel ore carriers",
@@ -295,7 +329,7 @@
       "summary": "Anthony Inglessis-led Carlova Maritime has ordered two 114,000 dwt aframax tankers at Imabari Shipbuilding, marking the Greek owner’s first newbuilding contracts in Japan since emerging from the break-up of Samos Steamship. Carlova’s newly updated fleet list shows the ships sched",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Phaedra-aframax-Carlova-Maritime.jpg",
       "en": {
         "headline": "Carlova returns to Japan with Imabari aframax pair",
@@ -312,7 +346,7 @@
       "summary": "Ocean Network Express is consolidating its Asian regional management in Singapore, folding its Hong Kong-based East Asia headquarters into a new Asia Pacific operation from April 1, 2027. The Japanese containerline said the new Asia Pacific regional headquarters will combine its ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/OCEAN-NETWORK-EXPRESS.jpg",
       "en": {
         "headline": "ONE folds Hong Kong regional HQ into Singapore",
@@ -329,7 +363,7 @@
       "summary": "Like climbers entering the death zone above 8,000 metres en route to the summit of Everest, VLCCs have entered their own peak: the moment where prices for secondhand tonnage surpass newbuild prices, and sell signs flash hard. These moments tend to be fleeting and have historicall",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/DHT-Antelope-VLCC.jpg",
       "en": {
         "headline": "Tankers enter the death zone",
@@ -346,7 +380,7 @@
       "summary": "Kuwait Oil Tanker Company has suffered its second VLCC strike in four days, while a separate projectile attack at Saudi Arabia’s Yanbu port briefly disrupted loading operations, piling fresh security pressure on two of the Middle East’s key oil export routes. Maritime security fi",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Kazimah-III-Derrick-Pinington-Marine-Traffic.png",
       "en": {
         "headline": "Fresh attacks hit Hormuz tanker and Saudi oil gateway",
@@ -363,7 +397,7 @@
       "summary": "For an industry that has spent much of the 2020s making extraordinary money from things going wrong, this week brought an unfamiliar threat: things starting to go right. Some of shipping’s most important pressure points showed signs of easing. At the Panama Canal, for instance, i",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/11/Panama-Canal-tanker.jpg",
       "en": {
         "headline": "Splash Wrap: When normal becomes the risk",
@@ -380,7 +414,7 @@
       "summary": "Greek feeder specialist Contships Logistics has launched a potentially 30-ship newbuilding programme in China as the Nikolas Pateras-led owner shifts its fleet renewal drive towards fresh tonnage. Wholly owned CLC Newbuildings has signed a letter of intent with Hubei Guangji Gree",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Contships.jpg",
       "en": {
         "headline": "Contships goes big in China with up to 30 newbuilds",
@@ -397,7 +431,7 @@
       "summary": "Mitsubishi Heavy Industries is putting around ¥100bn ($635m) into expanding shipbuilding capacity at Shimonoseki, sealing a land deal with the city for a new production base on the artificial island of Choshu Dejima. MHI said its Mitsubishi Shipbuilding unit will transfer some fu",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Choshu-Dejima-Shimonoseki-City-Yamaguchi-Prefecture.jpg",
       "en": {
         "headline": "Mitsubishi puts $635m behind shipyard expansion",
@@ -414,7 +448,7 @@
       "summary": "The United Kingdom has imposed sanctions on eight ships as part of a broader package targeting Russian energy revenues, maritime logistics and individuals accused of supporting Moscow’s war in Ukraine....",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-14T100145Z_1220743582_RC2HTLA9PHRH_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-BRITAIN-800x533.jpg",
       "en": {
         "headline": "UK Hits Eight Russian Ships in New Sanctions Package",
@@ -431,7 +465,7 @@
       "summary": "A tanker has been struck by an unknown projectile while transiting the Strait of Hormuz, the latest in a string of attacks that have emerged over the past several days...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
       "en": {
         "headline": "Another Tanker Hit in Strait of Hormuz as Attacks Continue",
@@ -448,7 +482,7 @@
       "summary": "The Trump administration expanded its economic campaign against Iran on Thursday, targeting the country’s rail system, major industrial companies and a Russia-linked shadow banking network that U.S. officials say has...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 15,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-25T025418Z_961541165_RC22WKA2E4ZU_RTRMADP_3_IRAN-CRISIS-US-BLOCKADE.jpg",
       "en": {
         "headline": "U.S. Targets Iran’s Rail and Shadow Banking Networks as Maritime Blockade Tightens",
@@ -465,45 +499,11 @@
       "summary": "Strait of Hormuz transit data for the month of September reveals how the oil and container markets are tactically adjusting to the U.S./Israel war on Iran.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 17,
+      "hoursAgo": 23,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/Hormuz-Heat-Map.jpg",
       "en": {
         "headline": "Resilience Doesn’t Equal Security- Lloyd’s List",
         "summary": "Strait of Hormuz transit data for the month of September reveals how the oil and container markets are tactically adjusting to the U.S./Israel war on Iran.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Premier Alliance Prepares for Asia-N Europe Services Return to Suez",
-      "link": "https://gcaptain.com/premier-alliance-prepares-for-asia-n-europe-services-return-to-suez/",
-      "pubDate": "Thu, 01 Oct 2026 17:42:26 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "October will see almost all global ocean carriers make a tentative return to Suez transits on Asia-Europe sailings, after revised pro forma shipping schedules show the Premier Alliance is set to send one of its vessels on the route through the Red Sea and Egyptian waterway.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/OOCL-Portugal-Suez-Canal-800x545.jpg",
-      "en": {
-        "headline": "Premier Alliance Prepares for Asia-N Europe Services Return to Suez",
-        "summary": "October will see almost all global ocean carriers make a tentative return to Suez transits on Asia-Europe sailings, after revised pro forma shipping schedules show the Premier Alliance is set to send one of its vessels on the route through the Red Sea and Egyptian waterway.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Nuclear-Powered LNG Carrier Would Cost 2.5 Times More to Build, Study Finds",
-      "link": "https://gcaptain.com/nuclear-powered-lng-carrier-would-cost-2-5-times-more-to-build-study-finds/",
-      "pubDate": "Thu, 01 Oct 2026 17:35:21 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A nuclear-powered LNG carrier could cost roughly 2.5 times as much to build as a conventional vessel, but lower fuel costs could significantly change the economics over the ship’s operating...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/07/shutterstock_723587314.jpg",
-      "en": {
-        "headline": "Nuclear-Powered LNG Carrier Would Cost 2.5 Times More to Build, Study Finds",
-        "summary": "A nuclear-powered LNG carrier could cost roughly 2.5 times as much to build as a conventional vessel, but lower fuel costs could significantly change the economics over the ship’s operating...",
         "source": "gCaptain"
       }
     }
