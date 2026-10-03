@@ -1,13 +1,13 @@
 {
   "v": 1,
-  "startedAt": "2026-10-02T07:42:04.389Z",
-  "completedAt": "2026-10-02T07:42:06.954Z",
+  "startedAt": "2026-10-03T07:14:09.130Z",
+  "completedAt": "2026-10-03T07:14:12.076Z",
   "offline": false,
   "steps": {
     "ingest": {
       "ok": true,
       "exitCode": 0,
-      "durationMs": 2261,
+      "durationMs": 2652,
       "error": null
     },
     "generateEnrichment": {
@@ -19,7 +19,7 @@
     "enrich": {
       "ok": true,
       "exitCode": 0,
-      "durationMs": 209,
+      "durationMs": 205,
       "error": null
     },
     "ais": {
@@ -35,11 +35,11 @@
     }
   },
   "checksums": {
-    "fleetIndexSha256": "a6b30af13a59f4af9011c91505f25cdce5a3e7f47d3ba8a8f5e1297f1d2626d5",
+    "fleetIndexSha256": "1dbee2a185f804a264b6a254b6eff38c99a0c1ed03e2aa14ab1b811f149fe470",
     "chunkCount": 66,
     "vesselCount": 49634,
-    "fleetGenerated": "2026-10-02T07:42:06.607Z",
-    "fleetEnrichedAt": "2026-10-02T07:42:06.796Z"
+    "fleetGenerated": "2026-10-03T07:14:11.738Z",
+    "fleetEnrichedAt": "2026-10-03T07:14:11.926Z"
   },
   "warnings": [
     "AISSTREAM_API_KEY not set — preserving existing snapshots"
