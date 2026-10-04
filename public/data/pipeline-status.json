@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "startedAt": "2026-10-03T20:22:21.570Z",
+  "startedAt": "2026-10-04T03:30:37.801Z",
   "flags": {
     "market": true,
     "fleet": false,
@@ -10,7 +10,7 @@
     "market": {
       "ok": true,
       "exitCode": 0,
-      "durationMs": 15721,
+      "durationMs": 5301,
       "label": "market:fetch",
       "normalize": {
         "ok": true,
@@ -20,5 +20,5 @@
   },
   "warnings": [],
   "ok": true,
-  "completedAt": "2026-10-03T20:22:37.294Z"
+  "completedAt": "2026-10-04T03:30:43.145Z"
 }
