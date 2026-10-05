@@ -50,8 +50,9 @@ Response includes `actions[]` with `priority`, `message`, and `revenue` hint.
 
 ## Weekly cron
 
-GitHub Actions workflow **Revenue pipeline digest** (`.github/workflows/revenue-digest-cron.yml`) calls production every **Monday 00:15 UTC** (~09:15 KST).  
-Set repo secret **`CRON_SECRET`** (or **`REVENUE_PIPELINE_SECRET`**) to match Vercel.
+GitHub Actions workflow **Revenue pipeline digest** (`.github/workflows/revenue-digest-cron.yml`) runs **`node scripts/run-revenue-digest.mjs`** every **Monday 00:15 UTC** (~09:15 KST) inside the runner (no production HTTP call — avoids Vercel outages / `402 DEPLOYMENT_DISABLED`).
+
+Required GitHub secrets: **`GOOGLE_SERVICE_ACCOUNT_JSON`** (or **`GOOGLE_INDEXING_SERVICE_ACCOUNT_JSON`**), **`GA4_PROPERTY_ID`**, optional **`GSC_SITE_URL`**, **`RESEND_API_KEY`**, **`GITHUB_TOKEN`** for open contact issues.
 
 Manual trigger:
 

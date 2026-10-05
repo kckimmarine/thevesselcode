@@ -35,6 +35,7 @@
     "test:seo-sitemap": "node scripts/test-seo-sitemap.mjs",
     "verify:seo-gsc": "node scripts/verify-seo-gsc-ready.mjs",
     "revenue:report": "node scripts/revenue-pipeline-report.mjs",
+    "revenue:digest": "node scripts/run-revenue-digest.mjs",
     "test:revenue-pipeline": "node scripts/test-revenue-pipeline.mjs",
     "test:home-landing": "node scripts/test-home-landing.mjs",
     "test:maritime-toolkit-data": "node scripts/test-maritime-toolkit-data.mjs",
