@@ -1,6 +1,7 @@
 name: Revenue pipeline digest
 
 # Weekly GSC + GA4 → money-actions email (Mon 00:15 UTC ≈ 09:15 KST).
+# Runs in GitHub Actions (does not depend on Vercel /api being up).
 # Manual: Actions → Revenue pipeline digest → Run workflow
 
 on:
@@ -16,18 +17,30 @@ jobs:
   digest:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger production revenue digest
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --ignore-scripts
+
+      - name: Run revenue digest (GSC + GA4 → notify)
         env:
-          CRON_SECRET: ${{ secrets.CRON_SECRET }}
-          REVENUE_PIPELINE_SECRET: ${{ secrets.REVENUE_PIPELINE_SECRET }}
-        run: |
-          set -euo pipefail
-          SECRET="${CRON_SECRET:-$REVENUE_PIPELINE_SECRET}"
-          if [ -z "$SECRET" ]; then
-            echo "Missing CRON_SECRET or REVENUE_PIPELINE_SECRET in repo secrets."
-            exit 1
-          fi
-          curl -fsS -H "Authorization: Bearer ${SECRET}" \
-            "https://www.thevesselcode.com/api/revenue-pipeline?digest=1" \
-            | head -c 4000
-          echo ""
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_INDEXING_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_INDEXING_SERVICE_ACCOUNT_JSON }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          REVENUE_DIGEST_TO: ${{ secrets.REVENUE_DIGEST_TO }}
+          CONTACT_TO_EMAILS: ${{ secrets.CONTACT_TO_EMAILS }}
+          CONTACT_SLACK_WEBHOOK_URL: ${{ secrets.CONTACT_SLACK_WEBHOOK_URL }}
+          CONTACT_KAKAO_WORK_WEBHOOK_URL: ${{ secrets.CONTACT_KAKAO_WORK_WEBHOOK_URL }}
+        run: node scripts/run-revenue-digest.mjs
