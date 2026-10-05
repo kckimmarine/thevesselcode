@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-05T13:06:11.549Z",
-    "benchmarkAsOf": "2026-10-02",
+    "generatedAt": "2026-10-05T23:30:17.590Z",
+    "benchmarkAsOf": "2026-10-05",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-10-02",
-    "updatedLabelKo": "2026-10-02 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-10-05",
+    "updatedLabelKo": "2026-10-05 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -185,7 +185,7 @@
         "defaultDensity": 991,
         "priceUsdMt": 990,
         "deltaPct": 0,
-        "asOf": "2026-10-02T22:41:33.308Z",
+        "asOf": "2026-10-05T22:41:19.934Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -197,7 +197,7 @@
         "defaultDensity": 991,
         "priceUsdMt": 890,
         "deltaPct": 0,
-        "asOf": "2026-10-02T22:41:33.277Z",
+        "asOf": "2026-10-05T22:41:19.908Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -205,11 +205,11 @@
   },
   "indices": {
     "bdi": {
-      "value": 3148,
-      "deltaPct": 0,
+      "value": 3070,
+      "deltaPct": -2.48,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-02T14:39:47.815Z"
+      "asOf": "2026-10-05T14:40:11.952Z"
     },
     "capesizeTc": {
       "value": 5042,
@@ -219,11 +219,11 @@
       "asOf": "2026-10-02T16:53:05.622Z"
     },
     "panamaxTc": {
-      "value": 2384,
-      "deltaPct": 0,
+      "value": 2379,
+      "deltaPct": -0.21,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-01T14:26:22.867Z"
+      "asOf": "2026-10-05T22:14:42.929Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,227 @@
   },
   "news": [
     {
+      "title": "Five Hormuz Incidents Reported Monday as Tanker Attacks Mount",
+      "link": "https://gcaptain.com/five-hormuz-incidents-reported-monday-as-tanker-attacks-mount/",
+      "pubDate": "Mon, 05 Oct 2026 22:28:14 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "UK Maritime Trade Operations reported five separate incidents involving commercial shipping in or near the Strait of Hormuz on Monday, including four tanker attacks and an incident in which Iran’s...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
+      "en": {
+        "headline": "Five Hormuz Incidents Reported Monday as Tanker Attacks Mount",
+        "summary": "UK Maritime Trade Operations reported five separate incidents involving commercial shipping in or near the Strait of Hormuz on Monday, including four tanker attacks and an incident in which Iran’s...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Coast Guard Proposes Dropping Six Mariner Training Requirements",
+      "link": "https://gcaptain.com/coast-guard-proposes-dropping-six-mariner-training-requirements/",
+      "pubDate": "Mon, 05 Oct 2026 21:33:52 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The U.S. Coast Guard is proposing to eliminate six training and competency requirements for certain Merchant Mariner Credential endorsements, saying the rules exceed international standards and impose unnecessary costs on...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/02/port_state_control_inspection.jpg",
+      "en": {
+        "headline": "Coast Guard Proposes Dropping Six Mariner Training Requirements",
+        "summary": "The U.S. Coast Guard is proposing to eliminate six training and competency requirements for certain Merchant Mariner Credential endorsements, saying the rules exceed international standards and impose unnecessary costs on...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "How close is shipping to the top?",
+      "link": "https://splash247.com/how-close-is-shipping-to-the-top/",
+      "pubDate": "Mon, 05 Oct 2026 20:31:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Shipping markets rarely announce the top with any clarity. More often, the argument about whether the peak has arrived only really starts when freight rates are still climbing, asset values are making less and less conventional sense and owners are sufficiently confident to keep ",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-VLCC.jpg",
+      "en": {
+        "headline": "How close is shipping to the top?",
+        "summary": "Shipping markets rarely announce the top with any clarity. More often, the argument about whether the peak has arrived only really starts when freight rates are still climbing, asset values are making less and less conventional sense and owners are sufficiently confident to keep ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Kuwait Oil Output at 75% of Prewar as Hormuz Transits Rise",
+      "link": "https://gcaptain.com/kuwait-oil-output-at-75-of-prewar-as-hormuz-transits-rise/",
+      "pubDate": "Mon, 05 Oct 2026 20:02:21 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Kuwait is pumping oil at about 75% of the level seen before the Iran war as more tankers take the risk of navigating the Strait of Hormuz.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/01/Kuwait_city_1996.jpg",
+      "en": {
+        "headline": "Kuwait Oil Output at 75% of Prewar as Hormuz Transits Rise",
+        "summary": "Kuwait is pumping oil at about 75% of the level seen before the Iran war as more tankers take the risk of navigating the Strait of Hormuz.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Hackers Breached Propulsion System of US-Bound Oil Tanker",
+      "link": "https://gcaptain.com/hackers-breached-propulsion-system-of-us-bound-oil-tanker/",
+      "pubDate": "Mon, 05 Oct 2026 18:02:48 +0000",
+      "source": "gCaptain",
+      "category": "Bunker",
+      "summary": "FBI and US Coast Guard investigators have found evidence that hackers accessed the propulsion system of an oil supertanker as it was approaching the Texas coast this summer, according to US officials familiar with the matter, an extraordinary breach that highlights the growing ph",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/2026-01-08T182733Z_594813059_RC2CWIAO7HWG_RTRMADP_3_USA-VENEZUELA-CUBA-FUEL-800x533.jpg",
+      "en": {
+        "headline": "Hackers Breached Propulsion System of US-Bound Oil Tanker",
+        "summary": "FBI and US Coast Guard investigators have found evidence that hackers accessed the propulsion system of an oil supertanker as it was approaching the Texas coast this summer, according to US officials familiar with the matter, an extraordinary breach that highlights the growing ph",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Opinion: Oil&#8217;s New Problem Isn&#8217;t Supply. It&#8217;s Logistics",
+      "link": "https://gcaptain.com/opinion-oils-new-problem-isnt-supply-its-logistics/",
+      "pubDate": "Mon, 05 Oct 2026 16:13:33 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Middle East crude exports recently climbed to their highest levels since the start of the Iran war as more Gulf producers resume transit through the Strait of Hormuz – despite the continued threat of Iranian attacks. Yet oil prices remain stubbornly elevated, suggesting logistica",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-23T181804Z_1693800061_RC2TJMAPQRRY_RTRMADP_3_YEMEN-SHIPPING-ADEN-800x521.jpg",
+      "en": {
+        "headline": "Opinion: Oil&#8217;s New Problem Isn&#8217;t Supply. It&#8217;s Logistics",
+        "summary": "Middle East crude exports recently climbed to their highest levels since the start of the Iran war as more Gulf producers resume transit through the Strait of Hormuz – despite the continued threat of Iranian attacks. Yet oil prices remain stubbornly elevated, suggesting logistica",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Saudi-Backed Forces Claim Control of Bab el-Mandeb Strait",
+      "link": "https://gcaptain.com/saudi-backed-forces-claim-control-of-bab-el-mandeb-strait/",
+      "pubDate": "Mon, 05 Oct 2026 16:04:23 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Saudi-backed Yemeni government forces have secured effective control of the Bab el-Mandeb Strait, Yemen's Information Minister Moammar al-Eryani told Reuters on Monday, though fighting continues with Houthi forces in the area.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-24T194006Z_526739983_RC2LD6A7RFZM_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x533.jpg",
+      "en": {
+        "headline": "Saudi-Backed Forces Claim Control of Bab el-Mandeb Strait",
+        "summary": "Saudi-backed Yemeni government forces have secured effective control of the Bab el-Mandeb Strait, Yemen's Information Minister Moammar al-Eryani told Reuters on Monday, though fighting continues with Houthi forces in the area.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Strong Freight Markets Keep Aging Ships Out of Recycling Yards",
+      "link": "https://gcaptain.com/strong-freight-markets-keep-aging-ships-out-of-recycling-yards/",
+      "pubDate": "Mon, 05 Oct 2026 16:01:05 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "Strong freight markets kept aging vessels trading through the third quarter despite rising scrap prices and strong demand from ship recyclers, according to a new market review from GMS, the...",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Ship-recycling-facility.jpg",
+      "en": {
+        "headline": "Strong Freight Markets Keep Aging Ships Out of Recycling Yards",
+        "summary": "Strong freight markets kept aging vessels trading through the third quarter despite rising scrap prices and strong demand from ship recyclers, according to a new market review from GMS, the...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "More Tankers Hit in Hormuz as IRGC Orders Ship to Turn Back",
+      "link": "https://gcaptain.com/more-tankers-hit-in-hormuz-as-irgc-orders-ship-to-turn-back/",
+      "pubDate": "Mon, 05 Oct 2026 15:02:18 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The security situation in the Strait of Hormuz deteriorated further over the weekend as UK Maritime Trade Operations reported several additional tanker attacks and a separate incident in which Iran’s...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-21T113312Z_986150390_RC25YLAX1ZOM_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
+      "en": {
+        "headline": "More Tankers Hit in Hormuz as IRGC Orders Ship to Turn Back",
+        "summary": "The security situation in the Strait of Hormuz deteriorated further over the weekend as UK Maritime Trade Operations reported several additional tanker attacks and a separate incident in which Iran’s...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "From Residue to Resource – the Rise and Risks of Marine Biofuels",
+      "link": "https://gcaptain.com/from-residue-to-resource-the-rise-and-risks-of-marine-biofuels/",
+      "pubDate": "Mon, 05 Oct 2026 13:27:34 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "By Mark Smith, Director &#8211; Decarbonisation, NorthStandard While&#160;corn, sugarcane, wheat, or vegetable oils&#160;can be converted into fuel,&#160;their use&#160;for&#160;foodis&#160;driving&#160;demand to&#160;develop&#160;waste or bi-products&#160;from agricultural, fore",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 10,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/3656-Biofuel-Residue-image-1-800x438.jpg",
+      "en": {
+        "headline": "From Residue to Resource – the Rise and Risks of Marine Biofuels",
+        "summary": "By Mark Smith, Director &#8211; Decarbonisation, NorthStandard While&#160;corn, sugarcane, wheat, or vegetable oils&#160;can be converted into fuel,&#160;their use&#160;for&#160;foodis&#160;driving&#160;demand to&#160;develop&#160;waste or bi-products&#160;from agricultural, fore",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Shadow Fleet Traffic on Northern Sea Route Surges as Arctic Safety Concerns Grow",
+      "link": "https://gcaptain.com/shadow-fleet-traffic-on-northern-sea-route-surges-as-arctic-safety-concerns-grow/",
+      "pubDate": "Mon, 05 Oct 2026 13:19:00 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The number of shadow-fleet vessels carrying Russian oil and LNG through the Northern Sea Route has surged this summer, according to a new analysis by the Bellona Environmental Transparency Center, raising concerns about the ability to respond to accidents in one of the world's mo",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 10,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/10/nsr-escort-july-2024-800x581.jpg",
+      "en": {
+        "headline": "Shadow Fleet Traffic on Northern Sea Route Surges as Arctic Safety Concerns Grow",
+        "summary": "The number of shadow-fleet vessels carrying Russian oil and LNG through the Northern Sea Route has surged this summer, according to a new analysis by the Bellona Environmental Transparency Center, raising concerns about the ability to respond to accidents in one of the world's mo",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Middle East Oil Exports Top Pre-War Levels for Part of September But Tanker Attacks Increase",
+      "link": "https://gcaptain.com/middle-east-oil-exports-top-pre-war-levels-for-part-of-september-but-tanker-attacks-increase/",
+      "pubDate": "Mon, 05 Oct 2026 13:18:47 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Gulf oil exporters topped pre-war levels for about half of September, shipping data showed on Monday, though attacks on tankers and logistical constraints cloud the outlook for sustained higher flows.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 10,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "Middle East Oil Exports Top Pre-War Levels for Part of September But Tanker Attacks Increase",
+        "summary": "Gulf oil exporters topped pre-war levels for about half of September, shipping data showed on Monday, though attacks on tankers and logistical constraints cloud the outlook for sustained higher flows.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "LNG Trade Through Hormuz Extends Rebound Despite Shipping Risks",
+      "link": "https://gcaptain.com/lng-trade-through-hormuz-extends-rebound-despite-shipping-risks/",
+      "pubDate": "Mon, 05 Oct 2026 13:15:36 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Shipments of liquefied natural gas through the Strait of Hormuz extended a rebound that began in September, as the region’s producers seek to restore supplies to energy-starved customers.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 10,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "LNG Trade Through Hormuz Extends Rebound Despite Shipping Risks",
+        "summary": "Shipments of liquefied natural gas through the Strait of Hormuz extended a rebound that began in September, as the region’s producers seek to restore supplies to energy-starved customers.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Advantage tops up China tanker spree with LR2s and extra MRs",
       "link": "https://splash247.com/advantage-tops-up-china-tanker-spree-with-lr2s-and-extra-mrs/",
       "pubDate": "Mon, 05 Oct 2026 13:00:00 +0000",
@@ -244,7 +465,7 @@
       "summary": "Geneva-based Advantage Tankers has added two LR2 product tankers at Dalian Shipbuilding Industry Corporation and expanded its MR newbuilding programme at Guangzhou Shipyard International from four ships to six. The latest move gives the Nazlı Williams-controlled owner another fou",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Advantage-Smooth-suezmax-Advantage-Tankers.jpg",
       "en": {
         "headline": "Advantage tops up China tanker spree with LR2s and extra MRs",
@@ -261,7 +482,7 @@
       "summary": "Singapore shipyard group Seatrium has secured a contract from Karpowership to convert an LNG carrier into the FSRU LNGT Akdeniz, extending a partnership that has produced seven delivered units since 2018. The work is scheduled to begin in the first quarter of 2027. LNGT Akdeniz w",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/11/Seatrium-yard-Seatrium.jpg",
       "en": {
         "headline": "Seatrium bags ninth Karpowership FSRU conversion",
@@ -278,233 +499,12 @@
       "summary": "Taiwan’s U-Ming Marine Transport has committed up to $312m on six more bulkers in China, adding four ultramaxes and firming another pair of Newcastlemaxes as it presses ahead with plans to build a 100-ship fleet. Two separate Taiwan exchange disclosures from U-Ming’s Singapore su",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/04/U-Ming.jpg",
       "en": {
         "headline": "U-Ming doubles down in China with six-ship bulker spend",
         "summary": "Taiwan’s U-Ming Marine Transport has committed up to $312m on six more bulkers in China, adding four ultramaxes and firming another pair of Newcastlemaxes as it presses ahead with plans to build a 100-ship fleet. Two separate Taiwan exchange disclosures from U-Ming’s Singapore su",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "Grace Energy nearly doubles money on ex-Dynacom suezmax",
-      "link": "https://splash247.com/grace-energy-nearly-doubles-money-on-ex-dynacom-suezmax/",
-      "pubDate": "Mon, 05 Oct 2026 11:30:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Dubai-based Grace Energy Shipping-linked interests are cashing in on the surge in tanker asset values, with brokers reporting the sale of the 2011-built suezmax Vendavel for $94.5m, close to double its acquisition price a little over two years ago. S&#38;P sources list the 149,99",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 1,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/MarineTraffic-Cengiz-Tokgoz-Vendavel.jpg",
-      "en": {
-        "headline": "Grace Energy nearly doubles money on ex-Dynacom suezmax",
-        "summary": "Dubai-based Grace Energy Shipping-linked interests are cashing in on the surge in tanker asset values, with brokers reporting the sale of the 2011-built suezmax Vendavel for $94.5m, close to double its acquisition price a little over two years ago. S&#38;P sources list the 149,99",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Reach Subsea extends MPSV charter through 2028",
-      "link": "https://splash247.com/reach-subsea-extends-mpsv-charter-through-2028/",
-      "pubDate": "Mon, 05 Oct 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norwegian subsea services specialist Reach Subsea has exercised the one-year extension option under the charter agreement for the subsea vessel Deep Cygnus. The charter agreement was originally announced in July 2022 as a four-year agreement with an option to extend for an additi",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/01/Deep-Cygnus.jpg",
-      "en": {
-        "headline": "Reach Subsea extends MPSV charter through 2028",
-        "summary": "Norwegian subsea services specialist Reach Subsea has exercised the one-year extension option under the charter agreement for the subsea vessel Deep Cygnus. The charter agreement was originally announced in July 2022 as a four-year agreement with an option to extend for an additi",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Almi expands China orderbook with three more ultramaxes",
-      "link": "https://splash247.com/almi-expands-china-orderbook-with-three-more-ultramaxes/",
-      "pubDate": "Mon, 05 Oct 2026 10:30:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Greek dry bulk owner Almi Marine Management has added another three ultramax newbuildings in China, expanding a fleet renewal drive that began earlier this year. Greek shipping sources report that the Athens-based owner has booked three 64,000 dwt bulkers at COSCO Shipping Heavy ",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/Mea-Mare-ultramax-Almi-Marine.jpg",
-      "en": {
-        "headline": "Almi expands China orderbook with three more ultramaxes",
-        "summary": "Greek dry bulk owner Almi Marine Management has added another three ultramax newbuildings in China, expanding a fleet renewal drive that began earlier this year. Greek shipping sources report that the Athens-based owner has booked three 64,000 dwt bulkers at COSCO Shipping Heavy ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "COOEC lands EPCI work on QatarEnergy field redevelopment",
-      "link": "https://splash247.com/cooec-lands-epci-work-on-qatarenergy-field-redevelopment/",
-      "pubDate": "Mon, 05 Oct 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "China’s CNOOC Engineering (COOEC) has won an EPCI contract for QatarEnergy’s Maydan Mahzam offshore redevelopment project, taking the value of its Middle East contracts secured over the past three years above RMB 50bn ($7bn). The Tianjin-based offshore engineering contractor said",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Maydan-Mahzam-QatarEnergy.jpg",
-      "en": {
-        "headline": "COOEC lands EPCI work on QatarEnergy field redevelopment",
-        "summary": "China’s CNOOC Engineering (COOEC) has won an EPCI contract for QatarEnergy’s Maydan Mahzam offshore redevelopment project, taking the value of its Middle East contracts secured over the past three years above RMB 50bn ($7bn). The Tianjin-based offshore engineering contractor said",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Seaspan takes newcastlemax plunge with Yangzijiang order",
-      "link": "https://splash247.com/seaspan-takes-newcastlemax-plunge-with-yangzijiang-order/",
-      "pubDate": "Mon, 05 Oct 2026 09:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Seaspan Corporation is moving into the newcastlemax sector, emerging as the owner behind two 210,000 dwt tri-fuel ore carriers that Mitsui OSK Lines will deploy under a 25-year shipping deal with Brazilian mining giant Vale. Seaspan will own the two ships and charter them to MOL,",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/05/Yangzijiang.jpg",
-      "en": {
-        "headline": "Seaspan takes newcastlemax plunge with Yangzijiang order",
-        "summary": "Seaspan Corporation is moving into the newcastlemax sector, emerging as the owner behind two 210,000 dwt tri-fuel ore carriers that Mitsui OSK Lines will deploy under a 25-year shipping deal with Brazilian mining giant Vale. Seaspan will own the two ships and charter them to MOL,",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Historic Batavia replica hauled across Dutch dike",
-      "link": "https://splash247.com/historic-batavia-replica-hauled-across-dutch-dike/",
-      "pubDate": "Mon, 05 Oct 2026 09:18:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "A full-scale reconstruction of the 17th-century Dutch East India Company ship Batavia has been hauled ashore in the Netherlands after a complex heavylift operation involving 56 axle lines of self-propelled modular transporters. The 646-tonne wooden vessel was moved around 250 m&#",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Batavia-tussen-wal-en-ponton-ovv-Sander-Wit.jpeg",
-      "en": {
-        "headline": "Historic Batavia replica hauled across Dutch dike",
-        "summary": "A full-scale reconstruction of the 17th-century Dutch East India Company ship Batavia has been hauled ashore in the Netherlands after a complex heavylift operation involving 56 axle lines of self-propelled modular transporters. The 646-tonne wooden vessel was moved around 250 m&#",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Shipping markets hit new highs across multiple sectors",
-      "link": "https://splash247.com/shipping-markets-hit-new-highs-across-multiple-sectors/",
-      "pubDate": "Mon, 05 Oct 2026 08:45:15 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Shipping’s extraordinary earnings boom powered further into uncharted territory on Friday, with Clarksons Research’s cross-sector ClarkSea Index jumping another 14% to $75,658 a day, its fourth consecutive all-time high. The index has now surged 73% in a month, while its year-to-",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/Ship-Launch-HGK-Shipping.jpg",
-      "en": {
-        "headline": "Shipping markets hit new highs across multiple sectors",
-        "summary": "Shipping’s extraordinary earnings boom powered further into uncharted territory on Friday, with Clarksons Research’s cross-sector ClarkSea Index jumping another 14% to $75,658 a day, its fourth consecutive all-time high. The index has now surged 73% in a month, while its year-to-",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Shadow Fleet Traffic on Northern Sea Route Surges as Arctic Safety Concerns Grow",
-      "link": "https://gcaptain.com/shadow-fleet-traffic-on-northern-sea-route-surges-as-arctic-safety-concerns-grow/",
-      "pubDate": "Mon, 05 Oct 2026 08:06:34 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The number of shadow-fleet vessels carrying Russian oil and LNG through the Northern Sea Route has surged this summer, according to a new analysis by the Bellona Environmental Transparency Center, raising concerns about the ability to respond to accidents in one of the world's mo",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/10/nsr-escort-july-2024-800x581.jpg",
-      "en": {
-        "headline": "Shadow Fleet Traffic on Northern Sea Route Surges as Arctic Safety Concerns Grow",
-        "summary": "The number of shadow-fleet vessels carrying Russian oil and LNG through the Northern Sea Route has surged this summer, according to a new analysis by the Bellona Environmental Transparency Center, raising concerns about the ability to respond to accidents in one of the world's mo",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "US Carrier George H.W. Bush Visits Thailand After Six-Month Middle East Deployment",
-      "link": "https://gcaptain.com/us-carrier-george-h-w-bush-visits-thailand-after-six-month-middle-east-deployment/",
-      "pubDate": "Mon, 05 Oct 2026 05:55:26 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "PHUKET, Thailand, Oct 4 (Reuters) &#8211; The US aircraft carrier George H.W. Bush arrived in Thailand&#8217;s resort island of Phuket on Sunday with about 4,800 personnel aboard for a rest-and-recreation break after...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-04T025645Z_510737360_RC20WNAIPJSM_RTRMADP_3_IRAN-CRISIS-THAILAND-USA-800x533.jpg",
-      "en": {
-        "headline": "US Carrier George H.W. Bush Visits Thailand After Six-Month Middle East Deployment",
-        "summary": "PHUKET, Thailand, Oct 4 (Reuters) &#8211; The US aircraft carrier George H.W. Bush arrived in Thailand&#8217;s resort island of Phuket on Sunday with about 4,800 personnel aboard for a rest-and-recreation break after...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Middle East Crude Oil Exports Exceed Pre-War Levels But Attacks Increase",
-      "link": "https://gcaptain.com/middle-east-crude-oil-exports-exceed-pre-war-levels-but-attacks-increase/",
-      "pubDate": "Mon, 05 Oct 2026 01:26:11 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By Florence Tan SINGAPORE, Oct 5 (Reuters) &#8211; Crude oil exports from the Middle East rose above pre-war levels in four of the seven days of the final week of September, shipping data showed...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-22T003659Z_143284080_RC2KZ9AL24KC_RTRMADP_3_IRAN-CRISIS-EU-KALLAS.jpg",
-      "en": {
-        "headline": "Middle East Crude Oil Exports Exceed Pre-War Levels But Attacks Increase",
-        "summary": "By Florence Tan SINGAPORE, Oct 5 (Reuters) &#8211; Crude oil exports from the Middle East rose above pre-war levels in four of the seven days of the final week of September, shipping data showed...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Saudi Arabia Unexpectedly Cuts Oil Prices To Asia",
-      "link": "https://gcaptain.com/saudi-arabia-unexpectedly-cuts-oil-prices-to-asia/",
-      "pubDate": "Mon, 05 Oct 2026 01:09:57 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By Yomna Ehab and Siyi Liu Oct 5 (Reuters) &#8211; Saudi Arabia has unexpectedly cut November crude oil prices for Asia while it raised those for northwest Europe and the...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-23T022632Z_854404780_RC2TVKA6D7ZU_RTRMADP_3_OIL-ASIA-COLUMN-RUSSELL-800x450.jpg",
-      "en": {
-        "headline": "Saudi Arabia Unexpectedly Cuts Oil Prices To Asia",
-        "summary": "By Yomna Ehab and Siyi Liu Oct 5 (Reuters) &#8211; Saudi Arabia has unexpectedly cut November crude oil prices for Asia while it raised those for northwest Europe and the...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Iraq Shifts Oil Strategy By Arranging Tanker To Move Past Hormuz",
-      "link": "https://gcaptain.com/iraq-shifts-oil-strategy-by-arranging-tanker-to-move-past-hormuz/",
-      "pubDate": "Sun, 04 Oct 2026 16:47:33 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By&#160;Salma El Wardany Oct 4, 2026 (Bloomberg) &#8211;Iraq’s state tanker company arranged a very large crude carrier to transport 2 million barrels beyond the Strait of Hormuz, marking a move...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-06-30T041820Z_216286204_RC2TVKAI7KFR_RTRMADP_3_IRAN-CRISIS-OIL-IRAQ-2-800x450.jpg",
-      "en": {
-        "headline": "Iraq Shifts Oil Strategy By Arranging Tanker To Move Past Hormuz",
-        "summary": "By&#160;Salma El Wardany Oct 4, 2026 (Bloomberg) &#8211;Iraq’s state tanker company arranged a very large crude carrier to transport 2 million barrels beyond the Strait of Hormuz, marking a move...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "US Coast Guard Searches For Aircraft Carrying Six Bound For Boston",
-      "link": "https://gcaptain.com/us-coast-guard-searches-for-aircraft-carrying-six-bound-for-boston/",
-      "pubDate": "Sat, 03 Oct 2026 23:35:50 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By Sheila Dang Oct 3 (Reuters)&#160;&#8211;&#160;A medical transfer aircraft carrying six people was reported missing on a flight from Bermuda to Boston, the US&#160;Coast Guard&#160;said on Saturday. The Federal Aviation...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 37,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-04T062436Z_1533483136_RC24WNAD0WTO_RTRMADP_3_USA-PLANE-MISSING.jpg",
-      "en": {
-        "headline": "US Coast Guard Searches For Aircraft Carrying Six Bound For Boston",
-        "summary": "By Sheila Dang Oct 3 (Reuters)&#160;&#8211;&#160;A medical transfer aircraft carrying six people was reported missing on a flight from Bermuda to Boston, the US&#160;Coast Guard&#160;said on Saturday. The Federal Aviation...",
-        "source": "gCaptain"
       }
     }
   ]
