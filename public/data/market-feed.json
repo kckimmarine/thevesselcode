@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-06T12:28:21.969Z",
+    "generatedAt": "2026-10-06T22:03:11.096Z",
     "benchmarkAsOf": "2026-10-06",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 3070,
-      "deltaPct": 0,
+      "value": 3002,
+      "deltaPct": -2.21,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-05T14:40:11.952Z"
+      "asOf": "2026-10-06T14:39:47.639Z"
     },
     "capesizeTc": {
       "value": 4833,
-      "deltaPct": -4.15,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-06T06:43:25.482Z"
     },
     "panamaxTc": {
-      "value": 2379,
-      "deltaPct": 0,
+      "value": 2364,
+      "deltaPct": -0.63,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-05T22:14:42.929Z"
+      "asOf": "2026-10-06T14:26:35.370Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,210 @@
   },
   "news": [
     {
+      "title": "Shipping rewinds the future",
+      "link": "https://splash247.com/shipping-rewinds-the-future/",
+      "pubDate": "Tue, 06 Oct 2026 20:00:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Rather than forecasting from today, backcasting starts with possible futures and works backwards — an approach gaining traction as shipping’s long-term bets become harder to call. Splash’s Europe Editor Bojan Lepic explains.&#160; Shipping has never been short on forecasts. Fleet",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Future.jpg",
+      "en": {
+        "headline": "Shipping rewinds the future",
+        "summary": "Rather than forecasting from today, backcasting starts with possible futures and works backwards — an approach gaining traction as shipping’s long-term bets become harder to call. Splash’s Europe Editor Bojan Lepic explains.&#160; Shipping has never been short on forecasts. Fleet",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "ShipGod AI: Why every vessel needs its own digital memory",
+      "link": "https://splash247.com/shipgod-ai-why-every-vessel-needs-its-own-digital-memory/",
+      "pubDate": "Tue, 06 Oct 2026 20:00:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "After four decades at sea and ashore, Bing Hou has reached a simple conclusion about shipmanagement: too much of what keeps vessels safe still depends on paper, spreadsheets and what individual seafarers happen to remember. The 56-year-old master mariner, founder of ShipGod AI, s",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Bing-Hou-portrait-copy.jpg",
+      "en": {
+        "headline": "ShipGod AI: Why every vessel needs its own digital memory",
+        "summary": "After four decades at sea and ashore, Bing Hou has reached a simple conclusion about shipmanagement: too much of what keeps vessels safe still depends on paper, spreadsheets and what individual seafarers happen to remember. The 56-year-old master mariner, founder of ShipGod AI, s",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Bunker prices jump by three-quarters since Iran war began",
+      "link": "https://splash247.com/bunker-prices-jump-by-three-quarters-since-iran-war-began/",
+      "pubDate": "Tue, 06 Oct 2026 19:57:00 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "The cost of fuelling ships has risen by roughly three-quarters since the US-Iran war erupted on February 28. In Singapore, the world’s largest bunkering hub, VLSFO was assessed by ENGINE at $509 per tonne on February 27, the final trading day before the war began, while high-sulp",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/10/Bunkering-Bomin.jpg",
+      "en": {
+        "headline": "Bunker prices jump by three-quarters since Iran war began",
+        "summary": "The cost of fuelling ships has risen by roughly three-quarters since the US-Iran war erupted on February 28. In Singapore, the world’s largest bunkering hub, VLSFO was assessed by ENGINE at $509 per tonne on February 27, the final trading day before the war began, while high-sulp",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Iran’s Offshore Oil Stockpile Nears Exhaustion as Blockade Chokes New Supply",
+      "link": "https://gcaptain.com/irans-offshore-oil-stockpile-nears-exhaustion-as-blockade-chokes-new-supply/",
+      "pubDate": "Tue, 06 Oct 2026 19:53:44 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Iran’s offshore crude stockpile in Southeast Asia is being rapidly depleted as the U.S. maritime blockade prevents fresh barrels from leaving the Persian Gulf, according to new tracking data from...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2020/06/2020-06-12T110135Z_1121479389_RC2N7H9P05ZH_RTRMADP_3_VENEZUELA-OIL-DEALS.jpg",
+      "en": {
+        "headline": "Iran’s Offshore Oil Stockpile Nears Exhaustion as Blockade Chokes New Supply",
+        "summary": "Iran’s offshore crude stockpile in Southeast Asia is being rapidly depleted as the U.S. maritime blockade prevents fresh barrels from leaving the Persian Gulf, according to new tracking data from...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "South Korean Operator Emerges as New Force in Arctic LNG Shipping",
+      "link": "https://gcaptain.com/south-korean-operator-emerges-as-new-force-in-arctic-lng-shipping/",
+      "pubDate": "Tue, 06 Oct 2026 18:06:23 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "New company takes on four Arc4 LNG carriers as Seoul looks to expand Busan’s role in Arctic shipping. A newly established South Korean ship manager is emerging as a potential new player in Arctic LNG shipping, taking control of four ice-class LNG carriers while planning a rapid e",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/arctic-lng-hero.jpg",
+      "en": {
+        "headline": "South Korean Operator Emerges as New Force in Arctic LNG Shipping",
+        "summary": "New company takes on four Arc4 LNG carriers as Seoul looks to expand Busan’s role in Arctic shipping. A newly established South Korean ship manager is emerging as a potential new player in Arctic LNG shipping, taking control of four ice-class LNG carriers while planning a rapid e",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Volare Jumps in Oslo Debut as Wave of Shipping IPOs Builds",
+      "link": "https://gcaptain.com/volare-jumps-in-oslo-debut-as-wave-of-shipping-ipos-builds/",
+      "pubDate": "Tue, 06 Oct 2026 17:42:17 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Volare Shipping Ltd. jumped on its first day of trading in Oslo on Monday after the spin-off arm of Trafigura Group Pte. became the latest in a spree of tanker listings in the Norwegian capital.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
+      "en": {
+        "headline": "Volare Jumps in Oslo Debut as Wave of Shipping IPOs Builds",
+        "summary": "Volare Shipping Ltd. jumped on its first day of trading in Oslo on Monday after the spin-off arm of Trafigura Group Pte. became the latest in a spree of tanker listings in the Norwegian capital.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Gulf Oil Flows Rise to Average 81% of Pre-war Rate in September",
+      "link": "https://gcaptain.com/gulf-oil-flows-rise-to-average-81-of-pre-war-rate-in-september/",
+      "pubDate": "Tue, 06 Oct 2026 17:41:15 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Gulf oil flows excluding Iran surged to over 81% of pre-war levels in September, data showed, led by a recovery in Saudi exports despite attacks on the kingdom's oil infrastructure and escalating Iranian attacks on regional shipping, while Iranian exports fell to zero due to a US",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T134318Z_693026131_RC2N1MAQSWKP_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x524.jpg",
+      "en": {
+        "headline": "Gulf Oil Flows Rise to Average 81% of Pre-war Rate in September",
+        "summary": "Gulf oil flows excluding Iran surged to over 81% of pre-war levels in September, data showed, led by a recovery in Saudi exports despite attacks on the kingdom's oil infrastructure and escalating Iranian attacks on regional shipping, while Iranian exports fell to zero due to a US",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "War in Ukraine Escalates With Drone Strikes on Cargo Ships",
+      "link": "https://gcaptain.com/war-in-ukraine-escalates-with-drone-strikes-on-cargo-ships/",
+      "pubDate": "Tue, 06 Oct 2026 16:20:43 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Attacks on commercial vessels off the Black Sea’s western coast are on the rise, threatening already-choked trade flows in the region while testing NATO’s readiness to react.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/ADYTELOBLJPMNP4BGN4OBQMFJA.jpg.avif",
+      "en": {
+        "headline": "War in Ukraine Escalates With Drone Strikes on Cargo Ships",
+        "summary": "Attacks on commercial vessels off the Black Sea’s western coast are on the rise, threatening already-choked trade flows in the region while testing NATO’s readiness to react.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Panama Canal Expands Advance Transit Reservations for 2027 Dry Season",
+      "link": "https://gcaptain.com/panama-canal-expands-advance-transit-reservations-for-2027-dry-season/",
+      "pubDate": "Tue, 06 Oct 2026 15:58:38 +0000",
+      "source": "gCaptain",
+      "category": "Dry Bulk",
+      "summary": "The Panama Canal is expanding its long-term transit reservation program to the Panamax locks for the first time, giving more shipping customers the ability to secure passage months in advance...",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/11/shutterstock_538143214-800x533.jpg",
+      "en": {
+        "headline": "Panama Canal Expands Advance Transit Reservations for 2027 Dry Season",
+        "summary": "The Panama Canal is expanding its long-term transit reservation program to the Panamax locks for the first time, giving more shipping customers the ability to secure passage months in advance...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "IMO Chief Decries Rising Toll on Seafarers Caught in Conflict",
+      "link": "https://gcaptain.com/imo-chief-decries-rising-toll-on-seafarers-caught-in-conflict/",
+      "pubDate": "Tue, 06 Oct 2026 15:44:57 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Five seafarers were killed during the rescue of a hijacked ship off Somalia last week, prompting International Maritime Organization Secretary-General Arsenio Dominguez to issue yet another statement mourning merchant mariners...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/IMO-MEPC-84-opening-remarks-800x600.jpg",
+      "en": {
+        "headline": "IMO Chief Decries Rising Toll on Seafarers Caught in Conflict",
+        "summary": "Five seafarers were killed during the rescue of a hijacked ship off Somalia last week, prompting International Maritime Organization Secretary-General Arsenio Dominguez to issue yet another statement mourning merchant mariners...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "A Dozen Seafarers Injured in Strait of Hormuz Tanker Attack, India Says",
+      "link": "https://gcaptain.com/a-dozen-seafarers-injured-in-strait-of-hormuz-tanker-attack-india-says/",
+      "pubDate": "Tue, 06 Oct 2026 15:14:14 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Twelve seafarers were injured after a Panama-flagged oil tanker was struck by a projectile while transiting the Strait of Hormuz, according to India’s Ministry of External Affairs, marking one of...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
+      "en": {
+        "headline": "A Dozen Seafarers Injured in Strait of Hormuz Tanker Attack, India Says",
+        "summary": "Twelve seafarers were injured after a Panama-flagged oil tanker was struck by a projectile while transiting the Strait of Hormuz, according to India’s Ministry of External Affairs, marking one of...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Global Ship Lease takes newbuild orderbook to 17",
+      "link": "https://splash247.com/global-ship-lease-takes-newbuild-orderbook-to-17/",
+      "pubDate": "Tue, 06 Oct 2026 12:58:23 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "New York-listed containership owner Global Ship Lease (GSL) has exercised options for another two newbuildings, taking the George Youroukos-led company’s orderbook to 17 ships. The two midsize, ultra-high-reefer, wide-beam vessels are priced at about $163m in total and are schedu",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 9,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/01/Global-Ship-Lease.jpg",
+      "en": {
+        "headline": "Global Ship Lease takes newbuild orderbook to 17",
+        "summary": "New York-listed containership owner Global Ship Lease (GSL) has exercised options for another two newbuildings, taking the George Youroukos-led company’s orderbook to 17 ships. The two midsize, ultra-high-reefer, wide-beam vessels are priced at about $163m in total and are schedu",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Taylor Maritime reaches last ship in $1bn disposal run",
       "link": "https://splash247.com/taylor-maritime-reaches-last-ship-in-1bn-disposal-run/",
       "pubDate": "Tue, 06 Oct 2026 11:30:00 +0000",
@@ -244,7 +448,7 @@
       "summary": "London-listed Taylor Maritime has moved its wind-down to the final vessel, completing the sale of three handysize bulkers while chief executive Ed Buttery builds up a private dry bulk position through his T3 Holding vehicle. The company said on Tuesday that the three previously a",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/03/Ed-Buttery-Monaco-CEO-Forum.jpg",
       "en": {
         "headline": "Taylor Maritime reaches last ship in $1bn disposal run",
@@ -261,7 +465,7 @@
       "summary": "John Fredriksen-backed SFL Corporation has ordered a pair of 93,000 cbm very large ammonia carriers. The vessels will carry a wide range of petrochemical gases and feature dual-fuel propulsion and the latest technology for fuel efficiency and cargo intake optimisation.&#160; Deli",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Jiangnan-Shipyard-VLAC.jpg",
       "en": {
         "headline": "SFL enters ammonia carrier market with twin newbuild order",
@@ -278,7 +482,7 @@
       "summary": "Abu Dhabi-listed ADNOC Logistics &#38; Services is investing AED1.19bn ($324m) in three 90,000 cu m VLGC newbuildings as it continues one of shipping’s more aggressive fleet expansion programmes. The three ships are scheduled for delivery in the second half of 2029 and have alrea",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/ADNOC-LS-VLGC.jpg",
       "en": {
         "headline": "ADNOC L&#038;S lines up three more VLGCs for $324m",
@@ -295,216 +499,12 @@
       "summary": "Belgium’s Exmar has confirmed the sale of the first suezmax in its four-ship newbuilding programme at South Korea’s DH Shipbuilding, crystallising a profit of around $22m on the transaction. The Antwerp-listed company said it has signed an agreement to sell the first tanker under",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 2,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/10/DH-Shipbuilding.jpg",
       "en": {
         "headline": "Exmar confirms lucrative suezmax resale",
         "summary": "Belgium’s Exmar has confirmed the sale of the first suezmax in its four-ship newbuilding programme at South Korea’s DH Shipbuilding, crystallising a profit of around $22m on the transaction. The Antwerp-listed company said it has signed an agreement to sell the first tanker under",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "d’Amico brings last leased tanker back in-house",
-      "link": "https://splash247.com/damico-brings-last-leased-tanker-back-in-house/",
-      "pubDate": "Tue, 06 Oct 2026 09:30:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Italian product tanker owner d’Amico International Shipping has exercised a $14m purchase option on the 2014-built MR tanker High Fidelity, paving the way for its entire operating fleet to return to full ownership. Operating arm d’Amico Tankers is expected to take ownership of th",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/07/High-Fidelity-damico.jpg",
-      "en": {
-        "headline": "d’Amico brings last leased tanker back in-house",
-        "summary": "Italian product tanker owner d’Amico International Shipping has exercised a $14m purchase option on the 2014-built MR tanker High Fidelity, paving the way for its entire operating fleet to return to full ownership. Operating arm d’Amico Tankers is expected to take ownership of th",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "How close is shipping to the top?",
-      "link": "https://splash247.com/how-close-is-shipping-to-the-top/",
-      "pubDate": "Tue, 06 Oct 2026 08:45:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Shipping markets rarely announce the top with any clarity. More often, the argument about whether the peak has arrived only really starts when freight rates are still climbing, asset values are making less and less conventional sense and owners are sufficiently confident to keep ",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-VLCC.jpg",
-      "en": {
-        "headline": "How close is shipping to the top?",
-        "summary": "Shipping markets rarely announce the top with any clarity. More often, the argument about whether the peak has arrived only really starts when freight rates are still climbing, asset values are making less and less conventional sense and owners are sufficiently confident to keep ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Black Sea merchant shipping comes under fresh drone attack",
-      "link": "https://splash247.com/grain-carrier-sinks-off-romania-after-suspected-russian-drone-strike/",
-      "pubDate": "Tue, 06 Oct 2026 08:30:45 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Commercial shipping in the western Black Sea has come under a fresh wave of attacks, with another general cargoship sinking and a second catching fire off Bulgaria barely a day after the loss of the Royad Mammadov off Romania. According to UK maritime security specialist Vanguard",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Royad-Mammadov-X.com_.jpg",
-      "en": {
-        "headline": "Black Sea merchant shipping comes under fresh drone attack",
-        "summary": "Commercial shipping in the western Black Sea has come under a fresh wave of attacks, with another general cargoship sinking and a second catching fire off Bulgaria barely a day after the loss of the Royad Mammadov off Romania. According to UK maritime security specialist Vanguard",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Drone Sinks Ship in Bulgaria&#8217;s Black Sea &#8211; Media Reports",
-      "link": "https://gcaptain.com/drone-sinks-ship-in-bulgarias-black-sea-media-reports/",
-      "pubDate": "Tue, 06 Oct 2026 08:24:36 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Drones sunk one ship and damaged another in the Black Sea off Bulgaria on Tuesday, local media reports said.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-29T093131Z_553251886_RC2HDMA9HMIK_RTRMADP_3_UKRAINE-CRISIS-PIVDENNYI-GOK-800x545.jpg",
-      "en": {
-        "headline": "Drone Sinks Ship in Bulgaria&#8217;s Black Sea &#8211; Media Reports",
-        "summary": "Drones sunk one ship and damaged another in the Black Sea off Bulgaria on Tuesday, local media reports said.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "US Blockade Bottles Up Dozens of Iranian Tankers, Nonprofit Says",
-      "link": "https://gcaptain.com/us-blockade-bottles-up-dozens-of-iranian-tankers-nonprofit-says/",
-      "pubDate": "Tue, 06 Oct 2026 08:19:17 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The US blockade of Iran is keeping dozens of laden tankers bottled up along the nation’s coast, while others outside the Persian Gulf are holding off Sri Lanka, according to United Against Nuclear Iran.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/03/2026-03-11T175001Z_1295147520_RC2B2KAW055Q_RTRMADP_3_GLOBAL-OIL.jpg",
-      "en": {
-        "headline": "US Blockade Bottles Up Dozens of Iranian Tankers, Nonprofit Says",
-        "summary": "The US blockade of Iran is keeping dozens of laden tankers bottled up along the nation’s coast, while others outside the Persian Gulf are holding off Sri Lanka, according to United Against Nuclear Iran.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Tanker attacks around Hormuz hit wartime high",
-      "link": "https://splash247.com/tanker-attacks-around-hormuz-hit-wartime-high/",
-      "pubDate": "Tue, 06 Oct 2026 07:56:05 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Commercial shipping around the Strait of Hormuz is enduring its most intense spell of attacks since the US-Iran war began on February 28, with four tankers struck and another directly threatened in incidents disclosed by UK Maritime Trade Operations on Monday. The latest attack c",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/Hormuz-IMO.jpg",
-      "en": {
-        "headline": "Tanker attacks around Hormuz hit wartime high",
-        "summary": "Commercial shipping around the Strait of Hormuz is enduring its most intense spell of attacks since the US-Iran war began on February 28, with four tankers struck and another directly threatened in incidents disclosed by UK Maritime Trade Operations on Monday. The latest attack c",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Lila Global exits VLCC segment in style",
-      "link": "https://splash247.com/lila-global-exits-vlcc-segment-in-style/",
-      "pubDate": "Tue, 06 Oct 2026 07:36:36 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "On April 20, Splash reported that a 20-year-old VLCC had fetched $60.5m in a sale by Mitsui OSK Lines to Lila Global. The vessel, then known as Kasagisan, was renamed Lila Vadinar in March after Lila Global acquired it. In July, it was renamed Vadin.&#160; Now the vessel is repor",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/04/MarineTraffic-Rene-van-Quekelberghe-Kasagisan.jpg",
-      "en": {
-        "headline": "Lila Global exits VLCC segment in style",
-        "summary": "On April 20, Splash reported that a 20-year-old VLCC had fetched $60.5m in a sale by Mitsui OSK Lines to Lila Global. The vessel, then known as Kasagisan, was renamed Lila Vadinar in March after Lila Global acquired it. In July, it was renamed Vadin.&#160; Now the vessel is repor",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Hyundai Glovis and Liberty Global Logistics push nuclear car carrier towards commercial reality",
-      "link": "https://splash247.com/hyundai-glovis-and-liberty-global-logistics-push-nuclear-car-carrier-towards-commercial-reality/",
-      "pubDate": "Tue, 06 Oct 2026 07:01:13 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Hyundai Glovis and US-based Liberty Global Logistics (LGL) have teamed up to examine the commercial operation of a nuclear-powered car carrier between South Korea and the US. The pair have signed an MOU covering the development and operation of a pure car and truck carrier powere",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 5,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2017/07/HYUNDAI-GLOVIS-e1500261206793.jpg",
-      "en": {
-        "headline": "Hyundai Glovis and Liberty Global Logistics push nuclear car carrier towards commercial reality",
-        "summary": "Hyundai Glovis and US-based Liberty Global Logistics (LGL) have teamed up to examine the commercial operation of a nuclear-powered car carrier between South Korea and the US. The pair have signed an MOU covering the development and operation of a pure car and truck carrier powere",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Five Hormuz Incidents Reported Monday as Tanker Attacks Mount",
-      "link": "https://gcaptain.com/five-hormuz-incidents-reported-monday-as-tanker-attacks-mount/",
-      "pubDate": "Mon, 05 Oct 2026 22:28:14 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "UK Maritime Trade Operations reported five separate incidents involving commercial shipping in or near the Strait of Hormuz on Monday, including four tanker attacks and an incident in which Iran’s...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
-      "en": {
-        "headline": "Five Hormuz Incidents Reported Monday as Tanker Attacks Mount",
-        "summary": "UK Maritime Trade Operations reported five separate incidents involving commercial shipping in or near the Strait of Hormuz on Monday, including four tanker attacks and an incident in which Iran’s...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Coast Guard Proposes Dropping Six Mariner Training Requirements",
-      "link": "https://gcaptain.com/coast-guard-proposes-dropping-six-mariner-training-requirements/",
-      "pubDate": "Mon, 05 Oct 2026 21:33:52 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The U.S. Coast Guard is proposing to eliminate six training and competency requirements for certain Merchant Mariner Credential endorsements, saying the rules exceed international standards and impose unnecessary costs on...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/02/port_state_control_inspection.jpg",
-      "en": {
-        "headline": "Coast Guard Proposes Dropping Six Mariner Training Requirements",
-        "summary": "The U.S. Coast Guard is proposing to eliminate six training and competency requirements for certain Merchant Mariner Credential endorsements, saying the rules exceed international standards and impose unnecessary costs on...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Kuwait Oil Output at 75% of Prewar as Hormuz Transits Rise",
-      "link": "https://gcaptain.com/kuwait-oil-output-at-75-of-prewar-as-hormuz-transits-rise/",
-      "pubDate": "Mon, 05 Oct 2026 20:02:21 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Kuwait is pumping oil at about 75% of the level seen before the Iran war as more tankers take the risk of navigating the Strait of Hormuz.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/01/Kuwait_city_1996.jpg",
-      "en": {
-        "headline": "Kuwait Oil Output at 75% of Prewar as Hormuz Transits Rise",
-        "summary": "Kuwait is pumping oil at about 75% of the level seen before the Iran war as more tankers take the risk of navigating the Strait of Hormuz.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Hackers Breached Propulsion System of US-Bound Oil Tanker",
-      "link": "https://gcaptain.com/hackers-breached-propulsion-system-of-us-bound-oil-tanker/",
-      "pubDate": "Mon, 05 Oct 2026 18:02:48 +0000",
-      "source": "gCaptain",
-      "category": "Bunker",
-      "summary": "FBI and US Coast Guard investigators have found evidence that hackers accessed the propulsion system of an oil supertanker as it was approaching the Texas coast this summer, according to US officials familiar with the matter, an extraordinary breach that highlights the growing ph",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/2026-01-08T182733Z_594813059_RC2CWIAO7HWG_RTRMADP_3_USA-VENEZUELA-CUBA-FUEL-800x533.jpg",
-      "en": {
-        "headline": "Hackers Breached Propulsion System of US-Bound Oil Tanker",
-        "summary": "FBI and US Coast Guard investigators have found evidence that hackers accessed the propulsion system of an oil supertanker as it was approaching the Texas coast this summer, according to US officials familiar with the matter, an extraordinary breach that highlights the growing ph",
-        "source": "gCaptain"
       }
     }
   ]
