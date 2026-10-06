@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-05T23:30:17.590Z",
+    "generatedAt": "2026-10-06T03:58:58.308Z",
     "benchmarkAsOf": "2026-10-05",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 867.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-02T17:00:00.000Z",
+        "priceUsdMt": 880.5,
+        "deltaPct": 1.5,
+        "asOf": "2026-10-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1297,
-        "deltaPct": 0,
-        "asOf": "2026-10-02T17:00:00.000Z",
+        "priceUsdMt": 1278.5,
+        "deltaPct": -1.43,
+        "asOf": "2026-10-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 753.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-02T17:00:00.000Z",
+        "priceUsdMt": 777,
+        "deltaPct": 3.12,
+        "asOf": "2026-10-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 686,
-        "deltaPct": 0,
-        "asOf": "2026-10-02T17:00:00.000Z",
+        "priceUsdMt": 695.5,
+        "deltaPct": 1.38,
+        "asOf": "2026-10-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1391,
-        "deltaPct": 0,
-        "asOf": "2026-10-02T17:00:00.000Z",
+        "priceUsdMt": 1355.5,
+        "deltaPct": -2.55,
+        "asOf": "2026-10-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 623,
-        "deltaPct": 0,
-        "asOf": "2026-10-02T17:00:00.000Z",
+        "priceUsdMt": 620,
+        "deltaPct": -0.48,
+        "asOf": "2026-10-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 730,
-        "deltaPct": 0,
-        "asOf": "2026-10-02T17:00:00.000Z",
+        "priceUsdMt": 742.5,
+        "deltaPct": 1.71,
+        "asOf": "2026-10-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1383,
-        "deltaPct": 0,
-        "asOf": "2026-10-02T17:00:00.000Z",
+        "priceUsdMt": 1371,
+        "deltaPct": -0.87,
+        "asOf": "2026-10-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -171,9 +171,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 539,
-        "deltaPct": 0,
-        "asOf": "2026-10-02T17:00:00.000Z",
+        "priceUsdMt": 531.5,
+        "deltaPct": -1.39,
+        "asOf": "2026-10-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -206,7 +206,7 @@
   "indices": {
     "bdi": {
       "value": 3070,
-      "deltaPct": -2.48,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-05T14:40:11.952Z"
@@ -220,7 +220,7 @@
     },
     "panamaxTc": {
       "value": 2379,
-      "deltaPct": -0.21,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-05T22:14:42.929Z"
@@ -244,7 +244,7 @@
       "summary": "UK Maritime Trade Operations reported five separate incidents involving commercial shipping in or near the Strait of Hormuz on Monday, including four tanker attacks and an incident in which Iran’s...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 5,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
       "en": {
         "headline": "Five Hormuz Incidents Reported Monday as Tanker Attacks Mount",
@@ -261,7 +261,7 @@
       "summary": "The U.S. Coast Guard is proposing to eliminate six training and competency requirements for certain Merchant Mariner Credential endorsements, saying the rules exceed international standards and impose unnecessary costs on...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/02/port_state_control_inspection.jpg",
       "en": {
         "headline": "Coast Guard Proposes Dropping Six Mariner Training Requirements",
@@ -278,7 +278,7 @@
       "summary": "Shipping markets rarely announce the top with any clarity. More often, the argument about whether the peak has arrived only really starts when freight rates are still climbing, asset values are making less and less conventional sense and owners are sufficiently confident to keep ",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-VLCC.jpg",
       "en": {
         "headline": "How close is shipping to the top?",
@@ -295,7 +295,7 @@
       "summary": "Kuwait is pumping oil at about 75% of the level seen before the Iran war as more tankers take the risk of navigating the Strait of Hormuz.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/01/Kuwait_city_1996.jpg",
       "en": {
         "headline": "Kuwait Oil Output at 75% of Prewar as Hormuz Transits Rise",
@@ -312,7 +312,7 @@
       "summary": "FBI and US Coast Guard investigators have found evidence that hackers accessed the propulsion system of an oil supertanker as it was approaching the Texas coast this summer, according to US officials familiar with the matter, an extraordinary breach that highlights the growing ph",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 5,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/2026-01-08T182733Z_594813059_RC2CWIAO7HWG_RTRMADP_3_USA-VENEZUELA-CUBA-FUEL-800x533.jpg",
       "en": {
         "headline": "Hackers Breached Propulsion System of US-Bound Oil Tanker",
@@ -329,7 +329,7 @@
       "summary": "Middle East crude exports recently climbed to their highest levels since the start of the Iran war as more Gulf producers resume transit through the Strait of Hormuz – despite the continued threat of Iranian attacks. Yet oil prices remain stubbornly elevated, suggesting logistica",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-23T181804Z_1693800061_RC2TJMAPQRRY_RTRMADP_3_YEMEN-SHIPPING-ADEN-800x521.jpg",
       "en": {
         "headline": "Opinion: Oil&#8217;s New Problem Isn&#8217;t Supply. It&#8217;s Logistics",
@@ -346,7 +346,7 @@
       "summary": "Saudi-backed Yemeni government forces have secured effective control of the Bab el-Mandeb Strait, Yemen's Information Minister Moammar al-Eryani told Reuters on Monday, though fighting continues with Houthi forces in the area.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-24T194006Z_526739983_RC2LD6A7RFZM_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x533.jpg",
       "en": {
         "headline": "Saudi-Backed Forces Claim Control of Bab el-Mandeb Strait",
@@ -363,7 +363,7 @@
       "summary": "Strong freight markets kept aging vessels trading through the third quarter despite rising scrap prices and strong demand from ship recyclers, according to a new market review from GMS, the...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 7,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Ship-recycling-facility.jpg",
       "en": {
         "headline": "Strong Freight Markets Keep Aging Ships Out of Recycling Yards",
@@ -380,7 +380,7 @@
       "summary": "The security situation in the Strait of Hormuz deteriorated further over the weekend as UK Maritime Trade Operations reported several additional tanker attacks and a separate incident in which Iran’s...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-21T113312Z_986150390_RC25YLAX1ZOM_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
       "en": {
         "headline": "More Tankers Hit in Hormuz as IRGC Orders Ship to Turn Back",
@@ -397,7 +397,7 @@
       "summary": "By Mark Smith, Director &#8211; Decarbonisation, NorthStandard While&#160;corn, sugarcane, wheat, or vegetable oils&#160;can be converted into fuel,&#160;their use&#160;for&#160;foodis&#160;driving&#160;demand to&#160;develop&#160;waste or bi-products&#160;from agricultural, fore",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 10,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/3656-Biofuel-Residue-image-1-800x438.jpg",
       "en": {
         "headline": "From Residue to Resource – the Rise and Risks of Marine Biofuels",
@@ -414,7 +414,7 @@
       "summary": "The number of shadow-fleet vessels carrying Russian oil and LNG through the Northern Sea Route has surged this summer, according to a new analysis by the Bellona Environmental Transparency Center, raising concerns about the ability to respond to accidents in one of the world's mo",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/10/nsr-escort-july-2024-800x581.jpg",
       "en": {
         "headline": "Shadow Fleet Traffic on Northern Sea Route Surges as Arctic Safety Concerns Grow",
@@ -431,7 +431,7 @@
       "summary": "Gulf oil exporters topped pre-war levels for about half of September, shipping data showed on Monday, though attacks on tankers and logistical constraints cloud the outlook for sustained higher flows.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 14,
       "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Middle East Oil Exports Top Pre-War Levels for Part of September But Tanker Attacks Increase",
@@ -448,7 +448,7 @@
       "summary": "Shipments of liquefied natural gas through the Strait of Hormuz extended a rebound that began in September, as the region’s producers seek to restore supplies to energy-starved customers.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 14,
       "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "LNG Trade Through Hormuz Extends Rebound Despite Shipping Risks",
@@ -465,7 +465,7 @@
       "summary": "Geneva-based Advantage Tankers has added two LR2 product tankers at Dalian Shipbuilding Industry Corporation and expanded its MR newbuilding programme at Guangzhou Shipyard International from four ships to six. The latest move gives the Nazlı Williams-controlled owner another fou",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 10,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Advantage-Smooth-suezmax-Advantage-Tankers.jpg",
       "en": {
         "headline": "Advantage tops up China tanker spree with LR2s and extra MRs",
@@ -482,7 +482,7 @@
       "summary": "Singapore shipyard group Seatrium has secured a contract from Karpowership to convert an LNG carrier into the FSRU LNGT Akdeniz, extending a partnership that has produced seven delivered units since 2018. The work is scheduled to begin in the first quarter of 2027. LNGT Akdeniz w",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/11/Seatrium-yard-Seatrium.jpg",
       "en": {
         "headline": "Seatrium bags ninth Karpowership FSRU conversion",
@@ -499,7 +499,7 @@
       "summary": "Taiwan’s U-Ming Marine Transport has committed up to $312m on six more bulkers in China, adding four ultramaxes and firming another pair of Newcastlemaxes as it presses ahead with plans to build a 100-ship fleet. Two separate Taiwan exchange disclosures from U-Ming’s Singapore su",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/04/U-Ming.jpg",
       "en": {
         "headline": "U-Ming doubles down in China with six-ship bulker spend",
