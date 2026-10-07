@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-07T03:26:59.865Z",
+    "generatedAt": "2026-10-07T12:21:36.647Z",
     "benchmarkAsOf": "2026-10-07",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 890,
-        "deltaPct": 1.08,
+        "deltaPct": 0,
         "asOf": "2026-10-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1243,
-        "deltaPct": -2.78,
+        "deltaPct": 0,
         "asOf": "2026-10-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 778,
-        "deltaPct": 0.13,
+        "deltaPct": 0,
         "asOf": "2026-10-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 682.5,
-        "deltaPct": -1.87,
+        "deltaPct": 0,
         "asOf": "2026-10-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1340,
-        "deltaPct": -1.14,
+        "deltaPct": 0,
         "asOf": "2026-10-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 613,
-        "deltaPct": -1.13,
+        "deltaPct": 0,
         "asOf": "2026-10-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 745.5,
-        "deltaPct": 0.4,
+        "deltaPct": 0,
         "asOf": "2026-10-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1370,
-        "deltaPct": -0.07,
+        "deltaPct": 0,
         "asOf": "2026-10-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -172,7 +172,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 540,
-        "deltaPct": 1.6,
+        "deltaPct": 0,
         "asOf": "2026-10-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 1000,
-        "deltaPct": 1.01,
+        "deltaPct": 0,
         "asOf": "2026-10-06T22:41:22.770Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 940,
-        "deltaPct": 5.62,
+        "deltaPct": 0,
         "asOf": "2026-10-06T22:41:22.749Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -213,7 +213,7 @@
     },
     "capesizeTc": {
       "value": 4638,
-      "deltaPct": -4.03,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-07T00:35:51.464Z"
@@ -236,53 +236,223 @@
   },
   "news": [
     {
-      "title": "Shipping rewinds the future",
-      "link": "https://splash247.com/shipping-rewinds-the-future/",
-      "pubDate": "Tue, 06 Oct 2026 20:00:00 +0000",
+      "title": "JP Morgan-backed NOCC expands China car carrier programme",
+      "link": "https://splash247.com/jp-morgan-backed-nocc-expands-china-car-carrier-programme/",
+      "pubDate": "Wed, 07 Oct 2026 12:00:00 +0000",
       "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Rather than forecasting from today, backcasting starts with possible futures and works backwards — an approach gaining traction as shipping’s long-term bets become harder to call. Splash’s Europe Editor Bojan Lepic explains.&#160; Shipping has never been short on forecasts. Fleet",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Future.jpg",
+      "category": "S&P",
+      "summary": "JP Morgan-backed Norwegian Car Carriers (NOCC) has expanded its newbuilding programme in China, adding another pair of 7,100 ceu ships at CIMC Raffles. Shipbuilding sources place the latest vessels at the group’s Yantai Raffles facility for delivery in 2030, extending a relations",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/NOCC-Adriatic-CIMC-Raffles.jpg",
       "en": {
-        "headline": "Shipping rewinds the future",
-        "summary": "Rather than forecasting from today, backcasting starts with possible futures and works backwards — an approach gaining traction as shipping’s long-term bets become harder to call. Splash’s Europe Editor Bojan Lepic explains.&#160; Shipping has never been short on forecasts. Fleet",
+        "headline": "JP Morgan-backed NOCC expands China car carrier programme",
+        "summary": "JP Morgan-backed Norwegian Car Carriers (NOCC) has expanded its newbuilding programme in China, adding another pair of 7,100 ceu ships at CIMC Raffles. Shipbuilding sources place the latest vessels at the group’s Yantai Raffles facility for delivery in 2030, extending a relations",
         "source": "Splash247"
       }
     },
     {
-      "title": "ShipGod AI: Why every vessel needs its own digital memory",
-      "link": "https://splash247.com/shipgod-ai-why-every-vessel-needs-its-own-digital-memory/",
-      "pubDate": "Tue, 06 Oct 2026 20:00:00 +0000",
+      "title": "Wallenius Wilhelmsen eyes up to 12 more car carriers",
+      "link": "https://splash247.com/wallenius-wilhelmsen-eyes-up-to-12-more-car-carriers/",
+      "pubDate": "Wed, 07 Oct 2026 11:30:00 +0000",
       "source": "Splash247",
-      "category": "Carbon",
-      "summary": "After four decades at sea and ashore, Bing Hou has reached a simple conclusion about shipmanagement: too much of what keeps vessels safe still depends on paper, spreadsheets and what individual seafarers happen to remember. The 56-year-old master mariner, founder of ShipGod AI, s",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Bing-Hou-portrait-copy.jpg",
+      "category": "Trade",
+      "summary": "Wallenius Wilhelmsen has raised about NOK2.88bn ($300m) in fresh equity as it prepares to add four large LNG dual-fuel car carriers with options for another eight. The Oslo-listed group completed a private placement late on Tuesday, issuing 17.145m shares at NOK168 each. The comp",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/10/Wallenius-Wilhelmsen-methanol-and-ammonia-car-carrier.jpg",
       "en": {
-        "headline": "ShipGod AI: Why every vessel needs its own digital memory",
-        "summary": "After four decades at sea and ashore, Bing Hou has reached a simple conclusion about shipmanagement: too much of what keeps vessels safe still depends on paper, spreadsheets and what individual seafarers happen to remember. The 56-year-old master mariner, founder of ShipGod AI, s",
+        "headline": "Wallenius Wilhelmsen eyes up to 12 more car carriers",
+        "summary": "Wallenius Wilhelmsen has raised about NOK2.88bn ($300m) in fresh equity as it prepares to add four large LNG dual-fuel car carriers with options for another eight. The Oslo-listed group completed a private placement late on Tuesday, issuing 17.145m shares at NOK168 each. The comp",
         "source": "Splash247"
       }
     },
     {
-      "title": "Bunker prices jump by three-quarters since Iran war began",
-      "link": "https://splash247.com/bunker-prices-jump-by-three-quarters-since-iran-war-began/",
-      "pubDate": "Tue, 06 Oct 2026 19:57:00 +0000",
+      "title": "Gallagher Bassett buys second London shipping law firm in five months",
+      "link": "https://splash247.com/gallagher-bassett-buys-second-london-shipping-law-firm-in-five-months/",
+      "pubDate": "Wed, 07 Oct 2026 11:00:00 +0000",
       "source": "Splash247",
-      "category": "Bunker",
-      "summary": "The cost of fuelling ships has risen by roughly three-quarters since the US-Iran war erupted on February 28. In Singapore, the world’s largest bunkering hub, VLSFO was assessed by ENGINE at $509 per tonne on February 27, the final trading day before the war began, while high-sulp",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/10/Bunkering-Bomin.jpg",
+      "category": "Trade",
+      "summary": "Arthur J. Gallagher’s claims and risk management arm, Gallagher Bassett, has acquired London-based maritime law firm Winter &#38; Co Solicitors, continuing a run of deals aimed at expanding its marine business. Financial terms have not been disclosed. Winter &#38; Co advises P&#3",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Winter-Co-Solicitors.jpg",
       "en": {
-        "headline": "Bunker prices jump by three-quarters since Iran war began",
-        "summary": "The cost of fuelling ships has risen by roughly three-quarters since the US-Iran war erupted on February 28. In Singapore, the world’s largest bunkering hub, VLSFO was assessed by ENGINE at $509 per tonne on February 27, the final trading day before the war began, while high-sulp",
+        "headline": "Gallagher Bassett buys second London shipping law firm in five months",
+        "summary": "Arthur J. Gallagher’s claims and risk management arm, Gallagher Bassett, has acquired London-based maritime law firm Winter &#38; Co Solicitors, continuing a run of deals aimed at expanding its marine business. Financial terms have not been disclosed. Winter &#38; Co advises P&#3",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "SFL lands $275m cash haul from Trafigura tanker sale",
+      "link": "https://splash247.com/sfl-lands-275m-cash-haul-from-trafigura-tanker-sale/",
+      "pubDate": "Wed, 07 Oct 2026 10:39:38 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "John Fredriksen-linked SFL Corporation has agreed to sell seven tankers to commodities giant Trafigura in a deal expected to generate about $275m in net cash proceeds and a book gain of roughly $175m. The package comprises four 2014- and 2015-built LR2 product tankers and three 2",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/SFL-Lion-SFL.jpg",
+      "en": {
+        "headline": "SFL lands $275m cash haul from Trafigura tanker sale",
+        "summary": "John Fredriksen-linked SFL Corporation has agreed to sell seven tankers to commodities giant Trafigura in a deal expected to generate about $275m in net cash proceeds and a book gain of roughly $175m. The package comprises four 2014- and 2015-built LR2 product tankers and three 2",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Botas goes to market for nearly three-year LNG carrier charter",
+      "link": "https://splash247.com/botas-goes-to-market-for-nearly-three-year-lng-carrier-charter/",
+      "pubDate": "Wed, 07 Oct 2026 10:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Turkey’s state-owned energy company Botas has gone to market for an LNG carrier on a firm 940-day time charter as it continues to build out its gas shipping capacity. The Ankara-based company is seeking a vessel built in 2015 or later with capacity of between 173,600 and 175,000 ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Botas-LNG.jpg",
+      "en": {
+        "headline": "Botas goes to market for nearly three-year LNG carrier charter",
+        "summary": "Turkey’s state-owned energy company Botas has gone to market for an LNG carrier on a firm 940-day time charter as it continues to build out its gas shipping capacity. The Ankara-based company is seeking a vessel built in 2015 or later with capacity of between 173,600 and 175,000 ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "China Completes First Season of Regular Arctic Container Service",
+      "link": "https://gcaptain.com/china-completes-first-season-of-regular-arctic-container-service/",
+      "pubDate": "Wed, 07 Oct 2026 10:02:08 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "China has completed the first season of regular weekly container shipping between China and Europe via the Northern Sea Route, with the operator completing all eight sailings planned for 2026 before ending departures slightly earlier than scheduled because of Arctic ice forecasts",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/Istanbul-Bridge-in-Arctic-October-2025-Sealegend-credit.png",
+      "en": {
+        "headline": "China Completes First Season of Regular Arctic Container Service",
+        "summary": "China has completed the first season of regular weekly container shipping between China and Europe via the Northern Sea Route, with the operator completing all eight sailings planned for 2026 before ending departures slightly earlier than scheduled because of Arctic ice forecasts",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Qatar Brings Empty LNG Ships Into Gulf in Potential Export Boost",
+      "link": "https://gcaptain.com/qatar-brings-empty-lng-ships-into-gulf-in-potential-export-boost/",
+      "pubDate": "Wed, 07 Oct 2026 10:01:07 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Qatar has amassed a fleet of empty liquefied natural gas tankers in the Persian Gulf, a sign that one of the world’s biggest exporters of the fuel may be preparing to boost shipments through the Strait of Hormuz.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/06/2017-06-08T034144Z_275004737_RC1C2C08F6D0_RTRMADP_3_QATAR-ASIA-LNG.jpg",
+      "en": {
+        "headline": "Qatar Brings Empty LNG Ships Into Gulf in Potential Export Boost",
+        "summary": "Qatar has amassed a fleet of empty liquefied natural gas tankers in the Persian Gulf, a sign that one of the world’s biggest exporters of the fuel may be preparing to boost shipments through the Strait of Hormuz.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Pyxis lifts MR earnings with two-year CITGO deal",
+      "link": "https://splash247.com/pyxis-lifts-mr-earnings-with-two-year-citgo-deal/",
+      "pubDate": "Wed, 07 Oct 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Nasdaq-listed Pyxis Tankers has locked one of its MR product tankers into a two-year charter with CITGO Petroleum at $31,000 per day, securing about $21.8m in net charter revenue. The Greece-based owner has fixed the 2017-built, 50,145 dwt Pyxis Lamda for 24 months, plus or minus",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Pyxis-Lamda-Pyxis-Tankers.jpg",
+      "en": {
+        "headline": "Pyxis lifts MR earnings with two-year CITGO deal",
+        "summary": "Nasdaq-listed Pyxis Tankers has locked one of its MR product tankers into a two-year charter with CITGO Petroleum at $31,000 per day, securing about $21.8m in net charter revenue. The Greece-based owner has fixed the 2017-built, 50,145 dwt Pyxis Lamda for 24 months, plus or minus",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Houthis Attack Aden Airport as Fighting Intensifies in Yemen",
+      "link": "https://gcaptain.com/houthis-attack-aden-airport-as-fighting-intensifies-in-yemen/",
+      "pubDate": "Wed, 07 Oct 2026 09:56:31 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Yemen's Houthis attacked Aden's international airport with ballistic missiles and explosive-laden drones on Wednesday, the country's Transport Ministry said, as fighting between the Iran-aligned group and Saudi-backed government forces intensified.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/03/2024-03-15T145258Z_559157144_RC2DM6ASVHU8_RTRMADP_3_ISRAEL-PALESTINIANS-YEMEN-HOUTHIS-800x569.jpg",
+      "en": {
+        "headline": "Houthis Attack Aden Airport as Fighting Intensifies in Yemen",
+        "summary": "Yemen's Houthis attacked Aden's international airport with ballistic missiles and explosive-laden drones on Wednesday, the country's Transport Ministry said, as fighting between the Iran-aligned group and Saudi-backed government forces intensified.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Commodity trader takes Pelagic handysize for up to 11 months",
+      "link": "https://splash247.com/commodity-trader-takes-pelagic-handysize-for-up-to-11-months/",
+      "pubDate": "Wed, 07 Oct 2026 09:33:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Cyprus-based shipowner and fund manager Pelagic Partners has fixed its handysize bulker UBC Houston to an unnamed major commodity trader for up to 11 months. The 2015-built, 39,000 dwt vessel has secured a nine-to-11-month time charter at $17,250 per day, Pelagic said. The compan",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/UBC-Houston-Pelagic-Partners.jpg",
+      "en": {
+        "headline": "Commodity trader takes Pelagic handysize for up to 11 months",
+        "summary": "Cyprus-based shipowner and fund manager Pelagic Partners has fixed its handysize bulker UBC Houston to an unnamed major commodity trader for up to 11 months. The 2015-built, 39,000 dwt vessel has secured a nine-to-11-month time charter at $17,250 per day, Pelagic said. The compan",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "HD Hyundai gathers Korean heavyweights for marine nuclear test centre",
+      "link": "https://splash247.com/hd-hyundai-gathers-korean-heavyweights-for-marine-nuclear-test-centre/",
+      "pubDate": "Wed, 07 Oct 2026 09:15:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "HD Hyundai Heavy Industries has brought together 11 other South Korean shipbuilding, nuclear and academic organisations to create a marine small modular reactor testing hub, adding further momentum to its increasingly ambitious push into nuclear-powered shipping. The SMR Marine T",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/07/Hyundai-Heavy-780x470-1.jpg",
+      "en": {
+        "headline": "HD Hyundai gathers Korean heavyweights for marine nuclear test centre",
+        "summary": "HD Hyundai Heavy Industries has brought together 11 other South Korean shipbuilding, nuclear and academic organisations to create a marine small modular reactor testing hub, adding further momentum to its increasingly ambitious push into nuclear-powered shipping. The SMR Marine T",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Aframax Rio blaze underscores widening Black Sea threat",
+      "link": "https://splash247.com/aframax-rio-blaze-underscores-widening-black-sea-threat/",
+      "pubDate": "Wed, 07 Oct 2026 08:30:51 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The Aframax Rio was ablaze off Sochi on Tuesday after being struck by unmanned surface vessels, adding another tanker casualty to a rapidly worsening Black Sea security picture. Russia’s transport ministry said the Liberia-flagged aframax was attacked off the Russian resort city,",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Aframax-Rio-X.com_.jpg",
+      "en": {
+        "headline": "Aframax Rio blaze underscores widening Black Sea threat",
+        "summary": "The Aframax Rio was ablaze off Sochi on Tuesday after being struck by unmanned surface vessels, adding another tanker casualty to a rapidly worsening Black Sea security picture. Russia’s transport ministry said the Liberia-flagged aframax was attacked off the Russian resort city,",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Twelve injured in latest Hormuz attack",
+      "link": "https://splash247.com/twelve-injured-in-latest-hormuz-attack/",
+      "pubDate": "Wed, 07 Oct 2026 08:15:16 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Twelve seafarers have been injured after the Panama-flagged tanker On Peace was struck by a projectile while transiting the Strait of Hormuz yesterday, the latest casualty in what has become the most intense spell of attacks on commercial shipping since the US-Iran war began in F",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/01/Iran-drones.jpg",
+      "en": {
+        "headline": "Twelve injured in latest Hormuz attack",
+        "summary": "Twelve seafarers have been injured after the Panama-flagged tanker On Peace was struck by a projectile while transiting the Strait of Hormuz yesterday, the latest casualty in what has become the most intense spell of attacks on commercial shipping since the US-Iran war began in F",
         "source": "Splash247"
       }
     },
@@ -295,7 +465,7 @@
       "summary": "Iran’s offshore crude stockpile in Southeast Asia is being rapidly depleted as the U.S. maritime blockade prevents fresh barrels from leaving the Persian Gulf, according to new tracking data from...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2020/06/2020-06-12T110135Z_1121479389_RC2N7H9P05ZH_RTRMADP_3_VENEZUELA-OIL-DEALS.jpg",
       "en": {
         "headline": "Iran’s Offshore Oil Stockpile Nears Exhaustion as Blockade Chokes New Supply",
@@ -312,7 +482,7 @@
       "summary": "New company takes on four Arc4 LNG carriers as Seoul looks to expand Busan’s role in Arctic shipping. A newly established South Korean ship manager is emerging as a potential new player in Arctic LNG shipping, taking control of four ice-class LNG carriers while planning a rapid e",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/arctic-lng-hero.jpg",
       "en": {
         "headline": "South Korean Operator Emerges as New Force in Arctic LNG Shipping",
@@ -329,182 +499,12 @@
       "summary": "Volare Shipping Ltd. jumped on its first day of trading in Oslo on Monday after the spin-off arm of Trafigura Group Pte. became the latest in a spree of tanker listings in the Norwegian capital.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
       "en": {
         "headline": "Volare Jumps in Oslo Debut as Wave of Shipping IPOs Builds",
         "summary": "Volare Shipping Ltd. jumped on its first day of trading in Oslo on Monday after the spin-off arm of Trafigura Group Pte. became the latest in a spree of tanker listings in the Norwegian capital.",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Gulf Oil Flows Rise to Average 81% of Pre-war Rate in September",
-      "link": "https://gcaptain.com/gulf-oil-flows-rise-to-average-81-of-pre-war-rate-in-september/",
-      "pubDate": "Tue, 06 Oct 2026 17:41:15 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Gulf oil flows excluding Iran surged to over 81% of pre-war levels in September, data showed, led by a recovery in Saudi exports despite attacks on the kingdom's oil infrastructure and escalating Iranian attacks on regional shipping, while Iranian exports fell to zero due to a US",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T134318Z_693026131_RC2N1MAQSWKP_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x524.jpg",
-      "en": {
-        "headline": "Gulf Oil Flows Rise to Average 81% of Pre-war Rate in September",
-        "summary": "Gulf oil flows excluding Iran surged to over 81% of pre-war levels in September, data showed, led by a recovery in Saudi exports despite attacks on the kingdom's oil infrastructure and escalating Iranian attacks on regional shipping, while Iranian exports fell to zero due to a US",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "War in Ukraine Escalates With Drone Strikes on Cargo Ships",
-      "link": "https://gcaptain.com/war-in-ukraine-escalates-with-drone-strikes-on-cargo-ships/",
-      "pubDate": "Tue, 06 Oct 2026 16:20:43 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Attacks on commercial vessels off the Black Sea’s western coast are on the rise, threatening already-choked trade flows in the region while testing NATO’s readiness to react.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/ADYTELOBLJPMNP4BGN4OBQMFJA.jpg.avif",
-      "en": {
-        "headline": "War in Ukraine Escalates With Drone Strikes on Cargo Ships",
-        "summary": "Attacks on commercial vessels off the Black Sea’s western coast are on the rise, threatening already-choked trade flows in the region while testing NATO’s readiness to react.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Panama Canal Expands Advance Transit Reservations for 2027 Dry Season",
-      "link": "https://gcaptain.com/panama-canal-expands-advance-transit-reservations-for-2027-dry-season/",
-      "pubDate": "Tue, 06 Oct 2026 15:58:38 +0000",
-      "source": "gCaptain",
-      "category": "Dry Bulk",
-      "summary": "The Panama Canal is expanding its long-term transit reservation program to the Panamax locks for the first time, giving more shipping customers the ability to secure passage months in advance...",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/11/shutterstock_538143214-800x533.jpg",
-      "en": {
-        "headline": "Panama Canal Expands Advance Transit Reservations for 2027 Dry Season",
-        "summary": "The Panama Canal is expanding its long-term transit reservation program to the Panamax locks for the first time, giving more shipping customers the ability to secure passage months in advance...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "IMO Chief Decries Rising Toll on Seafarers Caught in Conflict",
-      "link": "https://gcaptain.com/imo-chief-decries-rising-toll-on-seafarers-caught-in-conflict/",
-      "pubDate": "Tue, 06 Oct 2026 15:44:57 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Five seafarers were killed during the rescue of a hijacked ship off Somalia last week, prompting International Maritime Organization Secretary-General Arsenio Dominguez to issue yet another statement mourning merchant mariners...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/IMO-MEPC-84-opening-remarks-800x600.jpg",
-      "en": {
-        "headline": "IMO Chief Decries Rising Toll on Seafarers Caught in Conflict",
-        "summary": "Five seafarers were killed during the rescue of a hijacked ship off Somalia last week, prompting International Maritime Organization Secretary-General Arsenio Dominguez to issue yet another statement mourning merchant mariners...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "A Dozen Seafarers Injured in Strait of Hormuz Tanker Attack, India Says",
-      "link": "https://gcaptain.com/a-dozen-seafarers-injured-in-strait-of-hormuz-tanker-attack-india-says/",
-      "pubDate": "Tue, 06 Oct 2026 15:14:14 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Twelve seafarers were injured after a Panama-flagged oil tanker was struck by a projectile while transiting the Strait of Hormuz, according to India’s Ministry of External Affairs, marking one of...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
-      "en": {
-        "headline": "A Dozen Seafarers Injured in Strait of Hormuz Tanker Attack, India Says",
-        "summary": "Twelve seafarers were injured after a Panama-flagged oil tanker was struck by a projectile while transiting the Strait of Hormuz, according to India’s Ministry of External Affairs, marking one of...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Global Ship Lease takes newbuild orderbook to 17",
-      "link": "https://splash247.com/global-ship-lease-takes-newbuild-orderbook-to-17/",
-      "pubDate": "Tue, 06 Oct 2026 12:58:23 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "New York-listed containership owner Global Ship Lease (GSL) has exercised options for another two newbuildings, taking the George Youroukos-led company’s orderbook to 17 ships. The two midsize, ultra-high-reefer, wide-beam vessels are priced at about $163m in total and are schedu",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/01/Global-Ship-Lease.jpg",
-      "en": {
-        "headline": "Global Ship Lease takes newbuild orderbook to 17",
-        "summary": "New York-listed containership owner Global Ship Lease (GSL) has exercised options for another two newbuildings, taking the George Youroukos-led company’s orderbook to 17 ships. The two midsize, ultra-high-reefer, wide-beam vessels are priced at about $163m in total and are schedu",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Taylor Maritime reaches last ship in $1bn disposal run",
-      "link": "https://splash247.com/taylor-maritime-reaches-last-ship-in-1bn-disposal-run/",
-      "pubDate": "Tue, 06 Oct 2026 11:30:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "London-listed Taylor Maritime has moved its wind-down to the final vessel, completing the sale of three handysize bulkers while chief executive Ed Buttery builds up a private dry bulk position through his T3 Holding vehicle. The company said on Tuesday that the three previously a",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/03/Ed-Buttery-Monaco-CEO-Forum.jpg",
-      "en": {
-        "headline": "Taylor Maritime reaches last ship in $1bn disposal run",
-        "summary": "London-listed Taylor Maritime has moved its wind-down to the final vessel, completing the sale of three handysize bulkers while chief executive Ed Buttery builds up a private dry bulk position through his T3 Holding vehicle. The company said on Tuesday that the three previously a",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "SFL enters ammonia carrier market with twin newbuild order",
-      "link": "https://splash247.com/sfl-enters-ammonia-carrier-market-with-twin-newbuild-order/",
-      "pubDate": "Tue, 06 Oct 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "John Fredriksen-backed SFL Corporation has ordered a pair of 93,000 cbm very large ammonia carriers. The vessels will carry a wide range of petrochemical gases and feature dual-fuel propulsion and the latest technology for fuel efficiency and cargo intake optimisation.&#160; Deli",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Jiangnan-Shipyard-VLAC.jpg",
-      "en": {
-        "headline": "SFL enters ammonia carrier market with twin newbuild order",
-        "summary": "John Fredriksen-backed SFL Corporation has ordered a pair of 93,000 cbm very large ammonia carriers. The vessels will carry a wide range of petrochemical gases and feature dual-fuel propulsion and the latest technology for fuel efficiency and cargo intake optimisation.&#160; Deli",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "ADNOC L&#038;S lines up three more VLGCs for $324m",
-      "link": "https://splash247.com/adnoc-ls-lines-up-three-more-vlgcs-for-324m/",
-      "pubDate": "Tue, 06 Oct 2026 10:30:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Abu Dhabi-listed ADNOC Logistics &#38; Services is investing AED1.19bn ($324m) in three 90,000 cu m VLGC newbuildings as it continues one of shipping’s more aggressive fleet expansion programmes. The three ships are scheduled for delivery in the second half of 2029 and have alrea",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/ADNOC-LS-VLGC.jpg",
-      "en": {
-        "headline": "ADNOC L&#038;S lines up three more VLGCs for $324m",
-        "summary": "Abu Dhabi-listed ADNOC Logistics &#38; Services is investing AED1.19bn ($324m) in three 90,000 cu m VLGC newbuildings as it continues one of shipping’s more aggressive fleet expansion programmes. The three ships are scheduled for delivery in the second half of 2029 and have alrea",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Exmar confirms lucrative suezmax resale",
-      "link": "https://splash247.com/exmar-confirms-lucrative-suezmax-resale/",
-      "pubDate": "Tue, 06 Oct 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Belgium’s Exmar has confirmed the sale of the first suezmax in its four-ship newbuilding programme at South Korea’s DH Shipbuilding, crystallising a profit of around $22m on the transaction. The Antwerp-listed company said it has signed an agreement to sell the first tanker under",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/10/DH-Shipbuilding.jpg",
-      "en": {
-        "headline": "Exmar confirms lucrative suezmax resale",
-        "summary": "Belgium’s Exmar has confirmed the sale of the first suezmax in its four-ship newbuilding programme at South Korea’s DH Shipbuilding, crystallising a profit of around $22m on the transaction. The Antwerp-listed company said it has signed an agreement to sell the first tanker under",
-        "source": "Splash247"
       }
     }
   ]
