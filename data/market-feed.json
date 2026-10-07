@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-06T22:03:11.096Z",
-    "benchmarkAsOf": "2026-10-06",
+    "generatedAt": "2026-10-07T03:26:59.865Z",
+    "benchmarkAsOf": "2026-10-07",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-10-06",
-    "updatedLabelKo": "2026-10-06 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-10-07",
+    "updatedLabelKo": "2026-10-07 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -75,129 +75,129 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 880.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-05T17:00:00.000Z",
-        "source": "market_reporting",
-        "provider": "OilPriceAPI"
-      },
-      {
-        "port": "Singapore",
-        "gradeKey": "LSMGO",
-        "gradeLabel": "LSMGO",
-        "fuel": "LSMGO",
-        "defaultDensity": 850,
-        "priceUsdMt": 1278.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-05T17:00:00.000Z",
-        "source": "market_reporting",
-        "provider": "OilPriceAPI"
-      },
-      {
-        "port": "Singapore",
-        "gradeKey": "HSFO380",
-        "gradeLabel": "HSFO 380",
-        "fuel": "HSFO",
-        "defaultDensity": 991,
-        "priceUsdMt": 777,
-        "deltaPct": 0,
-        "asOf": "2026-10-05T17:00:00.000Z",
-        "source": "market_reporting",
-        "provider": "OilPriceAPI"
-      },
-      {
-        "port": "Rotterdam",
-        "gradeKey": "VLSFO",
-        "gradeLabel": "VLSFO",
-        "fuel": "VLSFO",
-        "defaultDensity": 991,
-        "priceUsdMt": 695.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-05T17:00:00.000Z",
-        "source": "market_reporting",
-        "provider": "OilPriceAPI"
-      },
-      {
-        "port": "Rotterdam",
-        "gradeKey": "LSMGO",
-        "gradeLabel": "LSMGO",
-        "fuel": "LSMGO",
-        "defaultDensity": 850,
-        "priceUsdMt": 1355.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-05T17:00:00.000Z",
-        "source": "market_reporting",
-        "provider": "OilPriceAPI"
-      },
-      {
-        "port": "Rotterdam",
-        "gradeKey": "HSFO380",
-        "gradeLabel": "HSFO 380",
-        "fuel": "HSFO",
-        "defaultDensity": 991,
-        "priceUsdMt": 620,
-        "deltaPct": 0,
-        "asOf": "2026-10-05T17:00:00.000Z",
-        "source": "market_reporting",
-        "provider": "OilPriceAPI"
-      },
-      {
-        "port": "Houston",
-        "gradeKey": "VLSFO",
-        "gradeLabel": "VLSFO",
-        "fuel": "VLSFO",
-        "defaultDensity": 991,
-        "priceUsdMt": 742.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-05T17:00:00.000Z",
-        "source": "market_reporting",
-        "provider": "OilPriceAPI"
-      },
-      {
-        "port": "Houston",
-        "gradeKey": "LSMGO",
-        "gradeLabel": "LSMGO",
-        "fuel": "LSMGO",
-        "defaultDensity": 850,
-        "priceUsdMt": 1371,
-        "deltaPct": 0,
-        "asOf": "2026-10-05T17:00:00.000Z",
-        "source": "market_reporting",
-        "provider": "OilPriceAPI"
-      },
-      {
-        "port": "Houston",
-        "gradeKey": "HSFO380",
-        "gradeLabel": "HSFO 380",
-        "fuel": "HSFO",
-        "defaultDensity": 991,
-        "priceUsdMt": 531.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-05T17:00:00.000Z",
-        "source": "market_reporting",
-        "provider": "OilPriceAPI"
-      },
-      {
-        "port": "Busan",
-        "gradeKey": "VLSFO",
-        "gradeLabel": "VLSFO",
-        "fuel": "VLSFO",
-        "defaultDensity": 991,
-        "priceUsdMt": 990,
-        "deltaPct": 0,
-        "asOf": "2026-10-05T22:41:19.934Z",
-        "source": "market_reporting",
-        "provider": "OilPriceAPI"
-      },
-      {
-        "port": "Busan",
-        "gradeKey": "HSFO380",
-        "gradeLabel": "HSFO 380",
-        "fuel": "HSFO",
-        "defaultDensity": 991,
         "priceUsdMt": 890,
-        "deltaPct": 0,
-        "asOf": "2026-10-05T22:41:19.908Z",
+        "deltaPct": 1.08,
+        "asOf": "2026-10-06T17:00:00.000Z",
+        "source": "market_reporting",
+        "provider": "OilPriceAPI"
+      },
+      {
+        "port": "Singapore",
+        "gradeKey": "LSMGO",
+        "gradeLabel": "LSMGO",
+        "fuel": "LSMGO",
+        "defaultDensity": 850,
+        "priceUsdMt": 1243,
+        "deltaPct": -2.78,
+        "asOf": "2026-10-06T17:00:00.000Z",
+        "source": "market_reporting",
+        "provider": "OilPriceAPI"
+      },
+      {
+        "port": "Singapore",
+        "gradeKey": "HSFO380",
+        "gradeLabel": "HSFO 380",
+        "fuel": "HSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 778,
+        "deltaPct": 0.13,
+        "asOf": "2026-10-06T17:00:00.000Z",
+        "source": "market_reporting",
+        "provider": "OilPriceAPI"
+      },
+      {
+        "port": "Rotterdam",
+        "gradeKey": "VLSFO",
+        "gradeLabel": "VLSFO",
+        "fuel": "VLSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 682.5,
+        "deltaPct": -1.87,
+        "asOf": "2026-10-06T17:00:00.000Z",
+        "source": "market_reporting",
+        "provider": "OilPriceAPI"
+      },
+      {
+        "port": "Rotterdam",
+        "gradeKey": "LSMGO",
+        "gradeLabel": "LSMGO",
+        "fuel": "LSMGO",
+        "defaultDensity": 850,
+        "priceUsdMt": 1340,
+        "deltaPct": -1.14,
+        "asOf": "2026-10-06T17:00:00.000Z",
+        "source": "market_reporting",
+        "provider": "OilPriceAPI"
+      },
+      {
+        "port": "Rotterdam",
+        "gradeKey": "HSFO380",
+        "gradeLabel": "HSFO 380",
+        "fuel": "HSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 613,
+        "deltaPct": -1.13,
+        "asOf": "2026-10-06T17:00:00.000Z",
+        "source": "market_reporting",
+        "provider": "OilPriceAPI"
+      },
+      {
+        "port": "Houston",
+        "gradeKey": "VLSFO",
+        "gradeLabel": "VLSFO",
+        "fuel": "VLSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 745.5,
+        "deltaPct": 0.4,
+        "asOf": "2026-10-06T17:00:00.000Z",
+        "source": "market_reporting",
+        "provider": "OilPriceAPI"
+      },
+      {
+        "port": "Houston",
+        "gradeKey": "LSMGO",
+        "gradeLabel": "LSMGO",
+        "fuel": "LSMGO",
+        "defaultDensity": 850,
+        "priceUsdMt": 1370,
+        "deltaPct": -0.07,
+        "asOf": "2026-10-06T17:00:00.000Z",
+        "source": "market_reporting",
+        "provider": "OilPriceAPI"
+      },
+      {
+        "port": "Houston",
+        "gradeKey": "HSFO380",
+        "gradeLabel": "HSFO 380",
+        "fuel": "HSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 540,
+        "deltaPct": 1.6,
+        "asOf": "2026-10-06T17:00:00.000Z",
+        "source": "market_reporting",
+        "provider": "OilPriceAPI"
+      },
+      {
+        "port": "Busan",
+        "gradeKey": "VLSFO",
+        "gradeLabel": "VLSFO",
+        "fuel": "VLSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 1000,
+        "deltaPct": 1.01,
+        "asOf": "2026-10-06T22:41:22.770Z",
+        "source": "market_reporting",
+        "provider": "OilPriceAPI"
+      },
+      {
+        "port": "Busan",
+        "gradeKey": "HSFO380",
+        "gradeLabel": "HSFO 380",
+        "fuel": "HSFO",
+        "defaultDensity": 991,
+        "priceUsdMt": 940,
+        "deltaPct": 5.62,
+        "asOf": "2026-10-06T22:41:22.749Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 3002,
-      "deltaPct": -2.21,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-06T14:39:47.639Z"
     },
     "capesizeTc": {
-      "value": 4833,
-      "deltaPct": 0,
+      "value": 4638,
+      "deltaPct": -4.03,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-06T06:43:25.482Z"
+      "asOf": "2026-10-07T00:35:51.464Z"
     },
     "panamaxTc": {
       "value": 2364,
-      "deltaPct": -0.63,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-06T14:26:35.370Z"
@@ -244,7 +244,7 @@
       "summary": "Rather than forecasting from today, backcasting starts with possible futures and works backwards — an approach gaining traction as shipping’s long-term bets become harder to call. Splash’s Europe Editor Bojan Lepic explains.&#160; Shipping has never been short on forecasts. Fleet",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Future.jpg",
       "en": {
         "headline": "Shipping rewinds the future",
@@ -261,7 +261,7 @@
       "summary": "After four decades at sea and ashore, Bing Hou has reached a simple conclusion about shipmanagement: too much of what keeps vessels safe still depends on paper, spreadsheets and what individual seafarers happen to remember. The 56-year-old master mariner, founder of ShipGod AI, s",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Bing-Hou-portrait-copy.jpg",
       "en": {
         "headline": "ShipGod AI: Why every vessel needs its own digital memory",
@@ -278,7 +278,7 @@
       "summary": "The cost of fuelling ships has risen by roughly three-quarters since the US-Iran war erupted on February 28. In Singapore, the world’s largest bunkering hub, VLSFO was assessed by ENGINE at $509 per tonne on February 27, the final trading day before the war began, while high-sulp",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/10/Bunkering-Bomin.jpg",
       "en": {
         "headline": "Bunker prices jump by three-quarters since Iran war began",
@@ -295,7 +295,7 @@
       "summary": "Iran’s offshore crude stockpile in Southeast Asia is being rapidly depleted as the U.S. maritime blockade prevents fresh barrels from leaving the Persian Gulf, according to new tracking data from...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2020/06/2020-06-12T110135Z_1121479389_RC2N7H9P05ZH_RTRMADP_3_VENEZUELA-OIL-DEALS.jpg",
       "en": {
         "headline": "Iran’s Offshore Oil Stockpile Nears Exhaustion as Blockade Chokes New Supply",
@@ -312,7 +312,7 @@
       "summary": "New company takes on four Arc4 LNG carriers as Seoul looks to expand Busan’s role in Arctic shipping. A newly established South Korean ship manager is emerging as a potential new player in Arctic LNG shipping, taking control of four ice-class LNG carriers while planning a rapid e",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/arctic-lng-hero.jpg",
       "en": {
         "headline": "South Korean Operator Emerges as New Force in Arctic LNG Shipping",
@@ -329,7 +329,7 @@
       "summary": "Volare Shipping Ltd. jumped on its first day of trading in Oslo on Monday after the spin-off arm of Trafigura Group Pte. became the latest in a spree of tanker listings in the Norwegian capital.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
       "en": {
         "headline": "Volare Jumps in Oslo Debut as Wave of Shipping IPOs Builds",
@@ -346,7 +346,7 @@
       "summary": "Gulf oil flows excluding Iran surged to over 81% of pre-war levels in September, data showed, led by a recovery in Saudi exports despite attacks on the kingdom's oil infrastructure and escalating Iranian attacks on regional shipping, while Iranian exports fell to zero due to a US",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T134318Z_693026131_RC2N1MAQSWKP_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x524.jpg",
       "en": {
         "headline": "Gulf Oil Flows Rise to Average 81% of Pre-war Rate in September",
@@ -363,7 +363,7 @@
       "summary": "Attacks on commercial vessels off the Black Sea’s western coast are on the rise, threatening already-choked trade flows in the region while testing NATO’s readiness to react.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/ADYTELOBLJPMNP4BGN4OBQMFJA.jpg.avif",
       "en": {
         "headline": "War in Ukraine Escalates With Drone Strikes on Cargo Ships",
@@ -380,7 +380,7 @@
       "summary": "The Panama Canal is expanding its long-term transit reservation program to the Panamax locks for the first time, giving more shipping customers the ability to secure passage months in advance...",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/11/shutterstock_538143214-800x533.jpg",
       "en": {
         "headline": "Panama Canal Expands Advance Transit Reservations for 2027 Dry Season",
@@ -397,7 +397,7 @@
       "summary": "Five seafarers were killed during the rescue of a hijacked ship off Somalia last week, prompting International Maritime Organization Secretary-General Arsenio Dominguez to issue yet another statement mourning merchant mariners...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/IMO-MEPC-84-opening-remarks-800x600.jpg",
       "en": {
         "headline": "IMO Chief Decries Rising Toll on Seafarers Caught in Conflict",
@@ -414,7 +414,7 @@
       "summary": "Twelve seafarers were injured after a Panama-flagged oil tanker was struck by a projectile while transiting the Strait of Hormuz, according to India’s Ministry of External Affairs, marking one of...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
       "en": {
         "headline": "A Dozen Seafarers Injured in Strait of Hormuz Tanker Attack, India Says",
@@ -431,7 +431,7 @@
       "summary": "New York-listed containership owner Global Ship Lease (GSL) has exercised options for another two newbuildings, taking the George Youroukos-led company’s orderbook to 17 ships. The two midsize, ultra-high-reefer, wide-beam vessels are priced at about $163m in total and are schedu",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 9,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/01/Global-Ship-Lease.jpg",
       "en": {
         "headline": "Global Ship Lease takes newbuild orderbook to 17",
@@ -448,7 +448,7 @@
       "summary": "London-listed Taylor Maritime has moved its wind-down to the final vessel, completing the sale of three handysize bulkers while chief executive Ed Buttery builds up a private dry bulk position through his T3 Holding vehicle. The company said on Tuesday that the three previously a",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/03/Ed-Buttery-Monaco-CEO-Forum.jpg",
       "en": {
         "headline": "Taylor Maritime reaches last ship in $1bn disposal run",
@@ -465,7 +465,7 @@
       "summary": "John Fredriksen-backed SFL Corporation has ordered a pair of 93,000 cbm very large ammonia carriers. The vessels will carry a wide range of petrochemical gases and feature dual-fuel propulsion and the latest technology for fuel efficiency and cargo intake optimisation.&#160; Deli",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 11,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Jiangnan-Shipyard-VLAC.jpg",
       "en": {
         "headline": "SFL enters ammonia carrier market with twin newbuild order",
@@ -482,7 +482,7 @@
       "summary": "Abu Dhabi-listed ADNOC Logistics &#38; Services is investing AED1.19bn ($324m) in three 90,000 cu m VLGC newbuildings as it continues one of shipping’s more aggressive fleet expansion programmes. The three ships are scheduled for delivery in the second half of 2029 and have alrea",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 11,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/ADNOC-LS-VLGC.jpg",
       "en": {
         "headline": "ADNOC L&#038;S lines up three more VLGCs for $324m",
@@ -499,7 +499,7 @@
       "summary": "Belgium’s Exmar has confirmed the sale of the first suezmax in its four-ship newbuilding programme at South Korea’s DH Shipbuilding, crystallising a profit of around $22m on the transaction. The Antwerp-listed company said it has signed an agreement to sell the first tanker under",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 12,
+      "hoursAgo": 17,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/10/DH-Shipbuilding.jpg",
       "en": {
         "headline": "Exmar confirms lucrative suezmax resale",
