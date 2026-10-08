@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-07T22:28:02.629Z",
+    "generatedAt": "2026-10-08T03:41:37.044Z",
     "benchmarkAsOf": "2026-10-07",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 890,
-        "deltaPct": 0,
-        "asOf": "2026-10-06T17:00:00.000Z",
+        "priceUsdMt": 896,
+        "deltaPct": 0.67,
+        "asOf": "2026-10-07T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1243,
-        "deltaPct": 0,
-        "asOf": "2026-10-06T17:00:00.000Z",
+        "priceUsdMt": 1254.5,
+        "deltaPct": 0.93,
+        "asOf": "2026-10-07T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 778,
-        "deltaPct": 0,
-        "asOf": "2026-10-06T17:00:00.000Z",
+        "priceUsdMt": 788.5,
+        "deltaPct": 1.35,
+        "asOf": "2026-10-07T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 682.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-06T17:00:00.000Z",
+        "priceUsdMt": 692,
+        "deltaPct": 1.39,
+        "asOf": "2026-10-07T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1340,
-        "deltaPct": 0,
-        "asOf": "2026-10-06T17:00:00.000Z",
+        "priceUsdMt": 1333,
+        "deltaPct": -0.52,
+        "asOf": "2026-10-07T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 613,
-        "deltaPct": 0,
-        "asOf": "2026-10-06T17:00:00.000Z",
+        "priceUsdMt": 610,
+        "deltaPct": -0.49,
+        "asOf": "2026-10-07T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 745.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-06T17:00:00.000Z",
+        "priceUsdMt": 754.5,
+        "deltaPct": 1.21,
+        "asOf": "2026-10-07T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1370,
-        "deltaPct": 0,
-        "asOf": "2026-10-06T17:00:00.000Z",
+        "priceUsdMt": 1398.5,
+        "deltaPct": 2.08,
+        "asOf": "2026-10-07T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -171,9 +171,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 540,
-        "deltaPct": 0,
-        "asOf": "2026-10-06T17:00:00.000Z",
+        "priceUsdMt": 541,
+        "deltaPct": 0.19,
+        "asOf": "2026-10-07T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 1000,
-        "deltaPct": 0,
-        "asOf": "2026-10-06T22:41:22.770Z",
+        "priceUsdMt": 1005,
+        "deltaPct": 0.5,
+        "asOf": "2026-10-07T22:41:25.442Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 940,
-        "deltaPct": 0,
-        "asOf": "2026-10-06T22:41:22.749Z",
+        "priceUsdMt": 945,
+        "deltaPct": 0.53,
+        "asOf": "2026-10-07T22:41:25.409Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,7 +206,7 @@
   "indices": {
     "bdi": {
       "value": 2994,
-      "deltaPct": -0.27,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-07T14:16:12.408Z"
@@ -220,7 +220,7 @@
     },
     "panamaxTc": {
       "value": 2366,
-      "deltaPct": 0.08,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-07T14:26:03.194Z"
@@ -244,7 +244,7 @@
       "summary": "Evangelos Pistiolis-led Top Ships is adding another four MR tanker newbuildings at Guangzhou Shipyard International, lifting its newbuilding pipeline in the segment to 14 ships. The New York-listed Greek owner has agreed to acquire four related-party special purpose companies hol",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Guangzhou-Shipyard-International-GSI.jpg",
       "en": {
         "headline": "Pistiolis doubles down at GSI with four more MRs",
@@ -261,7 +261,7 @@
       "summary": "A 22-year-old product tanker sanctioned by the European Union is making an unusual late-season voyage along Russia's Northern Sea Route, highlighting the growing use of older, lower-specification vessels to move petroleum products through the Arctic.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/oil-tanker-in-Arctic-sovcomflot-July-2025-800x457.png",
       "en": {
         "headline": "Sanctioned 22-Year-Old Tanker Makes Rare Late-Season Arctic Voyage",
@@ -278,7 +278,7 @@
       "summary": "South Korea's presidential office on Wednesday dismissed a Ukrainian report that Russia has imported petroleum products from South Korean ports, calling the accusation inappropriate.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/04/Bearing-AI-gCaptain-Article-April-8-800x449.jpg",
       "en": {
         "headline": "South Korea Denies Ukrainian Report That It Eased Russia&#8217;s Fuel Crisis",
@@ -295,7 +295,7 @@
       "summary": "Golar LNG has acquired a 2013-built LNG carrier from Japan’s NYK Line for conversion into its fourth floating LNG unit, filling in a key missing piece of its $2.45bn expansion programme. The Nasdaq-listed FLNG specialist has agreed to buy the 177,427 cu m Grace Dahlia, which will",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Grace-Dahlia-George-Wilson-Marine-Traffic.jpg",
       "en": {
         "headline": "Golar picks NYK carrier for fourth FLNG conversion",
@@ -312,7 +312,7 @@
       "summary": "Norwegian offshore vessel owner Eidesvik Offshore has secured fresh work for the platform supply vessel Viking Queen, taking the ship out of the spot market for a drilling campaign starting early next year. The contract covers one well and has an estimated firm duration of about ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/12/Eidesvik-Viking-Queen-PSV.jpg",
       "en": {
         "headline": "Eidesvik fixes PSV for 2027 drilling campaign",
@@ -329,7 +329,7 @@
       "summary": "The strength, dynamism and diversity of Asia’s buoyant maritime community will be evident at the 2026 WISTA AGM and Conference gathering in Kuala Lumpur later this month, as industry leaders,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/94ebcb0e-7c66-59ae-3a3a-de65298450bb.jpg",
       "en": {
         "headline": "Asia’s maritime community to take centre stage at upcoming WISTA 2026",
@@ -346,7 +346,7 @@
       "summary": "ABS has issued approval in principle (AIP) and completed a basic design review (BDR) for a natural gas liquefaction system developed by Samsung Heavy Industries (SHI) for the topside of...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/3c9c8f6965804f78af81af06f718ecd1.jpg",
       "en": {
         "headline": "ABS Issues AIP and Completes Basic Design Review for SHI&#8217;s Entire FLNG Topsides Facilities",
@@ -363,7 +363,7 @@
       "summary": "The Port of Savannah handled a record 504,015 twenty-foot equivalent units in September, up 3.7% from a year earlier as strong imports and a later-than-usual peak season boosted volumes.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/Port-of-Savannah-terminal.jpg",
       "en": {
         "headline": "Port of Savannah Sets September Container Record as Imports Rise",
@@ -380,7 +380,7 @@
       "summary": "Trafigura Group bought seven oil tankers from New York-listed SFL Corp., in the latest example of how trading houses and state energy companies are acquiring vessels to ship crude and products.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/03/shutterstock_1779485036.jpg",
       "en": {
         "headline": "Trafigura Buys Seven Oil Tankers From SFL as Shipping Costs Rise",
@@ -397,7 +397,7 @@
       "summary": "Defense tech firm Anduril unveiled plans on Tuesday for a $3.7 billion shipyard in Maryland that is expected to generate 3,100 jobs, in a ceremony attended by President Donald Trump.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/f81ddb57-2402-4b12-9f47-b6f4ea7cd479.jpg",
       "en": {
         "headline": "New Maryland Defense Shipyard Gets $6.6 Billion Commitment and Trump Visit",
@@ -414,7 +414,7 @@
       "summary": "Maritime traffic through the Strait of Magellan jumped more than 70% both in August and September from year-ago levels as ships diverted from the drought-stricken Panama Canal, Chilean Navy data requested by Bloomberg show.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Ships Take Long Way Around as Drought Snarls Panama Canal",
@@ -431,7 +431,7 @@
       "summary": "Attacks on tankers sailing through the Strait of Hormuz hit their highest last week of any week since the Iran war began, according to maritime security sources tracking incidents, amid a bigger export push by Gulf producers.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-16T054444Z_1957483145_RC2PJNADDY53_RTRMADP_3_IRAN-CRISIS.jpg",
       "en": {
         "headline": "Attacks on Tankers in Hormuz Hit Highest of Any Week Since Start of Iran War, Sources Say",
@@ -448,7 +448,7 @@
       "summary": "Offshore driller Valaris has secured a batch of new contracts and extensions, with an associated contract backlog of approximately $220m. The company won a contract with Petronas for the Valaris DS-18 drillship in Suriname. The contract, following a previously announced letter of",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/06/Valaris-Relentless-DS-18.jpeg",
       "en": {
         "headline": "Valaris adds $220m of new contracts and extensions",
@@ -465,7 +465,7 @@
       "summary": "Anduril Industries plans to invest $3.7 billion in a new Maryland shipyard to manufacture major components for Virginia-class attack submarines, backed by a U.S. Navy contract worth up to $2.9...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/03/2023-03-10T121437Z_1453226404_RC2ZQZ95GC4B_RTRMADP_3_AUKUS-USA.jpg",
       "en": {
         "headline": "Anduril to Build Massive Maryland Shipyard for Virginia-Class Submarine Components",
@@ -482,7 +482,7 @@
       "summary": "JP Morgan-backed Norwegian Car Carriers (NOCC) has expanded its newbuilding programme in China, adding another pair of 7,100 ceu ships at CIMC Raffles. Shipbuilding sources place the latest vessels at the group’s Yantai Raffles facility for delivery in 2030, extending a relations",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/NOCC-Adriatic-CIMC-Raffles.jpg",
       "en": {
         "headline": "JP Morgan-backed NOCC expands China car carrier programme",
@@ -499,7 +499,7 @@
       "summary": "Wallenius Wilhelmsen has raised about NOK2.88bn ($300m) in fresh equity as it prepares to add four large LNG dual-fuel car carriers with options for another eight. The Oslo-listed group completed a private placement late on Tuesday, issuing 17.145m shares at NOK168 each. The comp",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/10/Wallenius-Wilhelmsen-methanol-and-ammonia-car-carrier.jpg",
       "en": {
         "headline": "Wallenius Wilhelmsen eyes up to 12 more car carriers",
