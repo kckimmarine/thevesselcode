@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-08T12:31:06.268Z",
-    "benchmarkAsOf": "2026-10-07",
+    "generatedAt": "2026-10-08T22:41:02.294Z",
+    "benchmarkAsOf": "2026-10-08",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-10-07",
-    "updatedLabelKo": "2026-10-07 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-10-08",
+    "updatedLabelKo": "2026-10-08 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 2994,
-      "deltaPct": 0,
+      "value": 2973,
+      "deltaPct": -0.7,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-07T14:16:12.408Z"
+      "asOf": "2026-10-08T13:40:01.567Z"
     },
     "capesizeTc": {
-      "value": 4638,
-      "deltaPct": 0,
+      "value": 4597,
+      "deltaPct": -0.88,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-07T00:35:51.464Z"
+      "asOf": "2026-10-08T14:24:14.679Z"
     },
     "panamaxTc": {
-      "value": 2366,
-      "deltaPct": 0,
+      "value": 2384,
+      "deltaPct": 0.76,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-07T14:26:03.194Z"
+      "asOf": "2026-10-08T14:26:06.771Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,261 @@
   },
   "news": [
     {
+      "title": "Saudis in Talks to Formalize Hormuz Shuttles in Fight for Market",
+      "link": "https://gcaptain.com/saudis-in-talks-to-formalize-hormuz-shuttles-in-fight-for-market/",
+      "pubDate": "Thu, 08 Oct 2026 21:34:40 +0000",
+      "source": "gCaptain",
+      "category": "Bunker",
+      "summary": "(Bloomberg) &#8212; Saudi Arabia is in talks with customers to offer oil loadings next year outside the Strait of Hormuz in long-term contracts, formalizing a system the kingdom has been...",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
+      "en": {
+        "headline": "Saudis in Talks to Formalize Hormuz Shuttles in Fight for Market",
+        "summary": "(Bloomberg) &#8212; Saudi Arabia is in talks with customers to offer oil loadings next year outside the Strait of Hormuz in long-term contracts, formalizing a system the kingdom has been...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "U.S. Sanctions 22 More Tankers in Crackdown on Iran’s Shadow Fleet",
+      "link": "https://gcaptain.com/u-s-sanctions-22-more-tankers-in-crackdown-on-irans-shadow-fleet/",
+      "pubDate": "Thu, 08 Oct 2026 18:25:43 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The United States on Thursday imposed sanctions on 22 tankers and dozens of individuals and companies linked to Iran&#8217;s oil trade, expanding its campaign to cut off Tehran&#8217;s remaining petroleum...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
+      "en": {
+        "headline": "U.S. Sanctions 22 More Tankers in Crackdown on Iran’s Shadow Fleet",
+        "summary": "The United States on Thursday imposed sanctions on 22 tankers and dozens of individuals and companies linked to Iran&#8217;s oil trade, expanding its campaign to cut off Tehran&#8217;s remaining petroleum...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "U.S. Container Imports Slow After Stronger-Than-Expected Summer",
+      "link": "https://gcaptain.com/u-s-container-imports-slow-after-stronger-than-expected-summer/",
+      "pubDate": "Thu, 08 Oct 2026 18:03:28 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "U.S.&#160;container&#160;imports&#160;are&#160;finally&#160;beginning&#160;to&#160;slow&#160;after&#160;an&#160;unusually&#160;long&#160;peak&#160;shipping&#160;season&#160;that&#160;stretched&#160;through&#160;the&#160;summer&#160;and&#160;into&#160;early&#160;fall,&#160;accordi",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Pier-300-Channel.jpg",
+      "en": {
+        "headline": "U.S. Container Imports Slow After Stronger-Than-Expected Summer",
+        "summary": "U.S.&#160;container&#160;imports&#160;are&#160;finally&#160;beginning&#160;to&#160;slow&#160;after&#160;an&#160;unusually&#160;long&#160;peak&#160;shipping&#160;season&#160;that&#160;stretched&#160;through&#160;the&#160;summer&#160;and&#160;into&#160;early&#160;fall,&#160;accordi",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Hurricane Isaias Shuts Down Nearly Two-Thirds of Gulf Oil Production",
+      "link": "https://gcaptain.com/hurricane-isaias-shuts-down-nearly-two-thirds-of-gulf-oil-production/",
+      "pubDate": "Thu, 08 Oct 2026 17:33:33 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Nearly two-thirds of U.S. Gulf of Mexico oil production has been shut down as Hurricane Isaias strengthens ahead of an expected landfall along the northern Gulf Coast, prompting widespread evacuations...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Hurricane-Isaias.jpg",
+      "en": {
+        "headline": "Hurricane Isaias Shuts Down Nearly Two-Thirds of Gulf Oil Production",
+        "summary": "Nearly two-thirds of U.S. Gulf of Mexico oil production has been shut down as Hurricane Isaias strengthens ahead of an expected landfall along the northern Gulf Coast, prompting widespread evacuations...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Supertankers Racing to Middle East Worsen Global Ship Crunch",
+      "link": "https://gcaptain.com/supertankers-racing-to-middle-east-worsen-global-ship-crunch/",
+      "pubDate": "Thu, 08 Oct 2026 17:23:31 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "(Bloomberg) &#8212; Supertankers are racing to the Middle East to cash in on soaring fees for carrying oil through the Strait of Hormuz, exacerbating a global shortage of vessels that...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/11/shutterstock_639107626.jpg",
+      "en": {
+        "headline": "Supertankers Racing to Middle East Worsen Global Ship Crunch",
+        "summary": "(Bloomberg) &#8212; Supertankers are racing to the Middle East to cash in on soaring fees for carrying oil through the Strait of Hormuz, exacerbating a global shortage of vessels that...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Attack Risks Rise for Tankers as Iran Vows to Block More Hormuz Routes",
+      "link": "https://gcaptain.com/attack-risks-rise-for-tankers-as-iran-vows-to-block-more-hormuz-routes/",
+      "pubDate": "Thu, 08 Oct 2026 17:03:39 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Tankers are facing a higher risk of attacks and intimidation as they try to get critical shipments through the Strait of Hormuz after Iran issued new warnings it would block routes that it has not authorized, sources said.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-21T113312Z_986150390_RC25YLAX1ZOM_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
+      "en": {
+        "headline": "Attack Risks Rise for Tankers as Iran Vows to Block More Hormuz Routes",
+        "summary": "Tankers are facing a higher risk of attacks and intimidation as they try to get critical shipments through the Strait of Hormuz after Iran issued new warnings it would block routes that it has not authorized, sources said.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "TOTE, Hanwha Finalize Deal to Build U.S. Missile Defense Ship",
+      "link": "https://gcaptain.com/tote-hanwha-finalize-deal-to-build-u-s-missile-defense-ship/",
+      "pubDate": "Thu, 08 Oct 2026 15:00:17 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "TOTE Services has finalized its contract with the U.S. Maritime Administration to oversee construction of a new generation of missile-tracking ships, clearing the way for Hanwha Philly Shipyard to begin...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/Missile-Range-Instrumentation-Vessels-MRIV.png",
+      "en": {
+        "headline": "TOTE, Hanwha Finalize Deal to Build U.S. Missile Defense Ship",
+        "summary": "TOTE Services has finalized its contract with the U.S. Maritime Administration to oversee construction of a new generation of missile-tracking ships, clearing the way for Hanwha Philly Shipyard to begin...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Tanker Attack Off Qatar Signals Wider Threat Beyond Hormuz",
+      "link": "https://gcaptain.com/tanker-attack-off-qatar-signals-wider-threat-beyond-hormuz/",
+      "pubDate": "Thu, 08 Oct 2026 14:25:15 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A chemical tanker was struck by multiple projectiles off the coast of Qatar on Wednesday, with casualties reported among its crew, in the latest attack on commercial shipping as violence...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
+      "en": {
+        "headline": "Tanker Attack Off Qatar Signals Wider Threat Beyond Hormuz",
+        "summary": "A chemical tanker was struck by multiple projectiles off the coast of Qatar on Wednesday, with casualties reported among its crew, in the latest attack on commercial shipping as violence...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "UK Sanctions 12 More &#8216;Shadow-Fleet&#8217; Tankers as Russia&#8217;s Arctic Traffic Grows",
+      "link": "https://gcaptain.com/uk-sanctions-12-more-shadow-fleet-tankers-as-russias-arctic-traffic-grows/",
+      "pubDate": "Thu, 08 Oct 2026 14:10:23 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The United Kingdom on Thursday sanctioned 12 oil tankers it identified as part of Russia's shadow fleet, including the 22-year-old Dakar that is currently making an unusual late-season voyage on the Northern Sea Route.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-01T080943Z_231964487_RC22LKAWT2QP_RTRMADP_3_SYRIA-ECONOMY-RUSSIAN-OIL-800x450.jpg",
+      "en": {
+        "headline": "UK Sanctions 12 More &#8216;Shadow-Fleet&#8217; Tankers as Russia&#8217;s Arctic Traffic Grows",
+        "summary": "The United Kingdom on Thursday sanctioned 12 oil tankers it identified as part of Russia's shadow fleet, including the 22-year-old Dakar that is currently making an unusual late-season voyage on the Northern Sea Route.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Turkey Says Russia, Ukraine Increasing Attacks in Black Sea Ahead of Winter",
+      "link": "https://gcaptain.com/turkey-says-russia-ukraine-increasing-attacks-in-black-sea-ahead-of-winter/",
+      "pubDate": "Thu, 08 Oct 2026 14:05:18 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Intensifying attacks by Russia and Ukraine ahead of the winter are further endangering navigational safety in the Black Sea, Turkish Foreign Minister Hakan Fidan said on Thursday, adding that world powers must not allow the region to be turned into a new front in the war.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-16T111730Z_19845314_RC2HDMAQ4IH8_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-SHIPPING.jpg",
+      "en": {
+        "headline": "Turkey Says Russia, Ukraine Increasing Attacks in Black Sea Ahead of Winter",
+        "summary": "Intensifying attacks by Russia and Ukraine ahead of the winter are further endangering navigational safety in the Black Sea, Turkish Foreign Minister Hakan Fidan said on Thursday, adding that world powers must not allow the region to be turned into a new front in the war.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Subcontinent Ports Benefiting from Geopolitical Disruptions",
+      "link": "https://gcaptain.com/subcontinent-ports-benefiting-from-geopolitical-disruptions/",
+      "pubDate": "Thu, 08 Oct 2026 14:00:01 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Today's trade flows resemble a windy waterpark slide more than the traditional waterway superhighway. The three-dimensional chess game being played by ocean carriers and tankers has delivered big bucks in day rates, container rates, and surcharges. But there is a group of winners",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "Subcontinent Ports Benefiting from Geopolitical Disruptions",
+        "summary": "Today's trade flows resemble a windy waterpark slide more than the traditional waterway superhighway. The three-dimensional chess game being played by ocean carriers and tankers has delivered big bucks in day rates, container rates, and surcharges. But there is a group of winners",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "The hidden health issue sending seafarers home",
+      "link": "https://splash247.com/the-hidden-health-issue-sending-seafarers-home/",
+      "pubDate": "Thu, 08 Oct 2026 13:48:55 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Musculoskeletal problems are responsible for a significant proportion of crew repatriations, but earlier intervention could help prevent many cases from reaching that stage says Ronald Spithout, MD oneHealth by VIKAND. Working at sea is physically demanding, so aches and pains ca",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2015/01/Hapag-Lloyd-crew-seafarers-1-e1600850274832.jpeg",
+      "en": {
+        "headline": "The hidden health issue sending seafarers home",
+        "summary": "Musculoskeletal problems are responsible for a significant proportion of crew repatriations, but earlier intervention could help prevent many cases from reaching that stage says Ronald Spithout, MD oneHealth by VIKAND. Working at sea is physically demanding, so aches and pains ca",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "SPM Shipping plays the market",
+      "link": "https://splash247.com/spm-shipping-plays-the-market/",
+      "pubDate": "Thu, 08 Oct 2026 13:46:51 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "With only a few months in gas, Dubai-based SPM Shipping, a shipowner, operator and offshore player, has now added its third VLGC, according to sources. The fast-growing owner is ambitious and moving comfortably in the largest segments in shipping, first placing money in both the ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/09/Dubai-free-pic.jpg",
+      "en": {
+        "headline": "SPM Shipping plays the market",
+        "summary": "With only a few months in gas, Dubai-based SPM Shipping, a shipowner, operator and offshore player, has now added its third VLGC, according to sources. The fast-growing owner is ambitious and moving comfortably in the largest segments in shipping, first placing money in both the ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Seatrium bags first FSRU conversion for Excelerate",
+      "link": "https://splash247.com/seatrium-bags-first-fsru-conversion-for-excelerate/",
+      "pubDate": "Thu, 08 Oct 2026 12:40:37 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Singapore shipyard group Seatrium has secured an EPCIC contract from New York-listed floating regasification specialist Excelerate Energy to convert an LNG carrier into an FSRU, with an option for a second unit. The project is Seatrium’s first FSRU conversion for Excelerate. Fina",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 10,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/MarineTraffic-Robert-Weber-Methane-Patricia-Camila.jpg",
+      "en": {
+        "headline": "Seatrium bags first FSRU conversion for Excelerate",
+        "summary": "Singapore shipyard group Seatrium has secured an EPCIC contract from New York-listed floating regasification specialist Excelerate Energy to convert an LNG carrier into an FSRU, with an option for a second unit. The project is Seatrium’s first FSRU conversion for Excelerate. Fina",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Mexican Auto Exports Slump in September as US Tariffs Take Toll",
+      "link": "https://gcaptain.com/mexican-auto-exports-slump-in-september-as-us-tariffs-take-toll/",
+      "pubDate": "Thu, 08 Oct 2026 11:59:57 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Mexico's auto exports posted their biggest slump so far this year, data from statistics office INEGI showed on Wednesday, a decline analysts attributed to tariff policies from the US, the biggest market for the Latin American country's top industrial sector.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 10,
+      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "Mexican Auto Exports Slump in September as US Tariffs Take Toll",
+        "summary": "Mexico's auto exports posted their biggest slump so far this year, data from statistics office INEGI showed on Wednesday, a decline analysts attributed to tariff policies from the US, the biggest market for the Latin American country's top industrial sector.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Yinson Production lands $1.46bn refinancing for Agogo FPSO",
       "link": "https://splash247.com/yinson-production-lands-1-46bn-refinancing-for-agogo-fpso/",
       "pubDate": "Thu, 08 Oct 2026 10:01:00 +0000",
@@ -244,267 +499,12 @@
       "summary": "Singapore-based Yinson Production has priced $1.458bn of senior secured notes backed by the Agogo FPSO, marking what the company says is the largest FPSO project bond to date and the first of its kind outside Brazil. Yinson Azalea Production, which owns the Agogo FPSO, is issuing",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/MarineTraffic-Robert-Suteanu-Agogo-FPSO-Yinson-Production.jpg",
       "en": {
         "headline": "Yinson Production lands $1.46bn refinancing for Agogo FPSO",
         "summary": "Singapore-based Yinson Production has priced $1.458bn of senior secured notes backed by the Agogo FPSO, marking what the company says is the largest FPSO project bond to date and the first of its kind outside Brazil. Yinson Azalea Production, which owns the Agogo FPSO, is issuing",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "Rosatom folds Delo into expanding logistics platform",
-      "link": "https://splash247.com/rosatom-folds-delo-into-expanding-logistics-platform/",
-      "pubDate": "Thu, 08 Oct 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Russia’s state-owned Rosatom has completed the buyout of Delo Group founder Sergei Shishkarev’s controlling stake, taking full control of one of the country’s largest transport and container logistics groups. Rosatom, which previously held 49% of Delo, has acquired Shishkarev’s r",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Delo-Group-1.jpg",
-      "en": {
-        "headline": "Rosatom folds Delo into expanding logistics platform",
-        "summary": "Russia’s state-owned Rosatom has completed the buyout of Delo Group founder Sergei Shishkarev’s controlling stake, taking full control of one of the country’s largest transport and container logistics groups. Rosatom, which previously held 49% of Delo, has acquired Shishkarev’s r",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Tanker attack off Qatar widens Gulf shipping conflict",
-      "link": "https://splash247.com/tanker-attack-off-qatar-widens-gulf-shipping-conflict/",
-      "pubDate": "Thu, 08 Oct 2026 08:45:29 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The war on merchant shipping in the Middle East has taken a worrying geographical turn, with casualties reported aboard a tanker attacked off Qatar, hundreds of miles west of the Strait of Hormuz, while a containership has also come under fire in the Red Sea. The Antigua and Barb",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/Hormuz-IMO.jpg",
-      "en": {
-        "headline": "Tanker attack off Qatar widens Gulf shipping conflict",
-        "summary": "The war on merchant shipping in the Middle East has taken a worrying geographical turn, with casualties reported aboard a tanker attacked off Qatar, hundreds of miles west of the Strait of Hormuz, while a containership has also come under fire in the Red Sea. The Antigua and Barb",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Berlin blocks COSCO takeover of German freight forwarder",
-      "link": "https://splash247.com/berlin-blocks-cosco-takeover-of-german-freight-forwarder/",
-      "pubDate": "Thu, 08 Oct 2026 08:30:20 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Germany has blocked COSCO Shipping’s planned acquisition of an 80% stake in Hamburg freight forwarder Konrad Zippel, overriding an earlier competition clearance on national security grounds. The federal cabinet approved the prohibition on Wednesday, with the economy ministry sayi",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2019/11/Cosco-Shipping.jpg",
-      "en": {
-        "headline": "Berlin blocks COSCO takeover of German freight forwarder",
-        "summary": "Germany has blocked COSCO Shipping’s planned acquisition of an 80% stake in Hamburg freight forwarder Konrad Zippel, overriding an earlier competition clearance on national security grounds. The federal cabinet approved the prohibition on Wednesday, with the economy ministry sayi",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Cido boss pledges five ships to settle $277m Korean tax bill",
-      "link": "https://splash247.com/cido-boss-pledges-five-ships-to-settle-277m-korean-tax-bill/",
-      "pubDate": "Thu, 08 Oct 2026 07:45:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Cido Shipping founder Hyuk Kwon has pledged five overseas ships as collateral after agreeing to settle KRW393.8bn ($277m) in personal tax arrears in South Korea, bringing a 15-year dispute with the country’s tax authorities towards a close. South Korea’s National Tax Service said",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/CIDO.jpg",
-      "en": {
-        "headline": "Cido boss pledges five ships to settle $277m Korean tax bill",
-        "summary": "Cido Shipping founder Hyuk Kwon has pledged five overseas ships as collateral after agreeing to settle KRW393.8bn ($277m) in personal tax arrears in South Korea, bringing a 15-year dispute with the country’s tax authorities towards a close. South Korea’s National Tax Service said",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Almi Marine founder Evgenia Daskalopoulou dies",
-      "link": "https://splash247.com/almi-marine-founder-evgenia-daskalopoulou-dies/",
-      "pubDate": "Thu, 08 Oct 2026 07:29:11 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Greek shipowner Evgenia Daskalopoulou, founder and president of dry bulk outfit Almi Marine Management, has died. Almi announced her death on Wednesday, saying she passed away surrounded by her family. Daskalopoulou was born in 1958 and founded the Athens-based company in 1992. S",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 5,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/evgenia-daskalopoulou.jpg",
-      "en": {
-        "headline": "Almi Marine founder Evgenia Daskalopoulou dies",
-        "summary": "Greek shipowner Evgenia Daskalopoulou, founder and president of dry bulk outfit Almi Marine Management, has died. Almi announced her death on Wednesday, saying she passed away surrounded by her family. Daskalopoulou was born in 1958 and founded the Athens-based company in 1992. S",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Pistiolis doubles down at GSI with four more MRs",
-      "link": "https://splash247.com/pistiolis-doubles-down-at-gsi-with-four-more-mrs/",
-      "pubDate": "Thu, 08 Oct 2026 07:13:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Evangelos Pistiolis-led Top Ships is adding another four MR tanker newbuildings at Guangzhou Shipyard International, lifting its newbuilding pipeline in the segment to 14 ships. The New York-listed Greek owner has agreed to acquire four related-party special purpose companies hol",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 5,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Guangzhou-Shipyard-International-GSI.jpg",
-      "en": {
-        "headline": "Pistiolis doubles down at GSI with four more MRs",
-        "summary": "Evangelos Pistiolis-led Top Ships is adding another four MR tanker newbuildings at Guangzhou Shipyard International, lifting its newbuilding pipeline in the segment to 14 ships. The New York-listed Greek owner has agreed to acquire four related-party special purpose companies hol",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Tamba and Fairfield form Japanese shipping joint venture",
-      "link": "https://splash247.com/tamba-and-fairfield-form-japanese-shipping-joint-venture/",
-      "pubDate": "Thu, 08 Oct 2026 06:37:48 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Japan’s Tamba Shipping and Fairfield Maritime Japan have formed a 50:50 joint venture targeting growth in chemical, product and gas tanker shipping. The new company, FT Ebisu Maritime, will be based at Fairfield Maritime Japan’s Tokyo offices, which opened in September last year,",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 5,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Fairfield-Maritime-Japan.jpg",
-      "en": {
-        "headline": "Tamba and Fairfield form Japanese shipping joint venture",
-        "summary": "Japan’s Tamba Shipping and Fairfield Maritime Japan have formed a 50:50 joint venture targeting growth in chemical, product and gas tanker shipping. The new company, FT Ebisu Maritime, will be based at Fairfield Maritime Japan’s Tokyo offices, which opened in September last year,",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "PIF Energy launches $2bn VLCC buying spree",
-      "link": "https://splash247.com/pif-energy-launches-2bn-vlcc-buying-spree/",
-      "pubDate": "Thu, 08 Oct 2026 06:08:24 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "US energy trader PIF Energy has unveiled plans to spend $2bn acquiring up to 15 crude tankers, with purchases already underway as the company moves to secure shipping capacity through the Strait of Hormuz. The Dallas-based company, founded and led by chief executive Ben Morrow, s",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/NYK-VLCC.jpg",
-      "en": {
-        "headline": "PIF Energy launches $2bn VLCC buying spree",
-        "summary": "US energy trader PIF Energy has unveiled plans to spend $2bn acquiring up to 15 crude tankers, with purchases already underway as the company moves to secure shipping capacity through the Strait of Hormuz. The Dallas-based company, founded and led by chief executive Ben Morrow, s",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Monaco emerges as shipping’s ‘new darling’",
-      "link": "https://splash247.com/monaco-emerges-as-shippings-new-darling/",
-      "pubDate": "Thu, 08 Oct 2026 03:00:10 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "A fresh influx of shipowners and shipping capital is adding weight to an already formidable maritime cluster on the Côte d’Azur. Sam Chambers gears up for his annual trip to the principality’s yacht club for the exclusive Maritime CEO Forum. Monaco’s shipping community is enjoyin",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/aeneas-monaco.jpg",
-      "en": {
-        "headline": "Monaco emerges as shipping’s ‘new darling’",
-        "summary": "A fresh influx of shipowners and shipping capital is adding weight to an already formidable maritime cluster on the Côte d’Azur. Sam Chambers gears up for his annual trip to the principality’s yacht club for the exclusive Maritime CEO Forum. Monaco’s shipping community is enjoyin",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Sanctioned 22-Year-Old Tanker Makes Rare Late-Season Arctic Voyage",
-      "link": "https://gcaptain.com/sanctioned-22-year-old-non-ice-class-tanker-makes-rare-late-season-arctic-voyage/",
-      "pubDate": "Wed, 07 Oct 2026 18:35:33 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A 22-year-old product tanker sanctioned by the European Union is making an unusual late-season voyage along Russia's Northern Sea Route, highlighting the growing use of older, lower-specification vessels to move petroleum products through the Arctic.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/oil-tanker-in-Arctic-sovcomflot-July-2025-800x457.png",
-      "en": {
-        "headline": "Sanctioned 22-Year-Old Tanker Makes Rare Late-Season Arctic Voyage",
-        "summary": "A 22-year-old product tanker sanctioned by the European Union is making an unusual late-season voyage along Russia's Northern Sea Route, highlighting the growing use of older, lower-specification vessels to move petroleum products through the Arctic.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "South Korea Denies Ukrainian Report That It Eased Russia&#8217;s Fuel Crisis",
-      "link": "https://gcaptain.com/south-korea-denies-ukrainian-report-that-it-eased-russias-fuel-crisis/",
-      "pubDate": "Wed, 07 Oct 2026 18:29:40 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "South Korea's presidential office on Wednesday dismissed a Ukrainian report that Russia has imported petroleum products from South Korean ports, calling the accusation inappropriate.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/04/Bearing-AI-gCaptain-Article-April-8-800x449.jpg",
-      "en": {
-        "headline": "South Korea Denies Ukrainian Report That It Eased Russia&#8217;s Fuel Crisis",
-        "summary": "South Korea's presidential office on Wednesday dismissed a Ukrainian report that Russia has imported petroleum products from South Korean ports, calling the accusation inappropriate.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Asia’s maritime community to take centre stage at upcoming WISTA 2026",
-      "link": "https://gcaptain.com/asias-maritime-community-to-take-centre-stage-at-upcoming-wista-2026/",
-      "pubDate": "Wed, 07 Oct 2026 16:03:20 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The strength, dynamism and diversity of Asia’s buoyant maritime community will be evident at the 2026 WISTA AGM and Conference gathering in Kuala Lumpur later this month, as industry leaders,...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/94ebcb0e-7c66-59ae-3a3a-de65298450bb.jpg",
-      "en": {
-        "headline": "Asia’s maritime community to take centre stage at upcoming WISTA 2026",
-        "summary": "The strength, dynamism and diversity of Asia’s buoyant maritime community will be evident at the 2026 WISTA AGM and Conference gathering in Kuala Lumpur later this month, as industry leaders,...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "ABS Issues AIP and Completes Basic Design Review for SHI&#8217;s Entire FLNG Topsides Facilities",
-      "link": "https://gcaptain.com/abs-issues-aip-and-completes-basic-design-review-for-shis-entire-flng-topsides-facilities/",
-      "pubDate": "Wed, 07 Oct 2026 16:01:38 +0000",
-      "source": "gCaptain",
-      "category": "Bunker",
-      "summary": "ABS has issued approval in principle (AIP) and completed a basic design review (BDR) for a natural gas liquefaction system developed by Samsung Heavy Industries (SHI) for the topside of...",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/3c9c8f6965804f78af81af06f718ecd1.jpg",
-      "en": {
-        "headline": "ABS Issues AIP and Completes Basic Design Review for SHI&#8217;s Entire FLNG Topsides Facilities",
-        "summary": "ABS has issued approval in principle (AIP) and completed a basic design review (BDR) for a natural gas liquefaction system developed by Samsung Heavy Industries (SHI) for the topside of...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Port of Savannah Sets September Container Record as Imports Rise",
-      "link": "https://gcaptain.com/port-of-savannah-sets-september-container-record-as-imports-rise/",
-      "pubDate": "Wed, 07 Oct 2026 15:27:26 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "The Port of Savannah handled a record 504,015 twenty-foot equivalent units in September, up 3.7% from a year earlier as strong imports and a later-than-usual peak season boosted volumes.",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 21,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/Port-of-Savannah-terminal.jpg",
-      "en": {
-        "headline": "Port of Savannah Sets September Container Record as Imports Rise",
-        "summary": "The Port of Savannah handled a record 504,015 twenty-foot equivalent units in September, up 3.7% from a year earlier as strong imports and a later-than-usual peak season boosted volumes.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Trafigura Buys Seven Oil Tankers From SFL as Shipping Costs Rise",
-      "link": "https://gcaptain.com/trafigura-buys-seven-oil-tankers-from-sfl-as-shipping-costs-rise/",
-      "pubDate": "Wed, 07 Oct 2026 15:26:13 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Trafigura Group bought seven oil tankers from New York-listed SFL Corp., in the latest example of how trading houses and state energy companies are acquiring vessels to ship crude and products.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 21,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/03/shutterstock_1779485036.jpg",
-      "en": {
-        "headline": "Trafigura Buys Seven Oil Tankers From SFL as Shipping Costs Rise",
-        "summary": "Trafigura Group bought seven oil tankers from New York-listed SFL Corp., in the latest example of how trading houses and state energy companies are acquiring vessels to ship crude and products.",
-        "source": "gCaptain"
       }
     }
   ]
