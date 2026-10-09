@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-09T12:19:37.361Z",
-    "benchmarkAsOf": "2026-10-08",
+    "generatedAt": "2026-10-09T22:02:27.389Z",
+    "benchmarkAsOf": "2026-10-09",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-10-08",
-    "updatedLabelKo": "2026-10-08 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-10-09",
+    "updatedLabelKo": "2026-10-09 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -205,18 +205,18 @@
   },
   "indices": {
     "bdi": {
-      "value": 2973,
-      "deltaPct": 0,
+      "value": 2917,
+      "deltaPct": -1.88,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-08T13:40:01.567Z"
+      "asOf": "2026-10-09T14:16:01.616Z"
     },
     "capesizeTc": {
-      "value": 4597,
-      "deltaPct": 0,
+      "value": 4638,
+      "deltaPct": 0.89,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-08T14:24:14.679Z"
+      "asOf": "2026-10-09T14:24:19.497Z"
     },
     "panamaxTc": {
       "value": 2384,
@@ -236,6 +236,210 @@
   },
   "news": [
     {
+      "title": "Trump Strikes Diesel Deal With Putin to Lower Fuel Prices Ahead of Midterms",
+      "link": "https://gcaptain.com/trump-strikes-diesel-deal-with-putin-to-lower-fuel-prices-ahead-of-midterms/",
+      "pubDate": "Fri, 09 Oct 2026 20:34:32 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "President Donald Trump said Friday that Russia has agreed to release millions of tons of diesel fuel into U.S. and global markets following a telephone call with Russian President Vladimir...",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/05/shutterstock_1990295600.jpg",
+      "en": {
+        "headline": "Trump Strikes Diesel Deal With Putin to Lower Fuel Prices Ahead of Midterms",
+        "summary": "President Donald Trump said Friday that Russia has agreed to release millions of tons of diesel fuel into U.S. and global markets following a telephone call with Russian President Vladimir...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Container Surge Continues At The Port Of Long Beach",
+      "link": "https://gcaptain.com/container-surge-continues-at-the-port-of-long-beach/",
+      "pubDate": "Fri, 09 Oct 2026 17:25:12 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Port of Los Angeles reported its best single month in its history. In a media briefing, port executive director Gene Seroka announced the port processed 1,042,652 TEUs, 23k TEUs more than the July 2025 record.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Pier-300-Channel.jpg",
+      "en": {
+        "headline": "Container Surge Continues At The Port Of Long Beach",
+        "summary": "The Port of Los Angeles reported its best single month in its history. In a media briefing, port executive director Gene Seroka announced the port processed 1,042,652 TEUs, 23k TEUs more than the July 2025 record.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Vessel Struck by Unknown Projectile Off UAE Coast Amid Surge in Attacks, UKMTO Says",
+      "link": "https://gcaptain.com/vessel-struck-by-unknown-projectile-off-uae-coast-amid-surge-in-attacks-ukmto-says/",
+      "pubDate": "Fri, 09 Oct 2026 16:37:26 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A vessel was struck by an unknown projectile 13 nautical miles west of Al Jazeera in the United Arab Emirates on Friday, causing a fire that has since been extinguished, British navy affiliated agency UKMTO said, citing multiple sources.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Screenshot-2026-10-09-at-6.35.51-PM.jpg",
+      "en": {
+        "headline": "Vessel Struck by Unknown Projectile Off UAE Coast Amid Surge in Attacks, UKMTO Says",
+        "summary": "A vessel was struck by an unknown projectile 13 nautical miles west of Al Jazeera in the United Arab Emirates on Friday, causing a fire that has since been extinguished, British navy affiliated agency UKMTO said, citing multiple sources.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "From Policy to Practice: Shipping’s Regulatory Autumn Puts Proof on Trial",
+      "link": "https://gcaptain.com/from-policy-to-practice-shippings-regulatory-autumn-puts-proof-on-trial/",
+      "pubDate": "Fri, 09 Oct 2026 16:21:35 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "The past fortnight has delivered a clear reminder that the industry’s regulatory problem is no longer a shortage of rules. It is the widening distance between what is agreed in London and Brussels and what can actually be demonstrated on deck, in the engine room and in a ship’s e",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-08-17T143930Z_1062791196_RC2RXDA2LAMO_RTRMADP_3_USA-TRUMP-TARIFFS-CANADA-800x533.jpg",
+      "en": {
+        "headline": "From Policy to Practice: Shipping’s Regulatory Autumn Puts Proof on Trial",
+        "summary": "The past fortnight has delivered a clear reminder that the industry’s regulatory problem is no longer a shortage of rules. It is the widening distance between what is agreed in London and Brussels and what can actually be demonstrated on deck, in the engine room and in a ship’s e",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Isaias Puts 500,000 Barrels a Day of Refining Capacity at Risk",
+      "link": "https://gcaptain.com/isaias-puts-500000-barrels-a-day-of-refining-capacity-at-risk/",
+      "pubDate": "Fri, 09 Oct 2026 16:11:58 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Nearly 500,000 barrels a day of oil-refining capacity sit in the projected path of Hurricane Isaias, raising the risk that a US fuel market with no supplies to spare will lose critical output.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/20262821321_GOES19-ABI-CONUS-GEOCOLOR-2500x1500-1-800x480.jpg",
+      "en": {
+        "headline": "Isaias Puts 500,000 Barrels a Day of Refining Capacity at Risk",
+        "summary": "Nearly 500,000 barrels a day of oil-refining capacity sit in the projected path of Hurricane Isaias, raising the risk that a US fuel market with no supplies to spare will lose critical output.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Global Oil Tanker Shortage is Getting Worse By the Day",
+      "link": "https://gcaptain.com/global-oil-tanker-shortage-is-getting-worse-by-the-day/",
+      "pubDate": "Fri, 09 Oct 2026 16:08:41 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "For a sign of just how extraordinary oil shipping costs have become, consider this: It’s now more expensive to hire a tanker from the US to China than to launch a rocket into space.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/06/2025-06-13T080424Z_1950987916_RC2J1FAFYBE2_RTRMADP_3_OIL-SHIPPING-HORMUZ-800x498.jpg",
+      "en": {
+        "headline": "Global Oil Tanker Shortage is Getting Worse By the Day",
+        "summary": "For a sign of just how extraordinary oil shipping costs have become, consider this: It’s now more expensive to hire a tanker from the US to China than to launch a rocket into space.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Second Ship Struck Inside Persian Gulf in Three Days",
+      "link": "https://gcaptain.com/second-ship-struck-inside-persian-gulf-in-three-days/",
+      "pubDate": "Fri, 09 Oct 2026 13:42:23 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A commercial vessel was struck by a projectile in the Persian Gulf on Friday, sparking a fire onboard in the second reported attack on shipping inside the Gulf in just...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
+      "en": {
+        "headline": "Second Ship Struck Inside Persian Gulf in Three Days",
+        "summary": "A commercial vessel was struck by a projectile in the Persian Gulf on Friday, sparking a fire onboard in the second reported attack on shipping inside the Gulf in just...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Hurricane Isaias Strengthens Into Major Category 3 Storm Ahead of Gulf Coast Landfall",
+      "link": "https://gcaptain.com/hurricane-isaias-strengthens-into-major-category-3-storm-ahead-of-gulf-coast-landfall/",
+      "pubDate": "Fri, 09 Oct 2026 13:35:54 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Hurricane Isaias strengthened into a major Category 3 hurricane Friday morning, with sustained winds reaching 120 mph as the storm approached the northern Gulf Coast, threatening life-threatening storm surge and...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/20262821321_GOES19-ABI-CONUS-GEOCOLOR-2500x1500-1-800x480.jpg",
+      "en": {
+        "headline": "Hurricane Isaias Strengthens Into Major Category 3 Storm Ahead of Gulf Coast Landfall",
+        "summary": "Hurricane Isaias strengthened into a major Category 3 hurricane Friday morning, with sustained winds reaching 120 mph as the storm approached the northern Gulf Coast, threatening life-threatening storm surge and...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Equinor Brings Shell Into $14 Billion Bay du Nord Project",
+      "link": "https://gcaptain.com/equinor-brings-shell-into-14-billion-bay-du-nord-project/",
+      "pubDate": "Fri, 09 Oct 2026 13:25:14 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Shell has agreed to acquire a 30% stake in Equinor&#8217;s Bay du Nord offshore oil project in Canada, bringing a new partner into the estimated C$14 billion development as it...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/04/Bay-du-Nord-oil-project.jpg",
+      "en": {
+        "headline": "Equinor Brings Shell Into $14 Billion Bay du Nord Project",
+        "summary": "Shell has agreed to acquire a 30% stake in Equinor&#8217;s Bay du Nord offshore oil project in Canada, bringing a new partner into the estimated C$14 billion development as it...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Thordon Bearings adds production plant to meet growing demand",
+      "link": "https://gcaptain.com/thordon-bearings-adds-production-plant-to-meet-growing-demand/",
+      "pubDate": "Fri, 09 Oct 2026 12:46:09 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Thordon Bearings has opened a new manufacturing facility as part of its strategic response to robust growth across all business segments and rising demand for its sustainable bearings and seals....",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 9,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/529d3a13-b820-5a85-0006-b70e454d2a0c-800x533.jpg",
+      "en": {
+        "headline": "Thordon Bearings adds production plant to meet growing demand",
+        "summary": "Thordon Bearings has opened a new manufacturing facility as part of its strategic response to robust growth across all business segments and rising demand for its sustainable bearings and seals....",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Before You Audit the Charge, Audit the Evidence",
+      "link": "https://gcaptain.com/before-you-audit-the-charge-audit-the-evidence/",
+      "pubDate": "Fri, 09 Oct 2026 12:41:28 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Why Document Verification Is Becoming Essential in Ocean Freight For years,&#160;freight&#160;audit&#160;has&#160;focused primarily on the numbers.&#160;Was the correct rate applied? Was the fuel surcharge calculated properly? Does the accessorial match the...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 9,
+      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "Before You Audit the Charge, Audit the Evidence",
+        "summary": "Why Document Verification Is Becoming Essential in Ocean Freight For years,&#160;freight&#160;audit&#160;has&#160;focused primarily on the numbers.&#160;Was the correct rate applied? Was the fuel surcharge calculated properly? Does the accessorial match the...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Ethanol Could Offer Shipping Another Path to Lower Emissions",
+      "link": "https://gcaptain.com/ethanol-could-offer-shipping-another-path-to-lower-emissions/",
+      "pubDate": "Fri, 09 Oct 2026 12:38:38 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "A new study from the Mærsk Mc-Kinney Møller Center for Zero Carbon Shipping finds that ethanol could become a practical alternative fuel for ships, particularly those already equipped with methanol-capable...",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 9,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "Ethanol Could Offer Shipping Another Path to Lower Emissions",
+        "summary": "A new study from the Mærsk Mc-Kinney Møller Center for Zero Carbon Shipping finds that ethanol could become a practical alternative fuel for ships, particularly those already equipped with methanol-capable...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "CMB.TECH sends world’s first ammonia-powered bulker to sea",
       "link": "https://splash247.com/cmb-tech-sends-worlds-first-ammonia-powered-bulker-to-sea/",
       "pubDate": "Fri, 09 Oct 2026 10:44:00 +0000",
@@ -244,7 +448,7 @@
       "summary": "Belgium’s CMB.TECH has sent the 210,000 dwt Mineral Europa on its maiden voyage to Australia, marking the first deployment of an ammonia-powered dry bulk carrier. The 2026-built newcastlemax is the first of a much larger ammonia-fuelled fleet being rolled out by the Alexander Sav",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Minral-Europa-Ammonia-bulker-CMB.TECH_.jpg",
       "en": {
         "headline": "CMB.TECH sends world’s first ammonia-powered bulker to sea",
@@ -261,7 +465,7 @@
       "summary": "Shipping association BIMCO has adopted a new contractual framework designed to settle one of the industry&#8217;s longstanding commercial disputes: who pays for energy-saving upgrades when the charterer receives much of the financial benefit. The Copenhagen-based organisation ann",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/LR-retrofit-report-photo.jpg",
       "en": {
         "headline": "BIMCO moves to break ship retrofit cost deadlock",
@@ -278,7 +482,7 @@
       "summary": "Singapore-listed First Ship Lease Trust (FSL) has agreed to sell another ageing product tanker, continuing a series of disposals that has reduced its fleet over recent years. The trust said in a filing that subsidiary FSL-14 had struck a deal to sell the 2006-built Speciality to ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/SFL-SPECIALTY.jpg",
       "en": {
         "headline": "FSL cashes in on another veteran product tanker",
@@ -295,216 +499,12 @@
       "summary": "Members of the UK P&#38;I Club and TT Club have approved a merger to create United Transport Mutual Limited (UTM), a transport mutual covering shipping, logistics, ports, and terminals. Members voted at separate special general meetings on October 7 and 8, following member consul",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2015/03/Bulker_at_sunset-e1620797827712.jpg",
       "en": {
         "headline": "UK P&#038;I and TT Club merger clears member vote",
         "summary": "Members of the UK P&#38;I Club and TT Club have approved a merger to create United Transport Mutual Limited (UTM), a transport mutual covering shipping, logistics, ports, and terminals. Members voted at separate special general meetings on October 7 and 8, following member consul",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "Hunter’s VLCC charter dispute swells to nearly $68m",
-      "link": "https://splash247.com/hunters-vlcc-charter-dispute-swells-to-nearly-68m/",
-      "pubDate": "Fri, 09 Oct 2026 09:51:30 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norwegian shipping investment company Hunter Group&#8217;s dispute with an unnamed long-term VLCC charter counterparty has deepened further, with unpaid hire now approaching $68m after another substantial shortfall in September. The Oslo-listed company disclosed on Friday that it",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/04/Hunter-Group.jpg",
-      "en": {
-        "headline": "Hunter’s VLCC charter dispute swells to nearly $68m",
-        "summary": "Norwegian shipping investment company Hunter Group&#8217;s dispute with an unnamed long-term VLCC charter counterparty has deepened further, with unpaid hire now approaching $68m after another substantial shortfall in September. The Oslo-listed company disclosed on Friday that it",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Larine cashes out of LR1 tankers in $110m UAE deal",
-      "link": "https://splash247.com/larine-cashes-out-of-lr1-tankers-in-110m-uae-deal/",
-      "pubDate": "Fri, 09 Oct 2026 09:40:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Odfjell-family-linked Larine Tankers has reportedly sold its two LR1 product tankers to UAE interests for a combined $110m, clearing out its existing fleet amid strong secondhand tanker prices. Shipbrokers have identified the vessels as the 2016-built Bluebird and Starling, both ",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Bluebird-LR1-tanker-Bambang-Pujiono-Marine-Traffic.jpg",
-      "en": {
-        "headline": "Larine cashes out of LR1 tankers in $110m UAE deal",
-        "summary": "Odfjell-family-linked Larine Tankers has reportedly sold its two LR1 product tankers to UAE interests for a combined $110m, clearing out its existing fleet amid strong secondhand tanker prices. Shipbrokers have identified the vessels as the 2016-built Bluebird and Starling, both ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Diana rolls capesize into $13m fixture",
-      "link": "https://splash247.com/diana-rolls-capesize-into-13m-fixture/",
-      "pubDate": "Fri, 09 Oct 2026 09:30:00 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "New York-listed Greek bulker owner Diana Shipping has secured a 42% rate increase for its capesize GP Zafirakis in a new time charter with Classic Maritime. The 2014-built, 179,492 dwt vessel has been fixed at $38,000 per day, less a 5% commission, compared with the $26,800 per d",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/gp-zafirakis-Diana-Shipping.jpg",
-      "en": {
-        "headline": "Diana rolls capesize into $13m fixture",
-        "summary": "New York-listed Greek bulker owner Diana Shipping has secured a 42% rate increase for its capesize GP Zafirakis in a new time charter with Classic Maritime. The 2014-built, 179,492 dwt vessel has been fixed at $38,000 per day, less a 5% commission, compared with the $26,800 per d",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Houthis Kill Three in Strikes on Saudi Arabian Airports",
-      "link": "https://gcaptain.com/houthis-kill-three-in-strikes-on-saudi-arabian-airports/",
-      "pubDate": "Fri, 09 Oct 2026 09:20:41 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Houthis struck two airports in Saudi Arabia in the past two days, killing three people and injuring dozens as the Iran-backed militant group intensifies its attacks on the kingdom from Yemen.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 2,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-19T114802Z_1980126111_RC28MNAXZ2HR_RTRMADP_3_IRAN-CRISIS-SAUDI-YEMEN-800x450.jpg",
-      "en": {
-        "headline": "Houthis Kill Three in Strikes on Saudi Arabian Airports",
-        "summary": "The Houthis struck two airports in Saudi Arabia in the past two days, killing three people and injuring dozens as the Iran-backed militant group intensifies its attacks on the kingdom from Yemen.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "EU Imports Record 12.18 Million Tonnes of Russian Arctic LNG",
-      "link": "https://gcaptain.com/eu-imports-record-12-18-million-tonnes-of-russian-arctic-lng/",
-      "pubDate": "Fri, 09 Oct 2026 08:47:40 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Europe's estimated bill reaches €7.88 billion through September as U.S. sanctions deadline adds uncertainty for Yamal's specialized tanker fleet.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/09/Arc7-LNGC-at-LNG.jpg",
-      "en": {
-        "headline": "EU Imports Record 12.18 Million Tonnes of Russian Arctic LNG",
-        "summary": "Europe's estimated bill reaches €7.88 billion through September as U.S. sanctions deadline adds uncertainty for Yamal's specialized tanker fleet.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Black Sea grain exports crater amid widening maritime war",
-      "link": "https://splash247.com/black-sea-grain-exports-crater-amid-widening-maritime-war/",
-      "pubDate": "Fri, 09 Oct 2026 08:42:41 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Black Sea wheat exports are plunging at the height of the traditional shipping season as escalating attacks on commercial vessels and port infrastructure leave both Russia and Ukraine struggling to get their harvests to international markets. Fresh vessel-tracking data compiled b",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Marine-drone-self-detonates-in-Romanian-Black-Sea-port-1.png-copy.jpg",
-      "en": {
-        "headline": "Black Sea grain exports crater amid widening maritime war",
-        "summary": "Black Sea wheat exports are plunging at the height of the traditional shipping season as escalating attacks on commercial vessels and port infrastructure leave both Russia and Ukraine struggling to get their harvests to international markets. Fresh vessel-tracking data compiled b",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Trøim-backed Bruton opens review amid VLCC sale talk",
-      "link": "https://splash247.com/troim-backed-bruton-opens-review-amid-vlcc-sale-talk/",
-      "pubDate": "Fri, 09 Oct 2026 08:12:31 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Tor Olav Trøim-backed VLCC owner Bruton has launched a strategic review after market speculation over a potential transaction, with International Seaways linked by shipbroking sources to the purchase of at least two of its remaining newbuildings. The Oslo-listed company acknowled",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/06/Tor-Olav-Troim-at-Nor-Shipping.jpg",
-      "en": {
-        "headline": "Trøim-backed Bruton opens review amid VLCC sale talk",
-        "summary": "Tor Olav Trøim-backed VLCC owner Bruton has launched a strategic review after market speculation over a potential transaction, with International Seaways linked by shipbroking sources to the purchase of at least two of its remaining newbuildings. The Oslo-listed company acknowled",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Splash Wrap: Drones, driverless trains and the future of shipping",
-      "link": "https://splash247.com/splash-wrap-drones-driverless-trains-and-the-future-of-shipping/",
-      "pubDate": "Fri, 09 Oct 2026 07:52:45 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Maritime war spread far and wide in the Black Sea and the Middle East this week, attacks increasing both in number and geographical scope.  This week’s Maritime CEO interview was Bing Hou, who after four decades at sea and ashore, has developed ShipGod AI, which he described as a",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Parallel.jpeg",
-      "en": {
-        "headline": "Splash Wrap: Drones, driverless trains and the future of shipping",
-        "summary": "Maritime war spread far and wide in the Black Sea and the Middle East this week, attacks increasing both in number and geographical scope.  This week’s Maritime CEO interview was Bing Hou, who after four decades at sea and ashore, has developed ShipGod AI, which he described as a",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Saudis in Talks to Formalize Hormuz Shuttles in Fight for Market",
-      "link": "https://gcaptain.com/saudis-in-talks-to-formalize-hormuz-shuttles-in-fight-for-market/",
-      "pubDate": "Thu, 08 Oct 2026 21:34:40 +0000",
-      "source": "gCaptain",
-      "category": "Bunker",
-      "summary": "(Bloomberg) &#8212; Saudi Arabia is in talks with customers to offer oil loadings next year outside the Strait of Hormuz in long-term contracts, formalizing a system the kingdom has been...",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
-      "en": {
-        "headline": "Saudis in Talks to Formalize Hormuz Shuttles in Fight for Market",
-        "summary": "(Bloomberg) &#8212; Saudi Arabia is in talks with customers to offer oil loadings next year outside the Strait of Hormuz in long-term contracts, formalizing a system the kingdom has been...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "U.S. Sanctions 22 More Tankers in Crackdown on Iran’s Shadow Fleet",
-      "link": "https://gcaptain.com/u-s-sanctions-22-more-tankers-in-crackdown-on-irans-shadow-fleet/",
-      "pubDate": "Thu, 08 Oct 2026 18:25:43 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The United States on Thursday imposed sanctions on 22 tankers and dozens of individuals and companies linked to Iran&#8217;s oil trade, expanding its campaign to cut off Tehran&#8217;s remaining petroleum...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
-      "en": {
-        "headline": "U.S. Sanctions 22 More Tankers in Crackdown on Iran’s Shadow Fleet",
-        "summary": "The United States on Thursday imposed sanctions on 22 tankers and dozens of individuals and companies linked to Iran&#8217;s oil trade, expanding its campaign to cut off Tehran&#8217;s remaining petroleum...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "U.S. Container Imports Slow After Stronger-Than-Expected Summer",
-      "link": "https://gcaptain.com/u-s-container-imports-slow-after-stronger-than-expected-summer/",
-      "pubDate": "Thu, 08 Oct 2026 18:03:28 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "U.S.&#160;container&#160;imports&#160;are&#160;finally&#160;beginning&#160;to&#160;slow&#160;after&#160;an&#160;unusually&#160;long&#160;peak&#160;shipping&#160;season&#160;that&#160;stretched&#160;through&#160;the&#160;summer&#160;and&#160;into&#160;early&#160;fall,&#160;accordi",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Pier-300-Channel.jpg",
-      "en": {
-        "headline": "U.S. Container Imports Slow After Stronger-Than-Expected Summer",
-        "summary": "U.S.&#160;container&#160;imports&#160;are&#160;finally&#160;beginning&#160;to&#160;slow&#160;after&#160;an&#160;unusually&#160;long&#160;peak&#160;shipping&#160;season&#160;that&#160;stretched&#160;through&#160;the&#160;summer&#160;and&#160;into&#160;early&#160;fall,&#160;accordi",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Hurricane Isaias Shuts Down Nearly Two-Thirds of Gulf Oil Production",
-      "link": "https://gcaptain.com/hurricane-isaias-shuts-down-nearly-two-thirds-of-gulf-oil-production/",
-      "pubDate": "Thu, 08 Oct 2026 17:33:33 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Nearly two-thirds of U.S. Gulf of Mexico oil production has been shut down as Hurricane Isaias strengthens ahead of an expected landfall along the northern Gulf Coast, prompting widespread evacuations...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Hurricane-Isaias.jpg",
-      "en": {
-        "headline": "Hurricane Isaias Shuts Down Nearly Two-Thirds of Gulf Oil Production",
-        "summary": "Nearly two-thirds of U.S. Gulf of Mexico oil production has been shut down as Hurricane Isaias strengthens ahead of an expected landfall along the northern Gulf Coast, prompting widespread evacuations...",
-        "source": "gCaptain"
       }
     }
   ]
