@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-09T03:46:54.913Z",
+    "generatedAt": "2026-10-09T12:19:37.361Z",
     "benchmarkAsOf": "2026-10-08",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 908,
-        "deltaPct": 1.34,
+        "deltaPct": 0,
         "asOf": "2026-10-08T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1291.5,
-        "deltaPct": 2.95,
+        "deltaPct": 0,
         "asOf": "2026-10-08T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 808.5,
-        "deltaPct": 2.54,
+        "deltaPct": 0,
         "asOf": "2026-10-08T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 728,
-        "deltaPct": 5.2,
+        "deltaPct": 0,
         "asOf": "2026-10-08T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1416.5,
-        "deltaPct": 6.26,
+        "deltaPct": 0,
         "asOf": "2026-10-08T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 665,
-        "deltaPct": 9.02,
+        "deltaPct": 0,
         "asOf": "2026-10-08T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 760,
-        "deltaPct": 0.73,
+        "deltaPct": 0,
         "asOf": "2026-10-08T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1415,
-        "deltaPct": 1.18,
+        "deltaPct": 0,
         "asOf": "2026-10-08T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -172,7 +172,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 576,
-        "deltaPct": 6.47,
+        "deltaPct": 0,
         "asOf": "2026-10-08T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 1010,
-        "deltaPct": 0.5,
+        "deltaPct": 0,
         "asOf": "2026-10-08T22:41:12.498Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 950,
-        "deltaPct": 0.53,
+        "deltaPct": 0,
         "asOf": "2026-10-08T22:41:12.469Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -236,6 +236,210 @@
   },
   "news": [
     {
+      "title": "CMB.TECH sends world’s first ammonia-powered bulker to sea",
+      "link": "https://splash247.com/cmb-tech-sends-worlds-first-ammonia-powered-bulker-to-sea/",
+      "pubDate": "Fri, 09 Oct 2026 10:44:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Belgium’s CMB.TECH has sent the 210,000 dwt Mineral Europa on its maiden voyage to Australia, marking the first deployment of an ammonia-powered dry bulk carrier. The 2026-built newcastlemax is the first of a much larger ammonia-fuelled fleet being rolled out by the Alexander Sav",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Minral-Europa-Ammonia-bulker-CMB.TECH_.jpg",
+      "en": {
+        "headline": "CMB.TECH sends world’s first ammonia-powered bulker to sea",
+        "summary": "Belgium’s CMB.TECH has sent the 210,000 dwt Mineral Europa on its maiden voyage to Australia, marking the first deployment of an ammonia-powered dry bulk carrier. The 2026-built newcastlemax is the first of a much larger ammonia-fuelled fleet being rolled out by the Alexander Sav",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "BIMCO moves to break ship retrofit cost deadlock",
+      "link": "https://splash247.com/bimco-moves-to-break-ship-retrofit-cost-deadlock/",
+      "pubDate": "Fri, 09 Oct 2026 10:20:03 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Shipping association BIMCO has adopted a new contractual framework designed to settle one of the industry&#8217;s longstanding commercial disputes: who pays for energy-saving upgrades when the charterer receives much of the financial benefit. The Copenhagen-based organisation ann",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/LR-retrofit-report-photo.jpg",
+      "en": {
+        "headline": "BIMCO moves to break ship retrofit cost deadlock",
+        "summary": "Shipping association BIMCO has adopted a new contractual framework designed to settle one of the industry&#8217;s longstanding commercial disputes: who pays for energy-saving upgrades when the charterer receives much of the financial benefit. The Copenhagen-based organisation ann",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "FSL cashes in on another veteran product tanker",
+      "link": "https://splash247.com/fsl-cashes-in-on-another-veteran-product-tanker/",
+      "pubDate": "Fri, 09 Oct 2026 10:14:15 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Singapore-listed First Ship Lease Trust (FSL) has agreed to sell another ageing product tanker, continuing a series of disposals that has reduced its fleet over recent years. The trust said in a filing that subsidiary FSL-14 had struck a deal to sell the 2006-built Speciality to ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/SFL-SPECIALTY.jpg",
+      "en": {
+        "headline": "FSL cashes in on another veteran product tanker",
+        "summary": "Singapore-listed First Ship Lease Trust (FSL) has agreed to sell another ageing product tanker, continuing a series of disposals that has reduced its fleet over recent years. The trust said in a filing that subsidiary FSL-14 had struck a deal to sell the 2006-built Speciality to ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "UK P&#038;I and TT Club merger clears member vote",
+      "link": "https://splash247.com/uk-pi-and-tt-club-merger-clears-member-vote/",
+      "pubDate": "Fri, 09 Oct 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Members of the UK P&#38;I Club and TT Club have approved a merger to create United Transport Mutual Limited (UTM), a transport mutual covering shipping, logistics, ports, and terminals. Members voted at separate special general meetings on October 7 and 8, following member consul",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2015/03/Bulker_at_sunset-e1620797827712.jpg",
+      "en": {
+        "headline": "UK P&#038;I and TT Club merger clears member vote",
+        "summary": "Members of the UK P&#38;I Club and TT Club have approved a merger to create United Transport Mutual Limited (UTM), a transport mutual covering shipping, logistics, ports, and terminals. Members voted at separate special general meetings on October 7 and 8, following member consul",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Hunter’s VLCC charter dispute swells to nearly $68m",
+      "link": "https://splash247.com/hunters-vlcc-charter-dispute-swells-to-nearly-68m/",
+      "pubDate": "Fri, 09 Oct 2026 09:51:30 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Norwegian shipping investment company Hunter Group&#8217;s dispute with an unnamed long-term VLCC charter counterparty has deepened further, with unpaid hire now approaching $68m after another substantial shortfall in September. The Oslo-listed company disclosed on Friday that it",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/04/Hunter-Group.jpg",
+      "en": {
+        "headline": "Hunter’s VLCC charter dispute swells to nearly $68m",
+        "summary": "Norwegian shipping investment company Hunter Group&#8217;s dispute with an unnamed long-term VLCC charter counterparty has deepened further, with unpaid hire now approaching $68m after another substantial shortfall in September. The Oslo-listed company disclosed on Friday that it",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Larine cashes out of LR1 tankers in $110m UAE deal",
+      "link": "https://splash247.com/larine-cashes-out-of-lr1-tankers-in-110m-uae-deal/",
+      "pubDate": "Fri, 09 Oct 2026 09:40:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Odfjell-family-linked Larine Tankers has reportedly sold its two LR1 product tankers to UAE interests for a combined $110m, clearing out its existing fleet amid strong secondhand tanker prices. Shipbrokers have identified the vessels as the 2016-built Bluebird and Starling, both ",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Bluebird-LR1-tanker-Bambang-Pujiono-Marine-Traffic.jpg",
+      "en": {
+        "headline": "Larine cashes out of LR1 tankers in $110m UAE deal",
+        "summary": "Odfjell-family-linked Larine Tankers has reportedly sold its two LR1 product tankers to UAE interests for a combined $110m, clearing out its existing fleet amid strong secondhand tanker prices. Shipbrokers have identified the vessels as the 2016-built Bluebird and Starling, both ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Diana rolls capesize into $13m fixture",
+      "link": "https://splash247.com/diana-rolls-capesize-into-13m-fixture/",
+      "pubDate": "Fri, 09 Oct 2026 09:30:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "New York-listed Greek bulker owner Diana Shipping has secured a 42% rate increase for its capesize GP Zafirakis in a new time charter with Classic Maritime. The 2014-built, 179,492 dwt vessel has been fixed at $38,000 per day, less a 5% commission, compared with the $26,800 per d",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/gp-zafirakis-Diana-Shipping.jpg",
+      "en": {
+        "headline": "Diana rolls capesize into $13m fixture",
+        "summary": "New York-listed Greek bulker owner Diana Shipping has secured a 42% rate increase for its capesize GP Zafirakis in a new time charter with Classic Maritime. The 2014-built, 179,492 dwt vessel has been fixed at $38,000 per day, less a 5% commission, compared with the $26,800 per d",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Houthis Kill Three in Strikes on Saudi Arabian Airports",
+      "link": "https://gcaptain.com/houthis-kill-three-in-strikes-on-saudi-arabian-airports/",
+      "pubDate": "Fri, 09 Oct 2026 09:20:41 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Houthis struck two airports in Saudi Arabia in the past two days, killing three people and injuring dozens as the Iran-backed militant group intensifies its attacks on the kingdom from Yemen.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-19T114802Z_1980126111_RC28MNAXZ2HR_RTRMADP_3_IRAN-CRISIS-SAUDI-YEMEN-800x450.jpg",
+      "en": {
+        "headline": "Houthis Kill Three in Strikes on Saudi Arabian Airports",
+        "summary": "The Houthis struck two airports in Saudi Arabia in the past two days, killing three people and injuring dozens as the Iran-backed militant group intensifies its attacks on the kingdom from Yemen.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "EU Imports Record 12.18 Million Tonnes of Russian Arctic LNG",
+      "link": "https://gcaptain.com/eu-imports-record-12-18-million-tonnes-of-russian-arctic-lng/",
+      "pubDate": "Fri, 09 Oct 2026 08:47:40 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Europe's estimated bill reaches €7.88 billion through September as U.S. sanctions deadline adds uncertainty for Yamal's specialized tanker fleet.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/09/Arc7-LNGC-at-LNG.jpg",
+      "en": {
+        "headline": "EU Imports Record 12.18 Million Tonnes of Russian Arctic LNG",
+        "summary": "Europe's estimated bill reaches €7.88 billion through September as U.S. sanctions deadline adds uncertainty for Yamal's specialized tanker fleet.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Black Sea grain exports crater amid widening maritime war",
+      "link": "https://splash247.com/black-sea-grain-exports-crater-amid-widening-maritime-war/",
+      "pubDate": "Fri, 09 Oct 2026 08:42:41 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Black Sea wheat exports are plunging at the height of the traditional shipping season as escalating attacks on commercial vessels and port infrastructure leave both Russia and Ukraine struggling to get their harvests to international markets. Fresh vessel-tracking data compiled b",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Marine-drone-self-detonates-in-Romanian-Black-Sea-port-1.png-copy.jpg",
+      "en": {
+        "headline": "Black Sea grain exports crater amid widening maritime war",
+        "summary": "Black Sea wheat exports are plunging at the height of the traditional shipping season as escalating attacks on commercial vessels and port infrastructure leave both Russia and Ukraine struggling to get their harvests to international markets. Fresh vessel-tracking data compiled b",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Trøim-backed Bruton opens review amid VLCC sale talk",
+      "link": "https://splash247.com/troim-backed-bruton-opens-review-amid-vlcc-sale-talk/",
+      "pubDate": "Fri, 09 Oct 2026 08:12:31 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Tor Olav Trøim-backed VLCC owner Bruton has launched a strategic review after market speculation over a potential transaction, with International Seaways linked by shipbroking sources to the purchase of at least two of its remaining newbuildings. The Oslo-listed company acknowled",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/06/Tor-Olav-Troim-at-Nor-Shipping.jpg",
+      "en": {
+        "headline": "Trøim-backed Bruton opens review amid VLCC sale talk",
+        "summary": "Tor Olav Trøim-backed VLCC owner Bruton has launched a strategic review after market speculation over a potential transaction, with International Seaways linked by shipbroking sources to the purchase of at least two of its remaining newbuildings. The Oslo-listed company acknowled",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Splash Wrap: Drones, driverless trains and the future of shipping",
+      "link": "https://splash247.com/splash-wrap-drones-driverless-trains-and-the-future-of-shipping/",
+      "pubDate": "Fri, 09 Oct 2026 07:52:45 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Maritime war spread far and wide in the Black Sea and the Middle East this week, attacks increasing both in number and geographical scope.  This week’s Maritime CEO interview was Bing Hou, who after four decades at sea and ashore, has developed ShipGod AI, which he described as a",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Parallel.jpeg",
+      "en": {
+        "headline": "Splash Wrap: Drones, driverless trains and the future of shipping",
+        "summary": "Maritime war spread far and wide in the Black Sea and the Middle East this week, attacks increasing both in number and geographical scope.  This week’s Maritime CEO interview was Bing Hou, who after four decades at sea and ashore, has developed ShipGod AI, which he described as a",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Saudis in Talks to Formalize Hormuz Shuttles in Fight for Market",
       "link": "https://gcaptain.com/saudis-in-talks-to-formalize-hormuz-shuttles-in-fight-for-market/",
       "pubDate": "Thu, 08 Oct 2026 21:34:40 +0000",
@@ -244,7 +448,7 @@
       "summary": "(Bloomberg) &#8212; Saudi Arabia is in talks with customers to offer oil loadings next year outside the Strait of Hormuz in long-term contracts, formalizing a system the kingdom has been...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 6,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
       "en": {
         "headline": "Saudis in Talks to Formalize Hormuz Shuttles in Fight for Market",
@@ -261,7 +465,7 @@
       "summary": "The United States on Thursday imposed sanctions on 22 tankers and dozens of individuals and companies linked to Iran&#8217;s oil trade, expanding its campaign to cut off Tehran&#8217;s remaining petroleum...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
       "en": {
         "headline": "U.S. Sanctions 22 More Tankers in Crackdown on Iran’s Shadow Fleet",
@@ -278,7 +482,7 @@
       "summary": "U.S.&#160;container&#160;imports&#160;are&#160;finally&#160;beginning&#160;to&#160;slow&#160;after&#160;an&#160;unusually&#160;long&#160;peak&#160;shipping&#160;season&#160;that&#160;stretched&#160;through&#160;the&#160;summer&#160;and&#160;into&#160;early&#160;fall,&#160;accordi",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Pier-300-Channel.jpg",
       "en": {
         "headline": "U.S. Container Imports Slow After Stronger-Than-Expected Summer",
@@ -295,216 +499,12 @@
       "summary": "Nearly two-thirds of U.S. Gulf of Mexico oil production has been shut down as Hurricane Isaias strengthens ahead of an expected landfall along the northern Gulf Coast, prompting widespread evacuations...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Hurricane-Isaias.jpg",
       "en": {
         "headline": "Hurricane Isaias Shuts Down Nearly Two-Thirds of Gulf Oil Production",
         "summary": "Nearly two-thirds of U.S. Gulf of Mexico oil production has been shut down as Hurricane Isaias strengthens ahead of an expected landfall along the northern Gulf Coast, prompting widespread evacuations...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Supertankers Racing to Middle East Worsen Global Ship Crunch",
-      "link": "https://gcaptain.com/supertankers-racing-to-middle-east-worsen-global-ship-crunch/",
-      "pubDate": "Thu, 08 Oct 2026 17:23:31 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "(Bloomberg) &#8212; Supertankers are racing to the Middle East to cash in on soaring fees for carrying oil through the Strait of Hormuz, exacerbating a global shortage of vessels that...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/11/shutterstock_639107626.jpg",
-      "en": {
-        "headline": "Supertankers Racing to Middle East Worsen Global Ship Crunch",
-        "summary": "(Bloomberg) &#8212; Supertankers are racing to the Middle East to cash in on soaring fees for carrying oil through the Strait of Hormuz, exacerbating a global shortage of vessels that...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Attack Risks Rise for Tankers as Iran Vows to Block More Hormuz Routes",
-      "link": "https://gcaptain.com/attack-risks-rise-for-tankers-as-iran-vows-to-block-more-hormuz-routes/",
-      "pubDate": "Thu, 08 Oct 2026 17:03:39 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Tankers are facing a higher risk of attacks and intimidation as they try to get critical shipments through the Strait of Hormuz after Iran issued new warnings it would block routes that it has not authorized, sources said.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-21T113312Z_986150390_RC25YLAX1ZOM_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
-      "en": {
-        "headline": "Attack Risks Rise for Tankers as Iran Vows to Block More Hormuz Routes",
-        "summary": "Tankers are facing a higher risk of attacks and intimidation as they try to get critical shipments through the Strait of Hormuz after Iran issued new warnings it would block routes that it has not authorized, sources said.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "TOTE, Hanwha Finalize Deal to Build U.S. Missile Defense Ship",
-      "link": "https://gcaptain.com/tote-hanwha-finalize-deal-to-build-u-s-missile-defense-ship/",
-      "pubDate": "Thu, 08 Oct 2026 15:00:17 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "TOTE Services has finalized its contract with the U.S. Maritime Administration to oversee construction of a new generation of missile-tracking ships, clearing the way for Hanwha Philly Shipyard to begin...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/Missile-Range-Instrumentation-Vessels-MRIV.png",
-      "en": {
-        "headline": "TOTE, Hanwha Finalize Deal to Build U.S. Missile Defense Ship",
-        "summary": "TOTE Services has finalized its contract with the U.S. Maritime Administration to oversee construction of a new generation of missile-tracking ships, clearing the way for Hanwha Philly Shipyard to begin...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Tanker Attack Off Qatar Signals Wider Threat Beyond Hormuz",
-      "link": "https://gcaptain.com/tanker-attack-off-qatar-signals-wider-threat-beyond-hormuz/",
-      "pubDate": "Thu, 08 Oct 2026 14:25:15 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A chemical tanker was struck by multiple projectiles off the coast of Qatar on Wednesday, with casualties reported among its crew, in the latest attack on commercial shipping as violence...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
-      "en": {
-        "headline": "Tanker Attack Off Qatar Signals Wider Threat Beyond Hormuz",
-        "summary": "A chemical tanker was struck by multiple projectiles off the coast of Qatar on Wednesday, with casualties reported among its crew, in the latest attack on commercial shipping as violence...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "UK Sanctions 12 More &#8216;Shadow-Fleet&#8217; Tankers as Russia&#8217;s Arctic Traffic Grows",
-      "link": "https://gcaptain.com/uk-sanctions-12-more-shadow-fleet-tankers-as-russias-arctic-traffic-grows/",
-      "pubDate": "Thu, 08 Oct 2026 14:10:23 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The United Kingdom on Thursday sanctioned 12 oil tankers it identified as part of Russia's shadow fleet, including the 22-year-old Dakar that is currently making an unusual late-season voyage on the Northern Sea Route.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-01T080943Z_231964487_RC22LKAWT2QP_RTRMADP_3_SYRIA-ECONOMY-RUSSIAN-OIL-800x450.jpg",
-      "en": {
-        "headline": "UK Sanctions 12 More &#8216;Shadow-Fleet&#8217; Tankers as Russia&#8217;s Arctic Traffic Grows",
-        "summary": "The United Kingdom on Thursday sanctioned 12 oil tankers it identified as part of Russia's shadow fleet, including the 22-year-old Dakar that is currently making an unusual late-season voyage on the Northern Sea Route.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Turkey Says Russia, Ukraine Increasing Attacks in Black Sea Ahead of Winter",
-      "link": "https://gcaptain.com/turkey-says-russia-ukraine-increasing-attacks-in-black-sea-ahead-of-winter/",
-      "pubDate": "Thu, 08 Oct 2026 14:05:18 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Intensifying attacks by Russia and Ukraine ahead of the winter are further endangering navigational safety in the Black Sea, Turkish Foreign Minister Hakan Fidan said on Thursday, adding that world powers must not allow the region to be turned into a new front in the war.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-16T111730Z_19845314_RC2HDMAQ4IH8_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-SHIPPING.jpg",
-      "en": {
-        "headline": "Turkey Says Russia, Ukraine Increasing Attacks in Black Sea Ahead of Winter",
-        "summary": "Intensifying attacks by Russia and Ukraine ahead of the winter are further endangering navigational safety in the Black Sea, Turkish Foreign Minister Hakan Fidan said on Thursday, adding that world powers must not allow the region to be turned into a new front in the war.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Subcontinent Ports Benefiting from Geopolitical Disruptions",
-      "link": "https://gcaptain.com/subcontinent-ports-benefiting-from-geopolitical-disruptions/",
-      "pubDate": "Thu, 08 Oct 2026 14:00:01 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Today's trade flows resemble a windy waterpark slide more than the traditional waterway superhighway. The three-dimensional chess game being played by ocean carriers and tankers has delivered big bucks in day rates, container rates, and surcharges. But there is a group of winners",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Subcontinent Ports Benefiting from Geopolitical Disruptions",
-        "summary": "Today's trade flows resemble a windy waterpark slide more than the traditional waterway superhighway. The three-dimensional chess game being played by ocean carriers and tankers has delivered big bucks in day rates, container rates, and surcharges. But there is a group of winners",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "The hidden health issue sending seafarers home",
-      "link": "https://splash247.com/the-hidden-health-issue-sending-seafarers-home/",
-      "pubDate": "Thu, 08 Oct 2026 13:48:55 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Musculoskeletal problems are responsible for a significant proportion of crew repatriations, but earlier intervention could help prevent many cases from reaching that stage says Ronald Spithout, MD oneHealth by VIKAND. Working at sea is physically demanding, so aches and pains ca",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2015/01/Hapag-Lloyd-crew-seafarers-1-e1600850274832.jpeg",
-      "en": {
-        "headline": "The hidden health issue sending seafarers home",
-        "summary": "Musculoskeletal problems are responsible for a significant proportion of crew repatriations, but earlier intervention could help prevent many cases from reaching that stage says Ronald Spithout, MD oneHealth by VIKAND. Working at sea is physically demanding, so aches and pains ca",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "SPM Shipping plays the market",
-      "link": "https://splash247.com/spm-shipping-plays-the-market/",
-      "pubDate": "Thu, 08 Oct 2026 13:46:51 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "With only a few months in gas, Dubai-based SPM Shipping, a shipowner, operator and offshore player, has now added its third VLGC, according to sources. The fast-growing owner is ambitious and moving comfortably in the largest segments in shipping, first placing money in both the ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/09/Dubai-free-pic.jpg",
-      "en": {
-        "headline": "SPM Shipping plays the market",
-        "summary": "With only a few months in gas, Dubai-based SPM Shipping, a shipowner, operator and offshore player, has now added its third VLGC, according to sources. The fast-growing owner is ambitious and moving comfortably in the largest segments in shipping, first placing money in both the ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Seatrium bags first FSRU conversion for Excelerate",
-      "link": "https://splash247.com/seatrium-bags-first-fsru-conversion-for-excelerate/",
-      "pubDate": "Thu, 08 Oct 2026 12:40:37 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Singapore shipyard group Seatrium has secured an EPCIC contract from New York-listed floating regasification specialist Excelerate Energy to convert an LNG carrier into an FSRU, with an option for a second unit. The project is Seatrium’s first FSRU conversion for Excelerate. Fina",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/MarineTraffic-Robert-Weber-Methane-Patricia-Camila.jpg",
-      "en": {
-        "headline": "Seatrium bags first FSRU conversion for Excelerate",
-        "summary": "Singapore shipyard group Seatrium has secured an EPCIC contract from New York-listed floating regasification specialist Excelerate Energy to convert an LNG carrier into an FSRU, with an option for a second unit. The project is Seatrium’s first FSRU conversion for Excelerate. Fina",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Mexican Auto Exports Slump in September as US Tariffs Take Toll",
-      "link": "https://gcaptain.com/mexican-auto-exports-slump-in-september-as-us-tariffs-take-toll/",
-      "pubDate": "Thu, 08 Oct 2026 11:59:57 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Mexico's auto exports posted their biggest slump so far this year, data from statistics office INEGI showed on Wednesday, a decline analysts attributed to tariff policies from the US, the biggest market for the Latin American country's top industrial sector.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Mexican Auto Exports Slump in September as US Tariffs Take Toll",
-        "summary": "Mexico's auto exports posted their biggest slump so far this year, data from statistics office INEGI showed on Wednesday, a decline analysts attributed to tariff policies from the US, the biggest market for the Latin American country's top industrial sector.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Yinson Production lands $1.46bn refinancing for Agogo FPSO",
-      "link": "https://splash247.com/yinson-production-lands-1-46bn-refinancing-for-agogo-fpso/",
-      "pubDate": "Thu, 08 Oct 2026 10:01:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Singapore-based Yinson Production has priced $1.458bn of senior secured notes backed by the Agogo FPSO, marking what the company says is the largest FPSO project bond to date and the first of its kind outside Brazil. Yinson Azalea Production, which owns the Agogo FPSO, is issuing",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/MarineTraffic-Robert-Suteanu-Agogo-FPSO-Yinson-Production.jpg",
-      "en": {
-        "headline": "Yinson Production lands $1.46bn refinancing for Agogo FPSO",
-        "summary": "Singapore-based Yinson Production has priced $1.458bn of senior secured notes backed by the Agogo FPSO, marking what the company says is the largest FPSO project bond to date and the first of its kind outside Brazil. Yinson Azalea Production, which owns the Agogo FPSO, is issuing",
-        "source": "Splash247"
       }
     }
   ]
