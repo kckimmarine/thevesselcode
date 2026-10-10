@@ -141,7 +141,12 @@ if (!marketingHome.includes('marketing-shell.js')) {
   console.error('FAIL dist/home/index.html is not marketing home');
   process.exit(1);
 }
-if (existsSync(join(out, 'index.html'))) {
+const isCfPages =
+  process.env.CF_PAGES === '1' || String(process.env.CF_PAGES || '').toLowerCase() === 'true';
+if (isCfPages) {
+  cpSync(join(out, 'home', 'index.html'), join(out, 'index.html'));
+  console.log('OK dist/index.html ← CF Worker/Pages root (marketing home)');
+} else if (existsSync(join(out, 'index.html'))) {
   console.error('FAIL dist/index.html must not exist (blocks Vercel host rewrites)');
   process.exit(1);
 }

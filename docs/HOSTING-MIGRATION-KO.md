@@ -50,10 +50,14 @@ Vercel Hobby **fair use 초과**로 `DEPLOYMENT_DISABLED`(402)가 난 경우, Gi
 | 필드 | 값 |
 |------|-----|
 | Build command | `CF_PAGES=1 npm run build` |
-| Deploy command | **`npx wrangler@3 deploy`** (또는 `npm run deploy:cf-worker`) |
+| Deploy command | **`npx wrangler@3 deploy --assets=./dist --name=thevesselcode --compatibility-date=2024-09-23`** |
 
-`wrangler pages deploy` 는 **Pages 프로젝트**용입니다. Worker Builds로 만든 `thevesselcode` 에서는 **Deploying 실패**가 납니다.  
-저장소 `wrangler.toml` 의 `[assets] directory = "./dist"` + `cloudflare/worker-site-router.js` 가 함께 배포되어야 합니다 (**master에 merge 필요**).
+`wrangler pages deploy` 는 **Pages 전용**이라 Worker Builds에서 **Deploying 실패**합니다.
+
+로그에 *specify assets directory* / *wrangler.jsonc* 예시만 나오면 **`master`에 `wrangler.toml`이 없는 상태**입니다.  
+**PR #281을 `master`에 merge**한 뒤 Deploy command를 **`npx wrangler@3 deploy`** 로 줄이거나, merge 전 임시로 위 **`--assets=./dist`** 한 줄을 씁니다.
+
+merge 후: `wrangler.toml` + `cloudflare/worker-site-router.js` + `CF_PAGES=1` 빌드 시 `dist/index.html` 생성.
 
 Preview builds 를 켰다면 Preview command 도 **`npx wrangler@3 deploy`** 또는 Preview builds **OFF**.
 
