@@ -29,9 +29,11 @@ Vercel Hobby **fair use 초과**로 `DEPLOYMENT_DISABLED`(402)가 난 경우, Gi
 
 ### 절차
 
-1. [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**
-2. GitHub **`kckimmarine/thevesselcode`** 선택
-3. Build settings:
+1. [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create application**
+2. **중요:** 기본 UI가 **Worker**(`Deploy command` 필수, `npx wrangler deploy`)이면 **thevesselcode에 맞지 않습니다.**  
+   저장소 선택 화면 **맨 위** 링크 **「Need to use the legacy Pages workflow? Continue to Pages」** 를 클릭 → **Pages(legacy)** 로 진행하세요.
+3. **Connect to Git** → GitHub **`kckimmarine/thevesselcode`** 선택
+4. Build settings:
    - **Build command:** `npm run build`
    - **Build output directory:** `dist`
    - **Environment variable:** `CF_PAGES=1` (Production) — `dist/_redirects`를 Cloudflare용으로 생성
