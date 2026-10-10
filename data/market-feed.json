@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-10T03:29:49.893Z",
-    "benchmarkAsOf": "2026-10-09",
+    "generatedAt": "2026-10-10T11:37:43.100Z",
+    "benchmarkAsOf": "2026-10-10",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-10-09",
-    "updatedLabelKo": "2026-10-09 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-10-10",
+    "updatedLabelKo": "2026-10-10 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 889.5,
-        "deltaPct": -2.04,
+        "deltaPct": 0,
         "asOf": "2026-10-09T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1281,
-        "deltaPct": -0.81,
+        "deltaPct": 0,
         "asOf": "2026-10-09T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 810,
-        "deltaPct": 0.19,
+        "deltaPct": 0,
         "asOf": "2026-10-09T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 715,
-        "deltaPct": -1.79,
+        "deltaPct": 0,
         "asOf": "2026-10-09T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1374,
-        "deltaPct": -3,
+        "deltaPct": 0,
         "asOf": "2026-10-09T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 659,
-        "deltaPct": -0.9,
+        "deltaPct": 0,
         "asOf": "2026-10-09T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 763,
-        "deltaPct": 0.39,
+        "deltaPct": 0,
         "asOf": "2026-10-09T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1419.5,
-        "deltaPct": 0.32,
+        "deltaPct": 0,
         "asOf": "2026-10-09T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -212,11 +212,11 @@
       "asOf": "2026-10-09T14:16:01.616Z"
     },
     "capesizeTc": {
-      "value": 4638,
-      "deltaPct": 0,
+      "value": 4340,
+      "deltaPct": -6.43,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-09T14:24:19.497Z"
+      "asOf": "2026-10-10T08:52:30.331Z"
     },
     "panamaxTc": {
       "value": 2384,
@@ -236,6 +236,40 @@
   },
   "news": [
     {
+      "title": "Panama Canal unaffected by huge earthquake",
+      "link": "https://splash247.com/panama-canal-unaffected-by-huge-earthquake/",
+      "pubDate": "Sat, 10 Oct 2026 06:16:55 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The Panama Canal has emerged largely unscathed from a powerful earthquake that struck Panama on Friday, with vessel transits continuing normally despite damage elsewhere across the Central American country. The magnitude 7.7 earthquake struck at 12.56pm local time, according to t",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/11/ONE-Panama-Canal.jpg",
+      "en": {
+        "headline": "Panama Canal unaffected by huge earthquake",
+        "summary": "The Panama Canal has emerged largely unscathed from a powerful earthquake that struck Panama on Friday, with vessel transits continuing normally despite damage elsewhere across the Central American country. The magnitude 7.7 earthquake struck at 12.56pm local time, according to t",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Fire-stricken HMM boxship seeks refuge in South Africa",
+      "link": "https://splash247.com/fire-stricken-hmm-boxship-seeks-refuge-in-south-africa/",
+      "pubDate": "Sat, 10 Oct 2026 06:11:21 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A fire-damaged HMM containership is seeking a port of refuge in South Africa after salvors were appointed under Lloyd’s Open Form (LOF), with cargo interests facing the prospect of general average. The 5,593 teu HMM Platinum suffered a fire while sailing from Kattupalli, India, t",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Fire-GPT.jpg",
+      "en": {
+        "headline": "Fire-stricken HMM boxship seeks refuge in South Africa",
+        "summary": "A fire-damaged HMM containership is seeking a port of refuge in South Africa after salvors were appointed under Lloyd’s Open Form (LOF), with cargo interests facing the prospect of general average. The 5,593 teu HMM Platinum suffered a fire while sailing from Kattupalli, India, t",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Trump Strikes Diesel Deal With Putin to Lower Fuel Prices Ahead of Midterms",
       "link": "https://gcaptain.com/trump-strikes-diesel-deal-with-putin-to-lower-fuel-prices-ahead-of-midterms/",
       "pubDate": "Fri, 09 Oct 2026 20:34:32 +0000",
@@ -244,7 +278,7 @@
       "summary": "President Donald Trump said Friday that Russia has agreed to release millions of tons of diesel fuel into U.S. and global markets following a telephone call with Russian President Vladimir...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/05/shutterstock_1990295600.jpg",
       "en": {
         "headline": "Trump Strikes Diesel Deal With Putin to Lower Fuel Prices Ahead of Midterms",
@@ -261,7 +295,7 @@
       "summary": "The Port of Los Angeles reported its best single month in its history. In a media briefing, port executive director Gene Seroka announced the port processed 1,042,652 TEUs, 23k TEUs more than the July 2025 record.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Pier-300-Channel.jpg",
       "en": {
         "headline": "Container Surge Continues at Port of Los Angeles",
@@ -278,7 +312,7 @@
       "summary": "A vessel was struck by an unknown projectile 13 nautical miles west of Al Jazeera in the United Arab Emirates on Friday, causing a fire that has since been extinguished, British navy affiliated agency UKMTO said, citing multiple sources.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Screenshot-2026-10-09-at-6.35.51-PM.jpg",
       "en": {
         "headline": "Vessel Struck by Unknown Projectile Off UAE Coast Amid Surge in Attacks, UKMTO Says",
@@ -295,7 +329,7 @@
       "summary": "The past fortnight has delivered a clear reminder that the industry’s regulatory problem is no longer a shortage of rules. It is the widening distance between what is agreed in London and Brussels and what can actually be demonstrated on deck, in the engine room and in a ship’s e",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 11,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-08-17T143930Z_1062791196_RC2RXDA2LAMO_RTRMADP_3_USA-TRUMP-TARIFFS-CANADA-800x533.jpg",
       "en": {
         "headline": "From Policy to Practice: Shipping’s Regulatory Autumn Puts Proof on Trial",
@@ -312,7 +346,7 @@
       "summary": "Nearly 500,000 barrels a day of oil-refining capacity sit in the projected path of Hurricane Isaias, raising the risk that a US fuel market with no supplies to spare will lose critical output.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/20262821321_GOES19-ABI-CONUS-GEOCOLOR-2500x1500-1-800x480.jpg",
       "en": {
         "headline": "Isaias Puts 500,000 Barrels a Day of Refining Capacity at Risk",
@@ -329,7 +363,7 @@
       "summary": "For a sign of just how extraordinary oil shipping costs have become, consider this: It’s now more expensive to hire a tanker from the US to China than to launch a rocket into space.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/06/2025-06-13T080424Z_1950987916_RC2J1FAFYBE2_RTRMADP_3_OIL-SHIPPING-HORMUZ-800x498.jpg",
       "en": {
         "headline": "Global Oil Tanker Shortage is Getting Worse By the Day",
@@ -346,7 +380,7 @@
       "summary": "A commercial vessel was struck by a projectile in the Persian Gulf on Friday, sparking a fire onboard in the second reported attack on shipping inside the Gulf in just...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
       "en": {
         "headline": "Second Ship Struck Inside Persian Gulf in Three Days",
@@ -363,7 +397,7 @@
       "summary": "Hurricane Isaias strengthened into a major Category 3 hurricane Friday morning, with sustained winds reaching 120 mph as the storm approached the northern Gulf Coast, threatening life-threatening storm surge and...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/20262821321_GOES19-ABI-CONUS-GEOCOLOR-2500x1500-1-800x480.jpg",
       "en": {
         "headline": "Hurricane Isaias Strengthens Into Major Category 3 Storm Ahead of Gulf Coast Landfall",
@@ -380,7 +414,7 @@
       "summary": "Shell has agreed to acquire a 30% stake in Equinor&#8217;s Bay du Nord offshore oil project in Canada, bringing a new partner into the estimated C$14 billion development as it...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/04/Bay-du-Nord-oil-project.jpg",
       "en": {
         "headline": "Equinor Brings Shell Into $14 Billion Bay du Nord Project",
@@ -397,7 +431,7 @@
       "summary": "Thordon Bearings has opened a new manufacturing facility as part of its strategic response to robust growth across all business segments and rising demand for its sustainable bearings and seals....",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/529d3a13-b820-5a85-0006-b70e454d2a0c-800x533.jpg",
       "en": {
         "headline": "Thordon Bearings adds production plant to meet growing demand",
@@ -414,8 +448,8 @@
       "summary": "Why Document Verification Is Becoming Essential in Ocean Freight For years,&#160;freight&#160;audit&#160;has&#160;focused primarily on the numbers.&#160;Was the correct rate applied? Was the fuel surcharge calculated properly? Does the accessorial match the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 22,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Before You Audit the Charge, Audit the Evidence",
         "summary": "Why Document Verification Is Becoming Essential in Ocean Freight For years,&#160;freight&#160;audit&#160;has&#160;focused primarily on the numbers.&#160;Was the correct rate applied? Was the fuel surcharge calculated properly? Does the accessorial match the...",
@@ -431,8 +465,8 @@
       "summary": "A new study from the Mærsk Mc-Kinney Møller Center for Zero Carbon Shipping finds that ethanol could become a practical alternative fuel for ships, particularly those already equipped with methanol-capable...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 14,
-      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 22,
+      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Ethanol Could Offer Shipping Another Path to Lower Emissions",
         "summary": "A new study from the Mærsk Mc-Kinney Møller Center for Zero Carbon Shipping finds that ethanol could become a practical alternative fuel for ships, particularly those already equipped with methanol-capable...",
@@ -448,7 +482,7 @@
       "summary": "Belgium’s CMB.TECH has sent the 210,000 dwt Mineral Europa on its maiden voyage to Australia, marking the first deployment of an ammonia-powered dry bulk carrier. The 2026-built newcastlemax is the first of a much larger ammonia-fuelled fleet being rolled out by the Alexander Sav",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 16,
+      "hoursAgo": 24,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Minral-Europa-Ammonia-bulker-CMB.TECH_.jpg",
       "en": {
         "headline": "CMB.TECH sends world’s first ammonia-powered bulker to sea",
@@ -465,45 +499,11 @@
       "summary": "Shipping association BIMCO has adopted a new contractual framework designed to settle one of the industry&#8217;s longstanding commercial disputes: who pays for energy-saving upgrades when the charterer receives much of the financial benefit. The Copenhagen-based organisation ann",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 17,
+      "hoursAgo": 25,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/LR-retrofit-report-photo.jpg",
       "en": {
         "headline": "BIMCO moves to break ship retrofit cost deadlock",
         "summary": "Shipping association BIMCO has adopted a new contractual framework designed to settle one of the industry&#8217;s longstanding commercial disputes: who pays for energy-saving upgrades when the charterer receives much of the financial benefit. The Copenhagen-based organisation ann",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "FSL cashes in on another veteran product tanker",
-      "link": "https://splash247.com/fsl-cashes-in-on-another-veteran-product-tanker/",
-      "pubDate": "Fri, 09 Oct 2026 10:14:15 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Singapore-listed First Ship Lease Trust (FSL) has agreed to sell another ageing product tanker, continuing a series of disposals that has reduced its fleet over recent years. The trust said in a filing that subsidiary FSL-14 had struck a deal to sell the 2006-built Speciality to ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/SFL-SPECIALTY.jpg",
-      "en": {
-        "headline": "FSL cashes in on another veteran product tanker",
-        "summary": "Singapore-listed First Ship Lease Trust (FSL) has agreed to sell another ageing product tanker, continuing a series of disposals that has reduced its fleet over recent years. The trust said in a filing that subsidiary FSL-14 had struck a deal to sell the 2006-built Speciality to ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "UK P&#038;I and TT Club merger clears member vote",
-      "link": "https://splash247.com/uk-pi-and-tt-club-merger-clears-member-vote/",
-      "pubDate": "Fri, 09 Oct 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Members of the UK P&#38;I Club and TT Club have approved a merger to create United Transport Mutual Limited (UTM), a transport mutual covering shipping, logistics, ports, and terminals. Members voted at separate special general meetings on October 7 and 8, following member consul",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2015/03/Bulker_at_sunset-e1620797827712.jpg",
-      "en": {
-        "headline": "UK P&#038;I and TT Club merger clears member vote",
-        "summary": "Members of the UK P&#38;I Club and TT Club have approved a merger to create United Transport Mutual Limited (UTM), a transport mutual covering shipping, logistics, ports, and terminals. Members voted at separate special general meetings on October 7 and 8, following member consul",
         "source": "Splash247"
       }
     }
