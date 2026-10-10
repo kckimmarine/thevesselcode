@@ -1,5 +1,13 @@
-# Cloudflare Pages — optional; Git-connected Pages also reads this for compatibility flags.
+# Cloudflare Workers Git Builds (thevesselcode) — static dist/ + minimal router Worker.
+# Legacy Pages workflow: no deploy command; use Build output directory dist instead.
 name = "thevesselcode"
-pages_build_output_dir = "dist"
+main = "cloudflare/worker-site-router.js"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
+# Pages-only (wrangler pages deploy); optional if using legacy Pages Git.
+pages_build_output_dir = "dist"

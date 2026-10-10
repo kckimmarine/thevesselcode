@@ -11,6 +11,7 @@
     "build": "node scripts/vercel-static-build.mjs",
     "build:cf-pages": "CF_PAGES=1 npm run build",
     "deploy:cf-pages": "npx wrangler@3 pages deploy dist --project-name=thevesselcode",
+    "deploy:cf-worker": "npx wrangler@3 deploy",
     "test:hosting-api-router": "node scripts/test-hosting-api-router.mjs",
     "build:maritime-regulations": "node scripts/build-maritime-regulations.mjs",
     "build:mro-hubs": "node scripts/build-mro-hub-pages.mjs",

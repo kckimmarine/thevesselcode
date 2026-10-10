@@ -45,16 +45,20 @@ Vercel Hobby **fair use 초과**로 `DEPLOYMENT_DISABLED`(402)가 난 경우, Gi
 
 ### Worker UI에 갇혔을 때 (Deploy command Required)
 
-**Back** → 저장소 목록 **위** **Continue to Pages (legacy)** 를 못 찾으면, Worker 폼에 아래를 입력해 Deploy:
+**Back** → 저장소 목록 **위** **Continue to Pages (legacy)** 를 못 찾으면 Worker Git Builds를 씁니다.
 
 | 필드 | 값 |
 |------|-----|
-| Build command | `npm run build:cf-pages` |
-| Deploy command | `npm run deploy:cf-pages` |
+| Build command | `CF_PAGES=1 npm run build` |
+| Deploy command | **`npx wrangler@3 deploy`** (또는 `npm run deploy:cf-worker`) |
 
-(또는 Deploy만: `npx wrangler@3 pages deploy dist --project-name=thevesselcode`)
+`wrangler pages deploy` 는 **Pages 프로젝트**용입니다. Worker Builds로 만든 `thevesselcode` 에서는 **Deploying 실패**가 납니다.  
+저장소 `wrangler.toml` 의 `[assets] directory = "./dist"` + `cloudflare/worker-site-router.js` 가 함께 배포되어야 합니다 (**master에 merge 필요**).
 
-빌드·배포는 Linux 환경에서 실행됩니다. **Environment variables**에 Vercel Production 변수와 함께 `CF_PAGES=1`을 넣어 두세요.
+Preview builds 를 켰다면 Preview command 도 **`npx wrangler@3 deploy`** 또는 Preview builds **OFF**.
+
+**Environment variables:** Vercel Production 변수 + `CF_PAGES=1`.  
+Worker 정적 배포만으로는 **`/api/*` Pages Functions** 가 없을 수 있습니다 — 문의·결제 API까지 필요하면 **legacy Pages** 로 재연결하세요.
 
 ### 라우팅
 
