@@ -3,12 +3,14 @@
  * Vercel production build — copy static web assets into dist/.
  * Serverless routes stay in api/ at repo root (not copied here).
  */
-import { cpSync, existsSync, mkdirSync, readdirSync, rmSync, readFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readdirSync, rmSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 
 const root = process.cwd();
 const out = join(root, 'dist');
+const isCfPages =
+  process.env.CF_PAGES === '1' || String(process.env.CF_PAGES || '').toLowerCase() === 'true';
 
 const STATIC_PATHS = [
   'home',
@@ -75,7 +77,11 @@ if (sitemap.status !== 0) process.exit(sitemap.status ?? 1);
 const mroHubs = spawnSync('node', ['scripts/build-mro-hub-pages.mjs'], { cwd: root, stdio: 'inherit' });
 if (mroHubs.status !== 0) process.exit(mroHubs.status ?? 1);
 
-const shouldPingSitemaps = process.env.PING_SITEMAPS === '1' || process.env.VERCEL === '1';
+const shouldPingSitemaps =
+    process.env.PING_SITEMAPS === '1'
+    || process.env.VERCEL === '1'
+    || process.env.NETLIFY === 'true'
+    || process.env.CF_PAGES === '1';
 if (shouldPingSitemaps) {
   const ping = spawnSync('node', ['scripts/ping-sitemaps.mjs'], { cwd: root, stdio: 'inherit' });
   if (ping.status !== 0) {
@@ -91,6 +97,16 @@ for (const rel of STATIC_PATHS) {
   if (!existsSync(src)) {
     console.error('MISSING static asset:', rel);
     process.exit(1);
+  }
+  if (isCfPages && rel === 'downloads') {
+    // Cloudflare Worker assets: 25 MiB max per file; installers stay on GitHub/Vercel CDN.
+    mkdirSync(join(out, 'downloads'), { recursive: true });
+    const installersJson = join(src, 'installers.json');
+    if (existsSync(installersJson)) {
+      cpSync(installersJson, join(out, 'downloads', 'installers.json'));
+    }
+    console.log('OK downloads/ (installers.json only; CF_PAGES skips Setup.exe)');
+    continue;
   }
   cpSync(src, join(out, rel), { recursive: true });
   console.log('OK', rel);
@@ -137,11 +153,26 @@ if (!marketingHome.includes('marketing-shell.js')) {
   console.error('FAIL dist/home/index.html is not marketing home');
   process.exit(1);
 }
-if (existsSync(join(out, 'index.html'))) {
+if (isCfPages) {
+  cpSync(join(out, 'home', 'index.html'), join(out, 'index.html'));
+  console.log('OK dist/index.html ← CF Worker/Pages root (marketing home)');
+} else if (existsSync(join(out, 'index.html'))) {
   console.error('FAIL dist/index.html must not exist (blocks Vercel host rewrites)');
   process.exit(1);
 }
 console.log('OK dist/app.html ← PMS shell');
 console.log('OK dist/home/index.html ← marketing home (served via rewrite)');
 
-console.log('\nVercel static build complete → dist/');
+const routes = spawnSync('node', ['scripts/generate-hosting-routes.mjs'], { cwd: root, stdio: 'inherit' });
+if (routes.status !== 0) process.exit(routes.status ?? 1);
+
+if (isCfPages) {
+  writeFileSync(
+    join(out, '.assetsignore'),
+    '# Cloudflare Workers static assets (25 MiB/file max)\ndownloads/**\n**/*.exe\n',
+    'utf8',
+  );
+  console.log('OK dist/.assetsignore ← exclude large installers');
+}
+
+console.log('\nStatic build complete → dist/');
