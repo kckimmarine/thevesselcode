@@ -9,6 +9,7 @@
     "export-pms-master-sample": "node scripts/export-pms-master-sample.mjs",
     "export-spare-master-sample": "node scripts/export-spare-master-sample.mjs",
     "build": "node scripts/vercel-static-build.mjs",
+    "test:hosting-api-router": "node scripts/test-hosting-api-router.mjs",
     "build:maritime-regulations": "node scripts/build-maritime-regulations.mjs",
     "build:mro-hubs": "node scripts/build-mro-hub-pages.mjs",
     "export:modular-context": "node scripts/export-modular-context.mjs",

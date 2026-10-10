@@ -1,0 +1,112 @@
+# THE VESSEL CODE — Netlify (Vercel alternative)
+# Dashboard: Connect GitHub kckimmarine/thevesselcode → uses this file automatically.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # Same static pipeline as Vercel; skips heavy fleet re-ingest when cache exists.
+  FLEET_INGEST = "0"
+
+[functions.tvc-api]
+  included_files = [
+    "api/_data/**",
+    "api/_lib/**",
+    "data/vessel-overrides.json",
+    "data/tvc-knowledge-base.json",
+  ]
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/tvc-api"
+  status = 200
+
+[[redirects]]
+  from = "/store/:code"
+  to = "/.netlify/functions/tvc-api"
+  status = 200
+
+[[redirects]]
+  from = "/"
+  to = "/home/index.html"
+  status = 200
+  conditions = { Host = ["thevesselcode.com", "www.thevesselcode.com"] }
+
+[[redirects]]
+  from = "/"
+  to = "/app.html"
+  status = 200
+  conditions = { Host = ["app.thevesselcode.com"] }
+
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/about-contact"
+  to = "/contact-us"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact-us"
+  status = 301
+
+[[redirects]]
+  from = "/maritime-toolkit"
+  to = "/toolkit"
+  status = 301
+
+[[redirects]]
+  from = "/impa"
+  to = "/toolkit"
+  status = 301
+
+[[redirects]]
+  from = "/maritime-pms"
+  to = "/sm"
+  status = 301
+
+[[redirects]]
+  from = "/services"
+  to = "/services/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/toolkit"
+  to = "/toolkit.html"
+  status = 200
+
+[[redirects]]
+  from = "/sm"
+  to = "/sm/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact-us"
+  to = "/contact-us/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/forum"
+  to = "/forum/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/insights"
+  to = "/insights/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "frame-ancestors 'self' https://thevesselcode.com https://www.thevesselcode.com https://*.thevesselcode.com"
+
+[[headers]]
+  for = "/app.html"
+  [headers.values]
+    Cache-Control = "no-cache"

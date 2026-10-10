@@ -75,7 +75,11 @@ if (sitemap.status !== 0) process.exit(sitemap.status ?? 1);
 const mroHubs = spawnSync('node', ['scripts/build-mro-hub-pages.mjs'], { cwd: root, stdio: 'inherit' });
 if (mroHubs.status !== 0) process.exit(mroHubs.status ?? 1);
 
-const shouldPingSitemaps = process.env.PING_SITEMAPS === '1' || process.env.VERCEL === '1';
+const shouldPingSitemaps =
+    process.env.PING_SITEMAPS === '1'
+    || process.env.VERCEL === '1'
+    || process.env.NETLIFY === 'true'
+    || process.env.CF_PAGES === '1';
 if (shouldPingSitemaps) {
   const ping = spawnSync('node', ['scripts/ping-sitemaps.mjs'], { cwd: root, stdio: 'inherit' });
   if (ping.status !== 0) {
@@ -144,4 +148,7 @@ if (existsSync(join(out, 'index.html'))) {
 console.log('OK dist/app.html ← PMS shell');
 console.log('OK dist/home/index.html ← marketing home (served via rewrite)');
 
-console.log('\nVercel static build complete → dist/');
+const routes = spawnSync('node', ['scripts/generate-hosting-routes.mjs'], { cwd: root, stdio: 'inherit' });
+if (routes.status !== 0) process.exit(routes.status ?? 1);
+
+console.log('\nStatic build complete → dist/');
