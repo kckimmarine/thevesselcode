@@ -59,6 +59,8 @@ Vercel Hobby **fair use 초과**로 `DEPLOYMENT_DISABLED`(402)가 난 경우, Gi
 
 merge 후: `wrangler.toml` + `cloudflare/worker-site-router.js` + `CF_PAGES=1` 빌드 시 `dist/index.html` 생성.
 
+**Deploy 오류 `Asset too large`:** `downloads/*.exe`(약 86MB)는 Worker 한도(25 MiB/파일)를 넘습니다. `CF_PAGES=1` 빌드는 **`.exe`를 dist에 넣지 않습니다** — 설치 파일은 GitHub Releases 등 별도 URL을 쓰세요.
+
 Preview builds 를 켰다면 Preview command 도 **`npx wrangler@3 deploy`** 또는 Preview builds **OFF**.
 
 **Environment variables:** Vercel Production 변수 + `CF_PAGES=1`.  
