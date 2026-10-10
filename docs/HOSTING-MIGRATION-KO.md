@@ -37,11 +37,24 @@ Vercel Hobby **fair use 초과**로 `DEPLOYMENT_DISABLED`(402)가 난 경우, Gi
    - **Build command:** `npm run build`
    - **Build output directory:** `dist`
    - **Environment variable:** `CF_PAGES=1` (Production) — `dist/_redirects`를 Cloudflare용으로 생성
-4. **Settings → Environment variables:** Vercel에서 쓰던 Production 변수 전부 추가
-5. **Custom domains:** `thevesselcode.com`, `www.thevesselcode.com`, `app.thevesselcode.com`
-6. DNS (도메인이 Cloudflare에 있으면 자동 제안됨):
+5. **Settings → Environment variables:** Vercel에서 쓰던 Production 변수 전부 추가
+6. **Custom domains:** `thevesselcode.com`, `www.thevesselcode.com`, `app.thevesselcode.com`
+7. DNS (도메인이 Cloudflare에 있으면 자동 제안됨):
    - `@` / `www` → Pages 프로젝트
    - `app` → 동일 Pages 프로젝트 (서브도메인)
+
+### Worker UI에 갇혔을 때 (Deploy command Required)
+
+**Back** → 저장소 목록 **위** **Continue to Pages (legacy)** 를 못 찾으면, Worker 폼에 아래를 입력해 Deploy:
+
+| 필드 | 값 |
+|------|-----|
+| Build command | `npm run build:cf-pages` |
+| Deploy command | `npm run deploy:cf-pages` |
+
+(또는 Deploy만: `npx wrangler@3 pages deploy dist --project-name=thevesselcode`)
+
+빌드·배포는 Linux 환경에서 실행됩니다. **Environment variables**에 Vercel Production 변수와 함께 `CF_PAGES=1`을 넣어 두세요.
 
 ### 라우팅
 
