@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-11T17:04:35.075Z",
+    "generatedAt": "2026-10-11T21:16:41.158Z",
     "benchmarkAsOf": "2026-10-09",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -236,6 +236,142 @@
   },
   "news": [
     {
+      "title": "Baltic states push for EU-wide ban on Russian grain transit",
+      "link": "https://splash247.com/baltic-states-push-for-eu-wide-ban-on-russian-grain-transit/",
+      "pubDate": "Sun, 11 Oct 2026 21:10:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Estonia, Latvia and Lithuania have called for an EU-wide ban on Russian grain transit, seeking to block Moscow from redirecting agricultural exports through European transport networks as disruption in the Black Sea reshapes regional grain flows. The three countries have submitte",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/grain-Port-of-Riga.jpg",
+      "en": {
+        "headline": "Baltic states push for EU-wide ban on Russian grain transit",
+        "summary": "Estonia, Latvia and Lithuania have called for an EU-wide ban on Russian grain transit, seeking to block Moscow from redirecting agricultural exports through European transport networks as disruption in the Black Sea reshapes regional grain flows. The three countries have submitte",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Danaos plots Norwegian listing for bulker business",
+      "link": "https://splash247.com/danaos-plots-norwegian-listing-for-bulker-business/",
+      "pubDate": "Sun, 11 Oct 2026 20:40:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Greek owner Danaos is exploring a carve-out of its dry bulk business and the sale of a minority stake through a potential listing in Norway. The New York-listed John Coustas-led company said it has mandated investment banks to advise on a possible equity placement and listing, de",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/John-Coustas-Danaos.jpg",
+      "en": {
+        "headline": "Danaos plots Norwegian listing for bulker business",
+        "summary": "Greek owner Danaos is exploring a carve-out of its dry bulk business and the sale of a minority stake through a potential listing in Norway. The New York-listed John Coustas-led company said it has mandated investment banks to advise on a possible equity placement and listing, de",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Shipping&#8217;s extraordinary boom refuses to peak",
+      "link": "https://splash247.com/shippings-extraordinary-boom-refuses-to-peak/",
+      "pubDate": "Sun, 11 Oct 2026 20:20:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Global shipping earnings have reached another extraordinary milestone, with Clarksons Research&#8217;s cross-sector ClarkSea Index surging 12% in a week to an unprecedented $84,951 a day, its fifth consecutive all-time high. The index, a widely followed overall earnings barometer",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/11/Monaco-champagne.jpg",
+      "en": {
+        "headline": "Shipping&#8217;s extraordinary boom refuses to peak",
+        "summary": "Global shipping earnings have reached another extraordinary milestone, with Clarksons Research&#8217;s cross-sector ClarkSea Index surging 12% in a week to an unprecedented $84,951 a day, its fifth consecutive all-time high. The index, a widely followed overall earnings barometer",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Star Bulk sells down kamsarmax pair to Hermes",
+      "link": "https://splash247.com/star-bulk-sells-down-kamsarmax-pair-to-hermes/",
+      "pubDate": "Sun, 11 Oct 2026 20:00:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Nasdaq-listed Greek dry bulk heavyweight Star Bulk Carriers has agreed to sell a 35% ownership interest in two recently built kamsarmax bulkers to Itochu&#8217;s investment and asset-holding vehicle, Hermes World Maritime, while retaining commercial and technical management of bo",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/10/Star-Angelina-kamsarmax-Star-Bulk.jpg",
+      "en": {
+        "headline": "Star Bulk sells down kamsarmax pair to Hermes",
+        "summary": "Nasdaq-listed Greek dry bulk heavyweight Star Bulk Carriers has agreed to sell a 35% ownership interest in two recently built kamsarmax bulkers to Itochu&#8217;s investment and asset-holding vehicle, Hermes World Maritime, while retaining commercial and technical management of bo",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Ship recycling drought leaves record ageing fleet afloat",
+      "link": "https://splash247.com/ship-recycling-drought-leaves-record-ageing-fleet-afloat/",
+      "pubDate": "Sun, 11 Oct 2026 19:54:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Ship recycling has sunk into its longest sustained slump in more than half a century, just as the global merchant fleet accumulates an unprecedented amount of ageing tonnage. Clarksons Research calculates that just 273 ships of 5.5m gt, equivalent to around 8m dwt, were sold for ",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2016/04/ShipBreaking_demolition_Bangladesh-scaled.jpg",
+      "en": {
+        "headline": "Ship recycling drought leaves record ageing fleet afloat",
+        "summary": "Ship recycling has sunk into its longest sustained slump in more than half a century, just as the global merchant fleet accumulates an unprecedented amount of ageing tonnage. Clarksons Research calculates that just 273 ships of 5.5m gt, equivalent to around 8m dwt, were sold for ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Ningbo Ocean eyes two car carriers in $480m leasing plan",
+      "link": "https://splash247.com/ningbo-ocean-eyes-two-car-carriers-in-480m-leasing-plan/",
+      "pubDate": "Sun, 11 Oct 2026 19:40:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "China&#8217;s Ningbo Ocean Shipping is looking to add two 7,000 ceu LNG dual-fuel car carriers under a long-term leasing programme, with potential rental payments of up to $480m. The Shanghai-listed carrier disclosed the plan in a stock exchange filing, saying it or one of its su",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Chery-Car-China.jpg",
+      "en": {
+        "headline": "Ningbo Ocean eyes two car carriers in $480m leasing plan",
+        "summary": "China&#8217;s Ningbo Ocean Shipping is looking to add two 7,000 ceu LNG dual-fuel car carriers under a long-term leasing programme, with potential rental payments of up to $480m. The Shanghai-listed carrier disclosed the plan in a stock exchange filing, saying it or one of its su",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Chinese shipping investor makes play for asphalt tanker owner Xin Yuan",
+      "link": "https://splash247.com/chinese-shipping-investor-makes-play-for-asphalt-tanker-owner-xin-yuan/",
+      "pubDate": "Sun, 11 Oct 2026 19:15:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Chinese shipping entrepreneur Liu Jichun is seeking control of Hong Kong-listed asphalt tanker operator Xin Yuan Enterprises through a proposed cash takeover worth up to HK$771m ($99m). Liu&#8217;s investment vehicle Ocean Vivo has announced a voluntary conditional offer of HK$2.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/XIN-YUAN-Asphalt-tanker.jpg",
+      "en": {
+        "headline": "Chinese shipping investor makes play for asphalt tanker owner Xin Yuan",
+        "summary": "Chinese shipping entrepreneur Liu Jichun is seeking control of Hong Kong-listed asphalt tanker operator Xin Yuan Enterprises through a proposed cash takeover worth up to HK$771m ($99m). Liu&#8217;s investment vehicle Ocean Vivo has announced a voluntary conditional offer of HK$2.",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Republican Senator Says Trump&#8217;s Russian Diesel Deal May Be Illegal",
+      "link": "https://gcaptain.com/republican-senator-says-trumps-russian-diesel-deal-may-be-illegal/",
+      "pubDate": "Sun, 11 Oct 2026 17:31:37 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By Jan Wolfe Oct 11 (Reuters) &#8211; Republican US Senator Thom Tillis on Sunday said President Donald Trump&#8217;s diesel supply deal with Russia may be illegal and will put American lives at risk, adding to bipartisan...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-09T052058Z_770736808_RC217KA5FP4Y_RTRMADP_3_IRAN-CRISIS-USA-ASIA-OIL-800x533.jpg",
+      "en": {
+        "headline": "Republican Senator Says Trump&#8217;s Russian Diesel Deal May Be Illegal",
+        "summary": "By Jan Wolfe Oct 11 (Reuters) &#8211; Republican US Senator Thom Tillis on Sunday said President Donald Trump&#8217;s diesel supply deal with Russia may be illegal and will put American lives at risk, adding to bipartisan...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "More Tankers Hit in Hormuz as U.S. Strikes Cargo Ship",
       "link": "https://gcaptain.com/more-tankers-hit-in-hormuz-as-u-s-strikes-cargo-ship/",
       "pubDate": "Sun, 11 Oct 2026 14:28:20 +0000",
@@ -244,7 +380,7 @@
       "summary": "Two more tankers have been struck in the Strait of Hormuz as U.S. forces disable a cargo vessel in the Gulf of Oman, extending a sharp escalation in attacks on commercial shipping.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 6,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/CENTCOM-disables-cargo-vessel-800x488.jpg",
       "en": {
         "headline": "More Tankers Hit in Hormuz as U.S. Strikes Cargo Ship",
@@ -261,7 +397,7 @@
       "summary": "Attacks on commercial shipping are spreading deeper into the Gulf as Iran widens its campaign beyond Hormuz, with a fully laden VLCC struck off the UAE and another tanker hit in the strait over the weekend. The Panama-flagged, 302,000 dwt Gem No.2 was struck by an unidentified pr",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/US-Central-Command-Epic-Fury-Iran.jpeg",
       "en": {
         "headline": "Tanker war spreads across Gulf",
@@ -278,7 +414,7 @@
       "summary": "By Joyce Lee SEOUL, Oct 11 (Reuters)&#160;&#8211;&#160;A South Korean container ship completed the country&#8217;s first commercial round trip to Europe via the Arctic on Sunday, as authorities bank on the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-11T005110Z_956381607_RC28HNAVUEV7_RTRMADP_3_SOUTHKOREA-SHIPPING-ARCTIC-800x533.jpg",
       "en": {
         "headline": "South Korea Completes Arctic-Europe Commercial Voyage",
@@ -292,14 +428,14 @@
       "pubDate": "Sun, 11 Oct 2026 03:02:36 +0000",
       "source": "gCaptain",
       "category": "Trade",
-      "summary": "Oct 10 (Reuters) &#8211; The US military said on Saturday it had disabled a commercial cargo vessel in the Gulf of Oman after the ship&#8217;s crew ignored warnings and attempted to run...",
+      "summary": "Oct 10 (Reuters)&#160;&#8211;&#160;The US military said on Saturday it had disabled a commercial cargo vessel in the Gulf of Oman after the ship&#8217;s crew ignored warnings and attempted to run...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-11T013810Z_669292727_RC2P0OAUY3KB_RTRMADP_3_IRAN-CRISIS-USA-VESSELS-800x450.jpg",
       "en": {
         "headline": "US Says It Disabled Cargo Vessel Trying To Run Iran Blockade",
-        "summary": "Oct 10 (Reuters) &#8211; The US military said on Saturday it had disabled a commercial cargo vessel in the Gulf of Oman after the ship&#8217;s crew ignored warnings and attempted to run...",
+        "summary": "Oct 10 (Reuters)&#160;&#8211;&#160;The US military said on Saturday it had disabled a commercial cargo vessel in the Gulf of Oman after the ship&#8217;s crew ignored warnings and attempted to run...",
         "source": "gCaptain"
       }
     },
@@ -312,7 +448,7 @@
       "summary": "By&#160;Patrick Van Oosterom Oct 9, 2026 (Bloomberg) &#8211;The Dutch government proposed a legal change to crack down more effectively on Russia’s shadow fleet, prompting the Russian embassy to threaten its...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 21,
+      "hoursAgo": 25,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/2025-10-02T143648Z_1101364240_RC2P3HAFRW2M_RTRMADP_3_FRANCE-TANKER.jpg",
       "en": {
         "headline": "Dutch Propose Law To Crack Down On Russian Shadow Fleet",
@@ -329,7 +465,7 @@
       "summary": "Oct 10 (Reuters) &#8211; The United Arab Emirates National Guard said on Saturday it had rescued 22 Asian crew members after a fire broke out aboard an oil tanker in Gulf waters....",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 21,
+      "hoursAgo": 25,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-03-12T084223Z_2111125280_RC2W2KABZV16_RTRMADP_3_IRAN-CRISIS-IRAQ-TANKERS-800x450.jpg",
       "en": {
         "headline": "UAE Rescues 22 Crew Members After Oil Tanker Catches Fire In Gulf",
@@ -346,7 +482,7 @@
       "summary": "By&#160;Lucia Kassai Oct 9, 2026 (Bloomberg) &#8211;When hurricanes sweep through the Gulf of Mexico, oil companies can lose millions of dollars waiting for the all-clear to restart production. Shell Plc...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 21,
+      "hoursAgo": 26,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/08/mars-b-project-gulf-of-mexico.jpeg",
       "en": {
         "headline": "Tiny Drones Help Tackle Shell’s Million-Dollar Hurricane Problem",
@@ -363,147 +499,11 @@
       "summary": "The Panama Canal has emerged largely unscathed from a powerful earthquake that struck Panama on Friday, with vessel transits continuing normally despite damage elsewhere across the Central American country. The magnitude 7.7 earthquake struck at 12.56pm local time, according to t",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 34,
+      "hoursAgo": 38,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/11/ONE-Panama-Canal.jpg",
       "en": {
         "headline": "Panama Canal unaffected by huge earthquake",
         "summary": "The Panama Canal has emerged largely unscathed from a powerful earthquake that struck Panama on Friday, with vessel transits continuing normally despite damage elsewhere across the Central American country. The magnitude 7.7 earthquake struck at 12.56pm local time, according to t",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Fire-stricken HMM boxship seeks refuge in South Africa",
-      "link": "https://splash247.com/fire-stricken-hmm-boxship-seeks-refuge-in-south-africa/",
-      "pubDate": "Sat, 10 Oct 2026 06:11:21 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "A fire-damaged HMM containership is seeking a port of refuge in South Africa after salvors were appointed under Lloyd’s Open Form (LOF), with cargo interests facing the prospect of general average. The 5,593 teu HMM Platinum suffered a fire while sailing from Kattupalli, India, t",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 34,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Fire-GPT.jpg",
-      "en": {
-        "headline": "Fire-stricken HMM boxship seeks refuge in South Africa",
-        "summary": "A fire-damaged HMM containership is seeking a port of refuge in South Africa after salvors were appointed under Lloyd’s Open Form (LOF), with cargo interests facing the prospect of general average. The 5,593 teu HMM Platinum suffered a fire while sailing from Kattupalli, India, t",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Trump Strikes Diesel Deal With Putin to Lower Fuel Prices Ahead of Midterms",
-      "link": "https://gcaptain.com/trump-strikes-diesel-deal-with-putin-to-lower-fuel-prices-ahead-of-midterms/",
-      "pubDate": "Fri, 09 Oct 2026 20:34:32 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "President Donald Trump said Friday that Russia has agreed to release millions of tons of diesel fuel into U.S. and global markets following a telephone call with Russian President Vladimir...",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 44,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/05/shutterstock_1990295600.jpg",
-      "en": {
-        "headline": "Trump Strikes Diesel Deal With Putin to Lower Fuel Prices Ahead of Midterms",
-        "summary": "President Donald Trump said Friday that Russia has agreed to release millions of tons of diesel fuel into U.S. and global markets following a telephone call with Russian President Vladimir...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Container Surge Continues at Port of Los Angeles",
-      "link": "https://gcaptain.com/container-surge-continues-at-the-port-of-los-angeles/",
-      "pubDate": "Fri, 09 Oct 2026 17:25:12 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Port of Los Angeles reported its best single month in its history. In a media briefing, port executive director Gene Seroka announced the port processed 1,042,652 TEUs, 23k TEUs more than the July 2025 record.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 47,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Pier-300-Channel.jpg",
-      "en": {
-        "headline": "Container Surge Continues at Port of Los Angeles",
-        "summary": "The Port of Los Angeles reported its best single month in its history. In a media briefing, port executive director Gene Seroka announced the port processed 1,042,652 TEUs, 23k TEUs more than the July 2025 record.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Vessel Struck by Unknown Projectile Off UAE Coast Amid Surge in Attacks, UKMTO Says",
-      "link": "https://gcaptain.com/vessel-struck-by-unknown-projectile-off-uae-coast-amid-surge-in-attacks-ukmto-says/",
-      "pubDate": "Fri, 09 Oct 2026 16:37:26 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A vessel was struck by an unknown projectile 13 nautical miles west of Al Jazeera in the United Arab Emirates on Friday, causing a fire that has since been extinguished, British navy affiliated agency UKMTO said, citing multiple sources.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 48,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Screenshot-2026-10-09-at-6.35.51-PM.jpg",
-      "en": {
-        "headline": "Vessel Struck by Unknown Projectile Off UAE Coast Amid Surge in Attacks, UKMTO Says",
-        "summary": "A vessel was struck by an unknown projectile 13 nautical miles west of Al Jazeera in the United Arab Emirates on Friday, causing a fire that has since been extinguished, British navy affiliated agency UKMTO said, citing multiple sources.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "From Policy to Practice: Shipping’s Regulatory Autumn Puts Proof on Trial",
-      "link": "https://gcaptain.com/from-policy-to-practice-shippings-regulatory-autumn-puts-proof-on-trial/",
-      "pubDate": "Fri, 09 Oct 2026 16:21:35 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "The past fortnight has delivered a clear reminder that the industry’s regulatory problem is no longer a shortage of rules. It is the widening distance between what is agreed in London and Brussels and what can actually be demonstrated on deck, in the engine room and in a ship’s e",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 48,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-08-17T143930Z_1062791196_RC2RXDA2LAMO_RTRMADP_3_USA-TRUMP-TARIFFS-CANADA-800x533.jpg",
-      "en": {
-        "headline": "From Policy to Practice: Shipping’s Regulatory Autumn Puts Proof on Trial",
-        "summary": "The past fortnight has delivered a clear reminder that the industry’s regulatory problem is no longer a shortage of rules. It is the widening distance between what is agreed in London and Brussels and what can actually be demonstrated on deck, in the engine room and in a ship’s e",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Isaias Puts 500,000 Barrels a Day of Refining Capacity at Risk",
-      "link": "https://gcaptain.com/isaias-puts-500000-barrels-a-day-of-refining-capacity-at-risk/",
-      "pubDate": "Fri, 09 Oct 2026 16:11:58 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Nearly 500,000 barrels a day of oil-refining capacity sit in the projected path of Hurricane Isaias, raising the risk that a US fuel market with no supplies to spare will lose critical output.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 48,
-      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Isaias Puts 500,000 Barrels a Day of Refining Capacity at Risk",
-        "summary": "Nearly 500,000 barrels a day of oil-refining capacity sit in the projected path of Hurricane Isaias, raising the risk that a US fuel market with no supplies to spare will lose critical output.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Global Oil Tanker Shortage is Getting Worse By the Day",
-      "link": "https://gcaptain.com/global-oil-tanker-shortage-is-getting-worse-by-the-day/",
-      "pubDate": "Fri, 09 Oct 2026 16:08:41 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "For a sign of just how extraordinary oil shipping costs have become, consider this: It’s now more expensive to hire a tanker from the US to China than to launch a rocket into space.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 48,
-      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Global Oil Tanker Shortage is Getting Worse By the Day",
-        "summary": "For a sign of just how extraordinary oil shipping costs have become, consider this: It’s now more expensive to hire a tanker from the US to China than to launch a rocket into space.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "CMB.TECH sends world’s first ammonia-powered bulker to sea",
-      "link": "https://splash247.com/cmb-tech-sends-worlds-first-ammonia-powered-bulker-to-sea/",
-      "pubDate": "Fri, 09 Oct 2026 10:44:00 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Belgium’s CMB.TECH has sent the 210,000 dwt Mineral Europa on its maiden voyage to Australia, marking the first deployment of an ammonia-powered dry bulk carrier. The 2026-built newcastlemax is the first of a much larger ammonia-fuelled fleet being rolled out by the Alexander Sav",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 54,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Minral-Europa-Ammonia-bulker-CMB.TECH_.jpg",
-      "en": {
-        "headline": "CMB.TECH sends world’s first ammonia-powered bulker to sea",
-        "summary": "Belgium’s CMB.TECH has sent the 210,000 dwt Mineral Europa on its maiden voyage to Australia, marking the first deployment of an ammonia-powered dry bulk carrier. The 2026-built newcastlemax is the first of a much larger ammonia-fuelled fleet being rolled out by the Alexander Sav",
         "source": "Splash247"
       }
     }
