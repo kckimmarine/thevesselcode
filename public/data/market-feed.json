@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-11T03:02:45.680Z",
-    "benchmarkAsOf": "2026-10-10",
+    "generatedAt": "2026-10-11T11:51:13.720Z",
+    "benchmarkAsOf": "2026-10-09",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-10-10",
-    "updatedLabelKo": "2026-10-10 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-10-09",
+    "updatedLabelKo": "2026-10-09 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -209,21 +209,21 @@
       "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-09T14:16:01.616Z"
+      "asOf": "2026-10-09T19:00:12.168Z"
     },
     "capesizeTc": {
       "value": 4340,
       "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-10T08:52:30.331Z"
+      "asOf": "2026-10-09T19:00:12.257Z"
     },
     "panamaxTc": {
-      "value": 2384,
-      "deltaPct": 0,
+      "value": 2424,
+      "deltaPct": 1.68,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-08T14:26:06.771Z"
+      "asOf": "2026-10-09T19:00:12.286Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,57 @@
   },
   "news": [
     {
+      "title": "Tanker war spreads across Gulf",
+      "link": "https://splash247.com/tanker-war-spreads-across-gulf/",
+      "pubDate": "Sun, 11 Oct 2026 05:40:15 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Attacks on commercial shipping are spreading deeper into the Gulf as Iran widens its campaign beyond Hormuz, with a fully laden VLCC struck off the UAE and another tanker hit in the strait over the weekend. The Panama-flagged, 302,000 dwt Gem No.2 was struck by an unidentified pr",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/US-Central-Command-Epic-Fury-Iran.jpeg",
+      "en": {
+        "headline": "Tanker war spreads across Gulf",
+        "summary": "Attacks on commercial shipping are spreading deeper into the Gulf as Iran widens its campaign beyond Hormuz, with a fully laden VLCC struck off the UAE and another tanker hit in the strait over the weekend. The Panama-flagged, 302,000 dwt Gem No.2 was struck by an unidentified pr",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "South Korea Completes Arctic-Europe Maritime Commercial Voyage",
+      "link": "https://gcaptain.com/south-korea-completes-arctic-europe-maritime-commercial-voyage/",
+      "pubDate": "Sun, 11 Oct 2026 03:34:32 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By Joyce Lee SEOUL, Oct 11 (Reuters)&#160;&#8211;&#160;A South Korean container ship completed the country&#8217;s first commercial round trip to Europe via the Arctic on Sunday, as authorities bank on the...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-11T005110Z_956381607_RC28HNAVUEV7_RTRMADP_3_SOUTHKOREA-SHIPPING-ARCTIC-800x533.jpg",
+      "en": {
+        "headline": "South Korea Completes Arctic-Europe Maritime Commercial Voyage",
+        "summary": "By Joyce Lee SEOUL, Oct 11 (Reuters)&#160;&#8211;&#160;A South Korean container ship completed the country&#8217;s first commercial round trip to Europe via the Arctic on Sunday, as authorities bank on the...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "US Says It Disabled Cargo Vessel Trying To Run Iran Blockade",
+      "link": "https://gcaptain.com/us-says-it-disabled-cargo-vessel-trying-to-run-iran-blockade/",
+      "pubDate": "Sun, 11 Oct 2026 03:02:36 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Oct 10 (Reuters) &#8211; The US military said on Saturday it had disabled a commercial cargo vessel in the Gulf of Oman after the ship&#8217;s crew ignored warnings and attempted to run...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-11T013810Z_669292727_RC2P0OAUY3KB_RTRMADP_3_IRAN-CRISIS-USA-VESSELS-800x450.jpg",
+      "en": {
+        "headline": "US Says It Disabled Cargo Vessel Trying To Run Iran Blockade",
+        "summary": "Oct 10 (Reuters) &#8211; The US military said on Saturday it had disabled a commercial cargo vessel in the Gulf of Oman after the ship&#8217;s crew ignored warnings and attempted to run...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Dutch Propose Law To Crack Down On Russian Shadow Fleet",
       "link": "https://gcaptain.com/dutch-propose-law-to-crack-down-on-russian-shadow-fleet/",
       "pubDate": "Sat, 10 Oct 2026 19:55:21 +0000",
@@ -244,7 +295,7 @@
       "summary": "By&#160;Patrick Van Oosterom Oct 9, 2026 (Bloomberg) &#8211;The Dutch government proposed a legal change to crack down more effectively on Russia’s shadow fleet, prompting the Russian embassy to threaten its...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/2025-10-02T143648Z_1101364240_RC2P3HAFRW2M_RTRMADP_3_FRANCE-TANKER.jpg",
       "en": {
         "headline": "Dutch Propose Law To Crack Down On Russian Shadow Fleet",
@@ -261,7 +312,7 @@
       "summary": "Oct 10 (Reuters) &#8211; The United Arab Emirates National Guard said on Saturday it had rescued 22 Asian crew members after a fire broke out aboard an oil tanker in Gulf waters....",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-03-12T084223Z_2111125280_RC2W2KABZV16_RTRMADP_3_IRAN-CRISIS-IRAQ-TANKERS-800x450.jpg",
       "en": {
         "headline": "UAE Rescues 22 Crew Members After Oil Tanker Catches Fire In Gulf",
@@ -278,7 +329,7 @@
       "summary": "By&#160;Lucia Kassai Oct 9, 2026 (Bloomberg) &#8211;When hurricanes sweep through the Gulf of Mexico, oil companies can lose millions of dollars waiting for the all-clear to restart production. Shell Plc...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/08/mars-b-project-gulf-of-mexico.jpeg",
       "en": {
         "headline": "Tiny Drones Help Tackle Shell’s Million-Dollar Hurricane Problem",
@@ -295,7 +346,7 @@
       "summary": "The Panama Canal has emerged largely unscathed from a powerful earthquake that struck Panama on Friday, with vessel transits continuing normally despite damage elsewhere across the Central American country. The magnitude 7.7 earthquake struck at 12.56pm local time, according to t",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 20,
+      "hoursAgo": 29,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/11/ONE-Panama-Canal.jpg",
       "en": {
         "headline": "Panama Canal unaffected by huge earthquake",
@@ -312,7 +363,7 @@
       "summary": "A fire-damaged HMM containership is seeking a port of refuge in South Africa after salvors were appointed under Lloyd’s Open Form (LOF), with cargo interests facing the prospect of general average. The 5,593 teu HMM Platinum suffered a fire while sailing from Kattupalli, India, t",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 20,
+      "hoursAgo": 29,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Fire-GPT.jpg",
       "en": {
         "headline": "Fire-stricken HMM boxship seeks refuge in South Africa",
@@ -329,7 +380,7 @@
       "summary": "President Donald Trump said Friday that Russia has agreed to release millions of tons of diesel fuel into U.S. and global markets following a telephone call with Russian President Vladimir...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 30,
+      "hoursAgo": 39,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/05/shutterstock_1990295600.jpg",
       "en": {
         "headline": "Trump Strikes Diesel Deal With Putin to Lower Fuel Prices Ahead of Midterms",
@@ -346,7 +397,7 @@
       "summary": "The Port of Los Angeles reported its best single month in its history. In a media briefing, port executive director Gene Seroka announced the port processed 1,042,652 TEUs, 23k TEUs more than the July 2025 record.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 33,
+      "hoursAgo": 42,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Pier-300-Channel.jpg",
       "en": {
         "headline": "Container Surge Continues at Port of Los Angeles",
@@ -363,7 +414,7 @@
       "summary": "A vessel was struck by an unknown projectile 13 nautical miles west of Al Jazeera in the United Arab Emirates on Friday, causing a fire that has since been extinguished, British navy affiliated agency UKMTO said, citing multiple sources.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 34,
+      "hoursAgo": 43,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Screenshot-2026-10-09-at-6.35.51-PM.jpg",
       "en": {
         "headline": "Vessel Struck by Unknown Projectile Off UAE Coast Amid Surge in Attacks, UKMTO Says",
@@ -380,7 +431,7 @@
       "summary": "The past fortnight has delivered a clear reminder that the industry’s regulatory problem is no longer a shortage of rules. It is the widening distance between what is agreed in London and Brussels and what can actually be demonstrated on deck, in the engine room and in a ship’s e",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 34,
+      "hoursAgo": 43,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-08-17T143930Z_1062791196_RC2RXDA2LAMO_RTRMADP_3_USA-TRUMP-TARIFFS-CANADA-800x533.jpg",
       "en": {
         "headline": "From Policy to Practice: Shipping’s Regulatory Autumn Puts Proof on Trial",
@@ -397,7 +448,7 @@
       "summary": "Nearly 500,000 barrels a day of oil-refining capacity sit in the projected path of Hurricane Isaias, raising the risk that a US fuel market with no supplies to spare will lose critical output.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 34,
+      "hoursAgo": 43,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/20262821321_GOES19-ABI-CONUS-GEOCOLOR-2500x1500-1-800x480.jpg",
       "en": {
         "headline": "Isaias Puts 500,000 Barrels a Day of Refining Capacity at Risk",
@@ -414,8 +465,8 @@
       "summary": "For a sign of just how extraordinary oil shipping costs have become, consider this: It’s now more expensive to hire a tanker from the US to China than to launch a rocket into space.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 34,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/06/2025-06-13T080424Z_1950987916_RC2J1FAFYBE2_RTRMADP_3_OIL-SHIPPING-HORMUZ-800x498.jpg",
+      "hoursAgo": 43,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Global Oil Tanker Shortage is Getting Worse By the Day",
         "summary": "For a sign of just how extraordinary oil shipping costs have become, consider this: It’s now more expensive to hire a tanker from the US to China than to launch a rocket into space.",
@@ -431,45 +482,11 @@
       "summary": "A commercial vessel was struck by a projectile in the Persian Gulf on Friday, sparking a fire onboard in the second reported attack on shipping inside the Gulf in just...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 37,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
+      "hoursAgo": 46,
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Second Ship Struck Inside Persian Gulf in Three Days",
         "summary": "A commercial vessel was struck by a projectile in the Persian Gulf on Friday, sparking a fire onboard in the second reported attack on shipping inside the Gulf in just...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Hurricane Isaias Strengthens Into Major Category 3 Storm Ahead of Gulf Coast Landfall",
-      "link": "https://gcaptain.com/hurricane-isaias-strengthens-into-major-category-3-storm-ahead-of-gulf-coast-landfall/",
-      "pubDate": "Fri, 09 Oct 2026 13:35:54 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Hurricane Isaias strengthened into a major Category 3 hurricane Friday morning, with sustained winds reaching 120 mph as the storm approached the northern Gulf Coast, threatening life-threatening storm surge and...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 37,
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Hurricane Isaias Strengthens Into Major Category 3 Storm Ahead of Gulf Coast Landfall",
-        "summary": "Hurricane Isaias strengthened into a major Category 3 hurricane Friday morning, with sustained winds reaching 120 mph as the storm approached the northern Gulf Coast, threatening life-threatening storm surge and...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Equinor Brings Shell Into $14 Billion Bay du Nord Project",
-      "link": "https://gcaptain.com/equinor-brings-shell-into-14-billion-bay-du-nord-project/",
-      "pubDate": "Fri, 09 Oct 2026 13:25:14 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Shell has agreed to acquire a 30% stake in Equinor&#8217;s Bay du Nord offshore oil project in Canada, bringing a new partner into the estimated C$14 billion development as it...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 37,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Equinor Brings Shell Into $14 Billion Bay du Nord Project",
-        "summary": "Shell has agreed to acquire a 30% stake in Equinor&#8217;s Bay du Nord offshore oil project in Canada, bringing a new partner into the estimated C$14 billion development as it...",
         "source": "gCaptain"
       }
     },
@@ -482,28 +499,11 @@
       "summary": "Belgium’s CMB.TECH has sent the 210,000 dwt Mineral Europa on its maiden voyage to Australia, marking the first deployment of an ammonia-powered dry bulk carrier. The 2026-built newcastlemax is the first of a much larger ammonia-fuelled fleet being rolled out by the Alexander Sav",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 40,
+      "hoursAgo": 49,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Minral-Europa-Ammonia-bulker-CMB.TECH_.jpg",
       "en": {
         "headline": "CMB.TECH sends world’s first ammonia-powered bulker to sea",
         "summary": "Belgium’s CMB.TECH has sent the 210,000 dwt Mineral Europa on its maiden voyage to Australia, marking the first deployment of an ammonia-powered dry bulk carrier. The 2026-built newcastlemax is the first of a much larger ammonia-fuelled fleet being rolled out by the Alexander Sav",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "BIMCO moves to break ship retrofit cost deadlock",
-      "link": "https://splash247.com/bimco-moves-to-break-ship-retrofit-cost-deadlock/",
-      "pubDate": "Fri, 09 Oct 2026 10:20:03 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Shipping association BIMCO has adopted a new contractual framework designed to settle one of the industry&#8217;s longstanding commercial disputes: who pays for energy-saving upgrades when the charterer receives much of the financial benefit. The Copenhagen-based organisation ann",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 40,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/LR-retrofit-report-photo.jpg",
-      "en": {
-        "headline": "BIMCO moves to break ship retrofit cost deadlock",
-        "summary": "Shipping association BIMCO has adopted a new contractual framework designed to settle one of the industry&#8217;s longstanding commercial disputes: who pays for energy-saving upgrades when the charterer receives much of the financial benefit. The Copenhagen-based organisation ann",
         "source": "Splash247"
       }
     }
