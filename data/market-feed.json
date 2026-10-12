@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-12T13:57:46.815Z",
+    "generatedAt": "2026-10-12T23:58:43.826Z",
     "benchmarkAsOf": "2026-10-12",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -183,9 +183,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 1010,
-        "deltaPct": 0,
-        "asOf": "2026-10-09T22:41:14.811Z",
+        "priceUsdMt": 995,
+        "deltaPct": -1.49,
+        "asOf": "2026-10-12T22:41:17.100Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 950,
-        "deltaPct": 0,
-        "asOf": "2026-10-09T22:41:14.782Z",
+        "priceUsdMt": 955,
+        "deltaPct": 0.53,
+        "asOf": "2026-10-12T22:41:17.071Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,24 +206,24 @@
   "indices": {
     "bdi": {
       "value": 2852,
-      "deltaPct": -2.23,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-12T13:30:35.446Z"
+      "asOf": "2026-10-12T22:00:09.669Z"
     },
     "capesizeTc": {
-      "value": 4340,
-      "deltaPct": 0,
+      "value": 4148,
+      "deltaPct": -4.42,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-09T19:00:12.257Z"
+      "asOf": "2026-10-12T22:00:09.704Z"
     },
     "panamaxTc": {
-      "value": 2424,
-      "deltaPct": 0,
+      "value": 2432,
+      "deltaPct": 0.33,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-09T19:00:12.286Z"
+      "asOf": "2026-10-12T22:00:09.716Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,227 @@
   },
   "news": [
     {
+      "title": "Matson Christens First of Three New Aloha Class Containerships at Hanwha Philly Shipyard",
+      "link": "https://gcaptain.com/matson-christens-first-of-three-new-aloha-class-containerships-at-hanwha-philly-shipyard/",
+      "pubDate": "Mon, 12 Oct 2026 22:14:59 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Matson has christened the first of three new Jones Act containerships at Hanwha Philly Shipyard, marking another milestone in the carrier&#8217;s $1 billion fleet renewal program as the Philadelphia yard...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Makua-christening.jpg",
+      "en": {
+        "headline": "Matson Christens First of Three New Aloha Class Containerships at Hanwha Philly Shipyard",
+        "summary": "Matson has christened the first of three new Jones Act containerships at Hanwha Philly Shipyard, marking another milestone in the carrier&#8217;s $1 billion fleet renewal program as the Philadelphia yard...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Britain urges ships to prepare for life without reliable GPS",
+      "link": "https://splash247.com/britain-urges-ships-to-prepare-for-life-without-reliable-gps/",
+      "pubDate": "Mon, 12 Oct 2026 20:29:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Britain has warned shipowners that satellite navigation can no longer be taken for granted in some of the world&#8217;s busiest shipping regions, urging crews to practise navigating without GPS as jamming and spoofing become increasingly widespread. In a new Marine Guidance Note,",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/LEO-satellite-2025_.jpg",
+      "en": {
+        "headline": "Britain urges ships to prepare for life without reliable GPS",
+        "summary": "Britain has warned shipowners that satellite navigation can no longer be taken for granted in some of the world&#8217;s busiest shipping regions, urging crews to practise navigating without GPS as jamming and spoofing become increasingly widespread. In a new Marine Guidance Note,",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Moxie Media to Launch Moxie Connect 2026 Event Alongside the International WorkBoat Show",
+      "link": "https://gcaptain.com/moxie-media-to-launch-moxie-connect-2026-event-alongside-the-international-workboat-show/",
+      "pubDate": "Mon, 12 Oct 2026 20:25:25 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Moxie Media will host its first dedicated user event, Moxie Connect: User Conference 2026, a complimentary event open to all maritime professionals, on Wednesday, December 2, at the Ernest N....",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/mariner_OFFuser-Trainingportal_dashboard.jpg",
+      "en": {
+        "headline": "Moxie Media to Launch Moxie Connect 2026 Event Alongside the International WorkBoat Show",
+        "summary": "Moxie Media will host its first dedicated user event, Moxie Connect: User Conference 2026, a complimentary event open to all maritime professionals, on Wednesday, December 2, at the Ernest N....",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Europe&#8217;s shore power deadline is racing ahead of the grid",
+      "link": "https://splash247.com/europes-shore-power-deadline-is-racing-ahead-of-the-grid/",
+      "pubDate": "Mon, 12 Oct 2026 20:23:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Two EU regulations will require ports to provide shore power and ships to use it from 2030. But with grid upgrades taking up to a decade, the infrastructure needed to meet the deadline is struggling to keep pace. Alex Byelyavtsev reports. By 2030 two EU rules meet at the quay. AF",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/02/Shore-power.jpg",
+      "en": {
+        "headline": "Europe&#8217;s shore power deadline is racing ahead of the grid",
+        "summary": "Two EU regulations will require ports to provide shore power and ships to use it from 2030. But with grid upgrades taking up to a decade, the infrastructure needed to meet the deadline is struggling to keep pace. Alex Byelyavtsev reports. By 2030 two EU rules meet at the quay. AF",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Connecting maritime digitalisation to process",
+      "link": "https://gcaptain.com/connecting-maritime-digitalisation-to-process/",
+      "pubDate": "Mon, 12 Oct 2026 20:19:32 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "While the technology needed to digitalise maritime operations is already here, much remains to be done to ensure organisations and their people are equipped to use it effectively, according to...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Panel-2-800x533.jpg",
+      "en": {
+        "headline": "Connecting maritime digitalisation to process",
+        "summary": "While the technology needed to digitalise maritime operations is already here, much remains to be done to ensure organisations and their people are equipped to use it effectively, according to...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "ABS, U.S. Energy Department Team Up on Nuclear-Powered Ships",
+      "link": "https://gcaptain.com/abs-u-s-energy-department-team-up-on-nuclear-powered-ships/",
+      "pubDate": "Mon, 12 Oct 2026 20:02:26 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The American Bureau of Shipping (ABS) and the U.S. Department of Energy (DOE) have signed an agreement to advance the use of nuclear power in commercial shipping, including nuclear-powered vessels,...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/unnamed-5.jpg",
+      "en": {
+        "headline": "ABS, U.S. Energy Department Team Up on Nuclear-Powered Ships",
+        "summary": "The American Bureau of Shipping (ABS) and the U.S. Department of Energy (DOE) have signed an agreement to advance the use of nuclear power in commercial shipping, including nuclear-powered vessels,...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "ABS and U.S. Department of Energy Sign MOU on Maritime Applications of Advanced Nuclear Technology",
+      "link": "https://gcaptain.com/abs-and-u-s-department-of-energy-sign-mou-on-maritime-applications-of-advanced-nuclear-technology/",
+      "pubDate": "Mon, 12 Oct 2026 19:36:41 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "ABS and the U.S. Department of Energy’s (DOE) Office of Nuclear Energy have signed a memorandum of understanding to advance modern commercial nuclear technology at sea. The agreement spans floating...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/unnamed-5.jpg",
+      "en": {
+        "headline": "ABS and U.S. Department of Energy Sign MOU on Maritime Applications of Advanced Nuclear Technology",
+        "summary": "ABS and the U.S. Department of Energy’s (DOE) Office of Nuclear Energy have signed a memorandum of understanding to advance modern commercial nuclear technology at sea. The agreement spans floating...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Six Ships Struck in Single Day as Hormuz Attacks Accelerate",
+      "link": "https://gcaptain.com/new-reports-reveal-five-more-ships-hit-near-hormuz/",
+      "pubDate": "Mon, 12 Oct 2026 19:27:18 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Six commercial vessels were reported struck in and around the Strait of Hormuz on October 11, including five tankers and a container ship, as attacks on merchant shipping continue to...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
+      "en": {
+        "headline": "Six Ships Struck in Single Day as Hormuz Attacks Accelerate",
+        "summary": "Six commercial vessels were reported struck in and around the Strait of Hormuz on October 11, including five tankers and a container ship, as attacks on merchant shipping continue to...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Soaring Tanker Rates Leave Americas Awash in Crude Oil",
+      "link": "https://gcaptain.com/soaring-tanker-rates-leave-americas-awash-in-crude-oil/",
+      "pubDate": "Mon, 12 Oct 2026 19:19:17 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Dense heavy crude, which oil refiners around the world favor for its typically low cost, is piling up in the Americas as soaring freight rates have stifled exports and US refiners have been running close to their limits.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
+      "en": {
+        "headline": "Soaring Tanker Rates Leave Americas Awash in Crude Oil",
+        "summary": "Dense heavy crude, which oil refiners around the world favor for its typically low cost, is piling up in the Americas as soaring freight rates have stifled exports and US refiners have been running close to their limits.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Deadly Attacks on Saudi Arabia Risk Wider War That Draws In US",
+      "link": "https://gcaptain.com/deadly-attacks-on-saudi-arabia-risk-wider-war-that-draws-in-us/",
+      "pubDate": "Mon, 12 Oct 2026 19:15:42 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "This weekend’s deadly attacks on Riyadh’s main airport have demonstrated the ability of Yemen’s Houthis to strike at the heart of Saudi power, raising the risk of a dangerous escalation that could draw in the US.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-19T114802Z_1980126111_RC28MNAXZ2HR_RTRMADP_3_IRAN-CRISIS-SAUDI-YEMEN-800x450.jpg",
+      "en": {
+        "headline": "Deadly Attacks on Saudi Arabia Risk Wider War That Draws In US",
+        "summary": "This weekend’s deadly attacks on Riyadh’s main airport have demonstrated the ability of Yemen’s Houthis to strike at the heart of Saudi power, raising the risk of a dangerous escalation that could draw in the US.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "EU Targets Major Russian Shipyards in Sweeping Sanctions Expansion",
+      "link": "https://gcaptain.com/eu-targets-major-russian-shipyards-in-sweeping-sanctions-expansion/",
+      "pubDate": "Mon, 12 Oct 2026 17:07:14 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "The European Union has imposed sanctions on some of Russia&#8217;s most important shipyards, including major submarine builders, naval ship-repair facilities and yards involved in commercial vessel construction, as part of...",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-23T141438Z_1013907566_RC22HMAZOHZY_RTRMADP_3_UKRAINE-CRISIS-PORTS-AGRICULTURE-800x555.jpg",
+      "en": {
+        "headline": "EU Targets Major Russian Shipyards in Sweeping Sanctions Expansion",
+        "summary": "The European Union has imposed sanctions on some of Russia&#8217;s most important shipyards, including major submarine builders, naval ship-repair facilities and yards involved in commercial vessel construction, as part of...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Shipping&#8217;s LNG Boom Faces a Methane Problem",
+      "link": "https://gcaptain.com/shippings-lng-boom-faces-a-methane-problem/",
+      "pubDate": "Mon, 12 Oct 2026 15:04:24 +0000",
+      "source": "gCaptain",
+      "category": "Bunker",
+      "summary": "For a decade, LNG has been sold to shipowners as the sensible bridge fuel. Cleaner than heavy fuel oil, widely available and backed by mature engine technology, it has won...",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Isla-Bella-2.jpg",
+      "en": {
+        "headline": "Shipping&#8217;s LNG Boom Faces a Methane Problem",
+        "summary": "For a decade, LNG has been sold to shipowners as the sensible bridge fuel. Cleaner than heavy fuel oil, widely available and backed by mature engine technology, it has won...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Sweden Releases Sanctioned Russian Shadow Fleet Tanker After Seven-Month Detention",
+      "link": "https://gcaptain.com/sweden-releases-sanctioned-russian-shadow-fleet-tanker-after-seven-month-detention/",
+      "pubDate": "Mon, 12 Oct 2026 14:45:10 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Swedish authorities have cleared the sanctioned tanker Sea Owl 1 to leave the country after nearly seven months at anchor, following confirmation that the vessel is now legitimately registered under...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 9,
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "Sweden Releases Sanctioned Russian Shadow Fleet Tanker After Seven-Month Detention",
+        "summary": "Swedish authorities have cleared the sanctioned tanker Sea Owl 1 to leave the country after nearly seven months at anchor, following confirmation that the vessel is now legitimately registered under...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Yangzijiang Maritime adds kamsarmax bulkers to newbuild spree",
       "link": "https://splash247.com/yangzijiang-maritime-adds-kamsarmax-bulkers-to-newbuild-spree/",
       "pubDate": "Mon, 12 Oct 2026 11:04:34 +0000",
@@ -244,7 +465,7 @@
       "summary": "Singapore-listed Yangzijiang Maritime Development has struck a bulk carrier newbuilding deal in China, for up to six kamsarmaxes at Jiangsu Watts Energy &#38; Engineering. The Ren Yuanlin-led maritime investment group has signed for four firm 82,000 dwt vessels, with options for ",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 2,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Jiangsu-Watts-Energy-Engineering.jpg",
       "en": {
         "headline": "Yangzijiang Maritime adds kamsarmax bulkers to newbuild spree",
@@ -261,7 +482,7 @@
       "summary": "Malaysian shipping group MISC is preparing another five LNG carrier newbuildings in China after securing a fresh long-term charter award from compatriot Petronas. The Bursa Malaysia-listed owner has accepted a letter of award from Petronas LNG, covering five new LNG carriers on f",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 2,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/MISC-LNG-carrier.jpg",
       "en": {
         "headline": "MISC lines up five more LNG carriers for Petronas",
@@ -278,232 +499,11 @@
       "summary": "Saudi Arabia is looking at ways to expand its oil pipeline capacity to destinations outside the Persian Gulf to 10 million barrels a day within two to three years, said Energy Minister Prince Abdulaziz bin Salman.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-23T145129Z_769493474_RC2AONA83ICM_RTRMADP_3_IRAN-CRISIS-SAUDI-PIPELINE-SATELLITE-2.jpg",
+      "hoursAgo": 13,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Saudi Eyes 10 Million Barrels a Day of Oil Pipe Capacity",
         "summary": "Saudi Arabia is looking at ways to expand its oil pipeline capacity to destinations outside the Persian Gulf to 10 million barrels a day within two to three years, said Energy Minister Prince Abdulaziz bin Salman.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Chinese buyers snap up capesizes",
-      "link": "https://splash247.com/chinese-buyers-snap-up-capesizes/",
-      "pubDate": "Mon, 12 Oct 2026 09:24:00 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "While tankers have dominated headlines in October, Chinese buyers are quietly putting money on the table for more capesize tonnage, emerging behind some of the dry bulk market&#8217;s most eye-catching deals. Estonian outfit Klip Marine is reportedly exiting the segment by sellin",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/08/Shanghai-free-pic.jpg",
-      "en": {
-        "headline": "Chinese buyers snap up capesizes",
-        "summary": "While tankers have dominated headlines in October, Chinese buyers are quietly putting money on the table for more capesize tonnage, emerging behind some of the dry bulk market&#8217;s most eye-catching deals. Estonian outfit Klip Marine is reportedly exiting the segment by sellin",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Ship recycling drought leaves record ageing fleet afloat",
-      "link": "https://splash247.com/ship-recycling-drought-leaves-record-ageing-fleet-afloat/",
-      "pubDate": "Mon, 12 Oct 2026 08:00:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Ship recycling has sunk into its longest sustained slump in more than half a century, just as the global merchant fleet accumulates an unprecedented amount of ageing tonnage. Clarksons Research calculates that just 273 ships of 5.5m gt, equivalent to around 8m dwt, were sold for ",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 5,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2016/04/ShipBreaking_demolition_Bangladesh-scaled.jpg",
-      "en": {
-        "headline": "Ship recycling drought leaves record ageing fleet afloat",
-        "summary": "Ship recycling has sunk into its longest sustained slump in more than half a century, just as the global merchant fleet accumulates an unprecedented amount of ageing tonnage. Clarksons Research calculates that just 273 ships of 5.5m gt, equivalent to around 8m dwt, were sold for ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Shipping&#8217;s extraordinary boom refuses to peak",
-      "link": "https://splash247.com/shippings-extraordinary-boom-refuses-to-peak/",
-      "pubDate": "Mon, 12 Oct 2026 07:45:00 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Global shipping earnings have reached another extraordinary milestone, with Clarksons Research&#8217;s cross-sector ClarkSea Index surging 12% in a week to an unprecedented $84,951 a day, its fifth consecutive all-time high. The index, a widely followed overall earnings barometer",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/11/Monaco-champagne.jpg",
-      "en": {
-        "headline": "Shipping&#8217;s extraordinary boom refuses to peak",
-        "summary": "Global shipping earnings have reached another extraordinary milestone, with Clarksons Research&#8217;s cross-sector ClarkSea Index surging 12% in a week to an unprecedented $84,951 a day, its fifth consecutive all-time high. The index, a widely followed overall earnings barometer",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Tanker war spreads across Gulf",
-      "link": "https://splash247.com/tanker-war-spreads-across-gulf/",
-      "pubDate": "Mon, 12 Oct 2026 07:30:15 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Attacks on commercial shipping are spreading across the Gulf region, with two Indian seafarers missing after a drone struck a tanker off Oman on Sunday and another tanker hit by a projectile while exiting the Strait of Hormuz. The Nicaragua-flagged Petro Dolphin was attacked at S",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/US-Central-Command-Epic-Fury-Iran.jpeg",
-      "en": {
-        "headline": "Tanker war spreads across Gulf",
-        "summary": "Attacks on commercial shipping are spreading across the Gulf region, with two Indian seafarers missing after a drone struck a tanker off Oman on Sunday and another tanker hit by a projectile while exiting the Strait of Hormuz. The Nicaragua-flagged Petro Dolphin was attacked at S",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Danaos and Cetus push dry bulk listing plans in Oslo",
-      "link": "https://splash247.com/danaos-plots-norwegian-listing-for-bulker-business/",
-      "pubDate": "Mon, 12 Oct 2026 07:15:00 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Oslo’s shipping listing pipeline is filling up, with Greek owner Danaos exploring a carve-out of its large-bulker business while handysize specialist Cetus Maritime has hired three banks for a proposed Euronext Growth Oslo float. Cetus has appointed Clarksons Securities, DNB Carn",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/John-Coustas-Danaos.jpg",
-      "en": {
-        "headline": "Danaos and Cetus push dry bulk listing plans in Oslo",
-        "summary": "Oslo’s shipping listing pipeline is filling up, with Greek owner Danaos exploring a carve-out of its large-bulker business while handysize specialist Cetus Maritime has hired three banks for a proposed Euronext Growth Oslo float. Cetus has appointed Clarksons Securities, DNB Carn",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Chinese shipping investor makes play for asphalt tanker owner Xin Yuan",
-      "link": "https://splash247.com/chinese-shipping-investor-makes-play-for-asphalt-tanker-owner-xin-yuan/",
-      "pubDate": "Mon, 12 Oct 2026 06:45:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Chinese shipping entrepreneur Liu Jichun is seeking control of Hong Kong-listed asphalt tanker operator Xin Yuan Enterprises through a proposed cash takeover worth up to HK$771m ($99m). Liu&#8217;s investment vehicle Ocean Vivo has announced a voluntary conditional offer of HK$2.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/XIN-YUAN-Asphalt-tanker.jpg",
-      "en": {
-        "headline": "Chinese shipping investor makes play for asphalt tanker owner Xin Yuan",
-        "summary": "Chinese shipping entrepreneur Liu Jichun is seeking control of Hong Kong-listed asphalt tanker operator Xin Yuan Enterprises through a proposed cash takeover worth up to HK$771m ($99m). Liu&#8217;s investment vehicle Ocean Vivo has announced a voluntary conditional offer of HK$2.",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Baltic states push for EU-wide ban on Russian grain transit",
-      "link": "https://splash247.com/baltic-states-push-for-eu-wide-ban-on-russian-grain-transit/",
-      "pubDate": "Mon, 12 Oct 2026 06:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Estonia, Latvia and Lithuania have called for an EU-wide ban on Russian grain transit, seeking to block Moscow from redirecting agricultural exports through European transport networks as disruption in the Black Sea reshapes regional grain flows. The three countries have submitte",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/grain-Port-of-Riga.jpg",
-      "en": {
-        "headline": "Baltic states push for EU-wide ban on Russian grain transit",
-        "summary": "Estonia, Latvia and Lithuania have called for an EU-wide ban on Russian grain transit, seeking to block Moscow from redirecting agricultural exports through European transport networks as disruption in the Black Sea reshapes regional grain flows. The three countries have submitte",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Two European shipyards find new owners after years of turmoil",
-      "link": "https://splash247.com/two-european-shipyards-find-new-owners-after-years-of-turmoil/",
-      "pubDate": "Mon, 12 Oct 2026 05:30:54 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Two of Europe&#8217;s best-known shipyards are heading into new ownership, with Germany&#8217;s Rheinmetall taking over Romania&#8217;s Mangalia facility and Turkey&#8217;s Kuzey Star Shipyard selected to acquire Croatia&#8217;s Uljanik Brodogradnja 1856. German defence giant Rhe",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2015/01/Damen-Mangalia-Shipyard.jpg",
-      "en": {
-        "headline": "Two European shipyards find new owners after years of turmoil",
-        "summary": "Two of Europe&#8217;s best-known shipyards are heading into new ownership, with Germany&#8217;s Rheinmetall taking over Romania&#8217;s Mangalia facility and Turkey&#8217;s Kuzey Star Shipyard selected to acquire Croatia&#8217;s Uljanik Brodogradnja 1856. German defence giant Rhe",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Iran Says US Response To Its Proposal To Reopen Hormuz Was &#8216;Insufficient&#8217;",
-      "link": "https://gcaptain.com/iran-says-us-response-to-its-proposal-to-reopen-hormuz-was-insufficient/",
-      "pubDate": "Sun, 11 Oct 2026 23:13:00 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "DUBAI, Oct 11 (Reuters) &#8211; The United States&#8217; response to Iran&#8217;s seven conditions in a proposal to reopen the strategic Strait of Hormuz was &#8220;insufficient&#8221;, Iran&#8217;s security chief, Mohsen Rezaei, was quoted by state...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-28T112819Z_711172295_RC26SNAHFL5K_RTRMADP_3_IRAN-CRISIS-HORMUZ-800x533.jpg",
-      "en": {
-        "headline": "Iran Says US Response To Its Proposal To Reopen Hormuz Was &#8216;Insufficient&#8217;",
-        "summary": "DUBAI, Oct 11 (Reuters) &#8211; The United States&#8217; response to Iran&#8217;s seven conditions in a proposal to reopen the strategic Strait of Hormuz was &#8220;insufficient&#8221;, Iran&#8217;s security chief, Mohsen Rezaei, was quoted by state...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Trump Says Russia and Ukraine Agreed to ‘Energy Ceasefire’",
-      "link": "https://gcaptain.com/trump-says-russia-and-ukraine-agreed-to-energy-ceasefire/",
-      "pubDate": "Sun, 11 Oct 2026 23:00:19 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By&#160;Catherine Lucey and María Paula Mijares Torres Oct 11, 2026 (Bloomberg) &#8211;President Donald Trump said Sunday that Russia and Ukraine had agreed to an “energy ceasefire” effective immediately. “Both parties...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-06-03T095437Z_2144405252_RC27MLATVH4Z_RTRMADP_3_UKRAINE-CRISIS-ST-PETERSBURG-ATTACK-800x555.jpg",
-      "en": {
-        "headline": "Trump Says Russia and Ukraine Agreed to ‘Energy Ceasefire’",
-        "summary": "By&#160;Catherine Lucey and María Paula Mijares Torres Oct 11, 2026 (Bloomberg) &#8211;President Donald Trump said Sunday that Russia and Ukraine had agreed to an “energy ceasefire” effective immediately. “Both parties...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Republican Senator Says Trump&#8217;s Russian Diesel Deal May Be Illegal",
-      "link": "https://gcaptain.com/republican-senator-says-trumps-russian-diesel-deal-may-be-illegal/",
-      "pubDate": "Sun, 11 Oct 2026 17:31:37 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By Jan Wolfe Oct 11 (Reuters) &#8211; Republican US Senator Thom Tillis on Sunday said President Donald Trump&#8217;s diesel supply deal with Russia may be illegal and will put American lives at risk, adding to bipartisan...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-09T052058Z_770736808_RC217KA5FP4Y_RTRMADP_3_IRAN-CRISIS-USA-ASIA-OIL-800x533.jpg",
-      "en": {
-        "headline": "Republican Senator Says Trump&#8217;s Russian Diesel Deal May Be Illegal",
-        "summary": "By Jan Wolfe Oct 11 (Reuters) &#8211; Republican US Senator Thom Tillis on Sunday said President Donald Trump&#8217;s diesel supply deal with Russia may be illegal and will put American lives at risk, adding to bipartisan...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "More Tankers Hit in Hormuz as U.S. Strikes Cargo Ship",
-      "link": "https://gcaptain.com/more-tankers-hit-in-hormuz-as-u-s-strikes-cargo-ship/",
-      "pubDate": "Sun, 11 Oct 2026 14:28:20 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Two more tankers have been struck in the Strait of Hormuz as U.S. forces disable a cargo vessel in the Gulf of Oman, extending a sharp escalation in attacks on commercial shipping.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 23,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/CENTCOM-disables-cargo-vessel-800x488.jpg",
-      "en": {
-        "headline": "More Tankers Hit in Hormuz as U.S. Strikes Cargo Ship",
-        "summary": "Two more tankers have been struck in the Strait of Hormuz as U.S. forces disable a cargo vessel in the Gulf of Oman, extending a sharp escalation in attacks on commercial shipping.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "South Korea Completes Arctic-Europe Commercial Voyage",
-      "link": "https://gcaptain.com/south-korea-completes-arctic-europe-maritime-commercial-voyage/",
-      "pubDate": "Sun, 11 Oct 2026 03:34:32 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By Joyce Lee SEOUL, Oct 11 (Reuters)&#160;&#8211;&#160;A South Korean container ship completed the country&#8217;s first commercial round trip to Europe via the Arctic on Sunday, as authorities bank on the...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 34,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-11T005110Z_956381607_RC28HNAVUEV7_RTRMADP_3_SOUTHKOREA-SHIPPING-ARCTIC-800x533.jpg",
-      "en": {
-        "headline": "South Korea Completes Arctic-Europe Commercial Voyage",
-        "summary": "By Joyce Lee SEOUL, Oct 11 (Reuters)&#160;&#8211;&#160;A South Korean container ship completed the country&#8217;s first commercial round trip to Europe via the Arctic on Sunday, as authorities bank on the...",
         "source": "gCaptain"
       }
     }
