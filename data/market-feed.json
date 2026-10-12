@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-11T21:16:41.158Z",
+    "generatedAt": "2026-10-12T03:26:05.880Z",
     "benchmarkAsOf": "2026-10-09",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -236,6 +236,40 @@
   },
   "news": [
     {
+      "title": "Iran Says US Response To Its Proposal To Reopen Hormuz Was &#8216;Insufficient&#8217;",
+      "link": "https://gcaptain.com/iran-says-us-response-to-its-proposal-to-reopen-hormuz-was-insufficient/",
+      "pubDate": "Sun, 11 Oct 2026 23:13:00 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "DUBAI, Oct 11 (Reuters) &#8211; The United States&#8217; response to Iran&#8217;s seven conditions in a proposal to reopen the strategic Strait of Hormuz was &#8220;insufficient&#8221;, Iran&#8217;s security chief, Mohsen Rezaei, was quoted by state...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-28T112819Z_711172295_RC26SNAHFL5K_RTRMADP_3_IRAN-CRISIS-HORMUZ-800x533.jpg",
+      "en": {
+        "headline": "Iran Says US Response To Its Proposal To Reopen Hormuz Was &#8216;Insufficient&#8217;",
+        "summary": "DUBAI, Oct 11 (Reuters) &#8211; The United States&#8217; response to Iran&#8217;s seven conditions in a proposal to reopen the strategic Strait of Hormuz was &#8220;insufficient&#8221;, Iran&#8217;s security chief, Mohsen Rezaei, was quoted by state...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Trump Says Russia and Ukraine Agreed to ‘Energy Ceasefire’",
+      "link": "https://gcaptain.com/trump-says-russia-and-ukraine-agreed-to-energy-ceasefire/",
+      "pubDate": "Sun, 11 Oct 2026 23:00:19 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By&#160;Catherine Lucey and María Paula Mijares Torres Oct 11, 2026 (Bloomberg) &#8211;President Donald Trump said Sunday that Russia and Ukraine had agreed to an “energy ceasefire” effective immediately. “Both parties...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-06-03T095437Z_2144405252_RC27MLATVH4Z_RTRMADP_3_UKRAINE-CRISIS-ST-PETERSBURG-ATTACK-800x555.jpg",
+      "en": {
+        "headline": "Trump Says Russia and Ukraine Agreed to ‘Energy Ceasefire’",
+        "summary": "By&#160;Catherine Lucey and María Paula Mijares Torres Oct 11, 2026 (Bloomberg) &#8211;President Donald Trump said Sunday that Russia and Ukraine had agreed to an “energy ceasefire” effective immediately. “Both parties...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Baltic states push for EU-wide ban on Russian grain transit",
       "link": "https://splash247.com/baltic-states-push-for-eu-wide-ban-on-russian-grain-transit/",
       "pubDate": "Sun, 11 Oct 2026 21:10:00 +0000",
@@ -244,7 +278,7 @@
       "summary": "Estonia, Latvia and Lithuania have called for an EU-wide ban on Russian grain transit, seeking to block Moscow from redirecting agricultural exports through European transport networks as disruption in the Black Sea reshapes regional grain flows. The three countries have submitte",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/grain-Port-of-Riga.jpg",
       "en": {
         "headline": "Baltic states push for EU-wide ban on Russian grain transit",
@@ -261,7 +295,7 @@
       "summary": "Greek owner Danaos is exploring a carve-out of its dry bulk business and the sale of a minority stake through a potential listing in Norway. The New York-listed John Coustas-led company said it has mandated investment banks to advise on a possible equity placement and listing, de",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/John-Coustas-Danaos.jpg",
       "en": {
         "headline": "Danaos plots Norwegian listing for bulker business",
@@ -278,7 +312,7 @@
       "summary": "Global shipping earnings have reached another extraordinary milestone, with Clarksons Research&#8217;s cross-sector ClarkSea Index surging 12% in a week to an unprecedented $84,951 a day, its fifth consecutive all-time high. The index, a widely followed overall earnings barometer",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/11/Monaco-champagne.jpg",
       "en": {
         "headline": "Shipping&#8217;s extraordinary boom refuses to peak",
@@ -295,7 +329,7 @@
       "summary": "Nasdaq-listed Greek dry bulk heavyweight Star Bulk Carriers has agreed to sell a 35% ownership interest in two recently built kamsarmax bulkers to Itochu&#8217;s investment and asset-holding vehicle, Hermes World Maritime, while retaining commercial and technical management of bo",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/10/Star-Angelina-kamsarmax-Star-Bulk.jpg",
       "en": {
         "headline": "Star Bulk sells down kamsarmax pair to Hermes",
@@ -312,7 +346,7 @@
       "summary": "Ship recycling has sunk into its longest sustained slump in more than half a century, just as the global merchant fleet accumulates an unprecedented amount of ageing tonnage. Clarksons Research calculates that just 273 ships of 5.5m gt, equivalent to around 8m dwt, were sold for ",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2016/04/ShipBreaking_demolition_Bangladesh-scaled.jpg",
       "en": {
         "headline": "Ship recycling drought leaves record ageing fleet afloat",
@@ -329,7 +363,7 @@
       "summary": "China&#8217;s Ningbo Ocean Shipping is looking to add two 7,000 ceu LNG dual-fuel car carriers under a long-term leasing programme, with potential rental payments of up to $480m. The Shanghai-listed carrier disclosed the plan in a stock exchange filing, saying it or one of its su",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Chery-Car-China.jpg",
       "en": {
         "headline": "Ningbo Ocean eyes two car carriers in $480m leasing plan",
@@ -346,7 +380,7 @@
       "summary": "Chinese shipping entrepreneur Liu Jichun is seeking control of Hong Kong-listed asphalt tanker operator Xin Yuan Enterprises through a proposed cash takeover worth up to HK$771m ($99m). Liu&#8217;s investment vehicle Ocean Vivo has announced a voluntary conditional offer of HK$2.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/XIN-YUAN-Asphalt-tanker.jpg",
       "en": {
         "headline": "Chinese shipping investor makes play for asphalt tanker owner Xin Yuan",
@@ -363,7 +397,7 @@
       "summary": "By Jan Wolfe Oct 11 (Reuters) &#8211; Republican US Senator Thom Tillis on Sunday said President Donald Trump&#8217;s diesel supply deal with Russia may be illegal and will put American lives at risk, adding to bipartisan...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-09T052058Z_770736808_RC217KA5FP4Y_RTRMADP_3_IRAN-CRISIS-USA-ASIA-OIL-800x533.jpg",
       "en": {
         "headline": "Republican Senator Says Trump&#8217;s Russian Diesel Deal May Be Illegal",
@@ -380,7 +414,7 @@
       "summary": "Two more tankers have been struck in the Strait of Hormuz as U.S. forces disable a cargo vessel in the Gulf of Oman, extending a sharp escalation in attacks on commercial shipping.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/CENTCOM-disables-cargo-vessel-800x488.jpg",
       "en": {
         "headline": "More Tankers Hit in Hormuz as U.S. Strikes Cargo Ship",
@@ -397,7 +431,7 @@
       "summary": "Attacks on commercial shipping are spreading deeper into the Gulf as Iran widens its campaign beyond Hormuz, with a fully laden VLCC struck off the UAE and another tanker hit in the strait over the weekend. The Panama-flagged, 302,000 dwt Gem No.2 was struck by an unidentified pr",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 15,
+      "hoursAgo": 21,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/US-Central-Command-Epic-Fury-Iran.jpeg",
       "en": {
         "headline": "Tanker war spreads across Gulf",
@@ -414,7 +448,7 @@
       "summary": "By Joyce Lee SEOUL, Oct 11 (Reuters)&#160;&#8211;&#160;A South Korean container ship completed the country&#8217;s first commercial round trip to Europe via the Arctic on Sunday, as authorities bank on the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 17,
+      "hoursAgo": 23,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-11T005110Z_956381607_RC28HNAVUEV7_RTRMADP_3_SOUTHKOREA-SHIPPING-ARCTIC-800x533.jpg",
       "en": {
         "headline": "South Korea Completes Arctic-Europe Commercial Voyage",
@@ -431,7 +465,7 @@
       "summary": "Oct 10 (Reuters)&#160;&#8211;&#160;The US military said on Saturday it had disabled a commercial cargo vessel in the Gulf of Oman after the ship&#8217;s crew ignored warnings and attempted to run...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 18,
+      "hoursAgo": 24,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-11T013810Z_669292727_RC2P0OAUY3KB_RTRMADP_3_IRAN-CRISIS-USA-VESSELS-800x450.jpg",
       "en": {
         "headline": "US Says It Disabled Cargo Vessel Trying To Run Iran Blockade",
@@ -448,7 +482,7 @@
       "summary": "By&#160;Patrick Van Oosterom Oct 9, 2026 (Bloomberg) &#8211;The Dutch government proposed a legal change to crack down more effectively on Russia’s shadow fleet, prompting the Russian embassy to threaten its...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 25,
+      "hoursAgo": 31,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/2025-10-02T143648Z_1101364240_RC2P3HAFRW2M_RTRMADP_3_FRANCE-TANKER.jpg",
       "en": {
         "headline": "Dutch Propose Law To Crack Down On Russian Shadow Fleet",
@@ -465,46 +499,12 @@
       "summary": "Oct 10 (Reuters) &#8211; The United Arab Emirates National Guard said on Saturday it had rescued 22 Asian crew members after a fire broke out aboard an oil tanker in Gulf waters....",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 25,
+      "hoursAgo": 31,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-03-12T084223Z_2111125280_RC2W2KABZV16_RTRMADP_3_IRAN-CRISIS-IRAQ-TANKERS-800x450.jpg",
       "en": {
         "headline": "UAE Rescues 22 Crew Members After Oil Tanker Catches Fire In Gulf",
         "summary": "Oct 10 (Reuters) &#8211; The United Arab Emirates National Guard said on Saturday it had rescued 22 Asian crew members after a fire broke out aboard an oil tanker in Gulf waters....",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Tiny Drones Help Tackle Shell’s Million-Dollar Hurricane Problem",
-      "link": "https://gcaptain.com/tiny-drones-help-tackle-shells-million-dollar-hurricane-problem/",
-      "pubDate": "Sat, 10 Oct 2026 19:16:04 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By&#160;Lucia Kassai Oct 9, 2026 (Bloomberg) &#8211;When hurricanes sweep through the Gulf of Mexico, oil companies can lose millions of dollars waiting for the all-clear to restart production. Shell Plc...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 26,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/08/mars-b-project-gulf-of-mexico.jpeg",
-      "en": {
-        "headline": "Tiny Drones Help Tackle Shell’s Million-Dollar Hurricane Problem",
-        "summary": "By&#160;Lucia Kassai Oct 9, 2026 (Bloomberg) &#8211;When hurricanes sweep through the Gulf of Mexico, oil companies can lose millions of dollars waiting for the all-clear to restart production. Shell Plc...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Panama Canal unaffected by huge earthquake",
-      "link": "https://splash247.com/panama-canal-unaffected-by-huge-earthquake/",
-      "pubDate": "Sat, 10 Oct 2026 06:16:55 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The Panama Canal has emerged largely unscathed from a powerful earthquake that struck Panama on Friday, with vessel transits continuing normally despite damage elsewhere across the Central American country. The magnitude 7.7 earthquake struck at 12.56pm local time, according to t",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 38,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/11/ONE-Panama-Canal.jpg",
-      "en": {
-        "headline": "Panama Canal unaffected by huge earthquake",
-        "summary": "The Panama Canal has emerged largely unscathed from a powerful earthquake that struck Panama on Friday, with vessel transits continuing normally despite damage elsewhere across the Central American country. The magnitude 7.7 earthquake struck at 12.56pm local time, according to t",
-        "source": "Splash247"
       }
     }
   ]
