@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-13T13:13:46.384Z",
+    "generatedAt": "2026-10-13T22:06:43.311Z",
     "benchmarkAsOf": "2026-10-13",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -206,24 +206,24 @@
   "indices": {
     "bdi": {
       "value": 2801,
-      "deltaPct": -1.79,
-      "unit": "pts",
-      "source": "market_reporting",
-      "asOf": "2026-10-13T12:45:31.294Z"
-    },
-    "capesizeTc": {
-      "value": 4148,
       "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-13T06:22:20.852Z"
+      "asOf": "2026-10-13T20:00:11.169Z"
+    },
+    "capesizeTc": {
+      "value": 3994,
+      "deltaPct": -3.71,
+      "unit": "pts",
+      "source": "market_reporting",
+      "asOf": "2026-10-13T20:00:11.194Z"
     },
     "panamaxTc": {
       "value": 2432,
       "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-13T06:22:20.900Z"
+      "asOf": "2026-10-13T20:00:11.292Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,159 @@
   },
   "news": [
     {
+      "title": "Port of Los Angeles Sets All-Time Cargo Record as Imports Surge",
+      "link": "https://gcaptain.com/port-of-los-angeles-sets-all-time-cargo-record-as-imports-surge/",
+      "pubDate": "Tue, 13 Oct 2026 20:26:08 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "The Port of Los Angeles handled a record 1,042,652 twenty-foot equivalent units (TEUs) in September, marking the busiest month in its 118-year history as strong consumer demand and shifting global...",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Pier-300-Channel.jpg",
+      "en": {
+        "headline": "Port of Los Angeles Sets All-Time Cargo Record as Imports Surge",
+        "summary": "The Port of Los Angeles handled a record 1,042,652 twenty-foot equivalent units (TEUs) in September, marking the busiest month in its 118-year history as strong consumer demand and shifting global...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Splash Cruise launches with a fresh take on the global cruise business",
+      "link": "https://splash247.com/splash-cruise-launches-with-a-fresh-take-on-the-global-cruise-business/",
+      "pubDate": "Tue, 13 Oct 2026 20:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "SINGAPORE, 14 October 2026 – Splash Maritime Group has officially launched Splash Cruise, a new international news platform dedicated to the business of cruise shipping, bringing the editorial approach that has made Splash a leading independent voice in maritime journalism to the",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Splash-Cruise-Homepage-Launch.jpg",
+      "en": {
+        "headline": "Splash Cruise launches with a fresh take on the global cruise business",
+        "summary": "SINGAPORE, 14 October 2026 – Splash Maritime Group has officially launched Splash Cruise, a new international news platform dedicated to the business of cruise shipping, bringing the editorial approach that has made Splash a leading independent voice in maritime journalism to the",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Saudi Arabia Strikes Houthi Targets as Red Sea War Escalates",
+      "link": "https://gcaptain.com/saudi-arabia-strikes-houthi-targets-as-red-sea-war-escalates/",
+      "pubDate": "Tue, 13 Oct 2026 18:48:46 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "Yemen's Iran-allied Houthis said Saudi Arabia was attacking the Yemeni capital Sanaa on Tuesday after a Saudi-led coalition warned civilians to stay away from an oil depot on the city's outskirts, part of a rapidly escalating war between the sides.",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
+      "en": {
+        "headline": "Saudi Arabia Strikes Houthi Targets as Red Sea War Escalates",
+        "summary": "Yemen's Iran-allied Houthis said Saudi Arabia was attacking the Yemeni capital Sanaa on Tuesday after a Saudi-led coalition warned civilians to stay away from an oil depot on the city's outskirts, part of a rapidly escalating war between the sides.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "ABS Helps Industry Put Augmented Reality to the Test",
+      "link": "https://gcaptain.com/abs-helps-industry-put-augmented-reality-to-the-test/",
+      "pubDate": "Tue, 13 Oct 2026 17:16:14 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Augmented reality (AR) can help industrial crews perform tasks more efficiently and consistently, but widespread deployment will depend on demonstrating that productivity gains can be achieved without compromising safety. That’s...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/http___cdn.prgloo-1.jpg",
+      "en": {
+        "headline": "ABS Helps Industry Put Augmented Reality to the Test",
+        "summary": "Augmented reality (AR) can help industrial crews perform tasks more efficiently and consistently, but widespread deployment will depend on demonstrating that productivity gains can be achieved without compromising safety. That’s...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Fire Forces Crew to Abandon Research Vessel Off Louisiana",
+      "link": "https://gcaptain.com/fire-forces-crew-to-abandon-research-vessel-off-louisiana/",
+      "pubDate": "Tue, 13 Oct 2026 16:36:02 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A fire aboard a seismic research vessel in the Gulf of Mexico forced dozens of crew members to abandon ship Monday, with nearby offshore supply vessels helping bring the evacuees...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Rem-Andes-rescue.jpg",
+      "en": {
+        "headline": "Fire Forces Crew to Abandon Research Vessel Off Louisiana",
+        "summary": "A fire aboard a seismic research vessel in the Gulf of Mexico forced dozens of crew members to abandon ship Monday, with nearby offshore supply vessels helping bring the evacuees...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Supertankers Turn From Gulf Oil Transfer Hub Amid Iran’s Attacks",
+      "link": "https://gcaptain.com/supertankers-turn-from-gulf-oil-transfer-hub-amid-irans-attacks/",
+      "pubDate": "Tue, 13 Oct 2026 16:23:19 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A growing number of empty supertankers have been turning away from the Persian Gulf as escalating Iranian attacks threaten a critical transfer hub for wartime oil shipments.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-24T194006Z_526739983_RC2LD6A7RFZM_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x533.jpg",
+      "en": {
+        "headline": "Supertankers Turn From Gulf Oil Transfer Hub Amid Iran’s Attacks",
+        "summary": "A growing number of empty supertankers have been turning away from the Persian Gulf as escalating Iranian attacks threaten a critical transfer hub for wartime oil shipments.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Trump’s Diesel Deal Irks Allies and Is Unlikely to Reduce Prices",
+      "link": "https://gcaptain.com/trumps-diesel-deal-irks-allies-and-is-unlikely-to-reduce-prices/",
+      "pubDate": "Tue, 13 Oct 2026 16:17:54 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "President Donald Trump’s deal for Russian diesel exposed the US to legal questions, opened a rift with his Republican allies and European leaders and heightened tensions with Ukraine — all in exchange for an outcome that experts suggest is unlikely to succeed.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-10T111832Z_327337754_RC29TMATWR3B_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-PLAN.jpg",
+      "en": {
+        "headline": "Trump’s Diesel Deal Irks Allies and Is Unlikely to Reduce Prices",
+        "summary": "President Donald Trump’s deal for Russian diesel exposed the US to legal questions, opened a rift with his Republican allies and European leaders and heightened tensions with Ukraine — all in exchange for an outcome that experts suggest is unlikely to succeed.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "11 Missing as Drone Attacks Strike Two Ships Near NATO Waters",
+      "link": "https://gcaptain.com/11-missing-as-drone-attacks-strike-two-ships-near-nato-waters/",
+      "pubDate": "Tue, 13 Oct 2026 16:07:50 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Eleven sailors were missing at sea on Tuesday from a ship sunk by a drone attack off the coast of Bulgaria, possibly the second deadly sinking of a cargo vessel in the area in a week, prompting Bulgaria to summon Russia's ambassador.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "11 Missing as Drone Attacks Strike Two Ships Near NATO Waters",
+        "summary": "Eleven sailors were missing at sea on Tuesday from a ship sunk by a drone attack off the coast of Bulgaria, possibly the second deadly sinking of a cargo vessel in the area in a week, prompting Bulgaria to summon Russia's ambassador.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "France Seizes Another &#8216;Shadow Fleet&#8217; Tanker; Russia Decries &#8216;Piracy&#8217;",
+      "link": "https://gcaptain.com/france-seizes-another-shadow-fleet-tanker-russia-decries-piracy/",
+      "pubDate": "Tue, 13 Oct 2026 12:56:21 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "France's military was taking a tanker suspected to be part of Russia's \"shadow fleet\" skirting Western sanctions to Reunion island on Tuesday in what Moscow called another act of \"piracy.\"",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 9,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/83f85d10-6736-422e-8e8b-3f39b76a2b95.jpg",
+      "en": {
+        "headline": "France Seizes Another &#8216;Shadow Fleet&#8217; Tanker; Russia Decries &#8216;Piracy&#8217;",
+        "summary": "France's military was taking a tanker suspected to be part of Russia's \"shadow fleet\" skirting Western sanctions to Reunion island on Tuesday in what Moscow called another act of \"piracy.\"",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "South Korean President Hails Arctic Container Shipping Trial, but Commercial and Sanctions Questions Remain",
       "link": "https://gcaptain.com/south-korean-president-hails-arctic-container-shipping-trial-but-commercial-and-sanctions-questions-remain/",
       "pubDate": "Tue, 13 Oct 2026 12:05:20 +0000",
@@ -244,7 +397,7 @@
       "summary": "South Korean President Lee Jae Myung welcomed the PanStar Acro and its crew home on Tuesday after the container ship completed the country’s first round-trip commercial trial through the Arctic to Europe, hailing the voyage as a potential alternative to traditional shipping lanes",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-13T072921Z_1648706371_RC272OALXTTH_RTRMADP_3_SOUTHKOREA-SHIPPING-ARCTIC-800x503.jpg",
       "en": {
         "headline": "South Korean President Hails Arctic Container Shipping Trial, but Commercial and Sanctions Questions Remain",
@@ -261,7 +414,7 @@
       "summary": "Bulgaria summoned Russia’s ambassador to Sofia after two ships were hit off the country’s coast, as concerns mount over the security of Black Sea shipping.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-13T121115Z_837897891_RC2C2OA50QNT_RTRMADP_3_BULGARIA-INCIDENT-DRONE.jpg",
       "en": {
         "headline": "Bulgaria Points to Russia as Drones Hit More Cargo Ships",
@@ -278,7 +431,7 @@
       "summary": "Dubai-based Emarat Maritime has added another six tanker newbuildings to its rapidly expanding fleet, lining up a series of 74,000 dwt LR1 product carriers in China. The company’s own fleet register now lists six LR1 newbuildings, with the first two scheduled for delivery in 2029",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/12/Jiangsu-New-Hantong-Ship-Heavy-Industry.jpg",
       "en": {
         "headline": "Emarat Maritime piles six more tankers onto China orderbook",
@@ -295,7 +448,7 @@
       "summary": "Malaysia’s Lianson Fleet Group (LFG) has added a third ultramax bulker, paying $23m (RM93.9m) for a 2013-built Japanese vessel as it continues to expand beyond its traditional offshore support vessel business. The Bursa Malaysia-listed company said its wholly owned subsidiary acq",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 2,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2017/01/ultramax-bulk-e1592794814366.jpg",
       "en": {
         "headline": "Lianson Fleet snaps up third ultramax",
@@ -312,7 +465,7 @@
       "summary": "Belgian shipping group CMB.TECH has continued to cash in on elevated tanker values, selling its fifth suezmax this year and locking in another $59.6m capital gain. The Alexander Saverys-led company said it has already delivered the 2011-built, 165,000 dwt Stella to its new owner ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Alexander-Saverys.jpg",
       "en": {
         "headline": "Saverys keeps cashing in on tanker values",
@@ -329,7 +482,7 @@
       "summary": "Chinese bulker owner Fujian Guohang Ocean Shipping is preparing to establish 12 wholly owned shipping companies in Hong Kong as it lays the groundwork for a newbuilding investment programme valued at approximately CNY2.49bn ($372m). The Beijing Stock Exchange-listed company discl",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 3,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Guo-Yuan-8-Fujian-Guohang-Ocean-Shipping.jpg",
       "en": {
         "headline": "Fujian Guohang maps out Hong Kong fleet expansion",
@@ -346,165 +499,12 @@
       "summary": "Italian giant Eni has agreed to sell 10% interests in seven offshore production sharing contracts in Indonesia to Pertamina and MedcoEnergi as it reshapes its portfolio after creating its Searah joint venture with Petronas. The company will sell Pertamina 10% stakes in the East S",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 3,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Eni-headquarters.jpg",
       "en": {
         "headline": "Pertamina and Medco take slices of Eni’s Indonesia offshore assets",
         "summary": "Italian giant Eni has agreed to sell 10% interests in seven offshore production sharing contracts in Indonesia to Pertamina and MedcoEnergi as it reshapes its portfolio after creating its Searah joint venture with Petronas. The company will sell Pertamina 10% stakes in the East S",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "Bluecore takes nuclear barge plan beyond the drawing board",
-      "link": "https://splash247.com/bluecore-takes-nuclear-barge-plan-beyond-the-drawing-board/",
-      "pubDate": "Tue, 13 Oct 2026 09:45:21 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "US maritime nuclear startup Bluecore Energy has secured low-enriched uranium for its first floating power system as it moves ahead simultaneously with fuel, regulatory and class work. The Long Beach-based company has purchased uranium hexafluoride, or UF₆, enriched to 4.95% urani",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Bluecore-Energy.jpeg",
-      "en": {
-        "headline": "Bluecore takes nuclear barge plan beyond the drawing board",
-        "summary": "US maritime nuclear startup Bluecore Energy has secured low-enriched uranium for its first floating power system as it moves ahead simultaneously with fuel, regulatory and class work. The Long Beach-based company has purchased uranium hexafluoride, or UF₆, enriched to 4.95% urani",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Global Ship Lease locks in $1bn loan for boxship spree",
-      "link": "https://splash247.com/global-ship-lease-locks-in-1bn-loan-for-boxship-spree/",
-      "pubDate": "Tue, 13 Oct 2026 09:40:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "New York-listed containership owner Global Ship Lease (GSL) has secured a $1bn syndicated loan facility to finance its expanding newbuilding programme. The George Youroukos-led company said the seven-year facility carries an interest margin of just 1.5% over SOFR and will be draw",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/01/Global-Ship-Lease.jpg",
-      "en": {
-        "headline": "Global Ship Lease locks in $1bn loan for boxship spree",
-        "summary": "New York-listed containership owner Global Ship Lease (GSL) has secured a $1bn syndicated loan facility to finance its expanding newbuilding programme. The George Youroukos-led company said the seven-year facility carries an interest margin of just 1.5% over SOFR and will be draw",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Sweden frees sanctioned tanker after seven months",
-      "link": "https://splash247.com/sweden-frees-sanctioned-tanker-after-seven-months/",
-      "pubDate": "Tue, 13 Oct 2026 09:20:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Swedish authorities have cleared an EU-sanctioned product tanker to leave the country after nearly seven months at anchor following an investigation into its registration and seaworthiness. The Swedish Transport Agency has lifted an operating ban on the 2007-built, 75,000 dwt Sea",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/sea-owl1_1.jpg",
-      "en": {
-        "headline": "Sweden frees sanctioned tanker after seven months",
-        "summary": "Swedish authorities have cleared an EU-sanctioned product tanker to leave the country after nearly seven months at anchor following an investigation into its registration and seaworthiness. The Swedish Transport Agency has lifted an operating ban on the 2007-built, 75,000 dwt Sea",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Britain urges ships to prepare for life without reliable GPS",
-      "link": "https://splash247.com/britain-urges-ships-to-prepare-for-life-without-reliable-gps/",
-      "pubDate": "Tue, 13 Oct 2026 08:29:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Britain has warned shipowners that satellite navigation can no longer be taken for granted in some of the world&#8217;s busiest shipping regions, urging crews to practise navigating without GPS as jamming and spoofing become increasingly widespread. In a new Marine Guidance Note,",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/LEO-satellite-2025_.jpg",
-      "en": {
-        "headline": "Britain urges ships to prepare for life without reliable GPS",
-        "summary": "Britain has warned shipowners that satellite navigation can no longer be taken for granted in some of the world&#8217;s busiest shipping regions, urging crews to practise navigating without GPS as jamming and spoofing become increasingly widespread. In a new Marine Guidance Note,",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Iran threatens ships going dark in Hormuz",
-      "link": "https://splash247.com/iran-threatens-ships-going-dark-in-hormuz/",
-      "pubDate": "Tue, 13 Oct 2026 08:15:47 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Iran has warned that merchant ships switching off their identification and tracking equipment during what it deems unauthorised passages through the Strait of Hormuz will be treated as hostile, raising the stakes for vessels navigating one of the world&#8217;s most dangerous stre",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Al-Maqam-X.com_.jpg",
-      "en": {
-        "headline": "Iran threatens ships going dark in Hormuz",
-        "summary": "Iran has warned that merchant ships switching off their identification and tracking equipment during what it deems unauthorised passages through the Strait of Hormuz will be treated as hostile, raising the stakes for vessels navigating one of the world&#8217;s most dangerous stre",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Matson Christens First Aloha Class Containership at Hanwha Philly Shipyard",
-      "link": "https://gcaptain.com/matson-christens-first-of-three-new-aloha-class-containerships-at-hanwha-philly-shipyard/",
-      "pubDate": "Mon, 12 Oct 2026 22:14:59 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Matson has christened the first of three new Jones Act containerships at Hanwha Philly Shipyard, marking another milestone in the carrier&#8217;s $1 billion fleet renewal program as the Philadelphia yard...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Makua-christening.jpg",
-      "en": {
-        "headline": "Matson Christens First Aloha Class Containership at Hanwha Philly Shipyard",
-        "summary": "Matson has christened the first of three new Jones Act containerships at Hanwha Philly Shipyard, marking another milestone in the carrier&#8217;s $1 billion fleet renewal program as the Philadelphia yard...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Moxie Media to Launch Moxie Connect 2026 Event Alongside the International WorkBoat Show",
-      "link": "https://gcaptain.com/moxie-media-to-launch-moxie-connect-2026-event-alongside-the-international-workboat-show/",
-      "pubDate": "Mon, 12 Oct 2026 20:25:25 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Moxie Media will host its first dedicated user event, Moxie Connect: User Conference 2026, a complimentary event open to all maritime professionals, on Wednesday, December 2, at the Ernest N....",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/mariner_OFFuser-Trainingportal_dashboard.jpg",
-      "en": {
-        "headline": "Moxie Media to Launch Moxie Connect 2026 Event Alongside the International WorkBoat Show",
-        "summary": "Moxie Media will host its first dedicated user event, Moxie Connect: User Conference 2026, a complimentary event open to all maritime professionals, on Wednesday, December 2, at the Ernest N....",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Connecting maritime digitalisation to process",
-      "link": "https://gcaptain.com/connecting-maritime-digitalisation-to-process/",
-      "pubDate": "Mon, 12 Oct 2026 20:19:32 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "While the technology needed to digitalise maritime operations is already here, much remains to be done to ensure organisations and their people are equipped to use it effectively, according to...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Panel-2-800x533.jpg",
-      "en": {
-        "headline": "Connecting maritime digitalisation to process",
-        "summary": "While the technology needed to digitalise maritime operations is already here, much remains to be done to ensure organisations and their people are equipped to use it effectively, according to...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "ABS, U.S. Energy Department Team Up on Nuclear-Powered Ships",
-      "link": "https://gcaptain.com/abs-u-s-energy-department-team-up-on-nuclear-powered-ships/",
-      "pubDate": "Mon, 12 Oct 2026 20:02:26 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The American Bureau of Shipping (ABS) and the U.S. Department of Energy (DOE) have signed an agreement to advance the use of nuclear power in commercial shipping, including nuclear-powered vessels,...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/unnamed-5.jpg",
-      "en": {
-        "headline": "ABS, U.S. Energy Department Team Up on Nuclear-Powered Ships",
-        "summary": "The American Bureau of Shipping (ABS) and the U.S. Department of Energy (DOE) have signed an agreement to advance the use of nuclear power in commercial shipping, including nuclear-powered vessels,...",
-        "source": "gCaptain"
       }
     }
   ]
