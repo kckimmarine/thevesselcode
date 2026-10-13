@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-13T05:44:10.668Z",
-    "benchmarkAsOf": "2026-10-12",
+    "generatedAt": "2026-10-13T13:13:46.384Z",
+    "benchmarkAsOf": "2026-10-13",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-10-12",
-    "updatedLabelKo": "2026-10-12 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-10-13",
+    "updatedLabelKo": "2026-10-13 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 892.5,
-        "deltaPct": 0.34,
+        "deltaPct": 0,
         "asOf": "2026-10-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1247.5,
-        "deltaPct": -2.62,
+        "deltaPct": 0,
         "asOf": "2026-10-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 823,
-        "deltaPct": 1.6,
+        "deltaPct": 0,
         "asOf": "2026-10-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 735,
-        "deltaPct": 2.8,
+        "deltaPct": 0,
         "asOf": "2026-10-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1368.5,
-        "deltaPct": -0.4,
+        "deltaPct": 0,
         "asOf": "2026-10-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 669.5,
-        "deltaPct": 1.59,
+        "deltaPct": 0,
         "asOf": "2026-10-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 757.5,
-        "deltaPct": -0.72,
+        "deltaPct": 0,
         "asOf": "2026-10-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1393.5,
-        "deltaPct": -1.83,
+        "deltaPct": 0,
         "asOf": "2026-10-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -172,7 +172,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 567.5,
-        "deltaPct": -1.48,
+        "deltaPct": 0,
         "asOf": "2026-10-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 2852,
-      "deltaPct": 0,
+      "value": 2801,
+      "deltaPct": -1.79,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-12T22:00:09.669Z"
+      "asOf": "2026-10-13T12:45:31.294Z"
     },
     "capesizeTc": {
       "value": 4148,
       "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-12T22:00:09.704Z"
+      "asOf": "2026-10-13T06:22:20.852Z"
     },
     "panamaxTc": {
       "value": 2432,
       "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-12T22:00:09.716Z"
+      "asOf": "2026-10-13T06:22:20.900Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,210 @@
   },
   "news": [
     {
+      "title": "South Korean President Hails Arctic Container Shipping Trial, but Commercial and Sanctions Questions Remain",
+      "link": "https://gcaptain.com/south-korean-president-hails-arctic-container-shipping-trial-but-commercial-and-sanctions-questions-remain/",
+      "pubDate": "Tue, 13 Oct 2026 12:05:20 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "South Korean President Lee Jae Myung welcomed the PanStar Acro and its crew home on Tuesday after the container ship completed the country’s first round-trip commercial trial through the Arctic to Europe, hailing the voyage as a potential alternative to traditional shipping lanes",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-13T072921Z_1648706371_RC272OALXTTH_RTRMADP_3_SOUTHKOREA-SHIPPING-ARCTIC-800x503.jpg",
+      "en": {
+        "headline": "South Korean President Hails Arctic Container Shipping Trial, but Commercial and Sanctions Questions Remain",
+        "summary": "South Korean President Lee Jae Myung welcomed the PanStar Acro and its crew home on Tuesday after the container ship completed the country’s first round-trip commercial trial through the Arctic to Europe, hailing the voyage as a potential alternative to traditional shipping lanes",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Bulgaria Points to Russia as Drones Hit More Cargo Ships",
+      "link": "https://gcaptain.com/bulgaria-points-to-russia-as-drones-hit-more-cargo-ships/",
+      "pubDate": "Tue, 13 Oct 2026 11:56:00 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Bulgaria summoned Russia’s ambassador to Sofia after two ships were hit off the country’s coast, as concerns mount over the security of Black Sea shipping.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-13T121115Z_837897891_RC2C2OA50QNT_RTRMADP_3_BULGARIA-INCIDENT-DRONE.jpg",
+      "en": {
+        "headline": "Bulgaria Points to Russia as Drones Hit More Cargo Ships",
+        "summary": "Bulgaria summoned Russia’s ambassador to Sofia after two ships were hit off the country’s coast, as concerns mount over the security of Black Sea shipping.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Emarat Maritime piles six more tankers onto China orderbook",
+      "link": "https://splash247.com/emarat-maritime-piles-six-more-tankers-onto-china-orderbook/",
+      "pubDate": "Tue, 13 Oct 2026 11:33:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Dubai-based Emarat Maritime has added another six tanker newbuildings to its rapidly expanding fleet, lining up a series of 74,000 dwt LR1 product carriers in China. The company’s own fleet register now lists six LR1 newbuildings, with the first two scheduled for delivery in 2029",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/12/Jiangsu-New-Hantong-Ship-Heavy-Industry.jpg",
+      "en": {
+        "headline": "Emarat Maritime piles six more tankers onto China orderbook",
+        "summary": "Dubai-based Emarat Maritime has added another six tanker newbuildings to its rapidly expanding fleet, lining up a series of 74,000 dwt LR1 product carriers in China. The company’s own fleet register now lists six LR1 newbuildings, with the first two scheduled for delivery in 2029",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Lianson Fleet snaps up third ultramax",
+      "link": "https://splash247.com/lianson-fleet-snaps-up-third-ultramax/",
+      "pubDate": "Tue, 13 Oct 2026 11:00:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Malaysia’s Lianson Fleet Group (LFG) has added a third ultramax bulker, paying $23m (RM93.9m) for a 2013-built Japanese vessel as it continues to expand beyond its traditional offshore support vessel business. The Bursa Malaysia-listed company said its wholly owned subsidiary acq",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2017/01/ultramax-bulk-e1592794814366.jpg",
+      "en": {
+        "headline": "Lianson Fleet snaps up third ultramax",
+        "summary": "Malaysia’s Lianson Fleet Group (LFG) has added a third ultramax bulker, paying $23m (RM93.9m) for a 2013-built Japanese vessel as it continues to expand beyond its traditional offshore support vessel business. The Bursa Malaysia-listed company said its wholly owned subsidiary acq",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Saverys keeps cashing in on tanker values",
+      "link": "https://splash247.com/saverys-keeps-cashing-in-on-tanker-values/",
+      "pubDate": "Tue, 13 Oct 2026 10:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Belgian shipping group CMB.TECH has continued to cash in on elevated tanker values, selling its fifth suezmax this year and locking in another $59.6m capital gain. The Alexander Saverys-led company said it has already delivered the 2011-built, 165,000 dwt Stella to its new owner ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Alexander-Saverys.jpg",
+      "en": {
+        "headline": "Saverys keeps cashing in on tanker values",
+        "summary": "Belgian shipping group CMB.TECH has continued to cash in on elevated tanker values, selling its fifth suezmax this year and locking in another $59.6m capital gain. The Alexander Saverys-led company said it has already delivered the 2011-built, 165,000 dwt Stella to its new owner ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Fujian Guohang maps out Hong Kong fleet expansion",
+      "link": "https://splash247.com/fujian-guohang-maps-out-hong-kong-fleet-expansion/",
+      "pubDate": "Tue, 13 Oct 2026 10:04:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Chinese bulker owner Fujian Guohang Ocean Shipping is preparing to establish 12 wholly owned shipping companies in Hong Kong as it lays the groundwork for a newbuilding investment programme valued at approximately CNY2.49bn ($372m). The Beijing Stock Exchange-listed company discl",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Guo-Yuan-8-Fujian-Guohang-Ocean-Shipping.jpg",
+      "en": {
+        "headline": "Fujian Guohang maps out Hong Kong fleet expansion",
+        "summary": "Chinese bulker owner Fujian Guohang Ocean Shipping is preparing to establish 12 wholly owned shipping companies in Hong Kong as it lays the groundwork for a newbuilding investment programme valued at approximately CNY2.49bn ($372m). The Beijing Stock Exchange-listed company discl",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Pertamina and Medco take slices of Eni’s Indonesia offshore assets",
+      "link": "https://splash247.com/pertamina-and-medco-take-slices-of-enis-indonesia-offshore-assets/",
+      "pubDate": "Tue, 13 Oct 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Italian giant Eni has agreed to sell 10% interests in seven offshore production sharing contracts in Indonesia to Pertamina and MedcoEnergi as it reshapes its portfolio after creating its Searah joint venture with Petronas. The company will sell Pertamina 10% stakes in the East S",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Eni-headquarters.jpg",
+      "en": {
+        "headline": "Pertamina and Medco take slices of Eni’s Indonesia offshore assets",
+        "summary": "Italian giant Eni has agreed to sell 10% interests in seven offshore production sharing contracts in Indonesia to Pertamina and MedcoEnergi as it reshapes its portfolio after creating its Searah joint venture with Petronas. The company will sell Pertamina 10% stakes in the East S",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Bluecore takes nuclear barge plan beyond the drawing board",
+      "link": "https://splash247.com/bluecore-takes-nuclear-barge-plan-beyond-the-drawing-board/",
+      "pubDate": "Tue, 13 Oct 2026 09:45:21 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "US maritime nuclear startup Bluecore Energy has secured low-enriched uranium for its first floating power system as it moves ahead simultaneously with fuel, regulatory and class work. The Long Beach-based company has purchased uranium hexafluoride, or UF₆, enriched to 4.95% urani",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Bluecore-Energy.jpeg",
+      "en": {
+        "headline": "Bluecore takes nuclear barge plan beyond the drawing board",
+        "summary": "US maritime nuclear startup Bluecore Energy has secured low-enriched uranium for its first floating power system as it moves ahead simultaneously with fuel, regulatory and class work. The Long Beach-based company has purchased uranium hexafluoride, or UF₆, enriched to 4.95% urani",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Global Ship Lease locks in $1bn loan for boxship spree",
+      "link": "https://splash247.com/global-ship-lease-locks-in-1bn-loan-for-boxship-spree/",
+      "pubDate": "Tue, 13 Oct 2026 09:40:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "New York-listed containership owner Global Ship Lease (GSL) has secured a $1bn syndicated loan facility to finance its expanding newbuilding programme. The George Youroukos-led company said the seven-year facility carries an interest margin of just 1.5% over SOFR and will be draw",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/01/Global-Ship-Lease.jpg",
+      "en": {
+        "headline": "Global Ship Lease locks in $1bn loan for boxship spree",
+        "summary": "New York-listed containership owner Global Ship Lease (GSL) has secured a $1bn syndicated loan facility to finance its expanding newbuilding programme. The George Youroukos-led company said the seven-year facility carries an interest margin of just 1.5% over SOFR and will be draw",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Sweden frees sanctioned tanker after seven months",
+      "link": "https://splash247.com/sweden-frees-sanctioned-tanker-after-seven-months/",
+      "pubDate": "Tue, 13 Oct 2026 09:20:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Swedish authorities have cleared an EU-sanctioned product tanker to leave the country after nearly seven months at anchor following an investigation into its registration and seaworthiness. The Swedish Transport Agency has lifted an operating ban on the 2007-built, 75,000 dwt Sea",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/sea-owl1_1.jpg",
+      "en": {
+        "headline": "Sweden frees sanctioned tanker after seven months",
+        "summary": "Swedish authorities have cleared an EU-sanctioned product tanker to leave the country after nearly seven months at anchor following an investigation into its registration and seaworthiness. The Swedish Transport Agency has lifted an operating ban on the 2007-built, 75,000 dwt Sea",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Britain urges ships to prepare for life without reliable GPS",
+      "link": "https://splash247.com/britain-urges-ships-to-prepare-for-life-without-reliable-gps/",
+      "pubDate": "Tue, 13 Oct 2026 08:29:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Britain has warned shipowners that satellite navigation can no longer be taken for granted in some of the world&#8217;s busiest shipping regions, urging crews to practise navigating without GPS as jamming and spoofing become increasingly widespread. In a new Marine Guidance Note,",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/LEO-satellite-2025_.jpg",
+      "en": {
+        "headline": "Britain urges ships to prepare for life without reliable GPS",
+        "summary": "Britain has warned shipowners that satellite navigation can no longer be taken for granted in some of the world&#8217;s busiest shipping regions, urging crews to practise navigating without GPS as jamming and spoofing become increasingly widespread. In a new Marine Guidance Note,",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Iran threatens ships going dark in Hormuz",
+      "link": "https://splash247.com/iran-threatens-ships-going-dark-in-hormuz/",
+      "pubDate": "Tue, 13 Oct 2026 08:15:47 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Iran has warned that merchant ships switching off their identification and tracking equipment during what it deems unauthorised passages through the Strait of Hormuz will be treated as hostile, raising the stakes for vessels navigating one of the world&#8217;s most dangerous stre",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Al-Maqam-X.com_.jpg",
+      "en": {
+        "headline": "Iran threatens ships going dark in Hormuz",
+        "summary": "Iran has warned that merchant ships switching off their identification and tracking equipment during what it deems unauthorised passages through the Strait of Hormuz will be treated as hostile, raising the stakes for vessels navigating one of the world&#8217;s most dangerous stre",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Matson Christens First Aloha Class Containership at Hanwha Philly Shipyard",
       "link": "https://gcaptain.com/matson-christens-first-of-three-new-aloha-class-containerships-at-hanwha-philly-shipyard/",
       "pubDate": "Mon, 12 Oct 2026 22:14:59 +0000",
@@ -244,29 +448,12 @@
       "summary": "Matson has christened the first of three new Jones Act containerships at Hanwha Philly Shipyard, marking another milestone in the carrier&#8217;s $1 billion fleet renewal program as the Philadelphia yard...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Makua-christening.jpg",
       "en": {
         "headline": "Matson Christens First Aloha Class Containership at Hanwha Philly Shipyard",
         "summary": "Matson has christened the first of three new Jones Act containerships at Hanwha Philly Shipyard, marking another milestone in the carrier&#8217;s $1 billion fleet renewal program as the Philadelphia yard...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Britain urges ships to prepare for life without reliable GPS",
-      "link": "https://splash247.com/britain-urges-ships-to-prepare-for-life-without-reliable-gps/",
-      "pubDate": "Mon, 12 Oct 2026 20:29:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Britain has warned shipowners that satellite navigation can no longer be taken for granted in some of the world&#8217;s busiest shipping regions, urging crews to practise navigating without GPS as jamming and spoofing become increasingly widespread. In a new Marine Guidance Note,",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/LEO-satellite-2025_.jpg",
-      "en": {
-        "headline": "Britain urges ships to prepare for life without reliable GPS",
-        "summary": "Britain has warned shipowners that satellite navigation can no longer be taken for granted in some of the world&#8217;s busiest shipping regions, urging crews to practise navigating without GPS as jamming and spoofing become increasingly widespread. In a new Marine Guidance Note,",
-        "source": "Splash247"
       }
     },
     {
@@ -278,29 +465,12 @@
       "summary": "Moxie Media will host its first dedicated user event, Moxie Connect: User Conference 2026, a complimentary event open to all maritime professionals, on Wednesday, December 2, at the Ernest N....",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/mariner_OFFuser-Trainingportal_dashboard.jpg",
       "en": {
         "headline": "Moxie Media to Launch Moxie Connect 2026 Event Alongside the International WorkBoat Show",
         "summary": "Moxie Media will host its first dedicated user event, Moxie Connect: User Conference 2026, a complimentary event open to all maritime professionals, on Wednesday, December 2, at the Ernest N....",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Europe&#8217;s shore power deadline is racing ahead of the grid",
-      "link": "https://splash247.com/europes-shore-power-deadline-is-racing-ahead-of-the-grid/",
-      "pubDate": "Mon, 12 Oct 2026 20:23:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Two EU regulations will require ports to provide shore power and ships to use it from 2030. But with grid upgrades taking up to a decade, the infrastructure needed to meet the deadline is struggling to keep pace. Alex Byelyavtsev reports. By 2030 two EU rules meet at the quay. AF",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/02/Shore-power.jpg",
-      "en": {
-        "headline": "Europe&#8217;s shore power deadline is racing ahead of the grid",
-        "summary": "Two EU regulations will require ports to provide shore power and ships to use it from 2030. But with grid upgrades taking up to a decade, the infrastructure needed to meet the deadline is struggling to keep pace. Alex Byelyavtsev reports. By 2030 two EU rules meet at the quay. AF",
-        "source": "Splash247"
       }
     },
     {
@@ -312,7 +482,7 @@
       "summary": "While the technology needed to digitalise maritime operations is already here, much remains to be done to ensure organisations and their people are equipped to use it effectively, according to...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Panel-2-800x533.jpg",
       "en": {
         "headline": "Connecting maritime digitalisation to process",
@@ -329,181 +499,11 @@
       "summary": "The American Bureau of Shipping (ABS) and the U.S. Department of Energy (DOE) have signed an agreement to advance the use of nuclear power in commercial shipping, including nuclear-powered vessels,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/unnamed-5.jpg",
       "en": {
         "headline": "ABS, U.S. Energy Department Team Up on Nuclear-Powered Ships",
         "summary": "The American Bureau of Shipping (ABS) and the U.S. Department of Energy (DOE) have signed an agreement to advance the use of nuclear power in commercial shipping, including nuclear-powered vessels,...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "ABS and U.S. Department of Energy Sign MOU on Maritime Applications of Advanced Nuclear Technology",
-      "link": "https://gcaptain.com/abs-and-u-s-department-of-energy-sign-mou-on-maritime-applications-of-advanced-nuclear-technology/",
-      "pubDate": "Mon, 12 Oct 2026 19:36:41 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "ABS and the U.S. Department of Energy’s (DOE) Office of Nuclear Energy have signed a memorandum of understanding to advance modern commercial nuclear technology at sea. The agreement spans floating...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/unnamed-5.jpg",
-      "en": {
-        "headline": "ABS and U.S. Department of Energy Sign MOU on Maritime Applications of Advanced Nuclear Technology",
-        "summary": "ABS and the U.S. Department of Energy’s (DOE) Office of Nuclear Energy have signed a memorandum of understanding to advance modern commercial nuclear technology at sea. The agreement spans floating...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Six Ships Struck in Single Day as Hormuz Attacks Accelerate",
-      "link": "https://gcaptain.com/new-reports-reveal-five-more-ships-hit-near-hormuz/",
-      "pubDate": "Mon, 12 Oct 2026 19:27:18 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Six commercial vessels were reported struck in and around the Strait of Hormuz on October 11, including five tankers and a container ship, as attacks on merchant shipping continue to...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
-      "en": {
-        "headline": "Six Ships Struck in Single Day as Hormuz Attacks Accelerate",
-        "summary": "Six commercial vessels were reported struck in and around the Strait of Hormuz on October 11, including five tankers and a container ship, as attacks on merchant shipping continue to...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Soaring Tanker Rates Leave Americas Awash in Crude Oil",
-      "link": "https://gcaptain.com/soaring-tanker-rates-leave-americas-awash-in-crude-oil/",
-      "pubDate": "Mon, 12 Oct 2026 19:19:17 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Dense heavy crude, which oil refiners around the world favor for its typically low cost, is piling up in the Americas as soaring freight rates have stifled exports and US refiners have been running close to their limits.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
-      "en": {
-        "headline": "Soaring Tanker Rates Leave Americas Awash in Crude Oil",
-        "summary": "Dense heavy crude, which oil refiners around the world favor for its typically low cost, is piling up in the Americas as soaring freight rates have stifled exports and US refiners have been running close to their limits.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Deadly Attacks on Saudi Arabia Risk Wider War That Draws In US",
-      "link": "https://gcaptain.com/deadly-attacks-on-saudi-arabia-risk-wider-war-that-draws-in-us/",
-      "pubDate": "Mon, 12 Oct 2026 19:15:42 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "This weekend’s deadly attacks on Riyadh’s main airport have demonstrated the ability of Yemen’s Houthis to strike at the heart of Saudi power, raising the risk of a dangerous escalation that could draw in the US.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-19T114802Z_1980126111_RC28MNAXZ2HR_RTRMADP_3_IRAN-CRISIS-SAUDI-YEMEN-800x450.jpg",
-      "en": {
-        "headline": "Deadly Attacks on Saudi Arabia Risk Wider War That Draws In US",
-        "summary": "This weekend’s deadly attacks on Riyadh’s main airport have demonstrated the ability of Yemen’s Houthis to strike at the heart of Saudi power, raising the risk of a dangerous escalation that could draw in the US.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "EU Targets Major Russian Shipyards in Sweeping Sanctions Expansion",
-      "link": "https://gcaptain.com/eu-targets-major-russian-shipyards-in-sweeping-sanctions-expansion/",
-      "pubDate": "Mon, 12 Oct 2026 17:07:14 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "The European Union has imposed sanctions on some of Russia&#8217;s most important shipyards, including major submarine builders, naval ship-repair facilities and yards involved in commercial vessel construction, as part of...",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-23T141438Z_1013907566_RC22HMAZOHZY_RTRMADP_3_UKRAINE-CRISIS-PORTS-AGRICULTURE-800x555.jpg",
-      "en": {
-        "headline": "EU Targets Major Russian Shipyards in Sweeping Sanctions Expansion",
-        "summary": "The European Union has imposed sanctions on some of Russia&#8217;s most important shipyards, including major submarine builders, naval ship-repair facilities and yards involved in commercial vessel construction, as part of...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Shipping&#8217;s LNG Boom Faces a Methane Problem",
-      "link": "https://gcaptain.com/shippings-lng-boom-faces-a-methane-problem/",
-      "pubDate": "Mon, 12 Oct 2026 15:04:24 +0000",
-      "source": "gCaptain",
-      "category": "Bunker",
-      "summary": "For a decade, LNG has been sold to shipowners as the sensible bridge fuel. Cleaner than heavy fuel oil, widely available and backed by mature engine technology, it has won...",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Isla-Bella-2.jpg",
-      "en": {
-        "headline": "Shipping&#8217;s LNG Boom Faces a Methane Problem",
-        "summary": "For a decade, LNG has been sold to shipowners as the sensible bridge fuel. Cleaner than heavy fuel oil, widely available and backed by mature engine technology, it has won...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Sweden Releases Sanctioned Russian Shadow Fleet Tanker After Seven-Month Detention",
-      "link": "https://gcaptain.com/sweden-releases-sanctioned-russian-shadow-fleet-tanker-after-seven-month-detention/",
-      "pubDate": "Mon, 12 Oct 2026 14:45:10 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Swedish authorities have cleared the sanctioned tanker Sea Owl 1 to leave the country after nearly seven months at anchor, following confirmation that the vessel is now legitimately registered under...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Sweden Releases Sanctioned Russian Shadow Fleet Tanker After Seven-Month Detention",
-        "summary": "Swedish authorities have cleared the sanctioned tanker Sea Owl 1 to leave the country after nearly seven months at anchor, following confirmation that the vessel is now legitimately registered under...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Yangzijiang Maritime adds kamsarmax bulkers to newbuild spree",
-      "link": "https://splash247.com/yangzijiang-maritime-adds-kamsarmax-bulkers-to-newbuild-spree/",
-      "pubDate": "Mon, 12 Oct 2026 11:04:34 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Singapore-listed Yangzijiang Maritime Development has struck a bulk carrier newbuilding deal in China, for up to six kamsarmaxes at Jiangsu Watts Energy &#38; Engineering. The Ren Yuanlin-led maritime investment group has signed for four firm 82,000 dwt vessels, with options for ",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 18,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Jiangsu-Watts-Energy-Engineering.jpg",
-      "en": {
-        "headline": "Yangzijiang Maritime adds kamsarmax bulkers to newbuild spree",
-        "summary": "Singapore-listed Yangzijiang Maritime Development has struck a bulk carrier newbuilding deal in China, for up to six kamsarmaxes at Jiangsu Watts Energy &#38; Engineering. The Ren Yuanlin-led maritime investment group has signed for four firm 82,000 dwt vessels, with options for ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "MISC lines up five more LNG carriers for Petronas",
-      "link": "https://splash247.com/misc-lines-up-five-more-lng-carriers-for-petronas/",
-      "pubDate": "Mon, 12 Oct 2026 11:03:37 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Malaysian shipping group MISC is preparing another five LNG carrier newbuildings in China after securing a fresh long-term charter award from compatriot Petronas. The Bursa Malaysia-listed owner has accepted a letter of award from Petronas LNG, covering five new LNG carriers on f",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 18,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/MISC-LNG-carrier.jpg",
-      "en": {
-        "headline": "MISC lines up five more LNG carriers for Petronas",
-        "summary": "Malaysian shipping group MISC is preparing another five LNG carrier newbuildings in China after securing a fresh long-term charter award from compatriot Petronas. The Bursa Malaysia-listed owner has accepted a letter of award from Petronas LNG, covering five new LNG carriers on f",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Saudi Eyes 10 Million Barrels a Day of Oil Pipe Capacity",
-      "link": "https://gcaptain.com/saudi-eyes-10-million-barrels-a-day-of-oil-pipe-capacity/",
-      "pubDate": "Mon, 12 Oct 2026 10:04:04 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Saudi Arabia is looking at ways to expand its oil pipeline capacity to destinations outside the Persian Gulf to 10 million barrels a day within two to three years, said Energy Minister Prince Abdulaziz bin Salman.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Saudi Eyes 10 Million Barrels a Day of Oil Pipe Capacity",
-        "summary": "Saudi Arabia is looking at ways to expand its oil pipeline capacity to destinations outside the Persian Gulf to 10 million barrels a day within two to three years, said Energy Minister Prince Abdulaziz bin Salman.",
         "source": "gCaptain"
       }
     }
