@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-14T16:13:26.541Z",
+    "generatedAt": "2026-10-14T21:08:08.637Z",
     "benchmarkAsOf": "2026-10-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -206,14 +206,14 @@
   "indices": {
     "bdi": {
       "value": 2667,
-      "deltaPct": -4.78,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-14T15:15:28.077Z"
     },
     "capesizeTc": {
       "value": 3630,
-      "deltaPct": -9.11,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-14T15:15:28.117Z"
@@ -236,6 +236,125 @@
   },
   "news": [
     {
+      "title": "U.S. Forces Destroy Iranian-Linked Dhow Accused of Targeting Navy Ships",
+      "link": "https://gcaptain.com/u-s-forces-destroy-iranian-linked-dhow-accused-of-targeting-navy-ships/",
+      "pubDate": "Wed, 14 Oct 2026 20:01:31 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "U.S. forces destroyed an Iranian-affiliated dhow in the Gulf of Oman on October 6 after determining that the vessel was conducting surveillance and helping target American warships, U.S. Central Command...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/CENTCOM-image.jpg",
+      "en": {
+        "headline": "U.S. Forces Destroy Iranian-Linked Dhow Accused of Targeting Navy Ships",
+        "summary": "U.S. forces destroyed an Iranian-affiliated dhow in the Gulf of Oman on October 6 after determining that the vessel was conducting surveillance and helping target American warships, U.S. Central Command...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Port of Savannah Wins Approval for $2.3 Billion Container Terminal",
+      "link": "https://gcaptain.com/port-of-savannah-wins-approval-for-2-3-billion-container-terminal/",
+      "pubDate": "Wed, 14 Oct 2026 18:03:08 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Georgia Ports has secured federal approval for a $2.3 billion container terminal that will add 3.5 million TEUs of capacity at the Port of Savannah.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/261014-GPA-SCT-Render.jpg.jpeg",
+      "en": {
+        "headline": "Port of Savannah Wins Approval for $2.3 Billion Container Terminal",
+        "summary": "Georgia Ports has secured federal approval for a $2.3 billion container terminal that will add 3.5 million TEUs of capacity at the Port of Savannah.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "China P&#038;I seeks seat at global insurance top table",
+      "link": "https://splash247.com/china-pi-seeks-seat-at-global-insurance-top-table/",
+      "pubDate": "Wed, 14 Oct 2026 17:44:17 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "China Shipowners Mutual Assurance Association, better known as China P&#38;I Club, has formally applied to join the International Group of P&#38;I Clubs, potentially bringing a mainland Chinese insurer into the powerful marine insurance grouping for the first time. The Internatio",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/04/Ship-Sunset.jpg",
+      "en": {
+        "headline": "China P&#038;I seeks seat at global insurance top table",
+        "summary": "China Shipowners Mutual Assurance Association, better known as China P&#38;I Club, has formally applied to join the International Group of P&#38;I Clubs, potentially bringing a mainland Chinese insurer into the powerful marine insurance grouping for the first time. The Internatio",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Bulk Carrier Sinks Weeks After Deadly Strait of Hormuz Strike",
+      "link": "https://gcaptain.com/bulk-carrier-sinks-weeks-after-deadly-strait-of-hormuz-strike/",
+      "pubDate": "Wed, 14 Oct 2026 17:22:39 +0000",
+      "source": "gCaptain",
+      "category": "Dry Bulk",
+      "summary": "By Jonathan Saul and Renee Maltezou LONDON, Oct 14 (Reuters) &#8211; A container ship and a dry bulk carrier have both sunk near the Strait of Hormuz in the past...",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-17T191059Z_416607302_RC2PVLA9X0SO_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
+      "en": {
+        "headline": "Bulk Carrier Sinks Weeks After Deadly Strait of Hormuz Strike",
+        "summary": "By Jonathan Saul and Renee Maltezou LONDON, Oct 14 (Reuters) &#8211; A container ship and a dry bulk carrier have both sunk near the Strait of Hormuz in the past...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Qatar Rewrites Its Gas Playbook With Old Tankers and New Tactics",
+      "link": "https://gcaptain.com/qatar-rewrites-its-gas-playbook-with-old-tankers-and-new-tactics/",
+      "pubDate": "Wed, 14 Oct 2026 17:15:02 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Six months into a war that sowed upheaval in the Persian Gulf, Qatar found itself stuck. By late August, even limited shipments from the gas heavyweight had all but stopped following a projectile attack on one of its tankers outside the Strait of Hormuz. Pressure was growing, not",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2015/03/shutterstock_33420973.jpg",
+      "en": {
+        "headline": "Qatar Rewrites Its Gas Playbook With Old Tankers and New Tactics",
+        "summary": "Six months into a war that sowed upheaval in the Persian Gulf, Qatar found itself stuck. By late August, even limited shipments from the gas heavyweight had all but stopped following a projectile attack on one of its tankers outside the Strait of Hormuz. Pressure was growing, not",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Yemen&#8217;s Houthis Vow More Attacks on Saudi Airports, Oil Facilities After Aramco HQ Hit",
+      "link": "https://gcaptain.com/yemens-houthis-vow-more-attacks-on-saudi-airports-oil-facilities-after-aramco-hq-hit/",
+      "pubDate": "Wed, 14 Oct 2026 16:34:09 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "Yemen's Houthis vowed on Wednesday to press on with attacks on airports and oil facilities in Saudi Arabia, a day after a strike that sources said caused extensive damage to the headquarters of oil giant Saudi Aramco2223.SE.",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T050419Z_690210157_RC2H1MA5D3GD_RTRMADP_3_IRAN-CRISIS-SAUDI-OIL-800x533.jpg",
+      "en": {
+        "headline": "Yemen&#8217;s Houthis Vow More Attacks on Saudi Airports, Oil Facilities After Aramco HQ Hit",
+        "summary": "Yemen's Houthis vowed on Wednesday to press on with attacks on airports and oil facilities in Saudi Arabia, a day after a strike that sources said caused extensive damage to the headquarters of oil giant Saudi Aramco2223.SE.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "U.S. Shipping Regulator Proposes $200,000 Fees on Spanish Ships Over Port Ban",
+      "link": "https://gcaptain.com/u-s-shipping-regulator-proposes-200000-fees-on-spanish-ships-over-port-ban/",
+      "pubDate": "Wed, 14 Oct 2026 15:56:37 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The U.S. Federal Maritime Commission (FMC) is proposing $200,000 fees on Spanish-flagged vessels entering American ports, along with restrictions on billions of dollars in Spanish imports, after concluding that Spain&#8217;s...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/10/2024-10-03T213240Z_622785686_RC26DAA7PCIS_RTRMADP_3_SPAIN-ECONOMY-INFLATION-800x521.jpg",
+      "en": {
+        "headline": "U.S. Shipping Regulator Proposes $200,000 Fees on Spanish Ships Over Port Ban",
+        "summary": "The U.S. Federal Maritime Commission (FMC) is proposing $200,000 fees on Spanish-flagged vessels entering American ports, along with restrictions on billions of dollars in Spanish imports, after concluding that Spain&#8217;s...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "EuroDry adds third $37m kamsarmax at Hengli",
       "link": "https://splash247.com/eurodry-adds-third-37m-kamsarmax-at-hengli/",
       "pubDate": "Wed, 14 Oct 2026 15:36:02 +0000",
@@ -244,12 +363,46 @@
       "summary": "Aristides Pittas-led EuroDry has returned to China’s Hengli Shipbuilding for another kamsarmax, adding a third 82,000 dwt newbuilding to a fleet renewal programme now worth almost $183m. The Nasdaq-listed dry bulk owner is paying about $37m for the latest vessel, which is schedul",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 5,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-Heavy-Industries-bulkers.jpg",
       "en": {
         "headline": "EuroDry adds third $37m kamsarmax at Hengli",
         "summary": "Aristides Pittas-led EuroDry has returned to China’s Hengli Shipbuilding for another kamsarmax, adding a third 82,000 dwt newbuilding to a fleet renewal programme now worth almost $183m. The Nasdaq-listed dry bulk owner is paying about $37m for the latest vessel, which is schedul",
         "source": "Splash247"
+      }
+    },
+    {
+      "title": "JPMorganChase Names Shipbuilding Leaders Under $1.5 Trillion Industrial Initiative",
+      "link": "https://gcaptain.com/jpmorganchase-names-shipbuilding-leaders-under-1-5-trillion-industrial-initiative/",
+      "pubDate": "Wed, 14 Oct 2026 14:56:11 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "JPMorganChase has appointed two senior leaders to help expand its support for U.S. shipbuilding and the maritime industry under its $1.5 trillion Security and Resiliency Initiative (SRI), a 10-year effort...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/Hanwha-Philly-Shipyard-800x533.jpg",
+      "en": {
+        "headline": "JPMorganChase Names Shipbuilding Leaders Under $1.5 Trillion Industrial Initiative",
+        "summary": "JPMorganChase has appointed two senior leaders to help expand its support for U.S. shipbuilding and the maritime industry under its $1.5 trillion Security and Resiliency Initiative (SRI), a 10-year effort...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Containership Sinks as Hormuz Attacks Spiral Out of Control",
+      "link": "https://gcaptain.com/containership-sinks-as-hormuz-attacks-spiral-out-of-control/",
+      "pubDate": "Wed, 14 Oct 2026 14:44:55 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A Singapore-flagged containership has sunk after being struck by a projectile in the Strait of Hormuz, as a widening series of attacks on merchant shipping raises fresh questions about U.S....",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/GFS-Pride-sinking.jpeg",
+      "en": {
+        "headline": "Containership Sinks as Hormuz Attacks Spiral Out of Control",
+        "summary": "A Singapore-flagged containership has sunk after being struck by a projectile in the Strait of Hormuz, as a widening series of attacks on merchant shipping raises fresh questions about U.S....",
+        "source": "gCaptain"
       }
     },
     {
@@ -261,7 +414,7 @@
       "summary": "The Royal Navy’s only dedicated ice patrol ship has been towed from Teesside to Devonport following a reported defect, raising questions about Britain’s ability to maintain its maritime presence in the polar regions as the government works toward a replacement.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/11776297453_206025d45b_o.jpg",
       "en": {
         "headline": "Royal Navy’s Only Ice Patrol Ship Faces Uncertain Future After Defect",
@@ -278,7 +431,7 @@
       "summary": "President Donald Trump said Taiwan had agreed to buy 30% of the liquefied natural gas from a planned project in Alaska for 20 years, even as Taipei indicated that no binding commitments have been finalized.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/04/Liquefaction-Facility.jpeg",
       "en": {
         "headline": "Trump Touts Taiwan-Alaska LNG Deal Taipei Hasn’t Finalized",
@@ -295,8 +448,8 @@
       "summary": "A container ship has sunk near the Strait of Hormuz after being hit by a projectile and a separate dry bulk vessel is sinking in another incident, maritime security sources said on Wednesday.",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Screenshot-2026-10-14-at-2.46.35-PM-800x495.jpg",
+      "hoursAgo": 8,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Container Ship Sinks Near Hormuz After Being Hit by Projectile, Sources Say",
         "summary": "A container ship has sunk near the Strait of Hormuz after being hit by a projectile and a separate dry bulk vessel is sinking in another incident, maritime security sources said on Wednesday.",
@@ -312,7 +465,7 @@
       "summary": "A cyber extortion group has threatened to publish data it claims it stole from 38 shipping, port, and logistics companies unless they pay multimillion-dollar ransoms by October 19. Cybersecurity firm SOCRadar said the group, known as n0n, added the 38 organisations to its dark we",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Cydome-Cyber-Hack.jpg",
       "en": {
         "headline": "Shipping firms and ports caught in mass cyber extortion claim",
@@ -329,7 +482,7 @@
       "summary": "China&#8217;s Zhonggu Shipping Group has signed up for two 14,000 teu containerships at Hudong-Zhonghua Shipbuilding, moving into significantly larger tonnage as investment across the group gathers pace. The Shanghai-based company has contracted the conventionally fuelled pair, w",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/01/Zhonggu-Logistics.jpg",
       "en": {
         "headline": "Zhonggu steps up boxship investments with larger newbuilds",
@@ -346,165 +499,12 @@
       "summary": "Japan is preparing to subsidise the additional cost of importing oil from suppliers outside the Strait of Hormuz, in a significant government intervention aimed at reducing the country&#8217;s dependence on the increasingly dangerous waterway. The Japanese cabinet approved three ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/NYK-VLCC.jpg",
       "en": {
         "headline": "Japan prepares to pay for oil&#8217;s long way round",
         "summary": "Japan is preparing to subsidise the additional cost of importing oil from suppliers outside the Strait of Hormuz, in a significant government intervention aimed at reducing the country&#8217;s dependence on the increasingly dangerous waterway. The Japanese cabinet approved three ",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "India’s Aegis takes over Dubai tanker and logistics group Tristar",
-      "link": "https://splash247.com/indias-aegis-takes-over-dubai-tanker-and-logistics-group-tristar/",
-      "pubDate": "Wed, 14 Oct 2026 08:15:28 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "India’s Aegis Logistics has struck a deal to acquire 89.8% of Dubai-based Tristar for $809m, taking control of a global energy logistics group with a sizeable tanker and dry bulk shipping operation. The Mumbai-listed group is buying the stake through Singapore-based Aegis Logisti",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Solar-Ailene-tanker-Tristar-Eships.jpg",
-      "en": {
-        "headline": "India’s Aegis takes over Dubai tanker and logistics group Tristar",
-        "summary": "India’s Aegis Logistics has struck a deal to acquire 89.8% of Dubai-based Tristar for $809m, taking control of a global energy logistics group with a sizeable tanker and dry bulk shipping operation. The Mumbai-listed group is buying the stake through Singapore-based Aegis Logisti",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Splash Cruise launches with a fresh take on the global cruise business",
-      "link": "https://splash247.com/splash-cruise-launches-with-a-fresh-take-on-the-global-cruise-business/",
-      "pubDate": "Wed, 14 Oct 2026 08:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Splash Maritime Group has officially launched Splash Cruise, a new international news platform dedicated to the business of cruise shipping, bringing the editorial approach that has made Splash a leading independent voice in maritime journalism to the global cruise industry. Avai",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Splash-Cruise-Homepage-Launch.jpg",
-      "en": {
-        "headline": "Splash Cruise launches with a fresh take on the global cruise business",
-        "summary": "Splash Maritime Group has officially launched Splash Cruise, a new international news platform dedicated to the business of cruise shipping, bringing the editorial approach that has made Splash a leading independent voice in maritime journalism to the global cruise industry. Avai",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Elisabeth Braw: The Undersea War",
-      "link": "https://splash247.com/elisabeth-braw-the-undersea-war/",
-      "pubDate": "Wed, 14 Oct 2026 07:45:22 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "A ship&#8217;s anchor can wreak havoc on the world&#8217;s undersea infrastructure, something that has provided plenty of rich material for Splash reporting in recent years. For Elisabeth Braw, the Cook Islands-flagged tanker Eagle S provides one of the most brazen examples. On C",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Elisabeth-Braw.jpg",
-      "en": {
-        "headline": "Elisabeth Braw: The Undersea War",
-        "summary": "A ship&#8217;s anchor can wreak havoc on the world&#8217;s undersea infrastructure, something that has provided plenty of rich material for Splash reporting in recent years. For Elisabeth Braw, the Cook Islands-flagged tanker Eagle S provides one of the most brazen examples. On C",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Hormuz shock briefly makes biofuel the cheapest bunker option",
-      "link": "https://splash247.com/hormuz-shock-briefly-makes-biofuel-the-cheapest-bunker-option/",
-      "pubDate": "Wed, 14 Oct 2026 07:25:51 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "The upheaval in global energy markets caused by the war in the Middle East has produced an unexpected winner in the marine fuels market, with biodiesel briefly emerging as the cheapest bunkering option in Rotterdam once European carbon costs are factored in. A new white paper fro",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/12/BHP-Oldendorff-Biofuels-Bunkering-Singapore.jpg",
-      "en": {
-        "headline": "Hormuz shock briefly makes biofuel the cheapest bunker option",
-        "summary": "The upheaval in global energy markets caused by the war in the Middle East has produced an unexpected winner in the marine fuels market, with biodiesel briefly emerging as the cheapest bunkering option in Rotterdam once European carbon costs are factored in. A new white paper fro",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Pyxis buys out boss&#8217;s ultramax stake in $6.8m deal",
-      "link": "https://splash247.com/pyxis-buys-out-bosss-ultramax-stake-in-6-8m-deal/",
-      "pubDate": "Wed, 14 Oct 2026 07:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Nasdaq-listed Greek shipowner Pyxis Tankers has agreed to acquire the remaining 40% stake in one of its ultramax bulkers from a company linked to its chairman and chief executive, Eddie Valentis. The deal, valued at approximately $6.83m before a separate working capital adjustmen",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Konkar-Ormi-ultramax-Pyxis-Tankers.jpg",
-      "en": {
-        "headline": "Pyxis buys out boss&#8217;s ultramax stake in $6.8m deal",
-        "summary": "Nasdaq-listed Greek shipowner Pyxis Tankers has agreed to acquire the remaining 40% stake in one of its ultramax bulkers from a company linked to its chairman and chief executive, Eddie Valentis. The deal, valued at approximately $6.83m before a separate working capital adjustmen",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Tsakos returns to containership contracting in China",
-      "link": "https://splash247.com/tsakos-returns-to-containership-contracting-in-china/",
-      "pubDate": "Wed, 14 Oct 2026 06:30:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Greek shipping group Tsakos has returned to the containership newbuilding market, emerging behind an order for two 3,200 teu vessels at China’s Hengli Heavy Industries. The pair appear in the Athens-based owner’s latest fleet register, with both scheduled for delivery in the four",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/01/Hengli-Shipbuilding.jpg",
-      "en": {
-        "headline": "Tsakos returns to containership contracting in China",
-        "summary": "Greek shipping group Tsakos has returned to the containership newbuilding market, emerging behind an order for two 3,200 teu vessels at China’s Hengli Heavy Industries. The pair appear in the Athens-based owner’s latest fleet register, with both scheduled for delivery in the four",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Port of Los Angeles Sets All-Time Cargo Record as Imports Surge",
-      "link": "https://gcaptain.com/port-of-los-angeles-sets-all-time-cargo-record-as-imports-surge/",
-      "pubDate": "Tue, 13 Oct 2026 20:26:08 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "The Port of Los Angeles handled a record 1,042,652 twenty-foot equivalent units (TEUs) in September, marking the busiest month in its 118-year history as strong consumer demand and shifting global...",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 19,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Pier-300-Channel.jpg",
-      "en": {
-        "headline": "Port of Los Angeles Sets All-Time Cargo Record as Imports Surge",
-        "summary": "The Port of Los Angeles handled a record 1,042,652 twenty-foot equivalent units (TEUs) in September, marking the busiest month in its 118-year history as strong consumer demand and shifting global...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Saudi Arabia Strikes Houthi Targets as Red Sea War Escalates",
-      "link": "https://gcaptain.com/saudi-arabia-strikes-houthi-targets-as-red-sea-war-escalates/",
-      "pubDate": "Tue, 13 Oct 2026 18:48:46 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "Yemen's Iran-allied Houthis said Saudi Arabia was attacking the Yemeni capital Sanaa on Tuesday after a Saudi-led coalition warned civilians to stay away from an oil depot on the city's outskirts, part of a rapidly escalating war between the sides.",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 21,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
-      "en": {
-        "headline": "Saudi Arabia Strikes Houthi Targets as Red Sea War Escalates",
-        "summary": "Yemen's Iran-allied Houthis said Saudi Arabia was attacking the Yemeni capital Sanaa on Tuesday after a Saudi-led coalition warned civilians to stay away from an oil depot on the city's outskirts, part of a rapidly escalating war between the sides.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "ABS Helps Industry Put Augmented Reality to the Test",
-      "link": "https://gcaptain.com/abs-helps-industry-put-augmented-reality-to-the-test/",
-      "pubDate": "Tue, 13 Oct 2026 17:16:14 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Augmented reality (AR) can help industrial crews perform tasks more efficiently and consistently, but widespread deployment will depend on demonstrating that productivity gains can be achieved without compromising safety. That’s...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 22,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/http___cdn.prgloo-1.jpg",
-      "en": {
-        "headline": "ABS Helps Industry Put Augmented Reality to the Test",
-        "summary": "Augmented reality (AR) can help industrial crews perform tasks more efficiently and consistently, but widespread deployment will depend on demonstrating that productivity gains can be achieved without compromising safety. That’s...",
-        "source": "gCaptain"
       }
     }
   ]
