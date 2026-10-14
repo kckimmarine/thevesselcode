@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-13T22:06:43.311Z",
+    "generatedAt": "2026-10-14T02:49:43.168Z",
     "benchmarkAsOf": "2026-10-13",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -183,9 +183,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 995,
-        "deltaPct": 0,
-        "asOf": "2026-10-12T22:41:17.100Z",
+        "priceUsdMt": 990,
+        "deltaPct": -0.5,
+        "asOf": "2026-10-13T22:41:14.015Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 955,
-        "deltaPct": 0,
-        "asOf": "2026-10-12T22:41:17.071Z",
+        "priceUsdMt": 995,
+        "deltaPct": 4.19,
+        "asOf": "2026-10-13T22:41:13.950Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -213,17 +213,17 @@
     },
     "capesizeTc": {
       "value": 3994,
-      "deltaPct": -3.71,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-13T20:00:11.194Z"
+      "asOf": "2026-10-13T22:15:08.533Z"
     },
     "panamaxTc": {
       "value": 2432,
       "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-13T20:00:11.292Z"
+      "asOf": "2026-10-13T22:15:08.559Z"
     },
     "bdti": {
       "value": 1185,
@@ -244,7 +244,7 @@
       "summary": "The Port of Los Angeles handled a record 1,042,652 twenty-foot equivalent units (TEUs) in September, marking the busiest month in its 118-year history as strong consumer demand and shifting global...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Pier-300-Channel.jpg",
       "en": {
         "headline": "Port of Los Angeles Sets All-Time Cargo Record as Imports Surge",
@@ -258,14 +258,14 @@
       "pubDate": "Tue, 13 Oct 2026 20:00:00 +0000",
       "source": "Splash247",
       "category": "Trade",
-      "summary": "SINGAPORE, 14 October 2026 – Splash Maritime Group has officially launched Splash Cruise, a new international news platform dedicated to the business of cruise shipping, bringing the editorial approach that has made Splash a leading independent voice in maritime journalism to the",
+      "summary": "Splash Maritime Group has officially launched Splash Cruise, a new international news platform dedicated to the business of cruise shipping, bringing the editorial approach that has made Splash a leading independent voice in maritime journalism to the global cruise industry. Avai",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Splash-Cruise-Homepage-Launch.jpg",
       "en": {
         "headline": "Splash Cruise launches with a fresh take on the global cruise business",
-        "summary": "SINGAPORE, 14 October 2026 – Splash Maritime Group has officially launched Splash Cruise, a new international news platform dedicated to the business of cruise shipping, bringing the editorial approach that has made Splash a leading independent voice in maritime journalism to the",
+        "summary": "Splash Maritime Group has officially launched Splash Cruise, a new international news platform dedicated to the business of cruise shipping, bringing the editorial approach that has made Splash a leading independent voice in maritime journalism to the global cruise industry. Avai",
         "source": "Splash247"
       }
     },
@@ -278,7 +278,7 @@
       "summary": "Yemen's Iran-allied Houthis said Saudi Arabia was attacking the Yemeni capital Sanaa on Tuesday after a Saudi-led coalition warned civilians to stay away from an oil depot on the city's outskirts, part of a rapidly escalating war between the sides.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
       "en": {
         "headline": "Saudi Arabia Strikes Houthi Targets as Red Sea War Escalates",
@@ -295,7 +295,7 @@
       "summary": "Augmented reality (AR) can help industrial crews perform tasks more efficiently and consistently, but widespread deployment will depend on demonstrating that productivity gains can be achieved without compromising safety. That’s...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/http___cdn.prgloo-1.jpg",
       "en": {
         "headline": "ABS Helps Industry Put Augmented Reality to the Test",
@@ -312,7 +312,7 @@
       "summary": "A fire aboard a seismic research vessel in the Gulf of Mexico forced dozens of crew members to abandon ship Monday, with nearby offshore supply vessels helping bring the evacuees...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Rem-Andes-rescue.jpg",
       "en": {
         "headline": "Fire Forces Crew to Abandon Research Vessel Off Louisiana",
@@ -329,7 +329,7 @@
       "summary": "A growing number of empty supertankers have been turning away from the Persian Gulf as escalating Iranian attacks threaten a critical transfer hub for wartime oil shipments.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-24T194006Z_526739983_RC2LD6A7RFZM_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x533.jpg",
       "en": {
         "headline": "Supertankers Turn From Gulf Oil Transfer Hub Amid Iran’s Attacks",
@@ -346,7 +346,7 @@
       "summary": "President Donald Trump’s deal for Russian diesel exposed the US to legal questions, opened a rift with his Republican allies and European leaders and heightened tensions with Ukraine — all in exchange for an outcome that experts suggest is unlikely to succeed.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-10T111832Z_327337754_RC29TMATWR3B_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-PLAN.jpg",
       "en": {
         "headline": "Trump’s Diesel Deal Irks Allies and Is Unlikely to Reduce Prices",
@@ -363,7 +363,7 @@
       "summary": "Eleven sailors were missing at sea on Tuesday from a ship sunk by a drone attack off the coast of Bulgaria, possibly the second deadly sinking of a cargo vessel in the area in a week, prompting Bulgaria to summon Russia's ambassador.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "11 Missing as Drone Attacks Strike Two Ships Near NATO Waters",
@@ -380,7 +380,7 @@
       "summary": "France's military was taking a tanker suspected to be part of Russia's \"shadow fleet\" skirting Western sanctions to Reunion island on Tuesday in what Moscow called another act of \"piracy.\"",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/83f85d10-6736-422e-8e8b-3f39b76a2b95.jpg",
       "en": {
         "headline": "France Seizes Another &#8216;Shadow Fleet&#8217; Tanker; Russia Decries &#8216;Piracy&#8217;",
@@ -397,7 +397,7 @@
       "summary": "South Korean President Lee Jae Myung welcomed the PanStar Acro and its crew home on Tuesday after the container ship completed the country’s first round-trip commercial trial through the Arctic to Europe, hailing the voyage as a potential alternative to traditional shipping lanes",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-13T072921Z_1648706371_RC272OALXTTH_RTRMADP_3_SOUTHKOREA-SHIPPING-ARCTIC-800x503.jpg",
       "en": {
         "headline": "South Korean President Hails Arctic Container Shipping Trial, but Commercial and Sanctions Questions Remain",
@@ -414,7 +414,7 @@
       "summary": "Bulgaria summoned Russia’s ambassador to Sofia after two ships were hit off the country’s coast, as concerns mount over the security of Black Sea shipping.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-13T121115Z_837897891_RC2C2OA50QNT_RTRMADP_3_BULGARIA-INCIDENT-DRONE.jpg",
       "en": {
         "headline": "Bulgaria Points to Russia as Drones Hit More Cargo Ships",
@@ -431,7 +431,7 @@
       "summary": "Dubai-based Emarat Maritime has added another six tanker newbuildings to its rapidly expanding fleet, lining up a series of 74,000 dwt LR1 product carriers in China. The company’s own fleet register now lists six LR1 newbuildings, with the first two scheduled for delivery in 2029",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/12/Jiangsu-New-Hantong-Ship-Heavy-Industry.jpg",
       "en": {
         "headline": "Emarat Maritime piles six more tankers onto China orderbook",
@@ -448,7 +448,7 @@
       "summary": "Malaysia’s Lianson Fleet Group (LFG) has added a third ultramax bulker, paying $23m (RM93.9m) for a 2013-built Japanese vessel as it continues to expand beyond its traditional offshore support vessel business. The Bursa Malaysia-listed company said its wholly owned subsidiary acq",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 11,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2017/01/ultramax-bulk-e1592794814366.jpg",
       "en": {
         "headline": "Lianson Fleet snaps up third ultramax",
@@ -465,7 +465,7 @@
       "summary": "Belgian shipping group CMB.TECH has continued to cash in on elevated tanker values, selling its fifth suezmax this year and locking in another $59.6m capital gain. The Alexander Saverys-led company said it has already delivered the 2011-built, 165,000 dwt Stella to its new owner ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Alexander-Saverys.jpg",
       "en": {
         "headline": "Saverys keeps cashing in on tanker values",
@@ -482,7 +482,7 @@
       "summary": "Chinese bulker owner Fujian Guohang Ocean Shipping is preparing to establish 12 wholly owned shipping companies in Hong Kong as it lays the groundwork for a newbuilding investment programme valued at approximately CNY2.49bn ($372m). The Beijing Stock Exchange-listed company discl",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 12,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Guo-Yuan-8-Fujian-Guohang-Ocean-Shipping.jpg",
       "en": {
         "headline": "Fujian Guohang maps out Hong Kong fleet expansion",
@@ -499,7 +499,7 @@
       "summary": "Italian giant Eni has agreed to sell 10% interests in seven offshore production sharing contracts in Indonesia to Pertamina and MedcoEnergi as it reshapes its portfolio after creating its Searah joint venture with Petronas. The company will sell Pertamina 10% stakes in the East S",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 12,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Eni-headquarters.jpg",
       "en": {
         "headline": "Pertamina and Medco take slices of Eni’s Indonesia offshore assets",
