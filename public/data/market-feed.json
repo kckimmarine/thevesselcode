@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-14T10:53:51.627Z",
-    "benchmarkAsOf": "2026-10-13",
+    "generatedAt": "2026-10-14T16:13:26.541Z",
+    "benchmarkAsOf": "2026-10-14",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-10-13",
-    "updatedLabelKo": "2026-10-13 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-10-14",
+    "updatedLabelKo": "2026-10-14 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 907,
-        "deltaPct": 1.62,
+        "deltaPct": 0,
         "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1261,
-        "deltaPct": 1.08,
+        "deltaPct": 0,
         "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 843.5,
-        "deltaPct": 2.49,
+        "deltaPct": 0,
         "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 736.5,
-        "deltaPct": 0.2,
+        "deltaPct": 0,
         "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1381.5,
-        "deltaPct": 0.95,
+        "deltaPct": 0,
         "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 661.5,
-        "deltaPct": -1.19,
+        "deltaPct": 0,
         "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 763,
-        "deltaPct": 0.73,
+        "deltaPct": 0,
         "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1396,
-        "deltaPct": 0.18,
+        "deltaPct": 0,
         "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -205,18 +205,18 @@
   },
   "indices": {
     "bdi": {
-      "value": 2801,
-      "deltaPct": 0,
+      "value": 2667,
+      "deltaPct": -4.78,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-13T20:00:11.169Z"
+      "asOf": "2026-10-14T15:15:28.077Z"
     },
     "capesizeTc": {
-      "value": 3994,
-      "deltaPct": 0,
+      "value": 3630,
+      "deltaPct": -9.11,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-13T22:15:08.533Z"
+      "asOf": "2026-10-14T15:15:28.117Z"
     },
     "panamaxTc": {
       "value": 2432,
@@ -236,6 +236,74 @@
   },
   "news": [
     {
+      "title": "EuroDry adds third $37m kamsarmax at Hengli",
+      "link": "https://splash247.com/eurodry-adds-third-37m-kamsarmax-at-hengli/",
+      "pubDate": "Wed, 14 Oct 2026 15:36:02 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Aristides Pittas-led EuroDry has returned to China’s Hengli Shipbuilding for another kamsarmax, adding a third 82,000 dwt newbuilding to a fleet renewal programme now worth almost $183m. The Nasdaq-listed dry bulk owner is paying about $37m for the latest vessel, which is schedul",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-Heavy-Industries-bulkers.jpg",
+      "en": {
+        "headline": "EuroDry adds third $37m kamsarmax at Hengli",
+        "summary": "Aristides Pittas-led EuroDry has returned to China’s Hengli Shipbuilding for another kamsarmax, adding a third 82,000 dwt newbuilding to a fleet renewal programme now worth almost $183m. The Nasdaq-listed dry bulk owner is paying about $37m for the latest vessel, which is schedul",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Royal Navy’s Only Ice Patrol Ship Faces Uncertain Future After Defect",
+      "link": "https://gcaptain.com/royal-navys-only-ice-patrol-ship-faces-uncertain-future-after-defect/",
+      "pubDate": "Wed, 14 Oct 2026 13:33:41 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Royal Navy’s only dedicated ice patrol ship has been towed from Teesside to Devonport following a reported defect, raising questions about Britain’s ability to maintain its maritime presence in the polar regions as the government works toward a replacement.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/11776297453_206025d45b_o.jpg",
+      "en": {
+        "headline": "Royal Navy’s Only Ice Patrol Ship Faces Uncertain Future After Defect",
+        "summary": "The Royal Navy’s only dedicated ice patrol ship has been towed from Teesside to Devonport following a reported defect, raising questions about Britain’s ability to maintain its maritime presence in the polar regions as the government works toward a replacement.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Trump Touts Taiwan-Alaska LNG Deal Taipei Hasn’t Finalized",
+      "link": "https://gcaptain.com/trump-touts-taiwan-alaska-lng-deal-taipei-hasnt-finalized/",
+      "pubDate": "Wed, 14 Oct 2026 13:17:00 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "President Donald Trump said Taiwan had agreed to buy 30% of the liquefied natural gas from a planned project in Alaska for 20 years, even as Taipei indicated that no binding commitments have been finalized.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/04/Liquefaction-Facility.jpeg",
+      "en": {
+        "headline": "Trump Touts Taiwan-Alaska LNG Deal Taipei Hasn’t Finalized",
+        "summary": "President Donald Trump said Taiwan had agreed to buy 30% of the liquefied natural gas from a planned project in Alaska for 20 years, even as Taipei indicated that no binding commitments have been finalized.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Container Ship Sinks Near Hormuz After Being Hit by Projectile, Sources Say",
+      "link": "https://gcaptain.com/container-ship-sinks-near-hormuz-after-being-hit-by-projectile-sources-say/",
+      "pubDate": "Wed, 14 Oct 2026 12:45:47 +0000",
+      "source": "gCaptain",
+      "category": "Dry Bulk",
+      "summary": "A container ship has sunk near the Strait of Hormuz after being hit by a projectile and a separate dry bulk vessel is sinking in another incident, maritime security sources said on Wednesday.",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Screenshot-2026-10-14-at-2.46.35-PM-800x495.jpg",
+      "en": {
+        "headline": "Container Ship Sinks Near Hormuz After Being Hit by Projectile, Sources Say",
+        "summary": "A container ship has sunk near the Strait of Hormuz after being hit by a projectile and a separate dry bulk vessel is sinking in another incident, maritime security sources said on Wednesday.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Shipping firms and ports caught in mass cyber extortion claim",
       "link": "https://splash247.com/shipping-firms-and-ports-caught-in-mass-cyber-extortion-claim/",
       "pubDate": "Wed, 14 Oct 2026 10:00:00 +0000",
@@ -244,7 +312,7 @@
       "summary": "A cyber extortion group has threatened to publish data it claims it stole from 38 shipping, port, and logistics companies unless they pay multimillion-dollar ransoms by October 19. Cybersecurity firm SOCRadar said the group, known as n0n, added the 38 organisations to its dark we",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Cydome-Cyber-Hack.jpg",
       "en": {
         "headline": "Shipping firms and ports caught in mass cyber extortion claim",
@@ -261,7 +329,7 @@
       "summary": "China&#8217;s Zhonggu Shipping Group has signed up for two 14,000 teu containerships at Hudong-Zhonghua Shipbuilding, moving into significantly larger tonnage as investment across the group gathers pace. The Shanghai-based company has contracted the conventionally fuelled pair, w",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/01/Zhonggu-Logistics.jpg",
       "en": {
         "headline": "Zhonggu steps up boxship investments with larger newbuilds",
@@ -278,7 +346,7 @@
       "summary": "Japan is preparing to subsidise the additional cost of importing oil from suppliers outside the Strait of Hormuz, in a significant government intervention aimed at reducing the country&#8217;s dependence on the increasingly dangerous waterway. The Japanese cabinet approved three ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/NYK-VLCC.jpg",
       "en": {
         "headline": "Japan prepares to pay for oil&#8217;s long way round",
@@ -295,7 +363,7 @@
       "summary": "India’s Aegis Logistics has struck a deal to acquire 89.8% of Dubai-based Tristar for $809m, taking control of a global energy logistics group with a sizeable tanker and dry bulk shipping operation. The Mumbai-listed group is buying the stake through Singapore-based Aegis Logisti",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Solar-Ailene-tanker-Tristar-Eships.jpg",
       "en": {
         "headline": "India’s Aegis takes over Dubai tanker and logistics group Tristar",
@@ -312,7 +380,7 @@
       "summary": "Splash Maritime Group has officially launched Splash Cruise, a new international news platform dedicated to the business of cruise shipping, bringing the editorial approach that has made Splash a leading independent voice in maritime journalism to the global cruise industry. Avai",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Splash-Cruise-Homepage-Launch.jpg",
       "en": {
         "headline": "Splash Cruise launches with a fresh take on the global cruise business",
@@ -329,7 +397,7 @@
       "summary": "A ship&#8217;s anchor can wreak havoc on the world&#8217;s undersea infrastructure, something that has provided plenty of rich material for Splash reporting in recent years. For Elisabeth Braw, the Cook Islands-flagged tanker Eagle S provides one of the most brazen examples. On C",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Elisabeth-Braw.jpg",
       "en": {
         "headline": "Elisabeth Braw: The Undersea War",
@@ -346,7 +414,7 @@
       "summary": "The upheaval in global energy markets caused by the war in the Middle East has produced an unexpected winner in the marine fuels market, with biodiesel briefly emerging as the cheapest bunkering option in Rotterdam once European carbon costs are factored in. A new white paper fro",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/12/BHP-Oldendorff-Biofuels-Bunkering-Singapore.jpg",
       "en": {
         "headline": "Hormuz shock briefly makes biofuel the cheapest bunker option",
@@ -363,7 +431,7 @@
       "summary": "Nasdaq-listed Greek shipowner Pyxis Tankers has agreed to acquire the remaining 40% stake in one of its ultramax bulkers from a company linked to its chairman and chief executive, Eddie Valentis. The deal, valued at approximately $6.83m before a separate working capital adjustmen",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Konkar-Ormi-ultramax-Pyxis-Tankers.jpg",
       "en": {
         "headline": "Pyxis buys out boss&#8217;s ultramax stake in $6.8m deal",
@@ -380,28 +448,11 @@
       "summary": "Greek shipping group Tsakos has returned to the containership newbuilding market, emerging behind an order for two 3,200 teu vessels at China’s Hengli Heavy Industries. The pair appear in the Athens-based owner’s latest fleet register, with both scheduled for delivery in the four",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/01/Hengli-Shipbuilding.jpg",
       "en": {
         "headline": "Tsakos returns to containership contracting in China",
         "summary": "Greek shipping group Tsakos has returned to the containership newbuilding market, emerging behind an order for two 3,200 teu vessels at China’s Hengli Heavy Industries. The pair appear in the Athens-based owner’s latest fleet register, with both scheduled for delivery in the four",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "The floating container platform turning heads",
-      "link": "https://splash247.com/the-floating-container-platform-turning-heads/",
-      "pubDate": "Wed, 14 Oct 2026 03:00:48 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Every so often a ship comes along that makes even seasoned shipping watchers look twice. Meet the Fan Zhou 8, an extraordinary floating container platform that has just carried more than 3,000 teu out of China. According to Alphaliner, German independent carrier Carrier53&#8242; ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Mega-Deckship.jpg",
-      "en": {
-        "headline": "The floating container platform turning heads",
-        "summary": "Every so often a ship comes along that makes even seasoned shipping watchers look twice. Meet the Fan Zhou 8, an extraordinary floating container platform that has just carried more than 3,000 teu out of China. According to Alphaliner, German independent carrier Carrier53&#8242; ",
         "source": "Splash247"
       }
     },
@@ -414,7 +465,7 @@
       "summary": "The Port of Los Angeles handled a record 1,042,652 twenty-foot equivalent units (TEUs) in September, marking the busiest month in its 118-year history as strong consumer demand and shifting global...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 14,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Pier-300-Channel.jpg",
       "en": {
         "headline": "Port of Los Angeles Sets All-Time Cargo Record as Imports Surge",
@@ -431,7 +482,7 @@
       "summary": "Yemen's Iran-allied Houthis said Saudi Arabia was attacking the Yemeni capital Sanaa on Tuesday after a Saudi-led coalition warned civilians to stay away from an oil depot on the city's outskirts, part of a rapidly escalating war between the sides.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 16,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
       "en": {
         "headline": "Saudi Arabia Strikes Houthi Targets as Red Sea War Escalates",
@@ -448,62 +499,11 @@
       "summary": "Augmented reality (AR) can help industrial crews perform tasks more efficiently and consistently, but widespread deployment will depend on demonstrating that productivity gains can be achieved without compromising safety. That’s...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 17,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/http___cdn.prgloo-1.jpg",
       "en": {
         "headline": "ABS Helps Industry Put Augmented Reality to the Test",
         "summary": "Augmented reality (AR) can help industrial crews perform tasks more efficiently and consistently, but widespread deployment will depend on demonstrating that productivity gains can be achieved without compromising safety. That’s...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Fire Forces Crew to Abandon Research Vessel Off Louisiana",
-      "link": "https://gcaptain.com/fire-forces-crew-to-abandon-research-vessel-off-louisiana/",
-      "pubDate": "Tue, 13 Oct 2026 16:36:02 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A fire aboard a seismic research vessel in the Gulf of Mexico forced dozens of crew members to abandon ship Monday, with nearby offshore supply vessels helping bring the evacuees...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Rem-Andes-rescue.jpg",
-      "en": {
-        "headline": "Fire Forces Crew to Abandon Research Vessel Off Louisiana",
-        "summary": "A fire aboard a seismic research vessel in the Gulf of Mexico forced dozens of crew members to abandon ship Monday, with nearby offshore supply vessels helping bring the evacuees...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Supertankers Turn From Gulf Oil Transfer Hub Amid Iran’s Attacks",
-      "link": "https://gcaptain.com/supertankers-turn-from-gulf-oil-transfer-hub-amid-irans-attacks/",
-      "pubDate": "Tue, 13 Oct 2026 16:23:19 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A growing number of empty supertankers have been turning away from the Persian Gulf as escalating Iranian attacks threaten a critical transfer hub for wartime oil shipments.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-24T194006Z_526739983_RC2LD6A7RFZM_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x533.jpg",
-      "en": {
-        "headline": "Supertankers Turn From Gulf Oil Transfer Hub Amid Iran’s Attacks",
-        "summary": "A growing number of empty supertankers have been turning away from the Persian Gulf as escalating Iranian attacks threaten a critical transfer hub for wartime oil shipments.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Trump’s Diesel Deal Irks Allies and Is Unlikely to Reduce Prices",
-      "link": "https://gcaptain.com/trumps-diesel-deal-irks-allies-and-is-unlikely-to-reduce-prices/",
-      "pubDate": "Tue, 13 Oct 2026 16:17:54 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "President Donald Trump’s deal for Russian diesel exposed the US to legal questions, opened a rift with his Republican allies and European leaders and heightened tensions with Ukraine — all in exchange for an outcome that experts suggest is unlikely to succeed.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-10T111832Z_327337754_RC29TMATWR3B_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-PLAN.jpg",
-      "en": {
-        "headline": "Trump’s Diesel Deal Irks Allies and Is Unlikely to Reduce Prices",
-        "summary": "President Donald Trump’s deal for Russian diesel exposed the US to legal questions, opened a rift with his Republican allies and European leaders and heightened tensions with Ukraine — all in exchange for an outcome that experts suggest is unlikely to succeed.",
         "source": "gCaptain"
       }
     }
