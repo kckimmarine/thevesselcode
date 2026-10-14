@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-14T02:49:43.168Z",
+    "generatedAt": "2026-10-14T10:53:51.627Z",
     "benchmarkAsOf": "2026-10-13",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 892.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-12T17:00:00.000Z",
+        "priceUsdMt": 907,
+        "deltaPct": 1.62,
+        "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1247.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-12T17:00:00.000Z",
+        "priceUsdMt": 1261,
+        "deltaPct": 1.08,
+        "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 823,
-        "deltaPct": 0,
-        "asOf": "2026-10-12T17:00:00.000Z",
+        "priceUsdMt": 843.5,
+        "deltaPct": 2.49,
+        "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 735,
-        "deltaPct": 0,
-        "asOf": "2026-10-12T17:00:00.000Z",
+        "priceUsdMt": 736.5,
+        "deltaPct": 0.2,
+        "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1368.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-12T17:00:00.000Z",
+        "priceUsdMt": 1381.5,
+        "deltaPct": 0.95,
+        "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 669.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-12T17:00:00.000Z",
+        "priceUsdMt": 661.5,
+        "deltaPct": -1.19,
+        "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 757.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-12T17:00:00.000Z",
+        "priceUsdMt": 763,
+        "deltaPct": 0.73,
+        "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1393.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-12T17:00:00.000Z",
+        "priceUsdMt": 1396,
+        "deltaPct": 0.18,
+        "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -173,7 +173,7 @@
         "defaultDensity": 991,
         "priceUsdMt": 567.5,
         "deltaPct": 0,
-        "asOf": "2026-10-12T17:00:00.000Z",
+        "asOf": "2026-10-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -184,7 +184,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 990,
-        "deltaPct": -0.5,
+        "deltaPct": 0,
         "asOf": "2026-10-13T22:41:14.015Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 995,
-        "deltaPct": 4.19,
+        "deltaPct": 0,
         "asOf": "2026-10-13T22:41:13.950Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -236,6 +236,176 @@
   },
   "news": [
     {
+      "title": "Shipping firms and ports caught in mass cyber extortion claim",
+      "link": "https://splash247.com/shipping-firms-and-ports-caught-in-mass-cyber-extortion-claim/",
+      "pubDate": "Wed, 14 Oct 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A cyber extortion group has threatened to publish data it claims it stole from 38 shipping, port, and logistics companies unless they pay multimillion-dollar ransoms by October 19. Cybersecurity firm SOCRadar said the group, known as n0n, added the 38 organisations to its dark we",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Cydome-Cyber-Hack.jpg",
+      "en": {
+        "headline": "Shipping firms and ports caught in mass cyber extortion claim",
+        "summary": "A cyber extortion group has threatened to publish data it claims it stole from 38 shipping, port, and logistics companies unless they pay multimillion-dollar ransoms by October 19. Cybersecurity firm SOCRadar said the group, known as n0n, added the 38 organisations to its dark we",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Zhonggu steps up boxship investments with larger newbuilds",
+      "link": "https://splash247.com/zhonggu-steps-up-boxship-investments-with-larger-newbuilds/",
+      "pubDate": "Wed, 14 Oct 2026 09:29:47 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "China&#8217;s Zhonggu Shipping Group has signed up for two 14,000 teu containerships at Hudong-Zhonghua Shipbuilding, moving into significantly larger tonnage as investment across the group gathers pace. The Shanghai-based company has contracted the conventionally fuelled pair, w",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/01/Zhonggu-Logistics.jpg",
+      "en": {
+        "headline": "Zhonggu steps up boxship investments with larger newbuilds",
+        "summary": "China&#8217;s Zhonggu Shipping Group has signed up for two 14,000 teu containerships at Hudong-Zhonghua Shipbuilding, moving into significantly larger tonnage as investment across the group gathers pace. The Shanghai-based company has contracted the conventionally fuelled pair, w",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Japan prepares to pay for oil&#8217;s long way round",
+      "link": "https://splash247.com/japan-prepares-to-pay-for-oils-long-way-round/",
+      "pubDate": "Wed, 14 Oct 2026 08:30:40 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Japan is preparing to subsidise the additional cost of importing oil from suppliers outside the Strait of Hormuz, in a significant government intervention aimed at reducing the country&#8217;s dependence on the increasingly dangerous waterway. The Japanese cabinet approved three ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/NYK-VLCC.jpg",
+      "en": {
+        "headline": "Japan prepares to pay for oil&#8217;s long way round",
+        "summary": "Japan is preparing to subsidise the additional cost of importing oil from suppliers outside the Strait of Hormuz, in a significant government intervention aimed at reducing the country&#8217;s dependence on the increasingly dangerous waterway. The Japanese cabinet approved three ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "India’s Aegis takes over Dubai tanker and logistics group Tristar",
+      "link": "https://splash247.com/indias-aegis-takes-over-dubai-tanker-and-logistics-group-tristar/",
+      "pubDate": "Wed, 14 Oct 2026 08:15:28 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "India’s Aegis Logistics has struck a deal to acquire 89.8% of Dubai-based Tristar for $809m, taking control of a global energy logistics group with a sizeable tanker and dry bulk shipping operation. The Mumbai-listed group is buying the stake through Singapore-based Aegis Logisti",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Solar-Ailene-tanker-Tristar-Eships.jpg",
+      "en": {
+        "headline": "India’s Aegis takes over Dubai tanker and logistics group Tristar",
+        "summary": "India’s Aegis Logistics has struck a deal to acquire 89.8% of Dubai-based Tristar for $809m, taking control of a global energy logistics group with a sizeable tanker and dry bulk shipping operation. The Mumbai-listed group is buying the stake through Singapore-based Aegis Logisti",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Splash Cruise launches with a fresh take on the global cruise business",
+      "link": "https://splash247.com/splash-cruise-launches-with-a-fresh-take-on-the-global-cruise-business/",
+      "pubDate": "Wed, 14 Oct 2026 08:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Splash Maritime Group has officially launched Splash Cruise, a new international news platform dedicated to the business of cruise shipping, bringing the editorial approach that has made Splash a leading independent voice in maritime journalism to the global cruise industry. Avai",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Splash-Cruise-Homepage-Launch.jpg",
+      "en": {
+        "headline": "Splash Cruise launches with a fresh take on the global cruise business",
+        "summary": "Splash Maritime Group has officially launched Splash Cruise, a new international news platform dedicated to the business of cruise shipping, bringing the editorial approach that has made Splash a leading independent voice in maritime journalism to the global cruise industry. Avai",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Elisabeth Braw: The Undersea War",
+      "link": "https://splash247.com/elisabeth-braw-the-undersea-war/",
+      "pubDate": "Wed, 14 Oct 2026 07:45:22 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A ship&#8217;s anchor can wreak havoc on the world&#8217;s undersea infrastructure, something that has provided plenty of rich material for Splash reporting in recent years. For Elisabeth Braw, the Cook Islands-flagged tanker Eagle S provides one of the most brazen examples. On C",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Elisabeth-Braw.jpg",
+      "en": {
+        "headline": "Elisabeth Braw: The Undersea War",
+        "summary": "A ship&#8217;s anchor can wreak havoc on the world&#8217;s undersea infrastructure, something that has provided plenty of rich material for Splash reporting in recent years. For Elisabeth Braw, the Cook Islands-flagged tanker Eagle S provides one of the most brazen examples. On C",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Hormuz shock briefly makes biofuel the cheapest bunker option",
+      "link": "https://splash247.com/hormuz-shock-briefly-makes-biofuel-the-cheapest-bunker-option/",
+      "pubDate": "Wed, 14 Oct 2026 07:25:51 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "The upheaval in global energy markets caused by the war in the Middle East has produced an unexpected winner in the marine fuels market, with biodiesel briefly emerging as the cheapest bunkering option in Rotterdam once European carbon costs are factored in. A new white paper fro",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/12/BHP-Oldendorff-Biofuels-Bunkering-Singapore.jpg",
+      "en": {
+        "headline": "Hormuz shock briefly makes biofuel the cheapest bunker option",
+        "summary": "The upheaval in global energy markets caused by the war in the Middle East has produced an unexpected winner in the marine fuels market, with biodiesel briefly emerging as the cheapest bunkering option in Rotterdam once European carbon costs are factored in. A new white paper fro",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Pyxis buys out boss&#8217;s ultramax stake in $6.8m deal",
+      "link": "https://splash247.com/pyxis-buys-out-bosss-ultramax-stake-in-6-8m-deal/",
+      "pubDate": "Wed, 14 Oct 2026 07:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Nasdaq-listed Greek shipowner Pyxis Tankers has agreed to acquire the remaining 40% stake in one of its ultramax bulkers from a company linked to its chairman and chief executive, Eddie Valentis. The deal, valued at approximately $6.83m before a separate working capital adjustmen",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Konkar-Ormi-ultramax-Pyxis-Tankers.jpg",
+      "en": {
+        "headline": "Pyxis buys out boss&#8217;s ultramax stake in $6.8m deal",
+        "summary": "Nasdaq-listed Greek shipowner Pyxis Tankers has agreed to acquire the remaining 40% stake in one of its ultramax bulkers from a company linked to its chairman and chief executive, Eddie Valentis. The deal, valued at approximately $6.83m before a separate working capital adjustmen",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Tsakos returns to containership contracting in China",
+      "link": "https://splash247.com/tsakos-returns-to-containership-contracting-in-china/",
+      "pubDate": "Wed, 14 Oct 2026 06:30:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Greek shipping group Tsakos has returned to the containership newbuilding market, emerging behind an order for two 3,200 teu vessels at China’s Hengli Heavy Industries. The pair appear in the Athens-based owner’s latest fleet register, with both scheduled for delivery in the four",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/01/Hengli-Shipbuilding.jpg",
+      "en": {
+        "headline": "Tsakos returns to containership contracting in China",
+        "summary": "Greek shipping group Tsakos has returned to the containership newbuilding market, emerging behind an order for two 3,200 teu vessels at China’s Hengli Heavy Industries. The pair appear in the Athens-based owner’s latest fleet register, with both scheduled for delivery in the four",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "The floating container platform turning heads",
+      "link": "https://splash247.com/the-floating-container-platform-turning-heads/",
+      "pubDate": "Wed, 14 Oct 2026 03:00:48 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Every so often a ship comes along that makes even seasoned shipping watchers look twice. Meet the Fan Zhou 8, an extraordinary floating container platform that has just carried more than 3,000 teu out of China. According to Alphaliner, German independent carrier Carrier53&#8242; ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Mega-Deckship.jpg",
+      "en": {
+        "headline": "The floating container platform turning heads",
+        "summary": "Every so often a ship comes along that makes even seasoned shipping watchers look twice. Meet the Fan Zhou 8, an extraordinary floating container platform that has just carried more than 3,000 teu out of China. According to Alphaliner, German independent carrier Carrier53&#8242; ",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Port of Los Angeles Sets All-Time Cargo Record as Imports Surge",
       "link": "https://gcaptain.com/port-of-los-angeles-sets-all-time-cargo-record-as-imports-surge/",
       "pubDate": "Tue, 13 Oct 2026 20:26:08 +0000",
@@ -244,29 +414,12 @@
       "summary": "The Port of Los Angeles handled a record 1,042,652 twenty-foot equivalent units (TEUs) in September, marking the busiest month in its 118-year history as strong consumer demand and shifting global...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 6,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Pier-300-Channel.jpg",
       "en": {
         "headline": "Port of Los Angeles Sets All-Time Cargo Record as Imports Surge",
         "summary": "The Port of Los Angeles handled a record 1,042,652 twenty-foot equivalent units (TEUs) in September, marking the busiest month in its 118-year history as strong consumer demand and shifting global...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Splash Cruise launches with a fresh take on the global cruise business",
-      "link": "https://splash247.com/splash-cruise-launches-with-a-fresh-take-on-the-global-cruise-business/",
-      "pubDate": "Tue, 13 Oct 2026 20:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Splash Maritime Group has officially launched Splash Cruise, a new international news platform dedicated to the business of cruise shipping, bringing the editorial approach that has made Splash a leading independent voice in maritime journalism to the global cruise industry. Avai",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Splash-Cruise-Homepage-Launch.jpg",
-      "en": {
-        "headline": "Splash Cruise launches with a fresh take on the global cruise business",
-        "summary": "Splash Maritime Group has officially launched Splash Cruise, a new international news platform dedicated to the business of cruise shipping, bringing the editorial approach that has made Splash a leading independent voice in maritime journalism to the global cruise industry. Avai",
-        "source": "Splash247"
       }
     },
     {
@@ -278,7 +431,7 @@
       "summary": "Yemen's Iran-allied Houthis said Saudi Arabia was attacking the Yemeni capital Sanaa on Tuesday after a Saudi-led coalition warned civilians to stay away from an oil depot on the city's outskirts, part of a rapidly escalating war between the sides.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 8,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
       "en": {
         "headline": "Saudi Arabia Strikes Houthi Targets as Red Sea War Escalates",
@@ -295,7 +448,7 @@
       "summary": "Augmented reality (AR) can help industrial crews perform tasks more efficiently and consistently, but widespread deployment will depend on demonstrating that productivity gains can be achieved without compromising safety. That’s...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/http___cdn.prgloo-1.jpg",
       "en": {
         "headline": "ABS Helps Industry Put Augmented Reality to the Test",
@@ -312,7 +465,7 @@
       "summary": "A fire aboard a seismic research vessel in the Gulf of Mexico forced dozens of crew members to abandon ship Monday, with nearby offshore supply vessels helping bring the evacuees...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Rem-Andes-rescue.jpg",
       "en": {
         "headline": "Fire Forces Crew to Abandon Research Vessel Off Louisiana",
@@ -329,7 +482,7 @@
       "summary": "A growing number of empty supertankers have been turning away from the Persian Gulf as escalating Iranian attacks threaten a critical transfer hub for wartime oil shipments.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-24T194006Z_526739983_RC2LD6A7RFZM_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x533.jpg",
       "en": {
         "headline": "Supertankers Turn From Gulf Oil Transfer Hub Amid Iran’s Attacks",
@@ -346,165 +499,12 @@
       "summary": "President Donald Trump’s deal for Russian diesel exposed the US to legal questions, opened a rift with his Republican allies and European leaders and heightened tensions with Ukraine — all in exchange for an outcome that experts suggest is unlikely to succeed.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-10T111832Z_327337754_RC29TMATWR3B_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-PLAN.jpg",
       "en": {
         "headline": "Trump’s Diesel Deal Irks Allies and Is Unlikely to Reduce Prices",
         "summary": "President Donald Trump’s deal for Russian diesel exposed the US to legal questions, opened a rift with his Republican allies and European leaders and heightened tensions with Ukraine — all in exchange for an outcome that experts suggest is unlikely to succeed.",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "11 Missing as Drone Attacks Strike Two Ships Near NATO Waters",
-      "link": "https://gcaptain.com/11-missing-as-drone-attacks-strike-two-ships-near-nato-waters/",
-      "pubDate": "Tue, 13 Oct 2026 16:07:50 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Eleven sailors were missing at sea on Tuesday from a ship sunk by a drone attack off the coast of Bulgaria, possibly the second deadly sinking of a cargo vessel in the area in a week, prompting Bulgaria to summon Russia's ambassador.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "11 Missing as Drone Attacks Strike Two Ships Near NATO Waters",
-        "summary": "Eleven sailors were missing at sea on Tuesday from a ship sunk by a drone attack off the coast of Bulgaria, possibly the second deadly sinking of a cargo vessel in the area in a week, prompting Bulgaria to summon Russia's ambassador.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "France Seizes Another &#8216;Shadow Fleet&#8217; Tanker; Russia Decries &#8216;Piracy&#8217;",
-      "link": "https://gcaptain.com/france-seizes-another-shadow-fleet-tanker-russia-decries-piracy/",
-      "pubDate": "Tue, 13 Oct 2026 12:56:21 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "France's military was taking a tanker suspected to be part of Russia's \"shadow fleet\" skirting Western sanctions to Reunion island on Tuesday in what Moscow called another act of \"piracy.\"",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/83f85d10-6736-422e-8e8b-3f39b76a2b95.jpg",
-      "en": {
-        "headline": "France Seizes Another &#8216;Shadow Fleet&#8217; Tanker; Russia Decries &#8216;Piracy&#8217;",
-        "summary": "France's military was taking a tanker suspected to be part of Russia's \"shadow fleet\" skirting Western sanctions to Reunion island on Tuesday in what Moscow called another act of \"piracy.\"",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "South Korean President Hails Arctic Container Shipping Trial, but Commercial and Sanctions Questions Remain",
-      "link": "https://gcaptain.com/south-korean-president-hails-arctic-container-shipping-trial-but-commercial-and-sanctions-questions-remain/",
-      "pubDate": "Tue, 13 Oct 2026 12:05:20 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "South Korean President Lee Jae Myung welcomed the PanStar Acro and its crew home on Tuesday after the container ship completed the country’s first round-trip commercial trial through the Arctic to Europe, hailing the voyage as a potential alternative to traditional shipping lanes",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-13T072921Z_1648706371_RC272OALXTTH_RTRMADP_3_SOUTHKOREA-SHIPPING-ARCTIC-800x503.jpg",
-      "en": {
-        "headline": "South Korean President Hails Arctic Container Shipping Trial, but Commercial and Sanctions Questions Remain",
-        "summary": "South Korean President Lee Jae Myung welcomed the PanStar Acro and its crew home on Tuesday after the container ship completed the country’s first round-trip commercial trial through the Arctic to Europe, hailing the voyage as a potential alternative to traditional shipping lanes",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Bulgaria Points to Russia as Drones Hit More Cargo Ships",
-      "link": "https://gcaptain.com/bulgaria-points-to-russia-as-drones-hit-more-cargo-ships/",
-      "pubDate": "Tue, 13 Oct 2026 11:56:00 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Bulgaria summoned Russia’s ambassador to Sofia after two ships were hit off the country’s coast, as concerns mount over the security of Black Sea shipping.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-13T121115Z_837897891_RC2C2OA50QNT_RTRMADP_3_BULGARIA-INCIDENT-DRONE.jpg",
-      "en": {
-        "headline": "Bulgaria Points to Russia as Drones Hit More Cargo Ships",
-        "summary": "Bulgaria summoned Russia’s ambassador to Sofia after two ships were hit off the country’s coast, as concerns mount over the security of Black Sea shipping.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Emarat Maritime piles six more tankers onto China orderbook",
-      "link": "https://splash247.com/emarat-maritime-piles-six-more-tankers-onto-china-orderbook/",
-      "pubDate": "Tue, 13 Oct 2026 11:33:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Dubai-based Emarat Maritime has added another six tanker newbuildings to its rapidly expanding fleet, lining up a series of 74,000 dwt LR1 product carriers in China. The company’s own fleet register now lists six LR1 newbuildings, with the first two scheduled for delivery in 2029",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/12/Jiangsu-New-Hantong-Ship-Heavy-Industry.jpg",
-      "en": {
-        "headline": "Emarat Maritime piles six more tankers onto China orderbook",
-        "summary": "Dubai-based Emarat Maritime has added another six tanker newbuildings to its rapidly expanding fleet, lining up a series of 74,000 dwt LR1 product carriers in China. The company’s own fleet register now lists six LR1 newbuildings, with the first two scheduled for delivery in 2029",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Lianson Fleet snaps up third ultramax",
-      "link": "https://splash247.com/lianson-fleet-snaps-up-third-ultramax/",
-      "pubDate": "Tue, 13 Oct 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Malaysia’s Lianson Fleet Group (LFG) has added a third ultramax bulker, paying $23m (RM93.9m) for a 2013-built Japanese vessel as it continues to expand beyond its traditional offshore support vessel business. The Bursa Malaysia-listed company said its wholly owned subsidiary acq",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2017/01/ultramax-bulk-e1592794814366.jpg",
-      "en": {
-        "headline": "Lianson Fleet snaps up third ultramax",
-        "summary": "Malaysia’s Lianson Fleet Group (LFG) has added a third ultramax bulker, paying $23m (RM93.9m) for a 2013-built Japanese vessel as it continues to expand beyond its traditional offshore support vessel business. The Bursa Malaysia-listed company said its wholly owned subsidiary acq",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Saverys keeps cashing in on tanker values",
-      "link": "https://splash247.com/saverys-keeps-cashing-in-on-tanker-values/",
-      "pubDate": "Tue, 13 Oct 2026 10:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Belgian shipping group CMB.TECH has continued to cash in on elevated tanker values, selling its fifth suezmax this year and locking in another $59.6m capital gain. The Alexander Saverys-led company said it has already delivered the 2011-built, 165,000 dwt Stella to its new owner ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Alexander-Saverys.jpg",
-      "en": {
-        "headline": "Saverys keeps cashing in on tanker values",
-        "summary": "Belgian shipping group CMB.TECH has continued to cash in on elevated tanker values, selling its fifth suezmax this year and locking in another $59.6m capital gain. The Alexander Saverys-led company said it has already delivered the 2011-built, 165,000 dwt Stella to its new owner ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Fujian Guohang maps out Hong Kong fleet expansion",
-      "link": "https://splash247.com/fujian-guohang-maps-out-hong-kong-fleet-expansion/",
-      "pubDate": "Tue, 13 Oct 2026 10:04:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Chinese bulker owner Fujian Guohang Ocean Shipping is preparing to establish 12 wholly owned shipping companies in Hong Kong as it lays the groundwork for a newbuilding investment programme valued at approximately CNY2.49bn ($372m). The Beijing Stock Exchange-listed company discl",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Guo-Yuan-8-Fujian-Guohang-Ocean-Shipping.jpg",
-      "en": {
-        "headline": "Fujian Guohang maps out Hong Kong fleet expansion",
-        "summary": "Chinese bulker owner Fujian Guohang Ocean Shipping is preparing to establish 12 wholly owned shipping companies in Hong Kong as it lays the groundwork for a newbuilding investment programme valued at approximately CNY2.49bn ($372m). The Beijing Stock Exchange-listed company discl",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Pertamina and Medco take slices of Eni’s Indonesia offshore assets",
-      "link": "https://splash247.com/pertamina-and-medco-take-slices-of-enis-indonesia-offshore-assets/",
-      "pubDate": "Tue, 13 Oct 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Italian giant Eni has agreed to sell 10% interests in seven offshore production sharing contracts in Indonesia to Pertamina and MedcoEnergi as it reshapes its portfolio after creating its Searah joint venture with Petronas. The company will sell Pertamina 10% stakes in the East S",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Eni-headquarters.jpg",
-      "en": {
-        "headline": "Pertamina and Medco take slices of Eni’s Indonesia offshore assets",
-        "summary": "Italian giant Eni has agreed to sell 10% interests in seven offshore production sharing contracts in Indonesia to Pertamina and MedcoEnergi as it reshapes its portfolio after creating its Searah joint venture with Petronas. The company will sell Pertamina 10% stakes in the East S",
-        "source": "Splash247"
       }
     }
   ]
