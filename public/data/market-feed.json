@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-15T02:28:41.498Z",
-    "benchmarkAsOf": "2026-10-14",
+    "generatedAt": "2026-10-15T10:36:05.386Z",
+    "benchmarkAsOf": "2026-10-15",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-10-14",
-    "updatedLabelKo": "2026-10-14 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-10-15",
+    "updatedLabelKo": "2026-10-15 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 907,
-        "deltaPct": 0,
-        "asOf": "2026-10-13T17:00:00.000Z",
+        "priceUsdMt": 917,
+        "deltaPct": 1.1,
+        "asOf": "2026-10-14T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1261,
-        "deltaPct": 0,
-        "asOf": "2026-10-13T17:00:00.000Z",
+        "priceUsdMt": 1295,
+        "deltaPct": 2.7,
+        "asOf": "2026-10-14T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 843.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-13T17:00:00.000Z",
+        "priceUsdMt": 876,
+        "deltaPct": 3.85,
+        "asOf": "2026-10-14T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 736.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-13T17:00:00.000Z",
+        "priceUsdMt": 742,
+        "deltaPct": 0.75,
+        "asOf": "2026-10-14T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1381.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-13T17:00:00.000Z",
+        "priceUsdMt": 1435.5,
+        "deltaPct": 3.91,
+        "asOf": "2026-10-14T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 661.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-13T17:00:00.000Z",
+        "priceUsdMt": 667.5,
+        "deltaPct": 0.91,
+        "asOf": "2026-10-14T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 763,
-        "deltaPct": 0,
-        "asOf": "2026-10-13T17:00:00.000Z",
+        "priceUsdMt": 765,
+        "deltaPct": 0.26,
+        "asOf": "2026-10-14T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1396,
-        "deltaPct": 0,
-        "asOf": "2026-10-13T17:00:00.000Z",
+        "priceUsdMt": 1408,
+        "deltaPct": 0.86,
+        "asOf": "2026-10-14T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -171,9 +171,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 567.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-13T17:00:00.000Z",
+        "priceUsdMt": 571.5,
+        "deltaPct": 0.7,
+        "asOf": "2026-10-14T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -184,7 +184,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 1050,
-        "deltaPct": 6.06,
+        "deltaPct": 0,
         "asOf": "2026-10-14T22:41:23.971Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 1010,
-        "deltaPct": 1.51,
+        "deltaPct": 0,
         "asOf": "2026-10-14T22:41:23.950Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -220,10 +220,10 @@
     },
     "panamaxTc": {
       "value": 2409,
-      "deltaPct": -0.95,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-14T21:45:14.680Z"
+      "asOf": "2026-10-15T07:30:29.704Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,176 @@
   },
   "news": [
     {
+      "title": "Guangzhou and Hong Kong open electric container shuttle",
+      "link": "https://splash247.com/guangzhou-and-hong-kong-open-electric-container-shuttle/",
+      "pubDate": "Thu, 15 Oct 2026 10:27:08 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Guangzhou Port has launched the Greater Bay Area’s first zero-carbon container route, putting a battery-electric vessel into cross-border service between Nansha and Hong Kong. The 240 teu Sui Gang Dian Hang 02 opened the route this week, carrying furniture and consumer goods to H",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Sui-Gang-Dian-Hang-02.jpg",
+      "en": {
+        "headline": "Guangzhou and Hong Kong open electric container shuttle",
+        "summary": "Guangzhou Port has launched the Greater Bay Area’s first zero-carbon container route, putting a battery-electric vessel into cross-border service between Nansha and Hong Kong. The 240 teu Sui Gang Dian Hang 02 opened the route this week, carrying furniture and consumer goods to H",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "COSCO lands ten-year Chinese car-export deal",
+      "link": "https://splash247.com/cosco-lands-ten-year-chinese-car-export-deal/",
+      "pubDate": "Thu, 15 Oct 2026 10:22:54 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "COSCO Shipping Specialized Carriers’ car-carrier business has signed a 10-year contract of affreightment with Chinese automaker DFSK, securing a long-term vehicle-export cargo relationship. The agreement was signed with Chongqing Xiaokang Import &#38; Export, DFSK’s export operat",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/COSCO-DFSK.jpg",
+      "en": {
+        "headline": "COSCO lands ten-year Chinese car-export deal",
+        "summary": "COSCO Shipping Specialized Carriers’ car-carrier business has signed a 10-year contract of affreightment with Chinese automaker DFSK, securing a long-term vehicle-export cargo relationship. The agreement was signed with Chongqing Xiaokang Import &#38; Export, DFSK’s export operat",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Jinhui cashes in on veteran bulker",
+      "link": "https://splash247.com/jinhui-cashes-in-on-veteran-bulker/",
+      "pubDate": "Thu, 15 Oct 2026 10:04:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Hong Kong-based dry bulk owner Jinhui Shipping and Transportation has agreed to sell another ageing supramax, continuing its fleet renewal drive with a $14.6m deal involving a Hong Kong buyer. The Oslo-listed company, majority-owned by Hong Kong-listed Jinhui Holdings, has signed",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/10/Jinhui-bulker.jpg",
+      "en": {
+        "headline": "Jinhui cashes in on veteran bulker",
+        "summary": "Hong Kong-based dry bulk owner Jinhui Shipping and Transportation has agreed to sell another ageing supramax, continuing its fleet renewal drive with a $14.6m deal involving a Hong Kong buyer. The Oslo-listed company, majority-owned by Hong Kong-listed Jinhui Holdings, has signed",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Germany puts $448m behind 47-point green shipping plan",
+      "link": "https://splash247.com/germany-puts-448m-behind-47-point-green-shipping-plan/",
+      "pubDate": "Thu, 15 Oct 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Germany has approved a national shipping decarbonisation programme backed by €400m ($448.8m) in funding, including proposals for greener shipping corridors, alternative fuel infrastructure and financial incentives for vessel renewal. The federal cabinet adopted the National Actio",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Port-of-Kiel.jpg",
+      "en": {
+        "headline": "Germany puts $448m behind 47-point green shipping plan",
+        "summary": "Germany has approved a national shipping decarbonisation programme backed by €400m ($448.8m) in funding, including proposals for greener shipping corridors, alternative fuel infrastructure and financial incentives for vessel renewal. The federal cabinet adopted the National Actio",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Suez tightens transit rules for ageing ships",
+      "link": "https://splash247.com/suez-tightens-transit-rules-for-ageing-ships/",
+      "pubDate": "Thu, 15 Oct 2026 09:55:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The Suez Canal Authority (SCA) has introduced mandatory inspections and trials for vessels aged 25 years and older, adding further costs and potential delays for operators of ageing tonnage. The new regulations, already effective, require vessels to undergo a comprehensive inspec",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/05/Bulker-grounding-Suez-Canal.jpg",
+      "en": {
+        "headline": "Suez tightens transit rules for ageing ships",
+        "summary": "The Suez Canal Authority (SCA) has introduced mandatory inspections and trials for vessels aged 25 years and older, adding further costs and potential delays for operators of ageing tonnage. The new regulations, already effective, require vessels to undergo a comprehensive inspec",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Icon Energy expands boxship exposure",
+      "link": "https://splash247.com/icon-energy-expands-boxship-exposure/",
+      "pubDate": "Thu, 15 Oct 2026 09:54:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Nasdaq-listed Greek dry bulk owner Icon Energy is expanding its containership investments, agreeing to take a minority stake in a second feeder vessel employed under a long-term charter. The Ismini Panagiotidi-led company said it would acquire approximately 2.8% of the entity bei",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Boxship-containership-sun.jpg",
+      "en": {
+        "headline": "Icon Energy expands boxship exposure",
+        "summary": "Nasdaq-listed Greek dry bulk owner Icon Energy is expanding its containership investments, agreeing to take a minority stake in a second feeder vessel employed under a long-term charter. The Ismini Panagiotidi-led company said it would acquire approximately 2.8% of the entity bei",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "US shadow fleet proposal sparks tanker stock rout",
+      "link": "https://splash247.com/us-shadow-fleet-proposal-sparks-tanker-stock-rout/",
+      "pubDate": "Thu, 15 Oct 2026 08:45:04 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Asian shipping stocks took a beating on Thursday as reports that Washington is considering easing sanctions on shadow fleet tankers sent investors scrambling to reassess the extraordinary freight boom that has sent some spot segments into million-dollar territory for the first ti",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Donald-Trump-pen.jpg",
+      "en": {
+        "headline": "US shadow fleet proposal sparks tanker stock rout",
+        "summary": "Asian shipping stocks took a beating on Thursday as reports that Washington is considering easing sanctions on shadow fleet tankers sent investors scrambling to reassess the extraordinary freight boom that has sent some spot segments into million-dollar territory for the first ti",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "A.P. Moller Capital strikes deal for Mitsui’s Portek",
+      "link": "https://splash247.com/a-p-moller-capital-strikes-deal-for-mitsuis-portek/",
+      "pubDate": "Thu, 15 Oct 2026 08:30:48 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "A.P. Moller Capital has lined up another port acquisition, agreeing to take full control of Singapore-based terminal operator Portek International from Japanese trading house Mitsui &#38; Co. The Copenhagen-based infrastructure investor will acquire 100% of Portek through its Eme",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Bejaia-Mediterranean-Terminal.jpg",
+      "en": {
+        "headline": "A.P. Moller Capital strikes deal for Mitsui’s Portek",
+        "summary": "A.P. Moller Capital has lined up another port acquisition, agreeing to take full control of Singapore-based terminal operator Portek International from Japanese trading house Mitsui &#38; Co. The Copenhagen-based infrastructure investor will acquire 100% of Portek through its Eme",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Hormuz claims two more ships in fresh wave of strikes",
+      "link": "https://splash247.com/hormuz-claims-two-more-ships-in-fresh-wave-of-strikes/",
+      "pubDate": "Thu, 15 Oct 2026 08:15:25 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Two ships have sunk near the Strait of Hormuz as fresh attacks on commercial shipping have hit three containerships linked to Abu Dhabi&#8217;s AD Ports Group. The Singapore-flagged GFS Pride, a 2008-built, 2,824 teu feeder operated by Dubai-based Global Feeder Shipping (GFS), wa",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/GFS-Pride-X.com_.jpg",
+      "en": {
+        "headline": "Hormuz claims two more ships in fresh wave of strikes",
+        "summary": "Two ships have sunk near the Strait of Hormuz as fresh attacks on commercial shipping have hit three containerships linked to Abu Dhabi&#8217;s AD Ports Group. The Singapore-flagged GFS Pride, a 2008-built, 2,824 teu feeder operated by Dubai-based Global Feeder Shipping (GFS), wa",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "NATO&#8217;s Black Sea flank on alert after series of attacks",
+      "link": "https://splash247.com/natos-black-sea-flank-on-alert-after-series-of-attacks/",
+      "pubDate": "Thu, 15 Oct 2026 07:54:47 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A chemical tanker has reported a suspected drone strike inside Romanian territorial waters. The Comoros-flagged Yara J was anchored approximately 10 nautical miles southeast of Sulina on Wednesday evening when its crew reported an explosion and fire onboard. The vessel, which was",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Ambrey-Washed-Up-Drone.jpg",
+      "en": {
+        "headline": "NATO&#8217;s Black Sea flank on alert after series of attacks",
+        "summary": "A chemical tanker has reported a suspected drone strike inside Romanian territorial waters. The Comoros-flagged Yara J was anchored approximately 10 nautical miles southeast of Sulina on Wednesday evening when its crew reported an explosion and fire onboard. The vessel, which was",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "U.S. Forces Destroy Iranian-Linked Dhow Accused of Targeting Navy Ships",
       "link": "https://gcaptain.com/u-s-forces-destroy-iranian-linked-dhow-accused-of-targeting-navy-ships/",
       "pubDate": "Wed, 14 Oct 2026 20:01:31 +0000",
@@ -244,7 +414,7 @@
       "summary": "U.S. forces destroyed an Iranian-affiliated dhow in the Gulf of Oman on October 6 after determining that the vessel was conducting surveillance and helping target American warships, U.S. Central Command...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/CENTCOM-image.jpg",
       "en": {
         "headline": "U.S. Forces Destroy Iranian-Linked Dhow Accused of Targeting Navy Ships",
@@ -261,29 +431,12 @@
       "summary": "Georgia Ports has secured federal approval for a $2.3 billion container terminal that will add 3.5 million TEUs of capacity at the Port of Savannah.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/261014-GPA-SCT-Render.jpg.jpeg",
       "en": {
         "headline": "Port of Savannah Wins Approval for $2.3 Billion Container Terminal",
         "summary": "Georgia Ports has secured federal approval for a $2.3 billion container terminal that will add 3.5 million TEUs of capacity at the Port of Savannah.",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "China P&#038;I seeks seat at global insurance top table",
-      "link": "https://splash247.com/china-pi-seeks-seat-at-global-insurance-top-table/",
-      "pubDate": "Wed, 14 Oct 2026 17:44:17 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "China Shipowners Mutual Assurance Association, better known as China P&#38;I Club, has formally applied to join the International Group of P&#38;I Clubs, potentially bringing a mainland Chinese insurer into the powerful marine insurance grouping for the first time. The Internatio",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/04/Ship-Sunset.jpg",
-      "en": {
-        "headline": "China P&#038;I seeks seat at global insurance top table",
-        "summary": "China Shipowners Mutual Assurance Association, better known as China P&#38;I Club, has formally applied to join the International Group of P&#38;I Clubs, potentially bringing a mainland Chinese insurer into the powerful marine insurance grouping for the first time. The Internatio",
-        "source": "Splash247"
       }
     },
     {
@@ -295,7 +448,7 @@
       "summary": "By Jonathan Saul and Renee Maltezou LONDON, Oct 14 (Reuters) &#8211; A container ship and a dry bulk carrier have both sunk near the Strait of Hormuz in the past...",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-17T191059Z_416607302_RC2PVLA9X0SO_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
       "en": {
         "headline": "Bulk Carrier Sinks Weeks After Deadly Strait of Hormuz Strike",
@@ -312,7 +465,7 @@
       "summary": "Six months into a war that sowed upheaval in the Persian Gulf, Qatar found itself stuck. By late August, even limited shipments from the gas heavyweight had all but stopped following a projectile attack on one of its tankers outside the Strait of Hormuz. Pressure was growing, not",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2015/03/shutterstock_33420973.jpg",
       "en": {
         "headline": "Qatar Rewrites Its Gas Playbook With Old Tankers and New Tactics",
@@ -329,7 +482,7 @@
       "summary": "Yemen's Houthis vowed on Wednesday to press on with attacks on airports and oil facilities in Saudi Arabia, a day after a strike that sources said caused extensive damage to the headquarters of oil giant Saudi Aramco2223.SE.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 9,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T050419Z_690210157_RC2H1MA5D3GD_RTRMADP_3_IRAN-CRISIS-SAUDI-OIL-800x533.jpg",
       "en": {
         "headline": "Yemen&#8217;s Houthis Vow More Attacks on Saudi Airports, Oil Facilities After Aramco HQ Hit",
@@ -346,165 +499,12 @@
       "summary": "The U.S. Federal Maritime Commission (FMC) is proposing $200,000 fees on Spanish-flagged vessels entering American ports, along with restrictions on billions of dollars in Spanish imports, after concluding that Spain&#8217;s...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/10/2024-10-03T213240Z_622785686_RC26DAA7PCIS_RTRMADP_3_SPAIN-ECONOMY-INFLATION-800x521.jpg",
       "en": {
         "headline": "U.S. Shipping Regulator Proposes $200,000 Fees on Spanish Ships Over Port Ban",
         "summary": "The U.S. Federal Maritime Commission (FMC) is proposing $200,000 fees on Spanish-flagged vessels entering American ports, along with restrictions on billions of dollars in Spanish imports, after concluding that Spain&#8217;s...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "EuroDry adds third $37m kamsarmax at Hengli",
-      "link": "https://splash247.com/eurodry-adds-third-37m-kamsarmax-at-hengli/",
-      "pubDate": "Wed, 14 Oct 2026 15:36:02 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Aristides Pittas-led EuroDry has returned to China’s Hengli Shipbuilding for another kamsarmax, adding a third 82,000 dwt newbuilding to a fleet renewal programme now worth almost $183m. The Nasdaq-listed dry bulk owner is paying about $37m for the latest vessel, which is schedul",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 10,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-Heavy-Industries-bulkers.jpg",
-      "en": {
-        "headline": "EuroDry adds third $37m kamsarmax at Hengli",
-        "summary": "Aristides Pittas-led EuroDry has returned to China’s Hengli Shipbuilding for another kamsarmax, adding a third 82,000 dwt newbuilding to a fleet renewal programme now worth almost $183m. The Nasdaq-listed dry bulk owner is paying about $37m for the latest vessel, which is schedul",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "JPMorganChase Names Shipbuilding Leaders Under $1.5 Trillion Industrial Initiative",
-      "link": "https://gcaptain.com/jpmorganchase-names-shipbuilding-leaders-under-1-5-trillion-industrial-initiative/",
-      "pubDate": "Wed, 14 Oct 2026 14:56:11 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "JPMorganChase has appointed two senior leaders to help expand its support for U.S. shipbuilding and the maritime industry under its $1.5 trillion Security and Resiliency Initiative (SRI), a 10-year effort...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/Hanwha-Philly-Shipyard-800x533.jpg",
-      "en": {
-        "headline": "JPMorganChase Names Shipbuilding Leaders Under $1.5 Trillion Industrial Initiative",
-        "summary": "JPMorganChase has appointed two senior leaders to help expand its support for U.S. shipbuilding and the maritime industry under its $1.5 trillion Security and Resiliency Initiative (SRI), a 10-year effort...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Containership Sinks as Hormuz Attacks Spiral Out of Control",
-      "link": "https://gcaptain.com/containership-sinks-as-hormuz-attacks-spiral-out-of-control/",
-      "pubDate": "Wed, 14 Oct 2026 14:44:55 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A Singapore-flagged containership has sunk after being struck by a projectile in the Strait of Hormuz, as a widening series of attacks on merchant shipping raises fresh questions about U.S....",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/GFS-Pride-sinking.jpeg",
-      "en": {
-        "headline": "Containership Sinks as Hormuz Attacks Spiral Out of Control",
-        "summary": "A Singapore-flagged containership has sunk after being struck by a projectile in the Strait of Hormuz, as a widening series of attacks on merchant shipping raises fresh questions about U.S....",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Royal Navy’s Only Ice Patrol Ship Faces Uncertain Future After Defect",
-      "link": "https://gcaptain.com/royal-navys-only-ice-patrol-ship-faces-uncertain-future-after-defect/",
-      "pubDate": "Wed, 14 Oct 2026 13:33:41 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Royal Navy’s only dedicated ice patrol ship has been towed from Teesside to Devonport following a reported defect, raising questions about Britain’s ability to maintain its maritime presence in the polar regions as the government works toward a replacement.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/11776297453_206025d45b_o.jpg",
-      "en": {
-        "headline": "Royal Navy’s Only Ice Patrol Ship Faces Uncertain Future After Defect",
-        "summary": "The Royal Navy’s only dedicated ice patrol ship has been towed from Teesside to Devonport following a reported defect, raising questions about Britain’s ability to maintain its maritime presence in the polar regions as the government works toward a replacement.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Trump Touts Taiwan-Alaska LNG Deal Taipei Hasn’t Finalized",
-      "link": "https://gcaptain.com/trump-touts-taiwan-alaska-lng-deal-taipei-hasnt-finalized/",
-      "pubDate": "Wed, 14 Oct 2026 13:17:00 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "President Donald Trump said Taiwan had agreed to buy 30% of the liquefied natural gas from a planned project in Alaska for 20 years, even as Taipei indicated that no binding commitments have been finalized.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/04/Liquefaction-Facility.jpeg",
-      "en": {
-        "headline": "Trump Touts Taiwan-Alaska LNG Deal Taipei Hasn’t Finalized",
-        "summary": "President Donald Trump said Taiwan had agreed to buy 30% of the liquefied natural gas from a planned project in Alaska for 20 years, even as Taipei indicated that no binding commitments have been finalized.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Container Ship Sinks Near Hormuz After Being Hit by Projectile, Sources Say",
-      "link": "https://gcaptain.com/container-ship-sinks-near-hormuz-after-being-hit-by-projectile-sources-say/",
-      "pubDate": "Wed, 14 Oct 2026 12:45:47 +0000",
-      "source": "gCaptain",
-      "category": "Dry Bulk",
-      "summary": "A container ship has sunk near the Strait of Hormuz after being hit by a projectile and a separate dry bulk vessel is sinking in another incident, maritime security sources said on Wednesday.",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Container Ship Sinks Near Hormuz After Being Hit by Projectile, Sources Say",
-        "summary": "A container ship has sunk near the Strait of Hormuz after being hit by a projectile and a separate dry bulk vessel is sinking in another incident, maritime security sources said on Wednesday.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Shipping firms and ports caught in mass cyber extortion claim",
-      "link": "https://splash247.com/shipping-firms-and-ports-caught-in-mass-cyber-extortion-claim/",
-      "pubDate": "Wed, 14 Oct 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "A cyber extortion group has threatened to publish data it claims it stole from 38 shipping, port, and logistics companies unless they pay multimillion-dollar ransoms by October 19. Cybersecurity firm SOCRadar said the group, known as n0n, added the 38 organisations to its dark we",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Cydome-Cyber-Hack.jpg",
-      "en": {
-        "headline": "Shipping firms and ports caught in mass cyber extortion claim",
-        "summary": "A cyber extortion group has threatened to publish data it claims it stole from 38 shipping, port, and logistics companies unless they pay multimillion-dollar ransoms by October 19. Cybersecurity firm SOCRadar said the group, known as n0n, added the 38 organisations to its dark we",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Zhonggu steps up boxship investments with larger newbuilds",
-      "link": "https://splash247.com/zhonggu-steps-up-boxship-investments-with-larger-newbuilds/",
-      "pubDate": "Wed, 14 Oct 2026 09:29:47 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "China&#8217;s Zhonggu Shipping Group has signed up for two 14,000 teu containerships at Hudong-Zhonghua Shipbuilding, moving into significantly larger tonnage as investment across the group gathers pace. The Shanghai-based company has contracted the conventionally fuelled pair, w",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/01/Zhonggu-Logistics.jpg",
-      "en": {
-        "headline": "Zhonggu steps up boxship investments with larger newbuilds",
-        "summary": "China&#8217;s Zhonggu Shipping Group has signed up for two 14,000 teu containerships at Hudong-Zhonghua Shipbuilding, moving into significantly larger tonnage as investment across the group gathers pace. The Shanghai-based company has contracted the conventionally fuelled pair, w",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Japan prepares to pay for oil&#8217;s long way round",
-      "link": "https://splash247.com/japan-prepares-to-pay-for-oils-long-way-round/",
-      "pubDate": "Wed, 14 Oct 2026 08:30:40 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Japan is preparing to subsidise the additional cost of importing oil from suppliers outside the Strait of Hormuz, in a significant government intervention aimed at reducing the country&#8217;s dependence on the increasingly dangerous waterway. The Japanese cabinet approved three ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/NYK-VLCC.jpg",
-      "en": {
-        "headline": "Japan prepares to pay for oil&#8217;s long way round",
-        "summary": "Japan is preparing to subsidise the additional cost of importing oil from suppliers outside the Strait of Hormuz, in a significant government intervention aimed at reducing the country&#8217;s dependence on the increasingly dangerous waterway. The Japanese cabinet approved three ",
-        "source": "Splash247"
       }
     }
   ]
