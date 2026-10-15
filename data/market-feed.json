@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-14T21:08:08.637Z",
+    "generatedAt": "2026-10-15T02:28:41.498Z",
     "benchmarkAsOf": "2026-10-14",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -183,9 +183,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 990,
-        "deltaPct": 0,
-        "asOf": "2026-10-13T22:41:14.015Z",
+        "priceUsdMt": 1050,
+        "deltaPct": 6.06,
+        "asOf": "2026-10-14T22:41:23.971Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 995,
-        "deltaPct": 0,
-        "asOf": "2026-10-13T22:41:13.950Z",
+        "priceUsdMt": 1010,
+        "deltaPct": 1.51,
+        "asOf": "2026-10-14T22:41:23.950Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -219,11 +219,11 @@
       "asOf": "2026-10-14T15:15:28.117Z"
     },
     "panamaxTc": {
-      "value": 2432,
-      "deltaPct": 0,
+      "value": 2409,
+      "deltaPct": -0.95,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-13T22:15:08.559Z"
+      "asOf": "2026-10-14T21:45:14.680Z"
     },
     "bdti": {
       "value": 1185,
@@ -244,7 +244,7 @@
       "summary": "U.S. forces destroyed an Iranian-affiliated dhow in the Gulf of Oman on October 6 after determining that the vessel was conducting surveillance and helping target American warships, U.S. Central Command...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/CENTCOM-image.jpg",
       "en": {
         "headline": "U.S. Forces Destroy Iranian-Linked Dhow Accused of Targeting Navy Ships",
@@ -261,7 +261,7 @@
       "summary": "Georgia Ports has secured federal approval for a $2.3 billion container terminal that will add 3.5 million TEUs of capacity at the Port of Savannah.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/261014-GPA-SCT-Render.jpg.jpeg",
       "en": {
         "headline": "Port of Savannah Wins Approval for $2.3 Billion Container Terminal",
@@ -278,7 +278,7 @@
       "summary": "China Shipowners Mutual Assurance Association, better known as China P&#38;I Club, has formally applied to join the International Group of P&#38;I Clubs, potentially bringing a mainland Chinese insurer into the powerful marine insurance grouping for the first time. The Internatio",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/04/Ship-Sunset.jpg",
       "en": {
         "headline": "China P&#038;I seeks seat at global insurance top table",
@@ -295,7 +295,7 @@
       "summary": "By Jonathan Saul and Renee Maltezou LONDON, Oct 14 (Reuters) &#8211; A container ship and a dry bulk carrier have both sunk near the Strait of Hormuz in the past...",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-17T191059Z_416607302_RC2PVLA9X0SO_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
       "en": {
         "headline": "Bulk Carrier Sinks Weeks After Deadly Strait of Hormuz Strike",
@@ -312,7 +312,7 @@
       "summary": "Six months into a war that sowed upheaval in the Persian Gulf, Qatar found itself stuck. By late August, even limited shipments from the gas heavyweight had all but stopped following a projectile attack on one of its tankers outside the Strait of Hormuz. Pressure was growing, not",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2015/03/shutterstock_33420973.jpg",
       "en": {
         "headline": "Qatar Rewrites Its Gas Playbook With Old Tankers and New Tactics",
@@ -329,7 +329,7 @@
       "summary": "Yemen's Houthis vowed on Wednesday to press on with attacks on airports and oil facilities in Saudi Arabia, a day after a strike that sources said caused extensive damage to the headquarters of oil giant Saudi Aramco2223.SE.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T050419Z_690210157_RC2H1MA5D3GD_RTRMADP_3_IRAN-CRISIS-SAUDI-OIL-800x533.jpg",
       "en": {
         "headline": "Yemen&#8217;s Houthis Vow More Attacks on Saudi Airports, Oil Facilities After Aramco HQ Hit",
@@ -346,7 +346,7 @@
       "summary": "The U.S. Federal Maritime Commission (FMC) is proposing $200,000 fees on Spanish-flagged vessels entering American ports, along with restrictions on billions of dollars in Spanish imports, after concluding that Spain&#8217;s...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/10/2024-10-03T213240Z_622785686_RC26DAA7PCIS_RTRMADP_3_SPAIN-ECONOMY-INFLATION-800x521.jpg",
       "en": {
         "headline": "U.S. Shipping Regulator Proposes $200,000 Fees on Spanish Ships Over Port Ban",
@@ -363,7 +363,7 @@
       "summary": "Aristides Pittas-led EuroDry has returned to China’s Hengli Shipbuilding for another kamsarmax, adding a third 82,000 dwt newbuilding to a fleet renewal programme now worth almost $183m. The Nasdaq-listed dry bulk owner is paying about $37m for the latest vessel, which is schedul",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-Heavy-Industries-bulkers.jpg",
       "en": {
         "headline": "EuroDry adds third $37m kamsarmax at Hengli",
@@ -380,7 +380,7 @@
       "summary": "JPMorganChase has appointed two senior leaders to help expand its support for U.S. shipbuilding and the maritime industry under its $1.5 trillion Security and Resiliency Initiative (SRI), a 10-year effort...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/Hanwha-Philly-Shipyard-800x533.jpg",
       "en": {
         "headline": "JPMorganChase Names Shipbuilding Leaders Under $1.5 Trillion Industrial Initiative",
@@ -397,7 +397,7 @@
       "summary": "A Singapore-flagged containership has sunk after being struck by a projectile in the Strait of Hormuz, as a widening series of attacks on merchant shipping raises fresh questions about U.S....",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/GFS-Pride-sinking.jpeg",
       "en": {
         "headline": "Containership Sinks as Hormuz Attacks Spiral Out of Control",
@@ -414,7 +414,7 @@
       "summary": "The Royal Navy’s only dedicated ice patrol ship has been towed from Teesside to Devonport following a reported defect, raising questions about Britain’s ability to maintain its maritime presence in the polar regions as the government works toward a replacement.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/11776297453_206025d45b_o.jpg",
       "en": {
         "headline": "Royal Navy’s Only Ice Patrol Ship Faces Uncertain Future After Defect",
@@ -431,7 +431,7 @@
       "summary": "President Donald Trump said Taiwan had agreed to buy 30% of the liquefied natural gas from a planned project in Alaska for 20 years, even as Taipei indicated that no binding commitments have been finalized.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/04/Liquefaction-Facility.jpeg",
       "en": {
         "headline": "Trump Touts Taiwan-Alaska LNG Deal Taipei Hasn’t Finalized",
@@ -448,7 +448,7 @@
       "summary": "A container ship has sunk near the Strait of Hormuz after being hit by a projectile and a separate dry bulk vessel is sinking in another incident, maritime security sources said on Wednesday.",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 13,
       "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Container Ship Sinks Near Hormuz After Being Hit by Projectile, Sources Say",
@@ -465,7 +465,7 @@
       "summary": "A cyber extortion group has threatened to publish data it claims it stole from 38 shipping, port, and logistics companies unless they pay multimillion-dollar ransoms by October 19. Cybersecurity firm SOCRadar said the group, known as n0n, added the 38 organisations to its dark we",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Cydome-Cyber-Hack.jpg",
       "en": {
         "headline": "Shipping firms and ports caught in mass cyber extortion claim",
@@ -482,7 +482,7 @@
       "summary": "China&#8217;s Zhonggu Shipping Group has signed up for two 14,000 teu containerships at Hudong-Zhonghua Shipbuilding, moving into significantly larger tonnage as investment across the group gathers pace. The Shanghai-based company has contracted the conventionally fuelled pair, w",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 11,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/01/Zhonggu-Logistics.jpg",
       "en": {
         "headline": "Zhonggu steps up boxship investments with larger newbuilds",
@@ -499,7 +499,7 @@
       "summary": "Japan is preparing to subsidise the additional cost of importing oil from suppliers outside the Strait of Hormuz, in a significant government intervention aimed at reducing the country&#8217;s dependence on the increasingly dangerous waterway. The Japanese cabinet approved three ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 17,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/NYK-VLCC.jpg",
       "en": {
         "headline": "Japan prepares to pay for oil&#8217;s long way round",
