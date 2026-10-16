@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-15T20:45:12.879Z",
+    "generatedAt": "2026-10-16T02:23:00.754Z",
     "benchmarkAsOf": "2026-10-15",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -185,7 +185,7 @@
         "defaultDensity": 991,
         "priceUsdMt": 1050,
         "deltaPct": 0,
-        "asOf": "2026-10-14T22:41:23.971Z",
+        "asOf": "2026-10-15T22:41:44.251Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -197,7 +197,7 @@
         "defaultDensity": 991,
         "priceUsdMt": 1010,
         "deltaPct": 0,
-        "asOf": "2026-10-14T22:41:23.950Z",
+        "asOf": "2026-10-15T22:41:44.221Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -244,7 +244,7 @@
       "summary": "U.S. Central Command says the United States and its regional partners control the Strait of Hormuz, citing more than 40 commercial ships moving through the waterway in the past 24...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/GFS-Pride-sinking.jpeg",
       "en": {
         "headline": "U.S. Claims Control of Hormuz as Ship Attacks Hit New High",
@@ -261,7 +261,7 @@
       "summary": "The Houthi attacks on Saudi Arabia are about more than Yemen.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/12/2024-12-27T151922Z_135825985_RC2PXBAN5EWB_RTRMADP_3_ISRAEL-PALESTINIANS-PROTESTS-YEMEN.jpg",
       "en": {
         "headline": "How the Houthis are Helping Iran Turn Saudi Arabia Into a Pressure Point",
@@ -278,7 +278,7 @@
       "summary": "Five people have been arrested in Norway as part of an international investigation into suspected fraud and bribery involving a company providing port services to NATO warships. The arrests were...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/NATO-Warships-kiel-germany.jpg",
       "en": {
         "headline": "Five Arrested in NATO Warship Services Fraud Probe",
@@ -295,7 +295,7 @@
       "summary": "When the oil supertanker Esteem Explorer sails from the United States to Japan in late November, loaded with about 2 million barrels of crude, the journey will cost $81 million. The same journey would have cost $9.1 million last year, on average.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/03/2026-03-11T175001Z_1295147520_RC2B2KAW055Q_RTRMADP_3_GLOBAL-OIL.jpg",
       "en": {
         "headline": "Oil Shipping Costs Spike, Lifting Prices from Pump to Grocery",
@@ -312,7 +312,7 @@
       "summary": "Shipowners are facing an increasingly fragmented fuel market as disruptions triggered by the Middle East conflict raise concerns about the availability and quality of supply.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-22T121323Z_1819482205_RC26ELATGE3R_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
       "en": {
         "headline": "Ship Fuel Market Fragments as Middle East Conflict Hits Trade",
@@ -329,7 +329,7 @@
       "summary": "Britain has expanded its sanctions against Russia&#8217;s oil industry, targeting two more energy companies, a dozen shadow-fleet tankers and financial networks used to move money around Western restrictions. The measures,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/Smyrtos-seizure-UK-800x533.jpeg",
       "en": {
         "headline": "UK Tightens Russian Oil Sanctions as U.S. Weighs Relief",
@@ -346,7 +346,7 @@
       "summary": "By Timothy Gardner and Jarrett Renshaw WASHINGTON, Oct 14 (Reuters) &#8211; The Trump administration is considering easing sanctions on so-called shadow fleet vessels that have transported oil and petroleum products...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/shadow-fleet-tanker-bertha-intercepted-indian-ocean-800x533.jpeg",
       "en": {
         "headline": "Trump Weighs Lifting Shadow Fleet Sanctions as Tanker Rates Soar",
@@ -363,7 +363,7 @@
       "summary": "Shipowners are facing an increasingly fragmented fuel market as disruptions triggered by the Middle East conflict raise concerns about the availability and quality of supply.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-02T141120Z_2105784509_RC2Q5MASSOEC_RTRMADP_3_RUSSIA-OIL-EXPORTS-800x533.jpg",
       "en": {
         "headline": "Ship Fuel Market Fragments as Middle East Conflict Hits Trade",
@@ -380,7 +380,7 @@
       "summary": "Rescuers were searching for seven missing crew on Thursday from one of two chemical tankers that caught fire overnight just outside Romanian territorial waters in the Black Sea, after Russian drones strayed into national airspace, Romanian officials said.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-15T092806Z_1288671610_RC2L3OALNJWB_RTRMADP_3_UKRAINE-CRISIS-ROMANIA-800x441.jpg",
       "en": {
         "headline": "Seven Sailors Missing as Drones Strike Tankers Near Romania",
@@ -397,7 +397,7 @@
       "summary": "Guangzhou Port has launched the Greater Bay Area’s first zero-carbon container route, putting a battery-electric vessel into cross-border service between Nansha and Hong Kong. The 240 teu Sui Gang Dian Hang 02 opened the route this week, carrying furniture and consumer goods to H",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Sui-Gang-Dian-Hang-02.jpg",
       "en": {
         "headline": "Guangzhou and Hong Kong open electric container shuttle",
@@ -414,7 +414,7 @@
       "summary": "COSCO Shipping Specialized Carriers’ car-carrier business has signed a 10-year contract of affreightment with Chinese automaker DFSK, securing a long-term vehicle-export cargo relationship. The agreement was signed with Chongqing Xiaokang Import &#38; Export, DFSK’s export operat",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/COSCO-DFSK.jpg",
       "en": {
         "headline": "COSCO lands ten-year Chinese car-export deal",
@@ -431,7 +431,7 @@
       "summary": "Hong Kong-based dry bulk owner Jinhui Shipping and Transportation has agreed to sell another ageing supramax, continuing its fleet renewal drive with a $14.6m deal involving a Hong Kong buyer. The Oslo-listed company, majority-owned by Hong Kong-listed Jinhui Holdings, has signed",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/10/Jinhui-bulker.jpg",
       "en": {
         "headline": "Jinhui cashes in on veteran bulker",
@@ -448,7 +448,7 @@
       "summary": "Germany has approved a national shipping decarbonisation programme backed by €400m ($448.8m) in funding, including proposals for greener shipping corridors, alternative fuel infrastructure and financial incentives for vessel renewal. The federal cabinet adopted the National Actio",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Port-of-Kiel.jpg",
       "en": {
         "headline": "Germany puts $448m behind 47-point green shipping plan",
@@ -465,7 +465,7 @@
       "summary": "The Suez Canal Authority (SCA) has introduced mandatory inspections and trials for vessels aged 25 years and older, adding further costs and potential delays for operators of ageing tonnage. The new regulations, already effective, require vessels to undergo a comprehensive inspec",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/05/Bulker-grounding-Suez-Canal.jpg",
       "en": {
         "headline": "Suez tightens transit rules for ageing ships",
@@ -482,7 +482,7 @@
       "summary": "Nasdaq-listed Greek dry bulk owner Icon Energy is expanding its containership investments, agreeing to take a minority stake in a second feeder vessel employed under a long-term charter. The Ismini Panagiotidi-led company said it would acquire approximately 2.8% of the entity bei",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Boxship-containership-sun.jpg",
       "en": {
         "headline": "Icon Energy expands boxship exposure",
@@ -499,7 +499,7 @@
       "summary": "Asian shipping stocks took a beating on Thursday as reports that Washington is considering easing sanctions on shadow fleet tankers sent investors scrambling to reassess the extraordinary freight boom that has sent some spot segments into million-dollar territory for the first ti",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 17,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Donald-Trump-pen.jpg",
       "en": {
         "headline": "US shadow fleet proposal sparks tanker stock rout",
