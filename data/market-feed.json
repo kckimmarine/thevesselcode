@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-16T02:23:00.754Z",
+    "generatedAt": "2026-10-16T10:22:37.847Z",
     "benchmarkAsOf": "2026-10-15",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 917,
-        "deltaPct": 0,
-        "asOf": "2026-10-14T17:00:00.000Z",
+        "priceUsdMt": 911.5,
+        "deltaPct": -0.6,
+        "asOf": "2026-10-15T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1295,
-        "deltaPct": 0,
-        "asOf": "2026-10-14T17:00:00.000Z",
+        "priceUsdMt": 1278.5,
+        "deltaPct": -1.27,
+        "asOf": "2026-10-15T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 876,
-        "deltaPct": 0,
-        "asOf": "2026-10-14T17:00:00.000Z",
+        "priceUsdMt": 885,
+        "deltaPct": 1.03,
+        "asOf": "2026-10-15T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 742,
-        "deltaPct": 0,
-        "asOf": "2026-10-14T17:00:00.000Z",
+        "priceUsdMt": 735.5,
+        "deltaPct": -0.88,
+        "asOf": "2026-10-15T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1435.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-14T17:00:00.000Z",
+        "priceUsdMt": 1395,
+        "deltaPct": -2.82,
+        "asOf": "2026-10-15T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 667.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-14T17:00:00.000Z",
+        "priceUsdMt": 653,
+        "deltaPct": -2.17,
+        "asOf": "2026-10-15T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 765,
-        "deltaPct": 0,
-        "asOf": "2026-10-14T17:00:00.000Z",
+        "priceUsdMt": 764,
+        "deltaPct": -0.13,
+        "asOf": "2026-10-15T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1408,
-        "deltaPct": 0,
-        "asOf": "2026-10-14T17:00:00.000Z",
+        "priceUsdMt": 1406,
+        "deltaPct": -0.14,
+        "asOf": "2026-10-15T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -171,9 +171,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 571.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-14T17:00:00.000Z",
+        "priceUsdMt": 575,
+        "deltaPct": 0.61,
+        "asOf": "2026-10-15T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -236,6 +236,176 @@
   },
   "news": [
     {
+      "title": "Equinor keeps Odfjell Drilling semisub busy into late 2027",
+      "link": "https://splash247.com/equinor-keeps-odfjell-drilling-semisub-busy-into-late-2027/",
+      "pubDate": "Fri, 16 Oct 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Norway’s Odfjell Drilling has secured more work for its Deepsea Atlantic semisubmersible drilling rig after compatriot energy major Equinor exercised options for two additional wells. The latest option exercise will keep the 2009-built rig employed until late in the fourth quarte",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/deepsea-atlantic-equinor.jpg",
+      "en": {
+        "headline": "Equinor keeps Odfjell Drilling semisub busy into late 2027",
+        "summary": "Norway’s Odfjell Drilling has secured more work for its Deepsea Atlantic semisubmersible drilling rig after compatriot energy major Equinor exercised options for two additional wells. The latest option exercise will keep the 2009-built rig employed until late in the fourth quarte",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "UK ports hit back at Brussels over ETS diversion claims",
+      "link": "https://splash247.com/uk-ports-hit-back-at-brussels-over-ets-diversion-claims/",
+      "pubDate": "Fri, 16 Oct 2026 09:30:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "British ports have challenged European Union claims that shipping lines are diverting container traffic to the UK to escape carbon charges, warning that proposed anti-evasion measures risk penalising billions of pounds of investment in British terminals. The British Ports Associa",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/08/UK-ship.jpg",
+      "en": {
+        "headline": "UK ports hit back at Brussels over ETS diversion claims",
+        "summary": "British ports have challenged European Union claims that shipping lines are diverting container traffic to the UK to escape carbon charges, warning that proposed anti-evasion measures risk penalising billions of pounds of investment in British terminals. The British Ports Associa",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "International Seaways seals $370m Bruton takeover deal",
+      "link": "https://splash247.com/international-seaways-seals-370m-bruton-takeover-deal/",
+      "pubDate": "Fri, 16 Oct 2026 08:15:57 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "New York-listed tanker owner International Seaways has struck a deal to take over Tor Olav Trøim-backed Bruton in a transaction valuing the Oslo-listed VLCC company at around $370m. The agreement, announced on Friday, will see the Lois Zabrocky-led group acquire Bruton&#8217;s en",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Mount-Vision-VLCC-Bruton.jpg",
+      "en": {
+        "headline": "International Seaways seals $370m Bruton takeover deal",
+        "summary": "New York-listed tanker owner International Seaways has struck a deal to take over Tor Olav Trøim-backed Bruton in a transaction valuing the Oslo-listed VLCC company at around $370m. The agreement, announced on Friday, will see the Lois Zabrocky-led group acquire Bruton&#8217;s en",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "West Africa&#8217;s ore boom meets China&#8217;s growing VLOC armada",
+      "link": "https://splash247.com/west-africas-ore-boom-meets-chinas-growing-vloc-armada/",
+      "pubDate": "Fri, 16 Oct 2026 08:00:10 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "West Africa is fast becoming dry bulk shipping&#8217;s biggest growth engine, with its mineral export boom poised to absorb the equivalent of another 120 capesizes by 2030. UK consultancy Tradeviews forecasts in a new report that shipments from the region will surge 50% from 2025",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/09/WinningMax-VLOC.jpg",
+      "en": {
+        "headline": "West Africa&#8217;s ore boom meets China&#8217;s growing VLOC armada",
+        "summary": "West Africa is fast becoming dry bulk shipping&#8217;s biggest growth engine, with its mineral export boom poised to absorb the equivalent of another 120 capesizes by 2030. UK consultancy Tradeviews forecasts in a new report that shipments from the region will surge 50% from 2025",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Splash Wrap: A missile from Riyadh",
+      "link": "https://splash247.com/splash-wrap-a-missile-from-riyadh/",
+      "pubDate": "Fri, 16 Oct 2026 07:45:26 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Ongoing attacks in Hormuz and the Black Sea dominated Splash coverage once again this week &#8211; both maritime theatres of war expanding worryingly. Another dangerous missile for tanker owners came from a conference in Saudi Arabia, where the US energy secretary was reported to",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/06/Houthi-hypersonic-missile.jpg",
+      "en": {
+        "headline": "Splash Wrap: A missile from Riyadh",
+        "summary": "Ongoing attacks in Hormuz and the Black Sea dominated Splash coverage once again this week &#8211; both maritime theatres of war expanding worryingly. Another dangerous missile for tanker owners came from a conference in Saudi Arabia, where the US energy secretary was reported to",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "HMM commits $1.6bn to 12 more containerships",
+      "link": "https://splash247.com/hmm-commits-1-6bn-to-12-more-containerships/",
+      "pubDate": "Fri, 16 Oct 2026 06:25:42 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "South Korea&#8217;s HMM is pressing ahead with its fleet expansion programme, approving a $1.62bn investment in 12 containerships comprising eight 13,000 teu newbuildings and four smaller vessels. The Seoul-listed carrier&#8217;s board approved spending KRW2.168trn ($1.617bn) yes",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/06/HMM-Algeciras-24000-teu.jpg",
+      "en": {
+        "headline": "HMM commits $1.6bn to 12 more containerships",
+        "summary": "South Korea&#8217;s HMM is pressing ahead with its fleet expansion programme, approving a $1.62bn investment in 12 containerships comprising eight 13,000 teu newbuildings and four smaller vessels. The Seoul-listed carrier&#8217;s board approved spending KRW2.168trn ($1.617bn) yes",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Liquimar lines up suezmax trio at New Hantong",
+      "link": "https://splash247.com/liquimar-lines-up-suezmax-trio-at-new-hantong/",
+      "pubDate": "Fri, 16 Oct 2026 05:43:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Greek tanker owner Liquimar Tankers has been linked to an order for three suezmax newbuildings in China, adding fresh crude carrier capacity after cashing in on the strong secondhand tanker market. The Dimitris Papadimitriou-controlled company has contracted three 157,000 dwt ves",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Afroditi-suezmax-Liquimar.jpg",
+      "en": {
+        "headline": "Liquimar lines up suezmax trio at New Hantong",
+        "summary": "Greek tanker owner Liquimar Tankers has been linked to an order for three suezmax newbuildings in China, adding fresh crude carrier capacity after cashing in on the strong secondhand tanker market. The Dimitris Papadimitriou-controlled company has contracted three 157,000 dwt ves",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Chemnav steps up suezmax bet with Jinglu pair",
+      "link": "https://splash247.com/chemnav-steps-up-suezmax-bet-with-jinglu-pair/",
+      "pubDate": "Fri, 16 Oct 2026 05:07:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Greek tanker owner Chemnav Shipmanagement has expanded its suezmax newbuilding programme with two more vessels in China, taking its orderbook in the segment to four ships. The Paul Coronis-backed company has been linked by shipbroking sources to a contract for two 158,000 dwt cru",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Penglai-Zhongbai-Jinglu-Ship-Industry.jpg",
+      "en": {
+        "headline": "Chemnav steps up suezmax bet with Jinglu pair",
+        "summary": "Greek tanker owner Chemnav Shipmanagement has expanded its suezmax newbuilding programme with two more vessels in China, taking its orderbook in the segment to four ships. The Paul Coronis-backed company has been linked by shipbroking sources to a contract for two 158,000 dwt cru",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "GSI taps bridge builder to ease ship block bottleneck",
+      "link": "https://splash247.com/gsi-taps-bridge-builder-to-ease-ship-block-bottleneck/",
+      "pubDate": "Fri, 16 Oct 2026 04:49:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Guangzhou Shipyard International (GSI) has turned to one of China&#8217;s oldest bridge builders for outsourced hull block construction, joining a growing number of shipyards tapping manufacturers outside the traditional maritime supply chain to keep pace with swelling orderbooks",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/08/GSI.jpg",
+      "en": {
+        "headline": "GSI taps bridge builder to ease ship block bottleneck",
+        "summary": "Guangzhou Shipyard International (GSI) has turned to one of China&#8217;s oldest bridge builders for outsourced hull block construction, joining a growing number of shipyards tapping manufacturers outside the traditional maritime supply chain to keep pace with swelling orderbooks",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Shipping’s AI winners will build capability, not buy technology",
+      "link": "https://splash247.com/shippings-ai-winners-will-build-capability-not-buy-technology/",
+      "pubDate": "Fri, 16 Oct 2026 03:00:00 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "The technology is already widely available. The advantage will come from how shipping companies turn it into specialised systems, define its place in the team and manage adoption, says Michalis Gkontas, co-founder and CEO of AskChief. Today&#8217;s AI systems can already perform ",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/03/artificial-intelligence.jpg",
+      "en": {
+        "headline": "Shipping’s AI winners will build capability, not buy technology",
+        "summary": "The technology is already widely available. The advantage will come from how shipping companies turn it into specialised systems, define its place in the team and manage adoption, says Michalis Gkontas, co-founder and CEO of AskChief. Today&#8217;s AI systems can already perform ",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "U.S. Claims Control of Hormuz as Ship Attacks Hit New High",
       "link": "https://gcaptain.com/by-the-numbers-u-s-claims-control-of-hormuz-as-ship-attacks-hit-new-high/",
       "pubDate": "Thu, 15 Oct 2026 18:33:29 +0000",
@@ -244,7 +414,7 @@
       "summary": "U.S. Central Command says the United States and its regional partners control the Strait of Hormuz, citing more than 40 commercial ships moving through the waterway in the past 24...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/GFS-Pride-sinking.jpeg",
       "en": {
         "headline": "U.S. Claims Control of Hormuz as Ship Attacks Hit New High",
@@ -261,7 +431,7 @@
       "summary": "The Houthi attacks on Saudi Arabia are about more than Yemen.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/12/2024-12-27T151922Z_135825985_RC2PXBAN5EWB_RTRMADP_3_ISRAEL-PALESTINIANS-PROTESTS-YEMEN.jpg",
       "en": {
         "headline": "How the Houthis are Helping Iran Turn Saudi Arabia Into a Pressure Point",
@@ -278,7 +448,7 @@
       "summary": "Five people have been arrested in Norway as part of an international investigation into suspected fraud and bribery involving a company providing port services to NATO warships. The arrests were...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/NATO-Warships-kiel-germany.jpg",
       "en": {
         "headline": "Five Arrested in NATO Warship Services Fraud Probe",
@@ -295,7 +465,7 @@
       "summary": "When the oil supertanker Esteem Explorer sails from the United States to Japan in late November, loaded with about 2 million barrels of crude, the journey will cost $81 million. The same journey would have cost $9.1 million last year, on average.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/03/2026-03-11T175001Z_1295147520_RC2B2KAW055Q_RTRMADP_3_GLOBAL-OIL.jpg",
       "en": {
         "headline": "Oil Shipping Costs Spike, Lifting Prices from Pump to Grocery",
@@ -312,7 +482,7 @@
       "summary": "Shipowners are facing an increasingly fragmented fuel market as disruptions triggered by the Middle East conflict raise concerns about the availability and quality of supply.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-22T121323Z_1819482205_RC26ELATGE3R_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
       "en": {
         "headline": "Ship Fuel Market Fragments as Middle East Conflict Hits Trade",
@@ -329,182 +499,12 @@
       "summary": "Britain has expanded its sanctions against Russia&#8217;s oil industry, targeting two more energy companies, a dozen shadow-fleet tankers and financial networks used to move money around Western restrictions. The measures,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/Smyrtos-seizure-UK-800x533.jpeg",
       "en": {
         "headline": "UK Tightens Russian Oil Sanctions as U.S. Weighs Relief",
         "summary": "Britain has expanded its sanctions against Russia&#8217;s oil industry, targeting two more energy companies, a dozen shadow-fleet tankers and financial networks used to move money around Western restrictions. The measures,...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Trump Weighs Lifting Shadow Fleet Sanctions as Tanker Rates Soar",
-      "link": "https://gcaptain.com/trump-weighs-lifting-shadow-fleet-sanctions-as-tanker-rates-soar/",
-      "pubDate": "Thu, 15 Oct 2026 16:06:01 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By Timothy Gardner and Jarrett Renshaw WASHINGTON, Oct 14 (Reuters) &#8211; The Trump administration is considering easing sanctions on so-called shadow fleet vessels that have transported oil and petroleum products...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/shadow-fleet-tanker-bertha-intercepted-indian-ocean-800x533.jpeg",
-      "en": {
-        "headline": "Trump Weighs Lifting Shadow Fleet Sanctions as Tanker Rates Soar",
-        "summary": "By Timothy Gardner and Jarrett Renshaw WASHINGTON, Oct 14 (Reuters) &#8211; The Trump administration is considering easing sanctions on so-called shadow fleet vessels that have transported oil and petroleum products...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Ship Fuel Market Fragments as Middle East Conflict Hits Trade",
-      "link": "https://gcaptain.com/ship-fuel-market-fragments-as-middle-east-conflict-hits-trade/",
-      "pubDate": "Thu, 15 Oct 2026 13:35:58 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Shipowners are facing an increasingly fragmented fuel market as disruptions triggered by the Middle East conflict raise concerns about the availability and quality of supply.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-02T141120Z_2105784509_RC2Q5MASSOEC_RTRMADP_3_RUSSIA-OIL-EXPORTS-800x533.jpg",
-      "en": {
-        "headline": "Ship Fuel Market Fragments as Middle East Conflict Hits Trade",
-        "summary": "Shipowners are facing an increasingly fragmented fuel market as disruptions triggered by the Middle East conflict raise concerns about the availability and quality of supply.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Seven Sailors Missing as Drones Strike Tankers Near Romania",
-      "link": "https://gcaptain.com/two-ships-ablaze-off-romanian-black-sea-coast-7-sailors-missing/",
-      "pubDate": "Thu, 15 Oct 2026 13:31:19 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Rescuers were searching for seven missing crew on Thursday from one of two chemical tankers that caught fire overnight just outside Romanian territorial waters in the Black Sea, after Russian drones strayed into national airspace, Romanian officials said.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-15T092806Z_1288671610_RC2L3OALNJWB_RTRMADP_3_UKRAINE-CRISIS-ROMANIA-800x441.jpg",
-      "en": {
-        "headline": "Seven Sailors Missing as Drones Strike Tankers Near Romania",
-        "summary": "Rescuers were searching for seven missing crew on Thursday from one of two chemical tankers that caught fire overnight just outside Romanian territorial waters in the Black Sea, after Russian drones strayed into national airspace, Romanian officials said.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Guangzhou and Hong Kong open electric container shuttle",
-      "link": "https://splash247.com/guangzhou-and-hong-kong-open-electric-container-shuttle/",
-      "pubDate": "Thu, 15 Oct 2026 10:27:08 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Guangzhou Port has launched the Greater Bay Area’s first zero-carbon container route, putting a battery-electric vessel into cross-border service between Nansha and Hong Kong. The 240 teu Sui Gang Dian Hang 02 opened the route this week, carrying furniture and consumer goods to H",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Sui-Gang-Dian-Hang-02.jpg",
-      "en": {
-        "headline": "Guangzhou and Hong Kong open electric container shuttle",
-        "summary": "Guangzhou Port has launched the Greater Bay Area’s first zero-carbon container route, putting a battery-electric vessel into cross-border service between Nansha and Hong Kong. The 240 teu Sui Gang Dian Hang 02 opened the route this week, carrying furniture and consumer goods to H",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "COSCO lands ten-year Chinese car-export deal",
-      "link": "https://splash247.com/cosco-lands-ten-year-chinese-car-export-deal/",
-      "pubDate": "Thu, 15 Oct 2026 10:22:54 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "COSCO Shipping Specialized Carriers’ car-carrier business has signed a 10-year contract of affreightment with Chinese automaker DFSK, securing a long-term vehicle-export cargo relationship. The agreement was signed with Chongqing Xiaokang Import &#38; Export, DFSK’s export operat",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/COSCO-DFSK.jpg",
-      "en": {
-        "headline": "COSCO lands ten-year Chinese car-export deal",
-        "summary": "COSCO Shipping Specialized Carriers’ car-carrier business has signed a 10-year contract of affreightment with Chinese automaker DFSK, securing a long-term vehicle-export cargo relationship. The agreement was signed with Chongqing Xiaokang Import &#38; Export, DFSK’s export operat",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Jinhui cashes in on veteran bulker",
-      "link": "https://splash247.com/jinhui-cashes-in-on-veteran-bulker/",
-      "pubDate": "Thu, 15 Oct 2026 10:04:00 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Hong Kong-based dry bulk owner Jinhui Shipping and Transportation has agreed to sell another ageing supramax, continuing its fleet renewal drive with a $14.6m deal involving a Hong Kong buyer. The Oslo-listed company, majority-owned by Hong Kong-listed Jinhui Holdings, has signed",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/10/Jinhui-bulker.jpg",
-      "en": {
-        "headline": "Jinhui cashes in on veteran bulker",
-        "summary": "Hong Kong-based dry bulk owner Jinhui Shipping and Transportation has agreed to sell another ageing supramax, continuing its fleet renewal drive with a $14.6m deal involving a Hong Kong buyer. The Oslo-listed company, majority-owned by Hong Kong-listed Jinhui Holdings, has signed",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Germany puts $448m behind 47-point green shipping plan",
-      "link": "https://splash247.com/germany-puts-448m-behind-47-point-green-shipping-plan/",
-      "pubDate": "Thu, 15 Oct 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Germany has approved a national shipping decarbonisation programme backed by €400m ($448.8m) in funding, including proposals for greener shipping corridors, alternative fuel infrastructure and financial incentives for vessel renewal. The federal cabinet adopted the National Actio",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Port-of-Kiel.jpg",
-      "en": {
-        "headline": "Germany puts $448m behind 47-point green shipping plan",
-        "summary": "Germany has approved a national shipping decarbonisation programme backed by €400m ($448.8m) in funding, including proposals for greener shipping corridors, alternative fuel infrastructure and financial incentives for vessel renewal. The federal cabinet adopted the National Actio",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Suez tightens transit rules for ageing ships",
-      "link": "https://splash247.com/suez-tightens-transit-rules-for-ageing-ships/",
-      "pubDate": "Thu, 15 Oct 2026 09:55:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The Suez Canal Authority (SCA) has introduced mandatory inspections and trials for vessels aged 25 years and older, adding further costs and potential delays for operators of ageing tonnage. The new regulations, already effective, require vessels to undergo a comprehensive inspec",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/05/Bulker-grounding-Suez-Canal.jpg",
-      "en": {
-        "headline": "Suez tightens transit rules for ageing ships",
-        "summary": "The Suez Canal Authority (SCA) has introduced mandatory inspections and trials for vessels aged 25 years and older, adding further costs and potential delays for operators of ageing tonnage. The new regulations, already effective, require vessels to undergo a comprehensive inspec",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Icon Energy expands boxship exposure",
-      "link": "https://splash247.com/icon-energy-expands-boxship-exposure/",
-      "pubDate": "Thu, 15 Oct 2026 09:54:00 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Nasdaq-listed Greek dry bulk owner Icon Energy is expanding its containership investments, agreeing to take a minority stake in a second feeder vessel employed under a long-term charter. The Ismini Panagiotidi-led company said it would acquire approximately 2.8% of the entity bei",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Boxship-containership-sun.jpg",
-      "en": {
-        "headline": "Icon Energy expands boxship exposure",
-        "summary": "Nasdaq-listed Greek dry bulk owner Icon Energy is expanding its containership investments, agreeing to take a minority stake in a second feeder vessel employed under a long-term charter. The Ismini Panagiotidi-led company said it would acquire approximately 2.8% of the entity bei",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "US shadow fleet proposal sparks tanker stock rout",
-      "link": "https://splash247.com/us-shadow-fleet-proposal-sparks-tanker-stock-rout/",
-      "pubDate": "Thu, 15 Oct 2026 08:45:04 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Asian shipping stocks took a beating on Thursday as reports that Washington is considering easing sanctions on shadow fleet tankers sent investors scrambling to reassess the extraordinary freight boom that has sent some spot segments into million-dollar territory for the first ti",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Donald-Trump-pen.jpg",
-      "en": {
-        "headline": "US shadow fleet proposal sparks tanker stock rout",
-        "summary": "Asian shipping stocks took a beating on Thursday as reports that Washington is considering easing sanctions on shadow fleet tankers sent investors scrambling to reassess the extraordinary freight boom that has sent some spot segments into million-dollar territory for the first ti",
-        "source": "Splash247"
       }
     }
   ]
