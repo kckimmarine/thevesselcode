@@ -1,5 +1,6 @@
 /**
  * THE VESSEL CODE — 원형 심볼 상표 견본 (RIPC / KIPO)
+ * Official symbol source: icons/extracted/desktop-256.png (company circular mark)
  * Usage: node scripts/export-trademark-circle-assets.js
  */
 const fs = require('fs');
@@ -16,120 +17,161 @@ const PADDING_RATIO = 0.1;
 const DPI = 300;
 
 const PALETTE = {
-  circleBg: '#1e2433',
-  circleBgAlt: '#0f172a',
-  orbit: '#8be9fd',
-  orbitAlt: '#38bdf8',
-  wordmark: '#0f172a',
+  wordmarkColor: '#0f172a',
 };
 
-/** Official orbital mark paths (icons/atom-logo.svg) */
-const ATOM = {
-  orbit1:
-    'M48.578,28.615 C56.851,45.587 58.558,61.581 52.288,64.778 C45.822,68.076 33.326,56.521 24.375,38.969 C15.424,21.418 13.409,4.518 19.874,1.221 C22.689,-0.216 26.648,1.166 30.959,4.629',
-  orbit2:
-    'M7.64,39.45 C2.806,36.94 -0.009,33.915 0.154,30.79 C0.531,23.542 16.787,18.497 36.462,19.52 C56.137,20.544 71.781,27.249 71.404,34.497 C71.241,37.622 68.127,40.338 63.06,42.333',
-  orbit3:
-    'M28.828,59.354 C23.545,63.168 18.843,64.561 15.902,62.653 C9.814,58.702 13.572,42.102 24.296,25.575 C35.02,9.048 48.649,-1.149 54.736,2.803 C57.566,4.639 58.269,9.208 57.133,15.232',
-  nucleus:
-    'M40.363,32.075 C40.874,34.44 39.371,36.77 37.006,37.282 C34.641,37.793 32.311,36.29 31.799,33.925 C31.289,31.56 32.791,29.23 35.156,28.718 C37.521,28.207 39.851,29.71 40.363,32.075',
-};
-
-function color(mode, role) {
-  if (mode === 'black') return '#000000';
-  if (role === 'circle') return PALETTE.circleBg;
-  if (role === 'orbit') return PALETTE.orbit;
-  if (role === 'wordmark') return PALETTE.wordmark;
-  return '#000000';
+function pickSymbolSource() {
+  const candidates = [
+    path.join(ROOT, 'icons', 'extracted', 'desktop-256.png'),
+    path.join(ROOT, 'icons', 'company-logo.png'),
+    path.join(ROOT, 'build', 'icon.png'),
+  ];
+  const found = candidates.find((p) => fs.existsSync(p));
+  if (!found) throw new Error('Missing official circle logo PNG (desktop-256.png)');
+  return found;
 }
 
-function circularSymbolFragment(cx, cy, diameter, mode) {
-  const r = diameter / 2;
-  const fill = color(mode, 'circle');
-  const stroke = color(mode, 'orbit');
-  const atomFill = color(mode, 'orbit');
-  const inner = diameter * 0.72;
-  const atomScale = inner * 0.0112;
-  return `
-  <circle cx="${cx}" cy="${cy}" r="${r}" fill="${fill}"/>
-  <g transform="translate(${cx} ${cy}) scale(${atomScale}) translate(-36 -33)" fill="none" stroke="${stroke}" stroke-width="3.35" stroke-linecap="round" stroke-linejoin="round">
-    <path d="${ATOM.orbit1}"/>
-    <path d="${ATOM.orbit2}"/>
-    <path d="${ATOM.orbit3}"/>
-  </g>
-  <g transform="translate(${cx} ${cy}) scale(${atomScale}) translate(-36 -33)" fill="${atomFill}" stroke="none">
-    <path d="${ATOM.nucleus}"/>
-  </g>`;
+/** Recolor every visible pixel to pure black; preserve alpha (mono filing plate). */
+async function symbolToMonoBlack(inputPath, pixelSize) {
+  const { data, info } = await sharp(inputPath)
+    .resize(pixelSize, pixelSize, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 }, kernel: sharp.kernel.lanczos3 })
+    .ensureAlpha()
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+
+  const out = Buffer.from(data);
+  for (let i = 0; i < info.width * info.height; i += 1) {
+    const o = i * 4;
+    if (out[o + 3] > 8) {
+      out[o] = 0;
+      out[o + 1] = 0;
+      out[o + 2] = 0;
+      out[o + 3] = 255;
+    } else {
+      out[o + 3] = 0;
+    }
+  }
+  return sharp(out, { raw: { width: info.width, height: info.height, channels: 4 } }).png().toBuffer();
 }
 
-function wordmarkFragment(cx, cy, fontSize, mode) {
-  const fill = color(mode, 'wordmark');
-  const trackingEm = 0.175;
-  const tracking = fontSize * trackingEm;
-  return `<text x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Montserrat, 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="${fontSize}" letter-spacing="${tracking}" fill="${fill}">THE VESSEL CODE</text>`;
-}
-
-function svgVertical(mode) {
-  const pad = SQUARE * PADDING_RATIO;
-  const inner = SQUARE - pad * 2;
-  const symD = inner * 0.52;
-  const gap = inner * 0.08;
-  const textBand = inner - symD - gap;
-  const symCy = pad + symD / 2;
-  const textCy = pad + symD + gap + textBand / 2;
-  const fontSize = textBand * 0.38;
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${SQUARE} ${SQUARE}" width="${SQUARE}" height="${SQUARE}">
-${circularSymbolFragment(SQUARE / 2, symCy, symD, mode)}
-${wordmarkFragment(SQUARE / 2, textCy, fontSize, mode)}
-</svg>`;
-}
-
-function svgHorizontal(mode) {
-  const pad = HORIZ_H * PADDING_RATIO;
-  const innerH = HORIZ_H - pad * 2;
-  const innerW = HORIZ_W - pad * 2;
-  const gap = innerW * 0.05;
-  const symD = innerH * 0.92;
-  const textAreaW = innerW - symD - gap;
-  const symCx = pad + symD / 2;
-  const symCy = HORIZ_H / 2;
-  const textCx = pad + symD + gap + textAreaW / 2;
-  let fontSize = innerH * 0.17;
-  const maxByWidth = textAreaW / (17 * 0.64);
-  fontSize = Math.min(fontSize, maxByWidth);
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${HORIZ_W} ${HORIZ_H}" width="${HORIZ_W}" height="${HORIZ_H}">
-${circularSymbolFragment(symCx, symCy, symD, mode)}
-${wordmarkFragment(textCx, symCy, fontSize, mode)}
-</svg>`;
-}
-
-function svgSymbolOnly(mode) {
-  const pad = SQUARE * PADDING_RATIO;
-  const symD = SQUARE - pad * 2;
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${SQUARE} ${SQUARE}" width="${SQUARE}" height="${SQUARE}">
-${circularSymbolFragment(SQUARE / 2, SQUARE / 2, symD, mode)}
-</svg>`;
-}
-
-function layoutSvg(layout, mode) {
-  if (layout === 'vertical') return svgVertical(mode);
-  if (layout === 'horizontal') return svgHorizontal(mode);
-  return svgSymbolOnly(mode);
-}
-
-async function renderPng(svg, w, h) {
-  return sharp(Buffer.from(svg), { density: DPI })
-    .resize(w, h, { fit: 'fill', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+async function symbolRaster(mode, pixelSize) {
+  const src = pickSymbolSource();
+  if (mode === 'black') return symbolToMonoBlack(src, pixelSize);
+  return sharp(src)
+    .resize(pixelSize, pixelSize, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 }, kernel: sharp.kernel.lanczos3 })
     .png()
     .toBuffer();
 }
 
-async function renderJpg(svg, w, h) {
+function wordmarkSvgFragment(width, height, mode) {
+  const fill = mode === 'black' ? '#000000' : PALETTE.wordmarkColor;
+  const trackingEm = 0.15;
+  const fontSize = Math.min(height * 0.48, width / 13.4);
+  const tracking = fontSize * trackingEm;
+  const padX = width * 0.04;
+  const vbW = width + padX * 2;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${-padX} 0 ${vbW} ${height}" width="${width}" height="${height}">
+  <text x="${width / 2}" y="${height / 2}" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Montserrat, 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="${fontSize}" letter-spacing="${tracking}" fill="${fill}">THE VESSEL CODE</text>
+</svg>`;
+}
+
+async function wordmarkRaster(width, height, mode) {
+  const svg = wordmarkSvgFragment(width, height, mode);
   return sharp(Buffer.from(svg), { density: DPI })
-    .resize(w, h, { fit: 'fill', background: '#ffffff' })
+    .resize(width, height, { fit: 'fill', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+    .png()
+    .toBuffer();
+}
+
+async function composeLayout(layout, mode) {
+  const isHoriz = layout === 'horizontal';
+  const canvasW = isHoriz ? HORIZ_W : SQUARE;
+  const canvasH = isHoriz ? HORIZ_H : SQUARE;
+  const pad = Math.round(Math.min(canvasW, canvasH) * PADDING_RATIO);
+
+  let symSize;
+  let symLeft;
+  let symTop;
+  let textW;
+  let textH;
+  let textLeft;
+  let textTop;
+
+  if (layout === 'symbol') {
+    symSize = Math.min(canvasW, canvasH) - pad * 2;
+    symLeft = Math.round((canvasW - symSize) / 2);
+    symTop = Math.round((canvasH - symSize) / 2);
+    const symBuf = await symbolRaster(mode, symSize);
+    return sharp({
+      create: { width: canvasW, height: canvasH, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } },
+    })
+      .composite([{ input: symBuf, left: symLeft, top: symTop }])
+      .png()
+      .toBuffer();
+  }
+
+  if (layout === 'vertical') {
+    const inner = canvasH - pad * 2;
+    symSize = Math.round(inner * 0.54);
+    const gap = Math.round(inner * 0.07);
+    textH = inner - symSize - gap;
+    textW = canvasW - pad * 2;
+    symLeft = Math.round((canvasW - symSize) / 2);
+    symTop = pad;
+    textLeft = pad;
+    textTop = pad + symSize + gap;
+  } else {
+    const innerH = canvasH - pad * 2;
+    const innerW = canvasW - pad * 2;
+    const gap = Math.round(innerW * 0.05);
+    symSize = Math.round(innerH * 0.94);
+    textW = innerW - symSize - gap;
+    textH = Math.round(innerH * 0.28);
+    symLeft = pad;
+    symTop = Math.round((canvasH - symSize) / 2);
+    textLeft = pad + symSize + gap;
+    textTop = Math.round((canvasH - textH) / 2);
+  }
+
+  const [symBuf, textBuf] = await Promise.all([
+    symbolRaster(mode, symSize),
+    wordmarkRaster(textW, textH, mode),
+  ]);
+
+  return sharp({
+    create: { width: canvasW, height: canvasH, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } },
+  })
+    .composite([
+      { input: symBuf, left: symLeft, top: symTop },
+      { input: textBuf, left: textLeft, top: textTop },
+    ])
+    .png()
+    .toBuffer();
+}
+
+async function toJpgWhite(pngBuf, w, h) {
+  return sharp(pngBuf)
+    .resize(w, h, { fit: 'fill' })
     .flatten({ background: '#ffffff' })
     .jpeg({ quality: 96, chromaSubsampling: '4:4:4' })
     .toBuffer();
+}
+
+async function buildMasterSvg() {
+  const src = pickSymbolSource();
+  const b64 = fs.readFileSync(src).toString('base64');
+  const pad = SQUARE * PADDING_RATIO;
+  const inner = SQUARE - pad * 2;
+  const symSize = inner * 0.54;
+  const gap = inner * 0.07;
+  const textY = pad + symSize + gap + (inner - symSize - gap) / 2;
+  const fontSize = (inner - symSize - gap) * 0.38;
+  const tracking = fontSize * 0.175;
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 ${SQUARE} ${SQUARE}" width="${SQUARE}" height="${SQUARE}">
+  <image x="${(SQUARE - symSize) / 2}" y="${pad}" width="${symSize}" height="${symSize}" xlink:href="data:image/png;base64,${b64}" />
+  <text x="${SQUARE / 2}" y="${textY}" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Montserrat, 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="${fontSize}" letter-spacing="${tracking}" fill="${PALETTE.wordmarkColor}">THE VESSEL CODE</text>
+</svg>`;
 }
 
 async function exportLayout(baseName, layout, zip) {
@@ -137,12 +179,9 @@ async function exportLayout(baseName, layout, zip) {
   const w = isHoriz ? HORIZ_W : SQUARE;
   const h = isHoriz ? HORIZ_H : SQUARE;
 
-  const colorSvg = layoutSvg(layout, 'color');
-  const blackSvg = layoutSvg(layout, 'black');
-
-  const colorPng = await renderPng(colorSvg, w, h);
-  const blackPng = await renderPng(blackSvg, w, h);
-  const blackJpg = await renderJpg(blackSvg, w, h);
+  const colorPng = await composeLayout(layout, 'color');
+  const blackPng = await composeLayout(layout, 'black');
+  const blackJpg = await toJpgWhite(blackPng, w, h);
 
   const files = [
     [`${baseName}-color.png`, colorPng],
@@ -159,21 +198,9 @@ async function exportLayout(baseName, layout, zip) {
   return files.map(([name]) => path.join(OUT_DIR, name));
 }
 
-async function validateSharpness(pngPath) {
-  const meta = await sharp(pngPath).metadata();
-  const upscale = await sharp(pngPath).resize(meta.width * 4, meta.height * 4, { kernel: sharp.kernel.nearest }).png().toBuffer();
-  const upMeta = await sharp(upscale).metadata();
-  if (upMeta.width < meta.width * 4) throw new Error(`Upscale failed for ${pngPath}`);
-  return meta;
-}
-
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
-
-  const refCircle = path.join(ROOT, 'icons', 'extracted', 'desktop-256.png');
-  if (!fs.existsSync(refCircle)) {
-    console.warn('Note: reference raster', refCircle, 'not found; using vector atom paths only.');
-  }
+  console.log('Symbol source:', path.relative(ROOT, pickSymbolSource()));
 
   const zip = new JSZip();
   const written = [];
@@ -182,34 +209,32 @@ async function main() {
   written.push(...(await exportLayout('tvc-circle-horizontal', 'horizontal', zip)));
   written.push(...(await exportLayout('tvc-circle-symbol', 'symbol', zip)));
 
-  const masterSvg = `<?xml version="1.0" encoding="UTF-8"?>
-<!-- THE VESSEL CODE — Circle trademark master (Type 1 vertical, color) -->
-${svgVertical('color')}`;
+  const masterSvg = await buildMasterSvg();
   const masterPath = path.join(OUT_DIR, 'THE_VESSEL_CODE_Circle_Master.svg');
   fs.writeFileSync(masterPath, masterSvg, 'utf8');
   zip.file('THE_VESSEL_CODE_Circle_Master.svg', masterSvg);
   console.log('Wrote', path.relative(ROOT, masterPath));
 
-  const symbolSvg = svgSymbolOnly('color');
-  fs.writeFileSync(path.join(OUT_DIR, 'tvc-circle-symbol-master.svg'), symbolSvg, 'utf8');
-  zip.file('tvc-circle-symbol-master.svg', symbolSvg);
+  const symOnlyB64 = fs.readFileSync(pickSymbolSource()).toString('base64');
+  const symSvg = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256" width="256" height="256">
+  <image width="256" height="256" xlink:href="data:image/png;base64,${symOnlyB64}" />
+</svg>`;
+  fs.writeFileSync(path.join(OUT_DIR, 'tvc-circle-symbol-master.svg'), symSvg, 'utf8');
+  zip.file('tvc-circle-symbol-master.svg', symSvg);
 
   const readme = `# THE VESSEL CODE — Circle trademark pack (RIPC / KIPO)
 
 Generated: ${new Date().toISOString()}
+Symbol raster: ${path.relative(ROOT, pickSymbolSource())} (official app/marketing circle mark)
 
 ## Layouts
 - Type 1 Vertical: tvc-circle-vertical-* (${SQUARE}×${SQUARE})
 - Type 2 Horizontal: tvc-circle-horizontal-* (${HORIZ_W}×${HORIZ_H}, 2:1)
 - Type 3 Symbol: tvc-circle-symbol-* (${SQUARE}×${SQUARE})
 
-## Variations (×3 each)
-- *-color.png — Navy circle + cyan orbits + wordmark / transparent
-- *-black.png — Pure black mono / transparent
-- *-black.jpg — Black on white (KIPO form)
-
-Padding: ${Math.round(PADDING_RATIO * 100)}% · Raster density: ${DPI} DPI
-Vector: THE_VESSEL_CODE_Circle_Master.svg
+Variations: color PNG (transparent), black PNG (transparent), black JPG (white)
+Padding: ${Math.round(PADDING_RATIO * 100)}% · Upscale: Lanczos3 from 256px master PNG
 `;
   fs.writeFileSync(path.join(OUT_DIR, 'README-circle-pack.txt'), readme, 'utf8');
   zip.file('README-circle-pack.txt', readme);
@@ -220,11 +245,12 @@ Vector: THE_VESSEL_CODE_Circle_Master.svg
   console.log('Wrote', path.relative(ROOT, zipPath));
 
   for (const p of written.filter((f) => f.endsWith('.png'))) {
-    const meta = await validateSharpness(p);
-    const min = Math.min(meta.width, meta.height);
-    if (min < 2048) throw new Error(`${p} below 2048px minimum (${meta.width}×${meta.height})`);
+    const meta = await sharp(p).metadata();
+    if (Math.min(meta.width, meta.height) < 2048) {
+      throw new Error(`${p} below 2048px (${meta.width}×${meta.height})`);
+    }
   }
-  console.log('Validation OK — dimensions ≥2048 and vector PNG upscales cleanly.');
+  console.log('Validation OK.');
 }
 
 main().catch((err) => {
