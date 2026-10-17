@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-17T02:15:27.985Z",
+    "generatedAt": "2026-10-17T09:55:12.385Z",
     "benchmarkAsOf": "2026-10-16",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 911.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-15T17:00:00.000Z",
+        "priceUsdMt": 913.5,
+        "deltaPct": 0.22,
+        "asOf": "2026-10-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1278.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-15T17:00:00.000Z",
+        "priceUsdMt": 1254,
+        "deltaPct": -1.92,
+        "asOf": "2026-10-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 885,
-        "deltaPct": 0,
-        "asOf": "2026-10-15T17:00:00.000Z",
+        "priceUsdMt": 890.5,
+        "deltaPct": 0.62,
+        "asOf": "2026-10-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 735.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-15T17:00:00.000Z",
+        "priceUsdMt": 740.5,
+        "deltaPct": 0.68,
+        "asOf": "2026-10-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1395,
-        "deltaPct": 0,
-        "asOf": "2026-10-15T17:00:00.000Z",
+        "priceUsdMt": 1392.5,
+        "deltaPct": -0.18,
+        "asOf": "2026-10-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 653,
-        "deltaPct": 0,
-        "asOf": "2026-10-15T17:00:00.000Z",
+        "priceUsdMt": 647,
+        "deltaPct": -0.92,
+        "asOf": "2026-10-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 764,
-        "deltaPct": 0,
-        "asOf": "2026-10-15T17:00:00.000Z",
+        "priceUsdMt": 767.5,
+        "deltaPct": 0.46,
+        "asOf": "2026-10-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1406,
-        "deltaPct": 0,
-        "asOf": "2026-10-15T17:00:00.000Z",
+        "priceUsdMt": 1384.5,
+        "deltaPct": -1.53,
+        "asOf": "2026-10-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -171,9 +171,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 575,
-        "deltaPct": 0,
-        "asOf": "2026-10-15T17:00:00.000Z",
+        "priceUsdMt": 584.5,
+        "deltaPct": 1.65,
+        "asOf": "2026-10-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -184,7 +184,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 1040,
-        "deltaPct": -0.95,
+        "deltaPct": 0,
         "asOf": "2026-10-16T22:41:17.835Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 1000,
-        "deltaPct": -0.99,
+        "deltaPct": 0,
         "asOf": "2026-10-16T22:41:17.806Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -244,7 +244,7 @@
       "summary": "French shipowner LD Armateurs has completed the installation of six towering rotor sails aboard Spirit of Toulouse, a new roll-on/roll-off vessel being built to transport aircraft components for Airbus across...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Airbus-rotor-sails-800x450.jpeg",
       "en": {
         "headline": "Wind-Assisted Shipping Gains Ground as Airbus RoRo Adds Rotor Sails",
@@ -261,7 +261,7 @@
       "summary": "Conflicting traffic figures and competing claims of control are making it increasingly difficult to establish what&#8217;s happening in the Strait of Hormuz, even as attacks on merchant shipping intensify. The...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-28T112819Z_711172295_RC26SNAHFL5K_RTRMADP_3_IRAN-CRISIS-HORMUZ-800x533.jpg",
       "en": {
         "headline": "Fog of War Deepens in Hormuz as UKMTO Says Most Ship Attacks Go Unreported",
@@ -278,7 +278,7 @@
       "summary": "Deal adds four modern crude tankers as International Seaways reports sharply higher spot earnings entering the fourth quarter. International Seaways has agreed to acquire Oslo-listed Bruton Limited in a deal...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/03/shutterstock_1779485036.jpg",
       "en": {
         "headline": "International Seaways Adds to VLCC Fleet with $370 Million Bruton Deal",
@@ -295,7 +295,7 @@
       "summary": "The ports of Los Angeles and Long Beach both set all-time monthly cargo records in September, handling a combined 2.04 million twenty-foot equivalent units (TEUs) as strong imports and shifting...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/Port-of-Long-Beach.jpeg",
       "en": {
         "headline": "Southern California Ports Shatter Cargo Records as Imports Surge",
@@ -312,7 +312,7 @@
       "summary": "The Houthi attacks on Saudi Arabia are demonstrating the limits of the kingdom’s military prowess — despite defense spending that far outstrips that of its regional neighbors.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/03/2024-03-15T150448Z_2078448295_RC2DM6AM42PG_RTRMADP_3_ISRAEL-PALESTINIANS-PROTESTS-YEMEN-800x533.jpg",
       "en": {
         "headline": "Houthi Attacks on Saudi Arabia Defy Difference in Military Power",
@@ -329,7 +329,7 @@
       "summary": "The cost ?of shipping oil on the largest tankers fell this week from record highs as demand eased following a wave of attacks on vessels in the Middle East and as the US considered easing sanctions on the so-called shadow fleet.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
       "en": {
         "headline": "Supertanker Rates Fall from Record Highs",
@@ -346,7 +346,7 @@
       "summary": "Three senior House Republicans are calling on the Department of Homeland Security to revoke special inspection privileges granted to vessels operated by Chinese state-owned shipping giant COSCO, citing allegations that...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/02/polb_2.jpg",
       "en": {
         "headline": "Lawmakers Seek to Strip COSCO Ships of U.S. Port Inspection Privileges Over Espionage Claims",
@@ -363,7 +363,7 @@
       "summary": "The International Energy Agency (IEA) has agreed to accelerate the release of approximately 100 million barrels of emergency oil stocks, including more than 20 million barrels of diesel, as the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/05/shutterstock_752037607.jpg",
       "en": {
         "headline": "IEA Moves to Accelerate Oil Reserve Releases as Hormuz Crisis Drags On",
@@ -380,7 +380,7 @@
       "summary": "Iran has managed to export some liquefied petroleum gas and jet fuel since July, despite a US naval blockade, shipping intelligence showed and people involved in security said.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/USS-Spruance-DDG-111.jpeg",
       "en": {
         "headline": "Iran Ships Some LPG, Jet Fuel Despite US Blockade, Data Shows",
@@ -397,7 +397,7 @@
       "summary": "Accelerating crude exports through the Strait of Hormuz aren’t translating into higher production of a dirty shipping fuel, according to a top Vitol Group executive, tightening supplies and sending prices soaring.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/05/2021-05-10T133209Z_1516016567_RC21DN9WF91G_RTRMADP_3_USA-PRODUCTS-COLONIAL-PIPELINE.jpg",
       "en": {
         "headline": "Ship-Fuel Crunch to Persist Despite More Oil, Vitol Says",
@@ -414,7 +414,7 @@
       "summary": "Norway’s Odfjell Drilling has secured more work for its Deepsea Atlantic semisubmersible drilling rig after compatriot energy major Equinor exercised options for two additional wells. The latest option exercise will keep the 2009-built rig employed until late in the fourth quarte",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 16,
+      "hoursAgo": 23,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/deepsea-atlantic-equinor.jpg",
       "en": {
         "headline": "Equinor keeps Odfjell Drilling semisub busy into late 2027",
@@ -431,7 +431,7 @@
       "summary": "British ports have challenged European Union claims that shipping lines are diverting container traffic to the UK to escape carbon charges, warning that proposed anti-evasion measures risk penalising billions of pounds of investment in British terminals. The British Ports Associa",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 16,
+      "hoursAgo": 24,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/08/UK-ship.jpg",
       "en": {
         "headline": "UK ports hit back at Brussels over ETS diversion claims",
@@ -448,7 +448,7 @@
       "summary": "New York-listed tanker owner International Seaways has struck a deal to take over Tor Olav Trøim-backed Bruton in a transaction valuing the Oslo-listed VLCC company at around $370m. The agreement, announced on Friday, will see the Lois Zabrocky-led group acquire Bruton&#8217;s en",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 17,
+      "hoursAgo": 25,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Mount-Vision-VLCC-Bruton.jpg",
       "en": {
         "headline": "International Seaways seals $370m Bruton takeover deal",
@@ -465,7 +465,7 @@
       "summary": "West Africa is fast becoming dry bulk shipping&#8217;s biggest growth engine, with its mineral export boom poised to absorb the equivalent of another 120 capesizes by 2030. UK consultancy Tradeviews forecasts in a new report that shipments from the region will surge 50% from 2025",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 18,
+      "hoursAgo": 25,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/09/WinningMax-VLOC.jpg",
       "en": {
         "headline": "West Africa&#8217;s ore boom meets China&#8217;s growing VLOC armada",
@@ -482,7 +482,7 @@
       "summary": "Ongoing attacks in Hormuz and the Black Sea dominated Splash coverage once again this week &#8211; both maritime theatres of war expanding worryingly. Another dangerous missile for tanker owners came from a conference in Saudi Arabia, where the US energy secretary was reported to",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 18,
+      "hoursAgo": 26,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/06/Houthi-hypersonic-missile.jpg",
       "en": {
         "headline": "Splash Wrap: A missile from Riyadh",
@@ -499,7 +499,7 @@
       "summary": "South Korea&#8217;s HMM is pressing ahead with its fleet expansion programme, approving a $1.62bn investment in 12 containerships comprising eight 13,000 teu newbuildings and four smaller vessels. The Seoul-listed carrier&#8217;s board approved spending KRW2.168trn ($1.617bn) yes",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 19,
+      "hoursAgo": 27,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/06/HMM-Algeciras-24000-teu.jpg",
       "en": {
         "headline": "HMM commits $1.6bn to 12 more containerships",
