@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-19T17:59:53.385Z",
+    "generatedAt": "2026-10-19T22:08:10.751Z",
     "benchmarkAsOf": "2026-10-19",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 2546,
-      "deltaPct": 1.39,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-19T15:45:28.297Z"
     },
     "capesizeTc": {
       "value": 3365,
-      "deltaPct": 3.57,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-19T15:45:28.331Z"
     },
     "panamaxTc": {
       "value": 2286,
-      "deltaPct": -1.21,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-19T15:45:28.354Z"
@@ -236,6 +236,40 @@
   },
   "news": [
     {
+      "title": "Who owns shipping’s carbon decisions?",
+      "link": "https://splash247.com/who-owns-shippings-carbon-decisions/",
+      "pubDate": "Mon, 19 Oct 2026 20:00:00 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "In an industry where a position list is a competitive weapon, the question is no longer just how to comply—but where carbon decisions are made and who controls the data behind them, said Argyris Zafeiropoulos, principal advisor at Resilience &#38; Compliance Advisory. With the EU",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/09/ABS-Zero-Carbon-Suezmax.jpg",
+      "en": {
+        "headline": "Who owns shipping’s carbon decisions?",
+        "summary": "In an industry where a position list is a competitive weapon, the question is no longer just how to comply—but where carbon decisions are made and who controls the data behind them, said Argyris Zafeiropoulos, principal advisor at Resilience &#38; Compliance Advisory. With the EU",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Jones Act Waiver Faces New Scrutiny Over Foreign Crews, Taxes",
+      "link": "https://gcaptain.com/jones-act-waiver-faces-new-scrutiny-over-foreign-crews-taxes/",
+      "pubDate": "Mon, 19 Oct 2026 19:08:28 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Congressional scrutiny of the Trump administration&#8217;s Jones Act waiver is growing, with Rep. Salud Carbajal (D-Calif.) demanding answers about whether foreign vessels operating in domestic U.S. trades are complying with...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-09T052058Z_770736808_RC217KA5FP4Y_RTRMADP_3_IRAN-CRISIS-USA-ASIA-OIL-800x533.jpg",
+      "en": {
+        "headline": "Jones Act Waiver Faces New Scrutiny Over Foreign Crews, Taxes",
+        "summary": "Congressional scrutiny of the Trump administration&#8217;s Jones Act waiver is growing, with Rep. Salud Carbajal (D-Calif.) demanding answers about whether foreign vessels operating in domestic U.S. trades are complying with...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Russian Oil Exports by Arctic Route Jump Amid World Freight Crisis",
       "link": "https://gcaptain.com/russian-oil-exports-by-arctic-route-jump-amid-world-freight-crisis/",
       "pubDate": "Mon, 19 Oct 2026 17:04:12 +0000",
@@ -244,7 +278,7 @@
       "summary": "Russia's oil exports through its Northern Sea Route (NSR) in 2026 have already exceeded last year's by nearly 50%, with some 20 million barrels shipped to Asia from the start of navigation in July to mid-October, traders said and data showed.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 5,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/02/2022-02-25T151923Z_629387291_RC2YQS95US6L_RTRMADP_3_UKRAINE-CRISIS-LNG-FRANCE-800x528.jpg",
       "en": {
         "headline": "Russian Oil Exports by Arctic Route Jump Amid World Freight Crisis",
@@ -261,7 +295,7 @@
       "summary": "Iran’s main oil-loading terminals have remained empty for weeks, adding to signs that a US naval blockade of the country is throttling Tehran’s exports.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 5,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/USCENTCOM-blockade.jpeg",
       "en": {
         "headline": "Iran’s Main Oil Terminals Remain Empty as US Blockade Bites",
@@ -278,7 +312,7 @@
       "summary": "The Trump administration has scheduled the first offshore mineral lease sale in U.S. history, opening more than 31 million acres of seabed near American Samoa to companies seeking critical minerals...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Polymetallic-nodules-on-seafloor.jpg",
       "en": {
         "headline": "U.S. Sets First Deep-Sea Mining Lease Sale for November",
@@ -295,7 +329,7 @@
       "summary": "Norwegian geophysical services specialist Electromagnetic Geoservices (EMGS) has secured a letter of award from Pakistan&#8217;s Mari Energies for controlled-source electromagnetic surveys across multiple offshore exploration blocks. The Oslo-based company said the programme woul",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2015/08/Boa-Thalassa.jpg",
       "en": {
         "headline": "EMGS lands offshore exploration survey award in Pakistan",
@@ -312,7 +346,7 @@
       "summary": "UK North Sea oil and gas producer Ithaca Energy has launched a search for a new chief executive after Luciano Vasques announced plans to retire by March 31, 2027. The company said its board has begun identifying a successor, with a further announcement to follow in due course to ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/Ithaca-FPF-1.jpg",
       "en": {
         "headline": "Ithaca Energy chief executive to retire",
@@ -329,7 +363,7 @@
       "summary": "Norway&#8217;s protracted offshore well services wage dispute has been settled through voluntary arbitration, even as a separate labour conflict has triggered a strike at subsea contractor Reach Subsea. An arbitration panel has ruled that wage and other provisions previously agre",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/10/Reach-Subsea-Reach-Remote.jpg",
       "en": {
         "headline": "Norway ends one offshore wage row only for Reach Subsea strike to begin",
@@ -346,7 +380,7 @@
       "summary": "The number of commercial transit voyages through Russia’s Northern Sea Route (NSR) had already surpassed the full-year 2025 total by the end of September, putting Arctic shipping on course for another record season as cargo volumes rise and more vessels test the route between Asi",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/12/atomflot-NSR-escort-Nov-2024-4oi8CUYiW5g.jpg",
       "en": {
         "headline": "Northern Sea Route Transits Surpass 2025 Total as Arctic Shipping Gains Momentum",
@@ -363,7 +397,7 @@
       "summary": "A carrier loaded with Qatari liquefied natural gas is sailing north through the Red Sea, potentially speeding up delivery to European customers with a rare transit through waters vulnerable to renewed attacks from Houthi rebels.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/06/Copy-of-6LNG-vessels-at-RLC-Port-ver2016-06-17-172118-937_LUCiD.jpg",
       "en": {
         "headline": "Qatar LNG Cargo Makes Rare Red Sea Journey to Get Gas to Europe",
@@ -380,7 +414,7 @@
       "summary": "MSC-controlled Global Car Carriers (GCC) has added another two large LNG dual-fuel car carriers in China, taking its rapidly expanding newbuilding programme to 22 ships. The former Gram Car Carriers has booked two 8,600 ceu pure car and truck carriers at Zhoushan Changhong Intern",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 7,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Viking-Drive-PCTC-Global-Car-Carriers.jpg",
       "en": {
         "headline": "MSC-backed GCC expands car carrier spree with two more newbuilds",
@@ -397,7 +431,7 @@
       "summary": "China Merchants-controlled Nanjing Tanker has selected Dalian Shipbuilding Industry Corporation (DSIC) to build four more LR2 product and crude tankers, taking its planned newbuilding programme in the segment at the Chinese yard to six vessels. The Shanghai-listed owner named DSI",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/10/Dalian-Shipbuilding-Industry-Co.-DSIC.jpg",
       "en": {
         "headline": "Nanjing Tanker picks Dalian for LR2 quartet",
@@ -414,7 +448,7 @@
       "summary": "Vietnamese shipowner Hai An Transport and Stevedoring has approved an investment of up to $70m in two feeder containerships at a Chinese shipyard, adding another pair of vessels to its expanding newbuilding programme. The Ho Chi Minh Stock Exchange-listed company has outlined pla",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 8,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/Hai-An-Transport-2.jpg",
       "en": {
         "headline": "Hai An lines up $70m feeder newbuild investment",
@@ -431,7 +465,7 @@
       "summary": "Mediterranean Shipping Co (MSC) has been confirmed as a joint buyer of Romania&#8217;s bankrupt Mangalia shipyard, teaming up with German defence giant Rheinmetall in a €138m deal to revive one of Europe&#8217;s largest shipbuilding facilities. As Splash reported last week, Rhein",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2015/01/Damen-Mangalia-Shipyard.jpg",
       "en": {
         "headline": "MSC joins Rheinmetall in €138m Romanian shipyard takeover",
@@ -448,7 +482,7 @@
       "summary": "German shipowner and manager Reederei Nord has reshuffled its Hamburg leadership, promoting two long-serving executives to senior management roles as chief executive Kurt Klemme shifts more of his attention to shipping investments and new projects. John Wessel has been named chie",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Reederei-Nord.jpg",
       "en": {
         "headline": "Reederei Nord reshuffles top team",
@@ -465,46 +499,12 @@
       "summary": "The tanker market has entered such extraordinary territory that independent owners could be making an additional $400m a day above their original earnings expectations, a windfall that, if sustained for a year, would almost match the entire container shipping industry&#8217;s pro",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Kisogawa-VLCC-K-Line.jpg",
       "en": {
         "headline": "Tanker earnings defy all historical comparisons",
         "summary": "The tanker market has entered such extraordinary territory that independent owners could be making an additional $400m a day above their original earnings expectations, a windfall that, if sustained for a year, would almost match the entire container shipping industry&#8217;s pro",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "Hormuz attacks overwhelm UKMTO",
-      "link": "https://splash247.com/hormuz-attacks-overwhelm-ukmto/",
-      "pubDate": "Mon, 19 Oct 2026 08:34:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The sheer volume of attacks on commercial shipping around the Strait of Hormuz has left Britain&#8217;s maritime security reporting centre struggling to keep track, with most vessels targeted in the increasingly dangerous waterway no longer reporting incidents directly. UK Mariti",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/IranMilitary.jpeg",
-      "en": {
-        "headline": "Hormuz attacks overwhelm UKMTO",
-        "summary": "The sheer volume of attacks on commercial shipping around the Strait of Hormuz has left Britain&#8217;s maritime security reporting centre struggling to keep track, with most vessels targeted in the increasingly dangerous waterway no longer reporting incidents directly. UK Mariti",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Ukraine Talks with Turkey, India, Egypt Over Grain Corridor",
-      "link": "https://gcaptain.com/ukraine-talks-with-turkey-india-egypt-over-grain-corridor/",
-      "pubDate": "Mon, 19 Oct 2026 02:24:26 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By&#160;Daryna Krasnolutska, Volodymyr Verbianyi and Olesia Safronova Oct 18, 2026 (Bloomberg) &#8211;Ukraine is in talks with Turkey, Egypt and India on the possibility of opening up Black Sea civil navigation,...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/09/2023-09-16T134342Z_722138046_RC2Q93A3LR1M_RTRMADP_3_UKRAINE-CRISIS-SHIPS-800x533.jpg",
-      "en": {
-        "headline": "Ukraine Talks with Turkey, India, Egypt Over Grain Corridor",
-        "summary": "By&#160;Daryna Krasnolutska, Volodymyr Verbianyi and Olesia Safronova Oct 18, 2026 (Bloomberg) &#8211;Ukraine is in talks with Turkey, Egypt and India on the possibility of opening up Black Sea civil navigation,...",
-        "source": "gCaptain"
       }
     }
   ]
