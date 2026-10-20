@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-20T02:43:52.431Z",
+    "generatedAt": "2026-10-20T10:41:56.320Z",
     "benchmarkAsOf": "2026-10-19",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 913.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-16T17:00:00.000Z",
+        "priceUsdMt": 934,
+        "deltaPct": 2.24,
+        "asOf": "2026-10-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1254,
-        "deltaPct": 0,
-        "asOf": "2026-10-16T17:00:00.000Z",
+        "priceUsdMt": 1272.5,
+        "deltaPct": 1.48,
+        "asOf": "2026-10-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 890.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-16T17:00:00.000Z",
+        "priceUsdMt": 907.5,
+        "deltaPct": 1.91,
+        "asOf": "2026-10-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 740.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-16T17:00:00.000Z",
+        "priceUsdMt": 755.5,
+        "deltaPct": 2.03,
+        "asOf": "2026-10-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1392.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-16T17:00:00.000Z",
+        "priceUsdMt": 1403,
+        "deltaPct": 0.75,
+        "asOf": "2026-10-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 647,
-        "deltaPct": 0,
-        "asOf": "2026-10-16T17:00:00.000Z",
+        "priceUsdMt": 672.5,
+        "deltaPct": 3.94,
+        "asOf": "2026-10-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 1050,
-        "deltaPct": 0.96,
+        "deltaPct": 0,
         "asOf": "2026-10-19T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 767.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-16T17:00:00.000Z",
+        "priceUsdMt": 780.5,
+        "deltaPct": 1.69,
+        "asOf": "2026-10-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1384.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-16T17:00:00.000Z",
+        "priceUsdMt": 1408.5,
+        "deltaPct": 1.73,
+        "asOf": "2026-10-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 584.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-16T17:00:00.000Z",
+        "priceUsdMt": 601,
+        "deltaPct": 2.82,
+        "asOf": "2026-10-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -236,19 +236,172 @@
   },
   "news": [
     {
-      "title": "Who owns shipping’s carbon decisions?",
-      "link": "https://splash247.com/who-owns-shippings-carbon-decisions/",
-      "pubDate": "Tue, 20 Oct 2026 00:00:00 +0000",
+      "title": "Marinakis tanker venture locks down $930m for 11 VLCC newbuilds",
+      "link": "https://splash247.com/marinakis-tanker-venture-locks-down-930m-for-11-vlcc-newbuilds/",
+      "pubDate": "Tue, 20 Oct 2026 10:40:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Greek shipowner Capital Tankers has lined up $930.3m in financing for 11 VLCC newbuildings under construction in China and South Korea, making further headway in funding its expanding crude tanker fleet. The Evangelos Marinakis-backed company has signed four financing arrangement",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/Evangelos-Marinakis-Capital-Group.jpg",
+      "en": {
+        "headline": "Marinakis tanker venture locks down $930m for 11 VLCC newbuilds",
+        "summary": "Greek shipowner Capital Tankers has lined up $930.3m in financing for 11 VLCC newbuildings under construction in China and South Korea, making further headway in funding its expanding crude tanker fleet. The Evangelos Marinakis-backed company has signed four financing arrangement",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Euroseas seals bumper charter and $26m boxship sale",
+      "link": "https://splash247.com/euroseas-seals-bumper-charter-and-26m-boxship-sale/",
+      "pubDate": "Tue, 20 Oct 2026 10:20:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Nasdaq-listed Greek containership owner Euroseas has secured a $62,500-a-day charter for a 25-year-old feeder vessel while agreeing to sell its sistership for $26m, capitalising on continued strength in the smaller boxship market. The Aristides Pittas-led company said its 2001-bu",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/04/Synergy-Keelung.jpg",
+      "en": {
+        "headline": "Euroseas seals bumper charter and $26m boxship sale",
+        "summary": "Nasdaq-listed Greek containership owner Euroseas has secured a $62,500-a-day charter for a 25-year-old feeder vessel while agreeing to sell its sistership for $26m, capitalising on continued strength in the smaller boxship market. The Aristides Pittas-led company said its 2001-bu",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Dutch inland shipping duo expands into Belgium with new chartering venture",
+      "link": "https://splash247.com/dutch-inland-shipping-duo-expands-into-belgium-with-new-chartering-venture/",
+      "pubDate": "Tue, 20 Oct 2026 10:16:04 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Dutch inland shipping companies Amer Shipping and Van de Graaf &#38; Meeusen have joined forces to establish a new chartering business in Antwerp, backed by a fresh dry cargo newbuilding order at Concordia Damen. The two family-owned operators have launched TriBarge to target Bel",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/TriBarge-Porta-Sud.jpeg",
+      "en": {
+        "headline": "Dutch inland shipping duo expands into Belgium with new chartering venture",
+        "summary": "Dutch inland shipping companies Amer Shipping and Van de Graaf &#38; Meeusen have joined forces to establish a new chartering business in Antwerp, backed by a fresh dry cargo newbuilding order at Concordia Damen. The two family-owned operators have launched TriBarge to target Bel",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Fugro lands NOAA seabed mapping contract off Florida",
+      "link": "https://splash247.com/fugro-lands-noaa-seabed-mapping-contract-off-florida/",
+      "pubDate": "Tue, 20 Oct 2026 10:10:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Dutch survey specialist Fugro has secured a contract with the US National Oceanic and Atmospheric Administration (NOAA) to map about 3,200 sq km of seabed off Florida&#8217;s Atlantic coast. The company will conduct hydrographic surveys for NOAA&#8217;s Office of Coast Survey, an",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/Fugro-Aquarius.jpg",
+      "en": {
+        "headline": "Fugro lands NOAA seabed mapping contract off Florida",
+        "summary": "Dutch survey specialist Fugro has secured a contract with the US National Oceanic and Atmospheric Administration (NOAA) to map about 3,200 sq km of seabed off Florida&#8217;s Atlantic coast. The company will conduct hydrographic surveys for NOAA&#8217;s Office of Coast Survey, an",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Eastern Pacific links wind propulsion repayments to fuel savings",
+      "link": "https://splash247.com/eastern-pacific-links-wind-propulsion-repayments-to-fuel-savings/",
+      "pubDate": "Tue, 20 Oct 2026 09:50:00 +0000",
       "source": "Splash247",
       "category": "Bunker",
-      "summary": "In an industry where a position list is a competitive weapon, the question is no longer just how to comply—but where carbon decisions are made and who controls the data behind them, said Argyris Zafeiropoulos, principal advisor at Resilience &#38; Compliance Advisory. With the EU",
+      "summary": "Singapore-based Eastern Pacific Shipping (EPS) has secured financing for wind-assisted propulsion systems on two vessels through a fund linking repayments to independently verified fuel savings. The Fund for Energy Efficiency Technologies (FEET), managed by AIM Horizon Investment",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/09/ABS-Zero-Carbon-Suezmax.jpg",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Pacific-Sunstone-EPS.jpg",
       "en": {
-        "headline": "Who owns shipping’s carbon decisions?",
-        "summary": "In an industry where a position list is a competitive weapon, the question is no longer just how to comply—but where carbon decisions are made and who controls the data behind them, said Argyris Zafeiropoulos, principal advisor at Resilience &#38; Compliance Advisory. With the EU",
+        "headline": "Eastern Pacific links wind propulsion repayments to fuel savings",
+        "summary": "Singapore-based Eastern Pacific Shipping (EPS) has secured financing for wind-assisted propulsion systems on two vessels through a fund linking repayments to independently verified fuel savings. The Fund for Energy Efficiency Technologies (FEET), managed by AIM Horizon Investment",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Transworld adds supramax in fresh fleet move",
+      "link": "https://splash247.com/transworld-adds-supramax-in-fresh-fleet-move/",
+      "pubDate": "Tue, 20 Oct 2026 09:40:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "India&#8217;s Transworld Shipping Lines has returned to the secondhand dry bulk market, agreeing to acquire a supramax carrier for $16.5m as it continues reshaping its fleet. The Navi Mumbai-based owner has struck a deal to purchase the 2011-built, 55,648 dwt Saltwind Explorer, a",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/TBC-Kailash-Transworld.jpg",
+      "en": {
+        "headline": "Transworld adds supramax in fresh fleet move",
+        "summary": "India&#8217;s Transworld Shipping Lines has returned to the secondhand dry bulk market, agreeing to acquire a supramax carrier for $16.5m as it continues reshaping its fleet. The Navi Mumbai-based owner has struck a deal to purchase the 2011-built, 55,648 dwt Saltwind Explorer, a",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "US moves to legitimise shadow tanker fleet",
+      "link": "https://splash247.com/us-moves-to-legitimise-shadow-tanker-fleet/",
+      "pubDate": "Tue, 20 Oct 2026 08:50:46 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "The Trump administration is authorising the sale of sanctioned oil tankers to approved investors who would refurbish the vessels and return them to legitimate crude trades, US energy secretary Chris Wright revealed yesterday, as Washington scrambles to contain soaring freight cos",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/02/Risk-Greenpeace.jpg",
+      "en": {
+        "headline": "US moves to legitimise shadow tanker fleet",
+        "summary": "The Trump administration is authorising the sale of sanctioned oil tankers to approved investors who would refurbish the vessels and return them to legitimate crude trades, US energy secretary Chris Wright revealed yesterday, as Washington scrambles to contain soaring freight cos",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "MSC tipped for another 20 megamaxes in China",
+      "link": "https://splash247.com/msc-tipped-for-another-20-megamaxes-in-china/",
+      "pubDate": "Tue, 20 Oct 2026 08:31:49 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Mediterranean Shipping Co (MSC) has reportedly added another 20 megamax containerships at China&#8217;s Hengli Heavy Industries, further expanding its already massive orderbook as global newbuilding commitments climb to their highest level in more than a decade. According to line",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/03/MSC-Irina.jpg",
+      "en": {
+        "headline": "MSC tipped for another 20 megamaxes in China",
+        "summary": "Mediterranean Shipping Co (MSC) has reportedly added another 20 megamax containerships at China&#8217;s Hengli Heavy Industries, further expanding its already massive orderbook as global newbuilding commitments climb to their highest level in more than a decade. According to line",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Northern Sea Route smashes shipping records again",
+      "link": "https://splash247.com/northern-sea-route-smashes-shipping-records-again/",
+      "pubDate": "Tue, 20 Oct 2026 08:00:01 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Shipping along Russia&#8217;s Northern Sea Route (NSR) has already broken last year&#8217;s transit record. New figures from Norway&#8217;s Centre for High North Logistics (CHNL) show 104 confirmed transits by September 30, surpassing the 103 recorded during the whole of 2025 and",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/09/SCF.jpg",
+      "en": {
+        "headline": "Northern Sea Route smashes shipping records again",
+        "summary": "Shipping along Russia&#8217;s Northern Sea Route (NSR) has already broken last year&#8217;s transit record. New figures from Norway&#8217;s Centre for High North Logistics (CHNL) show 104 confirmed transits by September 30, surpassing the 103 recorded during the whole of 2025 and",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "SK Lim takes helm at G2 Ocean as English moves to Gearbulk",
+      "link": "https://splash247.com/sk-lim-takes-helm-at-g2-ocean-as-english-moves-to-gearbulk/",
+      "pubDate": "Tue, 20 Oct 2026 07:33:41 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Norwegian open-hatch specialist G2 Ocean has appointed SK Lim as its next chief executive, with incumbent Arthur English moving to chair the company&#8217;s board and take over as CEO of majority shareholder Gearbulk. The changes take effect on January 1, 2027, as the group adjus",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/SK-Lim-Arthur-English-G2-Ocean.jpg",
+      "en": {
+        "headline": "SK Lim takes helm at G2 Ocean as English moves to Gearbulk",
+        "summary": "Norwegian open-hatch specialist G2 Ocean has appointed SK Lim as its next chief executive, with incumbent Arthur English moving to chair the company&#8217;s board and take over as CEO of majority shareholder Gearbulk. The changes take effect on January 1, 2027, as the group adjus",
         "source": "Splash247"
       }
     },
@@ -261,7 +414,7 @@
       "summary": "The Trump administration is authorizing the sale of sanctioned oil tankers in an effort to allow the vessels to start legitimately shipping crude, US Energy Secretary Chris Wright said.",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 3,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-01T080943Z_231964487_RC22LKAWT2QP_RTRMADP_3_SYRIA-ECONOMY-RUSSIAN-OIL-800x450.jpg",
       "en": {
         "headline": "U.S. to Allow Dark-Fleet Tankers to Shed Sanctions, Wright Says",
@@ -278,7 +431,7 @@
       "summary": "Congressional scrutiny of the Trump administration&#8217;s Jones Act waiver is growing, with Rep. Salud Carbajal (D-Calif.) demanding answers about whether foreign vessels operating in domestic U.S. trades are complying with...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-09T052058Z_770736808_RC217KA5FP4Y_RTRMADP_3_IRAN-CRISIS-USA-ASIA-OIL-800x533.jpg",
       "en": {
         "headline": "Jones Act Waiver Faces New Scrutiny Over Foreign Crews, Taxes",
@@ -295,7 +448,7 @@
       "summary": "Russia's oil exports through its Northern Sea Route (NSR) in 2026 have already exceeded last year's by nearly 50%, with some 20 million barrels shipped to Asia from the start of navigation in July to mid-October, traders said and data showed.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/02/2022-02-25T151923Z_629387291_RC2YQS95US6L_RTRMADP_3_UKRAINE-CRISIS-LNG-FRANCE-800x528.jpg",
       "en": {
         "headline": "Russian Oil Exports by Arctic Route Jump Amid World Freight Crisis",
@@ -312,7 +465,7 @@
       "summary": "Iran’s main oil-loading terminals have remained empty for weeks, adding to signs that a US naval blockade of the country is throttling Tehran’s exports.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/USCENTCOM-blockade.jpeg",
       "en": {
         "headline": "Iran’s Main Oil Terminals Remain Empty as US Blockade Bites",
@@ -329,63 +482,12 @@
       "summary": "The Trump administration has scheduled the first offshore mineral lease sale in U.S. history, opening more than 31 million acres of seabed near American Samoa to companies seeking critical minerals...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 11,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Polymetallic-nodules-on-seafloor.jpg",
       "en": {
         "headline": "U.S. Sets First Deep-Sea Mining Lease Sale for November",
         "summary": "The Trump administration has scheduled the first offshore mineral lease sale in U.S. history, opening more than 31 million acres of seabed near American Samoa to companies seeking critical minerals...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "EMGS lands offshore exploration survey award in Pakistan",
-      "link": "https://splash247.com/emgs-lands-offshore-exploration-survey-award-in-pakistan/",
-      "pubDate": "Mon, 19 Oct 2026 12:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norwegian geophysical services specialist Electromagnetic Geoservices (EMGS) has secured a letter of award from Pakistan&#8217;s Mari Energies for controlled-source electromagnetic surveys across multiple offshore exploration blocks. The Oslo-based company said the programme woul",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2015/08/Boa-Thalassa.jpg",
-      "en": {
-        "headline": "EMGS lands offshore exploration survey award in Pakistan",
-        "summary": "Norwegian geophysical services specialist Electromagnetic Geoservices (EMGS) has secured a letter of award from Pakistan&#8217;s Mari Energies for controlled-source electromagnetic surveys across multiple offshore exploration blocks. The Oslo-based company said the programme woul",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Ithaca Energy chief executive to retire",
-      "link": "https://splash247.com/ithaca-energy-chief-executive-to-retire/",
-      "pubDate": "Mon, 19 Oct 2026 11:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "UK North Sea oil and gas producer Ithaca Energy has launched a search for a new chief executive after Luciano Vasques announced plans to retire by March 31, 2027. The company said its board has begun identifying a successor, with a further announcement to follow in due course to ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/Ithaca-FPF-1.jpg",
-      "en": {
-        "headline": "Ithaca Energy chief executive to retire",
-        "summary": "UK North Sea oil and gas producer Ithaca Energy has launched a search for a new chief executive after Luciano Vasques announced plans to retire by March 31, 2027. The company said its board has begun identifying a successor, with a further announcement to follow in due course to ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Norway ends one offshore wage row only for Reach Subsea strike to begin",
-      "link": "https://splash247.com/norway-ends-one-offshore-wage-row-only-for-reach-subsea-strike-to-begin/",
-      "pubDate": "Mon, 19 Oct 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norway&#8217;s protracted offshore well services wage dispute has been settled through voluntary arbitration, even as a separate labour conflict has triggered a strike at subsea contractor Reach Subsea. An arbitration panel has ruled that wage and other provisions previously agre",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/10/Reach-Subsea-Reach-Remote.jpg",
-      "en": {
-        "headline": "Norway ends one offshore wage row only for Reach Subsea strike to begin",
-        "summary": "Norway&#8217;s protracted offshore well services wage dispute has been settled through voluntary arbitration, even as a separate labour conflict has triggered a strike at subsea contractor Reach Subsea. An arbitration panel has ruled that wage and other provisions previously agre",
-        "source": "Splash247"
       }
     },
     {
@@ -397,114 +499,12 @@
       "summary": "The number of commercial transit voyages through Russia’s Northern Sea Route (NSR) had already surpassed the full-year 2025 total by the end of September, putting Arctic shipping on course for another record season as cargo volumes rise and more vessels test the route between Asi",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 15,
+      "hoursAgo": 23,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/12/atomflot-NSR-escort-Nov-2024-4oi8CUYiW5g.jpg",
       "en": {
         "headline": "Northern Sea Route Transits Surpass 2025 Total as Arctic Shipping Gains Momentum",
         "summary": "The number of commercial transit voyages through Russia’s Northern Sea Route (NSR) had already surpassed the full-year 2025 total by the end of September, putting Arctic shipping on course for another record season as cargo volumes rise and more vessels test the route between Asi",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Qatar LNG Cargo Makes Rare Red Sea Journey to Get Gas to Europe",
-      "link": "https://gcaptain.com/qatar-lng-cargo-makes-rare-red-sea-journey-to-get-gas-to-europe/",
-      "pubDate": "Mon, 19 Oct 2026 10:50:00 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A carrier loaded with Qatari liquefied natural gas is sailing north through the Red Sea, potentially speeding up delivery to European customers with a rare transit through waters vulnerable to renewed attacks from Houthi rebels.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/06/Copy-of-6LNG-vessels-at-RLC-Port-ver2016-06-17-172118-937_LUCiD.jpg",
-      "en": {
-        "headline": "Qatar LNG Cargo Makes Rare Red Sea Journey to Get Gas to Europe",
-        "summary": "A carrier loaded with Qatari liquefied natural gas is sailing north through the Red Sea, potentially speeding up delivery to European customers with a rare transit through waters vulnerable to renewed attacks from Houthi rebels.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "MSC-backed GCC expands car carrier spree with two more newbuilds",
-      "link": "https://splash247.com/msc-backed-gcc-expands-car-carrier-spree-with-two-more-newbuilds/",
-      "pubDate": "Mon, 19 Oct 2026 10:20:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "MSC-controlled Global Car Carriers (GCC) has added another two large LNG dual-fuel car carriers in China, taking its rapidly expanding newbuilding programme to 22 ships. The former Gram Car Carriers has booked two 8,600 ceu pure car and truck carriers at Zhoushan Changhong Intern",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Viking-Drive-PCTC-Global-Car-Carriers.jpg",
-      "en": {
-        "headline": "MSC-backed GCC expands car carrier spree with two more newbuilds",
-        "summary": "MSC-controlled Global Car Carriers (GCC) has added another two large LNG dual-fuel car carriers in China, taking its rapidly expanding newbuilding programme to 22 ships. The former Gram Car Carriers has booked two 8,600 ceu pure car and truck carriers at Zhoushan Changhong Intern",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Nanjing Tanker picks Dalian for LR2 quartet",
-      "link": "https://splash247.com/nanjing-tanker-picks-dalian-for-lr2-quartet/",
-      "pubDate": "Mon, 19 Oct 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "China Merchants-controlled Nanjing Tanker has selected Dalian Shipbuilding Industry Corporation (DSIC) to build four more LR2 product and crude tankers, taking its planned newbuilding programme in the segment at the Chinese yard to six vessels. The Shanghai-listed owner named DSI",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/10/Dalian-Shipbuilding-Industry-Co.-DSIC.jpg",
-      "en": {
-        "headline": "Nanjing Tanker picks Dalian for LR2 quartet",
-        "summary": "China Merchants-controlled Nanjing Tanker has selected Dalian Shipbuilding Industry Corporation (DSIC) to build four more LR2 product and crude tankers, taking its planned newbuilding programme in the segment at the Chinese yard to six vessels. The Shanghai-listed owner named DSI",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Hai An lines up $70m feeder newbuild investment",
-      "link": "https://splash247.com/hai-an-lines-up-70m-feeder-newbuild-investment/",
-      "pubDate": "Mon, 19 Oct 2026 09:40:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Vietnamese shipowner Hai An Transport and Stevedoring has approved an investment of up to $70m in two feeder containerships at a Chinese shipyard, adding another pair of vessels to its expanding newbuilding programme. The Ho Chi Minh Stock Exchange-listed company has outlined pla",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/Hai-An-Transport-2.jpg",
-      "en": {
-        "headline": "Hai An lines up $70m feeder newbuild investment",
-        "summary": "Vietnamese shipowner Hai An Transport and Stevedoring has approved an investment of up to $70m in two feeder containerships at a Chinese shipyard, adding another pair of vessels to its expanding newbuilding programme. The Ho Chi Minh Stock Exchange-listed company has outlined pla",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "MSC joins Rheinmetall in €138m Romanian shipyard takeover",
-      "link": "https://splash247.com/msc-joins-rheinmetall-in-e138m-romanian-shipyard-takeover/",
-      "pubDate": "Mon, 19 Oct 2026 09:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Mediterranean Shipping Co (MSC) has been confirmed as a joint buyer of Romania&#8217;s bankrupt Mangalia shipyard, teaming up with German defence giant Rheinmetall in a €138m deal to revive one of Europe&#8217;s largest shipbuilding facilities. As Splash reported last week, Rhein",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2015/01/Damen-Mangalia-Shipyard.jpg",
-      "en": {
-        "headline": "MSC joins Rheinmetall in €138m Romanian shipyard takeover",
-        "summary": "Mediterranean Shipping Co (MSC) has been confirmed as a joint buyer of Romania&#8217;s bankrupt Mangalia shipyard, teaming up with German defence giant Rheinmetall in a €138m deal to revive one of Europe&#8217;s largest shipbuilding facilities. As Splash reported last week, Rhein",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Reederei Nord reshuffles top team",
-      "link": "https://splash247.com/reederei-nord-reshuffles-top-team/",
-      "pubDate": "Mon, 19 Oct 2026 09:23:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "German shipowner and manager Reederei Nord has reshuffled its Hamburg leadership, promoting two long-serving executives to senior management roles as chief executive Kurt Klemme shifts more of his attention to shipping investments and new projects. John Wessel has been named chie",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Reederei-Nord.jpg",
-      "en": {
-        "headline": "Reederei Nord reshuffles top team",
-        "summary": "German shipowner and manager Reederei Nord has reshuffled its Hamburg leadership, promoting two long-serving executives to senior management roles as chief executive Kurt Klemme shifts more of his attention to shipping investments and new projects. John Wessel has been named chie",
-        "source": "Splash247"
       }
     }
   ]
