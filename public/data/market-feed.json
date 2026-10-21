@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-20T21:02:08.781Z",
+    "generatedAt": "2026-10-21T02:37:49.807Z",
     "benchmarkAsOf": "2026-10-20",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 1050,
-        "deltaPct": 0,
-        "asOf": "2026-10-19T00:00:00.000Z",
+        "priceUsdMt": 1100,
+        "deltaPct": 4.76,
+        "asOf": "2026-10-20T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 1000,
-        "deltaPct": 0,
-        "asOf": "2026-10-19T00:00:00.000Z",
+        "priceUsdMt": 1010,
+        "deltaPct": 1,
+        "asOf": "2026-10-20T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -236,6 +236,40 @@
   },
   "news": [
     {
+      "title": "Coast Guard Cutter Munro Wraps Up Arctic Patrol After Tracking Chinese Research Ships",
+      "link": "https://gcaptain.com/coast-guard-cutter-munro-wraps-up-arctic-patrol-after-tracking-chinese-research-ships/",
+      "pubDate": "Tue, 20 Oct 2026 21:37:02 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The U.S. Coast Guard Cutter Munro has returned to its homeport in Alameda, California, following a 112-day patrol across the Bering Sea and Arctic Ocean that included monitoring Chinese research...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "Coast Guard Cutter Munro Wraps Up Arctic Patrol After Tracking Chinese Research Ships",
+        "summary": "The U.S. Coast Guard Cutter Munro has returned to its homeport in Alameda, California, following a 112-day patrol across the Bering Sea and Arctic Ocean that included monitoring Chinese research...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Army Corps Moves to Overhaul How U.S. Dredging Projects Are Awarded",
+      "link": "https://gcaptain.com/army-corps-moves-to-overhaul-how-u-s-dredging-projects-are-awarded/",
+      "pubDate": "Tue, 20 Oct 2026 21:22:37 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The U.S. Army Corps of Engineers is overhauling how it manages dredging contracts nationwide, moving toward a centralized approach intended to reduce costs, improve scheduling and make better use of...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/08/shutterstock_2039928143.jpg",
+      "en": {
+        "headline": "Army Corps Moves to Overhaul How U.S. Dredging Projects Are Awarded",
+        "summary": "The U.S. Army Corps of Engineers is overhauling how it manages dredging contracts nationwide, moving toward a centralized approach intended to reduce costs, improve scheduling and make better use of...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "HarborLab: Why shipping’s husbandry bills are still stuck in Excel",
       "link": "https://splash247.com/harborlab-why-shippings-husbandry-bills-are-still-stuck-in-excel/",
       "pubDate": "Tue, 20 Oct 2026 20:00:00 +0000",
@@ -244,7 +278,7 @@
       "summary": "Shipping has spent years tightening voyage costs, bunker procurement and commercial port expenses, but one sizeable part of the bill remains comparatively untouched: husbandry. For Antonis Malaxianakis, founder and CEO of Athens-based port cost management platform HarborLab, that",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/HarborLab_Antonis-Malaxianakis.jpg",
       "en": {
         "headline": "HarborLab: Why shipping’s husbandry bills are still stuck in Excel",
@@ -261,7 +295,7 @@
       "summary": "Iran&#8217;s Revolutionary Guards claimed Tuesday that a supertanker caught fire after striking a naval mine south of the Strait of Hormuz, adding to a series of similar claims that have...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
       "en": {
         "headline": "Iran Claims More Tankers Hit Mines in Hormuz, But Evidence Remains Elusive",
@@ -278,7 +312,7 @@
       "summary": "A new survey of more than 900 seafarers has exposed a persistent gap between safety procedures and the realities of working aboard ships, prompting renewed calls for action to prevent...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/05/FT_qsOjXoAAuPMp.jpeg",
       "en": {
         "headline": "After 354 Accidents, Shipping Industry Urged to Rethink Enclosed Space Safety",
@@ -295,7 +329,7 @@
       "summary": "(Bloomberg) &#8212; A US plan to rehabilitate sanctioned tankers to boost oil supply may attract only a sliver of the dark fleet, as existing contracts, complex compliance checks and sky-high...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
       "en": {
         "headline": "Trump’s Plan to Revive Sanctioned Tankers Faces Tough Sell",
@@ -312,7 +346,7 @@
       "summary": "Iranian attacks in the Persian Gulf are striking more ships and causing more severe damage than earlier in the conflict, bringing fresh risks to energy flows from the region.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-06-30T041820Z_216286204_RC2TVKAI7KFR_RTRMADP_3_IRAN-CRISIS-OIL-IRAQ-2-800x450.jpg",
       "en": {
         "headline": "Iran Strikes More Ship Engine Rooms in Ramp-Up of Hormuz Attacks",
@@ -329,7 +363,7 @@
       "summary": "Maritime data provider Kpler has reached an agreement with Airbus to expand its ability to track vessels that disappear from conventional ship-tracking systems, adding daily satellite imagery to help identify...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-16T083335Z_191715910_RC2LSLATOOSW_RTRMADP_3_IRAN-CRISIS-OIL-TRANSFERS.jpg",
       "en": {
         "headline": "Kpler Expands &#8216;Dark Fleet&#8217; Tracking With Airbus Satellite Deal",
@@ -346,7 +380,7 @@
       "summary": "Iran has deliberately prolonged talks with the US to try to weaken Donald Trump politically ahead of November's US midterm elections, senior officials say, while fears of renewed military action and deep distrust of Washington have reinforced Tehran's reluctance to strike a quick",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-28T112819Z_711172295_RC26SNAHFL5K_RTRMADP_3_IRAN-CRISIS-HORMUZ-800x533.jpg",
       "en": {
         "headline": "Iran Prolongs Talks in Stalemate to Influence US Midterms",
@@ -363,7 +397,7 @@
       "summary": "The European Union unveiled a new Arctic strategy Tuesday aimed at strengthening maritime security, expanding icebreaker capacity and protecting critical infrastructure as melting sea ice opens new shipping routes and...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/European-Arctic-strategy_card.jpg",
       "en": {
         "headline": "EU Puts Icebreakers, Shipping Security at Center of New Arctic Strategy",
@@ -380,7 +414,7 @@
       "summary": "New York- and Oslo-listed gas carrier giant BW LPG is cashing in again on strong secondhand values, agreeing to sell an 18-year-old VLGC for more than $80m as it presses ahead with a major fleet renewal programme. The company&#8217;s 52%-owned subsidiary, BW LPG India, has signed",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 7,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/BW_Loyalty_1000x600.jpg",
       "en": {
         "headline": "BW LPG India offloads 18-year-old VLGC for over $80m",
@@ -397,7 +431,7 @@
       "summary": "China's military said on Tuesday it had sent forces to watch a US warship that \"illegally\" entered waters around a disputed shoal in the South China Sea, while further north in the waterway, Taiwan reported a standoff with a Chinese vessel.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/02/2025-01-23T090909Z_1487821734_RC2KFCA9EVSV_RTRMADP_3_SOUTHCHINASEA-PHILIPPINES-800x468.jpg",
       "en": {
         "headline": "China Sends Naval Forces to Monitor US Warship Near Disputed Shoal",
@@ -414,8 +448,8 @@
       "summary": "A.P. Moller-Maersk A/S, the world’s No. 2 container carrier, signed an agreement with Vietnamese conglomerate Hateco to develop a railway freight terminal network in Vietnam during President To Lam’s official visit to Denmark.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-30T150109Z_1017597651_RC2UXJAS2E8Q_RTRMADP_3_USA-TRUMP-TARIFFS-LAWSUIT-800x533.jpg",
+      "hoursAgo": 14,
+      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Maersk and Hateco Plan $3.5 Billion Vietnam Rail Freight Project",
         "summary": "A.P. Moller-Maersk A/S, the world’s No. 2 container carrier, signed an agreement with Vietnamese conglomerate Hateco to develop a railway freight terminal network in Vietnam during President To Lam’s official visit to Denmark.",
@@ -431,7 +465,7 @@
       "summary": "The UK Chamber of Shipping has urged the British government to avoid repeating the compliance problems encountered under FuelEU Maritime as it prepares to introduce its own maritime fuel standard. In a policy paper published this week, the industry body warned that the EU regime,",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/08/UK-ship.jpg",
       "en": {
         "headline": "UK shipowners warn against copying FuelEU red tape",
@@ -448,7 +482,7 @@
       "summary": "Greek shipowner Capital Tankers has lined up $930.3m in financing for 11 VLCC newbuildings under construction in China and South Korea, making further headway in funding its expanding crude tanker fleet. The Evangelos Marinakis-backed company has signed four financing arrangement",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/Evangelos-Marinakis-Capital-Group.jpg",
       "en": {
         "headline": "Marinakis tanker venture locks down $930m for 11 VLCC newbuilds",
@@ -465,45 +499,11 @@
       "summary": "Nasdaq-listed Greek containership owner Euroseas has secured a $62,500-a-day charter for a 25-year-old feeder vessel while agreeing to sell its sistership for $26m, capitalising on continued strength in the smaller boxship market. The Aristides Pittas-led company said its 2001-bu",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/04/Synergy-Keelung.jpg",
       "en": {
         "headline": "Euroseas seals bumper charter and $26m boxship sale",
         "summary": "Nasdaq-listed Greek containership owner Euroseas has secured a $62,500-a-day charter for a 25-year-old feeder vessel while agreeing to sell its sistership for $26m, capitalising on continued strength in the smaller boxship market. The Aristides Pittas-led company said its 2001-bu",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Dutch inland shipping duo expands into Belgium with new chartering venture",
-      "link": "https://splash247.com/dutch-inland-shipping-duo-expands-into-belgium-with-new-chartering-venture/",
-      "pubDate": "Tue, 20 Oct 2026 10:16:04 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Dutch inland shipping companies Amer Shipping and Van de Graaf &#38; Meeusen have joined forces to establish a new chartering business in Antwerp, backed by a fresh dry cargo newbuilding order at Concordia Damen. The two family-owned operators have launched TriBarge to target Bel",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 10,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/TriBarge-Porta-Sud.jpeg",
-      "en": {
-        "headline": "Dutch inland shipping duo expands into Belgium with new chartering venture",
-        "summary": "Dutch inland shipping companies Amer Shipping and Van de Graaf &#38; Meeusen have joined forces to establish a new chartering business in Antwerp, backed by a fresh dry cargo newbuilding order at Concordia Damen. The two family-owned operators have launched TriBarge to target Bel",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Fugro lands NOAA seabed mapping contract off Florida",
-      "link": "https://splash247.com/fugro-lands-noaa-seabed-mapping-contract-off-florida/",
-      "pubDate": "Tue, 20 Oct 2026 10:10:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Dutch survey specialist Fugro has secured a contract with the US National Oceanic and Atmospheric Administration (NOAA) to map about 3,200 sq km of seabed off Florida&#8217;s Atlantic coast. The company will conduct hydrographic surveys for NOAA&#8217;s Office of Coast Survey, an",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/Fugro-Aquarius.jpg",
-      "en": {
-        "headline": "Fugro lands NOAA seabed mapping contract off Florida",
-        "summary": "Dutch survey specialist Fugro has secured a contract with the US National Oceanic and Atmospheric Administration (NOAA) to map about 3,200 sq km of seabed off Florida&#8217;s Atlantic coast. The company will conduct hydrographic surveys for NOAA&#8217;s Office of Coast Survey, an",
         "source": "Splash247"
       }
     }
