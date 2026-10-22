@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-21T21:03:37.110Z",
+    "generatedAt": "2026-10-22T02:42:07.241Z",
     "benchmarkAsOf": "2026-10-21",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -149,7 +149,7 @@
         "defaultDensity": 991,
         "priceUsdMt": 1100,
         "deltaPct": 0,
-        "asOf": "2026-10-20T00:00:00.000Z",
+        "asOf": "2026-10-21T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 1010,
-        "deltaPct": 0,
-        "asOf": "2026-10-20T00:00:00.000Z",
+        "priceUsdMt": 980,
+        "deltaPct": -2.97,
+        "asOf": "2026-10-21T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -236,6 +236,40 @@
   },
   "news": [
     {
+      "title": "Panama Canal Traffic and Tonnage Rise Despite El Niño Challenges",
+      "link": "https://gcaptain.com/panama-canal-traffic-and-tonnage-rise-despite-el-nino-challenges/",
+      "pubDate": "Wed, 21 Oct 2026 20:35:07 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Panama Canal reported growth in vessel traffic, tonnage and revenue in fiscal year 2026, as stronger demand from energy carriers and containerships helped lift volumes despite ongoing concerns over...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/Neopanamax-locks.jpg",
+      "en": {
+        "headline": "Panama Canal Traffic and Tonnage Rise Despite El Niño Challenges",
+        "summary": "The Panama Canal reported growth in vessel traffic, tonnage and revenue in fiscal year 2026, as stronger demand from energy carriers and containerships helped lift volumes despite ongoing concerns over...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "The Navy Is Making Progress on Unmanned Vessels. Now It&#8217;s Time to Put Them to Work.",
+      "link": "https://gcaptain.com/the-navy-is-making-progress-on-unmanned-vessels-now-its-time-to-put-them-to-work/",
+      "pubDate": "Wed, 21 Oct 2026 19:46:58 +0000",
+      "source": "gCaptain",
+      "category": "Bunker",
+      "summary": "By Chris Servello (OpEd) After years of testing and debating how unmanned surface vessels fit into the fleet, the Navy is starting to show what these systems can do. And...",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/05/Task-Force-59-800x533.jpg",
+      "en": {
+        "headline": "The Navy Is Making Progress on Unmanned Vessels. Now It&#8217;s Time to Put Them to Work.",
+        "summary": "By Chris Servello (OpEd) After years of testing and debating how unmanned surface vessels fit into the fleet, the Navy is starting to show what these systems can do. And...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Editorial: The Coast Guard Spent $3.8 Million on a PDF",
       "link": "https://gcaptain.com/editorial-the-coast-guard-spent-3-8-million-on-a-pdf/",
       "pubDate": "Wed, 21 Oct 2026 19:11:34 +0000",
@@ -244,7 +278,7 @@
       "summary": "The Coast Guard&#8217;s new credentialing portal promises complete applications and faster processing. One American ship captain tested it. What he found raises serious questions about automation, accountability, and whether Washington...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/uscg-nmc-800x467.jpg",
       "en": {
         "headline": "Editorial: The Coast Guard Spent $3.8 Million on a PDF",
@@ -261,7 +295,7 @@
       "summary": "The United States has imposed a new round of sanctions targeting a law firm, shipping agents and nine vessels accused of helping Iran move oil and other commodities through international...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-23T164555Z_940496461_RC24PNADYA0L_RTRMADP_3_USA-CHINA-BESSENT-HE.jpg",
       "en": {
         "headline": "U.S. Sanctions Law Firm, Shipping Agents and Nine Vessels in Iran Shadow Fleet Crackdown",
@@ -278,7 +312,7 @@
       "summary": "Australia-based IFM Investors has agreed to acquire a controlling stake in Associated British Ports (ABP), the UK&#8217;s largest port operator, in a deal that values the company at approximately £10...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/08/shutterstock_1883371642.jpg",
       "en": {
         "headline": "Australian Fund to Acquire Majority Stake in UK’s Largest Port Operator in $13.4 Billion Deal",
@@ -295,7 +329,7 @@
       "summary": "By Julian Lee (Bloomberg) &#8212; Oil shipments from the Middle East are showing little sign of buckling in the face of Iran’s more frequent and damaging attacks on merchant ships in the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-09T052058Z_770736808_RC217KA5FP4Y_RTRMADP_3_IRAN-CRISIS-USA-ASIA-OIL-800x533.jpg",
       "en": {
         "headline": "Middle East Oil Flows Near Prewar Levels Defy Hormuz Attacks",
@@ -312,7 +346,7 @@
       "summary": "LONDON, Oct 21 (Reuters) &#8211; Britain on Wednesday approved the Jackdaw North Sea gas field, ending years of legal and political wrangling as the Labour government seeks to balance its climate goals...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/01/shutterstock_1145019740.jpg",
       "en": {
         "headline": "UK Approves Long-delayed Jackdaw Gas Field on Energy Security Grounds",
@@ -329,7 +363,7 @@
       "summary": "The cost of shipping crude oil from the Middle East Gulf to Asia has surged to more than $37 per barrel, over five times prewar levels, as an increasingly complex...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-07T191614Z_1043438909_RC2R4LAN4FM4_RTRMADP_3_IRAN-CRISIS-MISSILES-HORMUZ.jpg",
       "en": {
         "headline": "IEA: Gulf Oil Shipping Costs Top $37 Per Barrel, Five Times Pre-War Levels",
@@ -346,7 +380,7 @@
       "summary": "Two more tankers have been struck by unidentified projectiles in separate incidents near the Strait of Hormuz and in the northern Persian Gulf, adding to a growing series of attacks...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
       "en": {
         "headline": "Two More Tankers Struck as Maritime Attacks Spread Across Persian Gulf",
@@ -363,7 +397,7 @@
       "summary": "A tanker loaded with Russian diesel will sail for the US on Thursday as Moscow starts to implement a fuel supply deal struck by Vladimir Putin and Donald Trump, according to Deputy Prime Minister Alexander Novak.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-02T105843Z_1023053534_RC2D43ANZYK4_RTRMADP_3_RUSSIA-DIESEL-EXPORTS-800x498.jpg",
       "en": {
         "headline": "Russia Sees First Diesel Cargo Sailing for US on Thursday",
@@ -380,7 +414,7 @@
       "summary": "AG Seville Shipyard has won the competition to continue operating the ship repair facilities at Spain&#8217;s Port of Seville, clearing an important hurdle for a proposed €10m ($11.2m) investment programme. Seville Port Authority&#8217;s board approved the selection of AG Seville",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/AG-Seville-Shipyard.jpg",
       "en": {
         "headline": "AG Seville wins 25-year port shipyard concession with $11m investment plan",
@@ -397,7 +431,7 @@
       "summary": "Australian infrastructure investor IFM Investors has agreed to acquire a controlling stake in Associated British Ports (ABP), Britain&#8217;s largest port operator, in a deal valuing the business at more than £10bn ($13.4bn). The transaction will see Canadian pension giants CPP I",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 17,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Associated-British-Ports-1.jpg",
       "en": {
         "headline": "Australian fund takes control of UK ports giant in £10bn deal",
@@ -414,7 +448,7 @@
       "summary": "New research from investment bank Jefferies charts how shipping shares have shifted from being negatively correlated with geopolitical risk during the first decade of this century to moving increasingly in tandem with global instability since 2021. The new report is bullish on ta",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Wall-Street-free-pic.jpeg",
       "en": {
         "headline": "Shipping equities turn geopolitical risk into an advantage",
@@ -431,7 +465,7 @@
       "summary": "NATO is deploying additional maritime patrol aircraft, drones and radar systems to the Black Sea following a series of deadly attacks on merchant shipping off Romania and Bulgaria. The move follows a meeting of the alliance&#8217;s North Atlantic Council in Brussels on Tuesday, w",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 12,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/TurkUkra.jpeg",
       "en": {
         "headline": "NATO boosts Black Sea surveillance amid attacks on shipping",
@@ -448,7 +482,7 @@
       "summary": "Iraq&#8217;s national shipping line is returning to scheduled container services in the Gulf after more than half a century, as the country seeks to rebuild maritime connections disrupted by the Strait of Hormuz crisis. According to Alphaliner, Iraqi Maritime Line is deploying th",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 19,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/ICTSI-Basra-Umm-Qasr-Iraq.jpg",
       "en": {
         "headline": "Iraqi Line returns to Gulf container trade after 50 years",
@@ -465,45 +499,11 @@
       "summary": "Greek owner Danaos has been linked to another $218m newbuilding investment in China, with brokers placing the John Coustas-led company behind a pair of 9,200 teu boxships at Shanghai Waigaoqiao Shipbuilding (SWS). According to Xclusiv Shipbrokers, the New York-listed owner has li",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 13,
+      "hoursAgo": 19,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/08/Danaos-Corp.jpg",
       "en": {
         "headline": "Danaos linked to $218m boxship order in China",
         "summary": "Greek owner Danaos has been linked to another $218m newbuilding investment in China, with brokers placing the John Coustas-led company behind a pair of 9,200 teu boxships at Shanghai Waigaoqiao Shipbuilding (SWS). According to Xclusiv Shipbrokers, the New York-listed owner has li",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Gestion Maritime makes ultramax debut with China order",
-      "link": "https://splash247.com/gestion-maritime-makes-ultramax-debut-with-china-order/",
-      "pubDate": "Wed, 21 Oct 2026 06:55:11 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Monaco-based shipowner Gestion Maritime is moving into the ultramax segment with an order for three 64,000 dwt bulk carriers at China&#8217;s Nantong Xiangyu Shipbuilding &#38; Offshore Engineering. The Danilo Fumarola-led company has booked the trio for delivery between late 202",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Nantong-Xiangyu-Shipbuilding-Offshore-Engineering-Goldenport-ultramax.jpg",
-      "en": {
-        "headline": "Gestion Maritime makes ultramax debut with China order",
-        "summary": "Monaco-based shipowner Gestion Maritime is moving into the ultramax segment with an order for three 64,000 dwt bulk carriers at China&#8217;s Nantong Xiangyu Shipbuilding &#38; Offshore Engineering. The Danilo Fumarola-led company has booked the trio for delivery between late 202",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "BW LPG India offloads 18-year-old VLGC for over $80m",
-      "link": "https://splash247.com/bw-lpg-india-offloads-18-year-old-vlgc-for-over-80m/",
-      "pubDate": "Wed, 21 Oct 2026 04:24:14 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "New York- and Oslo-listed gas carrier giant BW LPG is cashing in again on strong secondhand values, agreeing to sell an 18-year-old VLGC for more than $80m as it presses ahead with a major fleet renewal programme. The company&#8217;s 52%-owned subsidiary, BW LPG India, has signed",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/BW_Loyalty_1000x600.jpg",
-      "en": {
-        "headline": "BW LPG India offloads 18-year-old VLGC for over $80m",
-        "summary": "New York- and Oslo-listed gas carrier giant BW LPG is cashing in again on strong secondhand values, agreeing to sell an 18-year-old VLGC for more than $80m as it presses ahead with a major fleet renewal programme. The company&#8217;s 52%-owned subsidiary, BW LPG India, has signed",
         "source": "Splash247"
       }
     }
