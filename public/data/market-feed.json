@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-22T02:42:07.241Z",
+    "generatedAt": "2026-10-22T10:53:29.390Z",
     "benchmarkAsOf": "2026-10-21",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 932.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-20T17:00:00.000Z",
+        "priceUsdMt": 932,
+        "deltaPct": -0.05,
+        "asOf": "2026-10-21T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1318,
-        "deltaPct": 0,
-        "asOf": "2026-10-20T17:00:00.000Z",
+        "priceUsdMt": 1345,
+        "deltaPct": 2.05,
+        "asOf": "2026-10-21T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 893.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-20T17:00:00.000Z",
+        "priceUsdMt": 880.5,
+        "deltaPct": -1.45,
+        "asOf": "2026-10-21T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 765,
-        "deltaPct": 0,
-        "asOf": "2026-10-20T17:00:00.000Z",
+        "priceUsdMt": 759,
+        "deltaPct": -0.78,
+        "asOf": "2026-10-21T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1436.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-20T17:00:00.000Z",
+        "priceUsdMt": 1425,
+        "deltaPct": -0.8,
+        "asOf": "2026-10-21T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 681,
-        "deltaPct": 0,
-        "asOf": "2026-10-20T17:00:00.000Z",
+        "priceUsdMt": 677.5,
+        "deltaPct": -0.51,
+        "asOf": "2026-10-21T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 980,
-        "deltaPct": -2.97,
+        "deltaPct": 0,
         "asOf": "2026-10-21T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 785,
-        "deltaPct": 0,
-        "asOf": "2026-10-20T17:00:00.000Z",
+        "priceUsdMt": 791.5,
+        "deltaPct": 0.83,
+        "asOf": "2026-10-21T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -185,7 +185,7 @@
         "defaultDensity": 850,
         "priceUsdMt": 1417.5,
         "deltaPct": 0,
-        "asOf": "2026-10-20T17:00:00.000Z",
+        "asOf": "2026-10-21T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 595,
-        "deltaPct": 0,
-        "asOf": "2026-10-20T17:00:00.000Z",
+        "priceUsdMt": 610.5,
+        "deltaPct": 2.61,
+        "asOf": "2026-10-21T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -236,6 +236,210 @@
   },
   "news": [
     {
+      "title": "Eastern Pacific takes wraps off first ammonia dual-fuel VLAC",
+      "link": "https://splash247.com/eastern-pacific-takes-wraps-off-first-ammonia-dual-fuel-vlac/",
+      "pubDate": "Thu, 22 Oct 2026 10:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Idan Ofer&#8217;s Eastern Pacific Shipping (EPS) has named its first ammonia dual-fuel very large ammonia carrier (VLAC) at HD Hyundai Heavy Industries in South Korea, bringing the 93,000 cu m vessel closer to its commercial debut. The Singapore-based owner christened the vessel ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Terra-Clove-first-ammonia-powered-VLAC.jpg",
+      "en": {
+        "headline": "Eastern Pacific takes wraps off first ammonia dual-fuel VLAC",
+        "summary": "Idan Ofer&#8217;s Eastern Pacific Shipping (EPS) has named its first ammonia dual-fuel very large ammonia carrier (VLAC) at HD Hyundai Heavy Industries in South Korea, bringing the 93,000 cu m vessel closer to its commercial debut. The Singapore-based owner christened the vessel ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Viridien sharpens exploration picture beyond Guyana&#8217;s Stabroek block",
+      "link": "https://splash247.com/viridien-sharpens-exploration-picture-beyond-guyanas-stabroek-block/",
+      "pubDate": "Thu, 22 Oct 2026 09:59:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "French geophysical company Viridien has launched the first phase of a major seismic reimaging programme offshore Guyana, targeting more than 10,000 sq km of existing 3D data in and around the country&#8217;s emerging shallow-water exploration acreage. The project covers the Kaiet",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Viridien.jpg",
+      "en": {
+        "headline": "Viridien sharpens exploration picture beyond Guyana&#8217;s Stabroek block",
+        "summary": "French geophysical company Viridien has launched the first phase of a major seismic reimaging programme offshore Guyana, targeting more than 10,000 sq km of existing 3D data in and around the country&#8217;s emerging shallow-water exploration acreage. The project covers the Kaiet",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Seven Yield secures Chinese charter deal for car carrier pair",
+      "link": "https://splash247.com/seven-yield-secures-chinese-charter-deal-for-car-carrier-pair/",
+      "pubDate": "Thu, 22 Oct 2026 09:40:34 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Luxembourg-incorporated shipowner Seven Yield has secured five-year time charters for two LNG-powered car carriers with a major Chinese automobile manufacturer, extending employment for the vessels into the next decade. The agreements cover the 2020-built, 7,500 ceu sisterships S",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Siem-Aristotle-Seven-Yield.jpg",
+      "en": {
+        "headline": "Seven Yield secures Chinese charter deal for car carrier pair",
+        "summary": "Luxembourg-incorporated shipowner Seven Yield has secured five-year time charters for two LNG-powered car carriers with a major Chinese automobile manufacturer, extending employment for the vessels into the next decade. The agreements cover the 2020-built, 7,500 ceu sisterships S",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Maersk Tankers lines up EU backing for four VLAC ammonia conversions",
+      "link": "https://splash247.com/maersk-tankers-lines-up-eu-backing-for-four-vlac-ammonia-conversions/",
+      "pubDate": "Thu, 22 Oct 2026 09:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Danish shipowner Maersk Tankers has moved closer to converting four very large ammonia carriers to run on the cargo they transport after its retrofit proposal was selected for support under the European Union&#8217;s Innovation Fund. The project, known as RIPPLE, involves install",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Maersk-Tankers.jpg",
+      "en": {
+        "headline": "Maersk Tankers lines up EU backing for four VLAC ammonia conversions",
+        "summary": "Danish shipowner Maersk Tankers has moved closer to converting four very large ammonia carriers to run on the cargo they transport after its retrofit proposal was selected for support under the European Union&#8217;s Innovation Fund. The project, known as RIPPLE, involves install",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Philippines Exploring Deeper Cooperation with Taiwan to Protect Undersea Cables",
+      "link": "https://gcaptain.com/philippines-exploring-deeper-cooperation-with-taiwan-to-protect-undersea-cables/",
+      "pubDate": "Thu, 22 Oct 2026 09:01:05 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Philippines is exploring deeper cooperation with Taiwan on protecting undersea cables and addressing \"gray-zone\" activity, despite Manila's one-China policy, which recognizes Beijing and not Taipei, a Philippine diplomat said on Wednesday.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/2025-10-31T091343Z_2118915595_RC2TS1AE5JO8_RTRMADP_3_USA-CHINA-PHILIPPINES-DEFENSE.jpg",
+      "en": {
+        "headline": "Philippines Exploring Deeper Cooperation with Taiwan to Protect Undersea Cables",
+        "summary": "The Philippines is exploring deeper cooperation with Taiwan on protecting undersea cables and addressing \"gray-zone\" activity, despite Manila's one-China policy, which recognizes Beijing and not Taipei, a Philippine diplomat said on Wednesday.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Saudi Arabia Seeks Access to Overseas Oil Storage for Aramco",
+      "link": "https://gcaptain.com/saudi-arabia-seeks-access-to-overseas-oil-storage-for-aramco/",
+      "pubDate": "Thu, 22 Oct 2026 08:57:11 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Saudi Arabia is in talks with foreign governments to give state-owned Aramco access to their strategic oil storage, as the kingdom seeks to make its supplies to customers more resilient during disruptions, Chief Executive Officer Amin Nasser said.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T050419Z_690210157_RC2H1MA5D3GD_RTRMADP_3_IRAN-CRISIS-SAUDI-OIL-800x533.jpg",
+      "en": {
+        "headline": "Saudi Arabia Seeks Access to Overseas Oil Storage for Aramco",
+        "summary": "Saudi Arabia is in talks with foreign governments to give state-owned Aramco access to their strategic oil storage, as the kingdom seeks to make its supplies to customers more resilient during disruptions, Chief Executive Officer Amin Nasser said.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Global shipbuilding boom moves into overdrive",
+      "link": "https://splash247.com/global-shipbuilding-boom-moves-into-overdrive/",
+      "pubDate": "Thu, 22 Oct 2026 08:16:42 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The global shipbuilding boom is gathering pace, with orderbooks surpassing their previous 2008 peak, Chinese yards tightening their grip on the market and tanker owners increasingly turning to inexperienced builders to secure delivery slots. New figures from BIMCO put the global ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Hengli-1.jpg",
+      "en": {
+        "headline": "Global shipbuilding boom moves into overdrive",
+        "summary": "The global shipbuilding boom is gathering pace, with orderbooks surpassing their previous 2008 peak, Chinese yards tightening their grip on the market and tanker owners increasingly turning to inexperienced builders to secure delivery slots. New figures from BIMCO put the global ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "China adds new state-owned shipbuilding player in Guangzhou",
+      "link": "https://splash247.com/china-adds-new-state-owned-shipbuilding-player-in-guangzhou/",
+      "pubDate": "Thu, 22 Oct 2026 07:56:26 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Guangzhou has formally launched a new state-owned maritime industrial group as the southern Chinese shipbuilding hub looks to expand its manufacturing capacity and bring more of the industry&#8217;s supply chain under local ownership. Guangzhou Marine Equipment Group, established",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Guangzhou-SASAC.jpg",
+      "en": {
+        "headline": "China adds new state-owned shipbuilding player in Guangzhou",
+        "summary": "Guangzhou has formally launched a new state-owned maritime industrial group as the southern Chinese shipbuilding hub looks to expand its manufacturing capacity and bring more of the industry&#8217;s supply chain under local ownership. Guangzhou Marine Equipment Group, established",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "A new world order emerges in LNG shipping",
+      "link": "https://splash247.com/a-new-world-order-emerges-in-lng-shipping/",
+      "pubDate": "Thu, 22 Oct 2026 07:43:17 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The world&#8217;s LNG trading map is undergoing its biggest upheaval in years, with the near-paralysis of Gulf exports redirecting cargoes across oceans, forcing Asian buyers towards alternative suppliers and pushing European gas prices to their highest levels since 2022. While g",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/11/LNG-Generic.jpg",
+      "en": {
+        "headline": "A new world order emerges in LNG shipping",
+        "summary": "The world&#8217;s LNG trading map is undergoing its biggest upheaval in years, with the near-paralysis of Gulf exports redirecting cargoes across oceans, forcing Asian buyers towards alternative suppliers and pushing European gas prices to their highest levels since 2022. While g",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "US sanctions net widens to shipping agents and lawyers",
+      "link": "https://splash247.com/us-sanctions-net-widens-to-shipping-agents-and-lawyers/",
+      "pubDate": "Thu, 22 Oct 2026 07:06:01 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Washington has widened its crackdown on Iran&#8217;s shadow fleet, sanctioning a Greek-Panamanian law firm, shipping agents in Singapore and Dubai, and nine vessels in a move targeting the service providers behind Tehran&#8217;s commodity exports. Announcing the measures yesterda",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/09/Screenshot_74-1.jpg",
+      "en": {
+        "headline": "US sanctions net widens to shipping agents and lawyers",
+        "summary": "Washington has widened its crackdown on Iran&#8217;s shadow fleet, sanctioning a Greek-Panamanian law firm, shipping agents in Singapore and Dubai, and nine vessels in a move targeting the service providers behind Tehran&#8217;s commodity exports. Announcing the measures yesterda",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Iran claims seven vessels hit in new wave of Hormuz attacks",
+      "link": "https://splash247.com/iran-claims-seven-vessels-hit-in-new-wave-of-hormuz-attacks/",
+      "pubDate": "Thu, 22 Oct 2026 07:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Iran&#8217;s Revolutionary Guards claimed today that seven vessels had been attacked or struck mines across the Persian Gulf over the past 24 hours, including four conducting ship-to-ship oil transfers. The IRGC Navy said it had tracked four vessels that previously used a route T",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/US-Navy-Epic-Fury-Iran.jpeg",
+      "en": {
+        "headline": "Iran claims seven vessels hit in new wave of Hormuz attacks",
+        "summary": "Iran&#8217;s Revolutionary Guards claimed today that seven vessels had been attacked or struck mines across the Persian Gulf over the past 24 hours, including four conducting ship-to-ship oil transfers. The IRGC Navy said it had tracked four vessels that previously used a route T",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Tufton rides stronger markets with fresh tanker and bulker deals",
+      "link": "https://splash247.com/tufton-rides-stronger-markets-with-fresh-tanker-and-bulker-deals/",
+      "pubDate": "Thu, 22 Oct 2026 06:15:12 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "London-listed Tufton Assets has secured higher-paying employment across its tanker and dry bulk fleet, with two MR product tankers extended for another year and further charter renewals in the pipeline. The charterer of the 2016-built Catherine Grace and Madelyn Grace exercised o",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Catherine-Grace-Brian-Kushner-Marine-Traffic.jpg",
+      "en": {
+        "headline": "Tufton rides stronger markets with fresh tanker and bulker deals",
+        "summary": "London-listed Tufton Assets has secured higher-paying employment across its tanker and dry bulk fleet, with two MR product tankers extended for another year and further charter renewals in the pipeline. The charterer of the 2016-built Catherine Grace and Madelyn Grace exercised o",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Panama Canal Traffic and Tonnage Rise Despite El Niño Challenges",
       "link": "https://gcaptain.com/panama-canal-traffic-and-tonnage-rise-despite-el-nino-challenges/",
       "pubDate": "Wed, 21 Oct 2026 20:35:07 +0000",
@@ -244,7 +448,7 @@
       "summary": "The Panama Canal reported growth in vessel traffic, tonnage and revenue in fiscal year 2026, as stronger demand from energy carriers and containerships helped lift volumes despite ongoing concerns over...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/Neopanamax-locks.jpg",
       "en": {
         "headline": "Panama Canal Traffic and Tonnage Rise Despite El Niño Challenges",
@@ -261,7 +465,7 @@
       "summary": "By Chris Servello (OpEd) After years of testing and debating how unmanned surface vessels fit into the fleet, the Navy is starting to show what these systems can do. And...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/05/Task-Force-59-800x533.jpg",
       "en": {
         "headline": "The Navy Is Making Progress on Unmanned Vessels. Now It&#8217;s Time to Put Them to Work.",
@@ -278,7 +482,7 @@
       "summary": "The Coast Guard&#8217;s new credentialing portal promises complete applications and faster processing. One American ship captain tested it. What he found raises serious questions about automation, accountability, and whether Washington...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/uscg-nmc-800x467.jpg",
       "en": {
         "headline": "Editorial: The Coast Guard Spent $3.8 Million on a PDF",
@@ -295,216 +499,12 @@
       "summary": "The United States has imposed a new round of sanctions targeting a law firm, shipping agents and nine vessels accused of helping Iran move oil and other commodities through international...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-23T164555Z_940496461_RC24PNADYA0L_RTRMADP_3_USA-CHINA-BESSENT-HE.jpg",
       "en": {
         "headline": "U.S. Sanctions Law Firm, Shipping Agents and Nine Vessels in Iran Shadow Fleet Crackdown",
         "summary": "The United States has imposed a new round of sanctions targeting a law firm, shipping agents and nine vessels accused of helping Iran move oil and other commodities through international...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Australian Fund to Acquire Majority Stake in UK’s Largest Port Operator in $13.4 Billion Deal",
-      "link": "https://gcaptain.com/australian-fund-to-acquire-majority-stake-in-uks-largest-port-operator-in-13-4-billion-deal/",
-      "pubDate": "Wed, 21 Oct 2026 17:20:36 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Australia-based IFM Investors has agreed to acquire a controlling stake in Associated British Ports (ABP), the UK&#8217;s largest port operator, in a deal that values the company at approximately £10...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/08/shutterstock_1883371642.jpg",
-      "en": {
-        "headline": "Australian Fund to Acquire Majority Stake in UK’s Largest Port Operator in $13.4 Billion Deal",
-        "summary": "Australia-based IFM Investors has agreed to acquire a controlling stake in Associated British Ports (ABP), the UK&#8217;s largest port operator, in a deal that values the company at approximately £10...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Middle East Oil Flows Near Prewar Levels Defy Hormuz Attacks",
-      "link": "https://gcaptain.com/middle-east-oil-flows-near-prewar-levels-defy-hormuz-attacks/",
-      "pubDate": "Wed, 21 Oct 2026 17:01:59 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By Julian Lee (Bloomberg) &#8212; Oil shipments from the Middle East are showing little sign of buckling in the face of Iran’s more frequent and damaging attacks on merchant ships in the...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-09T052058Z_770736808_RC217KA5FP4Y_RTRMADP_3_IRAN-CRISIS-USA-ASIA-OIL-800x533.jpg",
-      "en": {
-        "headline": "Middle East Oil Flows Near Prewar Levels Defy Hormuz Attacks",
-        "summary": "By Julian Lee (Bloomberg) &#8212; Oil shipments from the Middle East are showing little sign of buckling in the face of Iran’s more frequent and damaging attacks on merchant ships in the...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "UK Approves Long-delayed Jackdaw Gas Field on Energy Security Grounds",
-      "link": "https://gcaptain.com/uk-approves-long-delayed-jackdaw-gas-field-on-energy-security-grounds/",
-      "pubDate": "Wed, 21 Oct 2026 16:56:06 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "LONDON, Oct 21 (Reuters) &#8211; Britain on Wednesday approved the Jackdaw North Sea gas field, ending years of legal and political wrangling as the Labour government seeks to balance its climate goals...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/01/shutterstock_1145019740.jpg",
-      "en": {
-        "headline": "UK Approves Long-delayed Jackdaw Gas Field on Energy Security Grounds",
-        "summary": "LONDON, Oct 21 (Reuters) &#8211; Britain on Wednesday approved the Jackdaw North Sea gas field, ending years of legal and political wrangling as the Labour government seeks to balance its climate goals...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "IEA: Gulf Oil Shipping Costs Top $37 Per Barrel, Five Times Pre-War Levels",
-      "link": "https://gcaptain.com/iea-gulf-oil-shipping-costs-top-37-per-barrel-five-times-pre-war-levels/",
-      "pubDate": "Wed, 21 Oct 2026 16:29:04 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The cost of shipping crude oil from the Middle East Gulf to Asia has surged to more than $37 per barrel, over five times prewar levels, as an increasingly complex...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-07T191614Z_1043438909_RC2R4LAN4FM4_RTRMADP_3_IRAN-CRISIS-MISSILES-HORMUZ.jpg",
-      "en": {
-        "headline": "IEA: Gulf Oil Shipping Costs Top $37 Per Barrel, Five Times Pre-War Levels",
-        "summary": "The cost of shipping crude oil from the Middle East Gulf to Asia has surged to more than $37 per barrel, over five times prewar levels, as an increasingly complex...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Two More Tankers Struck as Maritime Attacks Spread Across Persian Gulf",
-      "link": "https://gcaptain.com/two-more-tankers-struck-as-maritime-attacks-spread-across-persian-gulf/",
-      "pubDate": "Wed, 21 Oct 2026 15:12:23 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Two more tankers have been struck by unidentified projectiles in separate incidents near the Strait of Hormuz and in the northern Persian Gulf, adding to a growing series of attacks...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
-      "en": {
-        "headline": "Two More Tankers Struck as Maritime Attacks Spread Across Persian Gulf",
-        "summary": "Two more tankers have been struck by unidentified projectiles in separate incidents near the Strait of Hormuz and in the northern Persian Gulf, adding to a growing series of attacks...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Russia Sees First Diesel Cargo Sailing for US on Thursday",
-      "link": "https://gcaptain.com/russia-sees-first-diesel-cargo-sailing-for-us-on-thursday/",
-      "pubDate": "Wed, 21 Oct 2026 12:05:03 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A tanker loaded with Russian diesel will sail for the US on Thursday as Moscow starts to implement a fuel supply deal struck by Vladimir Putin and Donald Trump, according to Deputy Prime Minister Alexander Novak.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-02T105843Z_1023053534_RC2D43ANZYK4_RTRMADP_3_RUSSIA-DIESEL-EXPORTS-800x498.jpg",
-      "en": {
-        "headline": "Russia Sees First Diesel Cargo Sailing for US on Thursday",
-        "summary": "A tanker loaded with Russian diesel will sail for the US on Thursday as Moscow starts to implement a fuel supply deal struck by Vladimir Putin and Donald Trump, according to Deputy Prime Minister Alexander Novak.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "AG Seville wins 25-year port shipyard concession with $11m investment plan",
-      "link": "https://splash247.com/ag-seville-wins-25-year-port-shipyard-concession-with-11m-investment-plan/",
-      "pubDate": "Wed, 21 Oct 2026 10:28:27 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "AG Seville Shipyard has won the competition to continue operating the ship repair facilities at Spain&#8217;s Port of Seville, clearing an important hurdle for a proposed €10m ($11.2m) investment programme. Seville Port Authority&#8217;s board approved the selection of AG Seville",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/AG-Seville-Shipyard.jpg",
-      "en": {
-        "headline": "AG Seville wins 25-year port shipyard concession with $11m investment plan",
-        "summary": "AG Seville Shipyard has won the competition to continue operating the ship repair facilities at Spain&#8217;s Port of Seville, clearing an important hurdle for a proposed €10m ($11.2m) investment programme. Seville Port Authority&#8217;s board approved the selection of AG Seville",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Australian fund takes control of UK ports giant in £10bn deal",
-      "link": "https://splash247.com/australian-fund-takes-control-of-uk-ports-giant-in-10bn-deal/",
-      "pubDate": "Wed, 21 Oct 2026 08:57:49 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Australian infrastructure investor IFM Investors has agreed to acquire a controlling stake in Associated British Ports (ABP), Britain&#8217;s largest port operator, in a deal valuing the business at more than £10bn ($13.4bn). The transaction will see Canadian pension giants CPP I",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Associated-British-Ports-1.jpg",
-      "en": {
-        "headline": "Australian fund takes control of UK ports giant in £10bn deal",
-        "summary": "Australian infrastructure investor IFM Investors has agreed to acquire a controlling stake in Associated British Ports (ABP), Britain&#8217;s largest port operator, in a deal valuing the business at more than £10bn ($13.4bn). The transaction will see Canadian pension giants CPP I",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Shipping equities turn geopolitical risk into an advantage",
-      "link": "https://splash247.com/shipping-equities-turn-geopolitical-risk-into-an-advantage/",
-      "pubDate": "Wed, 21 Oct 2026 08:27:34 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "New research from investment bank Jefferies charts how shipping shares have shifted from being negatively correlated with geopolitical risk during the first decade of this century to moving increasingly in tandem with global instability since 2021. The new report is bullish on ta",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Wall-Street-free-pic.jpeg",
-      "en": {
-        "headline": "Shipping equities turn geopolitical risk into an advantage",
-        "summary": "New research from investment bank Jefferies charts how shipping shares have shifted from being negatively correlated with geopolitical risk during the first decade of this century to moving increasingly in tandem with global instability since 2021. The new report is bullish on ta",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "NATO boosts Black Sea surveillance amid attacks on shipping",
-      "link": "https://splash247.com/nato-boosts-black-sea-surveillance-amid-attacks-on-shipping/",
-      "pubDate": "Wed, 21 Oct 2026 08:19:36 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "NATO is deploying additional maritime patrol aircraft, drones and radar systems to the Black Sea following a series of deadly attacks on merchant shipping off Romania and Bulgaria. The move follows a meeting of the alliance&#8217;s North Atlantic Council in Brussels on Tuesday, w",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 18,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/TurkUkra.jpeg",
-      "en": {
-        "headline": "NATO boosts Black Sea surveillance amid attacks on shipping",
-        "summary": "NATO is deploying additional maritime patrol aircraft, drones and radar systems to the Black Sea following a series of deadly attacks on merchant shipping off Romania and Bulgaria. The move follows a meeting of the alliance&#8217;s North Atlantic Council in Brussels on Tuesday, w",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Iraqi Line returns to Gulf container trade after 50 years",
-      "link": "https://splash247.com/iraqi-line-returns-to-gulf-container-trade-after-50-years/",
-      "pubDate": "Wed, 21 Oct 2026 07:41:22 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Iraq&#8217;s national shipping line is returning to scheduled container services in the Gulf after more than half a century, as the country seeks to rebuild maritime connections disrupted by the Strait of Hormuz crisis. According to Alphaliner, Iraqi Maritime Line is deploying th",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/ICTSI-Basra-Umm-Qasr-Iraq.jpg",
-      "en": {
-        "headline": "Iraqi Line returns to Gulf container trade after 50 years",
-        "summary": "Iraq&#8217;s national shipping line is returning to scheduled container services in the Gulf after more than half a century, as the country seeks to rebuild maritime connections disrupted by the Strait of Hormuz crisis. According to Alphaliner, Iraqi Maritime Line is deploying th",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Danaos linked to $218m boxship order in China",
-      "link": "https://splash247.com/danaos-linked-to-218m-boxship-order-in-china/",
-      "pubDate": "Wed, 21 Oct 2026 07:16:30 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Greek owner Danaos has been linked to another $218m newbuilding investment in China, with brokers placing the John Coustas-led company behind a pair of 9,200 teu boxships at Shanghai Waigaoqiao Shipbuilding (SWS). According to Xclusiv Shipbrokers, the New York-listed owner has li",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 19,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/08/Danaos-Corp.jpg",
-      "en": {
-        "headline": "Danaos linked to $218m boxship order in China",
-        "summary": "Greek owner Danaos has been linked to another $218m newbuilding investment in China, with brokers placing the John Coustas-led company behind a pair of 9,200 teu boxships at Shanghai Waigaoqiao Shipbuilding (SWS). According to Xclusiv Shipbrokers, the New York-listed owner has li",
-        "source": "Splash247"
       }
     }
   ]
