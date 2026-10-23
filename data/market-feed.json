@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-23T10:44:46.349Z",
-    "benchmarkAsOf": "2026-10-22",
+    "generatedAt": "2026-10-23T16:09:50.069Z",
+    "benchmarkAsOf": "2026-10-23",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-10-22",
-    "updatedLabelKo": "2026-10-22 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-10-23",
+    "updatedLabelKo": "2026-10-23 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 937,
-        "deltaPct": 0.54,
+        "deltaPct": 0,
         "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1341,
-        "deltaPct": -0.3,
+        "deltaPct": 0,
         "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 876,
-        "deltaPct": -0.51,
+        "deltaPct": 0,
         "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 763,
-        "deltaPct": 0.53,
+        "deltaPct": 0,
         "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1434.5,
-        "deltaPct": 0.67,
+        "deltaPct": 0,
         "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 684.5,
-        "deltaPct": 1.03,
+        "deltaPct": 0,
         "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -172,7 +172,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 805.5,
-        "deltaPct": 1.77,
+        "deltaPct": 0,
         "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1422,
-        "deltaPct": 0.32,
+        "deltaPct": 0,
         "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 600.5,
-        "deltaPct": -1.64,
+        "deltaPct": 0,
         "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 2693,
-      "deltaPct": 0,
+      "value": 2660,
+      "deltaPct": -1.23,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-22T17:15:19.856Z"
+      "asOf": "2026-10-23T15:00:18.265Z"
     },
     "capesizeTc": {
-      "value": 3848,
-      "deltaPct": 0,
+      "value": 3791,
+      "deltaPct": -1.48,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-22T17:15:19.881Z"
+      "asOf": "2026-10-23T15:00:18.340Z"
     },
     "panamaxTc": {
-      "value": 2151,
-      "deltaPct": 0,
+      "value": 2109,
+      "deltaPct": -1.95,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-22T17:15:19.894Z"
+      "asOf": "2026-10-23T15:00:18.350Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,23 @@
   },
   "news": [
     {
+      "title": "South Korean Shipowner Sinokor Dominates Hormuz Transits as Oil Flows Rebound",
+      "link": "https://gcaptain.com/south-korean-shipowner-sinokor-dominates-hormuz-transits-as-oil-flows-rebound/",
+      "pubDate": "Fri, 23 Oct 2026 11:14:05 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A little-known South Korean shipowner dominated oil transits through the Strait of Hormuz in September, data from intelligence firms suggest, with the group’s vessels moving more barrels than the next three owners combined.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/03/shutterstock_1779485036.jpg",
+      "en": {
+        "headline": "South Korean Shipowner Sinokor Dominates Hormuz Transits as Oil Flows Rebound",
+        "summary": "A little-known South Korean shipowner dominated oil transits through the Strait of Hormuz in September, data from intelligence firms suggest, with the group’s vessels moving more barrels than the next three owners combined.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "OEG books three more offshore wind CTVs at Diverse Marine",
       "link": "https://splash247.com/oeg-books-three-more-offshore-wind-ctvs-at-diverse-marine/",
       "pubDate": "Fri, 23 Oct 2026 09:58:00 +0000",
@@ -244,7 +261,7 @@
       "summary": "UK offshore services player OEG Marine Services has ordered three crew transfer vessels (CTVs) from Isle of Wight shipbuilder Diverse Marine as part of its offshore wind fleet expansion and renewal programme. The vessels, based on Chartwell Marine&#8217;s Brevity SL class design,",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/OEG-Fulmar.jpg",
       "en": {
         "headline": "OEG books three more offshore wind CTVs at Diverse Marine",
@@ -261,7 +278,7 @@
       "summary": "Mining giant Rio Tinto has approved a $1.9bn investment in a major bauxite expansion in Australia&#8217;s Queensland state, including an upgrade of its export facilities to accommodate larger capesize bulk carriers. The Kangwinan project on the western Cape York Peninsula will ad",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2019/07/Bocimar-capesize-Mineral-Noble-e1752060008103.jpg",
       "en": {
         "headline": "Rio Tinto targets larger capesizes in $1.9bn Australian bauxite push",
@@ -278,7 +295,7 @@
       "summary": "HD Hyundai Co 267250.KS said on Friday it has signed a deal with Kiewit Corp to start building an advanced US shipyard next year, with operations expected to begin in 2029 and create about 3,000 domestic jobs.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/2025-09-15T045849Z_558150231_RC2T65AJW1VH_RTRMADP_3_USA-TRUMP-TARIFFS-SOUTHKOREA-800x542.jpg",
       "en": {
         "headline": "HD Hyundai to Build US Shipyard with Kiewit, Create 3,000 Jobs",
@@ -295,7 +312,7 @@
       "summary": "Seafarer fatigue, mental health and reluctance to report mistakes should become key considerations for marine insurers, banks and investors, according to new research warning that shipping is overlooking significant commercial risks hidden in its own data. The Sustainable Shippin",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/BritanniaFinal.jpg",
       "en": {
         "headline": "Fatigue, fear and the flaws in shipping&#8217;s safety data",
@@ -312,7 +329,7 @@
       "summary": "Sierra Leone has launched a new national shipping company backed by China&#8217;s Zhejiang Xiehai Group, with ambitions to develop a fleet of 50 vessels and capture a greater share of the country&#8217;s international cargo trade. President Julius Maada Bio inaugurated Sierra Leo",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/SLOSCO-Sierra-Leone-Ocean-Shipping-Co.jpg",
       "en": {
         "headline": "Sierra Leone launches Chinese-backed national shipping company",
@@ -329,7 +346,7 @@
       "summary": "The Trump administration has begun authorising the sale of sanctioned oil tankers to approved investors who must then refurbish the vessels before returning them to legitimate crude trades, US energy secretary Chris Wright revealed on Monday, as Washington scrambles to contain so",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/12/Oil-is-War-Greenpeace.jpg",
       "en": {
         "headline": "Splash Wrap: Sanctions, spreadsheets and shipyards",
@@ -346,7 +363,7 @@
       "summary": "Nasdaq-listed Greek dry bulk owner Icon Energy is facing pressure from a significant shareholder to overhaul its capital structure and board, following accusations that repeated equity issuances have heavily diluted ordinary investors. Canada&#8217;s Hampton Financial, which hold",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/03/Icon-Energy.jpg",
       "en": {
         "headline": "Icon Energy faces shareholder revolt over dilution",
@@ -363,7 +380,7 @@
       "summary": "Greek shipowner Panos Laskaridis is making a return to the newcastlemax newbuilding market, with his Lavinia Bulkers linked to an order for four vessels worth around $312m in China. Shipbroking sources have identified Zhoushan Changhong International Shipyard as the builder of th",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/02/Changhong-International.jpg",
       "en": {
         "headline": "Laskaridis linked to $312m newcastlemax order in China",
@@ -380,7 +397,7 @@
       "summary": "London-listed Taylor Maritime has agreed to sell its last owned bulk carrier for $15.1m, taking its fleet disposal programme to 56 vessels and putting total proceeds on course to reach almost $933m. The Ed Buttery-led company said the final sale is expected to complete in Decembe",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/03/Ed-Buttery-Monaco-CEO-Forum.jpg",
       "en": {
         "headline": "Taylor Maritime agrees final owned bulker sale ahead of London exit",
@@ -397,7 +414,7 @@
       "summary": "South Korea&#8217;s HD Hyundai has agreed to establish a joint venture with US engineering and construction giant Kiewit to build a new American shipyard, targeting operations from 2029. The venture, HD Kiewit Shipbuilding, plans to begin construction in 2027 at a yet-to-be-annou",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/Hyundai.jpg",
       "en": {
         "headline": "HD Hyundai and Kiewit to build new US shipyard",
@@ -414,7 +431,7 @@
       "summary": "A new online index &#8211; much trailed on Splash &#8211; measuring how much attention the global shipping industry receives has gone live, offering maritime companies a way to assess public interest in shipping news and major incidents. Created by crisis communications specialis",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/03/Ever-Given-Maxar.jpg",
       "en": {
         "headline": "New index tracks how much the world cares about shipping",
@@ -431,7 +448,7 @@
       "summary": "Nor-Shipping is revamping its knowledge-sharing offer with a brand new stage created for day-long ‘deep dives’ into fast-moving and strategically important subjects. Christened Focus Stage, the fresh platform will be...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/unnamed-6.jpg",
       "en": {
         "headline": "Nor-Shipping brings new Focus to AI, Ports and Marketing in 2027",
@@ -448,7 +465,7 @@
       "summary": "SUNY Maritime College’s training ship Empire State VII is expected to return to its Fort Schuyler campus by mid-November after the federal government abruptly changed plans for a months-long deployment...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 15,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/Empire-State-VII.jpg",
       "en": {
         "headline": "Empire State VII to Return to New York After Months-Long Navy Mission Plans Scrapped",
@@ -465,7 +482,7 @@
       "summary": "China has further cemented its dominance of global shipbuilding, capturing nearly three-quarters of new orders over the past year as the industry&#8217;s order book approaches record levels, according to new...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 17,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/02/OOCL-Spain_3-800x450.jpg",
       "en": {
         "headline": "China Tightens Grip on Global Shipbuilding as Order Book Hits Near-Record High",
@@ -482,28 +499,11 @@
       "summary": "Along Russia’s remote Arctic coast last month, Igor Sechin stood beside a waiting tanker in the freezing cold with a message for Vladimir Putin: After years of construction, the country’s next great oil frontier was finally coming to life.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 17,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/photo_2026-09-07-11.33.37-800x599.jpeg",
       "en": {
         "headline": "Putin’s War On Ukraine Puts Oil Giant Rosneft Under Mounting Pressure",
         "summary": "Along Russia’s remote Arctic coast last month, Igor Sechin stood beside a waiting tanker in the freezing cold with a message for Vladimir Putin: After years of construction, the country’s next great oil frontier was finally coming to life.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Dual-Fuel Ship Fleet Tops 500 as Industry Investment Passes $200 Billion",
-      "link": "https://gcaptain.com/dual-fuel-ship-fleet-tops-500-as-industry-investment-passes-200-billion/",
-      "pubDate": "Thu, 22 Oct 2026 17:21:26 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The global fleet of dual-fuel containerships and vehicle carriers has surpassed 500 vessels, with shipowners committing more than $200 billion to ships capable of running on alternative fuels, according to...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/08/Jane-McAllister-working-ZIM-LNG-in-Virginia-800x450.jpg",
-      "en": {
-        "headline": "Dual-Fuel Ship Fleet Tops 500 as Industry Investment Passes $200 Billion",
-        "summary": "The global fleet of dual-fuel containerships and vehicle carriers has surpassed 500 vessels, with shipowners committing more than $200 billion to ships capable of running on alternative fuels, according to...",
         "source": "gCaptain"
       }
     }
