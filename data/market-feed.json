@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-23T02:39:33.932Z",
+    "generatedAt": "2026-10-23T10:44:46.349Z",
     "benchmarkAsOf": "2026-10-22",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 932,
-        "deltaPct": 0,
-        "asOf": "2026-10-21T17:00:00.000Z",
+        "priceUsdMt": 937,
+        "deltaPct": 0.54,
+        "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1345,
-        "deltaPct": 0,
-        "asOf": "2026-10-21T17:00:00.000Z",
+        "priceUsdMt": 1341,
+        "deltaPct": -0.3,
+        "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 880.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-21T17:00:00.000Z",
+        "priceUsdMt": 876,
+        "deltaPct": -0.51,
+        "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 759,
-        "deltaPct": 0,
-        "asOf": "2026-10-21T17:00:00.000Z",
+        "priceUsdMt": 763,
+        "deltaPct": 0.53,
+        "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1425,
-        "deltaPct": 0,
-        "asOf": "2026-10-21T17:00:00.000Z",
+        "priceUsdMt": 1434.5,
+        "deltaPct": 0.67,
+        "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 677.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-21T17:00:00.000Z",
+        "priceUsdMt": 684.5,
+        "deltaPct": 1.03,
+        "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 1050,
-        "deltaPct": -4.55,
+        "deltaPct": 0,
         "asOf": "2026-10-22T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 940,
-        "deltaPct": -4.08,
+        "deltaPct": 0,
         "asOf": "2026-10-22T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 791.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-21T17:00:00.000Z",
+        "priceUsdMt": 805.5,
+        "deltaPct": 1.77,
+        "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1417.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-21T17:00:00.000Z",
+        "priceUsdMt": 1422,
+        "deltaPct": 0.32,
+        "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 610.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-21T17:00:00.000Z",
+        "priceUsdMt": 600.5,
+        "deltaPct": -1.64,
+        "asOf": "2026-10-22T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -236,6 +236,193 @@
   },
   "news": [
     {
+      "title": "OEG books three more offshore wind CTVs at Diverse Marine",
+      "link": "https://splash247.com/oeg-books-three-more-offshore-wind-ctvs-at-diverse-marine/",
+      "pubDate": "Fri, 23 Oct 2026 09:58:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "UK offshore services player OEG Marine Services has ordered three crew transfer vessels (CTVs) from Isle of Wight shipbuilder Diverse Marine as part of its offshore wind fleet expansion and renewal programme. The vessels, based on Chartwell Marine&#8217;s Brevity SL class design,",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/OEG-Fulmar.jpg",
+      "en": {
+        "headline": "OEG books three more offshore wind CTVs at Diverse Marine",
+        "summary": "UK offshore services player OEG Marine Services has ordered three crew transfer vessels (CTVs) from Isle of Wight shipbuilder Diverse Marine as part of its offshore wind fleet expansion and renewal programme. The vessels, based on Chartwell Marine&#8217;s Brevity SL class design,",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Rio Tinto targets larger capesizes in $1.9bn Australian bauxite push",
+      "link": "https://splash247.com/rio-tinto-targets-larger-capesizes-in-1-9bn-australian-bauxite-push/",
+      "pubDate": "Fri, 23 Oct 2026 09:28:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Mining giant Rio Tinto has approved a $1.9bn investment in a major bauxite expansion in Australia&#8217;s Queensland state, including an upgrade of its export facilities to accommodate larger capesize bulk carriers. The Kangwinan project on the western Cape York Peninsula will ad",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2019/07/Bocimar-capesize-Mineral-Noble-e1752060008103.jpg",
+      "en": {
+        "headline": "Rio Tinto targets larger capesizes in $1.9bn Australian bauxite push",
+        "summary": "Mining giant Rio Tinto has approved a $1.9bn investment in a major bauxite expansion in Australia&#8217;s Queensland state, including an upgrade of its export facilities to accommodate larger capesize bulk carriers. The Kangwinan project on the western Cape York Peninsula will ad",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "HD Hyundai to Build US Shipyard with Kiewit, Create 3,000 Jobs",
+      "link": "https://gcaptain.com/hd-hyundai-to-build-us-shipyard-with-kiewit-create-3000-jobs/",
+      "pubDate": "Fri, 23 Oct 2026 08:58:05 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "HD Hyundai Co 267250.KS said on Friday it has signed a deal with Kiewit Corp to start building an advanced US shipyard next year, with operations expected to begin in 2029 and create about 3,000 domestic jobs.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/2025-09-15T045849Z_558150231_RC2T65AJW1VH_RTRMADP_3_USA-TRUMP-TARIFFS-SOUTHKOREA-800x542.jpg",
+      "en": {
+        "headline": "HD Hyundai to Build US Shipyard with Kiewit, Create 3,000 Jobs",
+        "summary": "HD Hyundai Co 267250.KS said on Friday it has signed a deal with Kiewit Corp to start building an advanced US shipyard next year, with operations expected to begin in 2029 and create about 3,000 domestic jobs.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Fatigue, fear and the flaws in shipping&#8217;s safety data",
+      "link": "https://splash247.com/fatigue-fear-and-the-flaws-in-shippings-safety-data/",
+      "pubDate": "Fri, 23 Oct 2026 08:15:54 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Seafarer fatigue, mental health and reluctance to report mistakes should become key considerations for marine insurers, banks and investors, according to new research warning that shipping is overlooking significant commercial risks hidden in its own data. The Sustainable Shippin",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/BritanniaFinal.jpg",
+      "en": {
+        "headline": "Fatigue, fear and the flaws in shipping&#8217;s safety data",
+        "summary": "Seafarer fatigue, mental health and reluctance to report mistakes should become key considerations for marine insurers, banks and investors, according to new research warning that shipping is overlooking significant commercial risks hidden in its own data. The Sustainable Shippin",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Sierra Leone launches Chinese-backed national shipping company",
+      "link": "https://splash247.com/sierra-leone-launches-chinese-backed-national-shipping-company/",
+      "pubDate": "Fri, 23 Oct 2026 08:00:58 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Sierra Leone has launched a new national shipping company backed by China&#8217;s Zhejiang Xiehai Group, with ambitions to develop a fleet of 50 vessels and capture a greater share of the country&#8217;s international cargo trade. President Julius Maada Bio inaugurated Sierra Leo",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/SLOSCO-Sierra-Leone-Ocean-Shipping-Co.jpg",
+      "en": {
+        "headline": "Sierra Leone launches Chinese-backed national shipping company",
+        "summary": "Sierra Leone has launched a new national shipping company backed by China&#8217;s Zhejiang Xiehai Group, with ambitions to develop a fleet of 50 vessels and capture a greater share of the country&#8217;s international cargo trade. President Julius Maada Bio inaugurated Sierra Leo",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Splash Wrap: Sanctions, spreadsheets and shipyards",
+      "link": "https://splash247.com/splash-wrap-sanctions-spreadsheets-and-shipyards/",
+      "pubDate": "Fri, 23 Oct 2026 07:45:35 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "The Trump administration has begun authorising the sale of sanctioned oil tankers to approved investors who must then refurbish the vessels before returning them to legitimate crude trades, US energy secretary Chris Wright revealed on Monday, as Washington scrambles to contain so",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/12/Oil-is-War-Greenpeace.jpg",
+      "en": {
+        "headline": "Splash Wrap: Sanctions, spreadsheets and shipyards",
+        "summary": "The Trump administration has begun authorising the sale of sanctioned oil tankers to approved investors who must then refurbish the vessels before returning them to legitimate crude trades, US energy secretary Chris Wright revealed on Monday, as Washington scrambles to contain so",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Icon Energy faces shareholder revolt over dilution",
+      "link": "https://splash247.com/icon-energy-faces-shareholder-revolt-over-dilution/",
+      "pubDate": "Fri, 23 Oct 2026 07:30:14 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Nasdaq-listed Greek dry bulk owner Icon Energy is facing pressure from a significant shareholder to overhaul its capital structure and board, following accusations that repeated equity issuances have heavily diluted ordinary investors. Canada&#8217;s Hampton Financial, which hold",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/03/Icon-Energy.jpg",
+      "en": {
+        "headline": "Icon Energy faces shareholder revolt over dilution",
+        "summary": "Nasdaq-listed Greek dry bulk owner Icon Energy is facing pressure from a significant shareholder to overhaul its capital structure and board, following accusations that repeated equity issuances have heavily diluted ordinary investors. Canada&#8217;s Hampton Financial, which hold",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Laskaridis linked to $312m newcastlemax order in China",
+      "link": "https://splash247.com/laskaridis-linked-to-312m-newcastlemax-order-in-china/",
+      "pubDate": "Fri, 23 Oct 2026 07:00:35 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Greek shipowner Panos Laskaridis is making a return to the newcastlemax newbuilding market, with his Lavinia Bulkers linked to an order for four vessels worth around $312m in China. Shipbroking sources have identified Zhoushan Changhong International Shipyard as the builder of th",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/02/Changhong-International.jpg",
+      "en": {
+        "headline": "Laskaridis linked to $312m newcastlemax order in China",
+        "summary": "Greek shipowner Panos Laskaridis is making a return to the newcastlemax newbuilding market, with his Lavinia Bulkers linked to an order for four vessels worth around $312m in China. Shipbroking sources have identified Zhoushan Changhong International Shipyard as the builder of th",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Taylor Maritime agrees final owned bulker sale ahead of London exit",
+      "link": "https://splash247.com/taylor-maritime-agrees-final-owned-bulker-sale-ahead-of-london-exit/",
+      "pubDate": "Fri, 23 Oct 2026 06:00:35 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "London-listed Taylor Maritime has agreed to sell its last owned bulk carrier for $15.1m, taking its fleet disposal programme to 56 vessels and putting total proceeds on course to reach almost $933m. The Ed Buttery-led company said the final sale is expected to complete in Decembe",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/03/Ed-Buttery-Monaco-CEO-Forum.jpg",
+      "en": {
+        "headline": "Taylor Maritime agrees final owned bulker sale ahead of London exit",
+        "summary": "London-listed Taylor Maritime has agreed to sell its last owned bulk carrier for $15.1m, taking its fleet disposal programme to 56 vessels and putting total proceeds on course to reach almost $933m. The Ed Buttery-led company said the final sale is expected to complete in Decembe",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "HD Hyundai and Kiewit to build new US shipyard",
+      "link": "https://splash247.com/hd-hyundai-and-kiewit-to-build-new-us-shipyard/",
+      "pubDate": "Fri, 23 Oct 2026 05:53:38 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "South Korea&#8217;s HD Hyundai has agreed to establish a joint venture with US engineering and construction giant Kiewit to build a new American shipyard, targeting operations from 2029. The venture, HD Kiewit Shipbuilding, plans to begin construction in 2027 at a yet-to-be-annou",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/Hyundai.jpg",
+      "en": {
+        "headline": "HD Hyundai and Kiewit to build new US shipyard",
+        "summary": "South Korea&#8217;s HD Hyundai has agreed to establish a joint venture with US engineering and construction giant Kiewit to build a new American shipyard, targeting operations from 2029. The venture, HD Kiewit Shipbuilding, plans to begin construction in 2027 at a yet-to-be-annou",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "New index tracks how much the world cares about shipping",
+      "link": "https://splash247.com/new-index-tracks-how-much-the-world-cares-about-shipping/",
+      "pubDate": "Fri, 23 Oct 2026 03:00:07 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A new online index &#8211; much trailed on Splash &#8211; measuring how much attention the global shipping industry receives has gone live, offering maritime companies a way to assess public interest in shipping news and major incidents. Created by crisis communications specialis",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/03/Ever-Given-Maxar.jpg",
+      "en": {
+        "headline": "New index tracks how much the world cares about shipping",
+        "summary": "A new online index &#8211; much trailed on Splash &#8211; measuring how much attention the global shipping industry receives has gone live, offering maritime companies a way to assess public interest in shipping news and major incidents. Created by crisis communications specialis",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Nor-Shipping brings new Focus to AI, Ports and Marketing in 2027",
       "link": "https://gcaptain.com/nor-shipping-brings-new-focus-to-ai-ports-and-marketing-in-2027/",
       "pubDate": "Thu, 22 Oct 2026 22:50:40 +0000",
@@ -244,7 +431,7 @@
       "summary": "Nor-Shipping is revamping its knowledge-sharing offer with a brand new stage created for day-long ‘deep dives’ into fast-moving and strategically important subjects. Christened Focus Stage, the fresh platform will be...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/unnamed-6.jpg",
       "en": {
         "headline": "Nor-Shipping brings new Focus to AI, Ports and Marketing in 2027",
@@ -261,7 +448,7 @@
       "summary": "SUNY Maritime College’s training ship Empire State VII is expected to return to its Fort Schuyler campus by mid-November after the federal government abruptly changed plans for a months-long deployment...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/Empire-State-VII.jpg",
       "en": {
         "headline": "Empire State VII to Return to New York After Months-Long Navy Mission Plans Scrapped",
@@ -278,7 +465,7 @@
       "summary": "China has further cemented its dominance of global shipbuilding, capturing nearly three-quarters of new orders over the past year as the industry&#8217;s order book approaches record levels, according to new...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/02/OOCL-Spain_3-800x450.jpg",
       "en": {
         "headline": "China Tightens Grip on Global Shipbuilding as Order Book Hits Near-Record High",
@@ -295,7 +482,7 @@
       "summary": "Along Russia’s remote Arctic coast last month, Igor Sechin stood beside a waiting tanker in the freezing cold with a message for Vladimir Putin: After years of construction, the country’s next great oil frontier was finally coming to life.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/photo_2026-09-07-11.33.37-800x599.jpeg",
       "en": {
         "headline": "Putin’s War On Ukraine Puts Oil Giant Rosneft Under Mounting Pressure",
@@ -312,199 +499,12 @@
       "summary": "The global fleet of dual-fuel containerships and vehicle carriers has surpassed 500 vessels, with shipowners committing more than $200 billion to ships capable of running on alternative fuels, according to...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/08/Jane-McAllister-working-ZIM-LNG-in-Virginia-800x450.jpg",
       "en": {
         "headline": "Dual-Fuel Ship Fleet Tops 500 as Industry Investment Passes $200 Billion",
         "summary": "The global fleet of dual-fuel containerships and vehicle carriers has surpassed 500 vessels, with shipowners committing more than $200 billion to ships capable of running on alternative fuels, according to...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Greece Says It is Implementing Sanctions Linked to Iran",
-      "link": "https://gcaptain.com/greece-says-it-is-implementing-sanctions-linked-to-iran/",
-      "pubDate": "Thu, 22 Oct 2026 17:12:23 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Greek finance ministry said on Thursday it was implementing sanctions in place linked to Iran and that it backed efforts to effectively combat money laundering and the financing of terrorism.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
-      "en": {
-        "headline": "Greece Says It is Implementing Sanctions Linked to Iran",
-        "summary": "The Greek finance ministry said on Thursday it was implementing sanctions in place linked to Iran and that it backed efforts to effectively combat money laundering and the financing of terrorism.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Iran Claims More Ships Struck Near Hormuz as Trump Accuses Tehran of &#8216;Faking Hits&#8217;",
-      "link": "https://gcaptain.com/iran-claims-more-ships-struck-near-hormuz-as-trump-accuses-tehran-of-faking-hits/",
-      "pubDate": "Thu, 22 Oct 2026 16:46:26 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Iran&#8217;s Revolutionary Guards claimed Thursday that seven commercial vessels were struck overnight in the Persian Gulf and Strait of Hormuz, including four ships conducting oil transfers, prompting President Donald Trump...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-09T052058Z_770736808_RC217KA5FP4Y_RTRMADP_3_IRAN-CRISIS-USA-ASIA-OIL-800x533.jpg",
-      "en": {
-        "headline": "Iran Claims More Ships Struck Near Hormuz as Trump Accuses Tehran of &#8216;Faking Hits&#8217;",
-        "summary": "Iran&#8217;s Revolutionary Guards claimed Thursday that seven commercial vessels were struck overnight in the Persian Gulf and Strait of Hormuz, including four ships conducting oil transfers, prompting President Donald Trump...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "QatarEnergy Signs Long-Term Deal to Buy U.S. LNG as Iran War Disrupts Exports",
-      "link": "https://gcaptain.com/qatarenergy-signs-long-term-deal-to-buy-u-s-lng-as-iran-war-disrupts-exports/",
-      "pubDate": "Thu, 22 Oct 2026 14:48:26 +0000",
-      "source": "gCaptain",
-      "category": "S&P",
-      "summary": "QatarEnergy has signed two long-term agreements to purchase up to 4 million tonnes of U.S. liquefied natural gas annually from Cheniere Energy through 2054, as the Gulf producer continues to...",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/06/2017-06-08T034144Z_275004737_RC1C2C08F6D0_RTRMADP_3_QATAR-ASIA-LNG.jpg",
-      "en": {
-        "headline": "QatarEnergy Signs Long-Term Deal to Buy U.S. LNG as Iran War Disrupts Exports",
-        "summary": "QatarEnergy has signed two long-term agreements to purchase up to 4 million tonnes of U.S. liquefied natural gas annually from Cheniere Energy through 2054, as the Gulf producer continues to...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Marco Polo Marine expands Korean offshore push with new JV",
-      "link": "https://splash247.com/marco-polo-marine-expands-korean-offshore-push-with-new-jv/",
-      "pubDate": "Thu, 22 Oct 2026 13:36:25 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Singapore-listed offshore vessel owner and shipyard group Marco Polo Marine has established a joint venture in South Korea with local partner NSEL, strengthening its presence in the country&#8217;s offshore vessel market. The new company, Baramgil Offshore, will focus on vessel o",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/09/Marco-Polo-CSOV.jpg",
-      "en": {
-        "headline": "Marco Polo Marine expands Korean offshore push with new JV",
-        "summary": "Singapore-listed offshore vessel owner and shipyard group Marco Polo Marine has established a joint venture in South Korea with local partner NSEL, strengthening its presence in the country&#8217;s offshore vessel market. The new company, Baramgil Offshore, will focus on vessel o",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Eastern Pacific takes wraps off first ammonia dual-fuel VLAC",
-      "link": "https://splash247.com/eastern-pacific-takes-wraps-off-first-ammonia-dual-fuel-vlac/",
-      "pubDate": "Thu, 22 Oct 2026 10:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Idan Ofer&#8217;s Eastern Pacific Shipping (EPS) has named its first ammonia dual-fuel very large ammonia carrier (VLAC) at HD Hyundai Heavy Industries in South Korea, bringing the 93,000 cu m vessel closer to its commercial debut. The Singapore-based owner christened the vessel ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Terra-Clove-first-ammonia-powered-VLAC.jpg",
-      "en": {
-        "headline": "Eastern Pacific takes wraps off first ammonia dual-fuel VLAC",
-        "summary": "Idan Ofer&#8217;s Eastern Pacific Shipping (EPS) has named its first ammonia dual-fuel very large ammonia carrier (VLAC) at HD Hyundai Heavy Industries in South Korea, bringing the 93,000 cu m vessel closer to its commercial debut. The Singapore-based owner christened the vessel ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Viridien sharpens exploration picture beyond Guyana&#8217;s Stabroek block",
-      "link": "https://splash247.com/viridien-sharpens-exploration-picture-beyond-guyanas-stabroek-block/",
-      "pubDate": "Thu, 22 Oct 2026 09:59:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "French geophysical company Viridien has launched the first phase of a major seismic reimaging programme offshore Guyana, targeting more than 10,000 sq km of existing 3D data in and around the country&#8217;s emerging shallow-water exploration acreage. The project covers the Kaiet",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Viridien.jpg",
-      "en": {
-        "headline": "Viridien sharpens exploration picture beyond Guyana&#8217;s Stabroek block",
-        "summary": "French geophysical company Viridien has launched the first phase of a major seismic reimaging programme offshore Guyana, targeting more than 10,000 sq km of existing 3D data in and around the country&#8217;s emerging shallow-water exploration acreage. The project covers the Kaiet",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Seven Yield secures Chinese charter deal for car carrier pair",
-      "link": "https://splash247.com/seven-yield-secures-chinese-charter-deal-for-car-carrier-pair/",
-      "pubDate": "Thu, 22 Oct 2026 09:40:34 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Luxembourg-incorporated shipowner Seven Yield has secured five-year time charters for two LNG-powered car carriers with a major Chinese automobile manufacturer, extending employment for the vessels into the next decade. The agreements cover the 2020-built, 7,500 ceu sisterships S",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Siem-Aristotle-Seven-Yield.jpg",
-      "en": {
-        "headline": "Seven Yield secures Chinese charter deal for car carrier pair",
-        "summary": "Luxembourg-incorporated shipowner Seven Yield has secured five-year time charters for two LNG-powered car carriers with a major Chinese automobile manufacturer, extending employment for the vessels into the next decade. The agreements cover the 2020-built, 7,500 ceu sisterships S",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Maersk Tankers lines up EU backing for four VLAC ammonia conversions",
-      "link": "https://splash247.com/maersk-tankers-lines-up-eu-backing-for-four-vlac-ammonia-conversions/",
-      "pubDate": "Thu, 22 Oct 2026 09:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Danish shipowner Maersk Tankers has moved closer to converting four very large ammonia carriers to run on the cargo they transport after its retrofit proposal was selected for support under the European Union&#8217;s Innovation Fund. The project, known as RIPPLE, involves install",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Maersk-Tankers.jpg",
-      "en": {
-        "headline": "Maersk Tankers lines up EU backing for four VLAC ammonia conversions",
-        "summary": "Danish shipowner Maersk Tankers has moved closer to converting four very large ammonia carriers to run on the cargo they transport after its retrofit proposal was selected for support under the European Union&#8217;s Innovation Fund. The project, known as RIPPLE, involves install",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Philippines Exploring Deeper Cooperation with Taiwan to Protect Undersea Cables",
-      "link": "https://gcaptain.com/philippines-exploring-deeper-cooperation-with-taiwan-to-protect-undersea-cables/",
-      "pubDate": "Thu, 22 Oct 2026 09:01:05 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Philippines is exploring deeper cooperation with Taiwan on protecting undersea cables and addressing \"gray-zone\" activity, despite Manila's one-China policy, which recognizes Beijing and not Taipei, a Philippine diplomat said on Wednesday.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/2025-10-31T091343Z_2118915595_RC2TS1AE5JO8_RTRMADP_3_USA-CHINA-PHILIPPINES-DEFENSE.jpg",
-      "en": {
-        "headline": "Philippines Exploring Deeper Cooperation with Taiwan to Protect Undersea Cables",
-        "summary": "The Philippines is exploring deeper cooperation with Taiwan on protecting undersea cables and addressing \"gray-zone\" activity, despite Manila's one-China policy, which recognizes Beijing and not Taipei, a Philippine diplomat said on Wednesday.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Saudi Arabia Seeks Access to Overseas Oil Storage for Aramco",
-      "link": "https://gcaptain.com/saudi-arabia-seeks-access-to-overseas-oil-storage-for-aramco/",
-      "pubDate": "Thu, 22 Oct 2026 08:57:11 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Saudi Arabia is in talks with foreign governments to give state-owned Aramco access to their strategic oil storage, as the kingdom seeks to make its supplies to customers more resilient during disruptions, Chief Executive Officer Amin Nasser said.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T050419Z_690210157_RC2H1MA5D3GD_RTRMADP_3_IRAN-CRISIS-SAUDI-OIL-800x533.jpg",
-      "en": {
-        "headline": "Saudi Arabia Seeks Access to Overseas Oil Storage for Aramco",
-        "summary": "Saudi Arabia is in talks with foreign governments to give state-owned Aramco access to their strategic oil storage, as the kingdom seeks to make its supplies to customers more resilient during disruptions, Chief Executive Officer Amin Nasser said.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Global shipbuilding boom moves into overdrive",
-      "link": "https://splash247.com/global-shipbuilding-boom-moves-into-overdrive/",
-      "pubDate": "Thu, 22 Oct 2026 08:16:42 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The global shipbuilding boom is gathering pace, with orderbooks surpassing their previous 2008 peak, Chinese yards tightening their grip on the market and tanker owners increasingly turning to inexperienced builders to secure delivery slots. New figures from BIMCO put the global ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Hengli-1.jpg",
-      "en": {
-        "headline": "Global shipbuilding boom moves into overdrive",
-        "summary": "The global shipbuilding boom is gathering pace, with orderbooks surpassing their previous 2008 peak, Chinese yards tightening their grip on the market and tanker owners increasingly turning to inexperienced builders to secure delivery slots. New figures from BIMCO put the global ",
-        "source": "Splash247"
       }
     }
   ]
