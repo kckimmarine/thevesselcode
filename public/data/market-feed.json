@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-22T21:00:20.290Z",
+    "generatedAt": "2026-10-23T02:39:33.932Z",
     "benchmarkAsOf": "2026-10-22",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 1100,
-        "deltaPct": 0,
-        "asOf": "2026-10-21T00:00:00.000Z",
+        "priceUsdMt": 1050,
+        "deltaPct": -4.55,
+        "asOf": "2026-10-22T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 980,
-        "deltaPct": 0,
-        "asOf": "2026-10-21T00:00:00.000Z",
+        "priceUsdMt": 940,
+        "deltaPct": -4.08,
+        "asOf": "2026-10-22T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -236,6 +236,23 @@
   },
   "news": [
     {
+      "title": "Nor-Shipping brings new Focus to AI, Ports and Marketing in 2027",
+      "link": "https://gcaptain.com/nor-shipping-brings-new-focus-to-ai-ports-and-marketing-in-2027/",
+      "pubDate": "Thu, 22 Oct 2026 22:50:40 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Nor-Shipping is revamping its knowledge-sharing offer with a brand new stage created for day-long ‘deep dives’ into fast-moving and strategically important subjects. Christened Focus Stage, the fresh platform will be...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/unnamed-6.jpg",
+      "en": {
+        "headline": "Nor-Shipping brings new Focus to AI, Ports and Marketing in 2027",
+        "summary": "Nor-Shipping is revamping its knowledge-sharing offer with a brand new stage created for day-long ‘deep dives’ into fast-moving and strategically important subjects. Christened Focus Stage, the fresh platform will be...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Empire State VII to Return to New York After Months-Long Navy Mission Plans Scrapped",
       "link": "https://gcaptain.com/empire-state-vii-to-return-to-new-york-after-months-long-navy-mission-plans-scrapped/",
       "pubDate": "Thu, 22 Oct 2026 19:01:57 +0000",
@@ -244,7 +261,7 @@
       "summary": "SUNY Maritime College’s training ship Empire State VII is expected to return to its Fort Schuyler campus by mid-November after the federal government abruptly changed plans for a months-long deployment...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/Empire-State-VII.jpg",
       "en": {
         "headline": "Empire State VII to Return to New York After Months-Long Navy Mission Plans Scrapped",
@@ -261,7 +278,7 @@
       "summary": "China has further cemented its dominance of global shipbuilding, capturing nearly three-quarters of new orders over the past year as the industry&#8217;s order book approaches record levels, according to new...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/02/OOCL-Spain_3-800x450.jpg",
       "en": {
         "headline": "China Tightens Grip on Global Shipbuilding as Order Book Hits Near-Record High",
@@ -278,7 +295,7 @@
       "summary": "Along Russia’s remote Arctic coast last month, Igor Sechin stood beside a waiting tanker in the freezing cold with a message for Vladimir Putin: After years of construction, the country’s next great oil frontier was finally coming to life.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/photo_2026-09-07-11.33.37-800x599.jpeg",
       "en": {
         "headline": "Putin’s War On Ukraine Puts Oil Giant Rosneft Under Mounting Pressure",
@@ -295,7 +312,7 @@
       "summary": "The global fleet of dual-fuel containerships and vehicle carriers has surpassed 500 vessels, with shipowners committing more than $200 billion to ships capable of running on alternative fuels, according to...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/08/Jane-McAllister-working-ZIM-LNG-in-Virginia-800x450.jpg",
       "en": {
         "headline": "Dual-Fuel Ship Fleet Tops 500 as Industry Investment Passes $200 Billion",
@@ -312,7 +329,7 @@
       "summary": "The Greek finance ministry said on Thursday it was implementing sanctions in place linked to Iran and that it backed efforts to effectively combat money laundering and the financing of terrorism.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
       "en": {
         "headline": "Greece Says It is Implementing Sanctions Linked to Iran",
@@ -329,7 +346,7 @@
       "summary": "Iran&#8217;s Revolutionary Guards claimed Thursday that seven commercial vessels were struck overnight in the Persian Gulf and Strait of Hormuz, including four ships conducting oil transfers, prompting President Donald Trump...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-09T052058Z_770736808_RC217KA5FP4Y_RTRMADP_3_IRAN-CRISIS-USA-ASIA-OIL-800x533.jpg",
       "en": {
         "headline": "Iran Claims More Ships Struck Near Hormuz as Trump Accuses Tehran of &#8216;Faking Hits&#8217;",
@@ -346,7 +363,7 @@
       "summary": "QatarEnergy has signed two long-term agreements to purchase up to 4 million tonnes of U.S. liquefied natural gas annually from Cheniere Energy through 2054, as the Gulf producer continues to...",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/06/2017-06-08T034144Z_275004737_RC1C2C08F6D0_RTRMADP_3_QATAR-ASIA-LNG.jpg",
       "en": {
         "headline": "QatarEnergy Signs Long-Term Deal to Buy U.S. LNG as Iran War Disrupts Exports",
@@ -363,7 +380,7 @@
       "summary": "Singapore-listed offshore vessel owner and shipyard group Marco Polo Marine has established a joint venture in South Korea with local partner NSEL, strengthening its presence in the country&#8217;s offshore vessel market. The new company, Baramgil Offshore, will focus on vessel o",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/09/Marco-Polo-CSOV.jpg",
       "en": {
         "headline": "Marco Polo Marine expands Korean offshore push with new JV",
@@ -380,7 +397,7 @@
       "summary": "Idan Ofer&#8217;s Eastern Pacific Shipping (EPS) has named its first ammonia dual-fuel very large ammonia carrier (VLAC) at HD Hyundai Heavy Industries in South Korea, bringing the 93,000 cu m vessel closer to its commercial debut. The Singapore-based owner christened the vessel ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Terra-Clove-first-ammonia-powered-VLAC.jpg",
       "en": {
         "headline": "Eastern Pacific takes wraps off first ammonia dual-fuel VLAC",
@@ -397,7 +414,7 @@
       "summary": "French geophysical company Viridien has launched the first phase of a major seismic reimaging programme offshore Guyana, targeting more than 10,000 sq km of existing 3D data in and around the country&#8217;s emerging shallow-water exploration acreage. The project covers the Kaiet",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Viridien.jpg",
       "en": {
         "headline": "Viridien sharpens exploration picture beyond Guyana&#8217;s Stabroek block",
@@ -414,7 +431,7 @@
       "summary": "Luxembourg-incorporated shipowner Seven Yield has secured five-year time charters for two LNG-powered car carriers with a major Chinese automobile manufacturer, extending employment for the vessels into the next decade. The agreements cover the 2020-built, 7,500 ceu sisterships S",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Siem-Aristotle-Seven-Yield.jpg",
       "en": {
         "headline": "Seven Yield secures Chinese charter deal for car carrier pair",
@@ -431,7 +448,7 @@
       "summary": "Danish shipowner Maersk Tankers has moved closer to converting four very large ammonia carriers to run on the cargo they transport after its retrofit proposal was selected for support under the European Union&#8217;s Innovation Fund. The project, known as RIPPLE, involves install",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 17,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Maersk-Tankers.jpg",
       "en": {
         "headline": "Maersk Tankers lines up EU backing for four VLAC ammonia conversions",
@@ -448,7 +465,7 @@
       "summary": "The Philippines is exploring deeper cooperation with Taiwan on protecting undersea cables and addressing \"gray-zone\" activity, despite Manila's one-China policy, which recognizes Beijing and not Taipei, a Philippine diplomat said on Wednesday.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/2025-10-31T091343Z_2118915595_RC2TS1AE5JO8_RTRMADP_3_USA-CHINA-PHILIPPINES-DEFENSE.jpg",
       "en": {
         "headline": "Philippines Exploring Deeper Cooperation with Taiwan to Protect Undersea Cables",
@@ -465,7 +482,7 @@
       "summary": "Saudi Arabia is in talks with foreign governments to give state-owned Aramco access to their strategic oil storage, as the kingdom seeks to make its supplies to customers more resilient during disruptions, Chief Executive Officer Amin Nasser said.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T050419Z_690210157_RC2H1MA5D3GD_RTRMADP_3_IRAN-CRISIS-SAUDI-OIL-800x533.jpg",
       "en": {
         "headline": "Saudi Arabia Seeks Access to Overseas Oil Storage for Aramco",
@@ -482,28 +499,11 @@
       "summary": "The global shipbuilding boom is gathering pace, with orderbooks surpassing their previous 2008 peak, Chinese yards tightening their grip on the market and tanker owners increasingly turning to inexperienced builders to secure delivery slots. New figures from BIMCO put the global ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Hengli-1.jpg",
       "en": {
         "headline": "Global shipbuilding boom moves into overdrive",
         "summary": "The global shipbuilding boom is gathering pace, with orderbooks surpassing their previous 2008 peak, Chinese yards tightening their grip on the market and tanker owners increasingly turning to inexperienced builders to secure delivery slots. New figures from BIMCO put the global ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "China adds new state-owned shipbuilding player in Guangzhou",
-      "link": "https://splash247.com/china-adds-new-state-owned-shipbuilding-player-in-guangzhou/",
-      "pubDate": "Thu, 22 Oct 2026 07:56:26 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Guangzhou has formally launched a new state-owned maritime industrial group as the southern Chinese shipbuilding hub looks to expand its manufacturing capacity and bring more of the industry&#8217;s supply chain under local ownership. Guangzhou Marine Equipment Group, established",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Guangzhou-SASAC.jpg",
-      "en": {
-        "headline": "China adds new state-owned shipbuilding player in Guangzhou",
-        "summary": "Guangzhou has formally launched a new state-owned maritime industrial group as the southern Chinese shipbuilding hub looks to expand its manufacturing capacity and bring more of the industry&#8217;s supply chain under local ownership. Guangzhou Marine Equipment Group, established",
         "source": "Splash247"
       }
     }
