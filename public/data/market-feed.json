@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-24T10:01:41.326Z",
+    "generatedAt": "2026-10-24T15:06:02.292Z",
     "benchmarkAsOf": "2026-10-23",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 963,
-        "deltaPct": 2.77,
+        "deltaPct": 0,
         "asOf": "2026-10-23T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1351.5,
-        "deltaPct": 0.78,
+        "deltaPct": 0,
         "asOf": "2026-10-23T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 894,
-        "deltaPct": 2.05,
+        "deltaPct": 0,
         "asOf": "2026-10-23T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 766,
-        "deltaPct": 0.39,
+        "deltaPct": 0,
         "asOf": "2026-10-23T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1446,
-        "deltaPct": 0.8,
+        "deltaPct": 0,
         "asOf": "2026-10-23T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 697,
-        "deltaPct": 1.83,
+        "deltaPct": 0,
         "asOf": "2026-10-23T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -172,7 +172,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 817,
-        "deltaPct": 1.43,
+        "deltaPct": 0,
         "asOf": "2026-10-23T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1421,
-        "deltaPct": -0.07,
+        "deltaPct": 0,
         "asOf": "2026-10-23T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 601.5,
-        "deltaPct": 0.17,
+        "deltaPct": 0,
         "asOf": "2026-10-23T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -244,7 +244,7 @@
       "summary": "The Trump administration on Friday unveiled its America First Seafood Strategy, outlining plans to strengthen the U.S. commercial fishing industry through regulatory reform, investment in fishing vessels and shoreside infrastructure,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/NOAA-Fishing-Strategy-800x533.jpg",
       "en": {
         "headline": "Trump Administration Unveils Seafood Strategy to Boost U.S. Fishing Fleet and Domestic Production",
@@ -261,7 +261,7 @@
       "summary": "The Maritime Administration (MARAD) recently embraced VCM when procuring a new generation of training ships for five of the six state maritime academies. To date, MARAD contractor TOTE Services has delivered four of the five vessels.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/09/NSMV-II-Patriot-State-Delivery.jpg",
       "en": {
         "headline": "MARAD’s Training Ship Success Offers a Blueprint for U.S. Shipbuilding",
@@ -278,7 +278,7 @@
       "summary": "The Trump administration is proposing to extend its suspension of port fees targeting China-linked vessels for another two months, pushing their potential return into January 2027 as Washington and Beijing...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 15,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/11/2025-10-17T183340Z_1460827719_RC2Q0GAQVMG7_RTRMADP_3_USA-SHIPPING-PORT-FEES-800x534.jpg",
       "en": {
         "headline": "USTR Proposes Extending China Ship Port Fee Suspension Through January 2027",
@@ -295,7 +295,7 @@
       "summary": "US crude oil exports to Asia are set to hit multi-year lows after the Iran war disrupted global shipping and pushed the cost to lease a tanker for the Pacific journey to a record of almost $80 million.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 15,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
       "en": {
         "headline": "Record Tanker Rates Threaten to Push U.S. Oil Exports to Asia to Seven-Year Low",
@@ -312,7 +312,7 @@
       "summary": "A tanker carrying Russian diesel is expected to arrive in Norfolk, Virginia, on November 2, potentially becoming the first such shipment to reach the United States in more than three...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 16,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/PVT-AZURA.jpg",
       "en": {
         "headline": "Rare Russian Diesel Shipment Expected in Norfolk November 2, Ahead of Tanker Bound for New York",
@@ -329,7 +329,7 @@
       "summary": "South Korea’s push to help rebuild the American shipbuilding industry is moving beyond investments in existing shipyards and toward the development of entirely new production capacity. The latest example comes...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 17,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/2025-09-15T045849Z_558150231_RC2T65AJW1VH_RTRMADP_3_USA-TRUMP-TARIFFS-SOUTHKOREA-800x542.jpg",
       "en": {
         "headline": "HD Hyundai–Kiewit Shipyard Plan Signals New Phase in South Korea’s U.S. Shipbuilding Push",
@@ -346,7 +346,7 @@
       "summary": "The first Russian diesel bound for the US following a surprise agreement reached between Moscow and US President Donald Trump is aboard a tanker heading for New York, ship-tracking data showed on Friday.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 17,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/11/shutterstock_167611460.jpg",
       "en": {
         "headline": "First Russian Diesel From Putin-Trump Deal Heading for US",
@@ -363,7 +363,7 @@
       "summary": "A little-known South Korean shipowner dominated oil transits through the Strait of Hormuz in September, data from intelligence firms suggest, with the group’s vessels moving more barrels than the next three owners combined.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 22,
+      "hoursAgo": 27,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/03/shutterstock_1779485036.jpg",
       "en": {
         "headline": "South Korean Shipowner Sinokor Dominates Hormuz Transits as Oil Flows Rebound",
@@ -380,7 +380,7 @@
       "summary": "UK offshore services player OEG Marine Services has ordered three crew transfer vessels (CTVs) from Isle of Wight shipbuilder Diverse Marine as part of its offshore wind fleet expansion and renewal programme. The vessels, based on Chartwell Marine&#8217;s Brevity SL class design,",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 24,
+      "hoursAgo": 29,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/OEG-Fulmar.jpg",
       "en": {
         "headline": "OEG books three more offshore wind CTVs at Diverse Marine",
@@ -397,7 +397,7 @@
       "summary": "Mining giant Rio Tinto has approved a $1.9bn investment in a major bauxite expansion in Australia&#8217;s Queensland state, including an upgrade of its export facilities to accommodate larger capesize bulk carriers. The Kangwinan project on the western Cape York Peninsula will ad",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 24,
+      "hoursAgo": 29,
       "imageUrl": "https://splash247.com/wp-content/uploads/2019/07/Bocimar-capesize-Mineral-Noble-e1752060008103.jpg",
       "en": {
         "headline": "Rio Tinto targets larger capesizes in $1.9bn Australian bauxite push",
@@ -414,7 +414,7 @@
       "summary": "HD Hyundai Co 267250.KS said on Friday it has signed a deal with Kiewit Corp to start building an advanced US shipyard next year, with operations expected to begin in 2029 and create about 3,000 domestic jobs.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 25,
+      "hoursAgo": 30,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/2025-09-15T045849Z_558150231_RC2T65AJW1VH_RTRMADP_3_USA-TRUMP-TARIFFS-SOUTHKOREA-800x542.jpg",
       "en": {
         "headline": "HD Hyundai to Build US Shipyard with Kiewit, Create 3,000 Jobs",
@@ -431,7 +431,7 @@
       "summary": "Seafarer fatigue, mental health and reluctance to report mistakes should become key considerations for marine insurers, banks and investors, according to new research warning that shipping is overlooking significant commercial risks hidden in its own data. The Sustainable Shippin",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 25,
+      "hoursAgo": 30,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/BritanniaFinal.jpg",
       "en": {
         "headline": "Fatigue, fear and the flaws in shipping&#8217;s safety data",
@@ -448,7 +448,7 @@
       "summary": "Sierra Leone has launched a new national shipping company backed by China&#8217;s Zhejiang Xiehai Group, with ambitions to develop a fleet of 50 vessels and capture a greater share of the country&#8217;s international cargo trade. President Julius Maada Bio inaugurated Sierra Leo",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 26,
+      "hoursAgo": 31,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/SLOSCO-Sierra-Leone-Ocean-Shipping-Co.jpg",
       "en": {
         "headline": "Sierra Leone launches Chinese-backed national shipping company",
@@ -465,7 +465,7 @@
       "summary": "The Trump administration has begun authorising the sale of sanctioned oil tankers to approved investors who must then refurbish the vessels before returning them to legitimate crude trades, US energy secretary Chris Wright revealed on Monday, as Washington scrambles to contain so",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 26,
+      "hoursAgo": 31,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/12/Oil-is-War-Greenpeace.jpg",
       "en": {
         "headline": "Splash Wrap: Sanctions, spreadsheets and shipyards",
@@ -482,7 +482,7 @@
       "summary": "Nasdaq-listed Greek dry bulk owner Icon Energy is facing pressure from a significant shareholder to overhaul its capital structure and board, following accusations that repeated equity issuances have heavily diluted ordinary investors. Canada&#8217;s Hampton Financial, which hold",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 26,
+      "hoursAgo": 31,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/03/Icon-Energy.jpg",
       "en": {
         "headline": "Icon Energy faces shareholder revolt over dilution",
@@ -499,7 +499,7 @@
       "summary": "Greek shipowner Panos Laskaridis is making a return to the newcastlemax newbuilding market, with his Lavinia Bulkers linked to an order for four vessels worth around $312m in China. Shipbroking sources have identified Zhoushan Changhong International Shipyard as the builder of th",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 27,
+      "hoursAgo": 32,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/02/Changhong-International.jpg",
       "en": {
         "headline": "Laskaridis linked to $312m newcastlemax order in China",
