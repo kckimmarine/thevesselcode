@@ -1,11 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-10-24T20:00:25.526Z",
+    "generatedAt": "2026-10-25T02:25:54.480Z",
     "benchmarkAsOf": "2026-10-23",
     "fetchStatus": "partial",
     "rssErrors": [
-      "Maritime Executive: HTTP 404",
-      "Splash247: This operation was aborted"
+      "Maritime Executive: HTTP 404"
     ],
     "marketErrors": [
       "MGO_05S_KRPUS_USD: HTTP 400",
@@ -237,6 +236,23 @@
   },
   "news": [
     {
+      "title": "Latvia Emerges As Top-Five Country Used To Ship Russian Grain",
+      "link": "https://gcaptain.com/latvia-emerges-as-top-five-country-used-to-ship-russian-grain/",
+      "pubDate": "Sun, 25 Oct 2026 01:34:43 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "MOSCOW, Oct 23 (Reuters)&#160;&#8211;&#160;Latvia, a member of the European Union and NATO, has emerged as one of the top five&#160;countries used to ship&#160;Russian grain this marketing season despite strained political...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/07/2022-07-03T152554Z_1182988482_RC2S3V9587FM_RTRMADP_3_UKRAINE-CRISIS-TURKEY-GRAIN-800x533.jpg",
+      "en": {
+        "headline": "Latvia Emerges As Top-Five Country Used To Ship Russian Grain",
+        "summary": "MOSCOW, Oct 23 (Reuters)&#160;&#8211;&#160;Latvia, a member of the European Union and NATO, has emerged as one of the top five&#160;countries used to ship&#160;Russian grain this marketing season despite strained political...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "UAE Shuts All Beaches As Neighbors Grapple With Oil Spill",
       "link": "https://gcaptain.com/uae-shuts-all-beaches-as-neighbors-grapple-with-oil-spill/",
       "pubDate": "Sat, 24 Oct 2026 19:07:31 +0000",
@@ -245,7 +261,7 @@
       "summary": "Oct 24 (Reuters)&#160;&#8211;&#160;Ras Al Khaimah authorities said on Saturday that all beaches in the emirate would be closed until further notice, a day after anoffshore&#160;oil leak prompted beach closures in...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-23T181248Z_1601336686_RC269OAO70X9_RTRMADP_3_UAE-OIL-SPILL-800x452.jpg",
       "en": {
         "headline": "UAE Shuts All Beaches As Neighbors Grapple With Oil Spill",
@@ -262,7 +278,7 @@
       "summary": "By&#160;Devon Pendleton and Fabiano Maisonnave Oct 22, 2026 (Bloomberg) &#8211;To hedge-fund billionaire Louis Bacon, the crystalline waters and densely forested riverways of the Gulf of Chiriqui in western Panama are an...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/07/2025-07-25T034618Z_1127517436_RC2K6DAPLADD_RTRMADP_3_CKH-HOLDINGS-PORTS-DEADLINE-800x533.jpg",
       "en": {
         "headline": "Two Wealthy Americans Face Off In Bitter Feud Over Panama Port",
@@ -279,7 +295,7 @@
       "summary": "The Trump administration on Friday unveiled its America First Seafood Strategy, outlining plans to strengthen the U.S. commercial fishing industry through regulatory reform, investment in fishing vessels and shoreside infrastructure,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 22,
+      "hoursAgo": 28,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/NOAA-Fishing-Strategy-800x533.jpg",
       "en": {
         "headline": "Trump Administration Unveils Seafood Strategy to Boost U.S. Fishing Fleet and Domestic Production",
@@ -296,7 +312,7 @@
       "summary": "The Maritime Administration (MARAD) recently embraced VCM when procuring a new generation of training ships for five of the six state maritime academies. To date, MARAD contractor TOTE Services has delivered four of the five vessels.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 23,
+      "hoursAgo": 30,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/09/NSMV-II-Patriot-State-Delivery.jpg",
       "en": {
         "headline": "MARAD’s Training Ship Success Offers a Blueprint for U.S. Shipbuilding",
@@ -313,7 +329,7 @@
       "summary": "The Trump administration is proposing to extend its suspension of port fees targeting China-linked vessels for another two months, pushing their potential return into January 2027 as Washington and Beijing...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 25,
+      "hoursAgo": 31,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/11/2025-10-17T183340Z_1460827719_RC2Q0GAQVMG7_RTRMADP_3_USA-SHIPPING-PORT-FEES-800x534.jpg",
       "en": {
         "headline": "USTR Proposes Extending China Ship Port Fee Suspension Through January 2027",
@@ -330,7 +346,7 @@
       "summary": "US crude oil exports to Asia are set to hit multi-year lows after the Iran war disrupted global shipping and pushed the cost to lease a tanker for the Pacific journey to a record of almost $80 million.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 25,
+      "hoursAgo": 32,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
       "en": {
         "headline": "Record Tanker Rates Threaten to Push U.S. Oil Exports to Asia to Seven-Year Low",
@@ -347,7 +363,7 @@
       "summary": "A tanker carrying Russian diesel is expected to arrive in Norfolk, Virginia, on November 2, potentially becoming the first such shipment to reach the United States in more than three...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 26,
+      "hoursAgo": 33,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/PVT-AZURA.jpg",
       "en": {
         "headline": "Rare Russian Diesel Shipment Expected in Norfolk November 2, Ahead of Tanker Bound for New York",
@@ -364,7 +380,7 @@
       "summary": "South Korea’s push to help rebuild the American shipbuilding industry is moving beyond investments in existing shipyards and toward the development of entirely new production capacity. The latest example comes...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 27,
+      "hoursAgo": 33,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/2025-09-15T045849Z_558150231_RC2T65AJW1VH_RTRMADP_3_USA-TRUMP-TARIFFS-SOUTHKOREA-800x542.jpg",
       "en": {
         "headline": "HD Hyundai–Kiewit Shipyard Plan Signals New Phase in South Korea’s U.S. Shipbuilding Push",
@@ -381,7 +397,7 @@
       "summary": "The first Russian diesel bound for the US following a surprise agreement reached between Moscow and US President Donald Trump is aboard a tanker heading for New York, ship-tracking data showed on Friday.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 27,
+      "hoursAgo": 33,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/11/shutterstock_167611460.jpg",
       "en": {
         "headline": "First Russian Diesel From Putin-Trump Deal Heading for US",
@@ -398,12 +414,46 @@
       "summary": "A little-known South Korean shipowner dominated oil transits through the Strait of Hormuz in September, data from intelligence firms suggest, with the group’s vessels moving more barrels than the next three owners combined.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 32,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/03/shutterstock_1779485036.jpg",
+      "hoursAgo": 39,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "South Korean Shipowner Sinokor Dominates Hormuz Transits as Oil Flows Rebound",
         "summary": "A little-known South Korean shipowner dominated oil transits through the Strait of Hormuz in September, data from intelligence firms suggest, with the group’s vessels moving more barrels than the next three owners combined.",
         "source": "gCaptain"
+      }
+    },
+    {
+      "title": "OEG books three more offshore wind CTVs at Diverse Marine",
+      "link": "https://splash247.com/oeg-books-three-more-offshore-wind-ctvs-at-diverse-marine/",
+      "pubDate": "Fri, 23 Oct 2026 09:58:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "UK offshore services player OEG Marine Services has ordered three crew transfer vessels (CTVs) from Isle of Wight shipbuilder Diverse Marine as part of its offshore wind fleet expansion and renewal programme. The vessels, based on Chartwell Marine&#8217;s Brevity SL class design,",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 40,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/OEG-Fulmar.jpg",
+      "en": {
+        "headline": "OEG books three more offshore wind CTVs at Diverse Marine",
+        "summary": "UK offshore services player OEG Marine Services has ordered three crew transfer vessels (CTVs) from Isle of Wight shipbuilder Diverse Marine as part of its offshore wind fleet expansion and renewal programme. The vessels, based on Chartwell Marine&#8217;s Brevity SL class design,",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Rio Tinto targets larger capesizes in $1.9bn Australian bauxite push",
+      "link": "https://splash247.com/rio-tinto-targets-larger-capesizes-in-1-9bn-australian-bauxite-push/",
+      "pubDate": "Fri, 23 Oct 2026 09:28:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Mining giant Rio Tinto has approved a $1.9bn investment in a major bauxite expansion in Australia&#8217;s Queensland state, including an upgrade of its export facilities to accommodate larger capesize bulk carriers. The Kangwinan project on the western Cape York Peninsula will ad",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 40,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2019/07/Bocimar-capesize-Mineral-Noble-e1752060008103.jpg",
+      "en": {
+        "headline": "Rio Tinto targets larger capesizes in $1.9bn Australian bauxite push",
+        "summary": "Mining giant Rio Tinto has approved a $1.9bn investment in a major bauxite expansion in Australia&#8217;s Queensland state, including an upgrade of its export facilities to accommodate larger capesize bulk carriers. The Kangwinan project on the western Cape York Peninsula will ad",
+        "source": "Splash247"
       }
     },
     {
@@ -415,8 +465,8 @@
       "summary": "HD Hyundai Co 267250.KS said on Friday it has signed a deal with Kiewit Corp to start building an advanced US shipyard next year, with operations expected to begin in 2029 and create about 3,000 domestic jobs.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 35,
-      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 41,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "HD Hyundai to Build US Shipyard with Kiewit, Create 3,000 Jobs",
         "summary": "HD Hyundai Co 267250.KS said on Friday it has signed a deal with Kiewit Corp to start building an advanced US shipyard next year, with operations expected to begin in 2029 and create about 3,000 domestic jobs.",
@@ -424,20 +474,37 @@
       }
     },
     {
-      "title": "Nor-Shipping brings new Focus to AI, Ports and Marketing in 2027",
-      "link": "https://gcaptain.com/nor-shipping-brings-new-focus-to-ai-ports-and-marketing-in-2027/",
-      "pubDate": "Thu, 22 Oct 2026 22:50:40 +0000",
-      "source": "gCaptain",
+      "title": "Fatigue, fear and the flaws in shipping&#8217;s safety data",
+      "link": "https://splash247.com/fatigue-fear-and-the-flaws-in-shippings-safety-data/",
+      "pubDate": "Fri, 23 Oct 2026 08:15:54 +0000",
+      "source": "Splash247",
       "category": "Trade",
-      "summary": "Nor-Shipping is revamping its knowledge-sharing offer with a brand new stage created for day-long ‘deep dives’ into fast-moving and strategically important subjects. Christened Focus Stage, the fresh platform will be...",
+      "summary": "Seafarer fatigue, mental health and reluctance to report mistakes should become key considerations for marine insurers, banks and investors, according to new research warning that shipping is overlooking significant commercial risks hidden in its own data. The Sustainable Shippin",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 45,
-      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 42,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/BritanniaFinal.jpg",
       "en": {
-        "headline": "Nor-Shipping brings new Focus to AI, Ports and Marketing in 2027",
-        "summary": "Nor-Shipping is revamping its knowledge-sharing offer with a brand new stage created for day-long ‘deep dives’ into fast-moving and strategically important subjects. Christened Focus Stage, the fresh platform will be...",
-        "source": "gCaptain"
+        "headline": "Fatigue, fear and the flaws in shipping&#8217;s safety data",
+        "summary": "Seafarer fatigue, mental health and reluctance to report mistakes should become key considerations for marine insurers, banks and investors, according to new research warning that shipping is overlooking significant commercial risks hidden in its own data. The Sustainable Shippin",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Sierra Leone launches Chinese-backed national shipping company",
+      "link": "https://splash247.com/sierra-leone-launches-chinese-backed-national-shipping-company/",
+      "pubDate": "Fri, 23 Oct 2026 08:00:58 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Sierra Leone has launched a new national shipping company backed by China&#8217;s Zhejiang Xiehai Group, with ambitions to develop a fleet of 50 vessels and capture a greater share of the country&#8217;s international cargo trade. President Julius Maada Bio inaugurated Sierra Leo",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 42,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/SLOSCO-Sierra-Leone-Ocean-Shipping-Co.jpg",
+      "en": {
+        "headline": "Sierra Leone launches Chinese-backed national shipping company",
+        "summary": "Sierra Leone has launched a new national shipping company backed by China&#8217;s Zhejiang Xiehai Group, with ambitions to develop a fleet of 50 vessels and capture a greater share of the country&#8217;s international cargo trade. President Julius Maada Bio inaugurated Sierra Leo",
+        "source": "Splash247"
       }
     }
   ]
