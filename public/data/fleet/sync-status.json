@@ -1,43 +1,48 @@
 {
   "v": 1,
-  "pipeline": "maritime-ingestion",
-  "completedAt": "2026-10-25T07:53:14.279Z",
+  "startedAt": "2026-10-26T07:11:55.398Z",
+  "completedAt": "2026-10-26T07:11:58.330Z",
   "offline": false,
-  "steps": [
-    {
-      "name": "ingest",
+  "steps": {
+    "ingest": {
       "ok": true,
       "exitCode": 0,
-      "durationMs": 2670,
-      "label": "fleet:ingest"
+      "durationMs": 2508,
+      "error": null
     },
-    {
-      "name": "generateEnrichment",
+    "generateEnrichment": {
       "ok": true,
-      "count": 831
+      "count": 831,
+      "reason": null,
+      "durationMs": 0
     },
-    {
-      "name": "enrich",
+    "enrich": {
       "ok": true,
       "exitCode": 0,
-      "durationMs": 205,
-      "label": "fleet:enrich"
+      "durationMs": 334,
+      "error": null
     },
-    {
-      "name": "normalizeChunks",
+    "ais": {
       "ok": true,
-      "normalized": 49634
+      "durationMs": 0,
+      "targets": 200,
+      "fetched": 0,
+      "skippedNoMmsi": 0,
+      "apiKeySet": false,
+      "warnings": [
+        "AISSTREAM_API_KEY not set — preserving existing snapshots"
+      ]
     }
-  ],
-  "warnings": [],
-  "validation": {
-    "ok": true,
-    "warnings": [],
-    "errors": [],
-    "vesselCount": 49634,
+  },
+  "checksums": {
+    "fleetIndexSha256": "0f8f825d6d7ed66363292385455e1512a126b45e03238c49bc0e889c2453fb6e",
     "chunkCount": 66,
-    "indexSha256": "6bd8d326418b7ce5e9d4fa8038c19a84a9bc2f394789fbdcdda646b0c269602f",
-    "generated": "2026-10-25T07:53:13.697Z",
-    "enrichedAt": "2026-10-25T07:53:13.892Z"
-  }
+    "vesselCount": 49634,
+    "fleetGenerated": "2026-10-26T07:11:57.863Z",
+    "fleetEnrichedAt": "2026-10-26T07:11:58.183Z"
+  },
+  "warnings": [
+    "AISSTREAM_API_KEY not set — preserving existing snapshots"
+  ],
+  "ok": true
 }
