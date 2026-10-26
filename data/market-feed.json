@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-26T18:00:22.950Z",
+    "generatedAt": "2026-10-26T22:28:46.804Z",
     "benchmarkAsOf": "2026-10-26",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 2628,
-      "deltaPct": -1.2,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-26T16:49:28.101Z"
     },
     "capesizeTc": {
       "value": 3726,
-      "deltaPct": -1.71,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-26T16:49:28.115Z"
     },
     "panamaxTc": {
       "value": 2075,
-      "deltaPct": -1.61,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-26T16:49:28.127Z"
@@ -236,6 +236,142 @@
   },
   "news": [
     {
+      "title": "SAT-JAM: Ships must learn to navigate without GPS",
+      "link": "https://splash247.com/sat-jam-ships-must-learn-to-navigate-without-gps/",
+      "pubDate": "Mon, 26 Oct 2026 21:07:00 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "A researcher in Denmark who has developed a new system for tracking satellite navigation interference from space has a stark warning for the shipping industry in today’s Maritime CEO interview: GPS can no longer be considered a dependable means of navigation. Kian Bostani Nezhad,",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Kian-2-nyhedsbrev-web.jpg",
+      "en": {
+        "headline": "SAT-JAM: Ships must learn to navigate without GPS",
+        "summary": "A researcher in Denmark who has developed a new system for tracking satellite navigation interference from space has a stark warning for the shipping industry in today’s Maritime CEO interview: GPS can no longer be considered a dependable means of navigation. Kian Bostani Nezhad,",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "World’s Largest Battery-Electric Ship Begins Commercial Service in South America",
+      "link": "https://gcaptain.com/worlds-largest-battery-electric-ship-begins-commercial-service-in-south-america/",
+      "pubDate": "Mon, 26 Oct 2026 20:59:57 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The world’s largest battery-electric ship has officially entered commercial service, marking a major milestone for the maritime industry and the growing use of electric propulsion in large passenger vessels. The...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Hull096-ArgentinaCrossing.jpg",
+      "en": {
+        "headline": "World’s Largest Battery-Electric Ship Begins Commercial Service in South America",
+        "summary": "The world’s largest battery-electric ship has officially entered commercial service, marking a major milestone for the maritime industry and the growing use of electric propulsion in large passenger vessels. The...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Shipping cuts training when it needs it most",
+      "link": "https://splash247.com/shipping-cuts-training-when-it-needs-it-most/",
+      "pubDate": "Mon, 26 Oct 2026 20:19:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Irene Rosberg, who runs the Blue MBA at Copenhagen Business School, returns to Splash today.  When business conditions become difficult, training is often one of the easiest budgets to cut. In shipping, that is becoming an increasingly dangerous habit. The industry is asking its ",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Indian-Seafarer-Cadet-Training-Recruitment-DGMA.jpeg",
+      "en": {
+        "headline": "Shipping cuts training when it needs it most",
+        "summary": "Irene Rosberg, who runs the Blue MBA at Copenhagen Business School, returns to Splash today.  When business conditions become difficult, training is often one of the easiest budgets to cut. In shipping, that is becoming an increasingly dangerous habit. The industry is asking its ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Tanker Disabled in Strait of Hormuz Attack, Another Vessel Reported on Fire in Persian Gulf",
+      "link": "https://gcaptain.com/tanker-disabled-in-strait-of-hormuz-attack-another-vessel-reported-on-fire-in-persian-gulf/",
+      "pubDate": "Mon, 26 Oct 2026 18:46:03 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Two new maritime security warnings issued Monday point to continued dangers for commercial shipping in the Middle East, with one tanker confirmed disabled by a projectile in the Strait of...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
+      "en": {
+        "headline": "Tanker Disabled in Strait of Hormuz Attack, Another Vessel Reported on Fire in Persian Gulf",
+        "summary": "Two new maritime security warnings issued Monday point to continued dangers for commercial shipping in the Middle East, with one tanker confirmed disabled by a projectile in the Strait of...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Hormuz Chaos Sparks Legal Showdown Over Global Tanker Pricing",
+      "link": "https://gcaptain.com/hormuz-chaos-sparks-legal-showdown-over-global-tanker-pricing/",
+      "pubDate": "Mon, 26 Oct 2026 18:30:47 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Commodity trader Mercuria Energy Group accused the Baltic Exchange of continuing to publish the world’s benchmark oil tanker rate, despite distortions caused by the Iran war, because it feared losing business to a competitor.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
+      "en": {
+        "headline": "Hormuz Chaos Sparks Legal Showdown Over Global Tanker Pricing",
+        "summary": "Commodity trader Mercuria Energy Group accused the Baltic Exchange of continuing to publish the world’s benchmark oil tanker rate, despite distortions caused by the Iran war, because it feared losing business to a competitor.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Singapore Yards Chase Profit From Europe’s Offshore Wind Push",
+      "link": "https://gcaptain.com/singapore-yards-chase-profit-from-europes-offshore-wind-push/",
+      "pubDate": "Mon, 26 Oct 2026 18:22:16 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "At a shipyard in northern Singapore, a yellow platform towers over a maze of scaffolding and cranes. Resembling a 15-story building, the piece will be shipped halfway around the world to Europe to be installed into an offshore wind farm.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/03/offshore-wind.jpg",
+      "en": {
+        "headline": "Singapore Yards Chase Profit From Europe’s Offshore Wind Push",
+        "summary": "At a shipyard in northern Singapore, a yellow platform towers over a maze of scaffolding and cranes. Resembling a 15-story building, the piece will be shipped halfway around the world to Europe to be installed into an offshore wind farm.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "How Trump&#8217;s Energy Dominance Turned Into Hubris",
+      "link": "https://gcaptain.com/how-trumps-energy-dominance-turned-into-hubris/",
+      "pubDate": "Mon, 26 Oct 2026 16:36:05 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "When Donald Trump returned to the White House in 2025, “energy dominance” was the bedrock of his economic and foreign policy plans. But an unpopular war with Iran and soaring household fuel costs have now made energy policy a major liability for the US president heading into next",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-10T111832Z_327337754_RC29TMATWR3B_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-PLAN.jpg",
+      "en": {
+        "headline": "How Trump&#8217;s Energy Dominance Turned Into Hubris",
+        "summary": "When Donald Trump returned to the White House in 2025, “energy dominance” was the bedrock of his economic and foreign policy plans. But an unpopular war with Iran and soaring household fuel costs have now made energy policy a major liability for the US president heading into next",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Chouest Group Acquires Canada&#8217;s Horizon Maritime in Major Expansion",
+      "link": "https://gcaptain.com/chouest-group-acquires-canadas-horizon-maritime-in-major-expansion/",
+      "pubDate": "Mon, 26 Oct 2026 16:17:46 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Louisiana-based Chouest Group has acquired Canadian marine and offshore services provider Horizon Maritime, expanding its presence across Canada&#8217;s East and West coasts and into the Arctic. The deal, announced...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Arctic-Sunrise-4-1600x840-c-default@2x-800x420.jpg",
+      "en": {
+        "headline": "Chouest Group Acquires Canada&#8217;s Horizon Maritime in Major Expansion",
+        "summary": "The Louisiana-based Chouest Group has acquired Canadian marine and offshore services provider Horizon Maritime, expanding its presence across Canada&#8217;s East and West coasts and into the Arctic. The deal, announced...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Lawmakers Warn U.S. Ports and Banks Over Trump-Putin Russian Diesel Deal",
       "link": "https://gcaptain.com/lawmakers-warn-u-s-ports-and-banks-over-trump-putin-russian-diesel-deal/",
       "pubDate": "Mon, 26 Oct 2026 15:18:09 +0000",
@@ -244,7 +380,7 @@
       "summary": "A bipartisan group of U.S. lawmakers is warning major banks and port authorities against facilitating Russian diesel shipments under President Donald Trump&#8217;s controversial agreement with Vladimir Putin, raising the prospect...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/07/2021-07-01T220722Z_638130059_RC2YBO9YFPF8_RTRMADP_3_USA-TEXAS-POLLUTION-FORMALDEHYDE-800x533.jpg",
       "en": {
         "headline": "Lawmakers Warn U.S. Ports and Banks Over Trump-Putin Russian Diesel Deal",
@@ -261,7 +397,7 @@
       "summary": "Salvatore Molino Named President; Steven Kalil to Become Chief Executive Officer as John  B. Caddell II Continues as Chairman Caddell Dry Dock &#38; Repair Co., Inc. has announced a planned executive...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/IMG_7993.jpeg",
       "en": {
         "headline": "Caddell Dry Dock &#038; Repair Announces Leadership Transition",
@@ -278,7 +414,7 @@
       "summary": "Norwegian chemical tanker owner Odfjell has reportedly sold two 2011-built vessels for more than $62m as it continues reshaping its fleet. Shipbrokers identified the 46,098 dwt Bow Elm and 46,047 dwt Bow Lind as having been sold together, with the deal agreed on a surveys-passed ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2020/10/Odfjell-Fuel-cell.jpg",
       "en": {
         "headline": "Odfjell cashes in on chemical tanker pair in $62m-plus deal",
@@ -295,7 +431,7 @@
       "summary": "Monaco-based Transocean Maritime Agencies has ordered two 50,000 dwt chemical and product tankers at China&#8217;s Guangzhou Shipyard International (GSI), adding another vessel type to its expanding newbuilding programme. The CSSC-controlled yard recently signed the contract, mar",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Guangzhou-Shipyard-International-GSI.jpg",
       "en": {
         "headline": "Transocean expands newbuild programme with tanker duo",
@@ -312,7 +448,7 @@
       "summary": "India&#8217;s Transworld Shipping Lines has secured shareholder approval for the $42.78m acquisition of two containerships from another company within its controlling shareholder&#8217;s group, clearing a key hurdle in its ongoing fleet restructuring. The Navi Mumbai-based listed",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 6,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Transworld.jpg",
       "en": {
         "headline": "Transworld gets green light for $43m boxship deal",
@@ -329,7 +465,7 @@
       "summary": "Saudi shipping giant Bahri has ordered three very large crude carriers at International Maritime Industries (IMI), committing SAR1.692bn ($451m) to expand its tanker fleet and support shipbuilding at home. The 320,000 dwt vessels will be built at IMI&#8217;s Ras Al Khair facility",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Bahri-VLCC.jpg",
       "en": {
         "headline": "Bahri turns to homegrown yard for $451m VLCC trio",
@@ -346,7 +482,7 @@
       "summary": "Greek shipowner Petros Panagiotidis is continuing to rearrange his LPG fleet across Nasdaq-listed companies, with AI OKTO agreeing to sell the 2015-built Dream Arrax to sister company Robin Energy for $18m. The latest transaction involves the 5,000 cu m gas carrier moving between",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Toro-Dream-Vermax-Roland-Delhaxhe-Marine-Traffic.jpg",
       "en": {
         "headline": "Panagiotidis moves another LPG carrier in $18m fleet reshuffle",
@@ -363,147 +499,11 @@
       "summary": "An oil spill from a damaged tanker off the coast of the United Arab Emirates has widened, satellite images showed, triggering more beach closures and raising environmental concerns.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-24T113850Z_845834820_RC2N9OA4P7JX_RTRMADP_3_UAE-OIL-SPILL.jpg",
       "en": {
         "headline": "Oil Spill Off UAE Widens, Satellite Images Show, Prompting More Beach Closures",
         "summary": "An oil spill from a damaged tanker off the coast of the United Arab Emirates has widened, satellite images showed, triggering more beach closures and raising environmental concerns.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Dubai’s DP World in Talks on Alliance With Northern Canada Port",
-      "link": "https://gcaptain.com/dubais-dp-world-in-talks-on-alliance-with-northern-canada-port/",
-      "pubDate": "Mon, 26 Oct 2026 10:41:05 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "Dubai’s DP World Ltd. is set to unveil a deal backing potential development of Canada’s port of Churchill, a northern outpost that Prime Minister Mark Carney aims to expand for exports to Europe and other markets.",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 7,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/08/2560px-Churchill_Seaport_1996-08-800x492.png",
-      "en": {
-        "headline": "Dubai’s DP World in Talks on Alliance With Northern Canada Port",
-        "summary": "Dubai’s DP World Ltd. is set to unveil a deal backing potential development of Canada’s port of Churchill, a northern outpost that Prime Minister Mark Carney aims to expand for exports to Europe and other markets.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "NMDC Energy lands $763m in Saudi Aramco offshore contracts",
-      "link": "https://splash247.com/nmdc-energy-lands-763m-in-saudi-aramco-offshore-contracts/",
-      "pubDate": "Mon, 26 Oct 2026 10:33:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "UAE-based offshore engineering and construction player NMDC Energy has secured three new offshore projects from Saudi Aramco worth a combined AED 2.8bn ($763.3m). The Abu Dhabi-listed contractor said in a stock exchange filing that it received a letter of award for engineering, p",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Marjan-oil-field-Saudi-Aramco.jpg",
-      "en": {
-        "headline": "NMDC Energy lands $763m in Saudi Aramco offshore contracts",
-        "summary": "UAE-based offshore engineering and construction player NMDC Energy has secured three new offshore projects from Saudi Aramco worth a combined AED 2.8bn ($763.3m). The Abu Dhabi-listed contractor said in a stock exchange filing that it received a letter of award for engineering, p",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Equinor extends Havila PSV pair for one more year",
-      "link": "https://splash247.com/equinor-extends-havila-psv-pair-for-one-more-year/",
-      "pubDate": "Mon, 26 Oct 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norwegian offshore vessel owner Havila Shipping has secured another year of work for two of its platform supply vessels (PSVs) after compatriot energy major Equinor exercised contract extension options. The latest extensions will keep the 2012-built Havila Charisma on charter unt",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/11/Havila-Charisma.jpg",
-      "en": {
-        "headline": "Equinor extends Havila PSV pair for one more year",
-        "summary": "Norwegian offshore vessel owner Havila Shipping has secured another year of work for two of its platform supply vessels (PSVs) after compatriot energy major Equinor exercised contract extension options. The latest extensions will keep the 2012-built Havila Charisma on charter unt",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Great Eastern continues secondhand spending with LPG carrier deal",
-      "link": "https://splash247.com/great-eastern-continues-secondhand-spending-with-lpg-carrier-deal/",
-      "pubDate": "Mon, 26 Oct 2026 09:38:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "India&#8217;s Great Eastern Shipping has struck another secondhand vessel deal, agreeing to acquire a 2015-built very large gas carrier as it continues expanding its diversified fleet. The Mumbai-based listed owner said that it has contracted to buy the approximately 82,000 cu m ",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Great-Eastern-Shipping-VLGC.jpg",
-      "en": {
-        "headline": "Great Eastern continues secondhand spending with LPG carrier deal",
-        "summary": "India&#8217;s Great Eastern Shipping has struck another secondhand vessel deal, agreeing to acquire a 2015-built very large gas carrier as it continues expanding its diversified fleet. The Mumbai-based listed owner said that it has contracted to buy the approximately 82,000 cu m ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "VLCC delivery wave set to reach levels not seen since the 1970s",
-      "link": "https://splash247.com/vlcc-delivery-wave-set-to-reach-levels-not-seen-since-the-1970s/",
-      "pubDate": "Mon, 26 Oct 2026 08:45:35 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The VLCC sector is heading for its biggest delivery wave in half a century, with more than 100 new supertankers scheduled to enter service annually in both 2028 and 2029, according to Hartland Shipping Services. The scale recalls the supertanker boom of the 1970s. BIMCO&#8217;s h",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-Heavy-VLCC-Dynacom.jpg",
-      "en": {
-        "headline": "VLCC delivery wave set to reach levels not seen since the 1970s",
-        "summary": "The VLCC sector is heading for its biggest delivery wave in half a century, with more than 100 new supertankers scheduled to enter service annually in both 2028 and 2029, according to Hartland Shipping Services. The scale recalls the supertanker boom of the 1970s. BIMCO&#8217;s h",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Black Sea bloodshed outstrips Hormuz",
-      "link": "https://splash247.com/black-sea-bloodshed-outstrips-hormuz/",
-      "pubDate": "Mon, 26 Oct 2026 08:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "A relentless series of attacks on merchant ships and port infrastructure over the past four days has underscored the Black Sea&#8217;s emergence as the world&#8217;s deadliest shipping route, with seafarer fatalities this year now exceeding those recorded around the Strait of Hor",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Khoryv-X.com_.jpg",
-      "en": {
-        "headline": "Black Sea bloodshed outstrips Hormuz",
-        "summary": "A relentless series of attacks on merchant ships and port infrastructure over the past four days has underscored the Black Sea&#8217;s emergence as the world&#8217;s deadliest shipping route, with seafarer fatalities this year now exceeding those recorded around the Strait of Hor",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Russia Says It Hit Two Cargo Vessels And Ukrainian Logistics Hubs",
-      "link": "https://gcaptain.com/russia-says-it-hit-two-cargo-vessels-and-ukrainian-logistics-hubs/",
-      "pubDate": "Sun, 25 Oct 2026 20:21:48 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "MOSCOW, Oct 25 (Reuters) &#8211; The Russian Defence Ministry said on Sunday that its drones had struck a cargo vessel bound for the Black Sea port of Chornomorsk in an overnight attack and another...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 21,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-21T060028Z_1720708531_RC22VNAKOHQ4_RTRMADP_3_EUROPE-DEFENCE-DRONES-800x533.jpg",
-      "en": {
-        "headline": "Russia Says It Hit Two Cargo Vessels And Ukrainian Logistics Hubs",
-        "summary": "MOSCOW, Oct 25 (Reuters) &#8211; The Russian Defence Ministry said on Sunday that its drones had struck a cargo vessel bound for the Black Sea port of Chornomorsk in an overnight attack and another...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Sri Lanka Rescues 40 Iranian Sailors",
-      "link": "https://gcaptain.com/sri-lanka-rescues-40-iranian-sailors/",
-      "pubDate": "Sun, 25 Oct 2026 17:56:45 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By Uditha Jayasinghe COLOMBO, Oct 25 (Reuters)&#160;&#8211;&#160;Sri Lanka coordinated the rescue of 40 Iranian sailors from multiple commercial ships in international waters off the coast of the country and supported...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 24,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/03/2026-03-06T080844Z_768031397_RC2MXJAO3M7B_RTRMADP_3_IRAN-CRISIS-SHIP-SRI-LANKA.jpg",
-      "en": {
-        "headline": "Sri Lanka Rescues 40 Iranian Sailors",
-        "summary": "By Uditha Jayasinghe COLOMBO, Oct 25 (Reuters)&#160;&#8211;&#160;Sri Lanka coordinated the rescue of 40 Iranian sailors from multiple commercial ships in international waters off the coast of the country and supported...",
         "source": "gCaptain"
       }
     }
