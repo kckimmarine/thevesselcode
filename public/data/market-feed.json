@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-27T03:00:41.033Z",
+    "generatedAt": "2026-10-27T11:18:18.738Z",
     "benchmarkAsOf": "2026-10-26",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 1045,
-        "deltaPct": 0.48,
+        "deltaPct": 0,
         "asOf": "2026-10-26T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 970,
-        "deltaPct": 2.11,
+        "deltaPct": 0,
         "asOf": "2026-10-26T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -236,26 +236,128 @@
   },
   "news": [
     {
-      "title": "As Attacks Mount, Shipping Faces an Uncomfortable Question: Are Safety Rules Fit for War?",
-      "link": "https://gcaptain.com/as-attacks-mount-shipping-faces-an-uncomfortable-question-are-safety-rules-fit-for-war/",
-      "pubDate": "Mon, 26 Oct 2026 23:43:42 +0000",
-      "source": "gCaptain",
+      "title": "Eni locks in offshore contractors for Cyprus gas project",
+      "link": "https://splash247.com/eni-locks-in-offshore-contractors-for-cyprus-gas-project/",
+      "pubDate": "Tue, 27 Oct 2026 11:00:00 +0000",
+      "source": "Splash247",
       "category": "Trade",
-      "summary": "October has become the worst month on record for attacks on merchant ships in and around the Strait of Hormuz, and oil is now washing onto the beaches of the United Arab Emirates.",
+      "summary": "Italian energy major Eni has signed the main engineering, procurement, construction, and drilling contracts for the Cronos gas development offshore Cyprus, with a string of major offshore contractors securing work on the project. The contracts, valued by local media at around $1.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-22T121323Z_1819482205_RC26ELATGE3R_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Eni-headquarters.jpg",
       "en": {
-        "headline": "As Attacks Mount, Shipping Faces an Uncomfortable Question: Are Safety Rules Fit for War?",
-        "summary": "October has become the worst month on record for attacks on merchant ships in and around the Strait of Hormuz, and oil is now washing onto the beaches of the United Arab Emirates.",
-        "source": "gCaptain"
+        "headline": "Eni locks in offshore contractors for Cyprus gas project",
+        "summary": "Italian energy major Eni has signed the main engineering, procurement, construction, and drilling contracts for the Cronos gas development offshore Cyprus, with a string of major offshore contractors securing work on the project. The contracts, valued by local media at around $1.",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Asyad Group prices $132m shipping stake sale",
+      "link": "https://splash247.com/asyad-group-prices-132m-shipping-stake-sale/",
+      "pubDate": "Tue, 27 Oct 2026 10:30:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Oman&#8217;s Asyad Group has priced an institutional share sale in its listed shipping subsidiary at OMR50.8m ($132m), reducing its ownership as part of a move to broaden the company&#8217;s shareholder base. Muscat-listed Asyad Shipping said the institutional bookbuilding proces",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/04/asyad-bulker.jpg",
+      "en": {
+        "headline": "Asyad Group prices $132m shipping stake sale",
+        "summary": "Oman&#8217;s Asyad Group has priced an institutional share sale in its listed shipping subsidiary at OMR50.8m ($132m), reducing its ownership as part of a move to broaden the company&#8217;s shareholder base. Muscat-listed Asyad Shipping said the institutional bookbuilding proces",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Zijin Mining orders bulker pair for African mineral trade",
+      "link": "https://splash247.com/zijin-mining-orders-bulker-pair-for-african-mineral-trade/",
+      "pubDate": "Tue, 27 Oct 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Chinese mining giant Zijin Mining has returned to Shandong Xinneng Shipbuilding for two 3,000 dwt bulk carriers, expanding its dedicated mineral transport operation on Lake Tanganyika in eastern Africa. The latest contract follows an earlier order for four 2,000 dwt vessels at th",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Jin-Hang-Xinneng-Shipbuilding-Zijin-Mining.jpg",
+      "en": {
+        "headline": "Zijin Mining orders bulker pair for African mineral trade",
+        "summary": "Chinese mining giant Zijin Mining has returned to Shandong Xinneng Shipbuilding for two 3,000 dwt bulk carriers, expanding its dedicated mineral transport operation on Lake Tanganyika in eastern Africa. The latest contract follows an earlier order for four 2,000 dwt vessels at th",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Yangzijiang Maritime cashes in on MR newbuilds with $308m sale",
+      "link": "https://splash247.com/yangzijiang-maritime-cashes-in-on-mr-newbuilds-with-308m-sale/",
+      "pubDate": "Tue, 27 Oct 2026 09:35:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Singapore-listed Yangzijiang Maritime Development has struck deals to sell six MR tanker newbuildings for a combined $308m, taking the value of its contracted vessel resales to $805m over the past ten months. The Ren Yuanlin-led maritime investment group said the latest transacti",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/Ren-Yuanlin-Yangzijiang-Financial-Holding.jpg",
+      "en": {
+        "headline": "Yangzijiang Maritime cashes in on MR newbuilds with $308m sale",
+        "summary": "Singapore-listed Yangzijiang Maritime Development has struck deals to sell six MR tanker newbuildings for a combined $308m, taking the value of its contracted vessel resales to $805m over the past ten months. The Ren Yuanlin-led maritime investment group said the latest transacti",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "What cargo shipping can learn from cruise about crewing technology",
+      "link": "https://splash247.com/what-cargo-shipping-can-learn-from-cruise-about-crewing-technology/",
+      "pubDate": "Tue, 27 Oct 2026 09:15:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Raal Harris, the founder of PitchFrame, brings readers details of an interesting session from last week’s Crew Connect Global in Manila. We spend a lot of time in cargo shipping looking to aviation for inspiration in approaches to safety, technology, training and operational effi",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Associated-British-Ports-Southampton-1.jpg",
+      "en": {
+        "headline": "What cargo shipping can learn from cruise about crewing technology",
+        "summary": "Raal Harris, the founder of PitchFrame, brings readers details of an interesting session from last week’s Crew Connect Global in Manila. We spend a lot of time in cargo shipping looking to aviation for inspiration in approaches to safety, technology, training and operational effi",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Wall Street splits over tanker boom",
+      "link": "https://splash247.com/wall-street-splits-over-tanker-boom/",
+      "pubDate": "Tue, 27 Oct 2026 06:45:01 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Wall Street&#8217;s increasingly divided outlook for the tanker supercycle has taken another twist, with investment bank Evercore ISI dramatically raising its freight forecasts and share price targets while warning that the industry&#8217;s extraordinary earnings could be approac",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Wall-Street-free-pic.jpeg",
+      "en": {
+        "headline": "Wall Street splits over tanker boom",
+        "summary": "Wall Street&#8217;s increasingly divided outlook for the tanker supercycle has taken another twist, with investment bank Evercore ISI dramatically raising its freight forecasts and share price targets while warning that the industry&#8217;s extraordinary earnings could be approac",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Jade Pacific makes liner debut with Red Sea service",
+      "link": "https://splash247.com/jade-pacific-makes-liner-debut-with-red-sea-service/",
+      "pubDate": "Tue, 27 Oct 2026 06:30:02 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A new Singapore-based container shipping company headed by former SeaLead executives has entered the liner trades with a service connecting India, Pakistan and Egypt&#8217;s Red Sea coast. Jade Pacific Line (JPL), established in April this year, has deployed the 1,100 teu Medkon ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/MarineTraffic-Dursun-Cam-Medkon-Sia.jpg",
+      "en": {
+        "headline": "Jade Pacific makes liner debut with Red Sea service",
+        "summary": "A new Singapore-based container shipping company headed by former SeaLead executives has entered the liner trades with a service connecting India, Pakistan and Egypt&#8217;s Red Sea coast. Jade Pacific Line (JPL), established in April this year, has deployed the 1,100 teu Medkon ",
+        "source": "Splash247"
       }
     },
     {
       "title": "SAT-JAM: Ships must learn to navigate without GPS",
       "link": "https://splash247.com/sat-jam-ships-must-learn-to-navigate-without-gps/",
-      "pubDate": "Mon, 26 Oct 2026 21:07:00 +0000",
+      "pubDate": "Tue, 27 Oct 2026 06:15:00 +0000",
       "source": "Splash247",
       "category": "Bunker",
       "summary": "A researcher in Denmark who has developed a new system for tracking satellite navigation interference from space has a stark warning for the shipping industry in today’s Maritime CEO interview: GPS can no longer be considered a dependable means of navigation. Kian Bostani Nezhad,",
@@ -270,6 +372,57 @@
       }
     },
     {
+      "title": "US moves to extend China ship fee truce into 2027",
+      "link": "https://splash247.com/us-moves-to-extend-china-ship-fee-truce-into-2027/",
+      "pubDate": "Tue, 27 Oct 2026 06:00:22 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The United States is looking to extend its suspension of additional port fees targeting China-linked shipping for another two months, keeping the measures on hold until January 9, 2027, while trade negotiations with Beijing continue. The Office of the United States Trade Represen",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2020/11/Port-of-Long-Beach-e1613637157968.jpg",
+      "en": {
+        "headline": "US moves to extend China ship fee truce into 2027",
+        "summary": "The United States is looking to extend its suspension of additional port fees targeting China-linked shipping for another two months, keeping the measures on hold until January 9, 2027, while trade negotiations with Beijing continue. The Office of the United States Trade Represen",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "KMTC makes Chinese shipyard debut with six boxships",
+      "link": "https://splash247.com/kmtc-makes-chinese-shipyard-debut-with-six-boxships/",
+      "pubDate": "Tue, 27 Oct 2026 05:28:42 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "South Korean liner operator Korea Marine Transport Co (KMTC) has entered China&#8217;s shipbuilding market for the first time, ordering six 3,100 teu containerships at CSSC Huangpu Wenchong. The Seoul-based carrier signed the contracts in Guangzhou, with China Shipbuilding Tradin",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/11/KMTC.jpg",
+      "en": {
+        "headline": "KMTC makes Chinese shipyard debut with six boxships",
+        "summary": "South Korean liner operator Korea Marine Transport Co (KMTC) has entered China&#8217;s shipbuilding market for the first time, ordering six 3,100 teu containerships at CSSC Huangpu Wenchong. The Seoul-based carrier signed the contracts in Guangzhou, with China Shipbuilding Tradin",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "As Attacks Mount, Shipping Faces an Uncomfortable Question: Are Safety Rules Fit for War?",
+      "link": "https://gcaptain.com/as-attacks-mount-shipping-faces-an-uncomfortable-question-are-safety-rules-fit-for-war/",
+      "pubDate": "Mon, 26 Oct 2026 23:43:42 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "October has become the worst month on record for attacks on merchant ships in and around the Strait of Hormuz, and oil is now washing onto the beaches of the United Arab Emirates.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 11,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-22T121323Z_1819482205_RC26ELATGE3R_RTRMADP_3_IRAN-CRISIS-800x533.jpg",
+      "en": {
+        "headline": "As Attacks Mount, Shipping Faces an Uncomfortable Question: Are Safety Rules Fit for War?",
+        "summary": "October has become the worst month on record for attacks on merchant ships in and around the Strait of Hormuz, and oil is now washing onto the beaches of the United Arab Emirates.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "World’s Largest Battery-Electric Ship Begins Commercial Service in South America",
       "link": "https://gcaptain.com/worlds-largest-battery-electric-ship-begins-commercial-service-in-south-america/",
       "pubDate": "Mon, 26 Oct 2026 20:59:57 +0000",
@@ -278,29 +431,12 @@
       "summary": "The world’s largest battery-electric ship has officially entered commercial service, marking a major milestone for the maritime industry and the growing use of electric propulsion in large passenger vessels. The...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Hull096-ArgentinaCrossing.jpg",
       "en": {
         "headline": "World’s Largest Battery-Electric Ship Begins Commercial Service in South America",
         "summary": "The world’s largest battery-electric ship has officially entered commercial service, marking a major milestone for the maritime industry and the growing use of electric propulsion in large passenger vessels. The...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Shipping cuts training when it needs it most",
-      "link": "https://splash247.com/shipping-cuts-training-when-it-needs-it-most/",
-      "pubDate": "Mon, 26 Oct 2026 20:19:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Irene Rosberg, who runs the Blue MBA at Copenhagen Business School, returns to Splash today.  When business conditions become difficult, training is often one of the easiest budgets to cut. In shipping, that is becoming an increasingly dangerous habit. The industry is asking its ",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Indian-Seafarer-Cadet-Training-Recruitment-DGMA.jpeg",
-      "en": {
-        "headline": "Shipping cuts training when it needs it most",
-        "summary": "Irene Rosberg, who runs the Blue MBA at Copenhagen Business School, returns to Splash today.  When business conditions become difficult, training is often one of the easiest budgets to cut. In shipping, that is becoming an increasingly dangerous habit. The industry is asking its ",
-        "source": "Splash247"
       }
     },
     {
@@ -312,7 +448,7 @@
       "summary": "Two new maritime security warnings issued Monday point to continued dangers for commercial shipping in the Middle East, with one tanker confirmed disabled by a projectile in the Strait of...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
       "en": {
         "headline": "Tanker Disabled in Strait of Hormuz Attack, Another Vessel Reported on Fire in Persian Gulf",
@@ -329,7 +465,7 @@
       "summary": "Commodity trader Mercuria Energy Group accused the Baltic Exchange of continuing to publish the world’s benchmark oil tanker rate, despite distortions caused by the Iran war, because it feared losing business to a competitor.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
       "en": {
         "headline": "Hormuz Chaos Sparks Legal Showdown Over Global Tanker Pricing",
@@ -346,7 +482,7 @@
       "summary": "At a shipyard in northern Singapore, a yellow platform towers over a maze of scaffolding and cranes. Resembling a 15-story building, the piece will be shipped halfway around the world to Europe to be installed into an offshore wind farm.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/03/offshore-wind.jpg",
       "en": {
         "headline": "Singapore Yards Chase Profit From Europe’s Offshore Wind Push",
@@ -363,148 +499,12 @@
       "summary": "When Donald Trump returned to the White House in 2025, “energy dominance” was the bedrock of his economic and foreign policy plans. But an unpopular war with Iran and soaring household fuel costs have now made energy policy a major liability for the US president heading into next",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-10T111832Z_327337754_RC29TMATWR3B_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-PLAN.jpg",
       "en": {
         "headline": "How Trump&#8217;s Energy Dominance Turned Into Hubris",
         "summary": "When Donald Trump returned to the White House in 2025, “energy dominance” was the bedrock of his economic and foreign policy plans. But an unpopular war with Iran and soaring household fuel costs have now made energy policy a major liability for the US president heading into next",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Chouest Group Acquires Canada&#8217;s Horizon Maritime in Major Expansion",
-      "link": "https://gcaptain.com/chouest-group-acquires-canadas-horizon-maritime-in-major-expansion/",
-      "pubDate": "Mon, 26 Oct 2026 16:17:46 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Louisiana-based Chouest Group has acquired Canadian marine and offshore services provider Horizon Maritime, expanding its presence across Canada&#8217;s East and West coasts and into the Arctic. The deal, announced...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Arctic-Sunrise-4-1600x840-c-default@2x-800x420.jpg",
-      "en": {
-        "headline": "Chouest Group Acquires Canada&#8217;s Horizon Maritime in Major Expansion",
-        "summary": "The Louisiana-based Chouest Group has acquired Canadian marine and offshore services provider Horizon Maritime, expanding its presence across Canada&#8217;s East and West coasts and into the Arctic. The deal, announced...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Lawmakers Warn U.S. Ports and Banks Over Trump-Putin Russian Diesel Deal",
-      "link": "https://gcaptain.com/lawmakers-warn-u-s-ports-and-banks-over-trump-putin-russian-diesel-deal/",
-      "pubDate": "Mon, 26 Oct 2026 15:18:09 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A bipartisan group of U.S. lawmakers is warning major banks and port authorities against facilitating Russian diesel shipments under President Donald Trump&#8217;s controversial agreement with Vladimir Putin, raising the prospect...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/07/2021-07-01T220722Z_638130059_RC2YBO9YFPF8_RTRMADP_3_USA-TEXAS-POLLUTION-FORMALDEHYDE-800x533.jpg",
-      "en": {
-        "headline": "Lawmakers Warn U.S. Ports and Banks Over Trump-Putin Russian Diesel Deal",
-        "summary": "A bipartisan group of U.S. lawmakers is warning major banks and port authorities against facilitating Russian diesel shipments under President Donald Trump&#8217;s controversial agreement with Vladimir Putin, raising the prospect...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Caddell Dry Dock &#038; Repair Announces Leadership Transition",
-      "link": "https://gcaptain.com/caddell-dry-dock-repair-announces-leadership-transition/",
-      "pubDate": "Mon, 26 Oct 2026 13:26:38 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Salvatore Molino Named President; Steven Kalil to Become Chief Executive Officer as John  B. Caddell II Continues as Chairman Caddell Dry Dock &#38; Repair Co., Inc. has announced a planned executive...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/IMG_7993.jpeg",
-      "en": {
-        "headline": "Caddell Dry Dock &#038; Repair Announces Leadership Transition",
-        "summary": "Salvatore Molino Named President; Steven Kalil to Become Chief Executive Officer as John  B. Caddell II Continues as Chairman Caddell Dry Dock &#38; Repair Co., Inc. has announced a planned executive...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Odfjell cashes in on chemical tanker pair in $62m-plus deal",
-      "link": "https://splash247.com/odfjell-cashes-in-on-chemical-tanker-pair-in-62m-plus-deal/",
-      "pubDate": "Mon, 26 Oct 2026 12:47:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norwegian chemical tanker owner Odfjell has reportedly sold two 2011-built vessels for more than $62m as it continues reshaping its fleet. Shipbrokers identified the 46,098 dwt Bow Elm and 46,047 dwt Bow Lind as having been sold together, with the deal agreed on a surveys-passed ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2020/10/Odfjell-Fuel-cell.jpg",
-      "en": {
-        "headline": "Odfjell cashes in on chemical tanker pair in $62m-plus deal",
-        "summary": "Norwegian chemical tanker owner Odfjell has reportedly sold two 2011-built vessels for more than $62m as it continues reshaping its fleet. Shipbrokers identified the 46,098 dwt Bow Elm and 46,047 dwt Bow Lind as having been sold together, with the deal agreed on a surveys-passed ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Transocean expands newbuild programme with tanker duo",
-      "link": "https://splash247.com/transocean-expands-newbuild-programme-with-tanker-duo/",
-      "pubDate": "Mon, 26 Oct 2026 12:08:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Monaco-based Transocean Maritime Agencies has ordered two 50,000 dwt chemical and product tankers at China&#8217;s Guangzhou Shipyard International (GSI), adding another vessel type to its expanding newbuilding programme. The CSSC-controlled yard recently signed the contract, mar",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Guangzhou-Shipyard-International-GSI.jpg",
-      "en": {
-        "headline": "Transocean expands newbuild programme with tanker duo",
-        "summary": "Monaco-based Transocean Maritime Agencies has ordered two 50,000 dwt chemical and product tankers at China&#8217;s Guangzhou Shipyard International (GSI), adding another vessel type to its expanding newbuilding programme. The CSSC-controlled yard recently signed the contract, mar",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Transworld gets green light for $43m boxship deal",
-      "link": "https://splash247.com/transworld-gets-green-light-for-43m-boxship-deal/",
-      "pubDate": "Mon, 26 Oct 2026 12:00:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "India&#8217;s Transworld Shipping Lines has secured shareholder approval for the $42.78m acquisition of two containerships from another company within its controlling shareholder&#8217;s group, clearing a key hurdle in its ongoing fleet restructuring. The Navi Mumbai-based listed",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Transworld.jpg",
-      "en": {
-        "headline": "Transworld gets green light for $43m boxship deal",
-        "summary": "India&#8217;s Transworld Shipping Lines has secured shareholder approval for the $42.78m acquisition of two containerships from another company within its controlling shareholder&#8217;s group, clearing a key hurdle in its ongoing fleet restructuring. The Navi Mumbai-based listed",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Bahri turns to homegrown yard for $451m VLCC trio",
-      "link": "https://splash247.com/bahri-turns-to-homegrown-yard-for-451m-vlcc-trio/",
-      "pubDate": "Mon, 26 Oct 2026 11:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Saudi shipping giant Bahri has ordered three very large crude carriers at International Maritime Industries (IMI), committing SAR1.692bn ($451m) to expand its tanker fleet and support shipbuilding at home. The 320,000 dwt vessels will be built at IMI&#8217;s Ras Al Khair facility",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Bahri-VLCC.jpg",
-      "en": {
-        "headline": "Bahri turns to homegrown yard for $451m VLCC trio",
-        "summary": "Saudi shipping giant Bahri has ordered three very large crude carriers at International Maritime Industries (IMI), committing SAR1.692bn ($451m) to expand its tanker fleet and support shipbuilding at home. The 320,000 dwt vessels will be built at IMI&#8217;s Ras Al Khair facility",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Panagiotidis moves another LPG carrier in $18m fleet reshuffle",
-      "link": "https://splash247.com/panagiotidis-moves-another-lpg-carrier-in-18m-fleet-reshuffle/",
-      "pubDate": "Mon, 26 Oct 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Greek shipowner Petros Panagiotidis is continuing to rearrange his LPG fleet across Nasdaq-listed companies, with AI OKTO agreeing to sell the 2015-built Dream Arrax to sister company Robin Energy for $18m. The latest transaction involves the 5,000 cu m gas carrier moving between",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Toro-Dream-Vermax-Roland-Delhaxhe-Marine-Traffic.jpg",
-      "en": {
-        "headline": "Panagiotidis moves another LPG carrier in $18m fleet reshuffle",
-        "summary": "Greek shipowner Petros Panagiotidis is continuing to rearrange his LPG fleet across Nasdaq-listed companies, with AI OKTO agreeing to sell the 2015-built Dream Arrax to sister company Robin Energy for $18m. The latest transaction involves the 5,000 cu m gas carrier moving between",
-        "source": "Splash247"
       }
     }
   ]
