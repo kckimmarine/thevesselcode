@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-28T03:11:11.546Z",
+    "generatedAt": "2026-10-28T11:52:38.017Z",
     "benchmarkAsOf": "2026-10-27",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 980,
-        "deltaPct": 0,
-        "asOf": "2026-10-26T17:00:00.000Z",
+        "priceUsdMt": 990,
+        "deltaPct": 1.02,
+        "asOf": "2026-10-27T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1344,
-        "deltaPct": 0,
-        "asOf": "2026-10-26T17:00:00.000Z",
+        "priceUsdMt": 1342,
+        "deltaPct": -0.15,
+        "asOf": "2026-10-27T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 901.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-26T17:00:00.000Z",
+        "priceUsdMt": 894.5,
+        "deltaPct": -0.78,
+        "asOf": "2026-10-27T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 772,
-        "deltaPct": 0,
-        "asOf": "2026-10-26T17:00:00.000Z",
+        "priceUsdMt": 764,
+        "deltaPct": -1.04,
+        "asOf": "2026-10-27T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1445.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-26T17:00:00.000Z",
+        "priceUsdMt": 1437,
+        "deltaPct": -0.59,
+        "asOf": "2026-10-27T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 702,
-        "deltaPct": 0,
-        "asOf": "2026-10-26T17:00:00.000Z",
+        "priceUsdMt": 701,
+        "deltaPct": -0.14,
+        "asOf": "2026-10-27T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 1050,
-        "deltaPct": 0.48,
+        "deltaPct": 0,
         "asOf": "2026-10-27T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 955,
-        "deltaPct": -1.55,
+        "deltaPct": 0,
         "asOf": "2026-10-27T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 843,
-        "deltaPct": 0,
-        "asOf": "2026-10-26T17:00:00.000Z",
+        "priceUsdMt": 835.5,
+        "deltaPct": -0.89,
+        "asOf": "2026-10-27T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1440.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-26T17:00:00.000Z",
+        "priceUsdMt": 1422,
+        "deltaPct": -1.28,
+        "asOf": "2026-10-27T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 622,
-        "deltaPct": 0,
-        "asOf": "2026-10-26T17:00:00.000Z",
+        "priceUsdMt": 619.5,
+        "deltaPct": -0.4,
+        "asOf": "2026-10-27T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -236,6 +236,210 @@
   },
   "news": [
     {
+      "title": "Norway lines up full-scale test of marine nuclear propulsion system",
+      "link": "https://splash247.com/norway-lines-up-full-scale-test-of-marine-nuclear-propulsion-system/",
+      "pubDate": "Wed, 28 Oct 2026 10:30:00 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "A Norwegian-led consortium involving shipbuilder Vard and offshore vessel owner Island Offshore is preparing to build and test an integrated nuclear propulsion system, targeting its first vessel deployment in 2031 or 2032. The Marine Nuclear Propulsion System (MarNuPS) project, l",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/VardNuclear.jpg",
+      "en": {
+        "headline": "Norway lines up full-scale test of marine nuclear propulsion system",
+        "summary": "A Norwegian-led consortium involving shipbuilder Vard and offshore vessel owner Island Offshore is preparing to build and test an integrated nuclear propulsion system, targeting its first vessel deployment in 2031 or 2032. The Marine Nuclear Propulsion System (MarNuPS) project, l",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "South Korean shipyard set for offshore wind makeover",
+      "link": "https://splash247.com/south-korean-shipyard-set-for-offshore-wind-makeover/",
+      "pubDate": "Wed, 28 Oct 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Four South Korean companies have signed an agreement to transform part of the Gunsan shipyard into an offshore wind manufacturing hub, with plans to produce large turbines, towers and offshore substations. HJ Heavy Industries, J-Ocean Heavy Industries, Myeongun Industrial Develop",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Gunsan-shipyard.jpg",
+      "en": {
+        "headline": "South Korean shipyard set for offshore wind makeover",
+        "summary": "Four South Korean companies have signed an agreement to transform part of the Gunsan shipyard into an offshore wind manufacturing hub, with plans to produce large turbines, towers and offshore substations. HJ Heavy Industries, J-Ocean Heavy Industries, Myeongun Industrial Develop",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Woodside exits delayed Timor-Leste gas project",
+      "link": "https://splash247.com/woodside-exits-delayed-timor-leste-gas-project/",
+      "pubDate": "Wed, 28 Oct 2026 09:38:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Australian energy major Woodside has agreed to sell its entire 33.44% stake in the long-delayed Greater Sunrise gas development to Timor-Leste&#8217;s state-owned energy company TIMOR GAP for up to $200m. The agreement could bring one of the region&#8217;s largest undeveloped off",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/02/Woodside-building.jpg",
+      "en": {
+        "headline": "Woodside exits delayed Timor-Leste gas project",
+        "summary": "Australian energy major Woodside has agreed to sell its entire 33.44% stake in the long-delayed Greater Sunrise gas development to Timor-Leste&#8217;s state-owned energy company TIMOR GAP for up to $200m. The agreement could bring one of the region&#8217;s largest undeveloped off",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Russia To Begin Year-Round Arctic Northern Sea Route Shipping in Early 2027",
+      "link": "https://gcaptain.com/russia-to-begin-year-round-arctic-northern-sea-route-shipping-in-early-2027/",
+      "pubDate": "Wed, 28 Oct 2026 09:37:33 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Russia expects to begin regular year-round eastbound shipping along the Northern Sea Route in early 2027, as additional nuclear icebreaker capacity, newer ice-class LNG carriers and pressure to redirect energy exports toward Asia bring the long-delayed ambition closer to reality.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/photo_2026-10-28-10.34.40.jpeg",
+      "en": {
+        "headline": "Russia To Begin Year-Round Arctic Northern Sea Route Shipping in Early 2027",
+        "summary": "Russia expects to begin regular year-round eastbound shipping along the Northern Sea Route in early 2027, as additional nuclear icebreaker capacity, newer ice-class LNG carriers and pressure to redirect energy exports toward Asia bring the long-delayed ambition closer to reality.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Saudi Tanker Giant Posts 10-Fold Profit Jump as Ship Rates Surge",
+      "link": "https://gcaptain.com/saudi-tanker-giant-posts-10-fold-profit-jump-as-ship-rates-surge/",
+      "pubDate": "Wed, 28 Oct 2026 09:27:13 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Saudi Arabia’s main shipping firm Bahri reported a 10-fold jump in third-quarter profit as its oil tanker business benefited from surging freight rates amid the Iran war.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/fleet-overview-desktop.jpg",
+      "en": {
+        "headline": "Saudi Tanker Giant Posts 10-Fold Profit Jump as Ship Rates Surge",
+        "summary": "Saudi Arabia’s main shipping firm Bahri reported a 10-fold jump in third-quarter profit as its oil tanker business benefited from surging freight rates amid the Iran war.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Containership orderbook heads towards 16m teu",
+      "link": "https://splash247.com/containership-orderbook-heads-towards-16m-teu/",
+      "pubDate": "Wed, 28 Oct 2026 08:30:28 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The containership industry&#8217;s extraordinary ordering spree is showing no signs of slowing, with the global orderbook now exceeding 15m teu and another wave of megamax contracts poised to push the total towards 16m teu before the end of the year. The latest figures from Alpha",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Boxship-containership-sun.jpg",
+      "en": {
+        "headline": "Containership orderbook heads towards 16m teu",
+        "summary": "The containership industry&#8217;s extraordinary ordering spree is showing no signs of slowing, with the global orderbook now exceeding 15m teu and another wave of megamax contracts poised to push the total towards 16m teu before the end of the year. The latest figures from Alpha",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Iran singles out Sinokor",
+      "link": "https://splash247.com/iran-singles-out-sinokor/",
+      "pubDate": "Wed, 28 Oct 2026 08:15:12 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Iran has threatened South Korean tanker giant Sinokor, the world’s dominant VLCC owner, with sweeping action against its fleet from November 1, accusing the company of repeatedly violating Tehran&#8217;s restrictions on shipping through the Strait of Hormuz. Iran&#8217;s Persian ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/02/Athenian-Success-bought-Sinokor.jpg",
+      "en": {
+        "headline": "Iran singles out Sinokor",
+        "summary": "Iran has threatened South Korean tanker giant Sinokor, the world’s dominant VLCC owner, with sweeping action against its fleet from November 1, accusing the company of repeatedly violating Tehran&#8217;s restrictions on shipping through the Strait of Hormuz. Iran&#8217;s Persian ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Maritime CEO Forum: Shipping’s wartime boom tests discipline",
+      "link": "https://splash247.com/maritime-ceo-forum-shippings-wartime-boom-tests-discipline/",
+      "pubDate": "Wed, 28 Oct 2026 08:00:05 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Shipping may be enjoying one of its strongest booms in decades, but the extraordinary profits generated by geopolitical turmoil are raising difficult questions about risk, investment and what happens when the wars end, delegates at yesterday&#8217;s Maritime CEO Forum in Monaco h",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Monaco-2026.jpg",
+      "en": {
+        "headline": "Maritime CEO Forum: Shipping’s wartime boom tests discipline",
+        "summary": "Shipping may be enjoying one of its strongest booms in decades, but the extraordinary profits generated by geopolitical turmoil are raising difficult questions about risk, investment and what happens when the wars end, delegates at yesterday&#8217;s Maritime CEO Forum in Monaco h",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Sanctioned Russian tankers head for US carrying diesel",
+      "link": "https://splash247.com/sanctioned-russian-tankers-head-for-us-carrying-diesel/",
+      "pubDate": "Wed, 28 Oct 2026 07:45:53 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Three tankers carrying Russian diesel are heading towards the United States under the controversial agreement between presidents Donald Trump and Vladimir Putin, with Moscow preparing to dispatch a fourth vessel today. Russian deputy prime minister Alexander Novak confirmed yeste",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/09/Primorsk-Oil-Terminal.jpeg",
+      "en": {
+        "headline": "Sanctioned Russian tankers head for US carrying diesel",
+        "summary": "Three tankers carrying Russian diesel are heading towards the United States under the controversial agreement between presidents Donald Trump and Vladimir Putin, with Moscow preparing to dispatch a fourth vessel today. Russian deputy prime minister Alexander Novak confirmed yeste",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Venergy breaks into VLCCs with Hengli order",
+      "link": "https://splash247.com/venergy-breaks-into-vlccs-with-hengli-order/",
+      "pubDate": "Wed, 28 Oct 2026 07:31:38 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Greek shipowner Vyron Vasileiadis is taking his rapidly expanding tanker business into the VLCC segment, with Venergy Maritime linked to two firm newbuildings and options for another two at China&#8217;s Hengli Heavy Industries. The latest deal involves 306,000 dwt crude carriers",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-VLCC.jpg",
+      "en": {
+        "headline": "Venergy breaks into VLCCs with Hengli order",
+        "summary": "Greek shipowner Vyron Vasileiadis is taking his rapidly expanding tanker business into the VLCC segment, with Venergy Maritime linked to two firm newbuildings and options for another two at China&#8217;s Hengli Heavy Industries. The latest deal involves 306,000 dwt crude carriers",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Meadway Bulkers splashes out on ultramax series in China",
+      "link": "https://splash247.com/meadway-bulkers-splashes-out-on-ultramax-series-in-china/",
+      "pubDate": "Wed, 28 Oct 2026 06:00:22 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Greek dry bulk owner Meadway Bulkers has been linked to an order for six ultramax newbuildings at China&#8217;s Nantong Xiangyu Shipbuilding, marking its largest shipbuilding commitment since becoming a standalone company in 2021. Splash understands the George Delaportas-controll",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Delavita-ultramax-Meadway-Bulkers.jpg",
+      "en": {
+        "headline": "Meadway Bulkers splashes out on ultramax series in China",
+        "summary": "Greek dry bulk owner Meadway Bulkers has been linked to an order for six ultramax newbuildings at China&#8217;s Nantong Xiangyu Shipbuilding, marking its largest shipbuilding commitment since becoming a standalone company in 2021. Splash understands the George Delaportas-controll",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Wallenius Wilhelmsen extends car carrier newbuild drive",
+      "link": "https://splash247.com/wallenius-wilhelmsen-extends-car-carrier-newbuild-drive/",
+      "pubDate": "Wed, 28 Oct 2026 05:00:25 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Norwegian car carrier giant Wallenius Wilhelmsen has moved to extend its fleet renewal programme, following a $300m capital raise earlier this month to support plans for up to 12 additional LNG dual-fuel vessels. The Oslo-listed group issued a fresh update on its newbuilding prog",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/10/Wallenius-Wilhelmsen-methanol-and-ammonia-car-carrier.jpg",
+      "en": {
+        "headline": "Wallenius Wilhelmsen extends car carrier newbuild drive",
+        "summary": "Norwegian car carrier giant Wallenius Wilhelmsen has moved to extend its fleet renewal programme, following a $300m capital raise earlier this month to support plans for up to 12 additional LNG dual-fuel vessels. The Oslo-listed group issued a fresh update on its newbuilding prog",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "NTSB Calls for New Rules for Uncrewed Vessels After Lake Erie Collision",
       "link": "https://gcaptain.com/ntsb-calls-for-new-rules-for-uncrewed-vessels-after-lake-erie-collision/",
       "pubDate": "Tue, 27 Oct 2026 21:38:20 +0000",
@@ -244,7 +448,7 @@
       "summary": "Investigation finds NOAA research vessel was difficult to detect and lacked proper monitoring, exposing gaps in U.S. maritime safety regulations. The National Transportation Safety Board (NTSB) is calling on the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Screenshot-2026-10-27-at-2.36.41-PM.jpg",
       "en": {
         "headline": "NTSB Calls for New Rules for Uncrewed Vessels After Lake Erie Collision",
@@ -261,7 +465,7 @@
       "summary": "Russia expects cargo transits along the Northern Sea Route (NSR) to more than double in 2026, marking a substantial increase in Arctic shipping despite Western sanctions, although volumes remain far below Moscow’s original ambitions for the route.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/Arktika-escort-arctic-summer-2026.jpeg",
       "en": {
         "headline": "Russia Says Northern Sea Route Transit Cargo to Nearly Double in 2026",
@@ -278,7 +482,7 @@
       "summary": "The Trump administration announced $498 million in federal grants Tuesday to modernize U.S. ports, funding 35 projects across 19 states ranging from aging dock replacements and cargo-handling equipment to fuel...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/Port-of-Savannah-terminal.jpg",
       "en": {
         "headline": "Trump Administration Awards $498 Million for U.S. Port Upgrades, Below Recent Funding Levels",
@@ -295,216 +499,12 @@
       "summary": "Villa Vie Residences has suspended operations of its residential cruise ship Villa Vie Odyssey in Cambodia, forcing residents to disembark as soaring fuel costs push the company toward financial restructuring....",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Odyssey-in-St.-Lucia-800x450.jpeg",
       "en": {
         "headline": "Villa Vie Odyssey&#8217;s &#8216;Endless&#8217; World Cruise Comes to a Halt in Cambodia as Fuel Costs Soar",
         "summary": "Villa Vie Residences has suspended operations of its residential cruise ship Villa Vie Odyssey in Cambodia, forcing residents to disembark as soaring fuel costs push the company toward financial restructuring....",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "New RAmparts 3800 Ship-Handling/Fire-Fighting 2 Tug Design for Ningbo Port",
-      "link": "https://gcaptain.com/new-ramparts-3800-ship-handling-fire-fighting-2-tug-design-for-ningbo-port/",
-      "pubDate": "Tue, 27 Oct 2026 16:54:10 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Robert Allan Ltd. is pleased to announce the award to design a new&#160;RAmparts 3800&#160;Ship-Handling/Fire-Fighting 2 (FiFi 2) tug for Ningbo Port. The vessel will be constructed by Jiangsu Zhenjiang Shipyard...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/226-048-30000R2-General-Arrangement-2048x1307-1-800x511.jpg",
-      "en": {
-        "headline": "New RAmparts 3800 Ship-Handling/Fire-Fighting 2 Tug Design for Ningbo Port",
-        "summary": "Robert Allan Ltd. is pleased to announce the award to design a new&#160;RAmparts 3800&#160;Ship-Handling/Fire-Fighting 2 (FiFi 2) tug for Ningbo Port. The vessel will be constructed by Jiangsu Zhenjiang Shipyard...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Oil Tanker Tycoon&#8217;s WhatsApp Messages Drive Big Market Moves",
-      "link": "https://gcaptain.com/oil-tanker-tycoons-whatsapp-messages-drive-big-market-moves/",
-      "pubDate": "Tue, 27 Oct 2026 16:49:34 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The messages from the world’s biggest supertanker owner often begin with pleasantries: “Dear Ladies and Gentlemen.”\n\nWithin minutes, the WhatsApps are the talk of the oil-tanker industry, a multibillion-dollar corner of the energy market that’s been plunged into chaos by the Iran",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
-      "en": {
-        "headline": "Oil Tanker Tycoon&#8217;s WhatsApp Messages Drive Big Market Moves",
-        "summary": "The messages from the world’s biggest supertanker owner often begin with pleasantries: “Dear Ladies and Gentlemen.”\n\nWithin minutes, the WhatsApps are the talk of the oil-tanker industry, a multibillion-dollar corner of the energy market that’s been plunged into chaos by the Iran",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Russia Ships Less Crude Even as Key Baltic Port’s Flows Rebound",
-      "link": "https://gcaptain.com/russia-ships-less-crude-even-as-key-baltic-ports-flows-rebound/",
-      "pubDate": "Tue, 27 Oct 2026 16:41:16 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Russia shipped the least crude in more than a month, even as operations at its key Baltic port recovered strongly from an earlier halt.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/03/2026-02-16T093601Z_1753727867_RC2SYX9HDZSY_RTRMADP_3_CHINA-RUSSIA-OIL-800x521.jpg",
-      "en": {
-        "headline": "Russia Ships Less Crude Even as Key Baltic Port’s Flows Rebound",
-        "summary": "Russia shipped the least crude in more than a month, even as operations at its key Baltic port recovered strongly from an earlier halt.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Strike Threat Looms at Eight Los Angeles, Long Beach Port Terminals",
-      "link": "https://gcaptain.com/strike-threat-looms-at-eight-los-angeles-long-beach-port-terminals/",
-      "pubDate": "Tue, 27 Oct 2026 15:52:29 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "UPDATE: Port employers warn that a walkout by 250 watchmen could halt operations at terminals handling more than half of the nation&#8217;s busiest container port complex. A potential November 1...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/Pier-300-Channel.jpg",
-      "en": {
-        "headline": "Strike Threat Looms at Eight Los Angeles, Long Beach Port Terminals",
-        "summary": "UPDATE: Port employers warn that a walkout by 250 watchmen could halt operations at terminals handling more than half of the nation&#8217;s busiest container port complex. A potential November 1...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Global Marine Insurance Premiums Reach $42.6 Billion as Competition Keeps Market Soft",
-      "link": "https://gcaptain.com/global-marine-insurance-premiums-reach-42-6-billion-as-competition-keeps-market-soft/",
-      "pubDate": "Tue, 27 Oct 2026 15:22:55 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Global marine insurance premiums rose 5.5% to $42.6 billion in 2025, but increased competition, excess capacity and currency fluctuations continued to weigh on the market, according to a new report...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-15T090250Z_297406507_RC26GKAHWV5K_RTRMADP_3_INDIA-ECONOMY-TRADE-800x506.jpg",
-      "en": {
-        "headline": "Global Marine Insurance Premiums Reach $42.6 Billion as Competition Keeps Market Soft",
-        "summary": "Global marine insurance premiums rose 5.5% to $42.6 billion in 2025, but increased competition, excess capacity and currency fluctuations continued to weigh on the market, according to a new report...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Stena Agrees to Acquire Norwegian Ferry Operator Color Line in Major European Ferry Deal",
-      "link": "https://gcaptain.com/stena-agrees-to-acquire-norwegian-ferry-operator-color-line-in-major-european-ferry-deal/",
-      "pubDate": "Tue, 27 Oct 2026 15:02:04 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Swedish shipping group Stena AB has agreed to acquire Norwegian ferry operator Color Line, bringing together two of Scandinavia’s largest ferry companies in a deal that would significantly expand Stena’s...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/05/shutterstock_1541487515.jpg",
-      "en": {
-        "headline": "Stena Agrees to Acquire Norwegian Ferry Operator Color Line in Major European Ferry Deal",
-        "summary": "Swedish shipping group Stena AB has agreed to acquire Norwegian ferry operator Color Line, bringing together two of Scandinavia’s largest ferry companies in a deal that would significantly expand Stena’s...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Hanwha Defense USA to Take Control of Philly Shipyard as Navy Shipbuilding Push Accelerates",
-      "link": "https://gcaptain.com/hanwha-defense-usa-to-take-control-of-philly-shipyard-as-navy-shipbuilding-push-accelerates/",
-      "pubDate": "Tue, 27 Oct 2026 14:56:35 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Hanwha Defense USA is moving to take control of Hanwha Philly Shipyard, bringing the Philadelphia facility under its U.S. defense business as the South Korean conglomerate pushes to expand into...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Hanwha Defense USA to Take Control of Philly Shipyard as Navy Shipbuilding Push Accelerates",
-        "summary": "Hanwha Defense USA is moving to take control of Hanwha Philly Shipyard, bringing the Philadelphia facility under its U.S. defense business as the South Korean conglomerate pushes to expand into...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Iran Says It Will Take Action Against Sinokor Ships in Hormuz",
-      "link": "https://gcaptain.com/iran-says-it-will-take-action-against-sinokor-ships-in-hormuz/",
-      "pubDate": "Tue, 27 Oct 2026 14:12:36 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Iran’s Persian Gulf Strait Authority said it would take “legal action” against tankers belonging to Sinokor, the world’s biggest oil tanker owner that has carried millions of barrels out of the Strait of Hormuz in recent weeks.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Iran Says It Will Take Action Against Sinokor Ships in Hormuz",
-        "summary": "Iran’s Persian Gulf Strait Authority said it would take “legal action” against tankers belonging to Sinokor, the world’s biggest oil tanker owner that has carried millions of barrels out of the Strait of Hormuz in recent weeks.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Seatrium and Karpowership eye Southeast Asia floating infrastructure push",
-      "link": "https://splash247.com/seatrium-and-karpowership-eye-southeast-asia-floating-infrastructure-push/",
-      "pubDate": "Tue, 27 Oct 2026 12:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Singapore&#8217;s Seatrium and Turkey&#8217;s Karpowership are seeking to form a joint venture to develop floating power and digital infrastructure solutions in Singapore, with plans to expand into the wider Southeast Asian market. Potential projects include powerships, floating ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Turkish-powership.jpg",
-      "en": {
-        "headline": "Seatrium and Karpowership eye Southeast Asia floating infrastructure push",
-        "summary": "Singapore&#8217;s Seatrium and Turkey&#8217;s Karpowership are seeking to form a joint venture to develop floating power and digital infrastructure solutions in Singapore, with plans to expand into the wider Southeast Asian market. Potential projects include powerships, floating ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Fugro to hunt for unexploded munitions along North Sea cable routes",
-      "link": "https://splash247.com/fugro-to-hunt-for-unexploded-munitions-along-north-sea-cable-routes/",
-      "pubDate": "Tue, 27 Oct 2026 12:00:00 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "Dutch survey specialist Fugro has secured a contract from German transmission system operator 50Hertz to survey and clear unexploded ordnance along the routes of two offshore wind grid connections in the North Sea. The contract covers the LanWin3 and LanWin6 high-voltage direct c",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/10/Fugro-survey-vessel.jpg",
-      "en": {
-        "headline": "Fugro to hunt for unexploded munitions along North Sea cable routes",
-        "summary": "Dutch survey specialist Fugro has secured a contract from German transmission system operator 50Hertz to survey and clear unexploded ordnance along the routes of two offshore wind grid connections in the North Sea. The contract covers the LanWin3 and LanWin6 high-voltage direct c",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Chouest Group acquires Canada’s Horizon Maritime",
-      "link": "https://splash247.com/chouest-group-acquires-canadas-horizon-maritime/",
-      "pubDate": "Tue, 27 Oct 2026 11:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "US offshore services giant Chouest Group has acquired Canadian marine and offshore services provider Horizon Maritime, expanding its presence across Canada&#8217;s east and west coasts and into the Arctic. The Louisiana-based group has partnered with Horizon Maritime&#8217;s foun",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Horizon-Dragon-Horizon-Maritime.jpg",
-      "en": {
-        "headline": "Chouest Group acquires Canada’s Horizon Maritime",
-        "summary": "US offshore services giant Chouest Group has acquired Canadian marine and offshore services provider Horizon Maritime, expanding its presence across Canada&#8217;s east and west coasts and into the Arctic. The Louisiana-based group has partnered with Horizon Maritime&#8217;s foun",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Eni locks in offshore contractors for Cyprus gas project",
-      "link": "https://splash247.com/eni-locks-in-offshore-contractors-for-cyprus-gas-project/",
-      "pubDate": "Tue, 27 Oct 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Italian energy major Eni has signed the main engineering, procurement, construction, and drilling contracts for the Cronos gas development offshore Cyprus, with a string of major offshore contractors securing work on the project. The contracts, valued by local media at around $1.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Eni-headquarters.jpg",
-      "en": {
-        "headline": "Eni locks in offshore contractors for Cyprus gas project",
-        "summary": "Italian energy major Eni has signed the main engineering, procurement, construction, and drilling contracts for the Cronos gas development offshore Cyprus, with a string of major offshore contractors securing work on the project. The contracts, valued by local media at around $1.",
-        "source": "Splash247"
       }
     }
   ]
