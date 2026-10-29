@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-29T11:59:45.663Z",
-    "benchmarkAsOf": "2026-10-28",
+    "generatedAt": "2026-10-29T18:13:21.723Z",
+    "benchmarkAsOf": "2026-10-29",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-10-28",
-    "updatedLabelKo": "2026-10-28 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-10-29",
+    "updatedLabelKo": "2026-10-29 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 2652,
-      "deltaPct": 0,
+      "value": 2712,
+      "deltaPct": 2.26,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-28T14:33:26.265Z"
+      "asOf": "2026-10-29T15:45:11.307Z"
     },
     "capesizeTc": {
-      "value": 3886,
-      "deltaPct": 0,
+      "value": 4090,
+      "deltaPct": 5.25,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-28T14:33:26.316Z"
+      "asOf": "2026-10-29T15:45:11.335Z"
     },
     "panamaxTc": {
-      "value": 1965,
-      "deltaPct": 0,
+      "value": 1921,
+      "deltaPct": -2.24,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-10-28T14:33:26.438Z"
+      "asOf": "2026-10-29T15:45:11.350Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,91 @@
   },
   "news": [
     {
+      "title": "COSCO Profit Jumps Most in Two Years as Turmoil Supports Rates",
+      "link": "https://gcaptain.com/cosco-profit-jumps-most-in-two-years-as-turmoil-supports-rates/",
+      "pubDate": "Thu, 29 Oct 2026 16:31:44 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "(Bloomberg) &#8212; Cosco Shipping Holdings Co. earnings jumped the most in two years as persistent geopolitical disruptions rerouted trade routes, tying up more of its vessels for longer while container...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/08/shutterstock_1086154358.jpg",
+      "en": {
+        "headline": "COSCO Profit Jumps Most in Two Years as Turmoil Supports Rates",
+        "summary": "(Bloomberg) &#8212; Cosco Shipping Holdings Co. earnings jumped the most in two years as persistent geopolitical disruptions rerouted trade routes, tying up more of its vessels for longer while container...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Lawmakers Vow to Block Use of Training Ship Golden Bear for Deportations",
+      "link": "https://gcaptain.com/lawmakers-vow-to-block-use-of-training-ship-golden-bear-for-deportations/",
+      "pubDate": "Thu, 29 Oct 2026 16:21:34 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Two California lawmakers are demanding that the Trump administration abandon reported plans to use ships for mass deportations, including the former Cal Poly Maritime Academy training vessel Golden Bear. Reps....",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/12/golden-bear-cal-maritime.jpg",
+      "en": {
+        "headline": "Lawmakers Vow to Block Use of Training Ship Golden Bear for Deportations",
+        "summary": "Two California lawmakers are demanding that the Trump administration abandon reported plans to use ships for mass deportations, including the former Cal Poly Maritime Academy training vessel Golden Bear. Reps....",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Cheniere LNG Shipments Surge as Iran War Reshapes Global Gas Trade",
+      "link": "https://gcaptain.com/cheniere-lng-shipments-surge-as-iran-war-reshapes-global-gas-trade/",
+      "pubDate": "Thu, 29 Oct 2026 15:07:55 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "U.S. LNG giant raises full-year earnings outlook as Middle East supply disruptions boost demand for American exports Cheniere Energy, the largest U.S. exporter of liquefied natural gas (LNG), reported a...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/03/DJI_0023_LUCiD.jpg",
+      "en": {
+        "headline": "Cheniere LNG Shipments Surge as Iran War Reshapes Global Gas Trade",
+        "summary": "U.S. LNG giant raises full-year earnings outlook as Middle East supply disruptions boost demand for American exports Cheniere Energy, the largest U.S. exporter of liquefied natural gas (LNG), reported a...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Wallenius Wilhelmsen locks in $1bn contract haul",
+      "link": "https://splash247.com/wallenius-wilhelmsen-locks-in-1bn-contract-haul/",
+      "pubDate": "Thu, 29 Oct 2026 12:34:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Norwegian car carrier and logistics giant Wallenius Wilhelmsen has secured two contracts worth more than $1bn with a major equipment manufacturer, adding another sizeable commitment to its shipping and logistics business. The Oslo-listed group said the agreements cover ocean tran",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/Wallenius-Wilhelmsen.jpg",
+      "en": {
+        "headline": "Wallenius Wilhelmsen locks in $1bn contract haul",
+        "summary": "Norwegian car carrier and logistics giant Wallenius Wilhelmsen has secured two contracts worth more than $1bn with a major equipment manufacturer, adding another sizeable commitment to its shipping and logistics business. The Oslo-listed group said the agreements cover ocean tran",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "SFL adds $365m newbuild trio with $333m in charter cover",
+      "link": "https://splash247.com/sfl-adds-365m-newbuild-trio-with-333m-in-charter-cover/",
+      "pubDate": "Thu, 29 Oct 2026 12:13:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "John Fredriksen-backed SFL Corporation has agreed to acquire three newbuildings for around $365m, securing long-term employment that will add at least $333m to its charter backlog. The New York-listed shipowner said the latest investment covers two 8,800 teu containerships schedu",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/05/Cap-San-Vincent-SFL.jpg",
+      "en": {
+        "headline": "SFL adds $365m newbuild trio with $333m in charter cover",
+        "summary": "John Fredriksen-backed SFL Corporation has agreed to acquire three newbuildings for around $365m, securing long-term employment that will add at least $333m to its charter backlog. The New York-listed shipowner said the latest investment covers two 8,800 teu containerships schedu",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Korean carrier Namsung returns to China for larger boxships",
       "link": "https://splash247.com/korean-carrier-namsung-returns-to-china-for-larger-boxships/",
       "pubDate": "Thu, 29 Oct 2026 11:50:00 +0000",
@@ -244,7 +329,7 @@
       "summary": "South Korea&#8217;s Namsung Shipping has been linked to another containership order in China, with brokers reporting a deal for two firm 7,100 teu vessels at Dalian Shipbuilding Industry Corporation (DSIC), plus options for another pair. Shipbroking sources said the CSSC-owned ya",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Namsung-Boxship.jpg",
       "en": {
         "headline": "Korean carrier Namsung returns to China for larger boxships",
@@ -261,12 +346,46 @@
       "summary": "The US Coast Guard has imposed additional security conditions on commercial vessels arriving in American waters after calling at Somali ports, adding the East African country to its list of jurisdictions considered to have inadequate port security measures. The restrictions took ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Mogadishu-Port.jpg",
       "en": {
         "headline": "US tightens entry rules for ships calling at Somali ports",
         "summary": "The US Coast Guard has imposed additional security conditions on commercial vessels arriving in American waters after calling at Somali ports, adding the East African country to its list of jurisdictions considered to have inadequate port security measures. The restrictions took ",
         "source": "Splash247"
+      }
+    },
+    {
+      "title": "Taiwan Flags &#8216;Obvious&#8217; Threat From 50 Chinese Vessels in Wide Sweep of Waters",
+      "link": "https://gcaptain.com/taiwan-flags-obvious-threat-from-50-chinese-vessels-in-wide-sweep-of-waters/",
+      "pubDate": "Thu, 29 Oct 2026 11:19:32 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "China has more than 50 navy and other official vessels operating in a wide swath of sea stretching from southern Japan down to Taiwan and off the Philippines, a senior Taiwan official said, calling the threat level \"obvious.\"",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/2026-01-29T052602Z_916046467_RC2QAJACPMG1_RTRMADP_3_TAIWAN-DEFENCE-800x533.jpg",
+      "en": {
+        "headline": "Taiwan Flags &#8216;Obvious&#8217; Threat From 50 Chinese Vessels in Wide Sweep of Waters",
+        "summary": "China has more than 50 navy and other official vessels operating in a wide swath of sea stretching from southern Japan down to Taiwan and off the Philippines, a senior Taiwan official said, calling the threat level \"obvious.\"",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Qatar to Buy LNG From Woodside as It Scours for US Supply",
+      "link": "https://gcaptain.com/qatar-to-buy-lng-from-woodside-as-it-scours-for-us-supply/",
+      "pubDate": "Thu, 29 Oct 2026 11:17:15 +0000",
+      "source": "gCaptain",
+      "category": "S&P",
+      "summary": "QatarEnergy agreed to purchase US liquefied natural gas from Woodside Energy Group Ltd. for two decades, saying it’s now the top buyer of the American fuel as it diversifies from the Middle East.",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-03-06T104859Z_1638352831_RC2MWJA831GC_RTRMADP_3_IRAN-CRISIS-ENERGY-QATAR-800x533.jpg",
+      "en": {
+        "headline": "Qatar to Buy LNG From Woodside as It Scours for US Supply",
+        "summary": "QatarEnergy agreed to purchase US liquefied natural gas from Woodside Energy Group Ltd. for two decades, saying it’s now the top buyer of the American fuel as it diversifies from the Middle East.",
+        "source": "gCaptain"
       }
     },
     {
@@ -278,7 +397,7 @@
       "summary": "Chinese chemicals group Jiahua Energy is stepping up its shipowning ambitions with plans to invest up to $165m in a 102,000 cu m liquefied hydrocarbon carrier at Jiangnan Shipyard. The Shanghai-listed company has secured board approval for the project, with Jiangnan Shipyard and ",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Jiangnan-Shipyard.jpg",
       "en": {
         "headline": "Jiahua Energy lines up $165m gas carrier at Jiangnan",
@@ -295,7 +414,7 @@
       "summary": "China&#8217;s COSCO Shipping Energy Transportation is expanding its gas carrier business with a RMB335m ($50.2m) ethylene carrier newbuilding project at affiliated Dalian COSCO Shipping Heavy Industry. The Shanghai- and Hong Kong-listed shipowner said its board had approved the c",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2016/04/cosco-dalian-1.jpg",
       "en": {
         "headline": "COSCO turns to in-house yard for gas carrier expansion",
@@ -312,7 +431,7 @@
       "summary": "Norwegian offshore engineering group Aker Solutions is preparing for another round of workforce reductions as a sharp decline in activity following the completion of major oil and gas projects threatens hundreds more jobs. Chief financial officer Idar Eikrem told analysts during ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Aker-Solutions-worker.jpg",
       "en": {
         "headline": "Aker Solutions braces for more job cuts",
@@ -329,7 +448,7 @@
       "summary": "Japanese shipping giant Mitsui OSK Lines (MOL) has signed a long-term charter agreement with Deutsche ReGas to supply a FSRU for the Deutsche Ostsee LNG import terminal in Mukran, Germany. Under the agreement, China&#8217;s Hudong-Zhonghua Shipbuilding will convert an existing LN",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Neptune-FSRU-TotalEnergies.jpg",
       "en": {
         "headline": "MOL secures FSRU charter with Deutsche ReGas",
@@ -346,7 +465,7 @@
       "summary": "India has approved a INR100bn ($1.05bn) programme to massively expand domestic shipping container manufacturing, targeting a tenfold increase in annual capacity as New Delhi seeks to challenge China&#8217;s near-monopoly over the industry. The country&#8217;s cabinet approved the",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Containers-LR.jpg",
       "en": {
         "headline": "India greenlights $1bn drive to break China&#8217;s container manufacturing dominance",
@@ -363,45 +482,11 @@
       "summary": "Elissama Menezes, a Brazilian co-director of Equal Routes, a nonprofit working on shipping decarbonisation, writes for Splash today. Brazil&#8217;s presidential elections show that one should never discount the underdog. The same lesson could be applied to the International Marit",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/03/IMO-HQ-building-1.jpg",
       "en": {
         "headline": "What the IMO should learn from Brazil’s elections ahead of its historic decision",
         "summary": "Elissama Menezes, a Brazilian co-director of Equal Routes, a nonprofit working on shipping decarbonisation, writes for Splash today. Brazil&#8217;s presidential elections show that one should never discount the underdog. The same lesson could be applied to the International Marit",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Boluda strikes deal to acquire Samskip",
-      "link": "https://splash247.com/boluda-strikes-deal-to-acquire-samskip/",
-      "pubDate": "Thu, 29 Oct 2026 08:44:57 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Spanish shipping group Boluda has agreed to acquire Netherlands-headquartered multimodal operator Samskip, bringing together two major European shortsea businesses in a deal spanning 32 vessels and 18 routes. Boluda Shipping said the acquisition would combine its container shippi",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Samskip-SeaShuttle.jpg",
-      "en": {
-        "headline": "Boluda strikes deal to acquire Samskip",
-        "summary": "Spanish shipping group Boluda has agreed to acquire Netherlands-headquartered multimodal operator Samskip, bringing together two major European shortsea businesses in a deal spanning 32 vessels and 18 routes. Boluda Shipping said the acquisition would combine its container shippi",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Contship charts liner comeback with Tarros deal",
-      "link": "https://splash247.com/contship-charts-liner-comeback-with-tarros-deal/",
-      "pubDate": "Thu, 29 Oct 2026 08:30:04 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Italian terminal operator Contship is getting back into the liner business, sealing a deal to acquire Italian shipping and logistics group Tarros through its subsidiary Sogemar, in a deal aimed at creating a major integrated transport network across the Mediterranean. The transac",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2018/10/Contships-e1604445856110.jpg",
-      "en": {
-        "headline": "Contship charts liner comeback with Tarros deal",
-        "summary": "Italian terminal operator Contship is getting back into the liner business, sealing a deal to acquire Italian shipping and logistics group Tarros through its subsidiary Sogemar, in a deal aimed at creating a major integrated transport network across the Mediterranean. The transac",
         "source": "Splash247"
       }
     },
@@ -414,96 +499,11 @@
       "summary": "Four Romanian public officials and two other defendants have been indicted over the alleged fraudulent procurement of two tugboats that were supposed to improve navigation on the Lower Danube River...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 15,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/12/shutterstock_1719207910.jpg",
       "en": {
         "headline": "Romanian Officials Indicted in €7 Million EU-Funded Tugboat Fraud",
         "summary": "Four Romanian public officials and two other defendants have been indicted over the alleged fraudulent procurement of two tugboats that were supposed to improve navigation on the Lower Danube River...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Los Angeles, Long Beach Ports Identify LNG and Methanol as Leading Alternative Marine Fuels",
-      "link": "https://gcaptain.com/los-angeles-long-beach-ports-identify-lng-and-methanol-as-leading-alternative-marine-fuels/",
-      "pubDate": "Wed, 28 Oct 2026 19:39:17 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The ports of Los Angeles and Long Beach have identified liquefied natural gas (LNG) and methanol as the most viable alternative marine fuels for the near and medium term, with...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/Port-of-Los-Angeles-ship-800x533.jpeg",
-      "en": {
-        "headline": "Los Angeles, Long Beach Ports Identify LNG and Methanol as Leading Alternative Marine Fuels",
-        "summary": "The ports of Los Angeles and Long Beach have identified liquefied natural gas (LNG) and methanol as the most viable alternative marine fuels for the near and medium term, with...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "U.S. Senator Demands Russian Diesel Tanker Turn Around as Legal Fight Escalates",
-      "link": "https://gcaptain.com/u-s-senator-demands-russian-diesel-tanker-turn-around-as-legal-fight-escalates/",
-      "pubDate": "Wed, 28 Oct 2026 17:29:33 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "U.S. Senator Richard Blumenthal (D-Conn.) is demanding that a tanker reportedly carrying Russian diesel to the United States reverse course, warning its owner that delivering the cargo would violate federal...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/10/shutterstock_1100495594.jpg",
-      "en": {
-        "headline": "U.S. Senator Demands Russian Diesel Tanker Turn Around as Legal Fight Escalates",
-        "summary": "U.S. Senator Richard Blumenthal (D-Conn.) is demanding that a tanker reportedly carrying Russian diesel to the United States reverse course, warning its owner that delivering the cargo would violate federal...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "MARAD Approves $8.2 Billion Texas LNG Export Port in Record-Time Review",
-      "link": "https://gcaptain.com/marad-approves-8-2-billion-texas-lng-export-port-in-record-time-review/",
-      "pubDate": "Wed, 28 Oct 2026 17:24:40 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Trump administration has approved an $8.2 billion offshore liquefied natural gas export project off the Texas coast, marking a major milestone for its effort to speed up deepwater port...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/10/shutterstock_2393031259.jpg",
-      "en": {
-        "headline": "MARAD Approves $8.2 Billion Texas LNG Export Port in Record-Time Review",
-        "summary": "The Trump administration has approved an $8.2 billion offshore liquefied natural gas export project off the Texas coast, marking a major milestone for its effort to speed up deepwater port...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Russia Turns to Arctic WW2 Route to Export Grain",
-      "link": "https://gcaptain.com/russia-turns-to-arctic-ww2-route-to-export-grain/",
-      "pubDate": "Wed, 28 Oct 2026 16:32:21 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Russia, the world's largest wheat exporter, has turned to an Arctic World War II shipping route to export grain for the first time as the conflict in Ukraine stalls Black Sea trade and officials warn of risks in the NATO-controlled Baltic Sea.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/09/2023-09-16T134342Z_722138046_RC2Q93A3LR1M_RTRMADP_3_UKRAINE-CRISIS-SHIPS-800x533.jpg",
-      "en": {
-        "headline": "Russia Turns to Arctic WW2 Route to Export Grain",
-        "summary": "Russia, the world's largest wheat exporter, has turned to an Arctic World War II shipping route to export grain for the first time as the conflict in Ukraine stalls Black Sea trade and officials warn of risks in the NATO-controlled Baltic Sea.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "US Tells Ships to Avoid Unnecessary Transits Through Hormuz",
-      "link": "https://gcaptain.com/us-tells-ships-to-avoid-unnecessary-transits-through-hormuz/",
-      "pubDate": "Wed, 28 Oct 2026 16:27:19 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "(Bloomberg) &#8212; The US military said vessels that have no need to move between ports in the Gulf of Oman and the Strait of Hormuz should stay away, as tensions...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
-      "en": {
-        "headline": "US Tells Ships to Avoid Unnecessary Transits Through Hormuz",
-        "summary": "(Bloomberg) &#8212; The US military said vessels that have no need to move between ports in the Gulf of Oman and the Strait of Hormuz should stay away, as tensions...",
         "source": "gCaptain"
       }
     }
