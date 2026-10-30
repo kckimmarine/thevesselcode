@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-29T18:13:21.723Z",
+    "generatedAt": "2026-10-30T03:40:18.654Z",
     "benchmarkAsOf": "2026-10-29",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 1000.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-28T17:00:00.000Z",
+        "priceUsdMt": 1002,
+        "deltaPct": 0.15,
+        "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1322.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-28T17:00:00.000Z",
+        "priceUsdMt": 1279,
+        "deltaPct": -3.29,
+        "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 907.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-28T17:00:00.000Z",
+        "priceUsdMt": 909.5,
+        "deltaPct": 0.22,
+        "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 770,
-        "deltaPct": 0,
-        "asOf": "2026-10-28T17:00:00.000Z",
+        "priceUsdMt": 778,
+        "deltaPct": 1.04,
+        "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1438,
-        "deltaPct": 0,
-        "asOf": "2026-10-28T17:00:00.000Z",
+        "priceUsdMt": 1427,
+        "deltaPct": -0.76,
+        "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 711,
-        "deltaPct": 0,
-        "asOf": "2026-10-28T17:00:00.000Z",
+        "priceUsdMt": 710.5,
+        "deltaPct": -0.07,
+        "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 1045,
-        "deltaPct": 0,
-        "asOf": "2026-10-28T00:00:00.000Z",
+        "priceUsdMt": 1070,
+        "deltaPct": 2.39,
+        "asOf": "2026-10-29T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 945,
-        "deltaPct": 0,
-        "asOf": "2026-10-28T00:00:00.000Z",
+        "priceUsdMt": 940,
+        "deltaPct": -0.53,
+        "asOf": "2026-10-29T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 842,
-        "deltaPct": 0,
-        "asOf": "2026-10-28T17:00:00.000Z",
+        "priceUsdMt": 837.5,
+        "deltaPct": -0.53,
+        "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1418.5,
-        "deltaPct": 0,
-        "asOf": "2026-10-28T17:00:00.000Z",
+        "priceUsdMt": 1406,
+        "deltaPct": -0.88,
+        "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 623,
-        "deltaPct": 0,
-        "asOf": "2026-10-28T17:00:00.000Z",
+        "priceUsdMt": 622,
+        "deltaPct": -0.16,
+        "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 2712,
-      "deltaPct": 2.26,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-29T15:45:11.307Z"
     },
     "capesizeTc": {
       "value": 4090,
-      "deltaPct": 5.25,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-29T15:45:11.335Z"
     },
     "panamaxTc": {
       "value": 1921,
-      "deltaPct": -2.24,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-10-29T15:45:11.350Z"
@@ -236,6 +236,142 @@
   },
   "news": [
     {
+      "title": "More Than 100 Lawmakers Push to Include SHIPS for America Act in Defense Bill",
+      "link": "https://gcaptain.com/more-than-100-lawmakers-push-to-include-ships-for-america-act-in-defense-bill/",
+      "pubDate": "Thu, 29 Oct 2026 20:10:45 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A bipartisan group of 119 lawmakers is urging congressional leaders to preserve and expand provisions of the SHIPS for America Act in the final fiscal year 2027 National Defense Authorization...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/Garamendi.jpg",
+      "en": {
+        "headline": "More Than 100 Lawmakers Push to Include SHIPS for America Act in Defense Bill",
+        "summary": "A bipartisan group of 119 lawmakers is urging congressional leaders to preserve and expand provisions of the SHIPS for America Act in the final fiscal year 2027 National Defense Authorization...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "The morning after: what December&#8217;s IMO vote means for a fixture",
+      "link": "https://splash247.com/the-morning-after-what-decembers-imo-vote-means-for-a-fixture/",
+      "pubDate": "Thu, 29 Oct 2026 19:47:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Whatever the IMO decides in December, a broker will price a dry bulk trip the next morning. The vote changes which line of that fixture carries the carbon, and how much. Argyris Zafeiropoulos from Resilience &#38; Compliance Advisory explains. Take a trip reported in the Baltic E",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/04/Jack-Hall-PA-Media-Assignments-4.jpg",
+      "en": {
+        "headline": "The morning after: what December&#8217;s IMO vote means for a fixture",
+        "summary": "Whatever the IMO decides in December, a broker will price a dry bulk trip the next morning. The vote changes which line of that fixture carries the carbon, and how much. Argyris Zafeiropoulos from Resilience &#38; Compliance Advisory explains. Take a trip reported in the Baltic E",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Greek Containership Sunk by Naval Drones Off Bulgaria as Black Sea Attacks Escalate",
+      "link": "https://gcaptain.com/greek-containership-sunk-by-naval-drones-off-bulgaria-as-black-sea-attacks-escalate/",
+      "pubDate": "Thu, 29 Oct 2026 18:58:10 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A Greek container ship has sunk after being hit by naval drones off Bulgaria on Wednesday, the Bulgarian government said, in the latest of a series of strikes in the western Black Sea this month that have raised concerns about the widening scope of Russia's war in Ukraine.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/202610291521460995.jpg",
+      "en": {
+        "headline": "Greek Containership Sunk by Naval Drones Off Bulgaria as Black Sea Attacks Escalate",
+        "summary": "A Greek container ship has sunk after being hit by naval drones off Bulgaria on Wednesday, the Bulgarian government said, in the latest of a series of strikes in the western Black Sea this month that have raised concerns about the widening scope of Russia's war in Ukraine.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Wallenius Wilhelmsen Orders Up to 12 LNG-Powered Car Carriers in $1.5 Billion Fleet Expansion",
+      "link": "https://gcaptain.com/wallenius-wilhelmsen-orders-up-to-12-lng-powered-car-carriers-in-1-5-billion-fleet-expansion/",
+      "pubDate": "Thu, 29 Oct 2026 18:43:05 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Wallenius Wilhelmsen is expanding its fleet renewal program with an order for four new dual-fuel car carriers and options for eight more, potentially adding 12 vessels in a deal valued...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/WW-branded-Shaper-Class-rendering-1_1db4cb68688ab678b7488992a775a806-800x444.jpeg",
+      "en": {
+        "headline": "Wallenius Wilhelmsen Orders Up to 12 LNG-Powered Car Carriers in $1.5 Billion Fleet Expansion",
+        "summary": "Wallenius Wilhelmsen is expanding its fleet renewal program with an order for four new dual-fuel car carriers and options for eight more, potentially adding 12 vessels in a deal valued...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "QatarEnergy Continues LNG Buying Spree to Hedge Future Hormuz Disruptions",
+      "link": "https://gcaptain.com/qatarenergy-continues-lng-buying-spree-to-hedge-future-hormuz-disruptions/",
+      "pubDate": "Thu, 29 Oct 2026 18:25:53 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "QatarEnergy is buying long-term supplies of liquefied natural gas from the US and other producers as part of a trading strategy designed to generate revenue if exports through the Strait of Hormuz are disrupted in the future, CEO Saad Sherida Al-Kaabi told Reuters on Thursday.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 9,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/shutterstock_33420973.jpg",
+      "en": {
+        "headline": "QatarEnergy Continues LNG Buying Spree to Hedge Future Hormuz Disruptions",
+        "summary": "QatarEnergy is buying long-term supplies of liquefied natural gas from the US and other producers as part of a trading strategy designed to generate revenue if exports through the Strait of Hormuz are disrupted in the future, CEO Saad Sherida Al-Kaabi told Reuters on Thursday.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Maritime Unions Sound Alarm Over Jones Act Waiver Compliance, Foreign Crews and National Security",
+      "link": "https://gcaptain.com/maritime-unions-sound-alarm-over-jones-act-waiver-compliance-foreign-crews-and-national-security/",
+      "pubDate": "Thu, 29 Oct 2026 17:01:47 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Nine maritime labor organizations say the Trump administration&#8217;s prolonged Jones Act waiver raises serious questions about compliance with federal law, including reporting requirements, immigration restrictions and the use of foreign...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 10,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/oil-tanker-golden-gate-bridge-800x534.jpg",
+      "en": {
+        "headline": "Maritime Unions Sound Alarm Over Jones Act Waiver Compliance, Foreign Crews and National Security",
+        "summary": "Nine maritime labor organizations say the Trump administration&#8217;s prolonged Jones Act waiver raises serious questions about compliance with federal law, including reporting requirements, immigration restrictions and the use of foreign...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Shell and Total Post Highest Quarterly Profit Since 2022",
+      "link": "https://gcaptain.com/shell-and-total-post-highest-quarterly-profit-since-2022/",
+      "pubDate": "Thu, 29 Oct 2026 16:45:23 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Shell and TotalEnergies reported on Thursday sharply higher third-quarter profits and raised share buybacks, as war-driven energy prices and record refining margins helped both beat expectations.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 10,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/07/6285680202_22ff7a376d_b.jpg",
+      "en": {
+        "headline": "Shell and Total Post Highest Quarterly Profit Since 2022",
+        "summary": "Shell and TotalEnergies reported on Thursday sharply higher third-quarter profits and raised share buybacks, as war-driven energy prices and record refining margins helped both beat expectations.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "U.S. Shipbuilding Delays Push Empire Wind&#8217;s First Power Into 2027",
+      "link": "https://gcaptain.com/u-s-shipbuilding-delays-push-empire-winds-first-power-into-2027/",
+      "pubDate": "Thu, 29 Oct 2026 16:39:42 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Delays involving U.S.-built support vessels have pushed back turbine installation at Equinor’s Empire Wind offshore wind project off New York, with first power now expected in the first half of...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 11,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/05/Empire-Wind-Field.jpg",
+      "en": {
+        "headline": "U.S. Shipbuilding Delays Push Empire Wind&#8217;s First Power Into 2027",
+        "summary": "Delays involving U.S.-built support vessels have pushed back turbine installation at Equinor’s Empire Wind offshore wind project off New York, with first power now expected in the first half of...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "COSCO Profit Jumps Most in Two Years as Turmoil Supports Rates",
       "link": "https://gcaptain.com/cosco-profit-jumps-most-in-two-years-as-turmoil-supports-rates/",
       "pubDate": "Thu, 29 Oct 2026 16:31:44 +0000",
@@ -244,7 +380,7 @@
       "summary": "(Bloomberg) &#8212; Cosco Shipping Holdings Co. earnings jumped the most in two years as persistent geopolitical disruptions rerouted trade routes, tying up more of its vessels for longer while container...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/08/shutterstock_1086154358.jpg",
       "en": {
         "headline": "COSCO Profit Jumps Most in Two Years as Turmoil Supports Rates",
@@ -261,7 +397,7 @@
       "summary": "Two California lawmakers are demanding that the Trump administration abandon reported plans to use ships for mass deportations, including the former Cal Poly Maritime Academy training vessel Golden Bear. Reps....",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/12/golden-bear-cal-maritime.jpg",
       "en": {
         "headline": "Lawmakers Vow to Block Use of Training Ship Golden Bear for Deportations",
@@ -278,7 +414,7 @@
       "summary": "U.S. LNG giant raises full-year earnings outlook as Middle East supply disruptions boost demand for American exports Cheniere Energy, the largest U.S. exporter of liquefied natural gas (LNG), reported a...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/03/DJI_0023_LUCiD.jpg",
       "en": {
         "headline": "Cheniere LNG Shipments Surge as Iran War Reshapes Global Gas Trade",
@@ -295,7 +431,7 @@
       "summary": "Norwegian car carrier and logistics giant Wallenius Wilhelmsen has secured two contracts worth more than $1bn with a major equipment manufacturer, adding another sizeable commitment to its shipping and logistics business. The Oslo-listed group said the agreements cover ocean tran",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/Wallenius-Wilhelmsen.jpg",
       "en": {
         "headline": "Wallenius Wilhelmsen locks in $1bn contract haul",
@@ -312,7 +448,7 @@
       "summary": "John Fredriksen-backed SFL Corporation has agreed to acquire three newbuildings for around $365m, securing long-term employment that will add at least $333m to its charter backlog. The New York-listed shipowner said the latest investment covers two 8,800 teu containerships schedu",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/05/Cap-San-Vincent-SFL.jpg",
       "en": {
         "headline": "SFL adds $365m newbuild trio with $333m in charter cover",
@@ -329,7 +465,7 @@
       "summary": "South Korea&#8217;s Namsung Shipping has been linked to another containership order in China, with brokers reporting a deal for two firm 7,100 teu vessels at Dalian Shipbuilding Industry Corporation (DSIC), plus options for another pair. Shipbroking sources said the CSSC-owned ya",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Namsung-Boxship.jpg",
       "en": {
         "headline": "Korean carrier Namsung returns to China for larger boxships",
@@ -346,7 +482,7 @@
       "summary": "The US Coast Guard has imposed additional security conditions on commercial vessels arriving in American waters after calling at Somali ports, adding the East African country to its list of jurisdictions considered to have inadequate port security measures. The restrictions took ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Mogadishu-Port.jpg",
       "en": {
         "headline": "US tightens entry rules for ships calling at Somali ports",
@@ -363,147 +499,11 @@
       "summary": "China has more than 50 navy and other official vessels operating in a wide swath of sea stretching from southern Japan down to Taiwan and off the Philippines, a senior Taiwan official said, calling the threat level \"obvious.\"",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/2026-01-29T052602Z_916046467_RC2QAJACPMG1_RTRMADP_3_TAIWAN-DEFENCE-800x533.jpg",
+      "hoursAgo": 16,
+      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Taiwan Flags &#8216;Obvious&#8217; Threat From 50 Chinese Vessels in Wide Sweep of Waters",
         "summary": "China has more than 50 navy and other official vessels operating in a wide swath of sea stretching from southern Japan down to Taiwan and off the Philippines, a senior Taiwan official said, calling the threat level \"obvious.\"",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Qatar to Buy LNG From Woodside as It Scours for US Supply",
-      "link": "https://gcaptain.com/qatar-to-buy-lng-from-woodside-as-it-scours-for-us-supply/",
-      "pubDate": "Thu, 29 Oct 2026 11:17:15 +0000",
-      "source": "gCaptain",
-      "category": "S&P",
-      "summary": "QatarEnergy agreed to purchase US liquefied natural gas from Woodside Energy Group Ltd. for two decades, saying it’s now the top buyer of the American fuel as it diversifies from the Middle East.",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 6,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-03-06T104859Z_1638352831_RC2MWJA831GC_RTRMADP_3_IRAN-CRISIS-ENERGY-QATAR-800x533.jpg",
-      "en": {
-        "headline": "Qatar to Buy LNG From Woodside as It Scours for US Supply",
-        "summary": "QatarEnergy agreed to purchase US liquefied natural gas from Woodside Energy Group Ltd. for two decades, saying it’s now the top buyer of the American fuel as it diversifies from the Middle East.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Jiahua Energy lines up $165m gas carrier at Jiangnan",
-      "link": "https://splash247.com/jiahua-energy-lines-up-165m-gas-carrier-at-jiangnan/",
-      "pubDate": "Thu, 29 Oct 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Chinese chemicals group Jiahua Energy is stepping up its shipowning ambitions with plans to invest up to $165m in a 102,000 cu m liquefied hydrocarbon carrier at Jiangnan Shipyard. The Shanghai-listed company has secured board approval for the project, with Jiangnan Shipyard and ",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Jiangnan-Shipyard.jpg",
-      "en": {
-        "headline": "Jiahua Energy lines up $165m gas carrier at Jiangnan",
-        "summary": "Chinese chemicals group Jiahua Energy is stepping up its shipowning ambitions with plans to invest up to $165m in a 102,000 cu m liquefied hydrocarbon carrier at Jiangnan Shipyard. The Shanghai-listed company has secured board approval for the project, with Jiangnan Shipyard and ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "COSCO turns to in-house yard for gas carrier expansion",
-      "link": "https://splash247.com/cosco-turns-to-in-house-yard-for-gas-carrier-expansion/",
-      "pubDate": "Thu, 29 Oct 2026 10:45:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "China&#8217;s COSCO Shipping Energy Transportation is expanding its gas carrier business with a RMB335m ($50.2m) ethylene carrier newbuilding project at affiliated Dalian COSCO Shipping Heavy Industry. The Shanghai- and Hong Kong-listed shipowner said its board had approved the c",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2016/04/cosco-dalian-1.jpg",
-      "en": {
-        "headline": "COSCO turns to in-house yard for gas carrier expansion",
-        "summary": "China&#8217;s COSCO Shipping Energy Transportation is expanding its gas carrier business with a RMB335m ($50.2m) ethylene carrier newbuilding project at affiliated Dalian COSCO Shipping Heavy Industry. The Shanghai- and Hong Kong-listed shipowner said its board had approved the c",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Aker Solutions braces for more job cuts",
-      "link": "https://splash247.com/aker-solutions-braces-for-more-job-cuts/",
-      "pubDate": "Thu, 29 Oct 2026 10:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norwegian offshore engineering group Aker Solutions is preparing for another round of workforce reductions as a sharp decline in activity following the completion of major oil and gas projects threatens hundreds more jobs. Chief financial officer Idar Eikrem told analysts during ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Aker-Solutions-worker.jpg",
-      "en": {
-        "headline": "Aker Solutions braces for more job cuts",
-        "summary": "Norwegian offshore engineering group Aker Solutions is preparing for another round of workforce reductions as a sharp decline in activity following the completion of major oil and gas projects threatens hundreds more jobs. Chief financial officer Idar Eikrem told analysts during ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "MOL secures FSRU charter with Deutsche ReGas",
-      "link": "https://splash247.com/mol-secures-fsru-charter-with-deutsche-regas/",
-      "pubDate": "Thu, 29 Oct 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Japanese shipping giant Mitsui OSK Lines (MOL) has signed a long-term charter agreement with Deutsche ReGas to supply a FSRU for the Deutsche Ostsee LNG import terminal in Mukran, Germany. Under the agreement, China&#8217;s Hudong-Zhonghua Shipbuilding will convert an existing LN",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Neptune-FSRU-TotalEnergies.jpg",
-      "en": {
-        "headline": "MOL secures FSRU charter with Deutsche ReGas",
-        "summary": "Japanese shipping giant Mitsui OSK Lines (MOL) has signed a long-term charter agreement with Deutsche ReGas to supply a FSRU for the Deutsche Ostsee LNG import terminal in Mukran, Germany. Under the agreement, China&#8217;s Hudong-Zhonghua Shipbuilding will convert an existing LN",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "India greenlights $1bn drive to break China&#8217;s container manufacturing dominance",
-      "link": "https://splash247.com/india-greenlights-1bn-drive-to-break-chinas-container-manufacturing-dominance/",
-      "pubDate": "Thu, 29 Oct 2026 09:46:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "India has approved a INR100bn ($1.05bn) programme to massively expand domestic shipping container manufacturing, targeting a tenfold increase in annual capacity as New Delhi seeks to challenge China&#8217;s near-monopoly over the industry. The country&#8217;s cabinet approved the",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Containers-LR.jpg",
-      "en": {
-        "headline": "India greenlights $1bn drive to break China&#8217;s container manufacturing dominance",
-        "summary": "India has approved a INR100bn ($1.05bn) programme to massively expand domestic shipping container manufacturing, targeting a tenfold increase in annual capacity as New Delhi seeks to challenge China&#8217;s near-monopoly over the industry. The country&#8217;s cabinet approved the",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "What the IMO should learn from Brazil’s elections ahead of its historic decision",
-      "link": "https://splash247.com/what-the-imo-should-learn-from-brazils-elections-ahead-of-its-historic-decision/",
-      "pubDate": "Thu, 29 Oct 2026 09:30:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Elissama Menezes, a Brazilian co-director of Equal Routes, a nonprofit working on shipping decarbonisation, writes for Splash today. Brazil&#8217;s presidential elections show that one should never discount the underdog. The same lesson could be applied to the International Marit",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/03/IMO-HQ-building-1.jpg",
-      "en": {
-        "headline": "What the IMO should learn from Brazil’s elections ahead of its historic decision",
-        "summary": "Elissama Menezes, a Brazilian co-director of Equal Routes, a nonprofit working on shipping decarbonisation, writes for Splash today. Brazil&#8217;s presidential elections show that one should never discount the underdog. The same lesson could be applied to the International Marit",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Romanian Officials Indicted in €7 Million EU-Funded Tugboat Fraud",
-      "link": "https://gcaptain.com/romanian-officials-indicted-in-e7-million-eu-funded-tugboat-fraud/",
-      "pubDate": "Wed, 28 Oct 2026 20:28:35 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Four Romanian public officials and two other defendants have been indicted over the alleged fraudulent procurement of two tugboats that were supposed to improve navigation on the Lower Danube River...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 21,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/12/shutterstock_1719207910.jpg",
-      "en": {
-        "headline": "Romanian Officials Indicted in €7 Million EU-Funded Tugboat Fraud",
-        "summary": "Four Romanian public officials and two other defendants have been indicted over the alleged fraudulent procurement of two tugboats that were supposed to improve navigation on the Lower Danube River...",
         "source": "gCaptain"
       }
     }
