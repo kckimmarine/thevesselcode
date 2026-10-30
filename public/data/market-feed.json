@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-30T03:40:18.654Z",
+    "generatedAt": "2026-10-30T11:53:54.711Z",
     "benchmarkAsOf": "2026-10-29",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 1002,
-        "deltaPct": 0.15,
+        "deltaPct": 0,
         "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1279,
-        "deltaPct": -3.29,
+        "deltaPct": 0,
         "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 909.5,
-        "deltaPct": 0.22,
+        "deltaPct": 0,
         "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 778,
-        "deltaPct": 1.04,
+        "deltaPct": 0,
         "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1427,
-        "deltaPct": -0.76,
+        "deltaPct": 0,
         "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 710.5,
-        "deltaPct": -0.07,
+        "deltaPct": 0,
         "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 1070,
-        "deltaPct": 2.39,
+        "deltaPct": 0,
         "asOf": "2026-10-29T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 940,
-        "deltaPct": -0.53,
+        "deltaPct": 0,
         "asOf": "2026-10-29T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -172,7 +172,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 837.5,
-        "deltaPct": -0.53,
+        "deltaPct": 0,
         "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1406,
-        "deltaPct": -0.88,
+        "deltaPct": 0,
         "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 622,
-        "deltaPct": -0.16,
+        "deltaPct": 0,
         "asOf": "2026-10-29T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -236,6 +236,176 @@
   },
   "news": [
     {
+      "title": "Swedish owner Veritas books up to six chemical tankers in China",
+      "link": "https://splash247.com/swedish-owner-veritas-books-up-to-six-chemical-tankers-in-china/",
+      "pubDate": "Fri, 30 Oct 2026 10:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Swedish shipowner Veritas Tankers has placed an order for up to six 13,000 dwt stainless steel chemical tankers at China&#8217;s Nantong Rainbow Offshore &#38; Engineering Equipment, in a deal potentially worth $248m. The yard&#8217;s Shenzhen-listed parent, Jiangsu Rainbow Heavy",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Veritas-Tankers-Rainbow-order.jpg",
+      "en": {
+        "headline": "Swedish owner Veritas books up to six chemical tankers in China",
+        "summary": "Swedish shipowner Veritas Tankers has placed an order for up to six 13,000 dwt stainless steel chemical tankers at China&#8217;s Nantong Rainbow Offshore &#38; Engineering Equipment, in a deal potentially worth $248m. The yard&#8217;s Shenzhen-listed parent, Jiangsu Rainbow Heavy",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Evalend drops newcastlemax option at Dajin Heavy",
+      "link": "https://splash247.com/evalend-drops-newcastlemax-option-at-dajin-heavy/",
+      "pubDate": "Fri, 30 Oct 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Greek shipowner Evalend Shipping has been linked to the decision not to exercise an option for a fourth 211,000 dwt newcastlemax bulker at China&#8217;s Dajin Heavy Industry, removing a potential CNY525m ($78m) vessel from the yard&#8217;s order pipeline. Dajin disclosed that the",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2017/12/dajin-heavy-e1782191774473.jpg",
+      "en": {
+        "headline": "Evalend drops newcastlemax option at Dajin Heavy",
+        "summary": "Greek shipowner Evalend Shipping has been linked to the decision not to exercise an option for a fourth 211,000 dwt newcastlemax bulker at China&#8217;s Dajin Heavy Industry, removing a potential CNY525m ($78m) vessel from the yard&#8217;s order pipeline. Dajin disclosed that the",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "China Merchants tanker arm targets Yangtze fleet renewal",
+      "link": "https://splash247.com/china-merchants-tanker-arm-targets-yangtze-fleet-renewal/",
+      "pubDate": "Fri, 30 Oct 2026 09:30:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "China Merchants-controlled Nanjing Tanker is planning to invest up to RMB191.72m ($28.7m) in ten 4,000 dwt crude oil barges as it moves to upgrade its fleet serving refineries along the Yangtze River. The Shanghai-listed owner has approved the investment through wholly owned subs",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2017/07/yangtze-shipping-e1635767969840.jpg",
+      "en": {
+        "headline": "China Merchants tanker arm targets Yangtze fleet renewal",
+        "summary": "China Merchants-controlled Nanjing Tanker is planning to invest up to RMB191.72m ($28.7m) in ten 4,000 dwt crude oil barges as it moves to upgrade its fleet serving refineries along the Yangtze River. The Shanghai-listed owner has approved the investment through wholly owned subs",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Dockworkers unite across 113 ports in global anti-war protest",
+      "link": "https://splash247.com/dockworkers-unite-across-113-ports-in-global-anti-war-protest/",
+      "pubDate": "Fri, 30 Oct 2026 08:45:01 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "One of the largest coordinated port labour mobilisations in history is underway today, with more than 25 unions staging strikes and demonstrations at 113 ports across 22 countries and territories. The worldwide action, organised under the banner &#8220;Dockworkers do not work for",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/CGT.jpg",
+      "en": {
+        "headline": "Dockworkers unite across 113 ports in global anti-war protest",
+        "summary": "One of the largest coordinated port labour mobilisations in history is underway today, with more than 25 unions staging strikes and demonstrations at 113 ports across 22 countries and territories. The worldwide action, organised under the banner &#8220;Dockworkers do not work for",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Oil majors count the cost of runaway tanker rates",
+      "link": "https://splash247.com/oil-majors-count-the-cost-of-runaway-tanker-rates/",
+      "pubDate": "Fri, 30 Oct 2026 08:26:28 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Soaring tanker freight rates are taking an increasingly heavy toll on the world&#8217;s oil majors, with the latest quarterly results revealing billions of dollars in additional shipping-related liabilities, squeezed refining margins and losses on trading positions. Shell has dis",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/07/Shell-logo.jpg",
+      "en": {
+        "headline": "Oil majors count the cost of runaway tanker rates",
+        "summary": "Soaring tanker freight rates are taking an increasingly heavy toll on the world&#8217;s oil majors, with the latest quarterly results revealing billions of dollars in additional shipping-related liabilities, squeezed refining margins and losses on trading positions. Shell has dis",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Maritime CEO Forum: When to leave the party",
+      "link": "https://splash247.com/maritime-ceo-forum-when-to-leave-the-party/",
+      "pubDate": "Fri, 30 Oct 2026 08:07:29 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Shipping investors are enjoying extraordinary returns but face increasingly difficult decisions over when to cash out, with industry leaders warning that geopolitical disruption is masking underlying market risks and encouraging potentially dangerous investment decisions. Speakin",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Monaco-2026-3.jpg",
+      "en": {
+        "headline": "Maritime CEO Forum: When to leave the party",
+        "summary": "Shipping investors are enjoying extraordinary returns but face increasingly difficult decisions over when to cash out, with industry leaders warning that geopolitical disruption is masking underlying market risks and encouraging potentially dangerous investment decisions. Speakin",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Splash Wrap: New networks, old faultlines",
+      "link": "https://splash247.com/splash-wrap-new-networks-old-faultlines/",
+      "pubDate": "Fri, 30 Oct 2026 08:00:49 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Two significant European consolidation deals this week illustrated the shipping industry&#8217;s appetite for greater control over supply chains. Spanish shipping group Boluda agreed to acquire Dutch multimodal operator Samskip, creating a shortsea network spanning 28 countries, ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/09/Samskip.jpg",
+      "en": {
+        "headline": "Splash Wrap: New networks, old faultlines",
+        "summary": "Two significant European consolidation deals this week illustrated the shipping industry&#8217;s appetite for greater control over supply chains. Spanish shipping group Boluda agreed to acquire Dutch multimodal operator Samskip, creating a shortsea network spanning 28 countries, ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Tanker targeted with hull-mounted explosives in Hormuz",
+      "link": "https://splash247.com/tanker-targeted-with-hull-mounted-explosives-in-hormuz/",
+      "pubDate": "Fri, 30 Oct 2026 07:49:48 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A tanker has been set ablaze in the Strait of Hormuz after attackers aboard a small boat attached explosives directly to its hull, marking a worrying new tactic in the campaign against commercial shipping. The Panama-flagged, 159,092 dwt Louise 1 was attacked late yesterday, 25 n",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/Hormuz-IMO.jpg",
+      "en": {
+        "headline": "Tanker targeted with hull-mounted explosives in Hormuz",
+        "summary": "A tanker has been set ablaze in the Strait of Hormuz after attackers aboard a small boat attached explosives directly to its hull, marking a worrying new tactic in the campaign against commercial shipping. The Panama-flagged, 159,092 dwt Louise 1 was attacked late yesterday, 25 n",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Hengli leaps from fifth to first in global shipbuilding rankings",
+      "link": "https://splash247.com/hengli-leaps-from-fifth-to-first-in-global-shipbuilding-rankings/",
+      "pubDate": "Fri, 30 Oct 2026 07:00:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Hengli Heavy Industry has captured almost a quarter of global newbuilding business this year, an extraordinary achievement for a Chinese shipyard that was brought back from the dead just four years ago. New figures from shipbroker Banchero Costa show the Dalian-based yard secured",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Hengli-1.jpg",
+      "en": {
+        "headline": "Hengli leaps from fifth to first in global shipbuilding rankings",
+        "summary": "Hengli Heavy Industry has captured almost a quarter of global newbuilding business this year, an extraordinary achievement for a Chinese shipyard that was brought back from the dead just four years ago. New figures from shipbroker Banchero Costa show the Dalian-based yard secured",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "CVC takes majority stake in Spanish ship repair yard Cernaval",
+      "link": "https://splash247.com/cvc-takes-majority-stake-in-spanish-ship-repair-yard-cernaval/",
+      "pubDate": "Fri, 30 Oct 2026 06:13:54 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Infrastructure investor CVC DIF has completed the acquisition of a majority stake in Spanish ship repair specialist Cernaval, giving the private equity group a foothold in one of Europe&#8217;s busiest maritime crossroads. The transaction covers the shipyard at Campamento in the ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Cernaval-Repair.jpg",
+      "en": {
+        "headline": "CVC takes majority stake in Spanish ship repair yard Cernaval",
+        "summary": "Infrastructure investor CVC DIF has completed the acquisition of a majority stake in Spanish ship repair specialist Cernaval, giving the private equity group a foothold in one of Europe&#8217;s busiest maritime crossroads. The transaction covers the shipyard at Campamento in the ",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "More Than 100 Lawmakers Push to Include SHIPS for America Act in Defense Bill",
       "link": "https://gcaptain.com/more-than-100-lawmakers-push-to-include-ships-for-america-act-in-defense-bill/",
       "pubDate": "Thu, 29 Oct 2026 20:10:45 +0000",
@@ -244,29 +414,12 @@
       "summary": "A bipartisan group of 119 lawmakers is urging congressional leaders to preserve and expand provisions of the SHIPS for America Act in the final fiscal year 2027 National Defense Authorization...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/Garamendi.jpg",
       "en": {
         "headline": "More Than 100 Lawmakers Push to Include SHIPS for America Act in Defense Bill",
         "summary": "A bipartisan group of 119 lawmakers is urging congressional leaders to preserve and expand provisions of the SHIPS for America Act in the final fiscal year 2027 National Defense Authorization...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "The morning after: what December&#8217;s IMO vote means for a fixture",
-      "link": "https://splash247.com/the-morning-after-what-decembers-imo-vote-means-for-a-fixture/",
-      "pubDate": "Thu, 29 Oct 2026 19:47:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Whatever the IMO decides in December, a broker will price a dry bulk trip the next morning. The vote changes which line of that fixture carries the carbon, and how much. Argyris Zafeiropoulos from Resilience &#38; Compliance Advisory explains. Take a trip reported in the Baltic E",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/04/Jack-Hall-PA-Media-Assignments-4.jpg",
-      "en": {
-        "headline": "The morning after: what December&#8217;s IMO vote means for a fixture",
-        "summary": "Whatever the IMO decides in December, a broker will price a dry bulk trip the next morning. The vote changes which line of that fixture carries the carbon, and how much. Argyris Zafeiropoulos from Resilience &#38; Compliance Advisory explains. Take a trip reported in the Baltic E",
-        "source": "Splash247"
       }
     },
     {
@@ -278,7 +431,7 @@
       "summary": "A Greek container ship has sunk after being hit by naval drones off Bulgaria on Wednesday, the Bulgarian government said, in the latest of a series of strikes in the western Black Sea this month that have raised concerns about the widening scope of Russia's war in Ukraine.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/202610291521460995.jpg",
       "en": {
         "headline": "Greek Containership Sunk by Naval Drones Off Bulgaria as Black Sea Attacks Escalate",
@@ -295,7 +448,7 @@
       "summary": "Wallenius Wilhelmsen is expanding its fleet renewal program with an order for four new dual-fuel car carriers and options for eight more, potentially adding 12 vessels in a deal valued...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/WW-branded-Shaper-Class-rendering-1_1db4cb68688ab678b7488992a775a806-800x444.jpeg",
       "en": {
         "headline": "Wallenius Wilhelmsen Orders Up to 12 LNG-Powered Car Carriers in $1.5 Billion Fleet Expansion",
@@ -312,7 +465,7 @@
       "summary": "QatarEnergy is buying long-term supplies of liquefied natural gas from the US and other producers as part of a trading strategy designed to generate revenue if exports through the Strait of Hormuz are disrupted in the future, CEO Saad Sherida Al-Kaabi told Reuters on Thursday.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/shutterstock_33420973.jpg",
       "en": {
         "headline": "QatarEnergy Continues LNG Buying Spree to Hedge Future Hormuz Disruptions",
@@ -329,7 +482,7 @@
       "summary": "Nine maritime labor organizations say the Trump administration&#8217;s prolonged Jones Act waiver raises serious questions about compliance with federal law, including reporting requirements, immigration restrictions and the use of foreign...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/oil-tanker-golden-gate-bridge-800x534.jpg",
       "en": {
         "headline": "Maritime Unions Sound Alarm Over Jones Act Waiver Compliance, Foreign Crews and National Security",
@@ -346,164 +499,11 @@
       "summary": "Shell and TotalEnergies reported on Thursday sharply higher third-quarter profits and raised share buybacks, as war-driven energy prices and record refining margins helped both beat expectations.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/07/6285680202_22ff7a376d_b.jpg",
       "en": {
         "headline": "Shell and Total Post Highest Quarterly Profit Since 2022",
         "summary": "Shell and TotalEnergies reported on Thursday sharply higher third-quarter profits and raised share buybacks, as war-driven energy prices and record refining margins helped both beat expectations.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "U.S. Shipbuilding Delays Push Empire Wind&#8217;s First Power Into 2027",
-      "link": "https://gcaptain.com/u-s-shipbuilding-delays-push-empire-winds-first-power-into-2027/",
-      "pubDate": "Thu, 29 Oct 2026 16:39:42 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Delays involving U.S.-built support vessels have pushed back turbine installation at Equinor’s Empire Wind offshore wind project off New York, with first power now expected in the first half of...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/05/Empire-Wind-Field.jpg",
-      "en": {
-        "headline": "U.S. Shipbuilding Delays Push Empire Wind&#8217;s First Power Into 2027",
-        "summary": "Delays involving U.S.-built support vessels have pushed back turbine installation at Equinor’s Empire Wind offshore wind project off New York, with first power now expected in the first half of...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "COSCO Profit Jumps Most in Two Years as Turmoil Supports Rates",
-      "link": "https://gcaptain.com/cosco-profit-jumps-most-in-two-years-as-turmoil-supports-rates/",
-      "pubDate": "Thu, 29 Oct 2026 16:31:44 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "(Bloomberg) &#8212; Cosco Shipping Holdings Co. earnings jumped the most in two years as persistent geopolitical disruptions rerouted trade routes, tying up more of its vessels for longer while container...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/08/shutterstock_1086154358.jpg",
-      "en": {
-        "headline": "COSCO Profit Jumps Most in Two Years as Turmoil Supports Rates",
-        "summary": "(Bloomberg) &#8212; Cosco Shipping Holdings Co. earnings jumped the most in two years as persistent geopolitical disruptions rerouted trade routes, tying up more of its vessels for longer while container...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Lawmakers Vow to Block Use of Training Ship Golden Bear for Deportations",
-      "link": "https://gcaptain.com/lawmakers-vow-to-block-use-of-training-ship-golden-bear-for-deportations/",
-      "pubDate": "Thu, 29 Oct 2026 16:21:34 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Two California lawmakers are demanding that the Trump administration abandon reported plans to use ships for mass deportations, including the former Cal Poly Maritime Academy training vessel Golden Bear. Reps....",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/12/golden-bear-cal-maritime.jpg",
-      "en": {
-        "headline": "Lawmakers Vow to Block Use of Training Ship Golden Bear for Deportations",
-        "summary": "Two California lawmakers are demanding that the Trump administration abandon reported plans to use ships for mass deportations, including the former Cal Poly Maritime Academy training vessel Golden Bear. Reps....",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Cheniere LNG Shipments Surge as Iran War Reshapes Global Gas Trade",
-      "link": "https://gcaptain.com/cheniere-lng-shipments-surge-as-iran-war-reshapes-global-gas-trade/",
-      "pubDate": "Thu, 29 Oct 2026 15:07:55 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "U.S. LNG giant raises full-year earnings outlook as Middle East supply disruptions boost demand for American exports Cheniere Energy, the largest U.S. exporter of liquefied natural gas (LNG), reported a...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/03/DJI_0023_LUCiD.jpg",
-      "en": {
-        "headline": "Cheniere LNG Shipments Surge as Iran War Reshapes Global Gas Trade",
-        "summary": "U.S. LNG giant raises full-year earnings outlook as Middle East supply disruptions boost demand for American exports Cheniere Energy, the largest U.S. exporter of liquefied natural gas (LNG), reported a...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Wallenius Wilhelmsen locks in $1bn contract haul",
-      "link": "https://splash247.com/wallenius-wilhelmsen-locks-in-1bn-contract-haul/",
-      "pubDate": "Thu, 29 Oct 2026 12:34:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norwegian car carrier and logistics giant Wallenius Wilhelmsen has secured two contracts worth more than $1bn with a major equipment manufacturer, adding another sizeable commitment to its shipping and logistics business. The Oslo-listed group said the agreements cover ocean tran",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/Wallenius-Wilhelmsen.jpg",
-      "en": {
-        "headline": "Wallenius Wilhelmsen locks in $1bn contract haul",
-        "summary": "Norwegian car carrier and logistics giant Wallenius Wilhelmsen has secured two contracts worth more than $1bn with a major equipment manufacturer, adding another sizeable commitment to its shipping and logistics business. The Oslo-listed group said the agreements cover ocean tran",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "SFL adds $365m newbuild trio with $333m in charter cover",
-      "link": "https://splash247.com/sfl-adds-365m-newbuild-trio-with-333m-in-charter-cover/",
-      "pubDate": "Thu, 29 Oct 2026 12:13:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "John Fredriksen-backed SFL Corporation has agreed to acquire three newbuildings for around $365m, securing long-term employment that will add at least $333m to its charter backlog. The New York-listed shipowner said the latest investment covers two 8,800 teu containerships schedu",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/05/Cap-San-Vincent-SFL.jpg",
-      "en": {
-        "headline": "SFL adds $365m newbuild trio with $333m in charter cover",
-        "summary": "John Fredriksen-backed SFL Corporation has agreed to acquire three newbuildings for around $365m, securing long-term employment that will add at least $333m to its charter backlog. The New York-listed shipowner said the latest investment covers two 8,800 teu containerships schedu",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Korean carrier Namsung returns to China for larger boxships",
-      "link": "https://splash247.com/korean-carrier-namsung-returns-to-china-for-larger-boxships/",
-      "pubDate": "Thu, 29 Oct 2026 11:50:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "South Korea&#8217;s Namsung Shipping has been linked to another containership order in China, with brokers reporting a deal for two firm 7,100 teu vessels at Dalian Shipbuilding Industry Corporation (DSIC), plus options for another pair. Shipbroking sources said the CSSC-owned ya",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Namsung-Boxship.jpg",
-      "en": {
-        "headline": "Korean carrier Namsung returns to China for larger boxships",
-        "summary": "South Korea&#8217;s Namsung Shipping has been linked to another containership order in China, with brokers reporting a deal for two firm 7,100 teu vessels at Dalian Shipbuilding Industry Corporation (DSIC), plus options for another pair. Shipbroking sources said the CSSC-owned ya",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "US tightens entry rules for ships calling at Somali ports",
-      "link": "https://splash247.com/us-tightens-entry-rules-for-ships-calling-at-somali-ports/",
-      "pubDate": "Thu, 29 Oct 2026 11:28:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The US Coast Guard has imposed additional security conditions on commercial vessels arriving in American waters after calling at Somali ports, adding the East African country to its list of jurisdictions considered to have inadequate port security measures. The restrictions took ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Mogadishu-Port.jpg",
-      "en": {
-        "headline": "US tightens entry rules for ships calling at Somali ports",
-        "summary": "The US Coast Guard has imposed additional security conditions on commercial vessels arriving in American waters after calling at Somali ports, adding the East African country to its list of jurisdictions considered to have inadequate port security measures. The restrictions took ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Taiwan Flags &#8216;Obvious&#8217; Threat From 50 Chinese Vessels in Wide Sweep of Waters",
-      "link": "https://gcaptain.com/taiwan-flags-obvious-threat-from-50-chinese-vessels-in-wide-sweep-of-waters/",
-      "pubDate": "Thu, 29 Oct 2026 11:19:32 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "China has more than 50 navy and other official vessels operating in a wide swath of sea stretching from southern Japan down to Taiwan and off the Philippines, a senior Taiwan official said, calling the threat level \"obvious.\"",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Taiwan Flags &#8216;Obvious&#8217; Threat From 50 Chinese Vessels in Wide Sweep of Waters",
-        "summary": "China has more than 50 navy and other official vessels operating in a wide swath of sea stretching from southern Japan down to Taiwan and off the Philippines, a senior Taiwan official said, calling the threat level \"obvious.\"",
         "source": "gCaptain"
       }
     }
