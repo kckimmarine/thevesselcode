@@ -1,1 +1,1 @@
-{"v":1,"p":"63","n":3,"ships":[{"i":"6329044","n":"S/S PETERSBURG","t":"Crude Oil Tanker","d":0,"y":0,"f":"US","m":"","e":""},{"i":"6360696","n":"VETOR QUINTO","t":"Wine Tanker","d":0,"y":0,"f":"IT","m":"","e":""},{"i":"6386470","n":"]/V TIAMOND K","t":"Cargo","d":0,"y":0,"f":"PA","m":"","e":""}]}
+{"v":1,"p":"63","n":3,"ships":[{"i":"6329044","n":"S/S PETERSBURG","t":"Crude Oil Tanker","f":"US"},{"i":"6360696","n":"VETOR QUINTO","t":"Wine Tanker","f":"IT"},{"i":"6386470","n":"]/V TIAMOND K","t":"Cargo","f":"PA"}]}
