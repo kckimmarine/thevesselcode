@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-31T20:49:04.279Z",
+    "generatedAt": "2026-11-01T03:25:29.446Z",
     "benchmarkAsOf": "2026-10-30",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -236,6 +236,40 @@
   },
   "news": [
     {
+      "title": "Taiwan Says China Harassing Shipping With East Coast Patrol",
+      "link": "https://gcaptain.com/taiwan-says-china-harassing-shipping-with-east-coast-patrol/",
+      "pubDate": "Sun, 01 Nov 2026 02:36:33 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "TAIPEI, Nov 1 (Reuters) &#8211; China&#8217;s Coast Guard is harassing shipping with its latest patrol off Taiwan&#8217;s east coast and trying to exert a fictional jurisdiction, the Taiwanese Coast Guard said, adding it had sent its own ships to keep...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-11-01T010917Z_147202233_RC2SQIAQ0ESL_RTRMADP_3_TAIWAN-CHINA-SECURITY-800x533.jpg",
+      "en": {
+        "headline": "Taiwan Says China Harassing Shipping With East Coast Patrol",
+        "summary": "TAIPEI, Nov 1 (Reuters) &#8211; China&#8217;s Coast Guard is harassing shipping with its latest patrol off Taiwan&#8217;s east coast and trying to exert a fictional jurisdiction, the Taiwanese Coast Guard said, adding it had sent its own ships to keep...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Russia Extends Ban On Most Diesel Exports Through January",
+      "link": "https://gcaptain.com/russia-extends-ban-on-most-diesel-exports-through-january/",
+      "pubDate": "Sun, 01 Nov 2026 00:20:05 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By&#160;Bloomberg News Oct 31, 2026 (Bloomberg) &#8211;Russia’s government has extended a general ban on diesel exports by producers until the end of January while still allowing some volumes to flow...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-01T080943Z_231964487_RC22LKAWT2QP_RTRMADP_3_SYRIA-ECONOMY-RUSSIAN-OIL-800x450.jpg",
+      "en": {
+        "headline": "Russia Extends Ban On Most Diesel Exports Through January",
+        "summary": "By&#160;Bloomberg News Oct 31, 2026 (Bloomberg) &#8211;Russia’s government has extended a general ban on diesel exports by producers until the end of January while still allowing some volumes to flow...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Iran&#8217;s IRGC Navy Says Four Tankers Catch Fire In Strait Of Hormuz",
       "link": "https://gcaptain.com/irans-irgc-navy-says-four-tankers-catch-fire-in-strait-of-hormuz/",
       "pubDate": "Sat, 31 Oct 2026 18:01:30 +0000",
@@ -244,7 +278,7 @@
       "summary": "DUBAI, Oct 30 (Reuters) &#8211; Iran&#8217;s Revolutionary Guards Navy said on Friday that four oil tankers had caught fire and exploded in the Strait of Hormuz, while attempting to use what it described as unauthorised routes,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/2026-09-16T054444Z_1957483145_RC2PJNADDY53_RTRMADP_3_IRAN-CRISIS.jpg",
       "en": {
         "headline": "Iran&#8217;s IRGC Navy Says Four Tankers Catch Fire In Strait Of Hormuz",
@@ -261,7 +295,7 @@
       "summary": "A potential strike threatening operations at some of the busiest container terminals in the United States has been pushed back after the Pacific Maritime Association (PMA) and the International Longshore...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 25,
+      "hoursAgo": 32,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/05/port-of-los-angeles-800x532.jpeg",
       "en": {
         "headline": "Strike Threat at Los Angeles, Long Beach Ports Delayed as Union and Employers Extend Talks",
@@ -278,7 +312,7 @@
       "summary": "As gCaptain reported earlier this week, the Maritime Administration (MARAD) announced its approval of the $8.2 billion Texas ST LNG export port application, a major development for U.S. energy production.\n\nBut the announcement also highlighted another significant milestone: the f",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 27,
+      "hoursAgo": 33,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/06/shutterstock_669937627.jpg",
       "en": {
         "headline": "How MARAD Cut Years Off Deepwater Port Reviews Without Changing Environmental Standards",
@@ -295,7 +329,7 @@
       "summary": "Hanwha Philly Shipyard has secured a $269 million contract to build a Medium Landing Ship (LSM) for the U.S. Navy and Marine Corps, marking a major milestone in the South...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 28,
+      "hoursAgo": 34,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/LSM-larger.jpg",
       "en": {
         "headline": "Hanwha Philly Shipyard Wins $269 Million U.S. Navy Landing Ship Contract",
@@ -312,7 +346,7 @@
       "summary": "Italian shipping giant Grimaldi Group is warning that reinstating U.S. port fees on foreign-built vehicle carriers could force it to redeploy vessels away from American trades, potentially disrupting shipping services...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 28,
+      "hoursAgo": 35,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/07/Grimaldi-Shanghai-800x450.jpg",
       "en": {
         "headline": "Grimaldi Warns U.S. Port Fees Could Force Ships Out of American Trades",
@@ -329,7 +363,7 @@
       "summary": "Dockworkers across 113 ports in 22 countries staged coordinated strikes and protests Friday, disrupting cargo operations and ferry services as part of a global campaign opposing arms shipments to Israel...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 28,
+      "hoursAgo": 35,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/07/OSTJ3U3EW5KN7N6LCMD7BOTF7I.jpg.avif",
       "en": {
         "headline": "Anti-War Protests Spread Across Global Ports as Dockworkers Target Arms Trade",
@@ -346,7 +380,7 @@
       "summary": "A tanker transiting the Strait of Hormuz was attacked by a small boat that attached two explosive devices to its hull, triggering an engine room fire and temporarily disabling the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 29,
+      "hoursAgo": 36,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
       "en": {
         "headline": "Tanker Hit by Limpet Mines in Strait of Hormuz as New Threat to Shipping Emerges",
@@ -363,7 +397,7 @@
       "summary": "The Baltic Exchange has received two whistleblowing claims of attempted manipulation of the world’s benchmark tanker rate since the beginning of the war in Iran, according to documents made public as part of a major legal battle with trading house Mercuria Energy Group.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 32,
+      "hoursAgo": 38,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2016/03/2016-03-16T154858Z_1663808089_GF10000347670_RTRMADP_3_BALTICEXCHANGE-CHINAMERCHANTS.jpg",
       "en": {
         "headline": "Whistleblowers Claimed Key Oil Tanker Rate Was Manipulated",
@@ -380,8 +414,8 @@
       "summary": "A small boat attached two limpet mines to the hull of a tanker in the Strait of Hormuz causing a fire in its engine room and temporarily disabling the vessel, in the first successful use of such explosives in the waterway since the US war with Iran began in February, maritime sou",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 32,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-20T060010Z_1765538580_RC2L3LAI6608_RTRMADP_3_OIL-MAJORS-RESULTS-PREVIEW-800x533.jpg",
+      "hoursAgo": 38,
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Tanker in Strait of Hormuz Hit by Limpet Mines, Security Sources Say",
         "summary": "A small boat attached two limpet mines to the hull of a tanker in the Strait of Hormuz causing a fire in its engine room and temporarily disabling the vessel, in the first successful use of such explosives in the waterway since the US war with Iran began in February, maritime sou",
@@ -397,7 +431,7 @@
       "summary": "Swedish shipowner Veritas Tankers has placed an order for up to six 13,000 dwt stainless steel chemical tankers at China&#8217;s Nantong Rainbow Offshore &#38; Engineering Equipment, in a deal potentially worth $248m. The yard&#8217;s Shenzhen-listed parent, Jiangsu Rainbow Heavy",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 34,
+      "hoursAgo": 40,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Veritas-Tankers-Rainbow-order.jpg",
       "en": {
         "headline": "Swedish owner Veritas books up to six chemical tankers in China",
@@ -414,7 +448,7 @@
       "summary": "Greek shipowner Evalend Shipping has been linked to the decision not to exercise an option for a fourth 211,000 dwt newcastlemax bulker at China&#8217;s Dajin Heavy Industry, removing a potential CNY525m ($78m) vessel from the yard&#8217;s order pipeline. Dajin disclosed that the",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 34,
+      "hoursAgo": 41,
       "imageUrl": "https://splash247.com/wp-content/uploads/2017/12/dajin-heavy-e1782191774473.jpg",
       "en": {
         "headline": "Evalend drops newcastlemax option at Dajin Heavy",
@@ -431,7 +465,7 @@
       "summary": "China Merchants-controlled Nanjing Tanker is planning to invest up to RMB191.72m ($28.7m) in ten 4,000 dwt crude oil barges as it moves to upgrade its fleet serving refineries along the Yangtze River. The Shanghai-listed owner has approved the investment through wholly owned subs",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 35,
+      "hoursAgo": 41,
       "imageUrl": "https://splash247.com/wp-content/uploads/2017/07/yangtze-shipping-e1635767969840.jpg",
       "en": {
         "headline": "China Merchants tanker arm targets Yangtze fleet renewal",
@@ -448,7 +482,7 @@
       "summary": "One of the largest coordinated port labour mobilisations in history is underway today, with more than 25 unions staging strikes and demonstrations at 113 ports across 22 countries and territories. The worldwide action, organised under the banner &#8220;Dockworkers do not work for",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 36,
+      "hoursAgo": 42,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/CGT.jpg",
       "en": {
         "headline": "Dockworkers unite across 113 ports in global anti-war protest",
@@ -465,45 +499,11 @@
       "summary": "Soaring tanker freight rates are taking an increasingly heavy toll on the world&#8217;s oil majors, with the latest quarterly results revealing billions of dollars in additional shipping-related liabilities, squeezed refining margins and losses on trading positions. Shell has dis",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 36,
+      "hoursAgo": 42,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/07/Shell-logo.jpg",
       "en": {
         "headline": "Oil majors count the cost of runaway tanker rates",
         "summary": "Soaring tanker freight rates are taking an increasingly heavy toll on the world&#8217;s oil majors, with the latest quarterly results revealing billions of dollars in additional shipping-related liabilities, squeezed refining margins and losses on trading positions. Shell has dis",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Maritime CEO Forum: When to leave the party",
-      "link": "https://splash247.com/maritime-ceo-forum-when-to-leave-the-party/",
-      "pubDate": "Fri, 30 Oct 2026 08:07:29 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Shipping investors are enjoying extraordinary returns but face increasingly difficult decisions over when to cash out, with industry leaders warning that geopolitical disruption is masking underlying market risks and encouraging potentially dangerous investment decisions. Speakin",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 36,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Monaco-2026-3.jpg",
-      "en": {
-        "headline": "Maritime CEO Forum: When to leave the party",
-        "summary": "Shipping investors are enjoying extraordinary returns but face increasingly difficult decisions over when to cash out, with industry leaders warning that geopolitical disruption is masking underlying market risks and encouraging potentially dangerous investment decisions. Speakin",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Splash Wrap: New networks, old faultlines",
-      "link": "https://splash247.com/splash-wrap-new-networks-old-faultlines/",
-      "pubDate": "Fri, 30 Oct 2026 08:00:49 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Two significant European consolidation deals this week illustrated the shipping industry&#8217;s appetite for greater control over supply chains. Spanish shipping group Boluda agreed to acquire Dutch multimodal operator Samskip, creating a shortsea network spanning 28 countries, ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 36,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/09/Samskip.jpg",
-      "en": {
-        "headline": "Splash Wrap: New networks, old faultlines",
-        "summary": "Two significant European consolidation deals this week illustrated the shipping industry&#8217;s appetite for greater control over supply chains. Spanish shipping group Boluda agreed to acquire Dutch multimodal operator Samskip, creating a shortsea network spanning 28 countries, ",
         "source": "Splash247"
       }
     }
