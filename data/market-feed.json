@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-04T04:00:55.100Z",
+    "generatedAt": "2026-11-04T13:30:24.359Z",
     "benchmarkAsOf": "2026-11-03",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 941.5,
-        "deltaPct": -6.18,
+        "deltaPct": 0,
         "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1270,
-        "deltaPct": 0.55,
+        "deltaPct": 0,
         "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 845.5,
-        "deltaPct": -5.9,
+        "deltaPct": 0,
         "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 755.5,
-        "deltaPct": -1.05,
+        "deltaPct": 0,
         "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1388.5,
-        "deltaPct": -1,
+        "deltaPct": 0,
         "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 643,
-        "deltaPct": -6.61,
+        "deltaPct": 0,
         "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -172,7 +172,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 780,
-        "deltaPct": -4.18,
+        "deltaPct": 0,
         "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1331.5,
-        "deltaPct": -3.02,
+        "deltaPct": 0,
         "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 552.5,
-        "deltaPct": -6.2,
+        "deltaPct": 0,
         "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -236,6 +236,176 @@
   },
   "news": [
     {
+      "title": "Torm strikes eight-tanker newbuild deal in joint venture push",
+      "link": "https://splash247.com/torm-strikes-eight-tanker-newbuild-deal-through-joint-venture/",
+      "pubDate": "Wed, 04 Nov 2026 12:40:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Danish product tanker giant Torm has stepped up its fleet expansion with agreements for eight LR2 newbuildings through a 50:50 joint venture. The Copenhagen- and New York-listed owner disclosed the latest contracts in its third-quarter results, confirming that the agreements were",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/03/Torm-Success.jpg",
+      "en": {
+        "headline": "Torm strikes eight-tanker newbuild deal in joint venture push",
+        "summary": "Danish product tanker giant Torm has stepped up its fleet expansion with agreements for eight LR2 newbuildings through a 50:50 joint venture. The Copenhagen- and New York-listed owner disclosed the latest contracts in its third-quarter results, confirming that the agreements were",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Benelux returns to China for LPG carrier brace",
+      "link": "https://splash247.com/benelux-returns-to-china-for-lpg-carrier-brace/",
+      "pubDate": "Wed, 04 Nov 2026 12:20:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Greek gas shipowner Benelux Overseas has been linked to another pair of midsize gas carriers at China&#8217;s Huangpu Wenchong Shipbuilding, adding to its growing orderbook at the CSSC-affiliated yard. Shipbuilding sources have identified the Athens-based company, controlled by K",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Olympios-Gas-.-Huangpu-Wenchong.jpg",
+      "en": {
+        "headline": "Benelux returns to China for LPG carrier brace",
+        "summary": "Greek gas shipowner Benelux Overseas has been linked to another pair of midsize gas carriers at China&#8217;s Huangpu Wenchong Shipbuilding, adding to its growing orderbook at the CSSC-affiliated yard. Shipbuilding sources have identified the Athens-based company, controlled by K",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Idan Ofer turns to Japan for boxship quartet",
+      "link": "https://splash247.com/idan-ofer-turns-to-japan-for-boxship-quartet/",
+      "pubDate": "Wed, 04 Nov 2026 11:50:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Idan Ofer&#8217;s Eastern Pacific Shipping (EPS) has been linked to an order for four midsize containerships at Japan&#8217;s Imabari Shipbuilding, marking a rare Japanese addition to its extensive newbuilding programme. Shipbuilding sources have identified the Singapore-based ow",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/Imabari-shipyard-DryDel-Shipping.jpg",
+      "en": {
+        "headline": "Idan Ofer turns to Japan for boxship quartet",
+        "summary": "Idan Ofer&#8217;s Eastern Pacific Shipping (EPS) has been linked to an order for four midsize containerships at Japan&#8217;s Imabari Shipbuilding, marking a rare Japanese addition to its extensive newbuilding programme. Shipbuilding sources have identified the Singapore-based ow",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Laskaridis doubles Hengli LR2 bet with fresh pair",
+      "link": "https://splash247.com/laskaridis-doubles-hengli-lr2-bet-with-fresh-pair/",
+      "pubDate": "Wed, 04 Nov 2026 11:20:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Greek owner Thanassis Laskaridis has doubled his LR2 tanker newbuilding commitment at China&#8217;s Hengli Heavy Industries, adding another two 114,000 dwt vessels to an existing programme. The latest contracts cover two vessels scheduled for 2028, and take the owner&#8217;s LR2 ",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/Hengli-LR2.jpg",
+      "en": {
+        "headline": "Laskaridis doubles Hengli LR2 bet with fresh pair",
+        "summary": "Greek owner Thanassis Laskaridis has doubled his LR2 tanker newbuilding commitment at China&#8217;s Hengli Heavy Industries, adding another two 114,000 dwt vessels to an existing programme. The latest contracts cover two vessels scheduled for 2028, and take the owner&#8217;s LR2 ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Cameroon&#8217;s Gulfcam taps new chief to drive Camship expansion",
+      "link": "https://splash247.com/cameroons-gulfcam-taps-new-chief-to-drive-camship-expansion/",
+      "pubDate": "Wed, 04 Nov 2026 10:59:51 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Cameroon&#8217;s Gulfcam is pursuing plans to acquire six vessels to expand its coastal container shipping operations between Kribi and Douala, with a former Camship executive taking charge of the business. Bernard André Ndengue took over as chief executive on November 1, replaci",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Atlantic-Runner-II-Gulfcam.jpg",
+      "en": {
+        "headline": "Cameroon&#8217;s Gulfcam taps new chief to drive Camship expansion",
+        "summary": "Cameroon&#8217;s Gulfcam is pursuing plans to acquire six vessels to expand its coastal container shipping operations between Kribi and Douala, with a former Camship executive taking charge of the business. Bernard André Ndengue took over as chief executive on November 1, replaci",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Ardmore trims ageing tonnage amid Chinese newbuild drive",
+      "link": "https://splash247.com/ardmore-trims-ageing-tonnage-amid-chinese-newbuild-drive/",
+      "pubDate": "Wed, 04 Nov 2026 10:55:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "New York-listed Ardmore Shipping has sold another older product tanker, agreeing a $34.3m deal for the 2013-built Ardmore Endeavour as it continues to renew its fleet. The Gernot Ruppelt-led company disclosed the transaction in its third-quarter results. The 49,859 dwt MR tanker,",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Ardmore-Endeavour.jpg",
+      "en": {
+        "headline": "Ardmore trims ageing tonnage amid Chinese newbuild drive",
+        "summary": "New York-listed Ardmore Shipping has sold another older product tanker, agreeing a $34.3m deal for the 2013-built Ardmore Endeavour as it continues to renew its fleet. The Gernot Ruppelt-led company disclosed the transaction in its third-quarter results. The 49,859 dwt MR tanker,",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Greenland&#8217;s scrubber ban sparks calls for wider Arctic crackdown",
+      "link": "https://splash247.com/greenlands-scrubber-ban-sparks-calls-for-wider-arctic-crackdown/",
+      "pubDate": "Wed, 04 Nov 2026 10:31:31 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Greenland is moving to ban scrubber wastewater discharges throughout its territorial waters, prompting environmental groups to call for similar restrictions across the Arctic and ultimately a global prohibition. The country&#8217;s parliament, Inatsisartut, voted unanimously last",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2015/01/scrubber-e1597391075324.jpg",
+      "en": {
+        "headline": "Greenland&#8217;s scrubber ban sparks calls for wider Arctic crackdown",
+        "summary": "Greenland is moving to ban scrubber wastewater discharges throughout its territorial waters, prompting environmental groups to call for similar restrictions across the Arctic and ultimately a global prohibition. The country&#8217;s parliament, Inatsisartut, voted unanimously last",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Orkim books $38m product tanker pair in China",
+      "link": "https://splash247.com/orkim-books-38m-product-tanker-pair-in-china/",
+      "pubDate": "Wed, 04 Nov 2026 10:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Malaysian tanker owner Orkim has signed contracts for two more product tankers in China, committing about $37.6m as it presses ahead with fleet expansion following last year&#8217;s stock market listing. The Bursa Malaysia-listed company said its wholly owned subsidiary Orkim Mar",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Orkim-Citrine-tanker.jpg",
+      "en": {
+        "headline": "Orkim books $38m product tanker pair in China",
+        "summary": "Malaysian tanker owner Orkim has signed contracts for two more product tankers in China, committing about $37.6m as it presses ahead with fleet expansion following last year&#8217;s stock market listing. The Bursa Malaysia-listed company said its wholly owned subsidiary Orkim Mar",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "MPC Oceanic strikes deal for 41% of Marlow Navigation",
+      "link": "https://splash247.com/mpc-oceanic-strikes-deal-for-41-of-marlow-navigation/",
+      "pubDate": "Wed, 04 Nov 2026 10:28:04 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Hamburg-listed MPC Oceanic Group has agreed to acquire a 41% stake in Cyprus-based shipmanager Marlow Navigation in a deal that will also see Marlow&#8217;s existing shareholders take a holding in the German maritime investment and services group. The transaction, announced on We",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Marlow-Navigation.jpg",
+      "en": {
+        "headline": "MPC Oceanic strikes deal for 41% of Marlow Navigation",
+        "summary": "Hamburg-listed MPC Oceanic Group has agreed to acquire a 41% stake in Cyprus-based shipmanager Marlow Navigation in a deal that will also see Marlow&#8217;s existing shareholders take a holding in the German maritime investment and services group. The transaction, announced on We",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Vedanta taps Exceed for Indian deepwater drilling campaign",
+      "link": "https://splash247.com/vedanta-taps-exceed-for-indian-deepwater-drilling-campaign/",
+      "pubDate": "Wed, 04 Nov 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "India&#8217;s Vedanta Oil and Gas has signed a partnership agreement with UK-based well management specialist Exceed for an exploration and appraisal campaign in the Krishna-Godavari Basin. The Kent-owned company will provide integrated support for drilling operations in Vedanta&",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Dorado-rig-sunset-Carnarvon.jpg",
+      "en": {
+        "headline": "Vedanta taps Exceed for Indian deepwater drilling campaign",
+        "summary": "India&#8217;s Vedanta Oil and Gas has signed a partnership agreement with UK-based well management specialist Exceed for an exploration and appraisal campaign in the Krishna-Godavari Basin. The Kent-owned company will provide integrated support for drilling operations in Vedanta&",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "U.S. Coast Guard Detains MSC Cruise Ship in Miami",
       "link": "https://gcaptain.com/u-s-coast-guard-detains-msc-cruise-ship-in-miami/",
       "pubDate": "Tue, 03 Nov 2026 22:39:08 +0000",
@@ -244,7 +414,7 @@
       "summary": "The U.S. Coast Guard has detained the cruise ship MSC Poesia at PortMiami, forcing MSC Cruises to cancel an 11-night Caribbean voyage after the vessel remained in port for two...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/MSC_Poesia_departing_Tallinn_11_July_2012.jpg",
       "en": {
         "headline": "U.S. Coast Guard Detains MSC Cruise Ship in Miami",
@@ -261,7 +431,7 @@
       "summary": "By Chris Servello (OpEd) Ten and eleven month Navy deployments may become the norm for the next couple of years. That’s the message Chief of Naval Operations Admiral Daryl Caudle and Master Chief...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/CNO-Navy-Adm-caudle-perryman-mcpon-800x515.jpg",
       "en": {
         "headline": "Longer Navy Deployments Demand More Than Tough Sailors",
@@ -278,7 +448,7 @@
       "summary": "As US President Donald Trump threatens renewed attacks against Iran, Tehran’s intermittent strikes on commercial vessels have left the two sides locked in a painful economic standoff.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-28T125014Z_684630615_RC2J7NAVXXO3_RTRMADP_3_IRAN-CRISIS-HORMUZ-800x533.jpg",
       "en": {
         "headline": "Hormuz Standoff Leaves Both Sides With Economic Pain",
@@ -295,7 +465,7 @@
       "summary": "Turning to your biggest rival is rarely a sign of confidence. Yet Qatar's decision to sign long-term contracts for US supplies suggests the world's second-largest LNG exporter is increasingly concerned that instability in the Gulf could undermine its ambitious expansion plans.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/shutterstock_33420973.jpg",
       "en": {
         "headline": "Qatar&#8217;s US LNG Bet Signals a New Energy Order",
@@ -312,7 +482,7 @@
       "summary": "New Jersey Governor Mikie Sherrill is warning port and terminal operators not to accept Russian diesel shipments heading toward the U.S. East Coast, arguing that the Trump administration&#8217;s authorization of...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/07/shutterstock_167611454.jpg",
       "en": {
         "headline": "New Jersey Governor Warns Ports Against Handling Russian Diesel",
@@ -329,182 +499,12 @@
       "summary": "Damen Shipyards Group and&#160;Windcat&#160;are pleased to announce that Commissioning Service Operations Vessel (CSOV)&#160;Windcat&#160;Rotterdam&#160;has received the KNVTS Ship of the Year Award. The award was presented at the Maritime Awards Gala...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/CSOV-Windcat-Rotterdam.jpg",
       "en": {
         "headline": "Damen wins KNVTS Ship of the Year Award with CSOV Windcat Rotterdam",
         "summary": "Damen Shipyards Group and&#160;Windcat&#160;are pleased to announce that Commissioning Service Operations Vessel (CSOV)&#160;Windcat&#160;Rotterdam&#160;has received the KNVTS Ship of the Year Award. The award was presented at the Maritime Awards Gala...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Australia Bans Bulk Carrier Over Repeated Falsification of Crew Rest Records",
-      "link": "https://gcaptain.com/australia-bans-bulk-carrier-over-repeated-falsification-of-crew-rest-records/",
-      "pubDate": "Tue, 03 Nov 2026 16:25:54 +0000",
-      "source": "gCaptain",
-      "category": "Dry Bulk",
-      "summary": "The Australian Maritime Safety Authority (AMSA) has banned a Marshall Islands-flagged bulk carrier from Australian ports for 90 days after inspectors discovered that crew work and rest records had been...",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Wooyang-Venus-in-Newcastle.jpg",
-      "en": {
-        "headline": "Australia Bans Bulk Carrier Over Repeated Falsification of Crew Rest Records",
-        "summary": "The Australian Maritime Safety Authority (AMSA) has banned a Marshall Islands-flagged bulk carrier from Australian ports for 90 days after inspectors discovered that crew work and rest records had been...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Hapag-Lloyd, ONE Warn Most Cargo Lost in Massive Containership Fire",
-      "link": "https://gcaptain.com/hapag-lloyd-one-warn-most-cargo-lost-in-massive-containership-fire/",
-      "pubDate": "Tue, 03 Nov 2026 16:03:08 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Hapag-Lloyd and Ocean Network Express (ONE) are warning customers that most of the cargo aboard the fire-damaged containership Espirito Santo Express is likely severely damaged or a total loss, more...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/07/AFIF.jpeg",
-      "en": {
-        "headline": "Hapag-Lloyd, ONE Warn Most Cargo Lost in Massive Containership Fire",
-        "summary": "Hapag-Lloyd and Ocean Network Express (ONE) are warning customers that most of the cargo aboard the fire-damaged containership Espirito Santo Express is likely severely damaged or a total loss, more...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Former USS Enterprise Begins Final Voyage to Alabama for Dismantling",
-      "link": "https://gcaptain.com/former-uss-enterprise-begins-final-voyage-to-alabama-for-dismantling/",
-      "pubDate": "Tue, 03 Nov 2026 15:15:00 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The former USS Enterprise (CVN 65), the world&#8217;s first nuclear-powered aircraft carrier, departed Newport News Shipbuilding in Virginia under tow on Monday, November 2, beginning its final journey to Mobile,...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/886059725_1776463593607178_6063694546539408851_n.png-800x533.jpeg",
-      "en": {
-        "headline": "Former USS Enterprise Begins Final Voyage to Alabama for Dismantling",
-        "summary": "The former USS Enterprise (CVN 65), the world&#8217;s first nuclear-powered aircraft carrier, departed Newport News Shipbuilding in Virginia under tow on Monday, November 2, beginning its final journey to Mobile,...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Norway Detains Sanctioned Chinese Vessel Over False Flag Registration",
-      "link": "https://gcaptain.com/norway-detains-sanctioned-chinese-vessel-over-false-flag-registration/",
-      "pubDate": "Tue, 03 Nov 2026 12:46:08 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Norway has detained a Chinese-owned heavy-lift vessel sanctioned for its role in delivering equipment to Russia’s Arctic LNG 2 project, in what appears to be the first known detention in the Arctic of a Chinese vessel linked to Russia’s shadow fleet.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/ya-qing-2.jpg",
-      "en": {
-        "headline": "Norway Detains Sanctioned Chinese Vessel Over False Flag Registration",
-        "summary": "Norway has detained a Chinese-owned heavy-lift vessel sanctioned for its role in delivering equipment to Russia’s Arctic LNG 2 project, in what appears to be the first known detention in the Arctic of a Chinese vessel linked to Russia’s shadow fleet.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Dronemaker Stark Designs Uncrewed Ship to Hunt Russia’s Shadow Fleet",
-      "link": "https://gcaptain.com/dronemaker-stark-designs-uncrewed-ship-to-hunt-russias-shadow-fleet/",
-      "pubDate": "Tue, 03 Nov 2026 12:42:16 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "German startup Stark Defence plans to launch a 24-meter uncrewed surface vessel next year, marking an expansion beyond small drones to more closely resemble an established defense contractor.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Dronemaker Stark Designs Uncrewed Ship to Hunt Russia’s Shadow Fleet",
-        "summary": "German startup Stark Defence plans to launch a 24-meter uncrewed surface vessel next year, marking an expansion beyond small drones to more closely resemble an established defense contractor.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "War Widens in the Black Sea in a Test of NATO Red Lines",
-      "link": "https://gcaptain.com/war-widens-in-the-black-sea-in-a-test-of-nato-red-lines/",
-      "pubDate": "Tue, 03 Nov 2026 12:35:15 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "After seven strikes on cargo ships near NATO members Romania and Bulgaria last month, the US-led military alliance said it would deploy maritime patrol aircraft, radars and drones to bolster its eastern flank in the Black Sea.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "War Widens in the Black Sea in a Test of NATO Red Lines",
-        "summary": "After seven strikes on cargo ships near NATO members Romania and Bulgaria last month, the US-led military alliance said it would deploy maritime patrol aircraft, radars and drones to bolster its eastern flank in the Black Sea.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "ELPI nets double Middle East offshore vessel deal",
-      "link": "https://splash247.com/elpi-nets-double-middle-east-offshore-vessel-deal/",
-      "pubDate": "Tue, 03 Nov 2026 12:00:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Indonesian offshore vessel operator PT Pelayaran Nasional Ekalya Purnamasari (ELPI) has secured a three-year charter contract worth $12.04m with UAE-based Atlantic Maritime Group. The contract covers two crewboat vessels, Kazo Agility 2 and Kazo Agility 3, which will support offs",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Kazo-Agility-ELPI.jpg",
-      "en": {
-        "headline": "ELPI nets double Middle East offshore vessel deal",
-        "summary": "Indonesian offshore vessel operator PT Pelayaran Nasional Ekalya Purnamasari (ELPI) has secured a three-year charter contract worth $12.04m with UAE-based Atlantic Maritime Group. The contract covers two crewboat vessels, Kazo Agility 2 and Kazo Agility 3, which will support offs",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Keppel secures $51m extension for Saudi jackup",
-      "link": "https://splash247.com/keppel-secures-51m-extension-for-saudi-jackup/",
-      "pubDate": "Tue, 03 Nov 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Singapore&#8217;s Keppel has secured a five-year bareboat charter extension worth approximately $51m for its AD110 jackup rig with Saudi drilling contractor Arabian Drilling Company. The agreement, signed through Keppel subsidiary RigCo Holding, will run from 2026 to 2030, direct",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/AD110-AD120-Arabian-Drilling-Keppel.jpg",
-      "en": {
-        "headline": "Keppel secures $51m extension for Saudi jackup",
-        "summary": "Singapore&#8217;s Keppel has secured a five-year bareboat charter extension worth approximately $51m for its AD110 jackup rig with Saudi drilling contractor Arabian Drilling Company. The agreement, signed through Keppel subsidiary RigCo Holding, will run from 2026 to 2030, direct",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "BW Offshore gets Norwegian funding boost for floating wind ambitions",
-      "link": "https://splash247.com/bw-offshore-gets-norwegian-funding-boost-for-floating-wind-ambitions/",
-      "pubDate": "Tue, 03 Nov 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Norwegian floater specialist BW Offshore is planning to deploy two of the world&#8217;s largest floating wind turbines on its BW Ideol foundations after its Fram Wind Solutions joint venture secured NOK1.94bn ($210m) in state funding support. The 37 MW project will feature two 18",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 18,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/02/RWE-floating-wind.jpg",
-      "en": {
-        "headline": "BW Offshore gets Norwegian funding boost for floating wind ambitions",
-        "summary": "Norwegian floater specialist BW Offshore is planning to deploy two of the world&#8217;s largest floating wind turbines on its BW Ideol foundations after its Fram Wind Solutions joint venture secured NOK1.94bn ($210m) in state funding support. The 37 MW project will feature two 18",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Ernst Russ offloads another feeder in fleet reshuffle",
-      "link": "https://splash247.com/ernst-russ-offloads-another-feeder-in-fleet-reshuffle/",
-      "pubDate": "Tue, 03 Nov 2026 09:42:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "German shipowner Ernst Russ has sold another feeder containership, continuing to trim its older boxship exposure while building up its tanker and multipurpose fleet. The Frankfurt-listed company has confirmed the sale of the 2007-built, 803 teu Mirror, without disclosing the buye",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 18,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Mirror-Ernst-Russ-.jpg",
-      "en": {
-        "headline": "Ernst Russ offloads another feeder in fleet reshuffle",
-        "summary": "German shipowner Ernst Russ has sold another feeder containership, continuing to trim its older boxship exposure while building up its tanker and multipurpose fleet. The Frankfurt-listed company has confirmed the sale of the 2007-built, 803 teu Mirror, without disclosing the buye",
-        "source": "Splash247"
       }
     }
   ]
