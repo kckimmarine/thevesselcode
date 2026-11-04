@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-11-04T13:30:24.359Z",
-    "benchmarkAsOf": "2026-11-03",
+    "generatedAt": "2026-11-04T23:00:30.869Z",
+    "benchmarkAsOf": "2026-11-04",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-11-03",
-    "updatedLabelKo": "2026-11-03 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-11-04",
+    "updatedLabelKo": "2026-11-04 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 1000,
-        "deltaPct": 0,
-        "asOf": "2026-11-03T00:00:00.000Z",
+        "priceUsdMt": 950,
+        "deltaPct": -5,
+        "asOf": "2026-11-04T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 900,
-        "deltaPct": 0,
-        "asOf": "2026-11-03T00:00:00.000Z",
+        "priceUsdMt": 800,
+        "deltaPct": -11.11,
+        "asOf": "2026-11-04T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 2590,
-      "deltaPct": 0,
+      "value": 2694,
+      "deltaPct": 4.02,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-03T15:00:17.039Z"
+      "asOf": "2026-11-04T16:15:46.870Z"
     },
     "capesizeTc": {
-      "value": 3821,
-      "deltaPct": 0,
+      "value": 4097,
+      "deltaPct": 7.22,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-03T15:00:17.081Z"
+      "asOf": "2026-11-04T17:15:33.010Z"
     },
     "panamaxTc": {
-      "value": 1866,
-      "deltaPct": 0,
+      "value": 1894,
+      "deltaPct": 1.5,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-03T15:00:17.118Z"
+      "asOf": "2026-11-04T16:15:46.888Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,227 @@
   },
   "news": [
     {
+      "title": "Propspeed Joins RightShip&#8217;s Zero Harm Innovation Partners Program to Support More Efficient and Sustainable Vessel Operations",
+      "link": "https://gcaptain.com/propspeed-joins-rightships-zero-harm-innovation-partners-program-to-support-more-efficient-and-sustainable-vessel-operations/",
+      "pubDate": "Wed, 04 Nov 2026 22:15:18 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "Improving vessel energy efficiency is an important part of the maritime industry&#8217;s efforts to reduce fuel consumption and greenhouse gas emissions. While hull performance often receives significant attention, the condition...",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Propseed-Logo-Plain-HR.jpg",
+      "en": {
+        "headline": "Propspeed Joins RightShip&#8217;s Zero Harm Innovation Partners Program to Support More Efficient and Sustainable Vessel Operations",
+        "summary": "Improving vessel energy efficiency is an important part of the maritime industry&#8217;s efforts to reduce fuel consumption and greenhouse gas emissions. While hull performance often receives significant attention, the condition...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Coast Guard Looks to Commercial Icebreakers to Keep Northeast Ports Open This Winter",
+      "link": "https://gcaptain.com/coast-guard-looks-to-commercial-icebreakers-to-keep-northeast-ports-open-this-winter/",
+      "pubDate": "Wed, 04 Nov 2026 22:05:03 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The U.S. Coast Guard is exploring the use of commercial icebreaking vessels to help keep Northeast ports and waterways open this winter, as the service prepares for another season of...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/RENEW-icebreaking.jpg",
+      "en": {
+        "headline": "Coast Guard Looks to Commercial Icebreakers to Keep Northeast Ports Open This Winter",
+        "summary": "The U.S. Coast Guard is exploring the use of commercial icebreaking vessels to help keep Northeast ports and waterways open this winter, as the service prepares for another season of...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Transpacific emerges as liner shipping&#8217;s golden trade",
+      "link": "https://splash247.com/transpacific-emerges-as-liner-shippings-golden-trade/",
+      "pubDate": "Wed, 04 Nov 2026 19:31:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The transpacific has become the most lucrative major container shipping trade in the world, with carriers generating five times more spot revenue per nautical mile on the Shanghai–Los Angeles route than on shipments to North Europe via the Cape of Good Hope. New analysis from Alp",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/11/Port-of-Long-Beach-G-middle-harbor.jpg",
+      "en": {
+        "headline": "Transpacific emerges as liner shipping&#8217;s golden trade",
+        "summary": "The transpacific has become the most lucrative major container shipping trade in the world, with carriers generating five times more spot revenue per nautical mile on the Shanghai–Los Angeles route than on shipments to North Europe via the Cape of Good Hope. New analysis from Alp",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "U.S. Targets Fraudulent Ship Registries Used by Iran’s Shadow Fleet",
+      "link": "https://gcaptain.com/u-s-targets-fraudulent-ship-registries-used-by-irans-shadow-fleet/",
+      "pubDate": "Wed, 04 Nov 2026 19:27:44 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "The United States on Wednesday sanctioned a network of individuals and companies accused of operating fraudulent ship registries that helped Iran&#8217;s shadow fleet evade sanctions, while issuing a new warning...",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/Majestic-X-boarding.jpeg",
+      "en": {
+        "headline": "U.S. Targets Fraudulent Ship Registries Used by Iran’s Shadow Fleet",
+        "summary": "The United States on Wednesday sanctioned a network of individuals and companies accused of operating fraudulent ship registries that helped Iran&#8217;s shadow fleet evade sanctions, while issuing a new warning...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Vance Blames His Own Administration&#8217;s Iran War for Republican Defeat",
+      "link": "https://gcaptain.com/vance-blames-his-own-administrations-iran-war-for-republican-defeat/",
+      "pubDate": "Wed, 04 Nov 2026 18:53:44 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Vice President JD Vance on Wednesday blamed Republicans&#8217; midterm election losses on the Trump administration&#8217;s eight-month war with Iran, which has driven up global energy prices and left commercial shipping...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-10-13T234612Z_205947017_RC2H2OABG6R6_RTRMADP_3_USA-TRUMP-DIESEL.jpg",
+      "en": {
+        "headline": "Vance Blames His Own Administration&#8217;s Iran War for Republican Defeat",
+        "summary": "Vice President JD Vance on Wednesday blamed Republicans&#8217; midterm election losses on the Trump administration&#8217;s eight-month war with Iran, which has driven up global energy prices and left commercial shipping...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "$100 Million Tanker Dispute Raises Stakes in Mercuria’s Baltic Exchange Lawsuit",
+      "link": "https://gcaptain.com/100-million-tanker-dispute-raises-stakes-in-mercurias-baltic-exchange-lawsuit/",
+      "pubDate": "Wed, 04 Nov 2026 17:55:25 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "As lawyers for Mercuria Energy Group presented the commodity giant’s case against the Baltic Exchange this week, a group of smartly dressed Norwegian businessmen listened intently to the arguments from the back of a packed London courtroom.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2016/08/Baltic-Exchange-HQ.jpeg",
+      "en": {
+        "headline": "$100 Million Tanker Dispute Raises Stakes in Mercuria’s Baltic Exchange Lawsuit",
+        "summary": "As lawyers for Mercuria Energy Group presented the commodity giant’s case against the Baltic Exchange this week, a group of smartly dressed Norwegian businessmen listened intently to the arguments from the back of a packed London courtroom.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Maritime Industry Urges Trump to Let Jones Act Waiver Expire November 15",
+      "link": "https://gcaptain.com/maritime-industry-urges-trump-to-let-jones-act-waiver-expire-november-15/",
+      "pubDate": "Wed, 04 Nov 2026 17:34:58 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The American Maritime Partnership (AMP) is urging President Donald Trump to allow the emergency Jones Act waiver to expire on November 15, warning that nearly eight months of exemptions have...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/09/shutterstock_2507213927-800x450.jpg",
+      "en": {
+        "headline": "Maritime Industry Urges Trump to Let Jones Act Waiver Expire November 15",
+        "summary": "The American Maritime Partnership (AMP) is urging President Donald Trump to allow the emergency Jones Act waiver to expire on November 15, warning that nearly eight months of exemptions have...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Trump Plays Down Prospect of Iran Strikes After Midterm Rout",
+      "link": "https://gcaptain.com/trump-plays-down-prospect-of-iran-strikes-after-midterm-rout/",
+      "pubDate": "Wed, 04 Nov 2026 17:19:24 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "US President Donald Trump said he has no immediate plans to launch strikes on Iran following midterm elections in which the Democrats took control of Congress in a landslide win over his Republican party.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/CENTCOM-Blockade.jpeg",
+      "en": {
+        "headline": "Trump Plays Down Prospect of Iran Strikes After Midterm Rout",
+        "summary": "US President Donald Trump said he has no immediate plans to launch strikes on Iran following midterm elections in which the Democrats took control of Congress in a landslide win over his Republican party.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Democratic Sweep Puts Trump&#8217;s Maritime Agenda in Question",
+      "link": "https://gcaptain.com/democratic-sweep-puts-trumps-maritime-agenda-in-question/",
+      "pubDate": "Wed, 04 Nov 2026 16:41:18 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Democrats&#8217; takeover of both chambers of Congress in Tuesday&#8217;s midterm elections has raised new questions about the future of U.S. maritime policy, with implications for tariffs, shipbuilding, the Jones Act,...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-10T111832Z_327337754_RC29TMATWR3B_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-PLAN.jpg",
+      "en": {
+        "headline": "Democratic Sweep Puts Trump&#8217;s Maritime Agenda in Question",
+        "summary": "Democrats&#8217; takeover of both chambers of Congress in Tuesday&#8217;s midterm elections has raised new questions about the future of U.S. maritime policy, with implications for tariffs, shipbuilding, the Jones Act,...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Trump’s Election Defeat Leaves Iran War With No Easy Exit",
+      "link": "https://gcaptain.com/trumps-election-defeat-leaves-iran-war-with-no-easy-exit/",
+      "pubDate": "Wed, 04 Nov 2026 16:35:01 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Iran war was a key driver of the Republican Party's shellacking in the US midterms on Tuesday, but the bruising defeat may make it more challenging for President Donald Trump to end the conflict.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-05-28T170031Z_1033704711_RC2THLAMQXA1_RTRMADP_3_IRAN-CRISIS-MEMORANDUM-800x569.jpg",
+      "en": {
+        "headline": "Trump’s Election Defeat Leaves Iran War With No Easy Exit",
+        "summary": "The Iran war was a key driver of the Republican Party's shellacking in the US midterms on Tuesday, but the bruising defeat may make it more challenging for President Donald Trump to end the conflict.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Greenland Parliament Backs Scrubber Discharge Ban for Ships in Its Waters",
+      "link": "https://gcaptain.com/greenland-parliament-backs-scrubber-discharge-ban-for-ships-in-its-waters/",
+      "pubDate": "Wed, 04 Nov 2026 12:50:56 +0000",
+      "source": "gCaptain",
+      "category": "Bunker",
+      "summary": "Greenland's parliament has unanimously backed a phased ban on discharges from ships' exhaust gas cleaning systems, adding another layer of environmental restrictions for vessels operating in Arctic waters and potentially affecting cruise operators using scrubbers to meet internat",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 10,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/09/Ocean-Explorer-aground-2-800x448.jpg",
+      "en": {
+        "headline": "Greenland Parliament Backs Scrubber Discharge Ban for Ships in Its Waters",
+        "summary": "Greenland's parliament has unanimously backed a phased ban on discharges from ships' exhaust gas cleaning systems, adding another layer of environmental restrictions for vessels operating in Arctic waters and potentially affecting cruise operators using scrubbers to meet internat",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Cruise Ship Leaves Cambodia After Forcing Hundreds of Passengers Off",
+      "link": "https://gcaptain.com/cruise-ship-leaves-cambodia-after-forcing-hundreds-of-passengers-off/",
+      "pubDate": "Wed, 04 Nov 2026 12:45:08 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "After disembarking more than 200 passengers who had paid tens of thousands of dollars to live on board for years, the Villa Vie Odyssey cruise ship departed Cambodia early on Wednesday.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 10,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "Cruise Ship Leaves Cambodia After Forcing Hundreds of Passengers Off",
+        "summary": "After disembarking more than 200 passengers who had paid tens of thousands of dollars to live on board for years, the Villa Vie Odyssey cruise ship departed Cambodia early on Wednesday.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "India Sees Some Trade Relief, New Risks After Democrat Sweep",
+      "link": "https://gcaptain.com/india-sees-some-trade-relief-new-risks-after-democrat-sweep/",
+      "pubDate": "Wed, 04 Nov 2026 12:40:34 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Indian officials were cautious on the US midterm election results, saying it eases some of the pressure over trade tensions but creates a new layer of uncertainty in an already fragile relationship.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 10,
+      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "India Sees Some Trade Relief, New Risks After Democrat Sweep",
+        "summary": "Indian officials were cautious on the US midterm election results, saying it eases some of the pressure over trade tensions but creates a new layer of uncertainty in an already fragile relationship.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Torm strikes eight-tanker newbuild deal in joint venture push",
       "link": "https://splash247.com/torm-strikes-eight-tanker-newbuild-deal-through-joint-venture/",
       "pubDate": "Wed, 04 Nov 2026 12:40:00 +0000",
@@ -244,7 +465,7 @@
       "summary": "Danish product tanker giant Torm has stepped up its fleet expansion with agreements for eight LR2 newbuildings through a 50:50 joint venture. The Copenhagen- and New York-listed owner disclosed the latest contracts in its third-quarter results, confirming that the agreements were",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/03/Torm-Success.jpg",
       "en": {
         "headline": "Torm strikes eight-tanker newbuild deal in joint venture push",
@@ -261,7 +482,7 @@
       "summary": "Greek gas shipowner Benelux Overseas has been linked to another pair of midsize gas carriers at China&#8217;s Huangpu Wenchong Shipbuilding, adding to its growing orderbook at the CSSC-affiliated yard. Shipbuilding sources have identified the Athens-based company, controlled by K",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Olympios-Gas-.-Huangpu-Wenchong.jpg",
       "en": {
         "headline": "Benelux returns to China for LPG carrier brace",
@@ -278,233 +499,12 @@
       "summary": "Idan Ofer&#8217;s Eastern Pacific Shipping (EPS) has been linked to an order for four midsize containerships at Japan&#8217;s Imabari Shipbuilding, marking a rare Japanese addition to its extensive newbuilding programme. Shipbuilding sources have identified the Singapore-based ow",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 1,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/Imabari-shipyard-DryDel-Shipping.jpg",
       "en": {
         "headline": "Idan Ofer turns to Japan for boxship quartet",
         "summary": "Idan Ofer&#8217;s Eastern Pacific Shipping (EPS) has been linked to an order for four midsize containerships at Japan&#8217;s Imabari Shipbuilding, marking a rare Japanese addition to its extensive newbuilding programme. Shipbuilding sources have identified the Singapore-based ow",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "Laskaridis doubles Hengli LR2 bet with fresh pair",
-      "link": "https://splash247.com/laskaridis-doubles-hengli-lr2-bet-with-fresh-pair/",
-      "pubDate": "Wed, 04 Nov 2026 11:20:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Greek owner Thanassis Laskaridis has doubled his LR2 tanker newbuilding commitment at China&#8217;s Hengli Heavy Industries, adding another two 114,000 dwt vessels to an existing programme. The latest contracts cover two vessels scheduled for 2028, and take the owner&#8217;s LR2 ",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/Hengli-LR2.jpg",
-      "en": {
-        "headline": "Laskaridis doubles Hengli LR2 bet with fresh pair",
-        "summary": "Greek owner Thanassis Laskaridis has doubled his LR2 tanker newbuilding commitment at China&#8217;s Hengli Heavy Industries, adding another two 114,000 dwt vessels to an existing programme. The latest contracts cover two vessels scheduled for 2028, and take the owner&#8217;s LR2 ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Cameroon&#8217;s Gulfcam taps new chief to drive Camship expansion",
-      "link": "https://splash247.com/cameroons-gulfcam-taps-new-chief-to-drive-camship-expansion/",
-      "pubDate": "Wed, 04 Nov 2026 10:59:51 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Cameroon&#8217;s Gulfcam is pursuing plans to acquire six vessels to expand its coastal container shipping operations between Kribi and Douala, with a former Camship executive taking charge of the business. Bernard André Ndengue took over as chief executive on November 1, replaci",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Atlantic-Runner-II-Gulfcam.jpg",
-      "en": {
-        "headline": "Cameroon&#8217;s Gulfcam taps new chief to drive Camship expansion",
-        "summary": "Cameroon&#8217;s Gulfcam is pursuing plans to acquire six vessels to expand its coastal container shipping operations between Kribi and Douala, with a former Camship executive taking charge of the business. Bernard André Ndengue took over as chief executive on November 1, replaci",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Ardmore trims ageing tonnage amid Chinese newbuild drive",
-      "link": "https://splash247.com/ardmore-trims-ageing-tonnage-amid-chinese-newbuild-drive/",
-      "pubDate": "Wed, 04 Nov 2026 10:55:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "New York-listed Ardmore Shipping has sold another older product tanker, agreeing a $34.3m deal for the 2013-built Ardmore Endeavour as it continues to renew its fleet. The Gernot Ruppelt-led company disclosed the transaction in its third-quarter results. The 49,859 dwt MR tanker,",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Ardmore-Endeavour.jpg",
-      "en": {
-        "headline": "Ardmore trims ageing tonnage amid Chinese newbuild drive",
-        "summary": "New York-listed Ardmore Shipping has sold another older product tanker, agreeing a $34.3m deal for the 2013-built Ardmore Endeavour as it continues to renew its fleet. The Gernot Ruppelt-led company disclosed the transaction in its third-quarter results. The 49,859 dwt MR tanker,",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Greenland&#8217;s scrubber ban sparks calls for wider Arctic crackdown",
-      "link": "https://splash247.com/greenlands-scrubber-ban-sparks-calls-for-wider-arctic-crackdown/",
-      "pubDate": "Wed, 04 Nov 2026 10:31:31 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Greenland is moving to ban scrubber wastewater discharges throughout its territorial waters, prompting environmental groups to call for similar restrictions across the Arctic and ultimately a global prohibition. The country&#8217;s parliament, Inatsisartut, voted unanimously last",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2015/01/scrubber-e1597391075324.jpg",
-      "en": {
-        "headline": "Greenland&#8217;s scrubber ban sparks calls for wider Arctic crackdown",
-        "summary": "Greenland is moving to ban scrubber wastewater discharges throughout its territorial waters, prompting environmental groups to call for similar restrictions across the Arctic and ultimately a global prohibition. The country&#8217;s parliament, Inatsisartut, voted unanimously last",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Orkim books $38m product tanker pair in China",
-      "link": "https://splash247.com/orkim-books-38m-product-tanker-pair-in-china/",
-      "pubDate": "Wed, 04 Nov 2026 10:30:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Malaysian tanker owner Orkim has signed contracts for two more product tankers in China, committing about $37.6m as it presses ahead with fleet expansion following last year&#8217;s stock market listing. The Bursa Malaysia-listed company said its wholly owned subsidiary Orkim Mar",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Orkim-Citrine-tanker.jpg",
-      "en": {
-        "headline": "Orkim books $38m product tanker pair in China",
-        "summary": "Malaysian tanker owner Orkim has signed contracts for two more product tankers in China, committing about $37.6m as it presses ahead with fleet expansion following last year&#8217;s stock market listing. The Bursa Malaysia-listed company said its wholly owned subsidiary Orkim Mar",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "MPC Oceanic strikes deal for 41% of Marlow Navigation",
-      "link": "https://splash247.com/mpc-oceanic-strikes-deal-for-41-of-marlow-navigation/",
-      "pubDate": "Wed, 04 Nov 2026 10:28:04 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Hamburg-listed MPC Oceanic Group has agreed to acquire a 41% stake in Cyprus-based shipmanager Marlow Navigation in a deal that will also see Marlow&#8217;s existing shareholders take a holding in the German maritime investment and services group. The transaction, announced on We",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Marlow-Navigation.jpg",
-      "en": {
-        "headline": "MPC Oceanic strikes deal for 41% of Marlow Navigation",
-        "summary": "Hamburg-listed MPC Oceanic Group has agreed to acquire a 41% stake in Cyprus-based shipmanager Marlow Navigation in a deal that will also see Marlow&#8217;s existing shareholders take a holding in the German maritime investment and services group. The transaction, announced on We",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Vedanta taps Exceed for Indian deepwater drilling campaign",
-      "link": "https://splash247.com/vedanta-taps-exceed-for-indian-deepwater-drilling-campaign/",
-      "pubDate": "Wed, 04 Nov 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "India&#8217;s Vedanta Oil and Gas has signed a partnership agreement with UK-based well management specialist Exceed for an exploration and appraisal campaign in the Krishna-Godavari Basin. The Kent-owned company will provide integrated support for drilling operations in Vedanta&",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Dorado-rig-sunset-Carnarvon.jpg",
-      "en": {
-        "headline": "Vedanta taps Exceed for Indian deepwater drilling campaign",
-        "summary": "India&#8217;s Vedanta Oil and Gas has signed a partnership agreement with UK-based well management specialist Exceed for an exploration and appraisal campaign in the Krishna-Godavari Basin. The Kent-owned company will provide integrated support for drilling operations in Vedanta&",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "U.S. Coast Guard Detains MSC Cruise Ship in Miami",
-      "link": "https://gcaptain.com/u-s-coast-guard-detains-msc-cruise-ship-in-miami/",
-      "pubDate": "Tue, 03 Nov 2026 22:39:08 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The U.S. Coast Guard has detained the cruise ship MSC Poesia at PortMiami, forcing MSC Cruises to cancel an 11-night Caribbean voyage after the vessel remained in port for two...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/MSC_Poesia_departing_Tallinn_11_July_2012.jpg",
-      "en": {
-        "headline": "U.S. Coast Guard Detains MSC Cruise Ship in Miami",
-        "summary": "The U.S. Coast Guard has detained the cruise ship MSC Poesia at PortMiami, forcing MSC Cruises to cancel an 11-night Caribbean voyage after the vessel remained in port for two...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Longer Navy Deployments Demand More Than Tough Sailors",
-      "link": "https://gcaptain.com/longer-navy-deployments-demand-more-than-tough-sailors/",
-      "pubDate": "Tue, 03 Nov 2026 17:56:29 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By Chris Servello (OpEd) Ten and eleven month Navy deployments may become the norm for the next couple of years. That’s the message Chief of Naval Operations Admiral Daryl Caudle and Master Chief...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/CNO-Navy-Adm-caudle-perryman-mcpon-800x515.jpg",
-      "en": {
-        "headline": "Longer Navy Deployments Demand More Than Tough Sailors",
-        "summary": "By Chris Servello (OpEd) Ten and eleven month Navy deployments may become the norm for the next couple of years. That’s the message Chief of Naval Operations Admiral Daryl Caudle and Master Chief...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Hormuz Standoff Leaves Both Sides With Economic Pain",
-      "link": "https://gcaptain.com/hormuz-standoff-leaves-both-sides-with-economic-pain/",
-      "pubDate": "Tue, 03 Nov 2026 17:47:08 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "As US President Donald Trump threatens renewed attacks against Iran, Tehran’s intermittent strikes on commercial vessels have left the two sides locked in a painful economic standoff.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-28T125014Z_684630615_RC2J7NAVXXO3_RTRMADP_3_IRAN-CRISIS-HORMUZ-800x533.jpg",
-      "en": {
-        "headline": "Hormuz Standoff Leaves Both Sides With Economic Pain",
-        "summary": "As US President Donald Trump threatens renewed attacks against Iran, Tehran’s intermittent strikes on commercial vessels have left the two sides locked in a painful economic standoff.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Qatar&#8217;s US LNG Bet Signals a New Energy Order",
-      "link": "https://gcaptain.com/qatars-us-lng-bet-signals-a-new-energy-order/",
-      "pubDate": "Tue, 03 Nov 2026 17:42:05 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Turning to your biggest rival is rarely a sign of confidence. Yet Qatar's decision to sign long-term contracts for US supplies suggests the world's second-largest LNG exporter is increasingly concerned that instability in the Gulf could undermine its ambitious expansion plans.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/shutterstock_33420973.jpg",
-      "en": {
-        "headline": "Qatar&#8217;s US LNG Bet Signals a New Energy Order",
-        "summary": "Turning to your biggest rival is rarely a sign of confidence. Yet Qatar's decision to sign long-term contracts for US supplies suggests the world's second-largest LNG exporter is increasingly concerned that instability in the Gulf could undermine its ambitious expansion plans.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "New Jersey Governor Warns Ports Against Handling Russian Diesel",
-      "link": "https://gcaptain.com/new-jersey-governor-warns-ports-against-handling-russian-diesel/",
-      "pubDate": "Tue, 03 Nov 2026 17:03:13 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "New Jersey Governor Mikie Sherrill is warning port and terminal operators not to accept Russian diesel shipments heading toward the U.S. East Coast, arguing that the Trump administration&#8217;s authorization of...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/07/shutterstock_167611454.jpg",
-      "en": {
-        "headline": "New Jersey Governor Warns Ports Against Handling Russian Diesel",
-        "summary": "New Jersey Governor Mikie Sherrill is warning port and terminal operators not to accept Russian diesel shipments heading toward the U.S. East Coast, arguing that the Trump administration&#8217;s authorization of...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Damen wins KNVTS Ship of the Year Award with CSOV Windcat Rotterdam",
-      "link": "https://gcaptain.com/damen-wins-knvts-ship-of-the-year-award-with-csov-windcat-rotterdam/",
-      "pubDate": "Tue, 03 Nov 2026 16:52:46 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Damen Shipyards Group and&#160;Windcat&#160;are pleased to announce that Commissioning Service Operations Vessel (CSOV)&#160;Windcat&#160;Rotterdam&#160;has received the KNVTS Ship of the Year Award. The award was presented at the Maritime Awards Gala...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/CSOV-Windcat-Rotterdam.jpg",
-      "en": {
-        "headline": "Damen wins KNVTS Ship of the Year Award with CSOV Windcat Rotterdam",
-        "summary": "Damen Shipyards Group and&#160;Windcat&#160;are pleased to announce that Commissioning Service Operations Vessel (CSOV)&#160;Windcat&#160;Rotterdam&#160;has received the KNVTS Ship of the Year Award. The award was presented at the Maritime Awards Gala...",
-        "source": "gCaptain"
       }
     }
   ]
