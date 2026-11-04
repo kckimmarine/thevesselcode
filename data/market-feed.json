@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-03T22:43:24.997Z",
+    "generatedAt": "2026-11-04T04:00:55.100Z",
     "benchmarkAsOf": "2026-11-03",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 1003.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-02T17:00:00.000Z",
+        "priceUsdMt": 941.5,
+        "deltaPct": -6.18,
+        "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1263,
-        "deltaPct": 0,
-        "asOf": "2026-11-02T17:00:00.000Z",
+        "priceUsdMt": 1270,
+        "deltaPct": 0.55,
+        "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 898.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-02T17:00:00.000Z",
+        "priceUsdMt": 845.5,
+        "deltaPct": -5.9,
+        "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 763.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-02T17:00:00.000Z",
+        "priceUsdMt": 755.5,
+        "deltaPct": -1.05,
+        "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1402.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-02T17:00:00.000Z",
+        "priceUsdMt": 1388.5,
+        "deltaPct": -1,
+        "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 688.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-02T17:00:00.000Z",
+        "priceUsdMt": 643,
+        "deltaPct": -6.61,
+        "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 1000,
-        "deltaPct": -5.66,
+        "deltaPct": 0,
         "asOf": "2026-11-03T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 900,
-        "deltaPct": -5.26,
+        "deltaPct": 0,
         "asOf": "2026-11-03T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 814,
-        "deltaPct": 0,
-        "asOf": "2026-11-02T17:00:00.000Z",
+        "priceUsdMt": 780,
+        "deltaPct": -4.18,
+        "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1373,
-        "deltaPct": 0,
-        "asOf": "2026-11-02T17:00:00.000Z",
+        "priceUsdMt": 1331.5,
+        "deltaPct": -3.02,
+        "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 589,
-        "deltaPct": 0,
-        "asOf": "2026-11-02T17:00:00.000Z",
+        "priceUsdMt": 552.5,
+        "deltaPct": -6.2,
+        "asOf": "2026-11-03T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 2590,
-      "deltaPct": -2.19,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-03T15:00:17.039Z"
     },
     "capesizeTc": {
       "value": 3821,
-      "deltaPct": -3.58,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-03T15:00:17.081Z"
     },
     "panamaxTc": {
       "value": 1866,
-      "deltaPct": -0.43,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-03T15:00:17.118Z"
@@ -244,7 +244,7 @@
       "summary": "The U.S. Coast Guard has detained the cruise ship MSC Poesia at PortMiami, forcing MSC Cruises to cancel an 11-night Caribbean voyage after the vessel remained in port for two...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 5,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/MSC_Poesia_departing_Tallinn_11_July_2012.jpg",
       "en": {
         "headline": "U.S. Coast Guard Detains MSC Cruise Ship in Miami",
@@ -261,7 +261,7 @@
       "summary": "By Chris Servello (OpEd) Ten and eleven month Navy deployments may become the norm for the next couple of years. That’s the message Chief of Naval Operations Admiral Daryl Caudle and Master Chief...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/CNO-Navy-Adm-caudle-perryman-mcpon-800x515.jpg",
       "en": {
         "headline": "Longer Navy Deployments Demand More Than Tough Sailors",
@@ -278,7 +278,7 @@
       "summary": "As US President Donald Trump threatens renewed attacks against Iran, Tehran’s intermittent strikes on commercial vessels have left the two sides locked in a painful economic standoff.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-28T125014Z_684630615_RC2J7NAVXXO3_RTRMADP_3_IRAN-CRISIS-HORMUZ-800x533.jpg",
       "en": {
         "headline": "Hormuz Standoff Leaves Both Sides With Economic Pain",
@@ -295,7 +295,7 @@
       "summary": "Turning to your biggest rival is rarely a sign of confidence. Yet Qatar's decision to sign long-term contracts for US supplies suggests the world's second-largest LNG exporter is increasingly concerned that instability in the Gulf could undermine its ambitious expansion plans.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/shutterstock_33420973.jpg",
       "en": {
         "headline": "Qatar&#8217;s US LNG Bet Signals a New Energy Order",
@@ -312,7 +312,7 @@
       "summary": "New Jersey Governor Mikie Sherrill is warning port and terminal operators not to accept Russian diesel shipments heading toward the U.S. East Coast, arguing that the Trump administration&#8217;s authorization of...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/07/shutterstock_167611454.jpg",
       "en": {
         "headline": "New Jersey Governor Warns Ports Against Handling Russian Diesel",
@@ -329,7 +329,7 @@
       "summary": "Damen Shipyards Group and&#160;Windcat&#160;are pleased to announce that Commissioning Service Operations Vessel (CSOV)&#160;Windcat&#160;Rotterdam&#160;has received the KNVTS Ship of the Year Award. The award was presented at the Maritime Awards Gala...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/CSOV-Windcat-Rotterdam.jpg",
       "en": {
         "headline": "Damen wins KNVTS Ship of the Year Award with CSOV Windcat Rotterdam",
@@ -346,7 +346,7 @@
       "summary": "The Australian Maritime Safety Authority (AMSA) has banned a Marshall Islands-flagged bulk carrier from Australian ports for 90 days after inspectors discovered that crew work and rest records had been...",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Wooyang-Venus-in-Newcastle.jpg",
       "en": {
         "headline": "Australia Bans Bulk Carrier Over Repeated Falsification of Crew Rest Records",
@@ -363,7 +363,7 @@
       "summary": "Hapag-Lloyd and Ocean Network Express (ONE) are warning customers that most of the cargo aboard the fire-damaged containership Espirito Santo Express is likely severely damaged or a total loss, more...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/07/AFIF.jpeg",
       "en": {
         "headline": "Hapag-Lloyd, ONE Warn Most Cargo Lost in Massive Containership Fire",
@@ -380,7 +380,7 @@
       "summary": "The former USS Enterprise (CVN 65), the world&#8217;s first nuclear-powered aircraft carrier, departed Newport News Shipbuilding in Virginia under tow on Monday, November 2, beginning its final journey to Mobile,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/886059725_1776463593607178_6063694546539408851_n.png-800x533.jpeg",
       "en": {
         "headline": "Former USS Enterprise Begins Final Voyage to Alabama for Dismantling",
@@ -397,7 +397,7 @@
       "summary": "Norway has detained a Chinese-owned heavy-lift vessel sanctioned for its role in delivering equipment to Russia’s Arctic LNG 2 project, in what appears to be the first known detention in the Arctic of a Chinese vessel linked to Russia’s shadow fleet.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/ya-qing-2.jpg",
       "en": {
         "headline": "Norway Detains Sanctioned Chinese Vessel Over False Flag Registration",
@@ -414,7 +414,7 @@
       "summary": "German startup Stark Defence plans to launch a 24-meter uncrewed surface vessel next year, marking an expansion beyond small drones to more closely resemble an established defense contractor.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Dronemaker Stark Designs Uncrewed Ship to Hunt Russia’s Shadow Fleet",
@@ -431,7 +431,7 @@
       "summary": "After seven strikes on cargo ships near NATO members Romania and Bulgaria last month, the US-led military alliance said it would deploy maritime patrol aircraft, radars and drones to bolster its eastern flank in the Black Sea.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "War Widens in the Black Sea in a Test of NATO Red Lines",
@@ -448,7 +448,7 @@
       "summary": "Indonesian offshore vessel operator PT Pelayaran Nasional Ekalya Purnamasari (ELPI) has secured a three-year charter contract worth $12.04m with UAE-based Atlantic Maritime Group. The contract covers two crewboat vessels, Kazo Agility 2 and Kazo Agility 3, which will support offs",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Kazo-Agility-ELPI.jpg",
       "en": {
         "headline": "ELPI nets double Middle East offshore vessel deal",
@@ -465,7 +465,7 @@
       "summary": "Singapore&#8217;s Keppel has secured a five-year bareboat charter extension worth approximately $51m for its AD110 jackup rig with Saudi drilling contractor Arabian Drilling Company. The agreement, signed through Keppel subsidiary RigCo Holding, will run from 2026 to 2030, direct",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 17,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/AD110-AD120-Arabian-Drilling-Keppel.jpg",
       "en": {
         "headline": "Keppel secures $51m extension for Saudi jackup",
@@ -482,7 +482,7 @@
       "summary": "Norwegian floater specialist BW Offshore is planning to deploy two of the world&#8217;s largest floating wind turbines on its BW Ideol foundations after its Fram Wind Solutions joint venture secured NOK1.94bn ($210m) in state funding support. The 37 MW project will feature two 18",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 12,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/02/RWE-floating-wind.jpg",
       "en": {
         "headline": "BW Offshore gets Norwegian funding boost for floating wind ambitions",
@@ -499,7 +499,7 @@
       "summary": "German shipowner Ernst Russ has sold another feeder containership, continuing to trim its older boxship exposure while building up its tanker and multipurpose fleet. The Frankfurt-listed company has confirmed the sale of the 2007-built, 803 teu Mirror, without disclosing the buye",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 13,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Mirror-Ernst-Russ-.jpg",
       "en": {
         "headline": "Ernst Russ offloads another feeder in fleet reshuffle",
