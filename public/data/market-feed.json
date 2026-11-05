@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-04T23:00:30.869Z",
+    "generatedAt": "2026-11-05T04:23:02.390Z",
     "benchmarkAsOf": "2026-11-04",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 941.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-03T17:00:00.000Z",
+        "priceUsdMt": 901.5,
+        "deltaPct": -4.25,
+        "asOf": "2026-11-04T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1270,
-        "deltaPct": 0,
-        "asOf": "2026-11-03T17:00:00.000Z",
+        "priceUsdMt": 1264.5,
+        "deltaPct": -0.43,
+        "asOf": "2026-11-04T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 845.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-03T17:00:00.000Z",
+        "priceUsdMt": 801,
+        "deltaPct": -5.26,
+        "asOf": "2026-11-04T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 755.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-03T17:00:00.000Z",
+        "priceUsdMt": 747,
+        "deltaPct": -1.13,
+        "asOf": "2026-11-04T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1388.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-03T17:00:00.000Z",
+        "priceUsdMt": 1383.5,
+        "deltaPct": -0.36,
+        "asOf": "2026-11-04T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 643,
-        "deltaPct": 0,
-        "asOf": "2026-11-03T17:00:00.000Z",
+        "priceUsdMt": 626.5,
+        "deltaPct": -2.57,
+        "asOf": "2026-11-04T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 950,
-        "deltaPct": -5,
+        "deltaPct": 0,
         "asOf": "2026-11-04T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 800,
-        "deltaPct": -11.11,
+        "deltaPct": 0,
         "asOf": "2026-11-04T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 780,
-        "deltaPct": 0,
-        "asOf": "2026-11-03T17:00:00.000Z",
+        "priceUsdMt": 764,
+        "deltaPct": -2.05,
+        "asOf": "2026-11-04T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1331.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-03T17:00:00.000Z",
+        "priceUsdMt": 1309,
+        "deltaPct": -1.69,
+        "asOf": "2026-11-04T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 552.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-03T17:00:00.000Z",
+        "priceUsdMt": 518,
+        "deltaPct": -6.24,
+        "asOf": "2026-11-04T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 2694,
-      "deltaPct": 4.02,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-04T16:15:46.870Z"
     },
     "capesizeTc": {
       "value": 4097,
-      "deltaPct": 7.22,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-04T17:15:33.010Z"
     },
     "panamaxTc": {
       "value": 1894,
-      "deltaPct": 1.5,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-04T16:15:46.888Z"
@@ -244,7 +244,7 @@
       "summary": "Improving vessel energy efficiency is an important part of the maritime industry&#8217;s efforts to reduce fuel consumption and greenhouse gas emissions. While hull performance often receives significant attention, the condition...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Propseed-Logo-Plain-HR.jpg",
       "en": {
         "headline": "Propspeed Joins RightShip&#8217;s Zero Harm Innovation Partners Program to Support More Efficient and Sustainable Vessel Operations",
@@ -261,7 +261,7 @@
       "summary": "The U.S. Coast Guard is exploring the use of commercial icebreaking vessels to help keep Northeast ports and waterways open this winter, as the service prepares for another season of...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/RENEW-icebreaking.jpg",
       "en": {
         "headline": "Coast Guard Looks to Commercial Icebreakers to Keep Northeast Ports Open This Winter",
@@ -278,7 +278,7 @@
       "summary": "The transpacific has become the most lucrative major container shipping trade in the world, with carriers generating five times more spot revenue per nautical mile on the Shanghai–Los Angeles route than on shipments to North Europe via the Cape of Good Hope. New analysis from Alp",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/11/Port-of-Long-Beach-G-middle-harbor.jpg",
       "en": {
         "headline": "Transpacific emerges as liner shipping&#8217;s golden trade",
@@ -295,7 +295,7 @@
       "summary": "The United States on Wednesday sanctioned a network of individuals and companies accused of operating fraudulent ship registries that helped Iran&#8217;s shadow fleet evade sanctions, while issuing a new warning...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/Majestic-X-boarding.jpeg",
       "en": {
         "headline": "U.S. Targets Fraudulent Ship Registries Used by Iran’s Shadow Fleet",
@@ -312,7 +312,7 @@
       "summary": "Vice President JD Vance on Wednesday blamed Republicans&#8217; midterm election losses on the Trump administration&#8217;s eight-month war with Iran, which has driven up global energy prices and left commercial shipping...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-10-13T234612Z_205947017_RC2H2OABG6R6_RTRMADP_3_USA-TRUMP-DIESEL.jpg",
       "en": {
         "headline": "Vance Blames His Own Administration&#8217;s Iran War for Republican Defeat",
@@ -329,7 +329,7 @@
       "summary": "As lawyers for Mercuria Energy Group presented the commodity giant’s case against the Baltic Exchange this week, a group of smartly dressed Norwegian businessmen listened intently to the arguments from the back of a packed London courtroom.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2016/08/Baltic-Exchange-HQ.jpeg",
       "en": {
         "headline": "$100 Million Tanker Dispute Raises Stakes in Mercuria’s Baltic Exchange Lawsuit",
@@ -346,7 +346,7 @@
       "summary": "The American Maritime Partnership (AMP) is urging President Donald Trump to allow the emergency Jones Act waiver to expire on November 15, warning that nearly eight months of exemptions have...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/09/shutterstock_2507213927-800x450.jpg",
       "en": {
         "headline": "Maritime Industry Urges Trump to Let Jones Act Waiver Expire November 15",
@@ -363,7 +363,7 @@
       "summary": "US President Donald Trump said he has no immediate plans to launch strikes on Iran following midterm elections in which the Democrats took control of Congress in a landslide win over his Republican party.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/CENTCOM-Blockade.jpeg",
       "en": {
         "headline": "Trump Plays Down Prospect of Iran Strikes After Midterm Rout",
@@ -380,7 +380,7 @@
       "summary": "Democrats&#8217; takeover of both chambers of Congress in Tuesday&#8217;s midterm elections has raised new questions about the future of U.S. maritime policy, with implications for tariffs, shipbuilding, the Jones Act,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-10T111832Z_327337754_RC29TMATWR3B_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-PLAN.jpg",
       "en": {
         "headline": "Democratic Sweep Puts Trump&#8217;s Maritime Agenda in Question",
@@ -397,7 +397,7 @@
       "summary": "The Iran war was a key driver of the Republican Party's shellacking in the US midterms on Tuesday, but the bruising defeat may make it more challenging for President Donald Trump to end the conflict.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-05-28T170031Z_1033704711_RC2THLAMQXA1_RTRMADP_3_IRAN-CRISIS-MEMORANDUM-800x569.jpg",
       "en": {
         "headline": "Trump’s Election Defeat Leaves Iran War With No Easy Exit",
@@ -414,7 +414,7 @@
       "summary": "Greenland's parliament has unanimously backed a phased ban on discharges from ships' exhaust gas cleaning systems, adding another layer of environmental restrictions for vessels operating in Arctic waters and potentially affecting cruise operators using scrubbers to meet internat",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/09/Ocean-Explorer-aground-2-800x448.jpg",
       "en": {
         "headline": "Greenland Parliament Backs Scrubber Discharge Ban for Ships in Its Waters",
@@ -431,7 +431,7 @@
       "summary": "After disembarking more than 200 passengers who had paid tens of thousands of dollars to live on board for years, the Villa Vie Odyssey cruise ship departed Cambodia early on Wednesday.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Cruise Ship Leaves Cambodia After Forcing Hundreds of Passengers Off",
@@ -448,7 +448,7 @@
       "summary": "Indian officials were cautious on the US midterm election results, saying it eases some of the pressure over trade tensions but creates a new layer of uncertainty in an already fragile relationship.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "India Sees Some Trade Relief, New Risks After Democrat Sweep",
@@ -465,7 +465,7 @@
       "summary": "Danish product tanker giant Torm has stepped up its fleet expansion with agreements for eight LR2 newbuildings through a 50:50 joint venture. The Copenhagen- and New York-listed owner disclosed the latest contracts in its third-quarter results, confirming that the agreements were",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/03/Torm-Success.jpg",
       "en": {
         "headline": "Torm strikes eight-tanker newbuild deal in joint venture push",
@@ -482,7 +482,7 @@
       "summary": "Greek gas shipowner Benelux Overseas has been linked to another pair of midsize gas carriers at China&#8217;s Huangpu Wenchong Shipbuilding, adding to its growing orderbook at the CSSC-affiliated yard. Shipbuilding sources have identified the Athens-based company, controlled by K",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Olympios-Gas-.-Huangpu-Wenchong.jpg",
       "en": {
         "headline": "Benelux returns to China for LPG carrier brace",
@@ -499,7 +499,7 @@
       "summary": "Idan Ofer&#8217;s Eastern Pacific Shipping (EPS) has been linked to an order for four midsize containerships at Japan&#8217;s Imabari Shipbuilding, marking a rare Japanese addition to its extensive newbuilding programme. Shipbuilding sources have identified the Singapore-based ow",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 11,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/06/Imabari-shipyard-DryDel-Shipping.jpg",
       "en": {
         "headline": "Idan Ofer turns to Japan for boxship quartet",
