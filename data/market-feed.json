@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-11-05T13:45:06.478Z",
-    "benchmarkAsOf": "2026-11-04",
+    "generatedAt": "2026-11-05T23:04:07.675Z",
+    "benchmarkAsOf": "2026-11-05",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-11-04",
-    "updatedLabelKo": "2026-11-04 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-11-05",
+    "updatedLabelKo": "2026-11-05 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 950,
-        "deltaPct": 0,
-        "asOf": "2026-11-04T00:00:00.000Z",
+        "priceUsdMt": 960,
+        "deltaPct": 1.05,
+        "asOf": "2026-11-05T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 800,
-        "deltaPct": 0,
-        "asOf": "2026-11-04T00:00:00.000Z",
+        "priceUsdMt": 855,
+        "deltaPct": 6.88,
+        "asOf": "2026-11-05T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 2694,
-      "deltaPct": 0,
+      "value": 2740,
+      "deltaPct": 1.71,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-04T16:15:46.870Z"
+      "asOf": "2026-11-05T16:06:11.966Z"
     },
     "capesizeTc": {
-      "value": 4097,
-      "deltaPct": 0,
+      "value": 4191,
+      "deltaPct": 2.29,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-04T17:15:33.010Z"
+      "asOf": "2026-11-05T16:06:11.993Z"
     },
     "panamaxTc": {
-      "value": 1894,
-      "deltaPct": 0,
+      "value": 1956,
+      "deltaPct": 3.27,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-04T16:15:46.888Z"
+      "asOf": "2026-11-05T16:06:12.007Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,159 @@
   },
   "news": [
     {
+      "title": "MARAD Approves $1 Billion Offshore Crude Oil Export Port Off Louisiana",
+      "link": "https://gcaptain.com/marad-approves-1-billion-offshore-crude-oil-export-port-off-louisiana/",
+      "pubDate": "Thu, 05 Nov 2026 21:10:53 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Trump administration has approved a $1 billion offshore crude oil export project off the coast of Louisiana, clearing a major regulatory hurdle for a facility designed to load some...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
+      "en": {
+        "headline": "MARAD Approves $1 Billion Offshore Crude Oil Export Port Off Louisiana",
+        "summary": "The Trump administration has approved a $1 billion offshore crude oil export project off the coast of Louisiana, clearing a major regulatory hurdle for a facility designed to load some...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Brazilian builds boat from rubbish to collect more rubbish",
+      "link": "https://splash247.com/brazilian-builds-boat-from-rubbish-to-collect-more-rubbish/",
+      "pubDate": "Thu, 05 Nov 2026 20:17:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A former Brazilian ocean canoeing champion has taken recycling to a floating extreme, constructing a boat from 230 discarded plastic containers so he can collect even more rubbish from the sea. Marcos Arnhold spent two months building the unusual craft in Guaratuba, southern Braz",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/FridayRubbishBoat.jpg",
+      "en": {
+        "headline": "Brazilian builds boat from rubbish to collect more rubbish",
+        "summary": "A former Brazilian ocean canoeing champion has taken recycling to a floating extreme, constructing a boat from 230 discarded plastic containers so he can collect even more rubbish from the sea. Marcos Arnhold spent two months building the unusual craft in Guaratuba, southern Braz",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Ørsted’s Revolution Wind Reaches Full Operations After Trump Administration Shutdowns",
+      "link": "https://gcaptain.com/orsteds-revolution-wind-reaches-full-operations-after-trump-administration-shutdowns/",
+      "pubDate": "Thu, 05 Nov 2026 19:52:12 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Danish offshore wind developer Ørsted has completed its 704-megawatt Revolution Wind project off the U.S. East Coast, marking a major milestone for a development that faced repeated shutdown orders from...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/09/Kate-1st-turbine-002.jpg",
+      "en": {
+        "headline": "Ørsted’s Revolution Wind Reaches Full Operations After Trump Administration Shutdowns",
+        "summary": "Danish offshore wind developer Ørsted has completed its 704-megawatt Revolution Wind project off the U.S. East Coast, marking a major milestone for a development that faced repeated shutdown orders from...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "War Comes to NATO’s Black Sea Coast, and Shipping Starts Saying No",
+      "link": "https://gcaptain.com/war-comes-to-natos-black-sea-coast-and-shipping-starts-saying-no/",
+      "pubDate": "Thu, 05 Nov 2026 18:53:29 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Maritime experts warn that the westward spread of attacks between Russia and Ukraine, toward NATO coastlines, is now having commercial consequences.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-29T093131Z_553251886_RC2HDMA9HMIK_RTRMADP_3_UKRAINE-CRISIS-PIVDENNYI-GOK-800x545.jpg",
+      "en": {
+        "headline": "War Comes to NATO’s Black Sea Coast, and Shipping Starts Saying No",
+        "summary": "Maritime experts warn that the westward spread of attacks between Russia and Ukraine, toward NATO coastlines, is now having commercial consequences.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "IMO Backs Dominguez for Second Term Amid Shipping Attacks and Climate Deadlock",
+      "link": "https://gcaptain.com/imo-backs-dominguez-for-second-term-amid-shipping-attacks-and-climate-deadlock/",
+      "pubDate": "Thu, 05 Nov 2026 16:56:28 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The International Maritime Organization (IMO) Council has backed Secretary-General Arsenio Dominguez for a second four-year term, extending its support for his leadership despite the organization&#8217;s failure to adopt its landmark...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/IMO-Sec-General-at-MEPC-ES-2.jpg",
+      "en": {
+        "headline": "IMO Backs Dominguez for Second Term Amid Shipping Attacks and Climate Deadlock",
+        "summary": "The International Maritime Organization (IMO) Council has backed Secretary-General Arsenio Dominguez for a second four-year term, extending its support for his leadership despite the organization&#8217;s failure to adopt its landmark...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Maersk&#8217;s 26-Ship LNG Order Adds Nearly Half a Million TEU to Newbuilding Pipeline",
+      "link": "https://gcaptain.com/maersks-26-ship-lng-order-adds-nearly-half-a-million-teu-to-newbuilding-pipeline/",
+      "pubDate": "Thu, 05 Nov 2026 16:25:45 +0000",
+      "source": "gCaptain",
+      "category": "S&P",
+      "summary": "A.P. Moller-Maersk is pressing ahead with one of its largest containership ordering programs in years, confirming in its third-quarter earnings report that it has ordered 26 LNG dual-fuel vessels with...",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/08/2023-08-04T103730Z_2076249887_RC2NTY9TWJLF_RTRMADP_3_GLOBAL-RESULTS.jpg",
+      "en": {
+        "headline": "Maersk&#8217;s 26-Ship LNG Order Adds Nearly Half a Million TEU to Newbuilding Pipeline",
+        "summary": "A.P. Moller-Maersk is pressing ahead with one of its largest containership ordering programs in years, confirming in its third-quarter earnings report that it has ordered 26 LNG dual-fuel vessels with...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "The Hidden Liabilities In Maritime Acquisitions",
+      "link": "https://gcaptain.com/the-hidden-liabilities-in-maritime-acquistions/",
+      "pubDate": "Thu, 05 Nov 2026 14:26:21 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "What Buyers, Sellers and Investors Often Miss During Due DiligenceBy Sabrina Brigance, CMIP, Managing Director, Marine Practice, Hylant Maritime mergers and acquisitions can create significant opportunities for growth. Private equity...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Marine-Image-for-Sponsored-Article-no-logo.jpg",
+      "en": {
+        "headline": "The Hidden Liabilities In Maritime Acquisitions",
+        "summary": "What Buyers, Sellers and Investors Often Miss During Due DiligenceBy Sabrina Brigance, CMIP, Managing Director, Marine Practice, Hylant Maritime mergers and acquisitions can create significant opportunities for growth. Private equity...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Dominguez gets nod for second term at IMO helm",
+      "link": "https://splash247.com/dominguez-gets-nod-for-second-term-at-imo-helm/",
+      "pubDate": "Thu, 05 Nov 2026 14:17:58 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Arsenio Dominguez is set to remain at the helm of the International Maritime Organization (IMO) until the end of 2031 after the UN shipping agency&#8217;s Council backed his appointment for another four-year term. The 40-member Council endorsed the Panamanian&#8217;s extension du",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 8,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Arsenio-Dominguez-IMO.jpg",
+      "en": {
+        "headline": "Dominguez gets nod for second term at IMO helm",
+        "summary": "Arsenio Dominguez is set to remain at the helm of the International Maritime Organization (IMO) until the end of 2031 after the UN shipping agency&#8217;s Council backed his appointment for another four-year term. The 40-member Council endorsed the Panamanian&#8217;s extension du",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "France Extends Maritime Patrol Plane&#8217;s Stay in Black Sea After Cargo Ship Attacks",
+      "link": "https://gcaptain.com/france-extends-maritime-patrol-planes-stay-in-black-sea-after-cargo-ship-attacks/",
+      "pubDate": "Thu, 05 Nov 2026 14:09:49 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A French maritime patrol aircraft deployed to Romania to bolster surveillance after a series of deadly strikes on merchant ships in the Black Sea on the edge of NATO's eastern flank will extend its stay by several weeks, its commander said on Thursday.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-10-30T153619Z_4417729_RC2RDOAU48WV_RTRMADP_3_UKRAINE-CRISIS-BULGARIA-SHIP-800x534.jpg",
+      "en": {
+        "headline": "France Extends Maritime Patrol Plane&#8217;s Stay in Black Sea After Cargo Ship Attacks",
+        "summary": "A French maritime patrol aircraft deployed to Romania to bolster surveillance after a series of deadly strikes on merchant ships in the Black Sea on the edge of NATO's eastern flank will extend its stay by several weeks, its commander said on Thursday.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Woodside to cut more than 500 jobs in $400m savings drive",
       "link": "https://splash247.com/woodside-to-cut-more-than-500-jobs-in-400m-savings-drive/",
       "pubDate": "Thu, 05 Nov 2026 13:00:00 +0000",
@@ -244,7 +397,7 @@
       "summary": "Australian energy giant Woodside is planning to cut more than 500 jobs worldwide as part of a restructuring programme aimed at delivering $400m in annual cost savings from 2028. The workforce reduction, equivalent to more than 10% of the company&#8217;s employees at the end of 20",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/02/Woodside-building.jpg",
       "en": {
         "headline": "Woodside to cut more than 500 jobs in $400m savings drive",
@@ -261,7 +414,7 @@
       "summary": "German offshore wind services specialist Deutsche Windtechnik has secured a comprehensive maintenance contract from Ocean Breeze Energy covering all 12 turbines at the Alpha Ventus offshore wind farm in the North Sea. The contract will begin in January 2027 and covers turbine ser",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/Alpha-Ventus-offshore-wind.jpg",
       "en": {
         "headline": "Deutsche Windtechnik lands maintenance deal at Germany&#8217;s first offshore wind farm",
@@ -278,7 +431,7 @@
       "summary": "Norwegian offshore engineering group Aker Solutions has received a letter of award from Vietnam&#8217;s PTSC Mechanical &#38; Construction for work on QatarEnergy&#8217;s Maydan Mahzam oilfield redevelopment project. The contract covers detailed engineering for three major topsid",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 2,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Aker-Solutions-worker.jpg",
       "en": {
         "headline": "Aker Solutions bags engineering deal for Qatar oilfield redevelopment",
@@ -295,7 +448,7 @@
       "summary": "Abu Dhabi-based HEA Energy has struck a deal to acquire Subsea7&#8217;s heavy transportation business, adding a six-vessel operation to its growing offshore fleet. The transaction will see Subsea7&#8217;s offshore renewables arm Seaway7 divest a business comprising five owned and",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Seaway-Eagle-Seaway7.jpg",
       "en": {
         "headline": "HEA Energy snaps up Subsea7&#8217;s six-ship heavy transport business",
@@ -312,7 +465,7 @@
       "summary": "A Finnish court has sentenced the captain and a crew member of the general cargo ship Fitburg to prison for deliberately damaging two subsea telecommunications cables in the Gulf of Finland on New Year&#8217;s Eve last year. Helsinki District Court handed Russian captain Andrei M",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Fitburg-Finnish-Border-Guard.jpg",
       "en": {
         "headline": "Finland jails captain and crew member over Baltic cable sabotage",
@@ -329,7 +482,7 @@
       "summary": "Hong Kong-listed Seacon Shipping has struck a $19.6m deal for a newly built oil and chemical tanker, adding to its fleet amid reports of a four-vessel MR tanker disposal. The Qingdao-based owner&#8217;s Singapore subsidiary has agreed to acquire the 4,981 gt Jia Yue Ming Zhu, whi",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/Seacon.jpg",
       "en": {
         "headline": "Seacon snaps up fresh tanker in $19.6m deal",
@@ -346,165 +499,12 @@
       "summary": "Swedish energy group Vattenfall has signed final agreements with the Danish Energy Agency for two offshore wind developments with a combined capacity of at least 1.8GW. The agreements cover the 800 MW Hesselø project in the Kattegat and the 1 GW Holmsland development in the North",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/07/Vattenfall.jpg",
       "en": {
         "headline": "Vattenfall signs final agreements for 1.8GW Danish offshore wind projects",
         "summary": "Swedish energy group Vattenfall has signed final agreements with the Danish Energy Agency for two offshore wind developments with a combined capacity of at least 1.8GW. The agreements cover the 800 MW Hesselø project in the Kattegat and the 1 GW Holmsland development in the North",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "BP raises over $1bn from Aker BP stake sale",
-      "link": "https://splash247.com/bp-raises-over-1bn-from-aker-bp-stake-sale/",
-      "pubDate": "Thu, 05 Nov 2026 10:45:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "British energy major BP has raised about $1.06bn by selling part of its stake in Norwegian oil and gas producer Aker BP as it continues efforts to strengthen its balance sheet. The company sold 31.6m shares, representing around 5% of Aker BP&#8217;s total issued share capital, fo",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/12/BP-logo-BP.jpg",
-      "en": {
-        "headline": "BP raises over $1bn from Aker BP stake sale",
-        "summary": "British energy major BP has raised about $1.06bn by selling part of its stake in Norwegian oil and gas producer Aker BP as it continues efforts to strengthen its balance sheet. The company sold 31.6m shares, representing around 5% of Aker BP&#8217;s total issued share capital, fo",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Navios adds $215m tanker trio to newbuild pipeline",
-      "link": "https://splash247.com/navios-adds-215m-tanker-trio-to-newbuild-pipeline/",
-      "pubDate": "Thu, 05 Nov 2026 10:30:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Angeliki Frangou&#8217;s Navios Maritime Partners has revealed another $215.2m in tanker newbuilding acquisitions, adding a VLCC and two MR product carriers to its expanding fleet investment programme. The New York-listed Greek owner disclosed the three-vessel package in its thir",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Angeliki-Frangou-Navios-Maritime-Partners.jpg",
-      "en": {
-        "headline": "Navios adds $215m tanker trio to newbuild pipeline",
-        "summary": "Angeliki Frangou&#8217;s Navios Maritime Partners has revealed another $215.2m in tanker newbuilding acquisitions, adding a VLCC and two MR product carriers to its expanding fleet investment programme. The New York-listed Greek owner disclosed the three-vessel package in its thir",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Odfjell locks in two more tanker newbuilds for 2029",
-      "link": "https://splash247.com/odfjell-locks-in-two-more-tanker-newbuilds-for-2029/",
-      "pubDate": "Thu, 05 Nov 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Norwegian chemical tanker owner Odfjell has lined up another two 40,000 dwt stainless steel newbuildings in Japan, extending its fleet renewal programme with additional long-term charter commitments. The Bergen-based company disclosed the agreements in its third-quarter report, c",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/04/Odfjell-Tankers.jpg",
-      "en": {
-        "headline": "Odfjell locks in two more tanker newbuilds for 2029",
-        "summary": "Norwegian chemical tanker owner Odfjell has lined up another two 40,000 dwt stainless steel newbuildings in Japan, extending its fleet renewal programme with additional long-term charter commitments. The Bergen-based company disclosed the agreements in its third-quarter report, c",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Maersk Slides as Upgraded Guidance Is Lower Than Anticipated",
-      "link": "https://gcaptain.com/maersk-slides-as-upgraded-guidance-is-lower-than-anticipated/",
-      "pubDate": "Thu, 05 Nov 2026 09:21:38 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "AP Moller-Maersk A/S shares slumped after a guidance upgrade and third-quarter earnings from the world’s second-largest shipping line fell short of analyst estimates.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/Maersk-north-sea-terminal-800x536.jpeg",
-      "en": {
-        "headline": "Maersk Slides as Upgraded Guidance Is Lower Than Anticipated",
-        "summary": "AP Moller-Maersk A/S shares slumped after a guidance upgrade and third-quarter earnings from the world’s second-largest shipping line fell short of analyst estimates.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Propspeed Joins RightShip&#8217;s Zero Harm Innovation Partners Program to Support More Efficient and Sustainable Vessel Operations",
-      "link": "https://gcaptain.com/propspeed-joins-rightships-zero-harm-innovation-partners-program-to-support-more-efficient-and-sustainable-vessel-operations/",
-      "pubDate": "Wed, 04 Nov 2026 22:15:18 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "Improving vessel energy efficiency is an important part of the maritime industry&#8217;s efforts to reduce fuel consumption and greenhouse gas emissions. While hull performance often receives significant attention, the condition...",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 15,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Propseed-Logo-Plain-HR.jpg",
-      "en": {
-        "headline": "Propspeed Joins RightShip&#8217;s Zero Harm Innovation Partners Program to Support More Efficient and Sustainable Vessel Operations",
-        "summary": "Improving vessel energy efficiency is an important part of the maritime industry&#8217;s efforts to reduce fuel consumption and greenhouse gas emissions. While hull performance often receives significant attention, the condition...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Coast Guard Looks to Commercial Icebreakers to Keep Northeast Ports Open This Winter",
-      "link": "https://gcaptain.com/coast-guard-looks-to-commercial-icebreakers-to-keep-northeast-ports-open-this-winter/",
-      "pubDate": "Wed, 04 Nov 2026 22:05:03 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The U.S. Coast Guard is exploring the use of commercial icebreaking vessels to help keep Northeast ports and waterways open this winter, as the service prepares for another season of...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/RENEW-icebreaking.jpg",
-      "en": {
-        "headline": "Coast Guard Looks to Commercial Icebreakers to Keep Northeast Ports Open This Winter",
-        "summary": "The U.S. Coast Guard is exploring the use of commercial icebreaking vessels to help keep Northeast ports and waterways open this winter, as the service prepares for another season of...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "U.S. Targets Fraudulent Ship Registries Used by Iran’s Shadow Fleet",
-      "link": "https://gcaptain.com/u-s-targets-fraudulent-ship-registries-used-by-irans-shadow-fleet/",
-      "pubDate": "Wed, 04 Nov 2026 19:27:44 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "The United States on Wednesday sanctioned a network of individuals and companies accused of operating fraudulent ship registries that helped Iran&#8217;s shadow fleet evade sanctions, while issuing a new warning...",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/Majestic-X-boarding.jpeg",
-      "en": {
-        "headline": "U.S. Targets Fraudulent Ship Registries Used by Iran’s Shadow Fleet",
-        "summary": "The United States on Wednesday sanctioned a network of individuals and companies accused of operating fraudulent ship registries that helped Iran&#8217;s shadow fleet evade sanctions, while issuing a new warning...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Vance Blames His Own Administration&#8217;s Iran War for Republican Defeat",
-      "link": "https://gcaptain.com/vance-blames-his-own-administrations-iran-war-for-republican-defeat/",
-      "pubDate": "Wed, 04 Nov 2026 18:53:44 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Vice President JD Vance on Wednesday blamed Republicans&#8217; midterm election losses on the Trump administration&#8217;s eight-month war with Iran, which has driven up global energy prices and left commercial shipping...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-10-13T234612Z_205947017_RC2H2OABG6R6_RTRMADP_3_USA-TRUMP-DIESEL.jpg",
-      "en": {
-        "headline": "Vance Blames His Own Administration&#8217;s Iran War for Republican Defeat",
-        "summary": "Vice President JD Vance on Wednesday blamed Republicans&#8217; midterm election losses on the Trump administration&#8217;s eight-month war with Iran, which has driven up global energy prices and left commercial shipping...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "$100 Million Tanker Dispute Raises Stakes in Mercuria’s Baltic Exchange Lawsuit",
-      "link": "https://gcaptain.com/100-million-tanker-dispute-raises-stakes-in-mercurias-baltic-exchange-lawsuit/",
-      "pubDate": "Wed, 04 Nov 2026 17:55:25 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "As lawyers for Mercuria Energy Group presented the commodity giant’s case against the Baltic Exchange this week, a group of smartly dressed Norwegian businessmen listened intently to the arguments from the back of a packed London courtroom.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2016/08/Baltic-Exchange-HQ.jpeg",
-      "en": {
-        "headline": "$100 Million Tanker Dispute Raises Stakes in Mercuria’s Baltic Exchange Lawsuit",
-        "summary": "As lawyers for Mercuria Energy Group presented the commodity giant’s case against the Baltic Exchange this week, a group of smartly dressed Norwegian businessmen listened intently to the arguments from the back of a packed London courtroom.",
-        "source": "gCaptain"
       }
     }
   ]
