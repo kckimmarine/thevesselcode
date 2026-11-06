@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-05T23:04:07.675Z",
+    "generatedAt": "2026-11-06T04:21:06.132Z",
     "benchmarkAsOf": "2026-11-05",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 901.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-04T17:00:00.000Z",
+        "priceUsdMt": 849.5,
+        "deltaPct": -5.77,
+        "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1264.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-04T17:00:00.000Z",
+        "priceUsdMt": 1207.5,
+        "deltaPct": -4.51,
+        "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 801,
-        "deltaPct": 0,
-        "asOf": "2026-11-04T17:00:00.000Z",
+        "priceUsdMt": 726.5,
+        "deltaPct": -9.3,
+        "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 747,
-        "deltaPct": 0,
-        "asOf": "2026-11-04T17:00:00.000Z",
+        "priceUsdMt": 732,
+        "deltaPct": -2.01,
+        "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1383.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-04T17:00:00.000Z",
+        "priceUsdMt": 1337,
+        "deltaPct": -3.36,
+        "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 626.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-04T17:00:00.000Z",
+        "priceUsdMt": 585,
+        "deltaPct": -6.62,
+        "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 960,
-        "deltaPct": 1.05,
+        "deltaPct": 0,
         "asOf": "2026-11-05T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 855,
-        "deltaPct": 6.88,
+        "deltaPct": 0,
         "asOf": "2026-11-05T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 764,
-        "deltaPct": 0,
-        "asOf": "2026-11-04T17:00:00.000Z",
+        "priceUsdMt": 754,
+        "deltaPct": -1.31,
+        "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1309,
-        "deltaPct": 0,
-        "asOf": "2026-11-04T17:00:00.000Z",
+        "priceUsdMt": 1286,
+        "deltaPct": -1.76,
+        "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 518,
-        "deltaPct": 0,
-        "asOf": "2026-11-04T17:00:00.000Z",
+        "priceUsdMt": 511.5,
+        "deltaPct": -1.25,
+        "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 2740,
-      "deltaPct": 1.71,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-05T16:06:11.966Z"
     },
     "capesizeTc": {
       "value": 4191,
-      "deltaPct": 2.29,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-05T16:06:11.993Z"
     },
     "panamaxTc": {
       "value": 1956,
-      "deltaPct": 3.27,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-05T16:06:12.007Z"
@@ -236,6 +236,40 @@
   },
   "news": [
     {
+      "title": "Ammonia-Powered Bulk Carrier Takes on Green Fuel in Australian First",
+      "link": "https://gcaptain.com/ammonia-powered-bulk-carrier-takes-on-green-fuel-in-australian-first/",
+      "pubDate": "Thu, 05 Nov 2026 22:49:48 +0000",
+      "source": "gCaptain",
+      "category": "Bunker",
+      "summary": "Australia has completed its first green ammonia bunkering operation involving an ammonia-powered bulk carrier, marking another step toward bringing alternative fuels into commercial shipping. The operation took place earlier this...",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/mineral_europa-46-web.jpeg",
+      "en": {
+        "headline": "Ammonia-Powered Bulk Carrier Takes on Green Fuel in Australian First",
+        "summary": "Australia has completed its first green ammonia bunkering operation involving an ammonia-powered bulk carrier, marking another step toward bringing alternative fuels into commercial shipping. The operation took place earlier this...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Finnish Court Jails Cargo Ship Captain, Crew Member for Baltic Sea Cable Sabotage",
+      "link": "https://gcaptain.com/finnish-court-jails-cargo-ship-captain-crew-member-for-baltic-sea-cable-sabotage/",
+      "pubDate": "Thu, 05 Nov 2026 22:44:20 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A Finnish court on Thursday jailed the Russian captain and an Azerbaijani crew member of the cargo ship Fitburg for aggravated sabotage over damage to two subsea telecommunications cables in the Gulf of Finland last year.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "Finnish Court Jails Cargo Ship Captain, Crew Member for Baltic Sea Cable Sabotage",
+        "summary": "A Finnish court on Thursday jailed the Russian captain and an Azerbaijani crew member of the cargo ship Fitburg for aggravated sabotage over damage to two subsea telecommunications cables in the Gulf of Finland last year.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "MARAD Approves $1 Billion Offshore Crude Oil Export Port Off Louisiana",
       "link": "https://gcaptain.com/marad-approves-1-billion-offshore-crude-oil-export-port-off-louisiana/",
       "pubDate": "Thu, 05 Nov 2026 21:10:53 +0000",
@@ -244,29 +278,12 @@
       "summary": "The Trump administration has approved a $1 billion offshore crude oil export project off the coast of Louisiana, clearing a major regulatory hurdle for a facility designed to load some...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
       "en": {
         "headline": "MARAD Approves $1 Billion Offshore Crude Oil Export Port Off Louisiana",
         "summary": "The Trump administration has approved a $1 billion offshore crude oil export project off the coast of Louisiana, clearing a major regulatory hurdle for a facility designed to load some...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Brazilian builds boat from rubbish to collect more rubbish",
-      "link": "https://splash247.com/brazilian-builds-boat-from-rubbish-to-collect-more-rubbish/",
-      "pubDate": "Thu, 05 Nov 2026 20:17:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "A former Brazilian ocean canoeing champion has taken recycling to a floating extreme, constructing a boat from 230 discarded plastic containers so he can collect even more rubbish from the sea. Marcos Arnhold spent two months building the unusual craft in Guaratuba, southern Braz",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/FridayRubbishBoat.jpg",
-      "en": {
-        "headline": "Brazilian builds boat from rubbish to collect more rubbish",
-        "summary": "A former Brazilian ocean canoeing champion has taken recycling to a floating extreme, constructing a boat from 230 discarded plastic containers so he can collect even more rubbish from the sea. Marcos Arnhold spent two months building the unusual craft in Guaratuba, southern Braz",
-        "source": "Splash247"
       }
     },
     {
@@ -278,7 +295,7 @@
       "summary": "Danish offshore wind developer Ørsted has completed its 704-megawatt Revolution Wind project off the U.S. East Coast, marking a major milestone for a development that faced repeated shutdown orders from...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/09/Kate-1st-turbine-002.jpg",
       "en": {
         "headline": "Ørsted’s Revolution Wind Reaches Full Operations After Trump Administration Shutdowns",
@@ -295,12 +312,46 @@
       "summary": "Maritime experts warn that the westward spread of attacks between Russia and Ukraine, toward NATO coastlines, is now having commercial consequences.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-29T093131Z_553251886_RC2HDMA9HMIK_RTRMADP_3_UKRAINE-CRISIS-PIVDENNYI-GOK-800x545.jpg",
       "en": {
         "headline": "War Comes to NATO’s Black Sea Coast, and Shipping Starts Saying No",
         "summary": "Maritime experts warn that the westward spread of attacks between Russia and Ukraine, toward NATO coastlines, is now having commercial consequences.",
         "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Dominguez gets nod for second term at IMO helm",
+      "link": "https://splash247.com/dominguez-gets-nod-for-second-term-at-imo-helm/",
+      "pubDate": "Thu, 05 Nov 2026 18:17:58 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Arsenio Dominguez is set to remain at the helm of the International Maritime Organization (IMO) until the end of 2031 after the UN shipping agency&#8217;s Council backed his appointment for another four-year term. The 40-member Council endorsed the Panamanian&#8217;s extension du",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 10,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Arsenio-Dominguez-IMO.jpg",
+      "en": {
+        "headline": "Dominguez gets nod for second term at IMO helm",
+        "summary": "Arsenio Dominguez is set to remain at the helm of the International Maritime Organization (IMO) until the end of 2031 after the UN shipping agency&#8217;s Council backed his appointment for another four-year term. The 40-member Council endorsed the Panamanian&#8217;s extension du",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Brazilian builds boat from rubbish to collect more rubbish",
+      "link": "https://splash247.com/brazilian-builds-boat-from-rubbish-to-collect-more-rubbish/",
+      "pubDate": "Thu, 05 Nov 2026 17:17:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A former Brazilian ocean canoeing champion has taken recycling to a floating extreme, constructing a boat from 230 discarded plastic containers so he can collect even more rubbish from the sea. Marcos Arnhold spent two months building the unusual craft in Guaratuba, southern Braz",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 11,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/FridayRubbishBoat.jpg",
+      "en": {
+        "headline": "Brazilian builds boat from rubbish to collect more rubbish",
+        "summary": "A former Brazilian ocean canoeing champion has taken recycling to a floating extreme, constructing a boat from 230 discarded plastic containers so he can collect even more rubbish from the sea. Marcos Arnhold spent two months building the unusual craft in Guaratuba, southern Braz",
+        "source": "Splash247"
       }
     },
     {
@@ -312,7 +363,7 @@
       "summary": "The International Maritime Organization (IMO) Council has backed Secretary-General Arsenio Dominguez for a second four-year term, extending its support for his leadership despite the organization&#8217;s failure to adopt its landmark...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/IMO-Sec-General-at-MEPC-ES-2.jpg",
       "en": {
         "headline": "IMO Backs Dominguez for Second Term Amid Shipping Attacks and Climate Deadlock",
@@ -329,7 +380,7 @@
       "summary": "A.P. Moller-Maersk is pressing ahead with one of its largest containership ordering programs in years, confirming in its third-quarter earnings report that it has ordered 26 LNG dual-fuel vessels with...",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/08/2023-08-04T103730Z_2076249887_RC2NTY9TWJLF_RTRMADP_3_GLOBAL-RESULTS.jpg",
       "en": {
         "headline": "Maersk&#8217;s 26-Ship LNG Order Adds Nearly Half a Million TEU to Newbuilding Pipeline",
@@ -346,29 +397,12 @@
       "summary": "What Buyers, Sellers and Investors Often Miss During Due DiligenceBy Sabrina Brigance, CMIP, Managing Director, Marine Practice, Hylant Maritime mergers and acquisitions can create significant opportunities for growth. Private equity...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Marine-Image-for-Sponsored-Article-no-logo.jpg",
       "en": {
         "headline": "The Hidden Liabilities In Maritime Acquisitions",
         "summary": "What Buyers, Sellers and Investors Often Miss During Due DiligenceBy Sabrina Brigance, CMIP, Managing Director, Marine Practice, Hylant Maritime mergers and acquisitions can create significant opportunities for growth. Private equity...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Dominguez gets nod for second term at IMO helm",
-      "link": "https://splash247.com/dominguez-gets-nod-for-second-term-at-imo-helm/",
-      "pubDate": "Thu, 05 Nov 2026 14:17:58 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Arsenio Dominguez is set to remain at the helm of the International Maritime Organization (IMO) until the end of 2031 after the UN shipping agency&#8217;s Council backed his appointment for another four-year term. The 40-member Council endorsed the Panamanian&#8217;s extension du",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Arsenio-Dominguez-IMO.jpg",
-      "en": {
-        "headline": "Dominguez gets nod for second term at IMO helm",
-        "summary": "Arsenio Dominguez is set to remain at the helm of the International Maritime Organization (IMO) until the end of 2031 after the UN shipping agency&#8217;s Council backed his appointment for another four-year term. The 40-member Council endorsed the Panamanian&#8217;s extension du",
-        "source": "Splash247"
       }
     },
     {
@@ -380,7 +414,7 @@
       "summary": "A French maritime patrol aircraft deployed to Romania to bolster surveillance after a series of deadly strikes on merchant ships in the Black Sea on the edge of NATO's eastern flank will extend its stay by several weeks, its commander said on Thursday.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-10-30T153619Z_4417729_RC2RDOAU48WV_RTRMADP_3_UKRAINE-CRISIS-BULGARIA-SHIP-800x534.jpg",
       "en": {
         "headline": "France Extends Maritime Patrol Plane&#8217;s Stay in Black Sea After Cargo Ship Attacks",
@@ -397,7 +431,7 @@
       "summary": "Australian energy giant Woodside is planning to cut more than 500 jobs worldwide as part of a restructuring programme aimed at delivering $400m in annual cost savings from 2028. The workforce reduction, equivalent to more than 10% of the company&#8217;s employees at the end of 20",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/02/Woodside-building.jpg",
       "en": {
         "headline": "Woodside to cut more than 500 jobs in $400m savings drive",
@@ -414,7 +448,7 @@
       "summary": "German offshore wind services specialist Deutsche Windtechnik has secured a comprehensive maintenance contract from Ocean Breeze Energy covering all 12 turbines at the Alpha Ventus offshore wind farm in the North Sea. The contract will begin in January 2027 and covers turbine ser",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/Alpha-Ventus-offshore-wind.jpg",
       "en": {
         "headline": "Deutsche Windtechnik lands maintenance deal at Germany&#8217;s first offshore wind farm",
@@ -431,7 +465,7 @@
       "summary": "Norwegian offshore engineering group Aker Solutions has received a letter of award from Vietnam&#8217;s PTSC Mechanical &#38; Construction for work on QatarEnergy&#8217;s Maydan Mahzam oilfield redevelopment project. The contract covers detailed engineering for three major topsid",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 11,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Aker-Solutions-worker.jpg",
       "en": {
         "headline": "Aker Solutions bags engineering deal for Qatar oilfield redevelopment",
@@ -448,7 +482,7 @@
       "summary": "Abu Dhabi-based HEA Energy has struck a deal to acquire Subsea7&#8217;s heavy transportation business, adding a six-vessel operation to its growing offshore fleet. The transaction will see Subsea7&#8217;s offshore renewables arm Seaway7 divest a business comprising five owned and",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Seaway-Eagle-Seaway7.jpg",
       "en": {
         "headline": "HEA Energy snaps up Subsea7&#8217;s six-ship heavy transport business",
@@ -465,45 +499,11 @@
       "summary": "A Finnish court has sentenced the captain and a crew member of the general cargo ship Fitburg to prison for deliberately damaging two subsea telecommunications cables in the Gulf of Finland on New Year&#8217;s Eve last year. Helsinki District Court handed Russian captain Andrei M",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 17,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Fitburg-Finnish-Border-Guard.jpg",
       "en": {
         "headline": "Finland jails captain and crew member over Baltic cable sabotage",
         "summary": "A Finnish court has sentenced the captain and a crew member of the general cargo ship Fitburg to prison for deliberately damaging two subsea telecommunications cables in the Gulf of Finland on New Year&#8217;s Eve last year. Helsinki District Court handed Russian captain Andrei M",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Seacon snaps up fresh tanker in $19.6m deal",
-      "link": "https://splash247.com/seacon-snaps-up-fresh-tanker-in-19-6m-deal/",
-      "pubDate": "Thu, 05 Nov 2026 11:10:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Hong Kong-listed Seacon Shipping has struck a $19.6m deal for a newly built oil and chemical tanker, adding to its fleet amid reports of a four-vessel MR tanker disposal. The Qingdao-based owner&#8217;s Singapore subsidiary has agreed to acquire the 4,981 gt Jia Yue Ming Zhu, whi",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/Seacon.jpg",
-      "en": {
-        "headline": "Seacon snaps up fresh tanker in $19.6m deal",
-        "summary": "Hong Kong-listed Seacon Shipping has struck a $19.6m deal for a newly built oil and chemical tanker, adding to its fleet amid reports of a four-vessel MR tanker disposal. The Qingdao-based owner&#8217;s Singapore subsidiary has agreed to acquire the 4,981 gt Jia Yue Ming Zhu, whi",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Vattenfall signs final agreements for 1.8GW Danish offshore wind projects",
-      "link": "https://splash247.com/vattenfall-signs-final-agreements-for-1-8gw-danish-offshore-wind-projects/",
-      "pubDate": "Thu, 05 Nov 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Swedish energy group Vattenfall has signed final agreements with the Danish Energy Agency for two offshore wind developments with a combined capacity of at least 1.8GW. The agreements cover the 800 MW Hesselø project in the Kattegat and the 1 GW Holmsland development in the North",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/07/Vattenfall.jpg",
-      "en": {
-        "headline": "Vattenfall signs final agreements for 1.8GW Danish offshore wind projects",
-        "summary": "Swedish energy group Vattenfall has signed final agreements with the Danish Energy Agency for two offshore wind developments with a combined capacity of at least 1.8GW. The agreements cover the 800 MW Hesselø project in the Kattegat and the 1 GW Holmsland development in the North",
         "source": "Splash247"
       }
     }
