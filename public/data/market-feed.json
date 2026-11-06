@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-06T04:21:06.132Z",
+    "generatedAt": "2026-11-06T13:29:09.560Z",
     "benchmarkAsOf": "2026-11-05",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 849.5,
-        "deltaPct": -5.77,
+        "deltaPct": 0,
         "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1207.5,
-        "deltaPct": -4.51,
+        "deltaPct": 0,
         "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 726.5,
-        "deltaPct": -9.3,
+        "deltaPct": 0,
         "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 732,
-        "deltaPct": -2.01,
+        "deltaPct": 0,
         "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1337,
-        "deltaPct": -3.36,
+        "deltaPct": 0,
         "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 585,
-        "deltaPct": -6.62,
+        "deltaPct": 0,
         "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -172,7 +172,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 754,
-        "deltaPct": -1.31,
+        "deltaPct": 0,
         "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1286,
-        "deltaPct": -1.76,
+        "deltaPct": 0,
         "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 511.5,
-        "deltaPct": -1.25,
+        "deltaPct": 0,
         "asOf": "2026-11-05T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -236,6 +236,176 @@
   },
   "news": [
     {
+      "title": "DenAr takes on Turkey&#8217;s first offshore wind seabed survey campaign",
+      "link": "https://splash247.com/denar-takes-on-turkeys-first-offshore-wind-seabed-survey-campaign/",
+      "pubDate": "Fri, 06 Nov 2026 12:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Turkish marine survey specialist DenAr Ocean Engineering Services has been selected by the country&#8217;s Ministry of Energy and Natural Resources to carry out geophysical and geotechnical seabed investigations for Turkey&#8217;s first offshore wind development programme. The NC",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/DeMar-Surveyor.jpg",
+      "en": {
+        "headline": "DenAr takes on Turkey&#8217;s first offshore wind seabed survey campaign",
+        "summary": "Turkish marine survey specialist DenAr Ocean Engineering Services has been selected by the country&#8217;s Ministry of Energy and Natural Resources to carry out geophysical and geotechnical seabed investigations for Turkey&#8217;s first offshore wind development programme. The NC",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Khalid Hashim set to pass the baton at Precious Shipping",
+      "link": "https://splash247.com/khalid-hashim-set-to-pass-the-baton-at-precious-shipping/",
+      "pubDate": "Fri, 06 Nov 2026 11:02:21 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Thailand&#8217;s Precious Shipping is preparing a change at the top, with longtime managing director Khalid Moinuddin Hashim moving to executive vice chairman and finance chief Gautam Khurana taking over the running of the Bangkok-listed dry bulk owner. The company&#8217;s board ",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/11/Khalid-Hashim.jpg",
+      "en": {
+        "headline": "Khalid Hashim set to pass the baton at Precious Shipping",
+        "summary": "Thailand&#8217;s Precious Shipping is preparing a change at the top, with longtime managing director Khalid Moinuddin Hashim moving to executive vice chairman and finance chief Gautam Khurana taking over the running of the Bangkok-listed dry bulk owner. The company&#8217;s board ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "EnerMech picks up Chevron pipeline work off Equatorial Guinea",
+      "link": "https://splash247.com/enermech-picks-up-chevron-pipeline-work-off-equatorial-guinea/",
+      "pubDate": "Fri, 06 Nov 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "UK-headquartered oilfield services specialist EnerMech has secured a contract from Chevron for pipeline pre-commissioning services on the Aseng gas development offshore Equatorial Guinea. The contract covers preparation of approximately 19 km of rigid production flowline connecti",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/EnerMech.jpg",
+      "en": {
+        "headline": "EnerMech picks up Chevron pipeline work off Equatorial Guinea",
+        "summary": "UK-headquartered oilfield services specialist EnerMech has secured a contract from Chevron for pipeline pre-commissioning services on the Aseng gas development offshore Equatorial Guinea. The contract covers preparation of approximately 19 km of rigid production flowline connecti",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Alfa Laval makes $700m NAVTOR bet",
+      "link": "https://splash247.com/alfa-laval-makes-700m-navtor-bet/",
+      "pubDate": "Fri, 06 Nov 2026 09:27:35 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Swedish industrial group Alfa Laval has struck a $700m all-cash deal to acquire Norwegian maritime software specialist NAVTOR, significantly expanding a digital shipping portfolio that already includes StormGeo and Portchain. The Stockholm-listed group has entered into a definiti",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/boxship-Alfa-Laval.jpg",
+      "en": {
+        "headline": "Alfa Laval makes $700m NAVTOR bet",
+        "summary": "Swedish industrial group Alfa Laval has struck a $700m all-cash deal to acquire Norwegian maritime software specialist NAVTOR, significantly expanding a digital shipping portfolio that already includes StormGeo and Portchain. The Stockholm-listed group has entered into a definiti",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Indian ship recycling breakthrough hits Brussels roadblock",
+      "link": "https://splash247.com/indian-ship-recycling-breakthrough-hits-brussels-roadblock/",
+      "pubDate": "Fri, 06 Nov 2026 09:20:01 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A European Parliament committee has voted against allowing two Indian shipbreaking yards onto the EU&#8217;s approved recycling list, dealing a setback to shipowners pushing for greater access to South Asian dismantling capacity. The Parliament&#8217;s environment committee backe",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/02/Leela-ship-recycling.jpg",
+      "en": {
+        "headline": "Indian ship recycling breakthrough hits Brussels roadblock",
+        "summary": "A European Parliament committee has voted against allowing two Indian shipbreaking yards onto the EU&#8217;s approved recycling list, dealing a setback to shipowners pushing for greater access to South Asian dismantling capacity. The Parliament&#8217;s environment committee backe",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Venergy doubles VLCC order at Hengli",
+      "link": "https://splash247.com/venergy-doubles-vlcc-order-at-hengli/",
+      "pubDate": "Fri, 06 Nov 2026 09:19:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Greek shipowner Vyron Vasileiadis has firmed up another two VLCCs at China&#8217;s Hengli Heavy Industries, doubling Venergy Maritime&#8217;s debut supertanker order to four vessels. The Piraeus-based company exercised the options attached to its October contract for two firm 306",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-VLCC.jpg",
+      "en": {
+        "headline": "Venergy doubles VLCC order at Hengli",
+        "summary": "Greek shipowner Vyron Vasileiadis has firmed up another two VLCCs at China&#8217;s Hengli Heavy Industries, doubling Venergy Maritime&#8217;s debut supertanker order to four vessels. The Piraeus-based company exercised the options attached to its October contract for two firm 306",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Capital Tankers scores up to $82m suezmax fixture",
+      "link": "https://splash247.com/capital-tankers-scores-up-to-82m-suezmax-fixture/",
+      "pubDate": "Fri, 06 Nov 2026 09:16:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Evangelos Marinakis-backed Capital Tankers has secured a 15-month charter for one of its modern suezmaxes in a deal expected to generate between $73.1m and $82.2m in revenue. The Oslo-listed tanker owner said on Friday that its 155,348 dwt Amor has been fixed to an unnamed global",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Capital-Tankers-suezmax.jpg",
+      "en": {
+        "headline": "Capital Tankers scores up to $82m suezmax fixture",
+        "summary": "Evangelos Marinakis-backed Capital Tankers has secured a 15-month charter for one of its modern suezmaxes in a deal expected to generate between $73.1m and $82.2m in revenue. The Oslo-listed tanker owner said on Friday that its 155,348 dwt Amor has been fixed to an unnamed global",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Shipbuilding boom heads for 2028 delivery crunch",
+      "link": "https://splash247.com/shipbuilding-boom-heads-for-2028-delivery-crunch/",
+      "pubDate": "Fri, 06 Nov 2026 08:30:33 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The global shipbuilding orderbook has expanded three and a half times since 2020, while yard capacity has grown by just 30%, setting the stage for an extraordinary delivery squeeze over the next two years. The latest Shipping Market Review from Danish Ship Finance reveals that sh",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/Hengli-LR2.jpg",
+      "en": {
+        "headline": "Shipbuilding boom heads for 2028 delivery crunch",
+        "summary": "The global shipbuilding orderbook has expanded three and a half times since 2020, while yard capacity has grown by just 30%, setting the stage for an extraordinary delivery squeeze over the next two years. The latest Shipping Market Review from Danish Ship Finance reveals that sh",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Seafarer missing in Gulf tanker strike as Iran redraws Hormuz blacklist",
+      "link": "https://splash247.com/seafarer-missing-in-gulf-tanker-strike-as-iran-redraws-hormuz-blacklist/",
+      "pubDate": "Fri, 06 Nov 2026 08:15:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A seafarer is missing following a missile-suspected attack on a Greek-operated tanker deep inside the Arabian Gulf, while Iran has reshuffled its growing Strait of Hormuz blacklist and fresh security warnings point to continuing threats to commercial shipping. The Marshall Island",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/US-Navy-Epic-Fury-Iran.jpeg",
+      "en": {
+        "headline": "Seafarer missing in Gulf tanker strike as Iran redraws Hormuz blacklist",
+        "summary": "A seafarer is missing following a missile-suspected attack on a Greek-operated tanker deep inside the Arabian Gulf, while Iran has reshuffled its growing Strait of Hormuz blacklist and fresh security warnings point to continuing threats to commercial shipping. The Marshall Island",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Shipping has a coffee problem",
+      "link": "https://splash247.com/shipping-has-a-coffee-problem/",
+      "pubDate": "Fri, 06 Nov 2026 08:00:03 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "From Posidonia to Geneva Dry, the shipping industry&#8217;s favourite pastime appears to be arranging coffee meetings that may or may not actually happen. Mike Darby from Merchant Recruitment makes the case for the Baltic Flat White Index. In bunkering, the cappuccino effect mean",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Geneva-Dry-Coffee-Break.jpeg",
+      "en": {
+        "headline": "Shipping has a coffee problem",
+        "summary": "From Posidonia to Geneva Dry, the shipping industry&#8217;s favourite pastime appears to be arranging coffee meetings that may or may not actually happen. Mike Darby from Merchant Recruitment makes the case for the Baltic Flat White Index. In bunkering, the cappuccino effect mean",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Ammonia-Powered Bulk Carrier Takes on Green Fuel in Australian First",
       "link": "https://gcaptain.com/ammonia-powered-bulk-carrier-takes-on-green-fuel-in-australian-first/",
       "pubDate": "Thu, 05 Nov 2026 22:49:48 +0000",
@@ -244,7 +414,7 @@
       "summary": "Australia has completed its first green ammonia bunkering operation involving an ammonia-powered bulk carrier, marking another step toward bringing alternative fuels into commercial shipping. The operation took place earlier this...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 5,
+      "hoursAgo": 14,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/mineral_europa-46-web.jpeg",
       "en": {
         "headline": "Ammonia-Powered Bulk Carrier Takes on Green Fuel in Australian First",
@@ -261,8 +431,8 @@
       "summary": "A Finnish court on Thursday jailed the Russian captain and an Azerbaijani crew member of the cargo ship Fitburg for aggravated sabotage over damage to two subsea telecommunications cables in the Gulf of Finland last year.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 14,
+      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Finnish Court Jails Cargo Ship Captain, Crew Member for Baltic Sea Cable Sabotage",
         "summary": "A Finnish court on Thursday jailed the Russian captain and an Azerbaijani crew member of the cargo ship Fitburg for aggravated sabotage over damage to two subsea telecommunications cables in the Gulf of Finland last year.",
@@ -278,7 +448,7 @@
       "summary": "The Trump administration has approved a $1 billion offshore crude oil export project off the coast of Louisiana, clearing a major regulatory hurdle for a facility designed to load some...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
       "en": {
         "headline": "MARAD Approves $1 Billion Offshore Crude Oil Export Port Off Louisiana",
@@ -295,7 +465,7 @@
       "summary": "Danish offshore wind developer Ørsted has completed its 704-megawatt Revolution Wind project off the U.S. East Coast, marking a major milestone for a development that faced repeated shutdown orders from...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/09/Kate-1st-turbine-002.jpg",
       "en": {
         "headline": "Ørsted’s Revolution Wind Reaches Full Operations After Trump Administration Shutdowns",
@@ -312,46 +482,12 @@
       "summary": "Maritime experts warn that the westward spread of attacks between Russia and Ukraine, toward NATO coastlines, is now having commercial consequences.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-29T093131Z_553251886_RC2HDMA9HMIK_RTRMADP_3_UKRAINE-CRISIS-PIVDENNYI-GOK-800x545.jpg",
       "en": {
         "headline": "War Comes to NATO’s Black Sea Coast, and Shipping Starts Saying No",
         "summary": "Maritime experts warn that the westward spread of attacks between Russia and Ukraine, toward NATO coastlines, is now having commercial consequences.",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Dominguez gets nod for second term at IMO helm",
-      "link": "https://splash247.com/dominguez-gets-nod-for-second-term-at-imo-helm/",
-      "pubDate": "Thu, 05 Nov 2026 18:17:58 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Arsenio Dominguez is set to remain at the helm of the International Maritime Organization (IMO) until the end of 2031 after the UN shipping agency&#8217;s Council backed his appointment for another four-year term. The 40-member Council endorsed the Panamanian&#8217;s extension du",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 10,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Arsenio-Dominguez-IMO.jpg",
-      "en": {
-        "headline": "Dominguez gets nod for second term at IMO helm",
-        "summary": "Arsenio Dominguez is set to remain at the helm of the International Maritime Organization (IMO) until the end of 2031 after the UN shipping agency&#8217;s Council backed his appointment for another four-year term. The 40-member Council endorsed the Panamanian&#8217;s extension du",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Brazilian builds boat from rubbish to collect more rubbish",
-      "link": "https://splash247.com/brazilian-builds-boat-from-rubbish-to-collect-more-rubbish/",
-      "pubDate": "Thu, 05 Nov 2026 17:17:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "A former Brazilian ocean canoeing champion has taken recycling to a floating extreme, constructing a boat from 230 discarded plastic containers so he can collect even more rubbish from the sea. Marcos Arnhold spent two months building the unusual craft in Guaratuba, southern Braz",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/FridayRubbishBoat.jpg",
-      "en": {
-        "headline": "Brazilian builds boat from rubbish to collect more rubbish",
-        "summary": "A former Brazilian ocean canoeing champion has taken recycling to a floating extreme, constructing a boat from 230 discarded plastic containers so he can collect even more rubbish from the sea. Marcos Arnhold spent two months building the unusual craft in Guaratuba, southern Braz",
-        "source": "Splash247"
       }
     },
     {
@@ -363,148 +499,12 @@
       "summary": "The International Maritime Organization (IMO) Council has backed Secretary-General Arsenio Dominguez for a second four-year term, extending its support for his leadership despite the organization&#8217;s failure to adopt its landmark...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/10/IMO-Sec-General-at-MEPC-ES-2.jpg",
       "en": {
         "headline": "IMO Backs Dominguez for Second Term Amid Shipping Attacks and Climate Deadlock",
         "summary": "The International Maritime Organization (IMO) Council has backed Secretary-General Arsenio Dominguez for a second four-year term, extending its support for his leadership despite the organization&#8217;s failure to adopt its landmark...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Maersk&#8217;s 26-Ship LNG Order Adds Nearly Half a Million TEU to Newbuilding Pipeline",
-      "link": "https://gcaptain.com/maersks-26-ship-lng-order-adds-nearly-half-a-million-teu-to-newbuilding-pipeline/",
-      "pubDate": "Thu, 05 Nov 2026 16:25:45 +0000",
-      "source": "gCaptain",
-      "category": "S&P",
-      "summary": "A.P. Moller-Maersk is pressing ahead with one of its largest containership ordering programs in years, confirming in its third-quarter earnings report that it has ordered 26 LNG dual-fuel vessels with...",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/08/2023-08-04T103730Z_2076249887_RC2NTY9TWJLF_RTRMADP_3_GLOBAL-RESULTS.jpg",
-      "en": {
-        "headline": "Maersk&#8217;s 26-Ship LNG Order Adds Nearly Half a Million TEU to Newbuilding Pipeline",
-        "summary": "A.P. Moller-Maersk is pressing ahead with one of its largest containership ordering programs in years, confirming in its third-quarter earnings report that it has ordered 26 LNG dual-fuel vessels with...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "The Hidden Liabilities In Maritime Acquisitions",
-      "link": "https://gcaptain.com/the-hidden-liabilities-in-maritime-acquistions/",
-      "pubDate": "Thu, 05 Nov 2026 14:26:21 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "What Buyers, Sellers and Investors Often Miss During Due DiligenceBy Sabrina Brigance, CMIP, Managing Director, Marine Practice, Hylant Maritime mergers and acquisitions can create significant opportunities for growth. Private equity...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Marine-Image-for-Sponsored-Article-no-logo.jpg",
-      "en": {
-        "headline": "The Hidden Liabilities In Maritime Acquisitions",
-        "summary": "What Buyers, Sellers and Investors Often Miss During Due DiligenceBy Sabrina Brigance, CMIP, Managing Director, Marine Practice, Hylant Maritime mergers and acquisitions can create significant opportunities for growth. Private equity...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "France Extends Maritime Patrol Plane&#8217;s Stay in Black Sea After Cargo Ship Attacks",
-      "link": "https://gcaptain.com/france-extends-maritime-patrol-planes-stay-in-black-sea-after-cargo-ship-attacks/",
-      "pubDate": "Thu, 05 Nov 2026 14:09:49 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A French maritime patrol aircraft deployed to Romania to bolster surveillance after a series of deadly strikes on merchant ships in the Black Sea on the edge of NATO's eastern flank will extend its stay by several weeks, its commander said on Thursday.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-10-30T153619Z_4417729_RC2RDOAU48WV_RTRMADP_3_UKRAINE-CRISIS-BULGARIA-SHIP-800x534.jpg",
-      "en": {
-        "headline": "France Extends Maritime Patrol Plane&#8217;s Stay in Black Sea After Cargo Ship Attacks",
-        "summary": "A French maritime patrol aircraft deployed to Romania to bolster surveillance after a series of deadly strikes on merchant ships in the Black Sea on the edge of NATO's eastern flank will extend its stay by several weeks, its commander said on Thursday.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Woodside to cut more than 500 jobs in $400m savings drive",
-      "link": "https://splash247.com/woodside-to-cut-more-than-500-jobs-in-400m-savings-drive/",
-      "pubDate": "Thu, 05 Nov 2026 13:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Australian energy giant Woodside is planning to cut more than 500 jobs worldwide as part of a restructuring programme aimed at delivering $400m in annual cost savings from 2028. The workforce reduction, equivalent to more than 10% of the company&#8217;s employees at the end of 20",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/02/Woodside-building.jpg",
-      "en": {
-        "headline": "Woodside to cut more than 500 jobs in $400m savings drive",
-        "summary": "Australian energy giant Woodside is planning to cut more than 500 jobs worldwide as part of a restructuring programme aimed at delivering $400m in annual cost savings from 2028. The workforce reduction, equivalent to more than 10% of the company&#8217;s employees at the end of 20",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Deutsche Windtechnik lands maintenance deal at Germany&#8217;s first offshore wind farm",
-      "link": "https://splash247.com/deutsche-windtechnik-lands-maintenance-deal-at-germanys-first-offshore-wind-farm/",
-      "pubDate": "Thu, 05 Nov 2026 12:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "German offshore wind services specialist Deutsche Windtechnik has secured a comprehensive maintenance contract from Ocean Breeze Energy covering all 12 turbines at the Alpha Ventus offshore wind farm in the North Sea. The contract will begin in January 2027 and covers turbine ser",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/Alpha-Ventus-offshore-wind.jpg",
-      "en": {
-        "headline": "Deutsche Windtechnik lands maintenance deal at Germany&#8217;s first offshore wind farm",
-        "summary": "German offshore wind services specialist Deutsche Windtechnik has secured a comprehensive maintenance contract from Ocean Breeze Energy covering all 12 turbines at the Alpha Ventus offshore wind farm in the North Sea. The contract will begin in January 2027 and covers turbine ser",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Aker Solutions bags engineering deal for Qatar oilfield redevelopment",
-      "link": "https://splash247.com/aker-solutions-bags-engineering-deal-for-qatar-oilfield-redevelopment/",
-      "pubDate": "Thu, 05 Nov 2026 11:45:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Norwegian offshore engineering group Aker Solutions has received a letter of award from Vietnam&#8217;s PTSC Mechanical &#38; Construction for work on QatarEnergy&#8217;s Maydan Mahzam oilfield redevelopment project. The contract covers detailed engineering for three major topsid",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Aker-Solutions-worker.jpg",
-      "en": {
-        "headline": "Aker Solutions bags engineering deal for Qatar oilfield redevelopment",
-        "summary": "Norwegian offshore engineering group Aker Solutions has received a letter of award from Vietnam&#8217;s PTSC Mechanical &#38; Construction for work on QatarEnergy&#8217;s Maydan Mahzam oilfield redevelopment project. The contract covers detailed engineering for three major topsid",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "HEA Energy snaps up Subsea7&#8217;s six-ship heavy transport business",
-      "link": "https://splash247.com/hea-energy-snaps-up-subsea7s-six-ship-heavy-transport-business/",
-      "pubDate": "Thu, 05 Nov 2026 11:25:54 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Abu Dhabi-based HEA Energy has struck a deal to acquire Subsea7&#8217;s heavy transportation business, adding a six-vessel operation to its growing offshore fleet. The transaction will see Subsea7&#8217;s offshore renewables arm Seaway7 divest a business comprising five owned and",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Seaway-Eagle-Seaway7.jpg",
-      "en": {
-        "headline": "HEA Energy snaps up Subsea7&#8217;s six-ship heavy transport business",
-        "summary": "Abu Dhabi-based HEA Energy has struck a deal to acquire Subsea7&#8217;s heavy transportation business, adding a six-vessel operation to its growing offshore fleet. The transaction will see Subsea7&#8217;s offshore renewables arm Seaway7 divest a business comprising five owned and",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Finland jails captain and crew member over Baltic cable sabotage",
-      "link": "https://splash247.com/finland-jails-captain-and-crew-member-over-baltic-cable-sabotage/",
-      "pubDate": "Thu, 05 Nov 2026 11:14:58 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "A Finnish court has sentenced the captain and a crew member of the general cargo ship Fitburg to prison for deliberately damaging two subsea telecommunications cables in the Gulf of Finland on New Year&#8217;s Eve last year. Helsinki District Court handed Russian captain Andrei M",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Fitburg-Finnish-Border-Guard.jpg",
-      "en": {
-        "headline": "Finland jails captain and crew member over Baltic cable sabotage",
-        "summary": "A Finnish court has sentenced the captain and a crew member of the general cargo ship Fitburg to prison for deliberately damaging two subsea telecommunications cables in the Gulf of Finland on New Year&#8217;s Eve last year. Helsinki District Court handed Russian captain Andrei M",
-        "source": "Splash247"
       }
     }
   ]
