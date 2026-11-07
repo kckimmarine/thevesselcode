@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-07T03:50:51.703Z",
+    "generatedAt": "2026-11-07T12:08:54.227Z",
     "benchmarkAsOf": "2026-11-06",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 854,
-        "deltaPct": 0.53,
+        "deltaPct": 0,
         "asOf": "2026-11-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1220,
-        "deltaPct": 1.04,
+        "deltaPct": 0,
         "asOf": "2026-11-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 732,
-        "deltaPct": 0.76,
+        "deltaPct": 0,
         "asOf": "2026-11-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 739.5,
-        "deltaPct": 1.02,
+        "deltaPct": 0,
         "asOf": "2026-11-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1348.5,
-        "deltaPct": 0.86,
+        "deltaPct": 0,
         "asOf": "2026-11-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 598,
-        "deltaPct": 2.22,
+        "deltaPct": 0,
         "asOf": "2026-11-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 980,
-        "deltaPct": 2.08,
+        "deltaPct": 0,
         "asOf": "2026-11-06T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 840,
-        "deltaPct": -1.75,
+        "deltaPct": 0,
         "asOf": "2026-11-06T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -172,7 +172,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 770.5,
-        "deltaPct": 2.19,
+        "deltaPct": 0,
         "asOf": "2026-11-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1311.5,
-        "deltaPct": 1.98,
+        "deltaPct": 0,
         "asOf": "2026-11-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 512.5,
-        "deltaPct": 0.2,
+        "deltaPct": 0,
         "asOf": "2026-11-06T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -244,7 +244,7 @@
       "summary": "India’s Adani Ports and Special Economic Zone (APSEZ) has agreed to acquire Netherlands-based liquid storage operator Evos B.V. in a €2.56 billion ($2.88 billion) deal that will give the company...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/evos-1.jpg",
       "en": {
         "headline": "Adani Ports Makes Major Push Into Europe With $2.9 Billion Evos Acquisition",
@@ -261,7 +261,7 @@
       "summary": "The Trump administration has expanded sanctions targeting Cuba&#8217;s maritime and energy sectors, identifying five Cuban-flagged vessels as blocked property and opening the door to further sanctions against foreign companies operating...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 10,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/03/2026-03-28T201834Z_550308062_RC2ODKAKLCME_RTRMADP_3_TANKER-CUBA-VENEZUELA-RUSSIA-800x533.jpg",
       "en": {
         "headline": "U.S. Targets Cuba’s Oil Tanker Fleet in New Sanctions Crackdown",
@@ -278,7 +278,7 @@
       "summary": "A European Parliament committee has voted to oppose the approval of two Indian ship recycling yards, dealing a setback to shipping industry efforts to expand access to South Asia&#8217;s shipbreaking...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2016/10/K9A0004.jpg",
       "en": {
         "headline": "EU Lawmakers Push Back Against Approval of Indian Ship Recycling Yards",
@@ -295,7 +295,7 @@
       "summary": "Beijing has approved a law to improve China's Antarctic research and strengthen regulation of its exploration activities, the official Xinhua news agency reported on Friday.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/Xue-Long-1-and-Xue-Long-2-800x466.jpg",
       "en": {
         "headline": "China Adopts Law on Antarctic Activities and Environmental Protection",
@@ -312,7 +312,7 @@
       "summary": "One seafarer was killed in an explosion believed to have been caused by a missile attack on an oil products tanker in the Gulf on Thursday, the ship's manager said on Friday.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
       "en": {
         "headline": "Seafarer Killed in Suspected Missile Attack on Tanker in Gulf",
@@ -329,7 +329,7 @@
       "summary": "German container shipping giant Hapag-Lloyd has completed its acquisition of a 25% stake in APM Terminals Maasvlakte II in Rotterdam, strengthening its ties with Maersk at one of Europe&#8217;s most...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2015/11/150929-Madison-Maersk-at-APM-Terminals-Rotterdam-Maasvlakte-II.jpg",
       "en": {
         "headline": "Hapag-Lloyd Acquires 25% Stake in Maersk’s Maasvlakte II Terminal in Rotterdam",
@@ -346,7 +346,7 @@
       "summary": "Finland expects to operate at least as many icebreakers in the coming decades as it does today, despite rising temperatures and declining average ice coverage in the Baltic Sea. This is the conclusion of a new government-commissioned report that also highlights growing security r",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/Nordica-icebreaker.jpeg",
       "en": {
         "headline": "Finland Sees Continued Demand for Icebreakers Despite Warming Winters, Citing Security Concerns",
@@ -363,7 +363,7 @@
       "summary": "Iranian oil exports have dwindled to almost nothing under the US naval blockade, but the chance of an imminent deal between the two sides to end the war is low, according to FGE NexantECA.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
+      "hoursAgo": 23,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-25T025418Z_961541165_RC22WKA2E4ZU_RTRMADP_3_IRAN-CRISIS-US-BLOCKADE.jpg",
       "en": {
         "headline": "Iran Oil Exports Near Zero But Peace Deal Not Likely, FGE Says",
@@ -380,7 +380,7 @@
       "summary": "Turkish marine survey specialist DenAr Ocean Engineering Services has been selected by the country&#8217;s Ministry of Energy and Natural Resources to carry out geophysical and geotechnical seabed investigations for Turkey&#8217;s first offshore wind development programme. The NC",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 15,
+      "hoursAgo": 24,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/DeMar-Surveyor.jpg",
       "en": {
         "headline": "DenAr takes on Turkey&#8217;s first offshore wind seabed survey campaign",
@@ -397,7 +397,7 @@
       "summary": "Thailand&#8217;s Precious Shipping is preparing a change at the top, with longtime managing director Khalid Moinuddin Hashim moving to executive vice chairman and finance chief Gautam Khurana taking over the running of the Bangkok-listed dry bulk owner. The company&#8217;s board ",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 16,
+      "hoursAgo": 25,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/11/Khalid-Hashim.jpg",
       "en": {
         "headline": "Khalid Hashim set to pass the baton at Precious Shipping",
@@ -414,7 +414,7 @@
       "summary": "UK-headquartered oilfield services specialist EnerMech has secured a contract from Chevron for pipeline pre-commissioning services on the Aseng gas development offshore Equatorial Guinea. The contract covers preparation of approximately 19 km of rigid production flowline connecti",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 17,
+      "hoursAgo": 26,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/EnerMech.jpg",
       "en": {
         "headline": "EnerMech picks up Chevron pipeline work off Equatorial Guinea",
@@ -431,7 +431,7 @@
       "summary": "Swedish industrial group Alfa Laval has struck a $700m all-cash deal to acquire Norwegian maritime software specialist NAVTOR, significantly expanding a digital shipping portfolio that already includes StormGeo and Portchain. The Stockholm-listed group has entered into a definiti",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 18,
+      "hoursAgo": 26,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/boxship-Alfa-Laval.jpg",
       "en": {
         "headline": "Alfa Laval makes $700m NAVTOR bet",
@@ -448,7 +448,7 @@
       "summary": "A European Parliament committee has voted against allowing two Indian shipbreaking yards onto the EU&#8217;s approved recycling list, dealing a setback to shipowners pushing for greater access to South Asian dismantling capacity. The Parliament&#8217;s environment committee backe",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 18,
+      "hoursAgo": 26,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/02/Leela-ship-recycling.jpg",
       "en": {
         "headline": "Indian ship recycling breakthrough hits Brussels roadblock",
@@ -465,7 +465,7 @@
       "summary": "Greek shipowner Vyron Vasileiadis has firmed up another two VLCCs at China&#8217;s Hengli Heavy Industries, doubling Venergy Maritime&#8217;s debut supertanker order to four vessels. The Piraeus-based company exercised the options attached to its October contract for two firm 306",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 18,
+      "hoursAgo": 26,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-VLCC.jpg",
       "en": {
         "headline": "Venergy doubles VLCC order at Hengli",
@@ -482,7 +482,7 @@
       "summary": "Evangelos Marinakis-backed Capital Tankers has secured a 15-month charter for one of its modern suezmaxes in a deal expected to generate between $73.1m and $82.2m in revenue. The Oslo-listed tanker owner said on Friday that its 155,348 dwt Amor has been fixed to an unnamed global",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 18,
+      "hoursAgo": 26,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Capital-Tankers-suezmax.jpg",
       "en": {
         "headline": "Capital Tankers scores up to $82m suezmax fixture",
@@ -499,7 +499,7 @@
       "summary": "The global shipbuilding orderbook has expanded three and a half times since 2020, while yard capacity has grown by just 30%, setting the stage for an extraordinary delivery squeeze over the next two years. The latest Shipping Market Review from Danish Ship Finance reveals that sh",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 19,
+      "hoursAgo": 27,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/Hengli-LR2.jpg",
       "en": {
         "headline": "Shipbuilding boom heads for 2028 delivery crunch",
