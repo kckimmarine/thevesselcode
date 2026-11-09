@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T16:30:06.778Z",
+  "generated_at": "2026-11-09T16:43:40.168Z",
   "chapters": [
     "00",
     "10",
@@ -38,9 +38,9 @@
     "87",
     "99"
   ],
-  "count": 53925,
+  "count": 53927,
   "merge_stats": {
-    "space_marine_baseline": 25460,
+    "space_marine_baseline": 25462,
     "berth_rows_ingested": 28639,
     "berth_added": 28465,
     "berth_enriched": 174,
@@ -403882,6 +403882,32 @@
         "Catalog Section": "Hand Tools",
         "Description": "Non-Spark Single Open End Spanner, Beryllium Copper, 32 mm",
         "Reference": "Non-Spark Single Open End Spanner, Beryllium Copper, 32 mm"
+      }
+    },
+    {
+      "c": "615431",
+      "n": "Non-Spark Single Open End Spanner, Beryllium Copper, 35 mm",
+      "u": "PCS",
+      "g": "61",
+      "p": "61-225-01.jpg",
+      "category": "Hand Tools",
+      "specs": {
+        "Catalog Section": "Hand Tools",
+        "Description": "Non-Spark Single Open End Spanner, Beryllium Copper, 35 mm",
+        "Reference": "Non-Spark Single Open End Spanner, Beryllium Copper, 35 mm"
+      }
+    },
+    {
+      "c": "615432",
+      "n": "Non-Spark Single Open End Spanner, Beryllium Copper, 38 mm",
+      "u": "PCS",
+      "g": "61",
+      "p": "61-225-01.jpg",
+      "category": "Hand Tools",
+      "specs": {
+        "Catalog Section": "Hand Tools",
+        "Description": "Non-Spark Single Open End Spanner, Beryllium Copper, 38 mm",
+        "Reference": "Non-Spark Single Open End Spanner, Beryllium Copper, 38 mm"
       }
     },
     {
