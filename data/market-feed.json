@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-10T22:40:21.616Z",
+    "generatedAt": "2026-11-11T03:53:14.963Z",
     "benchmarkAsOf": "2026-11-10",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 864,
-        "deltaPct": 0,
-        "asOf": "2026-11-09T17:00:00.000Z",
+        "priceUsdMt": 816.5,
+        "deltaPct": -5.5,
+        "asOf": "2026-11-10T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1248,
-        "deltaPct": 0,
-        "asOf": "2026-11-09T17:00:00.000Z",
+        "priceUsdMt": 1183,
+        "deltaPct": -5.21,
+        "asOf": "2026-11-10T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 738.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-09T17:00:00.000Z",
+        "priceUsdMt": 676,
+        "deltaPct": -8.46,
+        "asOf": "2026-11-10T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 733,
-        "deltaPct": 0,
-        "asOf": "2026-11-09T17:00:00.000Z",
+        "priceUsdMt": 703,
+        "deltaPct": -4.09,
+        "asOf": "2026-11-10T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1329,
-        "deltaPct": 0,
-        "asOf": "2026-11-09T17:00:00.000Z",
+        "priceUsdMt": 1258,
+        "deltaPct": -5.34,
+        "asOf": "2026-11-10T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 577.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-09T17:00:00.000Z",
+        "priceUsdMt": 544.5,
+        "deltaPct": -5.71,
+        "asOf": "2026-11-10T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 960,
-        "deltaPct": 0,
-        "asOf": "2026-11-09T00:00:00.000Z",
+        "priceUsdMt": 900,
+        "deltaPct": -6.25,
+        "asOf": "2026-11-10T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 820,
-        "deltaPct": 0,
-        "asOf": "2026-11-09T00:00:00.000Z",
+        "priceUsdMt": 760,
+        "deltaPct": -7.32,
+        "asOf": "2026-11-10T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 750,
-        "deltaPct": 0,
-        "asOf": "2026-11-09T17:00:00.000Z",
+        "priceUsdMt": 733.5,
+        "deltaPct": -2.2,
+        "asOf": "2026-11-10T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1280,
-        "deltaPct": 0,
-        "asOf": "2026-11-09T17:00:00.000Z",
+        "priceUsdMt": 1270,
+        "deltaPct": -0.78,
+        "asOf": "2026-11-10T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 498,
-        "deltaPct": 0,
-        "asOf": "2026-11-09T17:00:00.000Z",
+        "priceUsdMt": 482.5,
+        "deltaPct": -3.11,
+        "asOf": "2026-11-10T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 2862,
-      "deltaPct": 0.28,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-10T15:45:17.524Z"
     },
     "capesizeTc": {
       "value": 4457,
-      "deltaPct": -0.04,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-10T20:45:20.075Z"
     },
     "panamaxTc": {
       "value": 2075,
-      "deltaPct": 1.87,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-10T15:45:17.548Z"
@@ -236,6 +236,23 @@
   },
   "news": [
     {
+      "title": "Russian Diesel Tanker Awaits Orders Off U.S. Coast Amid Import Ban Dispute",
+      "link": "https://gcaptain.com/russian-diesel-tanker-awaits-orders-off-u-s-coast-amid-import-ban-dispute/",
+      "pubDate": "Wed, 11 Nov 2026 00:22:43 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "OSLO, Nov 10 (Reuters) &#8211; President Donald Trump&#8217;s energy chief said on Tuesday the US was confident that the first cargo of Russian diesel headed for the US would eventually...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/05/shutterstock_752037607.jpg",
+      "en": {
+        "headline": "Russian Diesel Tanker Awaits Orders Off U.S. Coast Amid Import Ban Dispute",
+        "summary": "OSLO, Nov 10 (Reuters) &#8211; President Donald Trump&#8217;s energy chief said on Tuesday the US was confident that the first cargo of Russian diesel headed for the US would eventually...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "U.S. Formalizes Two-Month Extension of China Ship Port Fee Suspension",
       "link": "https://gcaptain.com/u-s-formalizes-two-month-extension-of-china-ship-port-fee-suspension/",
       "pubDate": "Tue, 10 Nov 2026 20:47:24 +0000",
@@ -244,7 +261,7 @@
       "summary": "The Trump administration has formally extended its suspension of port fees targeting Chinese-built and Chinese-operated vessels for another two months, keeping the controversial measures on hold while Washington continues trade...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/11/port-of-long-beach-2.jpeg",
       "en": {
         "headline": "U.S. Formalizes Two-Month Extension of China Ship Port Fee Suspension",
@@ -261,7 +278,7 @@
       "summary": "The Georgia Ports Authority is expanding automotive shipping capacity at the Port of Brunswick as a growing number of global automakers establish manufacturing operations across the state, strengthening Georgia’s position...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/261110-GPA-Colonels-Island-FOR-RELEASE.jpg",
       "en": {
         "headline": "Port of Brunswick Expands Auto Shipping Capacity as Georgia Manufacturing Booms",
@@ -278,7 +295,7 @@
       "summary": "Consolidation is reshaping shipmanagement, but Faouzi Fradi, chief executive of MSM, does not believe getting bigger has to mean becoming more distant from owners, vessels or seafarers. MSM, formerly known as Maryam Shipmanagement, recently rebranded as part of a broader shift fr",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Fradi-MSM.jpg",
       "en": {
         "headline": "MSM: Shipmanagement’s next advantage will be trust not size",
@@ -295,7 +312,7 @@
       "summary": "In March this year, inside a 282-year-old institution responsible for one of the most important prices in global oil markets, one man staged a quiet protest.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
       "en": {
         "headline": "‘Nonsense Rate’: Iran War Exposes Turmoil Behind Key Tanker Benchmark",
@@ -312,7 +329,7 @@
       "summary": "The U.S. Department of Energy has closed a $480 million loan to modernize 22 offshore platforms in the Gulf of Mexico, marking the department&#8217;s first completed loan financing domestic oil...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/10/2018-10-09T013728Z_1641398557_RC1134347600_RTRMADP_3_STORM-MICHAEL-ENERGY.jpg",
       "en": {
         "headline": "U.S. Closes First Oil and Gas Production Loan Under Revamped Energy Financing Program",
@@ -329,7 +346,7 @@
       "summary": "Fifty-one years ago today, the SS Edmund Fitzgerald disappeared beneath the waters of Lake Superior during a powerful November storm, taking all 29 crew members with her in one of...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2014/11/Edmund_Fitzgerald_1971_3_of_4_restored.jpg",
       "en": {
         "headline": "51 Years Later, the Edmund Fitzgerald and Her 29 Lost Mariners Are Remembered",
@@ -346,7 +363,7 @@
       "summary": "Hapag-Lloyd, the world’s fifth-largest container carrier, operates 300 vessels on 133 liner services, transporting 13.5&#160;million&#160;twenty-foot-equivalent units&#160;a&#160;year between 600 ports&#160;worldwide.&#160;Given the scale and complexity of these operations,&#160;",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Patrick-Briest-Senior-Director-IT-%E2%80%93-Network-Operations-at-Hapag-Lloyd-800x533.jpg",
       "en": {
         "headline": "Hapag-Lloyd and Inmarsat Maritime: a case study in connected shipping",
@@ -363,7 +380,7 @@
       "summary": "Nasdaq-listed Rubico has struck a deal to take another two MR tanker newbuildings from Top Ships in a $14.5m deal, continuing the reshuffle of Evangelos Pistiolis-linked tanker orders in China. The Athens-based owner is buying two special-purpose companies holding shipbuilding co",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Guangzhou-Shipyard-International-GSI.jpg",
       "en": {
         "headline": "Rubico targets five-ship MR fleet with latest Top Ships newbuild swoop",
@@ -380,7 +397,7 @@
       "summary": "A tanker carrying the first cargo of Russian diesel for the United States has come to a halt off the US east coast, shipping data showed on Tuesday, with its operator saying its destination had not yet been decided.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/05/shutterstock_1990295600.jpg",
       "en": {
         "headline": "Tanker Carrying Russian Diesel Halts off U.S. Coast, Shipping Data Shows",
@@ -397,7 +414,7 @@
       "summary": "Hong Kong-based dry bulk owner Cetus Maritime has lined up some of shipping&#8217;s biggest investment names for a $175m private placement ahead of its planned Oslo listing later this month. An investment vehicle linked to Idan Ofer&#8217;s Eastern Pacific Shipping, Arne Blystad&",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Cetus-Humpback-Cetus-Maritime.jpg",
       "en": {
         "headline": "Shipping heavyweights back Cetus $175m Oslo listing",
@@ -414,7 +431,7 @@
       "summary": "A vessel operated by ADNOC Logistics &#38; Services was damaged in an attack in UAE territorial waters on Tuesday, as maritime authorities reported a separate apparent projectile strike against a...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/2026-01-29T072648Z_718008440_RC2VOHA4UOBK_RTRMADP_3_ASIA-FUELOIL-ADNOC-800x533.jpg",
       "en": {
         "headline": "ADNOC Vessel Damaged in Gulf Attack as UKMTO Reports Fresh Tanker Strike Near Hormuz",
@@ -431,7 +448,7 @@
       "summary": "The historic SS United States will be sunk off Florida&#8217;s Gulf Coast a day earlier than planned after forecasts of heavy winds forced officials to move up the operation. Okaloosa...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/SS-Unite-States-sinking.png-800x540.jpeg",
       "en": {
         "headline": "SS United States Sinking Moved Up to Wednesday Due to Weather Concerns",
@@ -448,8 +465,8 @@
       "summary": "Seven VIKING Norsafe Magnar 1950 vessels to be built entirely in Greece, with an option for another seven. VIKING Life-Saving Equipment has signed a €23.8 million contract, through its Greek...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/b55e17ac-22e7-e061-a77e-63e743a795a8.jpg",
+      "hoursAgo": 13,
+      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "VIKING wins €23.8 million contract to build seven high-speed patrol vessels for the Hellenic Coast Guard",
         "summary": "Seven VIKING Norsafe Magnar 1950 vessels to be built entirely in Greece, with an option for another seven. VIKING Life-Saving Equipment has signed a €23.8 million contract, through its Greek...",
@@ -465,28 +482,11 @@
       "summary": "The South Korean city of Changwon is seeking to position the planned Jinhae New Port as a future hub for Arctic shipping, linking the major port development project with the region’s established shipbuilding, machinery, and defense industries.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 14,
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "South Korea Looks to Position Jinhae New Port as Arctic Shipping Hub",
         "summary": "The South Korean city of Changwon is seeking to position the planned Jinhae New Port as a future hub for Arctic shipping, linking the major port development project with the region’s established shipbuilding, machinery, and defense industries.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Recent Ukrainian Attacks Have Reduced Russia&#8217;s Oil Processing Capacity By 30%, Sources Say",
-      "link": "https://gcaptain.com/recent-ukrainian-attacks-have-reduced-russias-oil-processing-capacity-by-30-sources-say/",
-      "pubDate": "Tue, 10 Nov 2026 12:51:05 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Renewed Ukrainian drone attacks on Russian oil refineries since late October have reduced Russia's oil refining capacity by about 30%, two industry sources said.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Recent Ukrainian Attacks Have Reduced Russia&#8217;s Oil Processing Capacity By 30%, Sources Say",
-        "summary": "Renewed Ukrainian drone attacks on Russian oil refineries since late October have reduced Russia's oil refining capacity by about 30%, two industry sources said.",
         "source": "gCaptain"
       }
     },
@@ -499,7 +499,7 @@
       "summary": "The UK&#8217;s offshore energy supply chain is increasingly looking overseas for new business as uncertainty surrounding domestic projects threatens investment, jobs and specialist engineering capacity, according to a new industry report. Offshore Energies UK (OEUK) found that ju",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/07/OEUK.jpg",
       "en": {
         "headline": "UK offshore supply chain looks overseas for growth",
