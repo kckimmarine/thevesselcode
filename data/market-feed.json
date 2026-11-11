@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-11-11T13:15:29.800Z",
-    "benchmarkAsOf": "2026-11-10",
+    "generatedAt": "2026-11-11T23:53:18.037Z",
+    "benchmarkAsOf": "2026-11-11",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-11-10",
-    "updatedLabelKo": "2026-11-10 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-11-11",
+    "updatedLabelKo": "2026-11-11 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 900,
-        "deltaPct": 0,
-        "asOf": "2026-11-10T00:00:00.000Z",
+        "priceUsdMt": 920,
+        "deltaPct": 2.22,
+        "asOf": "2026-11-11T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 760,
-        "deltaPct": 0,
-        "asOf": "2026-11-10T00:00:00.000Z",
+        "priceUsdMt": 750,
+        "deltaPct": -1.32,
+        "asOf": "2026-11-11T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 2862,
-      "deltaPct": 0,
+      "value": 2959,
+      "deltaPct": 3.39,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-10T15:45:17.524Z"
+      "asOf": "2026-11-11T15:30:32.942Z"
     },
     "capesizeTc": {
-      "value": 4457,
-      "deltaPct": 0,
+      "value": 4700,
+      "deltaPct": 5.45,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-10T20:45:20.075Z"
+      "asOf": "2026-11-11T15:30:32.985Z"
     },
     "panamaxTc": {
-      "value": 2075,
-      "deltaPct": 0,
+      "value": 2103,
+      "deltaPct": 1.35,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-10T15:45:17.548Z"
+      "asOf": "2026-11-11T15:30:33.015Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,261 @@
   },
   "news": [
     {
+      "title": "Geneva Dry: Belships’ Ivar Hansson Myklebust on China&#8217;s changing commodities role",
+      "link": "https://splash247.com/geneva-dry-belships-ivar-hansson-myklebust-on-chinas-changing-commodities-role/",
+      "pubDate": "Wed, 11 Nov 2026 20:12:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Ivar Hansson Myklebust, chair and CEO of Norway&#8217;s Belships, believes the shipping industry continues to underestimate the growth potential of developing economies. Ahead of his appearance at Geneva Dry 2027, he discusses China&#8217;s changing trading patterns, fleet supply",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Ivar-Hansson-Myklebust-Chair-CEO-Belships.jpeg",
+      "en": {
+        "headline": "Geneva Dry: Belships’ Ivar Hansson Myklebust on China&#8217;s changing commodities role",
+        "summary": "Ivar Hansson Myklebust, chair and CEO of Norway&#8217;s Belships, believes the shipping industry continues to underestimate the growth potential of developing economies. Ahead of his appearance at Geneva Dry 2027, he discusses China&#8217;s changing trading patterns, fleet supply",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Russian Diesel Tanker Makes U-Turn After Heading to U.S.",
+      "link": "https://gcaptain.com/russian-diesel-tanker-makes-u-turn-after-heading-to-u-s/",
+      "pubDate": "Wed, 11 Nov 2026 19:52:09 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "(Bloomberg) &#8212; A tanker carrying Russian diesel that had briefly signaled the US made a U-turn about 400 nautical miles off New York, compounding uncertainty over deliveries to the North American market....",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/10/shutterstock_1100495594.jpg",
+      "en": {
+        "headline": "Russian Diesel Tanker Makes U-Turn After Heading to U.S.",
+        "summary": "(Bloomberg) &#8212; A tanker carrying Russian diesel that had briefly signaled the US made a U-turn about 400 nautical miles off New York, compounding uncertainty over deliveries to the North American market....",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "U.S. Ethanol Could Fuel Growing Fleet of Methanol-Capable Ships, Study Finds",
+      "link": "https://gcaptain.com/u-s-ethanol-could-fuel-growing-fleet-of-methanol-capable-ships-study-finds/",
+      "pubDate": "Wed, 11 Nov 2026 19:05:27 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A new study says the United States has enough spare ethanol production capacity to supply a meaningful share of the global marine fuel market, offering shipowners another fuel option as...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/tangier-maersk-at-the-port-of-mobile_1024x576.jpg.avif",
+      "en": {
+        "headline": "U.S. Ethanol Could Fuel Growing Fleet of Methanol-Capable Ships, Study Finds",
+        "summary": "A new study says the United States has enough spare ethanol production capacity to supply a meaningful share of the global marine fuel market, offering shipowners another fuel option as...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Russian Diesel Faces U.S. Buyer Resistance Despite Trump Sanctions Waiver",
+      "link": "https://gcaptain.com/russian-diesel-faces-u-s-buyer-resistance-despite-trump-sanctions-waiver/",
+      "pubDate": "Wed, 11 Nov 2026 18:40:24 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "US companies are unlikely to import Russian diesel as a tanker full of the fuel idles off the US Eastern Seaboard, experts said, despite President Donald Trump's temporary waiver of some sanctions on Moscow's fuel exports.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/01/shutterstock_1916898926.jpg",
+      "en": {
+        "headline": "Russian Diesel Faces U.S. Buyer Resistance Despite Trump Sanctions Waiver",
+        "summary": "US companies are unlikely to import Russian diesel as a tanker full of the fuel idles off the US Eastern Seaboard, experts said, despite President Donald Trump's temporary waiver of some sanctions on Moscow's fuel exports.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Tankers Continue to Burn in the Middle East Despite Hopes for De-escalation",
+      "link": "https://gcaptain.com/tankers-continue-to-burn-in-the-middle-east-despite-hopes-for-de-escalation/",
+      "pubDate": "Wed, 11 Nov 2026 17:20:22 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "Despite market bets on a de-escalation in the Iran war, new evidence has emerged in recent days of strikes on tankers in the Strait of Hormuz and on energy infrastructure in the Middle East.",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
+      "en": {
+        "headline": "Tankers Continue to Burn in the Middle East Despite Hopes for De-escalation",
+        "summary": "Despite market bets on a de-escalation in the Iran war, new evidence has emerged in recent days of strikes on tankers in the Strait of Hormuz and on energy infrastructure in the Middle East.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Maersk hit by fresh cyber breach",
+      "link": "https://splash247.com/maersk-hit-by-fresh-cyber-breach/",
+      "pubDate": "Wed, 11 Nov 2026 16:41:12 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "Danish shipping giant AP Moller-Maersk has confirmed another cybersecurity breach after hackers gained access to an older IT system and extracted data, nearly a decade after the devastating NotPetya attack that cost the company up to $300m. The Copenhagen-headquartered group said",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Cydome-Cyber-Hack.jpg",
+      "en": {
+        "headline": "Maersk hit by fresh cyber breach",
+        "summary": "Danish shipping giant AP Moller-Maersk has confirmed another cybersecurity breach after hackers gained access to an older IT system and extracted data, nearly a decade after the devastating NotPetya attack that cost the company up to $300m. The Copenhagen-headquartered group said",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Flex LNG lines up $145.5m leaseback",
+      "link": "https://splash247.com/flex-lng-lines-up-145-5m-leaseback/",
+      "pubDate": "Wed, 11 Nov 2026 16:40:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "John Fredriksen-controlled Flex LNG has signed a $145.5m sale-and-leaseback deal for one of its LNG carriers, extending a fleet refinancing programme expected to release another $34m in cash. The New York-listed owner disclosed the agreement with an unnamed Asian leasing company ",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Flex-Enterprise.jpg",
+      "en": {
+        "headline": "Flex LNG lines up $145.5m leaseback",
+        "summary": "John Fredriksen-controlled Flex LNG has signed a $145.5m sale-and-leaseback deal for one of its LNG carriers, extending a fleet refinancing programme expected to release another $34m in cash. The New York-listed owner disclosed the agreement with an unnamed Asian leasing company ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Volare snaps up $210m VLCC in Trafigura-linked deal",
+      "link": "https://splash247.com/volare-snaps-up-210m-vlcc-in-trafigura-linked-deal/",
+      "pubDate": "Wed, 11 Nov 2026 16:39:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Trafigura-backed tanker owner Volare Shipping has agreed to acquire a VLCC newbuilding from an affiliate of its controlling shareholder for $210m, adding another supertanker to its expanding fleet just weeks after its Oslo market debut. The Euronext Growth-listed company said it ",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-VLCC.jpg",
+      "en": {
+        "headline": "Volare snaps up $210m VLCC in Trafigura-linked deal",
+        "summary": "Trafigura-backed tanker owner Volare Shipping has agreed to acquire a VLCC newbuilding from an affiliate of its controlling shareholder for $210m, adding another supertanker to its expanding fleet just weeks after its Oslo market debut. The Euronext Growth-listed company said it ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Canada puts Iranian tanker giant back under sanctions",
+      "link": "https://splash247.com/canada-puts-iranian-tanker-giant-back-under-sanctions/",
+      "pubDate": "Wed, 11 Nov 2026 16:38:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Canada has reinstated sanctions against the National Iranian Tanker Company (NITC), reversing relief granted a decade ago under the international nuclear agreement with Tehran. The move forms part of a package targeting 11 Iranian entities, including National Iranian Oil Company ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2016/01/NITC-e1616746506703.jpg",
+      "en": {
+        "headline": "Canada puts Iranian tanker giant back under sanctions",
+        "summary": "Canada has reinstated sanctions against the National Iranian Tanker Company (NITC), reversing relief granted a decade ago under the international nuclear agreement with Tehran. The move forms part of a package targeting 11 Iranian entities, including National Iranian Oil Company ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "IMO Chief Calls for Strict Enforcement of SOLAS Rules in Strait of Hormuz",
+      "link": "https://gcaptain.com/imo-chief-calls-for-strict-enforcement-of-solas-rules-in-strait-of-hormuz/",
+      "pubDate": "Wed, 11 Nov 2026 16:37:16 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "International Maritime Organization (IMO) Secretary-General Arsenio Dominguez has called on governments to step up enforcement of international maritime regulations in the Strait of Hormuz, warning that unsafe shipping practices are...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-20T060010Z_1765538580_RC2L3LAI6608_RTRMADP_3_OIL-MAJORS-RESULTS-PREVIEW-800x533.jpg",
+      "en": {
+        "headline": "IMO Chief Calls for Strict Enforcement of SOLAS Rules in Strait of Hormuz",
+        "summary": "International Maritime Organization (IMO) Secretary-General Arsenio Dominguez has called on governments to step up enforcement of international maritime regulations in the Strait of Hormuz, warning that unsafe shipping practices are...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Yangzijiang tied to Torm&#8217;s LR2 newbuild push",
+      "link": "https://splash247.com/yangzijiang-tied-to-torms-lr2-newbuild-push/",
+      "pubDate": "Wed, 11 Nov 2026 16:35:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Singapore-listed Yangzijiang Maritime Development has been linked to Danish tanker giant Torm&#8217;s latest LR2 newbuilding venture, putting a name to the mystery partner behind an eight-ship programme announced last week. Shipbuilding sources have identified the Ren Yuanlin-led",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/Ren-Yuanlin-Yangzijiang-Financial-Holding.jpg",
+      "en": {
+        "headline": "Yangzijiang tied to Torm&#8217;s LR2 newbuild push",
+        "summary": "Singapore-listed Yangzijiang Maritime Development has been linked to Danish tanker giant Torm&#8217;s latest LR2 newbuilding venture, putting a name to the mystery partner behind an eight-ship programme announced last week. Shipbuilding sources have identified the Ren Yuanlin-led",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Panama Canal Raises Daily Transit Capacity as Water Conditions Improve",
+      "link": "https://gcaptain.com/panama-canal-raises-daily-transit-capacity-as-water-conditions-improve/",
+      "pubDate": "Wed, 11 Nov 2026 16:30:18 +0000",
+      "source": "gCaptain",
+      "category": "Dry Bulk",
+      "summary": "The Panama Canal is increasing its daily transit capacity to 34 vessels and restoring the maximum allowable draft at its Neopanamax locks to 50 feet, easing restrictions as improved water...",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/Neopanamax-locks.jpg",
+      "en": {
+        "headline": "Panama Canal Raises Daily Transit Capacity as Water Conditions Improve",
+        "summary": "The Panama Canal is increasing its daily transit capacity to 34 vessels and restoring the maximum allowable draft at its Neopanamax locks to 50 feet, easing restrictions as improved water...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "UK Launches &#8216;Atlantic Net&#8217; to Track Russian Submarines and Protect Undersea Cables",
+      "link": "https://gcaptain.com/uk-launches-atlantic-net-to-track-russian-submarines-and-protect-undersea-cables/",
+      "pubDate": "Wed, 11 Nov 2026 16:25:50 +0000",
+      "source": "gCaptain",
+      "category": "Bunker",
+      "summary": "The UK is moving ahead with a £90 million investment in autonomous underwater systems, advanced sensors and artificial intelligence to strengthen the Royal Navy’s ability to track Russian submarines and...",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Ocean-Infinity-Atlantic-Net_resized.png.webp",
+      "en": {
+        "headline": "UK Launches &#8216;Atlantic Net&#8217; to Track Russian Submarines and Protect Undersea Cables",
+        "summary": "The UK is moving ahead with a £90 million investment in autonomous underwater systems, advanced sensors and artificial intelligence to strengthen the Royal Navy’s ability to track Russian submarines and...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Germany to Set Up State Gas Reserve After Missing Winter Storage Targets",
+      "link": "https://gcaptain.com/germany-to-set-up-state-gas-reserve-after-missing-winter-storage-targets/",
+      "pubDate": "Wed, 11 Nov 2026 13:30:38 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "The German government will go ahead with a planned 24-terawatt-hour crisis gas reserve to be funded by user surcharges, the economy ministry said, following criticism over missed storage targets for the winter heating season this year.",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 10,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/07/2022-06-20T000000Z_1038034022_RC2LVU9PIFLE_RTRMADP_3_EUROPE-GAS-800x440.jpg",
+      "en": {
+        "headline": "Germany to Set Up State Gas Reserve After Missing Winter Storage Targets",
+        "summary": "The German government will go ahead with a planned 24-terawatt-hour crisis gas reserve to be funded by user surcharges, the economy ministry said, following criticism over missed storage targets for the winter heating season this year.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Qatar Loses First LNG Customer Since War Disrupted Flows",
+      "link": "https://gcaptain.com/qatar-loses-first-lng-customer-since-war-disrupted-flows/",
+      "pubDate": "Wed, 11 Nov 2026 13:06:10 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Polish energy company Orlen SA terminated one of its long-term liquefied natural gas contracts with QatarEnergy, citing the export giant’s inability to deliver as the conflict in the Middle East disrupts shipments.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 10,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-03-06T104859Z_1638352831_RC2MWJA831GC_RTRMADP_3_IRAN-CRISIS-ENERGY-QATAR-800x533.jpg",
+      "en": {
+        "headline": "Qatar Loses First LNG Customer Since War Disrupted Flows",
+        "summary": "Polish energy company Orlen SA terminated one of its long-term liquefied natural gas contracts with QatarEnergy, citing the export giant’s inability to deliver as the conflict in the Middle East disrupts shipments.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "UK taps Ocean Infinity for subsea security push",
       "link": "https://splash247.com/uk-taps-ocean-infinity-for-subsea-security-push/",
       "pubDate": "Wed, 11 Nov 2026 11:00:00 +0000",
@@ -244,267 +499,12 @@
       "summary": "UK-based marine robotics specialist Ocean Infinity has been selected as the Royal Navy&#8217;s commercial mission partner for a new underwater surveillance programme backed by an initial £90m ($120m) investment. The company will work with the Royal Navy to develop Atlantic Net, a",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 2,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/05/Armada-Ocean-Infinity.jpg",
       "en": {
         "headline": "UK taps Ocean Infinity for subsea security push",
         "summary": "UK-based marine robotics specialist Ocean Infinity has been selected as the Royal Navy&#8217;s commercial mission partner for a new underwater surveillance programme backed by an initial £90m ($120m) investment. The company will work with the Royal Navy to develop Atlantic Net, a",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "Monjasa seals biggest-ever fleet deal with five-tanker swoop",
-      "link": "https://splash247.com/monjasa-seals-biggest-ever-fleet-deal-with-five-tanker-swoop/",
-      "pubDate": "Wed, 11 Nov 2026 10:02:32 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "Danish bunker supplier and shipowner Monjasa has acquired five sister product tankers from Germany&#8217;s Bernhard Schulte in its largest-ever fleet deal, strengthening its marine fuels operations in West Africa. The Fredericia-based group has picked up five 2010- and 2011-built",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Monjasa-Tracer-in-the-Port-of-Rotterdam-Monjasa.jpg",
-      "en": {
-        "headline": "Monjasa seals biggest-ever fleet deal with five-tanker swoop",
-        "summary": "Danish bunker supplier and shipowner Monjasa has acquired five sister product tankers from Germany&#8217;s Bernhard Schulte in its largest-ever fleet deal, strengthening its marine fuels operations in West Africa. The Fredericia-based group has picked up five 2010- and 2011-built",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Elemental Energies wins offshore CCS deal from Harbour Energy",
-      "link": "https://splash247.com/elemental-energies-wins-offshore-ccs-deal-from-harbour-energy/",
-      "pubDate": "Wed, 11 Nov 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Aberdeen-based well engineering specialist Elemental Energies has secured a two-year contract from Harbour Energy to support the expansion of the Viking carbon capture and storage (CCS) project in the UK southern North Sea. The contract covers integrated subsurface, geomechanics ",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Jasmine-platform-Viking-CCS.jpg",
-      "en": {
-        "headline": "Elemental Energies wins offshore CCS deal from Harbour Energy",
-        "summary": "Aberdeen-based well engineering specialist Elemental Energies has secured a two-year contract from Harbour Energy to support the expansion of the Viking carbon capture and storage (CCS) project in the UK southern North Sea. The contract covers integrated subsurface, geomechanics ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Hartnoll&#8217;s Eastway makes $320m tanker comeback",
-      "link": "https://splash247.com/hartnolls-eastway-makes-320m-tanker-comeback/",
-      "pubDate": "Wed, 11 Nov 2026 09:56:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Eastway, the shipowning and shipmanagement arm of the Tim Hartnoll-controlled X-Press Feeders/Sea Consortium group, is returning to the tanker market, ordering four suezmax newbuildings in China in a deal worth an estimated $320m. According to Alphaliner, Eastway has contracted P",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Penglai-Zhongbai-Jinglu-Ship-Industry.jpg",
-      "en": {
-        "headline": "Hartnoll&#8217;s Eastway makes $320m tanker comeback",
-        "summary": "Eastway, the shipowning and shipmanagement arm of the Tim Hartnoll-controlled X-Press Feeders/Sea Consortium group, is returning to the tanker market, ordering four suezmax newbuildings in China in a deal worth an estimated $320m. According to Alphaliner, Eastway has contracted P",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Coal&#8217;s new world order takes shape",
-      "link": "https://splash247.com/coals-new-world-order-takes-shape/",
-      "pubDate": "Wed, 11 Nov 2026 07:46:31 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Coal&#8217;s changing trade map is creating winners and losers across dry bulk shipping in 2026, with Indonesian exports retreating, southern African shipments setting records and Asian import demand increasingly fractured. Clarksons Research forecasts seaborne coal trade will ed",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 5,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/03/Coal-Barge.jpg",
-      "en": {
-        "headline": "Coal&#8217;s new world order takes shape",
-        "summary": "Coal&#8217;s changing trade map is creating winners and losers across dry bulk shipping in 2026, with Indonesian exports retreating, southern African shipments setting records and Asian import demand increasingly fractured. Clarksons Research forecasts seaborne coal trade will ed",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Ukrainian drones strike major Russian Baltic export port",
-      "link": "https://splash247.com/ukrainian-drones-strike-major-russian-baltic-export-port/",
-      "pubDate": "Wed, 11 Nov 2026 07:02:35 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Ukraine has launched a major drone attack on Russia&#8217;s Baltic port of Ust-Luga, setting fire to port infrastructure, injuring three workers and disrupting power supplies. Leningrad region governor Alexander Drozdenko confirmed early Wednesday that several drones had struck t",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Ust-Luga-X.com_.jpg",
-      "en": {
-        "headline": "Ukrainian drones strike major Russian Baltic export port",
-        "summary": "Ukraine has launched a major drone attack on Russia&#8217;s Baltic port of Ust-Luga, setting fire to port infrastructure, injuring three workers and disrupting power supplies. Leningrad region governor Alexander Drozdenko confirmed early Wednesday that several drones had struck t",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Hormuz tanker attacks mount",
-      "link": "https://splash247.com/hormuz-tanker-attacks-mount/",
-      "pubDate": "Wed, 11 Nov 2026 06:47:41 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The maritime security crisis around the Strait of Hormuz has taken another dangerous turn, with two tankers attacked yesterday and Iran claiming that three vessels have struck naval mines while attempting to navigate the strategic waterway. UK Maritime Trade Operations (UKMTO) re",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/06/Hormuz-IMO.jpg",
-      "en": {
-        "headline": "Hormuz tanker attacks mount",
-        "summary": "The maritime security crisis around the Strait of Hormuz has taken another dangerous turn, with two tankers attacked yesterday and Iran claiming that three vessels have struck naval mines while attempting to navigate the strategic waterway. UK Maritime Trade Operations (UKMTO) re",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Maritime coalition targets 20% electrification by 2035",
-      "link": "https://splash247.com/maritime-coalition-targets-20-electrification-by-2035/",
-      "pubDate": "Wed, 11 Nov 2026 06:45:33 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "More than 30 maritime organisations have joined forces at the COP31 climate summit in Turkey to push for electricity to account for at least 20% of international shipping&#8217;s energy consumption by 2035. The Maritime Electrification Breakthrough Goal, launched yesterday in Ant",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/07/Maritime-Battery-Forum-Hagland.jpg",
-      "en": {
-        "headline": "Maritime coalition targets 20% electrification by 2035",
-        "summary": "More than 30 maritime organisations have joined forces at the COP31 climate summit in Turkey to push for electricity to account for at least 20% of international shipping&#8217;s energy consumption by 2035. The Maritime Electrification Breakthrough Goal, launched yesterday in Ant",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "China Merchants revives another shipyard",
-      "link": "https://splash247.com/china-merchants-revives-another-shipyard/",
-      "pubDate": "Wed, 11 Nov 2026 06:44:23 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "China Merchants is moving to take control of the long-dormant Quanzhou Shipyard in Fujian province, the latest in a string of yard revivals that has seen China&#8217;s shipbuilding capacity nearly double in recent years. The state-owned conglomerate has signed a strategic coopera",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2015/05/titan-quanzhou-shipyard.jpg",
-      "en": {
-        "headline": "China Merchants revives another shipyard",
-        "summary": "China Merchants is moving to take control of the long-dormant Quanzhou Shipyard in Fujian province, the latest in a string of yard revivals that has seen China&#8217;s shipbuilding capacity nearly double in recent years. The state-owned conglomerate has signed a strategic coopera",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Panama Canal turns the taps back on",
-      "link": "https://splash247.com/panama-canal-turns-the-taps-back-on/",
-      "pubDate": "Wed, 11 Nov 2026 06:43:28 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "The Panama Canal has raised its daily transit capacity to 34 vessels and increased the maximum allowable draft for neopanamax ships to 50 ft, marking another significant easing of restrictions following an exceptionally wet October. The Panama Canal Authority (ACP) confirmed that",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/08/Ever-Max-Panama-Canal-transit.jpg",
-      "en": {
-        "headline": "Panama Canal turns the taps back on",
-        "summary": "The Panama Canal has raised its daily transit capacity to 34 vessels and increased the maximum allowable draft for neopanamax ships to 50 ft, marking another significant easing of restrictions following an exceptionally wet October. The Panama Canal Authority (ACP) confirmed that",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Russian Diesel Tanker Awaits Orders Off U.S. Coast Amid Import Ban Dispute",
-      "link": "https://gcaptain.com/russian-diesel-tanker-awaits-orders-off-u-s-coast-amid-import-ban-dispute/",
-      "pubDate": "Wed, 11 Nov 2026 00:22:43 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "OSLO, Nov 10 (Reuters) &#8211; President Donald Trump&#8217;s energy chief said on Tuesday the US was confident that the first cargo of Russian diesel headed for the US would eventually...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/05/shutterstock_752037607.jpg",
-      "en": {
-        "headline": "Russian Diesel Tanker Awaits Orders Off U.S. Coast Amid Import Ban Dispute",
-        "summary": "OSLO, Nov 10 (Reuters) &#8211; President Donald Trump&#8217;s energy chief said on Tuesday the US was confident that the first cargo of Russian diesel headed for the US would eventually...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "U.S. Formalizes Two-Month Extension of China Ship Port Fee Suspension",
-      "link": "https://gcaptain.com/u-s-formalizes-two-month-extension-of-china-ship-port-fee-suspension/",
-      "pubDate": "Tue, 10 Nov 2026 20:47:24 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Trump administration has formally extended its suspension of port fees targeting Chinese-built and Chinese-operated vessels for another two months, keeping the controversial measures on hold while Washington continues trade...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/11/port-of-long-beach-2.jpeg",
-      "en": {
-        "headline": "U.S. Formalizes Two-Month Extension of China Ship Port Fee Suspension",
-        "summary": "The Trump administration has formally extended its suspension of port fees targeting Chinese-built and Chinese-operated vessels for another two months, keeping the controversial measures on hold while Washington continues trade...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Port of Brunswick Expands Auto Shipping Capacity as Georgia Manufacturing Booms",
-      "link": "https://gcaptain.com/port-of-brunswick-expands-auto-shipping-capacity-as-georgia-manufacturing-booms/",
-      "pubDate": "Tue, 10 Nov 2026 20:24:01 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Georgia Ports Authority is expanding automotive shipping capacity at the Port of Brunswick as a growing number of global automakers establish manufacturing operations across the state, strengthening Georgia’s position...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/261110-GPA-Colonels-Island-FOR-RELEASE.jpg",
-      "en": {
-        "headline": "Port of Brunswick Expands Auto Shipping Capacity as Georgia Manufacturing Booms",
-        "summary": "The Georgia Ports Authority is expanding automotive shipping capacity at the Port of Brunswick as a growing number of global automakers establish manufacturing operations across the state, strengthening Georgia’s position...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "‘Nonsense Rate’: Iran War Exposes Turmoil Behind Key Tanker Benchmark",
-      "link": "https://gcaptain.com/nonsense-rate-iran-war-exposes-turmoil-behind-key-tanker-benchmark/",
-      "pubDate": "Tue, 10 Nov 2026 19:55:18 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "In March this year, inside a 282-year-old institution responsible for one of the most important prices in global oil markets, one man staged a quiet protest.",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
-      "en": {
-        "headline": "‘Nonsense Rate’: Iran War Exposes Turmoil Behind Key Tanker Benchmark",
-        "summary": "In March this year, inside a 282-year-old institution responsible for one of the most important prices in global oil markets, one man staged a quiet protest.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "U.S. Closes First Oil and Gas Production Loan Under Revamped Energy Financing Program",
-      "link": "https://gcaptain.com/u-s-closes-first-oil-and-gas-production-loan-under-revamped-energy-financing-program/",
-      "pubDate": "Tue, 10 Nov 2026 19:46:23 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The U.S. Department of Energy has closed a $480 million loan to modernize 22 offshore platforms in the Gulf of Mexico, marking the department&#8217;s first completed loan financing domestic oil...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/10/2018-10-09T013728Z_1641398557_RC1134347600_RTRMADP_3_STORM-MICHAEL-ENERGY.jpg",
-      "en": {
-        "headline": "U.S. Closes First Oil and Gas Production Loan Under Revamped Energy Financing Program",
-        "summary": "The U.S. Department of Energy has closed a $480 million loan to modernize 22 offshore platforms in the Gulf of Mexico, marking the department&#8217;s first completed loan financing domestic oil...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "51 Years Later, the Edmund Fitzgerald and Her 29 Lost Mariners Are Remembered",
-      "link": "https://gcaptain.com/51-years-later-the-edmund-fitzgerald-and-her-29-lost-mariners-are-remembered/",
-      "pubDate": "Tue, 10 Nov 2026 17:29:24 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Fifty-one years ago today, the SS Edmund Fitzgerald disappeared beneath the waters of Lake Superior during a powerful November storm, taking all 29 crew members with her in one of...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2014/11/Edmund_Fitzgerald_1971_3_of_4_restored.jpg",
-      "en": {
-        "headline": "51 Years Later, the Edmund Fitzgerald and Her 29 Lost Mariners Are Remembered",
-        "summary": "Fifty-one years ago today, the SS Edmund Fitzgerald disappeared beneath the waters of Lake Superior during a powerful November storm, taking all 29 crew members with her in one of...",
-        "source": "gCaptain"
       }
     }
   ]
