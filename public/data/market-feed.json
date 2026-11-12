@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-11T23:53:18.037Z",
+    "generatedAt": "2026-11-12T04:59:47.297Z",
     "benchmarkAsOf": "2026-11-11",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 816.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-10T17:00:00.000Z",
+        "priceUsdMt": 814.5,
+        "deltaPct": -0.24,
+        "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -89,7 +89,7 @@
         "defaultDensity": 850,
         "priceUsdMt": 1183,
         "deltaPct": 0,
-        "asOf": "2026-11-10T17:00:00.000Z",
+        "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 676,
-        "deltaPct": 0,
-        "asOf": "2026-11-10T17:00:00.000Z",
+        "priceUsdMt": 675,
+        "deltaPct": -0.15,
+        "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 703,
-        "deltaPct": 0,
-        "asOf": "2026-11-10T17:00:00.000Z",
+        "priceUsdMt": 710,
+        "deltaPct": 1,
+        "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1258,
-        "deltaPct": 0,
-        "asOf": "2026-11-10T17:00:00.000Z",
+        "priceUsdMt": 1254,
+        "deltaPct": -0.32,
+        "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 544.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-10T17:00:00.000Z",
+        "priceUsdMt": 552.5,
+        "deltaPct": 1.47,
+        "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 920,
-        "deltaPct": 2.22,
+        "deltaPct": 0,
         "asOf": "2026-11-11T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 750,
-        "deltaPct": -1.32,
+        "deltaPct": 0,
         "asOf": "2026-11-11T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 733.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-10T17:00:00.000Z",
+        "priceUsdMt": 730.5,
+        "deltaPct": -0.41,
+        "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1270,
-        "deltaPct": 0,
-        "asOf": "2026-11-10T17:00:00.000Z",
+        "priceUsdMt": 1261.5,
+        "deltaPct": -0.67,
+        "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 482.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-10T17:00:00.000Z",
+        "priceUsdMt": 494.5,
+        "deltaPct": 2.49,
+        "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 2959,
-      "deltaPct": 3.39,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-11T15:30:32.942Z"
     },
     "capesizeTc": {
       "value": 4700,
-      "deltaPct": 5.45,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-11T15:30:32.985Z"
     },
     "panamaxTc": {
       "value": 2103,
-      "deltaPct": 1.35,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-11T15:30:33.015Z"
@@ -244,7 +244,7 @@
       "summary": "Ivar Hansson Myklebust, chair and CEO of Norway&#8217;s Belships, believes the shipping industry continues to underestimate the growth potential of developing economies. Ahead of his appearance at Geneva Dry 2027, he discusses China&#8217;s changing trading patterns, fleet supply",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Ivar-Hansson-Myklebust-Chair-CEO-Belships.jpeg",
       "en": {
         "headline": "Geneva Dry: Belships’ Ivar Hansson Myklebust on China&#8217;s changing commodities role",
@@ -261,7 +261,7 @@
       "summary": "(Bloomberg) &#8212; A tanker carrying Russian diesel that had briefly signaled the US made a U-turn about 400 nautical miles off New York, compounding uncertainty over deliveries to the North American market....",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/10/shutterstock_1100495594.jpg",
       "en": {
         "headline": "Russian Diesel Tanker Makes U-Turn After Heading to U.S.",
@@ -278,7 +278,7 @@
       "summary": "A new study says the United States has enough spare ethanol production capacity to supply a meaningful share of the global marine fuel market, offering shipowners another fuel option as...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/tangier-maersk-at-the-port-of-mobile_1024x576.jpg.avif",
       "en": {
         "headline": "U.S. Ethanol Could Fuel Growing Fleet of Methanol-Capable Ships, Study Finds",
@@ -295,7 +295,7 @@
       "summary": "US companies are unlikely to import Russian diesel as a tanker full of the fuel idles off the US Eastern Seaboard, experts said, despite President Donald Trump's temporary waiver of some sanctions on Moscow's fuel exports.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/01/shutterstock_1916898926.jpg",
       "en": {
         "headline": "Russian Diesel Faces U.S. Buyer Resistance Despite Trump Sanctions Waiver",
@@ -312,7 +312,7 @@
       "summary": "Despite market bets on a de-escalation in the Iran war, new evidence has emerged in recent days of strikes on tankers in the Strait of Hormuz and on energy infrastructure in the Middle East.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
       "en": {
         "headline": "Tankers Continue to Burn in the Middle East Despite Hopes for De-escalation",
@@ -329,7 +329,7 @@
       "summary": "Danish shipping giant AP Moller-Maersk has confirmed another cybersecurity breach after hackers gained access to an older IT system and extracted data, nearly a decade after the devastating NotPetya attack that cost the company up to $300m. The Copenhagen-headquartered group said",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Cydome-Cyber-Hack.jpg",
       "en": {
         "headline": "Maersk hit by fresh cyber breach",
@@ -346,7 +346,7 @@
       "summary": "John Fredriksen-controlled Flex LNG has signed a $145.5m sale-and-leaseback deal for one of its LNG carriers, extending a fleet refinancing programme expected to release another $34m in cash. The New York-listed owner disclosed the agreement with an unnamed Asian leasing company ",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Flex-Enterprise.jpg",
       "en": {
         "headline": "Flex LNG lines up $145.5m leaseback",
@@ -363,7 +363,7 @@
       "summary": "Trafigura-backed tanker owner Volare Shipping has agreed to acquire a VLCC newbuilding from an affiliate of its controlling shareholder for $210m, adding another supertanker to its expanding fleet just weeks after its Oslo market debut. The Euronext Growth-listed company said it ",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-VLCC.jpg",
       "en": {
         "headline": "Volare snaps up $210m VLCC in Trafigura-linked deal",
@@ -380,7 +380,7 @@
       "summary": "Canada has reinstated sanctions against the National Iranian Tanker Company (NITC), reversing relief granted a decade ago under the international nuclear agreement with Tehran. The move forms part of a package targeting 11 Iranian entities, including National Iranian Oil Company ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2016/01/NITC-e1616746506703.jpg",
       "en": {
         "headline": "Canada puts Iranian tanker giant back under sanctions",
@@ -397,7 +397,7 @@
       "summary": "International Maritime Organization (IMO) Secretary-General Arsenio Dominguez has called on governments to step up enforcement of international maritime regulations in the Strait of Hormuz, warning that unsafe shipping practices are...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-20T060010Z_1765538580_RC2L3LAI6608_RTRMADP_3_OIL-MAJORS-RESULTS-PREVIEW-800x533.jpg",
       "en": {
         "headline": "IMO Chief Calls for Strict Enforcement of SOLAS Rules in Strait of Hormuz",
@@ -414,7 +414,7 @@
       "summary": "Singapore-listed Yangzijiang Maritime Development has been linked to Danish tanker giant Torm&#8217;s latest LR2 newbuilding venture, putting a name to the mystery partner behind an eight-ship programme announced last week. Shipbuilding sources have identified the Ren Yuanlin-led",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/Ren-Yuanlin-Yangzijiang-Financial-Holding.jpg",
       "en": {
         "headline": "Yangzijiang tied to Torm&#8217;s LR2 newbuild push",
@@ -431,7 +431,7 @@
       "summary": "The Panama Canal is increasing its daily transit capacity to 34 vessels and restoring the maximum allowable draft at its Neopanamax locks to 50 feet, easing restrictions as improved water...",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/Neopanamax-locks.jpg",
       "en": {
         "headline": "Panama Canal Raises Daily Transit Capacity as Water Conditions Improve",
@@ -448,7 +448,7 @@
       "summary": "The UK is moving ahead with a £90 million investment in autonomous underwater systems, advanced sensors and artificial intelligence to strengthen the Royal Navy’s ability to track Russian submarines and...",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Ocean-Infinity-Atlantic-Net_resized.png.webp",
       "en": {
         "headline": "UK Launches &#8216;Atlantic Net&#8217; to Track Russian Submarines and Protect Undersea Cables",
@@ -465,7 +465,7 @@
       "summary": "The German government will go ahead with a planned 24-terawatt-hour crisis gas reserve to be funded by user surcharges, the economy ministry said, following criticism over missed storage targets for the winter heating season this year.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/07/2022-06-20T000000Z_1038034022_RC2LVU9PIFLE_RTRMADP_3_EUROPE-GAS-800x440.jpg",
       "en": {
         "headline": "Germany to Set Up State Gas Reserve After Missing Winter Storage Targets",
@@ -482,7 +482,7 @@
       "summary": "Polish energy company Orlen SA terminated one of its long-term liquefied natural gas contracts with QatarEnergy, citing the export giant’s inability to deliver as the conflict in the Middle East disrupts shipments.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-03-06T104859Z_1638352831_RC2MWJA831GC_RTRMADP_3_IRAN-CRISIS-ENERGY-QATAR-800x533.jpg",
       "en": {
         "headline": "Qatar Loses First LNG Customer Since War Disrupted Flows",
@@ -499,7 +499,7 @@
       "summary": "UK-based marine robotics specialist Ocean Infinity has been selected as the Royal Navy&#8217;s commercial mission partner for a new underwater surveillance programme backed by an initial £90m ($120m) investment. The company will work with the Royal Navy to develop Atlantic Net, a",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 12,
+      "hoursAgo": 17,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/05/Armada-Ocean-Infinity.jpg",
       "en": {
         "headline": "UK taps Ocean Infinity for subsea security push",
