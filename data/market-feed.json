@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-12T04:59:47.297Z",
+    "generatedAt": "2026-11-12T14:19:52.339Z",
     "benchmarkAsOf": "2026-11-11",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 814.5,
-        "deltaPct": -0.24,
+        "deltaPct": 0,
         "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 675,
-        "deltaPct": -0.15,
+        "deltaPct": 0,
         "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 710,
-        "deltaPct": 1,
+        "deltaPct": 0,
         "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1254,
-        "deltaPct": -0.32,
+        "deltaPct": 0,
         "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 552.5,
-        "deltaPct": 1.47,
+        "deltaPct": 0,
         "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -172,7 +172,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 730.5,
-        "deltaPct": -0.41,
+        "deltaPct": 0,
         "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1261.5,
-        "deltaPct": -0.67,
+        "deltaPct": 0,
         "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 494.5,
-        "deltaPct": 2.49,
+        "deltaPct": 0,
         "asOf": "2026-11-11T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -236,19 +236,189 @@
   },
   "news": [
     {
+      "title": "US ethanol industry eyes growing marine fuel market",
+      "link": "https://splash247.com/us-ethanol-industry-eyes-growing-marine-fuel-market/",
+      "pubDate": "Thu, 12 Nov 2026 12:30:00 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "Ethanol could emerge as an alternative marine fuel for the growing fleet of methanol-capable ships, with existing engines and bunkering infrastructure requiring only limited modifications, according to a new industry study. The report, Marine Ethanol: Unlocking the US Opportunity",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/WinGD-ethanol-Vale-VLOC-1.jpg",
+      "en": {
+        "headline": "US ethanol industry eyes growing marine fuel market",
+        "summary": "Ethanol could emerge as an alternative marine fuel for the growing fleet of methanol-capable ships, with existing engines and bunkering infrastructure requiring only limited modifications, according to a new industry study. The report, Marine Ethanol: Unlocking the US Opportunity",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Chinese shipbuilder wins AHTS order from South American owner",
+      "link": "https://splash247.com/chinese-shipbuilder-wins-ahts-order-from-south-american-owner/",
+      "pubDate": "Thu, 12 Nov 2026 12:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Chinese shipbuilder Rainbow Offshore Engineering (ROC), part of Shenzhen-listed Jiangsu Rainbow Heavy Industries, has secured a contract to build an anchor-handling tug supply (AHTS) vessel for an undisclosed South American owner. The vessel will measure 71.95 metres long and 17.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Rainbow-vessel.jpg",
+      "en": {
+        "headline": "Chinese shipbuilder wins AHTS order from South American owner",
+        "summary": "Chinese shipbuilder Rainbow Offshore Engineering (ROC), part of Shenzhen-listed Jiangsu Rainbow Heavy Industries, has secured a contract to build an anchor-handling tug supply (AHTS) vessel for an undisclosed South American owner. The vessel will measure 71.95 metres long and 17.",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Marine Platforms plans full takeover of former Technip pipelay vessel",
+      "link": "https://splash247.com/marine-platforms-plans-full-takeover-of-former-technip-pipelay-vessel/",
+      "pubDate": "Thu, 12 Nov 2026 11:38:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Nigerian offshore services contractor Marine Platforms is moving towards full ownership of the pipelay and heavy-lift construction vessel Zhong Fei Huan Qiu 1200, formerly known as Global 1200. The company acquired a 51% interest in the vessel in 2025, with Chinese offshore engin",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Global-1200-Ulstein.jpg",
+      "en": {
+        "headline": "Marine Platforms plans full takeover of former Technip pipelay vessel",
+        "summary": "Nigerian offshore services contractor Marine Platforms is moving towards full ownership of the pipelay and heavy-lift construction vessel Zhong Fei Huan Qiu 1200, formerly known as Global 1200. The company acquired a 51% interest in the vessel in 2025, with Chinese offshore engin",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "EU’s Russian Arctic LNG Bill Hits €8.7 Billion as Yamal Faces Shipping Challenge Come January",
+      "link": "https://gcaptain.com/eus-russian-arctic-lng-bill-hits-e8-7-billion-as-yamal-faces-shipping-challenge-come-january/",
+      "pubDate": "Thu, 12 Nov 2026 11:16:36 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The European Union paid an estimated €8.7 billion for liquefied natural gas from Russia’s Yamal project in the first 10 months of 2026, exceeding the estimated total for all of 2025, as the countdown to a ban on Russian LNG imports enters its final weeks.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/11/ARc7-LNG-Carrier-STS-800x533.jpg",
+      "en": {
+        "headline": "EU’s Russian Arctic LNG Bill Hits €8.7 Billion as Yamal Faces Shipping Challenge Come January",
+        "summary": "The European Union paid an estimated €8.7 billion for liquefied natural gas from Russia’s Yamal project in the first 10 months of 2026, exceeding the estimated total for all of 2025, as the countdown to a ban on Russian LNG imports enters its final weeks.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "TGS lands seismic contract offshore Namibia",
+      "link": "https://splash247.com/tgs-lands-seismic-contract-offshore-namibia/",
+      "pubDate": "Thu, 12 Nov 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Oslo-listed seismic specialist TGS has secured an ocean bottom node contract offshore Namibia from an undisclosed repeat customer. A deepwater crew is scheduled to mobilise in the fourth quarter of 2026, with the survey expected to last approximately 120 days, keeping the crew em",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/TGS-Ramform-Atlas.jpg",
+      "en": {
+        "headline": "TGS lands seismic contract offshore Namibia",
+        "summary": "Oslo-listed seismic specialist TGS has secured an ocean bottom node contract offshore Namibia from an undisclosed repeat customer. A deepwater crew is scheduled to mobilise in the fourth quarter of 2026, with the survey expected to last approximately 120 days, keeping the crew em",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Brazilian soybean exports smash records",
+      "link": "https://splash247.com/brazilian-soybean-exports-smash-records/",
+      "pubDate": "Thu, 12 Nov 2026 09:11:32 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Brazilian soybean exports have smashed all previous records, with shipments during the first ten months of 2026 already exceeding the whole of last year&#8217;s total, providing a significant boost to dry bulk shipping demand, primarily panamaxes and supramaxes. New analysis from",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2019/06/Norden-supramax-soy-bean-e1605857913233.jpg",
+      "en": {
+        "headline": "Brazilian soybean exports smash records",
+        "summary": "Brazilian soybean exports have smashed all previous records, with shipments during the first ten months of 2026 already exceeding the whole of last year&#8217;s total, providing a significant boost to dry bulk shipping demand, primarily panamaxes and supramaxes. New analysis from",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Why shipowners might be better off sharing profits than taking on debt",
+      "link": "https://splash247.com/why-shipowners-might-be-better-off-sharing-profits-than-taking-on-debt/",
+      "pubDate": "Thu, 12 Nov 2026 08:03:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Traditional loans demand repayments regardless of freight markets. Earnings-sharing structures offer a different proposition: investors participate in a vessel&#8217;s fortunes while owners retain control. Captain Vikas Pandey from Shipfinex explains.  Ship finance looks healthy ",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/05/Money-ship-finance.jpg",
+      "en": {
+        "headline": "Why shipowners might be better off sharing profits than taking on debt",
+        "summary": "Traditional loans demand repayments regardless of freight markets. Earnings-sharing structures offer a different proposition: investors participate in a vessel&#8217;s fortunes while owners retain control. Captain Vikas Pandey from Shipfinex explains.  Ship finance looks healthy ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Maersk hit by fresh cyber breach",
+      "link": "https://splash247.com/maersk-hit-by-fresh-cyber-breach/",
+      "pubDate": "Thu, 12 Nov 2026 07:45:12 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "Danish shipping giant AP Moller-Maersk has confirmed another cybersecurity breach after hackers gained access to an older IT system and extracted data, nearly a decade after the devastating NotPetya attack that cost the company up to $300m. The Copenhagen-headquartered group said",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Cydome-Cyber-Hack.jpg",
+      "en": {
+        "headline": "Maersk hit by fresh cyber breach",
+        "summary": "Danish shipping giant AP Moller-Maersk has confirmed another cybersecurity breach after hackers gained access to an older IT system and extracted data, nearly a decade after the devastating NotPetya attack that cost the company up to $300m. The Copenhagen-headquartered group said",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Bunker prices plunge 20%",
+      "link": "https://splash247.com/bunker-prices-plunge-20/",
+      "pubDate": "Thu, 12 Nov 2026 07:27:04 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "Bunker prices have plunged by as much as 20% in less than two weeks as hopes of an easing of the Iran conflict send oil markets tumbling, offering shipowners some relief from what is still expected to be the most expensive year for marine fuel on record. Singapore very low sulphu",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2015/02/OW-Bunker-Dynamic-Oil-Trading.jpg",
+      "en": {
+        "headline": "Bunker prices plunge 20%",
+        "summary": "Bunker prices have plunged by as much as 20% in less than two weeks as hopes of an easing of the Iran conflict send oil markets tumbling, offering shipowners some relief from what is still expected to be the most expensive year for marine fuel on record. Singapore very low sulphu",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Geneva Dry: Belships’ Ivar Hansson Myklebust on China&#8217;s changing commodities role",
       "link": "https://splash247.com/geneva-dry-belships-ivar-hansson-myklebust-on-chinas-changing-commodities-role/",
-      "pubDate": "Wed, 11 Nov 2026 20:12:00 +0000",
+      "pubDate": "Thu, 12 Nov 2026 07:15:00 +0000",
       "source": "Splash247",
       "category": "Trade",
       "summary": "Ivar Hansson Myklebust, chair and CEO of Norway&#8217;s Belships, believes the shipping industry continues to underestimate the growth potential of developing economies. Ahead of his appearance at Geneva Dry 2027, he discusses China&#8217;s changing trading patterns, fleet supply",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 7,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Ivar-Hansson-Myklebust-Chair-CEO-Belships.jpeg",
       "en": {
         "headline": "Geneva Dry: Belships’ Ivar Hansson Myklebust on China&#8217;s changing commodities role",
         "summary": "Ivar Hansson Myklebust, chair and CEO of Norway&#8217;s Belships, believes the shipping industry continues to underestimate the growth potential of developing economies. Ahead of his appearance at Geneva Dry 2027, he discusses China&#8217;s changing trading patterns, fleet supply",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "NYK charts the great reshuffling of global commodity trades",
+      "link": "https://splash247.com/nyk-charts-the-great-reshuffling-of-global-commodity-trades/",
+      "pubDate": "Thu, 12 Nov 2026 07:10:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "One of the world’s largest shipowners has given its take on where it sees the gas, dry bulk, and tanker markets heading in the coming years. The global VLCC fleet will see a significant expansion despite the extraordinary earnings currently being enjoyed by tanker owners, with Ja",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/07/LNG-Adventure.jpg",
+      "en": {
+        "headline": "NYK charts the great reshuffling of global commodity trades",
+        "summary": "One of the world’s largest shipowners has given its take on where it sees the gas, dry bulk, and tanker markets heading in the coming years. The global VLCC fleet will see a significant expansion despite the extraordinary earnings currently being enjoyed by tanker owners, with Ja",
         "source": "Splash247"
       }
     },
@@ -261,7 +431,7 @@
       "summary": "(Bloomberg) &#8212; A tanker carrying Russian diesel that had briefly signaled the US made a U-turn about 400 nautical miles off New York, compounding uncertainty over deliveries to the North American market....",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/10/shutterstock_1100495594.jpg",
       "en": {
         "headline": "Russian Diesel Tanker Makes U-Turn After Heading to U.S.",
@@ -278,7 +448,7 @@
       "summary": "A new study says the United States has enough spare ethanol production capacity to supply a meaningful share of the global marine fuel market, offering shipowners another fuel option as...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/09/tangier-maersk-at-the-port-of-mobile_1024x576.jpg.avif",
       "en": {
         "headline": "U.S. Ethanol Could Fuel Growing Fleet of Methanol-Capable Ships, Study Finds",
@@ -295,7 +465,7 @@
       "summary": "US companies are unlikely to import Russian diesel as a tanker full of the fuel idles off the US Eastern Seaboard, experts said, despite President Donald Trump's temporary waiver of some sanctions on Moscow's fuel exports.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/01/shutterstock_1916898926.jpg",
       "en": {
         "headline": "Russian Diesel Faces U.S. Buyer Resistance Despite Trump Sanctions Waiver",
@@ -312,80 +482,12 @@
       "summary": "Despite market bets on a de-escalation in the Iran war, new evidence has emerged in recent days of strikes on tankers in the Strait of Hormuz and on energy infrastructure in the Middle East.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 11,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
       "en": {
         "headline": "Tankers Continue to Burn in the Middle East Despite Hopes for De-escalation",
         "summary": "Despite market bets on a de-escalation in the Iran war, new evidence has emerged in recent days of strikes on tankers in the Strait of Hormuz and on energy infrastructure in the Middle East.",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Maersk hit by fresh cyber breach",
-      "link": "https://splash247.com/maersk-hit-by-fresh-cyber-breach/",
-      "pubDate": "Wed, 11 Nov 2026 16:41:12 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "Danish shipping giant AP Moller-Maersk has confirmed another cybersecurity breach after hackers gained access to an older IT system and extracted data, nearly a decade after the devastating NotPetya attack that cost the company up to $300m. The Copenhagen-headquartered group said",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 12,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/03/Cydome-Cyber-Hack.jpg",
-      "en": {
-        "headline": "Maersk hit by fresh cyber breach",
-        "summary": "Danish shipping giant AP Moller-Maersk has confirmed another cybersecurity breach after hackers gained access to an older IT system and extracted data, nearly a decade after the devastating NotPetya attack that cost the company up to $300m. The Copenhagen-headquartered group said",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Flex LNG lines up $145.5m leaseback",
-      "link": "https://splash247.com/flex-lng-lines-up-145-5m-leaseback/",
-      "pubDate": "Wed, 11 Nov 2026 16:40:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "John Fredriksen-controlled Flex LNG has signed a $145.5m sale-and-leaseback deal for one of its LNG carriers, extending a fleet refinancing programme expected to release another $34m in cash. The New York-listed owner disclosed the agreement with an unnamed Asian leasing company ",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 12,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Flex-Enterprise.jpg",
-      "en": {
-        "headline": "Flex LNG lines up $145.5m leaseback",
-        "summary": "John Fredriksen-controlled Flex LNG has signed a $145.5m sale-and-leaseback deal for one of its LNG carriers, extending a fleet refinancing programme expected to release another $34m in cash. The New York-listed owner disclosed the agreement with an unnamed Asian leasing company ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Volare snaps up $210m VLCC in Trafigura-linked deal",
-      "link": "https://splash247.com/volare-snaps-up-210m-vlcc-in-trafigura-linked-deal/",
-      "pubDate": "Wed, 11 Nov 2026 16:39:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Trafigura-backed tanker owner Volare Shipping has agreed to acquire a VLCC newbuilding from an affiliate of its controlling shareholder for $210m, adding another supertanker to its expanding fleet just weeks after its Oslo market debut. The Euronext Growth-listed company said it ",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 12,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/10/Hengli-VLCC.jpg",
-      "en": {
-        "headline": "Volare snaps up $210m VLCC in Trafigura-linked deal",
-        "summary": "Trafigura-backed tanker owner Volare Shipping has agreed to acquire a VLCC newbuilding from an affiliate of its controlling shareholder for $210m, adding another supertanker to its expanding fleet just weeks after its Oslo market debut. The Euronext Growth-listed company said it ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Canada puts Iranian tanker giant back under sanctions",
-      "link": "https://splash247.com/canada-puts-iranian-tanker-giant-back-under-sanctions/",
-      "pubDate": "Wed, 11 Nov 2026 16:38:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Canada has reinstated sanctions against the National Iranian Tanker Company (NITC), reversing relief granted a decade ago under the international nuclear agreement with Tehran. The move forms part of a package targeting 11 Iranian entities, including National Iranian Oil Company ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2016/01/NITC-e1616746506703.jpg",
-      "en": {
-        "headline": "Canada puts Iranian tanker giant back under sanctions",
-        "summary": "Canada has reinstated sanctions against the National Iranian Tanker Company (NITC), reversing relief granted a decade ago under the international nuclear agreement with Tehran. The move forms part of a package targeting 11 Iranian entities, including National Iranian Oil Company ",
-        "source": "Splash247"
       }
     },
     {
@@ -397,114 +499,12 @@
       "summary": "International Maritime Organization (IMO) Secretary-General Arsenio Dominguez has called on governments to step up enforcement of international maritime regulations in the Strait of Hormuz, warning that unsafe shipping practices are...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-20T060010Z_1765538580_RC2L3LAI6608_RTRMADP_3_OIL-MAJORS-RESULTS-PREVIEW-800x533.jpg",
       "en": {
         "headline": "IMO Chief Calls for Strict Enforcement of SOLAS Rules in Strait of Hormuz",
         "summary": "International Maritime Organization (IMO) Secretary-General Arsenio Dominguez has called on governments to step up enforcement of international maritime regulations in the Strait of Hormuz, warning that unsafe shipping practices are...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Yangzijiang tied to Torm&#8217;s LR2 newbuild push",
-      "link": "https://splash247.com/yangzijiang-tied-to-torms-lr2-newbuild-push/",
-      "pubDate": "Wed, 11 Nov 2026 16:35:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Singapore-listed Yangzijiang Maritime Development has been linked to Danish tanker giant Torm&#8217;s latest LR2 newbuilding venture, putting a name to the mystery partner behind an eight-ship programme announced last week. Shipbuilding sources have identified the Ren Yuanlin-led",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 12,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/Ren-Yuanlin-Yangzijiang-Financial-Holding.jpg",
-      "en": {
-        "headline": "Yangzijiang tied to Torm&#8217;s LR2 newbuild push",
-        "summary": "Singapore-listed Yangzijiang Maritime Development has been linked to Danish tanker giant Torm&#8217;s latest LR2 newbuilding venture, putting a name to the mystery partner behind an eight-ship programme announced last week. Shipbuilding sources have identified the Ren Yuanlin-led",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Panama Canal Raises Daily Transit Capacity as Water Conditions Improve",
-      "link": "https://gcaptain.com/panama-canal-raises-daily-transit-capacity-as-water-conditions-improve/",
-      "pubDate": "Wed, 11 Nov 2026 16:30:18 +0000",
-      "source": "gCaptain",
-      "category": "Dry Bulk",
-      "summary": "The Panama Canal is increasing its daily transit capacity to 34 vessels and restoring the maximum allowable draft at its Neopanamax locks to 50 feet, easing restrictions as improved water...",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/Neopanamax-locks.jpg",
-      "en": {
-        "headline": "Panama Canal Raises Daily Transit Capacity as Water Conditions Improve",
-        "summary": "The Panama Canal is increasing its daily transit capacity to 34 vessels and restoring the maximum allowable draft at its Neopanamax locks to 50 feet, easing restrictions as improved water...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "UK Launches &#8216;Atlantic Net&#8217; to Track Russian Submarines and Protect Undersea Cables",
-      "link": "https://gcaptain.com/uk-launches-atlantic-net-to-track-russian-submarines-and-protect-undersea-cables/",
-      "pubDate": "Wed, 11 Nov 2026 16:25:50 +0000",
-      "source": "gCaptain",
-      "category": "Bunker",
-      "summary": "The UK is moving ahead with a £90 million investment in autonomous underwater systems, advanced sensors and artificial intelligence to strengthen the Royal Navy’s ability to track Russian submarines and...",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Ocean-Infinity-Atlantic-Net_resized.png.webp",
-      "en": {
-        "headline": "UK Launches &#8216;Atlantic Net&#8217; to Track Russian Submarines and Protect Undersea Cables",
-        "summary": "The UK is moving ahead with a £90 million investment in autonomous underwater systems, advanced sensors and artificial intelligence to strengthen the Royal Navy’s ability to track Russian submarines and...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Germany to Set Up State Gas Reserve After Missing Winter Storage Targets",
-      "link": "https://gcaptain.com/germany-to-set-up-state-gas-reserve-after-missing-winter-storage-targets/",
-      "pubDate": "Wed, 11 Nov 2026 13:30:38 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "The German government will go ahead with a planned 24-terawatt-hour crisis gas reserve to be funded by user surcharges, the economy ministry said, following criticism over missed storage targets for the winter heating season this year.",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 15,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/07/2022-06-20T000000Z_1038034022_RC2LVU9PIFLE_RTRMADP_3_EUROPE-GAS-800x440.jpg",
-      "en": {
-        "headline": "Germany to Set Up State Gas Reserve After Missing Winter Storage Targets",
-        "summary": "The German government will go ahead with a planned 24-terawatt-hour crisis gas reserve to be funded by user surcharges, the economy ministry said, following criticism over missed storage targets for the winter heating season this year.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Qatar Loses First LNG Customer Since War Disrupted Flows",
-      "link": "https://gcaptain.com/qatar-loses-first-lng-customer-since-war-disrupted-flows/",
-      "pubDate": "Wed, 11 Nov 2026 13:06:10 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Polish energy company Orlen SA terminated one of its long-term liquefied natural gas contracts with QatarEnergy, citing the export giant’s inability to deliver as the conflict in the Middle East disrupts shipments.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-03-06T104859Z_1638352831_RC2MWJA831GC_RTRMADP_3_IRAN-CRISIS-ENERGY-QATAR-800x533.jpg",
-      "en": {
-        "headline": "Qatar Loses First LNG Customer Since War Disrupted Flows",
-        "summary": "Polish energy company Orlen SA terminated one of its long-term liquefied natural gas contracts with QatarEnergy, citing the export giant’s inability to deliver as the conflict in the Middle East disrupts shipments.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "UK taps Ocean Infinity for subsea security push",
-      "link": "https://splash247.com/uk-taps-ocean-infinity-for-subsea-security-push/",
-      "pubDate": "Wed, 11 Nov 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "UK-based marine robotics specialist Ocean Infinity has been selected as the Royal Navy&#8217;s commercial mission partner for a new underwater surveillance programme backed by an initial £90m ($120m) investment. The company will work with the Royal Navy to develop Atlantic Net, a",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 17,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/05/Armada-Ocean-Infinity.jpg",
-      "en": {
-        "headline": "UK taps Ocean Infinity for subsea security push",
-        "summary": "UK-based marine robotics specialist Ocean Infinity has been selected as the Royal Navy&#8217;s commercial mission partner for a new underwater surveillance programme backed by an initial £90m ($120m) investment. The company will work with the Royal Navy to develop Atlantic Net, a",
-        "source": "Splash247"
       }
     }
   ]
