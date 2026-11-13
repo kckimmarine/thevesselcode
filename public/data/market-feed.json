@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-13T04:14:37.043Z",
+    "generatedAt": "2026-11-13T13:40:18.047Z",
     "benchmarkAsOf": "2026-11-12",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 822,
-        "deltaPct": 0.92,
+        "deltaPct": 0,
         "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1170,
-        "deltaPct": -1.1,
+        "deltaPct": 0,
         "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 668.5,
-        "deltaPct": -0.96,
+        "deltaPct": 0,
         "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 717.5,
-        "deltaPct": 1.06,
+        "deltaPct": 0,
         "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1240.5,
-        "deltaPct": -1.08,
+        "deltaPct": 0,
         "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 549.5,
-        "deltaPct": -0.54,
+        "deltaPct": 0,
         "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -172,7 +172,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 739,
-        "deltaPct": 1.16,
+        "deltaPct": 0,
         "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1267.5,
-        "deltaPct": 0.48,
+        "deltaPct": 0,
         "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 502.5,
-        "deltaPct": 1.62,
+        "deltaPct": 0,
         "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -236,36 +236,172 @@
   },
   "news": [
     {
-      "title": "Maersk&#8217;s cyber breach is a warning for every secondhand ship sale",
-      "link": "https://splash247.com/maersks-cyber-breach-is-a-warning-for-every-secondhand-ship-sale/",
-      "pubDate": "Fri, 13 Nov 2026 04:12:55 +0000",
+      "title": "From ocean liner to artificial reef: A warning for container shipping",
+      "link": "https://splash247.com/from-ocean-liner-to-artificial-reef-a-warning-for-container-shipping/",
+      "pubDate": "Fri, 13 Nov 2026 10:07:00 +0000",
       "source": "Splash247",
-      "category": "Bunker",
-      "summary": "The door was a system that came with an acquisition. Every owner who buys a secondhand vessel takes the same risk on board, and few check for it at delivery. By Argyris Zafeiropoulos from Athens-based Resilience &#38; Compliance Advisory. On November 11 Maersk confirmed that atta",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 1,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/07/Maersk-Line.jpg",
+      "category": "Trade",
+      "summary": "Dr Raymon Krishnan, president of Singapore’s Logistics &#38; Supply Chain Management Society, writes for Splash today, reflecting on one of this week’s most talked about stories in the mainstream press.  On Wednesday, the 990-foot ocean liner SS United States was deliberately sun",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/SS-United-States-780x470-1.jpeg",
       "en": {
-        "headline": "Maersk&#8217;s cyber breach is a warning for every secondhand ship sale",
-        "summary": "The door was a system that came with an acquisition. Every owner who buys a secondhand vessel takes the same risk on board, and few check for it at delivery. By Argyris Zafeiropoulos from Athens-based Resilience &#38; Compliance Advisory. On November 11 Maersk confirmed that atta",
+        "headline": "From ocean liner to artificial reef: A warning for container shipping",
+        "summary": "Dr Raymon Krishnan, president of Singapore’s Logistics &#38; Supply Chain Management Society, writes for Splash today, reflecting on one of this week’s most talked about stories in the mainstream press.  On Wednesday, the 990-foot ocean liner SS United States was deliberately sun",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "BW LPG scores another lucrative Avance VLGC flip",
+      "link": "https://splash247.com/bw-lpg-scores-another-lucrative-avance-vlgc-flip/",
+      "pubDate": "Fri, 13 Nov 2026 09:50:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "BW LPG has struck another lucrative vessel sale, offloading a VLGC acquired in John Fredriksen&#8217;s Avance Gas fleet deal less than two years ago for well over $100m. The New York- and Oslo-listed gas carrier giant has agreed to sell the 2015-built, 83,134 cu m BW Mistral, wit",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/BW-Mistral-Geir-Vinnes-Marine-Traffic.jpg",
+      "en": {
+        "headline": "BW LPG scores another lucrative Avance VLGC flip",
+        "summary": "BW LPG has struck another lucrative vessel sale, offloading a VLGC acquired in John Fredriksen&#8217;s Avance Gas fleet deal less than two years ago for well over $100m. The New York- and Oslo-listed gas carrier giant has agreed to sell the 2015-built, 83,134 cu m BW Mistral, wit",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Cetus seals $200m share placement ahead of Oslo debut",
+      "link": "https://splash247.com/cetus-seals-200m-share-placement-ahead-of-oslo-debut/",
+      "pubDate": "Fri, 13 Nov 2026 09:42:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Hong Kong-based dry bulk owner Cetus Maritime has successfully placed a NOK1.89bn ($200m) share offering, including an over-allotment, clearing a major hurdle ahead of its planned Oslo stock market debut next week. The Mark Young-led company said it had conditionally allocated 10",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Cetus-Humpback-Cetus-Maritime.jpg",
+      "en": {
+        "headline": "Cetus seals $200m share placement ahead of Oslo debut",
+        "summary": "Hong Kong-based dry bulk owner Cetus Maritime has successfully placed a NOK1.89bn ($200m) share offering, including an over-allotment, clearing a major hurdle ahead of its planned Oslo stock market debut next week. The Mark Young-led company said it had conditionally allocated 10",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "UK blacklists 11 ships in fresh Russia sanctions sweep",
+      "link": "https://splash247.com/uk-blacklists-11-ships-in-fresh-russia-sanctions-sweep/",
+      "pubDate": "Fri, 13 Nov 2026 09:35:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Britain has slapped fresh sanctions on 11 ships linked to Russian energy exports, targeting five LNG carriers, five oil tankers and a floating storage unit in its latest effort to disrupt Moscow&#8217;s seaborne oil and gas trade. The measures also cover nine companies, including",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Melicertes-LNG-carrier-Afrelino-Christian-Mantiri-Marine-Traffic.jpg",
+      "en": {
+        "headline": "UK blacklists 11 ships in fresh Russia sanctions sweep",
+        "summary": "Britain has slapped fresh sanctions on 11 ships linked to Russian energy exports, targeting five LNG carriers, five oil tankers and a floating storage unit in its latest effort to disrupt Moscow&#8217;s seaborne oil and gas trade. The measures also cover nine companies, including",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Deutsche Windtechnik picked for UK offshore wind maintenance job",
+      "link": "https://splash247.com/deutsche-windtechnik-picked-for-uk-offshore-wind-maintenance-job/",
+      "pubDate": "Fri, 13 Nov 2026 09:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "German offshore wind services specialist Deutsche Windtechnik has secured a five-year operations and maintenance contract covering two offshore wind farms in the UK. The agreement, awarded by asset manager XceCo, covers the Lynn and Inner Dowsing wind farms off Lincolnshire, whic",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/08/UK-Government-offshore-wind.jpg",
+      "en": {
+        "headline": "Deutsche Windtechnik picked for UK offshore wind maintenance job",
+        "summary": "German offshore wind services specialist Deutsche Windtechnik has secured a five-year operations and maintenance contract covering two offshore wind farms in the UK. The agreement, awarded by asset manager XceCo, covers the Lynn and Inner Dowsing wind farms off Lincolnshire, whic",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Pyxis cashes in on ageing MR tanker in $37m deal",
+      "link": "https://splash247.com/pyxis-cashes-in-on-ageing-mr-tanker-in-37m-deal/",
+      "pubDate": "Fri, 13 Nov 2026 09:23:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Greek shipowner Pyxis Tankers has agreed to sell its oldest product tanker for $37m, cashing in on firm asset values and cutting its MR fleet from three vessels to two. The Nasdaq-listed company, led by Eddie Valentis, has struck a deal with an undisclosed third-party buyer for t",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/02/Karteria-MR2.jpg",
+      "en": {
+        "headline": "Pyxis cashes in on ageing MR tanker in $37m deal",
+        "summary": "Greek shipowner Pyxis Tankers has agreed to sell its oldest product tanker for $37m, cashing in on firm asset values and cutting its MR fleet from three vessels to two. The Nasdaq-listed company, led by Eddie Valentis, has struck a deal with an undisclosed third-party buyer for t",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Gulf war leaves toxic legacy that could last decades",
+      "link": "https://splash247.com/gulf-war-leaves-toxic-legacy-that-could-last-decades/",
+      "pubDate": "Fri, 13 Nov 2026 08:10:39 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Greenpeace has identified 540 possible oil spills across the Gulf, Strait of Hormuz and Arabian Sea since the US-Iran war began on February 28 (see map below), with satellite imagery showing a cumulative slick footprint of approximately 20,000 sq km. Not all detections have been ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/CENTCOM-copy.jpg",
+      "en": {
+        "headline": "Gulf war leaves toxic legacy that could last decades",
+        "summary": "Greenpeace has identified 540 possible oil spills across the Gulf, Strait of Hormuz and Arabian Sea since the US-Iran war began on February 28 (see map below), with satellite imagery showing a cumulative slick footprint of approximately 20,000 sq km. Not all detections have been ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Baltic Exchange and Mercuria await verdict in landmark tanker index trial",
+      "link": "https://splash247.com/baltic-exchange-and-mercuria-await-verdict-in-landmark-tanker-index-trial/",
+      "pubDate": "Fri, 13 Nov 2026 08:00:31 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "One of shipping&#8217;s most consequential legal battles has concluded in London, with the Baltic Exchange and commodities trader Mercuria awaiting a High Court ruling on whether the industry&#8217;s leading VLCC freight benchmark should have continued operating after war erupted",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2019/08/High-Court-London.jpg",
+      "en": {
+        "headline": "Baltic Exchange and Mercuria await verdict in landmark tanker index trial",
+        "summary": "One of shipping&#8217;s most consequential legal battles has concluded in London, with the Baltic Exchange and commodities trader Mercuria awaiting a High Court ruling on whether the industry&#8217;s leading VLCC freight benchmark should have continued operating after war erupted",
         "source": "Splash247"
       }
     },
     {
       "title": "New report identifies Hong Kong’s place in world shipping",
       "link": "https://splash247.com/new-report-identifies-hong-kongs-place-in-world-shipping/",
-      "pubDate": "Fri, 13 Nov 2026 03:00:00 +0000",
+      "pubDate": "Fri, 13 Nov 2026 07:45:00 +0000",
       "source": "Splash247",
       "category": "Trade",
       "summary": "Hong Kong Maritime Week is about to kick off. To celebrate the occasion, Splash today publishes a 48-page magazine on the city’s maritime hub credentials. A ship can be ordered at a mainland Chinese yard, owned through a leasing company in Hong Kong, insured in London, crewed thr",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 5,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Hong-Kong-from-Harbour.jpg",
       "en": {
         "headline": "New report identifies Hong Kong’s place in world shipping",
         "summary": "Hong Kong Maritime Week is about to kick off. To celebrate the occasion, Splash today publishes a 48-page magazine on the city’s maritime hub credentials. A ship can be ordered at a mainland Chinese yard, owned through a leasing company in Hong Kong, insured in London, crewed thr",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Splash Wrap: Seafarers take centre stage",
+      "link": "https://splash247.com/splash-wrap-seafarers-take-centre-stage/",
+      "pubDate": "Fri, 13 Nov 2026 07:30:11 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "This week saw the launch of Splash Crew, our new title dedicated to the people who keep global shipping moving. Our opening week highlighted some uncomfortable realities. Tanker masters are earning less in real terms than they were 16 years ago, despite the extraordinary freight ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/03/Anglo-Eastern-crew.jpg",
+      "en": {
+        "headline": "Splash Wrap: Seafarers take centre stage",
+        "summary": "This week saw the launch of Splash Crew, our new title dedicated to the people who keep global shipping moving. Our opening week highlighted some uncomfortable realities. Tanker masters are earning less in real terms than they were 16 years ago, despite the extraordinary freight ",
         "source": "Splash247"
       }
     },
@@ -278,7 +414,7 @@
       "summary": "The SS United States has settled upright on the floor of the Gulf of Mexico, completing its transformation from record-breaking ocean liner to the world&#8217;s largest artificial reef. Early sonar...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/SS-United-States-sinking-800x533.jpg",
       "en": {
         "headline": "SS United States Sits Upright on Gulf Seafloor After Historic Sinking",
@@ -295,7 +431,7 @@
       "summary": "By Lori-Ann LaRocco The Port of Los Angeles handled a record 1,026,872 twenty-foot equivalent units (TEUs) in October, marking its second-busiest month ever and extending the strongest five-month cargo run...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 8,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/05/port-of-los-angeles-800x532.jpeg",
       "en": {
         "headline": "Port of Los Angeles Sets October Cargo Record as Strike Threat and Rail Delays Loom",
@@ -312,29 +448,12 @@
       "summary": "Saronic has awarded a contract worth more than $100 million to Norway&#8217;s Syncrolift to design and supply what the companies say will be the world&#8217;s largest shiplift at its planned...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/Port_Alpha-2.jpg",
       "en": {
         "headline": "Saronic Awards $100 Million-Plus Contract for World’s Largest Shiplift at Texas Shipyard",
         "summary": "Saronic has awarded a contract worth more than $100 million to Norway&#8217;s Syncrolift to design and supply what the companies say will be the world&#8217;s largest shiplift at its planned...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Seanergy lines up four more bulkers in $855m fleet push",
-      "link": "https://splash247.com/seanergy-lines-up-four-more-bulkers-in-855m-fleet-push/",
-      "pubDate": "Thu, 12 Nov 2026 18:26:56 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Greek capesize specialist Seanergy Maritime has added four more vessels worth $264m to its fleet investment programme, taking its total spending commitments to $855m. The Nasdaq-listed owner, led by Stamatis Tsantanis, disclosed the latest acquisitions in its third-quarter update",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/05/Stamatis-Tsantanis-Seanergy-United.jpg",
-      "en": {
-        "headline": "Seanergy lines up four more bulkers in $855m fleet push",
-        "summary": "Greek capesize specialist Seanergy Maritime has added four more vessels worth $264m to its fleet investment programme, taking its total spending commitments to $855m. The Nasdaq-listed owner, led by Stamatis Tsantanis, disclosed the latest acquisitions in its third-quarter update",
-        "source": "Splash247"
       }
     },
     {
@@ -346,7 +465,7 @@
       "summary": "A projectile struck the engine room of the Liberia-flagged crude oil tanker Dominica Prosperity off the United Arab Emirates on Wednesday, forcing the evacuation of all 22 crew members as...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
       "en": {
         "headline": "Tanker Ablaze Off UAE as More Attacks Rattle Gulf Shipping",
@@ -363,7 +482,7 @@
       "summary": "French shipping company Neoline says its wind-powered cargo vessel Neoliner Origin has delivered fuel savings of up to 70% during its first year of commercial service, offering an early test...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/aj-neoline-selection-54-1-scaled.jpg-800x600.jpeg",
       "en": {
         "headline": "Wind-Powered Cargo Ship Neoliner Origin Cuts Fuel Consumption 70% in First Year",
@@ -380,130 +499,11 @@
       "summary": "Finland's military said on Thursday its forces had detected \"a strike\" on a Russian warship in the Baltic Sea a day earlier, but that the security situation in the area remained stable.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-03T104543Z_2069135414_RC2AMLASFO0Q_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-WARSHIP-800x533.jpg",
       "en": {
         "headline": "Finland Says it Detects Strike on Russian Warship in Baltic Sea",
         "summary": "Finland's military said on Thursday its forces had detected \"a strike\" on a Russian warship in the Baltic Sea a day earlier, but that the security situation in the area remained stable.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "ABS and Radian Forge Collaborate on Digital Qualification for Additive Manufacturing",
-      "link": "https://gcaptain.com/abs-and-radian-forge-collaborate-on-digital-qualification-for-additive-manufacturing/",
-      "pubDate": "Thu, 12 Nov 2026 16:55:19 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Agreement combines manufacturing data and technical review to support component qualification ABS and Radian Forge have signed a joint development project (JDP) to evaluate the use of digital manufacturing data...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/http___cdn.prgloo-2.jpg",
-      "en": {
-        "headline": "ABS and Radian Forge Collaborate on Digital Qualification for Additive Manufacturing",
-        "summary": "Agreement combines manufacturing data and technical review to support component qualification ABS and Radian Forge have signed a joint development project (JDP) to evaluate the use of digital manufacturing data...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Singapore Retains Crown as World’s Leading Maritime Hub",
-      "link": "https://gcaptain.com/singapore-retains-crown-as-worlds-leading-maritime-hub/",
-      "pubDate": "Thu, 12 Nov 2026 15:42:41 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Singapore has retained its position as the world&#8217;s leading maritime hub, while Shanghai has climbed to second place and Asia now accounts for three of the world&#8217;s five highest-ranked maritime...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/10/shutterstock_1025251606.jpg",
-      "en": {
-        "headline": "Singapore Retains Crown as World’s Leading Maritime Hub",
-        "summary": "Singapore has retained its position as the world&#8217;s leading maritime hub, while Shanghai has climbed to second place and Asia now accounts for three of the world&#8217;s five highest-ranked maritime...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Farewell to America&#8217;s Flagship: SS United States Sinks After 74 Years",
-      "link": "https://gcaptain.com/farewell-to-americas-flagship-ss-united-states-sinks-after-74-years/",
-      "pubDate": "Thu, 12 Nov 2026 14:59:53 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The legendary ocean liner, which still holds the transatlantic speed record, took hours to sink off Florida&#8217;s Gulf Coast, ending a remarkable chapter in American maritime history. The SS United...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-11T205020Z_1308217209_RC2PLOAPVCAG_RTRMADP_3_USA-SHIP-SINKING-800x533.jpg",
-      "en": {
-        "headline": "Farewell to America&#8217;s Flagship: SS United States Sinks After 74 Years",
-        "summary": "The legendary ocean liner, which still holds the transatlantic speed record, took hours to sink off Florida&#8217;s Gulf Coast, ending a remarkable chapter in American maritime history. The SS United...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "US ethanol industry eyes growing marine fuel market",
-      "link": "https://splash247.com/us-ethanol-industry-eyes-growing-marine-fuel-market/",
-      "pubDate": "Thu, 12 Nov 2026 12:30:00 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "Ethanol could emerge as an alternative marine fuel for the growing fleet of methanol-capable ships, with existing engines and bunkering infrastructure requiring only limited modifications, according to a new industry study. The report, Marine Ethanol: Unlocking the US Opportunity",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/WinGD-ethanol-Vale-VLOC-1.jpg",
-      "en": {
-        "headline": "US ethanol industry eyes growing marine fuel market",
-        "summary": "Ethanol could emerge as an alternative marine fuel for the growing fleet of methanol-capable ships, with existing engines and bunkering infrastructure requiring only limited modifications, according to a new industry study. The report, Marine Ethanol: Unlocking the US Opportunity",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Chinese shipbuilder wins AHTS order from South American owner",
-      "link": "https://splash247.com/chinese-shipbuilder-wins-ahts-order-from-south-american-owner/",
-      "pubDate": "Thu, 12 Nov 2026 12:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Chinese shipbuilder Rainbow Offshore Engineering (ROC), part of Shenzhen-listed Jiangsu Rainbow Heavy Industries, has secured a contract to build an anchor-handling tug supply (AHTS) vessel for an undisclosed South American owner. The vessel will measure 71.95 metres long and 17.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Rainbow-vessel.jpg",
-      "en": {
-        "headline": "Chinese shipbuilder wins AHTS order from South American owner",
-        "summary": "Chinese shipbuilder Rainbow Offshore Engineering (ROC), part of Shenzhen-listed Jiangsu Rainbow Heavy Industries, has secured a contract to build an anchor-handling tug supply (AHTS) vessel for an undisclosed South American owner. The vessel will measure 71.95 metres long and 17.",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Marine Platforms plans full takeover of former Technip pipelay vessel",
-      "link": "https://splash247.com/marine-platforms-plans-full-takeover-of-former-technip-pipelay-vessel/",
-      "pubDate": "Thu, 12 Nov 2026 11:38:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Nigerian offshore services contractor Marine Platforms is moving towards full ownership of the pipelay and heavy-lift construction vessel Zhong Fei Huan Qiu 1200, formerly known as Global 1200. The company acquired a 51% interest in the vessel in 2025, with Chinese offshore engin",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Global-1200-Ulstein.jpg",
-      "en": {
-        "headline": "Marine Platforms plans full takeover of former Technip pipelay vessel",
-        "summary": "Nigerian offshore services contractor Marine Platforms is moving towards full ownership of the pipelay and heavy-lift construction vessel Zhong Fei Huan Qiu 1200, formerly known as Global 1200. The company acquired a 51% interest in the vessel in 2025, with Chinese offshore engin",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "EU’s Russian Arctic LNG Bill Hits €8.7 Billion as Yamal Faces Shipping Challenge Come January",
-      "link": "https://gcaptain.com/eus-russian-arctic-lng-bill-hits-e8-7-billion-as-yamal-faces-shipping-challenge-come-january/",
-      "pubDate": "Thu, 12 Nov 2026 11:16:36 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The European Union paid an estimated €8.7 billion for liquefied natural gas from Russia’s Yamal project in the first 10 months of 2026, exceeding the estimated total for all of 2025, as the countdown to a ban on Russian LNG imports enters its final weeks.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/11/ARc7-LNG-Carrier-STS-800x533.jpg",
-      "en": {
-        "headline": "EU’s Russian Arctic LNG Bill Hits €8.7 Billion as Yamal Faces Shipping Challenge Come January",
-        "summary": "The European Union paid an estimated €8.7 billion for liquefied natural gas from Russia’s Yamal project in the first 10 months of 2026, exceeding the estimated total for all of 2025, as the countdown to a ban on Russian LNG imports enters its final weeks.",
         "source": "gCaptain"
       }
     }
