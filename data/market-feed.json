@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-11-13T13:40:18.047Z",
-    "benchmarkAsOf": "2026-11-12",
+    "generatedAt": "2026-11-13T23:02:45.792Z",
+    "benchmarkAsOf": "2026-11-13",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-11-12",
-    "updatedLabelKo": "2026-11-12 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-11-13",
+    "updatedLabelKo": "2026-11-13 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 925,
-        "deltaPct": 0,
-        "asOf": "2026-11-12T00:00:00.000Z",
+        "priceUsdMt": 930,
+        "deltaPct": 0.54,
+        "asOf": "2026-11-13T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 745,
-        "deltaPct": 0,
-        "asOf": "2026-11-12T00:00:00.000Z",
+        "priceUsdMt": 735,
+        "deltaPct": -1.34,
+        "asOf": "2026-11-13T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 3020,
-      "deltaPct": 0,
+      "value": 2980,
+      "deltaPct": -1.32,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-12T16:49:32.120Z"
+      "asOf": "2026-11-13T16:15:22.009Z"
     },
     "capesizeTc": {
-      "value": 4836,
-      "deltaPct": 0,
+      "value": 4719,
+      "deltaPct": -2.42,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-12T16:49:32.131Z"
+      "asOf": "2026-11-13T16:15:22.035Z"
     },
     "panamaxTc": {
-      "value": 2117,
-      "deltaPct": 0,
+      "value": 2118,
+      "deltaPct": 0.05,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-12T16:49:32.139Z"
+      "asOf": "2026-11-13T16:15:22.047Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,142 @@
   },
   "news": [
     {
+      "title": "Tanker Strikes Docked Paddlewheeler on Mississippi River, Causing It to Capsize",
+      "link": "https://gcaptain.com/tanker-strikes-docked-paddlewheeler-on-mississippi-river-causing-it-to-capsize/",
+      "pubDate": "Fri, 13 Nov 2026 20:45:59 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Update: Local officials say there are no passengers unaccounted for. More than 30 hospitalized, but none in critical condition. A Marshall Islands-flagged asphalt tanker struck the docked American Cruise Lines...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/American-Heritage-capsize-800x450.jpeg",
+      "en": {
+        "headline": "Tanker Strikes Docked Paddlewheeler on Mississippi River, Causing It to Capsize",
+        "summary": "Update: Local officials say there are no passengers unaccounted for. More than 30 hospitalized, but none in critical condition. A Marshall Islands-flagged asphalt tanker struck the docked American Cruise Lines...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Gulf Oil Exports Recover as Hormuz Shipping Struggles",
+      "link": "https://gcaptain.com/gulf-oil-exports-recover-as-hormuz-shipping-struggles/",
+      "pubDate": "Fri, 13 Nov 2026 17:51:12 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "Global oil markets are beginning to recover from the Iran war, but shipping through the Strait of Hormuz remains severely disrupted, with vessel traffic roughly 65% below pre-conflict levels and...",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-20T060010Z_1765538580_RC2L3LAI6608_RTRMADP_3_OIL-MAJORS-RESULTS-PREVIEW-800x533.jpg",
+      "en": {
+        "headline": "Gulf Oil Exports Recover as Hormuz Shipping Struggles",
+        "summary": "Global oil markets are beginning to recover from the Iran war, but shipping through the Strait of Hormuz remains severely disrupted, with vessel traffic roughly 65% below pre-conflict levels and...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "World Oil Market is Returning to Surplus as Gulf Exports Recover",
+      "link": "https://gcaptain.com/world-oil-market-is-returning-to-surplus-as-gulf-exports-recover/",
+      "pubDate": "Fri, 13 Nov 2026 17:37:39 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The world oil market will return to a surplus in the fourth quarter of this year, the International Energy Agency said on Friday, as Middle East exports recover faster than global oil demand despite continued attacks on shipping.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-04-17T153425Z_1797731019_RC23RKAOVSFD_RTRMADP_3_IRAQ-BASRA-OIL-800x450.jpg",
+      "en": {
+        "headline": "World Oil Market is Returning to Surplus as Gulf Exports Recover",
+        "summary": "The world oil market will return to a surplus in the fourth quarter of this year, the International Energy Agency said on Friday, as Middle East exports recover faster than global oil demand despite continued attacks on shipping.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "CMA CGM Net Profit More Than Triples to $2.32 Billion as Freight Rates Surge",
+      "link": "https://gcaptain.com/cma-cgm-net-profit-more-than-triples-to-2-32-billion-as-freight-rates-surge/",
+      "pubDate": "Fri, 13 Nov 2026 17:24:08 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "French shipping giant CMA CGM more than tripled its third-quarter net profit as higher container freight rates and strong cargo volumes boosted earnings amid ongoing disruptions to global shipping routes...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/CMA-CGM-GRAND-PALAIS-2026-2-1.jpg",
+      "en": {
+        "headline": "CMA CGM Net Profit More Than Triples to $2.32 Billion as Freight Rates Surge",
+        "summary": "French shipping giant CMA CGM more than tripled its third-quarter net profit as higher container freight rates and strong cargo volumes boosted earnings amid ongoing disruptions to global shipping routes...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Hapag-Lloyd Profit Surges as Freight Rates Rise, Red Sea Services Return",
+      "link": "https://gcaptain.com/hapag-lloyd-profit-surges-as-freight-rates-rise-red-sea-services-return/",
+      "pubDate": "Fri, 13 Nov 2026 17:09:56 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "German container shipping giant Hapag-Lloyd reported a sharp increase in third-quarter earnings as higher freight rates more than offset rising operating costs tied to the Middle East conflict and widespread...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2016/11/Hapag-lloyd.jpg",
+      "en": {
+        "headline": "Hapag-Lloyd Profit Surges as Freight Rates Rise, Red Sea Services Return",
+        "summary": "German container shipping giant Hapag-Lloyd reported a sharp increase in third-quarter earnings as higher freight rates more than offset rising operating costs tied to the Middle East conflict and widespread...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Singapore-Flagged Bulk Carrier Strikes Delaware River Bridge, Coast Guard Investigating",
+      "link": "https://gcaptain.com/singapore-flagged-bulk-carrier-strikes-delaware-river-bridge-coast-guard-investigating/",
+      "pubDate": "Fri, 13 Nov 2026 16:29:16 +0000",
+      "source": "gCaptain",
+      "category": "Dry Bulk",
+      "summary": "A Singapore-flagged bulk carrier struck the Tacony-Palmyra Bridge on the Delaware River Thursday afternoon, leaving the movable span temporarily unable to close and prompting a U.S. Coast Guard inspection of...",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Tacony-Palmyra-Bridge.jpg",
+      "en": {
+        "headline": "Singapore-Flagged Bulk Carrier Strikes Delaware River Bridge, Coast Guard Investigating",
+        "summary": "A Singapore-flagged bulk carrier struck the Tacony-Palmyra Bridge on the Delaware River Thursday afternoon, leaving the movable span temporarily unable to close and prompting a U.S. Coast Guard inspection of...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Russia Oil Revenues Hit Five-Month High on Crude Rally, IEA Says",
+      "link": "https://gcaptain.com/russia-oil-revenues-hit-five-month-high-on-crude-rally-iea-says/",
+      "pubDate": "Fri, 13 Nov 2026 14:39:48 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Russia’s October revenues from crude and petroleum-product exports hit the highest since May as the ongoing Iran war bolstered oil prices, according to the International Energy Agency.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-04-03T090546Z_1602578474_RC2OHHASRTN3_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-CHILDREN-800x616.jpg",
+      "en": {
+        "headline": "Russia Oil Revenues Hit Five-Month High on Crude Rally, IEA Says",
+        "summary": "Russia’s October revenues from crude and petroleum-product exports hit the highest since May as the ongoing Iran war bolstered oil prices, according to the International Energy Agency.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Iran Says Tanker Carrying LNG Hit Mine, Suffered Explosion in Hormuz",
+      "link": "https://gcaptain.com/iran-says-tanker-carrying-lng-hit-mine-suffered-explosion-in-hormuz/",
+      "pubDate": "Fri, 13 Nov 2026 14:37:27 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Iran's Revolutionary Guards navy said a tanker carrying liquefied natural gas struck a naval mine and suffered an explosion in the Strait of Hormuz on Friday while using what they described was an \"unauthorized and dangerous route,\" state media reported.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-08T024954Z_1108293134_RC21RI8U7725_RTRMADP_3_IRAN-CRISIS-MISSILES-HORMUZ-800x532.jpg",
+      "en": {
+        "headline": "Iran Says Tanker Carrying LNG Hit Mine, Suffered Explosion in Hormuz",
+        "summary": "Iran's Revolutionary Guards navy said a tanker carrying liquefied natural gas struck a naval mine and suffered an explosion in the Strait of Hormuz on Friday while using what they described was an \"unauthorized and dangerous route,\" state media reported.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "From ocean liner to artificial reef: A warning for container shipping",
       "link": "https://splash247.com/from-ocean-liner-to-artificial-reef-a-warning-for-container-shipping/",
       "pubDate": "Fri, 13 Nov 2026 10:07:00 +0000",
@@ -244,7 +380,7 @@
       "summary": "Dr Raymon Krishnan, president of Singapore’s Logistics &#38; Supply Chain Management Society, writes for Splash today, reflecting on one of this week’s most talked about stories in the mainstream press.  On Wednesday, the 990-foot ocean liner SS United States was deliberately sun",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/SS-United-States-780x470-1.jpeg",
       "en": {
         "headline": "From ocean liner to artificial reef: A warning for container shipping",
@@ -261,7 +397,7 @@
       "summary": "BW LPG has struck another lucrative vessel sale, offloading a VLGC acquired in John Fredriksen&#8217;s Avance Gas fleet deal less than two years ago for well over $100m. The New York- and Oslo-listed gas carrier giant has agreed to sell the 2015-built, 83,134 cu m BW Mistral, wit",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 3,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/BW-Mistral-Geir-Vinnes-Marine-Traffic.jpg",
       "en": {
         "headline": "BW LPG scores another lucrative Avance VLGC flip",
@@ -278,7 +414,7 @@
       "summary": "Hong Kong-based dry bulk owner Cetus Maritime has successfully placed a NOK1.89bn ($200m) share offering, including an over-allotment, clearing a major hurdle ahead of its planned Oslo stock market debut next week. The Mark Young-led company said it had conditionally allocated 10",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Cetus-Humpback-Cetus-Maritime.jpg",
       "en": {
         "headline": "Cetus seals $200m share placement ahead of Oslo debut",
@@ -295,7 +431,7 @@
       "summary": "Britain has slapped fresh sanctions on 11 ships linked to Russian energy exports, targeting five LNG carriers, five oil tankers and a floating storage unit in its latest effort to disrupt Moscow&#8217;s seaborne oil and gas trade. The measures also cover nine companies, including",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Melicertes-LNG-carrier-Afrelino-Christian-Mantiri-Marine-Traffic.jpg",
       "en": {
         "headline": "UK blacklists 11 ships in fresh Russia sanctions sweep",
@@ -312,7 +448,7 @@
       "summary": "German offshore wind services specialist Deutsche Windtechnik has secured a five-year operations and maintenance contract covering two offshore wind farms in the UK. The agreement, awarded by asset manager XceCo, covers the Lynn and Inner Dowsing wind farms off Lincolnshire, whic",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/08/UK-Government-offshore-wind.jpg",
       "en": {
         "headline": "Deutsche Windtechnik picked for UK offshore wind maintenance job",
@@ -329,7 +465,7 @@
       "summary": "Greek shipowner Pyxis Tankers has agreed to sell its oldest product tanker for $37m, cashing in on firm asset values and cutting its MR fleet from three vessels to two. The Nasdaq-listed company, led by Eddie Valentis, has struck a deal with an undisclosed third-party buyer for t",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/02/Karteria-MR2.jpg",
       "en": {
         "headline": "Pyxis cashes in on ageing MR tanker in $37m deal",
@@ -346,7 +482,7 @@
       "summary": "Greenpeace has identified 540 possible oil spills across the Gulf, Strait of Hormuz and Arabian Sea since the US-Iran war began on February 28 (see map below), with satellite imagery showing a cumulative slick footprint of approximately 20,000 sq km. Not all detections have been ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/CENTCOM-copy.jpg",
       "en": {
         "headline": "Gulf war leaves toxic legacy that could last decades",
@@ -363,148 +499,12 @@
       "summary": "One of shipping&#8217;s most consequential legal battles has concluded in London, with the Baltic Exchange and commodities trader Mercuria awaiting a High Court ruling on whether the industry&#8217;s leading VLCC freight benchmark should have continued operating after war erupted",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2019/08/High-Court-London.jpg",
       "en": {
         "headline": "Baltic Exchange and Mercuria await verdict in landmark tanker index trial",
         "summary": "One of shipping&#8217;s most consequential legal battles has concluded in London, with the Baltic Exchange and commodities trader Mercuria awaiting a High Court ruling on whether the industry&#8217;s leading VLCC freight benchmark should have continued operating after war erupted",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "New report identifies Hong Kong’s place in world shipping",
-      "link": "https://splash247.com/new-report-identifies-hong-kongs-place-in-world-shipping/",
-      "pubDate": "Fri, 13 Nov 2026 07:45:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Hong Kong Maritime Week is about to kick off. To celebrate the occasion, Splash today publishes a 48-page magazine on the city’s maritime hub credentials. A ship can be ordered at a mainland Chinese yard, owned through a leasing company in Hong Kong, insured in London, crewed thr",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 5,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Hong-Kong-from-Harbour.jpg",
-      "en": {
-        "headline": "New report identifies Hong Kong’s place in world shipping",
-        "summary": "Hong Kong Maritime Week is about to kick off. To celebrate the occasion, Splash today publishes a 48-page magazine on the city’s maritime hub credentials. A ship can be ordered at a mainland Chinese yard, owned through a leasing company in Hong Kong, insured in London, crewed thr",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Splash Wrap: Seafarers take centre stage",
-      "link": "https://splash247.com/splash-wrap-seafarers-take-centre-stage/",
-      "pubDate": "Fri, 13 Nov 2026 07:30:11 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "This week saw the launch of Splash Crew, our new title dedicated to the people who keep global shipping moving. Our opening week highlighted some uncomfortable realities. Tanker masters are earning less in real terms than they were 16 years ago, despite the extraordinary freight ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/03/Anglo-Eastern-crew.jpg",
-      "en": {
-        "headline": "Splash Wrap: Seafarers take centre stage",
-        "summary": "This week saw the launch of Splash Crew, our new title dedicated to the people who keep global shipping moving. Our opening week highlighted some uncomfortable realities. Tanker masters are earning less in real terms than they were 16 years ago, despite the extraordinary freight ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "SS United States Sits Upright on Gulf Seafloor After Historic Sinking",
-      "link": "https://gcaptain.com/ss-united-states-sits-upright-on-gulf-seafloor-after-historic-sinking/",
-      "pubDate": "Thu, 12 Nov 2026 21:29:10 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The SS United States has settled upright on the floor of the Gulf of Mexico, completing its transformation from record-breaking ocean liner to the world&#8217;s largest artificial reef. Early sonar...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/SS-United-States-sinking-800x533.jpg",
-      "en": {
-        "headline": "SS United States Sits Upright on Gulf Seafloor After Historic Sinking",
-        "summary": "The SS United States has settled upright on the floor of the Gulf of Mexico, completing its transformation from record-breaking ocean liner to the world&#8217;s largest artificial reef. Early sonar...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Port of Los Angeles Sets October Cargo Record as Strike Threat and Rail Delays Loom",
-      "link": "https://gcaptain.com/port-of-los-angeles-sets-october-cargo-record-as-strike-threat-and-rail-delays-loom/",
-      "pubDate": "Thu, 12 Nov 2026 19:58:00 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "By Lori-Ann LaRocco The Port of Los Angeles handled a record 1,026,872 twenty-foot equivalent units (TEUs) in October, marking its second-busiest month ever and extending the strongest five-month cargo run...",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/05/port-of-los-angeles-800x532.jpeg",
-      "en": {
-        "headline": "Port of Los Angeles Sets October Cargo Record as Strike Threat and Rail Delays Loom",
-        "summary": "By Lori-Ann LaRocco The Port of Los Angeles handled a record 1,026,872 twenty-foot equivalent units (TEUs) in October, marking its second-busiest month ever and extending the strongest five-month cargo run...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Saronic Awards $100 Million-Plus Contract for World’s Largest Shiplift at Texas Shipyard",
-      "link": "https://gcaptain.com/saronic-awards-100-million-plus-contract-for-worlds-largest-shiplift-at-texas-shipyard/",
-      "pubDate": "Thu, 12 Nov 2026 19:44:23 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Saronic has awarded a contract worth more than $100 million to Norway&#8217;s Syncrolift to design and supply what the companies say will be the world&#8217;s largest shiplift at its planned...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/Port_Alpha-2.jpg",
-      "en": {
-        "headline": "Saronic Awards $100 Million-Plus Contract for World’s Largest Shiplift at Texas Shipyard",
-        "summary": "Saronic has awarded a contract worth more than $100 million to Norway&#8217;s Syncrolift to design and supply what the companies say will be the world&#8217;s largest shiplift at its planned...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Tanker Ablaze Off UAE as More Attacks Rattle Gulf Shipping",
-      "link": "https://gcaptain.com/tanker-ablaze-off-uae-as-more-attacks-rattle-gulf-shipping/",
-      "pubDate": "Thu, 12 Nov 2026 18:20:34 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A projectile struck the engine room of the Liberia-flagged crude oil tanker Dominica Prosperity off the United Arab Emirates on Wednesday, forcing the evacuation of all 22 crew members as...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
-      "en": {
-        "headline": "Tanker Ablaze Off UAE as More Attacks Rattle Gulf Shipping",
-        "summary": "A projectile struck the engine room of the Liberia-flagged crude oil tanker Dominica Prosperity off the United Arab Emirates on Wednesday, forcing the evacuation of all 22 crew members as...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Wind-Powered Cargo Ship Neoliner Origin Cuts Fuel Consumption 70% in First Year",
-      "link": "https://gcaptain.com/wind-powered-cargo-ship-neoliner-origin-cuts-fuel-consumption-70-in-first-year/",
-      "pubDate": "Thu, 12 Nov 2026 17:23:36 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "French shipping company Neoline says its wind-powered cargo vessel Neoliner Origin has delivered fuel savings of up to 70% during its first year of commercial service, offering an early test...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/aj-neoline-selection-54-1-scaled.jpg-800x600.jpeg",
-      "en": {
-        "headline": "Wind-Powered Cargo Ship Neoliner Origin Cuts Fuel Consumption 70% in First Year",
-        "summary": "French shipping company Neoline says its wind-powered cargo vessel Neoliner Origin has delivered fuel savings of up to 70% during its first year of commercial service, offering an early test...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Finland Says it Detects Strike on Russian Warship in Baltic Sea",
-      "link": "https://gcaptain.com/finland-says-it-detects-strike-on-russian-warship-in-baltic-sea/",
-      "pubDate": "Thu, 12 Nov 2026 17:14:34 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Finland's military said on Thursday its forces had detected \"a strike\" on a Russian warship in the Baltic Sea a day earlier, but that the security situation in the area remained stable.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-03T104543Z_2069135414_RC2AMLASFO0Q_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-WARSHIP-800x533.jpg",
-      "en": {
-        "headline": "Finland Says it Detects Strike on Russian Warship in Baltic Sea",
-        "summary": "Finland's military said on Thursday its forces had detected \"a strike\" on a Russian warship in the Baltic Sea a day earlier, but that the security situation in the area remained stable.",
-        "source": "gCaptain"
       }
     }
   ]
