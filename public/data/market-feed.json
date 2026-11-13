@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-12T22:59:57.109Z",
+    "generatedAt": "2026-11-13T04:14:37.043Z",
     "benchmarkAsOf": "2026-11-12",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 814.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-11T17:00:00.000Z",
+        "priceUsdMt": 822,
+        "deltaPct": 0.92,
+        "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1183,
-        "deltaPct": 0,
-        "asOf": "2026-11-11T17:00:00.000Z",
+        "priceUsdMt": 1170,
+        "deltaPct": -1.1,
+        "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 675,
-        "deltaPct": 0,
-        "asOf": "2026-11-11T17:00:00.000Z",
+        "priceUsdMt": 668.5,
+        "deltaPct": -0.96,
+        "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 710,
-        "deltaPct": 0,
-        "asOf": "2026-11-11T17:00:00.000Z",
+        "priceUsdMt": 717.5,
+        "deltaPct": 1.06,
+        "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1254,
-        "deltaPct": 0,
-        "asOf": "2026-11-11T17:00:00.000Z",
+        "priceUsdMt": 1240.5,
+        "deltaPct": -1.08,
+        "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 552.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-11T17:00:00.000Z",
+        "priceUsdMt": 549.5,
+        "deltaPct": -0.54,
+        "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 925,
-        "deltaPct": 0.54,
+        "deltaPct": 0,
         "asOf": "2026-11-12T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 745,
-        "deltaPct": -0.67,
+        "deltaPct": 0,
         "asOf": "2026-11-12T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 730.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-11T17:00:00.000Z",
+        "priceUsdMt": 739,
+        "deltaPct": 1.16,
+        "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1261.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-11T17:00:00.000Z",
+        "priceUsdMt": 1267.5,
+        "deltaPct": 0.48,
+        "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 494.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-11T17:00:00.000Z",
+        "priceUsdMt": 502.5,
+        "deltaPct": 1.62,
+        "asOf": "2026-11-12T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 3020,
-      "deltaPct": 2.06,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-12T16:49:32.120Z"
     },
     "capesizeTc": {
       "value": 4836,
-      "deltaPct": 2.89,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-12T16:49:32.131Z"
     },
     "panamaxTc": {
       "value": 2117,
-      "deltaPct": 0.67,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-12T16:49:32.139Z"
@@ -236,6 +236,40 @@
   },
   "news": [
     {
+      "title": "Maersk&#8217;s cyber breach is a warning for every secondhand ship sale",
+      "link": "https://splash247.com/maersks-cyber-breach-is-a-warning-for-every-secondhand-ship-sale/",
+      "pubDate": "Fri, 13 Nov 2026 04:12:55 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "The door was a system that came with an acquisition. Every owner who buys a secondhand vessel takes the same risk on board, and few check for it at delivery. By Argyris Zafeiropoulos from Athens-based Resilience &#38; Compliance Advisory. On November 11 Maersk confirmed that atta",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/07/Maersk-Line.jpg",
+      "en": {
+        "headline": "Maersk&#8217;s cyber breach is a warning for every secondhand ship sale",
+        "summary": "The door was a system that came with an acquisition. Every owner who buys a secondhand vessel takes the same risk on board, and few check for it at delivery. By Argyris Zafeiropoulos from Athens-based Resilience &#38; Compliance Advisory. On November 11 Maersk confirmed that atta",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "New report identifies Hong Kong’s place in world shipping",
+      "link": "https://splash247.com/new-report-identifies-hong-kongs-place-in-world-shipping/",
+      "pubDate": "Fri, 13 Nov 2026 03:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Hong Kong Maritime Week is about to kick off. To celebrate the occasion, Splash today publishes a 48-page magazine on the city’s maritime hub credentials. A ship can be ordered at a mainland Chinese yard, owned through a leasing company in Hong Kong, insured in London, crewed thr",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Hong-Kong-from-Harbour.jpg",
+      "en": {
+        "headline": "New report identifies Hong Kong’s place in world shipping",
+        "summary": "Hong Kong Maritime Week is about to kick off. To celebrate the occasion, Splash today publishes a 48-page magazine on the city’s maritime hub credentials. A ship can be ordered at a mainland Chinese yard, owned through a leasing company in Hong Kong, insured in London, crewed thr",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "SS United States Sits Upright on Gulf Seafloor After Historic Sinking",
       "link": "https://gcaptain.com/ss-united-states-sits-upright-on-gulf-seafloor-after-historic-sinking/",
       "pubDate": "Thu, 12 Nov 2026 21:29:10 +0000",
@@ -244,29 +278,12 @@
       "summary": "The SS United States has settled upright on the floor of the Gulf of Mexico, completing its transformation from record-breaking ocean liner to the world&#8217;s largest artificial reef. Early sonar...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 6,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/SS-United-States-sinking-800x533.jpg",
       "en": {
         "headline": "SS United States Sits Upright on Gulf Seafloor After Historic Sinking",
         "summary": "The SS United States has settled upright on the floor of the Gulf of Mexico, completing its transformation from record-breaking ocean liner to the world&#8217;s largest artificial reef. Early sonar...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "New report identifies Hong Kong’s place in world shipping",
-      "link": "https://splash247.com/new-report-identifies-hong-kongs-place-in-world-shipping/",
-      "pubDate": "Thu, 12 Nov 2026 20:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Hong Kong Maritime Week is about to kick off. To celebrate the occasion, Splash today publishes a 48-page magazine on the city’s maritime hub credentials. A ship can be ordered at a mainland Chinese yard, owned through a leasing company in Hong Kong, insured in London, crewed thr",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 2,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Hong-Kong-from-Harbour-1.jpg",
-      "en": {
-        "headline": "New report identifies Hong Kong’s place in world shipping",
-        "summary": "Hong Kong Maritime Week is about to kick off. To celebrate the occasion, Splash today publishes a 48-page magazine on the city’s maritime hub credentials. A ship can be ordered at a mainland Chinese yard, owned through a leasing company in Hong Kong, insured in London, crewed thr",
-        "source": "Splash247"
       }
     },
     {
@@ -278,7 +295,7 @@
       "summary": "By Lori-Ann LaRocco The Port of Los Angeles handled a record 1,026,872 twenty-foot equivalent units (TEUs) in October, marking its second-busiest month ever and extending the strongest five-month cargo run...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/05/port-of-los-angeles-800x532.jpeg",
       "en": {
         "headline": "Port of Los Angeles Sets October Cargo Record as Strike Threat and Rail Delays Loom",
@@ -295,7 +312,7 @@
       "summary": "Saronic has awarded a contract worth more than $100 million to Norway&#8217;s Syncrolift to design and supply what the companies say will be the world&#8217;s largest shiplift at its planned...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 8,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/Port_Alpha-2.jpg",
       "en": {
         "headline": "Saronic Awards $100 Million-Plus Contract for World’s Largest Shiplift at Texas Shipyard",
@@ -312,7 +329,7 @@
       "summary": "Greek capesize specialist Seanergy Maritime has added four more vessels worth $264m to its fleet investment programme, taking its total spending commitments to $855m. The Nasdaq-listed owner, led by Stamatis Tsantanis, disclosed the latest acquisitions in its third-quarter update",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/05/Stamatis-Tsantanis-Seanergy-United.jpg",
       "en": {
         "headline": "Seanergy lines up four more bulkers in $855m fleet push",
@@ -329,7 +346,7 @@
       "summary": "A projectile struck the engine room of the Liberia-flagged crude oil tanker Dominica Prosperity off the United Arab Emirates on Wednesday, forcing the evacuation of all 22 crew members as...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 9,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
       "en": {
         "headline": "Tanker Ablaze Off UAE as More Attacks Rattle Gulf Shipping",
@@ -346,7 +363,7 @@
       "summary": "French shipping company Neoline says its wind-powered cargo vessel Neoliner Origin has delivered fuel savings of up to 70% during its first year of commercial service, offering an early test...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/aj-neoline-selection-54-1-scaled.jpg-800x600.jpeg",
       "en": {
         "headline": "Wind-Powered Cargo Ship Neoliner Origin Cuts Fuel Consumption 70% in First Year",
@@ -363,7 +380,7 @@
       "summary": "Finland's military said on Thursday its forces had detected \"a strike\" on a Russian warship in the Baltic Sea a day earlier, but that the security situation in the area remained stable.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-03T104543Z_2069135414_RC2AMLASFO0Q_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-WARSHIP-800x533.jpg",
       "en": {
         "headline": "Finland Says it Detects Strike on Russian Warship in Baltic Sea",
@@ -380,7 +397,7 @@
       "summary": "Agreement combines manufacturing data and technical review to support component qualification ABS and Radian Forge have signed a joint development project (JDP) to evaluate the use of digital manufacturing data...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/http___cdn.prgloo-2.jpg",
       "en": {
         "headline": "ABS and Radian Forge Collaborate on Digital Qualification for Additive Manufacturing",
@@ -397,7 +414,7 @@
       "summary": "Singapore has retained its position as the world&#8217;s leading maritime hub, while Shanghai has climbed to second place and Asia now accounts for three of the world&#8217;s five highest-ranked maritime...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 12,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/10/shutterstock_1025251606.jpg",
       "en": {
         "headline": "Singapore Retains Crown as World’s Leading Maritime Hub",
@@ -414,7 +431,7 @@
       "summary": "The legendary ocean liner, which still holds the transatlantic speed record, took hours to sink off Florida&#8217;s Gulf Coast, ending a remarkable chapter in American maritime history. The SS United...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-11T205020Z_1308217209_RC2PLOAPVCAG_RTRMADP_3_USA-SHIP-SINKING-800x533.jpg",
       "en": {
         "headline": "Farewell to America&#8217;s Flagship: SS United States Sinks After 74 Years",
@@ -431,7 +448,7 @@
       "summary": "Ethanol could emerge as an alternative marine fuel for the growing fleet of methanol-capable ships, with existing engines and bunkering infrastructure requiring only limited modifications, according to a new industry study. The report, Marine Ethanol: Unlocking the US Opportunity",
       "tag": "Bunker",
       "tagClass": "",
-      "hoursAgo": 10,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/WinGD-ethanol-Vale-VLOC-1.jpg",
       "en": {
         "headline": "US ethanol industry eyes growing marine fuel market",
@@ -448,7 +465,7 @@
       "summary": "Chinese shipbuilder Rainbow Offshore Engineering (ROC), part of Shenzhen-listed Jiangsu Rainbow Heavy Industries, has secured a contract to build an anchor-handling tug supply (AHTS) vessel for an undisclosed South American owner. The vessel will measure 71.95 metres long and 17.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 10,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Rainbow-vessel.jpg",
       "en": {
         "headline": "Chinese shipbuilder wins AHTS order from South American owner",
@@ -465,7 +482,7 @@
       "summary": "Nigerian offshore services contractor Marine Platforms is moving towards full ownership of the pipelay and heavy-lift construction vessel Zhong Fei Huan Qiu 1200, formerly known as Global 1200. The company acquired a 51% interest in the vessel in 2025, with Chinese offshore engin",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Global-1200-Ulstein.jpg",
       "en": {
         "headline": "Marine Platforms plans full takeover of former Technip pipelay vessel",
@@ -482,28 +499,11 @@
       "summary": "The European Union paid an estimated €8.7 billion for liquefied natural gas from Russia’s Yamal project in the first 10 months of 2026, exceeding the estimated total for all of 2025, as the countdown to a ban on Russian LNG imports enters its final weeks.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/11/ARc7-LNG-Carrier-STS-800x533.jpg",
       "en": {
         "headline": "EU’s Russian Arctic LNG Bill Hits €8.7 Billion as Yamal Faces Shipping Challenge Come January",
         "summary": "The European Union paid an estimated €8.7 billion for liquefied natural gas from Russia’s Yamal project in the first 10 months of 2026, exceeding the estimated total for all of 2025, as the countdown to a ban on Russian LNG imports enters its final weeks.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Oman Monitors Handling of Oil Tanker Run Aground Off Its Coast",
-      "link": "https://gcaptain.com/oman-monitors-handling-of-oil-tanker-run-aground-off-its-coast/",
-      "pubDate": "Thu, 12 Nov 2026 10:08:00 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Oman's National Emergency Management Committee discussed on Thursday the latest developments in handling the grounding of an oil tanker off Al Qibliyah Island and the progress of operations to deal with its cargo.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Oman Monitors Handling of Oil Tanker Run Aground Off Its Coast",
-        "summary": "Oman's National Emergency Management Committee discussed on Thursday the latest developments in handling the grounding of an oil tanker off Al Qibliyah Island and the progress of operations to deal with its cargo.",
         "source": "gCaptain"
       }
     }
