@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-13T23:02:45.792Z",
+    "generatedAt": "2026-11-14T04:11:12.964Z",
     "benchmarkAsOf": "2026-11-13",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 822,
-        "deltaPct": 0,
-        "asOf": "2026-11-12T17:00:00.000Z",
+        "priceUsdMt": 882.5,
+        "deltaPct": 7.36,
+        "asOf": "2026-11-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1170,
-        "deltaPct": 0,
-        "asOf": "2026-11-12T17:00:00.000Z",
+        "priceUsdMt": 1204,
+        "deltaPct": 2.91,
+        "asOf": "2026-11-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 668.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-12T17:00:00.000Z",
+        "priceUsdMt": 675,
+        "deltaPct": 0.97,
+        "asOf": "2026-11-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 717.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-12T17:00:00.000Z",
+        "priceUsdMt": 743.5,
+        "deltaPct": 3.62,
+        "asOf": "2026-11-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1240.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-12T17:00:00.000Z",
+        "priceUsdMt": 1281,
+        "deltaPct": 3.26,
+        "asOf": "2026-11-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 549.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-12T17:00:00.000Z",
+        "priceUsdMt": 575,
+        "deltaPct": 4.64,
+        "asOf": "2026-11-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 930,
-        "deltaPct": 0.54,
+        "deltaPct": 0,
         "asOf": "2026-11-13T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 735,
-        "deltaPct": -1.34,
+        "deltaPct": 0,
         "asOf": "2026-11-13T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 739,
-        "deltaPct": 0,
-        "asOf": "2026-11-12T17:00:00.000Z",
+        "priceUsdMt": 737,
+        "deltaPct": -0.27,
+        "asOf": "2026-11-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1267.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-12T17:00:00.000Z",
+        "priceUsdMt": 1265,
+        "deltaPct": -0.2,
+        "asOf": "2026-11-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 502.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-12T17:00:00.000Z",
+        "priceUsdMt": 499.5,
+        "deltaPct": -0.6,
+        "asOf": "2026-11-13T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 2980,
-      "deltaPct": -1.32,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-13T16:15:22.009Z"
     },
     "capesizeTc": {
       "value": 4719,
-      "deltaPct": -2.42,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-13T16:15:22.035Z"
     },
     "panamaxTc": {
       "value": 2118,
-      "deltaPct": 0.05,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-13T16:15:22.047Z"
@@ -236,19 +236,53 @@
   },
   "news": [
     {
+      "title": "&#8216;Miracle on the Mississippi&#8217;: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans",
+      "link": "https://gcaptain.com/miracle-on-the-mississippi-all-accounted-for-after-tanker-capsizes-cruise-ship-in-new-orleans/",
+      "pubDate": "Sat, 14 Nov 2026 02:34:17 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "All passengers and crew aboard an American Cruise Lines riverboat survived after a Marshall Islands-flagged asphalt tanker struck the docked paddle-wheeler on the Mississippi River in New Orleans on Friday,...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-14T002751Z_196585341_RC2ANOA4GX4F_RTRMADP_3_USA-LOUISIANA-SHIP-COLLISION-800x533.jpg",
+      "en": {
+        "headline": "&#8216;Miracle on the Mississippi&#8217;: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans",
+        "summary": "All passengers and crew aboard an American Cruise Lines riverboat survived after a Marshall Islands-flagged asphalt tanker struck the docked paddle-wheeler on the Mississippi River in New Orleans on Friday,...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Tanker sinks river cruise ship in New Orleans collision",
+      "link": "https://splash247.com/tanker-sinks-river-cruise-ship-in-new-orleans-collision/",
+      "pubDate": "Sat, 14 Nov 2026 00:58:11 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The 17,764 dwt bitumen tanker Atlantic Asphalt has struck and sunk a river cruise ship on the Mississippi River in New Orleans, leaving 32 people hospitalised and prompting a major emergency response. The collision occurred at approximately 12.30 pm local time on November 13, whe",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Retired-District-Chief-Chris-Mickal-New-Orleans-Fire-Department.jpeg",
+      "en": {
+        "headline": "Tanker sinks river cruise ship in New Orleans collision",
+        "summary": "The 17,764 dwt bitumen tanker Atlantic Asphalt has struck and sunk a river cruise ship on the Mississippi River in New Orleans, leaving 32 people hospitalised and prompting a major emergency response. The collision occurred at approximately 12.30 pm local time on November 13, whe",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Tanker Strikes Docked Paddlewheeler on Mississippi River, Causing It to Capsize",
       "link": "https://gcaptain.com/tanker-strikes-docked-paddlewheeler-on-mississippi-river-causing-it-to-capsize/",
       "pubDate": "Fri, 13 Nov 2026 20:45:59 +0000",
       "source": "gCaptain",
       "category": "Trade",
-      "summary": "Update: Local officials say there are no passengers unaccounted for. More than 30 hospitalized, but none in critical condition. A Marshall Islands-flagged asphalt tanker struck the docked American Cruise Lines...",
+      "summary": "Update: ‘Miracle on the Mississippi’: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans A Marshall Islands-flagged asphalt tanker struck the docked American Cruise Lines riverboat&#160;American Heritage&#160;on the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 7,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/American-Heritage-capsize-800x450.jpeg",
       "en": {
         "headline": "Tanker Strikes Docked Paddlewheeler on Mississippi River, Causing It to Capsize",
-        "summary": "Update: Local officials say there are no passengers unaccounted for. More than 30 hospitalized, but none in critical condition. A Marshall Islands-flagged asphalt tanker struck the docked American Cruise Lines...",
+        "summary": "Update: ‘Miracle on the Mississippi’: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans A Marshall Islands-flagged asphalt tanker struck the docked American Cruise Lines riverboat&#160;American Heritage&#160;on the...",
         "source": "gCaptain"
       }
     },
@@ -261,7 +295,7 @@
       "summary": "Global oil markets are beginning to recover from the Iran war, but shipping through the Strait of Hormuz remains severely disrupted, with vessel traffic roughly 65% below pre-conflict levels and...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-20T060010Z_1765538580_RC2L3LAI6608_RTRMADP_3_OIL-MAJORS-RESULTS-PREVIEW-800x533.jpg",
       "en": {
         "headline": "Gulf Oil Exports Recover as Hormuz Shipping Struggles",
@@ -278,7 +312,7 @@
       "summary": "The world oil market will return to a surplus in the fourth quarter of this year, the International Energy Agency said on Friday, as Middle East exports recover faster than global oil demand despite continued attacks on shipping.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-04-17T153425Z_1797731019_RC23RKAOVSFD_RTRMADP_3_IRAQ-BASRA-OIL-800x450.jpg",
       "en": {
         "headline": "World Oil Market is Returning to Surplus as Gulf Exports Recover",
@@ -295,7 +329,7 @@
       "summary": "French shipping giant CMA CGM more than tripled its third-quarter net profit as higher container freight rates and strong cargo volumes boosted earnings amid ongoing disruptions to global shipping routes...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/CMA-CGM-GRAND-PALAIS-2026-2-1.jpg",
       "en": {
         "headline": "CMA CGM Net Profit More Than Triples to $2.32 Billion as Freight Rates Surge",
@@ -312,7 +346,7 @@
       "summary": "German container shipping giant Hapag-Lloyd reported a sharp increase in third-quarter earnings as higher freight rates more than offset rising operating costs tied to the Middle East conflict and widespread...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2016/11/Hapag-lloyd.jpg",
       "en": {
         "headline": "Hapag-Lloyd Profit Surges as Freight Rates Rise, Red Sea Services Return",
@@ -329,7 +363,7 @@
       "summary": "A Singapore-flagged bulk carrier struck the Tacony-Palmyra Bridge on the Delaware River Thursday afternoon, leaving the movable span temporarily unable to close and prompting a U.S. Coast Guard inspection of...",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Tacony-Palmyra-Bridge.jpg",
       "en": {
         "headline": "Singapore-Flagged Bulk Carrier Strikes Delaware River Bridge, Coast Guard Investigating",
@@ -346,7 +380,7 @@
       "summary": "Russia’s October revenues from crude and petroleum-product exports hit the highest since May as the ongoing Iran war bolstered oil prices, according to the International Energy Agency.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-04-03T090546Z_1602578474_RC2OHHASRTN3_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-CHILDREN-800x616.jpg",
       "en": {
         "headline": "Russia Oil Revenues Hit Five-Month High on Crude Rally, IEA Says",
@@ -363,7 +397,7 @@
       "summary": "Iran's Revolutionary Guards navy said a tanker carrying liquefied natural gas struck a naval mine and suffered an explosion in the Strait of Hormuz on Friday while using what they described was an \"unauthorized and dangerous route,\" state media reported.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-08T024954Z_1108293134_RC21RI8U7725_RTRMADP_3_IRAN-CRISIS-MISSILES-HORMUZ-800x532.jpg",
       "en": {
         "headline": "Iran Says Tanker Carrying LNG Hit Mine, Suffered Explosion in Hormuz",
@@ -377,14 +411,14 @@
       "pubDate": "Fri, 13 Nov 2026 10:07:00 +0000",
       "source": "Splash247",
       "category": "Trade",
-      "summary": "Dr Raymon Krishnan, president of Singapore’s Logistics &#38; Supply Chain Management Society, writes for Splash today, reflecting on one of this week’s most talked about stories in the mainstream press.  On Wednesday, the 990-foot ocean liner SS United States was deliberately sun",
+      "summary": "Dr Raymon Krishnan, president of Singapore’s Logistics &#38; Supply Chain Management Society, writes for Splash today, reflecting on one of this week’s most talked about stories in the mainstream press.&#160; On Wednesday, the 990-foot ocean liner SS United States was deliberatel",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/SS-United-States-780x470-1.jpeg",
       "en": {
         "headline": "From ocean liner to artificial reef: A warning for container shipping",
-        "summary": "Dr Raymon Krishnan, president of Singapore’s Logistics &#38; Supply Chain Management Society, writes for Splash today, reflecting on one of this week’s most talked about stories in the mainstream press.  On Wednesday, the 990-foot ocean liner SS United States was deliberately sun",
+        "summary": "Dr Raymon Krishnan, president of Singapore’s Logistics &#38; Supply Chain Management Society, writes for Splash today, reflecting on one of this week’s most talked about stories in the mainstream press.&#160; On Wednesday, the 990-foot ocean liner SS United States was deliberatel",
         "source": "Splash247"
       }
     },
@@ -397,7 +431,7 @@
       "summary": "BW LPG has struck another lucrative vessel sale, offloading a VLGC acquired in John Fredriksen&#8217;s Avance Gas fleet deal less than two years ago for well over $100m. The New York- and Oslo-listed gas carrier giant has agreed to sell the 2015-built, 83,134 cu m BW Mistral, wit",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 13,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/BW-Mistral-Geir-Vinnes-Marine-Traffic.jpg",
       "en": {
         "headline": "BW LPG scores another lucrative Avance VLGC flip",
@@ -414,7 +448,7 @@
       "summary": "Hong Kong-based dry bulk owner Cetus Maritime has successfully placed a NOK1.89bn ($200m) share offering, including an over-allotment, clearing a major hurdle ahead of its planned Oslo stock market debut next week. The Mark Young-led company said it had conditionally allocated 10",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Cetus-Humpback-Cetus-Maritime.jpg",
       "en": {
         "headline": "Cetus seals $200m share placement ahead of Oslo debut",
@@ -431,7 +465,7 @@
       "summary": "Britain has slapped fresh sanctions on 11 ships linked to Russian energy exports, targeting five LNG carriers, five oil tankers and a floating storage unit in its latest effort to disrupt Moscow&#8217;s seaborne oil and gas trade. The measures also cover nine companies, including",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Melicertes-LNG-carrier-Afrelino-Christian-Mantiri-Marine-Traffic.jpg",
       "en": {
         "headline": "UK blacklists 11 ships in fresh Russia sanctions sweep",
@@ -448,7 +482,7 @@
       "summary": "German offshore wind services specialist Deutsche Windtechnik has secured a five-year operations and maintenance contract covering two offshore wind farms in the UK. The agreement, awarded by asset manager XceCo, covers the Lynn and Inner Dowsing wind farms off Lincolnshire, whic",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/08/UK-Government-offshore-wind.jpg",
       "en": {
         "headline": "Deutsche Windtechnik picked for UK offshore wind maintenance job",
@@ -465,45 +499,11 @@
       "summary": "Greek shipowner Pyxis Tankers has agreed to sell its oldest product tanker for $37m, cashing in on firm asset values and cutting its MR fleet from three vessels to two. The Nasdaq-listed company, led by Eddie Valentis, has struck a deal with an undisclosed third-party buyer for t",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 18,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/02/Karteria-MR2.jpg",
       "en": {
         "headline": "Pyxis cashes in on ageing MR tanker in $37m deal",
         "summary": "Greek shipowner Pyxis Tankers has agreed to sell its oldest product tanker for $37m, cashing in on firm asset values and cutting its MR fleet from three vessels to two. The Nasdaq-listed company, led by Eddie Valentis, has struck a deal with an undisclosed third-party buyer for t",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Gulf war leaves toxic legacy that could last decades",
-      "link": "https://splash247.com/gulf-war-leaves-toxic-legacy-that-could-last-decades/",
-      "pubDate": "Fri, 13 Nov 2026 08:10:39 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Greenpeace has identified 540 possible oil spills across the Gulf, Strait of Hormuz and Arabian Sea since the US-Iran war began on February 28 (see map below), with satellite imagery showing a cumulative slick footprint of approximately 20,000 sq km. Not all detections have been ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/CENTCOM-copy.jpg",
-      "en": {
-        "headline": "Gulf war leaves toxic legacy that could last decades",
-        "summary": "Greenpeace has identified 540 possible oil spills across the Gulf, Strait of Hormuz and Arabian Sea since the US-Iran war began on February 28 (see map below), with satellite imagery showing a cumulative slick footprint of approximately 20,000 sq km. Not all detections have been ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Baltic Exchange and Mercuria await verdict in landmark tanker index trial",
-      "link": "https://splash247.com/baltic-exchange-and-mercuria-await-verdict-in-landmark-tanker-index-trial/",
-      "pubDate": "Fri, 13 Nov 2026 08:00:31 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "One of shipping&#8217;s most consequential legal battles has concluded in London, with the Baltic Exchange and commodities trader Mercuria awaiting a High Court ruling on whether the industry&#8217;s leading VLCC freight benchmark should have continued operating after war erupted",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2019/08/High-Court-London.jpg",
-      "en": {
-        "headline": "Baltic Exchange and Mercuria await verdict in landmark tanker index trial",
-        "summary": "One of shipping&#8217;s most consequential legal battles has concluded in London, with the Baltic Exchange and commodities trader Mercuria awaiting a High Court ruling on whether the industry&#8217;s leading VLCC freight benchmark should have continued operating after war erupted",
         "source": "Splash247"
       }
     }
