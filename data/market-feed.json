@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-15T03:56:46.234Z",
+    "generatedAt": "2026-11-15T13:12:11.294Z",
     "benchmarkAsOf": "2026-11-13",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -236,6 +236,23 @@
   },
   "news": [
     {
+      "title": "South Africa’s Auto Industry Threatened By Worsening Port Delays",
+      "link": "https://gcaptain.com/south-africas-auto-industry-threatened-by-worsening-port-delays/",
+      "pubDate": "Sun, 15 Nov 2026 03:48:26 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By&#160;Matthew Hill and Alexander Parker Nov 14, 2026 (Bloomberg) &#8211;Severe delays at South Africa’s biggest container terminal in the port city of Durban are threatening the nation’s auto industry, already under...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 9,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-03T112106Z_1810311205_RC2ZIFALSC4F_RTRMADP_3_USA-SAFRICA-TRADE-800x555.jpg",
+      "en": {
+        "headline": "South Africa’s Auto Industry Threatened By Worsening Port Delays",
+        "summary": "By&#160;Matthew Hill and Alexander Parker Nov 14, 2026 (Bloomberg) &#8211;Severe delays at South Africa’s biggest container terminal in the port city of Durban are threatening the nation’s auto industry, already under...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "US court orders arrest of tanker after New Orleans cruise ship collision",
       "link": "https://splash247.com/us-court-orders-arrest-of-tanker-after-new-orleans-cruise-ship-collision/",
       "pubDate": "Sun, 15 Nov 2026 01:06:11 +0000",
@@ -244,7 +261,7 @@
       "summary": "A US federal court has authorised the arrest of the tanker Atlantic Asphalt after the Port of New Orleans launched legal action seeking more than $1m in damages following the collision that sank American Cruise Lines’ American Heritage. The Board of Commissioners of the Port of N",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/American-Heritage.jpeg",
       "en": {
         "headline": "US court orders arrest of tanker after New Orleans cruise ship collision",
@@ -261,7 +278,7 @@
       "summary": "By&#160;Jennifer A. Dlouhy Nov 14, 2026 (Bloomberg) &#8211;President Donald Trump is giving energy companies and traders more time to transport oil and other commodities around the US on foreign-flagged ships,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/01/Horizon-Spirit_Port-of-Los-Angeles_1-1.jpg",
       "en": {
         "headline": "Trump To Extend Shipping Waiver For Oil, Fertilizer For 90 Days",
@@ -278,7 +295,7 @@
       "summary": "FRANKFURT, Nov 14 (Reuters) &#8211; The German government and regional state of Lower Saxony are nearing a deal that gives Geneva-based shipping group MSC the right to acquire about 80% of the shares in...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2016/02/Ovation_of_the_Seas_.jpg",
       "en": {
         "headline": "MSC Nears Deal To Buy Majority Stake In German Shipyard Meyer Werft",
@@ -295,7 +312,7 @@
       "summary": "Nov 14 (Reuters) &#8211; Iran&#8217;s navy said an oil tanker caught fire on Saturday morning after hitting a naval mine in the eastern Strait of Hormuz, Iranian state media reported. Reuters could not immediately...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-03-07T044529Z_1004479925_RC20XJAXEVAA_RTRMADP_3_IRAN-CRISIS-ENERGY-800x533.jpg",
       "en": {
         "headline": "Oil Tanker On Fire After Hitting Mine In Hormuz",
@@ -312,7 +329,7 @@
       "summary": "All passengers and crew aboard an American Cruise Lines riverboat survived after a Marshall Islands-flagged asphalt tanker struck the docked paddle-wheeler on the Mississippi River in New Orleans on Friday,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 25,
+      "hoursAgo": 34,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-14T002751Z_196585341_RC2ANOA4GX4F_RTRMADP_3_USA-LOUISIANA-SHIP-COLLISION-800x533.jpg",
       "en": {
         "headline": "&#8216;Miracle on the Mississippi&#8217;: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans",
@@ -329,7 +346,7 @@
       "summary": "The 17,764 dwt bitumen tanker Atlantic Asphalt has struck and partially sunk a river cruise ship on the Mississippi River in New Orleans, leaving 32 people hospitalised and prompting a major emergency response. The collision occurred at approximately 12.30 pm local time on Novemb",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 26,
+      "hoursAgo": 36,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Retired-District-Chief-Chris-Mickal-New-Orleans-Fire-Department.jpeg",
       "en": {
         "headline": "Tanker sinks river cruise ship in New Orleans collision",
@@ -346,7 +363,7 @@
       "summary": "Update: ‘Miracle on the Mississippi’: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans A Marshall Islands-flagged asphalt tanker struck the docked American Cruise Lines riverboat&#160;American Heritage&#160;on the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 31,
+      "hoursAgo": 40,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/American-Heritage-capsize-800x450.jpeg",
       "en": {
         "headline": "Tanker Strikes Docked Paddlewheeler on Mississippi River, Causing It to Capsize",
@@ -363,7 +380,7 @@
       "summary": "Global oil markets are beginning to recover from the Iran war, but shipping through the Strait of Hormuz remains severely disrupted, with vessel traffic roughly 65% below pre-conflict levels and...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 34,
+      "hoursAgo": 43,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-20T060010Z_1765538580_RC2L3LAI6608_RTRMADP_3_OIL-MAJORS-RESULTS-PREVIEW-800x533.jpg",
       "en": {
         "headline": "Gulf Oil Exports Recover as Hormuz Shipping Struggles",
@@ -380,7 +397,7 @@
       "summary": "The world oil market will return to a surplus in the fourth quarter of this year, the International Energy Agency said on Friday, as Middle East exports recover faster than global oil demand despite continued attacks on shipping.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 34,
+      "hoursAgo": 43,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-04-17T153425Z_1797731019_RC23RKAOVSFD_RTRMADP_3_IRAQ-BASRA-OIL-800x450.jpg",
       "en": {
         "headline": "World Oil Market is Returning to Surplus as Gulf Exports Recover",
@@ -397,7 +414,7 @@
       "summary": "French shipping giant CMA CGM more than tripled its third-quarter net profit as higher container freight rates and strong cargo volumes boosted earnings amid ongoing disruptions to global shipping routes...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 34,
+      "hoursAgo": 43,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/CMA-CGM-GRAND-PALAIS-2026-2-1.jpg",
       "en": {
         "headline": "CMA CGM Net Profit More Than Triples to $2.32 Billion as Freight Rates Surge",
@@ -414,7 +431,7 @@
       "summary": "German container shipping giant Hapag-Lloyd reported a sharp increase in third-quarter earnings as higher freight rates more than offset rising operating costs tied to the Middle East conflict and widespread...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 34,
+      "hoursAgo": 44,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2016/11/Hapag-lloyd.jpg",
       "en": {
         "headline": "Hapag-Lloyd Profit Surges as Freight Rates Rise, Red Sea Services Return",
@@ -431,8 +448,8 @@
       "summary": "A Singapore-flagged bulk carrier struck the Tacony-Palmyra Bridge on the Delaware River Thursday afternoon, leaving the movable span temporarily unable to close and prompting a U.S. Coast Guard inspection of...",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 35,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Tacony-Palmyra-Bridge.jpg",
+      "hoursAgo": 44,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Singapore-Flagged Bulk Carrier Strikes Delaware River Bridge, Coast Guard Investigating",
         "summary": "A Singapore-flagged bulk carrier struck the Tacony-Palmyra Bridge on the Delaware River Thursday afternoon, leaving the movable span temporarily unable to close and prompting a U.S. Coast Guard inspection of...",
@@ -448,28 +465,11 @@
       "summary": "Russia’s October revenues from crude and petroleum-product exports hit the highest since May as the ongoing Iran war bolstered oil prices, according to the International Energy Agency.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 37,
-      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 46,
+      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Russia Oil Revenues Hit Five-Month High on Crude Rally, IEA Says",
         "summary": "Russia’s October revenues from crude and petroleum-product exports hit the highest since May as the ongoing Iran war bolstered oil prices, according to the International Energy Agency.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Iran Says Tanker Carrying LNG Hit Mine, Suffered Explosion in Hormuz",
-      "link": "https://gcaptain.com/iran-says-tanker-carrying-lng-hit-mine-suffered-explosion-in-hormuz/",
-      "pubDate": "Fri, 13 Nov 2026 14:37:27 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Iran's Revolutionary Guards navy said a tanker carrying liquefied natural gas struck a naval mine and suffered an explosion in the Strait of Hormuz on Friday while using what they described was an \"unauthorized and dangerous route,\" state media reported.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 37,
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Iran Says Tanker Carrying LNG Hit Mine, Suffered Explosion in Hormuz",
-        "summary": "Iran's Revolutionary Guards navy said a tanker carrying liquefied natural gas struck a naval mine and suffered an explosion in the Strait of Hormuz on Friday while using what they described was an \"unauthorized and dangerous route,\" state media reported.",
         "source": "gCaptain"
       }
     },
@@ -482,7 +482,7 @@
       "summary": "Dr Raymon Krishnan, president of Singapore’s Logistics &#38; Supply Chain Management Society, writes for Splash today, reflecting on one of this week’s most talked about stories in the mainstream press.&#160; On Wednesday, the 990-foot ocean liner SS United States was deliberatel",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 41,
+      "hoursAgo": 51,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/SS-United-States-780x470-1.jpeg",
       "en": {
         "headline": "From ocean liner to artificial reef: A warning for container shipping",
@@ -499,7 +499,7 @@
       "summary": "BW LPG has struck another lucrative vessel sale, offloading a VLGC acquired in John Fredriksen&#8217;s Avance Gas fleet deal less than two years ago for well over $100m. The New York- and Oslo-listed gas carrier giant has agreed to sell the 2015-built, 83,134 cu m BW Mistral, wit",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 42,
+      "hoursAgo": 51,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/BW-Mistral-Geir-Vinnes-Marine-Traffic.jpg",
       "en": {
         "headline": "BW LPG scores another lucrative Avance VLGC flip",
