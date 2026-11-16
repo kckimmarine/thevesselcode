@@ -1,10 +1,11 @@
 {
   "meta": {
-    "generatedAt": "2026-11-16T03:56:50.716Z",
+    "generatedAt": "2026-11-16T14:22:05.604Z",
     "benchmarkAsOf": "2026-11-13",
     "fetchStatus": "partial",
     "rssErrors": [
-      "Maritime Executive: HTTP 404"
+      "Maritime Executive: HTTP 404",
+      "Splash247: HTTP 415"
     ],
     "marketErrors": [
       "MGO_05S_KRPUS_USD: HTTP 400",
@@ -244,7 +245,7 @@
       "summary": "By Siddharth Cavale Nov 15 (Reuters) &#8211; The asphalt tanker vessel that struck a docked paddlewheel cruise boat in the Mississippi River at New Orleans last week experienced a steering problem in which its...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 13,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-14T013234Z_1155421890_RC2ANOA1DM53_RTRMADP_3_USA-LOUISIANA-SHIP-COLLISION-800x533.jpg",
       "en": {
         "headline": "Steering Problem On Tanker Caused Collision In New Orleans",
@@ -261,80 +262,12 @@
       "summary": "By&#160;Laura Curtis Nov 15, 2026, (Bloomberg)&#8211;Import containers moving through the US’s busiest trade hub passed the one million mark for the second time in October, as some firms bring in...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-05T172214Z_605505849_RC2U1KA4QMP3_RTRMADP_3_USA-SEAPORTS-LABOR-800x534.jpg",
       "en": {
         "headline": "Imported Goods Keep Surging Through Southern California Ports",
         "summary": "By&#160;Laura Curtis Nov 15, 2026, (Bloomberg)&#8211;Import containers moving through the US’s busiest trade hub passed the one million mark for the second time in October, as some firms bring in...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Hong Kong’s five-year clock",
-      "link": "https://splash247.com/hong-kongs-five-year-clock/",
-      "pubDate": "Sun, 15 Nov 2026 20:23:00 +0000",
-      "source": "Splash247",
-      "category": "Bunker",
-      "summary": "From tax reform and green bunkering to ship registration and a new partnership with Shanghai, the government in Hong Kong is pursuing an increasingly ambitious maritime strategy. The challenge is turning policy commitments into lasting commercial activity. The latest instalment f",
-      "tag": "Bunker",
-      "tagClass": "",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/01/Hong-Kong-Harbour-25.jpeg",
-      "en": {
-        "headline": "Hong Kong’s five-year clock",
-        "summary": "From tax reform and green bunkering to ship registration and a new partnership with Shanghai, the government in Hong Kong is pursuing an increasingly ambitious maritime strategy. The challenge is turning policy commitments into lasting commercial activity. The latest instalment f",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "US extends Jones Act waiver into February",
-      "link": "https://splash247.com/us-extends-jones-act-waiver-into-february/",
-      "pubDate": "Sun, 15 Nov 2026 20:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Washington has extended its Jones Act waiver for another 90 days, allowing foreign-flagged vessels to continue competing for selected domestic cargo movements between US ports into February next year. The Department of Homeland Security approved the third extension of the waiver ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Donald-Trump-signing.jpg",
-      "en": {
-        "headline": "US extends Jones Act waiver into February",
-        "summary": "Washington has extended its Jones Act waiver for another 90 days, allowing foreign-flagged vessels to continue competing for selected domestic cargo movements between US ports into February next year. The Department of Homeland Security approved the third extension of the waiver ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Naftomar returns to South Korea for LPG quartet",
-      "link": "https://splash247.com/naftomar-returns-to-south-korea-for-lpg-quartet/",
-      "pubDate": "Sun, 15 Nov 2026 19:44:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Greek gas carrier specialist Naftomar has been linked to an order for four 9,000 cu m semi-refrigerated LPG carriers at HD Hyundai&#8217;s medium-sized shipbuilding operation in South Korea .Shipbroking sources have identified the Athens-based owner behind the quartet, with deliv",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Gaz-Venture-Naftomar.jpg",
-      "en": {
-        "headline": "Naftomar returns to South Korea for LPG quartet",
-        "summary": "Greek gas carrier specialist Naftomar has been linked to an order for four 9,000 cu m semi-refrigerated LPG carriers at HD Hyundai&#8217;s medium-sized shipbuilding operation in South Korea .Shipbroking sources have identified the Athens-based owner behind the quartet, with deliv",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "India eases flag rules in push for more tonnage",
-      "link": "https://splash247.com/india-eases-flag-rules-in-push-for-more-tonnage/",
-      "pubDate": "Sun, 15 Nov 2026 19:33:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "India has relaxed its ship registration rules, allowing vessels with majority Indian ownership to qualify for the national flag in a move that opens the door to foreign minority investment. The Ministry of Ports, Shipping and Waterways has set the ownership threshold at more than",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/04/CMA-CGM-India.jpg",
-      "en": {
-        "headline": "India eases flag rules in push for more tonnage",
-        "summary": "India has relaxed its ship registration rules, allowing vessels with majority Indian ownership to qualify for the national flag in a move that opens the door to foreign minority investment. The Ministry of Ports, Shipping and Waterways has set the ownership threshold at more than",
-        "source": "Splash247"
       }
     },
     {
@@ -346,7 +279,7 @@
       "summary": "BUCHAREST, Nov 15 (Reuters) &#8211; Drones have struck three commercial ships in the Black Sea near Romania&#8217;s Sulina canal, Prime Minister Luca Niculescu said on Sunday, adding that his armed forces had scrambled fighter jets...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 10,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-03T060007Z_119389690_RC25XNA0L7LG_RTRMADP_3_UKRAINE-CRISIS-NATO-BLACKSEA.jpg",
       "en": {
         "headline": "Three Ships Struck By Drones In Black Sea Near Romanian Shipping Canal",
@@ -363,7 +296,7 @@
       "summary": "The captain and crew of the American Heritage, along with tugboat operators and first responders who rushed to the scene, are being hailed as heroes following Friday&#8217;s dramatic collision on...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/American-Heritage-capsize-800x450.jpeg",
       "en": {
         "headline": "American Heritage Captain, Crew and Tug Operators Hailed as Heroes After Mississippi River Capsizing",
@@ -380,29 +313,12 @@
       "summary": "By&#160;Matthew Hill and Alexander Parker Nov 14, 2026 (Bloomberg) &#8211;Severe delays at South Africa’s biggest container terminal in the port city of Durban are threatening the nation’s auto industry, already under...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 24,
+      "hoursAgo": 34,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-03T112106Z_1810311205_RC2ZIFALSC4F_RTRMADP_3_USA-SAFRICA-TRADE-800x555.jpg",
       "en": {
         "headline": "South Africa’s Auto Industry Threatened By Worsening Port Delays",
         "summary": "By&#160;Matthew Hill and Alexander Parker Nov 14, 2026 (Bloomberg) &#8211;Severe delays at South Africa’s biggest container terminal in the port city of Durban are threatening the nation’s auto industry, already under...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "US court orders arrest of tanker after New Orleans cruise ship collision",
-      "link": "https://splash247.com/us-court-orders-arrest-of-tanker-after-new-orleans-cruise-ship-collision/",
-      "pubDate": "Sun, 15 Nov 2026 01:06:11 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "A US federal court has authorised the arrest of the tanker Atlantic Asphalt after the Port of New Orleans launched legal action seeking more than $1m in damages following the collision that sank American Cruise Lines’ American Heritage. The Board of Commissioners of the Port of N",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 26,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/American-Heritage.jpeg",
-      "en": {
-        "headline": "US court orders arrest of tanker after New Orleans cruise ship collision",
-        "summary": "A US federal court has authorised the arrest of the tanker Atlantic Asphalt after the Port of New Orleans launched legal action seeking more than $1m in damages following the collision that sank American Cruise Lines’ American Heritage. The Board of Commissioners of the Port of N",
-        "source": "Splash247"
       }
     },
     {
@@ -414,7 +330,7 @@
       "summary": "By&#160;Jennifer A. Dlouhy Nov 14, 2026 (Bloomberg) &#8211;President Donald Trump is giving energy companies and traders more time to transport oil and other commodities around the US on foreign-flagged ships,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 29,
+      "hoursAgo": 40,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/01/Horizon-Spirit_Port-of-Los-Angeles_1-1.jpg",
       "en": {
         "headline": "Trump To Extend Shipping Waiver For Oil, Fertilizer For 90 Days",
@@ -431,7 +347,7 @@
       "summary": "FRANKFURT, Nov 14 (Reuters) &#8211; The German government and regional state of Lower Saxony are nearing a deal that gives Geneva-based shipping group MSC the right to acquire about 80% of the shares in...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 33,
+      "hoursAgo": 44,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2016/02/Ovation_of_the_Seas_.jpg",
       "en": {
         "headline": "MSC Nears Deal To Buy Majority Stake In German Shipyard Meyer Werft",
@@ -448,7 +364,7 @@
       "summary": "Nov 14 (Reuters) &#8211; Iran&#8217;s navy said an oil tanker caught fire on Saturday morning after hitting a naval mine in the eastern Strait of Hormuz, Iranian state media reported. Reuters could not immediately...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 37,
+      "hoursAgo": 47,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-03-07T044529Z_1004479925_RC20XJAXEVAA_RTRMADP_3_IRAN-CRISIS-ENERGY-800x533.jpg",
       "en": {
         "headline": "Oil Tanker On Fire After Hitting Mine In Hormuz",
@@ -465,29 +381,12 @@
       "summary": "All passengers and crew aboard an American Cruise Lines riverboat survived after a Marshall Islands-flagged asphalt tanker struck the docked paddle-wheeler on the Mississippi River in New Orleans on Friday,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 49,
+      "hoursAgo": 59,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-14T002751Z_196585341_RC2ANOA4GX4F_RTRMADP_3_USA-LOUISIANA-SHIP-COLLISION-800x533.jpg",
       "en": {
         "headline": "&#8216;Miracle on the Mississippi&#8217;: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans",
         "summary": "All passengers and crew aboard an American Cruise Lines riverboat survived after a Marshall Islands-flagged asphalt tanker struck the docked paddle-wheeler on the Mississippi River in New Orleans on Friday,...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Tanker sinks river cruise ship in New Orleans collision",
-      "link": "https://splash247.com/tanker-sinks-river-cruise-ship-in-new-orleans-collision/",
-      "pubDate": "Sat, 14 Nov 2026 00:58:11 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The 17,764 dwt bitumen tanker Atlantic Asphalt has struck and partially sunk a river cruise ship on the Mississippi River in New Orleans, leaving 32 people hospitalised and prompting a major emergency response. The collision occurred at approximately 12.30 pm local time on Novemb",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 50,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Retired-District-Chief-Chris-Mickal-New-Orleans-Fire-Department.jpeg",
-      "en": {
-        "headline": "Tanker sinks river cruise ship in New Orleans collision",
-        "summary": "The 17,764 dwt bitumen tanker Atlantic Asphalt has struck and partially sunk a river cruise ship on the Mississippi River in New Orleans, leaving 32 people hospitalised and prompting a major emergency response. The collision occurred at approximately 12.30 pm local time on Novemb",
-        "source": "Splash247"
       }
     },
     {
@@ -499,11 +398,45 @@
       "summary": "Update: ‘Miracle on the Mississippi’: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans A Marshall Islands-flagged asphalt tanker struck the docked American Cruise Lines riverboat&#160;American Heritage&#160;on the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 55,
+      "hoursAgo": 65,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/American-Heritage-capsize-800x450.jpeg",
       "en": {
         "headline": "Tanker Strikes Docked Paddlewheeler on Mississippi River, Causing It to Capsize",
         "summary": "Update: ‘Miracle on the Mississippi’: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans A Marshall Islands-flagged asphalt tanker struck the docked American Cruise Lines riverboat&#160;American Heritage&#160;on the...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Gulf Oil Exports Recover as Hormuz Shipping Struggles",
+      "link": "https://gcaptain.com/gulf-oil-exports-recover-as-hormuz-shipping-struggles/",
+      "pubDate": "Fri, 13 Nov 2026 17:51:12 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "Global oil markets are beginning to recover from the Iran war, but shipping through the Strait of Hormuz remains severely disrupted, with vessel traffic roughly 65% below pre-conflict levels and...",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 68,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "Gulf Oil Exports Recover as Hormuz Shipping Struggles",
+        "summary": "Global oil markets are beginning to recover from the Iran war, but shipping through the Strait of Hormuz remains severely disrupted, with vessel traffic roughly 65% below pre-conflict levels and...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "World Oil Market is Returning to Surplus as Gulf Exports Recover",
+      "link": "https://gcaptain.com/world-oil-market-is-returning-to-surplus-as-gulf-exports-recover/",
+      "pubDate": "Fri, 13 Nov 2026 17:37:39 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The world oil market will return to a surplus in the fourth quarter of this year, the International Energy Agency said on Friday, as Middle East exports recover faster than global oil demand despite continued attacks on shipping.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 68,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "World Oil Market is Returning to Surplus as Gulf Exports Recover",
+        "summary": "The world oil market will return to a surplus in the fourth quarter of this year, the International Energy Agency said on Friday, as Middle East exports recover faster than global oil demand despite continued attacks on shipping.",
         "source": "gCaptain"
       }
     }
