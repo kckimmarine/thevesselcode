@@ -1,11 +1,10 @@
 {
   "meta": {
-    "generatedAt": "2026-11-16T14:22:05.604Z",
-    "benchmarkAsOf": "2026-11-13",
+    "generatedAt": "2026-11-17T01:19:39.516Z",
+    "benchmarkAsOf": "2026-11-16",
     "fetchStatus": "partial",
     "rssErrors": [
-      "Maritime Executive: HTTP 404",
-      "Splash247: HTTP 415"
+      "Maritime Executive: HTTP 404"
     ],
     "marketErrors": [
       "MGO_05S_KRPUS_USD: HTTP 400",
@@ -17,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-11-13",
-    "updatedLabelKo": "2026-11-13 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-11-16",
+    "updatedLabelKo": "2026-11-16 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -148,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 930,
-        "deltaPct": 0,
-        "asOf": "2026-11-13T00:00:00.000Z",
+        "priceUsdMt": 910,
+        "deltaPct": -2.15,
+        "asOf": "2026-11-16T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -160,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 735,
-        "deltaPct": 0,
-        "asOf": "2026-11-13T00:00:00.000Z",
+        "priceUsdMt": 740,
+        "deltaPct": 0.68,
+        "asOf": "2026-11-16T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -206,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 2980,
-      "deltaPct": 0,
+      "value": 2921,
+      "deltaPct": -1.98,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-13T16:15:22.009Z"
+      "asOf": "2026-11-16T16:06:20.498Z"
     },
     "capesizeTc": {
-      "value": 4719,
-      "deltaPct": 0,
+      "value": 4558,
+      "deltaPct": -3.41,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-13T16:15:22.035Z"
+      "asOf": "2026-11-16T16:06:20.635Z"
     },
     "panamaxTc": {
-      "value": 2118,
-      "deltaPct": 0,
+      "value": 2113,
+      "deltaPct": -0.24,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-13T16:15:22.047Z"
+      "asOf": "2026-11-16T16:06:20.680Z"
     },
     "bdti": {
       "value": 1185,
@@ -237,207 +236,275 @@
   },
   "news": [
     {
-      "title": "Steering Problem On Tanker Caused Collision In New Orleans",
-      "link": "https://gcaptain.com/steering-problem-on-tanker-caused-collision-in-new-orleans/",
-      "pubDate": "Mon, 16 Nov 2026 00:26:49 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By Siddharth Cavale Nov 15 (Reuters) &#8211; The asphalt tanker vessel that struck a docked paddlewheel cruise boat in the Mississippi River at New Orleans last week experienced a steering problem in which its...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-14T013234Z_1155421890_RC2ANOA1DM53_RTRMADP_3_USA-LOUISIANA-SHIP-COLLISION-800x533.jpg",
-      "en": {
-        "headline": "Steering Problem On Tanker Caused Collision In New Orleans",
-        "summary": "By Siddharth Cavale Nov 15 (Reuters) &#8211; The asphalt tanker vessel that struck a docked paddlewheel cruise boat in the Mississippi River at New Orleans last week experienced a steering problem in which its...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Imported Goods Keep Surging Through Southern California Ports",
-      "link": "https://gcaptain.com/imported-goods-keep-surging-through-southern-california-ports/",
-      "pubDate": "Sun, 15 Nov 2026 21:19:58 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "By&#160;Laura Curtis Nov 15, 2026, (Bloomberg)&#8211;Import containers moving through the US’s busiest trade hub passed the one million mark for the second time in October, as some firms bring in...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-05T172214Z_605505849_RC2U1KA4QMP3_RTRMADP_3_USA-SEAPORTS-LABOR-800x534.jpg",
-      "en": {
-        "headline": "Imported Goods Keep Surging Through Southern California Ports",
-        "summary": "By&#160;Laura Curtis Nov 15, 2026, (Bloomberg)&#8211;Import containers moving through the US’s busiest trade hub passed the one million mark for the second time in October, as some firms bring in...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Three Ships Struck By Drones In Black Sea Near Romanian Shipping Canal",
-      "link": "https://gcaptain.com/three-ships-struck-by-drones-in-black-sea-near-romanian-shipping-canal/",
-      "pubDate": "Sun, 15 Nov 2026 17:31:34 +0000",
+      "title": "EU Targets Shadow Fleet Shipowners, Managers and Insurers in New Russia Sanctions",
+      "link": "https://gcaptain.com/eu-targets-shadow-fleet-shipowners-managers-and-insurers-in-new-russia-sanctions/",
+      "pubDate": "Mon, 16 Nov 2026 23:20:40 +0000",
       "source": "gCaptain",
       "category": "Carbon",
-      "summary": "BUCHAREST, Nov 15 (Reuters) &#8211; Drones have struck three commercial ships in the Black Sea near Romania&#8217;s Sulina canal, Prime Minister Luca Niculescu said on Sunday, adding that his armed forces had scrambled fighter jets...",
+      "summary": "The European Union has imposed a new round of sanctions targeting the shipowners, vessel managers, insurers and financial networks supporting Russia&#8217;s shadow fleet, expanding its efforts to disrupt the maritime...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-03T060007Z_119389690_RC25XNA0L7LG_RTRMADP_3_UKRAINE-CRISIS-NATO-BLACKSEA.jpg",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/2026-01-02T114831Z_1689418246_RC2P3HAKCKH8_RTRMADP_3_INDIA-RUSSIA-OIL-USA-800x533.jpg",
       "en": {
-        "headline": "Three Ships Struck By Drones In Black Sea Near Romanian Shipping Canal",
-        "summary": "BUCHAREST, Nov 15 (Reuters) &#8211; Drones have struck three commercial ships in the Black Sea near Romania&#8217;s Sulina canal, Prime Minister Luca Niculescu said on Sunday, adding that his armed forces had scrambled fighter jets...",
+        "headline": "EU Targets Shadow Fleet Shipowners, Managers and Insurers in New Russia Sanctions",
+        "summary": "The European Union has imposed a new round of sanctions targeting the shipowners, vessel managers, insurers and financial networks supporting Russia&#8217;s shadow fleet, expanding its efforts to disrupt the maritime...",
         "source": "gCaptain"
       }
     },
     {
-      "title": "American Heritage Captain, Crew and Tug Operators Hailed as Heroes After Mississippi River Capsizing",
-      "link": "https://gcaptain.com/american-heritage-captain-crew-and-tug-operators-hailed-as-heroes-after-mississippi-river-capsizing/",
-      "pubDate": "Sun, 15 Nov 2026 16:02:22 +0000",
+      "title": "UKMTO Reports Two Tanker Attacks in Strait of Hormuz",
+      "link": "https://gcaptain.com/ukmto-reports-two-tanker-attacks-in-strait-of-hormuz/",
+      "pubDate": "Mon, 16 Nov 2026 22:30:41 +0000",
       "source": "gCaptain",
       "category": "Trade",
-      "summary": "The captain and crew of the American Heritage, along with tugboat operators and first responders who rushed to the scene, are being hailed as heroes following Friday&#8217;s dramatic collision on...",
+      "summary": "Two tankers were reportedly attacked in the Strait of Hormuz on Monday, November 16, with both incidents resulting in engine-room fires and one vessel left disabled, according to separate warnings...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 22,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/American-Heritage-capsize-800x450.jpeg",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
       "en": {
-        "headline": "American Heritage Captain, Crew and Tug Operators Hailed as Heroes After Mississippi River Capsizing",
-        "summary": "The captain and crew of the American Heritage, along with tugboat operators and first responders who rushed to the scene, are being hailed as heroes following Friday&#8217;s dramatic collision on...",
+        "headline": "UKMTO Reports Two Tanker Attacks in Strait of Hormuz",
+        "summary": "Two tankers were reportedly attacked in the Strait of Hormuz on Monday, November 16, with both incidents resulting in engine-room fires and one vessel left disabled, according to separate warnings...",
         "source": "gCaptain"
       }
     },
     {
-      "title": "South Africa’s Auto Industry Threatened By Worsening Port Delays",
-      "link": "https://gcaptain.com/south-africas-auto-industry-threatened-by-worsening-port-delays/",
-      "pubDate": "Sun, 15 Nov 2026 03:48:26 +0000",
+      "title": "Cargo Ship Capsizes Off Bulgaria After Reported Sea Drone Attack",
+      "link": "https://gcaptain.com/cargo-ship-capsizes-off-bulgaria-after-reported-sea-drone-attack/",
+      "pubDate": "Mon, 16 Nov 2026 20:36:56 +0000",
       "source": "gCaptain",
       "category": "Trade",
-      "summary": "By&#160;Matthew Hill and Alexander Parker Nov 14, 2026 (Bloomberg) &#8211;Severe delays at South Africa’s biggest container terminal in the port city of Durban are threatening the nation’s auto industry, already under...",
+      "summary": "A Somali-flagged cargo ship carrying nearly 3,000 metric tons of wheat capsized off Bulgaria on Monday after what crew members described as an attack by two sea drones, marking the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 34,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-03T112106Z_1810311205_RC2ZIFALSC4F_RTRMADP_3_USA-SAFRICA-TRADE-800x555.jpg",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/02/2024-02-10T132315Z_878210178_RC2OX5AT9RMH_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-BLACK-SEA-800x534.jpg",
       "en": {
-        "headline": "South Africa’s Auto Industry Threatened By Worsening Port Delays",
-        "summary": "By&#160;Matthew Hill and Alexander Parker Nov 14, 2026 (Bloomberg) &#8211;Severe delays at South Africa’s biggest container terminal in the port city of Durban are threatening the nation’s auto industry, already under...",
+        "headline": "Cargo Ship Capsizes Off Bulgaria After Reported Sea Drone Attack",
+        "summary": "A Somali-flagged cargo ship carrying nearly 3,000 metric tons of wheat capsized off Bulgaria on Monday after what crew members described as an attack by two sea drones, marking the...",
         "source": "gCaptain"
       }
     },
     {
-      "title": "Trump To Extend Shipping Waiver For Oil, Fertilizer For 90 Days",
-      "link": "https://gcaptain.com/trump-to-extend-shipping-waiver-for-oil-fertilizer-for-90-days/",
-      "pubDate": "Sat, 14 Nov 2026 22:08:51 +0000",
+      "title": "Hong Kong’s shipowner dynasties face the succession test",
+      "link": "https://splash247.com/hong-kongs-shipowner-dynasties-face-the-succession-test/",
+      "pubDate": "Mon, 16 Nov 2026 20:28:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "The city&#8217;s great shipping families have survived every imaginable market shock. Keeping the next generation – and its capital – anchored in Hong Kong may prove a different challenge. The latest chapter from our brand new Hong Kong magazine, which is being distributed across",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2020/05/Sir-YK-Pao-scaled-e1794645194830.jpg",
+      "en": {
+        "headline": "Hong Kong’s shipowner dynasties face the succession test",
+        "summary": "The city&#8217;s great shipping families have survived every imaginable market shock. Keeping the next generation – and its capital – anchored in Hong Kong may prove a different challenge. The latest chapter from our brand new Hong Kong magazine, which is being distributed across",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "The East India company without a charter",
+      "link": "https://splash247.com/the-east-india-company-without-a-charter/",
+      "pubDate": "Mon, 16 Nov 2026 20:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Carriers and port groups are rebuilding the oldest form of trade finance &#8211; financing the cargo they carry. Sergey Belskiy follows the money from Venice to DP World and asks who pays. In July 2025, DP World reported that its finance arm had financed more than $1 billion of t",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/05/Money-ship-finance.jpg",
+      "en": {
+        "headline": "The East India company without a charter",
+        "summary": "Carriers and port groups are rebuilding the oldest form of trade finance &#8211; financing the cargo they carry. Sergey Belskiy follows the money from Venice to DP World and asks who pays. In July 2025, DP World reported that its finance arm had financed more than $1 billion of t",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Armed Skiff Approaches Tanker Far Out in Arabian Sea",
+      "link": "https://gcaptain.com/armed-skiff-approaches-tanker-far-out-in-arabian-sea/",
+      "pubDate": "Mon, 16 Nov 2026 19:05:57 +0000",
       "source": "gCaptain",
       "category": "Trade",
-      "summary": "By&#160;Jennifer A. Dlouhy Nov 14, 2026 (Bloomberg) &#8211;President Donald Trump is giving energy companies and traders more time to transport oil and other commodities around the US on foreign-flagged ships,...",
+      "summary": "A commercial tanker reported being approached by a small boat carrying four armed men in the Arabian Sea on Monday, raising fresh concerns about piracy activity in waters off the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 40,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/01/Horizon-Spirit_Port-of-Los-Angeles_1-1.jpg",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/04/12052771315_e0d9bb0246_b.jpg",
       "en": {
-        "headline": "Trump To Extend Shipping Waiver For Oil, Fertilizer For 90 Days",
-        "summary": "By&#160;Jennifer A. Dlouhy Nov 14, 2026 (Bloomberg) &#8211;President Donald Trump is giving energy companies and traders more time to transport oil and other commodities around the US on foreign-flagged ships,...",
+        "headline": "Armed Skiff Approaches Tanker Far Out in Arabian Sea",
+        "summary": "A commercial tanker reported being approached by a small boat carrying four armed men in the Arabian Sea on Monday, raising fresh concerns about piracy activity in waters off the...",
         "source": "gCaptain"
       }
     },
     {
-      "title": "MSC Nears Deal To Buy Majority Stake In German Shipyard Meyer Werft",
-      "link": "https://gcaptain.com/msc-nears-deal-to-buy-majority-stake-in-german-shipyard-meyer-werft/",
-      "pubDate": "Sat, 14 Nov 2026 18:13:54 +0000",
+      "title": "The Oil Market Is Brimming With Crude Despite Tanker Attacks",
+      "link": "https://gcaptain.com/the-oil-market-is-brimming-with-crude-despite-tanker-attacks/",
+      "pubDate": "Mon, 16 Nov 2026 18:45:55 +0000",
       "source": "gCaptain",
       "category": "Trade",
-      "summary": "FRANKFURT, Nov 14 (Reuters) &#8211; The German government and regional state of Lower Saxony are nearing a deal that gives Geneva-based shipping group MSC the right to acquire about 80% of the shares in...",
+      "summary": "More than eight months into the Iran war, smoke continues to billow from oil tankers as Tehran presses ahead with repeated attacks near the Strait of Hormuz.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 44,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2016/02/Ovation_of_the_Seas_.jpg",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
       "en": {
-        "headline": "MSC Nears Deal To Buy Majority Stake In German Shipyard Meyer Werft",
-        "summary": "FRANKFURT, Nov 14 (Reuters) &#8211; The German government and regional state of Lower Saxony are nearing a deal that gives Geneva-based shipping group MSC the right to acquire about 80% of the shares in...",
+        "headline": "The Oil Market Is Brimming With Crude Despite Tanker Attacks",
+        "summary": "More than eight months into the Iran war, smoke continues to billow from oil tankers as Tehran presses ahead with repeated attacks near the Strait of Hormuz.",
         "source": "gCaptain"
       }
     },
     {
-      "title": "Oil Tanker On Fire After Hitting Mine In Hormuz",
-      "link": "https://gcaptain.com/oil-tanker-on-fire-after-hitting-mine-in-hormuz/",
-      "pubDate": "Sat, 14 Nov 2026 14:41:03 +0000",
+      "title": "Suez Canal Return Won&#8217;t Resolve Global Shipping Congestion, DHL Warns",
+      "link": "https://gcaptain.com/suez-canal-return-wont-resolve-global-shipping-congestion-dhl-warns/",
+      "pubDate": "Mon, 16 Nov 2026 18:42:24 +0000",
       "source": "gCaptain",
       "category": "Trade",
-      "summary": "Nov 14 (Reuters) &#8211; Iran&#8217;s navy said an oil tanker caught fire on Saturday morning after hitting a naval mine in the eastern Strait of Hormuz, Iranian state media reported. Reuters could not immediately...",
+      "summary": "The gradual return of container shipping services to the Suez Canal is expected to release vessel capacity absorbed by lengthy diversions around Africa, but persistent port congestion and major network...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 47,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-03-07T044529Z_1004479925_RC20XJAXEVAA_RTRMADP_3_IRAN-CRISIS-ENERGY-800x533.jpg",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/07/shutterstock_708817909.jpg",
       "en": {
-        "headline": "Oil Tanker On Fire After Hitting Mine In Hormuz",
-        "summary": "Nov 14 (Reuters) &#8211; Iran&#8217;s navy said an oil tanker caught fire on Saturday morning after hitting a naval mine in the eastern Strait of Hormuz, Iranian state media reported. Reuters could not immediately...",
+        "headline": "Suez Canal Return Won&#8217;t Resolve Global Shipping Congestion, DHL Warns",
+        "summary": "The gradual return of container shipping services to the Suez Canal is expected to release vessel capacity absorbed by lengthy diversions around Africa, but persistent port congestion and major network...",
         "source": "gCaptain"
       }
     },
     {
-      "title": "&#8216;Miracle on the Mississippi&#8217;: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans",
-      "link": "https://gcaptain.com/miracle-on-the-mississippi-all-accounted-for-after-tanker-capsizes-cruise-ship-in-new-orleans/",
-      "pubDate": "Sat, 14 Nov 2026 02:34:17 +0000",
+      "title": "Greek shipowners put Brussels on the spot over IMO deadlock",
+      "link": "https://splash247.com/greek-shipowners-put-brussels-on-the-spot-over-imo-deadlock/",
+      "pubDate": "Mon, 16 Nov 2026 17:53:16 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Greek shipowners have launched a fresh attack on Brussels ahead of the next round of international shipping emissions negotiations, accusing the European Union of putting its own regulatory interests ahead of a global agreement. Union of Greek Shipowners president Melina Travlos ",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/02/Melina-Travlos.jpg",
+      "en": {
+        "headline": "Greek shipowners put Brussels on the spot over IMO deadlock",
+        "summary": "Greek shipowners have launched a fresh attack on Brussels ahead of the next round of international shipping emissions negotiations, accusing the European Union of putting its own regulatory interests ahead of a global agreement. Union of Greek Shipowners president Melina Travlos ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "The Future of Maritime Safety: Navigating the Polar Frontier’s Uncharted Waters and Hidden Hazards",
+      "link": "https://gcaptain.com/the-future-of-maritime-safety-navigating-the-polar-frontiers-uncharted-waters-and-hidden-hazards/",
+      "pubDate": "Mon, 16 Nov 2026 17:05:21 +0000",
       "source": "gCaptain",
       "category": "Trade",
-      "summary": "All passengers and crew aboard an American Cruise Lines riverboat survived after a Marshall Islands-flagged asphalt tanker struck the docked paddle-wheeler on the Mississippi River in New Orleans on Friday,...",
+      "summary": "The Arctic and Antarctic are increasingly becoming areas of convergence for maritime industries and government operations. Commercial shipping, offshore energy, expedition cruising, recreational yachting, scientific research, coast guard, and naval...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 59,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-14T002751Z_196585341_RC2ANOA4GX4F_RTRMADP_3_USA-LOUISIANA-SHIP-COLLISION-800x533.jpg",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Polar-Navigation-Article.jpg",
       "en": {
-        "headline": "&#8216;Miracle on the Mississippi&#8217;: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans",
-        "summary": "All passengers and crew aboard an American Cruise Lines riverboat survived after a Marshall Islands-flagged asphalt tanker struck the docked paddle-wheeler on the Mississippi River in New Orleans on Friday,...",
+        "headline": "The Future of Maritime Safety: Navigating the Polar Frontier’s Uncharted Waters and Hidden Hazards",
+        "summary": "The Arctic and Antarctic are increasingly becoming areas of convergence for maritime industries and government operations. Commercial shipping, offshore energy, expedition cruising, recreational yachting, scientific research, coast guard, and naval...",
         "source": "gCaptain"
       }
     },
     {
-      "title": "Tanker Strikes Docked Paddlewheeler on Mississippi River, Causing It to Capsize",
-      "link": "https://gcaptain.com/tanker-strikes-docked-paddlewheeler-on-mississippi-river-causing-it-to-capsize/",
-      "pubDate": "Fri, 13 Nov 2026 20:45:59 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Update: ‘Miracle on the Mississippi’: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans A Marshall Islands-flagged asphalt tanker struck the docked American Cruise Lines riverboat&#160;American Heritage&#160;on the...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 65,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/American-Heritage-capsize-800x450.jpeg",
-      "en": {
-        "headline": "Tanker Strikes Docked Paddlewheeler on Mississippi River, Causing It to Capsize",
-        "summary": "Update: ‘Miracle on the Mississippi’: All Accounted For After Tanker Capsizes Cruise Ship in New Orleans A Marshall Islands-flagged asphalt tanker struck the docked American Cruise Lines riverboat&#160;American Heritage&#160;on the...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Gulf Oil Exports Recover as Hormuz Shipping Struggles",
-      "link": "https://gcaptain.com/gulf-oil-exports-recover-as-hormuz-shipping-struggles/",
-      "pubDate": "Fri, 13 Nov 2026 17:51:12 +0000",
+      "title": "UK Moves Toward New Maritime Fuel Standard",
+      "link": "https://gcaptain.com/uk-moves-toward-new-maritime-fuel-standard/",
+      "pubDate": "Mon, 16 Nov 2026 16:17:53 +0000",
       "source": "gCaptain",
       "category": "Carbon",
-      "summary": "Global oil markets are beginning to recover from the Iran war, but shipping through the Strait of Hormuz remains severely disrupted, with vessel traffic roughly 65% below pre-conflict levels and...",
+      "summary": "The United Kingdom has launched a consultation on new maritime fuel regulations that could require thousands of ships calling at British ports to progressively reduce the greenhouse gas emissions intensity...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 68,
-      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 9,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/London-Gateway.jpg",
       "en": {
-        "headline": "Gulf Oil Exports Recover as Hormuz Shipping Struggles",
-        "summary": "Global oil markets are beginning to recover from the Iran war, but shipping through the Strait of Hormuz remains severely disrupted, with vessel traffic roughly 65% below pre-conflict levels and...",
+        "headline": "UK Moves Toward New Maritime Fuel Standard",
+        "summary": "The United Kingdom has launched a consultation on new maritime fuel regulations that could require thousands of ships calling at British ports to progressively reduce the greenhouse gas emissions intensity...",
         "source": "gCaptain"
       }
     },
     {
-      "title": "World Oil Market is Returning to Surplus as Gulf Exports Recover",
-      "link": "https://gcaptain.com/world-oil-market-is-returning-to-surplus-as-gulf-exports-recover/",
-      "pubDate": "Fri, 13 Nov 2026 17:37:39 +0000",
+      "title": "Supertanker Rates Plunge More Than 60% From Record Highs",
+      "link": "https://gcaptain.com/supertanker-rates-plunge-more-than-60-from-record-highs/",
+      "pubDate": "Mon, 16 Nov 2026 16:03:34 +0000",
       "source": "gCaptain",
       "category": "Trade",
-      "summary": "The world oil market will return to a surplus in the fourth quarter of this year, the International Energy Agency said on Friday, as Middle East exports recover faster than global oil demand despite continued attacks on shipping.",
+      "summary": "The cost of shipping oil in the largest tankers has declined sharply since the beginning of November, reflecting weaker demand for chartering and an unwinding of the geopolitical risk premium that sent shipping costs to a record high in October.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 68,
-      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 9,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
       "en": {
-        "headline": "World Oil Market is Returning to Surplus as Gulf Exports Recover",
-        "summary": "The world oil market will return to a surplus in the fourth quarter of this year, the International Energy Agency said on Friday, as Middle East exports recover faster than global oil demand despite continued attacks on shipping.",
+        "headline": "Supertanker Rates Plunge More Than 60% From Record Highs",
+        "summary": "The cost of shipping oil in the largest tankers has declined sharply since the beginning of November, reflecting weaker demand for chartering and an unwinding of the geopolitical risk premium that sent shipping costs to a record high in October.",
         "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Maersk, Hapag-Lloyd Expand Suez Canal Return With Three More Gemini Services",
+      "link": "https://gcaptain.com/maersk-hapag-lloyd-expand-suez-canal-return-with-three-more-gemini-services/",
+      "pubDate": "Mon, 16 Nov 2026 15:45:05 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Maersk and Hapag-Lloyd are bringing three more Gemini Cooperation services back through the Red Sea and Suez Canal, marking another major step in the container shipping industry&#8217;s gradual return to...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 9,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/08/2023-08-06T161525Z_1697420677_RC2GI2A48P09_RTRMADP_3_EGYPT-SUEZCANAL.jpg",
+      "en": {
+        "headline": "Maersk, Hapag-Lloyd Expand Suez Canal Return With Three More Gemini Services",
+        "summary": "Maersk and Hapag-Lloyd are bringing three more Gemini Cooperation services back through the Red Sea and Suez Canal, marking another major step in the container shipping industry&#8217;s gradual return to...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Jones Act Waiver Extended Another 90 Days as U.S. Maritime Groups Sound Alarm",
+      "link": "https://gcaptain.com/jones-act-waiver-extended-another-90-days-as-u-s-maritime-groups-sound-alarm/",
+      "pubDate": "Mon, 16 Nov 2026 15:13:27 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Trump administration has extended its emergency Jones Act waiver for another 90 days, allowing foreign-flagged vessels to continue transporting oil and other commodities between U.S. ports under a case-by-case...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 10,
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "Jones Act Waiver Extended Another 90 Days as U.S. Maritime Groups Sound Alarm",
+        "summary": "The Trump administration has extended its emergency Jones Act waiver for another 90 days, allowing foreign-flagged vessels to continue transporting oil and other commodities between U.S. ports under a case-by-case...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "South Korean Container Ship Considered Abandoning Arctic Trial Voyage Due to Ice as Owner Plans Sale",
+      "link": "https://gcaptain.com/south-korean-container-ship-considered-abandoning-arctic-trial-voyage-due-to-ice-as-owner-considers-sale/",
+      "pubDate": "Mon, 16 Nov 2026 13:31:38 +0000",
+      "source": "gCaptain",
+      "category": "S&P",
+      "summary": "South Korea’s first container ship trial along the Northern Sea Route exposed the challenges of Arctic navigation, with crew members describing a near-abandonment decision after drifting ice blocked their path. The operator is now considering selling the vessel after a single rou",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 11,
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "South Korean Container Ship Considered Abandoning Arctic Trial Voyage Due to Ice as Owner Plans Sale",
+        "summary": "South Korea’s first container ship trial along the Northern Sea Route exposed the challenges of Arctic navigation, with crew members describing a near-abandonment decision after drifting ice blocked their path. The operator is now considering selling the vessel after a single rou",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Xylas wins second term at Intercargo",
+      "link": "https://splash247.com/xylas-wins-second-term-at-intercargo/",
+      "pubDate": "Mon, 16 Nov 2026 12:54:05 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Greek shipowner John Xylas has secured another two years at the helm of dry bulk shipping association Intercargo, with executives from Berge Bulk and Fleet Management joining its leadership team. Members meeting in Rome re-elected the Ariston Navigation president and chief execut",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 12,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/John-A.-Xylas-CEO-Ariston-Navigation-and-Chairman-INTERCARGO.jpeg",
+      "en": {
+        "headline": "Xylas wins second term at Intercargo",
+        "summary": "Greek shipowner John Xylas has secured another two years at the helm of dry bulk shipping association Intercargo, with executives from Berge Bulk and Fleet Management joining its leadership team. Members meeting in Rome re-elected the Ariston Navigation president and chief execut",
+        "source": "Splash247"
       }
     }
   ]
