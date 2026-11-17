@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-17T01:19:39.516Z",
+    "generatedAt": "2026-11-17T15:13:29.333Z",
     "benchmarkAsOf": "2026-11-16",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 882.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-13T17:00:00.000Z",
+        "priceUsdMt": 878,
+        "deltaPct": -0.51,
+        "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1204,
-        "deltaPct": 0,
-        "asOf": "2026-11-13T17:00:00.000Z",
+        "priceUsdMt": 1196,
+        "deltaPct": -0.66,
+        "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 675,
-        "deltaPct": 0,
-        "asOf": "2026-11-13T17:00:00.000Z",
+        "priceUsdMt": 667,
+        "deltaPct": -1.19,
+        "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 743.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-13T17:00:00.000Z",
+        "priceUsdMt": 748,
+        "deltaPct": 0.61,
+        "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1281,
-        "deltaPct": 0,
-        "asOf": "2026-11-13T17:00:00.000Z",
+        "priceUsdMt": 1279.5,
+        "deltaPct": -0.12,
+        "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 575,
-        "deltaPct": 0,
-        "asOf": "2026-11-13T17:00:00.000Z",
+        "priceUsdMt": 572.5,
+        "deltaPct": -0.43,
+        "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 910,
-        "deltaPct": -2.15,
+        "deltaPct": 0,
         "asOf": "2026-11-16T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 740,
-        "deltaPct": 0.68,
+        "deltaPct": 0,
         "asOf": "2026-11-16T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 737,
-        "deltaPct": 0,
-        "asOf": "2026-11-13T17:00:00.000Z",
+        "priceUsdMt": 755.5,
+        "deltaPct": 2.51,
+        "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1265,
-        "deltaPct": 0,
-        "asOf": "2026-11-13T17:00:00.000Z",
+        "priceUsdMt": 1274,
+        "deltaPct": 0.71,
+        "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 499.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-13T17:00:00.000Z",
+        "priceUsdMt": 501.5,
+        "deltaPct": 0.4,
+        "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 2921,
-      "deltaPct": -1.98,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-16T16:06:20.498Z"
     },
     "capesizeTc": {
       "value": 4558,
-      "deltaPct": -3.41,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-16T16:06:20.635Z"
     },
     "panamaxTc": {
       "value": 2113,
-      "deltaPct": -0.24,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-16T16:06:20.680Z"
@@ -236,6 +236,193 @@
   },
   "news": [
     {
+      "title": "LPG Tanker Reported to Have Sunk Off Bulgaria&#8217;s Black Sea Coast",
+      "link": "https://gcaptain.com/lpg-tanker-reported-to-have-sunk-off-bulgarias-black-sea-coast/",
+      "pubDate": "Tue, 17 Nov 2026 13:37:26 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A liquefied petroleum gas tanker sank off Bulgaria's Black Sea coast on Tuesday, Bulgaria's defense ministry said, a few dozen miles from where another ship went down after a drone attack a day earlier.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-17T123145Z_722088958_RC2NPOAI6DGY_RTRMADP_3_UKRAINE-CRISIS-BULGARIA-SHIP-800x450.jpg",
+      "en": {
+        "headline": "LPG Tanker Reported to Have Sunk Off Bulgaria&#8217;s Black Sea Coast",
+        "summary": "A liquefied petroleum gas tanker sank off Bulgaria's Black Sea coast on Tuesday, Bulgaria's defense ministry said, a few dozen miles from where another ship went down after a drone attack a day earlier.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Semco Maritime and PTSC bag Taiwan offshore wind deal",
+      "link": "https://splash247.com/semco-maritime-and-ptsc-bag-taiwan-offshore-wind-deal/",
+      "pubDate": "Tue, 17 Nov 2026 13:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Denmark&#8217;s Semco Maritime and Vietnam&#8217;s PTSC Mechanical &#38; Construction have secured an offshore substation contract for Copenhagen Infrastructure Partners&#8217; (CIP) 600MW Fengmiao II offshore wind project in Taiwan. The agreement covers engineering, procurement,",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/03/Hornsea-substation.jpg",
+      "en": {
+        "headline": "Semco Maritime and PTSC bag Taiwan offshore wind deal",
+        "summary": "Denmark&#8217;s Semco Maritime and Vietnam&#8217;s PTSC Mechanical &#38; Construction have secured an offshore substation contract for Copenhagen Infrastructure Partners&#8217; (CIP) 600MW Fengmiao II offshore wind project in Taiwan. The agreement covers engineering, procurement,",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "TechnipFMC extends charter of DOF CSV",
+      "link": "https://splash247.com/technipfmc-extends-charter-of-dof-csv/",
+      "pubDate": "Tue, 17 Nov 2026 12:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Norwegian offshore vessel owner DOF has secured a new contract from TechnipFMC for its subsea construction vessel (CSV) Skandi Africa, extending a partnership that dates back more than a decade. DOF has classified the agreement as very large, valued at between $100m and $200m, an",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/05/Skandi-Africa-TechnipFMC.jpg",
+      "en": {
+        "headline": "TechnipFMC extends charter of DOF CSV",
+        "summary": "Norwegian offshore vessel owner DOF has secured a new contract from TechnipFMC for its subsea construction vessel (CSV) Skandi Africa, extending a partnership that dates back more than a decade. DOF has classified the agreement as very large, valued at between $100m and $200m, an",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Allseas taps Aker Solutions for massive topside dismantling job",
+      "link": "https://splash247.com/allseas-taps-aker-solutions-for-massive-topside-dismantling-job/",
+      "pubDate": "Tue, 17 Nov 2026 11:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Norwegian offshore engineering group Aker Solutions has received a letter of intent from Allseas to dismantle and recycle Equinor&#8217;s Statfjord A platform topside in the North Sea. The agreement covers preparatory work, reception, dismantling and recycling of the approximatel",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Statfjord-A-Equinor.jpg",
+      "en": {
+        "headline": "Allseas taps Aker Solutions for massive topside dismantling job",
+        "summary": "Norwegian offshore engineering group Aker Solutions has received a letter of intent from Allseas to dismantle and recycle Equinor&#8217;s Statfjord A platform topside in the North Sea. The agreement covers preparatory work, reception, dismantling and recycling of the approximatel",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Apache keeps North Sea assets producing despite worker walkouts",
+      "link": "https://splash247.com/apache-keeps-north-sea-assets-producing-despite-worker-walkouts/",
+      "pubDate": "Tue, 17 Nov 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "US energy company Apache said that production from its UK North Sea assets remains unaffected despite escalating industrial action involving around 170 offshore workers. Members of the Unite union staged a series of rolling strikes across seven Apache-operated installations over ",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Forties-Bravo-Apache.jpg",
+      "en": {
+        "headline": "Apache keeps North Sea assets producing despite worker walkouts",
+        "summary": "US energy company Apache said that production from its UK North Sea assets remains unaffected despite escalating industrial action involving around 170 offshore workers. Members of the Unite union staged a series of rolling strikes across seven Apache-operated installations over ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "African nations join forces to impose carbon charges on shipping",
+      "link": "https://splash247.com/african-nations-join-forces-to-impose-carbon-charges-on-shipping/",
+      "pubDate": "Tue, 17 Nov 2026 08:32:05 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "A growing group of African nations is pushing ahead with plans to introduce carbon charges on international shipping, raising the prospect of another regional emissions regime for shipowners already grappling with European environmental legislation. Guinea, Ivory Coast and Maurit",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/02/Norden-ops-Gabon.jpg",
+      "en": {
+        "headline": "African nations join forces to impose carbon charges on shipping",
+        "summary": "A growing group of African nations is pushing ahead with plans to introduce carbon charges on international shipping, raising the prospect of another regional emissions regime for shipowners already grappling with European environmental legislation. Guinea, Ivory Coast and Maurit",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "China emerges as dry bulk export powerhouse",
+      "link": "https://splash247.com/china-emerges-as-dry-bulk-export-powerhouse/",
+      "pubDate": "Tue, 17 Nov 2026 08:15:02 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "China&#8217;s transformation from the world&#8217;s dominant dry bulk importer into an increasingly significant exporter is gathering pace, with outbound cargo volumes more than doubling since 2020 and accounting for nearly two-thirds of global dry bulk shipment growth this year.",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2020/07/Iron-and-Steel-Works.jpg",
+      "en": {
+        "headline": "China emerges as dry bulk export powerhouse",
+        "summary": "China&#8217;s transformation from the world&#8217;s dominant dry bulk importer into an increasingly significant exporter is gathering pace, with outbound cargo volumes more than doubling since 2020 and accounting for nearly two-thirds of global dry bulk shipment growth this year.",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Hong Kong’s shipowner dynasties face the succession test",
+      "link": "https://splash247.com/hong-kongs-shipowner-dynasties-face-the-succession-test/",
+      "pubDate": "Tue, 17 Nov 2026 08:00:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "The city&#8217;s great shipping families have survived every imaginable market shock. Keeping the next generation – and its capital – anchored in Hong Kong may prove a different challenge. The latest chapter from our brand new Hong Kong magazine, which is being distributed across",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2020/05/Sir-YK-Pao-scaled-e1794645194830.jpg",
+      "en": {
+        "headline": "Hong Kong’s shipowner dynasties face the succession test",
+        "summary": "The city&#8217;s great shipping families have survived every imaginable market shock. Keeping the next generation – and its capital – anchored in Hong Kong may prove a different challenge. The latest chapter from our brand new Hong Kong magazine, which is being distributed across",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Another merchant ship lost in Black Sea drone onslaught",
+      "link": "https://splash247.com/another-merchant-ship-lost-in-black-sea-drone-onslaught/",
+      "pubDate": "Tue, 17 Nov 2026 07:45:57 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Another merchant ship has been lost in the Black Sea following a suspected naval drone attack off Bulgaria, bringing fresh urgency to warnings over the growing threat to commercial shipping near NATO territory. The 3,223 dwt Betul 8 capsized in Bulgaria&#8217;s exclusive economic",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Ambrey-Washed-Up-Drone.jpg",
+      "en": {
+        "headline": "Another merchant ship lost in Black Sea drone onslaught",
+        "summary": "Another merchant ship has been lost in the Black Sea following a suspected naval drone attack off Bulgaria, bringing fresh urgency to warnings over the growing threat to commercial shipping near NATO territory. The 3,223 dwt Betul 8 capsized in Bulgaria&#8217;s exclusive economic",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "EU widens shadow fleet crackdown to tanker managers and oil buyers",
+      "link": "https://splash247.com/eu-widens-shadow-fleet-crackdown-to-tanker-managers-and-oil-buyers/",
+      "pubDate": "Tue, 17 Nov 2026 07:28:39 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The European Union has widened its sanctions campaign against Russia&#8217;s shadow fleet, targeting tanker owners, shipmanagers, insurers and oil buyers across several countries in a fresh effort to disrupt Moscow&#8217;s seaborne energy exports. The measures adopted on Monday a",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/02/Sovcomflot-tanker.jpg",
+      "en": {
+        "headline": "EU widens shadow fleet crackdown to tanker managers and oil buyers",
+        "summary": "The European Union has widened its sanctions campaign against Russia&#8217;s shadow fleet, targeting tanker owners, shipmanagers, insurers and oil buyers across several countries in a fresh effort to disrupt Moscow&#8217;s seaborne energy exports. The measures adopted on Monday a",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Celsius returns to Samsung for $257m LNG carrier",
+      "link": "https://splash247.com/celsius-returns-to-samsung-for-257m-lng-carrier/",
+      "pubDate": "Tue, 17 Nov 2026 06:22:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Danish shipowner Celsius Tankers has returned to Samsung Heavy Industries for another LNG carrier, adding a $257m newbuilding to its growing gas shipping fleet. The Jeppe Jensen-led company has been named as the buyer behind a KRW342.4bn ($257m) contract disclosed by the South Ko",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 8,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Celsius-LNG-Carrier.jpg",
+      "en": {
+        "headline": "Celsius returns to Samsung for $257m LNG carrier",
+        "summary": "Danish shipowner Celsius Tankers has returned to Samsung Heavy Industries for another LNG carrier, adding a $257m newbuilding to its growing gas shipping fleet. The Jeppe Jensen-led company has been named as the buyer behind a KRW342.4bn ($257m) contract disclosed by the South Ko",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "EU Targets Shadow Fleet Shipowners, Managers and Insurers in New Russia Sanctions",
       "link": "https://gcaptain.com/eu-targets-shadow-fleet-shipowners-managers-and-insurers-in-new-russia-sanctions/",
       "pubDate": "Mon, 16 Nov 2026 23:20:40 +0000",
@@ -244,7 +431,7 @@
       "summary": "The European Union has imposed a new round of sanctions targeting the shipowners, vessel managers, insurers and financial networks supporting Russia&#8217;s shadow fleet, expanding its efforts to disrupt the maritime...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 1,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/2026-01-02T114831Z_1689418246_RC2P3HAKCKH8_RTRMADP_3_INDIA-RUSSIA-OIL-USA-800x533.jpg",
       "en": {
         "headline": "EU Targets Shadow Fleet Shipowners, Managers and Insurers in New Russia Sanctions",
@@ -261,7 +448,7 @@
       "summary": "Two tankers were reportedly attacked in the Strait of Hormuz on Monday, November 16, with both incidents resulting in engine-room fires and one vessel left disabled, according to separate warnings...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
       "en": {
         "headline": "UKMTO Reports Two Tanker Attacks in Strait of Hormuz",
@@ -278,46 +465,12 @@
       "summary": "A Somali-flagged cargo ship carrying nearly 3,000 metric tons of wheat capsized off Bulgaria on Monday after what crew members described as an attack by two sea drones, marking the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/02/2024-02-10T132315Z_878210178_RC2OX5AT9RMH_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-BLACK-SEA-800x534.jpg",
       "en": {
         "headline": "Cargo Ship Capsizes Off Bulgaria After Reported Sea Drone Attack",
         "summary": "A Somali-flagged cargo ship carrying nearly 3,000 metric tons of wheat capsized off Bulgaria on Monday after what crew members described as an attack by two sea drones, marking the...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Hong Kong’s shipowner dynasties face the succession test",
-      "link": "https://splash247.com/hong-kongs-shipowner-dynasties-face-the-succession-test/",
-      "pubDate": "Mon, 16 Nov 2026 20:28:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "The city&#8217;s great shipping families have survived every imaginable market shock. Keeping the next generation – and its capital – anchored in Hong Kong may prove a different challenge. The latest chapter from our brand new Hong Kong magazine, which is being distributed across",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2020/05/Sir-YK-Pao-scaled-e1794645194830.jpg",
-      "en": {
-        "headline": "Hong Kong’s shipowner dynasties face the succession test",
-        "summary": "The city&#8217;s great shipping families have survived every imaginable market shock. Keeping the next generation – and its capital – anchored in Hong Kong may prove a different challenge. The latest chapter from our brand new Hong Kong magazine, which is being distributed across",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "The East India company without a charter",
-      "link": "https://splash247.com/the-east-india-company-without-a-charter/",
-      "pubDate": "Mon, 16 Nov 2026 20:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Carriers and port groups are rebuilding the oldest form of trade finance &#8211; financing the cargo they carry. Sergey Belskiy follows the money from Venice to DP World and asks who pays. In July 2025, DP World reported that its finance arm had financed more than $1 billion of t",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 5,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/05/Money-ship-finance.jpg",
-      "en": {
-        "headline": "The East India company without a charter",
-        "summary": "Carriers and port groups are rebuilding the oldest form of trade finance &#8211; financing the cargo they carry. Sergey Belskiy follows the money from Venice to DP World and asks who pays. In July 2025, DP World reported that its finance arm had financed more than $1 billion of t",
-        "source": "Splash247"
       }
     },
     {
@@ -329,7 +482,7 @@
       "summary": "A commercial tanker reported being approached by a small boat carrying four armed men in the Arabian Sea on Monday, raising fresh concerns about piracy activity in waters off the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/04/12052771315_e0d9bb0246_b.jpg",
       "en": {
         "headline": "Armed Skiff Approaches Tanker Far Out in Arabian Sea",
@@ -346,165 +499,12 @@
       "summary": "More than eight months into the Iran war, smoke continues to billow from oil tankers as Tehran presses ahead with repeated attacks near the Strait of Hormuz.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
       "en": {
         "headline": "The Oil Market Is Brimming With Crude Despite Tanker Attacks",
         "summary": "More than eight months into the Iran war, smoke continues to billow from oil tankers as Tehran presses ahead with repeated attacks near the Strait of Hormuz.",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Suez Canal Return Won&#8217;t Resolve Global Shipping Congestion, DHL Warns",
-      "link": "https://gcaptain.com/suez-canal-return-wont-resolve-global-shipping-congestion-dhl-warns/",
-      "pubDate": "Mon, 16 Nov 2026 18:42:24 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The gradual return of container shipping services to the Suez Canal is expected to release vessel capacity absorbed by lengthy diversions around Africa, but persistent port congestion and major network...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2022/07/shutterstock_708817909.jpg",
-      "en": {
-        "headline": "Suez Canal Return Won&#8217;t Resolve Global Shipping Congestion, DHL Warns",
-        "summary": "The gradual return of container shipping services to the Suez Canal is expected to release vessel capacity absorbed by lengthy diversions around Africa, but persistent port congestion and major network...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Greek shipowners put Brussels on the spot over IMO deadlock",
-      "link": "https://splash247.com/greek-shipowners-put-brussels-on-the-spot-over-imo-deadlock/",
-      "pubDate": "Mon, 16 Nov 2026 17:53:16 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Greek shipowners have launched a fresh attack on Brussels ahead of the next round of international shipping emissions negotiations, accusing the European Union of putting its own regulatory interests ahead of a global agreement. Union of Greek Shipowners president Melina Travlos ",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/02/Melina-Travlos.jpg",
-      "en": {
-        "headline": "Greek shipowners put Brussels on the spot over IMO deadlock",
-        "summary": "Greek shipowners have launched a fresh attack on Brussels ahead of the next round of international shipping emissions negotiations, accusing the European Union of putting its own regulatory interests ahead of a global agreement. Union of Greek Shipowners president Melina Travlos ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "The Future of Maritime Safety: Navigating the Polar Frontier’s Uncharted Waters and Hidden Hazards",
-      "link": "https://gcaptain.com/the-future-of-maritime-safety-navigating-the-polar-frontiers-uncharted-waters-and-hidden-hazards/",
-      "pubDate": "Mon, 16 Nov 2026 17:05:21 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Arctic and Antarctic are increasingly becoming areas of convergence for maritime industries and government operations. Commercial shipping, offshore energy, expedition cruising, recreational yachting, scientific research, coast guard, and naval...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Polar-Navigation-Article.jpg",
-      "en": {
-        "headline": "The Future of Maritime Safety: Navigating the Polar Frontier’s Uncharted Waters and Hidden Hazards",
-        "summary": "The Arctic and Antarctic are increasingly becoming areas of convergence for maritime industries and government operations. Commercial shipping, offshore energy, expedition cruising, recreational yachting, scientific research, coast guard, and naval...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "UK Moves Toward New Maritime Fuel Standard",
-      "link": "https://gcaptain.com/uk-moves-toward-new-maritime-fuel-standard/",
-      "pubDate": "Mon, 16 Nov 2026 16:17:53 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "The United Kingdom has launched a consultation on new maritime fuel regulations that could require thousands of ships calling at British ports to progressively reduce the greenhouse gas emissions intensity...",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 9,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/London-Gateway.jpg",
-      "en": {
-        "headline": "UK Moves Toward New Maritime Fuel Standard",
-        "summary": "The United Kingdom has launched a consultation on new maritime fuel regulations that could require thousands of ships calling at British ports to progressively reduce the greenhouse gas emissions intensity...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Supertanker Rates Plunge More Than 60% From Record Highs",
-      "link": "https://gcaptain.com/supertanker-rates-plunge-more-than-60-from-record-highs/",
-      "pubDate": "Mon, 16 Nov 2026 16:03:34 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The cost of shipping oil in the largest tankers has declined sharply since the beginning of November, reflecting weaker demand for chartering and an unwinding of the geopolitical risk premium that sent shipping costs to a record high in October.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
-      "en": {
-        "headline": "Supertanker Rates Plunge More Than 60% From Record Highs",
-        "summary": "The cost of shipping oil in the largest tankers has declined sharply since the beginning of November, reflecting weaker demand for chartering and an unwinding of the geopolitical risk premium that sent shipping costs to a record high in October.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Maersk, Hapag-Lloyd Expand Suez Canal Return With Three More Gemini Services",
-      "link": "https://gcaptain.com/maersk-hapag-lloyd-expand-suez-canal-return-with-three-more-gemini-services/",
-      "pubDate": "Mon, 16 Nov 2026 15:45:05 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Maersk and Hapag-Lloyd are bringing three more Gemini Cooperation services back through the Red Sea and Suez Canal, marking another major step in the container shipping industry&#8217;s gradual return to...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/08/2023-08-06T161525Z_1697420677_RC2GI2A48P09_RTRMADP_3_EGYPT-SUEZCANAL.jpg",
-      "en": {
-        "headline": "Maersk, Hapag-Lloyd Expand Suez Canal Return With Three More Gemini Services",
-        "summary": "Maersk and Hapag-Lloyd are bringing three more Gemini Cooperation services back through the Red Sea and Suez Canal, marking another major step in the container shipping industry&#8217;s gradual return to...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Jones Act Waiver Extended Another 90 Days as U.S. Maritime Groups Sound Alarm",
-      "link": "https://gcaptain.com/jones-act-waiver-extended-another-90-days-as-u-s-maritime-groups-sound-alarm/",
-      "pubDate": "Mon, 16 Nov 2026 15:13:27 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Trump administration has extended its emergency Jones Act waiver for another 90 days, allowing foreign-flagged vessels to continue transporting oil and other commodities between U.S. ports under a case-by-case...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Jones Act Waiver Extended Another 90 Days as U.S. Maritime Groups Sound Alarm",
-        "summary": "The Trump administration has extended its emergency Jones Act waiver for another 90 days, allowing foreign-flagged vessels to continue transporting oil and other commodities between U.S. ports under a case-by-case...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "South Korean Container Ship Considered Abandoning Arctic Trial Voyage Due to Ice as Owner Plans Sale",
-      "link": "https://gcaptain.com/south-korean-container-ship-considered-abandoning-arctic-trial-voyage-due-to-ice-as-owner-considers-sale/",
-      "pubDate": "Mon, 16 Nov 2026 13:31:38 +0000",
-      "source": "gCaptain",
-      "category": "S&P",
-      "summary": "South Korea’s first container ship trial along the Northern Sea Route exposed the challenges of Arctic navigation, with crew members describing a near-abandonment decision after drifting ice blocked their path. The operator is now considering selling the vessel after a single rou",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 11,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "South Korean Container Ship Considered Abandoning Arctic Trial Voyage Due to Ice as Owner Plans Sale",
-        "summary": "South Korea’s first container ship trial along the Northern Sea Route exposed the challenges of Arctic navigation, with crew members describing a near-abandonment decision after drifting ice blocked their path. The operator is now considering selling the vessel after a single rou",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Xylas wins second term at Intercargo",
-      "link": "https://splash247.com/xylas-wins-second-term-at-intercargo/",
-      "pubDate": "Mon, 16 Nov 2026 12:54:05 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Greek shipowner John Xylas has secured another two years at the helm of dry bulk shipping association Intercargo, with executives from Berge Bulk and Fleet Management joining its leadership team. Members meeting in Rome re-elected the Ariston Navigation president and chief execut",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/John-A.-Xylas-CEO-Ariston-Navigation-and-Chairman-INTERCARGO.jpeg",
-      "en": {
-        "headline": "Xylas wins second term at Intercargo",
-        "summary": "Greek shipowner John Xylas has secured another two years at the helm of dry bulk shipping association Intercargo, with executives from Berge Bulk and Fleet Management joining its leadership team. Members meeting in Rome re-elected the Ariston Navigation president and chief execut",
-        "source": "Splash247"
       }
     }
   ]
