@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-11-18T00:15:17.321Z",
-    "benchmarkAsOf": "2026-11-17",
+    "generatedAt": "2026-11-18T14:50:20.825Z",
+    "benchmarkAsOf": "2026-11-18",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-11-17",
-    "updatedLabelKo": "2026-11-17 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-11-18",
+    "updatedLabelKo": "2026-11-18 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 878,
-        "deltaPct": 0,
-        "asOf": "2026-11-16T17:00:00.000Z",
+        "priceUsdMt": 862.5,
+        "deltaPct": -1.77,
+        "asOf": "2026-11-17T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1196,
-        "deltaPct": 0,
-        "asOf": "2026-11-16T17:00:00.000Z",
+        "priceUsdMt": 1168,
+        "deltaPct": -2.34,
+        "asOf": "2026-11-17T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 667,
-        "deltaPct": 0,
-        "asOf": "2026-11-16T17:00:00.000Z",
+        "priceUsdMt": 648,
+        "deltaPct": -2.85,
+        "asOf": "2026-11-17T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 748,
-        "deltaPct": 0,
-        "asOf": "2026-11-16T17:00:00.000Z",
+        "priceUsdMt": 734,
+        "deltaPct": -1.87,
+        "asOf": "2026-11-17T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1279.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-16T17:00:00.000Z",
+        "priceUsdMt": 1234.5,
+        "deltaPct": -3.52,
+        "asOf": "2026-11-17T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 572.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-16T17:00:00.000Z",
+        "priceUsdMt": 554,
+        "deltaPct": -3.23,
+        "asOf": "2026-11-17T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 870,
-        "deltaPct": -4.4,
+        "deltaPct": 0,
         "asOf": "2026-11-17T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 730,
-        "deltaPct": -1.35,
+        "deltaPct": 0,
         "asOf": "2026-11-17T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 755.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-16T17:00:00.000Z",
+        "priceUsdMt": 748.5,
+        "deltaPct": -0.93,
+        "asOf": "2026-11-17T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1274,
-        "deltaPct": 0,
-        "asOf": "2026-11-16T17:00:00.000Z",
+        "priceUsdMt": 1252.5,
+        "deltaPct": -1.69,
+        "asOf": "2026-11-17T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 501.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-16T17:00:00.000Z",
+        "priceUsdMt": 495.5,
+        "deltaPct": -1.2,
+        "asOf": "2026-11-17T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 2893,
-      "deltaPct": -0.96,
+      "value": 2914,
+      "deltaPct": 0.73,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-17T19:30:32.898Z"
+      "asOf": "2026-11-18T14:33:22.015Z"
     },
     "capesizeTc": {
-      "value": 4486,
-      "deltaPct": -1.58,
+      "value": 4549,
+      "deltaPct": 1.4,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-17T19:30:32.984Z"
+      "asOf": "2026-11-18T14:33:22.048Z"
     },
     "panamaxTc": {
-      "value": 2122,
-      "deltaPct": 0.43,
+      "value": 2129,
+      "deltaPct": 0.33,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-17T19:30:33.023Z"
+      "asOf": "2026-11-18T14:33:22.080Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,227 @@
   },
   "news": [
     {
+      "title": "Neo Next+ snaps up EnQuest&#8217;s North Sea business in $960m deal",
+      "link": "https://splash247.com/neo-next-snaps-up-enquests-north-sea-business-in-960m-deal/",
+      "pubDate": "Wed, 18 Nov 2026 12:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "UK offshore producer Neo Next+ Energy has agreed to acquire EnQuest&#8217;s entire UK upstream oil and gas business in a deal worth up to $960m, further consolidating its position as the largest producer on the UK Continental Shelf. The transaction involves acquiring EnQuest Brit",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/05/Magnus-EnQuest.jpg",
+      "en": {
+        "headline": "Neo Next+ snaps up EnQuest&#8217;s North Sea business in $960m deal",
+        "summary": "UK offshore producer Neo Next+ Energy has agreed to acquire EnQuest&#8217;s entire UK upstream oil and gas business in a deal worth up to $960m, further consolidating its position as the largest producer on the UK Continental Shelf. The transaction involves acquiring EnQuest Brit",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Eiffage secures offshore converter platform contract in Germany",
+      "link": "https://splash247.com/eiffage-secures-offshore-converter-platform-contract-in-germany/",
+      "pubDate": "Wed, 18 Nov 2026 11:45:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "French construction group Eiffage has secured a contract to fabricate the jacket foundation for the LanWin beta offshore converter platform in the German North Sea. Dragados Offshore awarded the contract to Eiffage&#8217;s Belgian subsidiary, Smulders, as part of TenneT&#8217;s 2",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/12/TenneT-BalWin.jpg",
+      "en": {
+        "headline": "Eiffage secures offshore converter platform contract in Germany",
+        "summary": "French construction group Eiffage has secured a contract to fabricate the jacket foundation for the LanWin beta offshore converter platform in the German North Sea. Dragados Offshore awarded the contract to Eiffage&#8217;s Belgian subsidiary, Smulders, as part of TenneT&#8217;s 2",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Offen firms up four-ship boxship comeback in China",
+      "link": "https://splash247.com/offen-firms-up-four-ship-boxship-comeback-in-china/",
+      "pubDate": "Wed, 18 Nov 2026 11:30:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "German tonnage provider Claus-Peter Offen has reportedly firmed up all four of its planned 7,000 teu containership newbuildings, ending a nearly two-decade absence from the ordering market. Shipbuilding sources say the Hamburg-based owner has committed to the full quartet after i",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/05/Guangzhou-Shipyard-International-GSI.jpg",
+      "en": {
+        "headline": "Offen firms up four-ship boxship comeback in China",
+        "summary": "German tonnage provider Claus-Peter Offen has reportedly firmed up all four of its planned 7,000 teu containership newbuildings, ending a nearly two-decade absence from the ordering market. Shipbuilding sources say the Hamburg-based owner has committed to the full quartet after i",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Chinese contractors land $238m in offshore wind installation deals",
+      "link": "https://splash247.com/chinese-contractors-land-238m-in-offshore-wind-installation-deals/",
+      "pubDate": "Wed, 18 Nov 2026 11:15:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Three Chinese contractors have secured offshore wind construction and installation contracts worth a combined CNY1.58bn ($238m) for two projects being developed by Jiangsu Guoxin in the Yellow Sea. The awards cover the 506MW Dafeng H19 and 308MW Dongtai H4/H6 offshore wind develo",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/01/offshore-wind-farm-Fugro-e1612161403647.jpg",
+      "en": {
+        "headline": "Chinese contractors land $238m in offshore wind installation deals",
+        "summary": "Three Chinese contractors have secured offshore wind construction and installation contracts worth a combined CNY1.58bn ($238m) for two projects being developed by Jiangsu Guoxin in the Yellow Sea. The awards cover the 506MW Dafeng H19 and 308MW Dongtai H4/H6 offshore wind develo",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Shipping heavyweights warn against double carbon charges",
+      "link": "https://splash247.com/shipping-heavyweights-warn-against-double-carbon-charges/",
+      "pubDate": "Wed, 18 Nov 2026 11:00:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Nine of the world&#8217;s leading shipping associations have joined forces to push governments towards a global emissions deal, warning that a patchwork of regional regulations risks leaving shipowners paying multiple times for the same carbon emissions. The joint intervention co",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/03/IMO-HQ-building-1.jpg",
+      "en": {
+        "headline": "Shipping heavyweights warn against double carbon charges",
+        "summary": "Nine of the world&#8217;s leading shipping associations have joined forces to push governments towards a global emissions deal, warning that a patchwork of regional regulations risks leaving shipowners paying multiple times for the same carbon emissions. The joint intervention co",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "DEME orders pair of autonomous offshore survey vessels",
+      "link": "https://splash247.com/deme-orders-pair-of-autonomous-offshore-survey-vessels/",
+      "pubDate": "Wed, 18 Nov 2026 10:45:00 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "Belgian marine contractor DEME has ordered two uncrewed offshore survey vessels from Dutch technology specialist DEMCON Unmanned Systems, expanding its capabilities in remote and autonomous offshore operations. The vessels will be based on DEMCON&#8217;s DUS OV platform, which in",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/DEME-uncrewed-surface-vessel-USV.jpg",
+      "en": {
+        "headline": "DEME orders pair of autonomous offshore survey vessels",
+        "summary": "Belgian marine contractor DEME has ordered two uncrewed offshore survey vessels from Dutch technology specialist DEMCON Unmanned Systems, expanding its capabilities in remote and autonomous offshore operations. The vessels will be based on DEMCON&#8217;s DUS OV platform, which in",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "CSSC Shipping adds two bulkers and takes over ASL boxship pair",
+      "link": "https://splash247.com/cssc-shipping-adds-two-bulkers-and-takes-over-asl-boxship-pair/",
+      "pubDate": "Wed, 18 Nov 2026 10:30:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Hong Kong-listed CSSC Shipping has signed up for another two 80,000 dwt grain carriers in China while moving to take over a pair of containership newbuildings from ASL Shipping in a combined HK$1.73bn ($221m) transaction. The ship leasing arm of state-owned China Shipbuilding Gro",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2016/01/cssc-chengxi-e1690783802422.jpg",
+      "en": {
+        "headline": "CSSC Shipping adds two bulkers and takes over ASL boxship pair",
+        "summary": "Hong Kong-listed CSSC Shipping has signed up for another two 80,000 dwt grain carriers in China while moving to take over a pair of containership newbuildings from ASL Shipping in a combined HK$1.73bn ($221m) transaction. The ship leasing arm of state-owned China Shipbuilding Gro",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Saipem bags drilling double in Egypt and Suriname",
+      "link": "https://splash247.com/saipem-bags-drilling-double-in-egypt-and-suriname/",
+      "pubDate": "Wed, 18 Nov 2026 10:15:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Italian offshore engineering and drilling contractor Saipem has secured two new contracts worth approximately $181m for its Scarabeo 9 semisubmersible drilling rig. Burullus Gas Company, a joint venture between Shell, Petronas, and the Egyptian state-owned Egyptian General Petrol",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/Scarabeo-9.jpg",
+      "en": {
+        "headline": "Saipem bags drilling double in Egypt and Suriname",
+        "summary": "Italian offshore engineering and drilling contractor Saipem has secured two new contracts worth approximately $181m for its Scarabeo 9 semisubmersible drilling rig. Burullus Gas Company, a joint venture between Shell, Petronas, and the Egyptian state-owned Egyptian General Petrol",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "UK sets out 2030 marine fuel crackdown",
+      "link": "https://splash247.com/uk-sets-out-2030-marine-fuel-crackdown/",
+      "pubDate": "Wed, 18 Nov 2026 09:30:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "Britain has laid out plans for a new shipping fuel regulation that could initially cover around 5,000 vessels calling at its ports, including ships operating on international routes. The Department for Transport opened a consultation this week on a proposed greenhouse gas intensi",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/08/UK-ship.jpg",
+      "en": {
+        "headline": "UK sets out 2030 marine fuel crackdown",
+        "summary": "Britain has laid out plans for a new shipping fuel regulation that could initially cover around 5,000 vessels calling at its ports, including ships operating on international routes. The Department for Transport opened a consultation this week on a proposed greenhouse gas intensi",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "USCG Icebreaker ‘Healy’ Suffered Catastrophic Engine Overspeed Failure, Procurement Records Reveal",
+      "link": "https://gcaptain.com/uscg-icebreaker-healy-suffered-catastrophic-engine-overspeed-failure-procurement-records-reveal/",
+      "pubDate": "Wed, 18 Nov 2026 09:27:17 +0000",
+      "source": "gCaptain",
+      "category": "Bunker",
+      "summary": "The U.S. Coast Guard's largest icebreaker, USCGC Healy, suffered a catastrophic overspeed failure of one of its main propulsion diesel generators in July, triggering a fire in the generator room and requiring extensive repairs to electrical and fire-detection systems, and correct",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/08/USCGC-Healy.jpg",
+      "en": {
+        "headline": "USCG Icebreaker ‘Healy’ Suffered Catastrophic Engine Overspeed Failure, Procurement Records Reveal",
+        "summary": "The U.S. Coast Guard's largest icebreaker, USCGC Healy, suffered a catastrophic overspeed failure of one of its main propulsion diesel generators in July, triggering a fire in the generator room and requiring extensive repairs to electrical and fire-detection systems, and correct",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Smaller Tankers Join Hormuz Shuttle Trade to Keep Oil Flowing",
+      "link": "https://gcaptain.com/smaller-tankers-join-hormuz-shuttle-trade-to-keep-oil-flowing/",
+      "pubDate": "Wed, 18 Nov 2026 09:11:23 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Oil is increasingly moving through the Strait of Hormuz on smaller vessels, helping sustain exports as attacks on supertankers squeeze availability of the ships that typically dominate the trade.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-20T060010Z_1765538580_RC2L3LAI6608_RTRMADP_3_OIL-MAJORS-RESULTS-PREVIEW-800x533.jpg",
+      "en": {
+        "headline": "Smaller Tankers Join Hormuz Shuttle Trade to Keep Oil Flowing",
+        "summary": "Oil is increasingly moving through the Strait of Hormuz on smaller vessels, helping sustain exports as attacks on supertankers squeeze availability of the ships that typically dominate the trade.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "UAE&#8217;s ADNOC L&#038;S Says One Crew Member Missing After Attack on Its Vessel in Hormuz",
+      "link": "https://gcaptain.com/uaes-adnoc-ls-says-one-crew-member-missing-after-attack-on-its-vessel-in-hormuz/",
+      "pubDate": "Wed, 18 Nov 2026 09:04:07 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The United Arab Emirates' ADNOC L&#038;S said on Wednesday that one crew member was missing and 11 injured after one of its vessels was attacked in the Strait of Hormuz on Tuesday.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/2026-01-29T072648Z_718008440_RC2VOHA4UOBK_RTRMADP_3_ASIA-FUELOIL-ADNOC-800x533.jpg",
+      "en": {
+        "headline": "UAE&#8217;s ADNOC L&#038;S Says One Crew Member Missing After Attack on Its Vessel in Hormuz",
+        "summary": "The United Arab Emirates' ADNOC L&#038;S said on Wednesday that one crew member was missing and 11 injured after one of its vessels was attacked in the Strait of Hormuz on Tuesday.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Hafnia abandons Torm merger push and heads for exit",
+      "link": "https://splash247.com/hafnia-abandons-torm-merger-push-and-heads-for-exit/",
+      "pubDate": "Wed, 18 Nov 2026 08:45:39 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "BW Group-backed Hafnia has abandoned its pursuit of Danish product tanker rival Torm and is preparing to unwind its near-20% holding after failing to win support for a combination of the two shipping giants. The Oslo- and New York-listed owner said on Wednesday it intends to exit",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/09/TORM-Solution.jpeg",
+      "en": {
+        "headline": "Hafnia abandons Torm merger push and heads for exit",
+        "summary": "BW Group-backed Hafnia has abandoned its pursuit of Danish product tanker rival Torm and is preparing to unwind its near-20% holding after failing to win support for a combination of the two shipping giants. The Oslo- and New York-listed owner said on Wednesday it intends to exit",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "U.S. Coast Guard Icebreaker Returns From 133-Day Arctic Patrol Monitoring Chinese Research Vessels",
       "link": "https://gcaptain.com/u-s-coast-guard-icebreaker-returns-from-133-day-arctic-patrol-monitoring-chinese-research-vessels/",
       "pubDate": "Tue, 17 Nov 2026 20:44:35 +0000",
@@ -244,8 +465,8 @@
       "summary": "The U.S. Coast Guard&#8217;s newest polar icebreaker, Storis (WAGB 21), has returned to Seattle following a 133-day Arctic deployment that included monitoring Chinese research vessels, conducting fisheries enforcement operations and...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 18,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "U.S. Coast Guard Icebreaker Returns From 133-Day Arctic Patrol Monitoring Chinese Research Vessels",
         "summary": "The U.S. Coast Guard&#8217;s newest polar icebreaker, Storis (WAGB 21), has returned to Seattle following a 133-day Arctic deployment that included monitoring Chinese research vessels, conducting fisheries enforcement operations and...",
@@ -261,29 +482,12 @@
       "summary": "By Arsalan Shahla and Jen Judson (Bloomberg) &#8212; American warplanes hit an Iranian missile launch site on Qeshm Island in the Persian Gulf on Tuesday, a US military official said,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/2026-02-28T165609Z_132325647_RC29U4AYFESH_RTRMADP_3_IRAN-CRISIS-OIL-800x533.jpg",
       "en": {
         "headline": "U.S. Military Strikes Iranian Missile Site Near Strait of Hormuz",
         "summary": "By Arsalan Shahla and Jen Judson (Bloomberg) &#8212; American warplanes hit an Iranian missile launch site on Qeshm Island in the Persian Gulf on Tuesday, a US military official said,...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "How the Hormuz crisis handed America a lasting export advantage",
-      "link": "https://splash247.com/how-the-hormuz-crisis-handed-america-a-lasting-export-advantage/",
-      "pubDate": "Tue, 17 Nov 2026 19:42:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "As Middle Eastern supplies faltered, American exporters of LNG, LPG, jet fuel and plastics gained new customers, new shipping routes and, in some cases, contracts stretching decades into the future. Alex Byelyavtsev reports.  When the Strait of Hormuz became unreliable in 2026, s",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Commonwealth-LNG-Louisiana-Caturus.jpeg",
-      "en": {
-        "headline": "How the Hormuz crisis handed America a lasting export advantage",
-        "summary": "As Middle Eastern supplies faltered, American exporters of LNG, LPG, jet fuel and plastics gained new customers, new shipping routes and, in some cases, contracts stretching decades into the future. Alex Byelyavtsev reports.  When the Strait of Hormuz became unreliable in 2026, s",
-        "source": "Splash247"
       }
     },
     {
@@ -295,216 +499,12 @@
       "summary": "The number of empty tankers sailing to collect cargoes of Middle East crude is sliding, a trend that could jeopardize the recent revival in the region’s oil flows to global markets, according to Tankertrackers.com, a firm that monitors vessel movements.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 5,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/09/shutterstock_2507213927-800x450.jpg",
       "en": {
         "headline": "Gulf Oil Flow at Risk From Lack of Empty Tankers, Tracker Says",
         "summary": "The number of empty tankers sailing to collect cargoes of Middle East crude is sliding, a trend that could jeopardize the recent revival in the region’s oil flows to global markets, according to Tankertrackers.com, a firm that monitors vessel movements.",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "NTSB Warned of Mississippi River Passenger Vessel Collision Risks Nearly 30 Years Ago",
-      "link": "https://gcaptain.com/ntsb-warned-of-mississippi-river-passenger-vessel-collision-risks-nearly-30-years-ago/",
-      "pubDate": "Tue, 17 Nov 2026 18:10:55 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Nearly three decades before a tanker slammed into a docked river cruise ship in New Orleans, the National Transportation Safety Board warned that passenger vessels along the Mississippi River waterfront...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Bright-Field-allision.jpg",
-      "en": {
-        "headline": "NTSB Warned of Mississippi River Passenger Vessel Collision Risks Nearly 30 Years Ago",
-        "summary": "Nearly three decades before a tanker slammed into a docked river cruise ship in New Orleans, the National Transportation Safety Board warned that passenger vessels along the Mississippi River waterfront...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Norway Backs Nuclear-Powered Offshore Vessel Project",
-      "link": "https://gcaptain.com/norway-backs-nuclear-powered-offshore-vessel-project/",
-      "pubDate": "Tue, 17 Nov 2026 16:29:00 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Norway is moving a step closer to testing nuclear propulsion for commercial ships, with a consortium including shipbuilder VARD and offshore vessel operator Island Offshore securing NOK 20 million ($2...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/VARD-Nuclear-powered-OSV.jpg",
-      "en": {
-        "headline": "Norway Backs Nuclear-Powered Offshore Vessel Project",
-        "summary": "Norway is moving a step closer to testing nuclear propulsion for commercial ships, with a consortium including shipbuilder VARD and offshore vessel operator Island Offshore securing NOK 20 million ($2...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Hanwha Test-Fires Palletized Missile Launcher from Ship Off Mississippi Coast",
-      "link": "https://gcaptain.com/hanwha-test-fires-palletized-missile-launcher-from-ship-off-mississippi-coast/",
-      "pubDate": "Tue, 17 Nov 2026 15:52:39 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "South Korea&#8217;s Hanwha Aerospace and its U.S. subsidiary have successfully test-fired a Chunmoo guided missile from a vessel off the Mississippi coast, marking another step toward deploying precision-strike weapons aboard...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Launch-1-800x439.jpg",
-      "en": {
-        "headline": "Hanwha Test-Fires Palletized Missile Launcher from Ship Off Mississippi Coast",
-        "summary": "South Korea&#8217;s Hanwha Aerospace and its U.S. subsidiary have successfully test-fired a Chunmoo guided missile from a vessel off the Mississippi coast, marking another step toward deploying precision-strike weapons aboard...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "StealthGas crew airlifted from stricken LPG carrier off Bulgaria",
-      "link": "https://splash247.com/stealthgas-crew-airlifted-from-stricken-lpg-carrier-off-bulgaria/",
-      "pubDate": "Tue, 17 Nov 2026 15:18:58 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "All 19 crewmembers of a StealthGas LPG carrier have been rescued after the vessel was caught up in a suspected drone attack off Bulgaria, the second serious merchant shipping incident in the western Black Sea in less than 24 hours. The Liberia-flagged, 7,500 cu m Gas Husky got in",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/gas_husky_1000x600.jpg",
-      "en": {
-        "headline": "StealthGas crew airlifted from stricken LPG carrier off Bulgaria",
-        "summary": "All 19 crewmembers of a StealthGas LPG carrier have been rescued after the vessel was caught up in a suspected drone attack off Bulgaria, the second serious merchant shipping incident in the western Black Sea in less than 24 hours. The Liberia-flagged, 7,500 cu m Gas Husky got in",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Second Strike on LPG Tanker in Strait of Hormuz Leaves One Missing, Two Injured",
-      "link": "https://gcaptain.com/second-strike-on-lpg-tanker-in-strait-of-hormuz-leaves-one-missing-two-injured/",
-      "pubDate": "Tue, 17 Nov 2026 15:00:21 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "An Indian seafarer is missing and two others have been hospitalized after the Panama-flagged LPG tanker TARA GAS came under repeated attack in the Strait of Hormuz, forcing its 25-member...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Blazing-Ship-on-the-Dusk-Horizon.jpg",
-      "en": {
-        "headline": "Second Strike on LPG Tanker in Strait of Hormuz Leaves One Missing, Two Injured",
-        "summary": "An Indian seafarer is missing and two others have been hospitalized after the Panama-flagged LPG tanker TARA GAS came under repeated attack in the Strait of Hormuz, forcing its 25-member...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "LPG Tanker Reported to Have Sunk Off Bulgaria&#8217;s Black Sea Coast",
-      "link": "https://gcaptain.com/lpg-tanker-reported-to-have-sunk-off-bulgarias-black-sea-coast/",
-      "pubDate": "Tue, 17 Nov 2026 13:37:26 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A liquefied petroleum gas tanker sank off Bulgaria's Black Sea coast on Tuesday, Bulgaria's defense ministry said, a few dozen miles from where another ship went down after a drone attack a day earlier.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-17T123145Z_722088958_RC2NPOAI6DGY_RTRMADP_3_UKRAINE-CRISIS-BULGARIA-SHIP-800x450.jpg",
-      "en": {
-        "headline": "LPG Tanker Reported to Have Sunk Off Bulgaria&#8217;s Black Sea Coast",
-        "summary": "A liquefied petroleum gas tanker sank off Bulgaria's Black Sea coast on Tuesday, Bulgaria's defense ministry said, a few dozen miles from where another ship went down after a drone attack a day earlier.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Semco Maritime and PTSC bag Taiwan offshore wind deal",
-      "link": "https://splash247.com/semco-maritime-and-ptsc-bag-taiwan-offshore-wind-deal/",
-      "pubDate": "Tue, 17 Nov 2026 13:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Denmark&#8217;s Semco Maritime and Vietnam&#8217;s PTSC Mechanical &#38; Construction have secured an offshore substation contract for Copenhagen Infrastructure Partners&#8217; (CIP) 600MW Fengmiao II offshore wind project in Taiwan. The agreement covers engineering, procurement,",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/03/Hornsea-substation.jpg",
-      "en": {
-        "headline": "Semco Maritime and PTSC bag Taiwan offshore wind deal",
-        "summary": "Denmark&#8217;s Semco Maritime and Vietnam&#8217;s PTSC Mechanical &#38; Construction have secured an offshore substation contract for Copenhagen Infrastructure Partners&#8217; (CIP) 600MW Fengmiao II offshore wind project in Taiwan. The agreement covers engineering, procurement,",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "TechnipFMC extends charter of DOF CSV",
-      "link": "https://splash247.com/technipfmc-extends-charter-of-dof-csv/",
-      "pubDate": "Tue, 17 Nov 2026 12:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norwegian offshore vessel owner DOF has secured a new contract from TechnipFMC for its subsea construction vessel (CSV) Skandi Africa, extending a partnership that dates back more than a decade. DOF has classified the agreement as very large, valued at between $100m and $200m, an",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/05/Skandi-Africa-TechnipFMC.jpg",
-      "en": {
-        "headline": "TechnipFMC extends charter of DOF CSV",
-        "summary": "Norwegian offshore vessel owner DOF has secured a new contract from TechnipFMC for its subsea construction vessel (CSV) Skandi Africa, extending a partnership that dates back more than a decade. DOF has classified the agreement as very large, valued at between $100m and $200m, an",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Allseas taps Aker Solutions for massive topside dismantling job",
-      "link": "https://splash247.com/allseas-taps-aker-solutions-for-massive-topside-dismantling-job/",
-      "pubDate": "Tue, 17 Nov 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norwegian offshore engineering group Aker Solutions has received a letter of intent from Allseas to dismantle and recycle Equinor&#8217;s Statfjord A platform topside in the North Sea. The agreement covers preparatory work, reception, dismantling and recycling of the approximatel",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Statfjord-A-Equinor.jpg",
-      "en": {
-        "headline": "Allseas taps Aker Solutions for massive topside dismantling job",
-        "summary": "Norwegian offshore engineering group Aker Solutions has received a letter of intent from Allseas to dismantle and recycle Equinor&#8217;s Statfjord A platform topside in the North Sea. The agreement covers preparatory work, reception, dismantling and recycling of the approximatel",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Apache keeps North Sea assets producing despite worker walkouts",
-      "link": "https://splash247.com/apache-keeps-north-sea-assets-producing-despite-worker-walkouts/",
-      "pubDate": "Tue, 17 Nov 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "US energy company Apache said that production from its UK North Sea assets remains unaffected despite escalating industrial action involving around 170 offshore workers. Members of the Unite union staged a series of rolling strikes across seven Apache-operated installations over ",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Forties-Bravo-Apache.jpg",
-      "en": {
-        "headline": "Apache keeps North Sea assets producing despite worker walkouts",
-        "summary": "US energy company Apache said that production from its UK North Sea assets remains unaffected despite escalating industrial action involving around 170 offshore workers. Members of the Unite union staged a series of rolling strikes across seven Apache-operated installations over ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "African nations join forces to impose carbon charges on shipping",
-      "link": "https://splash247.com/african-nations-join-forces-to-impose-carbon-charges-on-shipping/",
-      "pubDate": "Tue, 17 Nov 2026 08:32:05 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "A growing group of African nations is pushing ahead with plans to introduce carbon charges on international shipping, raising the prospect of another regional emissions regime for shipowners already grappling with European environmental legislation. Guinea, Ivory Coast and Maurit",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/02/Norden-ops-Gabon.jpg",
-      "en": {
-        "headline": "African nations join forces to impose carbon charges on shipping",
-        "summary": "A growing group of African nations is pushing ahead with plans to introduce carbon charges on international shipping, raising the prospect of another regional emissions regime for shipowners already grappling with European environmental legislation. Guinea, Ivory Coast and Maurit",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "China emerges as dry bulk export powerhouse",
-      "link": "https://splash247.com/china-emerges-as-dry-bulk-export-powerhouse/",
-      "pubDate": "Tue, 17 Nov 2026 08:15:02 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "China&#8217;s transformation from the world&#8217;s dominant dry bulk importer into an increasingly significant exporter is gathering pace, with outbound cargo volumes more than doubling since 2020 and accounting for nearly two-thirds of global dry bulk shipment growth this year.",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2020/07/Iron-and-Steel-Works.jpg",
-      "en": {
-        "headline": "China emerges as dry bulk export powerhouse",
-        "summary": "China&#8217;s transformation from the world&#8217;s dominant dry bulk importer into an increasingly significant exporter is gathering pace, with outbound cargo volumes more than doubling since 2020 and accounting for nearly two-thirds of global dry bulk shipment growth this year.",
-        "source": "Splash247"
       }
     }
   ]
