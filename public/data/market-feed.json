@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-11-17T15:13:29.333Z",
-    "benchmarkAsOf": "2026-11-16",
+    "generatedAt": "2026-11-18T00:15:17.321Z",
+    "benchmarkAsOf": "2026-11-17",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-11-16",
-    "updatedLabelKo": "2026-11-16 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-11-17",
+    "updatedLabelKo": "2026-11-17 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 878,
-        "deltaPct": -0.51,
+        "deltaPct": 0,
         "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1196,
-        "deltaPct": -0.66,
+        "deltaPct": 0,
         "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 667,
-        "deltaPct": -1.19,
+        "deltaPct": 0,
         "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 748,
-        "deltaPct": 0.61,
+        "deltaPct": 0,
         "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1279.5,
-        "deltaPct": -0.12,
+        "deltaPct": 0,
         "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 572.5,
-        "deltaPct": -0.43,
+        "deltaPct": 0,
         "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 910,
-        "deltaPct": 0,
-        "asOf": "2026-11-16T00:00:00.000Z",
+        "priceUsdMt": 870,
+        "deltaPct": -4.4,
+        "asOf": "2026-11-17T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 740,
-        "deltaPct": 0,
-        "asOf": "2026-11-16T00:00:00.000Z",
+        "priceUsdMt": 730,
+        "deltaPct": -1.35,
+        "asOf": "2026-11-17T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -172,7 +172,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 755.5,
-        "deltaPct": 2.51,
+        "deltaPct": 0,
         "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1274,
-        "deltaPct": 0.71,
+        "deltaPct": 0,
         "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 501.5,
-        "deltaPct": 0.4,
+        "deltaPct": 0,
         "asOf": "2026-11-16T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 2921,
-      "deltaPct": 0,
+      "value": 2893,
+      "deltaPct": -0.96,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-16T16:06:20.498Z"
+      "asOf": "2026-11-17T19:30:32.898Z"
     },
     "capesizeTc": {
-      "value": 4558,
-      "deltaPct": 0,
+      "value": 4486,
+      "deltaPct": -1.58,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-16T16:06:20.635Z"
+      "asOf": "2026-11-17T19:30:32.984Z"
     },
     "panamaxTc": {
-      "value": 2113,
-      "deltaPct": 0,
+      "value": 2122,
+      "deltaPct": 0.43,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-16T16:06:20.680Z"
+      "asOf": "2026-11-17T19:30:33.023Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,159 @@
   },
   "news": [
     {
+      "title": "U.S. Coast Guard Icebreaker Returns From 133-Day Arctic Patrol Monitoring Chinese Research Vessels",
+      "link": "https://gcaptain.com/u-s-coast-guard-icebreaker-returns-from-133-day-arctic-patrol-monitoring-chinese-research-vessels/",
+      "pubDate": "Tue, 17 Nov 2026 20:44:35 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The U.S. Coast Guard&#8217;s newest polar icebreaker, Storis (WAGB 21), has returned to Seattle following a 133-day Arctic deployment that included monitoring Chinese research vessels, conducting fisheries enforcement operations and...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "U.S. Coast Guard Icebreaker Returns From 133-Day Arctic Patrol Monitoring Chinese Research Vessels",
+        "summary": "The U.S. Coast Guard&#8217;s newest polar icebreaker, Storis (WAGB 21), has returned to Seattle following a 133-day Arctic deployment that included monitoring Chinese research vessels, conducting fisheries enforcement operations and...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "U.S. Military Strikes Iranian Missile Site Near Strait of Hormuz",
+      "link": "https://gcaptain.com/u-s-military-strikes-iranian-missile-site-near-strait-of-hormuz/",
+      "pubDate": "Tue, 17 Nov 2026 20:14:20 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "By Arsalan Shahla and Jen Judson (Bloomberg) &#8212; American warplanes hit an Iranian missile launch site on Qeshm Island in the Persian Gulf on Tuesday, a US military official said,...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/2026-02-28T165609Z_132325647_RC29U4AYFESH_RTRMADP_3_IRAN-CRISIS-OIL-800x533.jpg",
+      "en": {
+        "headline": "U.S. Military Strikes Iranian Missile Site Near Strait of Hormuz",
+        "summary": "By Arsalan Shahla and Jen Judson (Bloomberg) &#8212; American warplanes hit an Iranian missile launch site on Qeshm Island in the Persian Gulf on Tuesday, a US military official said,...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "How the Hormuz crisis handed America a lasting export advantage",
+      "link": "https://splash247.com/how-the-hormuz-crisis-handed-america-a-lasting-export-advantage/",
+      "pubDate": "Tue, 17 Nov 2026 19:42:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "As Middle Eastern supplies faltered, American exporters of LNG, LPG, jet fuel and plastics gained new customers, new shipping routes and, in some cases, contracts stretching decades into the future. Alex Byelyavtsev reports.  When the Strait of Hormuz became unreliable in 2026, s",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Commonwealth-LNG-Louisiana-Caturus.jpeg",
+      "en": {
+        "headline": "How the Hormuz crisis handed America a lasting export advantage",
+        "summary": "As Middle Eastern supplies faltered, American exporters of LNG, LPG, jet fuel and plastics gained new customers, new shipping routes and, in some cases, contracts stretching decades into the future. Alex Byelyavtsev reports.  When the Strait of Hormuz became unreliable in 2026, s",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Gulf Oil Flow at Risk From Lack of Empty Tankers, Tracker Says",
+      "link": "https://gcaptain.com/gulf-oil-flow-at-risk-from-lack-of-empty-tankers-tracker-says/",
+      "pubDate": "Tue, 17 Nov 2026 18:24:56 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "The number of empty tankers sailing to collect cargoes of Middle East crude is sliding, a trend that could jeopardize the recent revival in the region’s oil flows to global markets, according to Tankertrackers.com, a firm that monitors vessel movements.",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/09/shutterstock_2507213927-800x450.jpg",
+      "en": {
+        "headline": "Gulf Oil Flow at Risk From Lack of Empty Tankers, Tracker Says",
+        "summary": "The number of empty tankers sailing to collect cargoes of Middle East crude is sliding, a trend that could jeopardize the recent revival in the region’s oil flows to global markets, according to Tankertrackers.com, a firm that monitors vessel movements.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "NTSB Warned of Mississippi River Passenger Vessel Collision Risks Nearly 30 Years Ago",
+      "link": "https://gcaptain.com/ntsb-warned-of-mississippi-river-passenger-vessel-collision-risks-nearly-30-years-ago/",
+      "pubDate": "Tue, 17 Nov 2026 18:10:55 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Nearly three decades before a tanker slammed into a docked river cruise ship in New Orleans, the National Transportation Safety Board warned that passenger vessels along the Mississippi River waterfront...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Bright-Field-allision.jpg",
+      "en": {
+        "headline": "NTSB Warned of Mississippi River Passenger Vessel Collision Risks Nearly 30 Years Ago",
+        "summary": "Nearly three decades before a tanker slammed into a docked river cruise ship in New Orleans, the National Transportation Safety Board warned that passenger vessels along the Mississippi River waterfront...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Norway Backs Nuclear-Powered Offshore Vessel Project",
+      "link": "https://gcaptain.com/norway-backs-nuclear-powered-offshore-vessel-project/",
+      "pubDate": "Tue, 17 Nov 2026 16:29:00 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Norway is moving a step closer to testing nuclear propulsion for commercial ships, with a consortium including shipbuilder VARD and offshore vessel operator Island Offshore securing NOK 20 million ($2...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/VARD-Nuclear-powered-OSV.jpg",
+      "en": {
+        "headline": "Norway Backs Nuclear-Powered Offshore Vessel Project",
+        "summary": "Norway is moving a step closer to testing nuclear propulsion for commercial ships, with a consortium including shipbuilder VARD and offshore vessel operator Island Offshore securing NOK 20 million ($2...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Hanwha Test-Fires Palletized Missile Launcher from Ship Off Mississippi Coast",
+      "link": "https://gcaptain.com/hanwha-test-fires-palletized-missile-launcher-from-ship-off-mississippi-coast/",
+      "pubDate": "Tue, 17 Nov 2026 15:52:39 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "South Korea&#8217;s Hanwha Aerospace and its U.S. subsidiary have successfully test-fired a Chunmoo guided missile from a vessel off the Mississippi coast, marking another step toward deploying precision-strike weapons aboard...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Launch-1-800x439.jpg",
+      "en": {
+        "headline": "Hanwha Test-Fires Palletized Missile Launcher from Ship Off Mississippi Coast",
+        "summary": "South Korea&#8217;s Hanwha Aerospace and its U.S. subsidiary have successfully test-fired a Chunmoo guided missile from a vessel off the Mississippi coast, marking another step toward deploying precision-strike weapons aboard...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "StealthGas crew airlifted from stricken LPG carrier off Bulgaria",
+      "link": "https://splash247.com/stealthgas-crew-airlifted-from-stricken-lpg-carrier-off-bulgaria/",
+      "pubDate": "Tue, 17 Nov 2026 15:18:58 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "All 19 crewmembers of a StealthGas LPG carrier have been rescued after the vessel was caught up in a suspected drone attack off Bulgaria, the second serious merchant shipping incident in the western Black Sea in less than 24 hours. The Liberia-flagged, 7,500 cu m Gas Husky got in",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/gas_husky_1000x600.jpg",
+      "en": {
+        "headline": "StealthGas crew airlifted from stricken LPG carrier off Bulgaria",
+        "summary": "All 19 crewmembers of a StealthGas LPG carrier have been rescued after the vessel was caught up in a suspected drone attack off Bulgaria, the second serious merchant shipping incident in the western Black Sea in less than 24 hours. The Liberia-flagged, 7,500 cu m Gas Husky got in",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Second Strike on LPG Tanker in Strait of Hormuz Leaves One Missing, Two Injured",
+      "link": "https://gcaptain.com/second-strike-on-lpg-tanker-in-strait-of-hormuz-leaves-one-missing-two-injured/",
+      "pubDate": "Tue, 17 Nov 2026 15:00:21 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "An Indian seafarer is missing and two others have been hospitalized after the Panama-flagged LPG tanker TARA GAS came under repeated attack in the Strait of Hormuz, forcing its 25-member...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 9,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Blazing-Ship-on-the-Dusk-Horizon.jpg",
+      "en": {
+        "headline": "Second Strike on LPG Tanker in Strait of Hormuz Leaves One Missing, Two Injured",
+        "summary": "An Indian seafarer is missing and two others have been hospitalized after the Panama-flagged LPG tanker TARA GAS came under repeated attack in the Strait of Hormuz, forcing its 25-member...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "LPG Tanker Reported to Have Sunk Off Bulgaria&#8217;s Black Sea Coast",
       "link": "https://gcaptain.com/lpg-tanker-reported-to-have-sunk-off-bulgarias-black-sea-coast/",
       "pubDate": "Tue, 17 Nov 2026 13:37:26 +0000",
@@ -244,7 +397,7 @@
       "summary": "A liquefied petroleum gas tanker sank off Bulgaria's Black Sea coast on Tuesday, Bulgaria's defense ministry said, a few dozen miles from where another ship went down after a drone attack a day earlier.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-17T123145Z_722088958_RC2NPOAI6DGY_RTRMADP_3_UKRAINE-CRISIS-BULGARIA-SHIP-800x450.jpg",
       "en": {
         "headline": "LPG Tanker Reported to Have Sunk Off Bulgaria&#8217;s Black Sea Coast",
@@ -261,7 +414,7 @@
       "summary": "Denmark&#8217;s Semco Maritime and Vietnam&#8217;s PTSC Mechanical &#38; Construction have secured an offshore substation contract for Copenhagen Infrastructure Partners&#8217; (CIP) 600MW Fengmiao II offshore wind project in Taiwan. The agreement covers engineering, procurement,",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/03/Hornsea-substation.jpg",
       "en": {
         "headline": "Semco Maritime and PTSC bag Taiwan offshore wind deal",
@@ -278,7 +431,7 @@
       "summary": "Norwegian offshore vessel owner DOF has secured a new contract from TechnipFMC for its subsea construction vessel (CSV) Skandi Africa, extending a partnership that dates back more than a decade. DOF has classified the agreement as very large, valued at between $100m and $200m, an",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/05/Skandi-Africa-TechnipFMC.jpg",
       "en": {
         "headline": "TechnipFMC extends charter of DOF CSV",
@@ -295,7 +448,7 @@
       "summary": "Norwegian offshore engineering group Aker Solutions has received a letter of intent from Allseas to dismantle and recycle Equinor&#8217;s Statfjord A platform topside in the North Sea. The agreement covers preparatory work, reception, dismantling and recycling of the approximatel",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Statfjord-A-Equinor.jpg",
       "en": {
         "headline": "Allseas taps Aker Solutions for massive topside dismantling job",
@@ -312,7 +465,7 @@
       "summary": "US energy company Apache said that production from its UK North Sea assets remains unaffected despite escalating industrial action involving around 170 offshore workers. Members of the Unite union staged a series of rolling strikes across seven Apache-operated installations over ",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 5,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Forties-Bravo-Apache.jpg",
       "en": {
         "headline": "Apache keeps North Sea assets producing despite worker walkouts",
@@ -329,7 +482,7 @@
       "summary": "A growing group of African nations is pushing ahead with plans to introduce carbon charges on international shipping, raising the prospect of another regional emissions regime for shipowners already grappling with European environmental legislation. Guinea, Ivory Coast and Maurit",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/02/Norden-ops-Gabon.jpg",
       "en": {
         "headline": "African nations join forces to impose carbon charges on shipping",
@@ -346,165 +499,12 @@
       "summary": "China&#8217;s transformation from the world&#8217;s dominant dry bulk importer into an increasingly significant exporter is gathering pace, with outbound cargo volumes more than doubling since 2020 and accounting for nearly two-thirds of global dry bulk shipment growth this year.",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 16,
       "imageUrl": "https://splash247.com/wp-content/uploads/2020/07/Iron-and-Steel-Works.jpg",
       "en": {
         "headline": "China emerges as dry bulk export powerhouse",
         "summary": "China&#8217;s transformation from the world&#8217;s dominant dry bulk importer into an increasingly significant exporter is gathering pace, with outbound cargo volumes more than doubling since 2020 and accounting for nearly two-thirds of global dry bulk shipment growth this year.",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "Hong Kong’s shipowner dynasties face the succession test",
-      "link": "https://splash247.com/hong-kongs-shipowner-dynasties-face-the-succession-test/",
-      "pubDate": "Tue, 17 Nov 2026 08:00:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "The city&#8217;s great shipping families have survived every imaginable market shock. Keeping the next generation – and its capital – anchored in Hong Kong may prove a different challenge. The latest chapter from our brand new Hong Kong magazine, which is being distributed across",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2020/05/Sir-YK-Pao-scaled-e1794645194830.jpg",
-      "en": {
-        "headline": "Hong Kong’s shipowner dynasties face the succession test",
-        "summary": "The city&#8217;s great shipping families have survived every imaginable market shock. Keeping the next generation – and its capital – anchored in Hong Kong may prove a different challenge. The latest chapter from our brand new Hong Kong magazine, which is being distributed across",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Another merchant ship lost in Black Sea drone onslaught",
-      "link": "https://splash247.com/another-merchant-ship-lost-in-black-sea-drone-onslaught/",
-      "pubDate": "Tue, 17 Nov 2026 07:45:57 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Another merchant ship has been lost in the Black Sea following a suspected naval drone attack off Bulgaria, bringing fresh urgency to warnings over the growing threat to commercial shipping near NATO territory. The 3,223 dwt Betul 8 capsized in Bulgaria&#8217;s exclusive economic",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Ambrey-Washed-Up-Drone.jpg",
-      "en": {
-        "headline": "Another merchant ship lost in Black Sea drone onslaught",
-        "summary": "Another merchant ship has been lost in the Black Sea following a suspected naval drone attack off Bulgaria, bringing fresh urgency to warnings over the growing threat to commercial shipping near NATO territory. The 3,223 dwt Betul 8 capsized in Bulgaria&#8217;s exclusive economic",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "EU widens shadow fleet crackdown to tanker managers and oil buyers",
-      "link": "https://splash247.com/eu-widens-shadow-fleet-crackdown-to-tanker-managers-and-oil-buyers/",
-      "pubDate": "Tue, 17 Nov 2026 07:28:39 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The European Union has widened its sanctions campaign against Russia&#8217;s shadow fleet, targeting tanker owners, shipmanagers, insurers and oil buyers across several countries in a fresh effort to disrupt Moscow&#8217;s seaborne energy exports. The measures adopted on Monday a",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/02/Sovcomflot-tanker.jpg",
-      "en": {
-        "headline": "EU widens shadow fleet crackdown to tanker managers and oil buyers",
-        "summary": "The European Union has widened its sanctions campaign against Russia&#8217;s shadow fleet, targeting tanker owners, shipmanagers, insurers and oil buyers across several countries in a fresh effort to disrupt Moscow&#8217;s seaborne energy exports. The measures adopted on Monday a",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Celsius returns to Samsung for $257m LNG carrier",
-      "link": "https://splash247.com/celsius-returns-to-samsung-for-257m-lng-carrier/",
-      "pubDate": "Tue, 17 Nov 2026 06:22:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Danish shipowner Celsius Tankers has returned to Samsung Heavy Industries for another LNG carrier, adding a $257m newbuilding to its growing gas shipping fleet. The Jeppe Jensen-led company has been named as the buyer behind a KRW342.4bn ($257m) contract disclosed by the South Ko",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Celsius-LNG-Carrier.jpg",
-      "en": {
-        "headline": "Celsius returns to Samsung for $257m LNG carrier",
-        "summary": "Danish shipowner Celsius Tankers has returned to Samsung Heavy Industries for another LNG carrier, adding a $257m newbuilding to its growing gas shipping fleet. The Jeppe Jensen-led company has been named as the buyer behind a KRW342.4bn ($257m) contract disclosed by the South Ko",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "EU Targets Shadow Fleet Shipowners, Managers and Insurers in New Russia Sanctions",
-      "link": "https://gcaptain.com/eu-targets-shadow-fleet-shipowners-managers-and-insurers-in-new-russia-sanctions/",
-      "pubDate": "Mon, 16 Nov 2026 23:20:40 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "The European Union has imposed a new round of sanctions targeting the shipowners, vessel managers, insurers and financial networks supporting Russia&#8217;s shadow fleet, expanding its efforts to disrupt the maritime...",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 15,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/01/2026-01-02T114831Z_1689418246_RC2P3HAKCKH8_RTRMADP_3_INDIA-RUSSIA-OIL-USA-800x533.jpg",
-      "en": {
-        "headline": "EU Targets Shadow Fleet Shipowners, Managers and Insurers in New Russia Sanctions",
-        "summary": "The European Union has imposed a new round of sanctions targeting the shipowners, vessel managers, insurers and financial networks supporting Russia&#8217;s shadow fleet, expanding its efforts to disrupt the maritime...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "UKMTO Reports Two Tanker Attacks in Strait of Hormuz",
-      "link": "https://gcaptain.com/ukmto-reports-two-tanker-attacks-in-strait-of-hormuz/",
-      "pubDate": "Mon, 16 Nov 2026 22:30:41 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Two tankers were reportedly attacked in the Strait of Hormuz on Monday, November 16, with both incidents resulting in engine-room fires and one vessel left disabled, according to separate warnings...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-07-31T061146Z_355163413_RC2ROMAOX291_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x522.jpg",
-      "en": {
-        "headline": "UKMTO Reports Two Tanker Attacks in Strait of Hormuz",
-        "summary": "Two tankers were reportedly attacked in the Strait of Hormuz on Monday, November 16, with both incidents resulting in engine-room fires and one vessel left disabled, according to separate warnings...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Cargo Ship Capsizes Off Bulgaria After Reported Sea Drone Attack",
-      "link": "https://gcaptain.com/cargo-ship-capsizes-off-bulgaria-after-reported-sea-drone-attack/",
-      "pubDate": "Mon, 16 Nov 2026 20:36:56 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A Somali-flagged cargo ship carrying nearly 3,000 metric tons of wheat capsized off Bulgaria on Monday after what crew members described as an attack by two sea drones, marking the...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/02/2024-02-10T132315Z_878210178_RC2OX5AT9RMH_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-BLACK-SEA-800x534.jpg",
-      "en": {
-        "headline": "Cargo Ship Capsizes Off Bulgaria After Reported Sea Drone Attack",
-        "summary": "A Somali-flagged cargo ship carrying nearly 3,000 metric tons of wheat capsized off Bulgaria on Monday after what crew members described as an attack by two sea drones, marking the...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Armed Skiff Approaches Tanker Far Out in Arabian Sea",
-      "link": "https://gcaptain.com/armed-skiff-approaches-tanker-far-out-in-arabian-sea/",
-      "pubDate": "Mon, 16 Nov 2026 19:05:57 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A commercial tanker reported being approached by a small boat carrying four armed men in the Arabian Sea on Monday, raising fresh concerns about piracy activity in waters off the...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/04/12052771315_e0d9bb0246_b.jpg",
-      "en": {
-        "headline": "Armed Skiff Approaches Tanker Far Out in Arabian Sea",
-        "summary": "A commercial tanker reported being approached by a small boat carrying four armed men in the Arabian Sea on Monday, raising fresh concerns about piracy activity in waters off the...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "The Oil Market Is Brimming With Crude Despite Tanker Attacks",
-      "link": "https://gcaptain.com/the-oil-market-is-brimming-with-crude-despite-tanker-attacks/",
-      "pubDate": "Mon, 16 Nov 2026 18:45:55 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "More than eight months into the Iran war, smoke continues to billow from oil tankers as Tehran presses ahead with repeated attacks near the Strait of Hormuz.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
-      "en": {
-        "headline": "The Oil Market Is Brimming With Crude Despite Tanker Attacks",
-        "summary": "More than eight months into the Iran war, smoke continues to billow from oil tankers as Tehran presses ahead with repeated attacks near the Strait of Hormuz.",
-        "source": "gCaptain"
       }
     }
   ]
