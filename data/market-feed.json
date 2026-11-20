@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-11-20T14:38:57.321Z",
-    "benchmarkAsOf": "2026-11-19",
+    "generatedAt": "2026-11-20T23:30:14.777Z",
+    "benchmarkAsOf": "2026-11-20",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-11-19",
-    "updatedLabelKo": "2026-11-19 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-11-20",
+    "updatedLabelKo": "2026-11-20 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 834,
-        "deltaPct": 0.36,
+        "deltaPct": 0,
         "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1118.5,
-        "deltaPct": -1.89,
+        "deltaPct": 0,
         "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 631,
-        "deltaPct": -1.71,
+        "deltaPct": 0,
         "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 715,
-        "deltaPct": 1.42,
+        "deltaPct": 0,
         "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1170,
-        "deltaPct": -2.09,
+        "deltaPct": 0,
         "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 558.5,
-        "deltaPct": 1.55,
+        "deltaPct": 0,
         "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 880,
-        "deltaPct": 0,
-        "asOf": "2026-11-19T00:00:00.000Z",
+        "priceUsdMt": 850,
+        "deltaPct": -3.41,
+        "asOf": "2026-11-20T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 765,
-        "deltaPct": 0,
-        "asOf": "2026-11-19T00:00:00.000Z",
+        "priceUsdMt": 750,
+        "deltaPct": -1.96,
+        "asOf": "2026-11-20T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -172,7 +172,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 722.5,
-        "deltaPct": -3.02,
+        "deltaPct": 0,
         "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1204,
-        "deltaPct": -2.51,
+        "deltaPct": 0,
         "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 485,
-        "deltaPct": -2.81,
+        "deltaPct": 0,
         "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 2901,
-      "deltaPct": 0,
+      "value": 2898,
+      "deltaPct": -0.1,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-19T16:06:45.148Z"
+      "asOf": "2026-11-20T15:30:16.719Z"
     },
     "capesizeTc": {
-      "value": 4514,
-      "deltaPct": 0,
+      "value": 4502,
+      "deltaPct": -0.27,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-19T16:06:45.406Z"
+      "asOf": "2026-11-20T15:30:16.813Z"
     },
     "panamaxTc": {
-      "value": 2132,
-      "deltaPct": 0,
+      "value": 2140,
+      "deltaPct": 0.38,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-19T16:06:45.640Z"
+      "asOf": "2026-11-20T15:30:16.851Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,176 @@
   },
   "news": [
     {
+      "title": "More Than 110 Trade Groups Urge Deal as LA-Long Beach Port Strike Deadline Nears",
+      "link": "https://gcaptain.com/more-than-110-trade-groups-urge-deal-as-la-long-beach-port-strike-deadline-nears/",
+      "pubDate": "Fri, 20 Nov 2026 22:33:04 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "More than 110 U.S. trade associations are urging waterfront employers and union leaders to reach a labor agreement and avert a potentially crippling strike at the ports of Los Angeles...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/09/Port-of-Long-Beach-2-800x476.jpeg",
+      "en": {
+        "headline": "More Than 110 Trade Groups Urge Deal as LA-Long Beach Port Strike Deadline Nears",
+        "summary": "More than 110 U.S. trade associations are urging waterfront employers and union leaders to reach a labor agreement and avert a potentially crippling strike at the ports of Los Angeles...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Iran War Oil Premium Evaporates as Global Crude Supplies Surge",
+      "link": "https://gcaptain.com/iran-war-oil-premium-evaporates-as-global-crude-supplies-surge/",
+      "pubDate": "Fri, 20 Nov 2026 19:35:22 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The price of US sour oil has plunged, as a surge in crude supply from Venezuela, Canada and the Middle East gives refiners ample barrels to choose from.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
+      "en": {
+        "headline": "Iran War Oil Premium Evaporates as Global Crude Supplies Surge",
+        "summary": "The price of US sour oil has plunged, as a surge in crude supply from Venezuela, Canada and the Middle East gives refiners ample barrels to choose from.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Another Tanker Hit in Strait of Hormuz as Maritime Attacks Surge Worldwide",
+      "link": "https://gcaptain.com/another-tanker-hit-in-strait-of-hormuz-as-maritime-attacks-surge-worldwide/",
+      "pubDate": "Fri, 20 Nov 2026 17:43:53 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Another tanker was struck by a projectile and caught fire in the Strait of Hormuz on Friday, extending a wave of attacks on commercial shipping that has pushed maritime security...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
+      "en": {
+        "headline": "Another Tanker Hit in Strait of Hormuz as Maritime Attacks Surge Worldwide",
+        "summary": "Another tanker was struck by a projectile and caught fire in the Strait of Hormuz on Friday, extending a wave of attacks on commercial shipping that has pushed maritime security...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Houthis Order Ships to Leave Saudi Red Sea Ports After Hodeidah Airstrikes",
+      "link": "https://gcaptain.com/houthis-order-ships-to-leave-saudi-red-sea-ports-after-hodeidah-airstrikes/",
+      "pubDate": "Fri, 20 Nov 2026 17:19:31 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "The Saudi-led coalition fighting Yemen's Iran-aligned Houthis said it had struck the Red Sea port of Hodeidah to destroy Houthi capabilities on Friday, as the militants warned airlines to avoid Saudi airspace, pledging new air strikes within hours.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-15T145635Z_188060635_RC2EEMAOW6BY_RTRMADP_3_IRAN-CRISIS-YEMEN-RED-SEA-SATELLITE-1.jpg",
+      "en": {
+        "headline": "Houthis Order Ships to Leave Saudi Red Sea Ports After Hodeidah Airstrikes",
+        "summary": "The Saudi-led coalition fighting Yemen's Iran-aligned Houthis said it had struck the Red Sea port of Hodeidah to destroy Houthi capabilities on Friday, as the militants warned airlines to avoid Saudi airspace, pledging new air strikes within hours.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "South Korean Shipbuilder Advances Plans for Nuclear-Powered LNG Carrier",
+      "link": "https://gcaptain.com/south-korean-shipbuilder-advances-plans-for-nuclear-powered-lng-carrier/",
+      "pubDate": "Fri, 20 Nov 2026 17:14:46 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "South Korean shipbuilder Samsung Heavy Industries and U.S. nuclear technology company Tesser Atomics have signed an exclusive agreement to develop a nuclear-powered LNG carrier intended for commercial service between the...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/10/LNG_TANKER.jpg",
+      "en": {
+        "headline": "South Korean Shipbuilder Advances Plans for Nuclear-Powered LNG Carrier",
+        "summary": "South Korean shipbuilder Samsung Heavy Industries and U.S. nuclear technology company Tesser Atomics have signed an exclusive agreement to develop a nuclear-powered LNG carrier intended for commercial service between the...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "US Treasury Presses Singapore and Malaysia on Iran Sanctions Compliance",
+      "link": "https://gcaptain.com/us-treasury-presses-singapore-and-malaysia-on-iran-sanctions-compliance/",
+      "pubDate": "Fri, 20 Nov 2026 17:12:46 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "US Treasury Department officials met with government authorities in Singapore and Malaysia this week, including regulators and national security bodies, to warn of potential risks they could face if they do not comply with US sanctions on Iran.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
+      "en": {
+        "headline": "US Treasury Presses Singapore and Malaysia on Iran Sanctions Compliance",
+        "summary": "US Treasury Department officials met with government authorities in Singapore and Malaysia this week, including regulators and national security bodies, to warn of potential risks they could face if they do not comply with US sanctions on Iran.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Carnival Orders Two LNG-Powered Cruise Ships in $2.2 Billion Fincantieri Deal",
+      "link": "https://gcaptain.com/carnival-orders-two-lng-powered-cruise-ships-in-2-2-billion-fincantieri-deal/",
+      "pubDate": "Fri, 20 Nov 2026 16:15:36 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Carnival Corporation has signed a contract with Italian shipbuilding giant Fincantieri for two next-generation cruise ships, marking a shift toward smaller vessels designed to reach more destinations. The agreement, valued...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Carnival-Cruise-Line-Carnival-Destiny-Rendering-800x450.jpg",
+      "en": {
+        "headline": "Carnival Orders Two LNG-Powered Cruise Ships in $2.2 Billion Fincantieri Deal",
+        "summary": "Carnival Corporation has signed a contract with Italian shipbuilding giant Fincantieri for two next-generation cruise ships, marking a shift toward smaller vessels designed to reach more destinations. The agreement, valued...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "IMO Finds Just $10.5 Billion in Maritime Climate Finance",
+      "link": "https://gcaptain.com/imo-finds-just-10-5-billion-in-maritime-climate-finance/",
+      "pubDate": "Fri, 20 Nov 2026 16:07:47 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A new study by the International Maritime Organization (IMO) has identified just $10.5 billion in direct maritime climate finance over a six-year period, accounting for only 0.14% of global climate...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/10/shutterstock_417955765.jpg",
+      "en": {
+        "headline": "IMO Finds Just $10.5 Billion in Maritime Climate Finance",
+        "summary": "A new study by the International Maritime Organization (IMO) has identified just $10.5 billion in direct maritime climate finance over a six-year period, accounting for only 0.14% of global climate...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Crew Airlifted After Bulk Carrier Grounds on French Coast",
+      "link": "https://gcaptain.com/crew-airlifted-after-bulk-carrier-grounds-on-french-coast/",
+      "pubDate": "Fri, 20 Nov 2026 15:56:25 +0000",
+      "source": "gCaptain",
+      "category": "Dry Bulk",
+      "summary": "A Maltese-flagged bulk carrier ran aground on France&#8217;s Atlantic coast early Friday after being driven toward shore by strong winds and heavy seas, prompting the helicopter evacuation of 19 crew...",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Miro-G-grounding.jpeg",
+      "en": {
+        "headline": "Crew Airlifted After Bulk Carrier Grounds on French Coast",
+        "summary": "A Maltese-flagged bulk carrier ran aground on France&#8217;s Atlantic coast early Friday after being driven toward shore by strong winds and heavy seas, prompting the helicopter evacuation of 19 crew...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Iranian Oil Transferred Between Tankers as US Widens Blockade",
+      "link": "https://gcaptain.com/iranian-oil-transferred-between-tankers-as-us-widens-blockade/",
+      "pubDate": "Fri, 20 Nov 2026 13:57:02 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A cargo of Iranian crude was transferred between two tankers in the Persian Gulf this week, as the US warned its navy could target vessels that carry out the practice while enforcing a maritime blockade.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 9,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T134318Z_693026131_RC2N1MAQSWKP_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x524.jpg",
+      "en": {
+        "headline": "Iranian Oil Transferred Between Tankers as US Widens Blockade",
+        "summary": "A cargo of Iranian crude was transferred between two tankers in the Persian Gulf this week, as the US warned its navy could target vessels that carry out the practice while enforcing a maritime blockade.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Subsea 7 seeks buyer for pipelay vessel ahead of Saipem merger",
       "link": "https://splash247.com/subsea-7-seeks-buyer-for-pipelay-vessel-ahead-of-saipem-merger/",
       "pubDate": "Fri, 20 Nov 2026 12:00:00 +0000",
@@ -244,7 +414,7 @@
       "summary": "Norwegian offshore engineering contractor Subsea 7 has begun identifying a buyer for its pipelay and heavy-lift vessel Seven Borealis, which it must divest as part of its planned merger with Saipem. The company confirmed the move in its third-quarter results, after Brazil&#8217;s",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2015/07/Subsea-7-Seven-Borealis.jpeg",
       "en": {
         "headline": "Subsea 7 seeks buyer for pipelay vessel ahead of Saipem merger",
@@ -261,7 +431,7 @@
       "summary": "Offshore construction contractor Seaway 7 is preparing to deploy three vessels on SSE Renewables&#8217; proposed 1.4GW Berwick Bank B offshore wind development in Scotland. The planned installation fleet comprises the Seaway Alfa Lift, Seaway Strashnov, and Seaway Phoenix, with o",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Seaway-Phoenix-Seaway-7.jpg",
       "en": {
         "headline": "Seaway 7 lines up vessel trio for Scottish offshore wind project",
@@ -278,7 +448,7 @@
       "summary": "The Scottish Government has granted offshore planning consent for the 1GW Muir Mhòr floating wind farm being developed by Fred. Olsen Seawind off the Aberdeenshire coast. Located approximately 63 km east of Peterhead, the project will comprise up to 67 floating wind turbines capa",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/08/Ingka-floating-wind.jpg",
       "en": {
         "headline": "Scotland greenlights 1 GW floating offshore wind project",
@@ -295,7 +465,7 @@
       "summary": "Oslo-listed Hunter Group has launched a NOK1.63bn ($168m) takeover bid for Norwegian offshore accommodation player Jacktel, looking to put its windfall from lucrative VLCC charter contracts into a longer-term business. The Erik Mathiesen-led investment company has offered NOK6.30",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/09/Jacktel-Haven.jpg",
       "en": {
         "headline": "Hunter makes offshore move with Jacktel buyout offer",
@@ -312,7 +482,7 @@
       "summary": "Chinese shipbuilding heavyweight Yangzijiang has brought a previously stalled shipyard expansion back onto the table, signing an investment agreement for a RMB3.38bn ($504m) construction project at Taicang in Jiangsu province. The Singapore-listed group&#8217;s wholly owned subsi",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/05/Yangzijiang.jpg",
       "en": {
         "headline": "Yangzijiang revives $500m Chinese shipyard project",
@@ -329,182 +499,12 @@
       "summary": "What can shipping learn from all the Big Tech outages over the past week that have suddenly brought the venerable fax machine back into play? SplashTech sought out experts throughout the week to provide readers plenty of advice on this issue, as well as issuing a podcast on this ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Fax-machine-AI-generated.jpg",
       "en": {
         "headline": "SplashTech latest: Time to dust off the fax machine?",
         "summary": "What can shipping learn from all the Big Tech outages over the past week that have suddenly brought the venerable fax machine back into play? SplashTech sought out experts throughout the week to provide readers plenty of advice on this issue, as well as issuing a podcast on this ",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "Splash Wrap: Five Splash channels at full blast",
-      "link": "https://splash247.com/splash-wrap-five-splash-channels-at-full-blast/",
-      "pubDate": "Fri, 20 Nov 2026 07:28:11 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "It has been an especially bloody week in both the Persian Gulf and in and around the Black Sea, with little sign of peace, despite the much-touted meeting between the leaders of Russia, China and the US in Shenzhen this week. BW Group-backed Hafnia officially abandoned its pursui",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/11/MSC-sunrise.jpg",
-      "en": {
-        "headline": "Splash Wrap: Five Splash channels at full blast",
-        "summary": "It has been an especially bloody week in both the Persian Gulf and in and around the Black Sea, with little sign of peace, despite the much-touted meeting between the leaders of Russia, China and the US in Shenzhen this week. BW Group-backed Hafnia officially abandoned its pursui",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Tsakos weighs Singapore listing in Asian capital push",
-      "link": "https://splash247.com/tsakos-weighs-singapore-listing-in-asian-capital-push/",
-      "pubDate": "Fri, 20 Nov 2026 07:03:13 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Greek tanker owner Tsakos Energy Navigation (TEN) is weighing a second stock market listing in Singapore, looking to tap Asian investors after a bumper year for tanker earnings. The New York-listed company disclosed on Thursday that it is evaluating a potential listing of its com",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Tsakos-TEN.jpg",
-      "en": {
-        "headline": "Tsakos weighs Singapore listing in Asian capital push",
-        "summary": "Greek tanker owner Tsakos Energy Navigation (TEN) is weighing a second stock market listing in Singapore, looking to tap Asian investors after a bumper year for tanker earnings. The New York-listed company disclosed on Thursday that it is evaluating a potential listing of its com",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Advantage splashes $272m on Korean VLCC pair",
-      "link": "https://splash247.com/advantage-splashes-272m-on-korean-vlcc-pair/",
-      "pubDate": "Fri, 20 Nov 2026 07:00:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Geneva-based Advantage Tankers has been linked to another two VLCC newbuildings at South Korea&#8217;s Hanwha Ocean, paying around $136m apiece in one of the most expensive crude tanker orders in more than a decade. The Tugrul Tokgoz-led owner has been identified by shipbuilding ",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/Hanwha-Ocean.jpg",
-      "en": {
-        "headline": "Advantage splashes $272m on Korean VLCC pair",
-        "summary": "Geneva-based Advantage Tankers has been linked to another two VLCC newbuildings at South Korea&#8217;s Hanwha Ocean, paying around $136m apiece in one of the most expensive crude tanker orders in more than a decade. The Tugrul Tokgoz-led owner has been identified by shipbuilding ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "India scraps compulsory retirement age for ships",
-      "link": "https://splash247.com/india-scraps-compulsory-retirement-age-for-ships/",
-      "pubDate": "Fri, 20 Nov 2026 06:15:02 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "India has scrapped compulsory retirement ages for ships flying its flag, reversing a policy designed to push older tonnage out of the country&#8217;s merchant fleet. The Directorate General of Maritime Administration (DGMA) issued a new order this week 18 allowing existing Indian",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/12/Navion-Britannia-Alang-Teekay-Altera.jpg",
-      "en": {
-        "headline": "India scraps compulsory retirement age for ships",
-        "summary": "India has scrapped compulsory retirement ages for ships flying its flag, reversing a policy designed to push older tonnage out of the country&#8217;s merchant fleet. The Directorate General of Maritime Administration (DGMA) issued a new order this week 18 allowing existing Indian",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Court Ruling Threatens License for $2.1 Billion Texas Offshore Oil Export Project",
-      "link": "https://gcaptain.com/court-ruling-threatens-license-for-2-1-billion-texas-offshore-oil-export-project/",
-      "pubDate": "Thu, 19 Nov 2026 21:48:20 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A court ruling has jeopardized a license for Sentinel Midstream’s $2.1 billion deepwater crude oil export project off the Texas coast, an environmental group that petitioned the court said this week.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 16,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/08/shutterstock_134979962.jpg",
-      "en": {
-        "headline": "Court Ruling Threatens License for $2.1 Billion Texas Offshore Oil Export Project",
-        "summary": "A court ruling has jeopardized a license for Sentinel Midstream’s $2.1 billion deepwater crude oil export project off the Texas coast, an environmental group that petitioned the court said this week.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "ARC Adds Another U.S.-Flag Ro/Ro Ship to Strengthen Military Sealift Capacity",
-      "link": "https://gcaptain.com/arc-adds-another-u-s-flag-ro-ro-ship-to-strengthen-military-sealift-capacity/",
-      "pubDate": "Thu, 19 Nov 2026 20:41:10 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "American Roll-On/Roll-Off Carrier Group (ARC) has added another large vehicle carrier to its U.S.-flag fleet, strengthening its ability to transport heavy military equipment and commercial cargo overseas. The 757-foot ARC...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/ARC-UNITED-Kanmon-Straits-EB2_A.jpg",
-      "en": {
-        "headline": "ARC Adds Another U.S.-Flag Ro/Ro Ship to Strengthen Military Sealift Capacity",
-        "summary": "American Roll-On/Roll-Off Carrier Group (ARC) has added another large vehicle carrier to its U.S.-flag fleet, strengthening its ability to transport heavy military equipment and commercial cargo overseas. The 757-foot ARC...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "U.S. Holds Historic Deep-Sea Mining Lease Sale",
-      "link": "https://gcaptain.com/u-s-holds-historic-deep-sea-mining-lease-sale/",
-      "pubDate": "Thu, 19 Nov 2026 20:24:21 +0000",
-      "source": "gCaptain",
-      "category": "S&P",
-      "summary": "The Trump administration on Thursday completed the first-ever U.S. offshore critical minerals lease auction, drawing $6 million in high bids for more than 31.5 million acres of seabed off American...",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 18,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/04/2023-03-31T222551Z_349037132_RC2BNX962X0V_RTRMADP_3_MINING-DEEPSEA-800x534.jpg",
-      "en": {
-        "headline": "U.S. Holds Historic Deep-Sea Mining Lease Sale",
-        "summary": "The Trump administration on Thursday completed the first-ever U.S. offshore critical minerals lease auction, drawing $6 million in high bids for more than 31.5 million acres of seabed off American...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Iran Intensifies Hormuz Tanker Attacks Just as Oil Prices Slide",
-      "link": "https://gcaptain.com/iran-intensifies-hormuz-tanker-attacks-just-as-oil-prices-slide/",
-      "pubDate": "Thu, 19 Nov 2026 17:26:25 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Iran’s attacks on oil tankers crossing the crucial Strait of Hormuz are getting more intense, just as prices have tumbled due to a flood of supply from the Middle East.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 21,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Tara-Gas-fire.jpg",
-      "en": {
-        "headline": "Iran Intensifies Hormuz Tanker Attacks Just as Oil Prices Slide",
-        "summary": "Iran’s attacks on oil tankers crossing the crucial Strait of Hormuz are getting more intense, just as prices have tumbled due to a flood of supply from the Middle East.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Panama Files Criminal Complaint Tied to CK Hutchison Ports Dispute",
-      "link": "https://gcaptain.com/panama-files-criminal-complaint-tied-to-ck-hutchison-ports-dispute/",
-      "pubDate": "Thu, 19 Nov 2026 17:13:54 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Panama's comptroller general said on Wednesday it had filed a criminal complaint over suspected irregularities uncovered in an audit of a state contract with a unit of Hong Kong conglomerate CK Hutchison.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 21,
-      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Panama Files Criminal Complaint Tied to CK Hutchison Ports Dispute",
-        "summary": "Panama's comptroller general said on Wednesday it had filed a criminal complaint over suspected irregularities uncovered in an audit of a state contract with a unit of Hong Kong conglomerate CK Hutchison.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Hanwha Philly Shipyard Begins Construction of First of Four Jones Act Tankers",
-      "link": "https://gcaptain.com/hanwha-philly-shipyard-begins-construction-of-first-of-four-jones-act-tankers/",
-      "pubDate": "Thu, 19 Nov 2026 17:07:50 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Hanwha Philly Shipyard has begun construction of the first of four medium-range (MR) oil and chemical tankers for Hanwha Shipping, marking the start of a new U.S.-built tanker program as...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 21,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Hanwha-Philly-Jones-Act-tanker-steel-cutting.jpg",
-      "en": {
-        "headline": "Hanwha Philly Shipyard Begins Construction of First of Four Jones Act Tankers",
-        "summary": "Hanwha Philly Shipyard has begun construction of the first of four medium-range (MR) oil and chemical tankers for Hanwha Shipping, marking the start of a new U.S.-built tanker program as...",
-        "source": "gCaptain"
       }
     }
   ]
