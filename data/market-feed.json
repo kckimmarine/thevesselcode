@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-11-19T14:57:08.404Z",
-    "benchmarkAsOf": "2026-11-18",
+    "generatedAt": "2026-11-20T00:02:35.444Z",
+    "benchmarkAsOf": "2026-11-19",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-11-18",
-    "updatedLabelKo": "2026-11-18 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-11-19",
+    "updatedLabelKo": "2026-11-19 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 850,
-        "deltaPct": 0,
-        "asOf": "2026-11-18T00:00:00.000Z",
+        "priceUsdMt": 880,
+        "deltaPct": 3.53,
+        "asOf": "2026-11-19T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 740,
-        "deltaPct": 0,
-        "asOf": "2026-11-18T00:00:00.000Z",
+        "priceUsdMt": 765,
+        "deltaPct": 3.38,
+        "asOf": "2026-11-19T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 2914,
-      "deltaPct": 0,
+      "value": 2901,
+      "deltaPct": -0.45,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-18T15:00:22.508Z"
+      "asOf": "2026-11-19T16:06:45.148Z"
     },
     "capesizeTc": {
-      "value": 4549,
-      "deltaPct": 0,
+      "value": 4514,
+      "deltaPct": -0.77,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-18T15:00:22.578Z"
+      "asOf": "2026-11-19T16:06:45.406Z"
     },
     "panamaxTc": {
-      "value": 2129,
-      "deltaPct": 0,
+      "value": 2132,
+      "deltaPct": 0.14,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-18T15:00:22.639Z"
+      "asOf": "2026-11-19T16:06:45.640Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,142 @@
   },
   "news": [
     {
+      "title": "Court Ruling Threatens License for $2.1 Billion Texas Offshore Oil Export Project",
+      "link": "https://gcaptain.com/court-ruling-threatens-license-for-2-1-billion-texas-offshore-oil-export-project/",
+      "pubDate": "Thu, 19 Nov 2026 21:48:20 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A court ruling has jeopardized a license for Sentinel Midstream’s $2.1 billion deepwater crude oil export project off the Texas coast, an environmental group that petitioned the court said this week.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/08/shutterstock_134979962.jpg",
+      "en": {
+        "headline": "Court Ruling Threatens License for $2.1 Billion Texas Offshore Oil Export Project",
+        "summary": "A court ruling has jeopardized a license for Sentinel Midstream’s $2.1 billion deepwater crude oil export project off the Texas coast, an environmental group that petitioned the court said this week.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Who calls the shots when it comes to ship finance in Hong Kong?",
+      "link": "https://splash247.com/who-calls-the-shots-when-it-comes-to-ship-finance-in-hong-kong/",
+      "pubDate": "Thu, 19 Nov 2026 21:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Tax incentives, Chinese leasing capital and a deep banking network are keeping Hong Kong relevant to global shipping. But the industry&#8217;s biggest question is whether deals are genuinely made in the city, or merely booked there. A major containership financing this autumn ill",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/11/Hong-Kong-Night-Victor.jpeg",
+      "en": {
+        "headline": "Who calls the shots when it comes to ship finance in Hong Kong?",
+        "summary": "Tax incentives, Chinese leasing capital and a deep banking network are keeping Hong Kong relevant to global shipping. But the industry&#8217;s biggest question is whether deals are genuinely made in the city, or merely booked there. A major containership financing this autumn ill",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "ARC Adds Another U.S.-Flag Ro/Ro Ship to Strengthen Military Sealift Capacity",
+      "link": "https://gcaptain.com/arc-adds-another-u-s-flag-ro-ro-ship-to-strengthen-military-sealift-capacity/",
+      "pubDate": "Thu, 19 Nov 2026 20:41:10 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "American Roll-On/Roll-Off Carrier Group (ARC) has added another large vehicle carrier to its U.S.-flag fleet, strengthening its ability to transport heavy military equipment and commercial cargo overseas. The 757-foot ARC...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/ARC-UNITED-Kanmon-Straits-EB2_A.jpg",
+      "en": {
+        "headline": "ARC Adds Another U.S.-Flag Ro/Ro Ship to Strengthen Military Sealift Capacity",
+        "summary": "American Roll-On/Roll-Off Carrier Group (ARC) has added another large vehicle carrier to its U.S.-flag fleet, strengthening its ability to transport heavy military equipment and commercial cargo overseas. The 757-foot ARC...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "U.S. Holds Historic Deep-Sea Mining Lease Sale",
+      "link": "https://gcaptain.com/u-s-holds-historic-deep-sea-mining-lease-sale/",
+      "pubDate": "Thu, 19 Nov 2026 20:24:21 +0000",
+      "source": "gCaptain",
+      "category": "S&P",
+      "summary": "The Trump administration on Thursday completed the first-ever U.S. offshore critical minerals lease auction, drawing $6 million in high bids for more than 31.5 million acres of seabed off American...",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/04/2023-03-31T222551Z_349037132_RC2BNX962X0V_RTRMADP_3_MINING-DEEPSEA-800x534.jpg",
+      "en": {
+        "headline": "U.S. Holds Historic Deep-Sea Mining Lease Sale",
+        "summary": "The Trump administration on Thursday completed the first-ever U.S. offshore critical minerals lease auction, drawing $6 million in high bids for more than 31.5 million acres of seabed off American...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Iran Intensifies Hormuz Tanker Attacks Just as Oil Prices Slide",
+      "link": "https://gcaptain.com/iran-intensifies-hormuz-tanker-attacks-just-as-oil-prices-slide/",
+      "pubDate": "Thu, 19 Nov 2026 17:26:25 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Iran’s attacks on oil tankers crossing the crucial Strait of Hormuz are getting more intense, just as prices have tumbled due to a flood of supply from the Middle East.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Tara-Gas-fire.jpg",
+      "en": {
+        "headline": "Iran Intensifies Hormuz Tanker Attacks Just as Oil Prices Slide",
+        "summary": "Iran’s attacks on oil tankers crossing the crucial Strait of Hormuz are getting more intense, just as prices have tumbled due to a flood of supply from the Middle East.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Panama Files Criminal Complaint Tied to CK Hutchison Ports Dispute",
+      "link": "https://gcaptain.com/panama-files-criminal-complaint-tied-to-ck-hutchison-ports-dispute/",
+      "pubDate": "Thu, 19 Nov 2026 17:13:54 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Panama's comptroller general said on Wednesday it had filed a criminal complaint over suspected irregularities uncovered in an audit of a state contract with a unit of Hong Kong conglomerate CK Hutchison.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
+      "en": {
+        "headline": "Panama Files Criminal Complaint Tied to CK Hutchison Ports Dispute",
+        "summary": "Panama's comptroller general said on Wednesday it had filed a criminal complaint over suspected irregularities uncovered in an audit of a state contract with a unit of Hong Kong conglomerate CK Hutchison.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Hanwha Philly Shipyard Begins Construction of First of Four Jones Act Tankers",
+      "link": "https://gcaptain.com/hanwha-philly-shipyard-begins-construction-of-first-of-four-jones-act-tankers/",
+      "pubDate": "Thu, 19 Nov 2026 17:07:50 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Hanwha Philly Shipyard has begun construction of the first of four medium-range (MR) oil and chemical tankers for Hanwha Shipping, marking the start of a new U.S.-built tanker program as...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Hanwha-Philly-Jones-Act-tanker-steel-cutting.jpg",
+      "en": {
+        "headline": "Hanwha Philly Shipyard Begins Construction of First of Four Jones Act Tankers",
+        "summary": "Hanwha Philly Shipyard has begun construction of the first of four medium-range (MR) oil and chemical tankers for Hanwha Shipping, marking the start of a new U.S.-built tanker program as...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Bayesian Disaster Prompts Calls for Overhaul of Superyacht Safety Standards",
+      "link": "https://gcaptain.com/bayesian-disaster-prompts-calls-for-overhaul-of-superyacht-safety-standards/",
+      "pubDate": "Thu, 19 Nov 2026 16:59:06 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "British marine accident investigators are calling for changes to superyacht safety regulations after the sinking of the luxury sailing yacht Bayesian exposed gaps in vessel stability standards, liferaft requirements and...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Bayesian-3DScanOfVessel-Web.jpg",
+      "en": {
+        "headline": "Bayesian Disaster Prompts Calls for Overhaul of Superyacht Safety Standards",
+        "summary": "British marine accident investigators are calling for changes to superyacht safety regulations after the sinking of the luxury sailing yacht Bayesian exposed gaps in vessel stability standards, liferaft requirements and...",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Oil Traders in Talks With QatarEnergy for Long-Term Supplies",
       "link": "https://gcaptain.com/oil-traders-in-talks-with-qatarenergy-for-long-term-supplies/",
       "pubDate": "Thu, 19 Nov 2026 13:42:50 +0000",
@@ -244,7 +380,7 @@
       "summary": "Some of the world’s top commodity-trading houses are in talks to secure more long-term supplies of Qatari crude, seeking to build on their success at shuttling oil out of the Persian Gulf during the Iran-US war.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-03-06T104859Z_1638352831_RC2MWJA831GC_RTRMADP_3_IRAN-CRISIS-ENERGY-QATAR-800x533.jpg",
       "en": {
         "headline": "Oil Traders in Talks With QatarEnergy for Long-Term Supplies",
@@ -261,7 +397,7 @@
       "summary": "The crew of British tech tycoon Mike Lynch's yacht, which sank off Sicily in 2024 killing him and six others, was unaware of its vulnerability to strong winds because the risk had never been assessed, a British investigation found on Thursday.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 1,
+      "hoursAgo": 10,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/06/2025-06-20T160425Z_2039214658_RC2G6FA0MYO6_RTRMADP_3_ITALY-SHIP.jpg",
       "en": {
         "headline": "Lynch Yacht Crew Unaware of Wind Risk Before Fatal Sinking, UK Report Finds",
@@ -278,7 +414,7 @@
       "summary": "Danish product tanker giant Torm has hit back at Hafnia following its abandoned takeover pursuit, revealing that it rejected several merger proposals from its rival because they offered no meaningful premium and substantially undervalued the company. The Jacob Meldgaard-led owner",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 11,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/03/Torm-Success.jpg",
       "en": {
         "headline": "Torm hits back at Hafnia over rejected merger bids",
@@ -295,7 +431,7 @@
       "summary": "Indian offshore services provider Seamec has secured a letter of award worth approximately $10.77m from the Indian subsidiary of PACC Offshore Services Holdings (POSH) for subsea installation work on the ONGC Pipeline Replacement Project X (PRP-X). The contract covers installing ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/MarineTraffic-Capt.-Turboboss-Seamec-II.jpg",
       "en": {
         "headline": "Seamec scores fresh Indian offshore installation award",
@@ -312,7 +448,7 @@
       "summary": "Evangelos Marinakis-backed Capital Tankers has secured approval to move its shares to Oslo’s main stock market, eight months after making its Norwegian trading debut through a $500m equity placement. Oslo Børs confirmed on Thursday that it had decided to admit the Greek-controlle",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 3,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/Evangelos-Marinakis-Capital-Group.jpg",
       "en": {
         "headline": "Marinakis-backed Capital Tankers gets Oslo main board green light",
@@ -329,7 +465,7 @@
       "summary": "Singapore-based Stamford Shipping has firmed up an order for 10 MR product tankers at China&#8217;s Nantong CIMC Sinopacific Offshore &#38; Engineering (CIMC SOE), with the yard also securing two vessels of the same design from an unidentified European owner. The shipbuilder, par",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/CIMC-SOE.jpg",
       "en": {
         "headline": "Stamford firms up 10 MR tankers in China",
@@ -346,7 +482,7 @@
       "summary": "Paratus Energy Services and Malaysia&#8217;s Vantris Energy are looking into a potential sale of their jointly owned Brazilian subsea services business, Seagems, as part of a strategic review. The two companies, which each hold a 50% stake in Seagems, said they are jointly assess",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 3,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Sapura-Jade-Seagems.jpg",
       "en": {
         "headline": "Paratus and Vantris explore sale of Brazilian subsea venture",
@@ -363,148 +499,12 @@
       "summary": "Norwegian LNG carrier owner ALNG has secured period charters for both its vessels with an unnamed international oil major, taking its entire fleet out of the spot market after a difficult third quarter. The Oslo-listed company, formerly known as Awilco LNG, disclosed that it ente",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/06/WilForce-WilPride.jpg",
       "en": {
         "headline": "ALNG locks in LNG duo with oil major",
         "summary": "Norwegian LNG carrier owner ALNG has secured period charters for both its vessels with an unnamed international oil major, taking its entire fleet out of the spot market after a difficult third quarter. The Oslo-listed company, formerly known as Awilco LNG, disclosed that it ente",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "Samsung Heavy teams with Tesser on nuclear-powered LNG carrier",
-      "link": "https://splash247.com/samsung-heavy-teams-with-tesser-on-nuclear-powered-lng-carrier/",
-      "pubDate": "Thu, 19 Nov 2026 10:17:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "South Korea&#8217;s Samsung Heavy Industries has entered an exclusive partnership with US reactor developer Tesser Atomics to develop a nuclear-powered LNG carrier, with the companies targeting a demonstration vessel operating commercially between the US and Europe. Under a memor",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2016/11/Samsung-heavy-e1634883821617.jpg",
-      "en": {
-        "headline": "Samsung Heavy teams with Tesser on nuclear-powered LNG carrier",
-        "summary": "South Korea&#8217;s Samsung Heavy Industries has entered an exclusive partnership with US reactor developer Tesser Atomics to develop a nuclear-powered LNG carrier, with the companies targeting a demonstration vessel operating commercially between the US and Europe. Under a memor",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Weatherford bags new deepwater drilling deal in Brazil",
-      "link": "https://splash247.com/weatherford-bags-new-deepwater-drilling-deal-in-brazil/",
-      "pubDate": "Thu, 19 Nov 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "US oilfield services giant Weatherford has secured a contract from Constellation Oil Services to provide managed pressure drilling (MPD) technology for a deepwater exploration campaign offshore Brazil. The agreement covers Constellation&#8217;s ultra-deepwater drillship Amaralina",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 4,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/12/MarineTraffic-Fabio-Roque-Amaralina-Star-Constellation.jpg",
-      "en": {
-        "headline": "Weatherford bags new deepwater drilling deal in Brazil",
-        "summary": "US oilfield services giant Weatherford has secured a contract from Constellation Oil Services to provide managed pressure drilling (MPD) technology for a deepwater exploration campaign offshore Brazil. The agreement covers Constellation&#8217;s ultra-deepwater drillship Amaralina",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Splash Ports latest: Liner giants go shopping, Panama&#8217;s port war escalates and Durban battles gridlock",
-      "link": "https://splash247.com/splash-ports-latest-liner-giants-go-shopping-panamas-port-war-escalates-and-durban-battles-gridlock/",
-      "pubDate": "Thu, 19 Nov 2026 09:20:12 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The world&#8217;s largest containerlines are accelerating their takeover of port infrastructure, weather is battering energy hubs, Panama has opened a new criminal front in its dispute with CK Hutchison, and South Africa is scrambling to clear a worsening backlog at Durban &#8211",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 5,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/MSC.jpg",
-      "en": {
-        "headline": "Splash Ports latest: Liner giants go shopping, Panama&#8217;s port war escalates and Durban battles gridlock",
-        "summary": "The world&#8217;s largest containerlines are accelerating their takeover of port infrastructure, weather is battering energy hubs, Panama has opened a new criminal front in its dispute with CK Hutchison, and South Africa is scrambling to clear a worsening backlog at Durban &#8211",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Previous Ukraine port calls could put ships in Black Sea firing line",
-      "link": "https://splash247.com/previous-ukraine-port-calls-could-put-ships-in-black-sea-firing-line/",
-      "pubDate": "Thu, 19 Nov 2026 08:44:08 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Merchant ships could be targeted in the Black Sea because of previous visits to Ukrainian ports, even when their current voyages have no connection to Ukraine, according to new intelligence highlighting an expansion of Russia&#8217;s maritime targeting campaign, something employe",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Skiros-suezmax-drone-hit-Black-Sea.jpg",
-      "en": {
-        "headline": "Previous Ukraine port calls could put ships in Black Sea firing line",
-        "summary": "Merchant ships could be targeted in the Black Sea because of previous visits to Ukrainian ports, even when their current voyages have no connection to Ukraine, according to new intelligence highlighting an expansion of Russia&#8217;s maritime targeting campaign, something employe",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Shipping Industry Presses for Global IMO Climate Deal as Divisions Over Rules Persist",
-      "link": "https://gcaptain.com/shipping-industry-presses-for-global-imo-climate-deal-as-divisions-over-rules-persist/",
-      "pubDate": "Wed, 18 Nov 2026 21:32:01 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Nine major shipping associations are urging governments to reach an agreement on global greenhouse gas regulations, warning that continued uncertainty threatens investment in cleaner ships and alternative fuels ahead of...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 17,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2021/11/shutterstock_1443851123.jpg",
-      "en": {
-        "headline": "Shipping Industry Presses for Global IMO Climate Deal as Divisions Over Rules Persist",
-        "summary": "Nine major shipping associations are urging governments to reach an agreement on global greenhouse gas regulations, warning that continued uncertainty threatens investment in cleaner ships and alternative fuels ahead of...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "TARA GAS Burning Off Oman as Another Tanker Attack Leaves 11 Injured",
-      "link": "https://gcaptain.com/tara-gas-burning-off-oman-as-another-tanker-attack-leaves-11-injured/",
-      "pubDate": "Wed, 18 Nov 2026 19:12:14 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The LPG tanker TARA GAS remained on fire and adrift in the Strait of Hormuz on Wednesday, according to a new navigational warning, as independently verified video showed the vessel...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Tara-Gas-fire.jpg",
-      "en": {
-        "headline": "TARA GAS Burning Off Oman as Another Tanker Attack Leaves 11 Injured",
-        "summary": "The LPG tanker TARA GAS remained on fire and adrift in the Strait of Hormuz on Wednesday, according to a new navigational warning, as independently verified video showed the vessel...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "China Oilfield Services Orders 59 Offshore Vessels in $1.6 Billion Shipbuilding Deal",
-      "link": "https://gcaptain.com/china-oilfield-services-orders-59-offshore-vessels-in-1-6-billion-shipbuilding-deal/",
-      "pubDate": "Wed, 18 Nov 2026 18:42:39 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "China Oilfield Services Limited (COSL) has signed contracts worth approximately $1.64 billion to build 59 offshore support vessels at three Chinese shipyards, marking a major investment in the country&#8217;s offshore...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/07/shutterstock_1104917414.jpg",
-      "en": {
-        "headline": "China Oilfield Services Orders 59 Offshore Vessels in $1.6 Billion Shipbuilding Deal",
-        "summary": "China Oilfield Services Limited (COSL) has signed contracts worth approximately $1.64 billion to build 59 offshore support vessels at three Chinese shipyards, marking a major investment in the country&#8217;s offshore...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "U.S. Targets Ship-to-Ship Transfers in Expanded Iran Maritime Blockade",
-      "link": "https://gcaptain.com/u-s-targets-ship-to-ship-transfers-in-expanded-iran-maritime-blockade/",
-      "pubDate": "Wed, 18 Nov 2026 18:38:45 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "The US military will treat ships that receive cargo at sea from vessels loaded in Iran as attempting to evade its blockade of Iranian ports and could take action against them, according to an advisory issued by US Central Command (CENTCOM) on Wednesday.",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 20,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-25T025418Z_961541165_RC22WKA2E4ZU_RTRMADP_3_IRAN-CRISIS-US-BLOCKADE.jpg",
-      "en": {
-        "headline": "U.S. Targets Ship-to-Ship Transfers in Expanded Iran Maritime Blockade",
-        "summary": "The US military will treat ships that receive cargo at sea from vessels loaded in Iran as attempting to evade its blockade of Iranian ports and could take action against them, according to an advisory issued by US Central Command (CENTCOM) on Wednesday.",
-        "source": "gCaptain"
       }
     }
   ]
