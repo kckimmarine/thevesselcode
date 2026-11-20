@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-20T00:02:35.444Z",
+    "generatedAt": "2026-11-20T14:38:57.321Z",
     "benchmarkAsOf": "2026-11-19",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 831,
-        "deltaPct": 0,
-        "asOf": "2026-11-18T17:00:00.000Z",
+        "priceUsdMt": 834,
+        "deltaPct": 0.36,
+        "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1140,
-        "deltaPct": 0,
-        "asOf": "2026-11-18T17:00:00.000Z",
+        "priceUsdMt": 1118.5,
+        "deltaPct": -1.89,
+        "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 642,
-        "deltaPct": 0,
-        "asOf": "2026-11-18T17:00:00.000Z",
+        "priceUsdMt": 631,
+        "deltaPct": -1.71,
+        "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 705,
-        "deltaPct": 0,
-        "asOf": "2026-11-18T17:00:00.000Z",
+        "priceUsdMt": 715,
+        "deltaPct": 1.42,
+        "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1195,
-        "deltaPct": 0,
-        "asOf": "2026-11-18T17:00:00.000Z",
+        "priceUsdMt": 1170,
+        "deltaPct": -2.09,
+        "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 550,
-        "deltaPct": 0,
-        "asOf": "2026-11-18T17:00:00.000Z",
+        "priceUsdMt": 558.5,
+        "deltaPct": 1.55,
+        "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 880,
-        "deltaPct": 3.53,
+        "deltaPct": 0,
         "asOf": "2026-11-19T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 765,
-        "deltaPct": 3.38,
+        "deltaPct": 0,
         "asOf": "2026-11-19T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 745,
-        "deltaPct": 0,
-        "asOf": "2026-11-18T17:00:00.000Z",
+        "priceUsdMt": 722.5,
+        "deltaPct": -3.02,
+        "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1235,
-        "deltaPct": 0,
-        "asOf": "2026-11-18T17:00:00.000Z",
+        "priceUsdMt": 1204,
+        "deltaPct": -2.51,
+        "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 499,
-        "deltaPct": 0,
-        "asOf": "2026-11-18T17:00:00.000Z",
+        "priceUsdMt": 485,
+        "deltaPct": -2.81,
+        "asOf": "2026-11-19T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 2901,
-      "deltaPct": -0.45,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-19T16:06:45.148Z"
     },
     "capesizeTc": {
       "value": 4514,
-      "deltaPct": -0.77,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-19T16:06:45.406Z"
     },
     "panamaxTc": {
       "value": 2132,
-      "deltaPct": 0.14,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-19T16:06:45.640Z"
@@ -236,6 +236,176 @@
   },
   "news": [
     {
+      "title": "Subsea 7 seeks buyer for pipelay vessel ahead of Saipem merger",
+      "link": "https://splash247.com/subsea-7-seeks-buyer-for-pipelay-vessel-ahead-of-saipem-merger/",
+      "pubDate": "Fri, 20 Nov 2026 12:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Norwegian offshore engineering contractor Subsea 7 has begun identifying a buyer for its pipelay and heavy-lift vessel Seven Borealis, which it must divest as part of its planned merger with Saipem. The company confirmed the move in its third-quarter results, after Brazil&#8217;s",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2015/07/Subsea-7-Seven-Borealis.jpeg",
+      "en": {
+        "headline": "Subsea 7 seeks buyer for pipelay vessel ahead of Saipem merger",
+        "summary": "Norwegian offshore engineering contractor Subsea 7 has begun identifying a buyer for its pipelay and heavy-lift vessel Seven Borealis, which it must divest as part of its planned merger with Saipem. The company confirmed the move in its third-quarter results, after Brazil&#8217;s",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Seaway 7 lines up vessel trio for Scottish offshore wind project",
+      "link": "https://splash247.com/seaway-7-lines-up-vessel-trio-for-scottish-offshore-wind-project/",
+      "pubDate": "Fri, 20 Nov 2026 11:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Offshore construction contractor Seaway 7 is preparing to deploy three vessels on SSE Renewables&#8217; proposed 1.4GW Berwick Bank B offshore wind development in Scotland. The planned installation fleet comprises the Seaway Alfa Lift, Seaway Strashnov, and Seaway Phoenix, with o",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Seaway-Phoenix-Seaway-7.jpg",
+      "en": {
+        "headline": "Seaway 7 lines up vessel trio for Scottish offshore wind project",
+        "summary": "Offshore construction contractor Seaway 7 is preparing to deploy three vessels on SSE Renewables&#8217; proposed 1.4GW Berwick Bank B offshore wind development in Scotland. The planned installation fleet comprises the Seaway Alfa Lift, Seaway Strashnov, and Seaway Phoenix, with o",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Scotland greenlights 1 GW floating offshore wind project",
+      "link": "https://splash247.com/scotland-greenlights-1-gw-floating-offshore-wind-project/",
+      "pubDate": "Fri, 20 Nov 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The Scottish Government has granted offshore planning consent for the 1GW Muir Mhòr floating wind farm being developed by Fred. Olsen Seawind off the Aberdeenshire coast. Located approximately 63 km east of Peterhead, the project will comprise up to 67 floating wind turbines capa",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/08/Ingka-floating-wind.jpg",
+      "en": {
+        "headline": "Scotland greenlights 1 GW floating offshore wind project",
+        "summary": "The Scottish Government has granted offshore planning consent for the 1GW Muir Mhòr floating wind farm being developed by Fred. Olsen Seawind off the Aberdeenshire coast. Located approximately 63 km east of Peterhead, the project will comprise up to 67 floating wind turbines capa",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Hunter makes offshore move with Jacktel buyout offer",
+      "link": "https://splash247.com/hunter-makes-offshore-move-with-jacktel-buyout-offer/",
+      "pubDate": "Fri, 20 Nov 2026 08:25:49 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Oslo-listed Hunter Group has launched a NOK1.63bn ($168m) takeover bid for Norwegian offshore accommodation player Jacktel, looking to put its windfall from lucrative VLCC charter contracts into a longer-term business. The Erik Mathiesen-led investment company has offered NOK6.30",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/09/Jacktel-Haven.jpg",
+      "en": {
+        "headline": "Hunter makes offshore move with Jacktel buyout offer",
+        "summary": "Oslo-listed Hunter Group has launched a NOK1.63bn ($168m) takeover bid for Norwegian offshore accommodation player Jacktel, looking to put its windfall from lucrative VLCC charter contracts into a longer-term business. The Erik Mathiesen-led investment company has offered NOK6.30",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Yangzijiang revives $500m Chinese shipyard project",
+      "link": "https://splash247.com/yangzijiang-revives-500m-chinese-shipyard-project/",
+      "pubDate": "Fri, 20 Nov 2026 08:15:05 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Chinese shipbuilding heavyweight Yangzijiang has brought a previously stalled shipyard expansion back onto the table, signing an investment agreement for a RMB3.38bn ($504m) construction project at Taicang in Jiangsu province. The Singapore-listed group&#8217;s wholly owned subsi",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/05/Yangzijiang.jpg",
+      "en": {
+        "headline": "Yangzijiang revives $500m Chinese shipyard project",
+        "summary": "Chinese shipbuilding heavyweight Yangzijiang has brought a previously stalled shipyard expansion back onto the table, signing an investment agreement for a RMB3.38bn ($504m) construction project at Taicang in Jiangsu province. The Singapore-listed group&#8217;s wholly owned subsi",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "SplashTech latest: Time to dust off the fax machine?",
+      "link": "https://splash247.com/splashtech-latest-time-to-dust-off-the-fax-machine/",
+      "pubDate": "Fri, 20 Nov 2026 08:00:36 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "What can shipping learn from all the Big Tech outages over the past week that have suddenly brought the venerable fax machine back into play? SplashTech sought out experts throughout the week to provide readers plenty of advice on this issue, as well as issuing a podcast on this ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Fax-machine-AI-generated.jpg",
+      "en": {
+        "headline": "SplashTech latest: Time to dust off the fax machine?",
+        "summary": "What can shipping learn from all the Big Tech outages over the past week that have suddenly brought the venerable fax machine back into play? SplashTech sought out experts throughout the week to provide readers plenty of advice on this issue, as well as issuing a podcast on this ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Splash Wrap: Five Splash channels at full blast",
+      "link": "https://splash247.com/splash-wrap-five-splash-channels-at-full-blast/",
+      "pubDate": "Fri, 20 Nov 2026 07:28:11 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "It has been an especially bloody week in both the Persian Gulf and in and around the Black Sea, with little sign of peace, despite the much-touted meeting between the leaders of Russia, China and the US in Shenzhen this week. BW Group-backed Hafnia officially abandoned its pursui",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/11/MSC-sunrise.jpg",
+      "en": {
+        "headline": "Splash Wrap: Five Splash channels at full blast",
+        "summary": "It has been an especially bloody week in both the Persian Gulf and in and around the Black Sea, with little sign of peace, despite the much-touted meeting between the leaders of Russia, China and the US in Shenzhen this week. BW Group-backed Hafnia officially abandoned its pursui",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Tsakos weighs Singapore listing in Asian capital push",
+      "link": "https://splash247.com/tsakos-weighs-singapore-listing-in-asian-capital-push/",
+      "pubDate": "Fri, 20 Nov 2026 07:03:13 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Greek tanker owner Tsakos Energy Navigation (TEN) is weighing a second stock market listing in Singapore, looking to tap Asian investors after a bumper year for tanker earnings. The New York-listed company disclosed on Thursday that it is evaluating a potential listing of its com",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/01/Tsakos-TEN.jpg",
+      "en": {
+        "headline": "Tsakos weighs Singapore listing in Asian capital push",
+        "summary": "Greek tanker owner Tsakos Energy Navigation (TEN) is weighing a second stock market listing in Singapore, looking to tap Asian investors after a bumper year for tanker earnings. The New York-listed company disclosed on Thursday that it is evaluating a potential listing of its com",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Advantage splashes $272m on Korean VLCC pair",
+      "link": "https://splash247.com/advantage-splashes-272m-on-korean-vlcc-pair/",
+      "pubDate": "Fri, 20 Nov 2026 07:00:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Geneva-based Advantage Tankers has been linked to another two VLCC newbuildings at South Korea&#8217;s Hanwha Ocean, paying around $136m apiece in one of the most expensive crude tanker orders in more than a decade. The Tugrul Tokgoz-led owner has been identified by shipbuilding ",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/Hanwha-Ocean.jpg",
+      "en": {
+        "headline": "Advantage splashes $272m on Korean VLCC pair",
+        "summary": "Geneva-based Advantage Tankers has been linked to another two VLCC newbuildings at South Korea&#8217;s Hanwha Ocean, paying around $136m apiece in one of the most expensive crude tanker orders in more than a decade. The Tugrul Tokgoz-led owner has been identified by shipbuilding ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "India scraps compulsory retirement age for ships",
+      "link": "https://splash247.com/india-scraps-compulsory-retirement-age-for-ships/",
+      "pubDate": "Fri, 20 Nov 2026 06:15:02 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "India has scrapped compulsory retirement ages for ships flying its flag, reversing a policy designed to push older tonnage out of the country&#8217;s merchant fleet. The Directorate General of Maritime Administration (DGMA) issued a new order this week 18 allowing existing Indian",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/12/Navion-Britannia-Alang-Teekay-Altera.jpg",
+      "en": {
+        "headline": "India scraps compulsory retirement age for ships",
+        "summary": "India has scrapped compulsory retirement ages for ships flying its flag, reversing a policy designed to push older tonnage out of the country&#8217;s merchant fleet. The Directorate General of Maritime Administration (DGMA) issued a new order this week 18 allowing existing Indian",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "Court Ruling Threatens License for $2.1 Billion Texas Offshore Oil Export Project",
       "link": "https://gcaptain.com/court-ruling-threatens-license-for-2-1-billion-texas-offshore-oil-export-project/",
       "pubDate": "Thu, 19 Nov 2026 21:48:20 +0000",
@@ -244,29 +414,12 @@
       "summary": "A court ruling has jeopardized a license for Sentinel Midstream’s $2.1 billion deepwater crude oil export project off the Texas coast, an environmental group that petitioned the court said this week.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 16,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/08/shutterstock_134979962.jpg",
       "en": {
         "headline": "Court Ruling Threatens License for $2.1 Billion Texas Offshore Oil Export Project",
         "summary": "A court ruling has jeopardized a license for Sentinel Midstream’s $2.1 billion deepwater crude oil export project off the Texas coast, an environmental group that petitioned the court said this week.",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Who calls the shots when it comes to ship finance in Hong Kong?",
-      "link": "https://splash247.com/who-calls-the-shots-when-it-comes-to-ship-finance-in-hong-kong/",
-      "pubDate": "Thu, 19 Nov 2026 21:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Tax incentives, Chinese leasing capital and a deep banking network are keeping Hong Kong relevant to global shipping. But the industry&#8217;s biggest question is whether deals are genuinely made in the city, or merely booked there. A major containership financing this autumn ill",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 3,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/11/Hong-Kong-Night-Victor.jpeg",
-      "en": {
-        "headline": "Who calls the shots when it comes to ship finance in Hong Kong?",
-        "summary": "Tax incentives, Chinese leasing capital and a deep banking network are keeping Hong Kong relevant to global shipping. But the industry&#8217;s biggest question is whether deals are genuinely made in the city, or merely booked there. A major containership financing this autumn ill",
-        "source": "Splash247"
       }
     },
     {
@@ -278,7 +431,7 @@
       "summary": "American Roll-On/Roll-Off Carrier Group (ARC) has added another large vehicle carrier to its U.S.-flag fleet, strengthening its ability to transport heavy military equipment and commercial cargo overseas. The 757-foot ARC...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 17,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/ARC-UNITED-Kanmon-Straits-EB2_A.jpg",
       "en": {
         "headline": "ARC Adds Another U.S.-Flag Ro/Ro Ship to Strengthen Military Sealift Capacity",
@@ -295,7 +448,7 @@
       "summary": "The Trump administration on Thursday completed the first-ever U.S. offshore critical minerals lease auction, drawing $6 million in high bids for more than 31.5 million acres of seabed off American...",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 3,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/04/2023-03-31T222551Z_349037132_RC2BNX962X0V_RTRMADP_3_MINING-DEEPSEA-800x534.jpg",
       "en": {
         "headline": "U.S. Holds Historic Deep-Sea Mining Lease Sale",
@@ -312,7 +465,7 @@
       "summary": "Iran’s attacks on oil tankers crossing the crucial Strait of Hormuz are getting more intense, just as prices have tumbled due to a flood of supply from the Middle East.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Tara-Gas-fire.jpg",
       "en": {
         "headline": "Iran Intensifies Hormuz Tanker Attacks Just as Oil Prices Slide",
@@ -329,8 +482,8 @@
       "summary": "Panama's comptroller general said on Wednesday it had filed a criminal complaint over suspected irregularities uncovered in an audit of a state contract with a unit of Hong Kong conglomerate CK Hutchison.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
-      "imageUrl": "https://images.unsplash.com/photo-1569263979104-8659937a0c8c?auto=format&fit=crop&w=800&q=80",
+      "hoursAgo": 21,
+      "imageUrl": "https://images.unsplash.com/photo-1494412574643-7cec40c5a2bf?auto=format&fit=crop&w=800&q=80",
       "en": {
         "headline": "Panama Files Criminal Complaint Tied to CK Hutchison Ports Dispute",
         "summary": "Panama's comptroller general said on Wednesday it had filed a criminal complaint over suspected irregularities uncovered in an audit of a state contract with a unit of Hong Kong conglomerate CK Hutchison.",
@@ -346,165 +499,12 @@
       "summary": "Hanwha Philly Shipyard has begun construction of the first of four medium-range (MR) oil and chemical tankers for Hanwha Shipping, marking the start of a new U.S.-built tanker program as...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Hanwha-Philly-Jones-Act-tanker-steel-cutting.jpg",
       "en": {
         "headline": "Hanwha Philly Shipyard Begins Construction of First of Four Jones Act Tankers",
         "summary": "Hanwha Philly Shipyard has begun construction of the first of four medium-range (MR) oil and chemical tankers for Hanwha Shipping, marking the start of a new U.S.-built tanker program as...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Bayesian Disaster Prompts Calls for Overhaul of Superyacht Safety Standards",
-      "link": "https://gcaptain.com/bayesian-disaster-prompts-calls-for-overhaul-of-superyacht-safety-standards/",
-      "pubDate": "Thu, 19 Nov 2026 16:59:06 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "British marine accident investigators are calling for changes to superyacht safety regulations after the sinking of the luxury sailing yacht Bayesian exposed gaps in vessel stability standards, liferaft requirements and...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Bayesian-3DScanOfVessel-Web.jpg",
-      "en": {
-        "headline": "Bayesian Disaster Prompts Calls for Overhaul of Superyacht Safety Standards",
-        "summary": "British marine accident investigators are calling for changes to superyacht safety regulations after the sinking of the luxury sailing yacht Bayesian exposed gaps in vessel stability standards, liferaft requirements and...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Oil Traders in Talks With QatarEnergy for Long-Term Supplies",
-      "link": "https://gcaptain.com/oil-traders-in-talks-with-qatarenergy-for-long-term-supplies/",
-      "pubDate": "Thu, 19 Nov 2026 13:42:50 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Some of the world’s top commodity-trading houses are in talks to secure more long-term supplies of Qatari crude, seeking to build on their success at shuttling oil out of the Persian Gulf during the Iran-US war.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/2026-03-06T104859Z_1638352831_RC2MWJA831GC_RTRMADP_3_IRAN-CRISIS-ENERGY-QATAR-800x533.jpg",
-      "en": {
-        "headline": "Oil Traders in Talks With QatarEnergy for Long-Term Supplies",
-        "summary": "Some of the world’s top commodity-trading houses are in talks to secure more long-term supplies of Qatari crude, seeking to build on their success at shuttling oil out of the Persian Gulf during the Iran-US war.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Lynch Yacht Crew Unaware of Wind Risk Before Fatal Sinking, UK Report Finds",
-      "link": "https://gcaptain.com/lynch-yacht-crew-unaware-of-wind-risk-before-fatal-sinking-uk-report-finds/",
-      "pubDate": "Thu, 19 Nov 2026 13:40:47 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The crew of British tech tycoon Mike Lynch's yacht, which sank off Sicily in 2024 killing him and six others, was unaware of its vulnerability to strong winds because the risk had never been assessed, a British investigation found on Thursday.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 10,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/06/2025-06-20T160425Z_2039214658_RC2G6FA0MYO6_RTRMADP_3_ITALY-SHIP.jpg",
-      "en": {
-        "headline": "Lynch Yacht Crew Unaware of Wind Risk Before Fatal Sinking, UK Report Finds",
-        "summary": "The crew of British tech tycoon Mike Lynch's yacht, which sank off Sicily in 2024 killing him and six others, was unaware of its vulnerability to strong winds because the risk had never been assessed, a British investigation found on Thursday.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Torm hits back at Hafnia over rejected merger bids",
-      "link": "https://splash247.com/torm-hits-back-at-hafnia-over-rejected-merger-bids/",
-      "pubDate": "Thu, 19 Nov 2026 12:10:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Danish product tanker giant Torm has hit back at Hafnia following its abandoned takeover pursuit, revealing that it rejected several merger proposals from its rival because they offered no meaningful premium and substantially undervalued the company. The Jacob Meldgaard-led owner",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/03/Torm-Success.jpg",
-      "en": {
-        "headline": "Torm hits back at Hafnia over rejected merger bids",
-        "summary": "Danish product tanker giant Torm has hit back at Hafnia following its abandoned takeover pursuit, revealing that it rejected several merger proposals from its rival because they offered no meaningful premium and substantially undervalued the company. The Jacob Meldgaard-led owner",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Seamec scores fresh Indian offshore installation award",
-      "link": "https://splash247.com/seamec-scores-fresh-indian-offshore-installation-award/",
-      "pubDate": "Thu, 19 Nov 2026 12:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Indian offshore services provider Seamec has secured a letter of award worth approximately $10.77m from the Indian subsidiary of PACC Offshore Services Holdings (POSH) for subsea installation work on the ONGC Pipeline Replacement Project X (PRP-X). The contract covers installing ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/MarineTraffic-Capt.-Turboboss-Seamec-II.jpg",
-      "en": {
-        "headline": "Seamec scores fresh Indian offshore installation award",
-        "summary": "Indian offshore services provider Seamec has secured a letter of award worth approximately $10.77m from the Indian subsidiary of PACC Offshore Services Holdings (POSH) for subsea installation work on the ONGC Pipeline Replacement Project X (PRP-X). The contract covers installing ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Marinakis-backed Capital Tankers gets Oslo main board green light",
-      "link": "https://splash247.com/marinakis-backed-capital-tankers-makes-move-to-oslo-main-board/",
-      "pubDate": "Thu, 19 Nov 2026 11:45:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Evangelos Marinakis-backed Capital Tankers has secured approval to move its shares to Oslo’s main stock market, eight months after making its Norwegian trading debut through a $500m equity placement. Oslo Børs confirmed on Thursday that it had decided to admit the Greek-controlle",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 12,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/Evangelos-Marinakis-Capital-Group.jpg",
-      "en": {
-        "headline": "Marinakis-backed Capital Tankers gets Oslo main board green light",
-        "summary": "Evangelos Marinakis-backed Capital Tankers has secured approval to move its shares to Oslo’s main stock market, eight months after making its Norwegian trading debut through a $500m equity placement. Oslo Børs confirmed on Thursday that it had decided to admit the Greek-controlle",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Stamford firms up 10 MR tankers in China",
-      "link": "https://splash247.com/stamford-firms-up-10-mr-tankers-in-china/",
-      "pubDate": "Thu, 19 Nov 2026 11:27:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Singapore-based Stamford Shipping has firmed up an order for 10 MR product tankers at China&#8217;s Nantong CIMC Sinopacific Offshore &#38; Engineering (CIMC SOE), with the yard also securing two vessels of the same design from an unidentified European owner. The shipbuilder, par",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/CIMC-SOE.jpg",
-      "en": {
-        "headline": "Stamford firms up 10 MR tankers in China",
-        "summary": "Singapore-based Stamford Shipping has firmed up an order for 10 MR product tankers at China&#8217;s Nantong CIMC Sinopacific Offshore &#38; Engineering (CIMC SOE), with the yard also securing two vessels of the same design from an unidentified European owner. The shipbuilder, par",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Paratus and Vantris explore sale of Brazilian subsea venture",
-      "link": "https://splash247.com/paratus-and-vantris-explore-sale-of-brazilian-subsea-venture/",
-      "pubDate": "Thu, 19 Nov 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Paratus Energy Services and Malaysia&#8217;s Vantris Energy are looking into a potential sale of their jointly owned Brazilian subsea services business, Seagems, as part of a strategic review. The two companies, which each hold a 50% stake in Seagems, said they are jointly assess",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 13,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/09/Sapura-Jade-Seagems.jpg",
-      "en": {
-        "headline": "Paratus and Vantris explore sale of Brazilian subsea venture",
-        "summary": "Paratus Energy Services and Malaysia&#8217;s Vantris Energy are looking into a potential sale of their jointly owned Brazilian subsea services business, Seagems, as part of a strategic review. The two companies, which each hold a 50% stake in Seagems, said they are jointly assess",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "ALNG locks in LNG duo with oil major",
-      "link": "https://splash247.com/alng-locks-in-lng-duo-with-oil-major/",
-      "pubDate": "Thu, 19 Nov 2026 10:41:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norwegian LNG carrier owner ALNG has secured period charters for both its vessels with an unnamed international oil major, taking its entire fleet out of the spot market after a difficult third quarter. The Oslo-listed company, formerly known as Awilco LNG, disclosed that it ente",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/06/WilForce-WilPride.jpg",
-      "en": {
-        "headline": "ALNG locks in LNG duo with oil major",
-        "summary": "Norwegian LNG carrier owner ALNG has secured period charters for both its vessels with an unnamed international oil major, taking its entire fleet out of the spot market after a difficult third quarter. The Oslo-listed company, formerly known as Awilco LNG, disclosed that it ente",
-        "source": "Splash247"
       }
     }
   ]
