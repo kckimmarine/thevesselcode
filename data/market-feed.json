@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-21T04:53:49.673Z",
+    "generatedAt": "2026-11-21T13:55:47.256Z",
     "benchmarkAsOf": "2026-11-20",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 842,
-        "deltaPct": 0.96,
+        "deltaPct": 0,
         "asOf": "2026-11-20T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1115.5,
-        "deltaPct": -0.27,
+        "deltaPct": 0,
         "asOf": "2026-11-20T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 603.5,
-        "deltaPct": -4.36,
+        "deltaPct": 0,
         "asOf": "2026-11-20T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 705.5,
-        "deltaPct": -1.33,
+        "deltaPct": 0,
         "asOf": "2026-11-20T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1159.5,
-        "deltaPct": -0.9,
+        "deltaPct": 0,
         "asOf": "2026-11-20T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 549.5,
-        "deltaPct": -1.61,
+        "deltaPct": 0,
         "asOf": "2026-11-20T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -172,7 +172,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 720.5,
-        "deltaPct": -0.28,
+        "deltaPct": 0,
         "asOf": "2026-11-20T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1202,
-        "deltaPct": -0.17,
+        "deltaPct": 0,
         "asOf": "2026-11-20T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 486.5,
-        "deltaPct": 0.31,
+        "deltaPct": 0,
         "asOf": "2026-11-20T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -244,7 +244,7 @@
       "summary": "More than 110 U.S. trade associations are urging waterfront employers and union leaders to reach a labor agreement and avert a potentially crippling strike at the ports of Los Angeles...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/09/Port-of-Long-Beach-2-800x476.jpeg",
       "en": {
         "headline": "More Than 110 Trade Groups Urge Deal as LA-Long Beach Port Strike Deadline Nears",
@@ -261,7 +261,7 @@
       "summary": "The price of US sour oil has plunged, as a surge in crude supply from Venezuela, Canada and the Middle East gives refiners ample barrels to choose from.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 9,
+      "hoursAgo": 18,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
       "en": {
         "headline": "Iran War Oil Premium Evaporates as Global Crude Supplies Surge",
@@ -278,7 +278,7 @@
       "summary": "Another tanker was struck by a projectile and caught fire in the Strait of Hormuz on Friday, extending a wave of attacks on commercial shipping that has pushed maritime security...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
       "en": {
         "headline": "Another Tanker Hit in Strait of Hormuz as Maritime Attacks Surge Worldwide",
@@ -295,7 +295,7 @@
       "summary": "The Saudi-led coalition fighting Yemen's Iran-aligned Houthis said it had struck the Red Sea port of Hodeidah to destroy Houthi capabilities on Friday, as the militants warned airlines to avoid Saudi airspace, pledging new air strikes within hours.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-15T145635Z_188060635_RC2EEMAOW6BY_RTRMADP_3_IRAN-CRISIS-YEMEN-RED-SEA-SATELLITE-1.jpg",
       "en": {
         "headline": "Houthis Order Ships to Leave Saudi Red Sea Ports After Hodeidah Airstrikes",
@@ -312,7 +312,7 @@
       "summary": "South Korean shipbuilder Samsung Heavy Industries and U.S. nuclear technology company Tesser Atomics have signed an exclusive agreement to develop a nuclear-powered LNG carrier intended for commercial service between the...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/10/LNG_TANKER.jpg",
       "en": {
         "headline": "South Korean Shipbuilder Advances Plans for Nuclear-Powered LNG Carrier",
@@ -329,7 +329,7 @@
       "summary": "US Treasury Department officials met with government authorities in Singapore and Malaysia this week, including regulators and national security bodies, to warn of potential risks they could face if they do not comply with US sanctions on Iran.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 20,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-04-28T150824Z_556342289_RC2BMKAGRYTA_RTRMADP_3_UKRAINE-CRISIS-BRITAIN-TANKERS-800x533.jpg",
       "en": {
         "headline": "US Treasury Presses Singapore and Malaysia on Iran Sanctions Compliance",
@@ -346,7 +346,7 @@
       "summary": "Carnival Corporation has signed a contract with Italian shipbuilding giant Fincantieri for two next-generation cruise ships, marking a shift toward smaller vessels designed to reach more destinations. The agreement, valued...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Carnival-Cruise-Line-Carnival-Destiny-Rendering-800x450.jpg",
       "en": {
         "headline": "Carnival Orders Two LNG-Powered Cruise Ships in $2.2 Billion Fincantieri Deal",
@@ -363,7 +363,7 @@
       "summary": "A new study by the International Maritime Organization (IMO) has identified just $10.5 billion in direct maritime climate finance over a six-year period, accounting for only 0.14% of global climate...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2017/10/shutterstock_417955765.jpg",
       "en": {
         "headline": "IMO Finds Just $10.5 Billion in Maritime Climate Finance",
@@ -380,7 +380,7 @@
       "summary": "A Maltese-flagged bulk carrier ran aground on France&#8217;s Atlantic coast early Friday after being driven toward shore by strong winds and heavy seas, prompting the helicopter evacuation of 19 crew...",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 12,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Miro-G-grounding.jpeg",
       "en": {
         "headline": "Crew Airlifted After Bulk Carrier Grounds on French Coast",
@@ -397,7 +397,7 @@
       "summary": "A cargo of Iranian crude was transferred between two tankers in the Persian Gulf this week, as the US warned its navy could target vessels that carry out the practice while enforcing a maritime blockade.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
+      "hoursAgo": 23,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-26T134318Z_693026131_RC2N1MAQSWKP_RTRMADP_3_IRAN-CRISIS-OMAN-HORMUZ-800x524.jpg",
       "en": {
         "headline": "Iranian Oil Transferred Between Tankers as US Widens Blockade",
@@ -414,7 +414,7 @@
       "summary": "Norwegian offshore engineering contractor Subsea 7 has begun identifying a buyer for its pipelay and heavy-lift vessel Seven Borealis, which it must divest as part of its planned merger with Saipem. The company confirmed the move in its third-quarter results, after Brazil&#8217;s",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 16,
+      "hoursAgo": 25,
       "imageUrl": "https://splash247.com/wp-content/uploads/2015/07/Subsea-7-Seven-Borealis.jpeg",
       "en": {
         "headline": "Subsea 7 seeks buyer for pipelay vessel ahead of Saipem merger",
@@ -431,7 +431,7 @@
       "summary": "Offshore construction contractor Seaway 7 is preparing to deploy three vessels on SSE Renewables&#8217; proposed 1.4GW Berwick Bank B offshore wind development in Scotland. The planned installation fleet comprises the Seaway Alfa Lift, Seaway Strashnov, and Seaway Phoenix, with o",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 17,
+      "hoursAgo": 26,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Seaway-Phoenix-Seaway-7.jpg",
       "en": {
         "headline": "Seaway 7 lines up vessel trio for Scottish offshore wind project",
@@ -448,7 +448,7 @@
       "summary": "The Scottish Government has granted offshore planning consent for the 1GW Muir Mhòr floating wind farm being developed by Fred. Olsen Seawind off the Aberdeenshire coast. Located approximately 63 km east of Peterhead, the project will comprise up to 67 floating wind turbines capa",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 18,
+      "hoursAgo": 27,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/08/Ingka-floating-wind.jpg",
       "en": {
         "headline": "Scotland greenlights 1 GW floating offshore wind project",
@@ -465,7 +465,7 @@
       "summary": "Oslo-listed Hunter Group has launched a NOK1.63bn ($168m) takeover bid for Norwegian offshore accommodation player Jacktel, looking to put its windfall from lucrative VLCC charter contracts into a longer-term business. The Erik Mathiesen-led investment company has offered NOK6.30",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 20,
+      "hoursAgo": 29,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/09/Jacktel-Haven.jpg",
       "en": {
         "headline": "Hunter makes offshore move with Jacktel buyout offer",
@@ -482,7 +482,7 @@
       "summary": "Chinese shipbuilding heavyweight Yangzijiang has brought a previously stalled shipyard expansion back onto the table, signing an investment agreement for a RMB3.38bn ($504m) construction project at Taicang in Jiangsu province. The Singapore-listed group&#8217;s wholly owned subsi",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 20,
+      "hoursAgo": 29,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/05/Yangzijiang.jpg",
       "en": {
         "headline": "Yangzijiang revives $500m Chinese shipyard project",
@@ -499,7 +499,7 @@
       "summary": "What can shipping learn from all the Big Tech outages over the past week that have suddenly brought the venerable fax machine back into play? SplashTech sought out experts throughout the week to provide readers plenty of advice on this issue, as well as issuing a podcast on this ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 20,
+      "hoursAgo": 29,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Fax-machine-AI-generated.jpg",
       "en": {
         "headline": "SplashTech latest: Time to dust off the fax machine?",
