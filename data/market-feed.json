@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-11-23T04:52:34.735Z",
-    "benchmarkAsOf": "2026-11-20",
+    "generatedAt": "2026-11-23T16:54:26.077Z",
+    "benchmarkAsOf": "2026-11-23",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-11-20",
-    "updatedLabelKo": "2026-11-20 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-11-23",
+    "updatedLabelKo": "2026-11-23 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 2898,
-      "deltaPct": 0,
+      "value": 3000,
+      "deltaPct": 3.52,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-20T15:30:16.719Z"
+      "asOf": "2026-11-23T15:15:32.618Z"
     },
     "capesizeTc": {
-      "value": 4502,
-      "deltaPct": 0,
+      "value": 4779,
+      "deltaPct": 6.15,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-20T15:30:16.813Z"
+      "asOf": "2026-11-23T15:15:32.634Z"
     },
     "panamaxTc": {
-      "value": 2140,
-      "deltaPct": 0,
+      "value": 2149,
+      "deltaPct": 0.42,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-20T15:30:16.851Z"
+      "asOf": "2026-11-23T15:15:32.648Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,274 +236,274 @@
   },
   "news": [
     {
-      "title": "Australia Criticizes US Congressional Budget Office Over AUKUS Comments",
-      "link": "https://gcaptain.com/australia-criticizes-us-congressional-budget-office-over-aukus-comments/",
-      "pubDate": "Sun, 22 Nov 2026 17:13:53 +0000",
+      "title": "Costa Concordia Captain Released from Prison After Nine Years",
+      "link": "https://gcaptain.com/costa-concordia-captain-released-from-prison-after-nine-years/",
+      "pubDate": "Mon, 23 Nov 2026 16:14:58 +0000",
       "source": "gCaptain",
       "category": "Trade",
-      "summary": "SYDNEY, Nov 22 (Reuters) &#8211; Australian Defence Minister Richard Marles on Sunday criticized the United States Congressional Budget Office over a report that said the AUKUS pact would decrease the number of attack...",
+      "summary": "Francesco Schettino, the former captain of the Costa Concordia cruise ship that capsized off Italy in 2012, killing 32 people, has been released from prison after more than nine years...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/03/2023-03-10T121437Z_1453226404_RC2ZQZ95GC4B_RTRMADP_3_AUKUS-USA.jpg",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2014/02/tag-reuters-6.jpg",
       "en": {
-        "headline": "Australia Criticizes US Congressional Budget Office Over AUKUS Comments",
-        "summary": "SYDNEY, Nov 22 (Reuters) &#8211; Australian Defence Minister Richard Marles on Sunday criticized the United States Congressional Budget Office over a report that said the AUKUS pact would decrease the number of attack...",
+        "headline": "Costa Concordia Captain Released from Prison After Nine Years",
+        "summary": "Francesco Schettino, the former captain of the Costa Concordia cruise ship that capsized off Italy in 2012, killing 32 people, has been released from prison after more than nine years...",
         "source": "gCaptain"
       }
     },
     {
-      "title": "Suspected Drone Attack Caused Explosion On Russian Ship At Benghazi Port",
-      "link": "https://gcaptain.com/suspected-drone-attack-caused-explosion-on-russian-ship-at-benghazi-port/",
-      "pubDate": "Sun, 22 Nov 2026 15:09:48 +0000",
+      "title": "Drone-Hit Russian Cargo Ship Leaves Finnish Waters Despite Sanctions Hold",
+      "link": "https://gcaptain.com/drone-hit-russian-cargo-ship-leaves-finnish-waters-despite-sanctions-hold/",
+      "pubDate": "Mon, 23 Nov 2026 16:01:55 +0000",
       "source": "gCaptain",
       "category": "Trade",
-      "summary": "Nov 22 (Reuters)&#160;&#8211;&#160;Libya&#8217;s eastern-based government said on Sunday that a preliminary investigation indicated an explosion at the Benghazi naval base in eastern Libya occurred aboard a Russian ship docked at...",
+      "summary": "The Russian cargo ship Sparta II, severely damaged in a suspected Ukrainian drone attack in the Gulf of Finland, has been towed out of Finnish waters following a multinational firefighting...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/06/2026-06-03T104543Z_2069135414_RC2AMLASFO0Q_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-WARSHIP-800x533.jpg",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-22T134606Z_1666304204_RC21TOAEFO3P_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-VESSEL-1.jpg",
       "en": {
-        "headline": "Suspected Drone Attack Caused Explosion On Russian Ship At Benghazi Port",
-        "summary": "Nov 22 (Reuters)&#160;&#8211;&#160;Libya&#8217;s eastern-based government said on Sunday that a preliminary investigation indicated an explosion at the Benghazi naval base in eastern Libya occurred aboard a Russian ship docked at...",
+        "headline": "Drone-Hit Russian Cargo Ship Leaves Finnish Waters Despite Sanctions Hold",
+        "summary": "The Russian cargo ship Sparta II, severely damaged in a suspected Ukrainian drone attack in the Gulf of Finland, has been towed out of Finnish waters following a multinational firefighting...",
         "source": "gCaptain"
       }
     },
     {
-      "title": "Russian Cargo Ship Still On Fire Off Finland After Attack",
-      "link": "https://gcaptain.com/russian-cargo-ship-still-on-fire-off-finland-after-attack/",
-      "pubDate": "Sun, 22 Nov 2026 14:31:31 +0000",
+      "title": "France Prepares Major Salvage Operation to Free Grounded Bulk Carrier MIRO G",
+      "link": "https://gcaptain.com/france-prepares-major-salvage-operation-to-free-grounded-bulk-carrier-miro-g/",
+      "pubDate": "Mon, 23 Nov 2026 15:21:32 +0000",
       "source": "gCaptain",
-      "category": "Trade",
-      "summary": "HELSINKI, Nov 22 (Reuters) &#8211; A fire onboard a Russian cargo ship that was struck by drones in the Baltic Sea continued to burn through the night even as efforts were made to...",
-      "tag": "Trade",
+      "category": "Dry Bulk",
+      "summary": "French authorities are preparing a complex towing operation to free the Malta-flagged bulk carrier MIRO G, which remains stranded on a beach along France&#8217;s Atlantic coast after running aground during...",
+      "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-22T134606Z_1666304204_RC21TOAEFO3P_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-VESSEL.jpg",
+      "hoursAgo": 1,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Miro-G-salvage.jpeg",
       "en": {
-        "headline": "Russian Cargo Ship Still On Fire Off Finland After Attack",
-        "summary": "HELSINKI, Nov 22 (Reuters) &#8211; A fire onboard a Russian cargo ship that was struck by drones in the Baltic Sea continued to burn through the night even as efforts were made to...",
+        "headline": "France Prepares Major Salvage Operation to Free Grounded Bulk Carrier MIRO G",
+        "summary": "French authorities are preparing a complex towing operation to free the Malta-flagged bulk carrier MIRO G, which remains stranded on a beach along France&#8217;s Atlantic coast after running aground during...",
         "source": "gCaptain"
       }
     },
     {
-      "title": "Two Tanker Incidents Reported Near Oman; Vessel Hit Mine East Of Hormuz",
-      "link": "https://gcaptain.com/two-tanker-incidents-reported-near-oman-vessel-hit-mine-east-of-hormuz/",
-      "pubDate": "Sat, 21 Nov 2026 19:38:29 +0000",
+      "title": "Russia’s Northern Sea Route Breaks 40 Million-Tonne Barrier For First Time, but Putin’s Ambitions Remain Out of Reach",
+      "link": "https://gcaptain.com/russias-northern-sea-route-breaks-40-million-tonne-barrier-for-first-time-but-putins-ambitions-remain-out-of-reach/",
+      "pubDate": "Mon, 23 Nov 2026 12:32:54 +0000",
       "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Nov 21 (Reuters)&#160;&#8211;&#160;A tanker sailing outbound through the Strait of Hormuz was hit on its stern by an unidentified projectile about 11 nautical miles north of Oman&#8217;s Khasab, the United...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 33,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-17T163423Z_135826967_RC2SPOAEF0LI_RTRMADP_3_IRAN-CRISIS-TANKER.jpg",
+      "category": "Carbon",
+      "summary": "Cargo volumes along Russia’s Northern Sea Route (NSR) have surpassed 40 million tonnes for the first time, setting a new record for the Arctic shipping corridor. The milestone marks continued growth in Russian Arctic shipping, although volumes remain far below the ambitious targe",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/10/nsr-escort-july-2024-800x581.jpg",
       "en": {
-        "headline": "Two Tanker Incidents Reported Near Oman; Vessel Hit Mine East Of Hormuz",
-        "summary": "Nov 21 (Reuters)&#160;&#8211;&#160;A tanker sailing outbound through the Strait of Hormuz was hit on its stern by an unidentified projectile about 11 nautical miles north of Oman&#8217;s Khasab, the United...",
+        "headline": "Russia’s Northern Sea Route Breaks 40 Million-Tonne Barrier For First Time, but Putin’s Ambitions Remain Out of Reach",
+        "summary": "Cargo volumes along Russia’s Northern Sea Route (NSR) have surpassed 40 million tonnes for the first time, setting a new record for the Arctic shipping corridor. The milestone marks continued growth in Russian Arctic shipping, although volumes remain far below the ambitious targe",
         "source": "gCaptain"
       }
     },
     {
-      "title": "Russian Military-Linked Cargo Ship Burns After Suspected Drone Strike in Gulf of Finland",
-      "link": "https://gcaptain.com/russian-military-linked-cargo-ship-burns-after-suspected-drone-strike-in-gulf-of-finland/",
-      "pubDate": "Sat, 21 Nov 2026 16:34:08 +0000",
+      "title": "Fake Iran Tanker Highlights Uncertainty Around Hormuz Traffic",
+      "link": "https://gcaptain.com/fake-iran-tanker-highlights-uncertainty-around-hormuz-traffic/",
+      "pubDate": "Mon, 23 Nov 2026 12:31:26 +0000",
       "source": "gCaptain",
       "category": "Trade",
-      "summary": "A Russian cargo ship linked to Moscow&#8217;s military logistics network caught fire after a drone strike in the Gulf of Finland on Saturday, drifting into Finnish territorial waters and triggering...",
+      "summary": "An Iranian oil tanker with no track record signaled earlier on Monday that it had sailed past a US blockade outside the Strait of Hormuz — an unlikely trajectory that is raising fresh questions about obfuscation tactics and analysts’ limited ability to accurately track movements ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 36,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/09fd6901-3d7d-bc30-6521-cfb976d7a4da.jpeg",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-10T010006Z_486300104_RC2L3LAZ4THB_RTRMADP_3_CLIMATE-COP31-EMISSIONS-800x533.jpg",
       "en": {
-        "headline": "Russian Military-Linked Cargo Ship Burns After Suspected Drone Strike in Gulf of Finland",
-        "summary": "A Russian cargo ship linked to Moscow&#8217;s military logistics network caught fire after a drone strike in the Gulf of Finland on Saturday, drifting into Finnish territorial waters and triggering...",
+        "headline": "Fake Iran Tanker Highlights Uncertainty Around Hormuz Traffic",
+        "summary": "An Iranian oil tanker with no track record signaled earlier on Monday that it had sailed past a US blockade outside the Strait of Hormuz — an unlikely trajectory that is raising fresh questions about obfuscation tactics and analysts’ limited ability to accurately track movements ",
         "source": "gCaptain"
       }
     },
     {
-      "title": "Southern California Port Employers, Watchmen Union Reach Tentative Deal",
-      "link": "https://gcaptain.com/southern-california-port-employers-watchmen-union-reach-tentative-deal/",
-      "pubDate": "Sat, 21 Nov 2026 13:58:36 +0000",
+      "title": "Ukraine Sinks Russian Warship in Libya as Conflict Spreads Beyond Europe",
+      "link": "https://gcaptain.com/ukraine-sinks-russian-warship-in-libya-as-conflict-spreads-beyond-europe/",
+      "pubDate": "Mon, 23 Nov 2026 12:29:52 +0000",
       "source": "gCaptain",
       "category": "Trade",
-      "summary": "Nov 21 (Reuters) &#8211; The Pacific Maritime Association (PMA) employers group at the Los Angeles and Long Beach ports said on Saturday it had reached a tentative agreement with the union for security...",
+      "summary": "Ukraine sank a Russian naval corvette in a Libyan port using naval drones on Sunday, the day after a drone strike on a Russian military-linked cargo ship in the Gulf of Finland, President Volodymyr Zelenskiy said.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 38,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-05T172214Z_605505849_RC2U1KA4QMP3_RTRMADP_3_USA-SEAPORTS-LABOR-800x534.jpg",
+      "hoursAgo": 4,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-22T084722Z_1995371311_RC2WSOA5VOIB_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-VESSEL.jpg",
       "en": {
-        "headline": "Southern California Port Employers, Watchmen Union Reach Tentative Deal",
-        "summary": "Nov 21 (Reuters) &#8211; The Pacific Maritime Association (PMA) employers group at the Los Angeles and Long Beach ports said on Saturday it had reached a tentative agreement with the union for security...",
+        "headline": "Ukraine Sinks Russian Warship in Libya as Conflict Spreads Beyond Europe",
+        "summary": "Ukraine sank a Russian naval corvette in a Libyan port using naval drones on Sunday, the day after a drone strike on a Russian military-linked cargo ship in the Gulf of Finland, President Volodymyr Zelenskiy said.",
         "source": "gCaptain"
       }
     },
     {
-      "title": "More Than 110 Trade Groups Urge Deal as LA-Long Beach Port Strike Deadline Nears",
-      "link": "https://gcaptain.com/more-than-110-trade-groups-urge-deal-as-la-long-beach-port-strike-deadline-nears/",
-      "pubDate": "Fri, 20 Nov 2026 22:33:04 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "More than 110 U.S. trade associations are urging waterfront employers and union leaders to reach a labor agreement and avert a potentially crippling strike at the ports of Los Angeles...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 54,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/09/Port-of-Long-Beach-2-800x476.jpeg",
-      "en": {
-        "headline": "More Than 110 Trade Groups Urge Deal as LA-Long Beach Port Strike Deadline Nears",
-        "summary": "More than 110 U.S. trade associations are urging waterfront employers and union leaders to reach a labor agreement and avert a potentially crippling strike at the ports of Los Angeles...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Iran War Oil Premium Evaporates as Global Crude Supplies Surge",
-      "link": "https://gcaptain.com/iran-war-oil-premium-evaporates-as-global-crude-supplies-surge/",
-      "pubDate": "Fri, 20 Nov 2026 19:35:22 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The price of US sour oil has plunged, as a surge in crude supply from Venezuela, Canada and the Middle East gives refiners ample barrels to choose from.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 57,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
-      "en": {
-        "headline": "Iran War Oil Premium Evaporates as Global Crude Supplies Surge",
-        "summary": "The price of US sour oil has plunged, as a surge in crude supply from Venezuela, Canada and the Middle East gives refiners ample barrels to choose from.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Another Tanker Hit in Strait of Hormuz as Maritime Attacks Surge Worldwide",
-      "link": "https://gcaptain.com/another-tanker-hit-in-strait-of-hormuz-as-maritime-attacks-surge-worldwide/",
-      "pubDate": "Fri, 20 Nov 2026 17:43:53 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Another tanker was struck by a projectile and caught fire in the Strait of Hormuz on Friday, extending a wave of attacks on commercial shipping that has pushed maritime security...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 59,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
-      "en": {
-        "headline": "Another Tanker Hit in Strait of Hormuz as Maritime Attacks Surge Worldwide",
-        "summary": "Another tanker was struck by a projectile and caught fire in the Strait of Hormuz on Friday, extending a wave of attacks on commercial shipping that has pushed maritime security...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Houthis Order Ships to Leave Saudi Red Sea Ports After Hodeidah Airstrikes",
-      "link": "https://gcaptain.com/houthis-order-ships-to-leave-saudi-red-sea-ports-after-hodeidah-airstrikes/",
-      "pubDate": "Fri, 20 Nov 2026 17:19:31 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The Saudi-led coalition fighting Yemen's Iran-aligned Houthis said it had struck the Red Sea port of Hodeidah to destroy Houthi capabilities on Friday, as the militants warned airlines to avoid Saudi airspace, pledging new air strikes within hours.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 59,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/07/2026-07-15T145635Z_188060635_RC2EEMAOW6BY_RTRMADP_3_IRAN-CRISIS-YEMEN-RED-SEA-SATELLITE-1.jpg",
-      "en": {
-        "headline": "Houthis Order Ships to Leave Saudi Red Sea Ports After Hodeidah Airstrikes",
-        "summary": "The Saudi-led coalition fighting Yemen's Iran-aligned Houthis said it had struck the Red Sea port of Hodeidah to destroy Houthi capabilities on Friday, as the militants warned airlines to avoid Saudi airspace, pledging new air strikes within hours.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "South Korean Shipbuilder Advances Plans for Nuclear-Powered LNG Carrier",
-      "link": "https://gcaptain.com/south-korean-shipbuilder-advances-plans-for-nuclear-powered-lng-carrier/",
-      "pubDate": "Fri, 20 Nov 2026 17:14:46 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "South Korean shipbuilder Samsung Heavy Industries and U.S. nuclear technology company Tesser Atomics have signed an exclusive agreement to develop a nuclear-powered LNG carrier intended for commercial service between the...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 59,
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "South Korean Shipbuilder Advances Plans for Nuclear-Powered LNG Carrier",
-        "summary": "South Korean shipbuilder Samsung Heavy Industries and U.S. nuclear technology company Tesser Atomics have signed an exclusive agreement to develop a nuclear-powered LNG carrier intended for commercial service between the...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "US Treasury Presses Singapore and Malaysia on Iran Sanctions Compliance",
-      "link": "https://gcaptain.com/us-treasury-presses-singapore-and-malaysia-on-iran-sanctions-compliance/",
-      "pubDate": "Fri, 20 Nov 2026 17:12:46 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "US Treasury Department officials met with government authorities in Singapore and Malaysia this week, including regulators and national security bodies, to warn of potential risks they could face if they do not comply with US sanctions on Iran.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 59,
-      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "US Treasury Presses Singapore and Malaysia on Iran Sanctions Compliance",
-        "summary": "US Treasury Department officials met with government authorities in Singapore and Malaysia this week, including regulators and national security bodies, to warn of potential risks they could face if they do not comply with US sanctions on Iran.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Subsea 7 seeks buyer for pipelay vessel ahead of Saipem merger",
-      "link": "https://splash247.com/subsea-7-seeks-buyer-for-pipelay-vessel-ahead-of-saipem-merger/",
-      "pubDate": "Fri, 20 Nov 2026 12:00:00 +0000",
+      "title": "Precious Shipping secures year-long ultramax charter",
+      "link": "https://splash247.com/precious-shipping-secures-year-long-ultramax-charter/",
+      "pubDate": "Mon, 23 Nov 2026 12:05:00 +0000",
       "source": "Splash247",
       "category": "Trade",
-      "summary": "Norwegian offshore engineering contractor Subsea 7 has begun identifying a buyer for its pipelay and heavy-lift vessel Seven Borealis, which it must divest as part of its planned merger with Saipem. The company confirmed the move in its third-quarter results, after Brazil&#8217;s",
+      "summary": "Thailand&#8217;s Precious Shipping has secured another index-linked ultramax charter with Singapore&#8217;s PACC Line, fixing the 2015-built Sarita Naree for up to 13 months at a current equivalent rate of around $23,700 per day. The Khalid Hashim-led owner said the 62,964 dwt ve",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 64,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2015/07/Subsea-7-Seven-Borealis.jpeg",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Precious-Shipping-bulker.jpg",
       "en": {
-        "headline": "Subsea 7 seeks buyer for pipelay vessel ahead of Saipem merger",
-        "summary": "Norwegian offshore engineering contractor Subsea 7 has begun identifying a buyer for its pipelay and heavy-lift vessel Seven Borealis, which it must divest as part of its planned merger with Saipem. The company confirmed the move in its third-quarter results, after Brazil&#8217;s",
+        "headline": "Precious Shipping secures year-long ultramax charter",
+        "summary": "Thailand&#8217;s Precious Shipping has secured another index-linked ultramax charter with Singapore&#8217;s PACC Line, fixing the 2015-built Sarita Naree for up to 13 months at a current equivalent rate of around $23,700 per day. The Khalid Hashim-led owner said the 62,964 dwt ve",
         "source": "Splash247"
       }
     },
     {
-      "title": "Seaway 7 lines up vessel trio for Scottish offshore wind project",
-      "link": "https://splash247.com/seaway-7-lines-up-vessel-trio-for-scottish-offshore-wind-project/",
-      "pubDate": "Fri, 20 Nov 2026 11:00:00 +0000",
+      "title": "Kansai Electric takes 40% stake in Polish offshore wind project",
+      "link": "https://splash247.com/kansai-electric-takes-40-stake-in-polish-offshore-wind-project/",
+      "pubDate": "Mon, 23 Nov 2026 12:02:00 +0000",
       "source": "Splash247",
-      "category": "Trade",
-      "summary": "Offshore construction contractor Seaway 7 is preparing to deploy three vessels on SSE Renewables&#8217; proposed 1.4GW Berwick Bank B offshore wind development in Scotland. The planned installation fleet comprises the Seaway Alfa Lift, Seaway Strashnov, and Seaway Phoenix, with o",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 65,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/10/Seaway-Phoenix-Seaway-7.jpg",
+      "category": "S&P",
+      "summary": "Japan&#8217;s Kansai Electric Power has agreed to acquire a 40% interest in Ocean Winds&#8217; 390 MW BC-Wind offshore wind development in Poland, marking its first investment in the country. The Japanese utility signed a share purchase agreement with Ocean Winds on November 19, ",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/07/Ocean-Winds.jpg",
       "en": {
-        "headline": "Seaway 7 lines up vessel trio for Scottish offshore wind project",
-        "summary": "Offshore construction contractor Seaway 7 is preparing to deploy three vessels on SSE Renewables&#8217; proposed 1.4GW Berwick Bank B offshore wind development in Scotland. The planned installation fleet comprises the Seaway Alfa Lift, Seaway Strashnov, and Seaway Phoenix, with o",
+        "headline": "Kansai Electric takes 40% stake in Polish offshore wind project",
+        "summary": "Japan&#8217;s Kansai Electric Power has agreed to acquire a 40% interest in Ocean Winds&#8217; 390 MW BC-Wind offshore wind development in Poland, marking its first investment in the country. The Japanese utility signed a share purchase agreement with Ocean Winds on November 19, ",
         "source": "Splash247"
       }
     },
     {
-      "title": "Scotland greenlights 1 GW floating offshore wind project",
-      "link": "https://splash247.com/scotland-greenlights-1-gw-floating-offshore-wind-project/",
-      "pubDate": "Fri, 20 Nov 2026 10:00:00 +0000",
+      "title": "Jinhui finds new buyer for supramax at higher price",
+      "link": "https://splash247.com/jinhui-finds-new-buyer-for-supramax-at-higher-price/",
+      "pubDate": "Mon, 23 Nov 2026 11:10:00 +0000",
       "source": "Splash247",
-      "category": "Trade",
-      "summary": "The Scottish Government has granted offshore planning consent for the 1GW Muir Mhòr floating wind farm being developed by Fred. Olsen Seawind off the Aberdeenshire coast. Located approximately 63 km east of Peterhead, the project will comprise up to 67 floating wind turbines capa",
-      "tag": "Trade",
+      "category": "Dry Bulk",
+      "summary": "Hong Kong-based dry bulk owner Jinhui Shipping and Transportation has found a new buyer for its 2012-built supramax Jin Bi, securing $17.8m for a vessel it unsuccessfully tried to sell for $14.4m earlier this year. The Oslo-listed company has signed a memorandum of agreement with",
+      "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 66,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/08/Ingka-floating-wind.jpg",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/10/Jinhui-bulker.jpg",
       "en": {
-        "headline": "Scotland greenlights 1 GW floating offshore wind project",
-        "summary": "The Scottish Government has granted offshore planning consent for the 1GW Muir Mhòr floating wind farm being developed by Fred. Olsen Seawind off the Aberdeenshire coast. Located approximately 63 km east of Peterhead, the project will comprise up to 67 floating wind turbines capa",
+        "headline": "Jinhui finds new buyer for supramax at higher price",
+        "summary": "Hong Kong-based dry bulk owner Jinhui Shipping and Transportation has found a new buyer for its 2012-built supramax Jin Bi, securing $17.8m for a vessel it unsuccessfully tried to sell for $14.4m earlier this year. The Oslo-listed company has signed a memorandum of agreement with",
         "source": "Splash247"
       }
     },
     {
-      "title": "Hunter makes offshore move with Jacktel buyout offer",
-      "link": "https://splash247.com/hunter-makes-offshore-move-with-jacktel-buyout-offer/",
-      "pubDate": "Fri, 20 Nov 2026 08:25:49 +0000",
+      "title": "Arabian Drilling picks up $400m in long-term offshore work",
+      "link": "https://splash247.com/arabian-drilling-picks-up-400m-in-long-term-offshore-work/",
+      "pubDate": "Mon, 23 Nov 2026 11:00:00 +0000",
       "source": "Splash247",
       "category": "Trade",
-      "summary": "Oslo-listed Hunter Group has launched a NOK1.63bn ($168m) takeover bid for Norwegian offshore accommodation player Jacktel, looking to put its windfall from lucrative VLCC charter contracts into a longer-term business. The Erik Mathiesen-led investment company has offered NOK6.30",
+      "summary": "Saudi Arabian drilling contractor Arabian Drilling has secured a SAR1.5bn ($400m) long-term contract from Khafji Joint Operations (KJO) to provide and operate two self-propelled offshore service units. The agreement replaces existing contracts covering two offshore service units ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 68,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2022/09/Jacktel-Haven.jpg",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/07/Arabian-Drilling-generic.jpg",
       "en": {
-        "headline": "Hunter makes offshore move with Jacktel buyout offer",
-        "summary": "Oslo-listed Hunter Group has launched a NOK1.63bn ($168m) takeover bid for Norwegian offshore accommodation player Jacktel, looking to put its windfall from lucrative VLCC charter contracts into a longer-term business. The Erik Mathiesen-led investment company has offered NOK6.30",
+        "headline": "Arabian Drilling picks up $400m in long-term offshore work",
+        "summary": "Saudi Arabian drilling contractor Arabian Drilling has secured a SAR1.5bn ($400m) long-term contract from Khafji Joint Operations (KJO) to provide and operate two self-propelled offshore service units. The agreement replaces existing contracts covering two offshore service units ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Shipping Corp of India casts $3.2bn net for 22 ships",
+      "link": "https://splash247.com/shipping-corp-of-india-casts-3-2bn-net-for-22-ships/",
+      "pubDate": "Mon, 23 Nov 2026 10:20:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "State-owned Shipping Corporation of India (SCI) is pressing ahead with a fleet expansion drive worth an estimated $3.2bn, launching tenders for up to 22 newbuildings across the gas carrier, tanker and container segments, alongside a separate push for secondhand tonnage. The Mumba",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/08/Shipping-Corp-of-India-boxship.jpg",
+      "en": {
+        "headline": "Shipping Corp of India casts $3.2bn net for 22 ships",
+        "summary": "State-owned Shipping Corporation of India (SCI) is pressing ahead with a fleet expansion drive worth an estimated $3.2bn, launching tenders for up to 22 newbuildings across the gas carrier, tanker and container segments, alongside a separate push for secondhand tonnage. The Mumba",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "ExxonMobil greenlights $4bn Angola offshore redevelopment",
+      "link": "https://splash247.com/exxonmobil-greenlights-4bn-angola-offshore-redevelopment/",
+      "pubDate": "Mon, 23 Nov 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Carbon",
+      "summary": "US energy major ExxonMobil and its partners have taken a final investment decision worth an estimated $4bn to redevelop the Kizomba A and B fields offshore Angola, while announcing a fresh hydrocarbon discovery in the same block. The investment decision, formalised on November 19",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/10/ExxonMobil-worker.jpg",
+      "en": {
+        "headline": "ExxonMobil greenlights $4bn Angola offshore redevelopment",
+        "summary": "US energy major ExxonMobil and its partners have taken a final investment decision worth an estimated $4bn to redevelop the Kizomba A and B fields offshore Angola, while announcing a fresh hydrocarbon discovery in the same block. The investment decision, formalised on November 19",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Aegean Shipping adds fresh tanker pair at COSCO yard",
+      "link": "https://splash247.com/aegean-shipping-adds-fresh-tanker-pair-at-cosco-yard/",
+      "pubDate": "Mon, 23 Nov 2026 09:55:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "George Melissanidis-led Aegean Shipping Management has been linked to another two LR2 tanker newbuildings at COSCO Shipping Heavy Industry&#8217;s Yangzhou yard in China, extending its tanker investment programme into 2030. Greek shipping sources have identified the latest pair a",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/11/Green-Anax.jpg",
+      "en": {
+        "headline": "Aegean Shipping adds fresh tanker pair at COSCO yard",
+        "summary": "George Melissanidis-led Aegean Shipping Management has been linked to another two LR2 tanker newbuildings at COSCO Shipping Heavy Industry&#8217;s Yangzhou yard in China, extending its tanker investment programme into 2030. Greek shipping sources have identified the latest pair a",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Tanker boom turns conservative owners into asset traders",
+      "link": "https://splash247.com/tanker-boom-turns-conservative-owners-into-asset-traders/",
+      "pubDate": "Mon, 23 Nov 2026 09:44:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Surging tanker and VLGC values are turning some of shipping&#8217;s most conservative owners into opportunistic asset players, with a string of recent sales generating extraordinary returns in a matter of months. The disruption caused by the Strait of Hormuz crisis has sent secon",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2015/06/Dorian-LPG-VLGC-newbuild.jpg",
+      "en": {
+        "headline": "Tanker boom turns conservative owners into asset traders",
+        "summary": "Surging tanker and VLGC values are turning some of shipping&#8217;s most conservative owners into opportunistic asset players, with a string of recent sales generating extraordinary returns in a matter of months. The disruption caused by the Strait of Hormuz crisis has sent secon",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Hunter seals $168m Jacktel takeover",
+      "link": "https://splash247.com/251882-2/",
+      "pubDate": "Mon, 23 Nov 2026 09:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Norway&#8217;s Hunter Group has secured control of offshore accommodation rig owner Jacktel after winning acceptances for more than 91% of the company&#8217;s shares in a NOK1.63bn ($168m) takeover. The Morten Astrup-backed investment company confirmed on Monday that all conditio",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2019/09/Jacktel-Haven.jpg",
+      "en": {
+        "headline": "Hunter seals $168m Jacktel takeover",
+        "summary": "Norway&#8217;s Hunter Group has secured control of offshore accommodation rig owner Jacktel after winning acceptances for more than 91% of the company&#8217;s shares in a NOK1.63bn ($168m) takeover. The Morten Astrup-backed investment company confirmed on Monday that all conditio",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "No safe harbour as maritime war spreads beyond Black Sea",
+      "link": "https://splash247.com/no-safe-harbour-as-maritime-war-spreads-beyond-black-sea/",
+      "pubDate": "Mon, 23 Nov 2026 08:35:06 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The maritime war between Russia and Ukraine has expanded far beyond the Black Sea, with a Russian naval corvette sunk in Libya and a sanctioned Russian cargo ship attacked in the Baltic over the weekend. The Russian navy&#8217;s Merkury, a Project 20380 corvette, was struck at th",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Merkury-copy.jpg",
+      "en": {
+        "headline": "No safe harbour as maritime war spreads beyond Black Sea",
+        "summary": "The maritime war between Russia and Ukraine has expanded far beyond the Black Sea, with a Russian naval corvette sunk in Libya and a sanctioned Russian cargo ship attacked in the Baltic over the weekend. The Russian navy&#8217;s Merkury, a Project 20380 corvette, was struck at th",
         "source": "Splash247"
       }
     }
