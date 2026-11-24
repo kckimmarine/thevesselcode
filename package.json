@@ -91,6 +91,8 @@
     "license:keys": "node scripts/generate-license-keys.mjs",
     "license:issue": "node scripts/issue-license.mjs --all",
     "license:seat": "node scripts/issue-license.mjs",
+    "export:trademark-assets": "node scripts/export-trademark-assets.js",
+    "export:trademark-circle-assets": "node scripts/export-trademark-circle-assets.js",
     "icons:build": "node scripts/build-app-icon.mjs",
     "icons:pwa": "node scripts/build-pwa-icons.mjs",
     "dist": "node scripts/build-pilot-packages.mjs",
