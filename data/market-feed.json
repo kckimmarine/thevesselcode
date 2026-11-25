@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-11-25T01:46:18.573Z",
-    "benchmarkAsOf": "2026-11-24",
+    "generatedAt": "2026-11-25T16:30:52.123Z",
+    "benchmarkAsOf": "2026-11-25",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-11-24",
-    "updatedLabelKo": "2026-11-24 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-11-25",
+    "updatedLabelKo": "2026-11-25 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 855,
-        "deltaPct": 0,
-        "asOf": "2026-11-23T17:00:00.000Z",
+        "priceUsdMt": 833.5,
+        "deltaPct": -2.51,
+        "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1105,
-        "deltaPct": 0,
-        "asOf": "2026-11-23T17:00:00.000Z",
+        "priceUsdMt": 1088.5,
+        "deltaPct": -1.49,
+        "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 599.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-23T17:00:00.000Z",
+        "priceUsdMt": 576,
+        "deltaPct": -3.92,
+        "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 702,
-        "deltaPct": 0,
-        "asOf": "2026-11-23T17:00:00.000Z",
+        "priceUsdMt": 673.5,
+        "deltaPct": -4.06,
+        "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1143.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-23T17:00:00.000Z",
+        "priceUsdMt": 1076.5,
+        "deltaPct": -5.86,
+        "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 547,
-        "deltaPct": 0,
-        "asOf": "2026-11-23T17:00:00.000Z",
+        "priceUsdMt": 533,
+        "deltaPct": -2.56,
+        "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 790,
-        "deltaPct": -4.82,
+        "deltaPct": 0,
         "asOf": "2026-11-24T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 710,
-        "deltaPct": -1.39,
+        "deltaPct": 0,
         "asOf": "2026-11-24T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 720,
-        "deltaPct": 0,
-        "asOf": "2026-11-23T17:00:00.000Z",
+        "priceUsdMt": 708,
+        "deltaPct": -1.67,
+        "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1178.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-23T17:00:00.000Z",
+        "priceUsdMt": 1159.5,
+        "deltaPct": -1.61,
+        "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -197,7 +197,7 @@
         "defaultDensity": 991,
         "priceUsdMt": 468,
         "deltaPct": 0,
-        "asOf": "2026-11-23T17:00:00.000Z",
+        "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 3068,
-      "deltaPct": 0,
+      "value": 3107,
+      "deltaPct": 1.27,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-24T19:30:27.410Z"
+      "asOf": "2026-11-25T15:00:17.924Z"
     },
     "capesizeTc": {
-      "value": 4942,
-      "deltaPct": 3.41,
+      "value": 5014,
+      "deltaPct": 1.46,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-24T19:30:27.441Z"
+      "asOf": "2026-11-25T15:00:17.990Z"
     },
     "panamaxTc": {
-      "value": 2179,
-      "deltaPct": 1.4,
+      "value": 2223,
+      "deltaPct": 2.02,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-24T19:30:27.455Z"
+      "asOf": "2026-11-25T15:00:18.010Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,210 @@
   },
   "news": [
     {
+      "title": "Most Large Fuel Tankers Now Ship ‘Dirty’ Crude, Upending Trading",
+      "link": "https://gcaptain.com/most-large-fuel-tankers-now-ship-dirty-crude-upending-trading/",
+      "pubDate": "Wed, 25 Nov 2026 13:44:01 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "A record three-quarters of the global fleet of large tankers designed to transport oil products are tapping higher earnings to ship crude, keeping the cost to move fuels elevated.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 2,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/04/gasoline-tanker-at-anchor.jpg",
+      "en": {
+        "headline": "Most Large Fuel Tankers Now Ship ‘Dirty’ Crude, Upending Trading",
+        "summary": "A record three-quarters of the global fleet of large tankers designed to transport oil products are tapping higher earnings to ship crude, keeping the cost to move fuels elevated.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Damen and Windcat sign for secondMulti-Purpose Accommodation Support Vessel (MP-ASV)",
+      "link": "https://gcaptain.com/damen-and-windcat-sign-for-secondmulti-purpose-accommodation-support-vessel-mp-asv/",
+      "pubDate": "Wed, 25 Nov 2026 13:23:50 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "On 24 November 2026, Windcat signed a contract with Damen Shipyards Group for the second Multi-Purpose Accommodation Support Vessel (MP-ASV) in the Innovation Series. The contract follows the order for...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 3,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Damen-and-Windcat-sign-for-second-MP-ASV.jpg",
+      "en": {
+        "headline": "Damen and Windcat sign for secondMulti-Purpose Accommodation Support Vessel (MP-ASV)",
+        "summary": "On 24 November 2026, Windcat signed a contract with Damen Shipyards Group for the second Multi-Purpose Accommodation Support Vessel (MP-ASV) in the Innovation Series. The contract follows the order for...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Shenzhen Energy makes $44m dry bulk newbuild move",
+      "link": "https://splash247.com/shenzhen-energy-makes-44m-dry-bulk-newbuild-move/",
+      "pubDate": "Wed, 25 Nov 2026 12:40:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Chinese power group Shenzhen Energy is moving ahead with the renewal of its dry bulk fleet, selecting CSSC Huangpu Wenchong Shipbuilding to build an 82,000 dwt kamsarmax in a deal worth RMB296m ($44.4m). The Shenzhen-listed company&#8217;s shipping arm, Shenzhen Energy Transporta",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 3,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Jia-Chang-panamax-bulker-Chuldan-Imansyah-Marine-Traffic.jpg",
+      "en": {
+        "headline": "Shenzhen Energy makes $44m dry bulk newbuild move",
+        "summary": "Chinese power group Shenzhen Energy is moving ahead with the renewal of its dry bulk fleet, selecting CSSC Huangpu Wenchong Shipbuilding to build an 82,000 dwt kamsarmax in a deal worth RMB296m ($44.4m). The Shenzhen-listed company&#8217;s shipping arm, Shenzhen Energy Transporta",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Bonny Gas Transport adds LNG carrier double in China",
+      "link": "https://splash247.com/bonny-gas-transport-adds-lng-carrier-double-in-china/",
+      "pubDate": "Wed, 25 Nov 2026 12:20:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Nigeria LNG&#8217;s shipping arm Bonny Gas Transport (BGT) has returned to China&#8217;s Hudong-Zhonghua Shipbuilding for another two LNG carriers, expanding its fleet renewal programme at the Shanghai yard to five firm vessels. The Nigerian owner has signed contracts on for a pa",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/Bonny-Gas-Transport.jpg",
+      "en": {
+        "headline": "Bonny Gas Transport adds LNG carrier double in China",
+        "summary": "Nigeria LNG&#8217;s shipping arm Bonny Gas Transport (BGT) has returned to China&#8217;s Hudong-Zhonghua Shipbuilding for another two LNG carriers, expanding its fleet renewal programme at the Shanghai yard to five firm vessels. The Nigerian owner has signed contracts on for a pa",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Hong Kong shipowners hail shipping tax overhaul",
+      "link": "https://splash247.com/hong-kong-shipowners-hail-shipping-tax-overhaul/",
+      "pubDate": "Wed, 25 Nov 2026 12:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The Hong Kong Shipowners Association (HKSOA) has welcomed a package of tax reforms aimed at attracting more shipping and commodity trading businesses to the city, including a new half-rate profits tax concession for physical commodity traders. The measures, which returned to the ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Hong-Kong-from-Harbour.jpg",
+      "en": {
+        "headline": "Hong Kong shipowners hail shipping tax overhaul",
+        "summary": "The Hong Kong Shipowners Association (HKSOA) has welcomed a package of tax reforms aimed at attracting more shipping and commodity trading businesses to the city, including a new half-rate profits tax concession for physical commodity traders. The measures, which returned to the ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Neda makes VLCC comeback with Chinese order",
+      "link": "https://splash247.com/neda-makes-vlcc-comeback-with-chinese-order/",
+      "pubDate": "Wed, 25 Nov 2026 11:40:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Greek shipowner Neda Maritime Agency has returned to the VLCC newbuilding market, lining up one firm vessel and an option for another at China&#8217;s New Times Shipbuilding. Shipbrokers have linked the Lykiardopoulos family-controlled company to a deal for 303,000 dwt crude carr",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Aragona-VLCC-Neda-Maritime.jpg",
+      "en": {
+        "headline": "Neda makes VLCC comeback with Chinese order",
+        "summary": "Greek shipowner Neda Maritime Agency has returned to the VLCC newbuilding market, lining up one firm vessel and an option for another at China&#8217;s New Times Shipbuilding. Shipbrokers have linked the Lykiardopoulos family-controlled company to a deal for 303,000 dwt crude carr",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "MPC Container Ships strikes $76m in fleet deals",
+      "link": "https://splash247.com/mpc-container-ships-strikes-76m-in-fleet-deals/",
+      "pubDate": "Wed, 25 Nov 2026 11:21:00 +0000",
+      "source": "Splash247",
+      "category": "S&P",
+      "summary": "Oslo-listed MPC Container Ships (MPCC) has revealed $76.3m in secondhand transactions, buying a modern feeder and selling two older containerships while locking in fresh employment for two vessels. The Constantin Baack-led owner has confirmed a $35.4m deal for a 2019-built 1,800 ",
+      "tag": "S&P",
+      "tagClass": "tag-sp",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/constantin-baack.jpg",
+      "en": {
+        "headline": "MPC Container Ships strikes $76m in fleet deals",
+        "summary": "Oslo-listed MPC Container Ships (MPCC) has revealed $76.3m in secondhand transactions, buying a modern feeder and selling two older containerships while locking in fresh employment for two vessels. The Constantin Baack-led owner has confirmed a $35.4m deal for a 2019-built 1,800 ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Safe Bulkers offloads vintage post-panamax for $15m",
+      "link": "https://splash247.com/safe-bulkers-offloads-vintage-post-panamax-for-15m/",
+      "pubDate": "Wed, 25 Nov 2026 11:00:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Polys Hajioannou-led Safe Bulkers is clearing out more older tonnage, striking a $14.86m deal to sell a 20-year-old post-panamax bulk carrier. The New York- and Athens-listed owner revealed in a US securities filing that it had agreed to offload the Japanese-built, 87,000 dwt Mar",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Marina-post-panamax-bulker-Fons-van-Beek-Marine-Traffic.jpg",
+      "en": {
+        "headline": "Safe Bulkers offloads vintage post-panamax for $15m",
+        "summary": "Polys Hajioannou-led Safe Bulkers is clearing out more older tonnage, striking a $14.86m deal to sell a 20-year-old post-panamax bulk carrier. The New York- and Athens-listed owner revealed in a US securities filing that it had agreed to offload the Japanese-built, 87,000 dwt Mar",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Saipem bags dual offshore EPCI contracts from Aramco",
+      "link": "https://splash247.com/saipem-bags-dual-offshore-epci-contracts-from-aramco/",
+      "pubDate": "Wed, 25 Nov 2026 10:40:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Italian offshore engineering and construction contractor Saipem has been awarded two offshore contracts in Saudi Arabia under its existing long-term agreement with Aramco. The approximate value of $650m covers the engineering, procurement, construction, installation, pipeline, an",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/Saipem-worker.jpg",
+      "en": {
+        "headline": "Saipem bags dual offshore EPCI contracts from Aramco",
+        "summary": "Italian offshore engineering and construction contractor Saipem has been awarded two offshore contracts in Saudi Arabia under its existing long-term agreement with Aramco. The approximate value of $650m covers the engineering, procurement, construction, installation, pipeline, an",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Vantris secures $115m Petronas work package",
+      "link": "https://splash247.com/vantris-secures-115m-petronas-work-package/",
+      "pubDate": "Wed, 25 Nov 2026 10:25:17 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Malaysian offshore contractor Vantris Energy has secured further transportation and installation work orders from Petronas Carigali, with a combined potential value of RM475m ($115m). The Kuala Lumpur-listed company said the contracts were awarded to its wholly owned subsidiary V",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/Sapura-Energy.jpg",
+      "en": {
+        "headline": "Vantris secures $115m Petronas work package",
+        "summary": "Malaysian offshore contractor Vantris Energy has secured further transportation and installation work orders from Petronas Carigali, with a combined potential value of RM475m ($115m). The Kuala Lumpur-listed company said the contracts were awarded to its wholly owned subsidiary V",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "DEME joins Allseas on Canadian LNG pipeline project",
+      "link": "https://splash247.com/deme-joins-allseas-on-canadian-lng-pipeline-project/",
+      "pubDate": "Wed, 25 Nov 2026 10:20:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Belgian marine contractor DEME has secured a subcontract from Swiss-based offshore construction specialist Allseas for marine works on the Prince Rupert Gas Transmission (PRGT) pipeline in Canada. DEME described the award as a large contract, a classification it uses for agreemen",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2021/02/DEME-Orion.jpg",
+      "en": {
+        "headline": "DEME joins Allseas on Canadian LNG pipeline project",
+        "summary": "Belgian marine contractor DEME has secured a subcontract from Swiss-based offshore construction specialist Allseas for marine works on the Prince Rupert Gas Transmission (PRGT) pipeline in Canada. DEME described the award as a large contract, a classification it uses for agreemen",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "TotalEnergies taps Shearwater for fresh Angola survey",
+      "link": "https://splash247.com/totalenergies-taps-shearwater-for-fresh-angola-survey/",
+      "pubDate": "Wed, 25 Nov 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Norwegian offshore seismic vessel operator Shearwater Geoservices has been awarded a 4D towed-streamer seismic acquisition project by TotalEnergies offshore Angola. Amazon Conqueror will conduct the survey in Blocks 17 and 17/06 offshore Angola. The programme is expected to comme",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/05/Amazon-Conqueror.jpg",
+      "en": {
+        "headline": "TotalEnergies taps Shearwater for fresh Angola survey",
+        "summary": "Norwegian offshore seismic vessel operator Shearwater Geoservices has been awarded a 4D towed-streamer seismic acquisition project by TotalEnergies offshore Angola. Amazon Conqueror will conduct the survey in Blocks 17 and 17/06 offshore Angola. The programme is expected to comme",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "BUILT TO LAST: BRISTOL HARBOR GROUP, INC. &#038; THE SHEARER GROUP, INC. BECOME EMPLOYEE OWNED",
       "link": "https://gcaptain.com/built-to-last-bristol-harbor-group-inc-the-shearer-group-inc-become-employee-owned/",
       "pubDate": "Tue, 24 Nov 2026 21:00:28 +0000",
@@ -244,7 +448,7 @@
       "summary": "Two established naval architecture and marine engineering firms become 100% employee owned, carrying forward the vision and values of their founders. Bristol Harbor Group, Inc. (BHGI) and The Shearer Group,...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 19,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Staff-800x600.jpg",
       "en": {
         "headline": "BUILT TO LAST: BRISTOL HARBOR GROUP, INC. &#038; THE SHEARER GROUP, INC. BECOME EMPLOYEE OWNED",
@@ -261,7 +465,7 @@
       "summary": "The formation of container shipping’s first global liner alliance covering the north-south trades appears to be taking shape, The Loadstar has learned.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/02/2023-02-20T081736Z_1947939712_RC29UY9ACLOV_RTRMADP_3_MAERSK-RUSSIA.jpg",
       "en": {
         "headline": "Maersk and ONE Eye Landmark Global North-South Shipping Alliance",
@@ -278,7 +482,7 @@
       "summary": "The state-owned Shipping Corporation of India (SCI) is seeking to acquire up to 22 new vessels in a multibillion-dollar fleet expansion that could provide a major boost to India&#8217;s domestic...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/07/Cochin-Shipyard-India-800x450.jpg",
       "en": {
         "headline": "India’s State Shipping Giant Seeks Up to 22 New Ships in Major Domestic Shipbuilding Push",
@@ -295,215 +499,11 @@
       "summary": "French authorities have successfully refloated the Malta-flagged bulk carrier&#160;MIRO G, four days after the vessel ran aground on France’s Atlantic coast during severe weather. The Atlantic Maritime Prefecture&#160;confirmed Tuesday afternoon&#160;that...",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 21,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Miro-G.jpeg",
       "en": {
         "headline": "Grounded Bulk Carrier MIRO G Successfully Refloated Off French Beach",
         "summary": "French authorities have successfully refloated the Malta-flagged bulk carrier&#160;MIRO G, four days after the vessel ran aground on France’s Atlantic coast during severe weather. The Atlantic Maritime Prefecture&#160;confirmed Tuesday afternoon&#160;that...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Four More Ships Attacked as Iran Widens Hormuz Crackdown to Tugboats",
-      "link": "https://gcaptain.com/four-more-ships-attacked-as-iran-widens-hormuz-crackdown-to-tugboats/",
-      "pubDate": "Tue, 24 Nov 2026 18:19:57 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Four more commercial vessels have been attacked in and around the Strait of Hormuz, bringing the number of reported tanker strikes in the strategic waterway to 10 in a single...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/08/2026-08-03T073334Z_269669342_RC2RQMA1TKMQ_RTRMADP_3_IRAN-CRISIS-SHIPPING-800x518.jpg",
-      "en": {
-        "headline": "Four More Ships Attacked as Iran Widens Hormuz Crackdown to Tugboats",
-        "summary": "Four more commercial vessels have been attacked in and around the Strait of Hormuz, bringing the number of reported tanker strikes in the strategic waterway to 10 in a single...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "OPEC+ Faces Its Most Consequential Supply Decision of the Year",
-      "link": "https://gcaptain.com/opec-faces-its-most-consequential-supply-decision-of-the-year/",
-      "pubDate": "Tue, 24 Nov 2026 17:53:42 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "When OPEC+ oil ministers gather at the end of this month to figure out how much crude to supply the world, they’ll face their most consequential decision of the year.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-09T052058Z_770736808_RC217KA5FP4Y_RTRMADP_3_IRAN-CRISIS-USA-ASIA-OIL-800x533.jpg",
-      "en": {
-        "headline": "OPEC+ Faces Its Most Consequential Supply Decision of the Year",
-        "summary": "When OPEC+ oil ministers gather at the end of this month to figure out how much crude to supply the world, they’ll face their most consequential decision of the year.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Maersk storms into megamax league",
-      "link": "https://splash247.com/maersk-storms-into-megamax-league/",
-      "pubDate": "Tue, 24 Nov 2026 17:04:41 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Danish liner giant AP Moller-Maersk has confirmed an order for 12 ultra-large containerships of 24,000 teu, marking its entry into the largest boxship segment with an investment estimated at around $2.9bn. The Copenhagen-based group said the dual-fuel vessels would be delivered i",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/02/Maersk-New-Times-18600-teu-newbuild.jpg",
-      "en": {
-        "headline": "Maersk storms into megamax league",
-        "summary": "Danish liner giant AP Moller-Maersk has confirmed an order for 12 ultra-large containerships of 24,000 teu, marking its entry into the largest boxship segment with an investment estimated at around $2.9bn. The Copenhagen-based group said the dual-fuel vessels would be delivered i",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Swedish Club Urges Ships to Avoid Strait of Hormuz as Security Situation Deteriorates",
-      "link": "https://gcaptain.com/swedish-club-urges-ships-to-avoid-strait-of-hormuz-as-security-situation-deteriorates/",
-      "pubDate": "Tue, 24 Nov 2026 16:47:06 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Marine insurer The Swedish Club is warning shipowners against non-essential transits of the Strait of Hormuz as escalating attacks on commercial shipping, mounting congestion and persistent navigational interference further deteriorate...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 8,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-10-20T060010Z_1765538580_RC2L3LAI6608_RTRMADP_3_OIL-MAJORS-RESULTS-PREVIEW-800x533.jpg",
-      "en": {
-        "headline": "Swedish Club Urges Ships to Avoid Strait of Hormuz as Security Situation Deteriorates",
-        "summary": "Marine insurer The Swedish Club is warning shipowners against non-essential transits of the Strait of Hormuz as escalating attacks on commercial shipping, mounting congestion and persistent navigational interference further deteriorate...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Grounded bulker pulled free off French coast",
-      "link": "https://splash247.com/grounded-bulker-pulled-free-off-french-coast/",
-      "pubDate": "Tue, 24 Nov 2026 16:43:11 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Salvors have successfully refloated the 28,200 dwt bulk carrier Miro G, four days after the ship was driven onto a beach on France’s Atlantic coast. The 2011-built, Malta-flagged bulker was pulled clear of the shoreline at Cap de l’Homy, near Lit-et-Mixe, on Tuesday afternoon by ",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 9,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Miro-G-refloated-French-Navy.jpg",
-      "en": {
-        "headline": "Grounded bulker pulled free off French coast",
-        "summary": "Salvors have successfully refloated the 28,200 dwt bulk carrier Miro G, four days after the ship was driven onto a beach on France’s Atlantic coast. The 2011-built, Malta-flagged bulker was pulled clear of the shoreline at Cap de l’Homy, near Lit-et-Mixe, on Tuesday afternoon by ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Used Supertankers Now Cost More Than New Ships as Hormuz War Upends Shipping Markets",
-      "link": "https://gcaptain.com/used-supertankers-now-cost-more-than-new-ships-as-hormuz-war-upends-shipping-markets/",
-      "pubDate": "Tue, 24 Nov 2026 16:13:27 +0000",
-      "source": "gCaptain",
-      "category": "Carbon",
-      "summary": "The war with Iran has so severely distorted the global oil tanker market that 15-year-old supertankers are now worth considerably more than brand-new vessels, highlighting the extraordinary premium placed on...",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 9,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/04/shutterstock_2673491375.jpg",
-      "en": {
-        "headline": "Used Supertankers Now Cost More Than New Ships as Hormuz War Upends Shipping Markets",
-        "summary": "The war with Iran has so severely distorted the global oil tanker market that 15-year-old supertankers are now worth considerably more than brand-new vessels, highlighting the extraordinary premium placed on...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Danaos bags $611m in fresh boxship charters",
-      "link": "https://splash247.com/danaos-bags-611m-in-fresh-boxship-charters/",
-      "pubDate": "Tue, 24 Nov 2026 14:37:17 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Greek containership owner Danaos has secured another $611m in contracted revenue through a string of new fixtures and charter extensions, taking its forward revenue backlog to $5bn. The John Coustas-led company revealed the deals in its latest quarterly update, with a comparison ",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 11,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/08/Danaos-Corp.jpg",
-      "en": {
-        "headline": "Danaos bags $611m in fresh boxship charters",
-        "summary": "Greek containership owner Danaos has secured another $611m in contracted revenue through a string of new fixtures and charter extensions, taking its forward revenue backlog to $5bn. The John Coustas-led company revealed the deals in its latest quarterly update, with a comparison ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "EnEarth takes control of Scottish carbon storage project",
-      "link": "https://splash247.com/enearth-takes-control-of-scottish-carbon-storage-project/",
-      "pubDate": "Tue, 24 Nov 2026 14:00:00 +0000",
-      "source": "Splash247",
-      "category": "Carbon",
-      "summary": "Carbon storage developer EnEarth has agreed to acquire Storegga&#8217;s 30% stake in the Acorn carbon capture and storage project in northeast Scotland, taking over as lead developer of the North Sea scheme. The transaction will transfer Storegga&#8217;s project interest and deve",
-      "tag": "Carbon",
-      "tagClass": "tag-carbon",
-      "hoursAgo": 11,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/EnEarth-offshore-platform.jpg",
-      "en": {
-        "headline": "EnEarth takes control of Scottish carbon storage project",
-        "summary": "Carbon storage developer EnEarth has agreed to acquire Storegga&#8217;s 30% stake in the Acorn carbon capture and storage project in northeast Scotland, taking over as lead developer of the North Sea scheme. The transaction will transfer Storegga&#8217;s project interest and deve",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Coast Guard Orders Salvage Assessment of ‘Healy’ Engine After Major Failure",
-      "link": "https://gcaptain.com/coast-guard-orders-salvage-assessment-of-healy-engine-after-major-failure/",
-      "pubDate": "Tue, 24 Nov 2026 13:50:31 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The U.S. Coast Guard has sought a specialized salvage inspection of the damaged No. 2 diesel generator aboard USCGC Healy, seeking to identify components that can be reclaimed and reused following a catastrophic engine failure.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 11,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/06/250619-G-HT254-1221-healy-2025-deployment-departure-Seattle.png",
-      "en": {
-        "headline": "Coast Guard Orders Salvage Assessment of ‘Healy’ Engine After Major Failure",
-        "summary": "The U.S. Coast Guard has sought a specialized salvage inspection of the damaged No. 2 diesel generator aboard USCGC Healy, seeking to identify components that can be reclaimed and reused following a catastrophic engine failure.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Ukraine Insists Attack on Russian Ships in Libya was Self-Defense",
-      "link": "https://gcaptain.com/ukraine-insists-attack-on-russian-ships-in-libya-was-self-defense/",
-      "pubDate": "Tue, 24 Nov 2026 13:40:38 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Ukraine's foreign minister said on Tuesday a drone attack against a Russian military vessel and cargo ship in Libyan waters at the weekend was a legitimate act of self-defense, following criticism from the government in Tripoli.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-22T084722Z_1995371311_RC2WSOA5VOIB_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-VESSEL.jpg",
-      "en": {
-        "headline": "Ukraine Insists Attack on Russian Ships in Libya was Self-Defense",
-        "summary": "Ukraine's foreign minister said on Tuesday a drone attack against a Russian military vessel and cargo ship in Libyan waters at the weekend was a legitimate act of self-defense, following criticism from the government in Tripoli.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "DOF sells CSV in $35m gain deal",
-      "link": "https://splash247.com/dof-sells-csv-in-35m-gain-deal/",
-      "pubDate": "Tue, 24 Nov 2026 13:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norwegian offshore vessel owner DOF has agreed to sell its 2008-built subsea construction vessel (CSV) Skandi Forza, while retaining access to the ship through a two-year bareboat charterback arrangement. The vessel is expected to be delivered to its new owners in the fourth quar",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 12,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/MarineTraffic-Andrew-Shields-Skandi-Forza-under-a-previous-name.jpg",
-      "en": {
-        "headline": "DOF sells CSV in $35m gain deal",
-        "summary": "Norwegian offshore vessel owner DOF has agreed to sell its 2008-built subsea construction vessel (CSV) Skandi Forza, while retaining access to the ship through a two-year bareboat charterback arrangement. The vessel is expected to be delivered to its new owners in the fourth quar",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Zelenskyy Confirms Ukraine Hit Russian Ship in Gulf of Finland",
-      "link": "https://gcaptain.com/zelenskyy-confirms-ukraine-hit-russian-ship-in-gulf-of-finland/",
-      "pubDate": "Tue, 24 Nov 2026 12:40:14 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "President Volodymyr Zelenskyy said Ukraine was responsible for a drone strike on a Russian cargo ship in the Gulf of Finland in a widening campaign of retaliation against Moscow’s full-scale invasion.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80",
-      "en": {
-        "headline": "Zelenskyy Confirms Ukraine Hit Russian Ship in Gulf of Finland",
-        "summary": "President Volodymyr Zelenskyy said Ukraine was responsible for a drone strike on a Russian cargo ship in the Gulf of Finland in a widening campaign of retaliation against Moscow’s full-scale invasion.",
         "source": "gCaptain"
       }
     }
