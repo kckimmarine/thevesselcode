@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-11-26T01:21:06.364Z",
-    "benchmarkAsOf": "2026-11-25",
+    "generatedAt": "2026-11-26T16:03:53.044Z",
+    "benchmarkAsOf": "2026-11-26",
     "fetchStatus": "partial",
     "rssErrors": [
       "Maritime Executive: HTTP 404"
@@ -16,8 +16,8 @@
       "bunker": "OilPriceAPI · market_reporting",
       "indices": "OilPriceAPI · Baltic Exchange"
     },
-    "updatedLabelEn": "Market as of 2026-11-25",
-    "updatedLabelKo": "2026-11-25 기준 시장가"
+    "updatedLabelEn": "Market as of 2026-11-26",
+    "updatedLabelKo": "2026-11-26 기준 시장가"
   },
   "bunker": {
     "hubs": [
@@ -75,9 +75,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 833.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-24T17:00:00.000Z",
+        "priceUsdMt": 809.5,
+        "deltaPct": -2.88,
+        "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -87,9 +87,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1088.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-24T17:00:00.000Z",
+        "priceUsdMt": 1077.5,
+        "deltaPct": -1.01,
+        "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -99,9 +99,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 576,
-        "deltaPct": 0,
-        "asOf": "2026-11-24T17:00:00.000Z",
+        "priceUsdMt": 580,
+        "deltaPct": 0.69,
+        "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -111,9 +111,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 673.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-24T17:00:00.000Z",
+        "priceUsdMt": 676,
+        "deltaPct": 0.37,
+        "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -123,9 +123,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1076.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-24T17:00:00.000Z",
+        "priceUsdMt": 1068,
+        "deltaPct": -0.79,
+        "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -135,9 +135,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 533,
-        "deltaPct": 0,
-        "asOf": "2026-11-24T17:00:00.000Z",
+        "priceUsdMt": 544,
+        "deltaPct": 2.06,
+        "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -148,7 +148,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 780,
-        "deltaPct": -1.27,
+        "deltaPct": 0,
         "asOf": "2026-11-25T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -160,7 +160,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 670,
-        "deltaPct": -5.63,
+        "deltaPct": 0,
         "asOf": "2026-11-25T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -171,9 +171,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 708,
-        "deltaPct": 0,
-        "asOf": "2026-11-24T17:00:00.000Z",
+        "priceUsdMt": 720,
+        "deltaPct": 1.69,
+        "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -183,9 +183,9 @@
         "gradeLabel": "LSMGO",
         "fuel": "LSMGO",
         "defaultDensity": 850,
-        "priceUsdMt": 1159.5,
-        "deltaPct": 0,
-        "asOf": "2026-11-24T17:00:00.000Z",
+        "priceUsdMt": 1153.5,
+        "deltaPct": -0.52,
+        "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -195,9 +195,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 468,
-        "deltaPct": 0,
-        "asOf": "2026-11-24T17:00:00.000Z",
+        "priceUsdMt": 473,
+        "deltaPct": 1.07,
+        "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       }
@@ -205,25 +205,25 @@
   },
   "indices": {
     "bdi": {
-      "value": 3107,
-      "deltaPct": 0,
+      "value": 3152,
+      "deltaPct": 1.45,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-25T15:00:17.924Z"
+      "asOf": "2026-11-26T15:15:20.424Z"
     },
     "capesizeTc": {
-      "value": 5014,
-      "deltaPct": 0,
+      "value": 5100,
+      "deltaPct": 1.72,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-25T15:00:17.990Z"
+      "asOf": "2026-11-26T15:15:20.497Z"
     },
     "panamaxTc": {
-      "value": 2223,
-      "deltaPct": 0,
+      "value": 2273,
+      "deltaPct": 2.25,
       "unit": "pts",
       "source": "market_reporting",
-      "asOf": "2026-11-25T15:00:18.010Z"
+      "asOf": "2026-11-26T15:15:20.513Z"
     },
     "bdti": {
       "value": 1185,
@@ -236,6 +236,176 @@
   },
   "news": [
     {
+      "title": "BIMCO puts ship-to-ship transfer costs on charterers",
+      "link": "https://splash247.com/bimco-puts-ship-to-ship-transfer-costs-on-charterers/",
+      "pubDate": "Thu, 26 Nov 2026 11:54:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Shipping organisation BIMCO has released a new standard clause for tanker charterparties that places the costs and risks of ship-to-ship cargo transfers on charterers while preserving the master&#8217;s authority over vessel safety. Published this week, the clause covers conventi",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/STS-BIMCO.jpg",
+      "en": {
+        "headline": "BIMCO puts ship-to-ship transfer costs on charterers",
+        "summary": "Shipping organisation BIMCO has released a new standard clause for tanker charterparties that places the costs and risks of ship-to-ship cargo transfers on charterers while preserving the master&#8217;s authority over vessel safety. Published this week, the clause covers conventi",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Polish offshore wind rules draw Danish shipowner backlash",
+      "link": "https://splash247.com/polish-offshore-wind-rules-draw-danish-shipowner-backlash/",
+      "pubDate": "Thu, 26 Nov 2026 11:19:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Danish shipowners have raised concerns at EU level over new Polish vessel certification requirements, warning that additional inspections are making it harder for foreign operators to compete for offshore wind and marine construction contracts in the Baltic Sea. Industry associat",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 4,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2022/10/RWE-Poland-offshore-wind.jpg",
+      "en": {
+        "headline": "Polish offshore wind rules draw Danish shipowner backlash",
+        "summary": "Danish shipowners have raised concerns at EU level over new Polish vessel certification requirements, warning that additional inspections are making it harder for foreign operators to compete for offshore wind and marine construction contracts in the Baltic Sea. Industry associat",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Hanwha Ocean pulls out of 800MW offshore wind project",
+      "link": "https://splash247.com/hanwha-ocean-pulls-out-of-800mw-offshore-wind-project/",
+      "pubDate": "Thu, 26 Nov 2026 11:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "South Korean shipbuilding heavyweight Hanwha Ocean has pulled out of an 800MW offshore wind development off the country’s southwestern coast. The company confirmed in a regulatory filing on Wednesday that it had decided not to participate in the first phase of the Jeonbuk Southwe",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/02/Source-Galileo-offshore-wind.jpg",
+      "en": {
+        "headline": "Hanwha Ocean pulls out of 800MW offshore wind project",
+        "summary": "South Korean shipbuilding heavyweight Hanwha Ocean has pulled out of an 800MW offshore wind development off the country’s southwestern coast. The company confirmed in a regulatory filing on Wednesday that it had decided not to participate in the first phase of the Jeonbuk Southwe",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Taylor Maritime hit by shareholder revolt over pay",
+      "link": "https://splash247.com/taylor-maritime-hit-by-shareholder-revolt-over-pay/",
+      "pubDate": "Thu, 26 Nov 2026 10:45:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "London-listed dry bulk owner Taylor Maritime has faced a shareholder backlash over directors&#8217; remuneration, with more than 20% of votes cast against its annual pay report while the company winds down its shipping operations. The Ed Buttery-led outfit disclosed that 20.59% o",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2024/03/Ed-Buttery-Monaco-CEO-Forum.jpg",
+      "en": {
+        "headline": "Taylor Maritime hit by shareholder revolt over pay",
+        "summary": "London-listed dry bulk owner Taylor Maritime has faced a shareholder backlash over directors&#8217; remuneration, with more than 20% of votes cast against its annual pay report while the company winds down its shipping operations. The Ed Buttery-led outfit disclosed that 20.59% o",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "NextGeo wins survey work on European hydrogen pipeline",
+      "link": "https://splash247.com/nextgeo-wins-survey-work-on-european-hydrogen-pipeline/",
+      "pubDate": "Thu, 26 Nov 2026 10:30:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Italian offshore survey specialist Next Geosolutions (NextGeo) has secured an €11.6m ($12.7m) contract to survey a planned subsea hydrogen pipeline linking Spain and France. BarMar, a joint venture between French gas transmission operators NaTran and Teréga and Spain’s Enagás, aw",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/MarineTraffic-Marcel-Coster-NextGeo-NG-Surveyor.jpg",
+      "en": {
+        "headline": "NextGeo wins survey work on European hydrogen pipeline",
+        "summary": "Italian offshore survey specialist Next Geosolutions (NextGeo) has secured an €11.6m ($12.7m) contract to survey a planned subsea hydrogen pipeline linking Spain and France. BarMar, a joint venture between French gas transmission operators NaTran and Teréga and Spain’s Enagás, aw",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "StealthGas boosts forward cover with seven fixtures",
+      "link": "https://splash247.com/stealthgas-boosts-forward-cover-with-seven-fixtures/",
+      "pubDate": "Thu, 26 Nov 2026 10:12:43 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Harry Vafias-led StealthGas has wrapped up seven charter deals for its LPG carriers, lifting its contracted revenue backlog to $115m and securing employment for one vessel into 2030. The Nasdaq-listed Greek owner revealed the fixtures in its latest quarterly update, with the long",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 5,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Eco-Galaxy-StealthGas.jpg",
+      "en": {
+        "headline": "StealthGas boosts forward cover with seven fixtures",
+        "summary": "Harry Vafias-led StealthGas has wrapped up seven charter deals for its LPG carriers, lifting its contracted revenue backlog to $115m and securing employment for one vessel into 2030. The Nasdaq-listed Greek owner revealed the fixtures in its latest quarterly update, with the long",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "UK offshore wind decommissioning estimates vary tenfold",
+      "link": "https://splash247.com/uk-offshore-wind-decommissioning-estimates-vary-tenfold/",
+      "pubDate": "Thu, 26 Nov 2026 10:00:00 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Decommissioning provisions for UK offshore wind farms with similarly sized turbines can differ by as much as ten times, highlighting major uncertainties over the future cost of dismantling ageing installations, according to new research. A study by energy consultancy Xodus and it",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/09/Semco-Maritime-offshore-wind.jpg",
+      "en": {
+        "headline": "UK offshore wind decommissioning estimates vary tenfold",
+        "summary": "Decommissioning provisions for UK offshore wind farms with similarly sized turbines can differ by as much as ten times, highlighting major uncertainties over the future cost of dismantling ageing installations, according to new research. A study by energy consultancy Xodus and it",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Diesel-laden tanker sinks off Ibiza leaving one dead",
+      "link": "https://splash247.com/diesel-laden-tanker-sinks-off-ibiza-leaving-one-dead/",
+      "pubDate": "Thu, 26 Nov 2026 09:46:10 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "A seafarer has died after a Malta-flagged chemical tanker carrying around 7,000 tonnes of diesel sank off the Spanish island of Ibiza, triggering an emergency pollution response. The 2019-built, 8,270 dwt Med Emre went down around 25 to 30 nautical miles off the Balearic island a",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 6,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Med-Emre-YMN-Tanker.jpg",
+      "en": {
+        "headline": "Diesel-laden tanker sinks off Ibiza leaving one dead",
+        "summary": "A seafarer has died after a Malta-flagged chemical tanker carrying around 7,000 tonnes of diesel sank off the Spanish island of Ibiza, triggering an emergency pollution response. The 2019-built, 8,270 dwt Med Emre went down around 25 to 30 nautical miles off the Balearic island a",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Washington opens fresh tariff front across 14 economies",
+      "link": "https://splash247.com/washington-opens-fresh-tariff-front-across-14-economies/",
+      "pubDate": "Thu, 26 Nov 2026 08:42:39 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "Container shipping faces another bout of trade uncertainty after Washington unveiled plans for fresh tariffs on imports from 14 economies, including several of the world&#8217;s largest manufacturing and container export hubs. The Office of the United States Trade Representative ",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Donald-Trump-Innauguration.jpg",
+      "en": {
+        "headline": "Washington opens fresh tariff front across 14 economies",
+        "summary": "Container shipping faces another bout of trade uncertainty after Washington unveiled plans for fresh tariffs on imports from 14 economies, including several of the world&#8217;s largest manufacturing and container export hubs. The Office of the United States Trade Representative ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Brussels deals fresh blow to Indian ship recycling",
+      "link": "https://splash247.com/brussels-deals-fresh-blow-to-indian-ship-recycling/",
+      "pubDate": "Thu, 26 Nov 2026 08:24:17 +0000",
+      "source": "Splash247",
+      "category": "Trade",
+      "summary": "The European Parliament has voted against adding two Indian shipbreaking yards to the EU’s approved recycling list, drawing a sharp rebuke from BIMCO and dealing another setback to shipowners seeking greater access to South Asian dismantling capacity. MEPs have backed an objectio",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2023/02/Leela-ship-recycling.jpg",
+      "en": {
+        "headline": "Brussels deals fresh blow to Indian ship recycling",
+        "summary": "The European Parliament has voted against adding two Indian shipbreaking yards to the EU’s approved recycling list, drawing a sharp rebuke from BIMCO and dealing another setback to shipowners seeking greater access to South Asian dismantling capacity. MEPs have backed an objectio",
+        "source": "Splash247"
+      }
+    },
+    {
       "title": "U.S. Targets China, EU With New Tariffs Citing Overcapacity",
       "link": "https://gcaptain.com/u-s-targets-china-eu-with-new-tariffs-citing-overcapacity/",
       "pubDate": "Wed, 25 Nov 2026 17:35:31 +0000",
@@ -244,7 +414,7 @@
       "summary": "The US announced plans to impose a fresh round of tariffs on goods from China, the European Union and a dozen other economies under President Donald Trump’s push to restore sweeping global import taxes that the Supreme Court found unconstitutional.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 7,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-14T095846Z_758081347_RC2T8LABMZPO_RTRMADP_3_CHINA-USA-OIL-800x533.jpg",
       "en": {
         "headline": "U.S. Targets China, EU With New Tariffs Citing Overcapacity",
@@ -261,7 +431,7 @@
       "summary": "The International Maritime Organization (IMO) is calling on shipping companies to make more training berths available to cadets, highlighting a longstanding disconnect between the industry&#8217;s need for qualified seafarers and...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 7,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/03/IMO_Seafarer.jpeg",
       "en": {
         "headline": "IMO Sounds Alarm Over Shortage of Training Berths for Future Seafarers",
@@ -278,7 +448,7 @@
       "summary": "Countries bordering the Red Sea and Western Indian Ocean are moving toward establishing a combined maritime task force to combat piracy, strengthen regional security and protect commercial shipping across some...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 7,
+      "hoursAgo": 22,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/Operation-Aspides-red-sea-escort.jpeg",
       "en": {
         "headline": "Red Sea and Indian Ocean Nations Advance Plans for Combined Maritime Security Force",
@@ -295,7 +465,7 @@
       "summary": "Italy has told Ukraine it was wrong to attack Russian ships in Libyan waters and warned Kyiv not to spread the war to new areas, Foreign Minister Antonio Tajani told Corriere della Sera newspaper on Wednesday.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 8,
+      "hoursAgo": 23,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-22T134606Z_1666304204_RC21TOAEFO3P_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-VESSEL-1.jpg",
       "en": {
         "headline": "Italy Rebukes Ukraine Over Attacks on Russian Ships in Libya",
@@ -312,7 +482,7 @@
       "summary": "A record three-quarters of the global fleet of large tankers designed to transport oil products are tapping higher earnings to ship crude, keeping the cost to move fuels elevated.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 26,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/04/gasoline-tanker-at-anchor.jpg",
       "en": {
         "headline": "Most Large Fuel Tankers Now Ship ‘Dirty’ Crude, Upending Trading",
@@ -329,182 +499,12 @@
       "summary": "On 24 November 2026, Windcat signed a contract with Damen Shipyards Group for the second Multi-Purpose Accommodation Support Vessel (MP-ASV) in the Innovation Series. The contract follows the order for...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 11,
+      "hoursAgo": 26,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Damen-and-Windcat-sign-for-second-MP-ASV.jpg",
       "en": {
         "headline": "Damen and Windcat sign for secondMulti-Purpose Accommodation Support Vessel (MP-ASV)",
         "summary": "On 24 November 2026, Windcat signed a contract with Damen Shipyards Group for the second Multi-Purpose Accommodation Support Vessel (MP-ASV) in the Innovation Series. The contract follows the order for...",
         "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Shenzhen Energy makes $44m dry bulk newbuild move",
-      "link": "https://splash247.com/shenzhen-energy-makes-44m-dry-bulk-newbuild-move/",
-      "pubDate": "Wed, 25 Nov 2026 12:40:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Chinese power group Shenzhen Energy is moving ahead with the renewal of its dry bulk fleet, selecting CSSC Huangpu Wenchong Shipbuilding to build an 82,000 dwt kamsarmax in a deal worth RMB296m ($44.4m). The Shenzhen-listed company&#8217;s shipping arm, Shenzhen Energy Transporta",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 12,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Jia-Chang-panamax-bulker-Chuldan-Imansyah-Marine-Traffic.jpg",
-      "en": {
-        "headline": "Shenzhen Energy makes $44m dry bulk newbuild move",
-        "summary": "Chinese power group Shenzhen Energy is moving ahead with the renewal of its dry bulk fleet, selecting CSSC Huangpu Wenchong Shipbuilding to build an 82,000 dwt kamsarmax in a deal worth RMB296m ($44.4m). The Shenzhen-listed company&#8217;s shipping arm, Shenzhen Energy Transporta",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Bonny Gas Transport adds LNG carrier double in China",
-      "link": "https://splash247.com/bonny-gas-transport-adds-lng-carrier-double-in-china/",
-      "pubDate": "Wed, 25 Nov 2026 12:20:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Nigeria LNG&#8217;s shipping arm Bonny Gas Transport (BGT) has returned to China&#8217;s Hudong-Zhonghua Shipbuilding for another two LNG carriers, expanding its fleet renewal programme at the Shanghai yard to five firm vessels. The Nigerian owner has signed contracts on for a pa",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 13,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/Bonny-Gas-Transport.jpg",
-      "en": {
-        "headline": "Bonny Gas Transport adds LNG carrier double in China",
-        "summary": "Nigeria LNG&#8217;s shipping arm Bonny Gas Transport (BGT) has returned to China&#8217;s Hudong-Zhonghua Shipbuilding for another two LNG carriers, expanding its fleet renewal programme at the Shanghai yard to five firm vessels. The Nigerian owner has signed contracts on for a pa",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Hong Kong shipowners hail shipping tax overhaul",
-      "link": "https://splash247.com/hong-kong-shipowners-hail-shipping-tax-overhaul/",
-      "pubDate": "Wed, 25 Nov 2026 12:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The Hong Kong Shipowners Association (HKSOA) has welcomed a package of tax reforms aimed at attracting more shipping and commodity trading businesses to the city, including a new half-rate profits tax concession for physical commodity traders. The measures, which returned to the ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 13,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Hong-Kong-from-Harbour.jpg",
-      "en": {
-        "headline": "Hong Kong shipowners hail shipping tax overhaul",
-        "summary": "The Hong Kong Shipowners Association (HKSOA) has welcomed a package of tax reforms aimed at attracting more shipping and commodity trading businesses to the city, including a new half-rate profits tax concession for physical commodity traders. The measures, which returned to the ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Neda makes VLCC comeback with Chinese order",
-      "link": "https://splash247.com/neda-makes-vlcc-comeback-with-chinese-order/",
-      "pubDate": "Wed, 25 Nov 2026 11:40:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Greek shipowner Neda Maritime Agency has returned to the VLCC newbuilding market, lining up one firm vessel and an option for another at China&#8217;s New Times Shipbuilding. Shipbrokers have linked the Lykiardopoulos family-controlled company to a deal for 303,000 dwt crude carr",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 13,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Aragona-VLCC-Neda-Maritime.jpg",
-      "en": {
-        "headline": "Neda makes VLCC comeback with Chinese order",
-        "summary": "Greek shipowner Neda Maritime Agency has returned to the VLCC newbuilding market, lining up one firm vessel and an option for another at China&#8217;s New Times Shipbuilding. Shipbrokers have linked the Lykiardopoulos family-controlled company to a deal for 303,000 dwt crude carr",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "MPC Container Ships strikes $76m in fleet deals",
-      "link": "https://splash247.com/mpc-container-ships-strikes-76m-in-fleet-deals/",
-      "pubDate": "Wed, 25 Nov 2026 11:21:00 +0000",
-      "source": "Splash247",
-      "category": "S&P",
-      "summary": "Oslo-listed MPC Container Ships (MPCC) has revealed $76.3m in secondhand transactions, buying a modern feeder and selling two older containerships while locking in fresh employment for two vessels. The Constantin Baack-led owner has confirmed a $35.4m deal for a 2019-built 1,800 ",
-      "tag": "S&P",
-      "tagClass": "tag-sp",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/constantin-baack.jpg",
-      "en": {
-        "headline": "MPC Container Ships strikes $76m in fleet deals",
-        "summary": "Oslo-listed MPC Container Ships (MPCC) has revealed $76.3m in secondhand transactions, buying a modern feeder and selling two older containerships while locking in fresh employment for two vessels. The Constantin Baack-led owner has confirmed a $35.4m deal for a 2019-built 1,800 ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Safe Bulkers offloads vintage post-panamax for $15m",
-      "link": "https://splash247.com/safe-bulkers-offloads-vintage-post-panamax-for-15m/",
-      "pubDate": "Wed, 25 Nov 2026 11:00:00 +0000",
-      "source": "Splash247",
-      "category": "Dry Bulk",
-      "summary": "Polys Hajioannou-led Safe Bulkers is clearing out more older tonnage, striking a $14.86m deal to sell a 20-year-old post-panamax bulk carrier. The New York- and Athens-listed owner revealed in a US securities filing that it had agreed to offload the Japanese-built, 87,000 dwt Mar",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Marina-post-panamax-bulker-Fons-van-Beek-Marine-Traffic.jpg",
-      "en": {
-        "headline": "Safe Bulkers offloads vintage post-panamax for $15m",
-        "summary": "Polys Hajioannou-led Safe Bulkers is clearing out more older tonnage, striking a $14.86m deal to sell a 20-year-old post-panamax bulk carrier. The New York- and Athens-listed owner revealed in a US securities filing that it had agreed to offload the Japanese-built, 87,000 dwt Mar",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Saipem bags dual offshore EPCI contracts from Aramco",
-      "link": "https://splash247.com/saipem-bags-dual-offshore-epci-contracts-from-aramco/",
-      "pubDate": "Wed, 25 Nov 2026 10:40:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Italian offshore engineering and construction contractor Saipem has been awarded two offshore contracts in Saudi Arabia under its existing long-term agreement with Aramco. The approximate value of $650m covers the engineering, procurement, construction, installation, pipeline, an",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/Saipem-worker.jpg",
-      "en": {
-        "headline": "Saipem bags dual offshore EPCI contracts from Aramco",
-        "summary": "Italian offshore engineering and construction contractor Saipem has been awarded two offshore contracts in Saudi Arabia under its existing long-term agreement with Aramco. The approximate value of $650m covers the engineering, procurement, construction, installation, pipeline, an",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Vantris secures $115m Petronas work package",
-      "link": "https://splash247.com/vantris-secures-115m-petronas-work-package/",
-      "pubDate": "Wed, 25 Nov 2026 10:25:17 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Malaysian offshore contractor Vantris Energy has secured further transportation and installation work orders from Petronas Carigali, with a combined potential value of RM475m ($115m). The Kuala Lumpur-listed company said the contracts were awarded to its wholly owned subsidiary V",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 14,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/Sapura-Energy.jpg",
-      "en": {
-        "headline": "Vantris secures $115m Petronas work package",
-        "summary": "Malaysian offshore contractor Vantris Energy has secured further transportation and installation work orders from Petronas Carigali, with a combined potential value of RM475m ($115m). The Kuala Lumpur-listed company said the contracts were awarded to its wholly owned subsidiary V",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "DEME joins Allseas on Canadian LNG pipeline project",
-      "link": "https://splash247.com/deme-joins-allseas-on-canadian-lng-pipeline-project/",
-      "pubDate": "Wed, 25 Nov 2026 10:20:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Belgian marine contractor DEME has secured a subcontract from Swiss-based offshore construction specialist Allseas for marine works on the Prince Rupert Gas Transmission (PRGT) pipeline in Canada. DEME described the award as a large contract, a classification it uses for agreemen",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2021/02/DEME-Orion.jpg",
-      "en": {
-        "headline": "DEME joins Allseas on Canadian LNG pipeline project",
-        "summary": "Belgian marine contractor DEME has secured a subcontract from Swiss-based offshore construction specialist Allseas for marine works on the Prince Rupert Gas Transmission (PRGT) pipeline in Canada. DEME described the award as a large contract, a classification it uses for agreemen",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "TotalEnergies taps Shearwater for fresh Angola survey",
-      "link": "https://splash247.com/totalenergies-taps-shearwater-for-fresh-angola-survey/",
-      "pubDate": "Wed, 25 Nov 2026 10:00:00 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Norwegian offshore seismic vessel operator Shearwater Geoservices has been awarded a 4D towed-streamer seismic acquisition project by TotalEnergies offshore Angola. Amazon Conqueror will conduct the survey in Blocks 17 and 17/06 offshore Angola. The programme is expected to comme",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 15,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/05/Amazon-Conqueror.jpg",
-      "en": {
-        "headline": "TotalEnergies taps Shearwater for fresh Angola survey",
-        "summary": "Norwegian offshore seismic vessel operator Shearwater Geoservices has been awarded a 4D towed-streamer seismic acquisition project by TotalEnergies offshore Angola. Amazon Conqueror will conduct the survey in Blocks 17 and 17/06 offshore Angola. The programme is expected to comme",
-        "source": "Splash247"
       }
     }
   ]
