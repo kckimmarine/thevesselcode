@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-25T16:30:52.123Z",
+    "generatedAt": "2026-11-26T01:21:06.364Z",
     "benchmarkAsOf": "2026-11-25",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 833.5,
-        "deltaPct": -2.51,
+        "deltaPct": 0,
         "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1088.5,
-        "deltaPct": -1.49,
+        "deltaPct": 0,
         "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 576,
-        "deltaPct": -3.92,
+        "deltaPct": 0,
         "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 673.5,
-        "deltaPct": -4.06,
+        "deltaPct": 0,
         "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1076.5,
-        "deltaPct": -5.86,
+        "deltaPct": 0,
         "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 533,
-        "deltaPct": -2.56,
+        "deltaPct": 0,
         "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 790,
-        "deltaPct": 0,
-        "asOf": "2026-11-24T00:00:00.000Z",
+        "priceUsdMt": 780,
+        "deltaPct": -1.27,
+        "asOf": "2026-11-25T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 710,
-        "deltaPct": 0,
-        "asOf": "2026-11-24T00:00:00.000Z",
+        "priceUsdMt": 670,
+        "deltaPct": -5.63,
+        "asOf": "2026-11-25T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -172,7 +172,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 708,
-        "deltaPct": -1.67,
+        "deltaPct": 0,
         "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1159.5,
-        "deltaPct": -1.61,
+        "deltaPct": 0,
         "asOf": "2026-11-24T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 3107,
-      "deltaPct": 1.27,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-25T15:00:17.924Z"
     },
     "capesizeTc": {
       "value": 5014,
-      "deltaPct": 1.46,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-25T15:00:17.990Z"
     },
     "panamaxTc": {
       "value": 2223,
-      "deltaPct": 2.02,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-25T15:00:18.010Z"
@@ -236,6 +236,74 @@
   },
   "news": [
     {
+      "title": "U.S. Targets China, EU With New Tariffs Citing Overcapacity",
+      "link": "https://gcaptain.com/u-s-targets-china-eu-with-new-tariffs-citing-overcapacity/",
+      "pubDate": "Wed, 25 Nov 2026 17:35:31 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "The US announced plans to impose a fresh round of tariffs on goods from China, the European Union and a dozen other economies under President Donald Trump’s push to restore sweeping global import taxes that the Supreme Court found unconstitutional.",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-14T095846Z_758081347_RC2T8LABMZPO_RTRMADP_3_CHINA-USA-OIL-800x533.jpg",
+      "en": {
+        "headline": "U.S. Targets China, EU With New Tariffs Citing Overcapacity",
+        "summary": "The US announced plans to impose a fresh round of tariffs on goods from China, the European Union and a dozen other economies under President Donald Trump’s push to restore sweeping global import taxes that the Supreme Court found unconstitutional.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "IMO Sounds Alarm Over Shortage of Training Berths for Future Seafarers",
+      "link": "https://gcaptain.com/imo-sounds-alarm-over-shortage-of-training-berths-for-future-seafarers/",
+      "pubDate": "Wed, 25 Nov 2026 17:31:59 +0000",
+      "source": "gCaptain",
+      "category": "Carbon",
+      "summary": "The International Maritime Organization (IMO) is calling on shipping companies to make more training berths available to cadets, highlighting a longstanding disconnect between the industry&#8217;s need for qualified seafarers and...",
+      "tag": "Carbon",
+      "tagClass": "tag-carbon",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/03/IMO_Seafarer.jpeg",
+      "en": {
+        "headline": "IMO Sounds Alarm Over Shortage of Training Berths for Future Seafarers",
+        "summary": "The International Maritime Organization (IMO) is calling on shipping companies to make more training berths available to cadets, highlighting a longstanding disconnect between the industry&#8217;s need for qualified seafarers and...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Red Sea and Indian Ocean Nations Advance Plans for Combined Maritime Security Force",
+      "link": "https://gcaptain.com/red-sea-and-indian-ocean-nations-advance-plans-for-combined-maritime-security-force/",
+      "pubDate": "Wed, 25 Nov 2026 17:30:24 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Countries bordering the Red Sea and Western Indian Ocean are moving toward establishing a combined maritime task force to combat piracy, strengthen regional security and protect commercial shipping across some...",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 7,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/Operation-Aspides-red-sea-escort.jpeg",
+      "en": {
+        "headline": "Red Sea and Indian Ocean Nations Advance Plans for Combined Maritime Security Force",
+        "summary": "Countries bordering the Red Sea and Western Indian Ocean are moving toward establishing a combined maritime task force to combat piracy, strengthen regional security and protect commercial shipping across some...",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Italy Rebukes Ukraine Over Attacks on Russian Ships in Libya",
+      "link": "https://gcaptain.com/italy-rebukes-ukraine-over-attacks-on-russian-ships-in-libya/",
+      "pubDate": "Wed, 25 Nov 2026 16:44:12 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Italy has told Ukraine it was wrong to attack Russian ships in Libyan waters and warned Kyiv not to spread the war to new areas, Foreign Minister Antonio Tajani told Corriere della Sera newspaper on Wednesday.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 8,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-22T134606Z_1666304204_RC21TOAEFO3P_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-VESSEL-1.jpg",
+      "en": {
+        "headline": "Italy Rebukes Ukraine Over Attacks on Russian Ships in Libya",
+        "summary": "Italy has told Ukraine it was wrong to attack Russian ships in Libyan waters and warned Kyiv not to spread the war to new areas, Foreign Minister Antonio Tajani told Corriere della Sera newspaper on Wednesday.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "Most Large Fuel Tankers Now Ship ‘Dirty’ Crude, Upending Trading",
       "link": "https://gcaptain.com/most-large-fuel-tankers-now-ship-dirty-crude-upending-trading/",
       "pubDate": "Wed, 25 Nov 2026 13:44:01 +0000",
@@ -244,7 +312,7 @@
       "summary": "A record three-quarters of the global fleet of large tankers designed to transport oil products are tapping higher earnings to ship crude, keeping the cost to move fuels elevated.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 2,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/04/gasoline-tanker-at-anchor.jpg",
       "en": {
         "headline": "Most Large Fuel Tankers Now Ship ‘Dirty’ Crude, Upending Trading",
@@ -261,7 +329,7 @@
       "summary": "On 24 November 2026, Windcat signed a contract with Damen Shipyards Group for the second Multi-Purpose Accommodation Support Vessel (MP-ASV) in the Innovation Series. The contract follows the order for...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 3,
+      "hoursAgo": 11,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Damen-and-Windcat-sign-for-second-MP-ASV.jpg",
       "en": {
         "headline": "Damen and Windcat sign for secondMulti-Purpose Accommodation Support Vessel (MP-ASV)",
@@ -278,7 +346,7 @@
       "summary": "Chinese power group Shenzhen Energy is moving ahead with the renewal of its dry bulk fleet, selecting CSSC Huangpu Wenchong Shipbuilding to build an 82,000 dwt kamsarmax in a deal worth RMB296m ($44.4m). The Shenzhen-listed company&#8217;s shipping arm, Shenzhen Energy Transporta",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 3,
+      "hoursAgo": 12,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Jia-Chang-panamax-bulker-Chuldan-Imansyah-Marine-Traffic.jpg",
       "en": {
         "headline": "Shenzhen Energy makes $44m dry bulk newbuild move",
@@ -295,7 +363,7 @@
       "summary": "Nigeria LNG&#8217;s shipping arm Bonny Gas Transport (BGT) has returned to China&#8217;s Hudong-Zhonghua Shipbuilding for another two LNG carriers, expanding its fleet renewal programme at the Shanghai yard to five firm vessels. The Nigerian owner has signed contracts on for a pa",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 4,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/Bonny-Gas-Transport.jpg",
       "en": {
         "headline": "Bonny Gas Transport adds LNG carrier double in China",
@@ -312,7 +380,7 @@
       "summary": "The Hong Kong Shipowners Association (HKSOA) has welcomed a package of tax reforms aimed at attracting more shipping and commodity trading businesses to the city, including a new half-rate profits tax concession for physical commodity traders. The measures, which returned to the ",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Hong-Kong-from-Harbour.jpg",
       "en": {
         "headline": "Hong Kong shipowners hail shipping tax overhaul",
@@ -329,7 +397,7 @@
       "summary": "Greek shipowner Neda Maritime Agency has returned to the VLCC newbuilding market, lining up one firm vessel and an option for another at China&#8217;s New Times Shipbuilding. Shipbrokers have linked the Lykiardopoulos family-controlled company to a deal for 303,000 dwt crude carr",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 4,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Aragona-VLCC-Neda-Maritime.jpg",
       "en": {
         "headline": "Neda makes VLCC comeback with Chinese order",
@@ -346,7 +414,7 @@
       "summary": "Oslo-listed MPC Container Ships (MPCC) has revealed $76.3m in secondhand transactions, buying a modern feeder and selling two older containerships while locking in fresh employment for two vessels. The Constantin Baack-led owner has confirmed a $35.4m deal for a 2019-built 1,800 ",
       "tag": "S&P",
       "tagClass": "tag-sp",
-      "hoursAgo": 5,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/04/constantin-baack.jpg",
       "en": {
         "headline": "MPC Container Ships strikes $76m in fleet deals",
@@ -363,7 +431,7 @@
       "summary": "Polys Hajioannou-led Safe Bulkers is clearing out more older tonnage, striking a $14.86m deal to sell a 20-year-old post-panamax bulk carrier. The New York- and Athens-listed owner revealed in a US securities filing that it had agreed to offload the Japanese-built, 87,000 dwt Mar",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Marina-post-panamax-bulker-Fons-van-Beek-Marine-Traffic.jpg",
       "en": {
         "headline": "Safe Bulkers offloads vintage post-panamax for $15m",
@@ -380,7 +448,7 @@
       "summary": "Italian offshore engineering and construction contractor Saipem has been awarded two offshore contracts in Saudi Arabia under its existing long-term agreement with Aramco. The approximate value of $650m covers the engineering, procurement, construction, installation, pipeline, an",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/Saipem-worker.jpg",
       "en": {
         "headline": "Saipem bags dual offshore EPCI contracts from Aramco",
@@ -397,7 +465,7 @@
       "summary": "Malaysian offshore contractor Vantris Energy has secured further transportation and installation work orders from Petronas Carigali, with a combined potential value of RM475m ($115m). The Kuala Lumpur-listed company said the contracts were awarded to its wholly owned subsidiary V",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/06/Sapura-Energy.jpg",
       "en": {
         "headline": "Vantris secures $115m Petronas work package",
@@ -414,7 +482,7 @@
       "summary": "Belgian marine contractor DEME has secured a subcontract from Swiss-based offshore construction specialist Allseas for marine works on the Prince Rupert Gas Transmission (PRGT) pipeline in Canada. DEME described the award as a large contract, a classification it uses for agreemen",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2021/02/DEME-Orion.jpg",
       "en": {
         "headline": "DEME joins Allseas on Canadian LNG pipeline project",
@@ -431,80 +499,12 @@
       "summary": "Norwegian offshore seismic vessel operator Shearwater Geoservices has been awarded a 4D towed-streamer seismic acquisition project by TotalEnergies offshore Angola. Amazon Conqueror will conduct the survey in Blocks 17 and 17/06 offshore Angola. The programme is expected to comme",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2023/05/Amazon-Conqueror.jpg",
       "en": {
         "headline": "TotalEnergies taps Shearwater for fresh Angola survey",
         "summary": "Norwegian offshore seismic vessel operator Shearwater Geoservices has been awarded a 4D towed-streamer seismic acquisition project by TotalEnergies offshore Angola. Amazon Conqueror will conduct the survey in Blocks 17 and 17/06 offshore Angola. The programme is expected to comme",
         "source": "Splash247"
-      }
-    },
-    {
-      "title": "BUILT TO LAST: BRISTOL HARBOR GROUP, INC. &#038; THE SHEARER GROUP, INC. BECOME EMPLOYEE OWNED",
-      "link": "https://gcaptain.com/built-to-last-bristol-harbor-group-inc-the-shearer-group-inc-become-employee-owned/",
-      "pubDate": "Tue, 24 Nov 2026 21:00:28 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "Two established naval architecture and marine engineering firms become 100% employee owned, carrying forward the vision and values of their founders. Bristol Harbor Group, Inc. (BHGI) and The Shearer Group,...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 19,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Staff-800x600.jpg",
-      "en": {
-        "headline": "BUILT TO LAST: BRISTOL HARBOR GROUP, INC. &#038; THE SHEARER GROUP, INC. BECOME EMPLOYEE OWNED",
-        "summary": "Two established naval architecture and marine engineering firms become 100% employee owned, carrying forward the vision and values of their founders. Bristol Harbor Group, Inc. (BHGI) and The Shearer Group,...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Maersk and ONE Eye Landmark Global North-South Shipping Alliance",
-      "link": "https://gcaptain.com/maersk-and-one-eye-landmark-global-north-south-shipping-alliance/",
-      "pubDate": "Tue, 24 Nov 2026 19:22:39 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The formation of container shipping’s first global liner alliance covering the north-south trades appears to be taking shape, The Loadstar has learned.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 21,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2023/02/2023-02-20T081736Z_1947939712_RC29UY9ACLOV_RTRMADP_3_MAERSK-RUSSIA.jpg",
-      "en": {
-        "headline": "Maersk and ONE Eye Landmark Global North-South Shipping Alliance",
-        "summary": "The formation of container shipping’s first global liner alliance covering the north-south trades appears to be taking shape, The Loadstar has learned.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "India’s State Shipping Giant Seeks Up to 22 New Ships in Major Domestic Shipbuilding Push",
-      "link": "https://gcaptain.com/indias-state-shipping-giant-seeks-up-to-22-new-ships-in-major-domestic-shipbuilding-push/",
-      "pubDate": "Tue, 24 Nov 2026 19:12:21 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "The state-owned Shipping Corporation of India (SCI) is seeking to acquire up to 22 new vessels in a multibillion-dollar fleet expansion that could provide a major boost to India&#8217;s domestic...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 21,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2025/07/Cochin-Shipyard-India-800x450.jpg",
-      "en": {
-        "headline": "India’s State Shipping Giant Seeks Up to 22 New Ships in Major Domestic Shipbuilding Push",
-        "summary": "The state-owned Shipping Corporation of India (SCI) is seeking to acquire up to 22 new vessels in a multibillion-dollar fleet expansion that could provide a major boost to India&#8217;s domestic...",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Grounded Bulk Carrier MIRO G Successfully Refloated Off French Beach",
-      "link": "https://gcaptain.com/grounded-bulk-carrier-miro-g-successfully-refloated-off-french-beach/",
-      "pubDate": "Tue, 24 Nov 2026 19:04:01 +0000",
-      "source": "gCaptain",
-      "category": "Dry Bulk",
-      "summary": "French authorities have successfully refloated the Malta-flagged bulk carrier&#160;MIRO G, four days after the vessel ran aground on France’s Atlantic coast during severe weather. The Atlantic Maritime Prefecture&#160;confirmed Tuesday afternoon&#160;that...",
-      "tag": "Dry Bulk",
-      "tagClass": "tag-trade",
-      "hoursAgo": 21,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Miro-G.jpeg",
-      "en": {
-        "headline": "Grounded Bulk Carrier MIRO G Successfully Refloated Off French Beach",
-        "summary": "French authorities have successfully refloated the Malta-flagged bulk carrier&#160;MIRO G, four days after the vessel ran aground on France’s Atlantic coast during severe weather. The Atlantic Maritime Prefecture&#160;confirmed Tuesday afternoon&#160;that...",
-        "source": "gCaptain"
       }
     }
   ]
