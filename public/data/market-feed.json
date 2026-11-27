@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-26T16:03:53.044Z",
+    "generatedAt": "2026-11-27T01:19:18.307Z",
     "benchmarkAsOf": "2026-11-26",
     "fetchStatus": "partial",
     "rssErrors": [
@@ -76,7 +76,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 809.5,
-        "deltaPct": -2.88,
+        "deltaPct": 0,
         "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -88,7 +88,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1077.5,
-        "deltaPct": -1.01,
+        "deltaPct": 0,
         "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -100,7 +100,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 580,
-        "deltaPct": 0.69,
+        "deltaPct": 0,
         "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -112,7 +112,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 676,
-        "deltaPct": 0.37,
+        "deltaPct": 0,
         "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -124,7 +124,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1068,
-        "deltaPct": -0.79,
+        "deltaPct": 0,
         "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -136,7 +136,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 544,
-        "deltaPct": 2.06,
+        "deltaPct": 0,
         "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -147,9 +147,9 @@
         "gradeLabel": "VLSFO",
         "fuel": "VLSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 780,
-        "deltaPct": 0,
-        "asOf": "2026-11-25T00:00:00.000Z",
+        "priceUsdMt": 790,
+        "deltaPct": 1.28,
+        "asOf": "2026-11-26T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -159,9 +159,9 @@
         "gradeLabel": "HSFO 380",
         "fuel": "HSFO",
         "defaultDensity": 991,
-        "priceUsdMt": 670,
-        "deltaPct": 0,
-        "asOf": "2026-11-25T00:00:00.000Z",
+        "priceUsdMt": 680,
+        "deltaPct": 1.49,
+        "asOf": "2026-11-26T00:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
       },
@@ -172,7 +172,7 @@
         "fuel": "VLSFO",
         "defaultDensity": 991,
         "priceUsdMt": 720,
-        "deltaPct": 1.69,
+        "deltaPct": 0,
         "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -184,7 +184,7 @@
         "fuel": "LSMGO",
         "defaultDensity": 850,
         "priceUsdMt": 1153.5,
-        "deltaPct": -0.52,
+        "deltaPct": 0,
         "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -196,7 +196,7 @@
         "fuel": "HSFO",
         "defaultDensity": 991,
         "priceUsdMt": 473,
-        "deltaPct": 1.07,
+        "deltaPct": 0,
         "asOf": "2026-11-25T17:00:00.000Z",
         "source": "market_reporting",
         "provider": "OilPriceAPI"
@@ -206,21 +206,21 @@
   "indices": {
     "bdi": {
       "value": 3152,
-      "deltaPct": 1.45,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-26T15:15:20.424Z"
     },
     "capesizeTc": {
       "value": 5100,
-      "deltaPct": 1.72,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-26T15:15:20.497Z"
     },
     "panamaxTc": {
       "value": 2273,
-      "deltaPct": 2.25,
+      "deltaPct": 0,
       "unit": "pts",
       "source": "market_reporting",
       "asOf": "2026-11-26T15:15:20.513Z"
@@ -236,6 +236,74 @@
   },
   "news": [
     {
+      "title": "China faces daunting shipbuilding arithmetic",
+      "link": "https://splash247.com/china-faces-daunting-shipbuilding-arithmetic/",
+      "pubDate": "Fri, 27 Nov 2026 00:05:00 +0000",
+      "source": "Splash247",
+      "category": "Dry Bulk",
+      "summary": "Chinese shipbuilders are scheduled to deliver more than three times as much bulk carrier and tanker tonnage in 2028 as they did last year, according to fresh research from Banchero Costa that raises further questions over the industry’s ability to make good on its record orderboo",
+      "tag": "Dry Bulk",
+      "tagClass": "tag-trade",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2026/07/Hengli-3.jpg",
+      "en": {
+        "headline": "China faces daunting shipbuilding arithmetic",
+        "summary": "Chinese shipbuilders are scheduled to deliver more than three times as much bulk carrier and tanker tonnage in 2028 as they did last year, according to fresh research from Banchero Costa that raises further questions over the industry’s ability to make good on its record orderboo",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "The absurdity of ‘competitive’ salaries",
+      "link": "https://splash247.com/the-absurdity-of-competitive-salaries/",
+      "pubDate": "Fri, 27 Nov 2026 00:00:00 +0000",
+      "source": "Splash247",
+      "category": "Bunker",
+      "summary": "Maritime recruitment could benefit from the same commercial transparency that shipping demands of almost every other aspect of its business. Mike Darby from Merchant Recruitment explains.  Imagine if the shipping industry operated the same way as its job adverts. &#8220;How much ",
+      "tag": "Bunker",
+      "tagClass": "",
+      "hoursAgo": 1,
+      "imageUrl": "https://splash247.com/wp-content/uploads/2020/01/Office-e1612420275102.jpg",
+      "en": {
+        "headline": "The absurdity of ‘competitive’ salaries",
+        "summary": "Maritime recruitment could benefit from the same commercial transparency that shipping demands of almost every other aspect of its business. Mike Darby from Merchant Recruitment explains.  Imagine if the shipping industry operated the same way as its job adverts. &#8220;How much ",
+        "source": "Splash247"
+      }
+    },
+    {
+      "title": "Hormuz Tanker Traffic Rises This Month Even as Attacks Increase",
+      "link": "https://gcaptain.com/hormuz-tanker-traffic-rises-this-month-even-as-attacks-increase/",
+      "pubDate": "Thu, 26 Nov 2026 14:48:04 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "Tanker traffic through the Strait of Hormuz has risen this month, according to data from Vortexa, even as attacks on vessels in the contested waterway have increased.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 10,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/10/2026-09-28T112819Z_711172295_RC26SNAHFL5K_RTRMADP_3_IRAN-CRISIS-HORMUZ-800x533.jpg",
+      "en": {
+        "headline": "Hormuz Tanker Traffic Rises This Month Even as Attacks Increase",
+        "summary": "Tanker traffic through the Strait of Hormuz has risen this month, according to data from Vortexa, even as attacks on vessels in the contested waterway have increased.",
+        "source": "gCaptain"
+      }
+    },
+    {
+      "title": "Crew Member Dies After Diesel Tanker Capsizes Off Ibiza, No Pollution So Far",
+      "link": "https://gcaptain.com/crew-member-dies-after-diesel-tanker-capsizes-off-ibiza-no-pollution-so-far/",
+      "pubDate": "Thu, 26 Nov 2026 14:44:22 +0000",
+      "source": "gCaptain",
+      "category": "Trade",
+      "summary": "At least one crew member aboard a ship carrying diesel has died after the vessel capsized and partially sank off the Spanish island of Ibiza on Thursday, regional authorities said, adding there were no signs of pollution so far.",
+      "tag": "Trade",
+      "tagClass": "tag-trade",
+      "hoursAgo": 10,
+      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-26T140348Z_906762946_RC2PVOA32SB5_RTRMADP_3_SPAIN-ACCIDENT-800x451.jpg",
+      "en": {
+        "headline": "Crew Member Dies After Diesel Tanker Capsizes Off Ibiza, No Pollution So Far",
+        "summary": "At least one crew member aboard a ship carrying diesel has died after the vessel capsized and partially sank off the Spanish island of Ibiza on Thursday, regional authorities said, adding there were no signs of pollution so far.",
+        "source": "gCaptain"
+      }
+    },
+    {
       "title": "BIMCO puts ship-to-ship transfer costs on charterers",
       "link": "https://splash247.com/bimco-puts-ship-to-ship-transfer-costs-on-charterers/",
       "pubDate": "Thu, 26 Nov 2026 11:54:00 +0000",
@@ -244,7 +312,7 @@
       "summary": "Shipping organisation BIMCO has released a new standard clause for tanker charterparties that places the costs and risks of ship-to-ship cargo transfers on charterers while preserving the master&#8217;s authority over vessel safety. Published this week, the clause covers conventi",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 13,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/STS-BIMCO.jpg",
       "en": {
         "headline": "BIMCO puts ship-to-ship transfer costs on charterers",
@@ -261,7 +329,7 @@
       "summary": "Danish shipowners have raised concerns at EU level over new Polish vessel certification requirements, warning that additional inspections are making it harder for foreign operators to compete for offshore wind and marine construction contracts in the Baltic Sea. Industry associat",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 4,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2022/10/RWE-Poland-offshore-wind.jpg",
       "en": {
         "headline": "Polish offshore wind rules draw Danish shipowner backlash",
@@ -278,7 +346,7 @@
       "summary": "South Korean shipbuilding heavyweight Hanwha Ocean has pulled out of an 800MW offshore wind development off the country’s southwestern coast. The company confirmed in a regulatory filing on Wednesday that it had decided not to participate in the first phase of the Jeonbuk Southwe",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/02/Source-Galileo-offshore-wind.jpg",
       "en": {
         "headline": "Hanwha Ocean pulls out of 800MW offshore wind project",
@@ -295,7 +363,7 @@
       "summary": "London-listed dry bulk owner Taylor Maritime has faced a shareholder backlash over directors&#8217; remuneration, with more than 20% of votes cast against its annual pay report while the company winds down its shipping operations. The Ed Buttery-led outfit disclosed that 20.59% o",
       "tag": "Dry Bulk",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2024/03/Ed-Buttery-Monaco-CEO-Forum.jpg",
       "en": {
         "headline": "Taylor Maritime hit by shareholder revolt over pay",
@@ -312,7 +380,7 @@
       "summary": "Italian offshore survey specialist Next Geosolutions (NextGeo) has secured an €11.6m ($12.7m) contract to survey a planned subsea hydrogen pipeline linking Spain and France. BarMar, a joint venture between French gas transmission operators NaTran and Teréga and Spain’s Enagás, aw",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 14,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/11/MarineTraffic-Marcel-Coster-NextGeo-NG-Surveyor.jpg",
       "en": {
         "headline": "NextGeo wins survey work on European hydrogen pipeline",
@@ -329,7 +397,7 @@
       "summary": "Harry Vafias-led StealthGas has wrapped up seven charter deals for its LPG carriers, lifting its contracted revenue backlog to $115m and securing employment for one vessel into 2030. The Nasdaq-listed Greek owner revealed the fixtures in its latest quarterly update, with the long",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 5,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Eco-Galaxy-StealthGas.jpg",
       "en": {
         "headline": "StealthGas boosts forward cover with seven fixtures",
@@ -346,7 +414,7 @@
       "summary": "Decommissioning provisions for UK offshore wind farms with similarly sized turbines can differ by as much as ten times, highlighting major uncertainties over the future cost of dismantling ageing installations, according to new research. A study by energy consultancy Xodus and it",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2025/09/Semco-Maritime-offshore-wind.jpg",
       "en": {
         "headline": "UK offshore wind decommissioning estimates vary tenfold",
@@ -363,45 +431,11 @@
       "summary": "A seafarer has died after a Malta-flagged chemical tanker carrying around 7,000 tonnes of diesel sank off the Spanish island of Ibiza, triggering an emergency pollution response. The 2019-built, 8,270 dwt Med Emre went down around 25 to 30 nautical miles off the Balearic island a",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 6,
+      "hoursAgo": 15,
       "imageUrl": "https://splash247.com/wp-content/uploads/2026/11/Med-Emre-YMN-Tanker.jpg",
       "en": {
         "headline": "Diesel-laden tanker sinks off Ibiza leaving one dead",
         "summary": "A seafarer has died after a Malta-flagged chemical tanker carrying around 7,000 tonnes of diesel sank off the Spanish island of Ibiza, triggering an emergency pollution response. The 2019-built, 8,270 dwt Med Emre went down around 25 to 30 nautical miles off the Balearic island a",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Washington opens fresh tariff front across 14 economies",
-      "link": "https://splash247.com/washington-opens-fresh-tariff-front-across-14-economies/",
-      "pubDate": "Thu, 26 Nov 2026 08:42:39 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "Container shipping faces another bout of trade uncertainty after Washington unveiled plans for fresh tariffs on imports from 14 economies, including several of the world&#8217;s largest manufacturing and container export hubs. The Office of the United States Trade Representative ",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2025/01/Donald-Trump-Innauguration.jpg",
-      "en": {
-        "headline": "Washington opens fresh tariff front across 14 economies",
-        "summary": "Container shipping faces another bout of trade uncertainty after Washington unveiled plans for fresh tariffs on imports from 14 economies, including several of the world&#8217;s largest manufacturing and container export hubs. The Office of the United States Trade Representative ",
-        "source": "Splash247"
-      }
-    },
-    {
-      "title": "Brussels deals fresh blow to Indian ship recycling",
-      "link": "https://splash247.com/brussels-deals-fresh-blow-to-indian-ship-recycling/",
-      "pubDate": "Thu, 26 Nov 2026 08:24:17 +0000",
-      "source": "Splash247",
-      "category": "Trade",
-      "summary": "The European Parliament has voted against adding two Indian shipbreaking yards to the EU’s approved recycling list, drawing a sharp rebuke from BIMCO and dealing another setback to shipowners seeking greater access to South Asian dismantling capacity. MEPs have backed an objectio",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 7,
-      "imageUrl": "https://splash247.com/wp-content/uploads/2023/02/Leela-ship-recycling.jpg",
-      "en": {
-        "headline": "Brussels deals fresh blow to Indian ship recycling",
-        "summary": "The European Parliament has voted against adding two Indian shipbreaking yards to the EU’s approved recycling list, drawing a sharp rebuke from BIMCO and dealing another setback to shipowners seeking greater access to South Asian dismantling capacity. MEPs have backed an objectio",
         "source": "Splash247"
       }
     },
@@ -414,7 +448,7 @@
       "summary": "The US announced plans to impose a fresh round of tariffs on goods from China, the European Union and a dozen other economies under President Donald Trump’s push to restore sweeping global import taxes that the Supreme Court found unconstitutional.",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 22,
+      "hoursAgo": 31,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/05/2026-05-14T095846Z_758081347_RC2T8LABMZPO_RTRMADP_3_CHINA-USA-OIL-800x533.jpg",
       "en": {
         "headline": "U.S. Targets China, EU With New Tariffs Citing Overcapacity",
@@ -431,7 +465,7 @@
       "summary": "The International Maritime Organization (IMO) is calling on shipping companies to make more training berths available to cadets, highlighting a longstanding disconnect between the industry&#8217;s need for qualified seafarers and...",
       "tag": "Carbon",
       "tagClass": "tag-carbon",
-      "hoursAgo": 22,
+      "hoursAgo": 31,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2024/03/IMO_Seafarer.jpeg",
       "en": {
         "headline": "IMO Sounds Alarm Over Shortage of Training Berths for Future Seafarers",
@@ -448,7 +482,7 @@
       "summary": "Countries bordering the Red Sea and Western Indian Ocean are moving toward establishing a combined maritime task force to combat piracy, strengthen regional security and protect commercial shipping across some...",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 22,
+      "hoursAgo": 31,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/02/Operation-Aspides-red-sea-escort.jpeg",
       "en": {
         "headline": "Red Sea and Indian Ocean Nations Advance Plans for Combined Maritime Security Force",
@@ -465,45 +499,11 @@
       "summary": "Italy has told Ukraine it was wrong to attack Russian ships in Libyan waters and warned Kyiv not to spread the war to new areas, Foreign Minister Antonio Tajani told Corriere della Sera newspaper on Wednesday.",
       "tag": "Trade",
       "tagClass": "tag-trade",
-      "hoursAgo": 23,
+      "hoursAgo": 32,
       "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/2026-11-22T134606Z_1666304204_RC21TOAEFO3P_RTRMADP_3_UKRAINE-CRISIS-RUSSIA-VESSEL-1.jpg",
       "en": {
         "headline": "Italy Rebukes Ukraine Over Attacks on Russian Ships in Libya",
         "summary": "Italy has told Ukraine it was wrong to attack Russian ships in Libyan waters and warned Kyiv not to spread the war to new areas, Foreign Minister Antonio Tajani told Corriere della Sera newspaper on Wednesday.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Most Large Fuel Tankers Now Ship ‘Dirty’ Crude, Upending Trading",
-      "link": "https://gcaptain.com/most-large-fuel-tankers-now-ship-dirty-crude-upending-trading/",
-      "pubDate": "Wed, 25 Nov 2026 13:44:01 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "A record three-quarters of the global fleet of large tankers designed to transport oil products are tapping higher earnings to ship crude, keeping the cost to move fuels elevated.",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 26,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2018/04/gasoline-tanker-at-anchor.jpg",
-      "en": {
-        "headline": "Most Large Fuel Tankers Now Ship ‘Dirty’ Crude, Upending Trading",
-        "summary": "A record three-quarters of the global fleet of large tankers designed to transport oil products are tapping higher earnings to ship crude, keeping the cost to move fuels elevated.",
-        "source": "gCaptain"
-      }
-    },
-    {
-      "title": "Damen and Windcat sign for secondMulti-Purpose Accommodation Support Vessel (MP-ASV)",
-      "link": "https://gcaptain.com/damen-and-windcat-sign-for-secondmulti-purpose-accommodation-support-vessel-mp-asv/",
-      "pubDate": "Wed, 25 Nov 2026 13:23:50 +0000",
-      "source": "gCaptain",
-      "category": "Trade",
-      "summary": "On 24 November 2026, Windcat signed a contract with Damen Shipyards Group for the second Multi-Purpose Accommodation Support Vessel (MP-ASV) in the Innovation Series. The contract follows the order for...",
-      "tag": "Trade",
-      "tagClass": "tag-trade",
-      "hoursAgo": 26,
-      "imageUrl": "https://gcaptain.com/wp-content/uploads/2026/11/Damen-and-Windcat-sign-for-second-MP-ASV.jpg",
-      "en": {
-        "headline": "Damen and Windcat sign for secondMulti-Purpose Accommodation Support Vessel (MP-ASV)",
-        "summary": "On 24 November 2026, Windcat signed a contract with Damen Shipyards Group for the second Multi-Purpose Accommodation Support Vessel (MP-ASV) in the Innovation Series. The contract follows the order for...",
         "source": "gCaptain"
       }
     }
